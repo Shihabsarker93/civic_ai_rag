@@ -53,7 +53,8 @@ class CivicRAGPipeline:
         answer = ""
         selected_model = model or self.generation_config["default_model"]
         if generate:
-            answer = self._generator(selected_model).answer(query, contexts)
+            max_generation_contexts = self.generation_config.get("top_k_for_generation", len(contexts))
+            answer = self._generator(selected_model).answer(query, contexts[:max_generation_contexts])
 
         return {
             "query": query,

@@ -22,6 +22,7 @@ def tokenize(text: str) -> list[str]:
 class RetrievalResult:
     chunk_id: str
     content: str
+    retrieval_text: str
     metadata: dict[str, Any]
     score: float
     retrievers: list[str]
@@ -55,7 +56,7 @@ class HybridRetriever:
         self.chroma_client = chromadb.PersistentClient(path=chroma_dir)
         self.collection = self.chroma_client.get_collection(collection_name)
 
-        tokenized_corpus = [tokenize(chunk["content"]) for chunk in chunks]
+        tokenized_corpus = [tokenize(chunk.get("retrieval_text", chunk["content"])) for chunk in chunks]
         self.bm25 = BM25Okapi(tokenized_corpus)
 
     def _dense_search(self, query: str, top_k: int) -> list[str]:
@@ -86,6 +87,7 @@ class HybridRetriever:
                 RetrievalResult(
                     chunk_id=chunk_id,
                     content=chunk["content"],
+                    retrieval_text=chunk.get("retrieval_text", chunk["content"]),
                     metadata=chunk["metadata"],
                     score=1 / rank,
                     retrievers=["dense"],
@@ -111,6 +113,7 @@ class HybridRetriever:
                 RetrievalResult(
                     chunk_id=chunk_id,
                     content=chunk["content"],
+                    retrieval_text=chunk.get("retrieval_text", chunk["content"]),
                     metadata=chunk["metadata"],
                     score=score,
                     retrievers=retriever_hits[chunk_id],

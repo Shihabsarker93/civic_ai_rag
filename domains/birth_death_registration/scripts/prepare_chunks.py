@@ -108,14 +108,16 @@ def make_chunk(
     metadata: dict[str, Any],
 ) -> dict[str, Any]:
     metadata = dict(metadata)
+    content = normalize_text(content)
+    retrieval_text = content
     aliases = english_retrieval_aliases(str(metadata.get("document_type", "")), content)
     if aliases:
-        metadata["search_aliases_en"] = aliases
-        if "Retrieval aliases EN" not in content:
-            content = f"{content}\nRetrieval aliases EN (for search only, not answer evidence): {aliases}"
+        metadata["search_aliases"] = aliases
+        retrieval_text = f"{content}\nRetrieval aliases (for search only, not answer evidence): {aliases}"
     return {
         "id": chunk_id,
-        "content": normalize_text(content),
+        "content": content,
+        "retrieval_text": normalize_text(retrieval_text),
         "metadata": flatten_metadata(metadata),
     }
 
@@ -211,6 +213,13 @@ def english_retrieval_aliases(doc_type: str, text: str) -> str:
     if scope in {"birth", "birth_death"}:
         aliases.update(
             {
+                "জন্ম নিবন্ধন",
+                "জন্ম নিবন্ধন আবেদন",
+                "জন্ম সনদ",
+                "জন্ম সনদ আবেদন",
+                "আমি কীভাবে জন্ম নিবন্ধন করতে পারি",
+                "কিভাবে জন্ম নিবন্ধন করব",
+                "কীভাবে জন্ম নিবন্ধন করব",
                 "birth certificate",
                 "birth registration",
                 "birth certificate registration",
@@ -222,6 +231,11 @@ def english_retrieval_aliases(doc_type: str, text: str) -> str:
     if scope in {"death", "birth_death"}:
         aliases.update(
             {
+                "মৃত্যু নিবন্ধন",
+                "মৃত্যু নিবন্ধন আবেদন",
+                "মৃত্যু সনদ",
+                "মৃত্যু সনদ আবেদন",
+                "আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি",
                 "death certificate",
                 "death registration",
                 "death certificate registration",
@@ -234,6 +248,12 @@ def english_retrieval_aliases(doc_type: str, text: str) -> str:
     if doc_type in {"application_process", "portal_summary", "general_guidance"}:
         aliases.update(
             {
+                "আবেদন প্রক্রিয়া",
+                "আবেদন পদ্ধতি",
+                "ধাপে ধাপে আবেদন",
+                "নিবন্ধন প্রক্রিয়া",
+                "নিবন্ধন পদ্ধতি",
+                "প্রয়োজনীয় কাগজপত্র",
                 "application process",
                 "registration process",
                 "how to apply",
@@ -245,6 +265,9 @@ def english_retrieval_aliases(doc_type: str, text: str) -> str:
     if doc_type in {"correction_process"} or "সংশোধন" in text or "correction" in text_lc:
         aliases.update(
             {
+                "সংশোধন আবেদন",
+                "জন্ম নিবন্ধন সংশোধন",
+                "মৃত্যু নিবন্ধন সংশোধন",
                 "certificate correction",
                 "birth certificate correction",
                 "death certificate correction",
@@ -256,6 +279,9 @@ def english_retrieval_aliases(doc_type: str, text: str) -> str:
     if doc_type in {"fees_table", "fee_row"} or "ফি" in text:
         aliases.update(
             {
+                "নিবন্ধন ফি",
+                "সনদ ফি",
+                "আবেদন ফি",
                 "registration fee",
                 "certificate fee",
                 "government fee",
@@ -274,9 +300,9 @@ def english_retrieval_aliases(doc_type: str, text: str) -> str:
             }
         )
     if doc_type == "faq":
-        aliases.update({"FAQ", "question answer", "common question", "citizen question"})
+        aliases.update({"প্রশ্ন উত্তর", "সাধারণ জিজ্ঞাসা", "FAQ", "question answer", "common question", "citizen question"})
     if "ওয়েবসাইট" in text or "ওয়েবসাইট" in text or "website" in text_lc:
-        aliases.update({"website", "online portal", "service portal"})
+        aliases.update({"ওয়েবসাইটে আবেদন", "অনলাইন আবেদন", "অনলাইন পোর্টাল", "website", "online portal", "service portal"})
     if "যাচাই" in text:
         aliases.update({"verify certificate", "certificate verification", "registration verification"})
     if "পিতা" in text or "মাতা" in text or "parent" in text_lc:
