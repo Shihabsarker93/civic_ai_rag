@@ -34,6 +34,10 @@ NOISE_EXACT = {
     "কন্টেন্ট: পাতা",
     "কনটেন্ট: পাতা",
     "<!-- image -->",
+    "- আদেশ/বিজ্ঞপ্তি/অনাপত্তি সনদ",
+    "- প্রকাশনা ও প্রতিবেদন",
+    "- জেনে রাখুন",
+    "- জন্ম ও মৃত্যু নিবন্ধন নির্দেশিকা ২০২১",
 }
 
 NOISE_PATTERNS = [
@@ -44,6 +48,12 @@ NOISE_PATTERNS = [
     re.compile(r"^#\s*\[?রেজিস্ট্রার জেনারেলের কার্যালয়"),
     re.compile(r"^#\s*\[?গড়াডোবা ইউনিয়ন"),
 ]
+
+HOMEPAGE_STOP_LINES = {
+    "নোটিশ বোর্ড",
+    "খবর",
+    "সেবা সমূহ",
+}
 
 
 @dataclass(frozen=True)
@@ -89,10 +99,21 @@ def is_noise_line(line: str) -> bool:
     return any(pattern.search(plain) for pattern in NOISE_PATTERNS)
 
 
-def clean_markdown_body(body: str) -> str:
+def should_truncate_homepage(line: str, metadata: dict[str, str]) -> bool:
+    source_file = metadata.get("source_file", "").lower()
+    if not source_file.startswith("home_registrar_generals_office"):
+        return False
+    plain = MARKDOWN_DECORATION_RE.sub("", line).strip()
+    return plain in HOMEPAGE_STOP_LINES
+
+
+def clean_markdown_body(body: str, metadata: dict[str, str] | None = None) -> str:
+    metadata = metadata or {}
     cleaned_lines = []
     for raw_line in body.splitlines():
         line = normalize_line(raw_line)
+        if should_truncate_homepage(line, metadata):
+            break
         if is_noise_line(line):
             continue
         cleaned_lines.append(line)
@@ -239,7 +260,7 @@ def chunk_id(path: Path, section_index: int, chunk_index: int) -> str:
 def build_chunks(path: Path, raw_root: Path, config: dict[str, Any]) -> tuple[str, list[dict[str, Any]]]:
     raw_text = path.read_text(encoding="utf-8")
     source_metadata, body = parse_frontmatter(raw_text)
-    cleaned = clean_markdown_body(body)
+    cleaned = clean_markdown_body(body, source_metadata)
 
     title = source_metadata.get("bengali_title") or path.stem.replace("_", " ")
     document_type = infer_document_type(path, source_metadata, cleaned)
