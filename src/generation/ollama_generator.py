@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 from typing import Any
 
 from langchain_ollama import ChatOllama
@@ -12,8 +13,26 @@ If Source 1 directly answers the user's question, answer from Source 1.
 If another retrieved source directly answers the question better than Source 1, use that source.
 Only say the available dataset does not contain enough information when none of the retrieved sources answer the question.
 Keep the answer factual, concise, and citizen-friendly.
-Preserve the user's language when possible.
-Include source ids at the end."""
+Answer in the requested answer language. If the evidence is Bangla and the requested answer language is English, translate the evidence into English instead of replying in Bangla.
+If the requested answer language is Bangla, answer in natural Bangla.
+Retrieval aliases are search hints only; do not treat them as factual evidence.
+Write a real answer first; never answer with only a source id.
+Use short bullets when the retrieved evidence contains multiple facts.
+End with a Sources line containing the source ids you used."""
+
+
+BANGLA_PATTERN = re.compile(r"[\u0980-\u09FF]")
+ASCII_LETTER_PATTERN = re.compile(r"[A-Za-z]")
+
+
+def detect_answer_language(query: str) -> str:
+    bangla_chars = len(BANGLA_PATTERN.findall(query))
+    ascii_letters = len(ASCII_LETTER_PATTERN.findall(query))
+    if ascii_letters > bangla_chars:
+        return "English"
+    if bangla_chars:
+        return "Bangla"
+    return "the user's language"
 
 
 def build_prompt(query: str, contexts: list[dict[str, Any]]) -> str:
@@ -34,10 +53,14 @@ def build_prompt(query: str, contexts: list[dict[str, Any]]) -> str:
 Question:
 {query}
 
+Answer language:
+{detect_answer_language(query)}
+
 Retrieved evidence:
 {evidence}
 
-Before answering, silently identify the single best source. Do not mention unrelated source variants unless they are needed.
+Before answering, silently identify the best supporting sources. Do not mention unrelated source variants unless they are needed.
+If the question is broad, summarize the core facts from the most relevant retrieved sources.
 
 Answer:"""
 
@@ -62,4 +85,8 @@ class OllamaAnswerGenerator:
 
     def answer(self, query: str, contexts: list[dict[str, Any]]) -> str:
         response = self.llm.invoke(build_prompt(query, contexts))
-        return str(response.content)
+        answer = str(response.content).strip()
+        source_ids = [str(context["id"]) for context in contexts[:3]]
+        if source_ids and not any(source_id in answer for source_id in source_ids):
+            answer = f"{answer}\n\nSources: {', '.join(source_ids)}"
+        return answer

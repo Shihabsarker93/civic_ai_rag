@@ -107,6 +107,12 @@ def make_chunk(
     content: str,
     metadata: dict[str, Any],
 ) -> dict[str, Any]:
+    metadata = dict(metadata)
+    aliases = english_retrieval_aliases(str(metadata.get("document_type", "")), content)
+    if aliases:
+        metadata["search_aliases_en"] = aliases
+        if "Retrieval aliases EN" not in content:
+            content = f"{content}\nRetrieval aliases EN (for search only, not answer evidence): {aliases}"
     return {
         "id": chunk_id,
         "content": normalize_text(content),
@@ -189,6 +195,96 @@ def infer_scope(text: str) -> str:
     if has_death:
         return "death"
     return "birth"
+
+
+def english_retrieval_aliases(doc_type: str, text: str) -> str:
+    text_lc = text.lower()
+    aliases = {
+        "Bangladesh government service",
+        "birth and death registration",
+        "BDRIS",
+        "civil registration",
+        "certificate",
+    }
+
+    scope = infer_scope(text)
+    if scope in {"birth", "birth_death"}:
+        aliases.update(
+            {
+                "birth certificate",
+                "birth registration",
+                "birth certificate registration",
+                "birth registration certificate",
+                "online birth registration",
+                "apply for birth certificate",
+            }
+        )
+    if scope in {"death", "birth_death"}:
+        aliases.update(
+            {
+                "death certificate",
+                "death registration",
+                "death certificate registration",
+                "death registration certificate",
+                "online death registration",
+                "apply for death certificate",
+            }
+        )
+
+    if doc_type in {"application_process", "portal_summary", "general_guidance"}:
+        aliases.update(
+            {
+                "application process",
+                "registration process",
+                "how to apply",
+                "online application",
+                "required documents",
+                "citizen service",
+            }
+        )
+    if doc_type in {"correction_process"} or "সংশোধন" in text or "correction" in text_lc:
+        aliases.update(
+            {
+                "certificate correction",
+                "birth certificate correction",
+                "death certificate correction",
+                "fix certificate information",
+                "amend registration information",
+                "name correction",
+            }
+        )
+    if doc_type in {"fees_table", "fee_row"} or "ফি" in text:
+        aliases.update(
+            {
+                "registration fee",
+                "certificate fee",
+                "government fee",
+                "cost",
+                "payment",
+            }
+        )
+    if doc_type in {"legal_act", "legal_rules", "faq_preamble"}:
+        aliases.update(
+            {
+                "law",
+                "legal rule",
+                "registration rule",
+                "legal requirement",
+                "act",
+            }
+        )
+    if doc_type == "faq":
+        aliases.update({"FAQ", "question answer", "common question", "citizen question"})
+    if "ওয়েবসাইট" in text or "ওয়েবসাইট" in text or "website" in text_lc:
+        aliases.update({"website", "online portal", "service portal"})
+    if "যাচাই" in text:
+        aliases.update({"verify certificate", "certificate verification", "registration verification"})
+    if "পিতা" in text or "মাতা" in text or "parent" in text_lc:
+        aliases.update({"parent information", "father mother information", "parents registration"})
+    if "নিবন্ধক" in text or "কার্যালয়" in text or "office" in text_lc:
+        aliases.update({"registration office", "registrar office", "local government office"})
+
+    return ", ".join(sorted(aliases, key=str.lower))
 
 
 def classify_markdown(path: Path, metadata: dict[str, str], body: str) -> str:
