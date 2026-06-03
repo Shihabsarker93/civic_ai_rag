@@ -1,0 +1,514 @@
+[
+  {
+    "id": "process_step_1",
+    "category": "application_process",
+    "subcategory": "steps",
+    "question": "What is the first step to get an e-Passport?",
+    "answer": "Check if the new e-Passport is already available in your area by finding a functional e-Passport office near you.",
+    "tags": ["steps", "getting started", "e-passport offices"]
+  },
+  {
+    "id": "process_step_2",
+    "category": "application_process",
+    "subcategory": "steps",
+    "question": "What is the second step to get an e-Passport?",
+    "answer": "Fill in your e-Passport application online through the official e-Passport portal.",
+    "tags": ["steps", "online application", "getting started"]
+  },
+  {
+    "id": "process_step_3",
+    "category": "application_process",
+    "subcategory": "steps",
+    "question": "What is the third step to get an e-Passport?",
+    "answer": "Pay the passport fees either online through 'ekpay' or offline at any government or private bank through A-Challan.",
+    "tags": ["steps", "fees", "payment"]
+  },
+  {
+    "id": "process_step_4",
+    "category": "application_process",
+    "subcategory": "steps",
+    "question": "What is the fourth step to get an e-Passport?",
+    "answer": "Visit your designated passport office for biometric enrolment. Make sure you bring all required documents.",
+    "tags": ["steps", "biometric", "enrolment", "documents"]
+  },
+  {
+    "id": "process_step_5",
+    "category": "application_process",
+    "subcategory": "steps",
+    "question": "What is the fifth and final step to get an e-Passport?",
+    "answer": "Collect your e-Passport at the passport office using the delivery slip you received during biometric enrolment.",
+    "tags": ["steps", "collection", "delivery slip"]
+  },
+  {
+    "id": "offices_list",
+    "category": "offices",
+    "subcategory": "functional offices",
+    "question": "Which e-Passport offices are currently functional in Bangladesh?",
+    "answer": "The following 72 e-Passport offices are currently functional: Agargaon, Jatrabari, Uttara, Dhaka Cantonment, Bangladesh Secretariat, Gazipur, Mansurabad, Mymensingh, Ministry of Foreign Affairs, Gaibandha, Gopalganj, Manikganj, Narsingdi, Noakhali, Feni, Chandgaon, Comilla, Munshiganj, Sylhet, Moulovibazar, Sunamganj, Habiganj, Jashore, Khulna, Kushtia, Brahmanbaria, Rajshahi, Chapainawabganj, Bogura, Rangpur, Dinajpur, Naogaon, Joypurhat, Barishal, Patuakhali, Pabna, Sirajganj, Kishoreganj, Natore, Magura, Norail, Lakshmipur, Tangail, Jamalpur, Sherpur, Netrokona, Madaripur, Faridpur, Rajbari, Jhenidah, Satkhira, Bagerhat, Bhola, Barguna, Chuadanga, Jhalokathi, Kurigram, Lalmonirhat, Meherpur, Nilphamari, Panchagarh, Pirojpur, Shariatpur, Thakurgaon, Bandarban, Chandpur, Cox's Bazar, Khagrachhari, Narayanganj, Rangamati, Dhaka East (Aftab Nagar), Dhaka West (Mohammadpur).",
+    "tags": ["offices", "locations", "functional offices"]
+  },
+  {
+    "id": "narayanganj_office",
+    "category": "offices",
+    "subcategory": "office updates",
+    "question": "Has the Narayanganj Regional Passport Office resumed operations?",
+    "answer": "Yes. From 1 May 2025, the Narayanganj Regional Passport Office resumed operations. Applications from Narayanganj District submitted after this date are processed by the Narayanganj office. For applications where biometrics were already completed before 1 May 2025, the remaining steps are handled by Keraniganj, Munshiganj, or Narsingdi Passport Offices. For applications where biometrics were not yet done before that date, all steps including biometric enrolment are handled by the Narayanganj office.",
+    "tags": ["narayanganj", "office update", "biometric", "enrolment"]
+  },
+  {
+    "id": "dhaka_cantonment_jurisdiction",
+    "category": "offices",
+    "subcategory": "jurisdiction",
+    "question": "What are the jurisdiction rules for Dhaka Cantonment Passport Office?",
+    "answer": "The jurisdictions of Agargaon Divisional Passport Office and Dhaka Cantonment Passport Office have been redistributed. Agargaon covers: Sher-e-Bangla Nagar, Mirpur, Kafrul, Rupnagar, Gulshan, Banani, Shahbag, Dhanmondi, Kalabagan, Ramna, Tejgaon, Tejgaon Industrial Area, and Dhaka Cantonment (civilians only). Dhaka Cantonment Passport Office serves: (1) Military personnel serving in Dhaka Cantonment/Station and those on deputation in Dhaka, using GO/NOC. (2) Military personnel in other cantonments require a Government Order (GO) — NOC from other stations is not accepted. (3) Retired military personnel residing in Dhaka Cantonment, all DOHS in Dhaka, Jolshiri Abashon, or areas under Dhaka Cantonment Police Station. (4) Civilians under Ministry of Defense at Dhaka Station whose current address falls under any Dhaka city police station, with GO/NOC where applicable.",
+    "tags": ["dhaka cantonment", "agargaon", "jurisdiction", "military", "civilians"]
+  },
+  {
+    "id": "fees_bangladesh_48_5",
+    "category": "fees",
+    "subcategory": "inside bangladesh",
+    "question": "What is the fee for a 48-page, 5-year e-Passport inside Bangladesh?",
+    "answer": "For a 48-page e-Passport with 5 years validity inside Bangladesh (including 15% VAT): Regular delivery: TK 4,025 | Express delivery: TK 6,325 | Super Express delivery: TK 8,625.",
+    "tags": ["fees", "48 pages", "5 years", "inside bangladesh", "regular", "express", "super express"]
+  },
+  {
+    "id": "fees_bangladesh_48_10",
+    "category": "fees",
+    "subcategory": "inside bangladesh",
+    "question": "What is the fee for a 48-page, 10-year e-Passport inside Bangladesh?",
+    "answer": "For a 48-page e-Passport with 10 years validity inside Bangladesh (including 15% VAT): Regular delivery: TK 5,750 | Express delivery: TK 8,050 | Super Express delivery: TK 10,350.",
+    "tags": ["fees", "48 pages", "10 years", "inside bangladesh", "regular", "express", "super express"]
+  },
+  {
+    "id": "fees_bangladesh_64_5",
+    "category": "fees",
+    "subcategory": "inside bangladesh",
+    "question": "What is the fee for a 64-page, 5-year e-Passport inside Bangladesh?",
+    "answer": "For a 64-page e-Passport with 5 years validity inside Bangladesh (including 15% VAT): Regular delivery: TK 6,325 | Express delivery: TK 8,625 | Super Express delivery: TK 12,075.",
+    "tags": ["fees", "64 pages", "5 years", "inside bangladesh", "regular", "express", "super express"]
+  },
+  {
+    "id": "fees_bangladesh_64_10",
+    "category": "fees",
+    "subcategory": "inside bangladesh",
+    "question": "What is the fee for a 64-page, 10-year e-Passport inside Bangladesh?",
+    "answer": "For a 64-page e-Passport with 10 years validity inside Bangladesh (including 15% VAT): Regular delivery: TK 8,050 | Express delivery: TK 10,350 | Super Express delivery: TK 13,800.",
+    "tags": ["fees", "64 pages", "10 years", "inside bangladesh", "regular", "express", "super express"]
+  },
+  {
+    "id": "fees_mission_general_48_5",
+    "category": "fees",
+    "subcategory": "bangladesh mission general applicants",
+    "question": "What is the fee for a 48-page, 5-year e-Passport at a Bangladesh Mission abroad (general applicants)?",
+    "answer": "For general applicants at Bangladesh Missions abroad, a 48-page e-Passport with 5 years validity costs: Regular delivery: USD 100 | Express delivery: USD 150.",
+    "tags": ["fees", "mission", "abroad", "general", "48 pages", "5 years"]
+  },
+  {
+    "id": "fees_mission_general_48_10",
+    "category": "fees",
+    "subcategory": "bangladesh mission general applicants",
+    "question": "What is the fee for a 48-page, 10-year e-Passport at a Bangladesh Mission abroad (general applicants)?",
+    "answer": "For general applicants at Bangladesh Missions abroad, a 48-page e-Passport with 10 years validity costs: Regular delivery: USD 125 | Express delivery: USD 175.",
+    "tags": ["fees", "mission", "abroad", "general", "48 pages", "10 years"]
+  },
+  {
+    "id": "fees_mission_general_64_5",
+    "category": "fees",
+    "subcategory": "bangladesh mission general applicants",
+    "question": "What is the fee for a 64-page, 5-year e-Passport at a Bangladesh Mission abroad (general applicants)?",
+    "answer": "For general applicants at Bangladesh Missions abroad, a 64-page e-Passport with 5 years validity costs: Regular delivery: USD 150 | Express delivery: USD 200.",
+    "tags": ["fees", "mission", "abroad", "general", "64 pages", "5 years"]
+  },
+  {
+    "id": "fees_mission_general_64_10",
+    "category": "fees",
+    "subcategory": "bangladesh mission general applicants",
+    "question": "What is the fee for a 64-page, 10-year e-Passport at a Bangladesh Mission abroad (general applicants)?",
+    "answer": "For general applicants at Bangladesh Missions abroad, a 64-page e-Passport with 10 years validity costs: Regular delivery: USD 175 | Express delivery: USD 225.",
+    "tags": ["fees", "mission", "abroad", "general", "64 pages", "10 years"]
+  },
+  {
+    "id": "fees_mission_labor_student_48_5",
+    "category": "fees",
+    "subcategory": "bangladesh mission labor and students",
+    "question": "What is the fee for a 48-page, 5-year e-Passport at a Bangladesh Mission abroad for laborers or students?",
+    "answer": "For laborers and students at Bangladesh Missions abroad, a 48-page e-Passport with 5 years validity costs: Regular delivery: USD 30 | Express delivery: USD 45.",
+    "tags": ["fees", "mission", "abroad", "labor", "student", "48 pages", "5 years"]
+  },
+  {
+    "id": "fees_mission_labor_student_48_10",
+    "category": "fees",
+    "subcategory": "bangladesh mission labor and students",
+    "question": "What is the fee for a 48-page, 10-year e-Passport at a Bangladesh Mission abroad for laborers or students?",
+    "answer": "For laborers and students at Bangladesh Missions abroad, a 48-page e-Passport with 10 years validity costs: Regular delivery: USD 50 | Express delivery: USD 75.",
+    "tags": ["fees", "mission", "abroad", "labor", "student", "48 pages", "10 years"]
+  },
+  {
+    "id": "fees_govt_employee_benefit",
+    "category": "fees",
+    "subcategory": "government employees",
+    "question": "Do government employees with NOC or retirement documents get any fee benefits?",
+    "answer": "Yes. Government employees who have a No Objection Certificate (NOC) or retirement document (PRL) receive the following benefits: Express delivery service at Regular fee rates, and Super Express delivery service at Express fee rates.",
+    "tags": ["fees", "government employee", "NOC", "PRL", "discount", "express"]
+  },
+  {
+    "id": "delivery_timeframes",
+    "category": "fees",
+    "subcategory": "delivery times",
+    "question": "How long does e-Passport delivery take?",
+    "answer": "Delivery timeframes from the biometric enrolment date are: Regular delivery: within 15 working days (21 calendar days) | Express delivery: within 7 working days (10 calendar days) | Super Express delivery: within 2 working days.",
+    "tags": ["delivery", "timeframe", "regular", "express", "super express", "how long"]
+  },
+  {
+    "id": "payment_methods",
+    "category": "payment",
+    "subcategory": "payment options",
+    "question": "How can I pay for the e-Passport?",
+    "answer": "e-Passport fees can be paid in two ways: (1) Online through 'ekpay' — accepted payment options include VISA, MasterCard, American Express, bKash, Nagad, Rocket, Upay, Dmoney, OK Wallet, Bank Asia, BRAC Bank, EBL, City Bank, UCB, AB Bank, DBBL, Midland Bank, MBL Rainbow. (2) Offline at any government or private scheduled bank through A-Challan.",
+    "tags": ["payment", "online", "offline", "bkash", "nagad", "bank", "ekpay", "challan"]
+  },
+  {
+    "id": "payment_issues",
+    "category": "payment",
+    "subcategory": "payment problems",
+    "question": "I had an issue with online payment. What should I do?",
+    "answer": "If payment was deducted but the status shows 'failed': contact your bank for a refund. Once refunded, delete your application and submit a new one. If no payment was deducted and status shows 'failed': either switch to the offline payment option or delete the application and try again with a new application.",
+    "tags": ["payment", "failed", "issue", "refund", "online payment problem"]
+  },
+  {
+    "id": "required_documents_general",
+    "category": "documents",
+    "subcategory": "required documents",
+    "question": "What documents do I need to bring for e-Passport enrolment?",
+    "answer": "Standard documents required for e-Passport enrolment: (1) Printed application form and summary slip. (2) NID card or Birth Certificate (original). (3) Previous passport, if you have one. (4) For applicants under 18: online birth registration certificate and father/mother's NID. (5) For applicants under 6 years: one 3R-size photo. (6) Payment slip (for offline payment only). Additional documents may be needed if your data has changed from the previous passport (e.g., address, marital status, profession).",
+    "tags": ["documents", "enrolment", "NID", "birth certificate", "required", "checklist"]
+  },
+  {
+    "id": "required_documents_retired_govt",
+    "category": "documents",
+    "subcategory": "retired government employee",
+    "question": "I have retired from government service. What documents do I need for e-Passport enrolment?",
+    "answer": "Retired government employees must bring the following documents to the passport office for enrolment: (1) PRL Order copy. (2) NID. (3) Previous Passport (original). (4) Hard copy of the Application Form. (5) Print Summary (appointment copy). (6) Payment Slip.",
+    "tags": ["documents", "retired", "government", "PRL", "enrolment", "checklist"]
+  },
+  {
+    "id": "documents_data_changed",
+    "category": "documents",
+    "subcategory": "data changes",
+    "question": "My information has changed since my previous passport. What extra documents do I need?",
+    "answer": "Submit your most recent information in the e-Passport application. Depending on what changed, you must provide supporting documents: Change of profession: professional certificate or student ID. Change of marital status: marriage certificate. Change of name, date of birth, place of birth, or parent's name: NID/BRC, previous passport (if available), and other relevant official documents. These are verified at the passport office during enrolment and may require additional processing time.",
+    "tags": ["documents", "data change", "name change", "marital status", "profession", "correction"]
+  },
+  {
+    "id": "documents_collect_passport",
+    "category": "documents",
+    "subcategory": "passport collection",
+    "question": "What documents do I need to collect my new passport?",
+    "answer": "To collect a new passport you need: (a) Delivery Slip received during biometric enrolment. (b) If collecting for a child under 12, bring your own NID or passport. (c) If someone else is collecting on your behalf, provide them with a signed authorization letter — the authorized person must also carry their own NID. (d) Previous passport, if this is a re-issue.",
+    "tags": ["collection", "documents", "delivery slip", "authorization", "re-issue"]
+  },
+  {
+    "id": "appointment_schedule",
+    "category": "appointments",
+    "subcategory": "scheduling",
+    "question": "How can I schedule an appointment at the passport office?",
+    "answer": "Appointments are available for online applications only. At the end of the online application process, you can view available time slots and choose one that suits you. This reduces waiting time at the passport office. Make sure to arrive at the passport office on time for your reserved appointment slot.",
+    "tags": ["appointment", "schedule", "online", "booking", "time slot"]
+  },
+  {
+    "id": "appointment_cancel_reschedule",
+    "category": "appointments",
+    "subcategory": "cancel or reschedule",
+    "question": "Can I cancel or reschedule my passport office appointment?",
+    "answer": "Yes. Sign in to your e-Passport Online Portal account and go to 'My Applications'. You will see all applications with scheduled appointments. Open the relevant application and you can cancel or reschedule from the application summary page. Note: cancelling an appointment for one application in an account will cancel all appointments linked to that account.",
+    "tags": ["appointment", "cancel", "reschedule", "change", "online portal"]
+  },
+  {
+    "id": "appointment_no_slot",
+    "category": "appointments",
+    "subcategory": "no slots available",
+    "question": "I cannot find an available appointment at my passport office. What can I do?",
+    "answer": "Check the appointment schedule frequently on the e-Passport portal, as new slots are added regularly. Passport offices are continuously working to expand capacity.",
+    "tags": ["appointment", "no slot", "unavailable", "waiting", "capacity"]
+  },
+  {
+    "id": "appointment_pdf_form",
+    "category": "appointments",
+    "subcategory": "pdf form",
+    "question": "Can I schedule an online appointment if I am using a PDF application form instead of the online form?",
+    "answer": "No. Online appointment scheduling is only available for online applications. You must submit your application through the e-Passport online portal to be able to book an appointment.",
+    "tags": ["appointment", "PDF form", "online application", "scheduling"]
+  },
+  {
+    "id": "account_forgot_password",
+    "category": "account",
+    "subcategory": "password",
+    "question": "I forgot my online application account password. What should I do?",
+    "answer": "Use the password recovery function: go to the account sign-in page, click the 'Forgot password' link, enter your email address, then check your email for a recovery message and follow the instructions.",
+    "tags": ["account", "password", "forgot", "reset", "recovery"]
+  },
+  {
+    "id": "account_change_mobile",
+    "category": "account",
+    "subcategory": "mobile number",
+    "question": "Can I change the mobile number registered in my e-Passport online account?",
+    "answer": "Yes. Sign in to your e-Passport online account, click on the account name, and select 'Account data'. From there you can activate or deactivate SMS notifications and enter a new mobile number. Note: each mobile number can only be linked to one e-Passport account.",
+    "tags": ["account", "mobile number", "change", "SMS", "notification"]
+  },
+  {
+    "id": "account_change_email",
+    "category": "account",
+    "subcategory": "email",
+    "question": "Can I change the email address for my e-Passport online account?",
+    "answer": "No. The email address used to register your e-Passport account cannot be changed. If you have issues with your existing email, you can create a new account on the e-Passport portal using a different email address.",
+    "tags": ["account", "email", "change", "not possible"]
+  },
+  {
+    "id": "account_activation_email",
+    "category": "account",
+    "subcategory": "activation",
+    "question": "I did not receive my account activation email. What should I do?",
+    "answer": "Check your spam/junk folder first, as activation emails sometimes get filtered there. Also verify that you entered your email address correctly during registration — a misspelling is a common cause. If the email address was wrong, start the account creation process again with the correct email.",
+    "tags": ["account", "activation", "email", "not received", "spam"]
+  },
+  {
+    "id": "account_no_email",
+    "category": "account",
+    "subcategory": "no email address",
+    "question": "I don't have an email address. Can I still apply online for an e-Passport?",
+    "answer": "An email address is required for the online e-Passport application. If you don't have one, you can create a free email account through Google (Gmail) or Yahoo before starting your application.",
+    "tags": ["account", "email", "no email", "gmail", "yahoo", "create account"]
+  },
+  {
+    "id": "application_mrp_form",
+    "category": "application",
+    "subcategory": "application form",
+    "question": "Can I use the MRP application form to apply for an e-Passport?",
+    "answer": "No. e-Passport applications must be submitted through the e-Passport online portal only. The old MRP application form cannot be used.",
+    "tags": ["application", "MRP form", "online", "not allowed"]
+  },
+  {
+    "id": "application_existing_mrp",
+    "category": "application",
+    "subcategory": "existing MRP holders",
+    "question": "I already have a Machine Readable Passport (MRP). How do I apply for an e-Passport?",
+    "answer": "If you have an existing MRP, fill in the complete online e-Passport application form — there is no auto-fill from your MRP data. After submitting, visit the passport office for biometric enrolment with your MRP, NID/BRC, and all other required documents. Having an existing MRP may also exempt you from an additional Special Branch Police clearance — confirm this at the passport office during enrolment.",
+    "tags": ["MRP", "existing passport", "upgrade", "e-passport", "application"]
+  },
+  {
+    "id": "application_mrp_validity_cancel",
+    "category": "application",
+    "subcategory": "MRP validity",
+    "question": "Can I get an e-Passport even if my MRP still has validity remaining? What happens to the MRP?",
+    "answer": "Yes, you can apply for an e-Passport even if your current MRP has not yet expired. However, once the new e-Passport is issued, your previous MRP will be automatically cancelled in the system and can no longer be used.",
+    "tags": ["MRP", "validity", "cancel", "e-passport", "still valid"]
+  },
+  {
+    "id": "application_name_fields",
+    "category": "application",
+    "subcategory": "name fields",
+    "question": "How do I fill in the Given Name and Surname fields in the e-Passport application?",
+    "answer": "Fill in Given Name and Surname as follows based on the number of parts in your name: Single part name (e.g., 'Bakar'): Given Name: [blank], Surname: Bakar. Two-part name (e.g., 'Md Bakar'): Option 1 — Given Name: Md, Surname: Bakar. Option 2 — Given Name: [blank], Surname: Md Bakar. Three-part name (e.g., 'Md Abu Bakar'): Option 1 — Given Name: Md Abu, Surname: Bakar. Option 2 — Given Name: Md, Surname: Abu Bakar. Four-part name (e.g., 'Md Abu Bakar Siddique'): Option 1 — Given Name: Md Abu Bakar, Surname: Siddique. Option 2 — Given Name: Md Abu, Surname: Bakar Siddique. Option 3 — Given Name: Md, Surname: Abu Bakar Siddique.",
+    "tags": ["application", "name", "given name", "surname", "fill in", "how to"]
+  },
+  {
+    "id": "application_address_changed",
+    "category": "application",
+    "subcategory": "address change",
+    "question": "My present address has changed from my previous passport. Where do I apply?",
+    "answer": "Enter your new current address in the e-Passport online application. The system will automatically detect which passport office is responsible for your area based on the address you enter. You can only apply at that automatically assigned office.",
+    "tags": ["address", "changed", "which office", "application", "present address"]
+  },
+  {
+    "id": "application_mistakes_submitted",
+    "category": "application",
+    "subcategory": "errors in application",
+    "question": "I made a mistake in my application after submitting it. What can I do?",
+    "answer": "Visit your passport office with the printed 'Application Summary'. The enrolment officer can locate your application and correct the incorrect data. Bring supporting documents such as NID, BRC, and previous passport (if available) to prove the correct information. If you also paid the fees under the wrong name (online or bank payment), the passport office can handle this too, though a specific clearance will be required which may take additional time.",
+    "tags": ["mistake", "error", "submitted", "correction", "wrong name", "fix application"]
+  },
+  {
+    "id": "photos_required",
+    "category": "application",
+    "subcategory": "photos",
+    "question": "Do I need to bring photos for e-Passport enrolment?",
+    "answer": "For most applicants, no photo is required — the face image is captured digitally at the passport office during enrolment. Exceptions: (1) Children under 6 years: parents must provide a 3R-size photo on a grey background, which will be scanned during enrolment. (2) Applicants under 15 years: both parents must submit their own photos with the application.",
+    "tags": ["photos", "photo required", "children", "minor", "3R", "enrolment"]
+  },
+  {
+    "id": "biometric_age_requirement",
+    "category": "enrolment",
+    "subcategory": "biometric",
+    "question": "From what age is biometric data collected for e-Passport?",
+    "answer": "From 15 October 2023, biometric data (fingerprints and iris scan) is collected from all citizens above 6 years of age during e-Passport enrolment.",
+    "tags": ["biometric", "age", "fingerprint", "iris", "children", "enrolment"]
+  },
+  {
+    "id": "status_check",
+    "category": "status",
+    "subcategory": "check status",
+    "question": "How can I check the status of my e-Passport application?",
+    "answer": "You can check your application status online through the e-Passport portal's Status Check page. Enter your Application ID (or Online Registration ID) and your date of birth to see the current status. The Application ID is printed on the delivery slip you received after biometric enrolment. You can also view all your application statuses by logging into your online portal account.",
+    "tags": ["status", "check", "application ID", "online portal", "track"]
+  },
+  {
+    "id": "status_pending_backend",
+    "category": "status",
+    "subcategory": "pending verification",
+    "question": "My passport status shows 'Pending for Backend Verification'. What should I do?",
+    "answer": "Contact your designated Regional Passport Office (RPO) directly for further assistance.",
+    "tags": ["status", "pending", "backend verification", "RPO", "contact"]
+  },
+  {
+    "id": "status_browser_issue",
+    "category": "status",
+    "subcategory": "technical issue",
+    "question": "I keep getting an error saying 'Application ID required' even though I entered it. What do I do?",
+    "answer": "Clear your browser's cache and cookies and try again.",
+    "tags": ["status", "browser", "cache", "cookies", "error", "technical"]
+  },
+  {
+    "id": "delivery_upgrade_express",
+    "category": "delivery",
+    "subcategory": "upgrade delivery",
+    "question": "Can I upgrade to express delivery after my e-Passport enrolment is done?",
+    "answer": "Yes, as long as your passport application is still being processed and has not yet been produced. First check your current status on the online portal. If eligible, pay the additional fee amount at one of the supported banks (even if your initial payment was made online). Then visit the passport office with: (1) your e-Passport Delivery Slip (received during enrolment), and (2) the supplemental payment slip from the bank.",
+    "tags": ["delivery", "upgrade", "express", "after enrolment", "additional fee"]
+  },
+  {
+    "id": "delivery_super_express_apply",
+    "category": "delivery",
+    "subcategory": "super express",
+    "question": "How do I apply for Super Express delivery?",
+    "answer": "During your online application, select 'Express' as the delivery type. Then pay the Super Express fee at the bank. When you visit the passport office for biometric enrolment, inform the operator — they can change your application to Super Express.",
+    "tags": ["super express", "delivery", "how to apply", "urgent", "enrolment"]
+  },
+  {
+    "id": "delivery_lost_slip",
+    "category": "delivery",
+    "subcategory": "lost delivery slip",
+    "question": "I lost my delivery slip. How can I collect my passport?",
+    "answer": "Bring the following to the passport office: (1) Print Summary (appointment copy), (2) your NID, and (3) a photocopy of your delivery slip if possible.",
+    "tags": ["lost", "delivery slip", "collection", "passport office", "NID"]
+  },
+  {
+    "id": "delivery_different_city",
+    "category": "delivery",
+    "subcategory": "collection location",
+    "question": "I applied for my passport in Chittagong. Can I collect it from Dhaka?",
+    "answer": "No. You must collect your passport from the office mentioned on your Delivery Slip — that is the regional or divisional office assigned to your application. Exception: Super Express passports must be collected from Agargaon Divisional Passport Office.",
+    "tags": ["collection", "location", "different city", "chittagong", "dhaka", "super express"]
+  },
+  {
+    "id": "validity_5_or_10_years",
+    "category": "validity",
+    "subcategory": "passport validity",
+    "question": "How long is an e-Passport valid for?",
+    "answer": "e-Passports are issued with a validity of either 5 years or 10 years, depending on the option chosen during application.",
+    "tags": ["validity", "5 years", "10 years", "expiry", "how long"]
+  },
+  {
+    "id": "validity_under_18",
+    "category": "validity",
+    "subcategory": "minor passport",
+    "question": "Can someone under 18 years old get a 10-year e-Passport?",
+    "answer": "No. Anyone under 18 years of age can only get an e-Passport with a 5-year validity.",
+    "tags": ["validity", "minor", "under 18", "10 years", "not allowed", "5 years only"]
+  },
+  {
+    "id": "reissue_when",
+    "category": "validity",
+    "subcategory": "re-issue",
+    "question": "When should I re-issue my e-Passport?",
+    "answer": "You can re-issue your passport either before or after the expiry date, based on your needs. Simply mention your previous passport number when applying for the new one.",
+    "tags": ["re-issue", "renew", "expired", "before expiry", "validity"]
+  },
+  {
+    "id": "reissue_expiry_fee",
+    "category": "validity",
+    "subcategory": "expiry fee",
+    "question": "Is there a fee for an expired passport?",
+    "answer": "No. There is no fee charged for the expiry of a passport. Only the standard government-prescribed fees apply when re-issuing or renewing a passport.",
+    "tags": ["fee", "expired", "expiry", "no extra fee", "re-issue"]
+  },
+  {
+    "id": "reissue_previous_number",
+    "category": "validity",
+    "subcategory": "previous passport number",
+    "question": "How important is it to provide my previous passport number?",
+    "answer": "It is mandatory. Without declaring your previous passport number, the passport issuance process cannot be completed.",
+    "tags": ["previous passport", "passport number", "mandatory", "re-issue", "important"]
+  },
+  {
+    "id": "nid_requirement_age",
+    "category": "documents",
+    "subcategory": "NID requirement",
+    "question": "I am 21 years old and do not have an NID card. Can I apply with my birth registration?",
+    "answer": "No. If you are above 20 years of age, you must obtain an NID card and use it for your passport application. Birth registration alone is not sufficient.",
+    "tags": ["NID", "birth registration", "age", "21 years", "required"]
+  },
+  {
+    "id": "nid_update_passport",
+    "category": "documents",
+    "subcategory": "NID update",
+    "question": "I updated my NID information. How do I update my passport accordingly?",
+    "answer": "You must apply for a new e-Passport based on your updated NID information.",
+    "tags": ["NID", "update", "correction", "new passport", "re-apply"]
+  },
+  {
+    "id": "collection_minors",
+    "category": "collection",
+    "subcategory": "minors",
+    "question": "Who can collect a passport on behalf of a minor?",
+    "answer": "For minors, either the father or mother must come in person to collect the passport. Alternatively, the person collecting on behalf of the minor must bring their own NID card and a signed authorization letter from the applicant's father or mother.",
+    "tags": ["collection", "minor", "child", "father", "mother", "authorization"]
+  },
+  {
+    "id": "collection_printing_error",
+    "category": "collection",
+    "subcategory": "printing error",
+    "question": "I found a printing error in my newly received passport. What should I do?",
+    "answer": "Report the error to your designated Regional Passport Office within 1 month from the date of issue or collection.",
+    "tags": ["printing error", "correction", "new passport", "regional office", "1 month"]
+  },
+  {
+    "id": "status_email_no_sms",
+    "category": "collection",
+    "subcategory": "notification",
+    "question": "I received an email notification to collect my passport but no SMS. Can I still collect it?",
+    "answer": "Yes. You can collect your passport with just the email notification.",
+    "tags": ["collection", "email", "SMS", "notification", "collect"]
+  },
+  {
+    "id": "lost_passport_number",
+    "category": "lost passport",
+    "subcategory": "lost e-passport",
+    "question": "I lost my e-Passport and don't remember my passport number. How can I find it?",
+    "answer": "Contact your designated passport office. To retrieve your previous e-Passport number, bring your NID and Birth Registration Certificate (BRC).",
+    "tags": ["lost passport", "passport number", "retrieve", "NID", "BRC"]
+  },
+  {
+    "id": "official_passport_prl",
+    "category": "official passport",
+    "subcategory": "LPR/PRL",
+    "question": "Can I use my official passport during my LPR/PRL period?",
+    "answer": "Yes. You can use your official passport throughout the duration of your LPR/PRL period.",
+    "tags": ["official passport", "LPR", "PRL", "government", "use", "valid"]
+  },
+  {
+    "id": "delay_reasons",
+    "category": "delays",
+    "subcategory": "passport delay",
+    "question": "What are common reasons for passport processing delays?",
+    "answer": "Common reasons for passport delays include: (1) Discrepancies between the NID/BRC/MRP and the application data. (2) Changes to personal information such as name, parent's name, date of birth, or permanent address. (3) Police verification process. (4) Undeclared multiple previous passports. (5) Applying for data corrections without providing the required supporting documents.",
+    "tags": ["delay", "reasons", "slow", "processing", "police verification", "discrepancy"]
+  },
+  {
+    "id": "photo_attestation",
+    "category": "application",
+    "subcategory": "photo attestation",
+    "question": "Do I need to attest my photograph for the e-Passport?",
+    "answer": "No. No attested photograph is required for the e-Passport application.",
+    "tags": ["photo", "attested", "attestation", "not required"]
+  }
+]

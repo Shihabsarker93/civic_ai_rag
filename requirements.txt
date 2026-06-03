@@ -1,0 +1,10 @@
+chromadb
+langchain
+langchain-ollama
+numpy
+pandas
+rank-bm25
+sentence-transformers
+scikit-learn
+torch
+transformers

@@ -1,0 +1,45 @@
+{
+  "data": {
+    "processed_faq_path": "domains/<domain-name>/data/processed/<domain>_rag_clean.json",
+    "chunk_output_path": "domains/<domain-name>/data/interim/<domain>_chunks.jsonl",
+    "chroma_persist_dir": "domains/<domain-name>/data/processed/chroma_<domain>_bge_m3",
+    "collection_name": "<domain>_chunks"
+  },
+  "embedding": {
+    "provider": "sentence_transformers",
+    "model": "BAAI/bge-m3",
+    "device": "cpu",
+    "normalize_embeddings": true,
+    "local_files_only": true
+  },
+  "retrieval": {
+    "top_k_dense": 10,
+    "top_k_bm25": 10,
+    "top_k_final": 8,
+    "rrf_k": 50,
+    "rrf_weights": {
+      "dense": 0.6,
+      "bm25": 0.4
+    }
+  },
+  "reranking": {
+    "enabled": true,
+    "model": "BAAI/bge-reranker-v2-m3",
+    "device": "cpu",
+    "local_files_only": true,
+    "top_k": 5,
+    "fallback": "lexical_overlap"
+  },
+  "generation": {
+    "ollama_base_url": "http://localhost:11434",
+    "default_model": "qwen2.5:7b",
+    "comparison_models": [
+      "llama3.2",
+      "llama3",
+      "qwen2.5:7b"
+    ],
+    "temperature": 0.1,
+    "top_p": 0.9,
+    "num_predict": 512
+  }
+}

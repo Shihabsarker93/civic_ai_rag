@@ -1,0 +1,13 @@
+# Generated retrieval artifacts
+data/interim/*.jsonl
+data/processed/chroma_*/
+domains/*/data/interim/*.jsonl
+domains/*/data/processed/chroma_*/
+
+# Local system files
+.DS_Store
+**/.DS_Store
+
+# Python caches
+__pycache__/
+*.py[cod]
