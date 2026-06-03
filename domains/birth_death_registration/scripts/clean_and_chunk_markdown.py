@@ -55,6 +55,11 @@ HOMEPAGE_STOP_LINES = {
     "সেবা সমূহ",
 }
 
+HTML_STOP_LINES = {
+    "### এক্সেসিবিলিটি",
+    "এক্সেসিবিলিটি",
+}
+
 
 @dataclass(frozen=True)
 class Section:
@@ -107,12 +112,20 @@ def should_truncate_homepage(line: str, metadata: dict[str, str]) -> bool:
     return plain in HOMEPAGE_STOP_LINES
 
 
+def should_truncate_html_boilerplate(line: str, metadata: dict[str, str]) -> bool:
+    source_file = metadata.get("source_file", "").lower()
+    if not source_file.endswith(".html"):
+        return False
+    plain = MARKDOWN_DECORATION_RE.sub("", line).strip()
+    return plain in HTML_STOP_LINES
+
+
 def clean_markdown_body(body: str, metadata: dict[str, str] | None = None) -> str:
     metadata = metadata or {}
     cleaned_lines = []
     for raw_line in body.splitlines():
         line = normalize_line(raw_line)
-        if should_truncate_homepage(line, metadata):
+        if should_truncate_homepage(line, metadata) or should_truncate_html_boilerplate(line, metadata):
             break
         if is_noise_line(line):
             continue
