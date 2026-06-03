@@ -5,11 +5,11 @@ This folder is for domain source files that are available but not yet active in 
 Current active domain:
 
 ```text
-domains/passport
+domains/birth_death_registration
 ```
 
 When a new domain is ready, create a feature branch and move its files into a proper domain folder:
 
 ```bash
-git checkout -b feature/add-brta-domain
+git checkout -b feature/add-new-domain
 ```

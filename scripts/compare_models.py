@@ -13,7 +13,7 @@ from src.pipeline import CivicRAGPipeline
 def main() -> None:
     parser = argparse.ArgumentParser(description="Compare local Ollama models on the same retrieved evidence.")
     parser.add_argument("query")
-    parser.add_argument("--config", default="domains/passport/config.json")
+    parser.add_argument("--config", default="domains/birth_death_registration/config.json")
     args = parser.parse_args()
 
     pipeline = CivicRAGPipeline(PROJECT_ROOT, PROJECT_ROOT / args.config)

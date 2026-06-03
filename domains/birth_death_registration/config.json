@@ -11,15 +11,15 @@
     "description": "Bangladeshi birth and death registration guidance, fees, FAQs, legal rules, and correction/application processes."
   },
   "data": {
-    "raw_markdown_dir": "domains/birth_death_registration/data/raw/processed",
-    "clean_markdown_dir": "domains/birth_death_registration/data/processed/clean_markdown",
+    "raw_json_dir": "domains/birth_death_registration/data/raw/json",
+    "raw_markdown_dir": "domains/birth_death_registration/data/raw/md",
     "chunk_output_path": "domains/birth_death_registration/data/interim/birth_death_chunks.jsonl",
     "chroma_persist_dir": "domains/birth_death_registration/data/processed/chroma_birth_death_bge_m3",
     "collection_name": "birth_death_registration_chunks"
   },
   "preprocessing": {
-    "remove_portal_navigation": true,
-    "min_chunk_chars": 220,
+    "skip_markdown_faq_duplicates": true,
+    "min_chunk_chars": 180,
     "max_chunk_chars": 1400,
     "overlap_paragraphs": 1
   },

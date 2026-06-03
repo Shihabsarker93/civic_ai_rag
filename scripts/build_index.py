@@ -11,37 +11,36 @@ from sentence_transformers import SentenceTransformer
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from src.chunking.faq_chunker import build_faq_chunks
-from src.ingestion.faq_loader import load_faq_records
-
-
 def load_config(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def write_jsonl(path: Path, rows: list[dict]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", encoding="utf-8") as file:
-        for row in rows:
-            file.write(json.dumps(row, ensure_ascii=False) + "\n")
+def load_chunks(path: Path) -> list[dict]:
+    if not path.exists():
+        raise FileNotFoundError(
+            f"Chunk file not found: {path}. "
+            "Run the domain chunk-preparation script before building the index."
+        )
+    chunks = [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
+    for index, chunk in enumerate(chunks):
+        if not {"id", "content", "metadata"}.issubset(chunk):
+            raise ValueError(f"Chunk {index} must contain id, content, and metadata")
+    return chunks
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Build the Civic.ai passport FAQ retrieval index.")
-    parser.add_argument("--config", default="domains/passport/config.json")
+    parser = argparse.ArgumentParser(description="Build a Civic.ai retrieval index from prepared domain chunks.")
+    parser.add_argument("--config", default="domains/birth_death_registration/config.json")
     args = parser.parse_args()
 
     config = load_config(PROJECT_ROOT / args.config)
     data_config = config["data"]
     embedding_config = config["embedding"]
 
-    faq_path = PROJECT_ROOT / data_config["processed_faq_path"]
     chunk_path = PROJECT_ROOT / data_config["chunk_output_path"]
     chroma_dir = PROJECT_ROOT / data_config["chroma_persist_dir"]
 
-    records = load_faq_records(faq_path)
-    chunks = build_faq_chunks(records)
-    write_jsonl(chunk_path, chunks)
+    chunks = load_chunks(chunk_path)
 
     model = SentenceTransformer(
         embedding_config["model"],
@@ -67,8 +66,7 @@ def main() -> None:
         embeddings=embeddings,
     )
 
-    print(f"Loaded FAQ records: {len(records)}")
-    print(f"Wrote chunks: {chunk_path}")
+    print(f"Loaded chunks: {len(chunks)}")
     print(f"Built Chroma collection: {data_config['collection_name']}")
     print(f"Chroma path: {chroma_dir}")
 

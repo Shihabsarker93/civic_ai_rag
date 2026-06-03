@@ -1,43 +1,45 @@
 # Birth and Death Registration Domain
 
-This domain contains Bangla government-service material for Bangladesh birth and death registration. The first imported dataset came from manually converted Markdown files created from mixed government sources: Bijoy PDFs, converted DOCX files, Unicode HTML pages, and scanned/source PDFs.
+This is the active Civic.ai thesis domain. It contains Bangla government-service material for Bangladesh birth and death registration, including FAQ JSON, cleaned Markdown guides, legal acts/rules, fee tables, application processes, correction instructions, and BDRIS support information.
 
 ## Current Source Mix
 
-The imported ZIP is not birth-only. It contains both birth-specific and shared birth/death registration material.
+The active raw dataset is the manually updated/corrected set under:
 
-Birth-focused files include:
+```text
+domains/birth_death_registration/data/raw/json/
+domains/birth_death_registration/data/raw/md/
+```
 
-- `birth_registration_application_process.md`
-- `birth_registration_application_process_02.md`
-- `application_for_birth_information_correction.md`
+No other domain data is part of the active repository state.
 
-Shared birth/death files include:
+## Chunking Strategy
 
-- `birth_and_death_registration_fees.md`
-- `faqs_on_birth_and_death_registration.md`
-- `faqs_on_birth_and_death_registration_02.md`
-- `know_this_01.md`
-- `birth_and_death_registration_act_2004.md`
-- `birth_and_death_registration_rules_2018.md`
-- `home_registrar_generals_office_birth_and_death_registration.md`
+This domain uses lightweight document-type-aware chunking:
 
-## Preprocessing
+- FAQ JSON: one Q/A pair per chunk; preamble as one context chunk.
+- Legal act/rules: one legal unit per `ধারা` or `বিধি`, with long sections split into smaller parts.
+- Fees: one full-table chunk plus row-level fee chunks.
+- Application/correction guides: section, step, and scenario chunks.
+- Portal/homepage content: only citizen-service/support sections are retained as chunks.
 
 Run:
 
 ```bash
-python3 domains/birth_death_registration/scripts/clean_and_chunk_markdown.py
+python3 domains/birth_death_registration/scripts/prepare_chunks.py
 ```
 
 This writes:
 
 ```text
-domains/birth_death_registration/data/processed/clean_markdown/
 domains/birth_death_registration/data/interim/birth_death_chunks.jsonl
 ```
 
-The cleaner removes obvious portal/navigation boilerplate, preserves YAML source metadata, and creates section-aware retrieval chunks with metadata for source file, URL, document type, service scope, language, heading, and chunk position.
+Build the vector index only after reviewing the prepared chunks:
+
+```bash
+python3 scripts/build_index.py --config domains/birth_death_registration/config.json
+```
 
 ## Metadata Strategy
 

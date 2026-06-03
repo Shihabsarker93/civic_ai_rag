@@ -36,19 +36,20 @@ def summarize(rows: list[dict]) -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Evaluate Simple RAG vs CivicRAG retrieval numerically.")
-    parser.add_argument("--config", default="domains/passport/config.json")
+    parser.add_argument("--config", default="domains/birth_death_registration/config.json")
+    parser.add_argument("--eval-file", required=True, help="JSON file containing question, expected_source_ids, and optional category.")
     parser.add_argument("--output-dir", default=None)
     args = parser.parse_args()
 
     pipeline = CivicRAGPipeline(PROJECT_ROOT, PROJECT_ROOT / args.config)
-    records = load_records(PROJECT_ROOT / pipeline.data_config["processed_faq_path"])
-    output_dir = PROJECT_ROOT / (args.output_dir or "domains/passport/data/evaluation")
+    records = load_records(Path(args.eval_file))
+    output_dir = PROJECT_ROOT / (args.output_dir or "domains/birth_death_registration/data/evaluation")
     output_dir.mkdir(parents=True, exist_ok=True)
 
     rows = []
     for record in records:
         query = record["question"]
-        expected_ids = {record["id"]}
+        expected_ids = set(record.get("expected_source_ids") or [record["expected_source_id"]])
 
         simple_results = pipeline.retriever.dense_only_search(query, top_k=5)
         civic_results = pipeline.retrieve(query, method="civic")
@@ -62,8 +63,8 @@ def main() -> None:
             rows.append(
                 {
                     "method": method,
-                    "question_id": record["id"],
-                    "category": record["category"],
+                    "question_id": record.get("id", ""),
+                    "category": record.get("category", ""),
                     "question": query,
                     "expected_source_ids": ",".join(sorted(expected_ids)),
                     "retrieved_ids": ",".join(retrieved_ids),

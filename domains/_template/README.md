@@ -15,7 +15,7 @@ domains/<domain-name>/
 Domains should be added in feature branches, for example:
 
 ```bash
-git checkout -b feature/add-brta-domain
+git checkout -b feature/add-new-domain
 git checkout -b feature/add-birth-certificate-domain
 ```
 

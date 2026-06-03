@@ -11,9 +11,9 @@ from src.pipeline import CivicRAGPipeline
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Query the Civic.ai passport RAG baseline.")
+    parser = argparse.ArgumentParser(description="Query the Civic.ai birth/death registration RAG pipeline.")
     parser.add_argument("query")
-    parser.add_argument("--config", default="domains/passport/config.json")
+    parser.add_argument("--config", default="domains/birth_death_registration/config.json")
     parser.add_argument("--model", default=None, help="Ollama model, e.g. llama3.2, llama3, qwen2.5:7b")
     parser.add_argument("--method", choices=["simple", "civic"], default="civic")
     parser.add_argument("--no-generate", action="store_true", help="Only show retrieved evidence.")
@@ -28,7 +28,12 @@ def main() -> None:
     for rank, result in enumerate(results, start=1):
         metadata = result["metadata"]
         print(f"{rank}. {result['id']} score={result['score']:.5f} via={','.join(result['retrievers'])}")
-        print(f"   category={metadata.get('category')} subcategory={metadata.get('subcategory')}")
+        print(
+            "   "
+            f"type={metadata.get('document_type')} "
+            f"scope={metadata.get('service_scope')} "
+            f"section={metadata.get('section_title', metadata.get('category', ''))}"
+        )
 
     if args.no_generate:
         return

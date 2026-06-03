@@ -35,7 +35,8 @@ def summarize(rows: list[dict]) -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Evaluate generated answers with numeric metrics.")
-    parser.add_argument("--config", default="domains/passport/config.json")
+    parser.add_argument("--config", default="domains/birth_death_registration/config.json")
+    parser.add_argument("--eval-file", required=True, help="JSON file containing question, expected_answer, and expected_source_id(s).")
     parser.add_argument("--models", nargs="+", default=None)
     parser.add_argument("--methods", nargs="+", choices=["simple", "civic"], default=["simple", "civic"])
     parser.add_argument("--limit", type=int, default=10)
@@ -43,17 +44,20 @@ def main() -> None:
     args = parser.parse_args()
 
     pipeline = CivicRAGPipeline(PROJECT_ROOT, PROJECT_ROOT / args.config)
-    records = load_records(PROJECT_ROOT / pipeline.data_config["processed_faq_path"])
+    records = load_records(Path(args.eval_file))
     records = records[: args.limit] if args.limit else records
     models = args.models or pipeline.generation_config["comparison_models"]
 
-    output_dir = PROJECT_ROOT / (args.output_dir or "domains/passport/data/evaluation")
+    output_dir = PROJECT_ROOT / (args.output_dir or "domains/birth_death_registration/data/evaluation")
     output_dir.mkdir(parents=True, exist_ok=True)
 
     rows = []
     for record in records:
-        expected_answer = record["answer"]
-        expected_source_id = record["id"]
+        expected_answer = record.get("expected_answer", record.get("answer", ""))
+        if not expected_answer:
+            raise ValueError("Each generation evaluation record must contain expected_answer or answer")
+        expected_source_ids = set(record.get("expected_source_ids") or [record["expected_source_id"]])
+        expected_source_id = sorted(expected_source_ids)[0]
         expected_embedding = pipeline.retriever.embedding_model.encode(
             [expected_answer],
             normalize_embeddings=True,
@@ -77,15 +81,15 @@ def main() -> None:
                         "model": model,
                         "method": method_label,
                         "question_id": expected_source_id,
-                        "category": record["category"],
+                        "category": record.get("category", ""),
                         "question": record["question"],
                         "expected_answer": expected_answer,
                         "generated_answer": answer,
                         "retrieved_ids": ",".join(retrieved_ids),
                         "semantic_similarity": cosine_similarity(np.asarray(answer_embedding), np.asarray(expected_embedding)),
                         "token_f1": token_f1(answer, expected_answer),
-                        "expected_source_retrieved": float(expected_source_id in retrieved_ids),
-                        "expected_source_cited": float(expected_source_id in answer),
+                        "expected_source_retrieved": float(bool(expected_source_ids.intersection(retrieved_ids))),
+                        "expected_source_cited": float(any(source_id in answer for source_id in expected_source_ids)),
                     }
                 )
 

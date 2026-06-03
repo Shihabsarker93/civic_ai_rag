@@ -22,7 +22,7 @@ HTML = """<!doctype html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Civic.ai Passport RAG</title>
+  <title>Civic.ai Birth/Death Registration RAG</title>
   <style>
     :root {
       --ink: #172033;
@@ -153,8 +153,8 @@ HTML = """<!doctype html>
   <div class="shell">
     <header>
       <div>
-        <h1>Civic.ai Passport RAG</h1>
-        <div class="sub">Local NextRAG-style chatbot over the processed passport FAQ dataset</div>
+        <h1>Civic.ai Birth/Death Registration RAG</h1>
+        <div class="sub">Local NextRAG-style chatbot over Bangladeshi birth and death registration documents</div>
       </div>
       <div class="controls">
         <select id="method" aria-label="RAG method">
@@ -173,7 +173,7 @@ HTML = """<!doctype html>
       <div>
         <div id="status" class="status">Ready</div>
         <form id="form">
-          <textarea id="query" placeholder="Ask about e-Passport fees, documents, offices, payment, delivery, correction..." required></textarea>
+          <textarea id="query" placeholder="Ask about birth registration, death registration, correction, fees, BDRIS, documents..." required></textarea>
           <button id="send" type="submit">Ask</button>
         </form>
       </div>
@@ -199,7 +199,7 @@ HTML = """<!doctype html>
           const item = document.createElement("div");
           item.className = "source";
           const metadata = source.metadata || {};
-          item.textContent = `${index + 1}. ${source.id} | ${metadata.category || "unknown"} / ${metadata.subcategory || "unknown"} | score ${Number(source.score || 0).toFixed(4)}`;
+          item.textContent = `${index + 1}. ${source.id} | ${metadata.document_type || "unknown"} | ${metadata.section_title || metadata.category || "source"} | score ${Number(source.score || 0).toFixed(4)}`;
           box.appendChild(item);
         });
         node.appendChild(box);
@@ -236,7 +236,7 @@ HTML = """<!doctype html>
       }
     });
 
-    addMessage("Ask a passport-service question and choose Simple RAG or CivicRAG (ours). The answer will show source IDs so you can compare retrieval behavior.", "bot");
+    addMessage("Ask a birth/death registration question and choose Simple RAG or CivicRAG (ours). The answer will show source IDs so you can compare retrieval behavior.", "bot");
   </script>
 </body>
 </html>
@@ -294,10 +294,10 @@ class ChatHandler(BaseHTTPRequestHandler):
 def main() -> None:
     import argparse
 
-    parser = argparse.ArgumentParser(description="Run the Civic.ai local passport RAG chatbot.")
+    parser = argparse.ArgumentParser(description="Run the Civic.ai local birth/death registration RAG chatbot.")
     parser.add_argument("--host", default="127.0.0.1")
     parser.add_argument("--port", type=int, default=7860)
-    parser.add_argument("--config", default="domains/passport/config.json")
+    parser.add_argument("--config", default="domains/birth_death_registration/config.json")
     args = parser.parse_args()
 
     ChatHandler.pipeline = CivicRAGPipeline(PROJECT_ROOT, PROJECT_ROOT / args.config)
