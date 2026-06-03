@@ -14,7 +14,9 @@ Accuracy comes before fluency. The system should answer from retrieved evidence,
 civic-ai-rag/
 ├── app.py                # Local web chatbot
 ├── domains/
-│   ├── passport/         # Current active domain
+│   ├── passport/         # Current active chatbot domain
+│   ├── birth_death_registration/
+│   │                       # Bangla birth/death registration corpus being prepared
 │   │   ├── config.json
 │   │   └── data/
 │   │       ├── raw/
@@ -137,6 +139,14 @@ domains/brta/config.json
 ```
 
 Do not create a separate repo for the new domain.
+
+The `birth_death_registration` domain is being added on `feature/add-birth-death-domain`. Its first preprocessing step is:
+
+```bash
+python3 domains/birth_death_registration/scripts/clean_and_chunk_markdown.py
+```
+
+This converts raw Markdown into cleaned Markdown and metadata-rich retrieval chunks. The source set is mixed birth/death registration material, not birth-only, so chunks use `service_scope` metadata such as `birth` and `birth_death`.
 
 ## Numeric Evaluation
 

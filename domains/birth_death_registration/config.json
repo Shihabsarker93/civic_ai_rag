@@ -1,0 +1,63 @@
+{
+  "domain": {
+    "id": "birth_death_registration",
+    "display_name": "Birth and Death Registration",
+    "primary_language": "bn",
+    "supported_languages": [
+      "bn",
+      "en",
+      "mixed"
+    ],
+    "description": "Bangladeshi birth and death registration guidance, fees, FAQs, legal rules, and correction/application processes."
+  },
+  "data": {
+    "raw_markdown_dir": "domains/birth_death_registration/data/raw/processed",
+    "clean_markdown_dir": "domains/birth_death_registration/data/processed/clean_markdown",
+    "chunk_output_path": "domains/birth_death_registration/data/interim/birth_death_chunks.jsonl",
+    "chroma_persist_dir": "domains/birth_death_registration/data/processed/chroma_birth_death_bge_m3",
+    "collection_name": "birth_death_registration_chunks"
+  },
+  "preprocessing": {
+    "remove_portal_navigation": true,
+    "min_chunk_chars": 220,
+    "max_chunk_chars": 1400,
+    "overlap_paragraphs": 1
+  },
+  "embedding": {
+    "provider": "sentence_transformers",
+    "model": "BAAI/bge-m3",
+    "device": "cpu",
+    "normalize_embeddings": true,
+    "local_files_only": true
+  },
+  "retrieval": {
+    "top_k_dense": 12,
+    "top_k_bm25": 12,
+    "top_k_final": 8,
+    "rrf_k": 50,
+    "rrf_weights": {
+      "dense": 0.55,
+      "bm25": 0.45
+    }
+  },
+  "reranking": {
+    "enabled": true,
+    "model": "BAAI/bge-reranker-v2-m3",
+    "device": "cpu",
+    "local_files_only": true,
+    "top_k": 5,
+    "fallback": "lexical_overlap"
+  },
+  "generation": {
+    "ollama_base_url": "http://localhost:11434",
+    "default_model": "llama3.2",
+    "comparison_models": [
+      "llama3.2",
+      "llama3",
+      "qwen2.5:7b"
+    ],
+    "temperature": 0.1,
+    "top_p": 0.9,
+    "num_predict": 512
+  }
+}
