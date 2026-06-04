@@ -249,7 +249,7 @@ def english_retrieval_aliases(doc_type: str, text: str, *, scope: str | None = N
             }
         )
 
-    if doc_type in {"application_process", "portal_summary", "general_guidance"}:
+    if doc_type in {"application_process", "portal_summary", "general_guidance", "guidelines_ocr"}:
         aliases.update(
             {
                 "আবেদন প্রক্রিয়া",
@@ -266,7 +266,7 @@ def english_retrieval_aliases(doc_type: str, text: str, *, scope: str | None = N
                 "citizen service",
             }
         )
-    if doc_type in {"correction_process"} or "সংশোধন" in text or "correction" in text_lc:
+    if doc_type in {"correction_process", "correction_notice_ocr"} or "সংশোধন" in text or "correction" in text_lc:
         aliases.update(
             {
                 "সংশোধন আবেদন",
@@ -278,6 +278,40 @@ def english_retrieval_aliases(doc_type: str, text: str, *, scope: str | None = N
                 "fix certificate information",
                 "amend registration information",
                 "name correction",
+            }
+        )
+    if "জন্ম তারিখ" in text or "date of birth" in text_lc:
+        aliases.update({"জন্ম তারিখ সংশোধন", "date of birth correction"})
+    if "জাতীয়তা" in text or "nationality" in text_lc:
+        aliases.update({"জাতীয়তা সংশোধন", "nationality correction"})
+    if "রেজিস্ট্রেশন তারিখ" in text or "registration date" in text_lc:
+        aliases.update({"রেজিস্ট্রেশন তারিখ সংশোধন", "registration date correction"})
+    if "ইস্যু তারিখ" in text or "issue date" in text_lc:
+        aliases.update({"ইস্যু তারিখ সংশোধন", "issue date correction"})
+    if "একাধিক" in text or "বাতিল" in text or "duplicate" in text_lc or "cancel" in text_lc:
+        aliases.update(
+            {
+                "একাধিক জন্ম সনদ বাতিল",
+                "একাধিক মৃত্যু সনদ বাতিল",
+                "ডুপ্লিকেট জন্ম সনদ বাতিল",
+                "duplicate certificate cancellation",
+                "cancel duplicate birth certificate",
+                "cancel duplicate death certificate",
+            }
+        )
+    if doc_type == "guidelines_ocr":
+        aliases.update(
+            {
+                "নির্দেশিকা",
+                "জন্ম ও মৃত্যু নিবন্ধন নির্দেশিকা",
+                "নিবন্ধকের দায়িত্ব",
+                "৪৫ দিনের মধ্যে নিবন্ধন",
+                "টাস্ক ফোর্স",
+                "registration guideline",
+                "birth and death registration guideline",
+                "registrar responsibility",
+                "register within 45 days",
+                "task force",
             }
         )
     if doc_type in {"fees_table", "fee_row"} or "ফি" in text:
@@ -318,6 +352,12 @@ def english_retrieval_aliases(doc_type: str, text: str, *, scope: str | None = N
 
 
 def classify_markdown(path: Path, metadata: dict[str, str], body: str) -> str:
+    document_type_hint = metadata.get("document_type_hint", "").strip()
+    if document_type_hint == "guidelines":
+        return "guidelines_ocr"
+    if document_type_hint == "correction_notice":
+        return "correction_notice_ocr"
+
     name_title = f"{path.name} {metadata.get('bengali_title', '')} {metadata.get('title', '')}".lower()
     heading = first_heading(body)
     if "faq" in name_title or "প্রশ্ন" in body[:500]:

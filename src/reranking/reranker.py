@@ -80,7 +80,14 @@ class HybridReranker:
             any(term in query for term in ["কীভাবে", "কিভাবে", "করতে পারি", "করবো", "করব", "আবেদন"])
             or any(term in query_lc for term in ["how", "apply", "application", "register", "registration"])
         ) and ("নিবন্ধন" in query or "registration" in query_lc or "certificate" in query_lc)
-        is_correction = "সংশোধন" in query or any(term in query_lc for term in ["correction", "correct", "fix", "amend"])
+        is_correction = (
+            any(term in query for term in ["সংশোধন", "বাতিল", "জাতীয়তা", "ইস্যু তারিখ", "রেজিস্ট্রেশন তারিখ"])
+            or any(term in query_lc for term in ["correction", "correct", "fix", "amend", "cancel", "nationality", "issue date"])
+        )
+        is_duplicate_cancel = (
+            any(term in query for term in ["একাধিক", "বাতিল"])
+            or any(term in query_lc for term in ["duplicate", "cancel"])
+        )
 
         rescored: list[RetrievalResult] = []
         for result in results:
@@ -108,8 +115,19 @@ class HybridReranker:
                 if any(term in section_title for term in ["যাচাই", "পরীক্ষা", "জমজ", "২০১৩", "বিদেশ", "প্রবাস", "বিশেষ"]):
                     score -= 0.04
 
-            if is_correction and doc_type == "correction_process":
+            if is_correction and doc_type in {"correction_process", "correction_notice_ocr"}:
                 score += 0.08
+                if is_duplicate_cancel:
+                    if doc_type == "correction_notice_ocr":
+                        score += 0.08
+                        if any(term in section_title for term in ["বাতিলের ধাপ", "বাতিলকরণের ধাপ", "বাতিল করার ধাপ"]):
+                            score += 0.12
+                        elif "বাতিল" in section_title:
+                            score += 0.05
+                        elif any(term in section_title for term in ["জাতীয়তা", "ইস্যু", "রেজিস্ট্রেশন তারিখ"]):
+                            score -= 0.06
+                    elif doc_type == "correction_process":
+                        score -= 0.03
 
             rescored.append(replace(result, score=score))
 

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 from typing import Any
 
@@ -19,9 +20,10 @@ class CivicRAGPipeline:
         self.reranking_config = self.config["reranking"]
         self.generation_config = self.config["generation"]
 
-        chunks = self._load_jsonl(project_root / self.data_config["chunk_output_path"])
+        self.chunks = self._load_jsonl(project_root / self.data_config["chunk_output_path"])
+        self.chunks_by_id = {str(chunk["id"]): chunk for chunk in self.chunks}
         self.retriever = HybridRetriever(
-            chunks=chunks,
+            chunks=self.chunks,
             chroma_dir=str(project_root / self.data_config["chroma_persist_dir"]),
             collection_name=self.data_config["collection_name"],
             embedding_model_name=self.embedding_config["model"],
@@ -54,7 +56,11 @@ class CivicRAGPipeline:
         selected_model = model or self.generation_config["default_model"]
         if generate:
             max_generation_contexts = self.generation_config.get("top_k_for_generation", len(contexts))
-            answer = self._generator(selected_model).answer(query, contexts[:max_generation_contexts])
+            generation_contexts = self._select_generation_contexts(query, contexts, max_generation_contexts)
+            answer = (
+                self._safe_extractive_answer(query, generation_contexts, normalized_method)
+                or self._generator(selected_model).answer(query, generation_contexts)
+            )
 
         return {
             "query": query,
@@ -103,6 +109,185 @@ class CivicRAGPipeline:
                 repeat_penalty=self.generation_config.get("repeat_penalty"),
             )
         return self._generators[model]
+
+    def _select_generation_contexts(
+        self,
+        query: str,
+        contexts: list[dict[str, Any]],
+        max_contexts: int,
+    ) -> list[dict[str, Any]]:
+        query_lc = query.lower()
+        is_procedure_query = (
+            any(term in query for term in ["কীভাবে", "কিভাবে", "করতে পারি", "করবো", "করব", "ধাপ", "আবেদন"])
+            or any(term in query_lc for term in ["how", "apply", "procedure", "process", "steps", "register"])
+        )
+        is_duplicate_cancel = (
+            any(term in query for term in ["একাধিক", "বাতিল"])
+            or any(term in query_lc for term in ["duplicate", "cancel"])
+        )
+        if is_duplicate_cancel:
+            notice_contexts = [
+                context
+                for context in contexts
+                if context["metadata"].get("document_type") == "correction_notice_ocr"
+            ]
+            if notice_contexts:
+                return notice_contexts[:max_contexts]
+        if is_procedure_query:
+            expanded = self._expanded_procedure_context(contexts)
+            if expanded:
+                remaining = [context for context in contexts if context["id"] != expanded["id"]]
+                return [expanded, *remaining[: max(max_contexts - 1, 0)]]
+        return contexts[:max_contexts]
+
+    def _safe_extractive_answer(
+        self,
+        query: str,
+        contexts: list[dict[str, Any]],
+        method: str,
+    ) -> str:
+        if method != "civic" or not contexts:
+            return ""
+        if not self._is_bangla_query(query) or not self._is_procedure_query(query):
+            return ""
+
+        top_context = contexts[0]
+        doc_type = top_context["metadata"].get("document_type")
+        if doc_type not in {"application_process", "correction_notice_ocr"}:
+            return ""
+
+        sections = self._extract_sections(top_context["content"])
+        if not sections:
+            return ""
+
+        if doc_type == "correction_notice_ocr":
+            sections = [
+                section
+                for section in sections
+                if any(term in section["title"] for term in ["ধাপ", "শর্ত"])
+            ] or sections[:2]
+
+        if doc_type == "application_process":
+            sections = [
+                section
+                for section in sections
+                if any(
+                    term in section["title"]
+                    for term in ["পূর্ব প্রস্তুতি", "ধাপ", "সংযুক্ত করতে হবে", "OTP", "পরবর্তী করণীয়"]
+                )
+            ]
+
+        if not sections:
+            return ""
+
+        lines: list[str] = []
+        for section in sections[:10]:
+            body = self._clean_evidence_body(section["body"])
+            if not body:
+                continue
+            if section["title"].startswith("ধাপ"):
+                lines.append(f"{section['title']}: {body}")
+            else:
+                lines.append(f"{section['title']}: {body}")
+
+        if not lines:
+            return ""
+
+        source_ids = [str(context["id"]) for context in contexts[:3]]
+        return "\n\n".join(lines).strip() + f"\n\nSources: {', '.join(source_ids)}"
+
+    @staticmethod
+    def _is_bangla_query(query: str) -> bool:
+        return bool(re.search(r"[\u0980-\u09FF]", query))
+
+    @staticmethod
+    def _is_procedure_query(query: str) -> bool:
+        query_lc = query.lower()
+        return (
+            any(term in query for term in ["কীভাবে", "কিভাবে", "করতে পারি", "করবো", "করব", "ধাপ", "আবেদন", "বাতিল"])
+            or any(term in query_lc for term in ["how", "apply", "procedure", "process", "steps", "register", "cancel"])
+        )
+
+    @staticmethod
+    def _extract_sections(content: str) -> list[dict[str, str]]:
+        blocks = re.split(r"\n\n(?=Service: )", content.strip())
+        sections: list[dict[str, str]] = []
+        for block in blocks:
+            title_match = re.search(r"(?m)^Section:\s*(.+)$", block)
+            body_match = re.search(r"(?s)^Content:\s*(.+)$", block, flags=re.MULTILINE)
+            if title_match and body_match:
+                sections.append(
+                    {
+                        "title": title_match.group(1).strip(),
+                        "body": body_match.group(1).strip(),
+                    }
+                )
+        return sections
+
+    @staticmethod
+    def _clean_evidence_body(body: str) -> str:
+        body = re.sub(r"\n-{3,}\s*$", "", body.strip())
+        body = re.sub(r"\n{3,}", "\n\n", body)
+        return body.strip()
+
+    def _expanded_procedure_context(self, contexts: list[dict[str, Any]]) -> dict[str, Any] | None:
+        seed = next(
+            (
+                context
+                for context in contexts
+                if context["metadata"].get("document_type") == "application_process"
+            ),
+            None,
+        )
+        if not seed:
+            return None
+
+        source_path = seed["metadata"].get("source_path")
+        if not source_path:
+            return None
+
+        sibling_chunks = [
+            chunk
+            for chunk in self.chunks
+            if chunk.get("metadata", {}).get("source_path") == source_path
+            and chunk.get("metadata", {}).get("document_type") == "application_process"
+        ]
+        if not sibling_chunks:
+            return None
+
+        def section_index(chunk: dict[str, Any]) -> int:
+            value = chunk.get("metadata", {}).get("section_index", 0)
+            try:
+                return int(value)
+            except (TypeError, ValueError):
+                return 0
+
+        useful_sections = []
+        for chunk in sorted(sibling_chunks, key=section_index):
+            section_title = str(chunk.get("metadata", {}).get("section_title", ""))
+            if any(
+                term in section_title
+                for term in [
+                    "পূর্ব প্রস্তুতি",
+                    "ধাপ",
+                    "সংযুক্ত করতে হবে",
+                    "OTP",
+                    "পরবর্তী করণীয়",
+                ]
+            ):
+                useful_sections.append(chunk)
+
+        if not useful_sections:
+            return None
+
+        expanded_content = "\n\n".join(str(chunk["content"]) for chunk in useful_sections)
+        expanded = dict(seed)
+        expanded["content"] = expanded_content
+        expanded["metadata"] = dict(seed["metadata"])
+        expanded["metadata"]["expanded_context"] = True
+        expanded["metadata"]["expanded_chunk_count"] = len(useful_sections)
+        expanded["metadata"]["expanded_from_source_path"] = str(source_path)
+        return expanded
 
     @staticmethod
     def _load_jsonl(path: Path) -> list[dict[str, Any]]:

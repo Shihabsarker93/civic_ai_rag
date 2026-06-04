@@ -19,6 +19,8 @@ If the requested answer language is Bangla, answer fully in natural Bangla and d
 Retrieval aliases are search hints only; do not treat them as factual evidence.
 Write a real answer first; never answer with only a source id.
 For how-to questions, give direct step-by-step instructions only; avoid legal background unless it is necessary.
+For website names, menu labels, buttons, URLs, dates, and office roles, copy the wording exactly from the evidence.
+Do not invent portal names, role names, or extra requirements that are not present in the evidence.
 Use at most 6 short bullets and avoid repeating the same point.
 Do not write meta commentary such as "based on the retrieved evidence" or "the correct answer is".
 Do not repeat headings, paragraphs, or bullet groups.
@@ -88,6 +90,12 @@ def remove_repeated_blocks(answer: str) -> str:
 
 def canonicalize_answer(answer: str, source_ids: list[str]) -> str:
     answer = SOURCE_LINE_PATTERN.sub("", answer).strip()
+    answer = re.sub(
+        r"(?m)^.*(?:এই প্রশ্নের উত্তর|প্রশ্নের উত্তর|retrieved evidence|সঠিক তথ্য চিহ্নিত).*?\n\n?",
+        "",
+        answer,
+        count=1,
+    ).strip()
     answer = remove_repeated_blocks(answer)
     if source_ids:
         answer = f"{answer}\n\nSources: {', '.join(source_ids)}"

@@ -58,9 +58,9 @@
     ],
     "temperature": 0.05,
     "top_p": 0.9,
-    "num_predict": 800,
+    "num_predict": 1200,
     "repeat_last_n": 256,
     "repeat_penalty": 1.18,
-    "top_k_for_generation": 4
+    "top_k_for_generation": 3
   }
 }
