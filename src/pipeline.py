@@ -57,10 +57,13 @@ class CivicRAGPipeline:
         if generate:
             max_generation_contexts = self.generation_config.get("top_k_for_generation", len(contexts))
             generation_contexts = self._select_generation_contexts(query, contexts, max_generation_contexts)
-            answer = (
-                self._safe_extractive_answer(query, generation_contexts, normalized_method)
-                or self._generator(selected_model).answer(query, generation_contexts)
-            )
+            answer = self._safe_extractive_answer(query, generation_contexts, normalized_method)
+            if not answer:
+                answer = self._safe_fee_answer(query, generation_contexts, normalized_method)
+            if not answer:
+                answer = self._generator(selected_model).answer(query, generation_contexts)
+                if self._violates_answer_language(query, answer):
+                    answer = self._fallback_evidence_answer(query, generation_contexts) or answer
 
         return {
             "query": query,
@@ -196,9 +199,103 @@ class CivicRAGPipeline:
         source_ids = [str(context["id"]) for context in contexts[:3]]
         return "\n\n".join(lines).strip() + f"\n\nSources: {', '.join(source_ids)}"
 
+    def _safe_fee_answer(
+        self,
+        query: str,
+        contexts: list[dict[str, Any]],
+        method: str,
+    ) -> str:
+        if method != "civic" or not contexts or not self._is_bangla_query(query) or not self._is_fee_query(query):
+            return ""
+
+        source_ids = [str(context["id"]) for context in contexts[:3]]
+        waiver_context = next(
+            (
+                context
+                for context in contexts
+                if context["metadata"].get("document_type") == "legal_rules"
+                and context["metadata"].get("section_title") == "ফিস"
+                and any(term in str(context.get("content", "")) for term in ["এতিম", "প্রতিবন্ধী", "সহায় সম্বলহীন", "সহায় সম্বলহীন"])
+            ),
+            None,
+        )
+        if self._is_fee_waiver_query(query) and waiver_context:
+            body = self._extract_labeled_value(str(waiver_context["content"]), "Content")
+            if body:
+                waiver_rule = re.split(r"\s*\(৫\)", body, maxsplit=1)[0].strip()
+                return (
+                    "সরাসরি সব ক্ষেত্রে ফি লাগবে না বলা যায় না। তবে বিধি ২১ অনুযায়ী, ১৮ বছরের কম বয়সী এতিমের জন্ম নিবন্ধনের ক্ষেত্রে "
+                    "যথাযথভাবে ক্ষমতাপ্রাপ্ত কর্তৃপক্ষের সনদের ভিত্তিতে আবেদন করলে নিবন্ধক প্রদেয় ফি সম্পূর্ণ বা আংশিক মওকুফ করার বিষয়টি বিবেচনা করতে পারেন। "
+                    "ফি মওকুফের বিষয়ে নিবন্ধকের সিদ্ধান্ত চূড়ান্ত।\n\n"
+                    f"প্রাসঙ্গিক বিধি: {waiver_rule}\n\n"
+                    f"Sources: {', '.join(source_ids)}"
+                )
+
+        fee_row = next((context for context in contexts if context["metadata"].get("document_type") == "fee_row"), None)
+        if fee_row:
+            item = self._extract_labeled_value(str(fee_row["content"]), "Fee item")
+            amount = self._extract_labeled_value(str(fee_row["content"]), "Fee amount")
+            if item and amount:
+                return f"{item}: {amount}\n\nSources: {', '.join(source_ids)}"
+
+        fee_table = next((context for context in contexts if context["metadata"].get("document_type") == "fees_table"), None)
+        if fee_table:
+            table = self._extract_fee_table(str(fee_table["content"]))
+            if table:
+                return f"{table}\n\nSources: {', '.join(source_ids)}"
+        return ""
+
+    def _fallback_evidence_answer(self, query: str, contexts: list[dict[str, Any]]) -> str:
+        if not self._is_bangla_query(query) or not contexts:
+            return ""
+
+        top_context = contexts[0]
+        doc_type = top_context["metadata"].get("document_type")
+        content = str(top_context.get("content", ""))
+        source_ids = [str(context["id"]) for context in contexts[:3]]
+
+        if doc_type == "faq":
+            question = self._extract_labeled_value(content, "Question")
+            answer = self._extract_labeled_value(content, "Answer")
+            if answer:
+                prefix = f"{question}\n\n" if question else ""
+                return f"{prefix}{answer}\n\nSources: {', '.join(source_ids)}"
+
+        if doc_type == "fee_row":
+            item = self._extract_labeled_value(content, "Fee item")
+            amount = self._extract_labeled_value(content, "Fee amount")
+            if item and amount:
+                return f"{item}: {amount}\n\nSources: {', '.join(source_ids)}"
+
+        if doc_type == "fees_table":
+            table = self._extract_fee_table(content)
+            if table:
+                return f"{table}\n\nSources: {', '.join(source_ids)}"
+
+        body = self._extract_labeled_value(content, "Content")
+        if body:
+            return f"{body}\n\nSources: {', '.join(source_ids)}"
+        return ""
+
     @staticmethod
     def _is_bangla_query(query: str) -> bool:
         return bool(re.search(r"[\u0980-\u09FF]", query))
+
+    @staticmethod
+    def _violates_answer_language(query: str, answer: str) -> bool:
+        if not CivicRAGPipeline._is_bangla_query(query):
+            return False
+        if re.search(r"[\u3400-\u9FFF\u3040-\u30FF\uAC00-\uD7AF]", answer):
+            return True
+        lowered = answer.lower()
+        bad_markers = [
+            "translated to english",
+            "translate to english",
+            "翻译",
+            "plaintext",
+            "```",
+        ]
+        return any(marker in lowered for marker in bad_markers)
 
     @staticmethod
     def _is_procedure_query(query: str) -> bool:
@@ -206,6 +303,22 @@ class CivicRAGPipeline:
         return (
             any(term in query for term in ["কীভাবে", "কিভাবে", "করতে পারি", "করবো", "করব", "ধাপ", "আবেদন", "বাতিল"])
             or any(term in query_lc for term in ["how", "apply", "procedure", "process", "steps", "register", "cancel"])
+        )
+
+    @staticmethod
+    def _is_fee_query(query: str) -> bool:
+        query_lc = query.lower()
+        return (
+            any(term in query for term in ["ফি", "ফিস", "টাকা", "লাগবে", "খরচ", "বিনামূল্যে", "বিনা ফিসে"])
+            or any(term in query_lc for term in ["fee", "fees", "cost", "charge", "payment", "free"])
+        )
+
+    @staticmethod
+    def _is_fee_waiver_query(query: str) -> bool:
+        query_lc = query.lower()
+        return (
+            any(term in query for term in ["এতিম", "প্রতিবন্ধী", "সহায়", "সহায়", "মওকুফ", "মাফ"])
+            or any(term in query_lc for term in ["orphan", "disabled", "waiver", "exempt"])
         )
 
     @staticmethod
@@ -229,6 +342,25 @@ class CivicRAGPipeline:
         body = re.sub(r"\n-{3,}\s*$", "", body.strip())
         body = re.sub(r"\n{3,}", "\n\n", body)
         return body.strip()
+
+    @staticmethod
+    def _extract_labeled_value(content: str, label: str) -> str:
+        match = re.search(rf"(?ms)^{re.escape(label)}:\s*(.+?)(?=^[A-Z][A-Za-z ]*:\s|\Z)", content)
+        return match.group(1).strip() if match else ""
+
+    @staticmethod
+    def _extract_fee_table(content: str) -> str:
+        lines = []
+        for line in content.splitlines():
+            stripped = line.strip()
+            if not stripped.startswith("|"):
+                continue
+            if "---" in stripped or "ক্রম" in stripped or "বাবদ" in stripped:
+                continue
+            cells = [cell.strip() for cell in stripped.strip("|").split("|")]
+            if len(cells) >= 3:
+                lines.append(f"{cells[1]}: {cells[2]}")
+        return "\n".join(lines)
 
     def _expanded_procedure_context(self, contexts: list[dict[str, Any]]) -> dict[str, Any] | None:
         seed = next(

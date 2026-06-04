@@ -314,7 +314,7 @@ def english_retrieval_aliases(doc_type: str, text: str, *, scope: str | None = N
                 "task force",
             }
         )
-    if doc_type in {"fees_table", "fee_row"} or "ফি" in text:
+    if doc_type in {"fees_table", "fee_row"}:
         aliases.update(
             {
                 "নিবন্ধন ফি",

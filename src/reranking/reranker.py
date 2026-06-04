@@ -88,6 +88,18 @@ class HybridReranker:
             any(term in query for term in ["একাধিক", "বাতিল"])
             or any(term in query_lc for term in ["duplicate", "cancel"])
         )
+        is_fee_query = (
+            any(term in query for term in ["ফি", "ফিস", "টাকা", "লাগবে", "খরচ", "বিনামূল্যে", "বিনা ফিসে"])
+            or any(term in query_lc for term in ["fee", "fees", "cost", "charge", "payment", "free"])
+        )
+        is_fee_admin_query = (
+            any(term in query for term in ["চালান", "জমা", "আপলোড"])
+            or any(term in query_lc for term in ["challan", "upload", "deposit"])
+        )
+        is_fee_waiver_query = (
+            any(term in query for term in ["এতিম", "প্রতিবন্ধী", "সহায়", "সহায়", "মওকুফ", "মাফ"])
+            or any(term in query_lc for term in ["orphan", "disabled", "waiver", "exempt"])
+        )
 
         rescored: list[RetrievalResult] = []
         for result in results:
@@ -128,6 +140,22 @@ class HybridReranker:
                             score -= 0.06
                     elif doc_type == "correction_process":
                         score -= 0.03
+
+            if is_fee_query:
+                if is_fee_waiver_query and doc_type == "legal_rules" and section_title == "ফিস":
+                    score += 0.22
+                    if any(term in result.retrieval_text for term in ["এতিম", "প্রতিবন্ধী", "সহায় সম্বলহীন", "সহায় সম্বলহীন"]):
+                        score += 0.08
+                    elif "মওকুফ" in result.retrieval_text:
+                        score -= 0.03
+                if doc_type in {"fees_table", "fee_row"}:
+                    score += 0.16
+                    if "বিনা ফিসে" in result.retrieval_text or "৪৫" in result.retrieval_text:
+                        score += 0.03
+                    if is_fee_waiver_query:
+                        score -= 0.08
+                elif not is_fee_admin_query and not is_fee_waiver_query and doc_type in {"faq", "legal_rules", "legal_act"}:
+                    score -= 0.04
 
             rescored.append(replace(result, score=score))
 
