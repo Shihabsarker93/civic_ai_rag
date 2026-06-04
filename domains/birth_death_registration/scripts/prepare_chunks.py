@@ -110,7 +110,11 @@ def make_chunk(
     metadata = dict(metadata)
     content = normalize_text(content)
     retrieval_text = content
-    aliases = english_retrieval_aliases(str(metadata.get("document_type", "")), content)
+    aliases = english_retrieval_aliases(
+        str(metadata.get("document_type", "")),
+        content,
+        scope=str(metadata.get("service_scope", "")) or None,
+    )
     if aliases:
         metadata["search_aliases"] = aliases
         retrieval_text = f"{content}\nRetrieval aliases (for search only, not answer evidence): {aliases}"
@@ -199,7 +203,7 @@ def infer_scope(text: str) -> str:
     return "birth"
 
 
-def english_retrieval_aliases(doc_type: str, text: str) -> str:
+def english_retrieval_aliases(doc_type: str, text: str, *, scope: str | None = None) -> str:
     text_lc = text.lower()
     aliases = {
         "Bangladesh government service",
@@ -209,7 +213,7 @@ def english_retrieval_aliases(doc_type: str, text: str) -> str:
         "certificate",
     }
 
-    scope = infer_scope(text)
+    scope = scope or infer_scope(text)
     if scope in {"birth", "birth_death"}:
         aliases.update(
             {
