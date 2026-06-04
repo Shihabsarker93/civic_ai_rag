@@ -20,11 +20,16 @@ Retrieval aliases are search hints only; do not treat them as factual evidence.
 Write a real answer first; never answer with only a source id.
 For how-to questions, give direct step-by-step instructions only; avoid legal background unless it is necessary.
 Use at most 6 short bullets and avoid repeating the same point.
-End with a Sources line containing the source ids you used."""
+Do not write meta commentary such as "based on the retrieved evidence" or "the correct answer is".
+Do not repeat headings, paragraphs, or bullet groups.
+End after the final useful instruction."""
 
 
 BANGLA_PATTERN = re.compile(r"[\u0980-\u09FF]")
 ASCII_LETTER_PATTERN = re.compile(r"[A-Za-z]")
+SOURCE_LINE_PATTERN = re.compile(
+    r"(?im)^\s*(?:sources?|source ids?|সোর্সেস|সোুর্সেস|উৎস)\s*:.*(?:\n\s*(?:id=)?[A-Za-z0-9_\-\u0980-\u09FF, ]+.*)*"
+)
 
 
 def detect_answer_language(query: str) -> str:
@@ -61,10 +66,32 @@ Answer language:
 Retrieved evidence:
 {evidence}
 
-Before answering, silently identify the best supporting sources. Do not mention unrelated source variants unless they are needed.
-If the question is broad, summarize the core facts from the most relevant retrieved sources.
+Before answering, silently identify the best supporting sources.
+Write one concise answer. For procedural questions, include only the steps supported by the evidence.
+Do not include verification, correction, appeal, or legal-background details unless the user asks for them.
 
 Answer:"""
+
+
+def remove_repeated_blocks(answer: str) -> str:
+    blocks = [block.strip() for block in re.split(r"\n\s*\n", answer.strip()) if block.strip()]
+    cleaned: list[str] = []
+    seen: set[str] = set()
+    for block in blocks:
+        normalized = re.sub(r"\W+", "", block.lower())
+        if normalized in seen:
+            continue
+        seen.add(normalized)
+        cleaned.append(block)
+    return "\n\n".join(cleaned).strip()
+
+
+def canonicalize_answer(answer: str, source_ids: list[str]) -> str:
+    answer = SOURCE_LINE_PATTERN.sub("", answer).strip()
+    answer = remove_repeated_blocks(answer)
+    if source_ids:
+        answer = f"{answer}\n\nSources: {', '.join(source_ids)}"
+    return answer.strip()
 
 
 class OllamaAnswerGenerator:
@@ -76,6 +103,8 @@ class OllamaAnswerGenerator:
         temperature: float,
         top_p: float,
         num_predict: int,
+        repeat_last_n: int | None = None,
+        repeat_penalty: float | None = None,
     ) -> None:
         self.llm = ChatOllama(
             model=model,
@@ -83,12 +112,12 @@ class OllamaAnswerGenerator:
             temperature=temperature,
             top_p=top_p,
             num_predict=num_predict,
+            repeat_last_n=repeat_last_n,
+            repeat_penalty=repeat_penalty,
         )
 
     def answer(self, query: str, contexts: list[dict[str, Any]]) -> str:
         response = self.llm.invoke(build_prompt(query, contexts))
         answer = str(response.content).strip()
         source_ids = [str(context["id"]) for context in contexts[:3]]
-        if source_ids and not any(source_id in answer for source_id in source_ids):
-            answer = f"{answer}\n\nSources: {', '.join(source_ids)}"
-        return answer
+        return canonicalize_answer(answer, source_ids)

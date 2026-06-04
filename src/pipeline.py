@@ -99,6 +99,8 @@ class CivicRAGPipeline:
                 temperature=self.generation_config["temperature"],
                 top_p=self.generation_config["top_p"],
                 num_predict=self.generation_config["num_predict"],
+                repeat_last_n=self.generation_config.get("repeat_last_n"),
+                repeat_penalty=self.generation_config.get("repeat_penalty"),
             )
         return self._generators[model]
 

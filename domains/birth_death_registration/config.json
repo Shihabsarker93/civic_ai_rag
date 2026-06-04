@@ -56,9 +56,11 @@
       "llama3",
       "qwen2.5:7b"
     ],
-    "temperature": 0.1,
+    "temperature": 0.05,
     "top_p": 0.9,
-    "num_predict": 1536,
+    "num_predict": 800,
+    "repeat_last_n": 256,
+    "repeat_penalty": 1.18,
     "top_k_for_generation": 4
   }
 }
