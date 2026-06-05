@@ -100,6 +100,25 @@ class HybridReranker:
             any(term in query for term in ["এতিম", "প্রতিবন্ধী", "সহায়", "সহায়", "মওকুফ", "মাফ"])
             or any(term in query_lc for term in ["orphan", "disabled", "waiver", "exempt"])
         )
+        is_birth_date_correction = (
+            "জন্ম তারিখ" in query and any(term in query for term in ["ভুল", "সংশোধন", "ঠিক"])
+        ) or any(term in query_lc for term in ["date of birth correction", "birth date correction"])
+        is_lost_certificate = (
+            any(term in query for term in ["হারিয়ে", "হারিয়ে", "হারাইয়া", "হারিয়ে গেলে", "হারিয়ে গেলে", "নষ্ট", "প্রতিলিপি", "নকল"])
+            or any(term in query_lc for term in ["lost certificate", "duplicate certificate", "certificate copy", "reprint"])
+        )
+        is_document_requirement = (
+            any(term in query for term in ["কাগজপত্র", "ডকুমেন্ট", "প্রমাণক", "দলিল", "কি কি লাগে", "কী কী লাগে"])
+            or any(term in query_lc for term in ["documents", "required documents", "papers", "proof"])
+        )
+        is_online_visibility = (
+            any(term in query for term in ["দেখাচ্ছে না", "দেখাচ্ছেনা", "অনলাইনে দেখ", "অনলাইনে পাওয়া", "অনলাইনে পাওয়া"])
+            or any(term in query_lc for term in ["not showing online", "not found online", "online copy"])
+        )
+        is_data_correction = (
+            any(term in query for term in ["নাম", "ঠিকানা", "সব ভুল", "তথ্য ভুল", "ঠিক করবে", "ঠিক করতে"])
+            and any(term in query for term in ["সংশোধন", "ভুল", "ঠিক"])
+        ) or any(term in query_lc for term in ["wrong name", "wrong address", "correct information", "data correction"])
 
         rescored: list[RetrievalResult] = []
         for result in results:
@@ -140,6 +159,51 @@ class HybridReranker:
                             score -= 0.06
                     elif doc_type == "correction_process":
                         score -= 0.03
+
+            if is_birth_date_correction:
+                if doc_type == "correction_notice_ocr":
+                    if "জন্ম তারিখ সংশোধন" in result.retrieval_text:
+                        score += 0.14
+                    if any(term in section_title for term in ["রেজিস্ট্রেশন", "ইস্যু", "জাতীয়তা"]):
+                        score -= 0.08
+                if doc_type == "fee_row" and "জন্ম তারিখ সংশোধন" in result.retrieval_text:
+                    score += 0.12
+                if doc_type in {"correction_process", "legal_rules"} and "জন্ম তারিখ" in result.retrieval_text:
+                    score += 0.08
+                if doc_type == "application_process":
+                    score -= 0.06
+
+            if is_lost_certificate:
+                if doc_type == "legal_rules" and any(term in section_title for term in ["সনদের প্রতিলিপি", "প্রতিলিপি"]):
+                    score += 0.22
+                elif doc_type in {"application_process", "faq"}:
+                    score -= 0.05
+
+            if is_document_requirement:
+                if doc_type == "legal_rules" and section_title == "জন্ম নিবন্ধন" and any(term in result.retrieval_text for term in ["প্রমাণাদি", "সংযুক্ত", "জন্মস্থান", "স্থায়ী ঠিকানা"]):
+                    score += 0.14
+                if doc_type == "application_process" and any(term in section_title for term in ["প্রয়োজনীয়", "প্রমাণক", "সংযুক্ত", "পূর্ব প্রস্তুতি", "ডকুমেন্ট"]):
+                    score += 0.13
+                if doc_type == "faq" and category == "parents_registration":
+                    score -= 0.05
+
+            if is_online_visibility:
+                if doc_type == "general_guidance" and any(term in section_title for term in ["পরীক্ষা", "যাচাই"]):
+                    score += 0.16
+                if doc_type == "faq" and category in {"manual_to_online_migration", "data_discrepancy"}:
+                    score += 0.10
+                if doc_type == "application_process":
+                    score -= 0.04
+
+            if is_data_correction:
+                if doc_type == "correction_process":
+                    score += 0.18
+                    if any(term in section_title for term in ["নাম", "সংশোধন", "পরিস্থিতি", "যোগাযোগ"]):
+                        score += 0.04
+                if doc_type == "fee_row" and any(term in result.retrieval_text for term in ["জন্ম তারিখ ব্যতীত", "নাম", "ঠিকানা"]):
+                    score += 0.10
+                if doc_type == "application_process":
+                    score -= 0.12
 
             if is_fee_query:
                 if is_fee_waiver_query and doc_type == "legal_rules" and section_title == "ফিস":

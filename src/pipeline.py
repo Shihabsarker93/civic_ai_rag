@@ -57,9 +57,11 @@ class CivicRAGPipeline:
         if generate:
             max_generation_contexts = self.generation_config.get("top_k_for_generation", len(contexts))
             generation_contexts = self._select_generation_contexts(query, contexts, max_generation_contexts)
-            answer = self._safe_extractive_answer(query, generation_contexts, normalized_method)
+            answer = self._safe_fee_answer(query, contexts, normalized_method)
             if not answer:
-                answer = self._safe_fee_answer(query, generation_contexts, normalized_method)
+                answer = self._safe_domain_answer(query, contexts, normalized_method)
+            if not answer:
+                answer = self._safe_extractive_answer(query, generation_contexts, normalized_method)
             if not answer:
                 answer = self._generator(selected_model).answer(query, generation_contexts)
                 if self._violates_answer_language(query, answer):
@@ -245,6 +247,123 @@ class CivicRAGPipeline:
                 return f"{table}\n\nSources: {', '.join(source_ids)}"
         return ""
 
+    def _safe_domain_answer(
+        self,
+        query: str,
+        contexts: list[dict[str, Any]],
+        method: str,
+    ) -> str:
+        if method != "civic" or not contexts or not self._is_bangla_query(query):
+            return ""
+
+        source_ids = [str(context["id"]) for context in contexts[:3]]
+        if self._is_registration_deadline_query(query):
+            deadline = self._find_context(contexts, document_type="legal_act", content_contains="৪৫")
+            if not deadline:
+                deadline = self._find_context(contexts, document_type="legal_rules", content_contains="৪৫")
+            if deadline:
+                body = self._extract_labeled_value(str(deadline["content"]), "Content")
+                return (
+                    "জন্মের ৪৫ দিনের মধ্যে জন্ম সংক্রান্ত তথ্য নিবন্ধকের নিকট প্রদান করতে হবে।\n\n"
+                    f"প্রাসঙ্গিক বিধি/আইন: {body}\n\n"
+                    f"Sources: {', '.join(source_ids)}"
+                )
+
+        if self._is_document_requirement_query(query):
+            app_prep = self._find_context(contexts, document_type="application_process", section_contains="পূর্ব প্রস্তুতি")
+            attachments = self._find_context(contexts, document_type="application_process", section_contains_any=["সংযুক্ত", "প্রমাণক"])
+            legal_docs = self._find_context(contexts, document_type="legal_rules", content_contains="প্রমাণাদি")
+            parts = ["জন্ম নিবন্ধনের জন্য সাধারণত জন্মস্থান, স্থায়ী ঠিকানা এবং বর্তমান ঠিকানার তথ্য প্রস্তুত রাখতে হয়।"]
+            if app_prep:
+                body = self._clean_evidence_body(self._extract_labeled_value(str(app_prep["content"]), "Content"))
+                if body:
+                    parts.append(body)
+            if attachments:
+                body = self._clean_evidence_body(self._extract_labeled_value(str(attachments["content"]), "Content"))
+                if body:
+                    parts.append(body)
+            if legal_docs:
+                parts.append(
+                    "বিধি ৯ অনুযায়ী প্রাসঙ্গিক প্রমাণের মধ্যে জন্মস্থান ও জন্ম তারিখের প্রমাণ, স্থায়ী ঠিকানার প্রমাণ, "
+                    "এবং প্রযোজ্য ক্ষেত্রে পিতা-মাতার জন্ম নিবন্ধন নম্বর বা জাতীয় পরিচয়পত্রের তথ্য থাকতে পারে।"
+                )
+            return "\n\n".join(parts) + f"\n\nSources: {', '.join(source_ids)}"
+
+        if self._is_lost_certificate_query(query):
+            rule = self._find_context(contexts, document_type="legal_rules", section_contains="প্রতিলিপি")
+            if rule:
+                body = self._extract_labeled_value(str(rule["content"]), "Content")
+                if body:
+                    summary = (
+                        "জন্ম নিবন্ধন সনদ হারিয়ে গেলে বা নষ্ট হলে নিবন্ধকের কাছে সনদের প্রতিলিপির জন্য আবেদন করতে হবে। "
+                        "বিধি ১৩ অনুযায়ী, আবেদন পাওয়ার ৭ কার্য দিবসের মধ্যে জন্ম/মৃত্যু নিবন্ধন সনদের প্রতিলিপি প্রদান করা হয়। "
+                        "প্রতিলিপির জন্য বিধি ২১ অনুযায়ী নির্ধারিত ফি প্রযোজ্য হতে পারে।"
+                    )
+                    return f"{summary}\n\nপ্রাসঙ্গিক বিধি: {body}\n\nSources: {', '.join(source_ids)}"
+
+        if self._is_birth_date_correction_query(query):
+            fee = self._find_context(contexts, document_type="fee_row", content_contains="জন্ম তারিখ সংশোধন")
+            feature = self._find_context(contexts, document_type="correction_notice_ocr", content_contains="জন্ম তারিখ সংশোধন")
+            legal = self._find_context(contexts, document_type="legal_rules", content_contains="ধারা ১৫")
+            cited_contexts = list(contexts[:3])
+            parts = [
+                "জন্ম তারিখ ভুল হলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করতে হবে।",
+            ]
+            if legal:
+                if legal not in cited_contexts:
+                    cited_contexts.append(legal)
+                parts.append("বিধিমালার প্রাসঙ্গিক অংশে বলা আছে, জন্ম তারিখ একবার নিবন্ধন করা হলে পরবর্তীতে আইনের ধারা ১৫ অনুযায়ী সংশোধন করা যায়।")
+            if feature:
+                if feature not in cited_contexts:
+                    cited_contexts.append(feature)
+                parts.append("BDRIS সংশোধন-সংক্রান্ত ফিচারের তালিকায় জন্ম তারিখ সংশোধন অন্তর্ভুক্ত আছে।")
+            if fee:
+                if fee not in cited_contexts:
+                    cited_contexts.append(fee)
+                amount = self._extract_labeled_value(str(fee["content"]), "Fee amount")
+                if amount:
+                    parts.append(f"জন্ম তারিখ সংশোধনের আবেদন ফি: {amount}।")
+            parts.append("তবে এই ডেটাসেটে জন্ম তারিখ সংশোধনের সম্পূর্ণ ধাপে-ধাপে প্রক্রিয়া নেই; তাই সংশ্লিষ্ট নিবন্ধন কার্যালয়/BDRIS নির্দেশনা অনুসরণ করা উচিত।")
+            cited_ids = [str(context["id"]) for context in cited_contexts[:5]]
+            return "\n\n".join(parts) + f"\n\nSources: {', '.join(cited_ids)}"
+
+        if self._is_online_visibility_query(query):
+            verification = self._find_context(contexts, document_type="general_guidance", section_contains_any=["পরীক্ষা", "যাচাই"])
+            migration = self._find_context(contexts, document_type="faq", category="manual_to_online_migration")
+            discrepancy = self._find_context(contexts, document_type="faq", category="data_discrepancy")
+            parts = []
+            if verification:
+                body = self._extract_labeled_value(str(verification["content"]), "Content")
+                parts.append(body)
+            if migration:
+                answer = self._extract_labeled_value(str(migration["content"]), "Answer")
+                parts.append(answer)
+            if discrepancy:
+                answer = self._extract_labeled_value(str(discrepancy["content"]), "Answer")
+                parts.append(answer)
+            if parts:
+                return "\n\n".join(part for part in parts if part) + f"\n\nSources: {', '.join(source_ids)}"
+
+        if self._is_data_correction_query(query):
+            correction_contexts = [
+                context for context in contexts if context["metadata"].get("document_type") == "correction_process"
+            ]
+            fee = self._find_context(contexts, document_type="fee_row", content_contains="জন্ম তারিখ ব্যতীত")
+            if correction_contexts:
+                lines = ["নাম/ঠিকানা/তথ্য ভুল হলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করতে হবে।"]
+                for context in correction_contexts[:4]:
+                    section = context["metadata"].get("section_title", "")
+                    body = self._clean_evidence_body(self._extract_labeled_value(str(context["content"]), "Content"))
+                    if body:
+                        lines.append(f"{section}: {body}")
+                if fee:
+                    amount = self._extract_labeled_value(str(fee["content"]), "Fee amount")
+                    if amount:
+                        lines.append(f"জন্ম তারিখ ব্যতীত নাম, পিতার নাম, মাতার নাম, ঠিকানা ইত্যাদি তথ্য সংশোধনের আবেদন ফি: {amount}।")
+                return "\n\n".join(lines) + f"\n\nSources: {', '.join(source_ids)}"
+
+        return ""
+
     def _fallback_evidence_answer(self, query: str, contexts: list[dict[str, Any]]) -> str:
         if not self._is_bangla_query(query) or not contexts:
             return ""
@@ -320,6 +439,82 @@ class CivicRAGPipeline:
             any(term in query for term in ["এতিম", "প্রতিবন্ধী", "সহায়", "সহায়", "মওকুফ", "মাফ"])
             or any(term in query_lc for term in ["orphan", "disabled", "waiver", "exempt"])
         )
+
+    @staticmethod
+    def _is_birth_date_correction_query(query: str) -> bool:
+        query_lc = query.lower()
+        return (
+            "জন্ম তারিখ" in query and any(term in query for term in ["ভুল", "সংশোধন", "ঠিক"])
+        ) or any(term in query_lc for term in ["date of birth correction", "birth date correction"])
+
+    @staticmethod
+    def _is_lost_certificate_query(query: str) -> bool:
+        query_lc = query.lower()
+        return (
+            any(term in query for term in ["হারিয়ে", "হারিয়ে", "হারাইয়া", "নষ্ট", "প্রতিলিপি", "নকল"])
+            or any(term in query_lc for term in ["lost certificate", "duplicate certificate", "certificate copy", "reprint"])
+        )
+
+    @staticmethod
+    def _is_online_visibility_query(query: str) -> bool:
+        query_lc = query.lower()
+        return (
+            any(term in query for term in ["দেখাচ্ছে না", "দেখাচ্ছেনা", "অনলাইনে দেখ", "অনলাইনে পাওয়া", "অনলাইনে পাওয়া"])
+            or any(term in query_lc for term in ["not showing online", "not found online", "online copy"])
+        )
+
+    @staticmethod
+    def _is_data_correction_query(query: str) -> bool:
+        query_lc = query.lower()
+        return (
+            any(term in query for term in ["নাম", "ঠিকানা", "সব ভুল", "তথ্য ভুল", "ঠিক করবে", "ঠিক করতে"])
+            and any(term in query for term in ["সংশোধন", "ভুল", "ঠিক"])
+        ) or any(term in query_lc for term in ["wrong name", "wrong address", "correct information", "data correction"])
+
+    @staticmethod
+    def _is_registration_deadline_query(query: str) -> bool:
+        query_lc = query.lower()
+        return (
+            "কত দিনের মধ্যে" in query
+            or "কয় দিনের মধ্যে" in query
+            or "কয় দিনের মধ্যে" in query
+            or any(term in query_lc for term in ["within how many days", "registration deadline"])
+        ) and ("জন্ম" in query or "birth" in query_lc)
+
+    @staticmethod
+    def _is_document_requirement_query(query: str) -> bool:
+        query_lc = query.lower()
+        return (
+            any(term in query for term in ["কাগজপত্র", "ডকুমেন্ট", "প্রমাণক", "দলিল", "কি কি লাগে", "কী কী লাগে"])
+            or any(term in query_lc for term in ["documents", "required documents", "papers", "proof"])
+        )
+
+    @staticmethod
+    def _find_context(
+        contexts: list[dict[str, Any]],
+        *,
+        document_type: str | None = None,
+        section_contains: str | None = None,
+        section_contains_any: list[str] | None = None,
+        category: str | None = None,
+        content_contains: str | None = None,
+    ) -> dict[str, Any] | None:
+        for context in contexts:
+            metadata = context.get("metadata", {})
+            content = str(context.get("content", ""))
+            section = str(metadata.get("section_title", ""))
+            if document_type and metadata.get("document_type") != document_type:
+                continue
+            if category and metadata.get("category") != category:
+                continue
+            if section_contains and section_contains not in section:
+                continue
+            if section_contains_any and not any(term in section for term in section_contains_any):
+                continue
+            if content_contains and content_contains not in content:
+                continue
+            return context
+        return None
 
     @staticmethod
     def _extract_sections(content: str) -> list[dict[str, str]]:
