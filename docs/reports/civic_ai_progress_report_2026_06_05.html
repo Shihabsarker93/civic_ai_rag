@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Civic.ai RAG Progress Report</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 16mm 15mm 18mm;
+    }
+    :root {
+      --ink: #172033;
+      --muted: #667085;
+      --line: #d9e0ea;
+      --green: #116a5c;
+      --gold: #c76b2a;
+      --blue: #274c77;
+      --soft: #eef7f4;
+      --soft-blue: #eef4fb;
+      --warn: #fff5e8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Aptos", "Segoe UI", "Kohinoor Bangla", "Bangla Sangam MN", "Bangla MN", sans-serif;
+      font-size: 10.4pt;
+      line-height: 1.46;
+      background: #fff;
+    }
+    .cover {
+      min-height: 246mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 22mm 4mm 8mm;
+      page-break-after: always;
+      background:
+        radial-gradient(circle at 12% 10%, rgba(17,106,92,.12), transparent 29%),
+        radial-gradient(circle at 86% 30%, rgba(199,107,42,.12), transparent 30%),
+        linear-gradient(135deg, #f7fafc 0%, #fff 58%, #f4f8f7 100%);
+    }
+    .eyebrow {
+      color: var(--green);
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-size: 8.5pt;
+    }
+    h1 {
+      margin: 12px 0 12px;
+      font-size: 34pt;
+      line-height: 1.04;
+      letter-spacing: -.035em;
+      color: #111827;
+    }
+    .subtitle {
+      font-size: 14pt;
+      color: #475467;
+      max-width: 170mm;
+      margin-bottom: 26px;
+    }
+    .cover-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 24px;
+    }
+    .metric {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px;
+      background: rgba(255,255,255,.82);
+    }
+    .metric .value {
+      font-size: 21pt;
+      font-weight: 850;
+      color: var(--green);
+      line-height: 1;
+    }
+    .metric .label {
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 9pt;
+    }
+    .meta {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 24px;
+      border-top: 1px solid var(--line);
+      padding-top: 14px;
+      color: #475467;
+    }
+    h2 {
+      margin: 0 0 10px;
+      padding-top: 12px;
+      font-size: 18pt;
+      line-height: 1.15;
+      color: var(--blue);
+      page-break-after: avoid;
+    }
+    h3 {
+      margin: 16px 0 7px;
+      font-size: 12.5pt;
+      color: #1f2937;
+      page-break-after: avoid;
+    }
+    p { margin: 0 0 8px; }
+    section {
+      page-break-inside: auto;
+      margin-bottom: 14px;
+    }
+    .lead {
+      border-left: 5px solid var(--green);
+      background: var(--soft);
+      padding: 12px 14px;
+      border-radius: 9px;
+      margin: 8px 0 14px;
+      font-size: 10.7pt;
+    }
+    .note {
+      border-left: 4px solid var(--gold);
+      background: var(--warn);
+      padding: 10px 12px;
+      border-radius: 8px;
+      margin: 10px 0;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin: 8px 0 14px;
+    }
+    .card {
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 10px;
+      padding: 11px 12px;
+      page-break-inside: avoid;
+    }
+    .card h3 { margin-top: 0; }
+    ul, ol { margin: 5px 0 8px 20px; padding: 0; }
+    li { margin-bottom: 4px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 9px 0 15px;
+      font-size: 9.3pt;
+      page-break-inside: avoid;
+    }
+    th {
+      background: var(--soft-blue);
+      color: #243b53;
+      text-align: left;
+      font-weight: 800;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 7px 8px;
+      vertical-align: top;
+    }
+    .status-good { color: #087443; font-weight: 800; }
+    .status-partial { color: #a15c07; font-weight: 800; }
+    .mono {
+      font-family: "SFMono-Regular", Consolas, monospace;
+      font-size: 8.9pt;
+      color: #344054;
+    }
+    .pill {
+      display: inline-block;
+      padding: 2px 7px;
+      border-radius: 999px;
+      background: #e7f3ef;
+      color: var(--green);
+      font-weight: 750;
+      font-size: 8.6pt;
+      margin: 1px 2px 1px 0;
+    }
+    .flow {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      margin: 8px 0 13px;
+    }
+    .flow div {
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      padding: 9px;
+      background: #fbfcfe;
+      min-height: 54px;
+      font-weight: 700;
+      color: #243b53;
+    }
+    .flow span {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-weight: 500;
+      font-size: 8.6pt;
+    }
+    .page-break { page-break-before: always; }
+    .small { font-size: 9pt; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="cover">
+    <div>
+      <div class="eyebrow">Final-Year Thesis Progress Brief</div>
+      <h1>Civic.ai RAG<br>Birth and Death Registration Domain</h1>
+      <div class="subtitle">
+        A grounded Bangla-first Retrieval-Augmented Generation system inspired by the NextRAG paper,
+        adapted for Bangladeshi government-service information.
+      </div>
+      <div class="cover-grid">
+        <div class="metric"><div class="value">187</div><div class="label">indexed evidence chunks</div></div>
+        <div class="metric"><div class="value">1</div><div class="label">active domain: birth/death registration</div></div>
+        <div class="metric"><div class="value">3</div><div class="label">local Ollama LLMs available for comparison</div></div>
+      </div>
+    </div>
+    <div class="meta">
+      <div><strong>Repository:</strong><br>Shihabsarker93/civic_ai_rag</div>
+      <div><strong>Branch:</strong><br><span class="mono">feature/add-birth-death-domain</span></div>
+      <div><strong>Latest commit:</strong><br><span class="mono">8d83e2a Add correction fee supplemental evidence</span></div>
+      <div><strong>Report date:</strong><br>5 June 2026</div>
+    </div>
+  </div>
+
+  <section>
+    <h2>1. Executive Summary</h2>
+    <div class="lead">
+      We now have a working local Civic.ai RAG prototype for Bangladeshi birth/death registration.
+      The current system is not a generic chatbot: it retrieves indexed government-service evidence,
+      reranks it, and answers with source IDs and official/source links. For high-risk civic questions
+      such as fees, correction, required documents, deadlines, and lost certificates, CivicRAG uses
+      controlled evidence-based answer paths to reduce hallucination.
+    </div>
+    <p>
+      The project direction has been narrowed from a multi-domain prototype to a clean single active
+      domain first: birth/death registration. Previous passport and BRTA data were removed from the
+      active pipeline so that the current vector database is clean and domain-specific.
+    </p>
+    <p>
+      The implementation is closest to the NextRAG paper at the architectural level: simple baseline
+      versus proposed advanced pipeline, multiple LLM backends, bilingual/cross-lingual goals, and
+      grounded retrieval. However, the system is not yet at the paper's evaluation maturity because
+      a labeled gold QA set and numeric metrics are still pending.
+    </p>
+  </section>
+
+  <section>
+    <h2>2. Current System Architecture</h2>
+    <div class="flow">
+      <div>Raw/curated data<span>FAQ JSON, cleaned Markdown, legal rules, fees, OCR-derived notices</span></div>
+      <div>Chunk preparation<span>document-type-aware chunks with metadata and source URLs</span></div>
+      <div>Indexing<span>BGE-M3 embeddings stored in Chroma; BM25 text index in memory</span></div>
+      <div>Answering<span>hybrid retrieval, reranking, safe generation, source display</span></div>
+    </div>
+    <table>
+      <tr><th>Module</th><th>Current implementation</th><th>Why it matters</th></tr>
+      <tr><td>Domain config</td><td><span class="mono">domains/birth_death_registration/config.json</span></td><td>Keeps each future government-service domain separate without creating separate repositories.</td></tr>
+      <tr><td>Chunk preparation</td><td><span class="mono">domains/birth_death_registration/scripts/prepare_chunks.py</span></td><td>Builds retrieval-friendly evidence units based on document type.</td></tr>
+      <tr><td>Embedding</td><td><span class="mono">BAAI/bge-m3</span>, normalized, CPU, local files only</td><td>Strong multilingual embedding candidate suitable for Bangla-English retrieval experiments.</td></tr>
+      <tr><td>Vector database</td><td>Chroma collection <span class="mono">birth_death_registration_chunks</span></td><td>Persistent local semantic search without external API keys.</td></tr>
+      <tr><td>Lexical retrieval</td><td>BM25-style sparse retrieval inside <span class="mono">HybridRetriever</span></td><td>Protects exact Bangla keywords such as fees, sections, rules, and official terms.</td></tr>
+      <tr><td>Fusion</td><td>Dense + BM25 with RRF, weights 0.55 dense / 0.45 BM25</td><td>Balances semantic matching with exact keyword matching.</td></tr>
+      <tr><td>Reranking</td><td><span class="mono">BAAI/bge-reranker-v2-m3</span> plus civic intent boosts</td><td>Moves application-process, correction, fee, and legal chunks above weak FAQ matches when needed.</td></tr>
+      <tr><td>Generation</td><td>Ollama local models: <span class="mono">llama3.2</span>, <span class="mono">llama3</span>, <span class="mono">qwen2.5:7b</span></td><td>Allows offline thesis experiments without API keys.</td></tr>
+      <tr><td>Web UI</td><td>Local app at <span class="mono">http://127.0.0.1:7860</span></td><td>Supports model and pipeline switching, answer display, source IDs, and official/source links.</td></tr>
+    </table>
+  </section>
+
+  <section class="page-break">
+    <h2>3. Data and Index Status</h2>
+    <p>
+      The current active knowledge base contains curated FAQ JSON, cleaned Markdown, legal documents,
+      fee tables, application/correction guides, portal guidance, and OCR-derived sources. The Chroma
+      vector database count matches the chunk JSONL count: <strong>187 records</strong>.
+    </p>
+    <table>
+      <tr><th>Document type</th><th>Chunks</th><th>Role in retrieval</th></tr>
+      <tr><td>legal_rules</td><td>45</td><td>Rules, fees, official procedures, duplicate/copy certificates</td></tr>
+      <tr><td>legal_act</td><td>30</td><td>Core legal authority such as registration deadlines and correction authority</td></tr>
+      <tr><td>application_process</td><td>30</td><td>Step-by-step online birth registration process and required information</td></tr>
+      <tr><td>faq</td><td>26</td><td>Citizen-facing questions such as manual-to-online migration and data mismatch</td></tr>
+      <tr><td>correction_process</td><td>12</td><td>Name, parent information, address, and other correction guidance</td></tr>
+      <tr><td>guidelines_ocr</td><td>12</td><td>OCR-derived guideline source; useful but lower confidence</td></tr>
+      <tr><td>portal_summary</td><td>9</td><td>Cleaned portal/service/support summaries</td></tr>
+      <tr><td>general_guidance</td><td>8</td><td>Verification and practical guidance pages</td></tr>
+      <tr><td>fee_row</td><td>7</td><td>Exact row-level fee answers, e.g. 100 taka and 50 taka correction fees</td></tr>
+      <tr><td>correction_notice_ocr</td><td>6</td><td>OCR/manual-cleaned correction notice for special BDRIS correction features</td></tr>
+      <tr><td>fees_table + faq_preamble</td><td>2</td><td>Full fee table and FAQ context</td></tr>
+    </table>
+    <h3>Source files currently represented</h3>
+    <p class="small">
+      Main indexed sources include: <span class="mono">birth_and_death_registration_rules_2018.md</span>,
+      <span class="mono">birth_and_death_registration_act_2004.md</span>,
+      <span class="mono">birth_registration_application_process_cleaned.md</span>,
+      <span class="mono">faqs_birth_death_registration_01.json</span>,
+      <span class="mono">faqs_birth_death_registration_02.json</span>,
+      <span class="mono">application_for_birth_information_correction_cleaned.md</span>,
+      <span class="mono">birth_and_death_registration_fees_cleaned.md</span>,
+      <span class="mono">know_this_01_cleaned.md</span>,
+      <span class="mono">birth_and_death_registration_guidelines_2021_ocr.md</span>, and
+      <span class="mono">notice_birth_and_death_registration_certificate_correction_steps_ocr.md</span>.
+    </p>
+    <div class="note">
+      Important: each chunk separates <strong>retrieval_text</strong> from <strong>answer evidence</strong>.
+      Search aliases are used for retrieval only, while the LLM receives original Bangla evidence content.
+      This directly addresses a hallucination risk we observed earlier.
+    </div>
+  </section>
+
+  <section>
+    <h2>4. Chunking Strategy</h2>
+    <p>
+      We chose document-type-aware chunking instead of one universal chunk size. This aligns better with
+      government-service data, where FAQs, laws, fee tables, notices, and process guides have different
+      retrieval behavior.
+    </p>
+    <table>
+      <tr><th>Data type</th><th>Chunking choice</th><th>Reason</th></tr>
+      <tr><td>FAQ JSON</td><td>One question-answer pair per chunk</td><td>Keeps user intent and answer together; strong for exact citizen questions.</td></tr>
+      <tr><td>Legal act/rules</td><td>One <span class="mono">ধারা</span> or <span class="mono">বিধি</span> per chunk, split if long</td><td>Preserves legal authority and section-level citation.</td></tr>
+      <tr><td>Fee table</td><td>Full table chunk + row-level fee chunks</td><td>Supports broad fee questions and exact amount questions.</td></tr>
+      <tr><td>Application process</td><td>Heading/step-based chunks</td><td>Improves “কীভাবে করব” procedural retrieval.</td></tr>
+      <tr><td>Correction process</td><td>Scenario/section chunks</td><td>Separates parent-name, address, birth-date, and contact scenarios.</td></tr>
+      <tr><td>Portal/homepage content</td><td>Only citizen-service/support sections retained</td><td>Removes menus, footers, news lists, and portal noise.</td></tr>
+      <tr><td>Scanned PDF/OCR</td><td>OCR to Markdown, then structured chunks</td><td>Allows scanned notices/guidelines to be indexed, but with lower confidence metadata.</td></tr>
+    </table>
+    <p>
+      This is thesis-defensible because it allows ablation: FAQ-only vs legal-only vs process-guide
+      chunks, OCR on/off, row-level fee chunks on/off, and simple fixed-size chunking vs structured
+      document-aware chunking.
+    </p>
+  </section>
+
+  <section class="page-break">
+    <h2>5. What Makes CivicRAG “Ours”</h2>
+    <p>
+      The LLMs are not our model. Our contribution is the RAG system: data pipeline, chunking strategy,
+      multilingual retrieval setup, reranking, safe answer generation, citations, and evaluation plan.
+    </p>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Simple RAG baseline</h3>
+        <ul>
+          <li>Dense vector search only.</li>
+          <li>Less domain-aware reranking.</li>
+          <li>LLM has more freedom to synthesize.</li>
+          <li>Useful as a tutorial/baseline comparison.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>CivicRAG / proposed pipeline</h3>
+        <ul>
+          <li>Hybrid dense + BM25 retrieval.</li>
+          <li>RRF fusion and BGE reranking.</li>
+          <li>Civic intent boosts for fees, correction, documents, lost certificate, and online visibility.</li>
+          <li>Safe evidence-based answer paths for high-risk civic questions.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="note">
+      If all three models give the same answer in CivicRAG, that is not automatically a problem.
+      For high-risk fee/procedure questions, the system intentionally uses controlled grounded answers
+      instead of letting each local LLM freely rewrite the response. This improves factual stability.
+    </div>
+  </section>
+
+  <section>
+    <h2>6. Current LLM and Prompt Settings</h2>
+    <table>
+      <tr><th>Model</th><th>Role in thesis</th><th>Current status</th></tr>
+      <tr><td><span class="mono">llama3.2</span></td><td>Fast local baseline</td><td>Available through Ollama; default generator label.</td></tr>
+      <tr><td><span class="mono">llama3</span></td><td>Stronger local LLaMA baseline</td><td>Available for comparison.</td></tr>
+      <tr><td><span class="mono">qwen2.5:7b</span></td><td>Strong multilingual alternative</td><td>Available for comparison; previously showed language drift when unconstrained.</td></tr>
+    </table>
+    <p>
+      Generation settings are conservative: temperature <strong>0.05</strong>, top-p <strong>0.9</strong>,
+      max prediction <strong>1200</strong>, repeat penalty <strong>1.18</strong>. Low temperature supports
+      consistency and factual grounding.
+    </p>
+  </section>
+
+  <section class="page-break">
+    <h2>7. Manual Sanity Test Results</h2>
+    <p>
+      We tested eight Bangla questions representing realistic citizen-service behavior. These are not
+      final numeric evaluation results; they are manual sanity checks to see whether retrieval and answers
+      are moving in the right direction.
+    </p>
+    <table>
+      <tr><th>Question</th><th>Observed result</th><th>Judgment</th></tr>
+      <tr><td>এতিম শিশুর জন্ম নিবন্ধনে ফি লাগবে কি?</td><td>Correctly says fee may be fully/partially waived under rule evidence; not “always free”.</td><td class="status-good">Good</td></tr>
+      <tr><td>জন্ম তারিখ ভুল হলে কীভাবে সংশোধন করব?</td><td>Now includes correction application, BDRIS feature, ১০০ টাকা fee, and warning that full steps are not in the dataset.</td><td class="status-good">Good</td></tr>
+      <tr><td>জন্মের কত দিনের মধ্যে নিবন্ধন করতে হবে?</td><td>Correctly answers ৪৫ দিনের মধ্যে with act/rule evidence.</td><td class="status-good">Good</td></tr>
+      <tr><td>জন্ম নিবন্ধনের জন্য কী কী কাগজপত্র লাগে?</td><td>Uses application-process and rule evidence for address/proof documents.</td><td class="status-good">Good</td></tr>
+      <tr><td>জন্ম নিবন্ধন সনদ হারিয়ে গেলে কী করতে হবে?</td><td>Retrieves সনদের প্রতিলিপি rule and mentions ৭ কার্য দিবস.</td><td class="status-good">Good</td></tr>
+      <tr><td>অনলাইনে জন্ম নিবন্ধন আবেদন কীভাবে করতে হয়?</td><td>Gives step-based online application answer and includes the BDRIS link.</td><td class="status-good">Good</td></tr>
+      <tr><td>অনলাইন করা আছে কিন্তু অনলাইনে দেখাচ্ছেনা কেন?</td><td>Combines verification guidance, manual-to-online migration, and data mismatch explanation.</td><td class="status-partial">Mostly good</td></tr>
+      <tr><td>নাম ঠিকানা সব ভুল, কীভাবে ঠিক করবে?</td><td>Uses correction-process evidence and includes ৫০ টাকা correction fee with source.</td><td class="status-good">Good</td></tr>
+    </table>
+    <p>
+      Current weakness: these checks are not yet formal accuracy scores. The next stage must create a
+      labeled QA set and run retrieval/answer metrics.
+    </p>
+  </section>
+
+  <section>
+    <h2>8. How Close We Are to the NextRAG Paper</h2>
+    <table>
+      <tr><th>NextRAG-like component</th><th>Current Civic.ai status</th><th>Gap</th></tr>
+      <tr><td>Vanilla/simple RAG baseline</td><td>Implemented through Simple RAG option.</td><td>Needs formal metric comparison.</td></tr>
+      <tr><td>Proposed advanced RAG method</td><td>CivicRAG hybrid retrieval + reranking + safer answers.</td><td>Needs formal naming and method diagram for thesis.</td></tr>
+      <tr><td>Multiple LLM comparison</td><td>llama3.2, llama3, qwen2.5:7b available locally.</td><td>Need batch comparison script outputs for all test questions.</td></tr>
+      <tr><td>Bilingual/cross-lingual goal</td><td>Config supports bn/en/mixed; BGE-M3 is multilingual.</td><td>English and code-mixed test set still needed.</td></tr>
+      <tr><td>Domain-specific QA categories</td><td>Implicit categories exist: fees, correction, application, legal, FAQ, lost certificate.</td><td>Need explicit evaluation categories like factual, procedural, fee, correction, out-of-context.</td></tr>
+      <tr><td>Numeric evaluation table</td><td>Not completed yet.</td><td>Need Recall@k, MRR, nDCG, answer faithfulness, and semantic similarity/BERTScore-style metrics.</td></tr>
+    </table>
+  </section>
+
+  <section class="page-break">
+    <h2>9. Recommended Next Steps</h2>
+    <ol>
+      <li><strong>Create a gold QA dataset.</strong> Start with 50 to 100 Bangla questions across fee, application, correction, legal, FAQ, online visibility, lost certificate, and out-of-context categories.</li>
+      <li><strong>Label expected source IDs.</strong> For retrieval metrics, each question needs one or more relevant source chunk IDs.</li>
+      <li><strong>Run retrieval metrics.</strong> Measure Recall@3, Recall@5, MRR, and nDCG for Simple RAG vs CivicRAG.</li>
+      <li><strong>Run answer metrics.</strong> Use reference answers plus qualitative faithfulness checks; BERTScore or semantic similarity can be supportive, not the only evidence.</li>
+      <li><strong>Add English and code-mixed tests.</strong> This is necessary because the thesis goal is bilingual/cross-lingual Civic.ai, not Bangla-only service search.</li>
+      <li><strong>Do ablations.</strong> Compare dense only, BM25 only, hybrid without reranker, hybrid with reranker, and CivicRAG with safe answer paths.</li>
+      <li><strong>Review OCR guideline chunks.</strong> Keep OCR data marked as lower confidence until manually verified.</li>
+      <li><strong>Prepare a method diagram.</strong> Show the separation between ingestion, cleaning, chunking, embedding, retrieval, reranking, generation, and evaluation.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>10. Current Repository Pointers</h2>
+    <table>
+      <tr><th>Purpose</th><th>Path</th></tr>
+      <tr><td>Active domain config</td><td class="mono">domains/birth_death_registration/config.json</td></tr>
+      <tr><td>Chunk preparation script</td><td class="mono">domains/birth_death_registration/scripts/prepare_chunks.py</td></tr>
+      <tr><td>OCR conversion script</td><td class="mono">domains/birth_death_registration/scripts/ocr_scanned_pdfs.py</td></tr>
+      <tr><td>Prepared chunks</td><td class="mono">domains/birth_death_registration/data/interim/birth_death_chunks.jsonl</td></tr>
+      <tr><td>Vector database</td><td class="mono">domains/birth_death_registration/data/processed/chroma_birth_death_bge_m3</td></tr>
+      <tr><td>Main pipeline</td><td class="mono">src/pipeline.py</td></tr>
+      <tr><td>Hybrid retrieval</td><td class="mono">src/retrieval/hybrid_retriever.py</td></tr>
+      <tr><td>Reranking</td><td class="mono">src/reranking/reranker.py</td></tr>
+      <tr><td>Local web app</td><td class="mono">app.py</td></tr>
+      <tr><td>Raw data audit</td><td class="mono">docs/birth_death_raw_data_audit.md</td></tr>
+    </table>
+    <div class="lead">
+      Bottom line: Civic.ai is now a working, locally runnable, source-grounded Bangla RAG prototype
+      for birth/death registration. The next big academic milestone is not adding more tricks; it is
+      building a clean evaluation set and producing defensible comparison tables.
+    </div>
+  </section>
+</body>
+</html>
