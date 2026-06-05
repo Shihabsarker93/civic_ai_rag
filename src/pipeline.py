@@ -51,6 +51,8 @@ class CivicRAGPipeline:
         normalized_method = self._normalize_method(method)
         final_results = self.retrieve(query, method=normalized_method)
         contexts = [self._context_from_result(result) for result in final_results]
+        if normalized_method == "civic":
+            contexts = self._augment_contexts(query, contexts)
 
         answer = ""
         selected_model = model or self.generation_config["default_model"]
@@ -144,6 +146,27 @@ class CivicRAGPipeline:
                 remaining = [context for context in contexts if context["id"] != expanded["id"]]
                 return [expanded, *remaining[: max(max_contexts - 1, 0)]]
         return contexts[:max_contexts]
+
+    def _augment_contexts(self, query: str, contexts: list[dict[str, Any]]) -> list[dict[str, Any]]:
+        augmented = list(contexts)
+        seen_ids = {str(context["id"]) for context in augmented}
+        supplemental: list[dict[str, Any] | None] = []
+
+        if self._is_birth_date_correction_query(query):
+            supplemental.append(
+                self._find_context(self.chunks, document_type="fee_row", content_contains="জন্ম তারিখ সংশোধন")
+            )
+        if self._is_data_correction_query(query):
+            supplemental.append(
+                self._find_context(self.chunks, document_type="fee_row", content_contains="জন্ম তারিখ ব্যতীত")
+            )
+
+        for context in supplemental:
+            if not context or str(context["id"]) in seen_ids:
+                continue
+            augmented.append(context)
+            seen_ids.add(str(context["id"]))
+        return augmented
 
     def _safe_extractive_answer(
         self,
@@ -350,6 +373,7 @@ class CivicRAGPipeline:
             ]
             fee = self._find_context(contexts, document_type="fee_row", content_contains="জন্ম তারিখ ব্যতীত")
             if correction_contexts:
+                cited_contexts = list(contexts[:3])
                 lines = ["নাম/ঠিকানা/তথ্য ভুল হলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করতে হবে।"]
                 for context in correction_contexts[:4]:
                     section = context["metadata"].get("section_title", "")
@@ -357,10 +381,13 @@ class CivicRAGPipeline:
                     if body:
                         lines.append(f"{section}: {body}")
                 if fee:
+                    if fee not in cited_contexts:
+                        cited_contexts.append(fee)
                     amount = self._extract_labeled_value(str(fee["content"]), "Fee amount")
                     if amount:
                         lines.append(f"জন্ম তারিখ ব্যতীত নাম, পিতার নাম, মাতার নাম, ঠিকানা ইত্যাদি তথ্য সংশোধনের আবেদন ফি: {amount}।")
-                return "\n\n".join(lines) + f"\n\nSources: {', '.join(source_ids)}"
+                cited_ids = [str(context["id"]) for context in cited_contexts[:5]]
+                return "\n\n".join(lines) + f"\n\nSources: {', '.join(cited_ids)}"
 
         return ""
 
