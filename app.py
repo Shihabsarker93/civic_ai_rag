@@ -266,6 +266,10 @@ HTML = """<!doctype html>
       if (sources.length) {
         const box = document.createElement("div");
         box.className = "sources";
+        const title = document.createElement("div");
+        title.className = "links-title";
+        title.textContent = "Retrieved candidate chunks for debugging";
+        box.appendChild(title);
         sources.forEach((source, index) => {
           const item = document.createElement("div");
           item.className = "source";

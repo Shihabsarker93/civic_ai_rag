@@ -324,6 +324,9 @@ class CivicRAGPipeline:
                     )
                     return f"{summary}\n\nপ্রাসঙ্গিক বিধি: {body}\n\nSources: {', '.join(source_ids)}"
 
+        if self._is_mixed_correction_query(query):
+            return self._safe_mixed_correction_answer(contexts)
+
         if self._is_birth_date_correction_query(query):
             fee = self._find_context(contexts, document_type="fee_row", content_contains="জন্ম তারিখ সংশোধন")
             feature = self._find_context(contexts, document_type="correction_notice_ocr", content_contains="জন্ম তারিখ সংশোধন")
@@ -373,12 +376,22 @@ class CivicRAGPipeline:
             ]
             fee = self._find_context(contexts, document_type="fee_row", content_contains="জন্ম তারিখ ব্যতীত")
             if correction_contexts:
-                cited_contexts = list(contexts[:3])
+                cited_contexts: list[dict[str, Any]] = []
                 lines = ["নাম/ঠিকানা/তথ্য ভুল হলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করতে হবে।"]
-                for context in correction_contexts[:4]:
+                if self._is_parent_name_correction_query(query):
+                    answer_contexts = self._sort_contexts_by_section_index(correction_contexts)[:4]
+                else:
+                    answer_contexts = [
+                        context
+                        for context in self._sort_contexts_by_section_index(correction_contexts)
+                        if any(term in str(context["metadata"].get("section_title", "")) for term in ["যোগাযোগ", "তথ্য সংশোধন"])
+                    ][:3]
+                for context in answer_contexts:
                     section = context["metadata"].get("section_title", "")
                     body = self._clean_evidence_body(self._extract_labeled_value(str(context["content"]), "Content"))
                     if body:
+                        if context not in cited_contexts:
+                            cited_contexts.append(context)
                         lines.append(f"{section}: {body}")
                 if fee:
                     if fee not in cited_contexts:
@@ -386,10 +399,65 @@ class CivicRAGPipeline:
                     amount = self._extract_labeled_value(str(fee["content"]), "Fee amount")
                     if amount:
                         lines.append(f"জন্ম তারিখ ব্যতীত নাম, পিতার নাম, মাতার নাম, ঠিকানা ইত্যাদি তথ্য সংশোধনের আবেদন ফি: {amount}।")
+                if not self._is_parent_name_correction_query(query):
+                    lines.append("এই ডেটাসেটে নাম/ঠিকানা সংশোধনের পূর্ণ ধাপে-ধাপে প্রক্রিয়া নেই; তাই সংশ্লিষ্ট নিবন্ধন কার্যালয় বা BDRIS সংশোধন পোর্টালের নির্দেশনা অনুসরণ করা উচিত।")
                 cited_ids = [str(context["id"]) for context in cited_contexts[:5]]
                 return "\n\n".join(lines) + f"\n\nSources: {', '.join(cited_ids)}"
 
         return ""
+
+    def _safe_mixed_correction_answer(self, contexts: list[dict[str, Any]]) -> str:
+        correction_contexts = [
+            context for context in contexts if context["metadata"].get("document_type") == "correction_process"
+        ]
+        birth_date_fee = self._find_context(contexts, document_type="fee_row", content_contains="জন্ম তারিখ সংশোধন")
+        other_info_fee = self._find_context(contexts, document_type="fee_row", content_contains="জন্ম তারিখ ব্যতীত")
+        feature = self._find_context(contexts, document_type="correction_notice_ocr", content_contains="জন্ম তারিখ সংশোধন")
+        legal = self._find_context(contexts, document_type="legal_rules", content_contains="ধারা ১৫")
+
+        cited_contexts: list[dict[str, Any]] = []
+        lines = [
+            "নাম, ঠিকানা এবং জন্ম তারিখ একসাথে ভুল হলে এগুলোকে জন্ম নিবন্ধন তথ্য সংশোধনের বিষয় হিসেবে ধরতে হবে।",
+            "তবে জন্ম তারিখ সংশোধন এবং জন্ম তারিখ ব্যতীত অন্যান্য তথ্য সংশোধনের ফি আলাদা।",
+        ]
+        if feature:
+            if feature not in cited_contexts:
+                cited_contexts.append(feature)
+            lines.append("BDRIS সংশোধন-সংক্রান্ত ফিচারের তালিকায় জন্ম তারিখ সংশোধন অন্তর্ভুক্ত আছে।")
+        if legal:
+            if legal not in cited_contexts:
+                cited_contexts.append(legal)
+            lines.append("প্রাসঙ্গিক বিধি অনুযায়ী জন্ম তারিখ একবার নিবন্ধন করা হলে পরবর্তীতে আইনের ধারা ১৫ অনুযায়ী সংশোধন করা যায়।")
+        if correction_contexts:
+            lines.append("নাম/ঠিকানা/অন্যান্য তথ্য সংশোধনের জন্য জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করতে হবে।")
+            general_contexts = [
+                context
+                for context in self._sort_contexts_by_section_index(correction_contexts)
+                if any(term in str(context["metadata"].get("section_title", "")) for term in ["যোগাযোগ", "তথ্য সংশোধন"])
+            ][:2]
+            for context in general_contexts:
+                section = context["metadata"].get("section_title", "")
+                body = self._clean_evidence_body(self._extract_labeled_value(str(context["content"]), "Content"))
+                if body:
+                    if context not in cited_contexts:
+                        cited_contexts.append(context)
+                    lines.append(f"{section}: {body}")
+        if birth_date_fee:
+            if birth_date_fee not in cited_contexts:
+                cited_contexts.append(birth_date_fee)
+            amount = self._extract_labeled_value(str(birth_date_fee["content"]), "Fee amount")
+            if amount:
+                lines.append(f"জন্ম তারিখ সংশোধনের আবেদন ফি: {amount}।")
+        if other_info_fee:
+            if other_info_fee not in cited_contexts:
+                cited_contexts.append(other_info_fee)
+            amount = self._extract_labeled_value(str(other_info_fee["content"]), "Fee amount")
+            if amount:
+                lines.append(f"জন্ম তারিখ ব্যতীত নাম, পিতার নাম, মাতার নাম, ঠিকানা ইত্যাদি তথ্য সংশোধনের আবেদন ফি: {amount}।")
+        lines.append("এই ডেটাসেটে সব ধরনের সংশোধনের সম্পূর্ণ ধাপে-ধাপে প্রক্রিয়া নেই; তাই সংশ্লিষ্ট নিবন্ধন কার্যালয়/BDRIS নির্দেশনা অনুসরণ করা উচিত।")
+
+        cited_ids = [str(context["id"]) for context in cited_contexts[:6]]
+        return "\n\n".join(lines) + f"\n\nSources: {', '.join(cited_ids)}"
 
     def _fallback_evidence_answer(self, query: str, contexts: list[dict[str, Any]]) -> str:
         if not self._is_bangla_query(query) or not contexts:
@@ -497,6 +565,20 @@ class CivicRAGPipeline:
             any(term in query for term in ["নাম", "ঠিকানা", "সব ভুল", "তথ্য ভুল", "ঠিক করবে", "ঠিক করতে"])
             and any(term in query for term in ["সংশোধন", "ভুল", "ঠিক"])
         ) or any(term in query_lc for term in ["wrong name", "wrong address", "correct information", "data correction"])
+
+    @staticmethod
+    def _is_parent_name_correction_query(query: str) -> bool:
+        query_lc = query.lower()
+        return (
+            any(term in query for term in ["পিতার", "মাতার", "পিতা", "মাতা", "বাবার", "মায়ের", "মায়ের"])
+            or any(term in query_lc for term in ["father", "mother", "parent"])
+        )
+
+    @staticmethod
+    def _is_mixed_correction_query(query: str) -> bool:
+        has_birth_date = CivicRAGPipeline._is_birth_date_correction_query(query)
+        has_other_field = any(term in query for term in ["নাম", "ঠিকানা", "পিতার নাম", "মাতার নাম", "তথ্য"])
+        return has_birth_date and has_other_field
 
     @staticmethod
     def _is_registration_deadline_query(query: str) -> bool:
@@ -642,6 +724,17 @@ class CivicRAGPipeline:
         expanded["metadata"]["expanded_chunk_count"] = len(useful_sections)
         expanded["metadata"]["expanded_from_source_path"] = str(source_path)
         return expanded
+
+    @staticmethod
+    def _sort_contexts_by_section_index(contexts: list[dict[str, Any]]) -> list[dict[str, Any]]:
+        def section_index(context: dict[str, Any]) -> int:
+            value = context.get("metadata", {}).get("section_index", 0)
+            try:
+                return int(value)
+            except (TypeError, ValueError):
+                return 0
+
+        return sorted(contexts, key=section_index)
 
     @staticmethod
     def _load_jsonl(path: Path) -> list[dict[str, Any]]:
