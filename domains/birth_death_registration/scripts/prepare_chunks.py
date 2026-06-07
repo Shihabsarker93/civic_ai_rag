@@ -4,13 +4,19 @@ import argparse
 import json
 import re
 import sys
+import unicodedata
 from pathlib import Path
 from typing import Any
+
+from transformers import AutoTokenizer
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(PROJECT_ROOT))
 
+CHUNKING_VERSION = "2026-06-07-nfc-token-audit"
+PRACTICAL_TOKEN_WARNING_THRESHOLD = 1024
+ZERO_WIDTH_RE = re.compile(r"[\u200b\u200c\u200d\u200e\u200f\ufeff]")
 
 FRONTMATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n?", re.DOTALL)
 HEADING_RE = re.compile(r"^(#{1,6})\s+(.+)$", re.MULTILINE)
@@ -54,10 +60,43 @@ def parse_frontmatter(text: str) -> tuple[dict[str, str], str]:
 
 
 def normalize_text(text: str) -> str:
-    text = text.replace("\ufeff", "").replace("\r", "")
+    text = unicodedata.normalize("NFC", text)
+    text = ZERO_WIDTH_RE.sub("", text)
+    text = text.replace("\r", "")
     text = re.sub(r"[ \t]+", " ", text)
     text = re.sub(r"\n{3,}", "\n\n", text)
     return text.strip()
+
+
+def load_tokenizer(model_name: str, *, local_files_only: bool) -> Any:
+    return AutoTokenizer.from_pretrained(model_name, local_files_only=local_files_only)
+
+
+def token_count(tokenizer: Any, text: str) -> int:
+    return len(tokenizer.encode(text, add_special_tokens=True))
+
+
+def add_token_audit_metadata(chunks: list[dict[str, Any]], tokenizer: Any) -> list[str]:
+    warnings: list[str] = []
+    model_limit = int(getattr(tokenizer, "model_max_length", 8192))
+    for chunk in chunks:
+        content_tokens = token_count(tokenizer, chunk["content"])
+        retrieval_tokens = token_count(tokenizer, chunk.get("retrieval_text", chunk["content"]))
+        chunk["metadata"]["chunking_version"] = CHUNKING_VERSION
+        chunk["metadata"]["content_token_count"] = content_tokens
+        chunk["metadata"]["retrieval_token_count"] = retrieval_tokens
+        chunk["metadata"]["embedding_model_max_tokens"] = model_limit
+        if retrieval_tokens > PRACTICAL_TOKEN_WARNING_THRESHOLD:
+            warnings.append(
+                f"{chunk['id']} has {retrieval_tokens} retrieval tokens "
+                f"(practical warning threshold: {PRACTICAL_TOKEN_WARNING_THRESHOLD})"
+            )
+        if retrieval_tokens > model_limit:
+            raise ValueError(
+                f"Chunk {chunk['id']} has {retrieval_tokens} retrieval tokens, "
+                f"exceeding tokenizer limit {model_limit}"
+            )
+    return warnings
 
 
 def slug(text: str) -> str:
@@ -571,6 +610,7 @@ def main() -> None:
     config = load_config(PROJECT_ROOT / args.config)
     data_config = config["data"]
     preprocessing_config = config["preprocessing"]
+    embedding_config = config["embedding"]
     raw_json_dir = PROJECT_ROOT / data_config["raw_json_dir"]
     raw_markdown_dir = PROJECT_ROOT / data_config["raw_markdown_dir"]
     output_path = PROJECT_ROOT / data_config["chunk_output_path"]
@@ -592,6 +632,12 @@ def main() -> None:
     if duplicates:
         raise ValueError(f"Duplicate chunk ids found: {duplicates[:10]}")
 
+    tokenizer = load_tokenizer(
+        embedding_config["model"],
+        local_files_only=embedding_config.get("local_files_only", True),
+    )
+    token_warnings = add_token_audit_metadata(chunks, tokenizer)
+
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with output_path.open("w", encoding="utf-8") as file:
         for chunk in chunks:
@@ -604,6 +650,11 @@ def main() -> None:
 
     print(f"Chunks written: {len(chunks)}")
     print(json.dumps(by_type, ensure_ascii=False, indent=2))
+    print(f"Chunking version: {CHUNKING_VERSION}")
+    print(f"Tokenizer max tokens: {tokenizer.model_max_length}")
+    print(f"Chunks above practical {PRACTICAL_TOKEN_WARNING_THRESHOLD}-token warning threshold: {len(token_warnings)}")
+    for warning in token_warnings[:10]:
+        print(f"WARNING: {warning}")
     print(f"Output: {output_path}")
 
 

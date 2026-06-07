@@ -47,7 +47,10 @@ def main() -> None:
         device=embedding_config["device"],
         local_files_only=embedding_config.get("local_files_only", False),
     )
+    # Embed retrieval_text so aliases can help search, but store clean content
+    # as the Chroma document for safer inspection/debugging.
     retrieval_texts = [chunk.get("retrieval_text", chunk["content"]) for chunk in chunks]
+    documents = [chunk["content"] for chunk in chunks]
     embeddings = model.encode(
         retrieval_texts,
         normalize_embeddings=embedding_config.get("normalize_embeddings", True),
@@ -62,7 +65,7 @@ def main() -> None:
 
     collection.add(
         ids=[chunk["id"] for chunk in chunks],
-        documents=retrieval_texts,
+        documents=documents,
         metadatas=[chunk["metadata"] for chunk in chunks],
         embeddings=embeddings,
     )

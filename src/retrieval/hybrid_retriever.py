@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import math
 import re
+import unicodedata
 from collections import defaultdict
 from dataclasses import dataclass
 from typing import Any
@@ -12,9 +13,12 @@ from sentence_transformers import SentenceTransformer
 
 
 TOKEN_PATTERN = re.compile(r"[\w\u0980-\u09FF]+", re.UNICODE)
+ZERO_WIDTH_RE = re.compile(r"[\u200b\u200c\u200d\u200e\u200f\ufeff]")
 
 
 def tokenize(text: str) -> list[str]:
+    text = unicodedata.normalize("NFC", text)
+    text = ZERO_WIDTH_RE.sub("", text)
     return [match.group(0).lower() for match in TOKEN_PATTERN.finditer(text)]
 
 
