@@ -1,0 +1,965 @@
+[
+  {
+    "question_index": 1,
+    "question": "জন্মসনদের জন্য আবেদন করব কীভাবে? কি কি কাগজপত্র প্রয়োজন? আবেদনের পর progress কীভাবে জানবো?",
+    "runs": [
+      {
+        "model": "llama3.2",
+        "elapsed": 14.31,
+        "answer": "জন্ম নিবন্ধনের জন্য সাধারণত জন্মস্থান, স্থায়ী ঠিকানা এবং বর্তমান ঠিকানার তথ্য প্রস্তুত রাখতে হয়।\n\nনতুন জন্ম নিবন্ধন আবেদনের পূর্বে প্রয়োজনীয় তথ্য ও ডকুমেন্ট সংগ্রহ করে রাখুন।\n\nজন্ম নিবন্ধনের ক্ষেত্রে নিম্নোক্ত তিন ধরনের ঠিকানার তথ্য প্রয়োজন হবে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রতিটি ঠিকানার জন্য নিম্নোক্ত তথ্য প্রয়োজন হতে পারে:\n\n- ইউনিয়ন পরিষদ/পৌরসভা/সিটি কর্পোরেশন/ক্যান্টনমেন্টের নাম\n- ওয়ার্ড নম্বর\n- ডাকঘর\n- গ্রাম/পাড়া/মহল্লা\n- বাসা ও সড়কের নাম ও নম্বর\n\nসকল তথ্য বাংলা ও ইংরেজি উভয় ভাষায় সঠিক বানানে লিখতে হবে।\n\nযদি ব্যক্তি নিজে আবেদন করেন, তাহলে \"নিজ\" অপশন নির্বাচন করতে হবে।\n\nঅন্য কেউ আবেদন করলে \"অন্যান্য\" অপশন নির্বাচন করতে হবে।\n\n\"অন্যান্য\" নির্বাচন করলে আবেদনকারীর জন্ম নিবন্ধন নম্বর প্রদান করতে হবে।\n\nএরপর ঘোষণা দিতে হবে যে:\n\n- প্রদত্ত তথ্যসমূহ সঠিক\n- পূর্বে জন্ম নিবন্ধন করা হয়নি\n\nSources: birth_registration_application_process_cleaned_002_01, birth_registration_application_process_cleaned_015_01, birth_registration_application_process_02_cleaned_010_01",
+        "top_sources": [
+          {
+            "id": "birth_registration_application_process_cleaned_002_01",
+            "document_type": "application_process",
+            "section": "আবেদন করার পূর্ব প্রস্তুতি",
+            "score": 1.0831537294387816
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_015_01",
+            "document_type": "application_process",
+            "section": "ধাপ ৬: আবেদনকারীর তথ্য ও ডকুমেন্ট সংযুক্তি",
+            "score": 0.9673278975486755
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_010_01",
+            "document_type": "application_process",
+            "section": "ধাপ ৮: প্রয়োজনীয় প্রমাণক সংযুক্তি",
+            "score": 0.9573888230323792
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_006_01",
+            "document_type": "application_process",
+            "section": "আবেদন সম্পন্ন হওয়ার পর",
+            "score": 0.954063355922699
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_014_01",
+            "document_type": "application_process",
+            "section": "ধাপ ১২: আবেদনপত্র জমা",
+            "score": 0.9485443830490112
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_020_01",
+            "document_type": "application_process",
+            "section": "পরবর্তী করণীয়",
+            "score": 0.9414687752723694
+          }
+        ]
+      },
+      {
+        "model": "llama3",
+        "elapsed": 9.14,
+        "answer": "জন্ম নিবন্ধনের জন্য সাধারণত জন্মস্থান, স্থায়ী ঠিকানা এবং বর্তমান ঠিকানার তথ্য প্রস্তুত রাখতে হয়।\n\nনতুন জন্ম নিবন্ধন আবেদনের পূর্বে প্রয়োজনীয় তথ্য ও ডকুমেন্ট সংগ্রহ করে রাখুন।\n\nজন্ম নিবন্ধনের ক্ষেত্রে নিম্নোক্ত তিন ধরনের ঠিকানার তথ্য প্রয়োজন হবে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রতিটি ঠিকানার জন্য নিম্নোক্ত তথ্য প্রয়োজন হতে পারে:\n\n- ইউনিয়ন পরিষদ/পৌরসভা/সিটি কর্পোরেশন/ক্যান্টনমেন্টের নাম\n- ওয়ার্ড নম্বর\n- ডাকঘর\n- গ্রাম/পাড়া/মহল্লা\n- বাসা ও সড়কের নাম ও নম্বর\n\nসকল তথ্য বাংলা ও ইংরেজি উভয় ভাষায় সঠিক বানানে লিখতে হবে।\n\nযদি ব্যক্তি নিজে আবেদন করেন, তাহলে \"নিজ\" অপশন নির্বাচন করতে হবে।\n\nঅন্য কেউ আবেদন করলে \"অন্যান্য\" অপশন নির্বাচন করতে হবে।\n\n\"অন্যান্য\" নির্বাচন করলে আবেদনকারীর জন্ম নিবন্ধন নম্বর প্রদান করতে হবে।\n\nএরপর ঘোষণা দিতে হবে যে:\n\n- প্রদত্ত তথ্যসমূহ সঠিক\n- পূর্বে জন্ম নিবন্ধন করা হয়নি\n\nSources: birth_registration_application_process_cleaned_002_01, birth_registration_application_process_cleaned_015_01, birth_registration_application_process_02_cleaned_010_01",
+        "top_sources": [
+          {
+            "id": "birth_registration_application_process_cleaned_002_01",
+            "document_type": "application_process",
+            "section": "আবেদন করার পূর্ব প্রস্তুতি",
+            "score": 1.0831537294387816
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_015_01",
+            "document_type": "application_process",
+            "section": "ধাপ ৬: আবেদনকারীর তথ্য ও ডকুমেন্ট সংযুক্তি",
+            "score": 0.9673278975486755
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_010_01",
+            "document_type": "application_process",
+            "section": "ধাপ ৮: প্রয়োজনীয় প্রমাণক সংযুক্তি",
+            "score": 0.9573888230323792
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_006_01",
+            "document_type": "application_process",
+            "section": "আবেদন সম্পন্ন হওয়ার পর",
+            "score": 0.954063355922699
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_014_01",
+            "document_type": "application_process",
+            "section": "ধাপ ১২: আবেদনপত্র জমা",
+            "score": 0.9485443830490112
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_020_01",
+            "document_type": "application_process",
+            "section": "পরবর্তী করণীয়",
+            "score": 0.9414687752723694
+          }
+        ]
+      },
+      {
+        "model": "qwen2.5:7b",
+        "elapsed": 10.54,
+        "answer": "জন্ম নিবন্ধনের জন্য সাধারণত জন্মস্থান, স্থায়ী ঠিকানা এবং বর্তমান ঠিকানার তথ্য প্রস্তুত রাখতে হয়।\n\nনতুন জন্ম নিবন্ধন আবেদনের পূর্বে প্রয়োজনীয় তথ্য ও ডকুমেন্ট সংগ্রহ করে রাখুন।\n\nজন্ম নিবন্ধনের ক্ষেত্রে নিম্নোক্ত তিন ধরনের ঠিকানার তথ্য প্রয়োজন হবে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রতিটি ঠিকানার জন্য নিম্নোক্ত তথ্য প্রয়োজন হতে পারে:\n\n- ইউনিয়ন পরিষদ/পৌরসভা/সিটি কর্পোরেশন/ক্যান্টনমেন্টের নাম\n- ওয়ার্ড নম্বর\n- ডাকঘর\n- গ্রাম/পাড়া/মহল্লা\n- বাসা ও সড়কের নাম ও নম্বর\n\nসকল তথ্য বাংলা ও ইংরেজি উভয় ভাষায় সঠিক বানানে লিখতে হবে।\n\nযদি ব্যক্তি নিজে আবেদন করেন, তাহলে \"নিজ\" অপশন নির্বাচন করতে হবে।\n\nঅন্য কেউ আবেদন করলে \"অন্যান্য\" অপশন নির্বাচন করতে হবে।\n\n\"অন্যান্য\" নির্বাচন করলে আবেদনকারীর জন্ম নিবন্ধন নম্বর প্রদান করতে হবে।\n\nএরপর ঘোষণা দিতে হবে যে:\n\n- প্রদত্ত তথ্যসমূহ সঠিক\n- পূর্বে জন্ম নিবন্ধন করা হয়নি\n\nSources: birth_registration_application_process_cleaned_002_01, birth_registration_application_process_cleaned_015_01, birth_registration_application_process_02_cleaned_010_01",
+        "top_sources": [
+          {
+            "id": "birth_registration_application_process_cleaned_002_01",
+            "document_type": "application_process",
+            "section": "আবেদন করার পূর্ব প্রস্তুতি",
+            "score": 1.0831537294387816
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_015_01",
+            "document_type": "application_process",
+            "section": "ধাপ ৬: আবেদনকারীর তথ্য ও ডকুমেন্ট সংযুক্তি",
+            "score": 0.9673278975486755
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_010_01",
+            "document_type": "application_process",
+            "section": "ধাপ ৮: প্রয়োজনীয় প্রমাণক সংযুক্তি",
+            "score": 0.9573888230323792
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_006_01",
+            "document_type": "application_process",
+            "section": "আবেদন সম্পন্ন হওয়ার পর",
+            "score": 0.954063355922699
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_014_01",
+            "document_type": "application_process",
+            "section": "ধাপ ১২: আবেদনপত্র জমা",
+            "score": 0.9485443830490112
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_020_01",
+            "document_type": "application_process",
+            "section": "পরবর্তী করণীয়",
+            "score": 0.9414687752723694
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_index": 2,
+    "question": "জন্মনিবন্ধন সনদ হারিয়ে গিয়েছে, কি করব?",
+    "runs": [
+      {
+        "model": "llama3.2",
+        "elapsed": 21.28,
+        "answer": "জন্ম নিবন্ধন সনদ হারিয়ে গেলে বা নষ্ট হলে নিবন্ধকের কাছে সনদের প্রতিলিপির জন্য আবেদন করতে হবে। বিধি ১৩ অনুযায়ী, আবেদন পাওয়ার ৭ কার্য দিবসের মধ্যে জন্ম/মৃত্যু নিবন্ধন সনদের প্রতিলিপি প্রদান করা হয়। প্রতিলিপির জন্য বিধি ২১ অনুযায়ী নির্ধারিত ফি প্রযোজ্য হতে পারে।\n\nপ্রাসঙ্গিক বিধি: (১) নিবন্ধিত কোন ব্যক্তির সনদ হারাইয়া গেলে বা নষ্ট হইলে, নিবন্ধক, উপ-বিধি (২) ও (৩) এর বিধান সাপেক্ষে, জমনি ফরম-৭ অনুযায়ী উক্ত ব্যক্তির আবেদন প্রাপ্তির ৭ (সাত) কার্য দিবসের মধ্যে জমনি ফরম-৩ ও জমনি ফরম-৬ অনুযায়ী জন্ম ও মৃত্যু নিবন্ধন সনদের প্রতিলিপি প্রদান করিবেন। (২) বিধি ২১ এ নির্ধারিত ফিস প্রদান সাপেক্ষে, নিম্নবর্ণিত কোন ব্যক্তি জন্ম ও মৃত্যু নিবন্ধন সনদের প্রতিলিপির জন্য জমনি ফরম-৭ অনুযায়ী নিবন্ধকের নিকট আবেদন করিতে পারিবেন, যথা:\n(ক) যাহার জন্য জন্ম সনদ প্রদান করা হইবে তাহার বয়স ১৮ (আঠার) বৎসর বা তদূর্ধ্ব হইলে তিনি স্বয়ং অথবা (খ) জন্ম তথ্য প্রদানকারী অথবা (গ) মৃত্যু তথ্য প্রদানকারী অথবা (ঘ) জন্ম বা মৃত্যু তথ্য দ্বারা সংক্ষুব্ধ ব্যক্তি। (৩) উপ-বিধি (২) এর অধীন আবেদনপত্র প্রাপ্তির পর নিবন্ধক যদি নিশ্চিত হন যে, উক্ত আবেদনপত্র যথাযথভাবে পূরণ করা হইয়াছে এবং ফিস প্রদান করা হইয়াছে তাহা হইলে তিনি আবেদনকারীর অংশ স্বাক্ষরপূর্বক উহা আবেদনকারীর নিকট হস্তান্তর করিবেন। (৪) উপ-বিধি (৩) এর অধীন আবেদনপত্র প্রাপ্তির পর নিবন্ধক সনদের প্রতিলিপি প্রস্তুত করিবেন এবং আবেদনকারীর অংশ গ্রহণ করিয়া সনদের প্রতিলিপি আবেদনকারীর নিকট হস্তান্তরের ব্যবস্থা করিবেন। (৫) প্রতিলিপি সনদের উপরিভাগে প্রতিলিপি বা উঁঢ়ষরপধঃব শব্দটি এবং, ক্ষেত্রমত, সংশোধিত সনদের ক্ষেত্রে সংশোধিত শব্দটি উল্লেখ থাকিবে এবং প্রথম বার জন্ম বা মৃত্যু নিবন্ধন সনদ যে তারিখে ইস্যু হইয়াছে প্রতিলিপি সনদ ইস্যুর সেই তারিখ বহাল থাকিবে ও প্রতিলিপি সনদ ইস্যুর তারিখ লিপিবদ্ধ করিতে হইবে।\n\nSources: birth_and_death_registration_rules_2018_বিধি_১৩_01, birth_and_death_registration_act_2004_ধারা_১৫_01, birth_and_death_registration_rules_2018_বিধি_১৫_01",
+        "top_sources": [
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১৩_01",
+            "document_type": "legal_rules",
+            "section": "সনদের প্রতিলিপি প্রদান",
+            "score": 1.0257967138290405
+          },
+          {
+            "id": "birth_and_death_registration_act_2004_ধারা_১৫_01",
+            "document_type": "legal_act",
+            "section": "নিবন্ধন বহি এবং জন্ম বা মৃত্যু সনদ সংশোধন",
+            "score": 0.6379737257957458
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১৫_01",
+            "document_type": "legal_rules",
+            "section": "জন্ম বা মৃত্যু সনদ সংশোধন ও বাতিল",
+            "score": 0.5876038980484009
+          },
+          {
+            "id": "notice_birth_and_death_registration_certificate_correction_steps_ocr_004_01",
+            "document_type": "correction_notice_ocr",
+            "section": "একাধিক জন্ম বা মৃত্যু সনদ বাতিলের ধাপ",
+            "score": 0.49010878801345825
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১২_02",
+            "document_type": "legal_rules",
+            "section": "প্রবাসীগণের মৃত্যু নিবন্ধন",
+            "score": 0.44151418685913085
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_020_01",
+            "document_type": "application_process",
+            "section": "পরবর্তী করণীয়",
+            "score": 0.36699128031730655
+          }
+        ]
+      },
+      {
+        "model": "llama3",
+        "elapsed": 21.62,
+        "answer": "জন্ম নিবন্ধন সনদ হারিয়ে গেলে বা নষ্ট হলে নিবন্ধকের কাছে সনদের প্রতিলিপির জন্য আবেদন করতে হবে। বিধি ১৩ অনুযায়ী, আবেদন পাওয়ার ৭ কার্য দিবসের মধ্যে জন্ম/মৃত্যু নিবন্ধন সনদের প্রতিলিপি প্রদান করা হয়। প্রতিলিপির জন্য বিধি ২১ অনুযায়ী নির্ধারিত ফি প্রযোজ্য হতে পারে।\n\nপ্রাসঙ্গিক বিধি: (১) নিবন্ধিত কোন ব্যক্তির সনদ হারাইয়া গেলে বা নষ্ট হইলে, নিবন্ধক, উপ-বিধি (২) ও (৩) এর বিধান সাপেক্ষে, জমনি ফরম-৭ অনুযায়ী উক্ত ব্যক্তির আবেদন প্রাপ্তির ৭ (সাত) কার্য দিবসের মধ্যে জমনি ফরম-৩ ও জমনি ফরম-৬ অনুযায়ী জন্ম ও মৃত্যু নিবন্ধন সনদের প্রতিলিপি প্রদান করিবেন। (২) বিধি ২১ এ নির্ধারিত ফিস প্রদান সাপেক্ষে, নিম্নবর্ণিত কোন ব্যক্তি জন্ম ও মৃত্যু নিবন্ধন সনদের প্রতিলিপির জন্য জমনি ফরম-৭ অনুযায়ী নিবন্ধকের নিকট আবেদন করিতে পারিবেন, যথা:\n(ক) যাহার জন্য জন্ম সনদ প্রদান করা হইবে তাহার বয়স ১৮ (আঠার) বৎসর বা তদূর্ধ্ব হইলে তিনি স্বয়ং অথবা (খ) জন্ম তথ্য প্রদানকারী অথবা (গ) মৃত্যু তথ্য প্রদানকারী অথবা (ঘ) জন্ম বা মৃত্যু তথ্য দ্বারা সংক্ষুব্ধ ব্যক্তি। (৩) উপ-বিধি (২) এর অধীন আবেদনপত্র প্রাপ্তির পর নিবন্ধক যদি নিশ্চিত হন যে, উক্ত আবেদনপত্র যথাযথভাবে পূরণ করা হইয়াছে এবং ফিস প্রদান করা হইয়াছে তাহা হইলে তিনি আবেদনকারীর অংশ স্বাক্ষরপূর্বক উহা আবেদনকারীর নিকট হস্তান্তর করিবেন। (৪) উপ-বিধি (৩) এর অধীন আবেদনপত্র প্রাপ্তির পর নিবন্ধক সনদের প্রতিলিপি প্রস্তুত করিবেন এবং আবেদনকারীর অংশ গ্রহণ করিয়া সনদের প্রতিলিপি আবেদনকারীর নিকট হস্তান্তরের ব্যবস্থা করিবেন। (৫) প্রতিলিপি সনদের উপরিভাগে প্রতিলিপি বা উঁঢ়ষরপধঃব শব্দটি এবং, ক্ষেত্রমত, সংশোধিত সনদের ক্ষেত্রে সংশোধিত শব্দটি উল্লেখ থাকিবে এবং প্রথম বার জন্ম বা মৃত্যু নিবন্ধন সনদ যে তারিখে ইস্যু হইয়াছে প্রতিলিপি সনদ ইস্যুর সেই তারিখ বহাল থাকিবে ও প্রতিলিপি সনদ ইস্যুর তারিখ লিপিবদ্ধ করিতে হইবে।\n\nSources: birth_and_death_registration_rules_2018_বিধি_১৩_01, birth_and_death_registration_act_2004_ধারা_১৫_01, birth_and_death_registration_rules_2018_বিধি_১৫_01",
+        "top_sources": [
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১৩_01",
+            "document_type": "legal_rules",
+            "section": "সনদের প্রতিলিপি প্রদান",
+            "score": 1.0257967138290405
+          },
+          {
+            "id": "birth_and_death_registration_act_2004_ধারা_১৫_01",
+            "document_type": "legal_act",
+            "section": "নিবন্ধন বহি এবং জন্ম বা মৃত্যু সনদ সংশোধন",
+            "score": 0.6379737257957458
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১৫_01",
+            "document_type": "legal_rules",
+            "section": "জন্ম বা মৃত্যু সনদ সংশোধন ও বাতিল",
+            "score": 0.5876038980484009
+          },
+          {
+            "id": "notice_birth_and_death_registration_certificate_correction_steps_ocr_004_01",
+            "document_type": "correction_notice_ocr",
+            "section": "একাধিক জন্ম বা মৃত্যু সনদ বাতিলের ধাপ",
+            "score": 0.49010878801345825
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১২_02",
+            "document_type": "legal_rules",
+            "section": "প্রবাসীগণের মৃত্যু নিবন্ধন",
+            "score": 0.44151418685913085
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_020_01",
+            "document_type": "application_process",
+            "section": "পরবর্তী করণীয়",
+            "score": 0.36699128031730655
+          }
+        ]
+      },
+      {
+        "model": "qwen2.5:7b",
+        "elapsed": 21.28,
+        "answer": "জন্ম নিবন্ধন সনদ হারিয়ে গেলে বা নষ্ট হলে নিবন্ধকের কাছে সনদের প্রতিলিপির জন্য আবেদন করতে হবে। বিধি ১৩ অনুযায়ী, আবেদন পাওয়ার ৭ কার্য দিবসের মধ্যে জন্ম/মৃত্যু নিবন্ধন সনদের প্রতিলিপি প্রদান করা হয়। প্রতিলিপির জন্য বিধি ২১ অনুযায়ী নির্ধারিত ফি প্রযোজ্য হতে পারে।\n\nপ্রাসঙ্গিক বিধি: (১) নিবন্ধিত কোন ব্যক্তির সনদ হারাইয়া গেলে বা নষ্ট হইলে, নিবন্ধক, উপ-বিধি (২) ও (৩) এর বিধান সাপেক্ষে, জমনি ফরম-৭ অনুযায়ী উক্ত ব্যক্তির আবেদন প্রাপ্তির ৭ (সাত) কার্য দিবসের মধ্যে জমনি ফরম-৩ ও জমনি ফরম-৬ অনুযায়ী জন্ম ও মৃত্যু নিবন্ধন সনদের প্রতিলিপি প্রদান করিবেন। (২) বিধি ২১ এ নির্ধারিত ফিস প্রদান সাপেক্ষে, নিম্নবর্ণিত কোন ব্যক্তি জন্ম ও মৃত্যু নিবন্ধন সনদের প্রতিলিপির জন্য জমনি ফরম-৭ অনুযায়ী নিবন্ধকের নিকট আবেদন করিতে পারিবেন, যথা:\n(ক) যাহার জন্য জন্ম সনদ প্রদান করা হইবে তাহার বয়স ১৮ (আঠার) বৎসর বা তদূর্ধ্ব হইলে তিনি স্বয়ং অথবা (খ) জন্ম তথ্য প্রদানকারী অথবা (গ) মৃত্যু তথ্য প্রদানকারী অথবা (ঘ) জন্ম বা মৃত্যু তথ্য দ্বারা সংক্ষুব্ধ ব্যক্তি। (৩) উপ-বিধি (২) এর অধীন আবেদনপত্র প্রাপ্তির পর নিবন্ধক যদি নিশ্চিত হন যে, উক্ত আবেদনপত্র যথাযথভাবে পূরণ করা হইয়াছে এবং ফিস প্রদান করা হইয়াছে তাহা হইলে তিনি আবেদনকারীর অংশ স্বাক্ষরপূর্বক উহা আবেদনকারীর নিকট হস্তান্তর করিবেন। (৪) উপ-বিধি (৩) এর অধীন আবেদনপত্র প্রাপ্তির পর নিবন্ধক সনদের প্রতিলিপি প্রস্তুত করিবেন এবং আবেদনকারীর অংশ গ্রহণ করিয়া সনদের প্রতিলিপি আবেদনকারীর নিকট হস্তান্তরের ব্যবস্থা করিবেন। (৫) প্রতিলিপি সনদের উপরিভাগে প্রতিলিপি বা উঁঢ়ষরপধঃব শব্দটি এবং, ক্ষেত্রমত, সংশোধিত সনদের ক্ষেত্রে সংশোধিত শব্দটি উল্লেখ থাকিবে এবং প্রথম বার জন্ম বা মৃত্যু নিবন্ধন সনদ যে তারিখে ইস্যু হইয়াছে প্রতিলিপি সনদ ইস্যুর সেই তারিখ বহাল থাকিবে ও প্রতিলিপি সনদ ইস্যুর তারিখ লিপিবদ্ধ করিতে হইবে।\n\nSources: birth_and_death_registration_rules_2018_বিধি_১৩_01, birth_and_death_registration_act_2004_ধারা_১৫_01, birth_and_death_registration_rules_2018_বিধি_১৫_01",
+        "top_sources": [
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১৩_01",
+            "document_type": "legal_rules",
+            "section": "সনদের প্রতিলিপি প্রদান",
+            "score": 1.0257967138290405
+          },
+          {
+            "id": "birth_and_death_registration_act_2004_ধারা_১৫_01",
+            "document_type": "legal_act",
+            "section": "নিবন্ধন বহি এবং জন্ম বা মৃত্যু সনদ সংশোধন",
+            "score": 0.6379737257957458
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১৫_01",
+            "document_type": "legal_rules",
+            "section": "জন্ম বা মৃত্যু সনদ সংশোধন ও বাতিল",
+            "score": 0.5876038980484009
+          },
+          {
+            "id": "notice_birth_and_death_registration_certificate_correction_steps_ocr_004_01",
+            "document_type": "correction_notice_ocr",
+            "section": "একাধিক জন্ম বা মৃত্যু সনদ বাতিলের ধাপ",
+            "score": 0.49010878801345825
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১২_02",
+            "document_type": "legal_rules",
+            "section": "প্রবাসীগণের মৃত্যু নিবন্ধন",
+            "score": 0.44151418685913085
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_020_01",
+            "document_type": "application_process",
+            "section": "পরবর্তী করণীয়",
+            "score": 0.36699128031730655
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_index": 3,
+    "question": "ডিভোর্সের ক্ষেত্রে, শুধু পিতার/মাতার তথ্য দিয়ে কি সন্তানের জন্ম নিবন্ধন করা যাবে?",
+    "runs": [
+      {
+        "model": "llama3.2",
+        "elapsed": 68.99,
+        "answer": "ডিভোর্সের ক্ষেত্রে, একটি অপ্রাপ্য/নিখোঁজ পিতামাতার থেকে সন্তানের জন্ম নিবন্ধন করার জন্য, আইনি উল্লেখ ছাড়াও:\n\n*   পিতামাতার একজনের তথ্য দিয়ে এবং অপরজনের শুধু নাম উল্লেখ করে\n*   চেয়ারম্যান কর্তৃক প্রত্যয়ন নিতে হবে\n*   আবেদনপত্রটি নিয়ে উপজেলা নির্বাহী অফিসে শুনানীতে জমা দিতে হবে\n\nSources: bdris_faq_01_q10, bdris_faq_02_q08, bdris_faq_02_q01",
+        "top_sources": [
+          {
+            "id": "bdris_faq_01_q10",
+            "document_type": "faq",
+            "section": "special_cases",
+            "score": 0.9983748197555542
+          },
+          {
+            "id": "bdris_faq_02_q08",
+            "document_type": "faq",
+            "section": "special_cases",
+            "score": 0.9982428550720215
+          },
+          {
+            "id": "bdris_faq_02_q01",
+            "document_type": "faq",
+            "section": "parents_registration",
+            "score": 0.8451229333877563
+          },
+          {
+            "id": "bdris_faq_01_q01",
+            "document_type": "faq",
+            "section": "parents_registration",
+            "score": 0.8130297064781189
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_007_01",
+            "document_type": "application_process",
+            "section": "ধাপ ৫: পিতা-মাতার তথ্য প্রদান",
+            "score": 0.6412047743797302
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_011_01",
+            "document_type": "application_process",
+            "section": "ধাপ ৪: পিতা ও মাতার তথ্য প্রদান",
+            "score": 0.4800069332122803
+          }
+        ]
+      },
+      {
+        "model": "llama3",
+        "elapsed": 100.97,
+        "answer": "ডিভোর্সের ক্ষেত্রে, শুধু পিতার/মাতার তথ্য দিয়ে কি সন্তানের জন্ম নিবন্ধন করা যাবে?\n\nউত্তর: এইরূপ ক্ষেত্রে পিতামাতার একজনের তথ্য দিয়ে এবং অপরজনের শুধু নাম উল্লেখ করে সন্তানের জন্ম নিবন্ধন করা যাবে।\n\nSources: bdris_faq_01_q10, bdris_faq_02_q08, bdris_faq_02_q01",
+        "top_sources": [
+          {
+            "id": "bdris_faq_01_q10",
+            "document_type": "faq",
+            "section": "special_cases",
+            "score": 0.9983748197555542
+          },
+          {
+            "id": "bdris_faq_02_q08",
+            "document_type": "faq",
+            "section": "special_cases",
+            "score": 0.9982428550720215
+          },
+          {
+            "id": "bdris_faq_02_q01",
+            "document_type": "faq",
+            "section": "parents_registration",
+            "score": 0.8451229333877563
+          },
+          {
+            "id": "bdris_faq_01_q01",
+            "document_type": "faq",
+            "section": "parents_registration",
+            "score": 0.8130297064781189
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_007_01",
+            "document_type": "application_process",
+            "section": "ধাপ ৫: পিতা-মাতার তথ্য প্রদান",
+            "score": 0.6412047743797302
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_011_01",
+            "document_type": "application_process",
+            "section": "ধাপ ৪: পিতা ও মাতার তথ্য প্রদান",
+            "score": 0.4800069332122803
+          }
+        ]
+      },
+      {
+        "model": "qwen2.5:7b",
+        "elapsed": 92.61,
+        "answer": "পিতামাতার একজনের তথ্YAN দিয়ে অপরজনের শুধু নাম উল্লেখ করে সন্তানের জন্ম নিবন্ধন করা যাবে। চেয়ারম্যান কর্তৃক প্রত্যয়ন নিতে হবে এবং আবেদনপত্রটি নিয়ে উপজেলা নির্বাহী অফিসে শুনানীতে জমা দিতে হবে।\n\nSources: bdris_faq_01_q10, bdris_faq_02_q08, bdris_faq_02_q01",
+        "top_sources": [
+          {
+            "id": "bdris_faq_01_q10",
+            "document_type": "faq",
+            "section": "special_cases",
+            "score": 0.9983748197555542
+          },
+          {
+            "id": "bdris_faq_02_q08",
+            "document_type": "faq",
+            "section": "special_cases",
+            "score": 0.9982428550720215
+          },
+          {
+            "id": "bdris_faq_02_q01",
+            "document_type": "faq",
+            "section": "parents_registration",
+            "score": 0.8451229333877563
+          },
+          {
+            "id": "bdris_faq_01_q01",
+            "document_type": "faq",
+            "section": "parents_registration",
+            "score": 0.8130297064781189
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_007_01",
+            "document_type": "application_process",
+            "section": "ধাপ ৫: পিতা-মাতার তথ্য প্রদান",
+            "score": 0.6412047743797302
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_011_01",
+            "document_type": "application_process",
+            "section": "ধাপ ৪: পিতা ও মাতার তথ্য প্রদান",
+            "score": 0.4800069332122803
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_index": 4,
+    "question": "আমার জন্ম নিবন্ধন ০৬/০৩/২০১৪ তে অনলাইন করা হয়েছে। কিন্তু এখন আমি আমার জন্ম নিবন্ধন অনলাইনাে এ খুঁজে পাচ্ছি না. আমাকে এই বিষয়ে সাহায্য করুন।",
+    "runs": [
+      {
+        "model": "llama3.2",
+        "elapsed": 97.25,
+        "answer": "আপনার জন্ম নিবন্ধন ০৬/০৩/২০১৪ তে অনলাইন করা হয়েছে। সরকারি ওয়েবসাইটে \"জন্ম তথ্য যাচাই\" অপশনে ভিকটর এডমিন ফর্ম পূরণ করে এবং উত্তর খুঁজে পেতে পারবেন।\n\n1. গঠন-বিষয়ক পৃষ্ঠা (Home Page) থেকে ভিকটর এডমিন ফর্ম পৌঁছান।\n2. ভিকটর এডমিন ফর্ম পূরণ করুন, আপনার জন্ম নিবন্ধন নম্বর এবং জন্ম তারিখ দিন।\n3. সরল ও সুস্পষ্ট হওয়ার চেষ্টা করে \"জন্ম তথ্য যাচাই\" অপশন প্রবেশ করুন।\n\nউপশম: যদি আপনার জন্ম নিবন্ধন ০৬/০৩/২০১৪ তে অনলাইন করা হয়েছে এবং আপনার জন্ম নিবন্ধন নম্বর এবং জন্ম তারিখ ভুল, তাহলে আপনাকে ফর্ম পূরণ করতে হবে।\n\nSources: birth_and_death_registration_rules_2018_বিধি_৯_04, bdris_faq_01_q02, know_this_01_cleaned_008_01",
+        "top_sources": [
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_04",
+            "document_type": "legal_rules",
+            "section": "জন্ম নিবন্ধন",
+            "score": 0.5859256386756897
+          },
+          {
+            "id": "bdris_faq_01_q02",
+            "document_type": "faq",
+            "section": "manual_to_online_migration",
+            "score": 0.5163454413414001
+          },
+          {
+            "id": "know_this_01_cleaned_008_01",
+            "document_type": "general_guidance",
+            "section": "একজন ব্যক্তি জন্ম নিবন্ধন হয়েছে কিনা তা কিভাবে পরীক্ষা করবে?",
+            "score": 0.4564639627933502
+          },
+          {
+            "id": "bdris_faq_02_q03",
+            "document_type": "faq",
+            "section": "data_discrepancy",
+            "score": 0.44519516825675964
+          },
+          {
+            "id": "bdris_faq_02_q01",
+            "document_type": "faq",
+            "section": "parents_registration",
+            "score": 0.28141701221466064
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_012_01",
+            "document_type": "application_process",
+            "section": "২০১৩ সালের পর জন্মগ্রহণকারী ব্যক্তির ক্ষেত্রে",
+            "score": 0.26231443881988525
+          }
+        ]
+      },
+      {
+        "model": "llama3",
+        "elapsed": 117.52,
+        "answer": "আপনি যদি ০৬/০৩/২০১৪ তারিখে আপনার জন্ম নিবন্ধন অনলাইন করা হয়েছে কিন্তু সেটি এখন আপনি খুঁজে পাচ্ছেন না, তাহলে orgbdr.gov.bd ওয়েবসাইটে **“জন্ম তথ্য যাচাই”** অপশনে আপনার জন্ম নিবন্ধন নম্বর এবং জন্ম তারিখ প্রদান করে জন্ম নিবন্ধন হয়েছে কিনা তা নিশ্চিত হওয়া যাবে।\n\nSources: birth_and_death_registration_rules_2018_বিধি_৯_04, bdris_faq_01_q02, know_this_01_cleaned_008_01",
+        "top_sources": [
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_04",
+            "document_type": "legal_rules",
+            "section": "জন্ম নিবন্ধন",
+            "score": 0.5859256386756897
+          },
+          {
+            "id": "bdris_faq_01_q02",
+            "document_type": "faq",
+            "section": "manual_to_online_migration",
+            "score": 0.5163454413414001
+          },
+          {
+            "id": "know_this_01_cleaned_008_01",
+            "document_type": "general_guidance",
+            "section": "একজন ব্যক্তি জন্ম নিবন্ধন হয়েছে কিনা তা কিভাবে পরীক্ষা করবে?",
+            "score": 0.4564639627933502
+          },
+          {
+            "id": "bdris_faq_02_q03",
+            "document_type": "faq",
+            "section": "data_discrepancy",
+            "score": 0.44519516825675964
+          },
+          {
+            "id": "bdris_faq_02_q01",
+            "document_type": "faq",
+            "section": "parents_registration",
+            "score": 0.28141701221466064
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_012_01",
+            "document_type": "application_process",
+            "section": "২০১৩ সালের পর জন্মগ্রহণকারী ব্যক্তির ক্ষেত্রে",
+            "score": 0.26231443881988525
+          }
+        ]
+      },
+      {
+        "model": "qwen2.5:7b",
+        "elapsed": 101.21,
+        "answer": "আপনার জন্ম নিবন্ধন ০৬/০৩/২০১৪-তে অনলাইনে করা হয়েছে। আপনার সঠিক জন্ম তথ্য প্রদান করে orgbdr.gov.bd ওয়েবসাইটে **“জন্ম তথ্য যাচাই”** অপশনে জন্ম নিবন্ধন খুঁজতে পারেন।\n\nSources: birth_and_death_registration_rules_2018_বিধি_৯_04, bdris_faq_01_q02, know_this_01_cleaned_008_01",
+        "top_sources": [
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_04",
+            "document_type": "legal_rules",
+            "section": "জন্ম নিবন্ধন",
+            "score": 0.5859256386756897
+          },
+          {
+            "id": "bdris_faq_01_q02",
+            "document_type": "faq",
+            "section": "manual_to_online_migration",
+            "score": 0.5163454413414001
+          },
+          {
+            "id": "know_this_01_cleaned_008_01",
+            "document_type": "general_guidance",
+            "section": "একজন ব্যক্তি জন্ম নিবন্ধন হয়েছে কিনা তা কিভাবে পরীক্ষা করবে?",
+            "score": 0.4564639627933502
+          },
+          {
+            "id": "bdris_faq_02_q03",
+            "document_type": "faq",
+            "section": "data_discrepancy",
+            "score": 0.44519516825675964
+          },
+          {
+            "id": "bdris_faq_02_q01",
+            "document_type": "faq",
+            "section": "parents_registration",
+            "score": 0.28141701221466064
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_012_01",
+            "document_type": "application_process",
+            "section": "২০১৩ সালের পর জন্মগ্রহণকারী ব্যক্তির ক্ষেত্রে",
+            "score": 0.26231443881988525
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_index": 5,
+    "question": "আমার ছেলের জন্য জন্ম নিবন্ধন আবেদন করেছি\nআবেদন নাম্বার 254632575 এখন এই সমাধান করতে কতদিন সময় লাগবে এবং জন্ম নিবন্ধন নাম্বার কই পাবো কিভাবে বের করতে হবে জানাবেন।\nআমি জন্ম নিবন্ধনের ফাইল সংযোজন হচ্ছে না।শুধু Error message আসে। ছবিগুলো 60-70 KB তে আছে। ছবিগুলো upload হচ্ছে কিন্তু সাবমিট করার সময় দেখাচ্ছে “আপনি প্রয়োজনীয় ফাইল আপলোড করেননি”(Error message)। বারবার চেষ্টা করেও হচ্ছে না।\nবি.দ্র: আমি যে ফাইলগুলো সংযোজন করেছি (upload হয়েছে কিন্তু সাবমিট হয়নি) তা হলো–\n১)বাচ্চার টিকার কার্ড\n২)বাবা-মায়ের পরিচয়পত্র\n৩)কর রশিদ\nএমতাবস্থায় আমি কি করতে পারি পরামর্শ দিলে উপকৃত হতাম।\nআমার ভোডার আইডি কার্ড আছে কিন্তু জন্ম নিবন্ধন অনলাই করা নাই এখন এই জন্ম নিবন্ধন অনলাইন কিভাবে করবো একটু দয়া করে জানাবেন",
+    "runs": [
+      {
+        "model": "llama3.2",
+        "elapsed": 28.14,
+        "answer": "ধাপ ১: ওয়েবসাইটে প্রবেশ: জন্ম নিবন্ধন ওয়েবসাইট (https://bdris.gov.bd) ভিজিট করুন।\n\nধাপ ২: আবেদন অপশন নির্বাচন: “জন্ম নিবন্ধনের আবেদন” অপশনে ক্লিক করুন।\n\nধাপ ৩: নিবন্ধন কার্যালয় নির্বাচন: বাংলাদেশের নিবন্ধন কার্যালয়ে জন্ম নিবন্ধন করার ক্ষেত্রে মূলত জন্মস্থান অথবা স্থায়ী ঠিকানার ভিত্তিতে জন্ম নিবন্ধন করা যায়। আপনার তথ্য অনুসারে জন্মস্থান অথবা স্থায়ী ঠিকানার যেকোনো একটি রেডিও বাটন নির্বাচন করুন এবং “পরবর্তী” বাটনে ক্লিক করুন।\n\nধাপ ৪: জন্ম তথ্য প্রদান: নিবন্ধনাধীন ব্যক্তির নিম্নোক্ত তথ্য প্রদান করুন:\n\n- নাম (বাংলা)\n- নাম (ইংরেজি)\n- জন্ম তারিখ\n- লিঙ্গ\n- কততম সন্তান\n- জন্মস্থানের ঠিকানা\n\nধাপ ৫: পিতা-মাতার তথ্য প্রদান: নিবন্ধনাধীন ব্যক্তির বয়স যদি ১৮ বছরের নিচে হয়, তাহলে পিতা এবং মাতার জন্ম নিবন্ধন বাধ্যতামূলক।\n\nকিন্তু নিবন্ধনাধীন ব্যক্তির বয়স যদি ১৮ বছরের উপরে হয়, তাহলে পিতা এবং মাতার জন্ম নিবন্ধন বাধ্যতামূলক নয়।\n\nআপনার তথ্য অনুসারে পিতা এবং মাতার তথ্য প্রদান করুন এবং “পরবর্তী” বাটনে ক্লিক করুন।\n\nধাপ ৬: ঠিকানা প্রদান: নিম্নোক্ত ঠিকানাসমূহ প্রদান করুন:\n\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nধাপ ৭: আবেদনকারীর তথ্য প্রদান: আবেদনকারীর প্রয়োজনীয় তথ্য প্রদান করুন।\n\nধাপ ৮: প্রয়োজনীয় প্রমাণক সংযুক্তি: নিম্নোক্ত প্রমাণক সংযুক্ত করুন:\n\n- বয়স প্রমাণের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nএরপর “পরবর্তী” বাটনে ক্লিক করুন।\n\nধাপ ৯: তথ্য যাচাই ও OTP গ্রহণ: আবেদনের সকল তথ্য পুনরায় পর্যালোচনা করুন এবং আপনার মোবাইল নম্বরে OTP পাঠান।\n\nধাপ ১০: আবেদন সাবমিট: OTP টাইপ করুন এবং “সাবমিট” বাটনে ক্লিক করুন।\n\nSources: birth_registration_application_process_02_cleaned_013_01, birth_and_death_registration_rules_2018_বিধি_৯_04, birth_registration_application_process_cleaned_019_01",
+        "top_sources": [
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_04",
+            "document_type": "legal_rules",
+            "section": "জন্ম নিবন্ধন",
+            "score": 0.7598011803627014
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_013_01",
+            "document_type": "application_process",
+            "section": "ধাপ ১১: আবেদন নম্বর গ্রহণ",
+            "score": 0.6778245329856872
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_019_01",
+            "document_type": "application_process",
+            "section": "ধাপ ৮: আবেদন সম্পন্ন ও সনদ গ্রহণ",
+            "score": 0.6515041351318359
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_02",
+            "document_type": "legal_rules",
+            "section": "জন্ম নিবন্ধন",
+            "score": 0.6461226654052734
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_006_01",
+            "document_type": "application_process",
+            "section": "ধাপ ৪: জন্ম তথ্য প্রদান",
+            "score": 0.574128246307373
+          },
+          {
+            "id": "bdris_faq_01_q01",
+            "document_type": "faq",
+            "section": "parents_registration",
+            "score": 0.552561821937561
+          }
+        ]
+      },
+      {
+        "model": "llama3",
+        "elapsed": 27.0,
+        "answer": "ধাপ ১: ওয়েবসাইটে প্রবেশ: জন্ম নিবন্ধন ওয়েবসাইট (https://bdris.gov.bd) ভিজিট করুন।\n\nধাপ ২: আবেদন অপশন নির্বাচন: “জন্ম নিবন্ধনের আবেদন” অপশনে ক্লিক করুন।\n\nধাপ ৩: নিবন্ধন কার্যালয় নির্বাচন: বাংলাদেশের নিবন্ধন কার্যালয়ে জন্ম নিবন্ধন করার ক্ষেত্রে মূলত জন্মস্থান অথবা স্থায়ী ঠিকানার ভিত্তিতে জন্ম নিবন্ধন করা যায়। আপনার তথ্য অনুসারে জন্মস্থান অথবা স্থায়ী ঠিকানার যেকোনো একটি রেডিও বাটন নির্বাচন করুন এবং “পরবর্তী” বাটনে ক্লিক করুন।\n\nধাপ ৪: জন্ম তথ্য প্রদান: নিবন্ধনাধীন ব্যক্তির নিম্নোক্ত তথ্য প্রদান করুন:\n\n- নাম (বাংলা)\n- নাম (ইংরেজি)\n- জন্ম তারিখ\n- লিঙ্গ\n- কততম সন্তান\n- জন্মস্থানের ঠিকানা\n\nধাপ ৫: পিতা-মাতার তথ্য প্রদান: নিবন্ধনাধীন ব্যক্তির বয়স যদি ১৮ বছরের নিচে হয়, তাহলে পিতা এবং মাতার জন্ম নিবন্ধন বাধ্যতামূলক।\n\nকিন্তু নিবন্ধনাধীন ব্যক্তির বয়স যদি ১৮ বছরের উপরে হয়, তাহলে পিতা এবং মাতার জন্ম নিবন্ধন বাধ্যতামূলক নয়।\n\nআপনার তথ্য অনুসারে পিতা এবং মাতার তথ্য প্রদান করুন এবং “পরবর্তী” বাটনে ক্লিক করুন।\n\nধাপ ৬: ঠিকানা প্রদান: নিম্নোক্ত ঠিকানাসমূহ প্রদান করুন:\n\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nধাপ ৭: আবেদনকারীর তথ্য প্রদান: আবেদনকারীর প্রয়োজনীয় তথ্য প্রদান করুন।\n\nধাপ ৮: প্রয়োজনীয় প্রমাণক সংযুক্তি: নিম্নোক্ত প্রমাণক সংযুক্ত করুন:\n\n- বয়স প্রমাণের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nএরপর “পরবর্তী” বাটনে ক্লিক করুন।\n\nধাপ ৯: তথ্য যাচাই ও OTP গ্রহণ: আবেদনের সকল তথ্য পুনরায় পর্যালোচনা করুন এবং আপনার মোবাইল নম্বরে OTP পাঠান।\n\nধাপ ১০: আবেদন সাবমিট: OTP টাইপ করুন এবং “সাবমিট” বাটনে ক্লিক করুন।\n\nSources: birth_registration_application_process_02_cleaned_013_01, birth_and_death_registration_rules_2018_বিধি_৯_04, birth_registration_application_process_cleaned_019_01",
+        "top_sources": [
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_04",
+            "document_type": "legal_rules",
+            "section": "জন্ম নিবন্ধন",
+            "score": 0.7598011803627014
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_013_01",
+            "document_type": "application_process",
+            "section": "ধাপ ১১: আবেদন নম্বর গ্রহণ",
+            "score": 0.6778245329856872
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_019_01",
+            "document_type": "application_process",
+            "section": "ধাপ ৮: আবেদন সম্পন্ন ও সনদ গ্রহণ",
+            "score": 0.6515041351318359
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_02",
+            "document_type": "legal_rules",
+            "section": "জন্ম নিবন্ধন",
+            "score": 0.6461226654052734
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_006_01",
+            "document_type": "application_process",
+            "section": "ধাপ ৪: জন্ম তথ্য প্রদান",
+            "score": 0.574128246307373
+          },
+          {
+            "id": "bdris_faq_01_q01",
+            "document_type": "faq",
+            "section": "parents_registration",
+            "score": 0.552561821937561
+          }
+        ]
+      },
+      {
+        "model": "qwen2.5:7b",
+        "elapsed": 26.79,
+        "answer": "ধাপ ১: ওয়েবসাইটে প্রবেশ: জন্ম নিবন্ধন ওয়েবসাইট (https://bdris.gov.bd) ভিজিট করুন।\n\nধাপ ২: আবেদন অপশন নির্বাচন: “জন্ম নিবন্ধনের আবেদন” অপশনে ক্লিক করুন।\n\nধাপ ৩: নিবন্ধন কার্যালয় নির্বাচন: বাংলাদেশের নিবন্ধন কার্যালয়ে জন্ম নিবন্ধন করার ক্ষেত্রে মূলত জন্মস্থান অথবা স্থায়ী ঠিকানার ভিত্তিতে জন্ম নিবন্ধন করা যায়। আপনার তথ্য অনুসারে জন্মস্থান অথবা স্থায়ী ঠিকানার যেকোনো একটি রেডিও বাটন নির্বাচন করুন এবং “পরবর্তী” বাটনে ক্লিক করুন।\n\nধাপ ৪: জন্ম তথ্য প্রদান: নিবন্ধনাধীন ব্যক্তির নিম্নোক্ত তথ্য প্রদান করুন:\n\n- নাম (বাংলা)\n- নাম (ইংরেজি)\n- জন্ম তারিখ\n- লিঙ্গ\n- কততম সন্তান\n- জন্মস্থানের ঠিকানা\n\nধাপ ৫: পিতা-মাতার তথ্য প্রদান: নিবন্ধনাধীন ব্যক্তির বয়স যদি ১৮ বছরের নিচে হয়, তাহলে পিতা এবং মাতার জন্ম নিবন্ধন বাধ্যতামূলক।\n\nকিন্তু নিবন্ধনাধীন ব্যক্তির বয়স যদি ১৮ বছরের উপরে হয়, তাহলে পিতা এবং মাতার জন্ম নিবন্ধন বাধ্যতামূলক নয়।\n\nআপনার তথ্য অনুসারে পিতা এবং মাতার তথ্য প্রদান করুন এবং “পরবর্তী” বাটনে ক্লিক করুন।\n\nধাপ ৬: ঠিকানা প্রদান: নিম্নোক্ত ঠিকানাসমূহ প্রদান করুন:\n\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nধাপ ৭: আবেদনকারীর তথ্য প্রদান: আবেদনকারীর প্রয়োজনীয় তথ্য প্রদান করুন।\n\nধাপ ৮: প্রয়োজনীয় প্রমাণক সংযুক্তি: নিম্নোক্ত প্রমাণক সংযুক্ত করুন:\n\n- বয়স প্রমাণের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nএরপর “পরবর্তী” বাটনে ক্লিক করুন।\n\nধাপ ৯: তথ্য যাচাই ও OTP গ্রহণ: আবেদনের সকল তথ্য পুনরায় পর্যালোচনা করুন এবং আপনার মোবাইল নম্বরে OTP পাঠান।\n\nধাপ ১০: আবেদন সাবমিট: OTP টাইপ করুন এবং “সাবমিট” বাটনে ক্লিক করুন।\n\nSources: birth_registration_application_process_02_cleaned_013_01, birth_and_death_registration_rules_2018_বিধি_৯_04, birth_registration_application_process_cleaned_019_01",
+        "top_sources": [
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_04",
+            "document_type": "legal_rules",
+            "section": "জন্ম নিবন্ধন",
+            "score": 0.7598011803627014
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_013_01",
+            "document_type": "application_process",
+            "section": "ধাপ ১১: আবেদন নম্বর গ্রহণ",
+            "score": 0.6778245329856872
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_019_01",
+            "document_type": "application_process",
+            "section": "ধাপ ৮: আবেদন সম্পন্ন ও সনদ গ্রহণ",
+            "score": 0.6515041351318359
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_02",
+            "document_type": "legal_rules",
+            "section": "জন্ম নিবন্ধন",
+            "score": 0.6461226654052734
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_006_01",
+            "document_type": "application_process",
+            "section": "ধাপ ৪: জন্ম তথ্য প্রদান",
+            "score": 0.574128246307373
+          },
+          {
+            "id": "bdris_faq_01_q01",
+            "document_type": "faq",
+            "section": "parents_registration",
+            "score": 0.552561821937561
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_index": 6,
+    "question": "আমি দেশের বাইরে থাকি কিন্তু আমি যখন দেশে আছি তখন অনলাইনে জন্ম নিবন্ধন হয়নি তার জন্য আমি করতে পারি নাই কিন্তু এখন আমার প্রয়োজন জন্ম নিবন্ধন অনলাইনে করার জন্য এখন আমার কি করনীয়",
+    "runs": [
+      {
+        "model": "llama3.2",
+        "elapsed": 22.36,
+        "answer": "আবেদন করার পূর্ব প্রস্তুতি: নতুন জন্ম নিবন্ধন আবেদনের পূর্বে প্রয়োজনীয় তথ্য ও ডকুমেন্ট সংগ্রহ করে রাখুন।\n\nজন্ম নিবন্ধনের ক্ষেত্রে নিম্নোক্ত তিন ধরনের ঠিকানার তথ্য প্রয়োজন হবে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রতিটি ঠিকানার জন্য নিম্নোক্ত তথ্য প্রয়োজন হতে পারে:\n\n- ইউনিয়ন পরিষদ/পৌরসভা/সিটি কর্পোরেশন/ক্যান্টনমেন্টের নাম\n- ওয়ার্ড নম্বর\n- ডাকঘর\n- গ্রাম/পাড়া/মহল্লা\n- বাসা ও সড়কের নাম ও নম্বর\n\nসকল তথ্য বাংলা ও ইংরেজি উভয় ভাষায় সঠিক বানানে লিখতে হবে।\n\nধাপ ১: ওয়েবসাইটে প্রবেশ: নতুন জন্ম নিবন্ধনের জন্য:\n\nhttps://bdris.gov.bd\n\nওয়েবসাইটে প্রবেশ করুন।\n\nহোমপেজে \"জন্ম নিবন্ধন\" মেনু নির্বাচন করুন।\n\nএরপর \"জন্ম নিবন্ধন আবেদন\" অপশনে ক্লিক করুন।\n\nধাপ ২: সনদ সংগ্রহের স্থান নির্বাচন: এখানে আবেদনকারীকে নির্বাচন করতে হবে তিনি কোথা থেকে জন্ম সনদ গ্রহণ বা সংগ্রহ করতে চান।\n\nনিম্নোক্ত ঠিকানার ভিত্তিতে সনদ সংগ্রহ করা যেতে পারে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n\nসাধারণভাবে স্থায়ী ঠিকানা থেকে সনদ সংগ্রহ করার জন্য উৎসাহিত করা হয়।\n\nবিদেশে জন্মগ্রহণকারী শিশু নিকটস্থ বাংলাদেশ দূতাবাস থেকে জন্ম সনদ সংগ্রহ করতে পারে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৩: জন্ম তথ্য প্রদান: এই ধাপে আবেদনকারীর জন্মসংক্রান্ত তথ্য ধাপে ধাপে পূরণ করতে হবে।\n\nতথ্য প্রদানের সময় সতর্কতা অবলম্বন করতে হবে।\n\nজন্ম তারিখ প্রদান করার পর সিস্টেম প্রয়োজনীয় নির্দেশনা প্রদর্শন করবে।\n\nনির্দেশনা পড়ে \"আমার কাছে এই ডকুমেন্টগুলো আছে\" অপশন নির্বাচন করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৪: পিতা ও মাতার তথ্য প্রদান: এই ধাপে পিতা ও মাতার তথ্য প্রদান করতে হবে।\n\nধাপ ৫: স্থায়ী ও বর্তমান ঠিকানা প্রদান: এই ধাপে:\n\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রদান করতে হবে।\n\nযদি জন্মস্থান এবং স্থায়ী ঠিকানা একই হয়, তাহলে নির্ধারিত ঘরে টিক চিহ্ন দিলে তথ্য স্বয়ংক্রিয়ভাবে পূরণ হবে।\n\nঅন্যথায় স্থায়ী ঠিকানা ও বর্তমান ঠিকানার তথ্য আলাদাভাবে পূরণ করতে হবে।\n\nসব তথ্য সঠিকভাবে পূরণ করার পর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৬: আবেদনকারীর তথ্য ও ডকুমেন্ট সংযুক্তি: যদি ব্যক্তি নিজে আবেদন করেন, তাহলে \"নিজ\" অপশন নির্বাচন করতে হবে।\n\nঅন্য কেউ আবেদন করলে \"অন্যান্য\" অপশন নির্বাচন করতে হবে।\n\n\"অন্যান্য\" নির্বাচন করলে আবেদনকারীর জন্ম নিবন্ধন নম্বর প্রদান করতে হবে।\n\nএরপর ঘোষণা দিতে হবে যে:\n\n- প্রদত্ত তথ্যসমূহ সঠিক\n- পূর্বে জন্ম নিবন্ধন করা হয়নি\n\nসংযুক্ত করতে হবে: - জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nসংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৭: তথ্য যাচাই ও OTP: এই ধাপে আবেদনকারীর পূরণকৃত সকল তথ্য প্রদর্শিত হবে।\n\nসকল তথ্য সতর্কতার সাথে যাচাই করতে হবে।\n\nভুল থাকলে \"পূর্ববর্তী\" বাটনে ফিরে গিয়ে সংশোধন করতে হবে।\n\nতথ্য সঠিক হলে:\n\n- ইমেইল অথবা\n- মোবাইল নম্বর\n\nপ্রদান করতে হবে।\n\nOTP গ্রহণ: - দূতাবাসের মাধ্যমে আবেদনের ক্ষেত্রে ইমেইলে OTP যাবে।\n- বাংলাদেশের অভ্যন্তরে আবেদনের ক্ষেত্রে মোবাইল নম্বরে OTP যাবে।\n\nOTP প্রদান করার পর \"সাবমিট\" বাটনে ক্লিক করুন।\n\nSources: birth_registration_application_process_cleaned_008_01, bdris_faq_01_q02, bdris_faq_01_q12",
+        "top_sources": [
+          {
+            "id": "bdris_faq_01_q02",
+            "document_type": "faq",
+            "section": "manual_to_online_migration",
+            "score": 0.9338343739509583
+          },
+          {
+            "id": "bdris_faq_01_q12",
+            "document_type": "faq",
+            "section": "overseas_registration",
+            "score": 0.914527952671051
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_04",
+            "document_type": "legal_rules",
+            "section": "জন্ম নিবন্ধন",
+            "score": 0.8881774854660034
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১০_01",
+            "document_type": "legal_rules",
+            "section": "প্রবাসীগণের জন্ম নিবন্ধন",
+            "score": 0.8865545916557311
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_২০_01",
+            "document_type": "legal_rules",
+            "section": "অনলাইনে আবেদন বা তথ্য প্রদান",
+            "score": 0.8796500277519226
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_008_01",
+            "document_type": "application_process",
+            "section": "ধাপ ১: ওয়েবসাইটে প্রবেশ",
+            "score": 0.8176710653305054
+          }
+        ]
+      },
+      {
+        "model": "llama3",
+        "elapsed": 20.63,
+        "answer": "আবেদন করার পূর্ব প্রস্তুতি: নতুন জন্ম নিবন্ধন আবেদনের পূর্বে প্রয়োজনীয় তথ্য ও ডকুমেন্ট সংগ্রহ করে রাখুন।\n\nজন্ম নিবন্ধনের ক্ষেত্রে নিম্নোক্ত তিন ধরনের ঠিকানার তথ্য প্রয়োজন হবে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রতিটি ঠিকানার জন্য নিম্নোক্ত তথ্য প্রয়োজন হতে পারে:\n\n- ইউনিয়ন পরিষদ/পৌরসভা/সিটি কর্পোরেশন/ক্যান্টনমেন্টের নাম\n- ওয়ার্ড নম্বর\n- ডাকঘর\n- গ্রাম/পাড়া/মহল্লা\n- বাসা ও সড়কের নাম ও নম্বর\n\nসকল তথ্য বাংলা ও ইংরেজি উভয় ভাষায় সঠিক বানানে লিখতে হবে।\n\nধাপ ১: ওয়েবসাইটে প্রবেশ: নতুন জন্ম নিবন্ধনের জন্য:\n\nhttps://bdris.gov.bd\n\nওয়েবসাইটে প্রবেশ করুন।\n\nহোমপেজে \"জন্ম নিবন্ধন\" মেনু নির্বাচন করুন।\n\nএরপর \"জন্ম নিবন্ধন আবেদন\" অপশনে ক্লিক করুন।\n\nধাপ ২: সনদ সংগ্রহের স্থান নির্বাচন: এখানে আবেদনকারীকে নির্বাচন করতে হবে তিনি কোথা থেকে জন্ম সনদ গ্রহণ বা সংগ্রহ করতে চান।\n\nনিম্নোক্ত ঠিকানার ভিত্তিতে সনদ সংগ্রহ করা যেতে পারে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n\nসাধারণভাবে স্থায়ী ঠিকানা থেকে সনদ সংগ্রহ করার জন্য উৎসাহিত করা হয়।\n\nবিদেশে জন্মগ্রহণকারী শিশু নিকটস্থ বাংলাদেশ দূতাবাস থেকে জন্ম সনদ সংগ্রহ করতে পারে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৩: জন্ম তথ্য প্রদান: এই ধাপে আবেদনকারীর জন্মসংক্রান্ত তথ্য ধাপে ধাপে পূরণ করতে হবে।\n\nতথ্য প্রদানের সময় সতর্কতা অবলম্বন করতে হবে।\n\nজন্ম তারিখ প্রদান করার পর সিস্টেম প্রয়োজনীয় নির্দেশনা প্রদর্শন করবে।\n\nনির্দেশনা পড়ে \"আমার কাছে এই ডকুমেন্টগুলো আছে\" অপশন নির্বাচন করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৪: পিতা ও মাতার তথ্য প্রদান: এই ধাপে পিতা ও মাতার তথ্য প্রদান করতে হবে।\n\nধাপ ৫: স্থায়ী ও বর্তমান ঠিকানা প্রদান: এই ধাপে:\n\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রদান করতে হবে।\n\nযদি জন্মস্থান এবং স্থায়ী ঠিকানা একই হয়, তাহলে নির্ধারিত ঘরে টিক চিহ্ন দিলে তথ্য স্বয়ংক্রিয়ভাবে পূরণ হবে।\n\nঅন্যথায় স্থায়ী ঠিকানা ও বর্তমান ঠিকানার তথ্য আলাদাভাবে পূরণ করতে হবে।\n\nসব তথ্য সঠিকভাবে পূরণ করার পর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৬: আবেদনকারীর তথ্য ও ডকুমেন্ট সংযুক্তি: যদি ব্যক্তি নিজে আবেদন করেন, তাহলে \"নিজ\" অপশন নির্বাচন করতে হবে।\n\nঅন্য কেউ আবেদন করলে \"অন্যান্য\" অপশন নির্বাচন করতে হবে।\n\n\"অন্যান্য\" নির্বাচন করলে আবেদনকারীর জন্ম নিবন্ধন নম্বর প্রদান করতে হবে।\n\nএরপর ঘোষণা দিতে হবে যে:\n\n- প্রদত্ত তথ্যসমূহ সঠিক\n- পূর্বে জন্ম নিবন্ধন করা হয়নি\n\nসংযুক্ত করতে হবে: - জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nসংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৭: তথ্য যাচাই ও OTP: এই ধাপে আবেদনকারীর পূরণকৃত সকল তথ্য প্রদর্শিত হবে।\n\nসকল তথ্য সতর্কতার সাথে যাচাই করতে হবে।\n\nভুল থাকলে \"পূর্ববর্তী\" বাটনে ফিরে গিয়ে সংশোধন করতে হবে।\n\nতথ্য সঠিক হলে:\n\n- ইমেইল অথবা\n- মোবাইল নম্বর\n\nপ্রদান করতে হবে।\n\nOTP গ্রহণ: - দূতাবাসের মাধ্যমে আবেদনের ক্ষেত্রে ইমেইলে OTP যাবে।\n- বাংলাদেশের অভ্যন্তরে আবেদনের ক্ষেত্রে মোবাইল নম্বরে OTP যাবে।\n\nOTP প্রদান করার পর \"সাবমিট\" বাটনে ক্লিক করুন।\n\nSources: birth_registration_application_process_cleaned_008_01, bdris_faq_01_q02, bdris_faq_01_q12",
+        "top_sources": [
+          {
+            "id": "bdris_faq_01_q02",
+            "document_type": "faq",
+            "section": "manual_to_online_migration",
+            "score": 0.9338343739509583
+          },
+          {
+            "id": "bdris_faq_01_q12",
+            "document_type": "faq",
+            "section": "overseas_registration",
+            "score": 0.914527952671051
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_04",
+            "document_type": "legal_rules",
+            "section": "জন্ম নিবন্ধন",
+            "score": 0.8881774854660034
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১০_01",
+            "document_type": "legal_rules",
+            "section": "প্রবাসীগণের জন্ম নিবন্ধন",
+            "score": 0.8865545916557311
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_২০_01",
+            "document_type": "legal_rules",
+            "section": "অনলাইনে আবেদন বা তথ্য প্রদান",
+            "score": 0.8796500277519226
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_008_01",
+            "document_type": "application_process",
+            "section": "ধাপ ১: ওয়েবসাইটে প্রবেশ",
+            "score": 0.8176710653305054
+          }
+        ]
+      },
+      {
+        "model": "qwen2.5:7b",
+        "elapsed": 19.37,
+        "answer": "আবেদন করার পূর্ব প্রস্তুতি: নতুন জন্ম নিবন্ধন আবেদনের পূর্বে প্রয়োজনীয় তথ্য ও ডকুমেন্ট সংগ্রহ করে রাখুন।\n\nজন্ম নিবন্ধনের ক্ষেত্রে নিম্নোক্ত তিন ধরনের ঠিকানার তথ্য প্রয়োজন হবে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রতিটি ঠিকানার জন্য নিম্নোক্ত তথ্য প্রয়োজন হতে পারে:\n\n- ইউনিয়ন পরিষদ/পৌরসভা/সিটি কর্পোরেশন/ক্যান্টনমেন্টের নাম\n- ওয়ার্ড নম্বর\n- ডাকঘর\n- গ্রাম/পাড়া/মহল্লা\n- বাসা ও সড়কের নাম ও নম্বর\n\nসকল তথ্য বাংলা ও ইংরেজি উভয় ভাষায় সঠিক বানানে লিখতে হবে।\n\nধাপ ১: ওয়েবসাইটে প্রবেশ: নতুন জন্ম নিবন্ধনের জন্য:\n\nhttps://bdris.gov.bd\n\nওয়েবসাইটে প্রবেশ করুন।\n\nহোমপেজে \"জন্ম নিবন্ধন\" মেনু নির্বাচন করুন।\n\nএরপর \"জন্ম নিবন্ধন আবেদন\" অপশনে ক্লিক করুন।\n\nধাপ ২: সনদ সংগ্রহের স্থান নির্বাচন: এখানে আবেদনকারীকে নির্বাচন করতে হবে তিনি কোথা থেকে জন্ম সনদ গ্রহণ বা সংগ্রহ করতে চান।\n\nনিম্নোক্ত ঠিকানার ভিত্তিতে সনদ সংগ্রহ করা যেতে পারে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n\nসাধারণভাবে স্থায়ী ঠিকানা থেকে সনদ সংগ্রহ করার জন্য উৎসাহিত করা হয়।\n\nবিদেশে জন্মগ্রহণকারী শিশু নিকটস্থ বাংলাদেশ দূতাবাস থেকে জন্ম সনদ সংগ্রহ করতে পারে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৩: জন্ম তথ্য প্রদান: এই ধাপে আবেদনকারীর জন্মসংক্রান্ত তথ্য ধাপে ধাপে পূরণ করতে হবে।\n\nতথ্য প্রদানের সময় সতর্কতা অবলম্বন করতে হবে।\n\nজন্ম তারিখ প্রদান করার পর সিস্টেম প্রয়োজনীয় নির্দেশনা প্রদর্শন করবে।\n\nনির্দেশনা পড়ে \"আমার কাছে এই ডকুমেন্টগুলো আছে\" অপশন নির্বাচন করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৪: পিতা ও মাতার তথ্য প্রদান: এই ধাপে পিতা ও মাতার তথ্য প্রদান করতে হবে।\n\nধাপ ৫: স্থায়ী ও বর্তমান ঠিকানা প্রদান: এই ধাপে:\n\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রদান করতে হবে।\n\nযদি জন্মস্থান এবং স্থায়ী ঠিকানা একই হয়, তাহলে নির্ধারিত ঘরে টিক চিহ্ন দিলে তথ্য স্বয়ংক্রিয়ভাবে পূরণ হবে।\n\nঅন্যথায় স্থায়ী ঠিকানা ও বর্তমান ঠিকানার তথ্য আলাদাভাবে পূরণ করতে হবে।\n\nসব তথ্য সঠিকভাবে পূরণ করার পর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৬: আবেদনকারীর তথ্য ও ডকুমেন্ট সংযুক্তি: যদি ব্যক্তি নিজে আবেদন করেন, তাহলে \"নিজ\" অপশন নির্বাচন করতে হবে।\n\nঅন্য কেউ আবেদন করলে \"অন্যান্য\" অপশন নির্বাচন করতে হবে।\n\n\"অন্যান্য\" নির্বাচন করলে আবেদনকারীর জন্ম নিবন্ধন নম্বর প্রদান করতে হবে।\n\nএরপর ঘোষণা দিতে হবে যে:\n\n- প্রদত্ত তথ্যসমূহ সঠিক\n- পূর্বে জন্ম নিবন্ধন করা হয়নি\n\nসংযুক্ত করতে হবে: - জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nসংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৭: তথ্য যাচাই ও OTP: এই ধাপে আবেদনকারীর পূরণকৃত সকল তথ্য প্রদর্শিত হবে।\n\nসকল তথ্য সতর্কতার সাথে যাচাই করতে হবে।\n\nভুল থাকলে \"পূর্ববর্তী\" বাটনে ফিরে গিয়ে সংশোধন করতে হবে।\n\nতথ্য সঠিক হলে:\n\n- ইমেইল অথবা\n- মোবাইল নম্বর\n\nপ্রদান করতে হবে।\n\nOTP গ্রহণ: - দূতাবাসের মাধ্যমে আবেদনের ক্ষেত্রে ইমেইলে OTP যাবে।\n- বাংলাদেশের অভ্যন্তরে আবেদনের ক্ষেত্রে মোবাইল নম্বরে OTP যাবে।\n\nOTP প্রদান করার পর \"সাবমিট\" বাটনে ক্লিক করুন।\n\nSources: birth_registration_application_process_cleaned_008_01, bdris_faq_01_q02, bdris_faq_01_q12",
+        "top_sources": [
+          {
+            "id": "bdris_faq_01_q02",
+            "document_type": "faq",
+            "section": "manual_to_online_migration",
+            "score": 0.9338343739509583
+          },
+          {
+            "id": "bdris_faq_01_q12",
+            "document_type": "faq",
+            "section": "overseas_registration",
+            "score": 0.914527952671051
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_04",
+            "document_type": "legal_rules",
+            "section": "জন্ম নিবন্ধন",
+            "score": 0.8881774854660034
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১০_01",
+            "document_type": "legal_rules",
+            "section": "প্রবাসীগণের জন্ম নিবন্ধন",
+            "score": 0.8865545916557311
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_২০_01",
+            "document_type": "legal_rules",
+            "section": "অনলাইনে আবেদন বা তথ্য প্রদান",
+            "score": 0.8796500277519226
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_008_01",
+            "document_type": "application_process",
+            "section": "ধাপ ১: ওয়েবসাইটে প্রবেশ",
+            "score": 0.8176710653305054
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_index": 7,
+    "question": "আমার ছেলের বয়স ১৫ কিন্তু ভুলবশত বাবা মায়ের নামের স্থানে আমার বড় ভাইয়ের এবং তার স্ত্রীর নাম দেওয়া হয়েছিল এবং এভাবেই পড়াশোনা চলছিল কিন্তু বর্তমানে বিষয়টি জরুরী ভিত্তিতে আমার নাম এবং আমার স্ত্রীর নাম অর্থাৎ সঠিক বাবা মার নাম পরিবর্তন বা সংশোধন করতে হবে তাই এই ক্ষেত্রে অনলাইনে কি কি প্রক্রিয়া এবং কি কি কাগজ পেপার আপলোড করতে হবে যার সবকিছুই আমার কাছে আছে এবং প্রয়োজনে আমার আপন বড় ভাই এই বিষয়ে উপস্থিত থেকেও সহযোগিতা করতে পারবেন এবং উল্লেখ্য যে আমার ছেলের টিকা কার্ড থেকে শুরু করে প্রথমে যে জন্ম নিবন্ধন করা হয়েছিল তার মূল কপি আছে শুধুমাত্র স্কুলে ভর্তি হওয়ার সময় আমার বড় ভাই এবং তার স্ত্রীর নাম দিয়ে তুলে বিদ্যালয়ে পড়াশোনা শুরু হয়েছিল এমতাবস্থায় কিভাবে অত্যন্ত দ্রুত এবং সহজ মাধ্যমে আমার ছেলের বাবা মার নাম পরিবর্তন করতে পারবো?",
+    "runs": [
+      {
+        "model": "llama3.2",
+        "elapsed": 22.05,
+        "answer": "নাম/ঠিকানা/তথ্য ভুল হলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করতে হবে।\n\nপিতা বা মাতার নাম সংশোধন সংক্রান্ত নির্দেশনা: আপনার পিতা বা মাতার নাম সংশোধন করতে হলে নিম্নোক্ত নির্দেশনা অনুসরণ করতে হবে।\n\nপরিস্থিতি ১: পিতা বা মাতার জন্ম নিবন্ধন নম্বর আছে: যদি আপনার পিতা বা মাতার জন্ম নিবন্ধন নম্বর থাকে, তাহলে প্রথমে তাদের জন্ম নিবন্ধন নম্বর ব্যবহার করে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করে তাদের নাম সংশোধন করতে হবে।\n\nযদি পূর্বে জন্ম নিবন্ধনে পিতা বা মাতার জন্ম নিবন্ধন নম্বর যুক্ত করা থাকে: আপনার জন্ম নিবন্ধন করার সময় যদি পিতা বা মাতার জন্ম নিবন্ধন নম্বর প্রদান করা হয়ে থাকে, তাহলে তাদের নাম সংশোধনের পর আপনার জন্ম নিবন্ধন সনদ পুনর্মুদ্রণ করলে সেখানে সংশোধিত নাম স্বয়ংক্রিয়ভাবে প্রদর্শিত হবে।\n\nপরিস্থিতি ২: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই এবং জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে: যদি:\n\n- পিতা বা মাতার জন্ম নিবন্ধন নম্বর না থাকে, এবং\n- আপনার জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে হয়,\n\nতাহলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করার সময় পিতা বা মাতার নাম সংশোধন করা যাবে।\n\nজন্ম তারিখ ব্যতীত নাম, পিতার নাম, মাতার নাম, ঠিকানা ইত্যাদি তথ্য সংশোধনের আবেদন ফি: ৫০ টাকা।\n\nSources: application_for_birth_information_correction_cleaned_002_01, application_for_birth_information_correction_cleaned_003_01, application_for_birth_information_correction_cleaned_004_01, application_for_birth_information_correction_cleaned_006_01, birth_and_death_registration_fees_cleaned_fee_row_05",
+        "top_sources": [
+          {
+            "id": "application_for_birth_information_correction_cleaned_002_01",
+            "document_type": "correction_process",
+            "section": "পিতা বা মাতার নাম সংশোধন সংক্রান্ত নির্দেশনা",
+            "score": 0.8699611902236939
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_009_01",
+            "document_type": "correction_process",
+            "section": "প্রয়োজনীয় প্রমাণপত্র",
+            "score": 0.4920111393928528
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_007_01",
+            "document_type": "correction_process",
+            "section": "গুরুত্বপূর্ণ তথ্য",
+            "score": 0.47659505367279054
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_003_01",
+            "document_type": "correction_process",
+            "section": "পরিস্থিতি ১: পিতা বা মাতার জন্ম নিবন্ধন নম্বর আছে",
+            "score": 0.4680994778871536
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_006_01",
+            "document_type": "correction_process",
+            "section": "পরিস্থিতি ২: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই এবং জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে",
+            "score": 0.4389661878347397
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_004_01",
+            "document_type": "correction_process",
+            "section": "যদি পূর্বে জন্ম নিবন্ধনে পিতা বা মাতার জন্ম নিবন্ধন নম্বর যুক্ত করা থাকে",
+            "score": 0.4290426468849182
+          },
+          {
+            "id": "birth_and_death_registration_fees_cleaned_fee_row_05",
+            "document_type": "fee_row",
+            "section": null,
+            "score": null
+          }
+        ]
+      },
+      {
+        "model": "llama3",
+        "elapsed": 21.33,
+        "answer": "নাম/ঠিকানা/তথ্য ভুল হলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করতে হবে।\n\nপিতা বা মাতার নাম সংশোধন সংক্রান্ত নির্দেশনা: আপনার পিতা বা মাতার নাম সংশোধন করতে হলে নিম্নোক্ত নির্দেশনা অনুসরণ করতে হবে।\n\nপরিস্থিতি ১: পিতা বা মাতার জন্ম নিবন্ধন নম্বর আছে: যদি আপনার পিতা বা মাতার জন্ম নিবন্ধন নম্বর থাকে, তাহলে প্রথমে তাদের জন্ম নিবন্ধন নম্বর ব্যবহার করে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করে তাদের নাম সংশোধন করতে হবে।\n\nযদি পূর্বে জন্ম নিবন্ধনে পিতা বা মাতার জন্ম নিবন্ধন নম্বর যুক্ত করা থাকে: আপনার জন্ম নিবন্ধন করার সময় যদি পিতা বা মাতার জন্ম নিবন্ধন নম্বর প্রদান করা হয়ে থাকে, তাহলে তাদের নাম সংশোধনের পর আপনার জন্ম নিবন্ধন সনদ পুনর্মুদ্রণ করলে সেখানে সংশোধিত নাম স্বয়ংক্রিয়ভাবে প্রদর্শিত হবে।\n\nপরিস্থিতি ২: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই এবং জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে: যদি:\n\n- পিতা বা মাতার জন্ম নিবন্ধন নম্বর না থাকে, এবং\n- আপনার জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে হয়,\n\nতাহলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করার সময় পিতা বা মাতার নাম সংশোধন করা যাবে।\n\nজন্ম তারিখ ব্যতীত নাম, পিতার নাম, মাতার নাম, ঠিকানা ইত্যাদি তথ্য সংশোধনের আবেদন ফি: ৫০ টাকা।\n\nSources: application_for_birth_information_correction_cleaned_002_01, application_for_birth_information_correction_cleaned_003_01, application_for_birth_information_correction_cleaned_004_01, application_for_birth_information_correction_cleaned_006_01, birth_and_death_registration_fees_cleaned_fee_row_05",
+        "top_sources": [
+          {
+            "id": "application_for_birth_information_correction_cleaned_002_01",
+            "document_type": "correction_process",
+            "section": "পিতা বা মাতার নাম সংশোধন সংক্রান্ত নির্দেশনা",
+            "score": 0.8699611902236939
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_009_01",
+            "document_type": "correction_process",
+            "section": "প্রয়োজনীয় প্রমাণপত্র",
+            "score": 0.4920111393928528
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_007_01",
+            "document_type": "correction_process",
+            "section": "গুরুত্বপূর্ণ তথ্য",
+            "score": 0.47659505367279054
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_003_01",
+            "document_type": "correction_process",
+            "section": "পরিস্থিতি ১: পিতা বা মাতার জন্ম নিবন্ধন নম্বর আছে",
+            "score": 0.4680994778871536
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_006_01",
+            "document_type": "correction_process",
+            "section": "পরিস্থিতি ২: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই এবং জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে",
+            "score": 0.4389661878347397
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_004_01",
+            "document_type": "correction_process",
+            "section": "যদি পূর্বে জন্ম নিবন্ধনে পিতা বা মাতার জন্ম নিবন্ধন নম্বর যুক্ত করা থাকে",
+            "score": 0.4290426468849182
+          },
+          {
+            "id": "birth_and_death_registration_fees_cleaned_fee_row_05",
+            "document_type": "fee_row",
+            "section": null,
+            "score": null
+          }
+        ]
+      },
+      {
+        "model": "qwen2.5:7b",
+        "elapsed": 21.49,
+        "answer": "নাম/ঠিকানা/তথ্য ভুল হলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করতে হবে।\n\nপিতা বা মাতার নাম সংশোধন সংক্রান্ত নির্দেশনা: আপনার পিতা বা মাতার নাম সংশোধন করতে হলে নিম্নোক্ত নির্দেশনা অনুসরণ করতে হবে।\n\nপরিস্থিতি ১: পিতা বা মাতার জন্ম নিবন্ধন নম্বর আছে: যদি আপনার পিতা বা মাতার জন্ম নিবন্ধন নম্বর থাকে, তাহলে প্রথমে তাদের জন্ম নিবন্ধন নম্বর ব্যবহার করে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করে তাদের নাম সংশোধন করতে হবে।\n\nযদি পূর্বে জন্ম নিবন্ধনে পিতা বা মাতার জন্ম নিবন্ধন নম্বর যুক্ত করা থাকে: আপনার জন্ম নিবন্ধন করার সময় যদি পিতা বা মাতার জন্ম নিবন্ধন নম্বর প্রদান করা হয়ে থাকে, তাহলে তাদের নাম সংশোধনের পর আপনার জন্ম নিবন্ধন সনদ পুনর্মুদ্রণ করলে সেখানে সংশোধিত নাম স্বয়ংক্রিয়ভাবে প্রদর্শিত হবে।\n\nপরিস্থিতি ২: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই এবং জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে: যদি:\n\n- পিতা বা মাতার জন্ম নিবন্ধন নম্বর না থাকে, এবং\n- আপনার জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে হয়,\n\nতাহলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করার সময় পিতা বা মাতার নাম সংশোধন করা যাবে।\n\nজন্ম তারিখ ব্যতীত নাম, পিতার নাম, মাতার নাম, ঠিকানা ইত্যাদি তথ্য সংশোধনের আবেদন ফি: ৫০ টাকা।\n\nSources: application_for_birth_information_correction_cleaned_002_01, application_for_birth_information_correction_cleaned_003_01, application_for_birth_information_correction_cleaned_004_01, application_for_birth_information_correction_cleaned_006_01, birth_and_death_registration_fees_cleaned_fee_row_05",
+        "top_sources": [
+          {
+            "id": "application_for_birth_information_correction_cleaned_002_01",
+            "document_type": "correction_process",
+            "section": "পিতা বা মাতার নাম সংশোধন সংক্রান্ত নির্দেশনা",
+            "score": 0.8699611902236939
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_009_01",
+            "document_type": "correction_process",
+            "section": "প্রয়োজনীয় প্রমাণপত্র",
+            "score": 0.4920111393928528
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_007_01",
+            "document_type": "correction_process",
+            "section": "গুরুত্বপূর্ণ তথ্য",
+            "score": 0.47659505367279054
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_003_01",
+            "document_type": "correction_process",
+            "section": "পরিস্থিতি ১: পিতা বা মাতার জন্ম নিবন্ধন নম্বর আছে",
+            "score": 0.4680994778871536
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_006_01",
+            "document_type": "correction_process",
+            "section": "পরিস্থিতি ২: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই এবং জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে",
+            "score": 0.4389661878347397
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_004_01",
+            "document_type": "correction_process",
+            "section": "যদি পূর্বে জন্ম নিবন্ধনে পিতা বা মাতার জন্ম নিবন্ধন নম্বর যুক্ত করা থাকে",
+            "score": 0.4290426468849182
+          },
+          {
+            "id": "birth_and_death_registration_fees_cleaned_fee_row_05",
+            "document_type": "fee_row",
+            "section": null,
+            "score": null
+          }
+        ]
+      }
+    ]
+  }
+]
