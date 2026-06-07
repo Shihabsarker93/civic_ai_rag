@@ -1,0 +1,2192 @@
+[
+  {
+    "question_index": 1,
+    "question": "জন্মসনদের জন্য আবেদন করব কীভাবে? কি কি কাগজপত্র প্রয়োজন? আবেদনের পর progress কীভাবে জানবো?",
+    "runs": [
+      {
+        "model": "llama3.2",
+        "elapsed": 28.62,
+        "answer": "আপনার প্রশ্নে কয়েকটি আলাদা বিষয় আছে। প্রাপ্ত সরকারি/উৎস ডেটার ভিত্তিতে অংশভাগ করে উত্তর দিচ্ছি:\n\n1. আবেদন নম্বর, অগ্রগতি বা পরবর্তী করণীয়\nজন্ম নিবন্ধনের আবেদন সফলভাবে সম্পন্ন হওয়ার পর আপনার মোবাইলে অ্যাপ্লিকেশন আইডি SMS হিসেবে যাবে।\n\n\"সাবমিট\" বাটনে ক্লিক করার পর আবেদন সফলভাবে জমা হয়েছে মর্মে বার্তা প্রদর্শিত হবে।\n\nএখানে একটি আবেদনপত্র নম্বর (Application ID) প্রদান করা হবে।\n\nএই নম্বর:\n\n- মোবাইল নম্বরে\n- ইমেইলে\n\nপাঠানো হবে।\n\nনিম্নোক্ত নথিপত্র নিয়ে সংশ্লিষ্ট নিবন্ধন কার্যালয়ে যোগাযোগ করতে হবে:\n\n- আবেদনপত্র\n- সংযুক্ত ডকুমেন্টসমূহের ফটোকপি\n\nসংশ্লিষ্ট নিবন্ধন কার্যালয়:\n\n- ইউনিয়ন পরিষদ\n- পৌরসভা\n- সিটি কর্পোরেশন\n- ক্যান্টনমেন্ট\n\nনিবন্ধন সহকারী এবং নিবন্ধক কর্তৃক যাচাই-বাছাই শেষে তথ্য সঠিক পাওয়া গেলে জন্ম নিবন্ধন সনদ প্রদান করা হবে।\n\nএই ডেটাসেটে নির্দিষ্ট আবেদন নম্বর দিয়ে অনলাইন progress/status যাচাই করার আলাদা পদ্ধতি পাওয়া যায়নি। তাই নির্দিষ্ট আবেদন নম্বরের বর্তমান অবস্থা জানতে সংশ্লিষ্ট নিবন্ধন কার্যালয় বা BDRIS নির্দেশনা অনুসরণ করা উচিত।\n\n2. জন্ম নিবন্ধনের আবেদন\nআবেদন করার পূর্ব প্রস্তুতি: নতুন জন্ম নিবন্ধন আবেদনের পূর্বে প্রয়োজনীয় তথ্য ও ডকুমেন্ট সংগ্রহ করে রাখুন।\n\nজন্ম নিবন্ধনের ক্ষেত্রে নিম্নোক্ত তিন ধরনের ঠিকানার তথ্য প্রয়োজন হবে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রতিটি ঠিকানার জন্য নিম্নোক্ত তথ্য প্রয়োজন হতে পারে:\n\n- ইউনিয়ন পরিষদ/পৌরসভা/সিটি কর্পোরেশন/ক্যান্টনমেন্টের নাম\n- ওয়ার্ড নম্বর\n- ডাকঘর\n- গ্রাম/পাড়া/মহল্লা\n- বাসা ও সড়কের নাম ও নম্বর\n\nসকল তথ্য বাংলা ও ইংরেজি উভয় ভাষায় সঠিক বানানে লিখতে হবে।\n\nধাপ ১: ওয়েবসাইটে প্রবেশ: নতুন জন্ম নিবন্ধনের জন্য:\n\nhttps://bdris.gov.bd\n\nওয়েবসাইটে প্রবেশ করুন।\n\nহোমপেজে \"জন্ম নিবন্ধন\" মেনু নির্বাচন করুন।\n\nএরপর \"জন্ম নিবন্ধন আবেদন\" অপশনে ক্লিক করুন।\n\nধাপ ২: সনদ সংগ্রহের স্থান নির্বাচন: এখানে আবেদনকারীকে নির্বাচন করতে হবে তিনি কোথা থেকে জন্ম সনদ গ্রহণ বা সংগ্রহ করতে চান।\n\nনিম্নোক্ত ঠিকানার ভিত্তিতে সনদ সংগ্রহ করা যেতে পারে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n\nসাধারণভাবে স্থায়ী ঠিকানা থেকে সনদ সংগ্রহ করার জন্য উৎসাহিত করা হয়।\n\nবিদেশে জন্মগ্রহণকারী শিশু নিকটস্থ বাংলাদেশ দূতাবাস থেকে জন্ম সনদ সংগ্রহ করতে পারে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৩: জন্ম তথ্য প্রদান: এই ধাপে আবেদনকারীর জন্মসংক্রান্ত তথ্য ধাপে ধাপে পূরণ করতে হবে।\n\nতথ্য প্রদানের সময় সতর্কতা অবলম্বন করতে হবে।\n\nজন্ম তারিখ প্রদান করার পর সিস্টেম প্রয়োজনীয় নির্দেশনা প্রদর্শন করবে।\n\nনির্দেশনা পড়ে \"আমার কাছে এই ডকুমেন্টগুলো আছে\" অপশন নির্বাচন করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৪: পিতা ও মাতার তথ্য প্রদান: এই ধাপে পিতা ও মাতার তথ্য প্রদান করতে হবে।\n\nধাপ ৫: স্থায়ী ও বর্তমান ঠিকানা প্রদান: এই ধাপে:\n\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রদান করতে হবে।\n\nযদি জন্মস্থান এবং স্থায়ী ঠিকানা একই হয়, তাহলে নির্ধারিত ঘরে টিক চিহ্ন দিলে তথ্য স্বয়ংক্রিয়ভাবে পূরণ হবে।\n\nঅন্যথায় স্থায়ী ঠিকানা ও বর্তমান ঠিকানার তথ্য আলাদাভাবে পূরণ করতে হবে।\n\nসব তথ্য সঠিকভাবে পূরণ করার পর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৬: আবেদনকারীর তথ্য ও ডকুমেন্ট সংযুক্তি: যদি ব্যক্তি নিজে আবেদন করেন, তাহলে \"নিজ\" অপশন নির্বাচন করতে হবে।\n\nঅন্য কেউ আবেদন করলে \"অন্যান্য\" অপশন নির্বাচন করতে হবে।\n\n\"অন্যান্য\" নির্বাচন করলে আবেদনকারীর জন্ম নিবন্ধন নম্বর প্রদান করতে হবে।\n\nএরপর ঘোষণা দিতে হবে যে:\n\n- প্রদত্ত তথ্যসমূহ সঠিক\n- পূর্বে জন্ম নিবন্ধন করা হয়নি\n\nসংযুক্ত করতে হবে: - জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nসংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৭: তথ্য যাচাই ও OTP: এই ধাপে আবেদনকারীর পূরণকৃত সকল তথ্য প্রদর্শিত হবে।\n\nসকল তথ্য সতর্কতার সাথে যাচাই করতে হবে।\n\nভুল থাকলে \"পূর্ববর্তী\" বাটনে ফিরে গিয়ে সংশোধন করতে হবে।\n\nতথ্য সঠিক হলে:\n\n- ইমেইল অথবা\n- মোবাইল নম্বর\n\nপ্রদান করতে হবে।\n\nOTP গ্রহণ: - দূতাবাসের মাধ্যমে আবেদনের ক্ষেত্রে ইমেইলে OTP যাবে।\n- বাংলাদেশের অভ্যন্তরে আবেদনের ক্ষেত্রে মোবাইল নম্বরে OTP যাবে।\n\nOTP প্রদান করার পর \"সাবমিট\" বাটনে ক্লিক করুন।\n\n3. প্রয়োজনীয় কাগজপত্র/প্রমাণক\nজন্ম নিবন্ধনের জন্য সাধারণত জন্মস্থান, স্থায়ী ঠিকানা এবং বর্তমান ঠিকানার তথ্য প্রস্তুত রাখতে হয়।\n\nনতুন জন্ম নিবন্ধন আবেদনের পূর্বে প্রয়োজনীয় তথ্য ও ডকুমেন্ট সংগ্রহ করে রাখুন।\n\nজন্ম নিবন্ধনের ক্ষেত্রে নিম্নোক্ত তিন ধরনের ঠিকানার তথ্য প্রয়োজন হবে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রতিটি ঠিকানার জন্য নিম্নোক্ত তথ্য প্রয়োজন হতে পারে:\n\n- ইউনিয়ন পরিষদ/পৌরসভা/সিটি কর্পোরেশন/ক্যান্টনমেন্টের নাম\n- ওয়ার্ড নম্বর\n- ডাকঘর\n- গ্রাম/পাড়া/মহল্লা\n- বাসা ও সড়কের নাম ও নম্বর\n\nসকল তথ্য বাংলা ও ইংরেজি উভয় ভাষায় সঠিক বানানে লিখতে হবে।\n\n- জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nসংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nSources: birth_registration_application_process_02_cleaned_013_01, birth_registration_application_process_cleaned_019_01, birth_registration_application_process_cleaned_020_01, birth_registration_application_process_cleaned_002_01, birth_registration_application_process_cleaned_015_01, birth_registration_application_process_02_cleaned_010_01, birth_registration_application_process_cleaned_006_01, birth_registration_application_process_02_cleaned_014_01",
+        "source_ids": [
+          "birth_registration_application_process_cleaned_002_01",
+          "birth_registration_application_process_cleaned_015_01",
+          "birth_registration_application_process_02_cleaned_010_01",
+          "birth_registration_application_process_cleaned_006_01",
+          "birth_registration_application_process_02_cleaned_014_01",
+          "birth_registration_application_process_cleaned_020_01",
+          "birth_registration_application_process_02_cleaned_013_01",
+          "birth_registration_application_process_cleaned_019_01",
+          "birth_registration_application_process_cleaned_008_01",
+          "birth_registration_application_process_cleaned_016_01"
+        ],
+        "top_sources": [
+          {
+            "id": "birth_registration_application_process_cleaned_002_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "আবেদন করার পূর্ব প্রস্তুতি",
+            "score": 1.0831537294387816,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_015_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ৬: আবেদনকারীর তথ্য ও ডকুমেন্ট সংযুক্তি",
+            "score": 0.9673278975486755,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_010_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ৮: প্রয়োজনীয় প্রমাণক সংযুক্তি",
+            "score": 0.9573888230323792,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_006_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "আবেদন সম্পন্ন হওয়ার পর",
+            "score": 0.954063355922699,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_014_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ১২: আবেদনপত্র জমা",
+            "score": 0.9485443830490112,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_020_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "পরবর্তী করণীয়",
+            "score": 0.9414687752723694,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_013_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ১১: আবেদন নম্বর গ্রহণ",
+            "score": 0.0,
+            "retrievers": [
+              "safe_path"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_019_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ৮: আবেদন সম্পন্ন ও সনদ গ্রহণ",
+            "score": 0.0,
+            "retrievers": [
+              "safe_path"
+            ]
+          }
+        ],
+        "note": "Model-independent controlled CivicRAG answer; safe-answer path returned before LLM generation."
+      },
+      {
+        "model": "llama3",
+        "elapsed": null,
+        "answer": "আপনার প্রশ্নে কয়েকটি আলাদা বিষয় আছে। প্রাপ্ত সরকারি/উৎস ডেটার ভিত্তিতে অংশভাগ করে উত্তর দিচ্ছি:\n\n1. আবেদন নম্বর, অগ্রগতি বা পরবর্তী করণীয়\nজন্ম নিবন্ধনের আবেদন সফলভাবে সম্পন্ন হওয়ার পর আপনার মোবাইলে অ্যাপ্লিকেশন আইডি SMS হিসেবে যাবে।\n\n\"সাবমিট\" বাটনে ক্লিক করার পর আবেদন সফলভাবে জমা হয়েছে মর্মে বার্তা প্রদর্শিত হবে।\n\nএখানে একটি আবেদনপত্র নম্বর (Application ID) প্রদান করা হবে।\n\nএই নম্বর:\n\n- মোবাইল নম্বরে\n- ইমেইলে\n\nপাঠানো হবে।\n\nনিম্নোক্ত নথিপত্র নিয়ে সংশ্লিষ্ট নিবন্ধন কার্যালয়ে যোগাযোগ করতে হবে:\n\n- আবেদনপত্র\n- সংযুক্ত ডকুমেন্টসমূহের ফটোকপি\n\nসংশ্লিষ্ট নিবন্ধন কার্যালয়:\n\n- ইউনিয়ন পরিষদ\n- পৌরসভা\n- সিটি কর্পোরেশন\n- ক্যান্টনমেন্ট\n\nনিবন্ধন সহকারী এবং নিবন্ধক কর্তৃক যাচাই-বাছাই শেষে তথ্য সঠিক পাওয়া গেলে জন্ম নিবন্ধন সনদ প্রদান করা হবে।\n\nএই ডেটাসেটে নির্দিষ্ট আবেদন নম্বর দিয়ে অনলাইন progress/status যাচাই করার আলাদা পদ্ধতি পাওয়া যায়নি। তাই নির্দিষ্ট আবেদন নম্বরের বর্তমান অবস্থা জানতে সংশ্লিষ্ট নিবন্ধন কার্যালয় বা BDRIS নির্দেশনা অনুসরণ করা উচিত।\n\n2. জন্ম নিবন্ধনের আবেদন\nআবেদন করার পূর্ব প্রস্তুতি: নতুন জন্ম নিবন্ধন আবেদনের পূর্বে প্রয়োজনীয় তথ্য ও ডকুমেন্ট সংগ্রহ করে রাখুন।\n\nজন্ম নিবন্ধনের ক্ষেত্রে নিম্নোক্ত তিন ধরনের ঠিকানার তথ্য প্রয়োজন হবে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রতিটি ঠিকানার জন্য নিম্নোক্ত তথ্য প্রয়োজন হতে পারে:\n\n- ইউনিয়ন পরিষদ/পৌরসভা/সিটি কর্পোরেশন/ক্যান্টনমেন্টের নাম\n- ওয়ার্ড নম্বর\n- ডাকঘর\n- গ্রাম/পাড়া/মহল্লা\n- বাসা ও সড়কের নাম ও নম্বর\n\nসকল তথ্য বাংলা ও ইংরেজি উভয় ভাষায় সঠিক বানানে লিখতে হবে।\n\nধাপ ১: ওয়েবসাইটে প্রবেশ: নতুন জন্ম নিবন্ধনের জন্য:\n\nhttps://bdris.gov.bd\n\nওয়েবসাইটে প্রবেশ করুন।\n\nহোমপেজে \"জন্ম নিবন্ধন\" মেনু নির্বাচন করুন।\n\nএরপর \"জন্ম নিবন্ধন আবেদন\" অপশনে ক্লিক করুন।\n\nধাপ ২: সনদ সংগ্রহের স্থান নির্বাচন: এখানে আবেদনকারীকে নির্বাচন করতে হবে তিনি কোথা থেকে জন্ম সনদ গ্রহণ বা সংগ্রহ করতে চান।\n\nনিম্নোক্ত ঠিকানার ভিত্তিতে সনদ সংগ্রহ করা যেতে পারে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n\nসাধারণভাবে স্থায়ী ঠিকানা থেকে সনদ সংগ্রহ করার জন্য উৎসাহিত করা হয়।\n\nবিদেশে জন্মগ্রহণকারী শিশু নিকটস্থ বাংলাদেশ দূতাবাস থেকে জন্ম সনদ সংগ্রহ করতে পারে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৩: জন্ম তথ্য প্রদান: এই ধাপে আবেদনকারীর জন্মসংক্রান্ত তথ্য ধাপে ধাপে পূরণ করতে হবে।\n\nতথ্য প্রদানের সময় সতর্কতা অবলম্বন করতে হবে।\n\nজন্ম তারিখ প্রদান করার পর সিস্টেম প্রয়োজনীয় নির্দেশনা প্রদর্শন করবে।\n\nনির্দেশনা পড়ে \"আমার কাছে এই ডকুমেন্টগুলো আছে\" অপশন নির্বাচন করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৪: পিতা ও মাতার তথ্য প্রদান: এই ধাপে পিতা ও মাতার তথ্য প্রদান করতে হবে।\n\nধাপ ৫: স্থায়ী ও বর্তমান ঠিকানা প্রদান: এই ধাপে:\n\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রদান করতে হবে।\n\nযদি জন্মস্থান এবং স্থায়ী ঠিকানা একই হয়, তাহলে নির্ধারিত ঘরে টিক চিহ্ন দিলে তথ্য স্বয়ংক্রিয়ভাবে পূরণ হবে।\n\nঅন্যথায় স্থায়ী ঠিকানা ও বর্তমান ঠিকানার তথ্য আলাদাভাবে পূরণ করতে হবে।\n\nসব তথ্য সঠিকভাবে পূরণ করার পর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৬: আবেদনকারীর তথ্য ও ডকুমেন্ট সংযুক্তি: যদি ব্যক্তি নিজে আবেদন করেন, তাহলে \"নিজ\" অপশন নির্বাচন করতে হবে।\n\nঅন্য কেউ আবেদন করলে \"অন্যান্য\" অপশন নির্বাচন করতে হবে।\n\n\"অন্যান্য\" নির্বাচন করলে আবেদনকারীর জন্ম নিবন্ধন নম্বর প্রদান করতে হবে।\n\nএরপর ঘোষণা দিতে হবে যে:\n\n- প্রদত্ত তথ্যসমূহ সঠিক\n- পূর্বে জন্ম নিবন্ধন করা হয়নি\n\nসংযুক্ত করতে হবে: - জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nসংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৭: তথ্য যাচাই ও OTP: এই ধাপে আবেদনকারীর পূরণকৃত সকল তথ্য প্রদর্শিত হবে।\n\nসকল তথ্য সতর্কতার সাথে যাচাই করতে হবে।\n\nভুল থাকলে \"পূর্ববর্তী\" বাটনে ফিরে গিয়ে সংশোধন করতে হবে।\n\nতথ্য সঠিক হলে:\n\n- ইমেইল অথবা\n- মোবাইল নম্বর\n\nপ্রদান করতে হবে।\n\nOTP গ্রহণ: - দূতাবাসের মাধ্যমে আবেদনের ক্ষেত্রে ইমেইলে OTP যাবে।\n- বাংলাদেশের অভ্যন্তরে আবেদনের ক্ষেত্রে মোবাইল নম্বরে OTP যাবে।\n\nOTP প্রদান করার পর \"সাবমিট\" বাটনে ক্লিক করুন।\n\n3. প্রয়োজনীয় কাগজপত্র/প্রমাণক\nজন্ম নিবন্ধনের জন্য সাধারণত জন্মস্থান, স্থায়ী ঠিকানা এবং বর্তমান ঠিকানার তথ্য প্রস্তুত রাখতে হয়।\n\nনতুন জন্ম নিবন্ধন আবেদনের পূর্বে প্রয়োজনীয় তথ্য ও ডকুমেন্ট সংগ্রহ করে রাখুন।\n\nজন্ম নিবন্ধনের ক্ষেত্রে নিম্নোক্ত তিন ধরনের ঠিকানার তথ্য প্রয়োজন হবে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রতিটি ঠিকানার জন্য নিম্নোক্ত তথ্য প্রয়োজন হতে পারে:\n\n- ইউনিয়ন পরিষদ/পৌরসভা/সিটি কর্পোরেশন/ক্যান্টনমেন্টের নাম\n- ওয়ার্ড নম্বর\n- ডাকঘর\n- গ্রাম/পাড়া/মহল্লা\n- বাসা ও সড়কের নাম ও নম্বর\n\nসকল তথ্য বাংলা ও ইংরেজি উভয় ভাষায় সঠিক বানানে লিখতে হবে।\n\n- জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nসংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nSources: birth_registration_application_process_02_cleaned_013_01, birth_registration_application_process_cleaned_019_01, birth_registration_application_process_cleaned_020_01, birth_registration_application_process_cleaned_002_01, birth_registration_application_process_cleaned_015_01, birth_registration_application_process_02_cleaned_010_01, birth_registration_application_process_cleaned_006_01, birth_registration_application_process_02_cleaned_014_01",
+        "source_ids": [
+          "birth_registration_application_process_cleaned_002_01",
+          "birth_registration_application_process_cleaned_015_01",
+          "birth_registration_application_process_02_cleaned_010_01",
+          "birth_registration_application_process_cleaned_006_01",
+          "birth_registration_application_process_02_cleaned_014_01",
+          "birth_registration_application_process_cleaned_020_01",
+          "birth_registration_application_process_02_cleaned_013_01",
+          "birth_registration_application_process_cleaned_019_01",
+          "birth_registration_application_process_cleaned_008_01",
+          "birth_registration_application_process_cleaned_016_01"
+        ],
+        "top_sources": [
+          {
+            "id": "birth_registration_application_process_cleaned_002_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "আবেদন করার পূর্ব প্রস্তুতি",
+            "score": 1.0831537294387816,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_015_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ৬: আবেদনকারীর তথ্য ও ডকুমেন্ট সংযুক্তি",
+            "score": 0.9673278975486755,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_010_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ৮: প্রয়োজনীয় প্রমাণক সংযুক্তি",
+            "score": 0.9573888230323792,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_006_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "আবেদন সম্পন্ন হওয়ার পর",
+            "score": 0.954063355922699,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_014_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ১২: আবেদনপত্র জমা",
+            "score": 0.9485443830490112,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_020_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "পরবর্তী করণীয়",
+            "score": 0.9414687752723694,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_013_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ১১: আবেদন নম্বর গ্রহণ",
+            "score": 0.0,
+            "retrievers": [
+              "safe_path"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_019_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ৮: আবেদন সম্পন্ন ও সনদ গ্রহণ",
+            "score": 0.0,
+            "retrievers": [
+              "safe_path"
+            ]
+          }
+        ],
+        "note": "Model-independent controlled CivicRAG answer; safe-answer path returned before LLM generation."
+      },
+      {
+        "model": "qwen2.5:7b",
+        "elapsed": null,
+        "answer": "আপনার প্রশ্নে কয়েকটি আলাদা বিষয় আছে। প্রাপ্ত সরকারি/উৎস ডেটার ভিত্তিতে অংশভাগ করে উত্তর দিচ্ছি:\n\n1. আবেদন নম্বর, অগ্রগতি বা পরবর্তী করণীয়\nজন্ম নিবন্ধনের আবেদন সফলভাবে সম্পন্ন হওয়ার পর আপনার মোবাইলে অ্যাপ্লিকেশন আইডি SMS হিসেবে যাবে।\n\n\"সাবমিট\" বাটনে ক্লিক করার পর আবেদন সফলভাবে জমা হয়েছে মর্মে বার্তা প্রদর্শিত হবে।\n\nএখানে একটি আবেদনপত্র নম্বর (Application ID) প্রদান করা হবে।\n\nএই নম্বর:\n\n- মোবাইল নম্বরে\n- ইমেইলে\n\nপাঠানো হবে।\n\nনিম্নোক্ত নথিপত্র নিয়ে সংশ্লিষ্ট নিবন্ধন কার্যালয়ে যোগাযোগ করতে হবে:\n\n- আবেদনপত্র\n- সংযুক্ত ডকুমেন্টসমূহের ফটোকপি\n\nসংশ্লিষ্ট নিবন্ধন কার্যালয়:\n\n- ইউনিয়ন পরিষদ\n- পৌরসভা\n- সিটি কর্পোরেশন\n- ক্যান্টনমেন্ট\n\nনিবন্ধন সহকারী এবং নিবন্ধক কর্তৃক যাচাই-বাছাই শেষে তথ্য সঠিক পাওয়া গেলে জন্ম নিবন্ধন সনদ প্রদান করা হবে।\n\nএই ডেটাসেটে নির্দিষ্ট আবেদন নম্বর দিয়ে অনলাইন progress/status যাচাই করার আলাদা পদ্ধতি পাওয়া যায়নি। তাই নির্দিষ্ট আবেদন নম্বরের বর্তমান অবস্থা জানতে সংশ্লিষ্ট নিবন্ধন কার্যালয় বা BDRIS নির্দেশনা অনুসরণ করা উচিত।\n\n2. জন্ম নিবন্ধনের আবেদন\nআবেদন করার পূর্ব প্রস্তুতি: নতুন জন্ম নিবন্ধন আবেদনের পূর্বে প্রয়োজনীয় তথ্য ও ডকুমেন্ট সংগ্রহ করে রাখুন।\n\nজন্ম নিবন্ধনের ক্ষেত্রে নিম্নোক্ত তিন ধরনের ঠিকানার তথ্য প্রয়োজন হবে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রতিটি ঠিকানার জন্য নিম্নোক্ত তথ্য প্রয়োজন হতে পারে:\n\n- ইউনিয়ন পরিষদ/পৌরসভা/সিটি কর্পোরেশন/ক্যান্টনমেন্টের নাম\n- ওয়ার্ড নম্বর\n- ডাকঘর\n- গ্রাম/পাড়া/মহল্লা\n- বাসা ও সড়কের নাম ও নম্বর\n\nসকল তথ্য বাংলা ও ইংরেজি উভয় ভাষায় সঠিক বানানে লিখতে হবে।\n\nধাপ ১: ওয়েবসাইটে প্রবেশ: নতুন জন্ম নিবন্ধনের জন্য:\n\nhttps://bdris.gov.bd\n\nওয়েবসাইটে প্রবেশ করুন।\n\nহোমপেজে \"জন্ম নিবন্ধন\" মেনু নির্বাচন করুন।\n\nএরপর \"জন্ম নিবন্ধন আবেদন\" অপশনে ক্লিক করুন।\n\nধাপ ২: সনদ সংগ্রহের স্থান নির্বাচন: এখানে আবেদনকারীকে নির্বাচন করতে হবে তিনি কোথা থেকে জন্ম সনদ গ্রহণ বা সংগ্রহ করতে চান।\n\nনিম্নোক্ত ঠিকানার ভিত্তিতে সনদ সংগ্রহ করা যেতে পারে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n\nসাধারণভাবে স্থায়ী ঠিকানা থেকে সনদ সংগ্রহ করার জন্য উৎসাহিত করা হয়।\n\nবিদেশে জন্মগ্রহণকারী শিশু নিকটস্থ বাংলাদেশ দূতাবাস থেকে জন্ম সনদ সংগ্রহ করতে পারে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৩: জন্ম তথ্য প্রদান: এই ধাপে আবেদনকারীর জন্মসংক্রান্ত তথ্য ধাপে ধাপে পূরণ করতে হবে।\n\nতথ্য প্রদানের সময় সতর্কতা অবলম্বন করতে হবে।\n\nজন্ম তারিখ প্রদান করার পর সিস্টেম প্রয়োজনীয় নির্দেশনা প্রদর্শন করবে।\n\nনির্দেশনা পড়ে \"আমার কাছে এই ডকুমেন্টগুলো আছে\" অপশন নির্বাচন করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৪: পিতা ও মাতার তথ্য প্রদান: এই ধাপে পিতা ও মাতার তথ্য প্রদান করতে হবে।\n\nধাপ ৫: স্থায়ী ও বর্তমান ঠিকানা প্রদান: এই ধাপে:\n\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রদান করতে হবে।\n\nযদি জন্মস্থান এবং স্থায়ী ঠিকানা একই হয়, তাহলে নির্ধারিত ঘরে টিক চিহ্ন দিলে তথ্য স্বয়ংক্রিয়ভাবে পূরণ হবে।\n\nঅন্যথায় স্থায়ী ঠিকানা ও বর্তমান ঠিকানার তথ্য আলাদাভাবে পূরণ করতে হবে।\n\nসব তথ্য সঠিকভাবে পূরণ করার পর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৬: আবেদনকারীর তথ্য ও ডকুমেন্ট সংযুক্তি: যদি ব্যক্তি নিজে আবেদন করেন, তাহলে \"নিজ\" অপশন নির্বাচন করতে হবে।\n\nঅন্য কেউ আবেদন করলে \"অন্যান্য\" অপশন নির্বাচন করতে হবে।\n\n\"অন্যান্য\" নির্বাচন করলে আবেদনকারীর জন্ম নিবন্ধন নম্বর প্রদান করতে হবে।\n\nএরপর ঘোষণা দিতে হবে যে:\n\n- প্রদত্ত তথ্যসমূহ সঠিক\n- পূর্বে জন্ম নিবন্ধন করা হয়নি\n\nসংযুক্ত করতে হবে: - জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nসংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৭: তথ্য যাচাই ও OTP: এই ধাপে আবেদনকারীর পূরণকৃত সকল তথ্য প্রদর্শিত হবে।\n\nসকল তথ্য সতর্কতার সাথে যাচাই করতে হবে।\n\nভুল থাকলে \"পূর্ববর্তী\" বাটনে ফিরে গিয়ে সংশোধন করতে হবে।\n\nতথ্য সঠিক হলে:\n\n- ইমেইল অথবা\n- মোবাইল নম্বর\n\nপ্রদান করতে হবে।\n\nOTP গ্রহণ: - দূতাবাসের মাধ্যমে আবেদনের ক্ষেত্রে ইমেইলে OTP যাবে।\n- বাংলাদেশের অভ্যন্তরে আবেদনের ক্ষেত্রে মোবাইল নম্বরে OTP যাবে।\n\nOTP প্রদান করার পর \"সাবমিট\" বাটনে ক্লিক করুন।\n\n3. প্রয়োজনীয় কাগজপত্র/প্রমাণক\nজন্ম নিবন্ধনের জন্য সাধারণত জন্মস্থান, স্থায়ী ঠিকানা এবং বর্তমান ঠিকানার তথ্য প্রস্তুত রাখতে হয়।\n\nনতুন জন্ম নিবন্ধন আবেদনের পূর্বে প্রয়োজনীয় তথ্য ও ডকুমেন্ট সংগ্রহ করে রাখুন।\n\nজন্ম নিবন্ধনের ক্ষেত্রে নিম্নোক্ত তিন ধরনের ঠিকানার তথ্য প্রয়োজন হবে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রতিটি ঠিকানার জন্য নিম্নোক্ত তথ্য প্রয়োজন হতে পারে:\n\n- ইউনিয়ন পরিষদ/পৌরসভা/সিটি কর্পোরেশন/ক্যান্টনমেন্টের নাম\n- ওয়ার্ড নম্বর\n- ডাকঘর\n- গ্রাম/পাড়া/মহল্লা\n- বাসা ও সড়কের নাম ও নম্বর\n\nসকল তথ্য বাংলা ও ইংরেজি উভয় ভাষায় সঠিক বানানে লিখতে হবে।\n\n- জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nসংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nSources: birth_registration_application_process_02_cleaned_013_01, birth_registration_application_process_cleaned_019_01, birth_registration_application_process_cleaned_020_01, birth_registration_application_process_cleaned_002_01, birth_registration_application_process_cleaned_015_01, birth_registration_application_process_02_cleaned_010_01, birth_registration_application_process_cleaned_006_01, birth_registration_application_process_02_cleaned_014_01",
+        "source_ids": [
+          "birth_registration_application_process_cleaned_002_01",
+          "birth_registration_application_process_cleaned_015_01",
+          "birth_registration_application_process_02_cleaned_010_01",
+          "birth_registration_application_process_cleaned_006_01",
+          "birth_registration_application_process_02_cleaned_014_01",
+          "birth_registration_application_process_cleaned_020_01",
+          "birth_registration_application_process_02_cleaned_013_01",
+          "birth_registration_application_process_cleaned_019_01",
+          "birth_registration_application_process_cleaned_008_01",
+          "birth_registration_application_process_cleaned_016_01"
+        ],
+        "top_sources": [
+          {
+            "id": "birth_registration_application_process_cleaned_002_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "আবেদন করার পূর্ব প্রস্তুতি",
+            "score": 1.0831537294387816,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_015_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ৬: আবেদনকারীর তথ্য ও ডকুমেন্ট সংযুক্তি",
+            "score": 0.9673278975486755,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_010_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ৮: প্রয়োজনীয় প্রমাণক সংযুক্তি",
+            "score": 0.9573888230323792,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_006_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "আবেদন সম্পন্ন হওয়ার পর",
+            "score": 0.954063355922699,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_014_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ১২: আবেদনপত্র জমা",
+            "score": 0.9485443830490112,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_020_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "পরবর্তী করণীয়",
+            "score": 0.9414687752723694,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_013_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ১১: আবেদন নম্বর গ্রহণ",
+            "score": 0.0,
+            "retrievers": [
+              "safe_path"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_019_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ৮: আবেদন সম্পন্ন ও সনদ গ্রহণ",
+            "score": 0.0,
+            "retrievers": [
+              "safe_path"
+            ]
+          }
+        ],
+        "note": "Model-independent controlled CivicRAG answer; safe-answer path returned before LLM generation."
+      }
+    ]
+  },
+  {
+    "question_index": 2,
+    "question": "জন্মনিবন্ধন সনদ হারিয়ে গিয়েছে, কি করব?",
+    "runs": [
+      {
+        "model": "llama3.2",
+        "elapsed": 42.72,
+        "answer": "জন্ম নিবন্ধন সনদ হারিয়ে গেলে বা নষ্ট হলে নিবন্ধকের কাছে সনদের প্রতিলিপির জন্য আবেদন করতে হবে। বিধি ১৩ অনুযায়ী, আবেদন পাওয়ার ৭ কার্য দিবসের মধ্যে জন্ম/মৃত্যু নিবন্ধন সনদের প্রতিলিপি প্রদান করা হয়। প্রতিলিপির জন্য বিধি ২১ অনুযায়ী নির্ধারিত ফি প্রযোজ্য হতে পারে।\n\nপ্রাসঙ্গিক বিধি: (১) নিবন্ধিত কোন ব্যক্তির সনদ হারাইয়া গেলে বা নষ্ট হইলে, নিবন্ধক, উপ-বিধি (২) ও (৩) এর বিধান সাপেক্ষে, জমনি ফরম-৭ অনুযায়ী উক্ত ব্যক্তির আবেদন প্রাপ্তির ৭ (সাত) কার্য দিবসের মধ্যে জমনি ফরম-৩ ও জমনি ফরম-৬ অনুযায়ী জন্ম ও মৃত্যু নিবন্ধন সনদের প্রতিলিপি প্রদান করিবেন। (২) বিধি ২১ এ নির্ধারিত ফিস প্রদান সাপেক্ষে, নিম্নবর্ণিত কোন ব্যক্তি জন্ম ও মৃত্যু নিবন্ধন সনদের প্রতিলিপির জন্য জমনি ফরম-৭ অনুযায়ী নিবন্ধকের নিকট আবেদন করিতে পারিবেন, যথা:\n(ক) যাহার জন্য জন্ম সনদ প্রদান করা হইবে তাহার বয়স ১৮ (আঠার) বৎসর বা তদূর্ধ্ব হইলে তিনি স্বয়ং অথবা (খ) জন্ম তথ্য প্রদানকারী অথবা (গ) মৃত্যু তথ্য প্রদানকারী অথবা (ঘ) জন্ম বা মৃত্যু তথ্য দ্বারা সংক্ষুব্ধ ব্যক্তি। (৩) উপ-বিধি (২) এর অধীন আবেদনপত্র প্রাপ্তির পর নিবন্ধক যদি নিশ্চিত হন যে, উক্ত আবেদনপত্র যথাযথভাবে পূরণ করা হইয়াছে এবং ফিস প্রদান করা হইয়াছে তাহা হইলে তিনি আবেদনকারীর অংশ স্বাক্ষরপূর্বক উহা আবেদনকারীর নিকট হস্তান্তর করিবেন। (৪) উপ-বিধি (৩) এর অধীন আবেদনপত্র প্রাপ্তির পর নিবন্ধক সনদের প্রতিলিপি প্রস্তুত করিবেন এবং আবেদনকারীর অংশ গ্রহণ করিয়া সনদের প্রতিলিপি আবেদনকারীর নিকট হস্তান্তরের ব্যবস্থা করিবেন। (৫) প্রতিলিপি সনদের উপরিভাগে প্রতিলিপি বা উঁঢ়ষরপধঃব শব্দটি এবং, ক্ষেত্রমত, সংশোধিত সনদের ক্ষেত্রে সংশোধিত শব্দটি উল্লেখ থাকিবে এবং প্রথম বার জন্ম বা মৃত্যু নিবন্ধন সনদ যে তারিখে ইস্যু হইয়াছে প্রতিলিপি সনদ ইস্যুর সেই তারিখ বহাল থাকিবে ও প্রতিলিপি সনদ ইস্যুর তারিখ লিপিবদ্ধ করিতে হইবে।\n\nSources: birth_and_death_registration_rules_2018_বিধি_১৩_01, birth_and_death_registration_act_2004_ধারা_১৫_01, birth_and_death_registration_rules_2018_বিধি_১৫_01",
+        "source_ids": [
+          "birth_and_death_registration_rules_2018_বিধি_১৩_01",
+          "birth_and_death_registration_act_2004_ধারা_১৫_01",
+          "birth_and_death_registration_rules_2018_বিধি_১৫_01",
+          "notice_birth_and_death_registration_certificate_correction_steps_ocr_004_01",
+          "birth_and_death_registration_rules_2018_বিধি_১২_02",
+          "birth_registration_application_process_cleaned_020_01"
+        ],
+        "top_sources": [
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১৩_01",
+            "document_type": "legal_rules",
+            "category": null,
+            "section_title": "সনদের প্রতিলিপি প্রদান",
+            "score": 1.0257967138290405,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_act_2004_ধারা_১৫_01",
+            "document_type": "legal_act",
+            "category": null,
+            "section_title": "নিবন্ধন বহি এবং জন্ম বা মৃত্যু সনদ সংশোধন",
+            "score": 0.6379737257957458,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১৫_01",
+            "document_type": "legal_rules",
+            "category": null,
+            "section_title": "জন্ম বা মৃত্যু সনদ সংশোধন ও বাতিল",
+            "score": 0.5876038980484009,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "notice_birth_and_death_registration_certificate_correction_steps_ocr_004_01",
+            "document_type": "correction_notice_ocr",
+            "category": null,
+            "section_title": "একাধিক জন্ম বা মৃত্যু সনদ বাতিলের ধাপ",
+            "score": 0.49010878801345825,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১২_02",
+            "document_type": "legal_rules",
+            "category": null,
+            "section_title": "প্রবাসীগণের মৃত্যু নিবন্ধন",
+            "score": 0.44151418685913085,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_020_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "পরবর্তী করণীয়",
+            "score": 0.36699128031730655,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          }
+        ],
+        "note": "Model-independent controlled CivicRAG answer; safe-answer path returned before LLM generation."
+      },
+      {
+        "model": "llama3",
+        "elapsed": null,
+        "answer": "জন্ম নিবন্ধন সনদ হারিয়ে গেলে বা নষ্ট হলে নিবন্ধকের কাছে সনদের প্রতিলিপির জন্য আবেদন করতে হবে। বিধি ১৩ অনুযায়ী, আবেদন পাওয়ার ৭ কার্য দিবসের মধ্যে জন্ম/মৃত্যু নিবন্ধন সনদের প্রতিলিপি প্রদান করা হয়। প্রতিলিপির জন্য বিধি ২১ অনুযায়ী নির্ধারিত ফি প্রযোজ্য হতে পারে।\n\nপ্রাসঙ্গিক বিধি: (১) নিবন্ধিত কোন ব্যক্তির সনদ হারাইয়া গেলে বা নষ্ট হইলে, নিবন্ধক, উপ-বিধি (২) ও (৩) এর বিধান সাপেক্ষে, জমনি ফরম-৭ অনুযায়ী উক্ত ব্যক্তির আবেদন প্রাপ্তির ৭ (সাত) কার্য দিবসের মধ্যে জমনি ফরম-৩ ও জমনি ফরম-৬ অনুযায়ী জন্ম ও মৃত্যু নিবন্ধন সনদের প্রতিলিপি প্রদান করিবেন। (২) বিধি ২১ এ নির্ধারিত ফিস প্রদান সাপেক্ষে, নিম্নবর্ণিত কোন ব্যক্তি জন্ম ও মৃত্যু নিবন্ধন সনদের প্রতিলিপির জন্য জমনি ফরম-৭ অনুযায়ী নিবন্ধকের নিকট আবেদন করিতে পারিবেন, যথা:\n(ক) যাহার জন্য জন্ম সনদ প্রদান করা হইবে তাহার বয়স ১৮ (আঠার) বৎসর বা তদূর্ধ্ব হইলে তিনি স্বয়ং অথবা (খ) জন্ম তথ্য প্রদানকারী অথবা (গ) মৃত্যু তথ্য প্রদানকারী অথবা (ঘ) জন্ম বা মৃত্যু তথ্য দ্বারা সংক্ষুব্ধ ব্যক্তি। (৩) উপ-বিধি (২) এর অধীন আবেদনপত্র প্রাপ্তির পর নিবন্ধক যদি নিশ্চিত হন যে, উক্ত আবেদনপত্র যথাযথভাবে পূরণ করা হইয়াছে এবং ফিস প্রদান করা হইয়াছে তাহা হইলে তিনি আবেদনকারীর অংশ স্বাক্ষরপূর্বক উহা আবেদনকারীর নিকট হস্তান্তর করিবেন। (৪) উপ-বিধি (৩) এর অধীন আবেদনপত্র প্রাপ্তির পর নিবন্ধক সনদের প্রতিলিপি প্রস্তুত করিবেন এবং আবেদনকারীর অংশ গ্রহণ করিয়া সনদের প্রতিলিপি আবেদনকারীর নিকট হস্তান্তরের ব্যবস্থা করিবেন। (৫) প্রতিলিপি সনদের উপরিভাগে প্রতিলিপি বা উঁঢ়ষরপধঃব শব্দটি এবং, ক্ষেত্রমত, সংশোধিত সনদের ক্ষেত্রে সংশোধিত শব্দটি উল্লেখ থাকিবে এবং প্রথম বার জন্ম বা মৃত্যু নিবন্ধন সনদ যে তারিখে ইস্যু হইয়াছে প্রতিলিপি সনদ ইস্যুর সেই তারিখ বহাল থাকিবে ও প্রতিলিপি সনদ ইস্যুর তারিখ লিপিবদ্ধ করিতে হইবে।\n\nSources: birth_and_death_registration_rules_2018_বিধি_১৩_01, birth_and_death_registration_act_2004_ধারা_১৫_01, birth_and_death_registration_rules_2018_বিধি_১৫_01",
+        "source_ids": [
+          "birth_and_death_registration_rules_2018_বিধি_১৩_01",
+          "birth_and_death_registration_act_2004_ধারা_১৫_01",
+          "birth_and_death_registration_rules_2018_বিধি_১৫_01",
+          "notice_birth_and_death_registration_certificate_correction_steps_ocr_004_01",
+          "birth_and_death_registration_rules_2018_বিধি_১২_02",
+          "birth_registration_application_process_cleaned_020_01"
+        ],
+        "top_sources": [
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১৩_01",
+            "document_type": "legal_rules",
+            "category": null,
+            "section_title": "সনদের প্রতিলিপি প্রদান",
+            "score": 1.0257967138290405,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_act_2004_ধারা_১৫_01",
+            "document_type": "legal_act",
+            "category": null,
+            "section_title": "নিবন্ধন বহি এবং জন্ম বা মৃত্যু সনদ সংশোধন",
+            "score": 0.6379737257957458,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১৫_01",
+            "document_type": "legal_rules",
+            "category": null,
+            "section_title": "জন্ম বা মৃত্যু সনদ সংশোধন ও বাতিল",
+            "score": 0.5876038980484009,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "notice_birth_and_death_registration_certificate_correction_steps_ocr_004_01",
+            "document_type": "correction_notice_ocr",
+            "category": null,
+            "section_title": "একাধিক জন্ম বা মৃত্যু সনদ বাতিলের ধাপ",
+            "score": 0.49010878801345825,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১২_02",
+            "document_type": "legal_rules",
+            "category": null,
+            "section_title": "প্রবাসীগণের মৃত্যু নিবন্ধন",
+            "score": 0.44151418685913085,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_020_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "পরবর্তী করণীয়",
+            "score": 0.36699128031730655,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          }
+        ],
+        "note": "Model-independent controlled CivicRAG answer; safe-answer path returned before LLM generation."
+      },
+      {
+        "model": "qwen2.5:7b",
+        "elapsed": null,
+        "answer": "জন্ম নিবন্ধন সনদ হারিয়ে গেলে বা নষ্ট হলে নিবন্ধকের কাছে সনদের প্রতিলিপির জন্য আবেদন করতে হবে। বিধি ১৩ অনুযায়ী, আবেদন পাওয়ার ৭ কার্য দিবসের মধ্যে জন্ম/মৃত্যু নিবন্ধন সনদের প্রতিলিপি প্রদান করা হয়। প্রতিলিপির জন্য বিধি ২১ অনুযায়ী নির্ধারিত ফি প্রযোজ্য হতে পারে।\n\nপ্রাসঙ্গিক বিধি: (১) নিবন্ধিত কোন ব্যক্তির সনদ হারাইয়া গেলে বা নষ্ট হইলে, নিবন্ধক, উপ-বিধি (২) ও (৩) এর বিধান সাপেক্ষে, জমনি ফরম-৭ অনুযায়ী উক্ত ব্যক্তির আবেদন প্রাপ্তির ৭ (সাত) কার্য দিবসের মধ্যে জমনি ফরম-৩ ও জমনি ফরম-৬ অনুযায়ী জন্ম ও মৃত্যু নিবন্ধন সনদের প্রতিলিপি প্রদান করিবেন। (২) বিধি ২১ এ নির্ধারিত ফিস প্রদান সাপেক্ষে, নিম্নবর্ণিত কোন ব্যক্তি জন্ম ও মৃত্যু নিবন্ধন সনদের প্রতিলিপির জন্য জমনি ফরম-৭ অনুযায়ী নিবন্ধকের নিকট আবেদন করিতে পারিবেন, যথা:\n(ক) যাহার জন্য জন্ম সনদ প্রদান করা হইবে তাহার বয়স ১৮ (আঠার) বৎসর বা তদূর্ধ্ব হইলে তিনি স্বয়ং অথবা (খ) জন্ম তথ্য প্রদানকারী অথবা (গ) মৃত্যু তথ্য প্রদানকারী অথবা (ঘ) জন্ম বা মৃত্যু তথ্য দ্বারা সংক্ষুব্ধ ব্যক্তি। (৩) উপ-বিধি (২) এর অধীন আবেদনপত্র প্রাপ্তির পর নিবন্ধক যদি নিশ্চিত হন যে, উক্ত আবেদনপত্র যথাযথভাবে পূরণ করা হইয়াছে এবং ফিস প্রদান করা হইয়াছে তাহা হইলে তিনি আবেদনকারীর অংশ স্বাক্ষরপূর্বক উহা আবেদনকারীর নিকট হস্তান্তর করিবেন। (৪) উপ-বিধি (৩) এর অধীন আবেদনপত্র প্রাপ্তির পর নিবন্ধক সনদের প্রতিলিপি প্রস্তুত করিবেন এবং আবেদনকারীর অংশ গ্রহণ করিয়া সনদের প্রতিলিপি আবেদনকারীর নিকট হস্তান্তরের ব্যবস্থা করিবেন। (৫) প্রতিলিপি সনদের উপরিভাগে প্রতিলিপি বা উঁঢ়ষরপধঃব শব্দটি এবং, ক্ষেত্রমত, সংশোধিত সনদের ক্ষেত্রে সংশোধিত শব্দটি উল্লেখ থাকিবে এবং প্রথম বার জন্ম বা মৃত্যু নিবন্ধন সনদ যে তারিখে ইস্যু হইয়াছে প্রতিলিপি সনদ ইস্যুর সেই তারিখ বহাল থাকিবে ও প্রতিলিপি সনদ ইস্যুর তারিখ লিপিবদ্ধ করিতে হইবে।\n\nSources: birth_and_death_registration_rules_2018_বিধি_১৩_01, birth_and_death_registration_act_2004_ধারা_১৫_01, birth_and_death_registration_rules_2018_বিধি_১৫_01",
+        "source_ids": [
+          "birth_and_death_registration_rules_2018_বিধি_১৩_01",
+          "birth_and_death_registration_act_2004_ধারা_১৫_01",
+          "birth_and_death_registration_rules_2018_বিধি_১৫_01",
+          "notice_birth_and_death_registration_certificate_correction_steps_ocr_004_01",
+          "birth_and_death_registration_rules_2018_বিধি_১২_02",
+          "birth_registration_application_process_cleaned_020_01"
+        ],
+        "top_sources": [
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১৩_01",
+            "document_type": "legal_rules",
+            "category": null,
+            "section_title": "সনদের প্রতিলিপি প্রদান",
+            "score": 1.0257967138290405,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_act_2004_ধারা_১৫_01",
+            "document_type": "legal_act",
+            "category": null,
+            "section_title": "নিবন্ধন বহি এবং জন্ম বা মৃত্যু সনদ সংশোধন",
+            "score": 0.6379737257957458,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১৫_01",
+            "document_type": "legal_rules",
+            "category": null,
+            "section_title": "জন্ম বা মৃত্যু সনদ সংশোধন ও বাতিল",
+            "score": 0.5876038980484009,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "notice_birth_and_death_registration_certificate_correction_steps_ocr_004_01",
+            "document_type": "correction_notice_ocr",
+            "category": null,
+            "section_title": "একাধিক জন্ম বা মৃত্যু সনদ বাতিলের ধাপ",
+            "score": 0.49010878801345825,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১২_02",
+            "document_type": "legal_rules",
+            "category": null,
+            "section_title": "প্রবাসীগণের মৃত্যু নিবন্ধন",
+            "score": 0.44151418685913085,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_020_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "পরবর্তী করণীয়",
+            "score": 0.36699128031730655,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          }
+        ],
+        "note": "Model-independent controlled CivicRAG answer; safe-answer path returned before LLM generation."
+      }
+    ]
+  },
+  {
+    "question_index": 3,
+    "question": "ডিভোর্সের ক্ষেত্রে, শুধু পিতার/মাতার তথ্য দিয়ে কি  সন্তানের জন্ম নিবন্ধন করা যাবে?",
+    "runs": [
+      {
+        "model": "llama3.2",
+        "elapsed": 34.92,
+        "answer": "এইরূপ ক্ষেত্রে পিতামাতার একজনের তথ্য দিয়ে এবং অপরজনের শুধু নাম উল্লেখ করে সন্তানের জন্ম নিবন্ধন করা যাবে। চেয়ারম্যান কর্তৃক প্রত্যয়ন নিতে হবে এবং আবেদনপত্রটি নিয়ে উপজেলা নির্বাহী অফিসে শুনানীতে জমা দিতে হবে।\n\nSources: bdris_faq_02_q08",
+        "source_ids": [
+          "bdris_faq_01_q10",
+          "bdris_faq_02_q08",
+          "bdris_faq_02_q01",
+          "bdris_faq_01_q01",
+          "birth_registration_application_process_02_cleaned_007_01",
+          "birth_registration_application_process_cleaned_011_01"
+        ],
+        "top_sources": [
+          {
+            "id": "bdris_faq_01_q10",
+            "document_type": "faq",
+            "category": "special_cases",
+            "section_title": null,
+            "score": 0.9983748197555542,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "bdris_faq_02_q08",
+            "document_type": "faq",
+            "category": "special_cases",
+            "section_title": null,
+            "score": 0.9982428550720215,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "bdris_faq_02_q01",
+            "document_type": "faq",
+            "category": "parents_registration",
+            "section_title": null,
+            "score": 0.8451229333877563,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "bdris_faq_01_q01",
+            "document_type": "faq",
+            "category": "parents_registration",
+            "section_title": null,
+            "score": 0.8130297064781189,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_007_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ৫: পিতা-মাতার তথ্য প্রদান",
+            "score": 0.6412047743797302,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_011_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ৪: পিতা ও মাতার তথ্য প্রদান",
+            "score": 0.4800069332122803,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          }
+        ],
+        "note": "Model-independent controlled CivicRAG answer; safe-answer path returned before LLM generation."
+      },
+      {
+        "model": "llama3",
+        "elapsed": null,
+        "answer": "এইরূপ ক্ষেত্রে পিতামাতার একজনের তথ্য দিয়ে এবং অপরজনের শুধু নাম উল্লেখ করে সন্তানের জন্ম নিবন্ধন করা যাবে। চেয়ারম্যান কর্তৃক প্রত্যয়ন নিতে হবে এবং আবেদনপত্রটি নিয়ে উপজেলা নির্বাহী অফিসে শুনানীতে জমা দিতে হবে।\n\nSources: bdris_faq_02_q08",
+        "source_ids": [
+          "bdris_faq_01_q10",
+          "bdris_faq_02_q08",
+          "bdris_faq_02_q01",
+          "bdris_faq_01_q01",
+          "birth_registration_application_process_02_cleaned_007_01",
+          "birth_registration_application_process_cleaned_011_01"
+        ],
+        "top_sources": [
+          {
+            "id": "bdris_faq_01_q10",
+            "document_type": "faq",
+            "category": "special_cases",
+            "section_title": null,
+            "score": 0.9983748197555542,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "bdris_faq_02_q08",
+            "document_type": "faq",
+            "category": "special_cases",
+            "section_title": null,
+            "score": 0.9982428550720215,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "bdris_faq_02_q01",
+            "document_type": "faq",
+            "category": "parents_registration",
+            "section_title": null,
+            "score": 0.8451229333877563,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "bdris_faq_01_q01",
+            "document_type": "faq",
+            "category": "parents_registration",
+            "section_title": null,
+            "score": 0.8130297064781189,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_007_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ৫: পিতা-মাতার তথ্য প্রদান",
+            "score": 0.6412047743797302,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_011_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ৪: পিতা ও মাতার তথ্য প্রদান",
+            "score": 0.4800069332122803,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          }
+        ],
+        "note": "Model-independent controlled CivicRAG answer; safe-answer path returned before LLM generation."
+      },
+      {
+        "model": "qwen2.5:7b",
+        "elapsed": null,
+        "answer": "এইরূপ ক্ষেত্রে পিতামাতার একজনের তথ্য দিয়ে এবং অপরজনের শুধু নাম উল্লেখ করে সন্তানের জন্ম নিবন্ধন করা যাবে। চেয়ারম্যান কর্তৃক প্রত্যয়ন নিতে হবে এবং আবেদনপত্রটি নিয়ে উপজেলা নির্বাহী অফিসে শুনানীতে জমা দিতে হবে।\n\nSources: bdris_faq_02_q08",
+        "source_ids": [
+          "bdris_faq_01_q10",
+          "bdris_faq_02_q08",
+          "bdris_faq_02_q01",
+          "bdris_faq_01_q01",
+          "birth_registration_application_process_02_cleaned_007_01",
+          "birth_registration_application_process_cleaned_011_01"
+        ],
+        "top_sources": [
+          {
+            "id": "bdris_faq_01_q10",
+            "document_type": "faq",
+            "category": "special_cases",
+            "section_title": null,
+            "score": 0.9983748197555542,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "bdris_faq_02_q08",
+            "document_type": "faq",
+            "category": "special_cases",
+            "section_title": null,
+            "score": 0.9982428550720215,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "bdris_faq_02_q01",
+            "document_type": "faq",
+            "category": "parents_registration",
+            "section_title": null,
+            "score": 0.8451229333877563,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "bdris_faq_01_q01",
+            "document_type": "faq",
+            "category": "parents_registration",
+            "section_title": null,
+            "score": 0.8130297064781189,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_007_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ৫: পিতা-মাতার তথ্য প্রদান",
+            "score": 0.6412047743797302,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_011_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ৪: পিতা ও মাতার তথ্য প্রদান",
+            "score": 0.4800069332122803,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          }
+        ],
+        "note": "Model-independent controlled CivicRAG answer; safe-answer path returned before LLM generation."
+      }
+    ]
+  },
+  {
+    "question_index": 4,
+    "question": "আমার জন্ম নিবন্ধন ০৬/০৩/২০১৪ তে অনলাইন করা হয়েছে। কিন্তু এখন আমি আমার জন্ম নিবন্ধন অনলাইনাে এ খুঁজে পাচ্ছি না. আমাকে এই বিষয়ে সাহায্য করুন।",
+    "runs": [
+      {
+        "model": "llama3.2",
+        "elapsed": 35.76,
+        "answer": "আপনার প্রশ্নে কয়েকটি আলাদা বিষয় আছে। প্রাপ্ত সরকারি/উৎস ডেটার ভিত্তিতে অংশভাগ করে উত্তর দিচ্ছি:\n\n1. অনলাইনে নিবন্ধন খুঁজে না পেলে\nঅনলাইনে জন্ম নিবন্ধন করা থাকলে orgbdr.gov.bd ওয়েবসাইটে প্রবেশ করে **“জন্ম তথ্য যাচাই”** অপশনে ব্যক্তির জন্ম নিবন্ধন নম্বর এবং জন্ম তারিখ প্রদান করে জন্ম নিবন্ধন হয়েছে কিনা তা নিশ্চিত হওয়া যাবে।\n\nযদি এটি পুরোনো/ম্যানুয়াল নিবন্ধন হয়ে থাকে: ম্যানুয়াল জন্ম নিবন্ধনসমূহ অনলাইনে অন্তর্ভুক্তির জন্য একাধিকবার সময় দেওয়া হয়েছে। এখন একই নম্বর দিয়ে অনলাইনে অন্তর্ভুক্তির সুযোগ নেই। যে এলাকায় হাতে লেখা নিবন্ধন হয়েছিল সেই কার্যালয়ে রক্ষিত বইতে তথ্য পাওয়া গেলে, নিবন্ধক সরাসরি সেই তথ্য দিয়ে অনলাইন নিবন্ধন করে দেবেন — যদি ইতঃপূর্বে অন্য কোথাও নিবন্ধন না হয়ে থাকে। তবে নিবন্ধন নম্বর পরিবর্তিত হবে; এতে নাগরিকের কোনো ক্ষতি বা অসুবিধা হবে না।\n\n২০০৭/২০০৮ সালে হাতে লেখা নিবন্ধন ইস্যু করা হয়। পরবর্তীতে ২০১০ সালের দিকে রেজিস্টার বহি থেকে সব নিবন্ধন অনলাইনে এন্ট্রি করা হয়। ২০১০ থেকে ২০২০ সালের জুন পর্যন্ত (১০ বছর) ইউনিয়ন পরিষদ থেকে নাম সংশোধন করা যেত।\n\nগড়মিলের সাধারণ কারণসমূহ:\n• একসাথে পুরো ইউনিয়নের তথ্য এন্ট্রির সময় কিছু ভুল এন্ট্রি হয়েছে।\n• শিক্ষা সনদ জন্ম নিবন্ধন অনুযায়ী বা জন্ম নিবন্ধন শিক্ষা সনদ অনুযায়ী করা হয়নি।\n• ভিন্ন সন্তানের ক্ষেত্রে পিতামাতার নাম একই রকম লেখা হয়নি।\n• ডাক নাম দিয়ে নিবন্ধন করা হয়েছে; পরে এনআইডিতে নাম পরিবর্তিত হয়েছে।\n• স্কুলে ভর্তির সময় বয়স কমিয়ে বা বাড়িয়ে লেখা হয়েছে।\n• পিএসসি সনদে নাম, জন্ম তারিখ ও পিতামাতার নাম জন্ম সনদ বা এনআইডির সঙ্গে মেলেনি।\n• ৮ম শ্রেণির রেজিস্ট্রেশনে পিএসসি সনদ ও পিতামাতার এনআইডি অনুসরণ না করা।\n\nযদি সঠিক জন্ম নিবন্ধন নম্বর ও জন্ম তারিখ দিয়েও তথ্য না পাওয়া যায়, তাহলে সংশ্লিষ্ট নিবন্ধন কার্যালয়ের সংরক্ষিত রেকর্ড যাচাই করানো উচিত।\n\n2. জন্ম নিবন্ধনের আবেদন\nআবেদন করার পূর্ব প্রস্তুতি: নতুন জন্ম নিবন্ধন আবেদনের পূর্বে প্রয়োজনীয় তথ্য ও ডকুমেন্ট সংগ্রহ করে রাখুন।\n\nজন্ম নিবন্ধনের ক্ষেত্রে নিম্নোক্ত তিন ধরনের ঠিকানার তথ্য প্রয়োজন হবে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রতিটি ঠিকানার জন্য নিম্নোক্ত তথ্য প্রয়োজন হতে পারে:\n\n- ইউনিয়ন পরিষদ/পৌরসভা/সিটি কর্পোরেশন/ক্যান্টনমেন্টের নাম\n- ওয়ার্ড নম্বর\n- ডাকঘর\n- গ্রাম/পাড়া/মহল্লা\n- বাসা ও সড়কের নাম ও নম্বর\n\nসকল তথ্য বাংলা ও ইংরেজি উভয় ভাষায় সঠিক বানানে লিখতে হবে।\n\nধাপ ১: ওয়েবসাইটে প্রবেশ: নতুন জন্ম নিবন্ধনের জন্য:\n\nhttps://bdris.gov.bd\n\nওয়েবসাইটে প্রবেশ করুন।\n\nহোমপেজে \"জন্ম নিবন্ধন\" মেনু নির্বাচন করুন।\n\nএরপর \"জন্ম নিবন্ধন আবেদন\" অপশনে ক্লিক করুন।\n\nধাপ ২: সনদ সংগ্রহের স্থান নির্বাচন: এখানে আবেদনকারীকে নির্বাচন করতে হবে তিনি কোথা থেকে জন্ম সনদ গ্রহণ বা সংগ্রহ করতে চান।\n\nনিম্নোক্ত ঠিকানার ভিত্তিতে সনদ সংগ্রহ করা যেতে পারে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n\nসাধারণভাবে স্থায়ী ঠিকানা থেকে সনদ সংগ্রহ করার জন্য উৎসাহিত করা হয়।\n\nবিদেশে জন্মগ্রহণকারী শিশু নিকটস্থ বাংলাদেশ দূতাবাস থেকে জন্ম সনদ সংগ্রহ করতে পারে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৩: জন্ম তথ্য প্রদান: এই ধাপে আবেদনকারীর জন্মসংক্রান্ত তথ্য ধাপে ধাপে পূরণ করতে হবে।\n\nতথ্য প্রদানের সময় সতর্কতা অবলম্বন করতে হবে।\n\nজন্ম তারিখ প্রদান করার পর সিস্টেম প্রয়োজনীয় নির্দেশনা প্রদর্শন করবে।\n\nনির্দেশনা পড়ে \"আমার কাছে এই ডকুমেন্টগুলো আছে\" অপশন নির্বাচন করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৪: পিতা ও মাতার তথ্য প্রদান: এই ধাপে পিতা ও মাতার তথ্য প্রদান করতে হবে।\n\nধাপ ৫: স্থায়ী ও বর্তমান ঠিকানা প্রদান: এই ধাপে:\n\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রদান করতে হবে।\n\nযদি জন্মস্থান এবং স্থায়ী ঠিকানা একই হয়, তাহলে নির্ধারিত ঘরে টিক চিহ্ন দিলে তথ্য স্বয়ংক্রিয়ভাবে পূরণ হবে।\n\nঅন্যথায় স্থায়ী ঠিকানা ও বর্তমান ঠিকানার তথ্য আলাদাভাবে পূরণ করতে হবে।\n\nসব তথ্য সঠিকভাবে পূরণ করার পর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৬: আবেদনকারীর তথ্য ও ডকুমেন্ট সংযুক্তি: যদি ব্যক্তি নিজে আবেদন করেন, তাহলে \"নিজ\" অপশন নির্বাচন করতে হবে।\n\nঅন্য কেউ আবেদন করলে \"অন্যান্য\" অপশন নির্বাচন করতে হবে।\n\n\"অন্যান্য\" নির্বাচন করলে আবেদনকারীর জন্ম নিবন্ধন নম্বর প্রদান করতে হবে।\n\nএরপর ঘোষণা দিতে হবে যে:\n\n- প্রদত্ত তথ্যসমূহ সঠিক\n- পূর্বে জন্ম নিবন্ধন করা হয়নি\n\nসংযুক্ত করতে হবে: - জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nসংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৭: তথ্য যাচাই ও OTP: এই ধাপে আবেদনকারীর পূরণকৃত সকল তথ্য প্রদর্শিত হবে।\n\nসকল তথ্য সতর্কতার সাথে যাচাই করতে হবে।\n\nভুল থাকলে \"পূর্ববর্তী\" বাটনে ফিরে গিয়ে সংশোধন করতে হবে।\n\nতথ্য সঠিক হলে:\n\n- ইমেইল অথবা\n- মোবাইল নম্বর\n\nপ্রদান করতে হবে।\n\nOTP গ্রহণ: - দূতাবাসের মাধ্যমে আবেদনের ক্ষেত্রে ইমেইলে OTP যাবে।\n- বাংলাদেশের অভ্যন্তরে আবেদনের ক্ষেত্রে মোবাইল নম্বরে OTP যাবে।\n\nOTP প্রদান করার পর \"সাবমিট\" বাটনে ক্লিক করুন।\n\nSources: know_this_01_cleaned_008_01, bdris_faq_01_q02, bdris_faq_02_q03, birth_and_death_registration_rules_2018_বিধি_৯_04, birth_and_death_registration_rules_2018_বিধি_২০_01, birth_registration_application_process_cleaned_012_01, birth_registration_application_process_cleaned_008_01, birth_registration_application_process_cleaned_002_01",
+        "source_ids": [
+          "birth_and_death_registration_rules_2018_বিধি_৯_04",
+          "bdris_faq_01_q02",
+          "bdris_faq_02_q03",
+          "birth_and_death_registration_rules_2018_বিধি_২০_01",
+          "know_this_01_cleaned_008_01",
+          "birth_registration_application_process_cleaned_012_01",
+          "birth_registration_application_process_cleaned_008_01",
+          "birth_registration_application_process_cleaned_002_01",
+          "birth_registration_application_process_cleaned_016_01",
+          "birth_registration_application_process_cleaned_019_01",
+          "birth_registration_application_process_cleaned_020_01"
+        ],
+        "top_sources": [
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_04",
+            "document_type": "legal_rules",
+            "category": null,
+            "section_title": "জন্ম নিবন্ধন",
+            "score": 0.6145226359367371,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "bdris_faq_01_q02",
+            "document_type": "faq",
+            "category": "manual_to_online_migration",
+            "section_title": null,
+            "score": 0.545167088508606,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "bdris_faq_02_q03",
+            "document_type": "faq",
+            "category": "data_discrepancy",
+            "section_title": null,
+            "score": 0.4724886119365692,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_২০_01",
+            "document_type": "legal_rules",
+            "category": null,
+            "section_title": "অনলাইনে আবেদন বা তথ্য প্রদান",
+            "score": 0.4703098237514496,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "know_this_01_cleaned_008_01",
+            "document_type": "general_guidance",
+            "category": null,
+            "section_title": "একজন ব্যক্তি জন্ম নিবন্ধন হয়েছে কিনা তা কিভাবে পরীক্ষা করবে?",
+            "score": 0.449898898601532,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_012_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "২০১৩ সালের পর জন্মগ্রহণকারী ব্যক্তির ক্ষেত্রে",
+            "score": 0.22289727628231049,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_008_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ১: ওয়েবসাইটে প্রবেশ",
+            "score": 0.0,
+            "retrievers": [
+              "safe_path"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_002_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "আবেদন করার পূর্ব প্রস্তুতি",
+            "score": 0.0,
+            "retrievers": [
+              "safe_path"
+            ]
+          }
+        ],
+        "note": "Model-independent controlled CivicRAG answer; safe-answer path returned before LLM generation."
+      },
+      {
+        "model": "llama3",
+        "elapsed": null,
+        "answer": "আপনার প্রশ্নে কয়েকটি আলাদা বিষয় আছে। প্রাপ্ত সরকারি/উৎস ডেটার ভিত্তিতে অংশভাগ করে উত্তর দিচ্ছি:\n\n1. অনলাইনে নিবন্ধন খুঁজে না পেলে\nঅনলাইনে জন্ম নিবন্ধন করা থাকলে orgbdr.gov.bd ওয়েবসাইটে প্রবেশ করে **“জন্ম তথ্য যাচাই”** অপশনে ব্যক্তির জন্ম নিবন্ধন নম্বর এবং জন্ম তারিখ প্রদান করে জন্ম নিবন্ধন হয়েছে কিনা তা নিশ্চিত হওয়া যাবে।\n\nযদি এটি পুরোনো/ম্যানুয়াল নিবন্ধন হয়ে থাকে: ম্যানুয়াল জন্ম নিবন্ধনসমূহ অনলাইনে অন্তর্ভুক্তির জন্য একাধিকবার সময় দেওয়া হয়েছে। এখন একই নম্বর দিয়ে অনলাইনে অন্তর্ভুক্তির সুযোগ নেই। যে এলাকায় হাতে লেখা নিবন্ধন হয়েছিল সেই কার্যালয়ে রক্ষিত বইতে তথ্য পাওয়া গেলে, নিবন্ধক সরাসরি সেই তথ্য দিয়ে অনলাইন নিবন্ধন করে দেবেন — যদি ইতঃপূর্বে অন্য কোথাও নিবন্ধন না হয়ে থাকে। তবে নিবন্ধন নম্বর পরিবর্তিত হবে; এতে নাগরিকের কোনো ক্ষতি বা অসুবিধা হবে না।\n\n২০০৭/২০০৮ সালে হাতে লেখা নিবন্ধন ইস্যু করা হয়। পরবর্তীতে ২০১০ সালের দিকে রেজিস্টার বহি থেকে সব নিবন্ধন অনলাইনে এন্ট্রি করা হয়। ২০১০ থেকে ২০২০ সালের জুন পর্যন্ত (১০ বছর) ইউনিয়ন পরিষদ থেকে নাম সংশোধন করা যেত।\n\nগড়মিলের সাধারণ কারণসমূহ:\n• একসাথে পুরো ইউনিয়নের তথ্য এন্ট্রির সময় কিছু ভুল এন্ট্রি হয়েছে।\n• শিক্ষা সনদ জন্ম নিবন্ধন অনুযায়ী বা জন্ম নিবন্ধন শিক্ষা সনদ অনুযায়ী করা হয়নি।\n• ভিন্ন সন্তানের ক্ষেত্রে পিতামাতার নাম একই রকম লেখা হয়নি।\n• ডাক নাম দিয়ে নিবন্ধন করা হয়েছে; পরে এনআইডিতে নাম পরিবর্তিত হয়েছে।\n• স্কুলে ভর্তির সময় বয়স কমিয়ে বা বাড়িয়ে লেখা হয়েছে।\n• পিএসসি সনদে নাম, জন্ম তারিখ ও পিতামাতার নাম জন্ম সনদ বা এনআইডির সঙ্গে মেলেনি।\n• ৮ম শ্রেণির রেজিস্ট্রেশনে পিএসসি সনদ ও পিতামাতার এনআইডি অনুসরণ না করা।\n\nযদি সঠিক জন্ম নিবন্ধন নম্বর ও জন্ম তারিখ দিয়েও তথ্য না পাওয়া যায়, তাহলে সংশ্লিষ্ট নিবন্ধন কার্যালয়ের সংরক্ষিত রেকর্ড যাচাই করানো উচিত।\n\n2. জন্ম নিবন্ধনের আবেদন\nআবেদন করার পূর্ব প্রস্তুতি: নতুন জন্ম নিবন্ধন আবেদনের পূর্বে প্রয়োজনীয় তথ্য ও ডকুমেন্ট সংগ্রহ করে রাখুন।\n\nজন্ম নিবন্ধনের ক্ষেত্রে নিম্নোক্ত তিন ধরনের ঠিকানার তথ্য প্রয়োজন হবে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রতিটি ঠিকানার জন্য নিম্নোক্ত তথ্য প্রয়োজন হতে পারে:\n\n- ইউনিয়ন পরিষদ/পৌরসভা/সিটি কর্পোরেশন/ক্যান্টনমেন্টের নাম\n- ওয়ার্ড নম্বর\n- ডাকঘর\n- গ্রাম/পাড়া/মহল্লা\n- বাসা ও সড়কের নাম ও নম্বর\n\nসকল তথ্য বাংলা ও ইংরেজি উভয় ভাষায় সঠিক বানানে লিখতে হবে।\n\nধাপ ১: ওয়েবসাইটে প্রবেশ: নতুন জন্ম নিবন্ধনের জন্য:\n\nhttps://bdris.gov.bd\n\nওয়েবসাইটে প্রবেশ করুন।\n\nহোমপেজে \"জন্ম নিবন্ধন\" মেনু নির্বাচন করুন।\n\nএরপর \"জন্ম নিবন্ধন আবেদন\" অপশনে ক্লিক করুন।\n\nধাপ ২: সনদ সংগ্রহের স্থান নির্বাচন: এখানে আবেদনকারীকে নির্বাচন করতে হবে তিনি কোথা থেকে জন্ম সনদ গ্রহণ বা সংগ্রহ করতে চান।\n\nনিম্নোক্ত ঠিকানার ভিত্তিতে সনদ সংগ্রহ করা যেতে পারে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n\nসাধারণভাবে স্থায়ী ঠিকানা থেকে সনদ সংগ্রহ করার জন্য উৎসাহিত করা হয়।\n\nবিদেশে জন্মগ্রহণকারী শিশু নিকটস্থ বাংলাদেশ দূতাবাস থেকে জন্ম সনদ সংগ্রহ করতে পারে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৩: জন্ম তথ্য প্রদান: এই ধাপে আবেদনকারীর জন্মসংক্রান্ত তথ্য ধাপে ধাপে পূরণ করতে হবে।\n\nতথ্য প্রদানের সময় সতর্কতা অবলম্বন করতে হবে।\n\nজন্ম তারিখ প্রদান করার পর সিস্টেম প্রয়োজনীয় নির্দেশনা প্রদর্শন করবে।\n\nনির্দেশনা পড়ে \"আমার কাছে এই ডকুমেন্টগুলো আছে\" অপশন নির্বাচন করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৪: পিতা ও মাতার তথ্য প্রদান: এই ধাপে পিতা ও মাতার তথ্য প্রদান করতে হবে।\n\nধাপ ৫: স্থায়ী ও বর্তমান ঠিকানা প্রদান: এই ধাপে:\n\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রদান করতে হবে।\n\nযদি জন্মস্থান এবং স্থায়ী ঠিকানা একই হয়, তাহলে নির্ধারিত ঘরে টিক চিহ্ন দিলে তথ্য স্বয়ংক্রিয়ভাবে পূরণ হবে।\n\nঅন্যথায় স্থায়ী ঠিকানা ও বর্তমান ঠিকানার তথ্য আলাদাভাবে পূরণ করতে হবে।\n\nসব তথ্য সঠিকভাবে পূরণ করার পর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৬: আবেদনকারীর তথ্য ও ডকুমেন্ট সংযুক্তি: যদি ব্যক্তি নিজে আবেদন করেন, তাহলে \"নিজ\" অপশন নির্বাচন করতে হবে।\n\nঅন্য কেউ আবেদন করলে \"অন্যান্য\" অপশন নির্বাচন করতে হবে।\n\n\"অন্যান্য\" নির্বাচন করলে আবেদনকারীর জন্ম নিবন্ধন নম্বর প্রদান করতে হবে।\n\nএরপর ঘোষণা দিতে হবে যে:\n\n- প্রদত্ত তথ্যসমূহ সঠিক\n- পূর্বে জন্ম নিবন্ধন করা হয়নি\n\nসংযুক্ত করতে হবে: - জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nসংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৭: তথ্য যাচাই ও OTP: এই ধাপে আবেদনকারীর পূরণকৃত সকল তথ্য প্রদর্শিত হবে।\n\nসকল তথ্য সতর্কতার সাথে যাচাই করতে হবে।\n\nভুল থাকলে \"পূর্ববর্তী\" বাটনে ফিরে গিয়ে সংশোধন করতে হবে।\n\nতথ্য সঠিক হলে:\n\n- ইমেইল অথবা\n- মোবাইল নম্বর\n\nপ্রদান করতে হবে।\n\nOTP গ্রহণ: - দূতাবাসের মাধ্যমে আবেদনের ক্ষেত্রে ইমেইলে OTP যাবে।\n- বাংলাদেশের অভ্যন্তরে আবেদনের ক্ষেত্রে মোবাইল নম্বরে OTP যাবে।\n\nOTP প্রদান করার পর \"সাবমিট\" বাটনে ক্লিক করুন।\n\nSources: know_this_01_cleaned_008_01, bdris_faq_01_q02, bdris_faq_02_q03, birth_and_death_registration_rules_2018_বিধি_৯_04, birth_and_death_registration_rules_2018_বিধি_২০_01, birth_registration_application_process_cleaned_012_01, birth_registration_application_process_cleaned_008_01, birth_registration_application_process_cleaned_002_01",
+        "source_ids": [
+          "birth_and_death_registration_rules_2018_বিধি_৯_04",
+          "bdris_faq_01_q02",
+          "bdris_faq_02_q03",
+          "birth_and_death_registration_rules_2018_বিধি_২০_01",
+          "know_this_01_cleaned_008_01",
+          "birth_registration_application_process_cleaned_012_01",
+          "birth_registration_application_process_cleaned_008_01",
+          "birth_registration_application_process_cleaned_002_01",
+          "birth_registration_application_process_cleaned_016_01",
+          "birth_registration_application_process_cleaned_019_01",
+          "birth_registration_application_process_cleaned_020_01"
+        ],
+        "top_sources": [
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_04",
+            "document_type": "legal_rules",
+            "category": null,
+            "section_title": "জন্ম নিবন্ধন",
+            "score": 0.6145226359367371,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "bdris_faq_01_q02",
+            "document_type": "faq",
+            "category": "manual_to_online_migration",
+            "section_title": null,
+            "score": 0.545167088508606,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "bdris_faq_02_q03",
+            "document_type": "faq",
+            "category": "data_discrepancy",
+            "section_title": null,
+            "score": 0.4724886119365692,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_২০_01",
+            "document_type": "legal_rules",
+            "category": null,
+            "section_title": "অনলাইনে আবেদন বা তথ্য প্রদান",
+            "score": 0.4703098237514496,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "know_this_01_cleaned_008_01",
+            "document_type": "general_guidance",
+            "category": null,
+            "section_title": "একজন ব্যক্তি জন্ম নিবন্ধন হয়েছে কিনা তা কিভাবে পরীক্ষা করবে?",
+            "score": 0.449898898601532,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_012_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "২০১৩ সালের পর জন্মগ্রহণকারী ব্যক্তির ক্ষেত্রে",
+            "score": 0.22289727628231049,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_008_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ১: ওয়েবসাইটে প্রবেশ",
+            "score": 0.0,
+            "retrievers": [
+              "safe_path"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_002_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "আবেদন করার পূর্ব প্রস্তুতি",
+            "score": 0.0,
+            "retrievers": [
+              "safe_path"
+            ]
+          }
+        ],
+        "note": "Model-independent controlled CivicRAG answer; safe-answer path returned before LLM generation."
+      },
+      {
+        "model": "qwen2.5:7b",
+        "elapsed": null,
+        "answer": "আপনার প্রশ্নে কয়েকটি আলাদা বিষয় আছে। প্রাপ্ত সরকারি/উৎস ডেটার ভিত্তিতে অংশভাগ করে উত্তর দিচ্ছি:\n\n1. অনলাইনে নিবন্ধন খুঁজে না পেলে\nঅনলাইনে জন্ম নিবন্ধন করা থাকলে orgbdr.gov.bd ওয়েবসাইটে প্রবেশ করে **“জন্ম তথ্য যাচাই”** অপশনে ব্যক্তির জন্ম নিবন্ধন নম্বর এবং জন্ম তারিখ প্রদান করে জন্ম নিবন্ধন হয়েছে কিনা তা নিশ্চিত হওয়া যাবে।\n\nযদি এটি পুরোনো/ম্যানুয়াল নিবন্ধন হয়ে থাকে: ম্যানুয়াল জন্ম নিবন্ধনসমূহ অনলাইনে অন্তর্ভুক্তির জন্য একাধিকবার সময় দেওয়া হয়েছে। এখন একই নম্বর দিয়ে অনলাইনে অন্তর্ভুক্তির সুযোগ নেই। যে এলাকায় হাতে লেখা নিবন্ধন হয়েছিল সেই কার্যালয়ে রক্ষিত বইতে তথ্য পাওয়া গেলে, নিবন্ধক সরাসরি সেই তথ্য দিয়ে অনলাইন নিবন্ধন করে দেবেন — যদি ইতঃপূর্বে অন্য কোথাও নিবন্ধন না হয়ে থাকে। তবে নিবন্ধন নম্বর পরিবর্তিত হবে; এতে নাগরিকের কোনো ক্ষতি বা অসুবিধা হবে না।\n\n২০০৭/২০০৮ সালে হাতে লেখা নিবন্ধন ইস্যু করা হয়। পরবর্তীতে ২০১০ সালের দিকে রেজিস্টার বহি থেকে সব নিবন্ধন অনলাইনে এন্ট্রি করা হয়। ২০১০ থেকে ২০২০ সালের জুন পর্যন্ত (১০ বছর) ইউনিয়ন পরিষদ থেকে নাম সংশোধন করা যেত।\n\nগড়মিলের সাধারণ কারণসমূহ:\n• একসাথে পুরো ইউনিয়নের তথ্য এন্ট্রির সময় কিছু ভুল এন্ট্রি হয়েছে।\n• শিক্ষা সনদ জন্ম নিবন্ধন অনুযায়ী বা জন্ম নিবন্ধন শিক্ষা সনদ অনুযায়ী করা হয়নি।\n• ভিন্ন সন্তানের ক্ষেত্রে পিতামাতার নাম একই রকম লেখা হয়নি।\n• ডাক নাম দিয়ে নিবন্ধন করা হয়েছে; পরে এনআইডিতে নাম পরিবর্তিত হয়েছে।\n• স্কুলে ভর্তির সময় বয়স কমিয়ে বা বাড়িয়ে লেখা হয়েছে।\n• পিএসসি সনদে নাম, জন্ম তারিখ ও পিতামাতার নাম জন্ম সনদ বা এনআইডির সঙ্গে মেলেনি।\n• ৮ম শ্রেণির রেজিস্ট্রেশনে পিএসসি সনদ ও পিতামাতার এনআইডি অনুসরণ না করা।\n\nযদি সঠিক জন্ম নিবন্ধন নম্বর ও জন্ম তারিখ দিয়েও তথ্য না পাওয়া যায়, তাহলে সংশ্লিষ্ট নিবন্ধন কার্যালয়ের সংরক্ষিত রেকর্ড যাচাই করানো উচিত।\n\n2. জন্ম নিবন্ধনের আবেদন\nআবেদন করার পূর্ব প্রস্তুতি: নতুন জন্ম নিবন্ধন আবেদনের পূর্বে প্রয়োজনীয় তথ্য ও ডকুমেন্ট সংগ্রহ করে রাখুন।\n\nজন্ম নিবন্ধনের ক্ষেত্রে নিম্নোক্ত তিন ধরনের ঠিকানার তথ্য প্রয়োজন হবে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রতিটি ঠিকানার জন্য নিম্নোক্ত তথ্য প্রয়োজন হতে পারে:\n\n- ইউনিয়ন পরিষদ/পৌরসভা/সিটি কর্পোরেশন/ক্যান্টনমেন্টের নাম\n- ওয়ার্ড নম্বর\n- ডাকঘর\n- গ্রাম/পাড়া/মহল্লা\n- বাসা ও সড়কের নাম ও নম্বর\n\nসকল তথ্য বাংলা ও ইংরেজি উভয় ভাষায় সঠিক বানানে লিখতে হবে।\n\nধাপ ১: ওয়েবসাইটে প্রবেশ: নতুন জন্ম নিবন্ধনের জন্য:\n\nhttps://bdris.gov.bd\n\nওয়েবসাইটে প্রবেশ করুন।\n\nহোমপেজে \"জন্ম নিবন্ধন\" মেনু নির্বাচন করুন।\n\nএরপর \"জন্ম নিবন্ধন আবেদন\" অপশনে ক্লিক করুন।\n\nধাপ ২: সনদ সংগ্রহের স্থান নির্বাচন: এখানে আবেদনকারীকে নির্বাচন করতে হবে তিনি কোথা থেকে জন্ম সনদ গ্রহণ বা সংগ্রহ করতে চান।\n\nনিম্নোক্ত ঠিকানার ভিত্তিতে সনদ সংগ্রহ করা যেতে পারে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n\nসাধারণভাবে স্থায়ী ঠিকানা থেকে সনদ সংগ্রহ করার জন্য উৎসাহিত করা হয়।\n\nবিদেশে জন্মগ্রহণকারী শিশু নিকটস্থ বাংলাদেশ দূতাবাস থেকে জন্ম সনদ সংগ্রহ করতে পারে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৩: জন্ম তথ্য প্রদান: এই ধাপে আবেদনকারীর জন্মসংক্রান্ত তথ্য ধাপে ধাপে পূরণ করতে হবে।\n\nতথ্য প্রদানের সময় সতর্কতা অবলম্বন করতে হবে।\n\nজন্ম তারিখ প্রদান করার পর সিস্টেম প্রয়োজনীয় নির্দেশনা প্রদর্শন করবে।\n\nনির্দেশনা পড়ে \"আমার কাছে এই ডকুমেন্টগুলো আছে\" অপশন নির্বাচন করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৪: পিতা ও মাতার তথ্য প্রদান: এই ধাপে পিতা ও মাতার তথ্য প্রদান করতে হবে।\n\nধাপ ৫: স্থায়ী ও বর্তমান ঠিকানা প্রদান: এই ধাপে:\n\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রদান করতে হবে।\n\nযদি জন্মস্থান এবং স্থায়ী ঠিকানা একই হয়, তাহলে নির্ধারিত ঘরে টিক চিহ্ন দিলে তথ্য স্বয়ংক্রিয়ভাবে পূরণ হবে।\n\nঅন্যথায় স্থায়ী ঠিকানা ও বর্তমান ঠিকানার তথ্য আলাদাভাবে পূরণ করতে হবে।\n\nসব তথ্য সঠিকভাবে পূরণ করার পর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৬: আবেদনকারীর তথ্য ও ডকুমেন্ট সংযুক্তি: যদি ব্যক্তি নিজে আবেদন করেন, তাহলে \"নিজ\" অপশন নির্বাচন করতে হবে।\n\nঅন্য কেউ আবেদন করলে \"অন্যান্য\" অপশন নির্বাচন করতে হবে।\n\n\"অন্যান্য\" নির্বাচন করলে আবেদনকারীর জন্ম নিবন্ধন নম্বর প্রদান করতে হবে।\n\nএরপর ঘোষণা দিতে হবে যে:\n\n- প্রদত্ত তথ্যসমূহ সঠিক\n- পূর্বে জন্ম নিবন্ধন করা হয়নি\n\nসংযুক্ত করতে হবে: - জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nসংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৭: তথ্য যাচাই ও OTP: এই ধাপে আবেদনকারীর পূরণকৃত সকল তথ্য প্রদর্শিত হবে।\n\nসকল তথ্য সতর্কতার সাথে যাচাই করতে হবে।\n\nভুল থাকলে \"পূর্ববর্তী\" বাটনে ফিরে গিয়ে সংশোধন করতে হবে।\n\nতথ্য সঠিক হলে:\n\n- ইমেইল অথবা\n- মোবাইল নম্বর\n\nপ্রদান করতে হবে।\n\nOTP গ্রহণ: - দূতাবাসের মাধ্যমে আবেদনের ক্ষেত্রে ইমেইলে OTP যাবে।\n- বাংলাদেশের অভ্যন্তরে আবেদনের ক্ষেত্রে মোবাইল নম্বরে OTP যাবে।\n\nOTP প্রদান করার পর \"সাবমিট\" বাটনে ক্লিক করুন।\n\nSources: know_this_01_cleaned_008_01, bdris_faq_01_q02, bdris_faq_02_q03, birth_and_death_registration_rules_2018_বিধি_৯_04, birth_and_death_registration_rules_2018_বিধি_২০_01, birth_registration_application_process_cleaned_012_01, birth_registration_application_process_cleaned_008_01, birth_registration_application_process_cleaned_002_01",
+        "source_ids": [
+          "birth_and_death_registration_rules_2018_বিধি_৯_04",
+          "bdris_faq_01_q02",
+          "bdris_faq_02_q03",
+          "birth_and_death_registration_rules_2018_বিধি_২০_01",
+          "know_this_01_cleaned_008_01",
+          "birth_registration_application_process_cleaned_012_01",
+          "birth_registration_application_process_cleaned_008_01",
+          "birth_registration_application_process_cleaned_002_01",
+          "birth_registration_application_process_cleaned_016_01",
+          "birth_registration_application_process_cleaned_019_01",
+          "birth_registration_application_process_cleaned_020_01"
+        ],
+        "top_sources": [
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_04",
+            "document_type": "legal_rules",
+            "category": null,
+            "section_title": "জন্ম নিবন্ধন",
+            "score": 0.6145226359367371,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "bdris_faq_01_q02",
+            "document_type": "faq",
+            "category": "manual_to_online_migration",
+            "section_title": null,
+            "score": 0.545167088508606,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "bdris_faq_02_q03",
+            "document_type": "faq",
+            "category": "data_discrepancy",
+            "section_title": null,
+            "score": 0.4724886119365692,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_২০_01",
+            "document_type": "legal_rules",
+            "category": null,
+            "section_title": "অনলাইনে আবেদন বা তথ্য প্রদান",
+            "score": 0.4703098237514496,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "know_this_01_cleaned_008_01",
+            "document_type": "general_guidance",
+            "category": null,
+            "section_title": "একজন ব্যক্তি জন্ম নিবন্ধন হয়েছে কিনা তা কিভাবে পরীক্ষা করবে?",
+            "score": 0.449898898601532,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_012_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "২০১৩ সালের পর জন্মগ্রহণকারী ব্যক্তির ক্ষেত্রে",
+            "score": 0.22289727628231049,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_008_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ১: ওয়েবসাইটে প্রবেশ",
+            "score": 0.0,
+            "retrievers": [
+              "safe_path"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_002_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "আবেদন করার পূর্ব প্রস্তুতি",
+            "score": 0.0,
+            "retrievers": [
+              "safe_path"
+            ]
+          }
+        ],
+        "note": "Model-independent controlled CivicRAG answer; safe-answer path returned before LLM generation."
+      }
+    ]
+  },
+  {
+    "question_index": 5,
+    "question": "আমার ছেলের জন্য জন্ম নিবন্ধন আবেদন করেছি\nআবেদন নাম্বার 254632575 এখন এই সমাধান করতে কতদিন সময় লাগবে এবং জন্ম নিবন্ধন নাম্বার কই পাবো কিভাবে বের করতে হবে জানাবেন।\nআমি জন্ম নিবন্ধনের ফাইল সংযোজন হচ্ছে না।শুধু Error message আসে। ছবিগুলো 60-70 KB তে আছে। ছবিগুলো upload হচ্ছে কিন্তু সাবমিট করার সময় দেখাচ্ছে “আপনি প্রয়োজনীয় ফাইল আপলোড করেননি”(Error message)। বারবার চেষ্টা করেও হচ্ছে না।\nবি.দ্র: আমি যে ফাইলগুলো সংযোজন করেছি (upload হয়েছে কিন্তু সাবমিট হয়নি) তা হলো–\n১)বাচ্চার টিকার কার্ড\n২)বাবা-মায়ের পরিচয়পত্র\n৩)কর রশিদ\nএমতাবস্থায় আমি কি করতে পারি পরামর্শ দিলে উপকৃত হতাম।\nআমার ভোডার আইডি কার্ড আছে কিন্তু জন্ম নিবন্ধন অনলাই করা নাই এখন এই জন্ম নিবন্ধন অনলাইন কিভাবে করবো একটু দয়া করে জানাবেন",
+    "runs": [
+      {
+        "model": "llama3.2",
+        "elapsed": 27.57,
+        "answer": "আপনার প্রশ্নে কয়েকটি আলাদা বিষয় আছে। প্রাপ্ত সরকারি/উৎস ডেটার ভিত্তিতে অংশভাগ করে উত্তর দিচ্ছি:\n\n1. আবেদন নম্বর, অগ্রগতি বা পরবর্তী করণীয়\nজন্ম নিবন্ধনের আবেদন সফলভাবে সম্পন্ন হওয়ার পর আপনার মোবাইলে অ্যাপ্লিকেশন আইডি SMS হিসেবে যাবে।\n\n\"সাবমিট\" বাটনে ক্লিক করার পর আবেদন সফলভাবে জমা হয়েছে মর্মে বার্তা প্রদর্শিত হবে।\n\nএখানে একটি আবেদনপত্র নম্বর (Application ID) প্রদান করা হবে।\n\nএই নম্বর:\n\n- মোবাইল নম্বরে\n- ইমেইলে\n\nপাঠানো হবে।\n\nনিম্নোক্ত নথিপত্র নিয়ে সংশ্লিষ্ট নিবন্ধন কার্যালয়ে যোগাযোগ করতে হবে:\n\n- আবেদনপত্র\n- সংযুক্ত ডকুমেন্টসমূহের ফটোকপি\n\nসংশ্লিষ্ট নিবন্ধন কার্যালয়:\n\n- ইউনিয়ন পরিষদ\n- পৌরসভা\n- সিটি কর্পোরেশন\n- ক্যান্টনমেন্ট\n\nনিবন্ধন সহকারী এবং নিবন্ধক কর্তৃক যাচাই-বাছাই শেষে তথ্য সঠিক পাওয়া গেলে জন্ম নিবন্ধন সনদ প্রদান করা হবে।\n\nএই ডেটাসেটে নির্দিষ্ট আবেদন নম্বর দিয়ে অনলাইন progress/status যাচাই করার আলাদা পদ্ধতি পাওয়া যায়নি। তাই নির্দিষ্ট আবেদন নম্বরের বর্তমান অবস্থা জানতে সংশ্লিষ্ট নিবন্ধন কার্যালয় বা BDRIS নির্দেশনা অনুসরণ করা উচিত।\n\n2. ফাইল সংযুক্তি/আপলোড সমস্যা\nসংযুক্ত করতে হবে: - জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nসংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nফরম পূরণের সময় সতর্কতা: ফরম পূরণের সময় ডট (.), হাইফেন (-), কোলন (:) ইত্যাদি চিহ্ন ব্যবহার না করাই উত্তম।\n\nউদাহরণ:\n\n- `MD.` না লিখে `MD` লিখুন।\n- এরপর স্পেস দিয়ে সম্পূর্ণ নাম লিখুন।\n\nফরম পূরণের সময় দেশ, বিভাগ, জেলা, উপজেলা থেকে শুরু করে বাসা ও সড়কের নাম ও নম্বর পর্যন্ত তথ্য ধাপে ধাপে প্রদান করুন।\n\nসংযুক্তি হিসেবে নিম্নোক্ত প্রমাণক আপলোড করতে হবে:\n\n- জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nআপনার বর্ণিত `প্রয়োজনীয় ফাইল আপলোড করেননি` ধরনের নির্দিষ্ট error message-এর পূর্ণ troubleshooting এই ডেটাসেটে নেই। তবে প্রমাণকগুলো সঠিক আলাদা ঘরে যুক্ত হয়েছে কিনা, ফাইল ফরম্যাট/সাইজ গ্রহণযোগ্য কিনা, এবং সব বাধ্যতামূলক প্রমাণক সংযুক্ত হয়েছে কিনা যাচাই করা উচিত। সমস্যা চলতে থাকলে সংশ্লিষ্ট নিবন্ধন কার্যালয় বা BDRIS সহায়তার সঙ্গে যোগাযোগ করা নিরাপদ।\n\n3. পুরোনো/ম্যানুয়াল নিবন্ধন অনলাইনে না থাকলে\nম্যানুয়াল জন্ম নিবন্ধনসমূহ অনলাইনে অন্তর্ভুক্তির জন্য একাধিকবার সময় দেওয়া হয়েছে। এখন একই নম্বর দিয়ে অনলাইনে অন্তর্ভুক্তির সুযোগ নেই। যে এলাকায় হাতে লেখা নিবন্ধন হয়েছিল সেই কার্যালয়ে রক্ষিত বইতে তথ্য পাওয়া গেলে, নিবন্ধক সরাসরি সেই তথ্য দিয়ে অনলাইন নিবন্ধন করে দেবেন — যদি ইতঃপূর্বে অন্য কোথাও নিবন্ধন না হয়ে থাকে। তবে নিবন্ধন নম্বর পরিবর্তিত হবে; এতে নাগরিকের কোনো ক্ষতি বা অসুবিধা হবে না।\n\n4. জন্ম নিবন্ধনের আবেদন\nআবেদন করার পূর্ব প্রস্তুতি: নতুন জন্ম নিবন্ধন আবেদনের পূর্বে প্রয়োজনীয় তথ্য ও ডকুমেন্ট সংগ্রহ করে রাখুন।\n\nজন্ম নিবন্ধনের ক্ষেত্রে নিম্নোক্ত তিন ধরনের ঠিকানার তথ্য প্রয়োজন হবে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রতিটি ঠিকানার জন্য নিম্নোক্ত তথ্য প্রয়োজন হতে পারে:\n\n- ইউনিয়ন পরিষদ/পৌরসভা/সিটি কর্পোরেশন/ক্যান্টনমেন্টের নাম\n- ওয়ার্ড নম্বর\n- ডাকঘর\n- গ্রাম/পাড়া/মহল্লা\n- বাসা ও সড়কের নাম ও নম্বর\n\nসকল তথ্য বাংলা ও ইংরেজি উভয় ভাষায় সঠিক বানানে লিখতে হবে।\n\nধাপ ১: ওয়েবসাইটে প্রবেশ: নতুন জন্ম নিবন্ধনের জন্য:\n\nhttps://bdris.gov.bd\n\nওয়েবসাইটে প্রবেশ করুন।\n\nহোমপেজে \"জন্ম নিবন্ধন\" মেনু নির্বাচন করুন।\n\nএরপর \"জন্ম নিবন্ধন আবেদন\" অপশনে ক্লিক করুন।\n\nধাপ ২: সনদ সংগ্রহের স্থান নির্বাচন: এখানে আবেদনকারীকে নির্বাচন করতে হবে তিনি কোথা থেকে জন্ম সনদ গ্রহণ বা সংগ্রহ করতে চান।\n\nনিম্নোক্ত ঠিকানার ভিত্তিতে সনদ সংগ্রহ করা যেতে পারে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n\nসাধারণভাবে স্থায়ী ঠিকানা থেকে সনদ সংগ্রহ করার জন্য উৎসাহিত করা হয়।\n\nবিদেশে জন্মগ্রহণকারী শিশু নিকটস্থ বাংলাদেশ দূতাবাস থেকে জন্ম সনদ সংগ্রহ করতে পারে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৩: জন্ম তথ্য প্রদান: এই ধাপে আবেদনকারীর জন্মসংক্রান্ত তথ্য ধাপে ধাপে পূরণ করতে হবে।\n\nতথ্য প্রদানের সময় সতর্কতা অবলম্বন করতে হবে।\n\nজন্ম তারিখ প্রদান করার পর সিস্টেম প্রয়োজনীয় নির্দেশনা প্রদর্শন করবে।\n\nনির্দেশনা পড়ে \"আমার কাছে এই ডকুমেন্টগুলো আছে\" অপশন নির্বাচন করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৪: পিতা ও মাতার তথ্য প্রদান: এই ধাপে পিতা ও মাতার তথ্য প্রদান করতে হবে।\n\nধাপ ৫: স্থায়ী ও বর্তমান ঠিকানা প্রদান: এই ধাপে:\n\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রদান করতে হবে।\n\nযদি জন্মস্থান এবং স্থায়ী ঠিকানা একই হয়, তাহলে নির্ধারিত ঘরে টিক চিহ্ন দিলে তথ্য স্বয়ংক্রিয়ভাবে পূরণ হবে।\n\nঅন্যথায় স্থায়ী ঠিকানা ও বর্তমান ঠিকানার তথ্য আলাদাভাবে পূরণ করতে হবে।\n\nসব তথ্য সঠিকভাবে পূরণ করার পর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৬: আবেদনকারীর তথ্য ও ডকুমেন্ট সংযুক্তি: যদি ব্যক্তি নিজে আবেদন করেন, তাহলে \"নিজ\" অপশন নির্বাচন করতে হবে।\n\nঅন্য কেউ আবেদন করলে \"অন্যান্য\" অপশন নির্বাচন করতে হবে।\n\n\"অন্যান্য\" নির্বাচন করলে আবেদনকারীর জন্ম নিবন্ধন নম্বর প্রদান করতে হবে।\n\nএরপর ঘোষণা দিতে হবে যে:\n\n- প্রদত্ত তথ্যসমূহ সঠিক\n- পূর্বে জন্ম নিবন্ধন করা হয়নি\n\nসংযুক্ত করতে হবে: - জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nসংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৭: তথ্য যাচাই ও OTP: এই ধাপে আবেদনকারীর পূরণকৃত সকল তথ্য প্রদর্শিত হবে।\n\nসকল তথ্য সতর্কতার সাথে যাচাই করতে হবে।\n\nভুল থাকলে \"পূর্ববর্তী\" বাটনে ফিরে গিয়ে সংশোধন করতে হবে।\n\nতথ্য সঠিক হলে:\n\n- ইমেইল অথবা\n- মোবাইল নম্বর\n\nপ্রদান করতে হবে।\n\nOTP গ্রহণ: - দূতাবাসের মাধ্যমে আবেদনের ক্ষেত্রে ইমেইলে OTP যাবে।\n- বাংলাদেশের অভ্যন্তরে আবেদনের ক্ষেত্রে মোবাইল নম্বরে OTP যাবে।\n\nOTP প্রদান করার পর \"সাবমিট\" বাটনে ক্লিক করুন।\n\nSources: birth_registration_application_process_02_cleaned_013_01, birth_registration_application_process_cleaned_019_01, birth_registration_application_process_cleaned_020_01, birth_and_death_registration_rules_2018_বিধি_৯_04, birth_and_death_registration_rules_2018_বিধি_৯_02, birth_registration_application_process_cleaned_002_01, birth_registration_application_process_02_cleaned_014_01, birth_registration_application_process_02_cleaned_006_01",
+        "source_ids": [
+          "birth_and_death_registration_rules_2018_বিধি_৯_04",
+          "birth_and_death_registration_rules_2018_বিধি_৯_02",
+          "birth_registration_application_process_cleaned_019_01",
+          "birth_registration_application_process_cleaned_002_01",
+          "birth_registration_application_process_02_cleaned_014_01",
+          "birth_registration_application_process_02_cleaned_006_01",
+          "birth_registration_application_process_02_cleaned_013_01",
+          "birth_registration_application_process_cleaned_020_01",
+          "birth_registration_application_process_cleaned_016_01",
+          "birth_registration_application_process_cleaned_005_01",
+          "bdris_faq_01_q02",
+          "birth_registration_application_process_cleaned_008_01"
+        ],
+        "top_sources": [
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_04",
+            "document_type": "legal_rules",
+            "category": null,
+            "section_title": "জন্ম নিবন্ধন",
+            "score": 0.7534251523017883,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_02",
+            "document_type": "legal_rules",
+            "category": null,
+            "section_title": "জন্ম নিবন্ধন",
+            "score": 0.6760638070106506,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_019_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ৮: আবেদন সম্পন্ন ও সনদ গ্রহণ",
+            "score": 0.6620918869972229,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_002_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "আবেদন করার পূর্ব প্রস্তুতি",
+            "score": 0.6082820451259613,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_014_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ১২: আবেদনপত্র জমা",
+            "score": 0.5533080160617828,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_006_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ৪: জন্ম তথ্য প্রদান",
+            "score": 0.5405114352703094,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_013_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ১১: আবেদন নম্বর গ্রহণ",
+            "score": 0.0,
+            "retrievers": [
+              "safe_path"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_020_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "পরবর্তী করণীয়",
+            "score": 0.0,
+            "retrievers": [
+              "safe_path"
+            ]
+          }
+        ],
+        "note": "Model-independent controlled CivicRAG answer; safe-answer path returned before LLM generation."
+      },
+      {
+        "model": "llama3",
+        "elapsed": null,
+        "answer": "আপনার প্রশ্নে কয়েকটি আলাদা বিষয় আছে। প্রাপ্ত সরকারি/উৎস ডেটার ভিত্তিতে অংশভাগ করে উত্তর দিচ্ছি:\n\n1. আবেদন নম্বর, অগ্রগতি বা পরবর্তী করণীয়\nজন্ম নিবন্ধনের আবেদন সফলভাবে সম্পন্ন হওয়ার পর আপনার মোবাইলে অ্যাপ্লিকেশন আইডি SMS হিসেবে যাবে।\n\n\"সাবমিট\" বাটনে ক্লিক করার পর আবেদন সফলভাবে জমা হয়েছে মর্মে বার্তা প্রদর্শিত হবে।\n\nএখানে একটি আবেদনপত্র নম্বর (Application ID) প্রদান করা হবে।\n\nএই নম্বর:\n\n- মোবাইল নম্বরে\n- ইমেইলে\n\nপাঠানো হবে।\n\nনিম্নোক্ত নথিপত্র নিয়ে সংশ্লিষ্ট নিবন্ধন কার্যালয়ে যোগাযোগ করতে হবে:\n\n- আবেদনপত্র\n- সংযুক্ত ডকুমেন্টসমূহের ফটোকপি\n\nসংশ্লিষ্ট নিবন্ধন কার্যালয়:\n\n- ইউনিয়ন পরিষদ\n- পৌরসভা\n- সিটি কর্পোরেশন\n- ক্যান্টনমেন্ট\n\nনিবন্ধন সহকারী এবং নিবন্ধক কর্তৃক যাচাই-বাছাই শেষে তথ্য সঠিক পাওয়া গেলে জন্ম নিবন্ধন সনদ প্রদান করা হবে।\n\nএই ডেটাসেটে নির্দিষ্ট আবেদন নম্বর দিয়ে অনলাইন progress/status যাচাই করার আলাদা পদ্ধতি পাওয়া যায়নি। তাই নির্দিষ্ট আবেদন নম্বরের বর্তমান অবস্থা জানতে সংশ্লিষ্ট নিবন্ধন কার্যালয় বা BDRIS নির্দেশনা অনুসরণ করা উচিত।\n\n2. ফাইল সংযুক্তি/আপলোড সমস্যা\nসংযুক্ত করতে হবে: - জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nসংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nফরম পূরণের সময় সতর্কতা: ফরম পূরণের সময় ডট (.), হাইফেন (-), কোলন (:) ইত্যাদি চিহ্ন ব্যবহার না করাই উত্তম।\n\nউদাহরণ:\n\n- `MD.` না লিখে `MD` লিখুন।\n- এরপর স্পেস দিয়ে সম্পূর্ণ নাম লিখুন।\n\nফরম পূরণের সময় দেশ, বিভাগ, জেলা, উপজেলা থেকে শুরু করে বাসা ও সড়কের নাম ও নম্বর পর্যন্ত তথ্য ধাপে ধাপে প্রদান করুন।\n\nসংযুক্তি হিসেবে নিম্নোক্ত প্রমাণক আপলোড করতে হবে:\n\n- জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nআপনার বর্ণিত `প্রয়োজনীয় ফাইল আপলোড করেননি` ধরনের নির্দিষ্ট error message-এর পূর্ণ troubleshooting এই ডেটাসেটে নেই। তবে প্রমাণকগুলো সঠিক আলাদা ঘরে যুক্ত হয়েছে কিনা, ফাইল ফরম্যাট/সাইজ গ্রহণযোগ্য কিনা, এবং সব বাধ্যতামূলক প্রমাণক সংযুক্ত হয়েছে কিনা যাচাই করা উচিত। সমস্যা চলতে থাকলে সংশ্লিষ্ট নিবন্ধন কার্যালয় বা BDRIS সহায়তার সঙ্গে যোগাযোগ করা নিরাপদ।\n\n3. পুরোনো/ম্যানুয়াল নিবন্ধন অনলাইনে না থাকলে\nম্যানুয়াল জন্ম নিবন্ধনসমূহ অনলাইনে অন্তর্ভুক্তির জন্য একাধিকবার সময় দেওয়া হয়েছে। এখন একই নম্বর দিয়ে অনলাইনে অন্তর্ভুক্তির সুযোগ নেই। যে এলাকায় হাতে লেখা নিবন্ধন হয়েছিল সেই কার্যালয়ে রক্ষিত বইতে তথ্য পাওয়া গেলে, নিবন্ধক সরাসরি সেই তথ্য দিয়ে অনলাইন নিবন্ধন করে দেবেন — যদি ইতঃপূর্বে অন্য কোথাও নিবন্ধন না হয়ে থাকে। তবে নিবন্ধন নম্বর পরিবর্তিত হবে; এতে নাগরিকের কোনো ক্ষতি বা অসুবিধা হবে না।\n\n4. জন্ম নিবন্ধনের আবেদন\nআবেদন করার পূর্ব প্রস্তুতি: নতুন জন্ম নিবন্ধন আবেদনের পূর্বে প্রয়োজনীয় তথ্য ও ডকুমেন্ট সংগ্রহ করে রাখুন।\n\nজন্ম নিবন্ধনের ক্ষেত্রে নিম্নোক্ত তিন ধরনের ঠিকানার তথ্য প্রয়োজন হবে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রতিটি ঠিকানার জন্য নিম্নোক্ত তথ্য প্রয়োজন হতে পারে:\n\n- ইউনিয়ন পরিষদ/পৌরসভা/সিটি কর্পোরেশন/ক্যান্টনমেন্টের নাম\n- ওয়ার্ড নম্বর\n- ডাকঘর\n- গ্রাম/পাড়া/মহল্লা\n- বাসা ও সড়কের নাম ও নম্বর\n\nসকল তথ্য বাংলা ও ইংরেজি উভয় ভাষায় সঠিক বানানে লিখতে হবে।\n\nধাপ ১: ওয়েবসাইটে প্রবেশ: নতুন জন্ম নিবন্ধনের জন্য:\n\nhttps://bdris.gov.bd\n\nওয়েবসাইটে প্রবেশ করুন।\n\nহোমপেজে \"জন্ম নিবন্ধন\" মেনু নির্বাচন করুন।\n\nএরপর \"জন্ম নিবন্ধন আবেদন\" অপশনে ক্লিক করুন।\n\nধাপ ২: সনদ সংগ্রহের স্থান নির্বাচন: এখানে আবেদনকারীকে নির্বাচন করতে হবে তিনি কোথা থেকে জন্ম সনদ গ্রহণ বা সংগ্রহ করতে চান।\n\nনিম্নোক্ত ঠিকানার ভিত্তিতে সনদ সংগ্রহ করা যেতে পারে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n\nসাধারণভাবে স্থায়ী ঠিকানা থেকে সনদ সংগ্রহ করার জন্য উৎসাহিত করা হয়।\n\nবিদেশে জন্মগ্রহণকারী শিশু নিকটস্থ বাংলাদেশ দূতাবাস থেকে জন্ম সনদ সংগ্রহ করতে পারে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৩: জন্ম তথ্য প্রদান: এই ধাপে আবেদনকারীর জন্মসংক্রান্ত তথ্য ধাপে ধাপে পূরণ করতে হবে।\n\nতথ্য প্রদানের সময় সতর্কতা অবলম্বন করতে হবে।\n\nজন্ম তারিখ প্রদান করার পর সিস্টেম প্রয়োজনীয় নির্দেশনা প্রদর্শন করবে।\n\nনির্দেশনা পড়ে \"আমার কাছে এই ডকুমেন্টগুলো আছে\" অপশন নির্বাচন করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৪: পিতা ও মাতার তথ্য প্রদান: এই ধাপে পিতা ও মাতার তথ্য প্রদান করতে হবে।\n\nধাপ ৫: স্থায়ী ও বর্তমান ঠিকানা প্রদান: এই ধাপে:\n\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রদান করতে হবে।\n\nযদি জন্মস্থান এবং স্থায়ী ঠিকানা একই হয়, তাহলে নির্ধারিত ঘরে টিক চিহ্ন দিলে তথ্য স্বয়ংক্রিয়ভাবে পূরণ হবে।\n\nঅন্যথায় স্থায়ী ঠিকানা ও বর্তমান ঠিকানার তথ্য আলাদাভাবে পূরণ করতে হবে।\n\nসব তথ্য সঠিকভাবে পূরণ করার পর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৬: আবেদনকারীর তথ্য ও ডকুমেন্ট সংযুক্তি: যদি ব্যক্তি নিজে আবেদন করেন, তাহলে \"নিজ\" অপশন নির্বাচন করতে হবে।\n\nঅন্য কেউ আবেদন করলে \"অন্যান্য\" অপশন নির্বাচন করতে হবে।\n\n\"অন্যান্য\" নির্বাচন করলে আবেদনকারীর জন্ম নিবন্ধন নম্বর প্রদান করতে হবে।\n\nএরপর ঘোষণা দিতে হবে যে:\n\n- প্রদত্ত তথ্যসমূহ সঠিক\n- পূর্বে জন্ম নিবন্ধন করা হয়নি\n\nসংযুক্ত করতে হবে: - জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nসংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৭: তথ্য যাচাই ও OTP: এই ধাপে আবেদনকারীর পূরণকৃত সকল তথ্য প্রদর্শিত হবে।\n\nসকল তথ্য সতর্কতার সাথে যাচাই করতে হবে।\n\nভুল থাকলে \"পূর্ববর্তী\" বাটনে ফিরে গিয়ে সংশোধন করতে হবে।\n\nতথ্য সঠিক হলে:\n\n- ইমেইল অথবা\n- মোবাইল নম্বর\n\nপ্রদান করতে হবে।\n\nOTP গ্রহণ: - দূতাবাসের মাধ্যমে আবেদনের ক্ষেত্রে ইমেইলে OTP যাবে।\n- বাংলাদেশের অভ্যন্তরে আবেদনের ক্ষেত্রে মোবাইল নম্বরে OTP যাবে।\n\nOTP প্রদান করার পর \"সাবমিট\" বাটনে ক্লিক করুন।\n\nSources: birth_registration_application_process_02_cleaned_013_01, birth_registration_application_process_cleaned_019_01, birth_registration_application_process_cleaned_020_01, birth_and_death_registration_rules_2018_বিধি_৯_04, birth_and_death_registration_rules_2018_বিধি_৯_02, birth_registration_application_process_cleaned_002_01, birth_registration_application_process_02_cleaned_014_01, birth_registration_application_process_02_cleaned_006_01",
+        "source_ids": [
+          "birth_and_death_registration_rules_2018_বিধি_৯_04",
+          "birth_and_death_registration_rules_2018_বিধি_৯_02",
+          "birth_registration_application_process_cleaned_019_01",
+          "birth_registration_application_process_cleaned_002_01",
+          "birth_registration_application_process_02_cleaned_014_01",
+          "birth_registration_application_process_02_cleaned_006_01",
+          "birth_registration_application_process_02_cleaned_013_01",
+          "birth_registration_application_process_cleaned_020_01",
+          "birth_registration_application_process_cleaned_016_01",
+          "birth_registration_application_process_cleaned_005_01",
+          "bdris_faq_01_q02",
+          "birth_registration_application_process_cleaned_008_01"
+        ],
+        "top_sources": [
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_04",
+            "document_type": "legal_rules",
+            "category": null,
+            "section_title": "জন্ম নিবন্ধন",
+            "score": 0.7534251523017883,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_02",
+            "document_type": "legal_rules",
+            "category": null,
+            "section_title": "জন্ম নিবন্ধন",
+            "score": 0.6760638070106506,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_019_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ৮: আবেদন সম্পন্ন ও সনদ গ্রহণ",
+            "score": 0.6620918869972229,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_002_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "আবেদন করার পূর্ব প্রস্তুতি",
+            "score": 0.6082820451259613,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_014_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ১২: আবেদনপত্র জমা",
+            "score": 0.5533080160617828,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_006_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ৪: জন্ম তথ্য প্রদান",
+            "score": 0.5405114352703094,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_013_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ১১: আবেদন নম্বর গ্রহণ",
+            "score": 0.0,
+            "retrievers": [
+              "safe_path"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_020_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "পরবর্তী করণীয়",
+            "score": 0.0,
+            "retrievers": [
+              "safe_path"
+            ]
+          }
+        ],
+        "note": "Model-independent controlled CivicRAG answer; safe-answer path returned before LLM generation."
+      },
+      {
+        "model": "qwen2.5:7b",
+        "elapsed": null,
+        "answer": "আপনার প্রশ্নে কয়েকটি আলাদা বিষয় আছে। প্রাপ্ত সরকারি/উৎস ডেটার ভিত্তিতে অংশভাগ করে উত্তর দিচ্ছি:\n\n1. আবেদন নম্বর, অগ্রগতি বা পরবর্তী করণীয়\nজন্ম নিবন্ধনের আবেদন সফলভাবে সম্পন্ন হওয়ার পর আপনার মোবাইলে অ্যাপ্লিকেশন আইডি SMS হিসেবে যাবে।\n\n\"সাবমিট\" বাটনে ক্লিক করার পর আবেদন সফলভাবে জমা হয়েছে মর্মে বার্তা প্রদর্শিত হবে।\n\nএখানে একটি আবেদনপত্র নম্বর (Application ID) প্রদান করা হবে।\n\nএই নম্বর:\n\n- মোবাইল নম্বরে\n- ইমেইলে\n\nপাঠানো হবে।\n\nনিম্নোক্ত নথিপত্র নিয়ে সংশ্লিষ্ট নিবন্ধন কার্যালয়ে যোগাযোগ করতে হবে:\n\n- আবেদনপত্র\n- সংযুক্ত ডকুমেন্টসমূহের ফটোকপি\n\nসংশ্লিষ্ট নিবন্ধন কার্যালয়:\n\n- ইউনিয়ন পরিষদ\n- পৌরসভা\n- সিটি কর্পোরেশন\n- ক্যান্টনমেন্ট\n\nনিবন্ধন সহকারী এবং নিবন্ধক কর্তৃক যাচাই-বাছাই শেষে তথ্য সঠিক পাওয়া গেলে জন্ম নিবন্ধন সনদ প্রদান করা হবে।\n\nএই ডেটাসেটে নির্দিষ্ট আবেদন নম্বর দিয়ে অনলাইন progress/status যাচাই করার আলাদা পদ্ধতি পাওয়া যায়নি। তাই নির্দিষ্ট আবেদন নম্বরের বর্তমান অবস্থা জানতে সংশ্লিষ্ট নিবন্ধন কার্যালয় বা BDRIS নির্দেশনা অনুসরণ করা উচিত।\n\n2. ফাইল সংযুক্তি/আপলোড সমস্যা\nসংযুক্ত করতে হবে: - জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nসংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nফরম পূরণের সময় সতর্কতা: ফরম পূরণের সময় ডট (.), হাইফেন (-), কোলন (:) ইত্যাদি চিহ্ন ব্যবহার না করাই উত্তম।\n\nউদাহরণ:\n\n- `MD.` না লিখে `MD` লিখুন।\n- এরপর স্পেস দিয়ে সম্পূর্ণ নাম লিখুন।\n\nফরম পূরণের সময় দেশ, বিভাগ, জেলা, উপজেলা থেকে শুরু করে বাসা ও সড়কের নাম ও নম্বর পর্যন্ত তথ্য ধাপে ধাপে প্রদান করুন।\n\nসংযুক্তি হিসেবে নিম্নোক্ত প্রমাণক আপলোড করতে হবে:\n\n- জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nআপনার বর্ণিত `প্রয়োজনীয় ফাইল আপলোড করেননি` ধরনের নির্দিষ্ট error message-এর পূর্ণ troubleshooting এই ডেটাসেটে নেই। তবে প্রমাণকগুলো সঠিক আলাদা ঘরে যুক্ত হয়েছে কিনা, ফাইল ফরম্যাট/সাইজ গ্রহণযোগ্য কিনা, এবং সব বাধ্যতামূলক প্রমাণক সংযুক্ত হয়েছে কিনা যাচাই করা উচিত। সমস্যা চলতে থাকলে সংশ্লিষ্ট নিবন্ধন কার্যালয় বা BDRIS সহায়তার সঙ্গে যোগাযোগ করা নিরাপদ।\n\n3. পুরোনো/ম্যানুয়াল নিবন্ধন অনলাইনে না থাকলে\nম্যানুয়াল জন্ম নিবন্ধনসমূহ অনলাইনে অন্তর্ভুক্তির জন্য একাধিকবার সময় দেওয়া হয়েছে। এখন একই নম্বর দিয়ে অনলাইনে অন্তর্ভুক্তির সুযোগ নেই। যে এলাকায় হাতে লেখা নিবন্ধন হয়েছিল সেই কার্যালয়ে রক্ষিত বইতে তথ্য পাওয়া গেলে, নিবন্ধক সরাসরি সেই তথ্য দিয়ে অনলাইন নিবন্ধন করে দেবেন — যদি ইতঃপূর্বে অন্য কোথাও নিবন্ধন না হয়ে থাকে। তবে নিবন্ধন নম্বর পরিবর্তিত হবে; এতে নাগরিকের কোনো ক্ষতি বা অসুবিধা হবে না।\n\n4. জন্ম নিবন্ধনের আবেদন\nআবেদন করার পূর্ব প্রস্তুতি: নতুন জন্ম নিবন্ধন আবেদনের পূর্বে প্রয়োজনীয় তথ্য ও ডকুমেন্ট সংগ্রহ করে রাখুন।\n\nজন্ম নিবন্ধনের ক্ষেত্রে নিম্নোক্ত তিন ধরনের ঠিকানার তথ্য প্রয়োজন হবে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রতিটি ঠিকানার জন্য নিম্নোক্ত তথ্য প্রয়োজন হতে পারে:\n\n- ইউনিয়ন পরিষদ/পৌরসভা/সিটি কর্পোরেশন/ক্যান্টনমেন্টের নাম\n- ওয়ার্ড নম্বর\n- ডাকঘর\n- গ্রাম/পাড়া/মহল্লা\n- বাসা ও সড়কের নাম ও নম্বর\n\nসকল তথ্য বাংলা ও ইংরেজি উভয় ভাষায় সঠিক বানানে লিখতে হবে।\n\nধাপ ১: ওয়েবসাইটে প্রবেশ: নতুন জন্ম নিবন্ধনের জন্য:\n\nhttps://bdris.gov.bd\n\nওয়েবসাইটে প্রবেশ করুন।\n\nহোমপেজে \"জন্ম নিবন্ধন\" মেনু নির্বাচন করুন।\n\nএরপর \"জন্ম নিবন্ধন আবেদন\" অপশনে ক্লিক করুন।\n\nধাপ ২: সনদ সংগ্রহের স্থান নির্বাচন: এখানে আবেদনকারীকে নির্বাচন করতে হবে তিনি কোথা থেকে জন্ম সনদ গ্রহণ বা সংগ্রহ করতে চান।\n\nনিম্নোক্ত ঠিকানার ভিত্তিতে সনদ সংগ্রহ করা যেতে পারে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n\nসাধারণভাবে স্থায়ী ঠিকানা থেকে সনদ সংগ্রহ করার জন্য উৎসাহিত করা হয়।\n\nবিদেশে জন্মগ্রহণকারী শিশু নিকটস্থ বাংলাদেশ দূতাবাস থেকে জন্ম সনদ সংগ্রহ করতে পারে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৩: জন্ম তথ্য প্রদান: এই ধাপে আবেদনকারীর জন্মসংক্রান্ত তথ্য ধাপে ধাপে পূরণ করতে হবে।\n\nতথ্য প্রদানের সময় সতর্কতা অবলম্বন করতে হবে।\n\nজন্ম তারিখ প্রদান করার পর সিস্টেম প্রয়োজনীয় নির্দেশনা প্রদর্শন করবে।\n\nনির্দেশনা পড়ে \"আমার কাছে এই ডকুমেন্টগুলো আছে\" অপশন নির্বাচন করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৪: পিতা ও মাতার তথ্য প্রদান: এই ধাপে পিতা ও মাতার তথ্য প্রদান করতে হবে।\n\nধাপ ৫: স্থায়ী ও বর্তমান ঠিকানা প্রদান: এই ধাপে:\n\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রদান করতে হবে।\n\nযদি জন্মস্থান এবং স্থায়ী ঠিকানা একই হয়, তাহলে নির্ধারিত ঘরে টিক চিহ্ন দিলে তথ্য স্বয়ংক্রিয়ভাবে পূরণ হবে।\n\nঅন্যথায় স্থায়ী ঠিকানা ও বর্তমান ঠিকানার তথ্য আলাদাভাবে পূরণ করতে হবে।\n\nসব তথ্য সঠিকভাবে পূরণ করার পর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৬: আবেদনকারীর তথ্য ও ডকুমেন্ট সংযুক্তি: যদি ব্যক্তি নিজে আবেদন করেন, তাহলে \"নিজ\" অপশন নির্বাচন করতে হবে।\n\nঅন্য কেউ আবেদন করলে \"অন্যান্য\" অপশন নির্বাচন করতে হবে।\n\n\"অন্যান্য\" নির্বাচন করলে আবেদনকারীর জন্ম নিবন্ধন নম্বর প্রদান করতে হবে।\n\nএরপর ঘোষণা দিতে হবে যে:\n\n- প্রদত্ত তথ্যসমূহ সঠিক\n- পূর্বে জন্ম নিবন্ধন করা হয়নি\n\nসংযুক্ত করতে হবে: - জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nসংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৭: তথ্য যাচাই ও OTP: এই ধাপে আবেদনকারীর পূরণকৃত সকল তথ্য প্রদর্শিত হবে।\n\nসকল তথ্য সতর্কতার সাথে যাচাই করতে হবে।\n\nভুল থাকলে \"পূর্ববর্তী\" বাটনে ফিরে গিয়ে সংশোধন করতে হবে।\n\nতথ্য সঠিক হলে:\n\n- ইমেইল অথবা\n- মোবাইল নম্বর\n\nপ্রদান করতে হবে।\n\nOTP গ্রহণ: - দূতাবাসের মাধ্যমে আবেদনের ক্ষেত্রে ইমেইলে OTP যাবে।\n- বাংলাদেশের অভ্যন্তরে আবেদনের ক্ষেত্রে মোবাইল নম্বরে OTP যাবে।\n\nOTP প্রদান করার পর \"সাবমিট\" বাটনে ক্লিক করুন।\n\nSources: birth_registration_application_process_02_cleaned_013_01, birth_registration_application_process_cleaned_019_01, birth_registration_application_process_cleaned_020_01, birth_and_death_registration_rules_2018_বিধি_৯_04, birth_and_death_registration_rules_2018_বিধি_৯_02, birth_registration_application_process_cleaned_002_01, birth_registration_application_process_02_cleaned_014_01, birth_registration_application_process_02_cleaned_006_01",
+        "source_ids": [
+          "birth_and_death_registration_rules_2018_বিধি_৯_04",
+          "birth_and_death_registration_rules_2018_বিধি_৯_02",
+          "birth_registration_application_process_cleaned_019_01",
+          "birth_registration_application_process_cleaned_002_01",
+          "birth_registration_application_process_02_cleaned_014_01",
+          "birth_registration_application_process_02_cleaned_006_01",
+          "birth_registration_application_process_02_cleaned_013_01",
+          "birth_registration_application_process_cleaned_020_01",
+          "birth_registration_application_process_cleaned_016_01",
+          "birth_registration_application_process_cleaned_005_01",
+          "bdris_faq_01_q02",
+          "birth_registration_application_process_cleaned_008_01"
+        ],
+        "top_sources": [
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_04",
+            "document_type": "legal_rules",
+            "category": null,
+            "section_title": "জন্ম নিবন্ধন",
+            "score": 0.7534251523017883,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_02",
+            "document_type": "legal_rules",
+            "category": null,
+            "section_title": "জন্ম নিবন্ধন",
+            "score": 0.6760638070106506,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_019_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ৮: আবেদন সম্পন্ন ও সনদ গ্রহণ",
+            "score": 0.6620918869972229,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_002_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "আবেদন করার পূর্ব প্রস্তুতি",
+            "score": 0.6082820451259613,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_014_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ১২: আবেদনপত্র জমা",
+            "score": 0.5533080160617828,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_006_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ৪: জন্ম তথ্য প্রদান",
+            "score": 0.5405114352703094,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_013_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ১১: আবেদন নম্বর গ্রহণ",
+            "score": 0.0,
+            "retrievers": [
+              "safe_path"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_020_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "পরবর্তী করণীয়",
+            "score": 0.0,
+            "retrievers": [
+              "safe_path"
+            ]
+          }
+        ],
+        "note": "Model-independent controlled CivicRAG answer; safe-answer path returned before LLM generation."
+      }
+    ]
+  },
+  {
+    "question_index": 6,
+    "question": "আমি দেশের বাইরে থাকি কিন্তু আমি যখন দেশে আছি তখন অনলাইনে জন্ম নিবন্ধন হয়নি তার জন্য আমি করতে পারি নাই কিন্তু এখন আমার প্রয়োজন জন্ম নিবন্ধন অনলাইনে করার জন্য এখন আমার কি করনীয়",
+    "runs": [
+      {
+        "model": "llama3.2",
+        "elapsed": 16.11,
+        "answer": "আপনার প্রশ্নে কয়েকটি আলাদা বিষয় আছে। প্রাপ্ত সরকারি/উৎস ডেটার ভিত্তিতে অংশভাগ করে উত্তর দিচ্ছি:\n\n1. দেশের বাইরে থাকলে\nপ্রবাসে জন্ম নিবন্ধনের ক্ষেত্রে বিধি ১০ অনুযায়ী বিদেশে অবস্থিত বাংলাদেশ দূতাবাসের নিবন্ধক প্রয়োজনীয় তথ্য/প্রমাণ পেলে জন্ম নিবন্ধন করতে পারেন।\n\nএখানে আবেদনকারীকে নির্বাচন করতে হবে তিনি কোথা থেকে জন্ম সনদ গ্রহণ বা সংগ্রহ করতে চান।\n\nনিম্নোক্ত ঠিকানার ভিত্তিতে সনদ সংগ্রহ করা যেতে পারে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n\nসাধারণভাবে স্থায়ী ঠিকানা থেকে সনদ সংগ্রহ করার জন্য উৎসাহিত করা হয়।\n\nবিদেশে জন্মগ্রহণকারী শিশু নিকটস্থ বাংলাদেশ দূতাবাস থেকে জন্ম সনদ সংগ্রহ করতে পারে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nবিদেশে নিবন্ধন করে দেশে ফেরা বা মূল অফিস-সংক্রান্ত ক্ষেত্রে: সংশোধন বা পুনঃমুদ্রণ কেবল মূল নিবন্ধন অফিস থেকেই করা যাবে। তবে স্থানীয় নিবন্ধন অফিসের সহায়তায় বা নাগরিক নিজে অনলাইনে মূল অফিস বরাবর আবেদন করতে পারেন। আবেদনের অনুলিপি রেজিস্ট্রার জেনারেলের কার্যালয়ে (arg1bdr@gmail.com) পাঠালে প্রয়োজনে পররাষ্ট্র মন্ত্রণালয়ের সঙ্গে যোগাযোগ করে নিষ্পত্তি করা হবে।\n\nভবিষ্যতে করণিক ভুল সংশোধন বা প্রতিলিপি প্রদানের জন্য যেকোনো নিবন্ধন অফিস থেকে সুবিধা পাওয়ার ব্যবস্থা গ্রহণ করা হবে।\n\nতবে আপনি যদি বাংলাদেশে জন্মগ্রহণ করে থাকেন কিন্তু আগে অনলাইনে নিবন্ধন না হয়ে থাকে, তাহলে মূল/স্থানীয় নিবন্ধন কার্যালয়ের রেকর্ডও গুরুত্বপূর্ণ হতে পারে।\n\n2. পুরোনো/ম্যানুয়াল নিবন্ধন অনলাইনে না থাকলে\nম্যানুয়াল জন্ম নিবন্ধনসমূহ অনলাইনে অন্তর্ভুক্তির জন্য একাধিকবার সময় দেওয়া হয়েছে। এখন একই নম্বর দিয়ে অনলাইনে অন্তর্ভুক্তির সুযোগ নেই। যে এলাকায় হাতে লেখা নিবন্ধন হয়েছিল সেই কার্যালয়ে রক্ষিত বইতে তথ্য পাওয়া গেলে, নিবন্ধক সরাসরি সেই তথ্য দিয়ে অনলাইন নিবন্ধন করে দেবেন — যদি ইতঃপূর্বে অন্য কোথাও নিবন্ধন না হয়ে থাকে। তবে নিবন্ধন নম্বর পরিবর্তিত হবে; এতে নাগরিকের কোনো ক্ষতি বা অসুবিধা হবে না।\n\n3. জন্ম নিবন্ধনের আবেদন\nআবেদন করার পূর্ব প্রস্তুতি: নতুন জন্ম নিবন্ধন আবেদনের পূর্বে প্রয়োজনীয় তথ্য ও ডকুমেন্ট সংগ্রহ করে রাখুন।\n\nজন্ম নিবন্ধনের ক্ষেত্রে নিম্নোক্ত তিন ধরনের ঠিকানার তথ্য প্রয়োজন হবে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রতিটি ঠিকানার জন্য নিম্নোক্ত তথ্য প্রয়োজন হতে পারে:\n\n- ইউনিয়ন পরিষদ/পৌরসভা/সিটি কর্পোরেশন/ক্যান্টনমেন্টের নাম\n- ওয়ার্ড নম্বর\n- ডাকঘর\n- গ্রাম/পাড়া/মহল্লা\n- বাসা ও সড়কের নাম ও নম্বর\n\nসকল তথ্য বাংলা ও ইংরেজি উভয় ভাষায় সঠিক বানানে লিখতে হবে।\n\nধাপ ১: ওয়েবসাইটে প্রবেশ: নতুন জন্ম নিবন্ধনের জন্য:\n\nhttps://bdris.gov.bd\n\nওয়েবসাইটে প্রবেশ করুন।\n\nহোমপেজে \"জন্ম নিবন্ধন\" মেনু নির্বাচন করুন।\n\nএরপর \"জন্ম নিবন্ধন আবেদন\" অপশনে ক্লিক করুন।\n\nধাপ ২: সনদ সংগ্রহের স্থান নির্বাচন: এখানে আবেদনকারীকে নির্বাচন করতে হবে তিনি কোথা থেকে জন্ম সনদ গ্রহণ বা সংগ্রহ করতে চান।\n\nনিম্নোক্ত ঠিকানার ভিত্তিতে সনদ সংগ্রহ করা যেতে পারে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n\nসাধারণভাবে স্থায়ী ঠিকানা থেকে সনদ সংগ্রহ করার জন্য উৎসাহিত করা হয়।\n\nবিদেশে জন্মগ্রহণকারী শিশু নিকটস্থ বাংলাদেশ দূতাবাস থেকে জন্ম সনদ সংগ্রহ করতে পারে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৩: জন্ম তথ্য প্রদান: এই ধাপে আবেদনকারীর জন্মসংক্রান্ত তথ্য ধাপে ধাপে পূরণ করতে হবে।\n\nতথ্য প্রদানের সময় সতর্কতা অবলম্বন করতে হবে।\n\nজন্ম তারিখ প্রদান করার পর সিস্টেম প্রয়োজনীয় নির্দেশনা প্রদর্শন করবে।\n\nনির্দেশনা পড়ে \"আমার কাছে এই ডকুমেন্টগুলো আছে\" অপশন নির্বাচন করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৪: পিতা ও মাতার তথ্য প্রদান: এই ধাপে পিতা ও মাতার তথ্য প্রদান করতে হবে।\n\nধাপ ৫: স্থায়ী ও বর্তমান ঠিকানা প্রদান: এই ধাপে:\n\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রদান করতে হবে।\n\nযদি জন্মস্থান এবং স্থায়ী ঠিকানা একই হয়, তাহলে নির্ধারিত ঘরে টিক চিহ্ন দিলে তথ্য স্বয়ংক্রিয়ভাবে পূরণ হবে।\n\nঅন্যথায় স্থায়ী ঠিকানা ও বর্তমান ঠিকানার তথ্য আলাদাভাবে পূরণ করতে হবে।\n\nসব তথ্য সঠিকভাবে পূরণ করার পর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৬: আবেদনকারীর তথ্য ও ডকুমেন্ট সংযুক্তি: যদি ব্যক্তি নিজে আবেদন করেন, তাহলে \"নিজ\" অপশন নির্বাচন করতে হবে।\n\nঅন্য কেউ আবেদন করলে \"অন্যান্য\" অপশন নির্বাচন করতে হবে।\n\n\"অন্যান্য\" নির্বাচন করলে আবেদনকারীর জন্ম নিবন্ধন নম্বর প্রদান করতে হবে।\n\nএরপর ঘোষণা দিতে হবে যে:\n\n- প্রদত্ত তথ্যসমূহ সঠিক\n- পূর্বে জন্ম নিবন্ধন করা হয়নি\n\nসংযুক্ত করতে হবে: - জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nসংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৭: তথ্য যাচাই ও OTP: এই ধাপে আবেদনকারীর পূরণকৃত সকল তথ্য প্রদর্শিত হবে।\n\nসকল তথ্য সতর্কতার সাথে যাচাই করতে হবে।\n\nভুল থাকলে \"পূর্ববর্তী\" বাটনে ফিরে গিয়ে সংশোধন করতে হবে।\n\nতথ্য সঠিক হলে:\n\n- ইমেইল অথবা\n- মোবাইল নম্বর\n\nপ্রদান করতে হবে।\n\nOTP গ্রহণ: - দূতাবাসের মাধ্যমে আবেদনের ক্ষেত্রে ইমেইলে OTP যাবে।\n- বাংলাদেশের অভ্যন্তরে আবেদনের ক্ষেত্রে মোবাইল নম্বরে OTP যাবে।\n\nOTP প্রদান করার পর \"সাবমিট\" বাটনে ক্লিক করুন।\n\nSources: birth_and_death_registration_rules_2018_বিধি_১০_01, bdris_faq_01_q12, birth_registration_application_process_cleaned_009_01, birth_registration_application_process_cleaned_018_01, bdris_faq_01_q02, birth_and_death_registration_rules_2018_বিধি_৯_04, birth_and_death_registration_rules_2018_বিধি_২০_01, birth_registration_application_process_cleaned_008_01",
+        "source_ids": [
+          "bdris_faq_01_q02",
+          "bdris_faq_01_q12",
+          "birth_and_death_registration_rules_2018_বিধি_৯_04",
+          "birth_and_death_registration_rules_2018_বিধি_১০_01",
+          "birth_and_death_registration_rules_2018_বিধি_২০_01",
+          "birth_registration_application_process_cleaned_008_01",
+          "birth_registration_application_process_cleaned_009_01",
+          "birth_registration_application_process_cleaned_018_01",
+          "birth_registration_application_process_cleaned_002_01",
+          "birth_registration_application_process_cleaned_016_01",
+          "birth_registration_application_process_cleaned_019_01",
+          "birth_registration_application_process_cleaned_020_01"
+        ],
+        "top_sources": [
+          {
+            "id": "bdris_faq_01_q02",
+            "document_type": "faq",
+            "category": "manual_to_online_migration",
+            "section_title": null,
+            "score": 0.9338343739509583,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "bdris_faq_01_q12",
+            "document_type": "faq",
+            "category": "overseas_registration",
+            "section_title": null,
+            "score": 0.914527952671051,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_04",
+            "document_type": "legal_rules",
+            "category": null,
+            "section_title": "জন্ম নিবন্ধন",
+            "score": 0.8881774854660034,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১০_01",
+            "document_type": "legal_rules",
+            "category": null,
+            "section_title": "প্রবাসীগণের জন্ম নিবন্ধন",
+            "score": 0.8865545916557311,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_২০_01",
+            "document_type": "legal_rules",
+            "category": null,
+            "section_title": "অনলাইনে আবেদন বা তথ্য প্রদান",
+            "score": 0.8796500277519226,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_008_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ১: ওয়েবসাইটে প্রবেশ",
+            "score": 0.8176710653305054,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_009_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ২: সনদ সংগ্রহের স্থান নির্বাচন",
+            "score": 0.0,
+            "retrievers": [
+              "safe_path"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_018_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "OTP গ্রহণ",
+            "score": 0.0,
+            "retrievers": [
+              "safe_path"
+            ]
+          }
+        ],
+        "note": "Model-independent controlled CivicRAG answer; safe-answer path returned before LLM generation."
+      },
+      {
+        "model": "llama3",
+        "elapsed": null,
+        "answer": "আপনার প্রশ্নে কয়েকটি আলাদা বিষয় আছে। প্রাপ্ত সরকারি/উৎস ডেটার ভিত্তিতে অংশভাগ করে উত্তর দিচ্ছি:\n\n1. দেশের বাইরে থাকলে\nপ্রবাসে জন্ম নিবন্ধনের ক্ষেত্রে বিধি ১০ অনুযায়ী বিদেশে অবস্থিত বাংলাদেশ দূতাবাসের নিবন্ধক প্রয়োজনীয় তথ্য/প্রমাণ পেলে জন্ম নিবন্ধন করতে পারেন।\n\nএখানে আবেদনকারীকে নির্বাচন করতে হবে তিনি কোথা থেকে জন্ম সনদ গ্রহণ বা সংগ্রহ করতে চান।\n\nনিম্নোক্ত ঠিকানার ভিত্তিতে সনদ সংগ্রহ করা যেতে পারে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n\nসাধারণভাবে স্থায়ী ঠিকানা থেকে সনদ সংগ্রহ করার জন্য উৎসাহিত করা হয়।\n\nবিদেশে জন্মগ্রহণকারী শিশু নিকটস্থ বাংলাদেশ দূতাবাস থেকে জন্ম সনদ সংগ্রহ করতে পারে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nবিদেশে নিবন্ধন করে দেশে ফেরা বা মূল অফিস-সংক্রান্ত ক্ষেত্রে: সংশোধন বা পুনঃমুদ্রণ কেবল মূল নিবন্ধন অফিস থেকেই করা যাবে। তবে স্থানীয় নিবন্ধন অফিসের সহায়তায় বা নাগরিক নিজে অনলাইনে মূল অফিস বরাবর আবেদন করতে পারেন। আবেদনের অনুলিপি রেজিস্ট্রার জেনারেলের কার্যালয়ে (arg1bdr@gmail.com) পাঠালে প্রয়োজনে পররাষ্ট্র মন্ত্রণালয়ের সঙ্গে যোগাযোগ করে নিষ্পত্তি করা হবে।\n\nভবিষ্যতে করণিক ভুল সংশোধন বা প্রতিলিপি প্রদানের জন্য যেকোনো নিবন্ধন অফিস থেকে সুবিধা পাওয়ার ব্যবস্থা গ্রহণ করা হবে।\n\nতবে আপনি যদি বাংলাদেশে জন্মগ্রহণ করে থাকেন কিন্তু আগে অনলাইনে নিবন্ধন না হয়ে থাকে, তাহলে মূল/স্থানীয় নিবন্ধন কার্যালয়ের রেকর্ডও গুরুত্বপূর্ণ হতে পারে।\n\n2. পুরোনো/ম্যানুয়াল নিবন্ধন অনলাইনে না থাকলে\nম্যানুয়াল জন্ম নিবন্ধনসমূহ অনলাইনে অন্তর্ভুক্তির জন্য একাধিকবার সময় দেওয়া হয়েছে। এখন একই নম্বর দিয়ে অনলাইনে অন্তর্ভুক্তির সুযোগ নেই। যে এলাকায় হাতে লেখা নিবন্ধন হয়েছিল সেই কার্যালয়ে রক্ষিত বইতে তথ্য পাওয়া গেলে, নিবন্ধক সরাসরি সেই তথ্য দিয়ে অনলাইন নিবন্ধন করে দেবেন — যদি ইতঃপূর্বে অন্য কোথাও নিবন্ধন না হয়ে থাকে। তবে নিবন্ধন নম্বর পরিবর্তিত হবে; এতে নাগরিকের কোনো ক্ষতি বা অসুবিধা হবে না।\n\n3. জন্ম নিবন্ধনের আবেদন\nআবেদন করার পূর্ব প্রস্তুতি: নতুন জন্ম নিবন্ধন আবেদনের পূর্বে প্রয়োজনীয় তথ্য ও ডকুমেন্ট সংগ্রহ করে রাখুন।\n\nজন্ম নিবন্ধনের ক্ষেত্রে নিম্নোক্ত তিন ধরনের ঠিকানার তথ্য প্রয়োজন হবে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রতিটি ঠিকানার জন্য নিম্নোক্ত তথ্য প্রয়োজন হতে পারে:\n\n- ইউনিয়ন পরিষদ/পৌরসভা/সিটি কর্পোরেশন/ক্যান্টনমেন্টের নাম\n- ওয়ার্ড নম্বর\n- ডাকঘর\n- গ্রাম/পাড়া/মহল্লা\n- বাসা ও সড়কের নাম ও নম্বর\n\nসকল তথ্য বাংলা ও ইংরেজি উভয় ভাষায় সঠিক বানানে লিখতে হবে।\n\nধাপ ১: ওয়েবসাইটে প্রবেশ: নতুন জন্ম নিবন্ধনের জন্য:\n\nhttps://bdris.gov.bd\n\nওয়েবসাইটে প্রবেশ করুন।\n\nহোমপেজে \"জন্ম নিবন্ধন\" মেনু নির্বাচন করুন।\n\nএরপর \"জন্ম নিবন্ধন আবেদন\" অপশনে ক্লিক করুন।\n\nধাপ ২: সনদ সংগ্রহের স্থান নির্বাচন: এখানে আবেদনকারীকে নির্বাচন করতে হবে তিনি কোথা থেকে জন্ম সনদ গ্রহণ বা সংগ্রহ করতে চান।\n\nনিম্নোক্ত ঠিকানার ভিত্তিতে সনদ সংগ্রহ করা যেতে পারে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n\nসাধারণভাবে স্থায়ী ঠিকানা থেকে সনদ সংগ্রহ করার জন্য উৎসাহিত করা হয়।\n\nবিদেশে জন্মগ্রহণকারী শিশু নিকটস্থ বাংলাদেশ দূতাবাস থেকে জন্ম সনদ সংগ্রহ করতে পারে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৩: জন্ম তথ্য প্রদান: এই ধাপে আবেদনকারীর জন্মসংক্রান্ত তথ্য ধাপে ধাপে পূরণ করতে হবে।\n\nতথ্য প্রদানের সময় সতর্কতা অবলম্বন করতে হবে।\n\nজন্ম তারিখ প্রদান করার পর সিস্টেম প্রয়োজনীয় নির্দেশনা প্রদর্শন করবে।\n\nনির্দেশনা পড়ে \"আমার কাছে এই ডকুমেন্টগুলো আছে\" অপশন নির্বাচন করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৪: পিতা ও মাতার তথ্য প্রদান: এই ধাপে পিতা ও মাতার তথ্য প্রদান করতে হবে।\n\nধাপ ৫: স্থায়ী ও বর্তমান ঠিকানা প্রদান: এই ধাপে:\n\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রদান করতে হবে।\n\nযদি জন্মস্থান এবং স্থায়ী ঠিকানা একই হয়, তাহলে নির্ধারিত ঘরে টিক চিহ্ন দিলে তথ্য স্বয়ংক্রিয়ভাবে পূরণ হবে।\n\nঅন্যথায় স্থায়ী ঠিকানা ও বর্তমান ঠিকানার তথ্য আলাদাভাবে পূরণ করতে হবে।\n\nসব তথ্য সঠিকভাবে পূরণ করার পর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৬: আবেদনকারীর তথ্য ও ডকুমেন্ট সংযুক্তি: যদি ব্যক্তি নিজে আবেদন করেন, তাহলে \"নিজ\" অপশন নির্বাচন করতে হবে।\n\nঅন্য কেউ আবেদন করলে \"অন্যান্য\" অপশন নির্বাচন করতে হবে।\n\n\"অন্যান্য\" নির্বাচন করলে আবেদনকারীর জন্ম নিবন্ধন নম্বর প্রদান করতে হবে।\n\nএরপর ঘোষণা দিতে হবে যে:\n\n- প্রদত্ত তথ্যসমূহ সঠিক\n- পূর্বে জন্ম নিবন্ধন করা হয়নি\n\nসংযুক্ত করতে হবে: - জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nসংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৭: তথ্য যাচাই ও OTP: এই ধাপে আবেদনকারীর পূরণকৃত সকল তথ্য প্রদর্শিত হবে।\n\nসকল তথ্য সতর্কতার সাথে যাচাই করতে হবে।\n\nভুল থাকলে \"পূর্ববর্তী\" বাটনে ফিরে গিয়ে সংশোধন করতে হবে।\n\nতথ্য সঠিক হলে:\n\n- ইমেইল অথবা\n- মোবাইল নম্বর\n\nপ্রদান করতে হবে।\n\nOTP গ্রহণ: - দূতাবাসের মাধ্যমে আবেদনের ক্ষেত্রে ইমেইলে OTP যাবে।\n- বাংলাদেশের অভ্যন্তরে আবেদনের ক্ষেত্রে মোবাইল নম্বরে OTP যাবে।\n\nOTP প্রদান করার পর \"সাবমিট\" বাটনে ক্লিক করুন।\n\nSources: birth_and_death_registration_rules_2018_বিধি_১০_01, bdris_faq_01_q12, birth_registration_application_process_cleaned_009_01, birth_registration_application_process_cleaned_018_01, bdris_faq_01_q02, birth_and_death_registration_rules_2018_বিধি_৯_04, birth_and_death_registration_rules_2018_বিধি_২০_01, birth_registration_application_process_cleaned_008_01",
+        "source_ids": [
+          "bdris_faq_01_q02",
+          "bdris_faq_01_q12",
+          "birth_and_death_registration_rules_2018_বিধি_৯_04",
+          "birth_and_death_registration_rules_2018_বিধি_১০_01",
+          "birth_and_death_registration_rules_2018_বিধি_২০_01",
+          "birth_registration_application_process_cleaned_008_01",
+          "birth_registration_application_process_cleaned_009_01",
+          "birth_registration_application_process_cleaned_018_01",
+          "birth_registration_application_process_cleaned_002_01",
+          "birth_registration_application_process_cleaned_016_01",
+          "birth_registration_application_process_cleaned_019_01",
+          "birth_registration_application_process_cleaned_020_01"
+        ],
+        "top_sources": [
+          {
+            "id": "bdris_faq_01_q02",
+            "document_type": "faq",
+            "category": "manual_to_online_migration",
+            "section_title": null,
+            "score": 0.9338343739509583,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "bdris_faq_01_q12",
+            "document_type": "faq",
+            "category": "overseas_registration",
+            "section_title": null,
+            "score": 0.914527952671051,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_04",
+            "document_type": "legal_rules",
+            "category": null,
+            "section_title": "জন্ম নিবন্ধন",
+            "score": 0.8881774854660034,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১০_01",
+            "document_type": "legal_rules",
+            "category": null,
+            "section_title": "প্রবাসীগণের জন্ম নিবন্ধন",
+            "score": 0.8865545916557311,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_২০_01",
+            "document_type": "legal_rules",
+            "category": null,
+            "section_title": "অনলাইনে আবেদন বা তথ্য প্রদান",
+            "score": 0.8796500277519226,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_008_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ১: ওয়েবসাইটে প্রবেশ",
+            "score": 0.8176710653305054,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_009_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ২: সনদ সংগ্রহের স্থান নির্বাচন",
+            "score": 0.0,
+            "retrievers": [
+              "safe_path"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_018_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "OTP গ্রহণ",
+            "score": 0.0,
+            "retrievers": [
+              "safe_path"
+            ]
+          }
+        ],
+        "note": "Model-independent controlled CivicRAG answer; safe-answer path returned before LLM generation."
+      },
+      {
+        "model": "qwen2.5:7b",
+        "elapsed": null,
+        "answer": "আপনার প্রশ্নে কয়েকটি আলাদা বিষয় আছে। প্রাপ্ত সরকারি/উৎস ডেটার ভিত্তিতে অংশভাগ করে উত্তর দিচ্ছি:\n\n1. দেশের বাইরে থাকলে\nপ্রবাসে জন্ম নিবন্ধনের ক্ষেত্রে বিধি ১০ অনুযায়ী বিদেশে অবস্থিত বাংলাদেশ দূতাবাসের নিবন্ধক প্রয়োজনীয় তথ্য/প্রমাণ পেলে জন্ম নিবন্ধন করতে পারেন।\n\nএখানে আবেদনকারীকে নির্বাচন করতে হবে তিনি কোথা থেকে জন্ম সনদ গ্রহণ বা সংগ্রহ করতে চান।\n\nনিম্নোক্ত ঠিকানার ভিত্তিতে সনদ সংগ্রহ করা যেতে পারে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n\nসাধারণভাবে স্থায়ী ঠিকানা থেকে সনদ সংগ্রহ করার জন্য উৎসাহিত করা হয়।\n\nবিদেশে জন্মগ্রহণকারী শিশু নিকটস্থ বাংলাদেশ দূতাবাস থেকে জন্ম সনদ সংগ্রহ করতে পারে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nবিদেশে নিবন্ধন করে দেশে ফেরা বা মূল অফিস-সংক্রান্ত ক্ষেত্রে: সংশোধন বা পুনঃমুদ্রণ কেবল মূল নিবন্ধন অফিস থেকেই করা যাবে। তবে স্থানীয় নিবন্ধন অফিসের সহায়তায় বা নাগরিক নিজে অনলাইনে মূল অফিস বরাবর আবেদন করতে পারেন। আবেদনের অনুলিপি রেজিস্ট্রার জেনারেলের কার্যালয়ে (arg1bdr@gmail.com) পাঠালে প্রয়োজনে পররাষ্ট্র মন্ত্রণালয়ের সঙ্গে যোগাযোগ করে নিষ্পত্তি করা হবে।\n\nভবিষ্যতে করণিক ভুল সংশোধন বা প্রতিলিপি প্রদানের জন্য যেকোনো নিবন্ধন অফিস থেকে সুবিধা পাওয়ার ব্যবস্থা গ্রহণ করা হবে।\n\nতবে আপনি যদি বাংলাদেশে জন্মগ্রহণ করে থাকেন কিন্তু আগে অনলাইনে নিবন্ধন না হয়ে থাকে, তাহলে মূল/স্থানীয় নিবন্ধন কার্যালয়ের রেকর্ডও গুরুত্বপূর্ণ হতে পারে।\n\n2. পুরোনো/ম্যানুয়াল নিবন্ধন অনলাইনে না থাকলে\nম্যানুয়াল জন্ম নিবন্ধনসমূহ অনলাইনে অন্তর্ভুক্তির জন্য একাধিকবার সময় দেওয়া হয়েছে। এখন একই নম্বর দিয়ে অনলাইনে অন্তর্ভুক্তির সুযোগ নেই। যে এলাকায় হাতে লেখা নিবন্ধন হয়েছিল সেই কার্যালয়ে রক্ষিত বইতে তথ্য পাওয়া গেলে, নিবন্ধক সরাসরি সেই তথ্য দিয়ে অনলাইন নিবন্ধন করে দেবেন — যদি ইতঃপূর্বে অন্য কোথাও নিবন্ধন না হয়ে থাকে। তবে নিবন্ধন নম্বর পরিবর্তিত হবে; এতে নাগরিকের কোনো ক্ষতি বা অসুবিধা হবে না।\n\n3. জন্ম নিবন্ধনের আবেদন\nআবেদন করার পূর্ব প্রস্তুতি: নতুন জন্ম নিবন্ধন আবেদনের পূর্বে প্রয়োজনীয় তথ্য ও ডকুমেন্ট সংগ্রহ করে রাখুন।\n\nজন্ম নিবন্ধনের ক্ষেত্রে নিম্নোক্ত তিন ধরনের ঠিকানার তথ্য প্রয়োজন হবে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রতিটি ঠিকানার জন্য নিম্নোক্ত তথ্য প্রয়োজন হতে পারে:\n\n- ইউনিয়ন পরিষদ/পৌরসভা/সিটি কর্পোরেশন/ক্যান্টনমেন্টের নাম\n- ওয়ার্ড নম্বর\n- ডাকঘর\n- গ্রাম/পাড়া/মহল্লা\n- বাসা ও সড়কের নাম ও নম্বর\n\nসকল তথ্য বাংলা ও ইংরেজি উভয় ভাষায় সঠিক বানানে লিখতে হবে।\n\nধাপ ১: ওয়েবসাইটে প্রবেশ: নতুন জন্ম নিবন্ধনের জন্য:\n\nhttps://bdris.gov.bd\n\nওয়েবসাইটে প্রবেশ করুন।\n\nহোমপেজে \"জন্ম নিবন্ধন\" মেনু নির্বাচন করুন।\n\nএরপর \"জন্ম নিবন্ধন আবেদন\" অপশনে ক্লিক করুন।\n\nধাপ ২: সনদ সংগ্রহের স্থান নির্বাচন: এখানে আবেদনকারীকে নির্বাচন করতে হবে তিনি কোথা থেকে জন্ম সনদ গ্রহণ বা সংগ্রহ করতে চান।\n\nনিম্নোক্ত ঠিকানার ভিত্তিতে সনদ সংগ্রহ করা যেতে পারে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n\nসাধারণভাবে স্থায়ী ঠিকানা থেকে সনদ সংগ্রহ করার জন্য উৎসাহিত করা হয়।\n\nবিদেশে জন্মগ্রহণকারী শিশু নিকটস্থ বাংলাদেশ দূতাবাস থেকে জন্ম সনদ সংগ্রহ করতে পারে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৩: জন্ম তথ্য প্রদান: এই ধাপে আবেদনকারীর জন্মসংক্রান্ত তথ্য ধাপে ধাপে পূরণ করতে হবে।\n\nতথ্য প্রদানের সময় সতর্কতা অবলম্বন করতে হবে।\n\nজন্ম তারিখ প্রদান করার পর সিস্টেম প্রয়োজনীয় নির্দেশনা প্রদর্শন করবে।\n\nনির্দেশনা পড়ে \"আমার কাছে এই ডকুমেন্টগুলো আছে\" অপশন নির্বাচন করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৪: পিতা ও মাতার তথ্য প্রদান: এই ধাপে পিতা ও মাতার তথ্য প্রদান করতে হবে।\n\nধাপ ৫: স্থায়ী ও বর্তমান ঠিকানা প্রদান: এই ধাপে:\n\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রদান করতে হবে।\n\nযদি জন্মস্থান এবং স্থায়ী ঠিকানা একই হয়, তাহলে নির্ধারিত ঘরে টিক চিহ্ন দিলে তথ্য স্বয়ংক্রিয়ভাবে পূরণ হবে।\n\nঅন্যথায় স্থায়ী ঠিকানা ও বর্তমান ঠিকানার তথ্য আলাদাভাবে পূরণ করতে হবে।\n\nসব তথ্য সঠিকভাবে পূরণ করার পর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৬: আবেদনকারীর তথ্য ও ডকুমেন্ট সংযুক্তি: যদি ব্যক্তি নিজে আবেদন করেন, তাহলে \"নিজ\" অপশন নির্বাচন করতে হবে।\n\nঅন্য কেউ আবেদন করলে \"অন্যান্য\" অপশন নির্বাচন করতে হবে।\n\n\"অন্যান্য\" নির্বাচন করলে আবেদনকারীর জন্ম নিবন্ধন নম্বর প্রদান করতে হবে।\n\nএরপর ঘোষণা দিতে হবে যে:\n\n- প্রদত্ত তথ্যসমূহ সঠিক\n- পূর্বে জন্ম নিবন্ধন করা হয়নি\n\nসংযুক্ত করতে হবে: - জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nসংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৭: তথ্য যাচাই ও OTP: এই ধাপে আবেদনকারীর পূরণকৃত সকল তথ্য প্রদর্শিত হবে।\n\nসকল তথ্য সতর্কতার সাথে যাচাই করতে হবে।\n\nভুল থাকলে \"পূর্ববর্তী\" বাটনে ফিরে গিয়ে সংশোধন করতে হবে।\n\nতথ্য সঠিক হলে:\n\n- ইমেইল অথবা\n- মোবাইল নম্বর\n\nপ্রদান করতে হবে।\n\nOTP গ্রহণ: - দূতাবাসের মাধ্যমে আবেদনের ক্ষেত্রে ইমেইলে OTP যাবে।\n- বাংলাদেশের অভ্যন্তরে আবেদনের ক্ষেত্রে মোবাইল নম্বরে OTP যাবে।\n\nOTP প্রদান করার পর \"সাবমিট\" বাটনে ক্লিক করুন।\n\nSources: birth_and_death_registration_rules_2018_বিধি_১০_01, bdris_faq_01_q12, birth_registration_application_process_cleaned_009_01, birth_registration_application_process_cleaned_018_01, bdris_faq_01_q02, birth_and_death_registration_rules_2018_বিধি_৯_04, birth_and_death_registration_rules_2018_বিধি_২০_01, birth_registration_application_process_cleaned_008_01",
+        "source_ids": [
+          "bdris_faq_01_q02",
+          "bdris_faq_01_q12",
+          "birth_and_death_registration_rules_2018_বিধি_৯_04",
+          "birth_and_death_registration_rules_2018_বিধি_১০_01",
+          "birth_and_death_registration_rules_2018_বিধি_২০_01",
+          "birth_registration_application_process_cleaned_008_01",
+          "birth_registration_application_process_cleaned_009_01",
+          "birth_registration_application_process_cleaned_018_01",
+          "birth_registration_application_process_cleaned_002_01",
+          "birth_registration_application_process_cleaned_016_01",
+          "birth_registration_application_process_cleaned_019_01",
+          "birth_registration_application_process_cleaned_020_01"
+        ],
+        "top_sources": [
+          {
+            "id": "bdris_faq_01_q02",
+            "document_type": "faq",
+            "category": "manual_to_online_migration",
+            "section_title": null,
+            "score": 0.9338343739509583,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "bdris_faq_01_q12",
+            "document_type": "faq",
+            "category": "overseas_registration",
+            "section_title": null,
+            "score": 0.914527952671051,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_04",
+            "document_type": "legal_rules",
+            "category": null,
+            "section_title": "জন্ম নিবন্ধন",
+            "score": 0.8881774854660034,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১০_01",
+            "document_type": "legal_rules",
+            "category": null,
+            "section_title": "প্রবাসীগণের জন্ম নিবন্ধন",
+            "score": 0.8865545916557311,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_২০_01",
+            "document_type": "legal_rules",
+            "category": null,
+            "section_title": "অনলাইনে আবেদন বা তথ্য প্রদান",
+            "score": 0.8796500277519226,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_008_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ১: ওয়েবসাইটে প্রবেশ",
+            "score": 0.8176710653305054,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_009_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "ধাপ ২: সনদ সংগ্রহের স্থান নির্বাচন",
+            "score": 0.0,
+            "retrievers": [
+              "safe_path"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_018_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "OTP গ্রহণ",
+            "score": 0.0,
+            "retrievers": [
+              "safe_path"
+            ]
+          }
+        ],
+        "note": "Model-independent controlled CivicRAG answer; safe-answer path returned before LLM generation."
+      }
+    ]
+  },
+  {
+    "question_index": 7,
+    "question": "আমার ছেলের বয়স ১৫ কিন্তু ভুলবশত বাবা মায়ের নামের স্থানে আমার বড় ভাইয়ের এবং তার স্ত্রীর নাম দেওয়া হয়েছিল এবং এভাবেই পড়াশোনা চলছিল কিন্তু বর্তমানে বিষয়টি জরুরী ভিত্তিতে আমার নাম এবং আমার স্ত্রীর নাম অর্থাৎ সঠিক বাবা মার নাম পরিবর্তন বা সংশোধন করতে হবে তাই এই ক্ষেত্রে অনলাইনে কি কি প্রক্রিয়া এবং কি কি কাগজ পেপার আপলোড করতে হবে যার সবকিছুই আমার কাছে আছে এবং প্রয়োজনে আমার আপন বড় ভাই এই বিষয়ে উপস্থিত থেকেও সহযোগিতা করতে পারবেন এবং উল্লেখ্য যে আমার ছেলের টিকা কার্ড থেকে শুরু করে প্রথমে যে জন্ম নিবন্ধন করা হয়েছিল তার মূল কপি আছে শুধুমাত্র স্কুলে ভর্তি হওয়ার সময় আমার বড় ভাই এবং তার স্ত্রীর নাম দিয়ে তুলে বিদ্যালয়ে পড়াশোনা শুরু হয়েছিল এমতাবস্থায় কিভাবে অত্যন্ত দ্রুত এবং সহজ মাধ্যমে আমার ছেলের বাবা মার নাম পরিবর্তন করতে পারবো?",
+    "runs": [
+      {
+        "model": "llama3.2",
+        "elapsed": 18.07,
+        "answer": "আপনার প্রশ্নে কয়েকটি আলাদা বিষয় আছে। প্রাপ্ত সরকারি/উৎস ডেটার ভিত্তিতে অংশভাগ করে উত্তর দিচ্ছি:\n\n1. পিতা-মাতার নাম সংশোধন\nনাম/ঠিকানা/তথ্য ভুল হলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করতে হবে।\n\nপিতা বা মাতার নাম সংশোধন সংক্রান্ত নির্দেশনা: আপনার পিতা বা মাতার নাম সংশোধন করতে হলে নিম্নোক্ত নির্দেশনা অনুসরণ করতে হবে।\n\nপরিস্থিতি ১: পিতা বা মাতার জন্ম নিবন্ধন নম্বর আছে: যদি আপনার পিতা বা মাতার জন্ম নিবন্ধন নম্বর থাকে, তাহলে প্রথমে তাদের জন্ম নিবন্ধন নম্বর ব্যবহার করে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করে তাদের নাম সংশোধন করতে হবে।\n\nযদি পূর্বে জন্ম নিবন্ধনে পিতা বা মাতার জন্ম নিবন্ধন নম্বর যুক্ত করা থাকে: আপনার জন্ম নিবন্ধন করার সময় যদি পিতা বা মাতার জন্ম নিবন্ধন নম্বর প্রদান করা হয়ে থাকে, তাহলে তাদের নাম সংশোধনের পর আপনার জন্ম নিবন্ধন সনদ পুনর্মুদ্রণ করলে সেখানে সংশোধিত নাম স্বয়ংক্রিয়ভাবে প্রদর্শিত হবে।\n\nপরিস্থিতি ২: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই এবং জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে: যদি:\n\n- পিতা বা মাতার জন্ম নিবন্ধন নম্বর না থাকে, এবং\n- আপনার জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে হয়,\n\nতাহলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করার সময় পিতা বা মাতার নাম সংশোধন করা যাবে।\n\nজন্ম তারিখ ব্যতীত নাম, পিতার নাম, মাতার নাম, ঠিকানা ইত্যাদি তথ্য সংশোধনের আবেদন ফি: ৫০ টাকা।\n\n2. ফাইল সংযুক্তি/আপলোড সমস্যা\nসংযুক্ত করতে হবে: - জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nসংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nফরম পূরণের সময় সতর্কতা: ফরম পূরণের সময় ডট (.), হাইফেন (-), কোলন (:) ইত্যাদি চিহ্ন ব্যবহার না করাই উত্তম।\n\nউদাহরণ:\n\n- `MD.` না লিখে `MD` লিখুন।\n- এরপর স্পেস দিয়ে সম্পূর্ণ নাম লিখুন।\n\nফরম পূরণের সময় দেশ, বিভাগ, জেলা, উপজেলা থেকে শুরু করে বাসা ও সড়কের নাম ও নম্বর পর্যন্ত তথ্য ধাপে ধাপে প্রদান করুন।\n\nসংযুক্তি হিসেবে নিম্নোক্ত প্রমাণক আপলোড করতে হবে:\n\n- জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nআপনার বর্ণিত `প্রয়োজনীয় ফাইল আপলোড করেননি` ধরনের নির্দিষ্ট error message-এর পূর্ণ troubleshooting এই ডেটাসেটে নেই। তবে প্রমাণকগুলো সঠিক আলাদা ঘরে যুক্ত হয়েছে কিনা, ফাইল ফরম্যাট/সাইজ গ্রহণযোগ্য কিনা, এবং সব বাধ্যতামূলক প্রমাণক সংযুক্ত হয়েছে কিনা যাচাই করা উচিত। সমস্যা চলতে থাকলে সংশ্লিষ্ট নিবন্ধন কার্যালয় বা BDRIS সহায়তার সঙ্গে যোগাযোগ করা নিরাপদ।\n\n3. জন্ম নিবন্ধনের আবেদন\nআবেদন করার পূর্ব প্রস্তুতি: নতুন জন্ম নিবন্ধন আবেদনের পূর্বে প্রয়োজনীয় তথ্য ও ডকুমেন্ট সংগ্রহ করে রাখুন।\n\nজন্ম নিবন্ধনের ক্ষেত্রে নিম্নোক্ত তিন ধরনের ঠিকানার তথ্য প্রয়োজন হবে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রতিটি ঠিকানার জন্য নিম্নোক্ত তথ্য প্রয়োজন হতে পারে:\n\n- ইউনিয়ন পরিষদ/পৌরসভা/সিটি কর্পোরেশন/ক্যান্টনমেন্টের নাম\n- ওয়ার্ড নম্বর\n- ডাকঘর\n- গ্রাম/পাড়া/মহল্লা\n- বাসা ও সড়কের নাম ও নম্বর\n\nসকল তথ্য বাংলা ও ইংরেজি উভয় ভাষায় সঠিক বানানে লিখতে হবে।\n\nধাপ ১: ওয়েবসাইটে প্রবেশ: নতুন জন্ম নিবন্ধনের জন্য:\n\nhttps://bdris.gov.bd\n\nওয়েবসাইটে প্রবেশ করুন।\n\nহোমপেজে \"জন্ম নিবন্ধন\" মেনু নির্বাচন করুন।\n\nএরপর \"জন্ম নিবন্ধন আবেদন\" অপশনে ক্লিক করুন।\n\nধাপ ২: সনদ সংগ্রহের স্থান নির্বাচন: এখানে আবেদনকারীকে নির্বাচন করতে হবে তিনি কোথা থেকে জন্ম সনদ গ্রহণ বা সংগ্রহ করতে চান।\n\nনিম্নোক্ত ঠিকানার ভিত্তিতে সনদ সংগ্রহ করা যেতে পারে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n\nসাধারণভাবে স্থায়ী ঠিকানা থেকে সনদ সংগ্রহ করার জন্য উৎসাহিত করা হয়।\n\nবিদেশে জন্মগ্রহণকারী শিশু নিকটস্থ বাংলাদেশ দূতাবাস থেকে জন্ম সনদ সংগ্রহ করতে পারে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৩: জন্ম তথ্য প্রদান: এই ধাপে আবেদনকারীর জন্মসংক্রান্ত তথ্য ধাপে ধাপে পূরণ করতে হবে।\n\nতথ্য প্রদানের সময় সতর্কতা অবলম্বন করতে হবে।\n\nজন্ম তারিখ প্রদান করার পর সিস্টেম প্রয়োজনীয় নির্দেশনা প্রদর্শন করবে।\n\nনির্দেশনা পড়ে \"আমার কাছে এই ডকুমেন্টগুলো আছে\" অপশন নির্বাচন করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৪: পিতা ও মাতার তথ্য প্রদান: এই ধাপে পিতা ও মাতার তথ্য প্রদান করতে হবে।\n\nধাপ ৫: স্থায়ী ও বর্তমান ঠিকানা প্রদান: এই ধাপে:\n\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রদান করতে হবে।\n\nযদি জন্মস্থান এবং স্থায়ী ঠিকানা একই হয়, তাহলে নির্ধারিত ঘরে টিক চিহ্ন দিলে তথ্য স্বয়ংক্রিয়ভাবে পূরণ হবে।\n\nঅন্যথায় স্থায়ী ঠিকানা ও বর্তমান ঠিকানার তথ্য আলাদাভাবে পূরণ করতে হবে।\n\nসব তথ্য সঠিকভাবে পূরণ করার পর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৬: আবেদনকারীর তথ্য ও ডকুমেন্ট সংযুক্তি: যদি ব্যক্তি নিজে আবেদন করেন, তাহলে \"নিজ\" অপশন নির্বাচন করতে হবে।\n\nঅন্য কেউ আবেদন করলে \"অন্যান্য\" অপশন নির্বাচন করতে হবে।\n\n\"অন্যান্য\" নির্বাচন করলে আবেদনকারীর জন্ম নিবন্ধন নম্বর প্রদান করতে হবে।\n\nএরপর ঘোষণা দিতে হবে যে:\n\n- প্রদত্ত তথ্যসমূহ সঠিক\n- পূর্বে জন্ম নিবন্ধন করা হয়নি\n\nসংযুক্ত করতে হবে: - জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nসংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৭: তথ্য যাচাই ও OTP: এই ধাপে আবেদনকারীর পূরণকৃত সকল তথ্য প্রদর্শিত হবে।\n\nসকল তথ্য সতর্কতার সাথে যাচাই করতে হবে।\n\nভুল থাকলে \"পূর্ববর্তী\" বাটনে ফিরে গিয়ে সংশোধন করতে হবে।\n\nতথ্য সঠিক হলে:\n\n- ইমেইল অথবা\n- মোবাইল নম্বর\n\nপ্রদান করতে হবে।\n\nOTP গ্রহণ: - দূতাবাসের মাধ্যমে আবেদনের ক্ষেত্রে ইমেইলে OTP যাবে।\n- বাংলাদেশের অভ্যন্তরে আবেদনের ক্ষেত্রে মোবাইল নম্বরে OTP যাবে।\n\nOTP প্রদান করার পর \"সাবমিট\" বাটনে ক্লিক করুন।\n\nSources: application_for_birth_information_correction_cleaned_002_01, application_for_birth_information_correction_cleaned_003_01, application_for_birth_information_correction_cleaned_004_01, application_for_birth_information_correction_cleaned_006_01, application_for_birth_information_correction_cleaned_007_01, birth_and_death_registration_fees_cleaned_fee_row_05, application_for_birth_information_correction_cleaned_009_01, birth_registration_application_process_cleaned_016_01",
+        "source_ids": [
+          "application_for_birth_information_correction_cleaned_002_01",
+          "application_for_birth_information_correction_cleaned_009_01",
+          "application_for_birth_information_correction_cleaned_007_01",
+          "application_for_birth_information_correction_cleaned_003_01",
+          "application_for_birth_information_correction_cleaned_006_01",
+          "application_for_birth_information_correction_cleaned_004_01",
+          "birth_and_death_registration_fees_cleaned_fee_row_05",
+          "birth_registration_application_process_cleaned_016_01",
+          "birth_registration_application_process_cleaned_005_01",
+          "birth_registration_application_process_cleaned_008_01",
+          "birth_registration_application_process_cleaned_002_01",
+          "birth_registration_application_process_cleaned_019_01",
+          "birth_registration_application_process_cleaned_020_01"
+        ],
+        "top_sources": [
+          {
+            "id": "application_for_birth_information_correction_cleaned_002_01",
+            "document_type": "correction_process",
+            "category": null,
+            "section_title": "পিতা বা মাতার নাম সংশোধন সংক্রান্ত নির্দেশনা",
+            "score": 0.8699611902236939,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_009_01",
+            "document_type": "correction_process",
+            "category": null,
+            "section_title": "প্রয়োজনীয় প্রমাণপত্র",
+            "score": 0.4920111393928528,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_007_01",
+            "document_type": "correction_process",
+            "category": null,
+            "section_title": "গুরুত্বপূর্ণ তথ্য",
+            "score": 0.47659505367279054,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_003_01",
+            "document_type": "correction_process",
+            "category": null,
+            "section_title": "পরিস্থিতি ১: পিতা বা মাতার জন্ম নিবন্ধন নম্বর আছে",
+            "score": 0.4680994778871536,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_006_01",
+            "document_type": "correction_process",
+            "category": null,
+            "section_title": "পরিস্থিতি ২: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই এবং জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে",
+            "score": 0.4389661878347397,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_004_01",
+            "document_type": "correction_process",
+            "category": null,
+            "section_title": "যদি পূর্বে জন্ম নিবন্ধনে পিতা বা মাতার জন্ম নিবন্ধন নম্বর যুক্ত করা থাকে",
+            "score": 0.4290426468849182,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_fees_cleaned_fee_row_05",
+            "document_type": "fee_row",
+            "category": null,
+            "section_title": null,
+            "score": null,
+            "retrievers": null
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_016_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "সংযুক্ত করতে হবে",
+            "score": 0.0,
+            "retrievers": [
+              "safe_path"
+            ]
+          }
+        ],
+        "note": "Model-independent controlled CivicRAG answer; safe-answer path returned before LLM generation."
+      },
+      {
+        "model": "llama3",
+        "elapsed": null,
+        "answer": "আপনার প্রশ্নে কয়েকটি আলাদা বিষয় আছে। প্রাপ্ত সরকারি/উৎস ডেটার ভিত্তিতে অংশভাগ করে উত্তর দিচ্ছি:\n\n1. পিতা-মাতার নাম সংশোধন\nনাম/ঠিকানা/তথ্য ভুল হলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করতে হবে।\n\nপিতা বা মাতার নাম সংশোধন সংক্রান্ত নির্দেশনা: আপনার পিতা বা মাতার নাম সংশোধন করতে হলে নিম্নোক্ত নির্দেশনা অনুসরণ করতে হবে।\n\nপরিস্থিতি ১: পিতা বা মাতার জন্ম নিবন্ধন নম্বর আছে: যদি আপনার পিতা বা মাতার জন্ম নিবন্ধন নম্বর থাকে, তাহলে প্রথমে তাদের জন্ম নিবন্ধন নম্বর ব্যবহার করে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করে তাদের নাম সংশোধন করতে হবে।\n\nযদি পূর্বে জন্ম নিবন্ধনে পিতা বা মাতার জন্ম নিবন্ধন নম্বর যুক্ত করা থাকে: আপনার জন্ম নিবন্ধন করার সময় যদি পিতা বা মাতার জন্ম নিবন্ধন নম্বর প্রদান করা হয়ে থাকে, তাহলে তাদের নাম সংশোধনের পর আপনার জন্ম নিবন্ধন সনদ পুনর্মুদ্রণ করলে সেখানে সংশোধিত নাম স্বয়ংক্রিয়ভাবে প্রদর্শিত হবে।\n\nপরিস্থিতি ২: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই এবং জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে: যদি:\n\n- পিতা বা মাতার জন্ম নিবন্ধন নম্বর না থাকে, এবং\n- আপনার জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে হয়,\n\nতাহলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করার সময় পিতা বা মাতার নাম সংশোধন করা যাবে।\n\nজন্ম তারিখ ব্যতীত নাম, পিতার নাম, মাতার নাম, ঠিকানা ইত্যাদি তথ্য সংশোধনের আবেদন ফি: ৫০ টাকা।\n\n2. ফাইল সংযুক্তি/আপলোড সমস্যা\nসংযুক্ত করতে হবে: - জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nসংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nফরম পূরণের সময় সতর্কতা: ফরম পূরণের সময় ডট (.), হাইফেন (-), কোলন (:) ইত্যাদি চিহ্ন ব্যবহার না করাই উত্তম।\n\nউদাহরণ:\n\n- `MD.` না লিখে `MD` লিখুন।\n- এরপর স্পেস দিয়ে সম্পূর্ণ নাম লিখুন।\n\nফরম পূরণের সময় দেশ, বিভাগ, জেলা, উপজেলা থেকে শুরু করে বাসা ও সড়কের নাম ও নম্বর পর্যন্ত তথ্য ধাপে ধাপে প্রদান করুন।\n\nসংযুক্তি হিসেবে নিম্নোক্ত প্রমাণক আপলোড করতে হবে:\n\n- জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nআপনার বর্ণিত `প্রয়োজনীয় ফাইল আপলোড করেননি` ধরনের নির্দিষ্ট error message-এর পূর্ণ troubleshooting এই ডেটাসেটে নেই। তবে প্রমাণকগুলো সঠিক আলাদা ঘরে যুক্ত হয়েছে কিনা, ফাইল ফরম্যাট/সাইজ গ্রহণযোগ্য কিনা, এবং সব বাধ্যতামূলক প্রমাণক সংযুক্ত হয়েছে কিনা যাচাই করা উচিত। সমস্যা চলতে থাকলে সংশ্লিষ্ট নিবন্ধন কার্যালয় বা BDRIS সহায়তার সঙ্গে যোগাযোগ করা নিরাপদ।\n\n3. জন্ম নিবন্ধনের আবেদন\nআবেদন করার পূর্ব প্রস্তুতি: নতুন জন্ম নিবন্ধন আবেদনের পূর্বে প্রয়োজনীয় তথ্য ও ডকুমেন্ট সংগ্রহ করে রাখুন।\n\nজন্ম নিবন্ধনের ক্ষেত্রে নিম্নোক্ত তিন ধরনের ঠিকানার তথ্য প্রয়োজন হবে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রতিটি ঠিকানার জন্য নিম্নোক্ত তথ্য প্রয়োজন হতে পারে:\n\n- ইউনিয়ন পরিষদ/পৌরসভা/সিটি কর্পোরেশন/ক্যান্টনমেন্টের নাম\n- ওয়ার্ড নম্বর\n- ডাকঘর\n- গ্রাম/পাড়া/মহল্লা\n- বাসা ও সড়কের নাম ও নম্বর\n\nসকল তথ্য বাংলা ও ইংরেজি উভয় ভাষায় সঠিক বানানে লিখতে হবে।\n\nধাপ ১: ওয়েবসাইটে প্রবেশ: নতুন জন্ম নিবন্ধনের জন্য:\n\nhttps://bdris.gov.bd\n\nওয়েবসাইটে প্রবেশ করুন।\n\nহোমপেজে \"জন্ম নিবন্ধন\" মেনু নির্বাচন করুন।\n\nএরপর \"জন্ম নিবন্ধন আবেদন\" অপশনে ক্লিক করুন।\n\nধাপ ২: সনদ সংগ্রহের স্থান নির্বাচন: এখানে আবেদনকারীকে নির্বাচন করতে হবে তিনি কোথা থেকে জন্ম সনদ গ্রহণ বা সংগ্রহ করতে চান।\n\nনিম্নোক্ত ঠিকানার ভিত্তিতে সনদ সংগ্রহ করা যেতে পারে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n\nসাধারণভাবে স্থায়ী ঠিকানা থেকে সনদ সংগ্রহ করার জন্য উৎসাহিত করা হয়।\n\nবিদেশে জন্মগ্রহণকারী শিশু নিকটস্থ বাংলাদেশ দূতাবাস থেকে জন্ম সনদ সংগ্রহ করতে পারে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৩: জন্ম তথ্য প্রদান: এই ধাপে আবেদনকারীর জন্মসংক্রান্ত তথ্য ধাপে ধাপে পূরণ করতে হবে।\n\nতথ্য প্রদানের সময় সতর্কতা অবলম্বন করতে হবে।\n\nজন্ম তারিখ প্রদান করার পর সিস্টেম প্রয়োজনীয় নির্দেশনা প্রদর্শন করবে।\n\nনির্দেশনা পড়ে \"আমার কাছে এই ডকুমেন্টগুলো আছে\" অপশন নির্বাচন করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৪: পিতা ও মাতার তথ্য প্রদান: এই ধাপে পিতা ও মাতার তথ্য প্রদান করতে হবে।\n\nধাপ ৫: স্থায়ী ও বর্তমান ঠিকানা প্রদান: এই ধাপে:\n\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রদান করতে হবে।\n\nযদি জন্মস্থান এবং স্থায়ী ঠিকানা একই হয়, তাহলে নির্ধারিত ঘরে টিক চিহ্ন দিলে তথ্য স্বয়ংক্রিয়ভাবে পূরণ হবে।\n\nঅন্যথায় স্থায়ী ঠিকানা ও বর্তমান ঠিকানার তথ্য আলাদাভাবে পূরণ করতে হবে।\n\nসব তথ্য সঠিকভাবে পূরণ করার পর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৬: আবেদনকারীর তথ্য ও ডকুমেন্ট সংযুক্তি: যদি ব্যক্তি নিজে আবেদন করেন, তাহলে \"নিজ\" অপশন নির্বাচন করতে হবে।\n\nঅন্য কেউ আবেদন করলে \"অন্যান্য\" অপশন নির্বাচন করতে হবে।\n\n\"অন্যান্য\" নির্বাচন করলে আবেদনকারীর জন্ম নিবন্ধন নম্বর প্রদান করতে হবে।\n\nএরপর ঘোষণা দিতে হবে যে:\n\n- প্রদত্ত তথ্যসমূহ সঠিক\n- পূর্বে জন্ম নিবন্ধন করা হয়নি\n\nসংযুক্ত করতে হবে: - জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nসংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৭: তথ্য যাচাই ও OTP: এই ধাপে আবেদনকারীর পূরণকৃত সকল তথ্য প্রদর্শিত হবে।\n\nসকল তথ্য সতর্কতার সাথে যাচাই করতে হবে।\n\nভুল থাকলে \"পূর্ববর্তী\" বাটনে ফিরে গিয়ে সংশোধন করতে হবে।\n\nতথ্য সঠিক হলে:\n\n- ইমেইল অথবা\n- মোবাইল নম্বর\n\nপ্রদান করতে হবে।\n\nOTP গ্রহণ: - দূতাবাসের মাধ্যমে আবেদনের ক্ষেত্রে ইমেইলে OTP যাবে।\n- বাংলাদেশের অভ্যন্তরে আবেদনের ক্ষেত্রে মোবাইল নম্বরে OTP যাবে।\n\nOTP প্রদান করার পর \"সাবমিট\" বাটনে ক্লিক করুন।\n\nSources: application_for_birth_information_correction_cleaned_002_01, application_for_birth_information_correction_cleaned_003_01, application_for_birth_information_correction_cleaned_004_01, application_for_birth_information_correction_cleaned_006_01, application_for_birth_information_correction_cleaned_007_01, birth_and_death_registration_fees_cleaned_fee_row_05, application_for_birth_information_correction_cleaned_009_01, birth_registration_application_process_cleaned_016_01",
+        "source_ids": [
+          "application_for_birth_information_correction_cleaned_002_01",
+          "application_for_birth_information_correction_cleaned_009_01",
+          "application_for_birth_information_correction_cleaned_007_01",
+          "application_for_birth_information_correction_cleaned_003_01",
+          "application_for_birth_information_correction_cleaned_006_01",
+          "application_for_birth_information_correction_cleaned_004_01",
+          "birth_and_death_registration_fees_cleaned_fee_row_05",
+          "birth_registration_application_process_cleaned_016_01",
+          "birth_registration_application_process_cleaned_005_01",
+          "birth_registration_application_process_cleaned_008_01",
+          "birth_registration_application_process_cleaned_002_01",
+          "birth_registration_application_process_cleaned_019_01",
+          "birth_registration_application_process_cleaned_020_01"
+        ],
+        "top_sources": [
+          {
+            "id": "application_for_birth_information_correction_cleaned_002_01",
+            "document_type": "correction_process",
+            "category": null,
+            "section_title": "পিতা বা মাতার নাম সংশোধন সংক্রান্ত নির্দেশনা",
+            "score": 0.8699611902236939,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_009_01",
+            "document_type": "correction_process",
+            "category": null,
+            "section_title": "প্রয়োজনীয় প্রমাণপত্র",
+            "score": 0.4920111393928528,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_007_01",
+            "document_type": "correction_process",
+            "category": null,
+            "section_title": "গুরুত্বপূর্ণ তথ্য",
+            "score": 0.47659505367279054,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_003_01",
+            "document_type": "correction_process",
+            "category": null,
+            "section_title": "পরিস্থিতি ১: পিতা বা মাতার জন্ম নিবন্ধন নম্বর আছে",
+            "score": 0.4680994778871536,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_006_01",
+            "document_type": "correction_process",
+            "category": null,
+            "section_title": "পরিস্থিতি ২: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই এবং জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে",
+            "score": 0.4389661878347397,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_004_01",
+            "document_type": "correction_process",
+            "category": null,
+            "section_title": "যদি পূর্বে জন্ম নিবন্ধনে পিতা বা মাতার জন্ম নিবন্ধন নম্বর যুক্ত করা থাকে",
+            "score": 0.4290426468849182,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_fees_cleaned_fee_row_05",
+            "document_type": "fee_row",
+            "category": null,
+            "section_title": null,
+            "score": null,
+            "retrievers": null
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_016_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "সংযুক্ত করতে হবে",
+            "score": 0.0,
+            "retrievers": [
+              "safe_path"
+            ]
+          }
+        ],
+        "note": "Model-independent controlled CivicRAG answer; safe-answer path returned before LLM generation."
+      },
+      {
+        "model": "qwen2.5:7b",
+        "elapsed": null,
+        "answer": "আপনার প্রশ্নে কয়েকটি আলাদা বিষয় আছে। প্রাপ্ত সরকারি/উৎস ডেটার ভিত্তিতে অংশভাগ করে উত্তর দিচ্ছি:\n\n1. পিতা-মাতার নাম সংশোধন\nনাম/ঠিকানা/তথ্য ভুল হলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করতে হবে।\n\nপিতা বা মাতার নাম সংশোধন সংক্রান্ত নির্দেশনা: আপনার পিতা বা মাতার নাম সংশোধন করতে হলে নিম্নোক্ত নির্দেশনা অনুসরণ করতে হবে।\n\nপরিস্থিতি ১: পিতা বা মাতার জন্ম নিবন্ধন নম্বর আছে: যদি আপনার পিতা বা মাতার জন্ম নিবন্ধন নম্বর থাকে, তাহলে প্রথমে তাদের জন্ম নিবন্ধন নম্বর ব্যবহার করে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করে তাদের নাম সংশোধন করতে হবে।\n\nযদি পূর্বে জন্ম নিবন্ধনে পিতা বা মাতার জন্ম নিবন্ধন নম্বর যুক্ত করা থাকে: আপনার জন্ম নিবন্ধন করার সময় যদি পিতা বা মাতার জন্ম নিবন্ধন নম্বর প্রদান করা হয়ে থাকে, তাহলে তাদের নাম সংশোধনের পর আপনার জন্ম নিবন্ধন সনদ পুনর্মুদ্রণ করলে সেখানে সংশোধিত নাম স্বয়ংক্রিয়ভাবে প্রদর্শিত হবে।\n\nপরিস্থিতি ২: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই এবং জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে: যদি:\n\n- পিতা বা মাতার জন্ম নিবন্ধন নম্বর না থাকে, এবং\n- আপনার জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে হয়,\n\nতাহলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করার সময় পিতা বা মাতার নাম সংশোধন করা যাবে।\n\nজন্ম তারিখ ব্যতীত নাম, পিতার নাম, মাতার নাম, ঠিকানা ইত্যাদি তথ্য সংশোধনের আবেদন ফি: ৫০ টাকা।\n\n2. ফাইল সংযুক্তি/আপলোড সমস্যা\nসংযুক্ত করতে হবে: - জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nসংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nফরম পূরণের সময় সতর্কতা: ফরম পূরণের সময় ডট (.), হাইফেন (-), কোলন (:) ইত্যাদি চিহ্ন ব্যবহার না করাই উত্তম।\n\nউদাহরণ:\n\n- `MD.` না লিখে `MD` লিখুন।\n- এরপর স্পেস দিয়ে সম্পূর্ণ নাম লিখুন।\n\nফরম পূরণের সময় দেশ, বিভাগ, জেলা, উপজেলা থেকে শুরু করে বাসা ও সড়কের নাম ও নম্বর পর্যন্ত তথ্য ধাপে ধাপে প্রদান করুন।\n\nসংযুক্তি হিসেবে নিম্নোক্ত প্রমাণক আপলোড করতে হবে:\n\n- জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nআপনার বর্ণিত `প্রয়োজনীয় ফাইল আপলোড করেননি` ধরনের নির্দিষ্ট error message-এর পূর্ণ troubleshooting এই ডেটাসেটে নেই। তবে প্রমাণকগুলো সঠিক আলাদা ঘরে যুক্ত হয়েছে কিনা, ফাইল ফরম্যাট/সাইজ গ্রহণযোগ্য কিনা, এবং সব বাধ্যতামূলক প্রমাণক সংযুক্ত হয়েছে কিনা যাচাই করা উচিত। সমস্যা চলতে থাকলে সংশ্লিষ্ট নিবন্ধন কার্যালয় বা BDRIS সহায়তার সঙ্গে যোগাযোগ করা নিরাপদ।\n\n3. জন্ম নিবন্ধনের আবেদন\nআবেদন করার পূর্ব প্রস্তুতি: নতুন জন্ম নিবন্ধন আবেদনের পূর্বে প্রয়োজনীয় তথ্য ও ডকুমেন্ট সংগ্রহ করে রাখুন।\n\nজন্ম নিবন্ধনের ক্ষেত্রে নিম্নোক্ত তিন ধরনের ঠিকানার তথ্য প্রয়োজন হবে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রতিটি ঠিকানার জন্য নিম্নোক্ত তথ্য প্রয়োজন হতে পারে:\n\n- ইউনিয়ন পরিষদ/পৌরসভা/সিটি কর্পোরেশন/ক্যান্টনমেন্টের নাম\n- ওয়ার্ড নম্বর\n- ডাকঘর\n- গ্রাম/পাড়া/মহল্লা\n- বাসা ও সড়কের নাম ও নম্বর\n\nসকল তথ্য বাংলা ও ইংরেজি উভয় ভাষায় সঠিক বানানে লিখতে হবে।\n\nধাপ ১: ওয়েবসাইটে প্রবেশ: নতুন জন্ম নিবন্ধনের জন্য:\n\nhttps://bdris.gov.bd\n\nওয়েবসাইটে প্রবেশ করুন।\n\nহোমপেজে \"জন্ম নিবন্ধন\" মেনু নির্বাচন করুন।\n\nএরপর \"জন্ম নিবন্ধন আবেদন\" অপশনে ক্লিক করুন।\n\nধাপ ২: সনদ সংগ্রহের স্থান নির্বাচন: এখানে আবেদনকারীকে নির্বাচন করতে হবে তিনি কোথা থেকে জন্ম সনদ গ্রহণ বা সংগ্রহ করতে চান।\n\nনিম্নোক্ত ঠিকানার ভিত্তিতে সনদ সংগ্রহ করা যেতে পারে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n\nসাধারণভাবে স্থায়ী ঠিকানা থেকে সনদ সংগ্রহ করার জন্য উৎসাহিত করা হয়।\n\nবিদেশে জন্মগ্রহণকারী শিশু নিকটস্থ বাংলাদেশ দূতাবাস থেকে জন্ম সনদ সংগ্রহ করতে পারে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৩: জন্ম তথ্য প্রদান: এই ধাপে আবেদনকারীর জন্মসংক্রান্ত তথ্য ধাপে ধাপে পূরণ করতে হবে।\n\nতথ্য প্রদানের সময় সতর্কতা অবলম্বন করতে হবে।\n\nজন্ম তারিখ প্রদান করার পর সিস্টেম প্রয়োজনীয় নির্দেশনা প্রদর্শন করবে।\n\nনির্দেশনা পড়ে \"আমার কাছে এই ডকুমেন্টগুলো আছে\" অপশন নির্বাচন করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৪: পিতা ও মাতার তথ্য প্রদান: এই ধাপে পিতা ও মাতার তথ্য প্রদান করতে হবে।\n\nধাপ ৫: স্থায়ী ও বর্তমান ঠিকানা প্রদান: এই ধাপে:\n\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রদান করতে হবে।\n\nযদি জন্মস্থান এবং স্থায়ী ঠিকানা একই হয়, তাহলে নির্ধারিত ঘরে টিক চিহ্ন দিলে তথ্য স্বয়ংক্রিয়ভাবে পূরণ হবে।\n\nঅন্যথায় স্থায়ী ঠিকানা ও বর্তমান ঠিকানার তথ্য আলাদাভাবে পূরণ করতে হবে।\n\nসব তথ্য সঠিকভাবে পূরণ করার পর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৬: আবেদনকারীর তথ্য ও ডকুমেন্ট সংযুক্তি: যদি ব্যক্তি নিজে আবেদন করেন, তাহলে \"নিজ\" অপশন নির্বাচন করতে হবে।\n\nঅন্য কেউ আবেদন করলে \"অন্যান্য\" অপশন নির্বাচন করতে হবে।\n\n\"অন্যান্য\" নির্বাচন করলে আবেদনকারীর জন্ম নিবন্ধন নম্বর প্রদান করতে হবে।\n\nএরপর ঘোষণা দিতে হবে যে:\n\n- প্রদত্ত তথ্যসমূহ সঠিক\n- পূর্বে জন্ম নিবন্ধন করা হয়নি\n\nসংযুক্ত করতে হবে: - জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nসংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৭: তথ্য যাচাই ও OTP: এই ধাপে আবেদনকারীর পূরণকৃত সকল তথ্য প্রদর্শিত হবে।\n\nসকল তথ্য সতর্কতার সাথে যাচাই করতে হবে।\n\nভুল থাকলে \"পূর্ববর্তী\" বাটনে ফিরে গিয়ে সংশোধন করতে হবে।\n\nতথ্য সঠিক হলে:\n\n- ইমেইল অথবা\n- মোবাইল নম্বর\n\nপ্রদান করতে হবে।\n\nOTP গ্রহণ: - দূতাবাসের মাধ্যমে আবেদনের ক্ষেত্রে ইমেইলে OTP যাবে।\n- বাংলাদেশের অভ্যন্তরে আবেদনের ক্ষেত্রে মোবাইল নম্বরে OTP যাবে।\n\nOTP প্রদান করার পর \"সাবমিট\" বাটনে ক্লিক করুন।\n\nSources: application_for_birth_information_correction_cleaned_002_01, application_for_birth_information_correction_cleaned_003_01, application_for_birth_information_correction_cleaned_004_01, application_for_birth_information_correction_cleaned_006_01, application_for_birth_information_correction_cleaned_007_01, birth_and_death_registration_fees_cleaned_fee_row_05, application_for_birth_information_correction_cleaned_009_01, birth_registration_application_process_cleaned_016_01",
+        "source_ids": [
+          "application_for_birth_information_correction_cleaned_002_01",
+          "application_for_birth_information_correction_cleaned_009_01",
+          "application_for_birth_information_correction_cleaned_007_01",
+          "application_for_birth_information_correction_cleaned_003_01",
+          "application_for_birth_information_correction_cleaned_006_01",
+          "application_for_birth_information_correction_cleaned_004_01",
+          "birth_and_death_registration_fees_cleaned_fee_row_05",
+          "birth_registration_application_process_cleaned_016_01",
+          "birth_registration_application_process_cleaned_005_01",
+          "birth_registration_application_process_cleaned_008_01",
+          "birth_registration_application_process_cleaned_002_01",
+          "birth_registration_application_process_cleaned_019_01",
+          "birth_registration_application_process_cleaned_020_01"
+        ],
+        "top_sources": [
+          {
+            "id": "application_for_birth_information_correction_cleaned_002_01",
+            "document_type": "correction_process",
+            "category": null,
+            "section_title": "পিতা বা মাতার নাম সংশোধন সংক্রান্ত নির্দেশনা",
+            "score": 0.8699611902236939,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_009_01",
+            "document_type": "correction_process",
+            "category": null,
+            "section_title": "প্রয়োজনীয় প্রমাণপত্র",
+            "score": 0.4920111393928528,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_007_01",
+            "document_type": "correction_process",
+            "category": null,
+            "section_title": "গুরুত্বপূর্ণ তথ্য",
+            "score": 0.47659505367279054,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_003_01",
+            "document_type": "correction_process",
+            "category": null,
+            "section_title": "পরিস্থিতি ১: পিতা বা মাতার জন্ম নিবন্ধন নম্বর আছে",
+            "score": 0.4680994778871536,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_006_01",
+            "document_type": "correction_process",
+            "category": null,
+            "section_title": "পরিস্থিতি ২: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই এবং জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে",
+            "score": 0.4389661878347397,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_004_01",
+            "document_type": "correction_process",
+            "category": null,
+            "section_title": "যদি পূর্বে জন্ম নিবন্ধনে পিতা বা মাতার জন্ম নিবন্ধন নম্বর যুক্ত করা থাকে",
+            "score": 0.4290426468849182,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_fees_cleaned_fee_row_05",
+            "document_type": "fee_row",
+            "category": null,
+            "section_title": null,
+            "score": null,
+            "retrievers": null
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_016_01",
+            "document_type": "application_process",
+            "category": null,
+            "section_title": "সংযুক্ত করতে হবে",
+            "score": 0.0,
+            "retrievers": [
+              "safe_path"
+            ]
+          }
+        ],
+        "note": "Model-independent controlled CivicRAG answer; safe-answer path returned before LLM generation."
+      }
+    ]
+  }
+]
