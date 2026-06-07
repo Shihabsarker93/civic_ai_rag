@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import re
+import unicodedata
 from pathlib import Path
 from typing import Any
 
@@ -49,25 +50,31 @@ class CivicRAGPipeline:
         method: str = "civic",
     ) -> dict[str, Any]:
         normalized_method = self._normalize_method(method)
-        final_results = self.retrieve(query, method=normalized_method)
+        search_query = self._normalize_query_text(query)
+        final_results = self.retrieve(search_query, method=normalized_method)
         contexts = [self._context_from_result(result) for result in final_results]
         if normalized_method == "civic":
-            contexts = self._augment_contexts(query, contexts)
+            contexts = self._augment_contexts(search_query, contexts)
 
         answer = ""
         selected_model = model or self.generation_config["default_model"]
         if generate:
             max_generation_contexts = self.generation_config.get("top_k_for_generation", len(contexts))
-            generation_contexts = self._select_generation_contexts(query, contexts, max_generation_contexts)
-            answer = self._safe_fee_answer(query, contexts, normalized_method)
+            decomposed_answer, decomposed_contexts = self._safe_decomposed_answer(search_query, normalized_method, contexts)
+            if decomposed_answer:
+                answer = decomposed_answer
+                contexts = self._merge_contexts(contexts, decomposed_contexts)
+            generation_contexts = self._select_generation_contexts(search_query, contexts, max_generation_contexts)
             if not answer:
-                answer = self._safe_domain_answer(query, contexts, normalized_method)
+                answer = self._safe_fee_answer(search_query, contexts, normalized_method)
             if not answer:
-                answer = self._safe_extractive_answer(query, generation_contexts, normalized_method)
+                answer = self._safe_domain_answer(search_query, contexts, normalized_method)
             if not answer:
-                answer = self._generator(selected_model).answer(query, generation_contexts)
-                if self._violates_answer_language(query, answer):
-                    answer = self._fallback_evidence_answer(query, generation_contexts) or answer
+                answer = self._safe_extractive_answer(search_query, generation_contexts, normalized_method)
+            if not answer:
+                answer = self._generator(selected_model).answer(search_query, generation_contexts)
+                if self._violates_answer_language(search_query, answer):
+                    answer = self._fallback_evidence_answer(search_query, generation_contexts) or answer
 
         return {
             "query": query,
@@ -79,20 +86,21 @@ class CivicRAGPipeline:
 
     def retrieve(self, query: str, method: str = "civic") -> list[RetrievalResult]:
         normalized_method = self._normalize_method(method)
+        search_query = self._normalize_query_text(query)
         if normalized_method == "simple":
             return self.retriever.dense_only_search(
-                query,
+                search_query,
                 top_k=self.reranking_config["top_k"],
             )
 
         initial_results = self.retriever.search(
-            query,
+            search_query,
             top_k_dense=self.retrieval_config["top_k_dense"],
             top_k_bm25=self.retrieval_config["top_k_bm25"],
             top_k_final=self.retrieval_config["top_k_final"],
         )
         return self.reranker.rerank(
-            query,
+            search_query,
             initial_results,
             top_k=self.reranking_config["top_k"],
         )
@@ -167,6 +175,322 @@ class CivicRAGPipeline:
             augmented.append(context)
             seen_ids.add(str(context["id"]))
         return augmented
+
+    def _safe_decomposed_answer(
+        self,
+        query: str,
+        method: str,
+        base_contexts: list[dict[str, Any]],
+    ) -> tuple[str, list[dict[str, Any]]]:
+        if method != "civic" or not self._is_bangla_query(query):
+            return "", []
+
+        intents = self._detect_query_intents(query)
+        if len(intents) < 2:
+            return "", []
+
+        sections: list[tuple[str, str]] = []
+        all_contexts: list[dict[str, Any]] = []
+        for intent in intents:
+            heading, answer, contexts = self._answer_intent(query, intent, method, base_contexts)
+            if not answer:
+                continue
+            sections.append((heading, self._strip_sources(answer)))
+            all_contexts.extend(contexts)
+
+        if len(sections) < 2:
+            return "", []
+
+        merged_contexts = self._merge_contexts(all_contexts)
+        source_ids = [str(context["id"]) for context in merged_contexts[:8]]
+        lines = ["আপনার প্রশ্নে কয়েকটি আলাদা বিষয় আছে। প্রাপ্ত সরকারি/উৎস ডেটার ভিত্তিতে অংশভাগ করে উত্তর দিচ্ছি:"]
+        for index, (heading, body) in enumerate(sections, start=1):
+            lines.append(f"{index}. {heading}\n{body}")
+        if source_ids:
+            lines.append(f"Sources: {', '.join(source_ids)}")
+        return "\n\n".join(lines), merged_contexts
+
+    def _answer_intent(
+        self,
+        query: str,
+        intent: str,
+        method: str,
+        base_contexts: list[dict[str, Any]],
+    ) -> tuple[str, str, list[dict[str, Any]]]:
+        subqueries = {
+            "application": "জন্ম নিবন্ধনের আবেদন কীভাবে করতে হয় ধাপে ধাপে",
+            "documents": "জন্ম নিবন্ধনের জন্য কী কী কাগজপত্র বা প্রমাণক প্রয়োজন",
+            "status": "জন্ম নিবন্ধন আবেদন নম্বর আবেদন সম্পন্ন হওয়ার পর করণীয়",
+            "upload_error": "জন্ম নিবন্ধন আবেদনে ফাইল সংযুক্তি আপলোড প্রমাণক সমস্যা",
+            "manual_to_online": "ম্যানুয়াল জন্ম নিবন্ধন অনলাইনে করা হয়নি করণীয়",
+            "online_visibility": "অনলাইনে জন্ম নিবন্ধন খুঁজে পাওয়া যাচ্ছে না জন্ম তথ্য যাচাই",
+            "overseas": "দেশের বাইরে থাকি জন্ম নিবন্ধন অনলাইনে করণীয় প্রবাসী দূতাবাস",
+            "single_parent": "বিবাহ বিচ্ছেদ পিতামাতার একজন তথ্য দিয়ে সন্তানের জন্ম নিবন্ধন",
+            "parent_correction": "পিতা মাতার নাম ভুল জন্ম নিবন্ধন সংশোধন কীভাবে",
+            "lost_certificate": "জন্ম নিবন্ধন সনদ হারিয়ে গেলে করণীয় প্রতিলিপি",
+        }
+        headings = {
+            "application": "জন্ম নিবন্ধনের আবেদন",
+            "documents": "প্রয়োজনীয় কাগজপত্র/প্রমাণক",
+            "status": "আবেদন নম্বর, অগ্রগতি বা পরবর্তী করণীয়",
+            "upload_error": "ফাইল সংযুক্তি/আপলোড সমস্যা",
+            "manual_to_online": "পুরোনো/ম্যানুয়াল নিবন্ধন অনলাইনে না থাকলে",
+            "online_visibility": "অনলাইনে নিবন্ধন খুঁজে না পেলে",
+            "overseas": "দেশের বাইরে থাকলে",
+            "single_parent": "বিবাহ বিচ্ছেদ বা একক পিতা/মাতার তথ্য",
+            "parent_correction": "পিতা-মাতার নাম সংশোধন",
+            "lost_certificate": "সনদ হারিয়ে গেলে",
+        }
+        subquery = subqueries.get(intent, query)
+        contexts = self._contexts_for_intent(intent, base_contexts)
+
+        answer = ""
+        if intent == "application":
+            generation_contexts = self._select_generation_contexts(subquery, contexts, 3)
+            answer = self._safe_extractive_answer(subquery, generation_contexts, method)
+        elif intent == "documents":
+            answer = self._safe_domain_answer(subquery, contexts, method)
+        elif intent == "status":
+            answer = self._safe_application_status_answer(contexts)
+        elif intent == "upload_error":
+            answer = self._safe_upload_error_answer(contexts)
+        elif intent == "manual_to_online":
+            answer = self._safe_manual_to_online_answer(contexts)
+        elif intent == "online_visibility":
+            answer = self._safe_online_visibility_answer(contexts)
+        elif intent == "overseas":
+            answer = self._safe_overseas_answer(contexts)
+        elif intent == "single_parent":
+            answer = self._safe_single_parent_answer(contexts)
+        elif intent == "parent_correction":
+            answer = self._safe_domain_answer(subquery, contexts, method)
+        elif intent == "lost_certificate":
+            answer = self._safe_domain_answer(subquery, contexts, method)
+
+        return headings.get(intent, intent), answer, contexts
+
+    def _contexts_for_intent(self, intent: str, base_contexts: list[dict[str, Any]]) -> list[dict[str, Any]]:
+        curated_ids = {
+            "application": [
+                "birth_registration_application_process_cleaned_008_01",
+                "birth_registration_application_process_cleaned_002_01",
+                "birth_registration_application_process_cleaned_016_01",
+                "birth_registration_application_process_cleaned_019_01",
+                "birth_registration_application_process_cleaned_020_01",
+            ],
+            "documents": [
+                "birth_registration_application_process_cleaned_002_01",
+                "birth_registration_application_process_cleaned_016_01",
+                "birth_registration_application_process_02_cleaned_010_01",
+            ],
+            "status": [
+                "birth_registration_application_process_02_cleaned_013_01",
+                "birth_registration_application_process_cleaned_019_01",
+                "birth_registration_application_process_cleaned_020_01",
+            ],
+            "upload_error": [
+                "birth_registration_application_process_cleaned_016_01",
+                "birth_registration_application_process_cleaned_005_01",
+            ],
+            "manual_to_online": [
+                "bdris_faq_01_q02",
+            ],
+            "online_visibility": [
+                "know_this_01_cleaned_008_01",
+                "bdris_faq_01_q02",
+                "bdris_faq_02_q03",
+            ],
+            "overseas": [
+                "birth_and_death_registration_rules_2018_বিধি_১০_01",
+                "bdris_faq_01_q12",
+                "birth_registration_application_process_cleaned_009_01",
+                "birth_registration_application_process_cleaned_018_01",
+            ],
+            "single_parent": [
+                "bdris_faq_02_q08",
+                "bdris_faq_01_q10",
+            ],
+            "parent_correction": [
+                "application_for_birth_information_correction_cleaned_002_01",
+                "application_for_birth_information_correction_cleaned_003_01",
+                "application_for_birth_information_correction_cleaned_004_01",
+                "application_for_birth_information_correction_cleaned_006_01",
+                "application_for_birth_information_correction_cleaned_007_01",
+                "birth_and_death_registration_fees_cleaned_fee_row_05",
+            ],
+            "lost_certificate": [
+                "birth_and_death_registration_rules_2018_বিধি_১৩_01",
+            ],
+        }
+        curated_contexts = [
+            context
+            for context in (self._context_for_chunk_id(chunk_id) for chunk_id in curated_ids.get(intent, []))
+            if context
+        ]
+        return self._merge_contexts(curated_contexts, base_contexts)
+
+    def _context_for_chunk_id(self, chunk_id: str) -> dict[str, Any] | None:
+        chunk = self.chunks_by_id.get(chunk_id)
+        if not chunk:
+            return None
+        return {
+            "id": str(chunk["id"]),
+            "content": str(chunk["content"]),
+            "metadata": dict(chunk.get("metadata", {})),
+            "score": 0.0,
+            "retrievers": ["safe_path"],
+        }
+
+    def _detect_query_intents(self, query: str) -> list[str]:
+        intents: list[str] = []
+
+        def add(intent: str) -> None:
+            if intent not in intents:
+                intents.append(intent)
+
+        if self._is_lost_certificate_query(query):
+            add("lost_certificate")
+        if self._is_single_parent_registration_query(query):
+            add("single_parent")
+        if self._is_online_visibility_query(query):
+            add("online_visibility")
+        if self._is_overseas_query(query):
+            add("overseas")
+        if self._is_parent_name_correction_query(query) and self._is_data_correction_query(query):
+            add("parent_correction")
+        elif self._is_data_correction_query(query):
+            add("parent_correction")
+        if self._is_application_status_query(query):
+            add("status")
+        if self._is_upload_error_query(query):
+            add("upload_error")
+        if self._is_manual_to_online_query(query):
+            add("manual_to_online")
+        if self._is_birth_application_query(query):
+            add("application")
+        if self._is_document_requirement_query(query):
+            add("documents")
+
+        multi_signal = (
+            len(query) > 180
+            or query.count("?") + query.count("？") >= 2
+            or query.count("।") >= 2
+            or "\n" in query
+        )
+        if len(intents) >= 2 and multi_signal:
+            return intents
+        if len(intents) >= 3:
+            return intents
+        return []
+
+    def _safe_application_status_answer(self, contexts: list[dict[str, Any]]) -> str:
+        app_id = self._find_context(contexts, document_type="application_process", section_contains_any=["আবেদন নম্বর", "Application ID"])
+        next_steps = self._find_context(contexts, document_type="application_process", section_contains="পরবর্তী করণীয়")
+        complete = self._find_context(contexts, document_type="application_process", section_contains_any=["আবেদন সম্পন্ন", "সনদ গ্রহণ"])
+        cited = [context for context in [app_id, complete, next_steps] if context]
+        if not cited:
+            return ""
+
+        parts = []
+        if app_id:
+            body = self._clean_evidence_body(self._extract_labeled_value(str(app_id["content"]), "Content"))
+            if body:
+                parts.append(body)
+        if complete:
+            body = self._clean_evidence_body(self._extract_labeled_value(str(complete["content"]), "Content"))
+            if body:
+                parts.append(body)
+        if next_steps:
+            body = self._clean_evidence_body(self._extract_labeled_value(str(next_steps["content"]), "Content"))
+            if body:
+                parts.append(body)
+        parts.append("এই ডেটাসেটে নির্দিষ্ট আবেদন নম্বর দিয়ে অনলাইন progress/status যাচাই করার আলাদা পদ্ধতি পাওয়া যায়নি। তাই নির্দিষ্ট আবেদন নম্বরের বর্তমান অবস্থা জানতে সংশ্লিষ্ট নিবন্ধন কার্যালয় বা BDRIS নির্দেশনা অনুসরণ করা উচিত।")
+        return "\n\n".join(parts) + f"\n\nSources: {', '.join(str(context['id']) for context in cited[:4])}"
+
+    def _safe_upload_error_answer(self, contexts: list[dict[str, Any]]) -> str:
+        attachments = self._find_context(contexts, document_type="application_process", section_contains_any=["সংযুক্ত", "প্রমাণক"])
+        form_warning = self._find_context(contexts, document_type="application_process", section_contains="ফরম পূরণের সময় সতর্কতা")
+        cited = [context for context in [attachments, form_warning] if context]
+        if not cited:
+            return ""
+
+        parts = []
+        for context in cited:
+            section = context["metadata"].get("section_title", "")
+            body = self._clean_evidence_body(self._extract_labeled_value(str(context["content"]), "Content"))
+            if body:
+                parts.append(f"{section}: {body}")
+        parts.append("আপনার বর্ণিত `প্রয়োজনীয় ফাইল আপলোড করেননি` ধরনের নির্দিষ্ট error message-এর পূর্ণ troubleshooting এই ডেটাসেটে নেই। তবে প্রমাণকগুলো সঠিক আলাদা ঘরে যুক্ত হয়েছে কিনা, ফাইল ফরম্যাট/সাইজ গ্রহণযোগ্য কিনা, এবং সব বাধ্যতামূলক প্রমাণক সংযুক্ত হয়েছে কিনা যাচাই করা উচিত। সমস্যা চলতে থাকলে সংশ্লিষ্ট নিবন্ধন কার্যালয় বা BDRIS সহায়তার সঙ্গে যোগাযোগ করা নিরাপদ।")
+        return "\n\n".join(parts) + f"\n\nSources: {', '.join(str(context['id']) for context in cited[:3])}"
+
+    def _safe_manual_to_online_answer(self, contexts: list[dict[str, Any]]) -> str:
+        migration = self._find_context(contexts, document_type="faq", category="manual_to_online_migration")
+        if not migration:
+            return ""
+        answer = self._extract_labeled_value(str(migration["content"]), "Answer")
+        return f"{answer}\n\nSources: {migration['id']}" if answer else ""
+
+    def _safe_single_parent_answer(self, contexts: list[dict[str, Any]]) -> str:
+        faq_contexts = [
+            context
+            for context in contexts
+            if context["metadata"].get("document_type") == "faq"
+            and context["metadata"].get("category") == "special_cases"
+            and "পিতামাতার একজন" in str(context.get("content", ""))
+        ]
+        if not faq_contexts:
+            return ""
+        best = max(faq_contexts, key=lambda context: len(self._extract_labeled_value(str(context["content"]), "Answer")))
+        answer = self._extract_labeled_value(str(best["content"]), "Answer")
+        return f"{answer}\n\nSources: {best['id']}" if answer else ""
+
+    def _safe_online_visibility_answer(self, contexts: list[dict[str, Any]]) -> str:
+        verification = self._find_context(contexts, document_type="general_guidance", section_contains_any=["পরীক্ষা", "যাচাই"])
+        migration = self._find_context(contexts, document_type="faq", category="manual_to_online_migration")
+        discrepancy = self._find_context(contexts, document_type="faq", category="data_discrepancy")
+        cited = [context for context in [verification, migration, discrepancy] if context]
+        if not cited:
+            return ""
+
+        parts = []
+        if verification:
+            body = self._extract_labeled_value(str(verification["content"]), "Content")
+            if body:
+                parts.append(body)
+        if migration:
+            answer = self._extract_labeled_value(str(migration["content"]), "Answer")
+            if answer:
+                parts.append("যদি এটি পুরোনো/ম্যানুয়াল নিবন্ধন হয়ে থাকে: " + answer)
+        if discrepancy:
+            answer = self._extract_labeled_value(str(discrepancy["content"]), "Answer")
+            if answer:
+                parts.append(answer)
+        parts.append("যদি সঠিক জন্ম নিবন্ধন নম্বর ও জন্ম তারিখ দিয়েও তথ্য না পাওয়া যায়, তাহলে সংশ্লিষ্ট নিবন্ধন কার্যালয়ের সংরক্ষিত রেকর্ড যাচাই করানো উচিত।")
+        return "\n\n".join(parts) + f"\n\nSources: {', '.join(str(context['id']) for context in cited[:4])}"
+
+    def _safe_overseas_answer(self, contexts: list[dict[str, Any]]) -> str:
+        overseas_rule = self._find_context(contexts, document_type="legal_rules", section_contains="প্রবাসীগণের জন্ম নিবন্ধন")
+        overseas_faq = self._find_context(contexts, document_type="faq", category="overseas_registration")
+        embassy_place = self._find_context(contexts, document_type="application_process", content_contains="দূতাবাস")
+        cited = [context for context in [overseas_rule, overseas_faq, embassy_place] if context]
+        if not cited:
+            return ""
+
+        parts = []
+        if overseas_rule:
+            body = self._extract_labeled_value(str(overseas_rule["content"]), "Content")
+            if body:
+                parts.append("প্রবাসে জন্ম নিবন্ধনের ক্ষেত্রে বিধি ১০ অনুযায়ী বিদেশে অবস্থিত বাংলাদেশ দূতাবাসের নিবন্ধক প্রয়োজনীয় তথ্য/প্রমাণ পেলে জন্ম নিবন্ধন করতে পারেন।")
+        if embassy_place:
+            body = self._clean_evidence_body(self._extract_labeled_value(str(embassy_place["content"]), "Content"))
+            if body:
+                parts.append(body)
+        if overseas_faq:
+            answer = self._extract_labeled_value(str(overseas_faq["content"]), "Answer")
+            if answer:
+                parts.append("বিদেশে নিবন্ধন করে দেশে ফেরা বা মূল অফিস-সংক্রান্ত ক্ষেত্রে: " + answer)
+        parts.append("তবে আপনি যদি বাংলাদেশে জন্মগ্রহণ করে থাকেন কিন্তু আগে অনলাইনে নিবন্ধন না হয়ে থাকে, তাহলে মূল/স্থানীয় নিবন্ধন কার্যালয়ের রেকর্ডও গুরুত্বপূর্ণ হতে পারে।")
+        return "\n\n".join(parts) + f"\n\nSources: {', '.join(str(context['id']) for context in cited[:4])}"
 
     def _safe_extractive_answer(
         self,
@@ -280,6 +604,31 @@ class CivicRAGPipeline:
             return ""
 
         source_ids = [str(context["id"]) for context in contexts[:3]]
+        if self._is_single_parent_registration_query(query):
+            answer = self._safe_single_parent_answer(contexts)
+            if answer:
+                return answer
+
+        if self._is_overseas_query(query):
+            answer = self._safe_overseas_answer(contexts)
+            if answer:
+                return answer
+
+        if self._is_application_status_query(query):
+            answer = self._safe_application_status_answer(contexts)
+            if answer:
+                return answer
+
+        if self._is_upload_error_query(query):
+            answer = self._safe_upload_error_answer(contexts)
+            if answer:
+                return answer
+
+        if self._is_manual_to_online_query(query):
+            answer = self._safe_manual_to_online_answer(contexts)
+            if answer:
+                return answer
+
         if self._is_registration_deadline_query(query):
             deadline = self._find_context(contexts, document_type="legal_act", content_contains="৪৫")
             if not deadline:
@@ -354,21 +703,9 @@ class CivicRAGPipeline:
             return "\n\n".join(parts) + f"\n\nSources: {', '.join(cited_ids)}"
 
         if self._is_online_visibility_query(query):
-            verification = self._find_context(contexts, document_type="general_guidance", section_contains_any=["পরীক্ষা", "যাচাই"])
-            migration = self._find_context(contexts, document_type="faq", category="manual_to_online_migration")
-            discrepancy = self._find_context(contexts, document_type="faq", category="data_discrepancy")
-            parts = []
-            if verification:
-                body = self._extract_labeled_value(str(verification["content"]), "Content")
-                parts.append(body)
-            if migration:
-                answer = self._extract_labeled_value(str(migration["content"]), "Answer")
-                parts.append(answer)
-            if discrepancy:
-                answer = self._extract_labeled_value(str(discrepancy["content"]), "Answer")
-                parts.append(answer)
-            if parts:
-                return "\n\n".join(part for part in parts if part) + f"\n\nSources: {', '.join(source_ids)}"
+            answer = self._safe_online_visibility_answer(contexts)
+            if answer:
+                return answer
 
         if self._is_data_correction_query(query):
             correction_contexts = [
@@ -399,6 +736,8 @@ class CivicRAGPipeline:
                     amount = self._extract_labeled_value(str(fee["content"]), "Fee amount")
                     if amount:
                         lines.append(f"জন্ম তারিখ ব্যতীত নাম, পিতার নাম, মাতার নাম, ঠিকানা ইত্যাদি তথ্য সংশোধনের আবেদন ফি: {amount}।")
+                if self._is_parent_name_correction_query(query) and self._is_document_requirement_query(query):
+                    lines.append("পিতা-মাতার নাম সংশোধনের জন্য আপলোডযোগ্য সব কাগজপত্রের পূর্ণ তালিকা এই ডেটাসেটে নেই। তাই BDRIS সংশোধন পোর্টাল বা সংশ্লিষ্ট নিবন্ধন কার্যালয়ের নির্দেশনা অনুযায়ী প্রমাণপত্র প্রস্তুত করা উচিত।")
                 if not self._is_parent_name_correction_query(query):
                     lines.append("এই ডেটাসেটে নাম/ঠিকানা সংশোধনের পূর্ণ ধাপে-ধাপে প্রক্রিয়া নেই; তাই সংশ্লিষ্ট নিবন্ধন কার্যালয় বা BDRIS সংশোধন পোর্টালের নির্দেশনা অনুসরণ করা উচিত।")
                 cited_ids = [str(context["id"]) for context in cited_contexts[:5]]
@@ -512,6 +851,41 @@ class CivicRAGPipeline:
         return any(marker in lowered for marker in bad_markers)
 
     @staticmethod
+    def _normalize_query_text(query: str) -> str:
+        normalized = unicodedata.normalize("NFC", query)
+        normalized = re.sub(r"[\u200b\u200c\u200d\ufeff]", "", normalized)
+        replacements = {
+            "অনলাইনাে": "অনলাইনে",
+            "অনলাইনাএ": "অনলাইনে",
+            "অনলাই করা": "অনলাইনে করা",
+            "অনলাই কর": "অনলাইনে কর",
+            "ভোডার": "ভোটার",
+            "চেয়ারম্যান": "চেয়ারম্যান",
+            "প্রগ্রেস": "progress",
+            "স্ট্যাটাস": "status",
+        }
+        for source, target in replacements.items():
+            normalized = normalized.replace(source, target)
+        return normalized.strip()
+
+    @staticmethod
+    def _merge_contexts(*context_groups: list[dict[str, Any]]) -> list[dict[str, Any]]:
+        merged: list[dict[str, Any]] = []
+        seen: set[str] = set()
+        for contexts in context_groups:
+            for context in contexts:
+                context_id = str(context.get("id", ""))
+                if not context_id or context_id in seen:
+                    continue
+                merged.append(context)
+                seen.add(context_id)
+        return merged
+
+    @staticmethod
+    def _strip_sources(answer: str) -> str:
+        return re.sub(r"\n\nSources:\s*.+\Z", "", answer.strip(), flags=re.DOTALL).strip()
+
+    @staticmethod
     def _is_procedure_query(query: str) -> bool:
         query_lc = query.lower()
         return (
@@ -554,8 +928,22 @@ class CivicRAGPipeline:
     def _is_online_visibility_query(query: str) -> bool:
         query_lc = query.lower()
         return (
-            any(term in query for term in ["দেখাচ্ছে না", "দেখাচ্ছেনা", "অনলাইনে দেখ", "অনলাইনে পাওয়া", "অনলাইনে পাওয়া"])
-            or any(term in query_lc for term in ["not showing online", "not found online", "online copy"])
+            any(
+                term in query
+                for term in [
+                    "দেখাচ্ছে না",
+                    "দেখাচ্ছেনা",
+                    "খুঁজে পাচ্ছি না",
+                    "খুঁজে পাচ্ছিনা",
+                    "পাচ্ছি না",
+                    "পাচ্ছিনা",
+                    "অনলাইনে দেখ",
+                    "অনলাইনে পাওয়া",
+                    "অনলাইনে পাওয়া",
+                    "জন্ম তথ্য যাচাই",
+                ]
+            )
+            or any(term in query_lc for term in ["not showing online", "not found online", "online copy", "cannot find online"])
         )
 
     @staticmethod
@@ -597,6 +985,54 @@ class CivicRAGPipeline:
             any(term in query for term in ["কাগজপত্র", "ডকুমেন্ট", "প্রমাণক", "দলিল", "কি কি লাগে", "কী কী লাগে"])
             or any(term in query_lc for term in ["documents", "required documents", "papers", "proof"])
         )
+
+    @staticmethod
+    def _is_birth_application_query(query: str) -> bool:
+        query_lc = query.lower()
+        return (
+            "জন্ম" in query
+            and any(term in query for term in ["আবেদন", "করব", "করবো", "করতে", "কীভাবে", "কিভাবে", "অনলাইনে"])
+        ) or any(term in query_lc for term in ["apply for birth", "birth registration application"])
+
+    @staticmethod
+    def _is_application_status_query(query: str) -> bool:
+        query_lc = query.lower()
+        return (
+            any(term in query for term in ["আবেদন নম্বর", "অ্যাপ্লিকেশন আইডি", "কতদিন", "কত দিন", "সময় লাগবে", "সময় লাগবে", "জন্ম নিবন্ধন নাম্বার", "বের করতে", "প্রগতি"])
+            or any(term in query_lc for term in ["application id", "application number", "progress", "status", "how long"])
+        )
+
+    @staticmethod
+    def _is_upload_error_query(query: str) -> bool:
+        query_lc = query.lower()
+        return (
+            any(term in query for term in ["ফাইল", "সংযোজন", "আপলোড", "সাবমিট", "এরর", "প্রয়োজনীয় ফাইল", "প্রয়োজনীয় ফাইল"])
+            or any(term in query_lc for term in ["upload", "file", "submit", "error"])
+        )
+
+    @staticmethod
+    def _is_manual_to_online_query(query: str) -> bool:
+        query_lc = query.lower()
+        return (
+            any(term in query for term in ["অনলাইনে করা নাই", "অনলাইন করা নাই", "অনলাইন করা হয়নি", "অনলাইনে জন্ম নিবন্ধন হয়নি", "ম্যানুয়াল", "হাতে লেখা"])
+            or any(term in query_lc for term in ["manual registration", "not online", "not digitized"])
+        )
+
+    @staticmethod
+    def _is_overseas_query(query: str) -> bool:
+        query_lc = query.lower()
+        return (
+            any(term in query for term in ["দেশের বাইরে", "বিদেশে", "প্রবাস", "দূতাবাস", "মিশন"])
+            or any(term in query_lc for term in ["overseas", "abroad", "embassy", "mission"])
+        )
+
+    @staticmethod
+    def _is_single_parent_registration_query(query: str) -> bool:
+        query_lc = query.lower()
+        return (
+            any(term in query for term in ["ডিভোর্স", "বিবাহ বিচ্ছেদ", "তালাক", "শুধু পিতার", "শুধু মাতার", "পিতামাতার একজন", "নিখোঁজ"])
+            or any(term in query_lc for term in ["divorce", "single parent", "missing parent"])
+        ) and "জন্ম" in query
 
     @staticmethod
     def _find_context(
