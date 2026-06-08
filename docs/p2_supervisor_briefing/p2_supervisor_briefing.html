@@ -1,0 +1,922 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<title>Civic.ai RAG Thesis P2 Supervisor Briefing</title>
+<style>
+@page { size: A4; margin: 16mm 14mm 18mm 14mm; }
+:root { --ink:#172033; --muted:#5a667c; --accent:#0f766e; --soft:#eef8f6; --line:#cdd7e5; --table:#f5f8fb; }
+body { font-family: "Kohinoor Bangla", "Bangla MN", "Bangla Sangam MN", "Noto Sans Bengali", "Hiragino Sans", Arial, sans-serif; color: var(--ink); line-height: 1.52; font-size: 10.8pt; }
+h1 { font-size: 25pt; line-height: 1.08; color: #0f3d3a; margin: 0 0 8pt; padding-bottom: 8pt; border-bottom: 3px solid var(--accent); }
+h2 { font-size: 16.5pt; color: #0f3d3a; margin: 22pt 0 8pt; page-break-after: avoid; }
+h3 { font-size: 13pt; color: #174b46; margin: 15pt 0 6pt; page-break-after: avoid; }
+p { margin: 5pt 0 8pt; }
+ul, ol { margin: 5pt 0 10pt 18pt; padding: 0; }
+li { margin: 2pt 0 4pt; }
+code { font-family: Menlo, Consolas, monospace; font-size: 9.2pt; background: #edf2f7; border: 1px solid #d8e0ea; border-radius: 4px; padding: 1px 4px; }
+pre { background: #101827; color: #f7fafc; padding: 10pt 12pt; border-radius: 8px; white-space: pre-wrap; font-size: 8.7pt; line-height: 1.42; page-break-inside: avoid; }
+pre code { background: transparent; border: 0; color: inherit; padding: 0; }
+table { width: 100%; border-collapse: collapse; margin: 8pt 0 13pt; font-size: 9.2pt; page-break-inside: avoid; }
+th { background: var(--accent); color: white; text-align: left; font-weight: 700; padding: 6pt 7pt; border: 1px solid #0b5f59; }
+td { padding: 5.5pt 7pt; border: 1px solid var(--line); vertical-align: top; }
+tr:nth-child(even) td { background: var(--table); }
+hr { border: 0; height: 1px; background: var(--line); margin: 16pt 0; }
+strong { color: #0f3d3a; }
+h1 + p { color: var(--muted); }
+</style>
+</head>
+<body>
+<h1>Civic.ai RAG Thesis P2 Supervisor Briefing</h1>
+<p><strong>Project:</strong> Civic.ai: A Bangla-English Retrieval-Augmented Generation System for Bangladeshi Government Services <strong>Current P2 domain:</strong> Birth and Death Registration <strong>Prepared for:</strong> Supervisor discussion, P2 progress update, and demo readiness <strong>Repository branch:</strong> <code>feature/add-birth-death-domain</code> <strong>Latest experiment commit:</strong> <code>a1f5680</code> <strong>Fallback checkpoint before P2 evaluation framework:</strong> <code>01c663e</code></p>
+<hr>
+<h2>1. Executive Summary</h2>
+<p>The goal of this thesis is to build a high-accuracy, evidence-grounded, bilingual Bangla-English RAG chatbot for Bangladeshi government-service information. In the current phase, we narrowed the implementation to one active domain: <strong>birth and death registration</strong>. This allows us to demonstrate a complete, testable pipeline before adding other domains such as passport, BRTA, birth certificate expansion, death certificate expansion, or other civic services.</p>
+<p>For P2, the main objective is not only to show a working chatbot. The university objective asks for:</p>
+<ul>
+<li>A design process or methodology overview.</li>
+<li>Multiple alternative engineering/theoretical solutions.</li>
+<li>Preliminary model/system specification.</li>
+<li>Functional verification or simulation of alternatives.</li>
+<li>Evidence that design choices are made under requirements and constraints.</li>
+</ul>
+<p>To satisfy this, we implemented and evaluated multiple retrieval designs:</p>
+<ol>
+<li><strong>Dense-only retrieval</strong> using BGE-M3 embeddings and ChromaDB.</li>
+<li><strong>BM25-only retrieval</strong> using sparse lexical matching.</li>
+<li><strong>Hybrid RRF retrieval</strong> combining Dense and BM25 rankings using Reciprocal Rank Fusion.</li>
+<li><strong>Hybrid + Rerank retrieval</strong> using the fused candidate set and a reranking stage.</li>
+</ol>
+<p>We also prepared the framework to compare:</p>
+<ul>
+<li><strong>Simple RAG vs CivicRAG</strong>.</li>
+<li><strong>LLM backends:</strong> <code>llama3.2</code>, <code>llama3</code>, and <code>qwen2.5:7b</code>.</li>
+<li><strong>Stability:</strong> repeated query consistency.</li>
+<li><strong>Parameter sensitivity:</strong> RRF weights and top-k values.</li>
+</ul>
+<p>The first 20-question fast retrieval run showed:</p>
+<table>
+<thead><tr><th>Retrieval Variant</th><th>Recall@1</th><th>Recall@3</th><th>Recall@5</th><th>Context Precision@5</th><th>MRR</th><th>nDCG@5</th></tr></thead>
+<tbody>
+<tr><td>BM25-only</td><td>0.450</td><td>0.550</td><td>0.800</td><td>0.220</td><td>0.546</td><td>0.481</td></tr>
+<tr><td>Dense-only</td><td>0.800</td><td>0.900</td><td>0.900</td><td>0.310</td><td>0.842</td><td>0.731</td></tr>
+<tr><td>Hybrid RRF</td><td>0.700</td><td>0.800</td><td>0.850</td><td>0.300</td><td>0.752</td><td>0.661</td></tr>
+<tr><td>Hybrid RRF + Rerank</td><td>0.650</td><td>0.800</td><td>0.850</td><td>0.290</td><td>0.738</td><td>0.664</td></tr>
+</tbody></table>
+<p>The important finding is that <strong>Dense-only currently performs strongest on the 20-question retrieval benchmark</strong>. This should not be treated as failure. It is an academically useful finding: for the current cleaned Bangla government-service dataset, semantic retrieval with BGE-M3 is currently more reliable than the initial hybrid/RRF/reranking configuration. The correct next step is not to blindly claim that the advanced method is better, but to tune and evaluate whether hybrid retrieval can improve over this dense baseline.</p>
+<hr>
+<h2>2. Thesis Objective and System Motivation</h2>
+<p>The thesis is motivated by a practical problem:</p>
+<p>&gt; Bangladeshi government-service information is often distributed across PDFs, HTML pages, notices, scanned documents, tables, FAQs, and mixed Bangla-English content. Users often ask natural Bangla or code-mixed questions, but official information is hard to search, difficult to interpret, and easy to misunderstand.</p>
+<p>The system objective is:</p>
+<p>&gt; Build a factual, explainable, bilingual Retrieval-Augmented Generation system that answers government-service questions using retrieved evidence rather than unsupported generation.</p>
+<p>The major design priorities are:</p>
+<ol>
+<li><strong>Accuracy over fluency.</strong></li>
+<li><strong>Evidence grounding over open-ended generation.</strong></li>
+<li><strong>Bangla-first retrieval support.</strong></li>
+<li><strong>Explainability through source IDs and links.</strong></li>
+<li><strong>Evaluation through measurable retrieval and generation metrics.</strong></li>
+<li><strong>A modular architecture that can add future domains without rewriting the system.</strong></li>
+</ol>
+<hr>
+<h2>3. Relationship to the Reference Paper</h2>
+<p>The reference paper, NextRAG, compares a proposed advanced RAG pipeline against simpler RAG baselines. Our work follows the same research logic, but in a different domain.</p>
+<h3>3.1 What We Replicate Conceptually</h3>
+<p>We replicate the following research pattern:</p>
+<ol>
+<li>Create a domain knowledge base.</li>
+<li>Build a baseline RAG pipeline.</li>
+<li>Build a stronger proposed RAG pipeline.</li>
+<li>Compare both using a fixed question set.</li>
+<li>Evaluate numerically using retrieval and answer-quality metrics.</li>
+<li>Analyze performance by question category.</li>
+<li>Use ablation/parameter tests to justify design choices.</li>
+</ol>
+<h3>3.2 What Is Different in Our Thesis</h3>
+<table>
+<thead><tr><th>Aspect</th><th>NextRAG Paper</th><th>Civic.ai Thesis</th></tr></thead>
+<tbody>
+<tr><td>Domain</td><td>Financial question answering</td><td>Bangladeshi government services</td></tr>
+<tr><td>Current data</td><td>Financial QA/domain data</td><td>Birth and death registration documents</td></tr>
+<tr><td>Language focus</td><td>Bangla and English</td><td>Bangla-first, English and code-mixed support</td></tr>
+<tr><td>Data form</td><td>Structured QA and domain data</td><td>FAQs, legal acts, rules, HTML, notices, converted files, tables</td></tr>
+<tr><td>Goal</td><td>Financial QA correctness</td><td>Civic-service correctness and explainability</td></tr>
+<tr><td>User risk</td><td>Financial misinformation</td><td>Government-service misinformation</td></tr>
+<tr><td>Current LLMs</td><td>Paper-specific model setup</td><td>Local Ollama models: <code>llama3.2</code>, <code>llama3</code>, <code>qwen2.5:7b</code></td></tr>
+</tbody></table>
+<h3>3.3 Why We Do Not Copy the Paper Blindly</h3>
+<p>The reference paper is useful as a blueprint, but direct copying would be weak academically because:</p>
+<ul>
+<li>Our domain is not finance.</li>
+<li>Our data is noisier and more document-heavy.</li>
+<li>Bangla government-service documents have legal/procedural wording.</li>
+<li>Exact source grounding is more important than creative answer generation.</li>
+<li>We need to justify design choices using our own experiments.</li>
+</ul>
+<p>Therefore, our P2 approach is:</p>
+<p>&gt; Replicate the structure of comparison and evaluation, but adapt the pipeline to the government-service domain and validate it using our own data.</p>
+<hr>
+<h2>4. P2 Objective Mapping</h2>
+<p>The P2 instruction says:</p>
+<p>&gt; Design multiple engineering/theoretical solutions/proof of the problem to meet the desired objectives, needs, and requirements within constraints.</p>
+<p>Our mapping:</p>
+<table>
+<thead><tr><th>P2 Requirement</th><th>What We Did</th></tr></thead>
+<tbody>
+<tr><td>Design process or methodology overview</td><td>Built a full modular RAG pipeline from raw data to answer generation</td></tr>
+<tr><td>Multiple alternative solutions</td><td>Dense-only, BM25-only, Hybrid RRF, Hybrid+Rerank, Simple RAG, CivicRAG</td></tr>
+<tr><td>Preliminary design/model specification</td><td>Defined data structure, chunking strategy, embedding model, vector DB, reranking, generation models</td></tr>
+<tr><td>Functional verification/simulation</td><td>Ran 20-question retrieval evaluation and 1-question generation/stability smoke test</td></tr>
+<tr><td>Constraints</td><td>Local LLMs, Bangla text, noisy government data, no API key dependency, explainability</td></tr>
+<tr><td>Evidence of design decisions</td><td>Reports with Recall@k, MRR, nDCG, Context Precision, generation proxy metrics</td></tr>
+</tbody></table>
+<p>This is P2-appropriate because it does not merely present a final system. It demonstrates the <strong>process of selecting and validating design alternatives</strong>.</p>
+<hr>
+<h2>5. Current Repository and Domain Structure</h2>
+<p>The repository is designed as a <strong>single multi-domain RAG system</strong>, not separate repositories per service.</p>
+<pre><code>bilingual-rag-thesis/
+  app.py
+  src/
+    pipeline.py
+    retrieval/
+      hybrid_retriever.py
+    reranking/
+      reranker.py
+    generation/
+      ollama_generator.py
+    evaluation/
+      metrics.py
+  scripts/
+    build_index.py
+    run_p2_experiments.py
+    evaluate_retrieval.py
+    evaluate_generation.py
+  domains/
+    birth_death_registration/
+      config.json
+      data/
+        raw/
+        interim/
+          birth_death_chunks.jsonl
+        processed/
+          chroma_birth_death_bge_m3/
+        evaluation/
+          p2_20q_eval_set.json
+  docs/
+    evaluation/
+      p2_experiments/
+      p2_experiments_smoke_generation/</code></pre>
+<p>This supports future domains such as:</p>
+<ul>
+<li><code>domains/passport/</code></li>
+<li><code>domains/brta/</code></li>
+<li><code>domains/birth_death_registration/</code></li>
+<li><code>domains/land_service/</code></li>
+<li><code>domains/nid_service/</code></li>
+</ul>
+<p>Each future domain can have its own:</p>
+<ul>
+<li>Raw data.</li>
+<li>Cleaned/interim chunks.</li>
+<li>Chroma collection.</li>
+<li>Config file.</li>
+<li>Evaluation set.</li>
+</ul>
+<p>The codebase stays shared.</p>
+<hr>
+<h2>6. Current End-to-End Pipeline</h2>
+<pre><code>Raw Government Data
+    ↓
+Manual / Semi-manual Cleaning
+    ↓
+Domain Folder: birth_death_registration
+    ↓
+Document-Type-Aware Chunking
+    ↓
+Chunk Metadata + Source URLs
+    ↓
+Two Text Versions per Chunk
+    ↓
+retrieval_text for searching
+answer_evidence/content for LLM grounding
+    ↓
+Embedding with BAAI/bge-m3
+    ↓
+Vector Index in ChromaDB
+    ↓
+BM25 Sparse Index
+    ↓
+User Query
+    ↓
+Language + Intent Detection
+    ↓
+Hybrid Retrieval
+Dense Search + BM25 Search
+    ↓
+RRF Fusion
+    ↓
+Reranking / Intent Boosting
+    ↓
+Top Evidence Chunks
+    ↓
+Safe Answer Path Check
+fee answer / correction answer / procedural answer
+    ↓
+If Safe Path Exists
+Controlled Grounded Answer
+    ↓
+If No Safe Path Exists
+Local LLM Generation
+llama3.2 / llama3 / qwen2.5:7b
+    ↓
+Bangla Language Guard
+    ↓
+Final Answer
+    ↓
+Source IDs + Retrieval Scores + Official Links</code></pre>
+<h3>Why This Pipeline Was Chosen</h3>
+<table>
+<thead><tr><th>Pipeline Step</th><th>Why It Exists</th></tr></thead>
+<tbody>
+<tr><td>Manual/semi-manual cleaning</td><td>Government documents contain web noise, OCR artifacts, duplicated navigation text, and inconsistent formatting</td></tr>
+<tr><td>Document-type-aware chunking</td><td>FAQs, legal rules, fee tables, and process pages require different chunking logic</td></tr>
+<tr><td>Metadata</td><td>Allows filtering, debugging, source display, category analysis, and future evaluation</td></tr>
+<tr><td><code>retrieval_text</code> vs <code>content</code></td><td>Search can use aliases and query-friendly terms, while LLM sees original grounded evidence</td></tr>
+<tr><td>BGE-M3 embeddings</td><td>Strong multilingual embedding candidate with Bangla support</td></tr>
+<tr><td>ChromaDB</td><td>Local persistent vector index suitable for thesis prototype</td></tr>
+<tr><td>BM25</td><td>Captures exact legal/service terms, numbers, fees, and Bangla keywords</td></tr>
+<tr><td>RRF</td><td>Combines dense semantic retrieval and lexical retrieval</td></tr>
+<tr><td>Reranking</td><td>Attempts to improve candidate ordering before generation</td></tr>
+<tr><td>Safe answer paths</td><td>Avoids hallucination for fee/correction/procedure answers</td></tr>
+<tr><td>Local LLMs</td><td>Avoids API key dependency and supports reproducible local experiments</td></tr>
+<tr><td>Source IDs and links</td><td>Makes answers explainable and manually verifiable</td></tr>
+</tbody></table>
+<hr>
+<h2>7. Data Preparation and Chunking</h2>
+<h3>7.1 Raw Data Types Considered</h3>
+<p>The birth/death registration domain included four broad raw data types:</p>
+<ol>
+<li>Bijoy-encoded PDFs.</li>
+<li>Converted DOCX files.</li>
+<li>Unicode HTML pages.</li>
+<li>Scanned PDFs / OCR-related files.</li>
+</ol>
+<p>These are realistic government-service data formats. They are not clean tutorial-style documents.</p>
+<h3>7.2 Why Manual Cleaning Was Necessary</h3>
+<p>Manual cleaning was necessary because many source pages contained:</p>
+<ul>
+<li>Website navigation menus.</li>
+<li>Footer text.</li>
+<li>Repeated service lists.</li>
+<li>Accessibility controls.</li>
+<li>News blocks.</li>
+<li>Minister/officer profile sections.</li>
+<li>Duplicate sidebar content.</li>
+<li>Mixed useful and irrelevant text.</li>
+<li>Table-like content copied as plain text.</li>
+</ul>
+<p>If these noisy blocks are embedded, the retriever may return irrelevant chunks.</p>
+<h3>7.3 Chunking Strategy</h3>
+<p>The current chunking approach is <strong>document-type-aware</strong>:</p>
+<table>
+<thead><tr><th>Document Type</th><th>Chunking Strategy</th></tr></thead>
+<tbody>
+<tr><td>FAQ JSON</td><td>One question-answer pair per chunk</td></tr>
+<tr><td>FAQ Markdown</td><td>Heading/question-based chunking</td></tr>
+<tr><td>Legal rules/acts</td><td>Section/rule-based chunking</td></tr>
+<tr><td>Application process</td><td>Step/heading-based chunks</td></tr>
+<tr><td>Fee tables</td><td>Table-level and row-level chunks</td></tr>
+<tr><td>Notice/OCR documents</td><td>Heading and semantic block chunks</td></tr>
+</tbody></table>
+<p>This is better than using one generic fixed-size splitter for all documents because:</p>
+<ul>
+<li>FAQ answers should not be split away from their questions.</li>
+<li>Legal rules should preserve rule numbers and legal context.</li>
+<li>Fee rows need exact row-level retrieval.</li>
+<li>Process steps should remain ordered and explainable.</li>
+</ul>
+<h3>7.4 Important Chunk File</h3>
+<p>The final chunk file used for indexing is:</p>
+<pre><code>domains/birth_death_registration/data/interim/birth_death_chunks.jsonl</code></pre>
+<p>Each chunk contains:</p>
+<ul>
+<li><code>id</code></li>
+<li><code>content</code></li>
+<li><code>retrieval_text</code></li>
+<li><code>metadata</code></li>
+<li>source/link fields where available</li>
+</ul>
+<h3>7.5 Why We Use Two Text Versions</h3>
+<p>Each chunk has two conceptual versions:</p>
+<ol>
+<li><strong><code>retrieval_text</code></strong></li>
+</ol>
+<ul>
+<li>Used for search.</li>
+<li>Can contain aliases, normalized wording, and query-friendly terms.</li>
+<li>Helps cross-lingual or paraphrased matching.</li>
+</ul>
+<ol>
+<li><strong><code>content</code> / answer evidence</strong></li>
+</ol>
+<ul>
+<li>Used for answer generation.</li>
+<li>Should preserve original Bangla source wording.</li>
+<li>Prevents the LLM from answering based on artificial aliases.</li>
+</ul>
+<p>This design reduces hallucination because the LLM receives source evidence rather than search-only expansion text.</p>
+<hr>
+<h2>8. Embedding and Indexing</h2>
+<h3>8.1 Embedding Model</h3>
+<p>Current embedding model:</p>
+<pre><code>BAAI/bge-m3</code></pre>
+<p>Reason for choosing BGE-M3:</p>
+<ul>
+<li>Multilingual support.</li>
+<li>Strong semantic retrieval capability.</li>
+<li>Suitable for Bangla-English/code-mixed retrieval.</li>
+<li>Can run locally.</li>
+<li>Works with ChromaDB cosine similarity.</li>
+</ul>
+<h3>8.2 Vector Database</h3>
+<p>Current vector database:</p>
+<pre><code>ChromaDB</code></pre>
+<p>Reason:</p>
+<ul>
+<li>Local persistent database.</li>
+<li>No cloud/API dependency.</li>
+<li>Simple to inspect and rebuild.</li>
+<li>Sufficient for thesis-scale prototype.</li>
+</ul>
+<h3>8.3 Sparse Index</h3>
+<p>Current sparse retriever:</p>
+<pre><code>BM25Okapi</code></pre>
+<p>Reason:</p>
+<ul>
+<li>Captures exact lexical matches.</li>
+<li>Useful for legal terms, fees, dates, rule numbers, and exact service names.</li>
+<li>Provides a strong non-neural baseline.</li>
+</ul>
+<hr>
+<h2>9. Retrieval Variants Implemented</h2>
+<p>The retrieval comparison is implemented in:</p>
+<pre><code>scripts/run_p2_experiments.py</code></pre>
+<p>The core variant function is:</p>
+<pre><code>def retrieval_variants(pipeline, query, top_k):
+    hybrid_candidates = pipeline.retriever.search(...)
+    return {
+        &quot;dense_only&quot;: pipeline.retriever.dense_only_search(query, top_k=top_k),
+        &quot;bm25_only&quot;: pipeline.retriever.bm25_only_search(query, top_k=top_k),
+        &quot;hybrid_rrf&quot;: hybrid_candidates[:top_k],
+        &quot;hybrid_rrf_rerank&quot;: pipeline.reranker.rerank(query, hybrid_candidates, top_k=top_k),
+    }</code></pre>
+<h3>9.1 Dense-only</h3>
+<p>Dense-only means:</p>
+<pre><code>Query → BGE-M3 embedding → ChromaDB cosine similarity → top-k chunks</code></pre>
+<p>It captures semantic similarity. Example:</p>
+<pre><code>Query: &quot;জন্মসনদ হারিয়ে গেলে কী করব?&quot;</code></pre>
+<p>Dense retrieval can match:</p>
+<pre><code>&quot;সনদের প্রতিলিপি&quot;, &quot;নষ্ট&quot;, &quot;হারানো&quot;, &quot;নিবন্ধকের কাছে আবেদন&quot;</code></pre>
+<p>even if exact query words are not identical.</p>
+<h3>9.2 BM25-only</h3>
+<p>BM25-only means:</p>
+<pre><code>Query tokens → lexical score against chunk tokens → top-k chunks</code></pre>
+<p>BM25 is useful when exact terms matter:</p>
+<pre><code>ফি, বিধি ১৩, জন্ম তারিখ, প্রতিলিপি, ৫০ টাকা, ৪৫ দিন</code></pre>
+<p>However, BM25 can struggle with:</p>
+<ul>
+<li>Bangla spelling variation.</li>
+<li>OCR noise.</li>
+<li>Code-mixed queries.</li>
+<li>Paraphrases.</li>
+<li>Synonyms.</li>
+</ul>
+<h3>9.3 Hybrid RRF</h3>
+<p>Hybrid RRF means:</p>
+<pre><code>Dense ranked list + BM25 ranked list → Reciprocal Rank Fusion → fused top-k chunks</code></pre>
+<p>RRF does not only select chunks common to both lists. It combines rankings:</p>
+<pre><code>RRF score(d) = Σ weight_r / (k + rank_r(d))</code></pre>
+<p>Where:</p>
+<ul>
+<li><code>d</code> = document/chunk.</li>
+<li><code>r</code> = retriever, e.g., dense or BM25.</li>
+<li><code>rank_r(d)</code> = rank of chunk <code>d</code> in retriever <code>r</code>.</li>
+<li><code>k</code> = RRF smoothing constant.</li>
+<li><code>weight_r</code> = retriever weight.</li>
+</ul>
+<p>If a chunk appears in both Dense and BM25, it receives both contributions. If it appears in only one, it can still survive if ranked high.</p>
+<h3>9.4 Hybrid + Rerank</h3>
+<p>Hybrid + Rerank means:</p>
+<pre><code>Dense + BM25 → RRF candidate pool → reranker → final top-k chunks</code></pre>
+<p>In the full pipeline, reranking can use a cross-encoder model. In the fast P2 experiment run, we used lexical fallback mode to avoid long CPU runtime:</p>
+<pre><code>Reranking mode: lexical fallback / fast mode</code></pre>
+<p>This means the current fast results are preliminary and practical for P2 iteration. For final thesis results, we should also run full cross-encoder reranking where feasible.</p>
+<hr>
+<h2>10. Simple RAG vs CivicRAG</h2>
+<h3>10.1 Simple RAG</h3>
+<p>Simple RAG is our tutorial/baseline system:</p>
+<pre><code>Query → Dense retrieval → top chunks → LLM answer</code></pre>
+<p>It is useful because:</p>
+<ul>
+<li>It is easy to explain.</li>
+<li>It provides a minimal baseline.</li>
+<li>It shows whether advanced engineering actually improves results.</li>
+</ul>
+<h3>10.2 CivicRAG</h3>
+<p>CivicRAG is our proposed system:</p>
+<pre><code>Query normalization
+    ↓
+Intent detection
+    ↓
+Hybrid retrieval
+    ↓
+RRF fusion
+    ↓
+Reranking/boosting
+    ↓
+Safe answer paths
+    ↓
+LLM only if needed
+    ↓
+Bangla language guard
+    ↓
+Sources and links</code></pre>
+<p>CivicRAG is not just a different LLM. It is an engineered RAG pipeline with stronger retrieval, routing, grounding, answer controls, and explainability.</p>
+<hr>
+<h2>11. Evaluation Dataset</h2>
+<p>The P2 evaluation dataset is:</p>
+<pre><code>domains/birth_death_registration/data/evaluation/p2_20q_eval_set.json</code></pre>
+<p>It contains 20 Bangla scenario-based questions. Each record contains:</p>
+<pre><code>{
+  &quot;id&quot;: &quot;...&quot;,
+  &quot;category&quot;: &quot;...&quot;,
+  &quot;question_type&quot;: &quot;...&quot;,
+  &quot;question&quot;: &quot;...&quot;,
+  &quot;expected_answer&quot;: &quot;...&quot;,
+  &quot;expected_source_ids&quot;: [...]
+}</code></pre>
+<h3>Why Scenario-Based Questions?</h3>
+<p>Simple binary questions are useful but insufficient. Real citizens ask messy questions such as:</p>
+<pre><code>আমার ছেলের জন্য জন্ম নিবন্ধন আবেদন করেছি। আবেদন নাম্বার পেয়েছি কিন্তু কতদিন সময় লাগবে বুঝছি না।
+ফাইল upload হচ্ছে কিন্তু submit করার সময় প্রয়োজনীয় ফাইল আপলোড করেননি দেখাচ্ছে।
+আমার ভোটার আইডি আছে কিন্তু জন্ম নিবন্ধন অনলাইন করা নাই, এখন কী করব?</code></pre>
+<p>This requires:</p>
+<ul>
+<li>Multi-intent detection.</li>
+<li>Retrieval from multiple chunks.</li>
+<li>Avoiding unsupported claims.</li>
+<li>Explaining what the dataset does and does not contain.</li>
+</ul>
+<h3>Categories Included</h3>
+<p>The 20 questions include:</p>
+<ul>
+<li>Application process.</li>
+<li>Required documents.</li>
+<li>Lost certificate.</li>
+<li>Single-parent/divorce scenarios.</li>
+<li>Online record not found.</li>
+<li>Upload/file attachment issues.</li>
+<li>Manual-to-online migration.</li>
+<li>Overseas registration.</li>
+<li>Parent name correction.</li>
+<li>Birth date correction.</li>
+<li>Fee/fee waiver.</li>
+<li>Death registration.</li>
+<li>Out-of-context questions.</li>
+</ul>
+<p>This aligns with the P2 goal of testing multiple cases and constraints rather than only demonstrating happy-path queries.</p>
+<hr>
+<h2>12. Evaluation Metrics and Exact Formulas</h2>
+<p>The current metric implementation is in:</p>
+<pre><code>src/evaluation/metrics.py</code></pre>
+<p>Let:</p>
+<ul>
+<li><code>G</code> = set of expected relevant source chunk IDs for a question.</li>
+<li><code>R_k</code> = top-k retrieved chunk IDs.</li>
+<li><code>rank(i)</code> = rank position of retrieved chunk <code>i</code>.</li>
+</ul>
+<h3>12.1 Recall@k</h3>
+<p>Current implementation:</p>
+<pre><code>Recall@k = 1 if any retrieved chunk in top-k is in expected_source_ids
+Recall@k = 0 otherwise</code></pre>
+<p>Formula:</p>
+<pre><code>Recall@k = 1[ R_k ∩ G ≠ ∅ ]</code></pre>
+<p>Interpretation:</p>
+<pre><code>Recall@5 = 0.850</code></pre>
+<p>means:</p>
+<pre><code>17 out of 20 questions retrieved at least one expected source chunk within the top 5.</code></pre>
+<p>This is an RAG-style evidence-hit recall. It answers:</p>
+<p>&gt; Did the retriever bring at least one correct evidence chunk into the context window?</p>
+<h3>12.2 Context Precision@k</h3>
+<p>Formula:</p>
+<pre><code>Context Precision@k = |R_k ∩ G| / k</code></pre>
+<p>Interpretation:</p>
+<p>If top 5 contains 2 expected chunks:</p>
+<pre><code>Context Precision@5 = 2 / 5 = 0.4</code></pre>
+<p>This tells us how much of the retrieved context is actually useful.</p>
+<h3>12.3 MRR</h3>
+<p>MRR means Mean Reciprocal Rank.</p>
+<p>For one question:</p>
+<pre><code>RR = 1 / rank_of_first_relevant_chunk</code></pre>
+<p>If the first relevant chunk is rank 1:</p>
+<pre><code>RR = 1 / 1 = 1.0</code></pre>
+<p>If it is rank 4:</p>
+<pre><code>RR = 1 / 4 = 0.25</code></pre>
+<p>Across all questions:</p>
+<pre><code>MRR = average(RR over all questions)</code></pre>
+<p>MRR is important because two systems can both have Recall@5 = 1, but one may rank the evidence first while another ranks it fifth.</p>
+<h3>12.4 nDCG@k</h3>
+<p>nDCG evaluates ranking quality.</p>
+<p>DCG:</p>
+<pre><code>DCG@k = Σ relevance_i / log2(i + 1)</code></pre>
+<p>For binary relevance:</p>
+<pre><code>relevance_i = 1 if retrieved chunk at rank i is expected
+relevance_i = 0 otherwise</code></pre>
+<p>IDCG is the ideal DCG if all relevant chunks were ranked at the top.</p>
+<pre><code>nDCG@k = DCG@k / IDCG@k</code></pre>
+<p>Interpretation:</p>
+<ul>
+<li>Higher nDCG means relevant chunks appear earlier.</li>
+<li>It is stronger than Recall@k because it considers ranking order.</li>
+</ul>
+<h3>12.5 Token F1</h3>
+<p>Used for generation comparison:</p>
+<pre><code>Precision = overlapping_tokens / generated_tokens
+Recall = overlapping_tokens / reference_tokens
+F1 = 2 × Precision × Recall / (Precision + Recall)</code></pre>
+<p>This is only a rough proxy for Bangla answer correctness.</p>
+<h3>12.6 Semantic Correctness Proxy</h3>
+<p>We encode generated answer and expected answer using the embedding model:</p>
+<pre><code>semantic_correctness = cosine(embedding(answer), embedding(expected_answer))</code></pre>
+<p>Cosine similarity:</p>
+<pre><code>cosine(a,b) = (a · b) / (||a|| ||b||)</code></pre>
+<p>This is not perfect but helps compare answer meaning.</p>
+<h3>12.7 Faithfulness Proxy</h3>
+<p>Current lightweight proxy:</p>
+<pre><code>faithfulness_proxy = max cosine(answer_embedding, context_chunk_embedding)</code></pre>
+<p>This estimates whether the answer is semantically close to retrieved evidence.</p>
+<p>Important limitation:</p>
+<p>&gt; This is not a full RAGAS faithfulness judge. It is a fast local proxy. For final thesis, we should combine it with manual review and possibly RAGAS/LangSmith style evaluation.</p>
+<h3>12.8 Stability Metrics</h3>
+<p>For repeated query tests:</p>
+<pre><code>Exact Answer Match = 1 if repeated answers are exactly the same
+Mean Pairwise Answer Similarity = average cosine similarity between repeated answers
+Mean Source Jaccard = |S_i ∩ S_j| / |S_i ∪ S_j|</code></pre>
+<p>In government-service QA, identical answers are not automatically bad. Stable factual answers can be desirable if they are grounded and correct.</p>
+<hr>
+<h2>13. Current Experiment Results</h2>
+<h3>13.1 Retrieval Variant Comparison</h3>
+<p>Command used:</p>
+<pre><code>.venv/bin/python scripts/run_p2_experiments.py --fast-rerank</code></pre>
+<p>Output report:</p>
+<pre><code>docs/evaluation/p2_experiments/p2_experiment_report.md</code></pre>
+<p>Results:</p>
+<table>
+<thead><tr><th>Variant</th><th>Recall@1</th><th>Recall@3</th><th>Recall@5</th><th>Context Precision@5</th><th>MRR</th><th>nDCG@5</th></tr></thead>
+<tbody>
+<tr><td>BM25-only</td><td>0.450</td><td>0.550</td><td>0.800</td><td>0.220</td><td>0.546</td><td>0.481</td></tr>
+<tr><td>Dense-only</td><td>0.800</td><td>0.900</td><td>0.900</td><td>0.310</td><td>0.842</td><td>0.731</td></tr>
+<tr><td>Hybrid RRF</td><td>0.700</td><td>0.800</td><td>0.850</td><td>0.300</td><td>0.752</td><td>0.661</td></tr>
+<tr><td>Hybrid RRF + Rerank</td><td>0.650</td><td>0.800</td><td>0.850</td><td>0.290</td><td>0.738</td><td>0.664</td></tr>
+</tbody></table>
+<h3>13.2 Interpretation</h3>
+<p>Dense-only currently performs best across:</p>
+<ul>
+<li>Recall@1.</li>
+<li>Recall@3.</li>
+<li>Recall@5.</li>
+<li>Context Precision@5.</li>
+<li>MRR.</li>
+<li>nDCG@5.</li>
+</ul>
+<p>This means the BGE-M3 embedding model is currently retrieving relevant chunks very well for our cleaned Bangla dataset.</p>
+<h3>13.3 Does This Mean the Dataset Is Bad?</h3>
+<p>No. It may actually mean the dataset is clean enough for semantic retrieval to work well.</p>
+<p>Possible reasons dense-only is strong:</p>
+<ul>
+<li>Chunks are semantically coherent.</li>
+<li>The dataset is domain-focused.</li>
+<li>BGE-M3 handles Bangla semantic similarity well.</li>
+<li>Many user questions are paraphrased/scenario-based rather than exact keyword queries.</li>
+</ul>
+<p>Possible reasons hybrid currently underperforms:</p>
+<ul>
+<li>BM25 may introduce keyword-matched but semantically weaker chunks.</li>
+<li>RRF weights may give BM25 too much influence.</li>
+<li>Fast rerank used lexical fallback instead of full cross-encoder reranking.</li>
+<li>Some expected-source labels may favor semantic chunks over lexical chunks.</li>
+<li>Bangla tokenization in BM25 is basic.</li>
+</ul>
+<p>The correct conclusion is:</p>
+<p>&gt; Dense-only is currently the strongest baseline. Hybrid/RRF needs tuning before being claimed as the final best retrieval design.</p>
+<p>This is academically healthy because it shows the system is being selected based on results rather than assumptions.</p>
+<hr>
+<h2>14. Parameter Sensitivity Results</h2>
+<p>Current fast parameter sensitivity results:</p>
+<table>
+<thead><tr><th>Config</th><th>Recall@1</th><th>Recall@3</th><th>Recall@5</th><th>Context Precision@5</th><th>MRR</th><th>nDCG@5</th></tr></thead>
+<tbody>
+<tr><td>Balanced current</td><td>0.650</td><td>0.800</td><td>0.850</td><td>0.290</td><td>0.738</td><td>0.664</td></tr>
+<tr><td>BM25-heavy</td><td>0.650</td><td>0.800</td><td>0.800</td><td>0.300</td><td>0.717</td><td>0.642</td></tr>
+<tr><td>Dense-heavy</td><td>0.650</td><td>0.800</td><td>0.850</td><td>0.290</td><td>0.735</td><td>0.663</td></tr>
+<tr><td>Large top-k</td><td>0.650</td><td>0.800</td><td>0.800</td><td>0.290</td><td>0.717</td><td>0.658</td></tr>
+<tr><td>Small top-k</td><td>0.650</td><td>0.850</td><td>0.850</td><td>0.290</td><td>0.742</td><td>0.663</td></tr>
+</tbody></table>
+<p>Interpretation:</p>
+<ul>
+<li>BM25-heavy does not improve overall recall.</li>
+<li>Smaller candidate pools sometimes improve Recall@3 slightly.</li>
+<li>Current RRF settings are not yet beating dense-only.</li>
+<li>We need more systematic tuning before finalizing hybrid.</li>
+</ul>
+<hr>
+<h2>15. Generation and Stability Smoke Test</h2>
+<p>A small smoke test was run:</p>
+<pre><code>.venv/bin/python scripts/run_p2_experiments.py \
+  --limit 1 \
+  --fast-rerank \
+  --run-generation \
+  --run-stability \
+  --stability-repeats 2 \
+  --models llama3.2 \
+  --methods simple civic \
+  --answer-timeout-seconds 45 \
+  --output-dir docs/evaluation/p2_experiments_smoke_generation</code></pre>
+<p>Results:</p>
+<table>
+<thead><tr><th>Method + Model</th><th>Semantic Correctness</th><th>Token F1</th><th>Answer Relevance</th><th>Faithfulness Proxy</th><th>Source Retrieved</th><th>Source Cited</th></tr></thead>
+<tbody>
+<tr><td>CivicRAG + llama3.2</td><td>0.852</td><td>0.158</td><td>0.726</td><td>0.809</td><td>1.000</td><td>1.000</td></tr>
+<tr><td>Simple RAG + llama3.2</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td></tr>
+</tbody></table>
+<p>Important caveat:</p>
+<ul>
+<li>The Simple RAG answer timed out in this smoke test and was scored as zero.</li>
+<li>This does not prove Simple RAG is always bad.</li>
+<li>It only confirms that the evaluation framework can run generation comparison, timeout safely, and record errors.</li>
+</ul>
+<p>Stability result for CivicRAG + llama3.2:</p>
+<table>
+<thead><tr><th>Metric</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td>Exact Answer Match</td><td>1.000</td></tr>
+<tr><td>Mean Pairwise Answer Similarity</td><td>1.000</td></tr>
+<tr><td>Mean Source Jaccard</td><td>1.000</td></tr>
+</tbody></table>
+<p>Interpretation:</p>
+<ul>
+<li>For this one test question, CivicRAG gave stable repeated answers.</li>
+<li>In civic QA, stability is generally positive if the answer is factually correct and source-grounded.</li>
+</ul>
+<hr>
+<h2>16. How to Explain This Without Saying &quot;We Used AI&quot;</h2>
+<p>A strong faculty-facing explanation:</p>
+<p>&gt; We implemented an evaluation harness that runs the same manually prepared Bangla test questions through multiple retrieval strategies. For each question, we manually assigned expected relevant source chunk IDs. The system retrieves top-k chunks using each strategy, compares retrieved chunk IDs with expected source IDs, and calculates Recall@k, Context Precision@k, MRR, and nDCG@k. This lets us compare design alternatives quantitatively before selecting the final retrieval architecture.</p>
+<p>Do not say:</p>
+<pre><code>AI compared them for us.</code></pre>
+<p>Say:</p>
+<pre><code>We designed a reproducible retrieval evaluation framework and used it to measure alternative retrieval strategies.</code></pre>
+<hr>
+<h2>17. How to Demo the System</h2>
+<h3>17.1 Start the Chatbot</h3>
+<pre><code>.venv/bin/python app.py --host 127.0.0.1 --port 7860</code></pre>
+<p>Open:</p>
+<pre><code>http://127.0.0.1:7860</code></pre>
+<h3>17.2 Run Retrieval Evaluation</h3>
+<p>Fast retrieval evaluation:</p>
+<pre><code>.venv/bin/python scripts/run_p2_experiments.py --fast-rerank</code></pre>
+<p>View:</p>
+<pre><code>docs/evaluation/p2_experiments/p2_experiment_report.md</code></pre>
+<h3>17.3 Run Small Generation Smoke Test</h3>
+<pre><code>.venv/bin/python scripts/run_p2_experiments.py \
+  --limit 1 \
+  --fast-rerank \
+  --run-generation \
+  --run-stability \
+  --stability-repeats 2 \
+  --models llama3.2 \
+  --methods simple civic \
+  --answer-timeout-seconds 45 \
+  --output-dir docs/evaluation/p2_experiments_smoke_generation</code></pre>
+<h3>17.4 Suggested Demo Questions</h3>
+<p>Use questions that show different capabilities:</p>
+<ol>
+<li><code>জন্মনিবন্ধন সনদ হারিয়ে গিয়েছে, কি করব?</code></li>
+<li><code>জন্মসনদের জন্য আবেদন করব কীভাবে? কি কি কাগজপত্র প্রয়োজন?</code></li>
+<li><code>ডিভোর্সের ক্ষেত্রে, শুধু পিতার/মাতার তথ্য দিয়ে কি সন্তানের জন্ম নিবন্ধন করা যাবে?</code></li>
+<li><code>আমার জন্ম নিবন্ধন অনলাইনে খুঁজে পাচ্ছি না, কী করব?</code></li>
+<li><code>আমার ছেলের জন্ম নিবন্ধনে বাবা-মায়ের নাম ভুল আছে, কীভাবে সংশোধন করব?</code></li>
+<li><code>এতিম শিশুর জন্ম নিবন্ধনে ফি লাগবে কি?</code></li>
+<li><code>পাসপোর্ট করতে কী লাগে?</code></li>
+</ol>
+<p>The final question is intentionally out-of-context. The system should avoid answering passport questions from birth/death registration data.</p>
+<hr>
+<h2>18. Why Dense-only Being Better Is Not a Bad Sign</h2>
+<p>It is natural to feel worried when an advanced method performs worse than a simpler method. But in research, this is exactly why baselines exist.</p>
+<p>Possible interpretations:</p>
+<h3>Interpretation 1: The Dataset Is Clean and Semantic</h3>
+<p>Because we cleaned and chunked the data carefully, semantic retrieval may already work well.</p>
+<p>This is positive.</p>
+<h3>Interpretation 2: BM25 Needs Better Bangla Tokenization</h3>
+<p>Current BM25 tokenization is simple. Bangla morphology and spelling variation may reduce lexical matching quality.</p>
+<p>This is fixable.</p>
+<h3>Interpretation 3: RRF Weights Need Tuning</h3>
+<p>Current RRF weights:</p>
+<pre><code>dense = 0.55
+bm25 = 0.45</code></pre>
+<p>Maybe BM25 should be lower, such as:</p>
+<pre><code>dense = 0.80
+bm25 = 0.20</code></pre>
+<h3>Interpretation 4: Hybrid May Help Specific Categories Only</h3>
+<p>Overall average may favor dense-only, but BM25/hybrid may help:</p>
+<ul>
+<li>Fee questions.</li>
+<li>Legal rule number questions.</li>
+<li>Exact date or amount questions.</li>
+<li>Service-code questions.</li>
+</ul>
+<p>Therefore, we should calculate category-wise metrics.</p>
+<h3>Interpretation 5: Fast Rerank Is Not Final Rerank</h3>
+<p>The current report used:</p>
+<pre><code>lexical fallback / fast mode</code></pre>
+<p>The final thesis should also test:</p>
+<pre><code>full BGE cross-encoder reranker</code></pre>
+<p>if runtime allows.</p>
+<hr>
+<h2>19. Recommended Next Steps</h2>
+<h3>Short-Term P2 Next Steps</h3>
+<ol>
+<li>Add category-wise evaluation tables.</li>
+<li>Compare dense-only vs hybrid by question category.</li>
+<li>Try denser RRF weights:</li>
+</ol>
+<ul>
+<li><code>dense=0.70</code>, <code>bm25=0.30</code></li>
+<li><code>dense=0.80</code>, <code>bm25=0.20</code></li>
+<li><code>dense=0.90</code>, <code>bm25=0.10</code></li>
+</ul>
+<ol>
+<li>Run full cross-encoder reranking on a smaller subset.</li>
+<li>Add manual qualitative scoring for the 20-question set.</li>
+</ol>
+<h3>Medium-Term Thesis Steps</h3>
+<ol>
+<li>Expand evaluation set to 50+ Bangla/code-mixed questions.</li>
+<li>Add answer-level manual grading:</li>
+</ol>
+<ul>
+<li>Correctness.</li>
+<li>Faithfulness.</li>
+<li>Completeness.</li>
+<li>Language match.</li>
+<li>Source usefulness.</li>
+</ul>
+<ol>
+<li>Evaluate all three local LLMs:</li>
+</ol>
+<ul>
+<li><code>llama3.2</code></li>
+<li><code>llama3</code></li>
+<li><code>qwen2.5:7b</code></li>
+</ul>
+<ol>
+<li>Compare LLM-only answers against RAG answers.</li>
+<li>Add out-of-context refusal metrics.</li>
+<li>Decide final retrieval architecture based on measured results.</li>
+</ol>
+<hr>
+<h2>20. Alternative Designs Considered</h2>
+<table>
+<thead><tr><th>Alternative</th><th>Why Considered</th><th>Why Not Final Yet</th></tr></thead>
+<tbody>
+<tr><td>Dense-only</td><td>Strong semantic baseline, simple, currently best retrieval result</td><td>May miss exact legal/fee terms</td></tr>
+<tr><td>BM25-only</td><td>Strong exact-match baseline, interpretable</td><td>Weak on paraphrased Bangla/code-mixed queries</td></tr>
+<tr><td>Hybrid RRF</td><td>Combines semantic and lexical evidence</td><td>Current weights not beating dense-only</td></tr>
+<tr><td>Hybrid + Rerank</td><td>Should improve ranking of candidate chunks</td><td>Fast rerank underperformed; full reranker needs runtime testing</td></tr>
+<tr><td>LLM-only</td><td>Simple to build</td><td>High hallucination risk, no grounded evidence</td></tr>
+<tr><td>Translation-first pipeline</td><td>Could translate Bangla to English then retrieve</td><td>Risky for legal/government terms and adds translation errors</td></tr>
+<tr><td>Fine-tuning LLM</td><td>Could improve language style</td><td>Not needed before retrieval quality is solved; costly and less explainable</td></tr>
+<tr><td>Knowledge graph</td><td>Useful for structured legal/service relations</td><td>Too heavy for current P2; possible future extension</td></tr>
+<tr><td>Agentic RAG</td><td>Useful for complex workflows</td><td>Could overcomplicate current phase; core retrieval must be validated first</td></tr>
+</tbody></table>
+<hr>
+<h2>21. Supervisor Questions and Prepared Answers</h2>
+<h3>Q1. What exactly is your proposed system?</h3>
+<p><strong>Answer:</strong> Our proposed system is CivicRAG, a Bangla-English government-service RAG pipeline. It retrieves evidence from cleaned government-service documents, ranks the evidence, applies safe answer logic for procedural/fee/correction questions, and uses local LLMs only when necessary. It returns answers with source IDs and official links.</p>
+<h3>Q2. Is your model one of llama3.2, llama3, or qwen2.5?</h3>
+<p><strong>Answer:</strong> No. Those are backend LLMs. Our contribution is the RAG system architecture and retrieval/generation pipeline. We evaluate CivicRAG with different local LLM backends to see which one produces better grounded answers.</p>
+<h3>Q3. Why are you comparing Dense-only, BM25-only, Hybrid, and Hybrid+Rerank?</h3>
+<p><strong>Answer:</strong> These are alternative retrieval designs. P2 requires multiple engineering solutions and functional verification. We compare them using the same 20-question gold set to decide which retrieval design is most suitable for the final system.</p>
+<h3>Q4. How did you calculate Recall@5?</h3>
+<p><strong>Answer:</strong> For each question, we have manually assigned expected source chunk IDs. If any expected source appears in the top 5 retrieved chunks, that question gets Recall@5 = 1. Otherwise it gets 0. The reported Recall@5 is the average across all questions. So 0.850 means 17 out of 20 questions retrieved at least one expected source in top 5.</p>
+<h3>Q5. Why is Dense-only currently better than Hybrid?</h3>
+<p><strong>Answer:</strong> The current dataset is semantically clean and BGE-M3 performs well for Bangla semantic matching. BM25 may introduce keyword-matched but less relevant chunks, so the initial hybrid weighting is not yet optimal. This does not mean hybrid is wrong; it means we need tuning and category-wise analysis before choosing the final retrieval setup.</p>
+<h3>Q6. Does this mean your proposed CivicRAG is worse?</h3>
+<p><strong>Answer:</strong> Not necessarily. The current table evaluates retrieval variants only. CivicRAG includes more than retrieval: intent detection, safe answer paths, source links, language guard, and grounded answer formatting. However, retrieval quality is the foundation, so we must tune the retrieval component honestly.</p>
+<h3>Q7. Why not just use Dense-only as final?</h3>
+<p><strong>Answer:</strong> Dense-only may become the final retrieval choice if it consistently wins. But before deciding, we need category-wise evaluation. BM25/hybrid may be better for exact legal, fee, rule-number, or date-based questions. Final selection should be evidence-based.</p>
+<h3>Q8. Why use BGE-M3?</h3>
+<p><strong>Answer:</strong> BGE-M3 is multilingual and suitable for Bangla-English retrieval. It supports semantic retrieval better than English-only embedding models and can run locally, matching our no-API constraint.</p>
+<h3>Q9. Why use BM25 if it performs worse?</h3>
+<p><strong>Answer:</strong> BM25 is still valuable as a baseline and may help exact-match queries. Even if not final, including it makes the study academically stronger because we compare neural retrieval against a classical IR method.</p>
+<h3>Q10. Why use RRF?</h3>
+<p><strong>Answer:</strong> RRF is a simple, explainable rank-fusion method. It combines dense and sparse rankings without needing score calibration. Chunks appearing high in both lists receive stronger scores.</p>
+<h3>Q11. Does RRF only keep common results?</h3>
+<p><strong>Answer:</strong> No. RRF rewards common results but does not require overlap. A chunk appearing in only Dense or only BM25 can still remain if ranked high enough.</p>
+<h3>Q12. What is the formula for RRF?</h3>
+<p><strong>Answer:</strong></p>
+<pre><code>RRF(d) = Σ weight_r / (k + rank_r(d))</code></pre>
+<p>Where <code>d</code> is a chunk, <code>r</code> is a retriever, and <code>rank_r(d)</code> is that chunk&#x27;s rank in retriever <code>r</code>.</p>
+<h3>Q13. Why not use only LLMs without retrieval?</h3>
+<p><strong>Answer:</strong> LLM-only answers can hallucinate and cannot provide source grounding. Government-service information requires factual correctness and source traceability, so retrieval is necessary.</p>
+<h3>Q14. Why local LLMs?</h3>
+<p><strong>Answer:</strong> Local LLMs avoid API dependency, reduce cost, and make the thesis reproducible. We use Ollama models such as <code>llama3.2</code>, <code>llama3</code>, and <code>qwen2.5:7b</code>.</p>
+<h3>Q15. Why do some answers look identical across models?</h3>
+<p><strong>Answer:</strong> In our system, many answers are generated through controlled safe paths from retrieved evidence, not fully free-form LLM generation. For civic QA, factual consistency is often positive. Variation is less important than correctness and grounding.</p>
+<h3>Q16. How do you handle Bangla queries?</h3>
+<p><strong>Answer:</strong> The pipeline detects Bangla text, uses Bangla-compatible embeddings, retrieves Bangla evidence, and applies a Bangla language guard so Bangla questions should receive Bangla answers.</p>
+<h3>Q17. What happens if the question is outside the domain?</h3>
+<p><strong>Answer:</strong> The system should avoid answering from unrelated sources. Out-of-context questions are included in the evaluation set to test refusal behavior.</p>
+<h3>Q18. How do you know the system is grounded?</h3>
+<p><strong>Answer:</strong> Each answer includes source IDs and official/source links. We also evaluate whether expected source IDs were retrieved and cited. Manual review is still needed for final faithfulness judgment.</p>
+<h3>Q19. Are your metrics enough?</h3>
+<p><strong>Answer:</strong> For P2, retrieval metrics plus generation proxy metrics are enough to demonstrate design verification. For final thesis, we should add manual qualitative analysis and possibly RAGAS/LangSmith-style faithfulness evaluation.</p>
+<h3>Q20. What is your current limitation?</h3>
+<p><strong>Answer:</strong> Current limitations include a small 20-question evaluation set, fast rerank mode instead of full reranker in the latest report, limited manual answer grading, and a single active domain. These are planned next steps.</p>
+<hr>
+<h2>22. Risks and Mitigation</h2>
+<table>
+<thead><tr><th>Risk</th><th>Mitigation</th></tr></thead>
+<tbody>
+<tr><td>Hybrid underperforms dense-only</td><td>Treat dense-only as strong baseline; tune RRF weights; run category-wise analysis</td></tr>
+<tr><td>LLM hallucination</td><td>Use safe answer paths and source-grounded prompts</td></tr>
+<tr><td>Bangla output inconsistency</td><td>Use language guard and Bangla evidence</td></tr>
+<tr><td>Slow local LLMs</td><td>Add generation timeout and smoke tests</td></tr>
+<tr><td>Evaluation dataset too small</td><td>Expand from 20 to 50+ questions</td></tr>
+<tr><td>Manual labels may be incomplete</td><td>Review expected source IDs and add multiple valid source chunks</td></tr>
+<tr><td>BM25 weak for Bangla</td><td>Improve tokenization or use sparse multilingual retriever later</td></tr>
+<tr><td>Reranker slow on CPU</td><td>Use fast mode for iteration and full mode for selected final runs</td></tr>
+</tbody></table>
+<hr>
+<h2>23. What We Can Claim Now</h2>
+<p>We can safely claim:</p>
+<ol>
+<li>We have built a modular birth/death registration RAG prototype.</li>
+<li>The system supports local LLM backends.</li>
+<li>The system uses cleaned, chunked, metadata-rich Bangla government-service data.</li>
+<li>We implemented multiple retrieval design alternatives.</li>
+<li>We built a reproducible evaluation harness.</li>
+<li>We measured retrieval performance using Recall@k, Context Precision, MRR, and nDCG.</li>
+<li>Initial retrieval results show Dense-only is currently the strongest baseline.</li>
+<li>The proposed CivicRAG architecture includes additional grounding and safety mechanisms beyond retrieval alone.</li>
+<li>Further tuning is required before claiming the advanced hybrid pipeline is final.</li>
+</ol>
+<p>We should not yet claim:</p>
+<ol>
+<li>Hybrid is definitely better than Dense-only.</li>
+<li>The system is fully production-ready.</li>
+<li>The chatbot has been evaluated on all government-service domains.</li>
+<li>Automatic metrics alone prove answer correctness.</li>
+<li>LLM-generated answers are always faithful.</li>
+</ol>
+<hr>
+<h2>24. Final P2 Narrative</h2>
+<p>A clean way to present P2:</p>
+<p>&gt; In Phase 2, we designed a modular RAG architecture for Bangladeshi government-service question answering, focusing first on birth and death registration. We processed noisy government documents into structured chunks with metadata and source links. We implemented multiple retrieval alternatives: Dense-only, BM25-only, Hybrid RRF, and Hybrid+Rerank. We then built a 20-question Bangla scenario-based evaluation set with manually selected expected source chunks. Using Recall@k, MRR, nDCG, and Context Precision, we compared the alternatives. The first result showed that Dense-only retrieval currently performs best, which indicates that BGE-M3 embeddings are strong for this cleaned Bangla dataset. Hybrid retrieval remains a candidate but requires further tuning. This process satisfies the P2 objective because it demonstrates design alternatives, functional verification, measurable evaluation, and evidence-based design selection.</p>
+<hr>
+<h2>25. Appendix: Key Files</h2>
+<table>
+<thead><tr><th>Purpose</th><th>File</th></tr></thead>
+<tbody>
+<tr><td>Chatbot app</td><td><code>app.py</code></td></tr>
+<tr><td>Main pipeline</td><td><code>src/pipeline.py</code></td></tr>
+<tr><td>Retriever</td><td><code>src/retrieval/hybrid_retriever.py</code></td></tr>
+<tr><td>Reranker</td><td><code>src/reranking/reranker.py</code></td></tr>
+<tr><td>LLM generator</td><td><code>src/generation/ollama_generator.py</code></td></tr>
+<tr><td>Evaluation metrics</td><td><code>src/evaluation/metrics.py</code></td></tr>
+<tr><td>P2 experiment runner</td><td><code>scripts/run_p2_experiments.py</code></td></tr>
+<tr><td>Domain config</td><td><code>domains/birth_death_registration/config.json</code></td></tr>
+<tr><td>Final chunk file</td><td><code>domains/birth_death_registration/data/interim/birth_death_chunks.jsonl</code></td></tr>
+<tr><td>P2 eval set</td><td><code>domains/birth_death_registration/data/evaluation/p2_20q_eval_set.json</code></td></tr>
+<tr><td>Retrieval report</td><td><code>docs/evaluation/p2_experiments/p2_experiment_report.md</code></td></tr>
+<tr><td>Smoke generation report</td><td><code>docs/evaluation/p2_experiments_smoke_generation/p2_experiment_report.md</code></td></tr>
+</tbody></table>
+<hr>
+<h2>26. Appendix: Recommended Slide Outline</h2>
+<ol>
+<li>Problem statement.</li>
+<li>Dataset and domain scope.</li>
+<li>Challenges in Bangla government-service data.</li>
+<li>Proposed modular RAG architecture.</li>
+<li>Chunking and metadata design.</li>
+<li>Retrieval alternatives.</li>
+<li>Evaluation dataset.</li>
+<li>Metric formulas.</li>
+<li>Current results.</li>
+<li>Interpretation: why dense-only currently wins.</li>
+<li>CivicRAG beyond retrieval.</li>
+<li>Demo.</li>
+<li>Limitations and next steps.</li>
+</ol>
+</body>
+</html>
