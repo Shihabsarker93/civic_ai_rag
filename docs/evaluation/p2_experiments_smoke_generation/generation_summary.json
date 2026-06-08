@@ -1,0 +1,20 @@
+{
+  "civic + llama3.2": {
+    "num_questions": 1,
+    "answer_correctness_semantic": 0.8524118661880493,
+    "answer_correctness_token_f1": 0.15760869565217392,
+    "answer_relevance": 0.7261444926261902,
+    "faithfulness_proxy_context_similarity": 0.809056282043457,
+    "expected_source_retrieved": 1.0,
+    "expected_source_cited": 1.0
+  },
+  "simple + llama3.2": {
+    "num_questions": 1,
+    "answer_correctness_semantic": 0.0,
+    "answer_correctness_token_f1": 0.0,
+    "answer_relevance": 0.0,
+    "faithfulness_proxy_context_similarity": 0.0,
+    "expected_source_retrieved": 0.0,
+    "expected_source_cited": 0.0
+  }
+}

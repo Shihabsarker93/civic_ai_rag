@@ -1,0 +1,8 @@
+{
+  "civic + llama3.2": {
+    "num_questions": 1,
+    "exact_answer_match": 1.0,
+    "mean_pairwise_answer_similarity": 1.0,
+    "mean_source_jaccard": 1.0
+  }
+}

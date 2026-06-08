@@ -1,0 +1,21 @@
+{
+  "eval_file": "/Users/shihab/Downloads/AI/Courses/01Portfolio/LangChainKrisnaik/playground/bilingual-rag-thesis/domains/birth_death_registration/data/evaluation/p2_20q_eval_set.json",
+  "config_file": "/Users/shihab/Downloads/AI/Courses/01Portfolio/LangChainKrisnaik/playground/bilingual-rag-thesis/docs/evaluation/p2_experiments/fast_rerank_config.json",
+  "num_records": 20,
+  "top_k": 5,
+  "models": [
+    "llama3.2",
+    "llama3",
+    "qwen2.5:7b"
+  ],
+  "methods": [
+    "simple",
+    "civic"
+  ],
+  "run_generation": false,
+  "run_stability": false,
+  "stability_repeats": 3,
+  "answer_timeout_seconds": 120,
+  "fast_rerank": true,
+  "fallback_commit": "01c663e"
+}

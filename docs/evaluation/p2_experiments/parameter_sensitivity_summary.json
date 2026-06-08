@@ -1,0 +1,47 @@
+{
+  "balanced_current": {
+    "num_questions": 20,
+    "recall@1": 0.65,
+    "recall@3": 0.8,
+    "recall@5": 0.85,
+    "context_precision@5": 0.29000000000000004,
+    "mrr": 0.7375,
+    "ndcg@5": 0.6642433753258196
+  },
+  "bm25_heavy": {
+    "num_questions": 20,
+    "recall@1": 0.65,
+    "recall@3": 0.8,
+    "recall@5": 0.8,
+    "context_precision@5": 0.3,
+    "mrr": 0.7166666666666666,
+    "ndcg@5": 0.6416310012048871
+  },
+  "dense_heavy": {
+    "num_questions": 20,
+    "recall@1": 0.65,
+    "recall@3": 0.8,
+    "recall@5": 0.85,
+    "context_precision@5": 0.29000000000000004,
+    "mrr": 0.735,
+    "ndcg@5": 0.663387979423654
+  },
+  "large_topk": {
+    "num_questions": 20,
+    "recall@1": 0.65,
+    "recall@3": 0.8,
+    "recall@5": 0.8,
+    "context_precision@5": 0.29000000000000004,
+    "mrr": 0.7166666666666666,
+    "ndcg@5": 0.658104141092722
+  },
+  "small_topk": {
+    "num_questions": 20,
+    "recall@1": 0.65,
+    "recall@3": 0.85,
+    "recall@5": 0.85,
+    "context_precision@5": 0.29000000000000004,
+    "mrr": 0.7416666666666666,
+    "ndcg@5": 0.662941621238365
+  }
+}

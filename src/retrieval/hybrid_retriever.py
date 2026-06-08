@@ -99,6 +99,24 @@ class HybridRetriever:
             )
         return results
 
+    def bm25_only_search(self, query: str, *, top_k: int) -> list[RetrievalResult]:
+        """Sparse lexical baseline: BM25 retrieval only."""
+        chunk_ids = self._bm25_search(query, top_k)
+        results = []
+        for rank, chunk_id in enumerate(chunk_ids, start=1):
+            chunk = self.chunk_by_id[chunk_id]
+            results.append(
+                RetrievalResult(
+                    chunk_id=chunk_id,
+                    content=chunk["content"],
+                    retrieval_text=chunk.get("retrieval_text", chunk["content"]),
+                    metadata=chunk["metadata"],
+                    score=1 / rank,
+                    retrievers=["bm25"],
+                )
+            )
+        return results
+
     def _rrf_fuse(self, ranked_lists: dict[str, list[str]]) -> list[RetrievalResult]:
         scores: dict[str, float] = defaultdict(float)
         retriever_hits: dict[str, list[str]] = defaultdict(list)
@@ -125,9 +143,25 @@ class HybridRetriever:
             )
         return results
 
-    def search(self, query: str, *, top_k_dense: int, top_k_bm25: int, top_k_final: int) -> list[RetrievalResult]:
+    def search(
+        self,
+        query: str,
+        *,
+        top_k_dense: int,
+        top_k_bm25: int,
+        top_k_final: int,
+        rrf_weights: dict[str, float] | None = None,
+    ) -> list[RetrievalResult]:
         ranked_lists = {
             "dense": self._dense_search(query, top_k_dense),
             "bm25": self._bm25_search(query, top_k_bm25),
         }
-        return self._rrf_fuse(ranked_lists)[:top_k_final]
+        if rrf_weights is None:
+            return self._rrf_fuse(ranked_lists)[:top_k_final]
+
+        original_weights = self.rrf_weights
+        try:
+            self.rrf_weights = rrf_weights
+            return self._rrf_fuse(ranked_lists)[:top_k_final]
+        finally:
+            self.rrf_weights = original_weights
