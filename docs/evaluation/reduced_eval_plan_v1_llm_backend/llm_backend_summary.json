@@ -1,0 +1,29 @@
+{
+  "llama3": {
+    "num_questions": 4,
+    "answer_correctness_semantic": 0.8858804404735565,
+    "answer_correctness_token_f1": 0.48200055196144487,
+    "answer_relevance": 0.7076929956674576,
+    "faithfulness_proxy_context_similarity": 0.8742290735244751,
+    "expected_source_retrieved": 1.0,
+    "elapsed_seconds": 18.0925
+  },
+  "llama3.2": {
+    "num_questions": 4,
+    "answer_correctness_semantic": 0.8858804404735565,
+    "answer_correctness_token_f1": 0.48200055196144487,
+    "answer_relevance": 0.7076929956674576,
+    "faithfulness_proxy_context_similarity": 0.8742290735244751,
+    "expected_source_retrieved": 1.0,
+    "elapsed_seconds": 13.4375
+  },
+  "qwen2.5:7b": {
+    "num_questions": 4,
+    "answer_correctness_semantic": 0.8858804404735565,
+    "answer_correctness_token_f1": 0.48200055196144487,
+    "answer_relevance": 0.7076929956674576,
+    "faithfulness_proxy_context_similarity": 0.8742290735244751,
+    "expected_source_retrieved": 1.0,
+    "elapsed_seconds": 23.3825
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "eval_file": "/Users/shihab/Downloads/AI/Courses/01Portfolio/LangChainKrisnaik/playground/bilingual-rag-thesis/domains/birth_death_registration/data/evaluation/mixed_paraphrase_eval_flat_v1.json",
+  "config": "/Users/shihab/Downloads/AI/Courses/01Portfolio/LangChainKrisnaik/playground/bilingual-rag-thesis/domains/birth_death_registration/config.json",
+  "num_records": 58,
+  "top_k": 5,
+  "max_generation_context_k": 8,
+  "generation_subset_ids": [
+    "para_lost_certificate_01_v02",
+    "para_manual_to_online_01_v02",
+    "para_application_process_01_v01",
+    "para_registration_deadline_fee_01_v02",
+    "para_birth_date_correction_fee_01_v01",
+    "para_online_visibility_01_v01"
+  ],
+  "llm_subset_ids": [
+    "para_lost_certificate_01_v02",
+    "para_application_process_01_v01",
+    "para_birth_date_correction_fee_01_v01",
+    "para_single_parent_divorce_01_v01"
+  ],
+  "run_generation_topk": false,
+  "run_llm_comparison": true,
+  "generation_model": "llama3.2",
+  "llm_models": [
+    "llama3.2",
+    "llama3",
+    "qwen2.5:7b"
+  ],
+  "timeout_seconds": 90
+}

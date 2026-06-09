@@ -1,0 +1,42 @@
+{
+  "1": {
+    "num_questions": 58,
+    "expected_source_in_context": 0.7413793103448276,
+    "context_precision@k": 0.7413793103448276
+  },
+  "2": {
+    "num_questions": 58,
+    "expected_source_in_context": 0.8448275862068966,
+    "context_precision@k": 0.49137931034482757
+  },
+  "3": {
+    "num_questions": 58,
+    "expected_source_in_context": 0.8793103448275862,
+    "context_precision@k": 0.3620689655172414
+  },
+  "4": {
+    "num_questions": 58,
+    "expected_source_in_context": 0.896551724137931,
+    "context_precision@k": 0.2801724137931034
+  },
+  "5": {
+    "num_questions": 58,
+    "expected_source_in_context": 0.9482758620689655,
+    "context_precision@k": 0.2413793103448276
+  },
+  "6": {
+    "num_questions": 58,
+    "expected_source_in_context": 0.9482758620689655,
+    "context_precision@k": 0.20689655172413793
+  },
+  "7": {
+    "num_questions": 58,
+    "expected_source_in_context": 0.9482758620689655,
+    "context_precision@k": 0.17980295566502463
+  },
+  "8": {
+    "num_questions": 58,
+    "expected_source_in_context": 0.9827586206896551,
+    "context_precision@k": 0.16163793103448276
+  }
+}
