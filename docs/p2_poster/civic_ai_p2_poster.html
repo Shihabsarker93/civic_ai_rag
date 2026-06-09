@@ -147,6 +147,73 @@
       line-height: 0.34cm;
     }
 
+    .diagram {
+      width: 100%;
+      margin: 0.22cm 0 0.24cm;
+      padding: 0.28cm;
+      border-radius: 0.28cm;
+      background: linear-gradient(180deg, #f8fbfd 0%, #eef7f5 100%);
+      border: 0.035cm solid var(--line);
+    }
+
+    .diagram svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      overflow: visible;
+      font-family: "Kohinoor Bangla", "Bangla MN", "Noto Sans Bengali", "Times New Roman", serif;
+    }
+
+    .node-fill {
+      fill: #ffffff;
+      stroke: #9fb5c9;
+      stroke-width: 2;
+    }
+
+    .node-accent {
+      fill: #eaf7f4;
+      stroke: #0f766e;
+      stroke-width: 2;
+    }
+
+    .node-warn {
+      fill: #fff3d8;
+      stroke: #c98a21;
+      stroke-width: 2;
+    }
+
+    .edge {
+      stroke: #52647a;
+      stroke-width: 2.3;
+      fill: none;
+      marker-end: url(#arrowhead);
+    }
+
+    .edge-accent {
+      stroke: #0f766e;
+      stroke-width: 3;
+      fill: none;
+      marker-end: url(#arrowheadAccent);
+    }
+
+    .svg-title {
+      font-size: 17px;
+      font-weight: 800;
+      fill: #0b4f4a;
+    }
+
+    .svg-text {
+      font-size: 14px;
+      font-weight: 700;
+      fill: #172033;
+    }
+
+    .svg-small {
+      font-size: 11px;
+      fill: #536179;
+      font-weight: 600;
+    }
+
     table {
       width: 100%;
       border-collapse: collapse;
@@ -244,6 +311,36 @@
 
         <div class="block soft">
           <h2>Phase 2 Objective Mapping</h2>
+          <div class="diagram" aria-label="Phase 2 design process diagram">
+            <svg viewBox="0 0 640 185" role="img">
+              <defs>
+                <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                  <polygon points="0 0, 10 3.5, 0 7" fill="#52647a"></polygon>
+                </marker>
+                <marker id="arrowheadAccent" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                  <polygon points="0 0, 10 3.5, 0 7" fill="#0f766e"></polygon>
+                </marker>
+              </defs>
+              <text x="18" y="25" class="svg-title">P2 Engineering Flow</text>
+              <rect x="18" y="55" width="125" height="58" rx="12" class="node-accent"></rect>
+              <text x="80" y="81" text-anchor="middle" class="svg-text">Requirements</text>
+              <text x="80" y="99" text-anchor="middle" class="svg-small">Bangla, grounded, local</text>
+              <path d="M143 84 H188" class="edge"></path>
+              <rect x="190" y="55" width="125" height="58" rx="12" class="node-fill"></rect>
+              <text x="252" y="81" text-anchor="middle" class="svg-text">Alternatives</text>
+              <text x="252" y="99" text-anchor="middle" class="svg-small">Dense / BM25 / Hybrid</text>
+              <path d="M315 84 H360" class="edge"></path>
+              <rect x="362" y="55" width="125" height="58" rx="12" class="node-fill"></rect>
+              <text x="424" y="81" text-anchor="middle" class="svg-text">Simulation</text>
+              <text x="424" y="99" text-anchor="middle" class="svg-small">20-question eval set</text>
+              <path d="M487 84 H532" class="edge"></path>
+              <rect x="534" y="55" width="88" height="58" rx="12" class="node-warn"></rect>
+              <text x="578" y="81" text-anchor="middle" class="svg-text">Decision</text>
+              <text x="578" y="99" text-anchor="middle" class="svg-small">Tune/Select</text>
+              <path d="M578 113 C578 160, 255 165, 252 113" class="edge-accent"></path>
+              <text x="360" y="154" text-anchor="middle" class="svg-small">feedback loop: results guide next design</text>
+            </svg>
+          </div>
           <ul>
             <li><strong>Design process:</strong> modular RAG pipeline from data cleaning to answer generation.</li>
             <li><strong>Alternatives:</strong> Dense-only, BM25-only, Hybrid RRF, Hybrid+Rerank, Simple RAG, CivicRAG.</li>
@@ -296,6 +393,45 @@
 
         <div class="block">
           <h2>Retrieval Alternatives</h2>
+          <div class="diagram" aria-label="Retrieval alternatives branching diagram">
+            <svg viewBox="0 0 640 265" role="img">
+              <defs>
+                <marker id="arrowhead2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                  <polygon points="0 0, 10 3.5, 0 7" fill="#52647a"></polygon>
+                </marker>
+                <marker id="arrowhead2Accent" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                  <polygon points="0 0, 10 3.5, 0 7" fill="#0f766e"></polygon>
+                </marker>
+              </defs>
+              <rect x="245" y="12" width="150" height="46" rx="12" class="node-accent"></rect>
+              <text x="320" y="40" text-anchor="middle" class="svg-text">User Query</text>
+
+              <path d="M300 58 C210 85, 155 100, 115 125" stroke="#52647a" stroke-width="2.2" fill="none" marker-end="url(#arrowhead2)"></path>
+              <path d="M340 58 C430 85, 485 100, 525 125" stroke="#52647a" stroke-width="2.2" fill="none" marker-end="url(#arrowhead2)"></path>
+
+              <rect x="45" y="126" width="140" height="50" rx="12" class="node-fill"></rect>
+              <text x="115" y="149" text-anchor="middle" class="svg-text">Dense</text>
+              <text x="115" y="166" text-anchor="middle" class="svg-small">BGE-M3 + ChromaDB</text>
+
+              <rect x="455" y="126" width="140" height="50" rx="12" class="node-fill"></rect>
+              <text x="525" y="149" text-anchor="middle" class="svg-text">BM25</text>
+              <text x="525" y="166" text-anchor="middle" class="svg-small">lexical matching</text>
+
+              <path d="M185 151 H255" stroke="#52647a" stroke-width="2.2" fill="none" marker-end="url(#arrowhead2)"></path>
+              <path d="M455 151 H385" stroke="#52647a" stroke-width="2.2" fill="none" marker-end="url(#arrowhead2)"></path>
+              <rect x="255" y="126" width="130" height="50" rx="12" class="node-accent"></rect>
+              <text x="320" y="149" text-anchor="middle" class="svg-text">RRF Fusion</text>
+              <text x="320" y="166" text-anchor="middle" class="svg-small">weighted rank merge</text>
+
+              <path d="M320 176 V206" class="edge-accent" marker-end="url(#arrowhead2Accent)"></path>
+              <rect x="245" y="208" width="150" height="45" rx="12" class="node-warn"></rect>
+              <text x="320" y="234" text-anchor="middle" class="svg-text">Rerank + Answer</text>
+
+              <text x="115" y="220" text-anchor="middle" class="svg-small">Baseline A</text>
+              <text x="525" y="220" text-anchor="middle" class="svg-small">Baseline B</text>
+              <text x="320" y="95" text-anchor="middle" class="svg-small">compare all branches with same gold questions</text>
+            </svg>
+          </div>
           <ol>
             <li><strong>Dense-only:</strong> BGE-M3 embedding search in ChromaDB.</li>
             <li><strong>BM25-only:</strong> sparse lexical matching over Bangla tokens.</li>
