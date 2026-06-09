@@ -1,0 +1,35 @@
+[
+  {
+    "method": "dense_only",
+    "num_cases": 24,
+    "hit_at_1": 0.7917,
+    "hit_at_3": 0.9583,
+    "hit_at_5": 1,
+    "mrr": 0.8854,
+    "ndcg_at_5": 0.9148,
+    "top_answer_semantic_similarity": 0.9051,
+    "top_answer_token_f1": 0.7015
+  },
+  {
+    "method": "bm25_only",
+    "num_cases": 24,
+    "hit_at_1": 0.8333,
+    "hit_at_3": 0.9167,
+    "hit_at_5": 0.9167,
+    "mrr": 0.8819,
+    "ndcg_at_5": 0.8859,
+    "top_answer_semantic_similarity": 0.8947,
+    "top_answer_token_f1": 0.6842
+  },
+  {
+    "method": "hybrid_rrf",
+    "num_cases": 24,
+    "hit_at_1": 0.7917,
+    "hit_at_3": 0.9583,
+    "hit_at_5": 1,
+    "mrr": 0.8785,
+    "ndcg_at_5": 0.9093,
+    "top_answer_semantic_similarity": 0.8904,
+    "top_answer_token_f1": 0.6812
+  }
+]

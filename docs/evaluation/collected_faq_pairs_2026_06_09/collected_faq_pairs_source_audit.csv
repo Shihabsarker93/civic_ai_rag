@@ -1,0 +1,14 @@
+provided_chunk_id,category,question,best_answer_match_chunk_id,best_answer_match_category,best_answer_similarity,provided_answer_similarity,likely_label_mismatch
+bdris_faq_01_q01,parents_registration,পিতা-মাতার জন্ম নিবন্ধন নম্বর না থাকলে সন্তানের জন্ম নিবন্ধন করার ক্ষেত্রে কীভাবে এগোনো উচিত?,bdris_faq_01_q01,parents_registration,1.0,1.0,0
+bdris_faq_01_q02,manual_to_online_migration,পুরোনো ম্যানুয়াল জন্ম নিবন্ধন অনলাইন সিস্টেমে অন্তর্ভুক্ত করার নিয়ম কী?,bdris_faq_01_q02,manual_to_online_migration,1.0,1.0,0
+bdris_faq_01_q03,data_correction_legacy,পূর্বের সফটওয়্যারে সংশোধিত কোনো তথ্য BDRIS সফটওয়্যারে পাওয়া না গেলে কী করতে হবে?,bdris_faq_01_q03,data_correction_legacy,1.0,1.0,0
+bdris_faq_01_q04,bilingual_registration,শুধুমাত্র বাংলা ভাষায় করা জন্ম বা মৃত্যু নিবন্ধনে ইংরেজি তথ্য যুক্ত করার প্রক্রিয়া কী?,bdris_faq_01_q04,bilingual_registration,1.0,1.0,0
+bdris_faq_01_q05,special_cases,জমজ সন্তানের জন্ম নিবন্ধনের আবেদন অনলাইনে কীভাবে সম্পন্ন করতে হয়?,bdris_faq_01_q05,special_cases,1.0,1.0,0
+bdris_faq_01_q06,registration_number,১৭ ডিজিটের কম জন্ম নিবন্ধন নম্বর কিভাবে ১৭ ডিজিটে উন্নীত করা যাবে?,bdris_faq_01_q06,registration_number,1.0,1.0,0
+bdris_faq_01_q07,married_women_registration,বিবাহিত নারীর জন্ম নিবন্ধন কি স্বামীর ঠিকানায় করা যায় এবং এতে স্বামীর নাম অন্তর্ভুক্ত করা যায় কি?,bdris_faq_01_q07,married_women_registration,1.0,1.0,0
+bdris_faq_01_q08,certificate_language,জন্ম ও মৃত্যু সনদ কি বাধ্যতামূলকভাবে বাংলা ও ইংরেজি উভয় ভাষায় প্রদান করতে হয়?,bdris_faq_01_q08,certificate_language,1.0,1.0,0
+bdris_faq_01_q09,mobile_number_policy,জন্ম নিবন্ধন বা তথ্য সংশোধনের আবেদনের সময় নিবন্ধনাধীন ব্যক্তি বা তার পিতা-মাতা-অভিভাবক ছাড়া অন্য কারও মোবাইল নম্বর ব্যবহার করা যাবে কি?,bdris_faq_02_q07,mobile_number_policy,0.8247,0.806,0
+bdris_faq_01_q10,special_cases,বিবাহ বিচ্ছেদ বা পিতা-মাতার একজন নিখোঁজ হলে সন্তানের জন্ম নিবন্ধন কীভাবে হবে?,bdris_faq_01_q10,special_cases,0.9592,0.9592,0
+bdris_faq_01_q11,special_cases,পিতা অথবা মাতা যে কোনো একজন বিদেশি হলে সন্তানের জন্ম নিবন্ধন কীভাবে করা হবে?,bdris_faq_01_q11,special_cases,0.8647,0.8647,0
+bdris_faq_01_q12,fee_and_challan,জন্ম নিবন্ধনের ফি বাবদ চালানের তথ্য BDRIS-এ আপলোড করতে সমস্যা হলে করনীয় কী?,bdris_faq_01_q13,fee_and_challan,0.7068,0.4489,1
+bdris_faq_01_q13,duplicate_registration,একই জন্ম নিবন্ধন নম্বরে একাধিক ব্যক্তির নিবন্ধন দেখালে করণীয় কী?,bdris_faq_01_q15,duplicate_registration,0.8115,0.4755,1
