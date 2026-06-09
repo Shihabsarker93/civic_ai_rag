@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Civic.ai RAG Thesis P2 Poster</title>
+  <style>
+    @page {
+      size: 120cm 72cm;
+      margin: 2.2cm;
+    }
+
+    :root {
+      --ink: #172033;
+      --muted: #536179;
+      --accent: #0f766e;
+      --accent-dark: #0b4f4a;
+      --soft: #eaf7f4;
+      --soft-2: #f3f7fb;
+      --line: #c8d5e4;
+      --warn: #f7ead0;
+      --warn-border: #d7a64d;
+      --blue: #1d4ed8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Kohinoor Bangla", "Bangla MN", "Bangla Sangam MN", "Noto Sans Bengali", "Times New Roman", serif;
+      background: #ffffff;
+      line-height: 1.34;
+    }
+
+    .poster {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2cm;
+    }
+
+    header {
+      border-bottom: 0.18cm solid var(--accent);
+      padding-bottom: 0.7cm;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.2cm;
+      line-height: 1.02;
+      color: var(--accent-dark);
+      letter-spacing: -0.03em;
+    }
+
+    .subtitle {
+      margin-top: 0.35cm;
+      font-size: 0.82cm;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      gap: 1cm;
+    }
+
+    .columns {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1.05cm;
+      align-items: start;
+    }
+
+    .block {
+      border: 0.045cm solid var(--line);
+      border-radius: 0.42cm;
+      padding: 0.62cm 0.68cm;
+      margin-bottom: 0.75cm;
+      background: #ffffff;
+      box-shadow: 0 0.12cm 0.32cm rgba(23, 32, 51, 0.06);
+      break-inside: avoid;
+    }
+
+    .block.soft {
+      background: var(--soft);
+      border-color: #aad8d2;
+    }
+
+    .block.warn {
+      background: var(--warn);
+      border-color: var(--warn-border);
+    }
+
+    h2 {
+      margin: 0 0 0.34cm 0;
+      font-size: 1.02cm;
+      color: var(--accent-dark);
+      line-height: 1.05;
+    }
+
+    h3 {
+      font-size: 0.7cm;
+      color: var(--accent-dark);
+      margin: 0.38cm 0 0.18cm;
+    }
+
+    p {
+      font-size: 0.52cm;
+      margin: 0 0 0.33cm;
+    }
+
+    ul, ol {
+      margin: 0.18cm 0 0 0.7cm;
+      padding: 0;
+      font-size: 0.49cm;
+    }
+
+    li {
+      margin: 0.14cm 0;
+    }
+
+    strong {
+      color: var(--accent-dark);
+    }
+
+    .pipeline {
+      display: grid;
+      gap: 0.23cm;
+      margin-top: 0.2cm;
+    }
+
+    .step {
+      background: var(--soft-2);
+      border: 0.035cm solid var(--line);
+      border-radius: 0.25cm;
+      padding: 0.24cm 0.34cm;
+      font-size: 0.46cm;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .arrow {
+      text-align: center;
+      color: var(--accent);
+      font-size: 0.42cm;
+      line-height: 0.34cm;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0.25cm 0 0.1cm;
+      font-size: 0.42cm;
+    }
+
+    th {
+      background: var(--accent);
+      color: white;
+      padding: 0.22cm 0.25cm;
+      text-align: left;
+      border: 0.03cm solid var(--accent-dark);
+    }
+
+    td {
+      padding: 0.18cm 0.25cm;
+      border: 0.03cm solid var(--line);
+      vertical-align: top;
+    }
+
+    tr:nth-child(even) td {
+      background: var(--soft-2);
+    }
+
+    .metric {
+      background: #101827;
+      color: white;
+      padding: 0.35cm 0.45cm;
+      border-radius: 0.28cm;
+      margin: 0.25cm 0;
+      font-family: "Times New Roman", serif;
+      font-size: 0.46cm;
+      text-align: center;
+    }
+
+    .query {
+      background: #ffffff;
+      border-left: 0.12cm solid var(--accent);
+      padding: 0.2cm 0.3cm;
+      margin: 0.16cm 0;
+      font-size: 0.48cm;
+      color: #111827;
+    }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.22cm;
+      margin-top: 0.2cm;
+    }
+
+    .badge {
+      background: var(--soft-2);
+      border: 0.035cm solid var(--line);
+      border-radius: 999px;
+      padding: 0.12cm 0.28cm;
+      font-size: 0.4cm;
+      font-weight: 700;
+      color: var(--accent-dark);
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      border-top: 0.035cm solid var(--line);
+      padding-top: 0.32cm;
+      font-size: 0.4cm;
+    }
+  </style>
+</head>
+<body>
+  <main class="poster">
+    <header>
+      <h1>Civic.ai: Bangla-English RAG for Bangladeshi Government Services</h1>
+      <div class="subtitle">
+        <span>Final Year Thesis - Phase 2 Design, Alternatives, and Functional Verification</span>
+        <span>Current Domain: Birth and Death Registration</span>
+      </div>
+    </header>
+
+    <section class="columns">
+      <div>
+        <div class="block">
+          <h2>Problem and Motivation</h2>
+          <p>Government-service information in Bangladesh is scattered across PDFs, HTML pages, notices, FAQs, tables, legal rules, and scanned or converted documents.</p>
+          <p><strong>Goal:</strong> build a factual and explainable RAG chatbot that answers Bangla-English government-service questions using retrieved evidence.</p>
+          <ul>
+            <li>Accuracy and grounding are more important than fluency.</li>
+            <li>Bangla and code-mixed queries must be supported.</li>
+            <li>Answers should include source IDs and official/source links.</li>
+          </ul>
+        </div>
+
+        <div class="block soft">
+          <h2>Phase 2 Objective Mapping</h2>
+          <ul>
+            <li><strong>Design process:</strong> modular RAG pipeline from data cleaning to answer generation.</li>
+            <li><strong>Alternatives:</strong> Dense-only, BM25-only, Hybrid RRF, Hybrid+Rerank, Simple RAG, CivicRAG.</li>
+            <li><strong>Verification:</strong> 20-question Bangla evaluation set with expected source chunks.</li>
+            <li><strong>Constraints:</strong> local LLMs, no API-key dependency, noisy Bangla government data.</li>
+          </ul>
+        </div>
+
+        <div class="block">
+          <h2>Data Preparation</h2>
+          <table>
+            <thead>
+              <tr><th>Data Type</th><th>Processing Choice</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>FAQ JSON</td><td>One question-answer pair per chunk</td></tr>
+              <tr><td>Legal rules/acts</td><td>Section or rule-based chunks</td></tr>
+              <tr><td>Application process</td><td>Heading and step-based chunks</td></tr>
+              <tr><td>Fee tables</td><td>Table-level and row-level chunks</td></tr>
+              <tr><td>Noisy HTML/PDF</td><td>Manual/semi-manual cleaning and metadata</td></tr>
+            </tbody>
+          </table>
+          <p><strong>Key design:</strong> separate <code>retrieval_text</code> for search from original source content for answer grounding.</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="block">
+          <h2>CivicRAG Pipeline</h2>
+          <div class="pipeline">
+            <div class="step">Raw Government Data</div>
+            <div class="arrow">↓</div>
+            <div class="step">Cleaning + Normalization</div>
+            <div class="arrow">↓</div>
+            <div class="step">Document-Type-Aware Chunking + Metadata</div>
+            <div class="arrow">↓</div>
+            <div class="step">BGE-M3 Embeddings + ChromaDB</div>
+            <div class="arrow">↓</div>
+            <div class="step">User Query: Bangla / English / Code-mixed</div>
+            <div class="arrow">↓</div>
+            <div class="step">Dense Search + BM25 Search</div>
+            <div class="arrow">↓</div>
+            <div class="step">RRF Fusion + Reranking / Intent Boosting</div>
+            <div class="arrow">↓</div>
+            <div class="step">Safe Answer Path or Local LLM Fallback</div>
+            <div class="arrow">↓</div>
+            <div class="step">Final Answer + Source IDs + Official Links</div>
+          </div>
+        </div>
+
+        <div class="block">
+          <h2>Retrieval Alternatives</h2>
+          <ol>
+            <li><strong>Dense-only:</strong> BGE-M3 embedding search in ChromaDB.</li>
+            <li><strong>BM25-only:</strong> sparse lexical matching over Bangla tokens.</li>
+            <li><strong>Hybrid RRF:</strong> rank fusion of Dense and BM25 results.</li>
+            <li><strong>Hybrid + Rerank:</strong> rerank the fused candidate set.</li>
+          </ol>
+          <div class="metric">RRF(d) = Σ<sub>r∈R</sub> w<sub>r</sub> / (k + rank<sub>r</sub>(d))</div>
+          <p>RRF rewards chunks that appear high in one or both retrievers; it does not only keep common chunks.</p>
+        </div>
+
+        <div class="block">
+          <h2>Evaluation Metrics</h2>
+          <div class="metric">Recall@k = 1[R<sub>k</sub> ∩ G ≠ ∅]</div>
+          <div class="metric">Context Precision@k = |R<sub>k</sub> ∩ G| / k</div>
+          <div class="metric">MRR = average(1 / rank of first relevant chunk)</div>
+          <div class="metric">nDCG@k = DCG@k / IDCG@k</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="block">
+          <h2>Current P2 Retrieval Results</h2>
+          <p>Evaluation set: 20 Bangla scenario/paraphrase questions with expected source chunk IDs.</p>
+          <table>
+            <thead>
+              <tr><th>Method</th><th>R@1</th><th>R@3</th><th>R@5</th><th>MRR</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>BM25-only</td><td>0.450</td><td>0.550</td><td>0.800</td><td>0.546</td></tr>
+              <tr><td><strong>Dense-only</strong></td><td><strong>0.800</strong></td><td><strong>0.900</strong></td><td><strong>0.900</strong></td><td><strong>0.842</strong></td></tr>
+              <tr><td>Hybrid RRF</td><td>0.700</td><td>0.800</td><td>0.850</td><td>0.752</td></tr>
+              <tr><td>Hybrid+Rerank</td><td>0.650</td><td>0.800</td><td>0.850</td><td>0.738</td></tr>
+            </tbody>
+          </table>
+          <p><strong>Finding:</strong> Dense-only currently performs best. Hybrid retrieval remains a candidate, but requires tuning before being selected as final.</p>
+        </div>
+
+        <div class="block warn">
+          <h2>Paraphrase Robustness Finding</h2>
+          <p>Same-intent questions should retrieve and answer consistently.</p>
+          <div class="query">জন্ম নিবন্ধন হারালে কী করব?</div>
+          <div class="query">আমার জন্মসনদ হারিয়ে গেছে, নতুন কপি কোথায় পাব?</div>
+          <p>Testing showed that retrieval can be correct while answer routing can still fail. This motivates separate evaluation for retrieval correctness and answer correctness.</p>
+        </div>
+
+        <div class="block">
+          <h2>Next Steps</h2>
+          <ul>
+            <li>Expand gold evaluation set to 50-100 reviewed questions.</li>
+            <li>Add paraphrase clusters for each civic intent.</li>
+            <li>Tune RRF weights and top-k values.</li>
+            <li>Run full cross-encoder reranking on selected subsets.</li>
+            <li>Add manual scoring for faithfulness, correctness, completeness, and language quality.</li>
+            <li>Add domain routing before Passport/BRTA expansion.</li>
+          </ul>
+        </div>
+
+        <div class="block soft">
+          <h2>Artifacts</h2>
+          <div class="badge-row">
+            <span class="badge">CivicRAG</span>
+            <span class="badge">BGE-M3</span>
+            <span class="badge">ChromaDB</span>
+            <span class="badge">BM25</span>
+            <span class="badge">RRF</span>
+            <span class="badge">Local LLMs</span>
+          </div>
+          <p style="margin-top:0.4cm;"><strong>Repository:</strong> github.com/Shihabsarker93/civic_ai_rag</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>Phase 2 Poster Representation</span>
+      <span>Birth and Death Registration Domain</span>
+      <span>Final Year Thesis</span>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,376 @@
+% Civic.ai RAG Thesis - Phase 2 Poster
+% Based on the Gemini beamerposter template style.
+% Compile with XeLaTeX or LuaLaTeX if Bangla examples are kept.
+% Required template files: beamerthemegemini.sty and beamercolorthemecam.sty
+
+\documentclass[final]{beamer}
+
+% ====================
+% Packages
+% ====================
+
+\usepackage[size=custom,width=120,height=72,scale=1.0]{beamerposter}
+\usetheme{gemini}
+\usecolortheme{cam}
+
+\usepackage{fontspec}
+\setsansfont{Latin Modern Sans}
+\setmainfont{Latin Modern Roman}
+\newfontfamily\bengalifont{Kohinoor Bangla}
+
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{anyfontsize}
+\pgfplotsset{compat=1.18}
+
+% ====================
+% Lengths
+% ====================
+
+\newlength{\sepwidth}
+\newlength{\colwidth}
+\setlength{\sepwidth}{0.025\paperwidth}
+\setlength{\colwidth}{0.30\paperwidth}
+
+\newcommand{\separatorcolumn}{\begin{column}{\sepwidth}\end{column}}
+\newcommand{\bn}[1]{{\bengalifont #1}}
+
+% ====================
+% Title
+% ====================
+
+\title{Civic.ai: A Bangla-English RAG System for Government-Service Question Answering}
+
+\author{Shihab Sarker \and Team Members}
+
+\institute[shortinst]{Department of Computer Science and Engineering \\ Final Year Thesis - Phase 2 Design and Evaluation}
+
+% ====================
+% Footer
+% ====================
+
+\footercontent{
+  \href{https://github.com/Shihabsarker93/civic_ai_rag}{github.com/Shihabsarker93/civic\_ai\_rag} \hfill
+  P2: Design Alternatives, Functional Verification, and Preliminary Evaluation \hfill
+  Birth and Death Registration Domain}
+
+% ====================
+% Body
+% ====================
+
+\begin{document}
+
+\begin{frame}[t]
+\begin{columns}[t]
+\separatorcolumn
+
+% ====================
+% Column 1
+% ====================
+
+\begin{column}{\colwidth}
+
+  \begin{block}{Problem and Motivation}
+
+    Bangladeshi government-service information is distributed across noisy
+    PDFs, HTML pages, notices, legal rules, tables, FAQs, and scanned or
+    converted documents. Users ask questions in Bangla, English, and
+    code-mixed language, but official information is difficult to search and
+    easy to misinterpret.
+
+    \vspace{0.5em}
+    \textbf{Thesis goal:} build a factual, explainable, bilingual
+    Retrieval-Augmented Generation (RAG) chatbot where answers are grounded in
+    retrieved government-service evidence.
+
+    \vspace{0.5em}
+    \textbf{Current Phase 2 domain:} Birth and Death Registration.
+
+    \begin{itemize}
+      \item Accuracy and source grounding are more important than fluency.
+      \item Bangla retrieval is treated as a first-class requirement.
+      \item The system must be modular so future domains such as Passport and
+        BRTA can be added without creating separate repositories.
+    \end{itemize}
+
+  \end{block}
+
+  \begin{alertblock}{Phase 2 Objective Mapping}
+
+    P2 requires multiple engineering/theoretical design solutions and
+    functional verification under project constraints.
+
+    \begin{itemize}
+      \item \textbf{Design process:} modular RAG pipeline from data cleaning to
+        answer generation.
+      \item \textbf{Alternative solutions:} Dense-only, BM25-only, Hybrid RRF,
+        Hybrid+Rerank, Simple RAG, CivicRAG.
+      \item \textbf{Functional verification:} 20-question Bangla evaluation set
+        with expected source chunks.
+      \item \textbf{Constraints:} local LLMs, Bangla documents, noisy
+        government data, no API-key dependency, explainability.
+    \end{itemize}
+
+  \end{alertblock}
+
+  \begin{block}{Data and Preprocessing}
+
+    The active domain contains cleaned birth/death registration content from:
+
+    \begin{itemize}
+      \item HTML Unicode pages and FAQs.
+      \item Converted DOCX/PDF government documents.
+      \item Legal acts, rules, notices, fee tables, and application processes.
+      \item Manually/semi-manually cleaned text to remove navigation, footers,
+        sidebars, repeated news, and irrelevant web noise.
+    \end{itemize}
+
+    \vspace{0.4em}
+    \textbf{Chunking strategy:} document-type-aware chunking.
+
+    \begin{table}
+      \centering
+      \small
+      \begin{tabular}{p{0.34\linewidth} p{0.52\linewidth}}
+        \toprule
+        \textbf{Document Type} & \textbf{Chunking Choice} \\
+        \midrule
+        FAQ JSON & One Q/A pair per chunk \\
+        Legal rules/acts & Section or rule-based chunks \\
+        Application process & Heading/step-based chunks \\
+        Fee table & Table-level and row-level chunks \\
+        Notice/OCR content & Heading and semantic block chunks \\
+        \bottomrule
+      \end{tabular}
+    \end{table}
+
+    \textbf{Important design choice:} each chunk separates
+    \texttt{retrieval\_text} from original answer evidence.
+
+  \end{block}
+
+\end{column}
+
+\separatorcolumn
+
+% ====================
+% Column 2
+% ====================
+
+\begin{column}{\colwidth}
+
+  \begin{block}{Proposed CivicRAG Pipeline}
+
+    \begin{center}
+    \begin{tikzpicture}[
+      node distance=0.62cm,
+      every node/.style={font=\small},
+      box/.style={rectangle, rounded corners, draw=black!45, fill=blue!7,
+        align=center, minimum width=8.7cm, minimum height=0.72cm},
+      arrow/.style={->, thick, draw=black!60}
+    ]
+      \node[box] (raw) {Raw Government Data};
+      \node[box, below=of raw] (clean) {Manual / Semi-manual Cleaning};
+      \node[box, below=of clean] (chunk) {Document-Type-Aware Chunking + Metadata};
+      \node[box, below=of chunk] (dual) {retrieval\_text for Search + Original Content for Grounding};
+      \node[box, below=of dual] (embed) {BGE-M3 Embeddings + ChromaDB Vector Index};
+      \node[box, below=of embed] (query) {User Query: Bangla / English / Code-mixed};
+      \node[box, below=of query] (hybrid) {Dense Search + BM25 Search};
+      \node[box, below=of hybrid] (rrf) {RRF Fusion + Reranking / Intent Boosting};
+      \node[box, below=of rrf] (safe) {Safe Answer Path or Local LLM Fallback};
+      \node[box, below=of safe] (final) {Final Answer + Source IDs + Official Links};
+
+      \draw[arrow] (raw) -- (clean);
+      \draw[arrow] (clean) -- (chunk);
+      \draw[arrow] (chunk) -- (dual);
+      \draw[arrow] (dual) -- (embed);
+      \draw[arrow] (embed) -- (query);
+      \draw[arrow] (query) -- (hybrid);
+      \draw[arrow] (hybrid) -- (rrf);
+      \draw[arrow] (rrf) -- (safe);
+      \draw[arrow] (safe) -- (final);
+    \end{tikzpicture}
+    \end{center}
+
+    \vspace{0.4em}
+    CivicRAG is not only an LLM wrapper. It includes retrieval design,
+    reranking, intent-level safe answer paths, language control, and source
+    traceability.
+
+  \end{block}
+
+  \begin{block}{Retrieval Alternatives Compared}
+
+    We compare retrieval methods before finalizing the architecture.
+
+    \begin{enumerate}
+      \item \textbf{Dense-only:}
+        query embedding $\rightarrow$ ChromaDB cosine similarity.
+      \item \textbf{BM25-only:}
+        tokenized query $\rightarrow$ sparse lexical matching.
+      \item \textbf{Hybrid RRF:}
+        combine Dense and BM25 ranked lists using Reciprocal Rank Fusion.
+      \item \textbf{Hybrid + Rerank:}
+        fused candidates $\rightarrow$ reranking stage $\rightarrow$ top evidence.
+    \end{enumerate}
+
+    \vspace{0.4em}
+    RRF score:
+    \[
+      \mathrm{RRF}(d) =
+      \sum_{r \in R}
+      \frac{w_r}{k + \mathrm{rank}_r(d)}
+    \]
+
+    A chunk appearing high in both Dense and BM25 receives a stronger score,
+    but a strong chunk from only one retriever can still survive.
+
+  \end{block}
+
+  \begin{exampleblock}{Evaluation Metrics}
+
+    Let $G$ be expected relevant source chunk IDs and $R_k$ be top-$k$
+    retrieved chunks.
+
+    \begin{align*}
+      \mathrm{Recall@k} &= \mathbf{1}[R_k \cap G \neq \emptyset] \\
+      \mathrm{ContextPrecision@k} &= \frac{|R_k \cap G|}{k} \\
+      \mathrm{RR} &= \frac{1}{\text{rank of first relevant chunk}} \\
+      \mathrm{MRR} &= \frac{1}{N}\sum_{i=1}^{N}\mathrm{RR}_i \\
+      \mathrm{nDCG@k} &= \frac{\mathrm{DCG@k}}{\mathrm{IDCG@k}}
+    \end{align*}
+
+    Generation metrics are planned using semantic correctness, token F1,
+    answer relevance, faithfulness proxy, source citation correctness, and
+    manual qualitative scoring.
+
+  \end{exampleblock}
+
+\end{column}
+
+\separatorcolumn
+
+% ====================
+% Column 3
+% ====================
+
+\begin{column}{\colwidth}
+
+  \begin{block}{P2 Retrieval Results}
+
+    Evaluation set: 20 manually drafted Bangla scenario/paraphrase questions
+    with expected source chunk IDs.
+
+    \begin{table}
+      \centering
+      \small
+      \begin{tabular}{lrrrr}
+        \toprule
+        \textbf{Variant} & \textbf{R@1} & \textbf{R@3} & \textbf{R@5} & \textbf{MRR} \\
+        \midrule
+        BM25-only & 0.450 & 0.550 & 0.800 & 0.546 \\
+        Dense-only & \textbf{0.800} & \textbf{0.900} & \textbf{0.900} & \textbf{0.842} \\
+        Hybrid RRF & 0.700 & 0.800 & 0.850 & 0.752 \\
+        Hybrid+Rerank & 0.650 & 0.800 & 0.850 & 0.738 \\
+        \bottomrule
+      \end{tabular}
+    \end{table}
+
+    \begin{table}
+      \centering
+      \small
+      \begin{tabular}{lrr}
+        \toprule
+        \textbf{Variant} & \textbf{Context Precision@5} & \textbf{nDCG@5} \\
+        \midrule
+        BM25-only & 0.220 & 0.481 \\
+        Dense-only & \textbf{0.310} & \textbf{0.731} \\
+        Hybrid RRF & 0.300 & 0.661 \\
+        Hybrid+Rerank & 0.290 & 0.664 \\
+        \bottomrule
+      \end{tabular}
+    \end{table}
+
+    \textbf{Interpretation:} Dense-only is currently the strongest retrieval
+    baseline. This suggests BGE-M3 semantic retrieval is highly effective for
+    the current cleaned Bangla domain data. Hybrid/RRF remains a candidate but
+    requires tuning.
+
+  \end{block}
+
+  \begin{alertblock}{Key Finding from Paraphrase Testing}
+
+    Same-intent paraphrases must retrieve and answer consistently.
+
+    \vspace{0.3em}
+    Example intent: lost birth certificate copy.
+
+    \begin{itemize}
+      \item \bn{জন্ম নিবন্ধন হারালে কী করব?}
+      \item \bn{আমার জন্মসনদ হারিয়ে গেছে, নতুন কপি পেতে হলে কোথায় যেতে হবে?}
+    \end{itemize}
+
+    A failure showed that retrieval could find the correct evidence while
+    answer routing selected the wrong procedural answer. We fixed this by
+    improving intent detection for lost-certificate paraphrases and adding a
+    regression test.
+
+    \vspace{0.3em}
+    \textbf{Lesson:} retrieval metrics and answer correctness must be evaluated
+    separately.
+
+  \end{alertblock}
+
+  \begin{block}{Design Decisions and Next Steps}
+
+    \textbf{Why not use LLM-only?}
+    LLM-only answers risk hallucination and cannot guarantee official source
+    grounding.
+
+    \textbf{Why not add all domains immediately?}
+    More domains increase ambiguity. Multi-domain Civic.ai needs domain routing:
+    \[
+      \text{Query} \rightarrow \text{Domain Detection} \rightarrow
+      \text{Intent Detection} \rightarrow \text{Domain-specific Retrieval}
+    \]
+
+    \textbf{Immediate next steps:}
+    \begin{itemize}
+      \item Expand the gold evaluation set from 20 to 50--100 reviewed
+        questions.
+      \item Add paraphrase clusters for each important civic intent.
+      \item Tune RRF weights, e.g., dense-heavy settings.
+      \item Run full cross-encoder reranking on selected subsets.
+      \item Add manual qualitative scoring for faithfulness, correctness,
+        completeness, and language quality.
+    \end{itemize}
+
+  \end{block}
+
+  \begin{block}{References and Artifacts}
+
+    \small
+    \begin{itemize}
+      \item Source code and experiment reports:
+      \href{https://github.com/Shihabsarker93/civic_ai_rag}{github.com/Shihabsarker93/civic\_ai\_rag}
+      \item Evaluation dataset:
+      \texttt{domains/birth\_death\_registration/data/evaluation/p2\_20q\_eval\_set.json}
+      \item Current report:
+      \texttt{docs/evaluation/p2\_experiments/p2\_experiment\_report.md}
+      \item Inspired by NextRAG-style comparison: baseline RAG vs proposed RAG.
+    \end{itemize}
+
+  \end{block}
+
+\end{column}
+
+\separatorcolumn
+\end{columns}
+\end{frame}
+
+\end{document}
