@@ -671,7 +671,7 @@ class CivicRAGPipeline:
                         "বিধি ১৩ অনুযায়ী, আবেদন পাওয়ার ৭ কার্য দিবসের মধ্যে জন্ম/মৃত্যু নিবন্ধন সনদের প্রতিলিপি প্রদান করা হয়। "
                         "প্রতিলিপির জন্য বিধি ২১ অনুযায়ী নির্ধারিত ফি প্রযোজ্য হতে পারে।"
                     )
-                    return f"{summary}\n\nপ্রাসঙ্গিক বিধি: {body}\n\nSources: {', '.join(source_ids)}"
+                    return f"{summary}\n\nপ্রাসঙ্গিক বিধি: {body}\n\nSources: {rule['id']}"
 
         if self._is_mixed_correction_query(query):
             return self._safe_mixed_correction_answer(contexts)
@@ -919,9 +919,37 @@ class CivicRAGPipeline:
     @staticmethod
     def _is_lost_certificate_query(query: str) -> bool:
         query_lc = query.lower()
+        certificate_terms = ["জন্মসনদ", "জন্ম সনদ", "সনদ", "জন্ম নিবন্ধন", "নিবন্ধন"]
+        lost_terms = [
+            "হারালে",
+            "হারাল",
+            "হারানো",
+            "হারিয়ে",
+            "হারিয়ে",
+            "হারিয়েছে",
+            "হারাইয়া",
+            "হারাইছে",
+            "খোয়া",
+            "খোয়া",
+            "নষ্ট",
+        ]
+        copy_terms = ["প্রতিলিপি", "নকল", "ডুপ্লিকেট", "নতুন কপি", "কপি"]
+        has_certificate_context = any(term in query for term in certificate_terms)
+        has_lost_signal = any(term in query for term in lost_terms)
+        has_copy_signal = any(term in query for term in copy_terms)
         return (
-            any(term in query for term in ["হারিয়ে", "হারিয়ে", "হারাইয়া", "নষ্ট", "প্রতিলিপি", "নকল"])
-            or any(term in query_lc for term in ["lost certificate", "duplicate certificate", "certificate copy", "reprint"])
+            (has_certificate_context and (has_lost_signal or has_copy_signal))
+            or any(term in query for term in ["প্রতিলিপি", "নকল"])
+            or any(
+                term in query_lc
+                for term in [
+                    "lost certificate",
+                    "duplicate certificate",
+                    "certificate copy",
+                    "copy of birth certificate",
+                    "reprint",
+                ]
+            )
         )
 
     @staticmethod

@@ -103,10 +103,13 @@ class HybridReranker:
         is_birth_date_correction = (
             "জন্ম তারিখ" in query and any(term in query for term in ["ভুল", "সংশোধন", "ঠিক"])
         ) or any(term in query_lc for term in ["date of birth correction", "birth date correction"])
+        certificate_terms = ["জন্মসনদ", "জন্ম সনদ", "সনদ", "জন্ম নিবন্ধন", "নিবন্ধন"]
+        lost_terms = ["হারালে", "হারাল", "হারানো", "হারিয়ে", "হারিয়ে", "হারিয়েছে", "হারাইয়া", "হারাইছে", "খোয়া", "খোয়া", "নষ্ট"]
+        copy_terms = ["প্রতিলিপি", "নকল", "ডুপ্লিকেট", "নতুন কপি", "কপি"]
         is_lost_certificate = (
-            any(term in query for term in ["হারিয়ে", "হারিয়ে", "হারাইয়া", "হারিয়ে গেলে", "হারিয়ে গেলে", "নষ্ট", "প্রতিলিপি", "নকল"])
-            or any(term in query_lc for term in ["lost certificate", "duplicate certificate", "certificate copy", "reprint"])
-        )
+            any(term in query for term in certificate_terms)
+            and (any(term in query for term in lost_terms) or any(term in query for term in copy_terms))
+        ) or any(term in query_lc for term in ["lost certificate", "duplicate certificate", "certificate copy", "copy of birth certificate", "reprint"])
         is_document_requirement = (
             any(term in query for term in ["কাগজপত্র", "ডকুমেন্ট", "প্রমাণক", "দলিল", "কি কি লাগে", "কী কী লাগে"])
             or any(term in query_lc for term in ["documents", "required documents", "papers", "proof"])
