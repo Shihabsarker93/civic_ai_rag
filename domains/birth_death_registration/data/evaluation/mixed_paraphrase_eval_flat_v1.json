@@ -1,0 +1,1593 @@
+[
+  {
+    "id": "para_lost_certificate_01_v01",
+    "group_id": "para_lost_certificate_01",
+    "variant_index": 1,
+    "category": "lost_certificate",
+    "source_type": "legal_rules",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "জন্ম নিবন্ধন সনদ হারিয়ে গেলে নতুন কপি বা প্রতিলিপি পাওয়া",
+    "source_anchor": {
+      "type": "legal_unit",
+      "text": "বিধি ১৩: সনদের প্রতিলিপি প্রদান"
+    },
+    "question": "জন্ম নিবন্ধন হারালে কী করব?",
+    "expected_answer": "জন্ম নিবন্ধন সনদ হারিয়ে গেলে বা নষ্ট হলে নিবন্ধকের কাছে সনদের প্রতিলিপির জন্য আবেদন করতে হবে। বিধি ১৩ অনুযায়ী আবেদন পাওয়ার ৭ কার্য দিবসের মধ্যে জন্ম/মৃত্যু নিবন্ধন সনদের প্রতিলিপি দেওয়া হয়। বিধি ২১ অনুযায়ী নির্ধারিত ফি প্রযোজ্য হতে পারে।",
+    "expected_source_ids": [
+      "birth_and_death_registration_rules_2018_বিধি_১৩_01"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "প্রতিলিপি",
+        "নিবন্ধক",
+        "৭ কার্য দিবস"
+      ],
+      "should_not_invent": [
+        "থানা জিডি বাধ্যতামূলক",
+        "নতুন নিবন্ধন করতে হবে"
+      ]
+    }
+  },
+  {
+    "id": "para_lost_certificate_01_v02",
+    "group_id": "para_lost_certificate_01",
+    "variant_index": 2,
+    "category": "lost_certificate",
+    "source_type": "legal_rules",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "জন্ম নিবন্ধন সনদ হারিয়ে গেলে নতুন কপি বা প্রতিলিপি পাওয়া",
+    "source_anchor": {
+      "type": "legal_unit",
+      "text": "বিধি ১৩: সনদের প্রতিলিপি প্রদান"
+    },
+    "question": "আমার জন্মসনদ হারিয়ে গেছে, নতুন কপি পেতে হলে কোথায় যেতে হবে?",
+    "expected_answer": "জন্ম নিবন্ধন সনদ হারিয়ে গেলে বা নষ্ট হলে নিবন্ধকের কাছে সনদের প্রতিলিপির জন্য আবেদন করতে হবে। বিধি ১৩ অনুযায়ী আবেদন পাওয়ার ৭ কার্য দিবসের মধ্যে জন্ম/মৃত্যু নিবন্ধন সনদের প্রতিলিপি দেওয়া হয়। বিধি ২১ অনুযায়ী নির্ধারিত ফি প্রযোজ্য হতে পারে।",
+    "expected_source_ids": [
+      "birth_and_death_registration_rules_2018_বিধি_১৩_01"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "প্রতিলিপি",
+        "নিবন্ধক",
+        "৭ কার্য দিবস"
+      ],
+      "should_not_invent": [
+        "থানা জিডি বাধ্যতামূলক",
+        "নতুন নিবন্ধন করতে হবে"
+      ]
+    }
+  },
+  {
+    "id": "para_lost_certificate_01_v03",
+    "group_id": "para_lost_certificate_01",
+    "variant_index": 3,
+    "category": "lost_certificate",
+    "source_type": "legal_rules",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "জন্ম নিবন্ধন সনদ হারিয়ে গেলে নতুন কপি বা প্রতিলিপি পাওয়া",
+    "source_anchor": {
+      "type": "legal_unit",
+      "text": "বিধি ১৩: সনদের প্রতিলিপি প্রদান"
+    },
+    "question": "জন্ম নিবন্ধনের কপি হারিয়ে ফেলেছি, আবার তুলতে চাই। কী করব?",
+    "expected_answer": "জন্ম নিবন্ধন সনদ হারিয়ে গেলে বা নষ্ট হলে নিবন্ধকের কাছে সনদের প্রতিলিপির জন্য আবেদন করতে হবে। বিধি ১৩ অনুযায়ী আবেদন পাওয়ার ৭ কার্য দিবসের মধ্যে জন্ম/মৃত্যু নিবন্ধন সনদের প্রতিলিপি দেওয়া হয়। বিধি ২১ অনুযায়ী নির্ধারিত ফি প্রযোজ্য হতে পারে।",
+    "expected_source_ids": [
+      "birth_and_death_registration_rules_2018_বিধি_১৩_01"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "প্রতিলিপি",
+        "নিবন্ধক",
+        "৭ কার্য দিবস"
+      ],
+      "should_not_invent": [
+        "থানা জিডি বাধ্যতামূলক",
+        "নতুন নিবন্ধন করতে হবে"
+      ]
+    }
+  },
+  {
+    "id": "para_lost_certificate_01_v04",
+    "group_id": "para_lost_certificate_01",
+    "variant_index": 4,
+    "category": "lost_certificate",
+    "source_type": "legal_rules",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "জন্ম নিবন্ধন সনদ হারিয়ে গেলে নতুন কপি বা প্রতিলিপি পাওয়া",
+    "source_anchor": {
+      "type": "legal_unit",
+      "text": "বিধি ১৩: সনদের প্রতিলিপি প্রদান"
+    },
+    "question": "জন্ম সনদ নষ্ট হয়ে গেছে, ডুপ্লিকেট কপি কীভাবে পাব?",
+    "expected_answer": "জন্ম নিবন্ধন সনদ হারিয়ে গেলে বা নষ্ট হলে নিবন্ধকের কাছে সনদের প্রতিলিপির জন্য আবেদন করতে হবে। বিধি ১৩ অনুযায়ী আবেদন পাওয়ার ৭ কার্য দিবসের মধ্যে জন্ম/মৃত্যু নিবন্ধন সনদের প্রতিলিপি দেওয়া হয়। বিধি ২১ অনুযায়ী নির্ধারিত ফি প্রযোজ্য হতে পারে।",
+    "expected_source_ids": [
+      "birth_and_death_registration_rules_2018_বিধি_১৩_01"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "প্রতিলিপি",
+        "নিবন্ধক",
+        "৭ কার্য দিবস"
+      ],
+      "should_not_invent": [
+        "থানা জিডি বাধ্যতামূলক",
+        "নতুন নিবন্ধন করতে হবে"
+      ]
+    }
+  },
+  {
+    "id": "para_manual_to_online_01_v01",
+    "group_id": "para_manual_to_online_01",
+    "variant_index": 1,
+    "category": "manual_to_online_migration",
+    "source_type": "faq",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "পুরোনো হাতে লেখা জন্ম নিবন্ধন অনলাইনে না থাকলে করণীয়",
+    "source_anchor": {
+      "type": "stored_question",
+      "text": "ম্যানুয়াল জন্ম নিবন্ধন, যেগুলি এখনও অনলাইনে করা হয়নি — এগুলির বিষয়ে করণীয় কী?"
+    },
+    "question": "পুরোনো ম্যানুয়াল জন্ম নিবন্ধন অনলাইন সিস্টেমে অন্তর্ভুক্ত করার নিয়ম কী?",
+    "expected_answer": "ম্যানুয়াল জন্ম নিবন্ধন অনলাইনে অন্তর্ভুক্তির সুযোগ আগে একাধিকবার দেওয়া হয়েছিল। এখন একই নম্বর দিয়ে অনলাইনে অন্তর্ভুক্তির সুযোগ নেই। যে এলাকায় হাতে লেখা নিবন্ধন হয়েছিল সেই কার্যালয়ের বইতে তথ্য পাওয়া গেলে নিবন্ধক সরাসরি অনলাইন নিবন্ধন করে দেবেন, যদি আগে অন্য কোথাও নিবন্ধন না হয়ে থাকে। নম্বর পরিবর্তিত হলেও নাগরিকের ক্ষতি হবে না।",
+    "expected_source_ids": [
+      "bdris_faq_01_q02"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "একই নম্বর দিয়ে অনলাইনে অন্তর্ভুক্তির সুযোগ নেই",
+        "যে কার্যালয়ে হাতে লেখা নিবন্ধন হয়েছিল",
+        "নম্বর পরিবর্তিত হবে"
+      ]
+    }
+  },
+  {
+    "id": "para_manual_to_online_01_v02",
+    "group_id": "para_manual_to_online_01",
+    "variant_index": 2,
+    "category": "manual_to_online_migration",
+    "source_type": "faq",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "পুরোনো হাতে লেখা জন্ম নিবন্ধন অনলাইনে না থাকলে করণীয়",
+    "source_anchor": {
+      "type": "stored_question",
+      "text": "ম্যানুয়াল জন্ম নিবন্ধন, যেগুলি এখনও অনলাইনে করা হয়নি — এগুলির বিষয়ে করণীয় কী?"
+    },
+    "question": "আমার হাতে লেখা জন্মসনদ আছে কিন্তু অনলাইনে দেখাচ্ছে না, এখন কী করব?",
+    "expected_answer": "ম্যানুয়াল জন্ম নিবন্ধন অনলাইনে অন্তর্ভুক্তির সুযোগ আগে একাধিকবার দেওয়া হয়েছিল। এখন একই নম্বর দিয়ে অনলাইনে অন্তর্ভুক্তির সুযোগ নেই। যে এলাকায় হাতে লেখা নিবন্ধন হয়েছিল সেই কার্যালয়ের বইতে তথ্য পাওয়া গেলে নিবন্ধক সরাসরি অনলাইন নিবন্ধন করে দেবেন, যদি আগে অন্য কোথাও নিবন্ধন না হয়ে থাকে। নম্বর পরিবর্তিত হলেও নাগরিকের ক্ষতি হবে না।",
+    "expected_source_ids": [
+      "bdris_faq_01_q02"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "একই নম্বর দিয়ে অনলাইনে অন্তর্ভুক্তির সুযোগ নেই",
+        "যে কার্যালয়ে হাতে লেখা নিবন্ধন হয়েছিল",
+        "নম্বর পরিবর্তিত হবে"
+      ]
+    }
+  },
+  {
+    "id": "para_manual_to_online_01_v03",
+    "group_id": "para_manual_to_online_01",
+    "variant_index": 3,
+    "category": "manual_to_online_migration",
+    "source_type": "faq",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "পুরোনো হাতে লেখা জন্ম নিবন্ধন অনলাইনে না থাকলে করণীয়",
+    "source_anchor": {
+      "type": "stored_question",
+      "text": "ম্যানুয়াল জন্ম নিবন্ধন, যেগুলি এখনও অনলাইনে করা হয়নি — এগুলির বিষয়ে করণীয় কী?"
+    },
+    "question": "আগের জন্ম নিবন্ধন অনলাইনে করা নেই, একই নম্বর দিয়ে অনলাইনে নেওয়া যাবে কি?",
+    "expected_answer": "ম্যানুয়াল জন্ম নিবন্ধন অনলাইনে অন্তর্ভুক্তির সুযোগ আগে একাধিকবার দেওয়া হয়েছিল। এখন একই নম্বর দিয়ে অনলাইনে অন্তর্ভুক্তির সুযোগ নেই। যে এলাকায় হাতে লেখা নিবন্ধন হয়েছিল সেই কার্যালয়ের বইতে তথ্য পাওয়া গেলে নিবন্ধক সরাসরি অনলাইন নিবন্ধন করে দেবেন, যদি আগে অন্য কোথাও নিবন্ধন না হয়ে থাকে। নম্বর পরিবর্তিত হলেও নাগরিকের ক্ষতি হবে না।",
+    "expected_source_ids": [
+      "bdris_faq_01_q02"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "একই নম্বর দিয়ে অনলাইনে অন্তর্ভুক্তির সুযোগ নেই",
+        "যে কার্যালয়ে হাতে লেখা নিবন্ধন হয়েছিল",
+        "নম্বর পরিবর্তিত হবে"
+      ]
+    }
+  },
+  {
+    "id": "para_application_process_01_v01",
+    "group_id": "para_application_process_01",
+    "variant_index": 1,
+    "category": "application_process",
+    "source_type": "application_process",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "নতুন জন্ম নিবন্ধনের আবেদন, ডকুমেন্ট এবং পরবর্তী করণীয়",
+    "source_anchor": {
+      "type": "section_group",
+      "text": "আবেদন করার পূর্ব প্রস্তুতি + আবেদন সম্পন্ন হওয়ার পর + পরবর্তী করণীয়"
+    },
+    "question": "জন্মসনদের জন্য আবেদন করব কীভাবে? কি কি কাগজপত্র প্রয়োজন? আবেদনের পর progress কীভাবে জানবো?",
+    "expected_answer": "নতুন জন্ম নিবন্ধনের আগে জন্মস্থান, স্থায়ী ঠিকানা, বর্তমান ঠিকানা এবং প্রয়োজনীয় প্রমাণক প্রস্তুত রাখতে হবে। অনলাইনে আবেদন জমা দিলে Application ID বা আবেদন নম্বর মোবাইল/ইমেইলে পাওয়া যায়। এরপর আবেদনপত্র ও সংযুক্ত ডকুমেন্টের ফটোকপি নিয়ে সংশ্লিষ্ট নিবন্ধন কার্যালয়ে যোগাযোগ করতে হবে। নির্দিষ্ট live progress tracking পদ্ধতি এই ডেটাসেটে নেই।",
+    "expected_source_ids": [
+      "birth_registration_application_process_cleaned_002_01",
+      "birth_registration_application_process_cleaned_019_01",
+      "birth_registration_application_process_cleaned_020_01",
+      "birth_registration_application_process_cleaned_015_01"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "Application ID",
+        "আবেদনপত্র",
+        "সংযুক্ত ডকুমেন্টসমূহের ফটোকপি",
+        "নিবন্ধন কার্যালয়"
+      ],
+      "must_disclose_if_asked": [
+        "live progress tracking পদ্ধতি এই ডেটাসেটে নেই"
+      ]
+    }
+  },
+  {
+    "id": "para_application_process_01_v02",
+    "group_id": "para_application_process_01",
+    "variant_index": 2,
+    "category": "application_process",
+    "source_type": "application_process",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "নতুন জন্ম নিবন্ধনের আবেদন, ডকুমেন্ট এবং পরবর্তী করণীয়",
+    "source_anchor": {
+      "type": "section_group",
+      "text": "আবেদন করার পূর্ব প্রস্তুতি + আবেদন সম্পন্ন হওয়ার পর + পরবর্তী করণীয়"
+    },
+    "question": "নতুন জন্ম নিবন্ধন করতে চাই, কী তথ্য লাগবে আর আবেদন জমা দেওয়ার পর কোথায় যাব?",
+    "expected_answer": "নতুন জন্ম নিবন্ধনের আগে জন্মস্থান, স্থায়ী ঠিকানা, বর্তমান ঠিকানা এবং প্রয়োজনীয় প্রমাণক প্রস্তুত রাখতে হবে। অনলাইনে আবেদন জমা দিলে Application ID বা আবেদন নম্বর মোবাইল/ইমেইলে পাওয়া যায়। এরপর আবেদনপত্র ও সংযুক্ত ডকুমেন্টের ফটোকপি নিয়ে সংশ্লিষ্ট নিবন্ধন কার্যালয়ে যোগাযোগ করতে হবে। নির্দিষ্ট live progress tracking পদ্ধতি এই ডেটাসেটে নেই।",
+    "expected_source_ids": [
+      "birth_registration_application_process_cleaned_002_01",
+      "birth_registration_application_process_cleaned_019_01",
+      "birth_registration_application_process_cleaned_020_01",
+      "birth_registration_application_process_cleaned_015_01"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "Application ID",
+        "আবেদনপত্র",
+        "সংযুক্ত ডকুমেন্টসমূহের ফটোকপি",
+        "নিবন্ধন কার্যালয়"
+      ],
+      "must_disclose_if_asked": [
+        "live progress tracking পদ্ধতি এই ডেটাসেটে নেই"
+      ]
+    }
+  },
+  {
+    "id": "para_application_process_01_v03",
+    "group_id": "para_application_process_01",
+    "variant_index": 3,
+    "category": "application_process",
+    "source_type": "application_process",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "নতুন জন্ম নিবন্ধনের আবেদন, ডকুমেন্ট এবং পরবর্তী করণীয়",
+    "source_anchor": {
+      "type": "section_group",
+      "text": "আবেদন করার পূর্ব প্রস্তুতি + আবেদন সম্পন্ন হওয়ার পর + পরবর্তী করণীয়"
+    },
+    "question": "অনলাইনে জন্ম নিবন্ধন আবেদন করার পর আবেদন নম্বর কোথায় পাব এবং এরপর কী করতে হবে?",
+    "expected_answer": "নতুন জন্ম নিবন্ধনের আগে জন্মস্থান, স্থায়ী ঠিকানা, বর্তমান ঠিকানা এবং প্রয়োজনীয় প্রমাণক প্রস্তুত রাখতে হবে। অনলাইনে আবেদন জমা দিলে Application ID বা আবেদন নম্বর মোবাইল/ইমেইলে পাওয়া যায়। এরপর আবেদনপত্র ও সংযুক্ত ডকুমেন্টের ফটোকপি নিয়ে সংশ্লিষ্ট নিবন্ধন কার্যালয়ে যোগাযোগ করতে হবে। নির্দিষ্ট live progress tracking পদ্ধতি এই ডেটাসেটে নেই।",
+    "expected_source_ids": [
+      "birth_registration_application_process_cleaned_002_01",
+      "birth_registration_application_process_cleaned_019_01",
+      "birth_registration_application_process_cleaned_020_01",
+      "birth_registration_application_process_cleaned_015_01"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "Application ID",
+        "আবেদনপত্র",
+        "সংযুক্ত ডকুমেন্টসমূহের ফটোকপি",
+        "নিবন্ধন কার্যালয়"
+      ],
+      "must_disclose_if_asked": [
+        "live progress tracking পদ্ধতি এই ডেটাসেটে নেই"
+      ]
+    }
+  },
+  {
+    "id": "para_registration_deadline_fee_01_v01",
+    "group_id": "para_registration_deadline_fee_01",
+    "variant_index": 1,
+    "category": "fees",
+    "source_type": "fee_row",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "জন্মের ৪৫ দিনের মধ্যে জন্ম নিবন্ধনের ফি",
+    "source_anchor": {
+      "type": "fee_item",
+      "text": "জন্ম বা মৃত্যুর ৪৫ দিন পর্যন্ত নিবন্ধন"
+    },
+    "question": "জন্মের ৪৫ দিনের মধ্যে জন্ম নিবন্ধন করলে ফি কত?",
+    "expected_answer": "জন্ম বা মৃত্যুর ৪৫ দিনের মধ্যে জন্ম বা মৃত্যু নিবন্ধন করতে কোনো ফি লাগে না; এটি বিনা ফিসে।",
+    "expected_source_ids": [
+      "birth_and_death_registration_fees_cleaned_fee_row_01"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "বিনা ফিসে"
+      ]
+    }
+  },
+  {
+    "id": "para_registration_deadline_fee_01_v02",
+    "group_id": "para_registration_deadline_fee_01",
+    "variant_index": 2,
+    "category": "fees",
+    "source_type": "fee_row",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "জন্মের ৪৫ দিনের মধ্যে জন্ম নিবন্ধনের ফি",
+    "source_anchor": {
+      "type": "fee_item",
+      "text": "জন্ম বা মৃত্যুর ৪৫ দিন পর্যন্ত নিবন্ধন"
+    },
+    "question": "বাচ্চার জন্মের এক মাসের মধ্যে জন্মসনদ করতে চাই, টাকা লাগবে কি?",
+    "expected_answer": "জন্ম বা মৃত্যুর ৪৫ দিনের মধ্যে জন্ম বা মৃত্যু নিবন্ধন করতে কোনো ফি লাগে না; এটি বিনা ফিসে।",
+    "expected_source_ids": [
+      "birth_and_death_registration_fees_cleaned_fee_row_01"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "বিনা ফিসে"
+      ]
+    }
+  },
+  {
+    "id": "para_registration_deadline_fee_01_v03",
+    "group_id": "para_registration_deadline_fee_01",
+    "variant_index": 3,
+    "category": "fees",
+    "source_type": "fee_row",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "জন্মের ৪৫ দিনের মধ্যে জন্ম নিবন্ধনের ফি",
+    "source_anchor": {
+      "type": "fee_item",
+      "text": "জন্ম বা মৃত্যুর ৪৫ দিন পর্যন্ত নিবন্ধন"
+    },
+    "question": "৪৫ দিনের আগে জন্ম নিবন্ধন করলে কি কোনো ফি দিতে হয়?",
+    "expected_answer": "জন্ম বা মৃত্যুর ৪৫ দিনের মধ্যে জন্ম বা মৃত্যু নিবন্ধন করতে কোনো ফি লাগে না; এটি বিনা ফিসে।",
+    "expected_source_ids": [
+      "birth_and_death_registration_fees_cleaned_fee_row_01"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "বিনা ফিসে"
+      ]
+    }
+  },
+  {
+    "id": "para_late_registration_fee_01_v01",
+    "group_id": "para_late_registration_fee_01",
+    "variant_index": 1,
+    "category": "fees",
+    "source_type": "fee_row",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "৪৫ দিনের পর কিন্তু ৫ বছরের মধ্যে জন্ম নিবন্ধনের ফি",
+    "source_anchor": {
+      "type": "fee_item",
+      "text": "৪৫ দিন পর হইতে ৫ বছর পর্যন্ত নিবন্ধন"
+    },
+    "question": "জন্মের ৪৫ দিনের পরে কিন্তু ৫ বছরের আগে জন্ম নিবন্ধন করলে কত টাকা লাগে?",
+    "expected_answer": "জন্ম বা মৃত্যুর ৪৫ দিন পর থেকে ৫ বছর পর্যন্ত জন্ম বা মৃত্যু নিবন্ধনের ফি ২৫ টাকা।",
+    "expected_source_ids": [
+      "birth_and_death_registration_fees_cleaned_fee_row_02"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "২৫ টাকা"
+      ]
+    }
+  },
+  {
+    "id": "para_late_registration_fee_01_v02",
+    "group_id": "para_late_registration_fee_01",
+    "variant_index": 2,
+    "category": "fees",
+    "source_type": "fee_row",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "৪৫ দিনের পর কিন্তু ৫ বছরের মধ্যে জন্ম নিবন্ধনের ফি",
+    "source_anchor": {
+      "type": "fee_item",
+      "text": "৪৫ দিন পর হইতে ৫ বছর পর্যন্ত নিবন্ধন"
+    },
+    "question": "আমার শিশুর বয়স ২ বছর, জন্ম নিবন্ধনের ফি কত হবে?",
+    "expected_answer": "জন্ম বা মৃত্যুর ৪৫ দিন পর থেকে ৫ বছর পর্যন্ত জন্ম বা মৃত্যু নিবন্ধনের ফি ২৫ টাকা।",
+    "expected_source_ids": [
+      "birth_and_death_registration_fees_cleaned_fee_row_02"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "২৫ টাকা"
+      ]
+    }
+  },
+  {
+    "id": "para_late_registration_fee_01_v03",
+    "group_id": "para_late_registration_fee_01",
+    "variant_index": 3,
+    "category": "fees",
+    "source_type": "fee_row",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "৪৫ দিনের পর কিন্তু ৫ বছরের মধ্যে জন্ম নিবন্ধনের ফি",
+    "source_anchor": {
+      "type": "fee_item",
+      "text": "৪৫ দিন পর হইতে ৫ বছর পর্যন্ত নিবন্ধন"
+    },
+    "question": "৪৫ দিন পার হয়ে গেছে, পাঁচ বছরের কম বয়সের শিশুর জন্মসনদ করতে কত ফি?",
+    "expected_answer": "জন্ম বা মৃত্যুর ৪৫ দিন পর থেকে ৫ বছর পর্যন্ত জন্ম বা মৃত্যু নিবন্ধনের ফি ২৫ টাকা।",
+    "expected_source_ids": [
+      "birth_and_death_registration_fees_cleaned_fee_row_02"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "২৫ টাকা"
+      ]
+    }
+  },
+  {
+    "id": "para_after_five_year_fee_01_v01",
+    "group_id": "para_after_five_year_fee_01",
+    "variant_index": 1,
+    "category": "fees",
+    "source_type": "fee_row",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "৫ বছরের পর জন্ম নিবন্ধনের ফি",
+    "source_anchor": {
+      "type": "fee_item",
+      "text": "৫ বছর পর নিবন্ধন"
+    },
+    "question": "৫ বছরের বেশি বয়স হলে জন্ম নিবন্ধনের ফি কত?",
+    "expected_answer": "জন্ম বা মৃত্যুর ৫ বছর পর জন্ম বা মৃত্যু নিবন্ধনের ফি ৫০ টাকা।",
+    "expected_source_ids": [
+      "birth_and_death_registration_fees_cleaned_fee_row_03"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "৫০ টাকা"
+      ]
+    }
+  },
+  {
+    "id": "para_after_five_year_fee_01_v02",
+    "group_id": "para_after_five_year_fee_01",
+    "variant_index": 2,
+    "category": "fees",
+    "source_type": "fee_row",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "৫ বছরের পর জন্ম নিবন্ধনের ফি",
+    "source_anchor": {
+      "type": "fee_item",
+      "text": "৫ বছর পর নিবন্ধন"
+    },
+    "question": "আমার বয়স ১০ বছর, এখন জন্মসনদ করতে চাই। কত টাকা লাগবে?",
+    "expected_answer": "জন্ম বা মৃত্যুর ৫ বছর পর জন্ম বা মৃত্যু নিবন্ধনের ফি ৫০ টাকা।",
+    "expected_source_ids": [
+      "birth_and_death_registration_fees_cleaned_fee_row_03"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "৫০ টাকা"
+      ]
+    }
+  },
+  {
+    "id": "para_after_five_year_fee_01_v03",
+    "group_id": "para_after_five_year_fee_01",
+    "variant_index": 3,
+    "category": "fees",
+    "source_type": "fee_row",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "৫ বছরের পর জন্ম নিবন্ধনের ফি",
+    "source_anchor": {
+      "type": "fee_item",
+      "text": "৫ বছর পর নিবন্ধন"
+    },
+    "question": "পাঁচ বছর পেরিয়ে গেলে জন্ম নিবন্ধন করতে কত ফি লাগে?",
+    "expected_answer": "জন্ম বা মৃত্যুর ৫ বছর পর জন্ম বা মৃত্যু নিবন্ধনের ফি ৫০ টাকা।",
+    "expected_source_ids": [
+      "birth_and_death_registration_fees_cleaned_fee_row_03"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "৫০ টাকা"
+      ]
+    }
+  },
+  {
+    "id": "para_birth_date_correction_fee_01_v01",
+    "group_id": "para_birth_date_correction_fee_01",
+    "variant_index": 1,
+    "category": "correction_fee",
+    "source_type": "fee_row",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "জন্ম তারিখ সংশোধনের ফি",
+    "source_anchor": {
+      "type": "fee_item",
+      "text": "জন্ম তারিখ সংশোধনের জন্য আবেদন ফি"
+    },
+    "question": "জন্ম তারিখ ভুল হলে সংশোধনের ফি কত?",
+    "expected_answer": "জন্ম তারিখ সংশোধনের জন্য আবেদন ফি ১০০ টাকা।",
+    "expected_source_ids": [
+      "birth_and_death_registration_fees_cleaned_fee_row_04"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "১০০ টাকা"
+      ]
+    }
+  },
+  {
+    "id": "para_birth_date_correction_fee_01_v02",
+    "group_id": "para_birth_date_correction_fee_01",
+    "variant_index": 2,
+    "category": "correction_fee",
+    "source_type": "fee_row",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "জন্ম তারিখ সংশোধনের ফি",
+    "source_anchor": {
+      "type": "fee_item",
+      "text": "জন্ম তারিখ সংশোধনের জন্য আবেদন ফি"
+    },
+    "question": "জন্মসনদে জন্ম তারিখ ঠিক করতে কত টাকা লাগবে?",
+    "expected_answer": "জন্ম তারিখ সংশোধনের জন্য আবেদন ফি ১০০ টাকা।",
+    "expected_source_ids": [
+      "birth_and_death_registration_fees_cleaned_fee_row_04"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "১০০ টাকা"
+      ]
+    }
+  },
+  {
+    "id": "para_birth_date_correction_fee_01_v03",
+    "group_id": "para_birth_date_correction_fee_01",
+    "variant_index": 3,
+    "category": "correction_fee",
+    "source_type": "fee_row",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "জন্ম তারিখ সংশোধনের ফি",
+    "source_anchor": {
+      "type": "fee_item",
+      "text": "জন্ম তারিখ সংশোধনের জন্য আবেদন ফি"
+    },
+    "question": "DOB correction করতে জন্ম নিবন্ধনে কত ফি লাগে?",
+    "expected_answer": "জন্ম তারিখ সংশোধনের জন্য আবেদন ফি ১০০ টাকা।",
+    "expected_source_ids": [
+      "birth_and_death_registration_fees_cleaned_fee_row_04"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "১০০ টাকা"
+      ]
+    }
+  },
+  {
+    "id": "para_other_info_correction_fee_01_v01",
+    "group_id": "para_other_info_correction_fee_01",
+    "variant_index": 1,
+    "category": "correction_fee",
+    "source_type": "fee_row",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "জন্ম তারিখ ব্যতীত অন্যান্য তথ্য সংশোধনের ফি",
+    "source_anchor": {
+      "type": "fee_item",
+      "text": "নাম, পিতার নাম, মাতার নাম, ঠিকানা ইত্যাদি সংশোধন"
+    },
+    "question": "নাম বা ঠিকানা ভুল হলে জন্ম নিবন্ধন সংশোধনের ফি কত?",
+    "expected_answer": "জন্ম তারিখ ব্যতীত নাম, পিতার নাম, মাতার নাম, ঠিকানা ইত্যাদি অন্যান্য তথ্য সংশোধনের আবেদন ফি ৫০ টাকা।",
+    "expected_source_ids": [
+      "birth_and_death_registration_fees_cleaned_fee_row_05"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "৫০ টাকা"
+      ]
+    }
+  },
+  {
+    "id": "para_other_info_correction_fee_01_v02",
+    "group_id": "para_other_info_correction_fee_01",
+    "variant_index": 2,
+    "category": "correction_fee",
+    "source_type": "fee_row",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "জন্ম তারিখ ব্যতীত অন্যান্য তথ্য সংশোধনের ফি",
+    "source_anchor": {
+      "type": "fee_item",
+      "text": "নাম, পিতার নাম, মাতার নাম, ঠিকানা ইত্যাদি সংশোধন"
+    },
+    "question": "পিতার নাম বা মাতার নাম ঠিক করতে কত টাকা লাগে?",
+    "expected_answer": "জন্ম তারিখ ব্যতীত নাম, পিতার নাম, মাতার নাম, ঠিকানা ইত্যাদি অন্যান্য তথ্য সংশোধনের আবেদন ফি ৫০ টাকা।",
+    "expected_source_ids": [
+      "birth_and_death_registration_fees_cleaned_fee_row_05"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "৫০ টাকা"
+      ]
+    }
+  },
+  {
+    "id": "para_other_info_correction_fee_01_v03",
+    "group_id": "para_other_info_correction_fee_01",
+    "variant_index": 3,
+    "category": "correction_fee",
+    "source_type": "fee_row",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "জন্ম তারিখ ব্যতীত অন্যান্য তথ্য সংশোধনের ফি",
+    "source_anchor": {
+      "type": "fee_item",
+      "text": "নাম, পিতার নাম, মাতার নাম, ঠিকানা ইত্যাদি সংশোধন"
+    },
+    "question": "জন্ম তারিখ ছাড়া অন্য তথ্য সংশোধনের ফি কত?",
+    "expected_answer": "জন্ম তারিখ ব্যতীত নাম, পিতার নাম, মাতার নাম, ঠিকানা ইত্যাদি অন্যান্য তথ্য সংশোধনের আবেদন ফি ৫০ টাকা।",
+    "expected_source_ids": [
+      "birth_and_death_registration_fees_cleaned_fee_row_05"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "৫০ টাকা"
+      ]
+    }
+  },
+  {
+    "id": "para_parent_name_correction_before_2001_01_v01",
+    "group_id": "para_parent_name_correction_before_2001_01",
+    "variant_index": 1,
+    "category": "parent_name_correction",
+    "source_type": "correction_process",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "পিতা/মাতার জন্ম নিবন্ধন নম্বর নেই এবং জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে হলে পিতা/মাতার নাম সংশোধন",
+    "source_anchor": {
+      "type": "section",
+      "text": "পরিস্থিতি ২: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই এবং জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে"
+    },
+    "question": "আমার জন্ম তারিখ ২০০১ সালের আগে, বাবা-মায়ের জন্ম নিবন্ধন নম্বর নেই। তাদের নাম সংশোধন করা যাবে?",
+    "expected_answer": "পিতা বা মাতার জন্ম নিবন্ধন নম্বর না থাকলে এবং জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে হলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করার সময় পিতা বা মাতার নাম সংশোধন করা যাবে।",
+    "expected_source_ids": [
+      "application_for_birth_information_correction_cleaned_006_01"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "০১/০১/২০০১-এর পূর্বে",
+        "পিতা বা মাতার নাম সংশোধন করা যাবে"
+      ]
+    }
+  },
+  {
+    "id": "para_parent_name_correction_before_2001_01_v02",
+    "group_id": "para_parent_name_correction_before_2001_01",
+    "variant_index": 2,
+    "category": "parent_name_correction",
+    "source_type": "correction_process",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "পিতা/মাতার জন্ম নিবন্ধন নম্বর নেই এবং জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে হলে পিতা/মাতার নাম সংশোধন",
+    "source_anchor": {
+      "type": "section",
+      "text": "পরিস্থিতি ২: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই এবং জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে"
+    },
+    "question": "পিতা-মাতার জন্ম নিবন্ধন নম্বর না থাকলে এবং আমার জন্ম ০১/০১/২০০১-এর আগে হলে কীভাবে সংশোধন করব?",
+    "expected_answer": "পিতা বা মাতার জন্ম নিবন্ধন নম্বর না থাকলে এবং জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে হলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করার সময় পিতা বা মাতার নাম সংশোধন করা যাবে।",
+    "expected_source_ids": [
+      "application_for_birth_information_correction_cleaned_006_01"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "০১/০১/২০০১-এর পূর্বে",
+        "পিতা বা মাতার নাম সংশোধন করা যাবে"
+      ]
+    }
+  },
+  {
+    "id": "para_parent_name_correction_before_2001_01_v03",
+    "group_id": "para_parent_name_correction_before_2001_01",
+    "variant_index": 3,
+    "category": "parent_name_correction",
+    "source_type": "correction_process",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "পিতা/মাতার জন্ম নিবন্ধন নম্বর নেই এবং জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে হলে পিতা/মাতার নাম সংশোধন",
+    "source_anchor": {
+      "type": "section",
+      "text": "পরিস্থিতি ২: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই এবং জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে"
+    },
+    "question": "২০০১ সালের আগে জন্ম, পিতা মাতার নম্বর নেই, জন্ম নিবন্ধনে বাবা-মায়ের নাম ঠিক করতে পারব কি?",
+    "expected_answer": "পিতা বা মাতার জন্ম নিবন্ধন নম্বর না থাকলে এবং জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে হলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করার সময় পিতা বা মাতার নাম সংশোধন করা যাবে।",
+    "expected_source_ids": [
+      "application_for_birth_information_correction_cleaned_006_01"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "০১/০১/২০০১-এর পূর্বে",
+        "পিতা বা মাতার নাম সংশোধন করা যাবে"
+      ]
+    }
+  },
+  {
+    "id": "para_parent_name_correction_after_2001_dead_parent_01_v01",
+    "group_id": "para_parent_name_correction_after_2001_dead_parent_01",
+    "variant_index": 1,
+    "category": "parent_name_correction",
+    "source_type": "correction_process",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "পিতা/মাতার জন্ম নিবন্ধন নম্বর নেই, পিতা/মাতা মৃত, জন্ম ০১/০১/২০০১-এর পরে",
+    "source_anchor": {
+      "type": "section",
+      "text": "পরিস্থিতি ৩: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই, পিতা বা মাতা মৃত এবং জন্ম তারিখ ০১/০১/২০০১-এর পরে"
+    },
+    "question": "আমার জন্ম ২০০১ সালের পরে, বাবা মারা গেছেন এবং বাবার জন্ম নিবন্ধন নম্বর নেই। বাবার নাম সংশোধন করা যাবে?",
+    "expected_answer": "পিতা বা মাতার জন্ম নিবন্ধন নম্বর না থাকলে, পিতা বা মাতা মৃত হলে এবং জন্ম তারিখ ০১/০১/২০০১-এর পরে হলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করার সময় পিতা বা মাতার নাম সংশোধন করা যাবে।",
+    "expected_source_ids": [
+      "application_for_birth_information_correction_cleaned_008_01"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "পিতা বা মাতা মৃত",
+        "০১/০১/২০০১-এর পরে",
+        "নাম সংশোধন করা যাবে"
+      ]
+    }
+  },
+  {
+    "id": "para_parent_name_correction_after_2001_dead_parent_01_v02",
+    "group_id": "para_parent_name_correction_after_2001_dead_parent_01",
+    "variant_index": 2,
+    "category": "parent_name_correction",
+    "source_type": "correction_process",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "পিতা/মাতার জন্ম নিবন্ধন নম্বর নেই, পিতা/মাতা মৃত, জন্ম ০১/০১/২০০১-এর পরে",
+    "source_anchor": {
+      "type": "section",
+      "text": "পরিস্থিতি ৩: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই, পিতা বা মাতা মৃত এবং জন্ম তারিখ ০১/০১/২০০১-এর পরে"
+    },
+    "question": "পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই, তারা মৃত এবং আমার জন্ম ০১/০১/২০০১-এর পরে হলে কী করব?",
+    "expected_answer": "পিতা বা মাতার জন্ম নিবন্ধন নম্বর না থাকলে, পিতা বা মাতা মৃত হলে এবং জন্ম তারিখ ০১/০১/২০০১-এর পরে হলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করার সময় পিতা বা মাতার নাম সংশোধন করা যাবে।",
+    "expected_source_ids": [
+      "application_for_birth_information_correction_cleaned_008_01"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "পিতা বা মাতা মৃত",
+        "০১/০১/২০০১-এর পরে",
+        "নাম সংশোধন করা যাবে"
+      ]
+    }
+  },
+  {
+    "id": "para_parent_name_correction_after_2001_dead_parent_01_v03",
+    "group_id": "para_parent_name_correction_after_2001_dead_parent_01",
+    "variant_index": 3,
+    "category": "parent_name_correction",
+    "source_type": "correction_process",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "পিতা/মাতার জন্ম নিবন্ধন নম্বর নেই, পিতা/মাতা মৃত, জন্ম ০১/০১/২০০১-এর পরে",
+    "source_anchor": {
+      "type": "section",
+      "text": "পরিস্থিতি ৩: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই, পিতা বা মাতা মৃত এবং জন্ম তারিখ ০১/০১/২০০১-এর পরে"
+    },
+    "question": "২০০১ সালের পরে জন্ম, মা মৃত, মায়ের জন্ম নিবন্ধন নম্বর নেই; জন্মসনদে মায়ের নাম সংশোধন করা যাবে কি?",
+    "expected_answer": "পিতা বা মাতার জন্ম নিবন্ধন নম্বর না থাকলে, পিতা বা মাতা মৃত হলে এবং জন্ম তারিখ ০১/০১/২০০১-এর পরে হলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করার সময় পিতা বা মাতার নাম সংশোধন করা যাবে।",
+    "expected_source_ids": [
+      "application_for_birth_information_correction_cleaned_008_01"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "পিতা বা মাতা মৃত",
+        "০১/০১/২০০১-এর পরে",
+        "নাম সংশোধন করা যাবে"
+      ]
+    }
+  },
+  {
+    "id": "para_single_parent_divorce_01_v01",
+    "group_id": "para_single_parent_divorce_01",
+    "variant_index": 1,
+    "category": "special_case",
+    "source_type": "faq",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "বিবাহ বিচ্ছেদ বা পিতা-মাতার একজন অনুপস্থিত হলে সন্তানের জন্ম নিবন্ধন",
+    "source_anchor": {
+      "type": "stored_question",
+      "text": "বিবাহ বিচ্ছেদ বা পিতামাতার একজন অপ্রাপ্য/নিখোঁজ হলে কীভাবে সন্তানের জন্ম নিবন্ধন করা যাবে?"
+    },
+    "question": "ডিভোর্সের ক্ষেত্রে, শুধু পিতার/মাতার তথ্য দিয়ে কি সন্তানের জন্ম নিবন্ধন করা যাবে?",
+    "expected_answer": "বিবাহ বিচ্ছেদ বা পিতা-মাতার একজন অপ্রাপ্য/নিখোঁজ হলে পিতা-মাতার একজনের তথ্য দিয়ে এবং অপরজনের শুধু নাম উল্লেখ করে সন্তানের জন্ম নিবন্ধন করা যাবে। চেয়ারম্যান কর্তৃক প্রত্যয়ন নিতে হবে এবং আবেদনপত্র নিয়ে উপজেলা নির্বাহী অফিসে শুনানীতে জমা দিতে হবে।",
+    "expected_source_ids": [
+      "bdris_faq_02_q08",
+      "bdris_faq_01_q10"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "একজনের তথ্য",
+        "অপরজনের শুধু নাম",
+        "চেয়ারম্যান কর্তৃক প্রত্যয়ন"
+      ]
+    }
+  },
+  {
+    "id": "para_single_parent_divorce_01_v02",
+    "group_id": "para_single_parent_divorce_01",
+    "variant_index": 2,
+    "category": "special_case",
+    "source_type": "faq",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "বিবাহ বিচ্ছেদ বা পিতা-মাতার একজন অনুপস্থিত হলে সন্তানের জন্ম নিবন্ধন",
+    "source_anchor": {
+      "type": "stored_question",
+      "text": "বিবাহ বিচ্ছেদ বা পিতামাতার একজন অপ্রাপ্য/নিখোঁজ হলে কীভাবে সন্তানের জন্ম নিবন্ধন করা যাবে?"
+    },
+    "question": "বাবা-মায়ের ডিভোর্স হয়েছে, একজনের তথ্য দিয়ে সন্তানের জন্ম নিবন্ধন হবে?",
+    "expected_answer": "বিবাহ বিচ্ছেদ বা পিতা-মাতার একজন অপ্রাপ্য/নিখোঁজ হলে পিতা-মাতার একজনের তথ্য দিয়ে এবং অপরজনের শুধু নাম উল্লেখ করে সন্তানের জন্ম নিবন্ধন করা যাবে। চেয়ারম্যান কর্তৃক প্রত্যয়ন নিতে হবে এবং আবেদনপত্র নিয়ে উপজেলা নির্বাহী অফিসে শুনানীতে জমা দিতে হবে।",
+    "expected_source_ids": [
+      "bdris_faq_02_q08",
+      "bdris_faq_01_q10"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "একজনের তথ্য",
+        "অপরজনের শুধু নাম",
+        "চেয়ারম্যান কর্তৃক প্রত্যয়ন"
+      ]
+    }
+  },
+  {
+    "id": "para_single_parent_divorce_01_v03",
+    "group_id": "para_single_parent_divorce_01",
+    "variant_index": 3,
+    "category": "special_case",
+    "source_type": "faq",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "বিবাহ বিচ্ছেদ বা পিতা-মাতার একজন অনুপস্থিত হলে সন্তানের জন্ম নিবন্ধন",
+    "source_anchor": {
+      "type": "stored_question",
+      "text": "বিবাহ বিচ্ছেদ বা পিতামাতার একজন অপ্রাপ্য/নিখোঁজ হলে কীভাবে সন্তানের জন্ম নিবন্ধন করা যাবে?"
+    },
+    "question": "পিতা নিখোঁজ থাকলে মায়ের তথ্য দিয়ে শিশুর জন্ম নিবন্ধন করা যাবে কি?",
+    "expected_answer": "বিবাহ বিচ্ছেদ বা পিতা-মাতার একজন অপ্রাপ্য/নিখোঁজ হলে পিতা-মাতার একজনের তথ্য দিয়ে এবং অপরজনের শুধু নাম উল্লেখ করে সন্তানের জন্ম নিবন্ধন করা যাবে। চেয়ারম্যান কর্তৃক প্রত্যয়ন নিতে হবে এবং আবেদনপত্র নিয়ে উপজেলা নির্বাহী অফিসে শুনানীতে জমা দিতে হবে।",
+    "expected_source_ids": [
+      "bdris_faq_02_q08",
+      "bdris_faq_01_q10"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "একজনের তথ্য",
+        "অপরজনের শুধু নাম",
+        "চেয়ারম্যান কর্তৃক প্রত্যয়ন"
+      ]
+    }
+  },
+  {
+    "id": "para_online_visibility_01_v01",
+    "group_id": "para_online_visibility_01",
+    "variant_index": 1,
+    "category": "online_verification",
+    "source_type": "general_guidance",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "জন্ম নিবন্ধন অনলাইনে দেখা বা যাচাই করা যাচ্ছে না",
+    "source_anchor": {
+      "type": "section",
+      "text": "একজন ব্যক্তি জন্ম নিবন্ধন হয়েছে কিনা তা কিভাবে পরীক্ষা করবে?"
+    },
+    "question": "আমার জন্ম নিবন্ধন অনলাইন করা আছে কিন্তু অনলাইনে দেখাচ্ছে না কেন?",
+    "expected_answer": "অনলাইনে জন্ম নিবন্ধন করা থাকলে orgbdr.gov.bd ওয়েবসাইটে “জন্ম তথ্য যাচাই” অপশনে জন্ম নিবন্ধন নম্বর এবং জন্ম তারিখ প্রদান করে জন্ম নিবন্ধন হয়েছে কিনা নিশ্চিত করা যায়। সঠিক তথ্য দিয়েও না পাওয়া গেলে সংশ্লিষ্ট নিবন্ধন কার্যালয়ের রেকর্ড যাচাই করা উচিত।",
+    "expected_source_ids": [
+      "know_this_01_cleaned_008_01",
+      "bdris_faq_01_q02",
+      "bdris_faq_02_q03"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "orgbdr.gov.bd",
+        "জন্ম তথ্য যাচাই",
+        "জন্ম নিবন্ধন নম্বর",
+        "জন্ম তারিখ"
+      ]
+    }
+  },
+  {
+    "id": "para_online_visibility_01_v02",
+    "group_id": "para_online_visibility_01",
+    "variant_index": 2,
+    "category": "online_verification",
+    "source_type": "general_guidance",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "জন্ম নিবন্ধন অনলাইনে দেখা বা যাচাই করা যাচ্ছে না",
+    "source_anchor": {
+      "type": "section",
+      "text": "একজন ব্যক্তি জন্ম নিবন্ধন হয়েছে কিনা তা কিভাবে পরীক্ষা করবে?"
+    },
+    "question": "জন্ম নিবন্ধন নম্বর আছে, অনলাইনে যাচাই করতে গেলে পাওয়া যাচ্ছে না। কী করব?",
+    "expected_answer": "অনলাইনে জন্ম নিবন্ধন করা থাকলে orgbdr.gov.bd ওয়েবসাইটে “জন্ম তথ্য যাচাই” অপশনে জন্ম নিবন্ধন নম্বর এবং জন্ম তারিখ প্রদান করে জন্ম নিবন্ধন হয়েছে কিনা নিশ্চিত করা যায়। সঠিক তথ্য দিয়েও না পাওয়া গেলে সংশ্লিষ্ট নিবন্ধন কার্যালয়ের রেকর্ড যাচাই করা উচিত।",
+    "expected_source_ids": [
+      "know_this_01_cleaned_008_01",
+      "bdris_faq_01_q02",
+      "bdris_faq_02_q03"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "orgbdr.gov.bd",
+        "জন্ম তথ্য যাচাই",
+        "জন্ম নিবন্ধন নম্বর",
+        "জন্ম তারিখ"
+      ]
+    }
+  },
+  {
+    "id": "para_online_visibility_01_v03",
+    "group_id": "para_online_visibility_01",
+    "variant_index": 3,
+    "category": "online_verification",
+    "source_type": "general_guidance",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "জন্ম নিবন্ধন অনলাইনে দেখা বা যাচাই করা যাচ্ছে না",
+    "source_anchor": {
+      "type": "section",
+      "text": "একজন ব্যক্তি জন্ম নিবন্ধন হয়েছে কিনা তা কিভাবে পরীক্ষা করবে?"
+    },
+    "question": "আমার জন্মসনদ অনলাইনে আছে কিনা কিভাবে চেক করব?",
+    "expected_answer": "অনলাইনে জন্ম নিবন্ধন করা থাকলে orgbdr.gov.bd ওয়েবসাইটে “জন্ম তথ্য যাচাই” অপশনে জন্ম নিবন্ধন নম্বর এবং জন্ম তারিখ প্রদান করে জন্ম নিবন্ধন হয়েছে কিনা নিশ্চিত করা যায়। সঠিক তথ্য দিয়েও না পাওয়া গেলে সংশ্লিষ্ট নিবন্ধন কার্যালয়ের রেকর্ড যাচাই করা উচিত।",
+    "expected_source_ids": [
+      "know_this_01_cleaned_008_01",
+      "bdris_faq_01_q02",
+      "bdris_faq_02_q03"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "orgbdr.gov.bd",
+        "জন্ম তথ্য যাচাই",
+        "জন্ম নিবন্ধন নম্বর",
+        "জন্ম তারিখ"
+      ]
+    }
+  },
+  {
+    "id": "para_where_to_register_01_v01",
+    "group_id": "para_where_to_register_01",
+    "variant_index": 1,
+    "category": "registration_office",
+    "source_type": "general_guidance",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "জন্ম নিবন্ধন কোথায় করা হয়",
+    "source_anchor": {
+      "type": "section",
+      "text": "জন্ম নিবন্ধন কোথায় করতে হবে?"
+    },
+    "question": "জন্ম নিবন্ধন কোথায় করতে হয়?",
+    "expected_answer": "জন্ম ও মৃত্যু নিবন্ধন ইউনিয়ন পরিষদের চেয়ারম্যান, পৌরসভা/সিটি কর্পোরেশনের মেয়র বা ক্ষমতাপ্রাপ্ত কাউন্সিলর/কর্মকর্তা, ক্যান্টনমেন্ট বোর্ডের এক্সিকিউটিভ অফিসার এবং দূতাবাসসমূহের ক্ষমতাপ্রাপ্ত অফিসার করে থাকেন।",
+    "expected_source_ids": [
+      "know_this_01_cleaned_006_01"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "ইউনিয়ন পরিষদ",
+        "পৌরসভা",
+        "সিটি কর্পোরেশন",
+        "ক্যান্টনমেন্ট",
+        "দূতাবাস"
+      ]
+    }
+  },
+  {
+    "id": "para_where_to_register_01_v02",
+    "group_id": "para_where_to_register_01",
+    "variant_index": 2,
+    "category": "registration_office",
+    "source_type": "general_guidance",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "জন্ম নিবন্ধন কোথায় করা হয়",
+    "source_anchor": {
+      "type": "section",
+      "text": "জন্ম নিবন্ধন কোথায় করতে হবে?"
+    },
+    "question": "জন্মসনদ করতে কোন অফিসে যেতে হবে?",
+    "expected_answer": "জন্ম ও মৃত্যু নিবন্ধন ইউনিয়ন পরিষদের চেয়ারম্যান, পৌরসভা/সিটি কর্পোরেশনের মেয়র বা ক্ষমতাপ্রাপ্ত কাউন্সিলর/কর্মকর্তা, ক্যান্টনমেন্ট বোর্ডের এক্সিকিউটিভ অফিসার এবং দূতাবাসসমূহের ক্ষমতাপ্রাপ্ত অফিসার করে থাকেন।",
+    "expected_source_ids": [
+      "know_this_01_cleaned_006_01"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "ইউনিয়ন পরিষদ",
+        "পৌরসভা",
+        "সিটি কর্পোরেশন",
+        "ক্যান্টনমেন্ট",
+        "দূতাবাস"
+      ]
+    }
+  },
+  {
+    "id": "para_where_to_register_01_v03",
+    "group_id": "para_where_to_register_01",
+    "variant_index": 3,
+    "category": "registration_office",
+    "source_type": "general_guidance",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "জন্ম নিবন্ধন কোথায় করা হয়",
+    "source_anchor": {
+      "type": "section",
+      "text": "জন্ম নিবন্ধন কোথায় করতে হবে?"
+    },
+    "question": "ইউনিয়ন নাকি পৌরসভা কোথায় জন্ম নিবন্ধন করব?",
+    "expected_answer": "জন্ম ও মৃত্যু নিবন্ধন ইউনিয়ন পরিষদের চেয়ারম্যান, পৌরসভা/সিটি কর্পোরেশনের মেয়র বা ক্ষমতাপ্রাপ্ত কাউন্সিলর/কর্মকর্তা, ক্যান্টনমেন্ট বোর্ডের এক্সিকিউটিভ অফিসার এবং দূতাবাসসমূহের ক্ষমতাপ্রাপ্ত অফিসার করে থাকেন।",
+    "expected_source_ids": [
+      "know_this_01_cleaned_006_01"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "ইউনিয়ন পরিষদ",
+        "পৌরসভা",
+        "সিটি কর্পোরেশন",
+        "ক্যান্টনমেন্ট",
+        "দূতাবাস"
+      ]
+    }
+  },
+  {
+    "id": "para_overseas_birth_registration_01_v01",
+    "group_id": "para_overseas_birth_registration_01",
+    "variant_index": 1,
+    "category": "overseas_registration",
+    "source_type": "legal_rules",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "বিদেশে থাকলে বা বিদেশে জন্ম হলে জন্ম নিবন্ধন",
+    "source_anchor": {
+      "type": "legal_unit",
+      "text": "বিধি ১০: প্রবাসীগণের জন্ম নিবন্ধন"
+    },
+    "question": "আমি দেশের বাইরে থাকি, জন্ম নিবন্ধন করতে হলে কী করব?",
+    "expected_answer": "বিদেশে অবস্থিত বাংলাদেশ দূতাবাসের নিবন্ধক প্রয়োজনীয় তথ্য ও প্রমাণ পেলে তার অধিক্ষেত্রে বসবাসকারী বা জন্মগ্রহণকারী ব্যক্তির জন্ম নিবন্ধন করতে পারেন। প্রমাণ হিসেবে জন্মস্থান ও জন্ম তারিখের প্রমাণ, সংশ্লিষ্ট চিকিৎসা প্রতিষ্ঠান/বার্থ এটেন্ডেন্টের প্রত্যয়ন, পাসপোর্টের অনুলিপি, পিতা-মাতার পাসপোর্টের অনুলিপি এবং পূর্বে জন্ম নিবন্ধন হয়নি মর্মে ঘোষণা প্রয়োজন হতে পারে।",
+    "expected_source_ids": [
+      "birth_and_death_registration_rules_2018_বিধি_১০_01"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "বাংলাদেশ দূতাবাস",
+        "পাসপোর্ট",
+        "পূর্বে জন্ম নিবন্ধন হয় নাই"
+      ]
+    }
+  },
+  {
+    "id": "para_overseas_birth_registration_01_v02",
+    "group_id": "para_overseas_birth_registration_01",
+    "variant_index": 2,
+    "category": "overseas_registration",
+    "source_type": "legal_rules",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "বিদেশে থাকলে বা বিদেশে জন্ম হলে জন্ম নিবন্ধন",
+    "source_anchor": {
+      "type": "legal_unit",
+      "text": "বিধি ১০: প্রবাসীগণের জন্ম নিবন্ধন"
+    },
+    "question": "বিদেশে জন্ম নেওয়া শিশুর জন্ম নিবন্ধন কোথায় হবে?",
+    "expected_answer": "বিদেশে অবস্থিত বাংলাদেশ দূতাবাসের নিবন্ধক প্রয়োজনীয় তথ্য ও প্রমাণ পেলে তার অধিক্ষেত্রে বসবাসকারী বা জন্মগ্রহণকারী ব্যক্তির জন্ম নিবন্ধন করতে পারেন। প্রমাণ হিসেবে জন্মস্থান ও জন্ম তারিখের প্রমাণ, সংশ্লিষ্ট চিকিৎসা প্রতিষ্ঠান/বার্থ এটেন্ডেন্টের প্রত্যয়ন, পাসপোর্টের অনুলিপি, পিতা-মাতার পাসপোর্টের অনুলিপি এবং পূর্বে জন্ম নিবন্ধন হয়নি মর্মে ঘোষণা প্রয়োজন হতে পারে।",
+    "expected_source_ids": [
+      "birth_and_death_registration_rules_2018_বিধি_১০_01"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "বাংলাদেশ দূতাবাস",
+        "পাসপোর্ট",
+        "পূর্বে জন্ম নিবন্ধন হয় নাই"
+      ]
+    }
+  },
+  {
+    "id": "para_overseas_birth_registration_01_v03",
+    "group_id": "para_overseas_birth_registration_01",
+    "variant_index": 3,
+    "category": "overseas_registration",
+    "source_type": "legal_rules",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "বিদেশে থাকলে বা বিদেশে জন্ম হলে জন্ম নিবন্ধন",
+    "source_anchor": {
+      "type": "legal_unit",
+      "text": "বিধি ১০: প্রবাসীগণের জন্ম নিবন্ধন"
+    },
+    "question": "প্রবাসে থাকলে বাংলাদেশি জন্মসনদ করতে দূতাবাসে কী লাগবে?",
+    "expected_answer": "বিদেশে অবস্থিত বাংলাদেশ দূতাবাসের নিবন্ধক প্রয়োজনীয় তথ্য ও প্রমাণ পেলে তার অধিক্ষেত্রে বসবাসকারী বা জন্মগ্রহণকারী ব্যক্তির জন্ম নিবন্ধন করতে পারেন। প্রমাণ হিসেবে জন্মস্থান ও জন্ম তারিখের প্রমাণ, সংশ্লিষ্ট চিকিৎসা প্রতিষ্ঠান/বার্থ এটেন্ডেন্টের প্রত্যয়ন, পাসপোর্টের অনুলিপি, পিতা-মাতার পাসপোর্টের অনুলিপি এবং পূর্বে জন্ম নিবন্ধন হয়নি মর্মে ঘোষণা প্রয়োজন হতে পারে।",
+    "expected_source_ids": [
+      "birth_and_death_registration_rules_2018_বিধি_১০_01"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "বাংলাদেশ দূতাবাস",
+        "পাসপোর্ট",
+        "পূর্বে জন্ম নিবন্ধন হয় নাই"
+      ]
+    }
+  },
+  {
+    "id": "para_duplicate_certificate_cancel_01_v01",
+    "group_id": "para_duplicate_certificate_cancel_01",
+    "variant_index": 1,
+    "category": "duplicate_certificate",
+    "source_type": "correction_notice_ocr",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "একাধিক জন্ম বা মৃত্যু সনদ থাকলে পরবর্তী সনদ বাতিল",
+    "source_anchor": {
+      "type": "section_group",
+      "text": "একাধিক জন্ম বা মৃত্যু সনদ বাতিলের শর্ত ও ধাপ"
+    },
+    "question": "একাধিক জন্ম সনদ হয়ে গেলে কোনটা বাতিল করব?",
+    "expected_answer": "BDRIS-এ একাধিক জন্ম বা মৃত্যু সনদ বাতিলের সুযোগ আছে। প্রথম রেজিস্ট্রেশন সনদ বহাল রাখতে হবে এবং পরবর্তী সময়ে করা সনদগুলো বাতিল করতে হবে। নিবন্ধক সহকারীর আইডি দিয়ে BDRIS-এ প্রবেশ করে বাতিলকরণ/জন্ম সনদ বাতিলকরণ অপশনে গিয়ে জন্ম নিবন্ধন নম্বর অনুসন্ধান করতে হবে, প্রথম নিবন্ধনটি নির্বাচন করে কনফার্ম করলে পরবর্তী সনদগুলো বাতিল হবে।",
+    "expected_source_ids": [
+      "notice_birth_and_death_registration_certificate_correction_steps_ocr_003_01",
+      "notice_birth_and_death_registration_certificate_correction_steps_ocr_004_01"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "প্রথম রেজিস্ট্রেশন সনদ",
+        "পরবর্তী সনদগুলো বাতিল",
+        "বাতিলকরণ"
+      ]
+    }
+  },
+  {
+    "id": "para_duplicate_certificate_cancel_01_v02",
+    "group_id": "para_duplicate_certificate_cancel_01",
+    "variant_index": 2,
+    "category": "duplicate_certificate",
+    "source_type": "correction_notice_ocr",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "একাধিক জন্ম বা মৃত্যু সনদ থাকলে পরবর্তী সনদ বাতিল",
+    "source_anchor": {
+      "type": "section_group",
+      "text": "একাধিক জন্ম বা মৃত্যু সনদ বাতিলের শর্ত ও ধাপ"
+    },
+    "question": "আমার দুইটা জন্ম নিবন্ধন হয়েছে, একটি বাতিল করতে কী করতে হবে?",
+    "expected_answer": "BDRIS-এ একাধিক জন্ম বা মৃত্যু সনদ বাতিলের সুযোগ আছে। প্রথম রেজিস্ট্রেশন সনদ বহাল রাখতে হবে এবং পরবর্তী সময়ে করা সনদগুলো বাতিল করতে হবে। নিবন্ধক সহকারীর আইডি দিয়ে BDRIS-এ প্রবেশ করে বাতিলকরণ/জন্ম সনদ বাতিলকরণ অপশনে গিয়ে জন্ম নিবন্ধন নম্বর অনুসন্ধান করতে হবে, প্রথম নিবন্ধনটি নির্বাচন করে কনফার্ম করলে পরবর্তী সনদগুলো বাতিল হবে।",
+    "expected_source_ids": [
+      "notice_birth_and_death_registration_certificate_correction_steps_ocr_003_01",
+      "notice_birth_and_death_registration_certificate_correction_steps_ocr_004_01"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "প্রথম রেজিস্ট্রেশন সনদ",
+        "পরবর্তী সনদগুলো বাতিল",
+        "বাতিলকরণ"
+      ]
+    }
+  },
+  {
+    "id": "para_duplicate_certificate_cancel_01_v03",
+    "group_id": "para_duplicate_certificate_cancel_01",
+    "variant_index": 3,
+    "category": "duplicate_certificate",
+    "source_type": "correction_notice_ocr",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "একাধিক জন্ম বা মৃত্যু সনদ থাকলে পরবর্তী সনদ বাতিল",
+    "source_anchor": {
+      "type": "section_group",
+      "text": "একাধিক জন্ম বা মৃত্যু সনদ বাতিলের শর্ত ও ধাপ"
+    },
+    "question": "ডুপ্লিকেট জন্ম সনদ থাকলে BDRIS-এ বাতিলের প্রক্রিয়া কী?",
+    "expected_answer": "BDRIS-এ একাধিক জন্ম বা মৃত্যু সনদ বাতিলের সুযোগ আছে। প্রথম রেজিস্ট্রেশন সনদ বহাল রাখতে হবে এবং পরবর্তী সময়ে করা সনদগুলো বাতিল করতে হবে। নিবন্ধক সহকারীর আইডি দিয়ে BDRIS-এ প্রবেশ করে বাতিলকরণ/জন্ম সনদ বাতিলকরণ অপশনে গিয়ে জন্ম নিবন্ধন নম্বর অনুসন্ধান করতে হবে, প্রথম নিবন্ধনটি নির্বাচন করে কনফার্ম করলে পরবর্তী সনদগুলো বাতিল হবে।",
+    "expected_source_ids": [
+      "notice_birth_and_death_registration_certificate_correction_steps_ocr_003_01",
+      "notice_birth_and_death_registration_certificate_correction_steps_ocr_004_01"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "প্রথম রেজিস্ট্রেশন সনদ",
+        "পরবর্তী সনদগুলো বাতিল",
+        "বাতিলকরণ"
+      ]
+    }
+  },
+  {
+    "id": "para_same_number_multiple_people_01_v01",
+    "group_id": "para_same_number_multiple_people_01",
+    "variant_index": 1,
+    "category": "duplicate_registration_number",
+    "source_type": "faq",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "একই জন্ম নিবন্ধন নম্বরে একাধিক ব্যক্তির নিবন্ধন",
+    "source_anchor": {
+      "type": "stored_question",
+      "text": "একই নম্বরে একাধিক ব্যক্তির নিবন্ধন দেখালে করণীয় কী?"
+    },
+    "question": "একই জন্ম নিবন্ধন নম্বরে একাধিক ব্যক্তির নিবন্ধন দেখালে করণীয় কী?",
+    "expected_answer": "একই নম্বরে একাধিক ব্যক্তির নিবন্ধন দেখা গেলে সংশ্লিষ্ট সকলকে নিবন্ধন অফিসে এনে সম্মতির ভিত্তিতে একজনকে পুরোনো নম্বর এবং অপরজনকে নতুন নম্বর দেওয়া যাবে। সমঝোতা না হলে যার নিবন্ধন আগে হয়েছে তার নম্বর বহাল থাকবে এবং অপরজনকে নতুন নম্বর/reset দিতে হবে।",
+    "expected_source_ids": [
+      "bdris_faq_01_q15"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "যার নিবন্ধন আগে হয়েছে",
+        "নতুন নম্বর",
+        "reset"
+      ]
+    }
+  },
+  {
+    "id": "para_same_number_multiple_people_01_v02",
+    "group_id": "para_same_number_multiple_people_01",
+    "variant_index": 2,
+    "category": "duplicate_registration_number",
+    "source_type": "faq",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "একই জন্ম নিবন্ধন নম্বরে একাধিক ব্যক্তির নিবন্ধন",
+    "source_anchor": {
+      "type": "stored_question",
+      "text": "একই নম্বরে একাধিক ব্যক্তির নিবন্ধন দেখালে করণীয় কী?"
+    },
+    "question": "আমার জন্ম নিবন্ধন নম্বর অন্য একজনের সাথেও দেখাচ্ছে, কী করব?",
+    "expected_answer": "একই নম্বরে একাধিক ব্যক্তির নিবন্ধন দেখা গেলে সংশ্লিষ্ট সকলকে নিবন্ধন অফিসে এনে সম্মতির ভিত্তিতে একজনকে পুরোনো নম্বর এবং অপরজনকে নতুন নম্বর দেওয়া যাবে। সমঝোতা না হলে যার নিবন্ধন আগে হয়েছে তার নম্বর বহাল থাকবে এবং অপরজনকে নতুন নম্বর/reset দিতে হবে।",
+    "expected_source_ids": [
+      "bdris_faq_01_q15"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "যার নিবন্ধন আগে হয়েছে",
+        "নতুন নম্বর",
+        "reset"
+      ]
+    }
+  },
+  {
+    "id": "para_same_number_multiple_people_01_v03",
+    "group_id": "para_same_number_multiple_people_01",
+    "variant_index": 3,
+    "category": "duplicate_registration_number",
+    "source_type": "faq",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "একই জন্ম নিবন্ধন নম্বরে একাধিক ব্যক্তির নিবন্ধন",
+    "source_anchor": {
+      "type": "stored_question",
+      "text": "একই নম্বরে একাধিক ব্যক্তির নিবন্ধন দেখালে করণীয় কী?"
+    },
+    "question": "এক নম্বরে দুইজনের জন্ম নিবন্ধন থাকলে কাকে নতুন নম্বর দেওয়া হবে?",
+    "expected_answer": "একই নম্বরে একাধিক ব্যক্তির নিবন্ধন দেখা গেলে সংশ্লিষ্ট সকলকে নিবন্ধন অফিসে এনে সম্মতির ভিত্তিতে একজনকে পুরোনো নম্বর এবং অপরজনকে নতুন নম্বর দেওয়া যাবে। সমঝোতা না হলে যার নিবন্ধন আগে হয়েছে তার নম্বর বহাল থাকবে এবং অপরজনকে নতুন নম্বর/reset দিতে হবে।",
+    "expected_source_ids": [
+      "bdris_faq_01_q15"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "যার নিবন্ধন আগে হয়েছে",
+        "নতুন নম্বর",
+        "reset"
+      ]
+    }
+  },
+  {
+    "id": "para_challan_upload_problem_01_v01",
+    "group_id": "para_challan_upload_problem_01",
+    "variant_index": 1,
+    "category": "fee_and_challan",
+    "source_type": "faq",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "ফি বাবদ চালানের তথ্য BDRIS-এ আপলোডে সমস্যা",
+    "source_anchor": {
+      "type": "stored_question",
+      "text": "নিবন্ধন ফি বাবদ প্রাপ্ত অর্থ চালানের মাধ্যমে জমা সংক্রান্ত তথ্য BDRIS-এ প্রবেশ করাতে গেলে সমস্যা দেখা দেয় — সমাধান কী?"
+    },
+    "question": "জন্ম নিবন্ধনের ফি বাবদ চালানের তথ্য BDRIS-এ আপলোড করতে সমস্যা হলে করনীয় কী?",
+    "expected_answer": "চালান আপলোড না হওয়ার কারণ হতে পারে সংযুক্ত ফাইলের আকার ১০২৪ কিলোবাইটের বেশি হওয়া অথবা চালানের টাকা ব্যালান্সের চেয়ে বেশি হওয়া। প্রতিটি ফাইল সর্বোচ্চ ১০২৪ কিলোবাইট হতে হবে এবং চালানের পরিমাণ ব্যালান্সের সমান বা কম হতে হবে।",
+    "expected_source_ids": [
+      "bdris_faq_01_q13"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "১০২৪ কিলোবাইট",
+        "ব্যালান্সের সমান বা কম"
+      ]
+    }
+  },
+  {
+    "id": "para_challan_upload_problem_01_v02",
+    "group_id": "para_challan_upload_problem_01",
+    "variant_index": 2,
+    "category": "fee_and_challan",
+    "source_type": "faq",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "ফি বাবদ চালানের তথ্য BDRIS-এ আপলোডে সমস্যা",
+    "source_anchor": {
+      "type": "stored_question",
+      "text": "নিবন্ধন ফি বাবদ প্রাপ্ত অর্থ চালানের মাধ্যমে জমা সংক্রান্ত তথ্য BDRIS-এ প্রবেশ করাতে গেলে সমস্যা দেখা দেয় — সমাধান কী?"
+    },
+    "question": "চালান আপলোড হচ্ছে না, BDRIS-এ fee deposit দিতে গেলে কী চেক করব?",
+    "expected_answer": "চালান আপলোড না হওয়ার কারণ হতে পারে সংযুক্ত ফাইলের আকার ১০২৪ কিলোবাইটের বেশি হওয়া অথবা চালানের টাকা ব্যালান্সের চেয়ে বেশি হওয়া। প্রতিটি ফাইল সর্বোচ্চ ১০২৪ কিলোবাইট হতে হবে এবং চালানের পরিমাণ ব্যালান্সের সমান বা কম হতে হবে।",
+    "expected_source_ids": [
+      "bdris_faq_01_q13"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "১০২৪ কিলোবাইট",
+        "ব্যালান্সের সমান বা কম"
+      ]
+    }
+  },
+  {
+    "id": "para_challan_upload_problem_01_v03",
+    "group_id": "para_challan_upload_problem_01",
+    "variant_index": 3,
+    "category": "fee_and_challan",
+    "source_type": "faq",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "ফি বাবদ চালানের তথ্য BDRIS-এ আপলোডে সমস্যা",
+    "source_anchor": {
+      "type": "stored_question",
+      "text": "নিবন্ধন ফি বাবদ প্রাপ্ত অর্থ চালানের মাধ্যমে জমা সংক্রান্ত তথ্য BDRIS-এ প্রবেশ করাতে গেলে সমস্যা দেখা দেয় — সমাধান কী?"
+    },
+    "question": "নিবন্ধন ফি জমার চালান BDRIS-এ এন্ট্রি করতে গেলে error দেখাচ্ছে কেন?",
+    "expected_answer": "চালান আপলোড না হওয়ার কারণ হতে পারে সংযুক্ত ফাইলের আকার ১০২৪ কিলোবাইটের বেশি হওয়া অথবা চালানের টাকা ব্যালান্সের চেয়ে বেশি হওয়া। প্রতিটি ফাইল সর্বোচ্চ ১০২৪ কিলোবাইট হতে হবে এবং চালানের পরিমাণ ব্যালান্সের সমান বা কম হতে হবে।",
+    "expected_source_ids": [
+      "bdris_faq_01_q13"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "১০২৪ কিলোবাইট",
+        "ব্যালান্সের সমান বা কম"
+      ]
+    }
+  },
+  {
+    "id": "para_mobile_number_policy_01_v01",
+    "group_id": "para_mobile_number_policy_01",
+    "variant_index": 1,
+    "category": "mobile_number_policy",
+    "source_type": "faq",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "জন্ম নিবন্ধন বা সংশোধনের আবেদনে কার মোবাইল নম্বর ব্যবহার করা যাবে",
+    "source_anchor": {
+      "type": "stored_question",
+      "text": "জন্ম-মৃত্যু নিবন্ধন বা তথ্য সংশোধনের আবেদনের সময় নিবন্ধনাধীন ব্যক্তি বা তার পিতা-মাতা-অভিভাবক ছাড়া অন্য কারও মোবাইল নম্বর ব্যবহার করা যাবে কি?"
+    },
+    "question": "জন্ম নিবন্ধন বা তথ্য সংশোধনের আবেদনের সময় অন্য কারও মোবাইল নম্বর ব্যবহার করা যাবে কি?",
+    "expected_answer": "সাধারণভাবে নিবন্ধনাধীন ব্যক্তি অথবা তার পিতা-মাতা/অভিভাবকের মোবাইল নম্বর ব্যবহার করতে হবে। অন্যের মোবাইল নম্বর ব্যবহার করা উচিত নয়।",
+    "expected_source_ids": [
+      "bdris_faq_01_q09",
+      "bdris_faq_02_q07"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "নিবন্ধনাধীন ব্যক্তি",
+        "পিতা-মাতা",
+        "অভিভাবক"
+      ]
+    }
+  },
+  {
+    "id": "para_mobile_number_policy_01_v02",
+    "group_id": "para_mobile_number_policy_01",
+    "variant_index": 2,
+    "category": "mobile_number_policy",
+    "source_type": "faq",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "জন্ম নিবন্ধন বা সংশোধনের আবেদনে কার মোবাইল নম্বর ব্যবহার করা যাবে",
+    "source_anchor": {
+      "type": "stored_question",
+      "text": "জন্ম-মৃত্যু নিবন্ধন বা তথ্য সংশোধনের আবেদনের সময় নিবন্ধনাধীন ব্যক্তি বা তার পিতা-মাতা-অভিভাবক ছাড়া অন্য কারও মোবাইল নম্বর ব্যবহার করা যাবে কি?"
+    },
+    "question": "আমার নিজের মোবাইল নেই, জন্ম নিবন্ধনের আবেদনে বন্ধুর নম্বর দিতে পারি?",
+    "expected_answer": "সাধারণভাবে নিবন্ধনাধীন ব্যক্তি অথবা তার পিতা-মাতা/অভিভাবকের মোবাইল নম্বর ব্যবহার করতে হবে। অন্যের মোবাইল নম্বর ব্যবহার করা উচিত নয়।",
+    "expected_source_ids": [
+      "bdris_faq_01_q09",
+      "bdris_faq_02_q07"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "নিবন্ধনাধীন ব্যক্তি",
+        "পিতা-মাতা",
+        "অভিভাবক"
+      ]
+    }
+  },
+  {
+    "id": "para_mobile_number_policy_01_v03",
+    "group_id": "para_mobile_number_policy_01",
+    "variant_index": 3,
+    "category": "mobile_number_policy",
+    "source_type": "faq",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "জন্ম নিবন্ধন বা সংশোধনের আবেদনে কার মোবাইল নম্বর ব্যবহার করা যাবে",
+    "source_anchor": {
+      "type": "stored_question",
+      "text": "জন্ম-মৃত্যু নিবন্ধন বা তথ্য সংশোধনের আবেদনের সময় নিবন্ধনাধীন ব্যক্তি বা তার পিতা-মাতা-অভিভাবক ছাড়া অন্য কারও মোবাইল নম্বর ব্যবহার করা যাবে কি?"
+    },
+    "question": "শিশুর জন্ম নিবন্ধনে বাবা-মা ছাড়া অন্যের মোবাইল নম্বর ব্যবহার করা যাবে?",
+    "expected_answer": "সাধারণভাবে নিবন্ধনাধীন ব্যক্তি অথবা তার পিতা-মাতা/অভিভাবকের মোবাইল নম্বর ব্যবহার করতে হবে। অন্যের মোবাইল নম্বর ব্যবহার করা উচিত নয়।",
+    "expected_source_ids": [
+      "bdris_faq_01_q09",
+      "bdris_faq_02_q07"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "নিবন্ধনাধীন ব্যক্তি",
+        "পিতা-মাতা",
+        "অভিভাবক"
+      ]
+    }
+  },
+  {
+    "id": "para_bilingual_certificate_01_v01",
+    "group_id": "para_bilingual_certificate_01",
+    "variant_index": 1,
+    "category": "certificate_language",
+    "source_type": "faq",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "সনদ বাংলা ও ইংরেজি দুই ভাষায় দেওয়া বাধ্যতামূলক কি না",
+    "source_anchor": {
+      "type": "stored_question",
+      "text": "নিবন্ধনাধীন ব্যক্তিকে কি বাংলা ও ইংরেজি উভয় ভাষায় সনদ দিতে হবে?"
+    },
+    "question": "জন্ম ও মৃত্যু সনদ কি বাধ্যতামূলকভাবে বাংলা ও ইংরেজি উভয় ভাষায় প্রদান করতে হয়?",
+    "expected_answer": "হ্যাঁ, বাধ্যতামূলকভাবে বাংলা ও ইংরেজি উভয় ভাষায় সনদ দিতে হবে। আবেদনপত্র গ্রহণের সময় জন্ম তথ্য বাংলা ও ইংরেজি উভয় ভাষায় পূরণ করা হয়েছে কিনা তা নিশ্চিত করতে হবে।",
+    "expected_source_ids": [
+      "bdris_faq_01_q08"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "বাংলা",
+        "ইংরেজি",
+        "বাধ্যতামূলক"
+      ]
+    }
+  },
+  {
+    "id": "para_bilingual_certificate_01_v02",
+    "group_id": "para_bilingual_certificate_01",
+    "variant_index": 2,
+    "category": "certificate_language",
+    "source_type": "faq",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "সনদ বাংলা ও ইংরেজি দুই ভাষায় দেওয়া বাধ্যতামূলক কি না",
+    "source_anchor": {
+      "type": "stored_question",
+      "text": "নিবন্ধনাধীন ব্যক্তিকে কি বাংলা ও ইংরেজি উভয় ভাষায় সনদ দিতে হবে?"
+    },
+    "question": "জন্মসনদ শুধু বাংলায় দিলে হবে, নাকি ইংরেজিও লাগবে?",
+    "expected_answer": "হ্যাঁ, বাধ্যতামূলকভাবে বাংলা ও ইংরেজি উভয় ভাষায় সনদ দিতে হবে। আবেদনপত্র গ্রহণের সময় জন্ম তথ্য বাংলা ও ইংরেজি উভয় ভাষায় পূরণ করা হয়েছে কিনা তা নিশ্চিত করতে হবে।",
+    "expected_source_ids": [
+      "bdris_faq_01_q08"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "বাংলা",
+        "ইংরেজি",
+        "বাধ্যতামূলক"
+      ]
+    }
+  },
+  {
+    "id": "para_bilingual_certificate_01_v03",
+    "group_id": "para_bilingual_certificate_01",
+    "variant_index": 3,
+    "category": "certificate_language",
+    "source_type": "faq",
+    "question_type": "paraphrase_consistency",
+    "canonical_problem": "সনদ বাংলা ও ইংরেজি দুই ভাষায় দেওয়া বাধ্যতামূলক কি না",
+    "source_anchor": {
+      "type": "stored_question",
+      "text": "নিবন্ধনাধীন ব্যক্তিকে কি বাংলা ও ইংরেজি উভয় ভাষায় সনদ দিতে হবে?"
+    },
+    "question": "সনদে বাংলা ও English দুই ভাষার তথ্য থাকা বাধ্যতামূলক কি?",
+    "expected_answer": "হ্যাঁ, বাধ্যতামূলকভাবে বাংলা ও ইংরেজি উভয় ভাষায় সনদ দিতে হবে। আবেদনপত্র গ্রহণের সময় জন্ম তথ্য বাংলা ও ইংরেজি উভয় ভাষায় পূরণ করা হয়েছে কিনা তা নিশ্চিত করতে হবে।",
+    "expected_source_ids": [
+      "bdris_faq_01_q08"
+    ],
+    "expected_behavior": {
+      "same_answer_required": true,
+      "answer_language": "bn",
+      "must_mention": [
+        "বাংলা",
+        "ইংরেজি",
+        "বাধ্যতামূলক"
+      ]
+    }
+  }
+]
