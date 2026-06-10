@@ -1,0 +1,211 @@
+\section{Design Process or Methodology Overview}
+
+The objective of this phase is to design and verify a bilingual Bangla-English Retrieval-Augmented Generation (RAG) system for Bangladeshi government-service question answering. The current working domain is birth and death registration. The design is inspired by the NextRAG framework proposed for bilingual financial question answering \cite{nextrag2025}, but adapted to civic-service documents, Bangla-heavy data, and local LLM deployment.
+
+The main design constraints are factual correctness, evidence grounding, Bangla query handling, explainability, and future multi-domain extensibility. Therefore, the system is designed as a modular RAG pipeline instead of a single monolithic chatbot. The pipeline separates data ingestion, cleaning, chunking, embedding, retrieval, reranking, answer generation, and evaluation.
+
+\begin{figure}[h]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tikzpicture}[
+    node distance=1.2cm and 1.4cm,
+    block/.style={rectangle, draw, rounded corners, align=center, minimum width=2.9cm, minimum height=0.9cm},
+    smallblock/.style={rectangle, draw, rounded corners, align=center, minimum width=2.5cm, minimum height=0.8cm},
+    arrow/.style={-{Latex[length=2mm]}, thick}
+]
+\node[block] (raw) {Raw Government\\Documents};
+\node[block, right=of raw] (clean) {Manual / Semi-manual\\Cleaning};
+\node[block, right=of clean] (chunk) {Document-Type-Aware\\Chunking};
+\node[block, right=of chunk] (meta) {Metadata +\\Source URLs};
+
+\node[smallblock, below=of chunk] (retrtext) {retrieval\_text\\for search};
+\node[smallblock, below=of meta] (evidence) {answer\_evidence\\for grounding};
+
+\node[block, below=of retrtext] (embed) {BGE-M3\\Embeddings};
+\node[block, right=of embed] (chroma) {ChromaDB\\Vector Index};
+\node[block, left=of embed] (bm25) {BM25\\Sparse Index};
+
+\node[block, below=of embed] (query) {User Query};
+\node[block, below=of bm25] (intent) {Language + Intent\\Detection};
+\node[block, below=of chroma] (hybrid) {Hybrid Retrieval\\Dense + BM25};
+\node[block, below=of hybrid] (rrf) {RRF Fusion +\\Reranking};
+\node[block, below=of rrf] (safe) {Safe Answer Path\\or Local LLM};
+\node[block, below=of safe] (answer) {Final Bangla/English\\Grounded Answer};
+
+\draw[arrow] (raw) -- (clean);
+\draw[arrow] (clean) -- (chunk);
+\draw[arrow] (chunk) -- (meta);
+\draw[arrow] (chunk) -- (retrtext);
+\draw[arrow] (meta) -- (evidence);
+\draw[arrow] (retrtext) -- (embed);
+\draw[arrow] (embed) -- (chroma);
+\draw[arrow] (retrtext) -- (bm25);
+\draw[arrow] (query) -- (intent);
+\draw[arrow] (intent) -- (hybrid);
+\draw[arrow] (bm25) |- (hybrid);
+\draw[arrow] (chroma) |- (hybrid);
+\draw[arrow] (hybrid) -- (rrf);
+\draw[arrow] (rrf) -- (safe);
+\draw[arrow] (evidence) |- (safe);
+\draw[arrow] (safe) -- (answer);
+\end{tikzpicture}
+}
+\caption{Proposed CivicRAG pipeline for Bangladeshi birth and death registration services.}
+\label{fig:civicrag_pipeline}
+\end{figure}
+
+The design process followed four steps. First, raw civic-service documents were collected from government-service sources. Second, the data was cleaned and converted into retrieval-friendly Markdown/JSON formats. Third, multiple retrieval alternatives were implemented and evaluated: dense-only retrieval, BM25-only retrieval, hybrid RRF retrieval, and reranked hybrid retrieval. Fourth, local LLM backends were tested using Ollama models to avoid API dependency and preserve reproducibility.
+
+The retrieval score for Reciprocal Rank Fusion (RRF) is computed as:
+
+\begin{equation}
+RRF(d) = \sum_{r \in R} \frac{w_r}{k + rank_r(d)}
+\end{equation}
+
+where $d$ is a document chunk, $R$ is the set of retrievers, $w_r$ is the retriever weight, $k$ is the RRF constant, and $rank_r(d)$ is the rank of chunk $d$ under retriever $r$ \cite{cormack2009rrf}.
+
+\section{Preliminary Design or Design (Model) Specification}
+
+Several alternative designs were considered for the birth and death registration RAG system.
+
+\begin{table}[h]
+\centering
+\caption{Alternative RAG design choices considered in Phase 2.}
+\begin{tabularx}{\textwidth}{p{3cm} X X}
+\toprule
+\textbf{Design} & \textbf{Description} & \textbf{Reason for Evaluation} \\
+\midrule
+Dense-only RAG & Uses BGE-M3 embeddings and ChromaDB vector similarity search. & Strong for Bangla paraphrases and semantic matching. \\
+BM25-only RAG & Uses lexical keyword matching with BM25. & Useful for exact terms such as fees, rules, form names, and service names. \\
+Hybrid RAG & Combines dense retrieval and BM25 using RRF. & More robust for future multi-domain settings such as passport, BRTA, and certificates. \\
+CivicRAG & Hybrid retrieval, metadata, source URLs, language guard, safe-answer paths, and local LLM generation. & Proposed system optimized for factual government-service QA. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The selected implementation currently uses BAAI/bge-m3 as the multilingual embedding model \cite{chen2024bgem3}, ChromaDB as the vector index, BM25 as the sparse retriever \cite{robertson2009bm25}, RRF for result fusion \cite{cormack2009rrf}, and local Ollama-hosted LLMs for generation. The tested local LLMs are llama3.2, llama3, and qwen2.5:7b.
+
+For verification, a 58-question Bangla paraphrase evaluation set was prepared from 19 grouped civic-service problems. The retrieval variants were evaluated using Hit@k, MRR, nDCG@5, and Context Precision.
+
+\begin{table}[h]
+\centering
+\caption{Retrieval variant comparison on the current birth/death registration evaluation set.}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Method} & \textbf{Hit@1} & \textbf{Hit@5} & \textbf{MRR} & \textbf{nDCG@5} \\
+\midrule
+BM25-only & 0.5345 & 0.7586 & 0.6132 & 0.6112 \\
+Dense-only & 0.7931 & 0.9828 & 0.8707 & 0.8693 \\
+Hybrid RRF & 0.7414 & 0.9483 & 0.8193 & 0.8139 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The result shows that dense-only retrieval currently performs best in the single-domain Bangla paraphrase setting. However, hybrid retrieval remains part of the proposed system because future domains may contain overlapping service language where lexical/domain-specific matching can reduce cross-domain confusion.
+
+The system also evaluates generation context size. Increasing top-k improves source coverage but introduces more irrelevant context.
+
+\begin{table}[h]
+\centering
+\caption{Generation context top-k coverage.}
+\begin{tabular}{ccc}
+\toprule
+\textbf{k} & \textbf{Expected Source in Context} & \textbf{Context Precision@k} \\
+\midrule
+1 & 0.7414 & 0.7414 \\
+3 & 0.8793 & 0.3621 \\
+5 & 0.9483 & 0.2448 \\
+8 & 0.9828 & 0.1616 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The current selected value is $k=3$ for generation because it is conservative and reduces noise. However, $k=5$ is a candidate for future testing because it gives higher expected-source coverage.
+
+\section{Data Collection -(If Applicable)}
+
+The current dataset focuses on Bangladeshi birth and death registration services. The data was collected from government-service documents and web pages related to birth registration, death registration, correction, fees, rules, frequently asked questions, and BDRIS service procedures.
+
+The collected data includes four types of raw sources:
+
+\begin{itemize}
+    \item Bijoy-encoded PDF documents.
+    \item Converted DOCX files.
+    \item Unicode HTML government web pages.
+    \item Scanned PDF/OCR-based documents.
+\end{itemize}
+
+The raw sources were converted into cleaned Markdown and JSON formats before indexing. JSON was used mainly for FAQ-style question-answer pairs, while Markdown was used for heading-based procedural, legal, and informational documents.
+
+\subsection{Data Cleaning}
+
+The cleaning process focused on removing noise that can harm retrieval quality. Government web pages often contain menus, accessibility controls, repeated navigation text, news blocks, footer links, and unrelated service lists. These were removed where possible.
+
+The cleaning process included:
+
+\begin{itemize}
+    \item Removing duplicate web-navigation blocks and repeated footer sections.
+    \item Converting Bijoy/non-Unicode text into Unicode Bangla where possible.
+    \item Separating FAQ entries into question-answer units.
+    \item Keeping official service links as metadata instead of mixing them randomly into answer text.
+    \item Removing empty headings, broken OCR fragments, and irrelevant page boilerplate.
+    \item Preserving legal/procedural wording where factual precision is important.
+\end{itemize}
+
+\subsection{Data Transformation}
+
+The cleaned documents were transformed into retrieval-friendly chunks. Instead of using only fixed-size chunking, the system uses document-type-aware chunking. This is important because civic-service documents contain different structures.
+
+\begin{itemize}
+    \item FAQ data is chunked as one question-answer pair per chunk.
+    \item Heading-based Markdown documents are chunked by section headings and subheadings.
+    \item Table-like fee data is converted into row-level chunks.
+    \item Legal/rules documents are chunked by rule, section, or meaningful paragraph group.
+    \item Long chunks are limited using minimum and maximum character thresholds.
+\end{itemize}
+
+Each chunk contains two text versions. The first is \texttt{retrieval\_text}, which may include aliases and query-matching terms. The second is \texttt{answer\_evidence}, which stores the original Bangla source content for grounding the LLM answer. This separation reduces hallucination risk because aliases help retrieval, while the LLM only receives source-grounded evidence.
+
+\subsection{Data Integration}
+
+All cleaned sources are integrated under one domain folder:
+
+\begin{center}
+\texttt{domains/birth\_death\_registration/}
+\end{center}
+
+The domain folder contains raw data, cleaned/interim chunks, ChromaDB vector storage, configuration files, and evaluation datasets. This structure supports future domains such as passport, BRTA, birth certificate, and death certificate without creating separate repositories.
+
+\subsection{Data Reduction}
+
+Data reduction was performed through chunk selection and metadata filtering rather than numerical dimensionality reduction. The goal was to reduce noisy text while preserving evidence needed for accurate answers.
+
+The main reduction steps were:
+
+\begin{itemize}
+    \item Removing repeated government website menus and footer text.
+    \item Skipping duplicate FAQ content where the same answer appeared in multiple sources.
+    \item Keeping only meaningful service-related sections.
+    \item Chunking large documents into focused evidence units.
+    \item Using top-k retrieval and reranking to select only the most relevant chunks for generation.
+\end{itemize}
+
+\subsection{Summary of Preprocessed Data}
+
+The final preprocessed dataset contains Bangla-heavy birth/death registration chunks with metadata such as document type, section title, source ID, category, and official URL. The indexed knowledge base includes FAQ chunks, legal-rule chunks, fee-table chunks, correction-process chunks, application-process chunks, and general guidance chunks.
+
+The current evaluation dataset contains 58 Bangla paraphrase questions across 19 grouped civic-service problems. These questions test whether the system can retrieve the same expected evidence even when the user asks the problem in different wording.
+
+\section{Implementation of Selected Design}
+
+The selected design, named CivicRAG, was implemented as a local RAG system. The implementation uses modular Python components for chunking, embedding, indexing, retrieval, reranking, generation, and evaluation.
+
+The embedding model is \texttt{BAAI/bge-m3}, selected because it supports multilingual retrieval and is suitable for Bangla-English and cross-lingual settings \cite{chen2024bgem3}. The vector database is ChromaDB. Sparse retrieval is implemented using BM25. Dense and sparse retrieval results are combined using RRF. The current RRF weights are 0.55 for dense retrieval and 0.45 for BM25. The default local LLM is \texttt{llama3.2}, with \texttt{llama3} and \texttt{qwen2.5:7b} used for comparison.
+
+The current generation temperature is set to 0.05 to reduce randomness and support factual civic-service answers. This is appropriate because the system prioritizes correctness over creativity.
+
+For high-confidence civic intents such as fees, correction, lost certificate, and application process, the system uses controlled answer paths. If no safe path is available, the system uses the local LLM with retrieved Bangla evidence. The answer includes source IDs, retrieval scores, and official/source links for explainability.
+
+The implementation was verified using both retrieval-side and generation-side experiments. Retrieval-side evaluation used Hit@k, MRR, nDCG@5, and Context Precision. Generation-side evaluation compared local LLM outputs using semantic correctness, token F1, answer relevance, faithfulness proxy, expected-source retrieval, and latency.
+
+The current result supports the Phase 2 objective because multiple alternative designs were implemented and simulated before selecting the current CivicRAG design. Dense-only retrieval is the strongest current baseline, while CivicRAG remains the selected design because it is more explainable, extensible, and suitable for future multi-domain government-service expansion.

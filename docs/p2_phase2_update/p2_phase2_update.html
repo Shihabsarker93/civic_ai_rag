@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CivicRAG Phase 2 Update</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 18mm 16mm;
+    }
+    :root {
+      --ink: #162132;
+      --muted: #5d6a7f;
+      --line: #d7e1ed;
+      --panel: #f5f8fb;
+      --accent: #0f766e;
+      --accent-soft: #e6f5f2;
+      --gold: #b7791f;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Noto Serif Bengali", "Noto Serif", "Noto Sans Bengali", "SolaimanLipi", Georgia, serif;
+      font-size: 11.2pt;
+      line-height: 1.48;
+      background: white;
+    }
+    h1, h2, h3 {
+      font-family: "Noto Sans Bengali", "Noto Sans", Arial, sans-serif;
+      line-height: 1.18;
+      color: #101827;
+      break-after: avoid;
+    }
+    h1 {
+      font-size: 24pt;
+      margin: 0 0 4mm;
+      letter-spacing: -0.02em;
+    }
+    h2 {
+      font-size: 16pt;
+      margin: 9mm 0 3mm;
+      border-left: 4px solid var(--accent);
+      padding-left: 8px;
+    }
+    h3 {
+      font-size: 12.8pt;
+      margin: 6mm 0 2mm;
+      color: #1f3b57;
+    }
+    p { margin: 0 0 3.2mm; }
+    .subtitle {
+      font-family: "Noto Sans Bengali", "Noto Sans", Arial, sans-serif;
+      color: var(--muted);
+      font-size: 11pt;
+      margin-bottom: 6mm;
+    }
+    .meta {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 3mm;
+      margin: 5mm 0 7mm;
+    }
+    .meta div, .callout {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      padding: 3mm;
+    }
+    .label {
+      display: block;
+      font-family: "Noto Sans", Arial, sans-serif;
+      font-size: 8.8pt;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 1mm;
+    }
+    .pipeline {
+      margin: 6mm 0 4mm;
+      padding: 4mm;
+      background: linear-gradient(135deg, #f8fbff, #edf8f5);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      break-inside: avoid;
+    }
+    .figure-title {
+      display: block;
+      font-family: "Noto Sans Bengali", "Noto Sans", Arial, sans-serif;
+      font-weight: 800;
+      margin-bottom: 2mm;
+    }
+    .figure-note {
+      color: var(--muted);
+      font-size: 9.4pt;
+      margin: 2mm 0 0;
+    }
+    .architecture-svg {
+      width: 100%;
+      height: auto;
+      display: block;
+      background: #ffffff;
+      border: 1px solid #cbd8e8;
+      border-radius: 10px;
+    }
+    .architecture-svg text {
+      font-family: "Noto Sans Bengali", "Noto Sans", Arial, sans-serif;
+      fill: #132033;
+    }
+    .architecture-svg .small {
+      font-size: 15px;
+      fill: #4a5b70;
+    }
+    .architecture-svg .label-text {
+      font-size: 19px;
+      font-weight: 700;
+    }
+    .architecture-svg .tiny {
+      font-size: 12px;
+      fill: #53657b;
+    }
+    .architecture-svg .lane {
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      fill: #0f766e;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 4mm 0 5mm;
+      break-inside: avoid;
+      font-size: 9.8pt;
+    }
+    caption {
+      caption-side: top;
+      text-align: left;
+      font-family: "Noto Sans", Arial, sans-serif;
+      color: var(--muted);
+      font-weight: 700;
+      margin-bottom: 1.5mm;
+    }
+    th {
+      background: #eaf1f8;
+      color: #102033;
+      text-align: left;
+      font-family: "Noto Sans", Arial, sans-serif;
+      font-size: 9.2pt;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 2mm;
+      vertical-align: top;
+    }
+    ul {
+      margin: 0 0 3.5mm 5mm;
+      padding: 0;
+    }
+    li { margin: 1.2mm 0; }
+    code {
+      font-family: "SFMono-Regular", Consolas, monospace;
+      font-size: 9.5pt;
+      color: #0f5132;
+      background: #eef8f2;
+      padding: 0.2mm 0.8mm;
+      border-radius: 3px;
+    }
+    .formula {
+      text-align: center;
+      font-size: 13pt;
+      margin: 4mm 0;
+      padding: 3mm;
+      background: #fffaf0;
+      border: 1px solid #f0d9a8;
+      border-radius: 8px;
+      break-inside: avoid;
+    }
+    .refs {
+      font-size: 9.2pt;
+      color: #263346;
+    }
+    .page-break { break-before: page; }
+  </style>
+</head>
+<body>
+  <h1>CivicRAG Phase 2 Update</h1>
+  <p class="subtitle">Bilingual Bangla-English Retrieval-Augmented Generation system for Bangladeshi government-service question answering. Current domain: Birth and Death Registration.</p>
+  <div class="meta">
+    <div><span class="label">Selected Design</span>CivicRAG: hybrid retrieval + grounded local LLM generation</div>
+    <div><span class="label">Embedding</span><code>BAAI/bge-m3</code></div>
+    <div><span class="label">Local LLMs</span><code>llama3.2</code>, <code>llama3</code>, <code>qwen2.5:7b</code></div>
+  </div>
+
+  <h2>Design Process or Methodology Overview</h2>
+  <p>The objective of this phase is to design and verify a bilingual Bangla-English Retrieval-Augmented Generation (RAG) system for Bangladeshi government-service question answering. The current working domain is birth and death registration. The design is inspired by the NextRAG framework proposed for bilingual financial question answering, but adapted to civic-service documents, Bangla-heavy data, and local LLM deployment.</p>
+  <p>The main design constraints are factual correctness, evidence grounding, Bangla query handling, explainability, and future multi-domain extensibility. Therefore, the system is designed as a modular RAG pipeline instead of a single monolithic chatbot. The pipeline separates data ingestion, cleaning, chunking, embedding, retrieval, reranking, answer generation, and evaluation.</p>
+
+  <div class="pipeline">
+    <strong class="figure-title">Figure 1. Proposed CivicRAG architecture for birth and death registration QA</strong>
+    <svg class="architecture-svg" viewBox="0 0 1180 690" role="img" aria-label="CivicRAG architecture diagram">
+      <defs>
+        <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+          <path d="M2,2 L10,6 L2,10 Z" fill="#172033"></path>
+        </marker>
+        <marker id="greenArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+          <path d="M2,2 L10,6 L2,10 Z" fill="#0f766e"></path>
+        </marker>
+        <linearGradient id="panelGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#f7fbff"></stop>
+          <stop offset="100%" stop-color="#eef8f4"></stop>
+        </linearGradient>
+        <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+          <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#102033" flood-opacity="0.12"></feDropShadow>
+        </filter>
+      </defs>
+
+      <rect x="0" y="0" width="1180" height="690" fill="#ffffff"></rect>
+      <rect x="18" y="24" width="1144" height="272" rx="24" fill="url(#panelGrad)" stroke="#cbd8e8"></rect>
+      <rect x="18" y="350" width="1144" height="316" rx="24" fill="#fbfdff" stroke="#cbd8e8"></rect>
+      <text class="lane" x="42" y="52">OFFLINE INDEXING PIPELINE</text>
+      <text class="lane" x="42" y="378">ONLINE QUESTION-ANSWERING PIPELINE</text>
+
+      <!-- Raw source documents -->
+      <rect x="42" y="78" width="248" height="168" rx="18" fill="#f2eeee" stroke="#b7b0b0" stroke-width="2"></rect>
+      <text class="label-text" x="62" y="105">Raw government data</text>
+      <path d="M72 128 h62 l22 22 v70 h-84 z" fill="#bf4b50" stroke="#872f35" stroke-width="2"></path>
+      <path d="M134 128 v22 h22" fill="none" stroke="#872f35" stroke-width="2"></path>
+      <text x="91" y="179" font-size="23" font-weight="800" fill="#ffffff">PDF</text>
+      <rect x="170" y="126" width="74" height="88" rx="6" fill="#ffffff" stroke="#77828f" stroke-width="2"></rect>
+      <rect x="181" y="137" width="74" height="88" rx="6" fill="#ffffff" stroke="#77828f" stroke-width="2"></rect>
+      <rect x="192" y="148" width="74" height="88" rx="6" fill="#ffffff" stroke="#77828f" stroke-width="2"></rect>
+      <text class="tiny" x="180" y="236">PDF / DOCX / HTML</text>
+
+      <!-- Cleaning -->
+      <path d="M322 132 L414 132 L382 184 L382 226 L354 226 L354 184 Z" fill="#dff3ef" stroke="#0f766e" stroke-width="2.5" filter="url(#softShadow)"></path>
+      <text class="label-text" x="326" y="100">Cleaning</text>
+      <text class="tiny" x="340" y="252">Unicode cleanup</text>
+      <line x1="292" y1="162" x2="322" y2="162" stroke="#172033" stroke-width="4" marker-end="url(#arrow)"></line>
+
+      <!-- Chunk cards -->
+      <g transform="translate(455 80)">
+        <text class="label-text" x="0" y="20">Typed chunks</text>
+        <rect x="8" y="42" width="88" height="132" rx="8" fill="#ffd66b" stroke="#9a6b00" stroke-width="2"></rect>
+        <path d="M8 78 q11 -10 22 0 t22 0 t22 0 t22 0" fill="none" stroke="#9a6b00" stroke-width="2"></path>
+        <path d="M8 116 q11 -10 22 0 t22 0 t22 0 t22 0" fill="none" stroke="#9a6b00" stroke-width="2"></path>
+        <path d="M8 154 q11 -10 22 0 t22 0 t22 0 t22 0" fill="none" stroke="#9a6b00" stroke-width="2"></path>
+        <text class="tiny" x="-10" y="196">FAQ, rule, fee, process</text>
+      </g>
+      <line x1="414" y1="162" x2="455" y2="162" stroke="#172033" stroke-width="4" marker-end="url(#arrow)"></line>
+
+      <!-- Dual chunk representation -->
+      <rect x="590" y="82" width="210" height="66" rx="14" fill="#e6f5f2" stroke="#0f766e" stroke-width="2"></rect>
+      <text class="label-text" x="616" y="110">retrieval_text</text>
+      <text class="small" x="610" y="134">aliases + searchable wording</text>
+      <rect x="590" y="174" width="210" height="66" rx="14" fill="#fff7e6" stroke="#b7791f" stroke-width="2"></rect>
+      <text class="label-text" x="612" y="202">answer_evidence</text>
+      <text class="small" x="610" y="226">original Bangla source content</text>
+      <line x1="552" y1="146" x2="590" y2="115" stroke="#172033" stroke-width="3.5" marker-end="url(#arrow)"></line>
+      <line x1="552" y1="172" x2="590" y2="205" stroke="#172033" stroke-width="3.5" marker-end="url(#arrow)"></line>
+
+      <!-- Embedding and indexes -->
+      <path d="M845 98 L928 138 L928 210 L845 250 Z" fill="#e8eef7" stroke="#3a506b" stroke-width="2.5" filter="url(#softShadow)"></path>
+      <text class="label-text" x="858" y="153">BGE-M3</text>
+      <text class="small" x="858" y="178">Embed</text>
+      <text class="small" x="858" y="201">Model</text>
+      <line x1="800" y1="115" x2="845" y2="156" stroke="#172033" stroke-width="4" marker-end="url(#arrow)"></line>
+
+      <g transform="translate(990 78)">
+        <ellipse cx="72" cy="28" rx="62" ry="24" fill="#c8c8c8" stroke="#555" stroke-width="2"></ellipse>
+        <rect x="10" y="28" width="124" height="108" fill="#d7d7d7" stroke="#555" stroke-width="2"></rect>
+        <ellipse cx="72" cy="136" rx="62" ry="24" fill="#bdbdbd" stroke="#555" stroke-width="2"></ellipse>
+        <ellipse cx="72" cy="28" rx="62" ry="24" fill="#dcdcdc" stroke="#555" stroke-width="2"></ellipse>
+        <circle cx="46" cy="82" r="9" fill="#111"></circle>
+        <circle cx="92" cy="58" r="9" fill="#111"></circle>
+        <circle cx="110" cy="102" r="9" fill="#111"></circle>
+        <circle cx="72" cy="116" r="9" fill="#111"></circle>
+        <line x1="46" y1="82" x2="92" y2="58" stroke="#333" stroke-width="1.5"></line>
+        <line x1="92" y1="58" x2="110" y2="102" stroke="#333" stroke-width="1.5"></line>
+        <line x1="46" y1="82" x2="72" y2="116" stroke="#333" stroke-width="1.5"></line>
+        <line x1="72" y1="116" x2="110" y2="102" stroke="#333" stroke-width="1.5"></line>
+        <text class="label-text" x="18" y="-10">ChromaDB</text>
+        <text class="small" x="28" y="178">dense vector index</text>
+      </g>
+      <line x1="928" y1="174" x2="990" y2="174" stroke="#172033" stroke-width="4" marker-end="url(#arrow)"></line>
+
+      <rect x="838" y="258" width="330" height="30" rx="8" fill="#eef2ff" stroke="#64748b"></rect>
+      <text class="small" x="852" y="279">BM25 sparse index from retrieval_text</text>
+
+      <!-- Query pipeline -->
+      <path d="M54 454 h170 q26 0 26 26 v42 q0 26 -26 26 h-86 l-28 34 v-34 h-56 q-26 0 -26 -26 v-42 q0 -26 26 -26z" fill="#cf5b61" stroke="#732b32" stroke-width="3" filter="url(#softShadow)"></path>
+      <text x="75" y="502" font-size="28" font-weight="800" fill="#ffffff">User Query</text>
+      <text class="small" x="56" y="570">Bangla / English / code-mixed</text>
+
+      <rect x="300" y="438" width="198" height="92" rx="16" fill="#e6f5f2" stroke="#0f766e" stroke-width="2.5"></rect>
+      <text class="label-text" x="326" y="472">Language +</text>
+      <text class="label-text" x="329" y="500">Intent Detector</text>
+      <text class="small" x="319" y="520">fee, correction, process</text>
+      <line x1="250" y1="498" x2="300" y2="498" stroke="#172033" stroke-width="4" marker-end="url(#arrow)"></line>
+
+      <rect x="560" y="394" width="190" height="72" rx="14" fill="#edf5ff" stroke="#2563eb" stroke-width="2"></rect>
+      <text class="label-text" x="594" y="424">Dense Search</text>
+      <text class="small" x="590" y="448">semantic similarity</text>
+      <rect x="560" y="502" width="190" height="72" rx="14" fill="#fff7e6" stroke="#b7791f" stroke-width="2"></rect>
+      <text class="label-text" x="603" y="532">BM25 Search</text>
+      <text class="small" x="585" y="556">keyword / exact terms</text>
+      <line x1="498" y1="474" x2="560" y2="430" stroke="#172033" stroke-width="3.5" marker-end="url(#arrow)"></line>
+      <line x1="498" y1="500" x2="560" y2="538" stroke="#172033" stroke-width="3.5" marker-end="url(#arrow)"></line>
+
+      <rect x="808" y="438" width="122" height="92" rx="18" fill="#f8fafc" stroke="#334155" stroke-width="2.5" filter="url(#softShadow)"></rect>
+      <text x="844" y="476" font-size="26" font-weight="800">RRF</text>
+      <text class="small" x="827" y="503">rank fusion</text>
+      <line x1="750" y1="430" x2="808" y2="470" stroke="#172033" stroke-width="3.5" marker-end="url(#arrow)"></line>
+      <line x1="750" y1="538" x2="808" y2="500" stroke="#172033" stroke-width="3.5" marker-end="url(#arrow)"></line>
+
+      <rect x="972" y="412" width="174" height="76" rx="14" fill="#f1f5f9" stroke="#475569" stroke-width="2"></rect>
+      <text class="label-text" x="1002" y="444">Reranker</text>
+      <text class="small" x="990" y="466">cross-encoder or</text>
+      <text class="small" x="990" y="484">lexical fallback</text>
+      <line x1="930" y1="484" x2="972" y2="450" stroke="#172033" stroke-width="3.5" marker-end="url(#arrow)"></line>
+
+      <rect x="968" y="538" width="178" height="86" rx="14" fill="#e6f5f2" stroke="#0f766e" stroke-width="2.5"></rect>
+      <text class="label-text" x="988" y="570">Top Evidence</text>
+      <text class="small" x="990" y="592">source IDs, scores, URLs</text>
+      <text class="small" x="990" y="612">answer_evidence only</text>
+      <line x1="1058" y1="488" x2="1058" y2="538" stroke="#172033" stroke-width="3.5" marker-end="url(#arrow)"></line>
+
+      <rect x="690" y="606" width="218" height="54" rx="14" fill="#fff7e6" stroke="#b7791f" stroke-width="2.5"></rect>
+      <text class="label-text" x="708" y="640">Safe Answer Path Check</text>
+      <line x1="968" y1="582" x2="908" y2="632" stroke="#172033" stroke-width="3.5" marker-end="url(#arrow)"></line>
+
+      <path d="M500 615 L604 575 L604 655 Z" fill="#e8eef7" stroke="#3a506b" stroke-width="2.5" filter="url(#softShadow)"></path>
+      <text x="526" y="622" font-size="24" font-weight="800">LLM</text>
+      <text class="tiny" x="514" y="645">llama/qwen</text>
+      <line x1="690" y1="632" x2="604" y2="620" stroke="#172033" stroke-width="3.5" marker-end="url(#arrow)"></line>
+
+      <rect x="300" y="586" width="150" height="58" rx="14" fill="#c7d2fe" stroke="#4f46e5" stroke-width="2.5" filter="url(#softShadow)"></rect>
+      <text class="label-text" x="332" y="622">Response</text>
+      <line x1="500" y1="615" x2="450" y2="615" stroke="#172033" stroke-width="3.5" marker-end="url(#arrow)"></line>
+      <text class="small" x="292" y="668">Bangla language guard + grounded citations</text>
+    </svg>
+    <p class="figure-note">The architecture separates offline indexing from online answering. Aliases are used only in <code>retrieval_text</code>; the generator receives original source evidence to reduce unsupported claims.</p>
+  </div>
+
+  <p>The design process followed four steps. First, raw civic-service documents were collected from government-service sources. Second, the data was cleaned and converted into retrieval-friendly Markdown/JSON formats. Third, multiple retrieval alternatives were implemented and evaluated: dense-only retrieval, BM25-only retrieval, hybrid RRF retrieval, and reranked hybrid retrieval. Fourth, local LLM backends were tested using Ollama models to avoid API dependency and preserve reproducibility.</p>
+
+  <div class="formula">
+    RRF(d) = &Sigma;<sub>r &isin; R</sub> w<sub>r</sub> / (k + rank<sub>r</sub>(d))
+  </div>
+
+  <p>Here, <em>d</em> is a document chunk, <em>R</em> is the set of retrievers, <em>w<sub>r</sub></em> is the retriever weight, <em>k</em> is the RRF constant, and <em>rank<sub>r</sub>(d)</em> is the rank of chunk <em>d</em> under retriever <em>r</em>.</p>
+
+  <h2>Preliminary Design or Design (Model) Specification</h2>
+  <p>Several alternative designs were considered for the birth and death registration RAG system.</p>
+
+  <table>
+    <caption>Alternative RAG design choices considered in Phase 2.</caption>
+    <thead><tr><th>Design</th><th>Description</th><th>Reason for Evaluation</th></tr></thead>
+    <tbody>
+      <tr><td>Dense-only RAG</td><td>Uses BGE-M3 embeddings and ChromaDB vector similarity search.</td><td>Strong for Bangla paraphrases and semantic matching.</td></tr>
+      <tr><td>BM25-only RAG</td><td>Uses lexical keyword matching with BM25.</td><td>Useful for exact terms such as fees, rules, form names, and service names.</td></tr>
+      <tr><td>Hybrid RAG</td><td>Combines dense retrieval and BM25 using RRF.</td><td>More robust for future multi-domain settings such as passport, BRTA, and certificates.</td></tr>
+      <tr><td>CivicRAG</td><td>Hybrid retrieval, metadata, source URLs, language guard, safe-answer paths, and local LLM generation.</td><td>Proposed system optimized for factual government-service QA.</td></tr>
+    </tbody>
+  </table>
+
+  <p>The selected implementation currently uses <code>BAAI/bge-m3</code> as the multilingual embedding model, ChromaDB as the vector index, BM25 as the sparse retriever, RRF for result fusion, and local Ollama-hosted LLMs for generation. The tested local LLMs are <code>llama3.2</code>, <code>llama3</code>, and <code>qwen2.5:7b</code>.</p>
+  <p>For verification, a 58-question Bangla paraphrase evaluation set was prepared from 19 grouped civic-service problems. The retrieval variants were evaluated using Hit@k, MRR, nDCG@5, and Context Precision.</p>
+
+  <table>
+    <caption>Retrieval variant comparison on the current birth/death registration evaluation set.</caption>
+    <thead><tr><th>Method</th><th>Hit@1</th><th>Hit@5</th><th>MRR</th><th>nDCG@5</th></tr></thead>
+    <tbody>
+      <tr><td>BM25-only</td><td>0.5345</td><td>0.7586</td><td>0.6132</td><td>0.6112</td></tr>
+      <tr><td>Dense-only</td><td>0.7931</td><td>0.9828</td><td>0.8707</td><td>0.8693</td></tr>
+      <tr><td>Hybrid RRF</td><td>0.7414</td><td>0.9483</td><td>0.8193</td><td>0.8139</td></tr>
+    </tbody>
+  </table>
+
+  <p>The result shows that dense-only retrieval currently performs best in the single-domain Bangla paraphrase setting. However, hybrid retrieval remains part of the proposed system because future domains may contain overlapping service language where lexical/domain-specific matching can reduce cross-domain confusion.</p>
+
+  <table>
+    <caption>Generation context top-k coverage.</caption>
+    <thead><tr><th>k</th><th>Expected Source in Context</th><th>Context Precision@k</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>0.7414</td><td>0.7414</td></tr>
+      <tr><td>3</td><td>0.8793</td><td>0.3621</td></tr>
+      <tr><td>5</td><td>0.9483</td><td>0.2448</td></tr>
+      <tr><td>8</td><td>0.9828</td><td>0.1616</td></tr>
+    </tbody>
+  </table>
+
+  <p>The current selected value is k=3 for generation because it is conservative and reduces noise. However, k=5 is a candidate for future testing because it gives higher expected-source coverage.</p>
+
+  <h2>Data Collection -(If Applicable)</h2>
+  <p>The current dataset focuses on Bangladeshi birth and death registration services. The data was collected from government-service documents and web pages related to birth registration, death registration, correction, fees, rules, frequently asked questions, and BDRIS service procedures.</p>
+  <p>The collected data includes four types of raw sources:</p>
+  <ul>
+    <li>Bijoy-encoded PDF documents.</li>
+    <li>Converted DOCX files.</li>
+    <li>Unicode HTML government web pages.</li>
+    <li>Scanned PDF/OCR-based documents.</li>
+  </ul>
+  <p>The raw sources were converted into cleaned Markdown and JSON formats before indexing. JSON was used mainly for FAQ-style question-answer pairs, while Markdown was used for heading-based procedural, legal, and informational documents.</p>
+
+  <h3>Data Cleaning</h3>
+  <p>The cleaning process focused on removing noise that can harm retrieval quality. Government web pages often contain menus, accessibility controls, repeated navigation text, news blocks, footer links, and unrelated service lists. These were removed where possible.</p>
+  <ul>
+    <li>Removing duplicate web-navigation blocks and repeated footer sections.</li>
+    <li>Converting Bijoy/non-Unicode text into Unicode Bangla where possible.</li>
+    <li>Separating FAQ entries into question-answer units.</li>
+    <li>Keeping official service links as metadata instead of mixing them randomly into answer text.</li>
+    <li>Removing empty headings, broken OCR fragments, and irrelevant page boilerplate.</li>
+    <li>Preserving legal/procedural wording where factual precision is important.</li>
+  </ul>
+
+  <h3>Data Transformation</h3>
+  <p>The cleaned documents were transformed into retrieval-friendly chunks. Instead of using only fixed-size chunking, the system uses document-type-aware chunking. This is important because civic-service documents contain different structures.</p>
+  <ul>
+    <li>FAQ data is chunked as one question-answer pair per chunk.</li>
+    <li>Heading-based Markdown documents are chunked by section headings and subheadings.</li>
+    <li>Table-like fee data is converted into row-level chunks.</li>
+    <li>Legal/rules documents are chunked by rule, section, or meaningful paragraph group.</li>
+    <li>Long chunks are limited using minimum and maximum character thresholds.</li>
+  </ul>
+  <p>Each chunk contains two text versions. The first is <code>retrieval_text</code>, which may include aliases and query-matching terms. The second is <code>answer_evidence</code>, which stores the original Bangla source content for grounding the LLM answer. This separation reduces hallucination risk because aliases help retrieval, while the LLM only receives source-grounded evidence.</p>
+
+  <h3>Data Integration</h3>
+  <p>All cleaned sources are integrated under one domain folder: <code>domains/birth_death_registration/</code>. The domain folder contains raw data, cleaned/interim chunks, ChromaDB vector storage, configuration files, and evaluation datasets. This structure supports future domains without creating separate repositories.</p>
+
+  <h3>Data Reduction</h3>
+  <p>Data reduction was performed through chunk selection and metadata filtering rather than numerical dimensionality reduction. The goal was to reduce noisy text while preserving evidence needed for accurate answers.</p>
+  <ul>
+    <li>Removing repeated government website menus and footer text.</li>
+    <li>Skipping duplicate FAQ content where the same answer appeared in multiple sources.</li>
+    <li>Keeping only meaningful service-related sections.</li>
+    <li>Chunking large documents into focused evidence units.</li>
+    <li>Using top-k retrieval and reranking to select only the most relevant chunks for generation.</li>
+  </ul>
+
+  <h3>Summary of Preprocessed Data</h3>
+  <p>The final preprocessed dataset contains Bangla-heavy birth/death registration chunks with metadata such as document type, section title, source ID, category, and official URL. The indexed knowledge base includes FAQ chunks, legal-rule chunks, fee-table chunks, correction-process chunks, application-process chunks, and general guidance chunks.</p>
+  <p>The current evaluation dataset contains 58 Bangla paraphrase questions across 19 grouped civic-service problems. These questions test whether the system can retrieve the same expected evidence even when the user asks the problem in different wording.</p>
+
+  <h2>Implementation of Selected Design</h2>
+  <p>The selected design, named CivicRAG, was implemented as a local RAG system. The implementation uses modular Python components for chunking, embedding, indexing, retrieval, reranking, generation, and evaluation.</p>
+  <p>The embedding model is <code>BAAI/bge-m3</code>, selected because it supports multilingual retrieval and is suitable for Bangla-English and cross-lingual settings. The vector database is ChromaDB. Sparse retrieval is implemented using BM25. Dense and sparse retrieval results are combined using RRF. The current RRF weights are 0.55 for dense retrieval and 0.45 for BM25. The default local LLM is <code>llama3.2</code>, with <code>llama3</code> and <code>qwen2.5:7b</code> used for comparison.</p>
+  <p>The current generation temperature is set to 0.05 to reduce randomness and support factual civic-service answers. This is appropriate because the system prioritizes correctness over creativity.</p>
+  <p>For high-confidence civic intents such as fees, correction, lost certificate, and application process, the system uses controlled answer paths. If no safe path is available, the system uses the local LLM with retrieved Bangla evidence. The answer includes source IDs, retrieval scores, and official/source links for explainability.</p>
+  <p>The implementation was verified using both retrieval-side and generation-side experiments. Retrieval-side evaluation used Hit@k, MRR, nDCG@5, and Context Precision. Generation-side evaluation compared local LLM outputs using semantic correctness, token F1, answer relevance, faithfulness proxy, expected-source retrieval, and latency.</p>
+  <p>The current result supports the Phase 2 objective because multiple alternative designs were implemented and simulated before selecting the current CivicRAG design. Dense-only retrieval is the strongest current baseline, while CivicRAG remains the selected design because it is more explainable, extensible, and suitable for future multi-domain government-service expansion.</p>
+
+  <h2>References</h2>
+  <ol class="refs">
+    <li>Opin et al., “NextRAG: A Bilingual Retrieval-Augmented Generation Framework for Financial Question-Answering,” ICCIT, IEEE, 2025.</li>
+    <li>Lewis et al., “Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks,” NeurIPS, 2020.</li>
+    <li>Robertson and Zaragoza, “The Probabilistic Relevance Framework: BM25 and Beyond,” Foundations and Trends in Information Retrieval, 2009.</li>
+    <li>Cormack, Clarke, and Buettcher, “Reciprocal Rank Fusion Outperforms Condorcet and Individual Rank Learning Methods,” SIGIR, 2009.</li>
+    <li>Chen et al., “BGE M3-Embedding,” arXiv:2402.03216, 2024.</li>
+    <li>Dubey et al., “The Llama 3 Herd of Models,” arXiv:2407.21783, 2024.</li>
+    <li>Qwen Team, “Qwen2.5 Technical Report,” 2024.</li>
+  </ol>
+</body>
+</html>
