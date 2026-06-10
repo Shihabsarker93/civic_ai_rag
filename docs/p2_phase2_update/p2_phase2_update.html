@@ -175,6 +175,47 @@
       border-radius: 8px;
       break-inside: avoid;
     }
+    .formula-main {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2mm;
+      flex-wrap: wrap;
+    }
+    .sum {
+      display: inline-grid;
+      grid-template-rows: 0.8em 1em 0.8em;
+      align-items: center;
+      justify-items: center;
+      line-height: 1;
+      margin: 0 0.5mm;
+    }
+    .sum .upper, .sum .lower {
+      font-size: 8.5pt;
+      line-height: 1;
+      min-height: 0.8em;
+    }
+    .sigma {
+      font-size: 18pt;
+      line-height: 1;
+    }
+    .frac {
+      display: inline-flex;
+      flex-direction: column;
+      vertical-align: middle;
+      text-align: center;
+      line-height: 1.15;
+      min-width: 24mm;
+    }
+    .frac .top {
+      display: block;
+      border-bottom: 1px solid var(--ink);
+      padding: 0 1.2mm 0.8mm;
+    }
+    .frac .bottom {
+      display: block;
+      padding: 0.8mm 1.2mm 0;
+    }
     .refs {
       font-size: 9.2pt;
       color: #263346;
@@ -344,7 +385,11 @@
   <p>The design process followed four steps. First, raw civic-service documents were collected from government-service sources. Second, the data was cleaned and converted into retrieval-friendly Markdown/JSON formats. Third, multiple retrieval alternatives were implemented and evaluated: dense-only retrieval, BM25-only retrieval, hybrid RRF retrieval, and reranked hybrid retrieval. Fourth, local LLM backends were tested using Ollama models to avoid API dependency and preserve reproducibility.</p>
 
   <div class="formula">
-    RRF(d) = &Sigma;<sub>r &isin; R</sub> w<sub>r</sub> / (k + rank<sub>r</sub>(d))
+    <span class="formula-main">
+      RRF(d) =
+      <span class="sum"><span class="upper"></span><span class="sigma">&Sigma;</span><span class="lower">r &isin; R</span></span>
+      <span class="frac"><span class="top">w<sub>r</sub></span><span class="bottom">k + rank<sub>r</sub>(d)</span></span>
+    </span>
   </div>
 
   <p>Here, <em>d</em> is a document chunk, <em>R</em> is the set of retrievers, <em>w<sub>r</sub></em> is the retriever weight, <em>k</em> is the RRF constant, and <em>rank<sub>r</sub>(d)</em> is the rank of chunk <em>d</em> under retriever <em>r</em>.</p>
