@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CivicRAG Data Cleaning Pipeline</title>
+  <style>
+    @page { size: A4 landscape; margin: 8mm; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #f7fbff;
+      font-family: "Noto Sans Bengali", "Noto Sans", Arial, sans-serif;
+      color: #132033;
+    }
+    .sheet {
+      width: 100%;
+      min-height: 100vh;
+      padding: 7mm;
+      background:
+        radial-gradient(circle at 8% 12%, rgba(15,118,110,0.12), transparent 26%),
+        linear-gradient(135deg, #ffffff, #eef8f4);
+      border: 1px solid #cbd8e8;
+      border-radius: 18px;
+    }
+    .title {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      margin-bottom: 4mm;
+      border-bottom: 2px solid #d7e1ed;
+      padding-bottom: 3mm;
+    }
+    h1 {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: -0.02em;
+    }
+    .subtitle {
+      color: #5d6a7f;
+      font-size: 13px;
+      text-align: right;
+      max-width: 410px;
+    }
+    svg {
+      width: 100%;
+      height: auto;
+      background: #ffffff;
+      border: 1px solid #cbd8e8;
+      border-radius: 14px;
+      box-shadow: 0 14px 35px rgba(15, 35, 55, 0.10);
+    }
+    svg text {
+      font-family: "Noto Sans Bengali", "Noto Sans", Arial, sans-serif;
+      fill: #132033;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 3mm;
+      color: #526277;
+      font-size: 12px;
+    }
+    code {
+      color: #0f5132;
+      background: #e9f8f2;
+      padding: 1px 5px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+    <div class="title">
+      <div>
+        <h1>CivicRAG Data Cleaning Pipeline</h1>
+        <div>Birth and death registration domain | Raw government data to retrieval-ready evidence</div>
+      </div>
+      <div class="subtitle">The goal is not only to make text readable; the goal is to prevent noisy, duplicated, or misleading text from entering retrieval and generation.</div>
+    </div>
+
+    <svg viewBox="0 0 1680 930" role="img" aria-label="CivicRAG data cleaning pipeline diagram">
+      <defs>
+        <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+          <path d="M2,2 L10,6 L2,10 Z" fill="#172033"></path>
+        </marker>
+        <marker id="greenArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+          <path d="M2,2 L10,6 L2,10 Z" fill="#0f766e"></path>
+        </marker>
+        <linearGradient id="rawGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#fff5f5"></stop>
+          <stop offset="100%" stop-color="#f7eeee"></stop>
+        </linearGradient>
+        <linearGradient id="cleanGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#effdf8"></stop>
+          <stop offset="100%" stop-color="#edf5ff"></stop>
+        </linearGradient>
+        <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+          <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#102033" flood-opacity="0.12"></feDropShadow>
+        </filter>
+      </defs>
+
+      <rect x="0" y="0" width="1680" height="930" fill="#ffffff"></rect>
+      <rect x="34" y="42" width="1612" height="840" rx="28" fill="#fbfdff" stroke="#cbd8e8" stroke-width="2"></rect>
+
+      <!-- Raw data panel -->
+      <rect x="70" y="90" width="290" height="680" rx="24" fill="url(#rawGrad)" stroke="#c8b8b8" stroke-width="2.5"></rect>
+      <text x="100" y="136" font-size="28" font-weight="800">Raw Inputs</text>
+      <text x="100" y="166" font-size="16" fill="#5d6a7f">heterogeneous government files</text>
+
+      <g transform="translate(108 210)">
+        <path d="M0 0 h78 l28 28 v104 h-106 z" fill="#bf4b50" stroke="#872f35" stroke-width="3"></path>
+        <path d="M78 0 v28 h28" fill="none" stroke="#872f35" stroke-width="3"></path>
+        <text x="24" y="75" font-size="28" font-weight="800" fill="#ffffff">PDF</text>
+        <text x="130" y="34" font-size="23" font-weight="700">Bijoy PDF</text>
+        <text x="130" y="66" font-size="17" fill="#53657b">encoding issues</text>
+      </g>
+
+      <g transform="translate(108 370)">
+        <rect x="0" y="0" width="106" height="132" rx="8" fill="#ffffff" stroke="#77828f" stroke-width="3"></rect>
+        <rect x="16" y="16" width="106" height="132" rx="8" fill="#ffffff" stroke="#77828f" stroke-width="3"></rect>
+        <text x="142" y="42" font-size="23" font-weight="700">DOCX / HTML</text>
+        <text x="142" y="74" font-size="17" fill="#53657b">converted pages</text>
+      </g>
+
+      <g transform="translate(108 550)">
+        <rect x="0" y="0" width="118" height="92" rx="10" fill="#e8eef7" stroke="#3a506b" stroke-width="3"></rect>
+        <circle cx="34" cy="46" r="16" fill="#3a506b"></circle>
+        <rect x="62" y="28" width="36" height="36" rx="4" fill="#ffffff" stroke="#3a506b" stroke-width="2"></rect>
+        <text x="142" y="34" font-size="23" font-weight="700">Scanned PDF</text>
+        <text x="142" y="66" font-size="17" fill="#53657b">OCR affected text</text>
+      </g>
+
+      <!-- Main pipeline cards -->
+      <g transform="translate(420 96)">
+        <rect x="0" y="0" width="235" height="116" rx="18" fill="#edf5ff" stroke="#2563eb" stroke-width="3" filter="url(#softShadow)"></rect>
+        <text x="26" y="42" font-size="23" font-weight="800">1. Extract Text</text>
+        <text x="26" y="74" font-size="17">PDF/DOCX/HTML parsing</text>
+        <text x="26" y="98" font-size="15" fill="#53657b">keep raw source path</text>
+      </g>
+      <line x1="360" y1="154" x2="420" y2="154" stroke="#172033" stroke-width="5" marker-end="url(#arrow)"></line>
+
+      <g transform="translate(720 96)">
+        <rect x="0" y="0" width="250" height="116" rx="18" fill="#e6f5f2" stroke="#0f766e" stroke-width="3" filter="url(#softShadow)"></rect>
+        <text x="24" y="42" font-size="23" font-weight="800">2. Normalize Text</text>
+        <text x="24" y="74" font-size="17">Unicode + whitespace</text>
+        <text x="24" y="98" font-size="15" fill="#53657b">Bangla punctuation cleanup</text>
+      </g>
+      <line x1="655" y1="154" x2="720" y2="154" stroke="#172033" stroke-width="5" marker-end="url(#arrow)"></line>
+
+      <g transform="translate(1035 96)">
+        <rect x="0" y="0" width="270" height="116" rx="18" fill="#fff7e6" stroke="#b7791f" stroke-width="3" filter="url(#softShadow)"></rect>
+        <text x="24" y="42" font-size="23" font-weight="800">3. Remove Noise</text>
+        <text x="24" y="74" font-size="17">menus, footer, news, links</text>
+        <text x="24" y="98" font-size="15" fill="#53657b">avoid garbage retrieval</text>
+      </g>
+      <line x1="970" y1="154" x2="1035" y2="154" stroke="#172033" stroke-width="5" marker-end="url(#arrow)"></line>
+
+      <g transform="translate(420 300)">
+        <rect x="0" y="0" width="250" height="124" rx="18" fill="#fff7e6" stroke="#b7791f" stroke-width="3" filter="url(#softShadow)"></rect>
+        <text x="24" y="42" font-size="23" font-weight="800">4. Recover Structure</text>
+        <text x="24" y="76" font-size="17">headings, FAQ pairs, tables</text>
+        <text x="24" y="102" font-size="15" fill="#53657b">legal rule and process sections</text>
+      </g>
+
+      <g transform="translate(735 300)">
+        <rect x="0" y="0" width="250" height="124" rx="18" fill="#f8fafc" stroke="#475569" stroke-width="3" filter="url(#softShadow)"></rect>
+        <text x="24" y="42" font-size="23" font-weight="800">5. Deduplicate</text>
+        <text x="24" y="76" font-size="17">remove repeated FAQ/web text</text>
+        <text x="24" y="102" font-size="15" fill="#53657b">retain best source version</text>
+      </g>
+      <line x1="1170" y1="212" x2="1170" y2="252" stroke="#172033" stroke-width="5"></line>
+      <path d="M1170 252 C1170 282 420 250 420 300" fill="none" stroke="#172033" stroke-width="5" marker-end="url(#arrow)"></path>
+      <line x1="670" y1="362" x2="735" y2="362" stroke="#172033" stroke-width="5" marker-end="url(#arrow)"></line>
+
+      <g transform="translate(1050 300)">
+        <rect x="0" y="0" width="270" height="124" rx="18" fill="#e6f5f2" stroke="#0f766e" stroke-width="3" filter="url(#softShadow)"></rect>
+        <text x="24" y="42" font-size="23" font-weight="800">6. Add Metadata</text>
+        <text x="24" y="76" font-size="17">source ID, URL, type</text>
+        <text x="24" y="102" font-size="15" fill="#53657b">section title and category</text>
+      </g>
+      <line x1="985" y1="362" x2="1050" y2="362" stroke="#172033" stroke-width="5" marker-end="url(#arrow)"></line>
+
+      <!-- Quality gate -->
+      <g transform="translate(1375 214)">
+        <path d="M120 0 L240 88 L120 176 L0 88 Z" fill="#fef3c7" stroke="#b7791f" stroke-width="3" filter="url(#softShadow)"></path>
+        <text x="64" y="72" font-size="23" font-weight="800">Quality</text>
+        <text x="74" y="102" font-size="23" font-weight="800">Gate</text>
+        <text x="58" y="132" font-size="15" fill="#53657b">manual review</text>
+      </g>
+      <line x1="1320" y1="362" x2="1375" y2="302" stroke="#172033" stroke-width="5" marker-end="url(#arrow)"></line>
+
+      <!-- Manual review loop -->
+      <path d="M1495 390 C1495 505 1010 490 870 435" fill="none" stroke="#0f766e" stroke-width="4" stroke-dasharray="12 8" marker-end="url(#greenArrow)"></path>
+      <text x="1060" y="496" font-size="18" fill="#0f766e" font-weight="700">if noisy / ambiguous, return to cleaning</text>
+
+      <!-- Output chunks -->
+      <g transform="translate(430 610)">
+        <text x="0" y="-32" font-size="28" font-weight="800">Clean Retrieval-Ready Output</text>
+        <text x="54" y="-2" font-size="22" font-weight="800">Typed chunks</text>
+        <rect x="0" y="0" width="230" height="148" rx="18" fill="#ffd66b" stroke="#9a6b00" stroke-width="3" filter="url(#softShadow)"></rect>
+        <path d="M0 40 q23 -18 46 0 t46 0 t46 0 t46 0 t46 0" fill="none" stroke="#9a6b00" stroke-width="3"></path>
+        <path d="M0 84 q23 -18 46 0 t46 0 t46 0 t46 0 t46 0" fill="none" stroke="#9a6b00" stroke-width="3"></path>
+        <path d="M0 126 q23 -18 46 0 t46 0 t46 0 t46 0 t46 0" fill="none" stroke="#9a6b00" stroke-width="3"></path>
+      </g>
+      <path d="M1495 390 C1495 610 1030 690 660 684" fill="none" stroke="#172033" stroke-width="5" marker-end="url(#arrow)"></path>
+
+      <!-- Split output boxes -->
+      <g transform="translate(980 600)">
+        <rect x="0" y="0" width="300" height="76" rx="16" fill="#e6f5f2" stroke="#0f766e" stroke-width="3"></rect>
+        <text x="28" y="32" font-size="23" font-weight="800">retrieval_text</text>
+        <text x="28" y="58" font-size="16">aliases + searchable wording</text>
+        <rect x="0" y="102" width="300" height="76" rx="16" fill="#fff7e6" stroke="#b7791f" stroke-width="3"></rect>
+        <text x="28" y="134" font-size="23" font-weight="800">answer_evidence</text>
+        <text x="28" y="160" font-size="16">original Bangla source content</text>
+      </g>
+
+      <path d="M675 652 C790 612 875 616 980 638" fill="none" stroke="#172033" stroke-width="4" marker-end="url(#arrow)"></path>
+      <path d="M675 725 C790 764 875 760 980 740" fill="none" stroke="#172033" stroke-width="4" marker-end="url(#arrow)"></path>
+
+      <!-- Warning box -->
+      <rect x="1328" y="610" width="260" height="152" rx="18" fill="#fff5f5" stroke="#bf4b50" stroke-width="3"></rect>
+      <text x="1354" y="646" font-size="22" font-weight="800">What cleaning prevents</text>
+      <text x="1354" y="682" font-size="17">• irrelevant retrieval</text>
+      <text x="1354" y="712" font-size="17">• duplicate evidence</text>
+      <text x="1354" y="742" font-size="17">• hallucinated procedures</text>
+    </svg>
+
+    <div class="footer">
+      <span>Design principle: clean source evidence before embedding because retrieval quality controls answer quality.</span>
+      <span>Output: typed chunks with <code>retrieval_text</code>, <code>answer_evidence</code>, metadata, and source URLs.</span>
+    </div>
+  </main>
+</body>
+</html>
