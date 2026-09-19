@@ -1,0 +1,37 @@
+{
+  "purpose": "First-round manual audit. Expected evidence hints support review but are not automatic answer-correctness labels.",
+  "questions": [
+    {"id":"birth_01_deadline","domain":"birth_death_registration","category":"direct_fact","question":"শিশুর জন্মের কত দিনের মধ্যে জন্ম নিবন্ধনের তথ্য দিতে হয়?","expected_evidence_hint":"birth_and_death_registration_act_2004_ধারা_৮"},
+    {"id":"birth_02_lost","domain":"birth_death_registration","category":"direct_fact","question":"জন্ম নিবন্ধনের মূল সনদ হারিয়ে গেলে কী করতে হবে?","expected_evidence_hint":"birth_and_death_registration_rules_2018_বিধি_১৩"},
+    {"id":"birth_03_documents_paraphrase","domain":"birth_death_registration","category":"paraphrase","question":"নতুন বাচ্চার জন্মসনদ করতে কী কী প্রমাণপত্র আপলোড করতে হয়?","expected_evidence_hint":"birth_registration_application_process_cleaned_016"},
+    {"id":"birth_04_manual_online","domain":"birth_death_registration","category":"paraphrase","question":"আমার পুরোনো হাতে লেখা জন্ম নিবন্ধন অনলাইনে পাওয়া যাচ্ছে না। এখন কীভাবে ডিজিটাল করব?","expected_evidence_hint":"bdris_faq_01_q02"},
+    {"id":"birth_05_orphan_fee","domain":"birth_death_registration","category":"condition_scenario","question":"একটি এতিম শিশুর জন্ম নিবন্ধন করতে চাই। কর্তৃপক্ষের সনদ থাকলে কি ফি মওকুফের সুযোগ আছে?","expected_evidence_hint":"birth_and_death_registration_rules_2018_বিধি_২১_02"},
+    {"id":"birth_06_parent_correction","domain":"birth_death_registration","category":"long_scenario","question":"আমার ছেলের জন্ম নিবন্ধনে ভুল করে অন্য আত্মীয়ের নাম বাবা-মায়ের জায়গায় আছে। সঠিক বাবা-মায়ের নাম দিতে কীভাবে সংশোধনের আবেদন করব এবং নাম সংশোধনের ফি কত?","expected_evidence_hint":"application_for_birth_information_correction_cleaned_003"},
+    {"id":"birth_07_overseas","domain":"birth_death_registration","category":"scenario","question":"আমি বিদেশে থাকি এবং আমার সন্তানের জন্ম বিদেশে হয়েছে। বাংলাদেশি জন্ম নিবন্ধনের জন্য কোথায় যোগাযোগ করব?","expected_evidence_hint":"birth_and_death_registration_rules_2018_বিধি_১০"},
+    {"id":"birth_08_mobile","domain":"birth_death_registration","category":"condition_scenario","question":"একই পরিবারের ছয়জনের জন্ম নিবন্ধনের জন্য কি একটি মোবাইল নম্বর ব্যবহার করা যাবে?","expected_evidence_hint":"bdris_faq_01_q09"},
+    {"id":"birth_09_application_id","domain":"birth_death_registration","category":"direct_fact","question":"অনলাইনে জন্ম নিবন্ধন আবেদন জমা দেওয়ার পর Application ID কোথায় পাওয়া যায়?","expected_evidence_hint":"birth_registration_application_process_cleaned_019"},
+    {"id":"birth_10_divorce","domain":"birth_death_registration","category":"long_scenario","question":"বাবা-মায়ের বিবাহ বিচ্ছেদ হয়েছে এবং শিশুর কাছে শুধু মায়ের তথ্য আছে। এই অবস্থায় কি জন্ম নিবন্ধন করা সম্ভব?","expected_evidence_hint":"bdris_faq_02_q08"},
+
+    {"id":"brta_01_age","domain":"brta","category":"direct_fact","question":"অপেশাদার ও পেশাদার ড্রাইভিং লাইসেন্সের জন্য ন্যূনতম বয়স কত?","expected_evidence_hint":"নতুন ড্রাইভিং লাইসেন্স ইস্যু"},
+    {"id":"brta_02_learner_paraphrase","domain":"brta","category":"paraphrase","question":"গাড়ি চালানো শিখছি। মূল লাইসেন্সের আগে কোন লাইসেন্স নিতে হয়?","expected_evidence_hint":"শিক্ষানবিশ ড্রাইভিং লাইসেন্স"},
+    {"id":"brta_03_colour","domain":"brta","category":"direct_fact","question":"গাড়ির রং পরিবর্তন করতে কী কী কাগজপত্র লাগবে?","expected_evidence_hint":"রং পরিবর্তন"},
+    {"id":"brta_04_ownership","domain":"brta","category":"scenario","question":"আমি একটি ব্যবহৃত গাড়ি কিনেছি। মালিকানা আমার নামে নিতে কী কী কাগজপত্র ও ঘোষণা লাগতে পারে?","expected_evidence_hint":"মালিকানা বদলি"},
+    {"id":"brta_05_fitness","domain":"brta","category":"paraphrase","question":"আমার গাড়ির ফিটনেসের মেয়াদ শেষ। নবায়নের জন্য কোন সেবাটি নিতে হবে?","expected_evidence_hint":"ফিটনেস ইস্যু ও নবায়ন"},
+    {"id":"brta_06_tax_token","domain":"brta","category":"direct_fact","question":"গাড়ির ট্যাক্স টোকেন নবায়ন করতে কীভাবে আবেদন করব?","expected_evidence_hint":"ট্যাক্সটোকেন ইস্যু ও নবায়ন"},
+    {"id":"brta_07_license_address","domain":"brta","category":"condition_scenario","question":"আমার ড্রাইভিং লাইসেন্সে পুরোনো ঠিকানা আছে। লাইসেন্সের ঠিকানা পরিবর্তনের জন্য কোন আবেদন করতে হবে?","expected_evidence_hint":"ফরম-৫ ড্রাইভিং লাইসেন্সের ঠিকানা পরিবর্তনের আবেদন"},
+    {"id":"brta_08_professional_age","domain":"brta","category":"scenario","question":"আমার বয়স ২০ বছর। আমি পেশাদার বাসচালকের লাইসেন্স করতে চাই। বয়সের শর্ত পূরণ হয়েছে কি?","expected_evidence_hint":"নতুন ড্রাইভিং লাইসেন্স ইস্যু"},
+    {"id":"brta_09_multi_change","domain":"brta","category":"multi_condition","question":"ড্রাইভিং লাইসেন্স নবায়নের সঙ্গে ঠিকানা পরিবর্তনও করতে চাই। এ ধরনের পরিবর্তনের জন্য কোন ফরম প্রাসঙ্গিক?","expected_evidence_hint":"ফরম-৪(খ)"},
+    {"id":"brta_10_registration_docs","domain":"brta","category":"scenario","question":"নতুন মোটরযান নিবন্ধনের আবেদনের সঙ্গে কী ধরনের দলিল জমা দিতে হতে পারে?","expected_evidence_hint":"মোটরযানের রেজিস্ট্রেশন আবেদনের সহিত দাখিলিতব্য দলিলসমূহ"},
+
+    {"id":"passport_01_steps","domain":"passport","category":"direct_fact","question":"ই-পাসপোর্ট করার মূল ধাপগুলো কী?","expected_evidence_hint":"5 Steps to your e-Passport"},
+    {"id":"passport_02_collect_paraphrase","domain":"passport","category":"paraphrase","question":"পাসপোর্ট রেডি হলে অফিস থেকে নিতে গেলে সঙ্গে কী রাখতে হবে?","expected_evidence_hint":"Documents Needed for Passport Collection"},
+    {"id":"passport_03_lost_passport","domain":"passport","category":"scenario","question":"আমার ই-পাসপোর্ট হারিয়ে গেছে। নতুন করে পেতে গেলে জিডি লাগবে কি?","expected_evidence_hint":"Citizen's Charter"},
+    {"id":"passport_04_minor_nid","domain":"passport","category":"condition_scenario","question":"আমার সন্তানের বয়স ১৮ বছরের কম এবং তার NID নেই। ই-পাসপোর্ট ফরমে বাবা বা মায়ের NID নম্বর লাগবে কি?","expected_evidence_hint":"ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী"},
+    {"id":"passport_05_fee","domain":"passport","category":"direct_fact","question":"বাংলাদেশে ৪৮ পৃষ্ঠার ৫ বছরের নিয়মিত ই-পাসপোর্টের ফি কত?","expected_evidence_hint":"e-Passport Fees and Payment Options"},
+    {"id":"passport_06_delivery","domain":"passport","category":"direct_fact","question":"বায়োমেট্রিক দেওয়ার পর নিয়মিত ই-পাসপোর্ট সাধারণত কত সময়ের মধ্যে পাওয়া যায়?","expected_evidence_hint":"e-Passport Fees and Payment Options"},
+    {"id":"passport_07_password","domain":"passport","category":"paraphrase","question":"অনলাইন পাসপোর্ট অ্যাকাউন্টের পাসওয়ার্ড ভুলে গেছি। কীভাবে আবার ঢুকব?","expected_evidence_hint":"Bangladesh_ePassport_FAQ"},
+    {"id":"passport_08_retired","domain":"passport","category":"long_scenario","question":"আমি সরকারি চাকরি থেকে অবসর নিয়েছি। ই-পাসপোর্ট এনরোলমেন্টে আমার জন্য কী বিশেষ কাগজপত্র লাগতে পারে?","expected_evidence_hint":"Documents Required for Retired Government Employees"},
+    {"id":"passport_09_language","domain":"passport","category":"condition_scenario","question":"আমি অনলাইনে ভিসার আবেদন ফরম বাংলায় পূরণ করতে চাই। সিস্টেমটি কি বাংলা সমর্থন করে?","expected_evidence_hint":"Electronic Visa Applications Forms Frequently Asked Questions"},
+    {"id":"passport_10_super_express","domain":"passport","category":"scenario","question":"আমার সুপার এক্সপ্রেস ই-পাসপোর্ট হয়েছে। কোথা থেকে সংগ্রহ করতে হবে?","expected_evidence_hint":"Urgent Applications e-Passport"}
+  ]
+}
