@@ -20,10 +20,12 @@ class HybridReranker:
         device: str,
         local_files_only: bool,
         fallback: str,
+        domain_boosts: bool = True,
     ) -> None:
         self.enabled = enabled
         self.model_name = model_name
         self.fallback = fallback
+        self.domain_boosts = domain_boosts
         self.cross_encoder: CrossEncoder | None = None
 
         if not enabled:
@@ -75,6 +77,8 @@ class HybridReranker:
         return self._apply_domain_boosts(query, rescored)[:top_k]
 
     def _apply_domain_boosts(self, query: str, results: Iterable[RetrievalResult]) -> list[RetrievalResult]:
+        if not self.domain_boosts:
+            return sorted(results, key=lambda result: result.score, reverse=True)
         query_lc = query.lower()
         is_how_to_registration = (
             any(term in query for term in ["কীভাবে", "কিভাবে", "করতে পারি", "করবো", "করব", "আবেদন"])

@@ -46,13 +46,14 @@ class HybridRetriever:
         local_files_only: bool,
         rrf_k: int,
         rrf_weights: dict[str, float],
+        embedding_model=None,
     ) -> None:
         self.chunks = chunks
         self.chunk_by_id = {chunk["id"]: chunk for chunk in chunks}
         self.rrf_k = rrf_k
         self.rrf_weights = rrf_weights
 
-        self.embedding_model = SentenceTransformer(
+        self.embedding_model = embedding_model if embedding_model is not None else SentenceTransformer(
             embedding_model_name,
             device=embedding_device,
             local_files_only=local_files_only,

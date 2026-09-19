@@ -12,9 +12,11 @@ from src.retrieval.hybrid_retriever import HybridRetriever, RetrievalResult
 
 
 class CivicRAGPipeline:
-    def __init__(self, project_root: Path, config_path: Path) -> None:
+    def __init__(self, project_root: Path, config_path: Path, shared_pipeline=None) -> None:
         self.project_root = project_root
         self.config = json.loads(config_path.read_text(encoding="utf-8"))
+        self.domain_id = self.config.get("domain", {}).get("id", "birth_death_registration")
+        self.birth_death_rules = self.domain_id == "birth_death_registration"
         self.data_config = self.config["data"]
         self.embedding_config = self.config["embedding"]
         self.retrieval_config = self.config["retrieval"]
@@ -32,14 +34,18 @@ class CivicRAGPipeline:
             local_files_only=self.embedding_config.get("local_files_only", True),
             rrf_k=self.retrieval_config["rrf_k"],
             rrf_weights=self.retrieval_config["rrf_weights"],
+            embedding_model=shared_pipeline.retriever.embedding_model if shared_pipeline else None,
         )
         self.reranker = HybridReranker(
-            enabled=self.reranking_config.get("enabled", True),
+            enabled=self.reranking_config.get("enabled", True) and shared_pipeline is None,
             model_name=self.reranking_config["model"],
             device=self.reranking_config["device"],
             local_files_only=self.reranking_config.get("local_files_only", True),
             fallback=self.reranking_config.get("fallback", "lexical_overlap"),
+            domain_boosts=self.birth_death_rules,
         )
+        if shared_pipeline and self.reranking_config.get("enabled", True):
+            self.reranker.cross_encoder = shared_pipeline.reranker.cross_encoder
         self._generators: dict[str, OllamaAnswerGenerator] = {}
 
     def ask(
@@ -49,6 +55,8 @@ class CivicRAGPipeline:
         generate: bool = True,
         method: str = "civic",
     ) -> dict[str, Any]:
+        if not self.birth_death_rules:
+            return self._ask_experimental(query, model, generate, method)
         normalized_method = self._normalize_method(method)
         search_query = self._normalize_query_text(query)
         final_results = self.retrieve(search_query, method=normalized_method)
@@ -57,6 +65,7 @@ class CivicRAGPipeline:
             contexts = self._augment_contexts(search_query, contexts)
 
         answer = ""
+        answer_route = "retrieval_only"
         selected_model = model or self.generation_config["default_model"]
         if generate:
             max_generation_contexts = self.generation_config.get("top_k_for_generation", len(contexts))
@@ -72,9 +81,15 @@ class CivicRAGPipeline:
             if not answer:
                 answer = self._safe_extractive_answer(search_query, generation_contexts, normalized_method)
             if not answer:
+                answer_route = "llm"
                 answer = self._generator(selected_model).answer(search_query, generation_contexts)
                 if self._violates_answer_language(search_query, answer):
-                    answer = self._fallback_evidence_answer(search_query, generation_contexts) or answer
+                    fallback = self._fallback_evidence_answer(search_query, generation_contexts)
+                    if fallback:
+                        answer = fallback
+                        answer_route = "llm_then_evidence_fallback"
+            elif answer:
+                answer_route = "controlled"
 
         return {
             "query": query,
@@ -82,11 +97,35 @@ class CivicRAGPipeline:
             "method": normalized_method,
             "answer": answer,
             "sources": contexts,
+            "domain": self.domain_id,
+            "answer_route": answer_route,
         }
+
+    def _ask_experimental(self, query, model, generate, method):
+        """Reuse retrieval/generation without birth-specific templates or evidence injection."""
+        method = self._normalize_method(method)
+        search_query = unicodedata.normalize("NFC", query).strip()
+        contexts = [self._context_from_result(r) for r in self.retrieve(search_query, method)]
+        evidence = contexts[:self.generation_config.get("top_k_for_generation", 3)]
+        selected_model = model or self.generation_config["default_model"]
+        answer, route = "", "retrieval_only"
+        if generate and evidence:
+            answer = self._generator(selected_model).answer(search_query, evidence)
+            route = "llm"
+            if self._violates_answer_language(search_query, answer):
+                fallback = self._fallback_evidence_answer(search_query, evidence)
+                if fallback:
+                    answer, route = fallback, "llm_then_evidence_fallback"
+        elif generate:
+            answer = "এই ডোমেইনে প্রশ্নটির জন্য পর্যাপ্ত তথ্য পাওয়া যায়নি।" if self._is_bangla_query(query) else "No supporting evidence was found in this domain."
+            route = "no_evidence"
+        return {"query": query, "model": selected_model, "method": method,
+                "answer": answer, "sources": contexts, "domain": self.domain_id,
+                "answer_route": route, "experimental": True}
 
     def retrieve(self, query: str, method: str = "civic") -> list[RetrievalResult]:
         normalized_method = self._normalize_method(method)
-        search_query = self._normalize_query_text(query)
+        search_query = self._normalize_query_text(query) if self.birth_death_rules else unicodedata.normalize("NFC", query).strip()
         if normalized_method == "simple":
             return self.retriever.dense_only_search(
                 search_query,
