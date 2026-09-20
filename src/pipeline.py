@@ -889,7 +889,13 @@ class CivicRAGPipeline:
             return False
         if re.search(r"[\u3400-\u9FFF\u3040-\u30FF\uAC00-\uD7AF]", answer):
             return True
-        lowered = answer.lower()
+        # Source IDs are intentionally Latin-script metadata, not answer prose.
+        answer_prose = answer.split("\n\nSources:", 1)[0]
+        bangla_chars = len(re.findall(r"[\u0980-\u09FF]", answer_prose))
+        latin_chars = len(re.findall(r"[A-Za-z]", answer_prose))
+        if bangla_chars == 0 or latin_chars > max(18, bangla_chars * 1.5):
+            return True
+        lowered = answer_prose.lower()
         bad_markers = [
             "translated to english",
             "translate to english",

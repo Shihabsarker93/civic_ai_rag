@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import sys
 from http import HTTPStatus
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -18,8 +19,11 @@ os.environ.setdefault("TRANSFORMERS_OFFLINE", "1")
 from src.pipeline import CivicRAGPipeline
 
 
+BANGLA_QUERY_PATTERN = re.compile(r"[\u0980-\u09FF]")
+
+
 HTML = """<!doctype html>
-<html lang="en">
+<html lang="bn">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -190,7 +194,7 @@ HTML = """<!doctype html>
     <header>
       <div>
         <h1>Civic.ai Government Service RAG</h1>
-        <div class="sub" id="domain-note">Select a service domain. BRTA and passport are experimental datasets.</div>
+        <div class="sub" id="domain-note">বাংলা প্রশ্ন করুন এবং সঠিক সেবা ডোমেইন নির্বাচন করুন। BRTA ও Passport ডেটাসেট পরীক্ষামূলক।</div>
       </div>
       <div class="controls">
         <select id="domain" aria-label="Service domain"></select>
@@ -211,8 +215,8 @@ HTML = """<!doctype html>
       <div>
         <div id="status" class="status">Ready</div>
         <form id="form">
-          <textarea id="query" placeholder="Ask a question about the selected service domain..." required></textarea>
-          <button id="send" type="submit">Ask</button>
+          <textarea id="query" placeholder="নির্বাচিত সেবা সম্পর্কে বাংলায় প্রশ্ন লিখুন..." required></textarea>
+          <button id="send" type="submit">প্রশ্ন করুন</button>
         </form>
       </div>
     </main>
@@ -228,6 +232,7 @@ HTML = """<!doctype html>
     const registerLink = document.getElementById("register-link");
     const status = document.getElementById("status");
     const send = document.getElementById("send");
+    const banglaPattern = /[\u0980-\u09FF]/;
 
     function methodLabel(value) {
       return value === "simple" ? "Simple RAG" : "CivicRAG (ours)";
@@ -323,6 +328,11 @@ HTML = """<!doctype html>
       event.preventDefault();
       const text = query.value.trim();
       if (!text) return;
+      if (!banglaPattern.test(text)) {
+        addMessage("এই সংস্করণে অনুগ্রহ করে বাংলায় প্রশ্ন করুন।", "bot");
+        status.textContent = "বাংলা প্রশ্ন প্রয়োজন";
+        return;
+      }
       addMessage(text, "user");
       query.value = "";
       send.disabled = true;
@@ -355,7 +365,7 @@ HTML = """<!doctype html>
 
     domain.addEventListener("change", () => {
       registerLink.href = `/data-register?domain=${encodeURIComponent(domain.value)}`;
-      domainNote.textContent = domain.value === "birth_death_registration" ? "Birth and death registration" : "Experimental corpus: includes unverified and dated sources. Inspect the source details and data register.";
+      domainNote.textContent = domain.value === "birth_death_registration" ? "জন্ম ও মৃত্যু নিবন্ধন: বাংলায় প্রশ্ন করুন।" : "পরীক্ষামূলক ডেটাসেট: বাংলায় প্রশ্ন করুন এবং উৎস ও ডেটা রেজিস্টার দেখুন।";
     });
     send.disabled = true;
     fetch("/domains").then(r => r.json()).then(payload => {
@@ -369,7 +379,7 @@ HTML = """<!doctype html>
       domain.dispatchEvent(new Event("change"));
       send.disabled = false;
     }).catch(() => { status.textContent = "Unable to load service domains"; });
-    addMessage("Select a domain and a model, then ask a question. Sources identify the files used. BRTA and passport use LLM answers without birth-registration-specific templates.", "bot");
+    addMessage("সেবা ডোমেইন ও মডেল নির্বাচন করে বাংলায় প্রশ্ন করুন। উত্তরের সঙ্গে ব্যবহৃত উৎস দেখানো হবে।", "bot");
   </script>
 </body>
 </html>
@@ -426,6 +436,8 @@ class ChatHandler(BaseHTTPRequestHandler):
             method = str(payload.get("method", "civic")).strip()
             if not query:
                 raise ValueError("Query is required")
+            if not BANGLA_QUERY_PATTERN.search(query):
+                raise ValueError("এই সংস্করণে অনুগ্রহ করে বাংলায় প্রশ্ন করুন।")
             if self.pipeline is None:
                 raise RuntimeError("Pipeline is not initialized")
             domain_id = str(payload.get("domain", self.pipeline.domain_id))

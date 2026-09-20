@@ -1,3 +1,4 @@
+from src.generation.ollama_generator import detect_answer_language
 from src.pipeline import CivicRAGPipeline
 
 
@@ -12,6 +13,17 @@ def test_bangla_language_safety_answer_never_exposes_invalid_output():
     answer = CivicRAGPipeline._bangla_language_safety_answer([{"id": "brta_example"}])
     assert "নির্ভরযোগ্য বাংলায় উত্তর" in answer
     assert "brta_example" in answer
+
+
+def test_bangla_query_with_official_latin_terms_still_requests_bangla_output():
+    assert detect_answer_language("BRTA রেকর্ডে রং পরিবর্তন কীভাবে করব?") == "Bangla"
+
+
+def test_bangla_query_rejects_mostly_english_answer_prose():
+    assert CivicRAGPipeline._violates_answer_language(
+        "পাসপোর্টের পাসওয়ার্ড কীভাবে রিসেট করব?",
+        "Use the account page and select forgot password to receive a reset email.\n\nSources: passport_example",
+    )
 
 
 def test_lost_certificate_paraphrases_are_detected() -> None:

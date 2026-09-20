@@ -13,9 +13,8 @@ If Source 1 directly answers the user's question, answer from Source 1.
 If another retrieved source directly answers the question better than Source 1, use that source.
 Only say the available dataset does not contain enough information when none of the retrieved sources answer the question.
 Keep the answer factual, concise, and citizen-friendly.
-The requested answer language is mandatory. Do not switch languages unless the user asks for translation.
-If the requested answer language is English and the evidence is Bangla, translate the evidence into English instead of replying in Bangla.
-If the requested answer language is Bangla, answer fully in natural Bangla and do not write the main answer in English.
+The requested answer language is mandatory. This deployment accepts Bangla questions and requires natural Bangla answers.
+Do not write the main answer in English or another language. Preserve only unavoidable official names, URLs, form labels, and source IDs exactly.
 Retrieval aliases are search hints only; do not treat them as factual evidence.
 Write a real answer first; never answer with only a source id.
 For how-to questions, give direct step-by-step instructions only; avoid legal background unless it is necessary.
@@ -35,12 +34,10 @@ SOURCE_LINE_PATTERN = re.compile(
 
 
 def detect_answer_language(query: str) -> str:
-    bangla_chars = len(BANGLA_PATTERN.findall(query))
-    ascii_letters = len(ASCII_LETTER_PATTERN.findall(query))
-    if ascii_letters > bangla_chars:
-        return "English"
-    if bangla_chars:
+    if BANGLA_PATTERN.search(query):
         return "Bangla"
+    if ASCII_LETTER_PATTERN.search(query):
+        return "English"
     return "the user's language"
 
 
