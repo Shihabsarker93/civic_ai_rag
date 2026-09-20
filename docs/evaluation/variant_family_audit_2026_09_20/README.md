@@ -33,9 +33,15 @@ Birth/death used nine controlled answers and six LLM-grounded answers. BRTA and 
 
 These are candidate follow-up improvements for query normalization, aliases, or source/chunk wording. They must be manually checked in `answers_llama3_2.md` before changing the production pipeline.
 
+## Qwen 2.5:7B Re-run
+
+The complete 45-question protocol was re-run with `qwen2.5:7b`, using the same input, domain selection, `civic` method, and retrieval configuration. Qwen produced the same evidence diagnostic as Llama 3.2: 38 of 42 scorable questions contained their expected evidence, with the same four retrieval misses listed above. This is expected because retrieval occurs before generation and does not depend on the selected LLM backend.
+
+Qwen used nine controlled birth-domain answers, 35 LLM answers, and one `llm_then_evidence_fallback` response. The fallback is preserved in the raw result and should be inspected during qualitative answer review.
+
 ## Files
 
 - `questions.json`: question set and expected evidence hints.
 - `answers_llama3_2.json`: structured raw chatbot responses, source lists, routes, and elapsed time.
 - `answers_llama3_2.md`: readable version of every answer.
-
+- `answers_qwen2_5_7b.json` and `answers_qwen2_5_7b.md`: matching complete Qwen 2.5:7B run.
