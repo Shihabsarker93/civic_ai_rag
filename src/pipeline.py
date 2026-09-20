@@ -11,6 +11,9 @@ from src.reranking.reranker import HybridReranker
 from src.retrieval.hybrid_retriever import HybridRetriever, RetrievalResult
 
 
+BANGLA_PATTERN = re.compile(r"[\u0980-\u09FF]")
+
+
 class CivicRAGPipeline:
     def __init__(self, project_root: Path, config_path: Path, shared_pipeline=None) -> None:
         self.project_root = project_root

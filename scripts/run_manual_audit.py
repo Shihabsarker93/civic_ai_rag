@@ -24,8 +24,12 @@ def request_answer(item: dict, model: str) -> dict:
         headers={"Content-Type": "application/json"},
     )
     started = time.monotonic()
-    with urllib.request.urlopen(request, timeout=600) as response:
-        result = json.load(response)
+    try:
+        with urllib.request.urlopen(request, timeout=600) as response:
+            result = json.load(response)
+    except urllib.error.HTTPError as error:
+        body = error.read().decode("utf-8", errors="replace")
+        raise RuntimeError(f"Chat request failed for {item['id']}: HTTP {error.code}: {body}") from error
     hint = item.get("expected_evidence_hint", "").casefold()
     result["expected_evidence_present"] = (
         any(
