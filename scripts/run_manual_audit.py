@@ -5,6 +5,7 @@ import argparse
 import json
 from pathlib import Path
 import time
+import urllib.error
 import urllib.request
 
 
@@ -25,16 +26,20 @@ def request_answer(item: dict, model: str) -> dict:
     started = time.monotonic()
     with urllib.request.urlopen(request, timeout=600) as response:
         result = json.load(response)
-    hint = item["expected_evidence_hint"].casefold()
-    result["expected_evidence_present"] = any(
-        hint in (
-            source["id"]
-            + " "
-            + source["metadata"].get("source_relative_path", "")
-            + " "
-            + source["content"]
-        ).casefold()
-        for source in result.get("sources", [])
+    hint = item.get("expected_evidence_hint", "").casefold()
+    result["expected_evidence_present"] = (
+        any(
+            hint in (
+                source["id"]
+                + " "
+                + source["metadata"].get("source_relative_path", "")
+                + " "
+                + source["content"]
+            ).casefold()
+            for source in result.get("sources", [])
+        )
+        if hint
+        else None
     )
     return {
         "audit_item": item,
@@ -54,7 +59,7 @@ def write_markdown(rows: list[dict], output: Path) -> None:
         item, result = row["audit_item"], row["result"]
         lines.extend(
             [
-                f"## {item['id']} ({item['domain']} / {item['category']})",
+                f"## {item['id']} ({item['domain']} / {item.get('family', item.get('category', 'uncategorized'))} / {item.get('variant', 'single')})",
                 "",
                 f"Question: {item['question']}",
                 "",
@@ -81,14 +86,35 @@ def main() -> None:
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--model", default="llama3.2")
     parser.add_argument("--limit", type=int)
+    parser.add_argument(
+        "--resume",
+        action="store_true",
+        help="Continue from existing output rows whose audit-item IDs are already complete.",
+    )
     args = parser.parse_args()
     items = json.loads(args.input.read_text(encoding="utf-8"))["questions"]
     if args.limit:
         items = items[: args.limit]
     args.output.parent.mkdir(parents=True, exist_ok=True)
     rows: list[dict] = []
+    completed_ids: set[str] = set()
+    if args.resume and args.output.exists():
+        previous = json.loads(args.output.read_text(encoding="utf-8"))
+        rows = previous.get("rows", [])
+        completed_ids = {row["audit_item"]["id"] for row in rows}
+
     for item in items:
-        row = request_answer(item, args.model)
+        if item["id"] in completed_ids:
+            print(item["id"], "skipped", flush=True)
+            continue
+        try:
+            row = request_answer(item, args.model)
+        except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as error:
+            args.output.write_text(
+                json.dumps({"model": args.model, "rows": rows}, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+            raise RuntimeError(f"Audit stopped on {item['id']}: {error}") from error
         rows.append(row)
         args.output.write_text(
             json.dumps({"model": args.model, "rows": rows}, ensure_ascii=False, indent=2) + "\n",
