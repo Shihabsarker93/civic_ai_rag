@@ -85,9 +85,8 @@ class CivicRAGPipeline:
                 answer = self._generator(selected_model).answer(search_query, generation_contexts)
                 if self._violates_answer_language(search_query, answer):
                     fallback = self._fallback_evidence_answer(search_query, generation_contexts)
-                    if fallback:
-                        answer = fallback
-                        answer_route = "llm_then_evidence_fallback"
+                    answer = fallback or self._bangla_language_safety_answer(generation_contexts)
+                    answer_route = "llm_then_evidence_fallback"
             elif answer:
                 answer_route = "controlled"
 
@@ -114,8 +113,8 @@ class CivicRAGPipeline:
             route = "llm"
             if self._violates_answer_language(search_query, answer):
                 fallback = self._fallback_evidence_answer(search_query, evidence)
-                if fallback:
-                    answer, route = fallback, "llm_then_evidence_fallback"
+                answer = fallback or self._bangla_language_safety_answer(evidence)
+                route = "llm_then_evidence_fallback"
         elif generate:
             answer = "এই ডোমেইনে প্রশ্নটির জন্য পর্যাপ্ত তথ্য পাওয়া যায়নি।" if self._is_bangla_query(query) else "No supporting evidence was found in this domain."
             route = "no_evidence"
@@ -849,25 +848,36 @@ class CivicRAGPipeline:
         if doc_type == "faq":
             question = self._extract_labeled_value(content, "Question")
             answer = self._extract_labeled_value(content, "Answer")
-            if answer:
+            if answer and self._contains_bangla(answer):
                 prefix = f"{question}\n\n" if question else ""
                 return f"{prefix}{answer}\n\nSources: {', '.join(source_ids)}"
 
         if doc_type == "fee_row":
             item = self._extract_labeled_value(content, "Fee item")
             amount = self._extract_labeled_value(content, "Fee amount")
-            if item and amount:
+            if item and amount and self._contains_bangla(item):
                 return f"{item}: {amount}\n\nSources: {', '.join(source_ids)}"
 
         if doc_type == "fees_table":
             table = self._extract_fee_table(content)
-            if table:
+            if table and self._contains_bangla(table):
                 return f"{table}\n\nSources: {', '.join(source_ids)}"
 
         body = self._extract_labeled_value(content, "Content")
-        if body:
+        if body and self._contains_bangla(body):
             return f"{body}\n\nSources: {', '.join(source_ids)}"
         return ""
+
+    @staticmethod
+    def _bangla_language_safety_answer(contexts: list[dict[str, Any]]) -> str:
+        """Do not expose a non-Bangla model response for a Bangla user query."""
+        source_ids = [str(context["id"]) for context in contexts[:3]]
+        answer = "দুঃখিত, প্রাপ্ত উৎস থেকে নির্ভরযোগ্য বাংলায় উত্তর তৈরি করা যায়নি। নিচের উৎসগুলো দেখুন বা আরও নির্দিষ্টভাবে প্রশ্ন করুন।"
+        return f"{answer}\n\nSources: {', '.join(source_ids)}" if source_ids else answer
+
+    @staticmethod
+    def _contains_bangla(text: str) -> bool:
+        return bool(BANGLA_PATTERN.search(text))
 
     @staticmethod
     def _is_bangla_query(query: str) -> bool:
