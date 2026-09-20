@@ -1,0 +1,1269 @@
+{
+  "model": "qwen2.5:7b",
+  "rows": [
+    {
+      "audit_item": {
+        "id": "birth_deadline_direct",
+        "domain": "birth_death_registration",
+        "family": "birth_deadline",
+        "variant": "direct",
+        "question": "শিশুর জন্মের কত দিনের মধ্যে জন্ম নিবন্ধনের তথ্য দিতে হয়?",
+        "expected_evidence_hint": "birth_and_death_registration_act_2004_ধারা_৮",
+        "expected_key_fact": "৪৫ দিন"
+      },
+      "elapsed_seconds": 20.11,
+      "result": {
+        "query": "শিশুর জন্মের কত দিনের মধ্যে জন্ম নিবন্ধনের তথ্য দিতে হয়?",
+        "model": "qwen2.5:7b",
+        "method": "civic",
+        "answer": "জন্মের ৪৫ দিনের মধ্যে জন্ম সংক্রান্ত তথ্য নিবন্ধকের নিকট প্রদান করতে হবে।\n\nপ্রাসঙ্গিক বিধি/আইন: (১) শিশুর পিতা বা মাতা বা অভিভাবক বা নির্ধারিত ব্যক্তি উক্ত শিশুর জন্মের ৪৫ (পঁয়তাল্লিশ) দিনের মধ্যে জন্ম সংক্রান্ত তথ্য নিবন্ধকের নিকট প্রদানের জন্য বাধ্য থাকিবেন।\n\n(২) মৃত ব্যক্তির পুত্র বা কন্যা বা অভিভাবক বা নির্ধারিত ব্যক্তি মৃত্যুর ৪৫ (পঁয়তাল্লিশ) দিনের মধ্যে মৃত্যু সংক্রান্ত তথ্য নিবন্ধকের নিকট প্রদানের জন্য বাধ্য থাকিবেন।\n\nSources: birth_and_death_registration_act_2004_ধারা_৮_01, birth_and_death_registration_rules_2018_বিধি_৮_01, birth_and_death_registration_rules_2018_বিধি_২০_01",
+        "sources": [
+          {
+            "id": "birth_and_death_registration_act_2004_ধারা_৮_01",
+            "content": "Service: birth and death registration\nDocument type: legal_act\nTitle: জন্ম ও মৃত্যু নিবন্ধন আইন, ২০০৪\nChapter: \nLegal unit: ধারা ৮ জন্ম ও মৃত্যু তথ্য প্রদানের জন্য দায়ী ব্যক্তি\nContent: (১) শিশুর পিতা বা মাতা বা অভিভাবক বা নির্ধারিত ব্যক্তি উক্ত শিশুর জন্মের ৪৫ (পঁয়তাল্লিশ) দিনের মধ্যে জন্ম সংক্রান্ত তথ্য নিবন্ধকের নিকট প্রদানের জন্য বাধ্য থাকিবেন।\n\n(২) মৃত ব্যক্তির পুত্র বা কন্যা বা অভিভাবক বা নির্ধারিত ব্যক্তি মৃত্যুর ৪৫ (পঁয়তাল্লিশ) দিনের মধ্যে মৃত্যু সংক্রান্ত তথ্য নিবন্ধকের নিকট প্রদানের জন্য বাধ্য থাকিবেন।",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth_death",
+              "document_type": "legal_act",
+              "title": "জন্ম ও মৃত্যু নিবন্ধন আইন, ২০০৪",
+              "source_file": "birth_and_death_registration_act_2004.md",
+              "source_path": "md/birth_and_death_registration_act_2004.md",
+              "source_url": "",
+              "encoding": "",
+              "language": "bn",
+              "chapter": "",
+              "legal_unit_type": "ধারা",
+              "legal_unit_no": "৮",
+              "section_title": "জন্ম ও মৃত্যু তথ্য প্রদানের জন্য দায়ী ব্যক্তি",
+              "part_index": 1,
+              "search_aliases": "act, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, civil registration, death certificate, death certificate registration, death registration, death registration certificate, father mother information, law, legal requirement, legal rule, local government office, online birth registration, online death registration, parent information, parents registration, registrar office, registration office, registration rule, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 151,
+              "retrieval_token_count": 324,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.9907163977622986,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৮_01",
+            "content": "Service: birth and death registration\nDocument type: legal_rules\nTitle: জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮\nChapter: দ্বিতীয় অধ্যায়: জন্ম নিবন্ধন\nLegal unit: বিধি ৮ তথ্য প্রদানকারী অন্যান্য ব্যক্তি\nContent: (১) কোন ব্যক্তির জন্ম বা মৃত্যুর সময় আইনের ধারা ৮ এ উল্লিখিত ব্যক্তিবর্গের কেহ উপস্থিত না থাকিলে সেই ক্ষেত্রে নিম্নবর্ণিত ব্যক্তিবর্গের যে কেহ জন্ম বা মৃত্যুর ৪৫ (পঁয়তাল্লিশ) দিনের মধ্যে জন্ম বা মৃত্যুর তথ্য নিবন্ধকের নিকট প্রেরণ করিবেন, যথা:-\n(ক) জন্মের ক্ষেত্রে সংশ্লিষ্ট ব্যক্তির ভাই, বোন, পিতামহ, পিতামহী, মাতামহ বা মাতামহী এবং মৃত্যুর ক্ষেত্রে পিতা, মাতা, ভাই, বোন, পুত্রবধূ, জামাতা, পৌত্র, পৌত্রী, দৌহিত্র বা দৌহিত্রী (খ) কোন প্রতিষ্ঠানে জন্ম বা মৃত্যুর ক্ষেত্রে উক্ত প্রতিষ্ঠানের প্রধান বা তৎকর্তৃক ক্ষমতাপ্রাপ্ত ব্যক্তি (গ) কোন দালান বা বাড়িতে জন্ম বা মৃত্যুর ক্ষেত্রে উক্ত দালান বা বাড়ির মালিক বা তৎকর্তৃক ক্ষমতাপ্রাপ্ত ব্যক্তি (ঘ) কোন সড়কযান, নৌযান বা আকাশযানে জন্ম বা মৃত্যুর ক্ষেত্রে উক্ত যান পরিচালনাকারী বা নিয়ন্ত্রণকারী বা তৎকর্তৃক ক্ষমতাপ্রাপ্ত ব্যক্তি এবং (ঙ) রাস্তায় বা উন্মুক্ত স্থানে জন্ম বা মৃত্যুর ক্ষেত্রে, উক্ত রাস্তা বা উন্মুক্ত স্থান যে থানার অধীন সেই থানার ভারপ্রাপ্ত কর্মকর্তা। (২) আইনের ধারা ৯ এর উপ-ধারা (১) এর দফা (ট) এর উদ্দেশ্য পূরণকল্পে নিবন্ধক তাহার নিয়ন্ত্রণাধীন এলাকার সরকারি ও বেসরকারি শিক্ষা প্রতিষ্ঠানের শিক্ষক, সমাজকর্মী, মসজিদের ইমাম, পুরোহিত বা সৎকার (অন্ত্যেষ্টিক্রিয়া) সম্পন্নকারী বা অনুরূপ গ্রহণযোগ্য কোন ব্যক্তি বা বেসরকারি প্রতিষ্ঠানের কর্মী বা স্বেচ্ছাসেবী বা অন্য কোন ব্যক্তি বা প্রতিষ্ঠানকে কোন শিশুর জন্ম বা কোন ব্যক্তির মৃত্যুর তথ্য সংগ্রহের দায়িত্ব প্রদান করিতে পারিবেন।",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth_death",
+              "document_type": "legal_rules",
+              "title": "জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮",
+              "source_file": "birth_and_death_registration_rules_2018.docx",
+              "source_path": "md/birth_and_death_registration_rules_2018.md",
+              "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "chapter": "দ্বিতীয় অধ্যায়: জন্ম নিবন্ধন",
+              "legal_unit_type": "বিধি",
+              "legal_unit_no": "৮",
+              "section_title": "তথ্য প্রদানকারী অন্যান্য ব্যক্তি",
+              "part_index": 1,
+              "search_aliases": "act, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, civil registration, death certificate, death certificate registration, death registration, death registration certificate, father mother information, law, legal requirement, legal rule, local government office, online birth registration, online death registration, parent information, parents registration, registrar office, registration office, registration rule, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 466,
+              "retrieval_token_count": 639,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.9678413271903992,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_২০_01",
+            "content": "Service: birth and death registration\nDocument type: legal_rules\nTitle: জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮\nChapter: সপ্তম অধ্যায়: বিবিধ\nLegal unit: বিধি ২০ অনলাইনে আবেদন বা তথ্য প্রদান\nContent: (১) চিকিৎসা প্রতিষ্ঠান বা স্বাস্থ্যকর্মীগণ নিবন্ধনযোগ্য ব্যক্তির জন্ম বা মৃত্যুর তথ্য ৪৫ (পঁয়তাল্লিশ) দিনের মধ্যে নিবন্ধনের যোগ্য স্থানের নিবন্ধকের নিকট অনলাইনে প্রদান করিতে পারিবেন। (২) বিদেশে জন্ম গ্রহণকারী শিশু ব্যতীত বাংলাদেশ দূতাবাস নিবন্ধনযোগ্য অন্যান্য ব্যক্তির জন্ম বা মৃত্যুর তথ্য ব্যক্তির স্থায়ী ঠিকানার নিবন্ধকের নিকট অনলাইনে প্রদান করিতে পারিবেন। (৩) সরকারের সিদ্ধান্ত অনুযায়ী দূতাবাসসমূহ বিদেশে জন্ম হয় নাই তবে বৈধ পাসপোর্টধারী এমন কোন প্রবাসী বাংলাদেশী নাগরিকের জন্ম নিবন্ধন করিতে পারিবে। (৪) উপ-বিধি (১) এর অধীন অনলাইনে তথ্য প্রেরণের পর কম্পিউটার জেনারেটেড নম্বরসহ ব্যক্তির আবেদনপত্রের একটি প্রিন্ট কপি পাওয়া যাইবে এবং উক্ত প্রিন্ট কপির সহিত প্রয়োজনীয় দলিলাদি ও প্রত্যয়ন সংযুক্ত করিয়া, ক্ষেত্র বিশেষে, ব্যক্তি বা ব্যক্তির অভিভাবক সশরীরে নিবন্ধকের নিকট উহা দাখিল করিবেন। (৫) উপ-বিধি (৪) এর বিধান অনুযায়ী আবেদনপত্র প্রাপ্তির পর নিবন্ধক জন্ম নিবন্ধনের ক্ষেত্রে বিধি ৯ বা, ক্ষেত্রমত, বিধি ১০ এবং মৃত্যু নিবন্ধনের ক্ষেত্রে বিধি ১১ বা, ক্ষেত্রমত, বিধি ১২ অনুযায়ী ব্যবস্থা গ্রহণ করিবেন।",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth_death",
+              "document_type": "legal_rules",
+              "title": "জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮",
+              "source_file": "birth_and_death_registration_rules_2018.docx",
+              "source_path": "md/birth_and_death_registration_rules_2018.md",
+              "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "chapter": "সপ্তম অধ্যায়: বিবিধ",
+              "legal_unit_type": "বিধি",
+              "legal_unit_no": "২০",
+              "section_title": "অনলাইনে আবেদন বা তথ্য প্রদান",
+              "part_index": 1,
+              "search_aliases": "act, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, civil registration, death certificate, death certificate registration, death registration, death registration certificate, law, legal requirement, legal rule, local government office, online birth registration, online death registration, registrar office, registration office, registration rule, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 346,
+              "retrieval_token_count": 509,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.962911069393158,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_act_2004_ধারা_১০_01",
+            "content": "Service: birth and death registration\nDocument type: legal_act\nTitle: জন্ম ও মৃত্যু নিবন্ধন আইন, ২০০৪\nChapter: \nLegal unit: ধারা ১০ শিশুর নাম নির্ধারণ\nContent: জন্ম নিবন্ধনের পূর্বে শিশুর নাম নির্ধারণ করিতে হইবে।\n\nতবে শর্ত থাকে যে, কোন শিশুর নাম নির্ধারণ করা না হইলে উক্ত শিশুর জন্ম নিবন্ধন করা যাইবে এবং সেইক্ষেত্রে নিবন্ধনের পরবর্তী ৪৫ (পঁয়তাল্লিশ) দিনের মধ্যে তাহার নাম সরবরাহ করিতে হইবে।",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth_death",
+              "document_type": "legal_act",
+              "title": "জন্ম ও মৃত্যু নিবন্ধন আইন, ২০০৪",
+              "source_file": "birth_and_death_registration_act_2004.md",
+              "source_path": "md/birth_and_death_registration_act_2004.md",
+              "source_url": "",
+              "encoding": "",
+              "language": "bn",
+              "chapter": "",
+              "legal_unit_type": "ধারা",
+              "legal_unit_no": "১০",
+              "section_title": "শিশুর নাম নির্ধারণ",
+              "part_index": 1,
+              "search_aliases": "act, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, civil registration, death certificate, death certificate registration, death registration, death registration certificate, law, legal requirement, legal rule, online birth registration, online death registration, registration rule, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 116,
+              "retrieval_token_count": 269,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.953827977180481,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "bdris_faq_02_q01",
+            "content": "Service: birth and death registration\nDocument type: faq\nCategory: parents_registration\nTitle: জন্ম ও মৃত্যু নিবন্ধন সংক্রান্ত সচরাচর জিজ্ঞাসিত প্রশ্ন ও তার উত্তর\nTitle EN: Frequently Asked Questions on Birth and Death Registration\nQuestion: জন্মের ৪৫ দিনের মধ্যে কিংবা পরবর্তী সময়েও নিবন্ধন করতে পিতামাতার জন্ম নিবন্ধন পাওয়া যায় না, করণীয় কী?\nAnswer: সন্তানের জন্ম নিবন্ধনের সঙ্গে পিতামাতার জন্ম নিবন্ধন একসাথে করা অপেক্ষাকৃত সহজ। সন্তানের নিবন্ধনের প্রয়োজনীয় তথ্যের সঙ্গে পিতামাতার বয়স প্রমাণের রেকর্ড (শিক্ষা সনদ বা আইনের ৭(১) ধারা অনুযায়ী তদন্তসহ এনআইডি) যোগ করলেই তাদের জন্ম নিবন্ধন করা সম্ভব। বিষয়টিকে সমস্যা না ভেবে 'সুযোগ' হিসেবে দেখা যেতে পারে।\n\nতবে পূর্ব থেকে পিতামাতার নিবন্ধন থাকলে এবং তাতে ভুল থাকলে, সন্তানের নিবন্ধনের আগে সংশোধন আবেদন করে সংশোধন করে নিতে হবে।\nLegal references: জন্ম ও মৃত্যু নিবন্ধন আইন ২০০৪, ধারা ৭(১)\nKeywords BN: পিতামাতার নিবন্ধন, ৪৫ দিন, বয়স প্রমাণ, পূর্ব সংশোধন\nKeywords EN: parents registration, 45 days, age proof, prior correction",
+            "metadata": {
+              "doc_id": "bdris_faq_02",
+              "title": "জন্ম ও মৃত্যু নিবন্ধন সংক্রান্ত সচরাচর জিজ্ঞাসিত প্রশ্ন ও তার উত্তর",
+              "title_en": "Frequently Asked Questions on Birth and Death Registration",
+              "source_url": "https://goradubaup.netrokona.gov.bd/pages/static-pages/69708eb0a31054345f15bdab",
+              "issuing_authority": "গড়াডোবা ইউনিয়ন পরিষদ",
+              "issuing_authority_en": "Goraduba Union Parishad",
+              "district": "নেত্রকোনা",
+              "district_en": "Netrokona",
+              "last_updated": "2024-12-25",
+              "language": "bn",
+              "doc_type": "faq",
+              "domain": "civil_registration",
+              "country": "BD",
+              "total_faqs": 10,
+              "source_path": "faqs_birth_death_registration_02.json",
+              "document_type": "faq",
+              "category": "parents_registration",
+              "faq_number": 1,
+              "service": "birth_death_registration",
+              "service_scope": "birth",
+              "search_aliases": "amend registration information, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, certificate, certificate correction, citizen question, civil registration, common question, death certificate correction, FAQ, father mother information, fix certificate information, name correction, online birth registration, parent information, parents registration, question answer, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, প্রশ্ন উত্তর, মৃত্যু নিবন্ধন সংশোধন, সংশোধন আবেদন, সাধারণ জিজ্ঞাসা",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 262,
+              "retrieval_token_count": 423,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.9450334310531616,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_02",
+            "content": "Service: birth and death registration\nDocument type: legal_rules\nTitle: জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮\nChapter: দ্বিতীয় অধ্যায়: জন্ম নিবন্ধন\nLegal unit: বিধি ৯ জন্ম নিবন্ধন\nContent: (ক) ব্যক্তির জন্মের ৪৫ (পঁয়তাল্লিশ) দিনের মধ্যে দাখিলকৃত আবেদনপত্রের সহিত নিম্নলিখিত প্রমাণাদি সংযুক্ত করিতে হইবে, যথা:\n(অ) জন্মস্থান ও জন্ম তারিখের প্রমাণ হিসাবে সংশ্লিষ্ট চিকিৎসা প্রতিষ্ঠানের ছাড়পত্র বা উক্ত প্রতিষ্ঠান হইতে প্রাপ্ত জন্ম সংক্রান্ত সনদের সত্যায়িত অনুলিপি অথবা বার্থ এটেন্ডেন্ট এর প্রত্যয়ন বা অন্য কোন প্রমাণপত্র অথবা (আ) ব্যক্তির স্থায়ী ঠিকানার প্রমাণ হিসাবে ব্যক্তির নিজের বা পিতা বা মাতা বা পিতামহ বা পিতামহীর দ্বারা স্বনামে স্থায়ী ঠিকানা হিসাবে ঘোষিত আবাসস্থলের বিপরীতে হালনাগাদ কর পরিশোধের প্রমাণপত্র অথবা পিতা বা মাতা বা পিতামহ বা পিতামহীর জাতীয় পরিচয়পত্র বা পাসপোর্টে ঘোষিত স্থায়ী ঠিকানা বা অন্যকোন প্রমাণপত্র এবং জন্ম ও মৃত্যু নিবন্ধনের দ্বৈততা পরিহার করিবার লক্ষ্যে, প্রযোজ্য ক্ষেত্রে, জন্ম নিবন্ধনাধীন ব্যক্তির পিতা ও মাতার জন্ম নিবন্ধন ন¤¦র অথবা জাতীয় পরিচয়পত্র নম্বর উল্লেখসহ উহার সনদ দাখিল করিতে হইবে (ই) নদী ভাঙ্গন বা অন্য কোন কারণে স্থায়ী ঠিকানা বিলুপ্ত হইয়া থাকিলে নতুন স্থায়ী বসতির অনুকূলে প্রমাণক হিসাবে জমি বা বাড়ি ক্রয়ের দলিল, খাজনা ও কর পরিশোধের রসিদ, প্রভৃতি দাখিল করিলে নতুন বসতির ঠিকানা স্থায়ী ঠিকানা হিসাবে গণ্য করা যাইবে (ঈ) কোন কারণে কোন ব্যক্তির স্থায়ী ঠিকানা না থাকিলে স্থায়ী ঠিকানার স্থানে অপ্রাপ্য লিখিয়া জন্মস্থানের নিবন্ধকের নিকট জন্ম নিবন্ধন করিতে হইবে এবং এই ক্ষেত্রে আইনের ধারা ৯ এর উপ-ধারা",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth_death",
+              "document_type": "legal_rules",
+              "title": "জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮",
+              "source_file": "birth_and_death_registration_rules_2018.docx",
+              "source_path": "md/birth_and_death_registration_rules_2018.md",
+              "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "chapter": "দ্বিতীয় অধ্যায়: জন্ম নিবন্ধন",
+              "legal_unit_type": "বিধি",
+              "legal_unit_no": "৯",
+              "section_title": "জন্ম নিবন্ধন",
+              "part_index": 2,
+              "search_aliases": "act, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, civil registration, date of birth correction, death certificate, death certificate registration, death registration, death registration certificate, father mother information, law, legal requirement, legal rule, local government office, online birth registration, online death registration, parent information, parents registration, registrar office, registration office, registration rule, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম তারিখ সংশোধন, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 458,
+              "retrieval_token_count": 643,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.9368899464607239,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          }
+        ],
+        "domain": "birth_death_registration",
+        "answer_route": "controlled",
+        "expected_evidence_present": true
+      }
+    },
+    {
+      "audit_item": {
+        "id": "birth_deadline_code_mixed",
+        "domain": "birth_death_registration",
+        "family": "birth_deadline",
+        "variant": "code_mixed",
+        "question": "baby birth er por birth registration information kotodin er moddhe dite hoy?",
+        "expected_evidence_hint": "birth_and_death_registration_act_2004_ধারা_৮",
+        "expected_key_fact": "৪৫ দিন"
+      },
+      "elapsed_seconds": 54.7,
+      "result": {
+        "query": "baby birth er por birth registration information kotodin er moddhe dite hoy?",
+        "model": "qwen2.5:7b",
+        "method": "civic",
+        "answer": "The birth registration information must be provided within a day after the baby's birth. You need to provide:\n\n- Baby’s name in Bangla and English\n- Date of birth\n- Gender\n- Order of birth\n- Place of birth address\n\nThese details should be entered correctly as per their online birth registration record. After providing this information, click on the \"Verify\" button.\n\nSources: birth_registration_application_process_02_cleaned_006_01, know_this_01_cleaned_003_01, birth_registration_application_process_cleaned_012_01",
+        "sources": [
+          {
+            "id": "birth_registration_application_process_02_cleaned_006_01",
+            "content": "Service: birth and death registration\nDocument type: application_process\nTitle: জন্ম নিবন্ধনের আবেদন প্রসেস\nSection: ধাপ ৪: জন্ম তথ্য প্রদান\nContent: নিবন্ধনাধীন ব্যক্তির নিম্নোক্ত তথ্য প্রদান করুন:\n\n- নাম (বাংলা)\n- নাম (ইংরেজি)\n- জন্ম তারিখ\n- লিঙ্গ\n- কততম সন্তান\n- জন্মস্থানের ঠিকানা",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth",
+              "document_type": "application_process",
+              "title": "জন্ম নিবন্ধনের আবেদন প্রসেস",
+              "source_file": "birth_registration_application_process_02.docx",
+              "source_path": "md/birth_registration_application_process_02_cleaned.md",
+              "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "section_title": "ধাপ ৪: জন্ম তথ্য প্রদান",
+              "section_index": 6,
+              "part_index": 1,
+              "search_aliases": "application process, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, citizen service, civil registration, date of birth correction, how to apply, online application, online birth registration, registration process, required documents, আবেদন পদ্ধতি, আবেদন প্রক্রিয়া, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম তারিখ সংশোধন, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, ধাপে ধাপে আবেদন, নিবন্ধন পদ্ধতি, নিবন্ধন প্রক্রিয়া, প্রয়োজনীয় কাগজপত্র",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 73,
+              "retrieval_token_count": 220,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.10461433082818986,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "know_this_01_cleaned_003_01",
+            "content": "Service: birth and death registration\nDocument type: general_guidance\nTitle: জেনে রাখুন\nSection: জন্ম নিবন্ধনের পদ্ধতি\nContent: জন্ম ও মৃত্যু নিবন্ধন আইন, ২০০৪ এর আওতায় একজন মানুষের নাম, লিঙ্গ, জন্মের তারিখ ও স্থান, বাবা-মায়ের নাম, তাদের জাতীয়তা এবং স্থায়ী ঠিকানা নির্ধারিত নিবন্ধক কর্তৃক কম্পিউটারে এন্ট্রি প্রদানসহ ডেটাবেইজে সংরক্ষণ এবং জন্ম নিবন্ধন সনদ প্রদান করা।",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth",
+              "document_type": "general_guidance",
+              "title": "জেনে রাখুন",
+              "source_file": "know_this_01.docx",
+              "source_path": "md/know_this_01_cleaned.md",
+              "source_url": "https://orgbdr.portal.gov.bd/pages/static-pages/6922de23933eb65569e18817",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "section_title": "জন্ম নিবন্ধনের পদ্ধতি",
+              "section_index": 3,
+              "part_index": 1,
+              "search_aliases": "application process, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, citizen service, civil registration, how to apply, local government office, online application, online birth registration, registrar office, registration office, registration process, required documents, আবেদন পদ্ধতি, আবেদন প্রক্রিয়া, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, ধাপে ধাপে আবেদন, নিবন্ধন পদ্ধতি, নিবন্ধন প্রক্রিয়া, প্রয়োজনীয় কাগজপত্র",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 100,
+              "retrieval_token_count": 245,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.05196593534201384,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_012_01",
+            "content": "Service: birth and death registration\nDocument type: application_process\nTitle: জন্ম নিবন্ধিকরণ প্রক্রিয়া\nSection: ২০১৩ সালের পর জন্মগ্রহণকারী ব্যক্তির ক্ষেত্রে\nContent: নিম্নোক্ত তথ্য প্রদান বাধ্যতামূলক:\n\n- পিতা ও মাতার জন্ম নিবন্ধন নম্বর\n- পিতা ও মাতার জন্ম তারিখ\n\nএরপর:\n\n- পিতার নাম (বাংলা ও ইংরেজি)\n- মাতার নাম (বাংলা ও ইংরেজি)\n\nসঠিকভাবে লিখতে হবে।\n\nপিতা-মাতার নাম তাদের অনলাইন জন্ম নিবন্ধনে যেভাবে আছে, ঠিক সেভাবেই লিখতে হবে।\n\nএরপর **Verify** বাটনে ক্লিক করতে হবে।",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth",
+              "document_type": "application_process",
+              "title": "জন্ম নিবন্ধিকরণ প্রক্রিয়া",
+              "source_file": "birth_registration_application_process.docx",
+              "source_path": "md/birth_registration_application_process_cleaned.md",
+              "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "section_title": "২০১৩ সালের পর জন্মগ্রহণকারী ব্যক্তির ক্ষেত্রে",
+              "section_index": 12,
+              "part_index": 1,
+              "search_aliases": "application process, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, citizen service, civil registration, date of birth correction, father mother information, how to apply, online application, online birth registration, parent information, parents registration, registration process, required documents, আবেদন পদ্ধতি, আবেদন প্রক্রিয়া, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম তারিখ সংশোধন, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, ধাপে ধাপে আবেদন, নিবন্ধন পদ্ধতি, নিবন্ধন প্রক্রিয়া, প্রয়োজনীয় কাগজপত্র",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 124,
+              "retrieval_token_count": 281,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.04255139055661857,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_008_01",
+            "content": "Service: birth and death registration\nDocument type: correction_process\nTitle: জন্ম তথ্য সংশোধনের জন্য আবেদন\nSection: পরিস্থিতি ৩: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই, পিতা বা মাতা মৃত এবং জন্ম তারিখ ০১/০১/২০০১-এর পরে\nContent: যদি:\n\n- পিতা বা মাতার জন্ম নিবন্ধন নম্বর না থাকে,\n- পিতা বা মাতা মৃত হন, এবং\n- আপনার জন্ম তারিখ ০১/০১/২০০১-এর পরে হয়,\n\nতাহলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করার সময় পিতা বা মাতার নাম সংশোধন করা যাবে।",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth",
+              "document_type": "correction_process",
+              "title": "জন্ম তথ্য সংশোধনের জন্য আবেদন",
+              "source_file": "application_for_birth_information_correction.docx",
+              "source_path": "md/application_for_birth_information_correction_cleaned.md",
+              "source_url": "https://bdris.gov.bd/br/correction",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "section_title": "পরিস্থিতি ৩: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই, পিতা বা মাতা মৃত এবং জন্ম তারিখ ০১/০১/২০০১-এর পরে",
+              "section_index": 8,
+              "part_index": 1,
+              "search_aliases": "amend registration information, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, certificate, certificate correction, civil registration, date of birth correction, death certificate correction, father mother information, fix certificate information, name correction, online birth registration, parent information, parents registration, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম তারিখ সংশোধন, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন সংশোধন, সংশোধন আবেদন",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 122,
+              "retrieval_token_count": 278,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.00921008363366127,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_006_01",
+            "content": "Service: birth and death registration\nDocument type: correction_process\nTitle: জন্ম তথ্য সংশোধনের জন্য আবেদন\nSection: পরিস্থিতি ২: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই এবং জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে\nContent: যদি:\n\n- পিতা বা মাতার জন্ম নিবন্ধন নম্বর না থাকে, এবং\n- আপনার জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে হয়,\n\nতাহলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করার সময় পিতা বা মাতার নাম সংশোধন করা যাবে।",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth",
+              "document_type": "correction_process",
+              "title": "জন্ম তথ্য সংশোধনের জন্য আবেদন",
+              "source_file": "application_for_birth_information_correction.docx",
+              "source_path": "md/application_for_birth_information_correction_cleaned.md",
+              "source_url": "https://bdris.gov.bd/br/correction",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "section_title": "পরিস্থিতি ২: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই এবং জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে",
+              "section_index": 6,
+              "part_index": 1,
+              "search_aliases": "amend registration information, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, certificate, certificate correction, civil registration, date of birth correction, death certificate correction, father mother information, fix certificate information, name correction, online birth registration, parent information, parents registration, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম তারিখ সংশোধন, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন সংশোধন, সংশোধন আবেদন",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 108,
+              "retrieval_token_count": 264,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.007676234003156424,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_005_01",
+            "content": "Service: birth and death registration\nDocument type: correction_process\nTitle: জন্ম তথ্য সংশোধনের জন্য আবেদন\nSection: যদি পূর্বে জন্ম নিবন্ধনে পিতা বা মাতার জন্ম নিবন্ধন নম্বর যুক্ত করা না থাকে\nContent: আপনার জন্ম নিবন্ধন করার সময় যদি পিতা বা মাতার জন্ম নিবন্ধন নম্বর প্রদান করা না হয়ে থাকে, তাহলে আপনার জন্ম নিবন্ধন নম্বরের সাথে পিতা বা মাতার জন্ম নিবন্ধন নম্বর ম্যাপ করতে হবে।\n\nম্যাপিং সম্পন্ন হওয়ার পর জন্ম নিবন্ধন সনদ পুনর্মুদ্রণ করলে সেখানে সংশোধিত নাম প্রদর্শিত হবে।\n\n---",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth",
+              "document_type": "correction_process",
+              "title": "জন্ম তথ্য সংশোধনের জন্য আবেদন",
+              "source_file": "application_for_birth_information_correction.docx",
+              "source_path": "md/application_for_birth_information_correction_cleaned.md",
+              "source_url": "https://bdris.gov.bd/br/correction",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "section_title": "যদি পূর্বে জন্ম নিবন্ধনে পিতা বা মাতার জন্ম নিবন্ধন নম্বর যুক্ত করা না থাকে",
+              "section_index": 5,
+              "part_index": 1,
+              "search_aliases": "amend registration information, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, certificate, certificate correction, civil registration, death certificate correction, father mother information, fix certificate information, name correction, online birth registration, parent information, parents registration, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন সংশোধন, সংশোধন আবেদন",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 116,
+              "retrieval_token_count": 260,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.006693123374134302,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          }
+        ],
+        "domain": "birth_death_registration",
+        "answer_route": "llm",
+        "expected_evidence_present": false
+      }
+    },
+    {
+      "audit_item": {
+        "id": "brta_age_direct",
+        "domain": "brta",
+        "family": "professional_license_age",
+        "variant": "direct",
+        "question": "পেশাদার ড্রাইভিং লাইসেন্সের জন্য ন্যূনতম বয়স কত?",
+        "expected_evidence_hint": "নতুন ড্রাইভিং লাইসেন্স ইস্যু",
+        "expected_key_fact": "২১ বছর"
+      },
+      "elapsed_seconds": 76.89,
+      "result": {
+        "query": "পেশাদার ড্রাইভিং লাইসেন্সের জন্য ন্যূনতম বয়স কত?",
+        "model": "qwen2.5:7b",
+        "method": "civic",
+        "answer": "পেশাদার ড্রাইভিং লাইসেন্সের জন্য ন্যূমতম বয়স ২১ বছর।\n\nSources: brta_cbe22ab64acf3d03_v2_0007, brta_cbe22ab64acf3d03_v2_0002, brta_846a4041fe96a64e_v2_0002",
+        "sources": [
+          {
+            "id": "brta_cbe22ab64acf3d03_v2_0007",
+            "content": "ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন প্রক্রিয়া\nড্রাইভিং লাইসেন্স > পেশাদার ড্রাইভিং লাইসেন্সের প্রকৃতি\n\n## পেশাদার ড্রাইভিং লাইসেন্সের প্রকৃতি\n\n* **পেশাদার হালকা:** মোটরযানের ওজন ২৫০০ কেজি-এর নিচে। ড্রাইভিং লাইসেন্সের জন্য প্রার্থীর বয়স কমপক্ষে ২১ বছর হতে হবে।\n* **পেশাদার মধ্যম:** মোটরযানের ওজন ২৫০০ থেকে ৬৫০০ কেজি। ড্রাইভিং লাইসেন্সের জন্য পেশাদার হালকা ড্রাইভিং লাইসেন্সের ব্যবহার কমপক্ষে ০৩ বছর হতে হবে।\n* **পেশাদার ভারী:** মোটরযানের ওজন ৬৫০০ কেজির বেশী। ড্রাইভিং লাইসেন্সের জন্য পেশাদার মধ্যম ড্রাইভিং লাইসেন্সের ব্যবহার কমপক্ষে ০৩ বছর হতে হবে।\n\n> **বিশেষ দ্রষ্টব্য:** পেশাদার ভারী ড্রাইভিং লাইসেন্স প্রাপ্তির জন্য প্রার্থীকে প্রথমে হালকা ড্রাইভিং লাইসেন্স নিতে হবে, এর ন্যূনতম তিন বছর পর তিনি পেশাদার মিডিয়াম ড্রাইভিং লাইসেন্স-এর জন্য আবেদন করতে পারবেন এবং মিডিয়াম ড্রাইভিং লাইসেন্স পাওয়ার কমপক্ষে ০৩ (তিন) বছর পর ভারী ড্রাইভিং লাইসেন্স-এর জন্য আবেদন করতে পারবেন।\n\n---\n\n",
+            "metadata": {
+              "domain": "brta",
+              "doc_id": "brta_cbe22ab64acf3d03",
+              "document_id": "brta_cbe22ab64acf3d03",
+              "title": "ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন প্রক্রিয়া",
+              "section_title": "ড্রাইভিং লাইসেন্স > পেশাদার ড্রাইভিং লাইসেন্সের প্রকৃতি",
+              "document_type": "সাধারণ তথ্য / নির্দেশিকা",
+              "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta/সেবাসমূহ/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.md",
+              "source_relative_path": "fahim_brta/সেবাসমূহ/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.md",
+              "snapshot_path": "domains/brta/data/source_snapshots/fahim_brta/সেবাসমূহ/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.md",
+              "source_sha256": "c19bf1f86060bfd79b729b7a10cbc7d8a403d918cc21511262cff6d5d4a3a114",
+              "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/সেবাসমূহ_original/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.pdf\"]",
+              "document_date": "N/A",
+              "date_verified": false,
+              "audit_flags": "citation_markers_removed_from_derived_text, no_web_address",
+              "experimental": true,
+              "body_start": 3100,
+              "body_end": 3876,
+              "source_url": "",
+              "chunking_version": "heading_faq_v2",
+              "faq_unit": false
+            },
+            "score": 0.9954541921615601,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "brta_cbe22ab64acf3d03_v2_0002",
+            "content": "ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন প্রক্রিয়া\nড্রাইভিং লাইসেন্স > ড্রাইভিং লাইসেন্সের পূর্বশর্ত\n\n## ড্রাইভিং লাইসেন্সের পূর্বশর্ত\n\n* **শিক্ষানবিশ লাইসেন্স:** ড্রাইভিং লাইসেন্সের পূর্বশর্ত হলো লার্নার বা শিক্ষানবিশ ড্রাইভিং লাইসেন্স।\n* **শিক্ষাগত যোগ্যতা:** ড্রাইভিং লাইসেন্সের আবেদনকারীর ন্যূনতম শিক্ষাগত যোগ্যতা ৮ম শ্রেণী পাশ।\n* **বয়সসীমা:** অপেশাদার এর জন্য ন্যূনতম ১৮ বছর এবং পেশাদার ড্রাইভিং লাইসেন্স-এর জন্য বয়স ন্যূনতম ২১ বছর হতে হবে।\n* **শারীরিক যোগ্যতা:** মানসিক ও শারীরিকভাবে সুস্থ থাকতে হবে।\n\n---\n\n",
+            "metadata": {
+              "domain": "brta",
+              "doc_id": "brta_cbe22ab64acf3d03",
+              "document_id": "brta_cbe22ab64acf3d03",
+              "title": "ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন প্রক্রিয়া",
+              "section_title": "ড্রাইভিং লাইসেন্স > ড্রাইভিং লাইসেন্সের পূর্বশর্ত",
+              "document_type": "সাধারণ তথ্য / নির্দেশিকা",
+              "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta/সেবাসমূহ/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.md",
+              "source_relative_path": "fahim_brta/সেবাসমূহ/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.md",
+              "snapshot_path": "domains/brta/data/source_snapshots/fahim_brta/সেবাসমূহ/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.md",
+              "source_sha256": "c19bf1f86060bfd79b729b7a10cbc7d8a403d918cc21511262cff6d5d4a3a114",
+              "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/সেবাসমূহ_original/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.pdf\"]",
+              "document_date": "N/A",
+              "date_verified": false,
+              "audit_flags": "citation_markers_removed_from_derived_text, no_web_address",
+              "experimental": true,
+              "body_start": 21,
+              "body_end": 434,
+              "source_url": "",
+              "chunking_version": "heading_faq_v2",
+              "faq_unit": false
+            },
+            "score": 0.993933379650116,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "brta_846a4041fe96a64e_v2_0002",
+            "content": "ড্রাইভিং লাইসেন্স পাওয়ার প্রক্রিয়া\nড্রাইভিং লাইসেন্স পাওয়ার প্রক্রিয়া > ড্রাইভিং লাইসেন্স প্রাপ্তির পূর্ব শর্ত\n\n## ড্রাইভিং লাইসেন্স প্রাপ্তির পূর্ব শর্ত\n\n* **শিক্ষানবিশ লাইসেন্স:** ড্রাইভিং লাইসেন্সের পূর্বশর্ত হলো লার্নার বা শিক্ষানবিশ ড্রাইভিং লাইসেন্স ইস্যু/গ্রহণ।\n* **শিক্ষাগত যোগ্যতা:** ড্রাইভিং লাইসেন্সের আবেদনকারীর ন্যূনতম শিক্ষাগত যোগ্যতা ৮ম শ্রেণী পাশ।\n* **বয়সসীমা:** অপেশাদার চালকদের জন্য ন্যূনতম ১৮ বছর এবং পেশাদার ড্রাইভিং লাইসেন্স-এর জন্য বয়স ন্যূনতম ২১ বছর হওয়া।\n* **শারীরিক যোগ্যতা:** মানসিক ও শারীরিকভাবে সুস্থ থাকতে হবে।\n\n---\n\n",
+            "metadata": {
+              "domain": "brta",
+              "doc_id": "brta_846a4041fe96a64e",
+              "document_id": "brta_846a4041fe96a64e",
+              "title": "ড্রাইভিং লাইসেন্স পাওয়ার প্রক্রিয়া",
+              "section_title": "ড্রাইভিং লাইসেন্স পাওয়ার প্রক্রিয়া > ড্রাইভিং লাইসেন্স প্রাপ্তির পূর্ব শর্ত",
+              "document_type": "সাধারণ তথ্য / নির্দেশিকা",
+              "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta/সেবাসমূহ/নতুন ড্রাইভিং লাইসেন্স ইস্যু.md",
+              "source_relative_path": "fahim_brta/সেবাসমূহ/নতুন ড্রাইভিং লাইসেন্স ইস্যু.md",
+              "snapshot_path": "domains/brta/data/source_snapshots/fahim_brta/সেবাসমূহ/নতুন ড্রাইভিং লাইসেন্স ইস্যু.md",
+              "source_sha256": "26232309419850bdddfee1e1a7d9342ed13e5233176db8359ba06cdd3146f6f5",
+              "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/সেবাসমূহ_original/নতুন ড্রাইভিং লাইসেন্স ইস্যু.pdf\"]",
+              "document_date": "2022-12-21",
+              "date_verified": false,
+              "audit_flags": "citation_markers_removed_from_derived_text, no_web_address",
+              "experimental": true,
+              "body_start": 40,
+              "body_end": 477,
+              "source_url": "",
+              "chunking_version": "heading_faq_v2",
+              "faq_unit": false
+            },
+            "score": 0.9936426877975464,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "brta_57a7e75567f9a5c3_v2_0007",
+            "content": "বিআরটিএ মধ্যম ও ভারী শ্রেণীর পেশাদার ড্রাইভিং লাইসেন্স নিয়ন্ত্রণ সংক্রান্ত নির্দেশিকা ও প্রবিধানমালা\nবাংলাদেশ সড়ক পরিবহন কর্তৃপক্ষ (বিআরটিএ) > ৩। লাইসেন্স অর্জনের যোগ্যতা, বয়সসীমা ও মানোন্নয়ন (Eligibility & Upgradation Ladder) > ৩.১ বয়সসীমা ও মৌলিক শিক্ষাগত যোগ্যতা\n\n### ৩.১ বয়সসীমা ও মৌলিক শিক্ষাগত যোগ্যতা\n\n* **নূন্যতম বয়স:** পেশাদার চালক (সকল শ্রেণী)-এর ক্ষেত্রে নূন্যতম **২১ (একুশ) বছর** হইতে হইবে।\n* **শিক্ষাগত যোগ্যতা:** ন্যূনতম অষ্টম শ্রেণী বা সমমানের পরীক্ষায় উত্তীর্ণ হইতে হইবে (অনুমোদিত শিক্ষাবোর্ড/প্রতিষ্ঠান কর্তৃক প্রদত্ত সনদপত্র দ্বারা প্রদেয়)।\n\n",
+            "metadata": {
+              "domain": "brta",
+              "doc_id": "brta_57a7e75567f9a5c3",
+              "document_id": "brta_57a7e75567f9a5c3",
+              "title": "বিআরটিএ মধ্যম ও ভারী শ্রেণীর পেশাদার ড্রাইভিং লাইসেন্স নিয়ন্ত্রণ সংক্রান্ত নির্দেশিকা ও প্রবিধানমালা",
+              "section_title": "বাংলাদেশ সড়ক পরিবহন কর্তৃপক্ষ (বিআরটিএ) > ৩। লাইসেন্স অর্জনের যোগ্যতা, বয়সসীমা ও মানোন্নয়ন (Eligibility & Upgradation Ladder) > ৩.১ বয়সসীমা ও মৌলিক শিক্ষাগত যোগ্যতা",
+              "document_type": "document",
+              "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta/আইন, বিধি ও নীতিমালা/বিআরটিএ মধ্যম ও ভারী শ্রেণীর পেশাদার ড্রাইভিং লাইসেন্স নিয়ন্ত্রণ সংক্রান্ত নির্দেশিকা ও প্রবিধানমালা.md",
+              "source_relative_path": "brta/আইন, বিধি ও নীতিমালা/বিআরটিএ মধ্যম ও ভারী শ্রেণীর পেশাদার ড্রাইভিং লাইসেন্স নিয়ন্ত্রণ সংক্রান্ত নির্দেশিকা ও প্রবিধানমালা.md",
+              "snapshot_path": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/বিআরটিএ মধ্যম ও ভারী শ্রেণীর পেশাদার ড্রাইভিং লাইসেন্স নিয়ন্ত্রণ সংক্রান্ত নির্দেশিকা ও প্রবিধানমালা.md",
+              "source_sha256": "a00e05ee17383f825cfec99e2458e0fe0af6b27e9c013c5ec6da9b858fe9e8df",
+              "original_paths": "[]",
+              "document_date": "unknown",
+              "date_verified": false,
+              "audit_flags": "original_match_unresolved, no_web_address, nonstandard_metadata_layout",
+              "experimental": true,
+              "body_start": 2507,
+              "body_end": 2804,
+              "source_url": "",
+              "chunking_version": "heading_faq_v2",
+              "faq_unit": false
+            },
+            "score": 0.9924439787864685,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0017",
+            "content": "সড়ক পরিবহণ বিধিমালা, ২০২২\nসড়ক পরিবহণ বিধিমালা, ২০২২\n\nনা/ (২) হালকা মোটরযান চালাইবার পেশাদার ড্রাইভিং লাইসেন্সধারী কোনো চালকের কমপক্ষে ১ (এক) বৎসরের অভিজ্ঞতা না থাকিলে মধ্যম বা কমপক্ষে ৩ (তিন) বৎসরের অভিজ্ঞতা না থাকিলে ভারী মোটরযান চালাইবার ড্রাইভিং লাইসেন্সের জন্য আবেদন করিতে পারিবেন না\n\n---\n\nবাংলাদেশ গেজেট, অতিরিক্ত, ডিসেম্বর ২৭, ২০২২ ৩৩) মধ্যম মোটরযান চালাইবার পেশাদার ড্রাইভিং লাইসেন্সধারী চালকের কমপক্ষে ১ (এক) বৎসরের অভিজ্ঞতা না থাকিলে ভারী মোটরযান চালাইবার ড্রাইভিং লাইসেন্সের জন্য আবেদন করিতে পারিবেন না (8) সরকার কর্তৃক নির্ধারিত কর্মসূচি বা গৃহীত প্রকল্পের অধীন ভারী মোটরযান চালাইবার ড্রাইভিং প্রশিক্ষণপ্রাপ্ত ১ (এক) বৎসরের অভিজ্ঞতা সম্পন্ন হালকা পেশাদার ড্রাইভিং লাইসেন্সধারী প্রার্থীগণ  ভারী মোটরযান চালাইবার ড্রাইভং লাইসেন্সের জন্য  আবেদন করিতে পারিবেন এবং এইক্ষেত্রে প্রার্থীর বয়স সর্বনিম্ন ২৩ (তেইশ) বৎসর হইতে হইবেো (৫) বিদ্যমান   ড্রাইভিং লাইসেন্সে মোটরযানের শ্রেৌণি ব ধরন  সংযোজন; পরিবর্তন বা সংশোধনের নিমিত্ত   তফসিল-১ এ বর্ণিত ফি প্রদান করিতে হইবেো ৬) ড্রাইভিং লাইসেন্সে মোটরযানের ধরন সংযোজন বা পরিবর্তনের জন্য আবেদনকারীকে শিক্ষানবিশ ড্রাইভিং লাইসেন্স গ্রহণপূর্বক বিধি ৮ এ বর্ণিত দক্ষতা যাচাই পরীক্ষায় অংশগ্রহণ করিতে হইবে ১৫| ড্াইভিং লাইসেন্সের শ্রেোণি পরিবর্তন| (১) অপেশাদার ড্রাইভিং লাইসেন্স হইতে পেশাদার ড্রাইভিং লাইসেন্স অথবা পেশাদার ড্রাইভিং লাইসেন্স হইতে অপেশাদার ড্রাইভিং লাইসেন্সে পরিবর্তন করিবার ক্ষেত্রে লাইসেন্সধারীকে ড্রাইভং লাইসেন্সের বিবরণসহ ফরম-৪(খ) এর সংশ্লিষ্ট অংশ পূরণপূর্বক ড্রাইভিং লাইসেন্স প্রদানকারী ",
+            "metadata": {
+              "domain": "brta",
+              "doc_id": "brta_4e08eb4e988d38e4",
+              "document_id": "brta_4e08eb4e988d38e4",
+              "title": "সড়ক পরিবহণ বিধিমালা, ২০২২",
+              "section_title": "সড়ক পরিবহণ বিধিমালা, ২০২২",
+              "document_type": "document",
+              "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta/আইন, বিধি ও নীতিমালা/সড়ক পরিবহণ বিধিমালা, ২০২২.md",
+              "source_relative_path": "brta/আইন, বিধি ও নীতিমালা/সড়ক পরিবহণ বিধিমালা, ২০২২.md",
+              "snapshot_path": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/সড়ক পরিবহণ বিধিমালা, ২০২২.md",
+              "source_sha256": "2a08b085cecd864def8bf31ffcc5d1e8538a8fc2d6a064c49d6443aeacca26ee",
+              "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/সড়ক পরিবহণ বিধিমালা, ২০২২.pdf\"]",
+              "document_date": "unknown",
+              "date_verified": false,
+              "audit_flags": "no_web_address, nonstandard_metadata_layout, long_document_check_ocr",
+              "experimental": true,
+              "body_start": 20065,
+              "body_end": 21456,
+              "source_url": "",
+              "chunking_version": "heading_faq_v2",
+              "faq_unit": false
+            },
+            "score": 0.9871713519096375,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "brta_edcb265eccf9cd32_v2_0012",
+            "content": "সড়ক পরিবহন আইন, ২০১৮\nসড়ক পরিবহন আইন, ২০১৮\n\nবিধি-নিষেধী(১) কোনো ব্যাক্ত ড্রাইভিং  লাইসেন্স বা; ক্ষেত্রমত; শিক্ষানবিশ ড্রাইভিং লাইসেন্স ব্যতীত বা মেয়াদোত্তীর্ণ লাইসেন্স ব্যবহার করিয়া পাবলিক প্লেসে কোনো মোটরযান চালাইতে বা চালাইবার অনুমতি প্রদান করিতে পারিবেন না ২) কোনো ব্যাক্ত শ্রেণি বা ক্যাটাগরির মোটরযান চালনার লাইসেন্স প্রাপ্ত হইয়াছেন; সেই শ্রেৌণি বা ক্যাটাগরি ব্যতীত অন্য কোনো শ্রেণি বা ক্যাটাগরির মোটরযান চালাইতে পারিবেন না শত থাকে যে, ভারী ড্রাইভিং লাইসেন্সধারী কোনো ব্যক্তি হালকা ও মধ্যম শ্রোণ বা ক্যাটাগরির মোটরযান চালাইতে পারিবেন (৩) মোটরযানের শ্রেোণি বা ক্যাটাগরি ও আনুষঙগিক অন্যান্য বিষয় বিধি দ্বারা নির্ধারিত হইবে/\n\n---\n\nবাংলাদেশ গেজেট, অতিরিক্ত, অক্টোবর ৮ , ২০১৮ )384 ৫| গণপরিবহণ চালনার অনুমতিপত্র; ইত্যাদি}  (১) কোনো ব্যক্তি কর্তৃপক্ষ কর্তৃক প্রদত্ত অনুমতিপত্র ব্যতীত গণপরিবহণ চালাইতে বা চালাইবার অনুমতি প্রদান করিতে পারিবেন না ৫২) গণপরিবহণ চালনা, চালনার অনুমতিপত্র প্রদান 9 আনুষঙ্গিক অন্যান্য বিষয় বিধি দ্বারা নির্ধারিত হইবে  '৬ / ড্রাইভিং লাইসেন্স প্রদান; নবায়ন, ঠিকানা পরিবর্তন; ইত্যাদি1   (১) কোনো ব্যক্তিকে ড্রাইভিং  লাইসেন্স প্রাপ্তির জন্য,  নির্ধারিত ফিস প্রদান সাপেক্ষে; জাতীয় পরিচয়পত্রের সত্যায়িত কপিসহ নির্ধারিত ফরমে ও পদ্ধতিতে কর্তৃপক্ষের নিকট আবেদন দাখিল করিতে হইবে | ৫২) উপ-ধারা (১) এর অধীন ড্রাইভিং লাইসেন্স প্রাপ্তর জন্য   কোনো ব্যক্তিকে নিম্নবর্ণিত শর্তাবলি পূরণ করিতে হইবে, যথা: অপেশাদার ড্রাইভিং লাইসেন্সের ক্ষেত্রে বয়স অন্যূন ১৮ (আঠারো) বৎসর এবং পেশাদার ড্রাইভিং লাইসেন্সের ক্ষেত্রে বয়স অন্যূন ২১ ",
+            "metadata": {
+              "domain": "brta",
+              "doc_id": "brta_edcb265eccf9cd32",
+              "document_id": "brta_edcb265eccf9cd32",
+              "title": "সড়ক পরিবহন আইন, ২০১৮",
+              "section_title": "সড়ক পরিবহন আইন, ২০১৮",
+              "document_type": "document",
+              "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta/আইন, বিধি ও নীতিমালা/সড়ক পরিবহন আইন, ২০১৮.md",
+              "source_relative_path": "brta/আইন, বিধি ও নীতিমালা/সড়ক পরিবহন আইন, ২০১৮.md",
+              "snapshot_path": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/সড়ক পরিবহন আইন, ২০১৮.md",
+              "source_sha256": "eaca7e57932521d9456931380a01aeff1b62fdd50c4b20c744054866b499f1e6",
+              "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/সড়ক পরিবহন আইন, ২০১৮.pdf\"]",
+              "document_date": "unknown",
+              "date_verified": false,
+              "audit_flags": "no_web_address, nonstandard_metadata_layout, dated_document_review_applicability, long_document_check_ocr",
+              "experimental": true,
+              "body_start": 14163,
+              "body_end": 15559,
+              "source_url": "",
+              "chunking_version": "heading_faq_v2",
+              "faq_unit": false
+            },
+            "score": 0.9838901162147522,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          }
+        ],
+        "domain": "brta",
+        "answer_route": "llm",
+        "experimental": true,
+        "expected_evidence_present": true
+      }
+    },
+    {
+      "audit_item": {
+        "id": "brta_colour_code_mixed",
+        "domain": "brta",
+        "family": "vehicle_colour_change",
+        "variant": "code_mixed",
+        "question": "car er colour change BRTA te update korte ki documents lagbe?",
+        "expected_evidence_hint": "রং পরিবর্তন",
+        "expected_key_fact": "রং পরিবর্তনের প্রমাণক ও নিবন্ধন-সংক্রান্ত কাগজ"
+      },
+      "elapsed_seconds": 203.09,
+      "result": {
+        "query": "car er colour change BRTA te update korte ki documents lagbe?",
+        "model": "qwen2.5:7b",
+        "method": "civic",
+        "answer": "### গাড়ির কাগজপত্ত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স এর জরিমানা ব্যতীত মূল কর / ফি জমা প্রদানপূর্বক গাড়ির কাগজপত্ত্র হালনাগাদ সংক্রান্ত শর্তগুলি:\n\n1. **আবেদনপত্র:** \n   - মালিকের স্বাক্ষর সম্বলিত আবেদন পত্র ১ কপি\n\n2. **মূল নিবন্ধন সনদ:**\n   - মূল নিবন্ধন সনদ (কাগজের নিবন্ধন সনদ হলে হোম কপিও জমা দিতে হবে)\n\n3. **ফি জমার রশিদ:**\n   - রং পরিবর্তন ফি জমার রশিদের বিআরটিএ'র কপি\n\n4. **ফিটনেস সনদ:**\n   - হালনাগাদ ফিটনেস সনদের ফটোকপি ১ কপি\n\n5. **ট্যাক্স টোকেন:** \n   - হালনাগাদ ট্যাক্স টোকেনের ফটোকপি ১ কপি\n\n**তারিখ:** ২২-০৬-২০২০  \n**অফিস:** বিআরটিএ সংস্থাপন শাখা, সড়ক পরিবহন ও মহাসড়ক বিভাগ, সড়ক পরিবহন ও সেতু মন্ত্রণালয়, গণপ্রজাতন্ত্রী বাংলাদেশ সরকার\n\nSources: brta_a40ff0f214eb68b8_v2_0001, brta_a40ff0f214eb68b8_v2_0002, brta_33c0c02c5416861c_v2_0005",
+        "sources": [
+          {
+            "id": "brta_a40ff0f214eb68b8_v2_0001",
+            "content": "নিবন্ধিত মোটরযানের রং পরিবর্তন করার অনুমোদনের প্রক্রিয়া\nনিবন্ধিত মোটরযানের রং পরিবর্তন করার অনুমোদনের প্রক্রিয়া\n\n# নিবন্ধিত মোটরযানের রং পরিবর্তন করার অনুমোদনের প্রক্রিয়া\n\nমোরটযানের মালিক কে প্রথমে ব্যাংকে মোটরযানের মডিফিকেশন (রং পরিবর্তন সংক্রান্ত) ফি জমা দিতে হবে। এরপর রং পরিবর্তনের অনুমোদনের জন্য মোটরযানটি বিআরটিএ'র যে সার্কেলে নিবন্ধিত বা অন্তর্ভুক্ত আছে সে সার্কেলের মোটরযানের মালিকানা বদলী শাখার সহকারী পরিচালক (ইঞ্জিনিয়ারিং) অথবা মোটরযানের মালিকানা বদলী শাখা না থাকলে ঐ সার্কেলে সহকারী পরিচালক (ইঞ্জিনিয়ারিং) ও নিবন্ধন কর্তৃপক্ষের নিকট উপযুক্ত কারণ ব্যাখ্যা করে প্রমাণকসহ সাদা কাগজে আবেদন করতে হবে এবং মোটরযানটি সরেজমিনে পরিদর্শনের জন্য হাজির করতে হবে। \n\nউক্ত আবেদন যাচাই করে সঠিক পাওয়া গেলে সহকারী পরিচালক (ইঞ্জিনিয়ারিং) উক্ত মোটরযানটি পরিদর্শনের জন্য মোটরযান পরিদর্শকে নির্দেশনা প্রদান করবেন। সন্তোষজনক পরিদর্শন প্রতিবেদন পাওয়ার পর কর্তৃপক্ষ উক্ত মোটরযানের রং পরিবর্তনের অনুমোদন প্রদান করবেন এবং একটি প্রাপ্তিস্বীকার পত্র প্রদান করেন যা অস্থায়ী নিবন্ধন সনদ হিসেবে কাজ করবে। উক্ত প্রাপ্তিস্বীকার পত্রে নতুন নিবন্ধন সনদ/ডিজিটাল রেজিস্ট্রেশন সার্টিফিকেট (ডিআরসি) প্রদানের সম্ভাব্য তারিখ উল্লেখ থাকবে। \n\nএরপর ডিজিটাল রেজিস্ট্রেশন সার্টিফিকেটের প্রস্তুতের কার্যক্রম সম্পন্ন হলে, তা সংগ্রহের জন্য গ্রাহকের মোবাইলে মেসেজের মাধ্যমে জানিয়ে দেওয়া হবে। [এখানে উল্লেখ্য যে, রং পরিবর্তনের প্রক্রিয়া সম্পন্ন করতে ফিটনেস ও ট্যাক্সটেকেন হালনাগাত থাকতে হবে।]\n\n",
+            "metadata": {
+              "domain": "brta",
+              "doc_id": "brta_a40ff0f214eb68b8",
+              "document_id": "brta_a40ff0f214eb68b8",
+              "title": "নিবন্ধিত মোটরযানের রং পরিবর্তন করার অনুমোদনের প্রক্রিয়া",
+              "section_title": "নিবন্ধিত মোটরযানের রং পরিবর্তন করার অনুমোদনের প্রক্রিয়া",
+              "document_type": "সাধারণ তথ্য / নির্দেশিকা",
+              "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta/সেবাসমূহ/রং পরিবর্তন.md",
+              "source_relative_path": "fahim_brta/সেবাসমূহ/রং পরিবর্তন.md",
+              "snapshot_path": "domains/brta/data/source_snapshots/fahim_brta/সেবাসমূহ/রং পরিবর্তন.md",
+              "source_sha256": "4fba431b209bef2d7327fc82a8e45c487c05dece7b5c1f2298f6ac4f6b59ee32",
+              "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/সেবাসমূহ_original/রং পরিবর্তন.pdf\"]",
+              "document_date": "N/A",
+              "date_verified": false,
+              "audit_flags": "citation_markers_removed_from_derived_text, no_web_address",
+              "experimental": true,
+              "body_start": 0,
+              "body_end": 1251,
+              "source_url": "",
+              "chunking_version": "heading_faq_v2",
+              "faq_unit": false
+            },
+            "score": 0.5343457460403442,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "brta_a40ff0f214eb68b8_v2_0002",
+            "content": "নিবন্ধিত মোটরযানের রং পরিবর্তন করার অনুমোদনের প্রক্রিয়া\nনিবন্ধিত মোটরযানের রং পরিবর্তন করার অনুমোদনের প্রক্রিয়া > প্রয়োজনীয় দলিলাদি\n\n## প্রয়োজনীয় দলিলাদি\n\n* **১. আবেদনপত্র:** মালিকের স্বাক্ষর সম্বলিত আবেদন পত্র - ০১ কপি\n* **২. মূল নিবন্ধন সনদ:** মূল নিবন্ধন সনদ (কাগজের নিবন্ধন সনদ হলে হোম কপিও জমা দিতে হবে)\n* **৩. ফি জমার রশিদ:** রং পরিবর্তন ফি জমার রশিদের বিআরটিএ'র কপি\n* **৪. ফিটনেস সনদ:** হালনাগাদ ফিটনেস সনদের ফটোকপি ০১ কপি\n* **৫. ট্যাক্স টোকেন:** হালনাগাদ ট্যাক্স টোকেনের ফটোকপি - ০১ কপি",
+            "metadata": {
+              "domain": "brta",
+              "doc_id": "brta_a40ff0f214eb68b8",
+              "document_id": "brta_a40ff0f214eb68b8",
+              "title": "নিবন্ধিত মোটরযানের রং পরিবর্তন করার অনুমোদনের প্রক্রিয়া",
+              "section_title": "নিবন্ধিত মোটরযানের রং পরিবর্তন করার অনুমোদনের প্রক্রিয়া > প্রয়োজনীয় দলিলাদি",
+              "document_type": "সাধারণ তথ্য / নির্দেশিকা",
+              "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta/সেবাসমূহ/রং পরিবর্তন.md",
+              "source_relative_path": "fahim_brta/সেবাসমূহ/রং পরিবর্তন.md",
+              "snapshot_path": "domains/brta/data/source_snapshots/fahim_brta/সেবাসমূহ/রং পরিবর্তন.md",
+              "source_sha256": "4fba431b209bef2d7327fc82a8e45c487c05dece7b5c1f2298f6ac4f6b59ee32",
+              "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/সেবাসমূহ_original/রং পরিবর্তন.pdf\"]",
+              "document_date": "N/A",
+              "date_verified": false,
+              "audit_flags": "citation_markers_removed_from_derived_text, no_web_address",
+              "experimental": true,
+              "body_start": 1251,
+              "body_end": 1614,
+              "source_url": "",
+              "chunking_version": "heading_faq_v2",
+              "faq_unit": false
+            },
+            "score": 0.4152425229549408,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "brta_33c0c02c5416861c_v2_0005",
+            "content": "গাড়ির কাগজপত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স এর জরিমানা ব্যতীত মূল কর বা ফি জমা প্রদানপূর্বক গাড়ির কাগজপত্র হালনাগাদ সংক্রান্ত প্রজ্ঞাপন\nগণপ্রজাতন্ত্রী বাংলাদেশ সরকার > সড়ক পরিবহন ও সেতু মন্ত্রণালয় > সড়ক পরিবহন ও মহাসড়ক বিভাগ > বিআরটিএ সংস্থাপন শাখা > প্রজ্ঞাপন\n\n##### প্রজ্ঞাপন\n**তারিখ:** ০৮ আষাঢ়, ১৪২৭ বঙ্গাব্দ / ২২ জুন, ২০২০ খ্রিষ্টাব্দ\n\n**স্মারক নং:** ৩৫.০০.০০০০.০২০.০৮.০১৭.১৩-২৩৭  \n**তারিখ:** ২২-০৬-২০২০ খ্রিষ্টাব্দ\n\n---\n\nঅর্থ বিভাগের ১৫-০৬-২০২০ তারিখের ০৭.০০.০০০০.১৪৪.৩২.১০৮.১১-২৩ সংখ্যক স্মারকের সম্মতির প্রেক্ষিতে গাড়ির কাগজপত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স এর জরিমানা ব্যতীত মূল কর/ফি জমা প্রদানপূর্বক গাড়ির কাগজপত্র হালনাগাদ করার নিমিত্ত নিম্নোক্ত শর্ত সাপেক্ষে সুযোগ প্রদান করা হলো:\n\n* **(ক)** এ বিভাগের ২০-০১-২০২০ তারিখের ৩৫.০০.০০০০.০২০.০৮.০১৭.১৩-৩৪ সংখ্যক প্রজ্ঞাপনের ধারাবাহিকতায় এ সময়সীমা আগামী ৩১-১২-২০২০ তারিখ পর্যন্ত বৃদ্ধি করা হলো;\n* **(খ)** বিআরটিএ সড়ক পরিবহন মালিকদের উদ্দেশ্যে ব্যাপক প্রচারের মাধ্যমে আগামীতে খেলাপী যানবাহন মালিকদের আর কোনো সুযোগ দেয়া হবে না মর্মে অগ্রিম ঘোষণা প্রচার করবে।\n\n**০২।** এ আদেশ অবিলম্বে কার্যকর হবে।\n\n---\n\n**রাষ্ট্রপতির আদেশক্রমে,**\n\n**(মোঃ জসিম উদ্দিন)**  \nসহকারী সচিব  \n**তারিখ:** ২২/০৬/২০২০",
+            "metadata": {
+              "domain": "brta",
+              "doc_id": "brta_33c0c02c5416861c",
+              "document_id": "brta_33c0c02c5416861c",
+              "title": "গাড়ির কাগজপত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স এর জরিমানা ব্যতীত মূল কর বা ফি জমা প্রদানপূর্বক গাড়ির কাগজপত্র হালনাগাদ সংক্রান্ত প্রজ্ঞাপন",
+              "section_title": "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার > সড়ক পরিবহন ও সেতু মন্ত্রণালয় > সড়ক পরিবহন ও মহাসড়ক বিভাগ > বিআরটিএ সংস্থাপন শাখা > প্রজ্ঞাপন",
+              "document_type": "প্রজ্ঞাপন",
+              "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta/আইন, বিধি ও নীতিমালা/গাড়ির কাগজপত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স এর জরিমানা ব্যতীত মূল কর বা ফি জমা প্রদানপূর্বক গাড়ির কাগজপত্র হালনাগাদ সংক্রান্ত প্রজ্ঞাপন.md",
+              "source_relative_path": "brta/আইন, বিধি ও নীতিমালা/গাড়ির কাগজপত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স এর জরিমানা ব্যতীত মূল কর বা ফি জমা প্রদানপূর্বক গাড়ির কাগজপত্র হালনাগাদ সংক্রান্ত প্রজ্ঞাপন.md",
+              "snapshot_path": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/গাড়ির কাগজপত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স এর জরিমানা ব্যতীত মূল কর বা ফি জমা প্রদানপূর্বক গাড়ির কাগজপত্র হালনাগাদ সংক্রান্ত প্রজ্ঞাপন.md",
+              "source_sha256": "ec6706eb0addf0144a1a7d71777e493cabd15200d5b6256d08643f54a67fb3bd",
+              "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/গাড়ির কাগজপত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স এর জরিমানা ব্যতীত মূল কর বা ফি জমা প্রদানপূর্বক গাড়ির কাগজপত্র হালনাগাদ সংক্রান্ত প্রজ্ঞাপন.pdf\"]",
+              "document_date": "2020-06-22",
+              "date_verified": false,
+              "audit_flags": "citation_markers_removed_from_derived_text, no_web_address",
+              "experimental": true,
+              "body_start": 126,
+              "body_end": 1044,
+              "source_url": "",
+              "chunking_version": "heading_faq_v2",
+              "faq_unit": false
+            },
+            "score": 0.08079653978347778,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0199",
+            "content": "সড়ক পরিবহণ বিধিমালা, ২০২২\nসড়ক পরিবহণ বিধিমালা, ২০২২\n\n\n\nবাংলাদেশ গেজেট, অতিরিক্ত, ডিসেম্বর ২৭, ২০২২ ফরম-৪খ) মোটর ডাইভিং লাইসেন্স নবায়ন প্রতিলিপি শ্রেণি পরিবর্তন বা সংযোজন ধরন পরিবর্তন/ ঠিকানা পরিবর্তন তথ্য সংশোধনের আবেদন [বিধি ১১৫১) , ১৫০১) ও ১৬গ১) দ্রষ্টব্য] স্ট্যাম্প সাইজ ছবি আঠা দিয়া লাগাইতে হইবে Stamp size photo to be attached by glue ড্রাইভিং লাইসেন্স প্রদানকারী কর্তৃপক্ষ (Driving Licensing Authority / বিআরটিএ (BRTA), সার্কেল (Circle) , বিষয় (Subject): মোটর ড্রাইভিং লাইসেন্স নবায়ন প্রতিলিপি শ্রেোণি পরিবর্তন বা সংযোজন ধরন পরিবর্তন ঠিকানা   পরিবর্তন তথ্য সংশোধন এর আবেদন   Application for RenewallDuplicatelChange 01 auditi01 0f vehicle class Type changelChange 0f address Correction of information) প্রযোজ্য ক্ষেত্রে টিক (` ) দিন (Tick where applicable) (Write in capital letters in case of English) ১I নাম (ইংরেজিতে) LTame (English): > মোবাইল নম্বর (Mobile number): '9 / জাতীয় পরিচয়পত্র নম্বর (NTIDITo): 8| (ক) ড্রাইভিং লাইসেন্স নম্বর (License 1o : ইস্যু বা সর্বশেষ নবায়নের তারিখ (Latest date of issue or renewal): 20 (গ) বিদ্যমান রেফারেন্স নম্বর (Existing Reference LTo:_ (ঘ) মেয়াদ উত্তীর্ণের তারিখ (Expiry): |20_ ৫ জমার পরিমাণ টাকায় ( Amount of fee paid in talka  খ) ট্রানজেকশন নম্বর Transaction Number) '৬ পেশাদার ড্রাইভিং লাইসেন্স নবায়নের ক্ষেত্রে দক্ষতা যাচাই পরীক্ষায় উত্তীর্ণের তারিখ: রোল |র: In case of professional driving licence, Date of passing of competency test RollLTo: ৭ / হারিয়ে যাওয়ার কারণে প্রতিলিপি গ্রহণের ",
+            "metadata": {
+              "domain": "brta",
+              "doc_id": "brta_4e08eb4e988d38e4",
+              "document_id": "brta_4e08eb4e988d38e4",
+              "title": "সড়ক পরিবহণ বিধিমালা, ২০২২",
+              "section_title": "সড়ক পরিবহণ বিধিমালা, ২০২২",
+              "document_type": "document",
+              "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta/আইন, বিধি ও নীতিমালা/সড়ক পরিবহণ বিধিমালা, ২০২২.md",
+              "source_relative_path": "brta/আইন, বিধি ও নীতিমালা/সড়ক পরিবহণ বিধিমালা, ২০২২.md",
+              "snapshot_path": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/সড়ক পরিবহণ বিধিমালা, ২০২২.md",
+              "source_sha256": "2a08b085cecd864def8bf31ffcc5d1e8538a8fc2d6a064c49d6443aeacca26ee",
+              "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/সড়ক পরিবহণ বিধিমালা, ২০২২.pdf\"]",
+              "document_date": "unknown",
+              "date_verified": false,
+              "audit_flags": "no_web_address, nonstandard_metadata_layout, long_document_check_ocr",
+              "experimental": true,
+              "body_start": 244101,
+              "body_end": 245498,
+              "source_url": "",
+              "chunking_version": "heading_faq_v2",
+              "faq_unit": false
+            },
+            "score": 0.02729947492480278,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "brta_9a180bfd62e0eab9_v2_0004",
+            "content": "জরিমানা ব্যতীত মূল কর বা ফি জমা প্রদানপূর্বক গাড়ির কাগজপত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স হালনাগাদের সময়সীমা ১৫ এপ্রিল ২০২৪ খ্রিঃ পর্যন্ত বর্ধিতকরণ সংক্রান্ত প্রজ্ঞাপন\nগণপ্রজাতন্ত্রী বাংলাদেশ সরকার > সড়ক পরিবহন ও সেতু মন্ত্রণালয় > প্রজ্ঞাপন\n\n### প্রজ্ঞাপন\n\n**তারিখ:** ০৫ চৈত্র, ১৪৩০ বঙ্গাব্দ / ১৯ মার্চ, ২০২৪ খ্রিষ্টাব্দ  \n**স্মারক নং:** ৩৫.০০.০০০০.০২০.০৪.০১৭.১৩-১০৮  \n\nঅর্থ বিভাগের গত ০৭-০৩-২০২৪ তারিখের ০৭.০০.০০০০.১৪৩.৫০.০০৩.২১-৭৩ সংখ্যক স্মারকের সম্মতির প্রেক্ষিতে জরিমানা ব্যতীত মূল কর ও ফি জমা প্রদানপূর্বক সকল প্রকার মোটরযানের কাগজপত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স হালনাগাদ করার সময়সীমা আগামী ১৫-০৪-২০২৪ তারিখ পর্যন্ত বৃদ্ধি করা হলো।\n\n০২। ইহা অবিলম্বে কার্যকর হবে।\n\n**রাষ্ট্রপতির আদেশক্রমে**  \n**মোঃ জসিম উদ্দিন**  \nসহকারী সচিব  \n\n---\n\n",
+            "metadata": {
+              "domain": "brta",
+              "doc_id": "brta_9a180bfd62e0eab9",
+              "document_id": "brta_9a180bfd62e0eab9",
+              "title": "জরিমানা ব্যতীত মূল কর বা ফি জমা প্রদানপূর্বক গাড়ির কাগজপত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স হালনাগাদের সময়সীমা ১৫ এপ্রিল ২০২৪ খ্রিঃ পর্যন্ত বর্ধিতকরণ সংক্রান্ত প্রজ্ঞাপন",
+              "section_title": "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার > সড়ক পরিবহন ও সেতু মন্ত্রণালয় > প্রজ্ঞাপন",
+              "document_type": "প্রজ্ঞাপন",
+              "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta/আইন, বিধি ও নীতিমালা/জরিমানা ব্যতীত মূল কর বা ফি জমা প্রদানপূর্বক গাড়ির কাগজপত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স হালনাগাদের সময়সীমা ১৫ এপ্রিল ২০২৪ খ্রিঃ পর্যন্ত বর্ধিতকরণ সংক্রান্ত প্রজ্ঞাপন.md",
+              "source_relative_path": "brta/আইন, বিধি ও নীতিমালা/জরিমানা ব্যতীত মূল কর বা ফি জমা প্রদানপূর্বক গাড়ির কাগজপত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স হালনাগাদের সময়সীমা ১৫ এপ্রিল ২০২৪ খ্রিঃ পর্যন্ত বর্ধিতকরণ সংক্রান্ত প্রজ্ঞাপন.md",
+              "snapshot_path": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/জরিমানা ব্যতীত মূল কর বা ফি জমা প্রদানপূর্বক গাড়ির কাগজপত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স হালনাগাদের সময়সীমা ১৫ এপ্রিল ২০২৪ খ্রিঃ পর্যন্ত বর্ধিতকরণ সংক্রান্ত প্রজ্ঞাপন.md",
+              "source_sha256": "eab9aab2f9e0eeca76fc338e857df3669b4d004e4762ef41f6e2020b01ca17b7",
+              "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/জরিমানা ব্যতীত মূল কর বা ফি জমা প্রদানপূর্বক গাড়ির কাগজপত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স হালনাগাদের সময়সীমা ১৫ এপ্রিল ২০২৪ খ্রিঃ পর্যন্ত বর্ধিতকরণ সংক্রান্ত প্রজ্ঞাপন.pdf\"]",
+              "document_date": "2024-03-19",
+              "date_verified": false,
+              "audit_flags": "no_web_address",
+              "experimental": true,
+              "body_start": 125,
+              "body_end": 656,
+              "source_url": "",
+              "chunking_version": "heading_faq_v2",
+              "faq_unit": false
+            },
+            "score": 0.022483309730887413,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "brta_9a180bfd62e0eab9_v2_0002",
+            "content": "জরিমানা ব্যতীত মূল কর বা ফি জমা প্রদানপূর্বক গাড়ির কাগজপত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স হালনাগাদের সময়সীমা ১৫ এপ্রিল ২০২৪ খ্রিঃ পর্যন্ত বর্ধিতকরণ সংক্রান্ত প্রজ্ঞাপন\nগণপ্রজাতন্ত্রী বাংলাদেশ সরকার > সড়ক পরিবহন ও সেতু মন্ত্রণালয়\n\n## সড়ক পরিবহন ও সেতু মন্ত্রণালয়\n",
+            "metadata": {
+              "domain": "brta",
+              "doc_id": "brta_9a180bfd62e0eab9",
+              "document_id": "brta_9a180bfd62e0eab9",
+              "title": "জরিমানা ব্যতীত মূল কর বা ফি জমা প্রদানপূর্বক গাড়ির কাগজপত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স হালনাগাদের সময়সীমা ১৫ এপ্রিল ২০২৪ খ্রিঃ পর্যন্ত বর্ধিতকরণ সংক্রান্ত প্রজ্ঞাপন",
+              "section_title": "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার > সড়ক পরিবহন ও সেতু মন্ত্রণালয়",
+              "document_type": "প্রজ্ঞাপন",
+              "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta/আইন, বিধি ও নীতিমালা/জরিমানা ব্যতীত মূল কর বা ফি জমা প্রদানপূর্বক গাড়ির কাগজপত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স হালনাগাদের সময়সীমা ১৫ এপ্রিল ২০২৪ খ্রিঃ পর্যন্ত বর্ধিতকরণ সংক্রান্ত প্রজ্ঞাপন.md",
+              "source_relative_path": "brta/আইন, বিধি ও নীতিমালা/জরিমানা ব্যতীত মূল কর বা ফি জমা প্রদানপূর্বক গাড়ির কাগজপত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স হালনাগাদের সময়সীমা ১৫ এপ্রিল ২০২৪ খ্রিঃ পর্যন্ত বর্ধিতকরণ সংক্রান্ত প্রজ্ঞাপন.md",
+              "snapshot_path": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/জরিমানা ব্যতীত মূল কর বা ফি জমা প্রদানপূর্বক গাড়ির কাগজপত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স হালনাগাদের সময়সীমা ১৫ এপ্রিল ২০২৪ খ্রিঃ পর্যন্ত বর্ধিতকরণ সংক্রান্ত প্রজ্ঞাপন.md",
+              "source_sha256": "eab9aab2f9e0eeca76fc338e857df3669b4d004e4762ef41f6e2020b01ca17b7",
+              "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/জরিমানা ব্যতীত মূল কর বা ফি জমা প্রদানপূর্বক গাড়ির কাগজপত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স হালনাগাদের সময়সীমা ১৫ এপ্রিল ২০২৪ খ্রিঃ পর্যন্ত বর্ধিতকরণ সংক্রান্ত প্রজ্ঞাপন.pdf\"]",
+              "document_date": "2024-03-19",
+              "date_verified": false,
+              "audit_flags": "no_web_address",
+              "experimental": true,
+              "body_start": 32,
+              "body_end": 66,
+              "source_url": "",
+              "chunking_version": "heading_faq_v2",
+              "faq_unit": false
+            },
+            "score": 0.0220271535217762,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          }
+        ],
+        "domain": "brta",
+        "answer_route": "llm",
+        "experimental": true,
+        "expected_evidence_present": true
+      }
+    },
+    {
+      "audit_item": {
+        "id": "passport_collect_direct",
+        "domain": "passport",
+        "family": "passport_collection",
+        "variant": "direct",
+        "question": "ই-পাসপোর্ট সংগ্রহ করতে অফিসে কী কী নিয়ে যেতে হবে?",
+        "expected_evidence_hint": "Documents Needed for Passport Collection",
+        "expected_key_fact": "ডেলিভারি স্লিপ"
+      },
+      "elapsed_seconds": 178.51,
+      "result": {
+        "query": "ই-পাসপোর্ট সংগ্রহ করতে অফিসে কী কী নিয়ে যেতে হবে?",
+        "model": "qwen2.5:7b",
+        "method": "civic",
+        "answer": "ই-পাসপোর্ট বায়োমেট্রিক প্রক্রিয়ার জন্য পাসপোর্ট অফিসে নিম্ন লিখিত কাগজপত্র বহন করতে হবে:\n1. পিআরএল (PRL) অর্ডার কপি。\n2. জাতীয় পরিচয়পত্র (NID)。\n3. পূর্ববর্তী মূল পাসপোর্ট。\n4. আবেদনপত্রের হার্ড কপি（Application Form）。\n5. প্রিন্ট সারাংশ（Summary Slip）。\n6. পাসপোর্ট ফি প্রদানের রসিদ/পেমেন্ট স্লিপ。\n\nSources: passport_23d845d3ab38ea43_v2_0033, passport_6e87d0783a373593_v2_0008, passport_23d845d3ab38ea43_v2_0041",
+        "sources": [
+          {
+            "id": "passport_23d845d3ab38ea43_v2_0033",
+            "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 5. Document Requirements (প্রয়োজনীয় কাগজপত্র) > 5.2 Documents Required for Retired Government Employees / অবসরপ্রাপ্ত সরকারি কর্মকর্তা-কর্মচারীদের কাগজপত্র\n\n### 5.2 Documents Required for Retired Government Employees / অবসরপ্রাপ্ত সরকারি কর্মকর্তা-কর্মচারীদের কাগজপত্র\n- **Category:** Document Requirements\n- **Topic:** Government Pensioners & PRL Documents\n- **English Question:** I have retired from Government service. Now what documents are required to complete enrollment process of E-Passport?\n- **Bengali Question (প্রশ্ন):** আমি সরকারি চাকরি থেকে অবসর নিয়েছি। এখন ই-পাসপোর্ট প্রক্রিয়া সম্পূর্ণ করতে কী কী কাগজপত্রাদি প্রয়োজন?\n- **English Answer:** When visiting the passport office for enrolment/fingerprints, bring:\n  1. PRL / Post Retirement Leave Order copy.\n  2. NID card.\n  3. Previous Passport (Original).\n  4. Hard copy of Application Form.\n  5. Printed Summary Slip.\n  6. Payment Slip / Fee Receipt.\n- **Bengali Answer (উত্তর):** ই-পাসপোর্ট বায়োমেট্রিক প্রক্রিয়ার জন্য পাসপোর্ট অফিসে নিম্ন লিখিত কাগজপত্র বহন করতে হবে:\n  ১. পিআরএল (PRL) অর্ডার কপি।\n  ২. জাতীয় পরিচয়পত্র (NID)।\n  ৩. পূর্ববর্তী মূল পাসপোর্ট।\n  ৪. আবেদনপত্রের হার্ড কপি (Application Form)।\n  ৫. প্রিন্ট সারাংশ (Summary Slip)।\n  ৬. পাসপোর্ট ফি প্রদানের রসিদ/পেমেন্ট স্লিপ।\n\n---\n\n",
+            "metadata": {
+              "domain": "passport",
+              "doc_id": "passport_23d845d3ab38ea43",
+              "document_id": "passport_23d845d3ab38ea43",
+              "title": "Bangladesh_ePassport_FAQ",
+              "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 5. Document Requirements (প্রয়োজনীয় কাগজপত্র) > 5.2 Documents Required for Retired Government Employees / অবসরপ্রাপ্ত সরকারি কর্মকর্তা-কর্মচারীদের কাগজপত্র",
+              "document_type": "document",
+              "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+              "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+              "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+              "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+              "original_paths": "[]",
+              "document_date": "unknown",
+              "date_verified": false,
+              "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+              "experimental": true,
+              "body_start": 24471,
+              "body_end": 25579,
+              "source_url": "",
+              "chunking_version": "heading_faq_v2",
+              "faq_unit": true
+            },
+            "score": 0.9431042075157166,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "passport_6e87d0783a373593_v2_0008",
+            "content": "5 Steps to your e-Passport\n5 Steps to your e-Passport > Application Steps > Step 5: Collect your e-Passport at the passport office\n\n### Step 5: Collect your e-Passport at the passport office\n* **Collection Requirement 1:** Delivery slip you received during passport enrolment\n* **Collection Requirement 2:** Authorized representatives (has to bring his/her NID card) can collect the applicant's new passport.",
+            "metadata": {
+              "domain": "passport",
+              "doc_id": "passport_6e87d0783a373593",
+              "document_id": "passport_6e87d0783a373593",
+              "title": "5 Steps to your e-Passport",
+              "section_title": "5 Steps to your e-Passport > Application Steps > Step 5: Collect your e-Passport at the passport office",
+              "document_type": "সাধারণ তথ্য",
+              "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/5 Steps to your e-Passport.md",
+              "source_relative_path": "cleaned_md/5 Steps to your e-Passport.md",
+              "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/5 Steps to your e-Passport.md",
+              "source_sha256": "20cf0be15ba261a9be55252bdd4da3d3ebe418c14e4722ec7c509b94bbc0c348",
+              "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/5 Steps to your e-Passport.pdf\"]",
+              "document_date": "2026-06-03",
+              "date_verified": false,
+              "audit_flags": "no_web_address",
+              "experimental": true,
+              "body_start": 685,
+              "body_end": 961,
+              "source_url": "",
+              "chunking_version": "heading_faq_v2",
+              "faq_unit": false
+            },
+            "score": 0.8794022798538208,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "passport_23d845d3ab38ea43_v2_0041",
+            "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.4 Lost Delivery Slip Recovery / ডেলিভারি স্লিপ হারিয়ে গেলে পাসপোর্ট সংগ্রহ\n\n### 6.4 Lost Delivery Slip Recovery / ডেলিভারি স্লিপ হারিয়ে গেলে পাসপোর্ট সংগ্রহ\n- **Category:** Status, Delivery & Corrections\n- **Topic:** Alternative Delivery Protocols\n- **English Question:** I have lost my delivery slip. Now how will I collect my passport?\n- **Bengali Question (প্রশ্ন):** আমি আমার ডেলিভারি স্লিপ হারিয়েছি। এখন আমি কি ভাবে আমার পাসপোর্ট সংগ্রহ করব?\n- **English Answer:** Bring the following items to your designated passport office:\n  1. Printed Application Summary (Appointment copy).\n  2. Photocopy of your NID card.\n  3. Photocopy of the lost Delivery Slip (if available).\n- **Bengali Answer (উত্তর):** নিম্নে বর্ণিত কাগজপত্র নিয়ে অফিসে যোগাযোগ করুন:\n  ১. প্রিন্ট সামারি / অ্যাপয়েন্টমেন্ট কপি।\n  ২. NID কার্ডের ফটোকপি।\n  ৩. হারিয়ে যাওয়া ডেলিভারি স্লিপের ফটোকপি (যদি থাকে)।\n\n---\n\n",
+            "metadata": {
+              "domain": "passport",
+              "doc_id": "passport_23d845d3ab38ea43",
+              "document_id": "passport_23d845d3ab38ea43",
+              "title": "Bangladesh_ePassport_FAQ",
+              "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.4 Lost Delivery Slip Recovery / ডেলিভারি স্লিপ হারিয়ে গেলে পাসপোর্ট সংগ্রহ",
+              "document_type": "document",
+              "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+              "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+              "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+              "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+              "original_paths": "[]",
+              "document_date": "unknown",
+              "date_verified": false,
+              "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+              "experimental": true,
+              "body_start": 30674,
+              "body_end": 31484,
+              "source_url": "",
+              "chunking_version": "heading_faq_v2",
+              "faq_unit": true
+            },
+            "score": 0.8245701193809509,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "passport_73ac41f2327257f9_v2_0003",
+            "content": "Documents need to be carried while enrolment at Passport offices / পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে\nDocuments need to be carried while enrolment at Passport offices > Required Documents (English)\n\n## Required Documents (English)\n* **Item 1:** Printed application summary including appointment (if any).\n* **Item 2:** Identification documents (NID card / Birth certificate - Original)\n* **Item 3:** Payment Slip for Offline Payment only.\n* **Item 4:** Previous Passport (if any).\n* **Item 5:** GO/NOC for government service holder (as applicable).\n* **Item 6:** Printed application form.\n* **Item 7:** Further necessity of documents depends on nature of application/corrections (if any).\n\n",
+            "metadata": {
+              "domain": "passport",
+              "doc_id": "passport_73ac41f2327257f9",
+              "document_id": "passport_73ac41f2327257f9",
+              "title": "Documents need to be carried while enrolment at Passport offices / পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে",
+              "section_title": "Documents need to be carried while enrolment at Passport offices > Required Documents (English)",
+              "document_type": "সাধারণ তথ্য",
+              "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.md",
+              "source_relative_path": "cleaned_md/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.md",
+              "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.md",
+              "source_sha256": "11f8f5bb9835c318f2ee6fda5b64e345563234278c88ac3062d5e7a89d3d8fe9",
+              "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.pdf\"]",
+              "document_date": "2025-05-07",
+              "date_verified": false,
+              "audit_flags": "no_web_address",
+              "experimental": true,
+              "body_start": 188,
+              "body_end": 679,
+              "source_url": "",
+              "chunking_version": "heading_faq_v2",
+              "faq_unit": false
+            },
+            "score": 0.8108667731285095,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "passport_73ac41f2327257f9_v2_0004",
+            "content": "Documents need to be carried while enrolment at Passport offices / পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে\nDocuments need to be carried while enrolment at Passport offices > প্রয়োজনীয় কাগজপত্র (বাংলা)\n\n## প্রয়োজনীয় কাগজপত্র (বাংলা)\n* **ক্রমিক ১:** আবেদনপত্রের সারংশের প্রিন্ট কপি (অ্যাপয়েন্টমেন্ট সহ)।\n* **ক্রমিক ২:** সনাক্তকরণ নথির প্রিন্ট কপি (জাতীয় পরিচয় পত্র/ জন্ম নিবন্ধন নং)।\n* **ক্রমিক ৩:** পেমেন্ট স্লিপ (for Offline Payment only) I\n* **ক্রমিক ৪:** পূর্ববর্তী পাসপোর্ট এবং ডাটা পেজের প্রিন্ট কপি (যদি থাকে)।\n* **ক্রমিক ৫:** সরকারি চাকরিজীবীদের ক্ষেত্রে GO/NOC (যদি থাকে)।\n* **ক্রমিক ৬:** আবেদনপত্রের প্রিন্ট কপি।\n* **ক্রমিক ৭:** তথ্য সংশোধনের ক্ষেত্রে প্রয়োজনীয় কাগজপত্র (যদি থাকে)।",
+            "metadata": {
+              "domain": "passport",
+              "doc_id": "passport_73ac41f2327257f9",
+              "document_id": "passport_73ac41f2327257f9",
+              "title": "Documents need to be carried while enrolment at Passport offices / পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে",
+              "section_title": "Documents need to be carried while enrolment at Passport offices > প্রয়োজনীয় কাগজপত্র (বাংলা)",
+              "document_type": "সাধারণ তথ্য",
+              "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.md",
+              "source_relative_path": "cleaned_md/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.md",
+              "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.md",
+              "source_sha256": "11f8f5bb9835c318f2ee6fda5b64e345563234278c88ac3062d5e7a89d3d8fe9",
+              "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.pdf\"]",
+              "document_date": "2025-05-07",
+              "date_verified": false,
+              "audit_flags": "no_web_address",
+              "experimental": true,
+              "body_start": 679,
+              "body_end": 1174,
+              "source_url": "",
+              "chunking_version": "heading_faq_v2",
+              "faq_unit": false
+            },
+            "score": 0.8100785613059998,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "passport_73ac41f2327257f9_v2_0001",
+            "content": "Documents need to be carried while enrolment at Passport offices / পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে\nDocuments need to be carried while enrolment at Passport offices\n\n# Documents need to be carried while enrolment at Passport offices\n",
+            "metadata": {
+              "domain": "passport",
+              "doc_id": "passport_73ac41f2327257f9",
+              "document_id": "passport_73ac41f2327257f9",
+              "title": "Documents need to be carried while enrolment at Passport offices / পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে",
+              "section_title": "Documents need to be carried while enrolment at Passport offices",
+              "document_type": "সাধারণ তথ্য",
+              "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.md",
+              "source_relative_path": "cleaned_md/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.md",
+              "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.md",
+              "source_sha256": "11f8f5bb9835c318f2ee6fda5b64e345563234278c88ac3062d5e7a89d3d8fe9",
+              "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.pdf\"]",
+              "document_date": "2025-05-07",
+              "date_verified": false,
+              "audit_flags": "no_web_address",
+              "experimental": true,
+              "body_start": 0,
+              "body_end": 67,
+              "source_url": "",
+              "chunking_version": "heading_faq_v2",
+              "faq_unit": false
+            },
+            "score": 0.7779948115348816,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          }
+        ],
+        "domain": "passport",
+        "answer_route": "llm",
+        "experimental": true,
+        "expected_evidence_present": false
+      }
+    },
+    {
+      "audit_item": {
+        "id": "passport_password_direct",
+        "domain": "passport",
+        "family": "account_password_recovery",
+        "variant": "direct",
+        "question": "অনলাইন পাসপোর্ট অ্যাকাউন্টের পাসওয়ার্ড ভুলে গেলে কী করতে হবে?",
+        "expected_evidence_hint": "Bangladesh_ePassport_FAQ",
+        "expected_key_fact": "Forgot password দিয়ে পুনরুদ্ধার"
+      },
+      "elapsed_seconds": 96.42,
+      "result": {
+        "query": "অনলাইন পাসপোর্ট অ্যাকাউন্টের পাসওয়ার্ড ভুলে গেলে কী করতে হবে?",
+        "model": "qwen2.5:7b",
+        "method": "civic",
+        "answer": "1. অ্যাকাউন্ট সাইন ইন অপশনে যান।\n2. \"Forgot password\" লিঙ্কে ক্লিক করুন।\n3. ই-মেইল অ্যাড্রেসে প্রবেশ করুন।\n4. ই-মেইল অ্যাকাউন্টের রিকভারি মেসেজে দেওয়া নির্দেশনা অনুসরণ করুন।\n\nSources: passport_23d845d3ab38ea43_v2_0004, passport_23d845d3ab38ea43_v2_0005, passport_23d845d3ab38ea43_v2_0043",
+        "sources": [
+          {
+            "id": "passport_23d845d3ab38ea43_v2_0004",
+            "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 1. Account and Settings (অ্যাকাউন্ট এবং সেটিংস) > 1.1 Password Recovery / পাসওয়ার্ড পুনরুদ্ধার\n\n### 1.1 Password Recovery / পাসওয়ার্ড পুনরুদ্ধার\n- **Category:** Account and Settings\n- **Topic:** Forgotten Account Password\n- **English Question:** I forgot the password of my online application account - what should I do?\n- **Bengali Question (প্রশ্ন):** আমার অনলাইন আবেদনের পাসওয়ার্ড ভুলে গেছি। এখন কি করা উচিত?\n- **English Answer:** In case you forgot the password of your online application account, you can use the password recovery function. Go to the account sign in, click the \"Forgot password\" link, enter your email address, check your email account for the recovery message, and follow the instructions given there.\n- **Bengali Answer (উত্তর):** পাসওয়ার্ড পুনরুদ্ধারে নিম্নবর্ণিত পন্থা অবলম্বন করুন: \n  1. অ্যাকাউন্ট সাইন ইন অপশনে যান।\n  2. \"Forgot password\" লিঙ্কে ক্লিক করুন।\n  3. ই-মেইল অ্যাড্রেসে প্রবেশ করুন।\n  4. ই-মেইল অ্যাকাউন্টের রিকভারি মেসেজে দেওয়া নির্দেশনা অনুসরণ করুন।\n\n---\n\n",
+            "metadata": {
+              "domain": "passport",
+              "doc_id": "passport_23d845d3ab38ea43",
+              "document_id": "passport_23d845d3ab38ea43",
+              "title": "Bangladesh_ePassport_FAQ",
+              "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 1. Account and Settings (অ্যাকাউন্ট এবং সেটিংস) > 1.1 Password Recovery / পাসওয়ার্ড পুনরুদ্ধার",
+              "document_type": "document",
+              "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+              "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+              "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+              "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+              "original_paths": "[]",
+              "document_date": "unknown",
+              "date_verified": false,
+              "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+              "experimental": true,
+              "body_start": 339,
+              "body_end": 1245,
+              "source_url": "",
+              "chunking_version": "heading_faq_v2",
+              "faq_unit": true
+            },
+            "score": 0.966351330280304,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "passport_23d845d3ab38ea43_v2_0005",
+            "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 1. Account and Settings (অ্যাকাউন্ট এবং সেটিংস) > 1.2 Change Registered Mobile Number / মোবাইল নম্বর পরিবর্তন\n\n### 1.2 Change Registered Mobile Number / মোবাইল নম্বর পরিবর্তন\n- **Category:** Account and Settings\n- **Topic:** Updating Mobile Phone Number\n- **English Question:** Can I change the mobile number registered in my online application account?\n- **Bengali Question (প্রশ্ন):** অনলাইন অ্যাপ্লিকেশন অ্যাকাউন্ট থেকে মোবাইল নাম্বার পরিবর্তন করা যাবে কি?\n- **English Answer:** Yes, this is possible. Just sign in to your ePassport online account. Click on the account name and select \"Account data\". Now you can do the following:\n  1. Activate or de-activate the SMS notification function.\n  2. Enter a new mobile number where you want to receive the automated status notifications.  \n  *Please note:* An individual mobile number can only be used for one ePassport online account.\n- **Bengali Answer (উত্তর):** হ্যাঁ। এটা সম্ভব। ই-পাসপোর্ট অনলাইন অ্যাকাউন্টে প্রবেশ করুন এবং 'অ্যাকাউন্ট ডাটা' (Account Data) সিলেক্ট করুন। নিচের বিষয়গুলি অনুসরণ করুন:\n  1. এসএমএস নোটিফিকেশন অ্যাকাউন্ট ডি-অ্যাক্টিভ বা অ্যাক্টিভ করুন।\n  2. নতুন মোবাইল নাম্বার প্রবেশ করান, যেখানে আপনি অনলাইন আবেদনের সকল নোটিফিকেশন স্বয়ংক্রিয়ভাবে পাবেন।  \n  *দ্রষ্টব্য:* একটি একক মোবাইল নম্বর কেবল একটি ই-পাসপোর্ট অনলাইন অ্যাকাউন্টের জন্য ব্যবহার করা যেতে পারে।\n\n---\n\n",
+            "metadata": {
+              "domain": "passport",
+              "doc_id": "passport_23d845d3ab38ea43",
+              "document_id": "passport_23d845d3ab38ea43",
+              "title": "Bangladesh_ePassport_FAQ",
+              "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 1. Account and Settings (অ্যাকাউন্ট এবং সেটিংস) > 1.2 Change Registered Mobile Number / মোবাইল নম্বর পরিবর্তন",
+              "document_type": "document",
+              "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+              "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+              "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+              "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+              "original_paths": "[]",
+              "document_date": "unknown",
+              "date_verified": false,
+              "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+              "experimental": true,
+              "body_start": 1245,
+              "body_end": 2474,
+              "source_url": "",
+              "chunking_version": "heading_faq_v2",
+              "faq_unit": true
+            },
+            "score": 0.02797376550734043,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "passport_23d845d3ab38ea43_v2_0043",
+            "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.6 Portal Error: \"Application ID / Online Registration ID Required\" / স্ট্যাটাস দেখার সমস্যা ও সমাধান\n\n### 6.6 Portal Error: \"Application ID / Online Registration ID Required\" / স্ট্যাটাস দেখার সমস্যা ও সমাধান\n- **Category:** Status, Delivery & Corrections\n- **Topic:** Technical Portal Troubleshooting\n- **English Question:** Having trouble viewing online status. \"Application ID / Online Registration ID is required\" despite providing the ID. What can I do?\n- **Bengali Question (প্রশ্ন):** অনলাইন স্ট্যাটাস দেখতে সমস্যা হচ্ছে। Application ID / Online Registration ID প্রদান করা সত্ত্বেও \"Application ID / Online Registration ID is required\" দেখায়। আমি কি করতে পারি?\n- **English Answer:** Clear your web browser's Cache and Cookies, or open the portal in an Incognito/Private window and check again.\n- **Bengali Answer (উত্তর):** আপনার ব্রাউজারের ক্যাশ (Cache) এবং কুকিজ (Cookies) ক্লিয়ার করে পুনরায় স্ট্যাটাস চেক করার চেষ্টা করুন।\n\n---\n\n",
+            "metadata": {
+              "domain": "passport",
+              "doc_id": "passport_23d845d3ab38ea43",
+              "document_id": "passport_23d845d3ab38ea43",
+              "title": "Bangladesh_ePassport_FAQ",
+              "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.6 Portal Error: \"Application ID / Online Registration ID Required\" / স্ট্যাটাস দেখার সমস্যা ও সমাধান",
+              "document_type": "document",
+              "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+              "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+              "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+              "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+              "original_paths": "[]",
+              "document_date": "unknown",
+              "date_verified": false,
+              "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+              "experimental": true,
+              "body_start": 32264,
+              "body_end": 33104,
+              "source_url": "",
+              "chunking_version": "heading_faq_v2",
+              "faq_unit": true
+            },
+            "score": 0.02760615386068821,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "passport_23d845d3ab38ea43_v2_0015",
+            "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 3. Payment & Fees (পেমেন্ট ও ফি) > 3.1 Online Payment Issues / অনলাইন অর্থ প্রদানে সমস্যা\n\n### 3.1 Online Payment Issues / অনলাইন অর্থ প্রদানে সমস্যা\n- **Category:** Payment & Fees\n- **Topic:** Online Payment Failures & Refunds\n- **English Question:** I experienced issues with Online Payment - what can I do?\n- **Bengali Question (প্রশ্ন):** আমি অনলাইন অর্থ প্রদানের ক্ষেত্রে কিছু সমস্যা পেয়েছি আমি কী করতে পারি?\n- **English Answer:** \n  1. **If money was deducted but status is Failed:** Contact your bank for a refund. After receiving the refund from the bank, delete the application and apply anew.\n  2. **If money was NOT deducted and status is Failed:** Select the offline payment option or delete this application and try a new one.\n- **Bengali Answer (উত্তর):** \n  1. আপনার ব্যাংক অ্যাকাউন্ট থেকে টাকা কেটে নিয়ে যদি স্ট্যাটাস ফেইল্ড (Failed) দেখায়, তবে রিফান্ডের জন্য সংশ্লিষ্ট ব্যাংকে যোগাযোগ করুন। রিফান্ড পাওয়ার পর উক্ত আবেদনটি ডিলিট করে নতুন আবেদন করুন।\n  2. টাকা না কেটে যদি স্ট্যাটাস ফেইল্ড দেখায়, তবে অফলাইনে পেমেন্ট সিলেক্ট করে আবেদনটি সাবমিট দিন अथवा উক্ত আবেদনটি ডিলিট করে নতুন আবেদন করুন।\n\n---\n\n",
+            "metadata": {
+              "domain": "passport",
+              "doc_id": "passport_23d845d3ab38ea43",
+              "document_id": "passport_23d845d3ab38ea43",
+              "title": "Bangladesh_ePassport_FAQ",
+              "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 3. Payment & Fees (পেমেন্ট ও ফি) > 3.1 Online Payment Issues / অনলাইন অর্থ প্রদানে সমস্যা",
+              "document_type": "document",
+              "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+              "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+              "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+              "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+              "original_paths": "[]",
+              "document_date": "unknown",
+              "date_verified": false,
+              "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+              "experimental": true,
+              "body_start": 9258,
+              "body_end": 10286,
+              "source_url": "",
+              "chunking_version": "heading_faq_v2",
+              "faq_unit": true
+            },
+            "score": 0.02426885813474655,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "passport_5eb6c21efe103a4f_v2_0034",
+            "content": "Bangladesh Machine Readable Passport (MRP) Online Application Guide 2012\nBangladesh Machine Readable Passport (MRP) Online Application Guide (2012) > 5. Frequently Asked Questions (FAQ) & Answers | প্রশ্ন ও উত্তর > Q2: What should I do if my passport is lost?\n\n### Q2: What should I do if my passport is lost?\n\n**Answer**: File a General Diary (GD) report at the nearest police station immediately. When filling out the online MRP form, select `DUPLICATE` as the application type, enter the lost passport number, and present the original GD copy along with your application at the RPO.\n\n",
+            "metadata": {
+              "domain": "passport",
+              "doc_id": "passport_5eb6c21efe103a4f",
+              "document_id": "passport_5eb6c21efe103a4f",
+              "title": "Bangladesh Machine Readable Passport (MRP) Online Application Guide 2012",
+              "section_title": "Bangladesh Machine Readable Passport (MRP) Online Application Guide (2012) > 5. Frequently Asked Questions (FAQ) & Answers | প্রশ্ন ও উত্তর > Q2: What should I do if my passport is lost?",
+              "document_type": "document",
+              "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh Machine Readable Passport (MRP) Online Application Guide 2012.md",
+              "source_relative_path": "cleaned_md/Bangladesh Machine Readable Passport (MRP) Online Application Guide 2012.md",
+              "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh Machine Readable Passport (MRP) Online Application Guide 2012.md",
+              "source_sha256": "8ce0916f4e83af158dbdbe22ed97f2b467f71c1f41d3404e33d3c9d0412875e7",
+              "original_paths": "[]",
+              "document_date": "unknown",
+              "date_verified": false,
+              "audit_flags": "original_match_unresolved, no_web_address, nonstandard_metadata_layout, dated_document_review_applicability",
+              "experimental": true,
+              "body_start": 11937,
+              "body_end": 12263,
+              "source_url": "",
+              "chunking_version": "heading_faq_v2",
+              "faq_unit": false
+            },
+            "score": 0.02183876559138298,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "passport_23d845d3ab38ea43_v2_0036",
+            "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 5. Document Requirements (প্রয়োজনীয় কাগজপত্র) > 5.5 Lost ePassport and Missing Previous Passport Number / ই-পাসপোর্ট হারিয়ে গেলে নম্বর সংগ্রহ\n\n### 5.5 Lost ePassport and Missing Previous Passport Number / ই-পাসপোর্ট হারিয়ে গেলে নম্বর সংগ্রহ\n- **Category:** Document Requirements\n- **Topic:** Lost Passport Recovery\n- **English Question:** I have lost my e-Passport. I don't have my previous e-Passport number. How can I get my previous e-Passport number?\n- **Bengali Question (প্রশ্ন):** আমি আমার ই-পাসপোর্ট হারিয়ে ফেলেছি। আমার আগের ই-পাসপোর্ট নম্বর মনে নেই। আমি কি ভাবে আমার আগের ই-পাসপোর্ট নম্বর পেতে পারি?\n- **English Answer:** Please communicate directly with your designated Regional Passport Office for assistance. You must bring your original NID card and BRC to retrieve your previous ePassport number.\n- **Bengali Answer (উত্তর):** প্রয়োজনীয় সহায়তার জন্য আপনার আঞ্চলিক পাসপোর্ট অফিসে (RPO) সরাসরি যোগাযোগ করুন। পূর্ববর্তী ই-পাসপোর্ট নম্বর সংগ্রহের জন্য আপনাকে NID এবং BRC সাথে আনতে হবে।\n\n---\n\n",
+            "metadata": {
+              "domain": "passport",
+              "doc_id": "passport_23d845d3ab38ea43",
+              "document_id": "passport_23d845d3ab38ea43",
+              "title": "Bangladesh_ePassport_FAQ",
+              "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 5. Document Requirements (প্রয়োজনীয় কাগজপত্র) > 5.5 Lost ePassport and Missing Previous Passport Number / ই-পাসপোর্ট হারিয়ে গেলে নম্বর সংগ্রহ",
+              "document_type": "document",
+              "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+              "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+              "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+              "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+              "original_paths": "[]",
+              "document_date": "unknown",
+              "date_verified": false,
+              "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+              "experimental": true,
+              "body_start": 26952,
+              "body_end": 27816,
+              "source_url": "",
+              "chunking_version": "heading_faq_v2",
+              "faq_unit": true
+            },
+            "score": 0.02139856293797493,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          }
+        ],
+        "domain": "passport",
+        "answer_route": "llm",
+        "experimental": true,
+        "expected_evidence_present": true
+      }
+    }
+  ]
+}
