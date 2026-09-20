@@ -1,0 +1,59 @@
+{
+  "purpose": "Small balanced comparison of fixed CivicRAG retrieval with Llama 3 and Qwen 2.5:7B. The same six questions were previously answered by Llama 3.2.",
+  "questions": [
+    {
+      "id": "birth_deadline_direct",
+      "domain": "birth_death_registration",
+      "family": "birth_deadline",
+      "variant": "direct",
+      "question": "শিশুর জন্মের কত দিনের মধ্যে জন্ম নিবন্ধনের তথ্য দিতে হয়?",
+      "expected_evidence_hint": "birth_and_death_registration_act_2004_ধারা_৮",
+      "expected_key_fact": "৪৫ দিন"
+    },
+    {
+      "id": "birth_deadline_code_mixed",
+      "domain": "birth_death_registration",
+      "family": "birth_deadline",
+      "variant": "code_mixed",
+      "question": "baby birth er por birth registration information kotodin er moddhe dite hoy?",
+      "expected_evidence_hint": "birth_and_death_registration_act_2004_ধারা_৮",
+      "expected_key_fact": "৪৫ দিন"
+    },
+    {
+      "id": "brta_age_direct",
+      "domain": "brta",
+      "family": "professional_license_age",
+      "variant": "direct",
+      "question": "পেশাদার ড্রাইভিং লাইসেন্সের জন্য ন্যূনতম বয়স কত?",
+      "expected_evidence_hint": "নতুন ড্রাইভিং লাইসেন্স ইস্যু",
+      "expected_key_fact": "২১ বছর"
+    },
+    {
+      "id": "brta_colour_code_mixed",
+      "domain": "brta",
+      "family": "vehicle_colour_change",
+      "variant": "code_mixed",
+      "question": "car er colour change BRTA te update korte ki documents lagbe?",
+      "expected_evidence_hint": "রং পরিবর্তন",
+      "expected_key_fact": "রং পরিবর্তনের প্রমাণক ও নিবন্ধন-সংক্রান্ত কাগজ"
+    },
+    {
+      "id": "passport_collect_direct",
+      "domain": "passport",
+      "family": "passport_collection",
+      "variant": "direct",
+      "question": "ই-পাসপোর্ট সংগ্রহ করতে অফিসে কী কী নিয়ে যেতে হবে?",
+      "expected_evidence_hint": "Documents Needed for Passport Collection",
+      "expected_key_fact": "ডেলিভারি স্লিপ"
+    },
+    {
+      "id": "passport_password_direct",
+      "domain": "passport",
+      "family": "account_password_recovery",
+      "variant": "direct",
+      "question": "অনলাইন পাসপোর্ট অ্যাকাউন্টের পাসওয়ার্ড ভুলে গেলে কী করতে হবে?",
+      "expected_evidence_hint": "Bangladesh_ePassport_FAQ",
+      "expected_key_fact": "Forgot password দিয়ে পুনরুদ্ধার"
+    }
+  ]
+}
