@@ -30,79 +30,166 @@ HTML = """<!doctype html>
   <title>Civic.ai Government Service RAG</title>
   <style>
     :root {
-      --ink: #172033;
-      --muted: #667085;
-      --line: #d7dee8;
-      --surface: #f7f9fc;
+      --ink: #11221f;
+      --muted: #60716c;
+      --line: #d7e4df;
+      --surface: #f4f8f5;
       --panel: #ffffff;
-      --accent: #116a5c;
-      --accent-2: #c76b2a;
-      --answer: #eef7f4;
-      --user: #f1f4f9;
+      --teal: #087c6d;
+      --teal-deep: #075b52;
+      --saffron: #f4b942;
+      --navy: #143a52;
+      --answer: #fbfdfc;
+      --user: #e5f4ef;
+      --shadow: 0 18px 45px rgba(16, 55, 48, .10);
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: "Anek Bangla", "Noto Sans Bengali", "Hind Siliguri", ui-sans-serif, sans-serif;
       color: var(--ink);
-      background: linear-gradient(180deg, #eef3f8 0%, #fbfcfe 42%, #f5f8fb 100%);
+      background:
+        radial-gradient(circle at 8% -8%, rgba(244, 185, 66, .24), transparent 29rem),
+        radial-gradient(circle at 94% 3%, rgba(8, 124, 109, .16), transparent 28rem),
+        linear-gradient(160deg, #eff7f4 0%, #f9fbf9 43%, #eef4f1 100%);
     }
     .shell {
       min-height: 100vh;
-      display: grid;
-      grid-template-rows: auto 1fr auto;
     }
     header {
-      border-bottom: 1px solid var(--line);
-      background: rgba(255,255,255,.86);
+      width: min(1220px, calc(100% - 32px));
+      margin: 18px auto 0;
+      border: 1px solid rgba(211, 229, 222, .9);
+      border-radius: 20px;
+      background: rgba(255,255,255,.78);
       backdrop-filter: blur(14px);
-      padding: 16px clamp(16px, 4vw, 42px);
+      box-shadow: 0 8px 25px rgba(18, 58, 48, .06);
+      padding: 14px 18px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 18px;
     }
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      color: white;
+      font-family: Georgia, serif;
+      font-size: 21px;
+      font-weight: 700;
+      background: linear-gradient(145deg, var(--teal), var(--navy));
+      box-shadow: 0 8px 17px rgba(8, 124, 109, .23);
+    }
+    .eyebrow {
+      color: var(--teal);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
     .controls {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
       flex-wrap: wrap;
       justify-content: flex-end;
     }
-    h1 { margin: 0; font-size: 20px; line-height: 1.2; }
-    .sub { color: var(--muted); font-size: 13px; margin-top: 3px; }
+    h1 { margin: 1px 0 0; font-family: Georgia, "Noto Serif Bengali", serif; font-size: 21px; line-height: 1.15; letter-spacing: -.02em; }
+    .sub { color: var(--muted); font-size: 12px; margin-top: 4px; }
     select, button, textarea {
       font: inherit;
       border: 1px solid var(--line);
-      border-radius: 8px;
+      border-radius: 11px;
       background: var(--panel);
       color: var(--ink);
     }
-    select { padding: 9px 10px; min-width: 135px; }
+    .controls select { padding: 8px 9px; min-width: 120px; color: #38514a; font-size: 12px; }
+    #register-link {
+      color: var(--teal-deep);
+      font-size: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      padding: 8px 9px;
+    }
+    #register-link:hover { color: var(--teal); }
     main {
-      width: min(980px, 100%);
+      width: min(1120px, 100%);
       margin: 0 auto;
-      padding: 22px clamp(14px, 4vw, 30px);
+      padding: 28px clamp(16px, 4vw, 30px) 34px;
       display: grid;
       grid-template-rows: 1fr auto;
-      gap: 16px;
+      gap: 18px;
     }
     #chat {
-      min-height: 55vh;
+      min-height: 54vh;
       display: flex;
       flex-direction: column;
-      gap: 14px;
+      gap: 16px;
     }
+    .welcome {
+      min-height: 420px;
+      display: grid;
+      align-content: center;
+      justify-items: center;
+      text-align: center;
+      padding: 42px 22px;
+      border: 1px solid rgba(215, 229, 223, .92);
+      border-radius: 28px;
+      background: rgba(255,255,255,.68);
+      box-shadow: var(--shadow);
+    }
+    .welcome-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 7px 11px;
+      border-radius: 999px;
+      background: #e4f3ed;
+      color: var(--teal-deep);
+      font-size: 12px;
+      font-weight: 750;
+    }
+    .welcome-badge::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--saffron); box-shadow: 0 0 0 3px rgba(244,185,66,.18); }
+    .welcome h2 { max-width: 680px; margin: 16px 0 9px; font-family: Georgia, "Noto Serif Bengali", serif; font-size: clamp(27px, 4vw, 42px); line-height: 1.13; letter-spacing: -.035em; }
+    .welcome p { max-width: 590px; margin: 0; color: var(--muted); font-size: 15px; line-height: 1.65; }
+    .service-cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 25px; }
+    .service-card {
+      border: 1px solid #d8e8e1;
+      border-radius: 14px;
+      padding: 11px 14px;
+      color: #254940;
+      background: #fff;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .service-card span { color: var(--muted); font-size: 11px; font-weight: 500; }
+    .example-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; max-width: 790px; margin-top: 23px; }
+    .example-chip {
+      border: 1px solid #c9ddd5;
+      border-radius: 999px;
+      padding: 8px 12px;
+      color: var(--teal-deep);
+      background: #f8fcfa;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .example-chip:hover { background: #e7f5ef; border-color: #80b9aa; }
     .message {
-      max-width: 820px;
-      padding: 14px 15px;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      line-height: 1.52;
+      width: fit-content;
+      max-width: min(850px, 92%);
+      padding: 16px 17px;
+      border: 1px solid #d7e4df;
+      border-radius: 18px;
+      line-height: 1.65;
       white-space: pre-wrap;
+      box-shadow: 0 8px 20px rgba(18, 58, 48, .055);
     }
-    .message.user { align-self: flex-end; background: var(--user); }
-    .message.bot { align-self: flex-start; background: var(--answer); }
+    .message.user { align-self: flex-end; color: #073b34; background: linear-gradient(145deg, #ddf2eb, #eef8f4); border-bottom-right-radius: 5px; }
+    .message.bot { align-self: flex-start; background: var(--answer); border-bottom-left-radius: 5px; }
     .sources {
       margin-top: 12px;
       display: grid;
@@ -112,19 +199,21 @@ HTML = """<!doctype html>
       white-space: normal;
     }
     .source {
-      border-left: 3px solid var(--accent);
+      border-left: 3px solid var(--teal);
       padding-left: 8px;
     }
+    details.evidence-details { margin-top: 13px; border-top: 1px solid #e0ebe6; padding-top: 11px; white-space: normal; }
+    details.evidence-details summary { color: var(--teal-deep); cursor: pointer; font-size: 12px; font-weight: 750; }
     .generation {
       margin-top: 12px;
       display: inline-flex;
       width: fit-content;
       max-width: 100%;
       padding: 5px 8px;
-      border: 1px solid #c8d6e3;
+      border: 1px solid #cce3da;
       border-radius: 999px;
-      background: rgba(255,255,255,.72);
-      color: #475467;
+      background: #eff8f4;
+      color: #416259;
       font-size: 12px;
       font-weight: 650;
       white-space: normal;
@@ -142,63 +231,82 @@ HTML = """<!doctype html>
       font-weight: 700;
     }
     .link-item a {
-      color: var(--accent);
+      color: var(--teal);
       overflow-wrap: anywhere;
       text-decoration: none;
-      border-bottom: 1px solid rgba(17, 106, 92, .32);
+      border-bottom: 1px solid rgba(8, 124, 109, .32);
     }
     .link-item a:hover {
-      border-bottom-color: var(--accent);
+      border-bottom-color: var(--teal);
     }
     form {
       display: grid;
       grid-template-columns: 1fr auto auto;
-      gap: 10px;
+      gap: 9px;
       align-items: end;
-      position: sticky;
-      bottom: 0;
-      background: rgba(247,249,252,.92);
-      padding: 12px 0 4px;
-      backdrop-filter: blur(10px);
+      padding: 10px;
+      border: 1px solid #d4e3dd;
+      border-radius: 19px;
+      background: rgba(255,255,255,.88);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(12px);
     }
     #domain {
       min-width: 178px;
       padding: 12px 10px;
+      background: #f4f9f6;
     }
     textarea {
       width: 100%;
-      min-height: 58px;
+      min-height: 56px;
       max-height: 170px;
       resize: vertical;
       padding: 12px 13px;
       line-height: 1.45;
+      border-color: transparent;
+      background: transparent;
+      outline: none;
     }
+    textarea:focus { box-shadow: inset 0 0 0 2px rgba(8,124,109,.2); }
     button {
       padding: 12px 17px;
-      background: var(--accent);
+      background: linear-gradient(145deg, var(--teal), var(--teal-deep));
       color: white;
-      border-color: var(--accent);
+      border-color: var(--teal-deep);
       font-weight: 650;
       cursor: pointer;
+      box-shadow: 0 7px 13px rgba(8,124,109,.2);
     }
+    button:hover:not(:disabled) { transform: translateY(-1px); filter: brightness(1.03); }
     button:disabled {
       opacity: .58;
       cursor: wait;
     }
-    .status { color: var(--muted); font-size: 13px; padding: 0 2px; }
-    @media (max-width: 640px) {
-      header { align-items: flex-start; flex-direction: column; }
+    .status { color: var(--muted); font-size: 12px; padding: 0 3px 8px; }
+    .status::before { content: ""; display: inline-block; width: 7px; height: 7px; margin-right: 6px; border-radius: 50%; background: #55af86; }
+    @media (max-width: 760px) {
+      header { width: calc(100% - 22px); align-items: flex-start; flex-direction: column; margin-top: 11px; }
+      .controls { justify-content: flex-start; }
+      #register-link { padding-left: 0; }
       form { grid-template-columns: 1fr; }
       button { width: 100%; }
+      #domain { width: 100%; }
+      .welcome { min-height: 390px; padding: 30px 16px; }
+      .welcome h2 { font-size: 30px; }
+      .message { max-width: 96%; }
     }
   </style>
 </head>
 <body>
   <div class="shell">
     <header>
-      <div>
-        <h1>Civic.ai Government Service RAG</h1>
-        <div class="sub" id="domain-note">বাংলা প্রশ্ন করুন এবং সঠিক সেবা ডোমেইন নির্বাচন করুন। BRTA ও Passport ডেটাসেট পরীক্ষামূলক।</div>
+      <div class="brand">
+        <div class="brand-mark">সি</div>
+        <div>
+          <div class="eyebrow">Bangladesh public service assistant</div>
+          <h1>Civic.ai</h1>
+          <div class="sub" id="domain-note">বাংলা প্রশ্ন করুন এবং সঠিক সেবা ডোমেইন নির্বাচন করুন।</div>
+        </div>
       </div>
       <div class="controls">
         <a id="register-link" href="/data-register" target="_blank">Data register</a>
@@ -215,7 +323,23 @@ HTML = """<!doctype html>
       </div>
     </header>
     <main>
-      <section id="chat"></section>
+      <section id="chat">
+        <div id="welcome" class="welcome">
+          <div class="welcome-badge">সোর্স-ভিত্তিক নাগরিক সেবা সহায়তা</div>
+          <h2>সরকারি সেবা সম্পর্কে পরিষ্কার উত্তর, বাংলায়।</h2>
+          <p>প্রশ্নের ধরন অনুযায়ী যাচাইকৃত উৎস থেকে তথ্য আনা হয়। একটি সেবা ডোমেইন নির্বাচন করে সরাসরি, নিজের ভাষায় বা পরিস্থিতি ব্যাখ্যা করে প্রশ্ন করুন।</p>
+          <div class="service-cards">
+            <div class="service-card">জন্ম ও মৃত্যু নিবন্ধন<br><span>Birth &amp; death registration</span></div>
+            <div class="service-card">পাসপোর্ট<br><span>Passport services</span></div>
+            <div class="service-card">বিআরটিএ<br><span>Vehicle &amp; licence services</span></div>
+          </div>
+          <div class="example-row">
+            <button class="example-chip" type="button" data-domain="birth_death_registration" data-query="জন্ম নিবন্ধনের জন্য কী কী কাগজপত্র লাগবে?">জন্ম নিবন্ধনের কাগজপত্র</button>
+            <button class="example-chip" type="button" data-domain="passport" data-query="পাসপোর্ট করতে কত টাকা লাগে?">পাসপোর্টের ফি</button>
+            <button class="example-chip" type="button" data-domain="brta" data-query="ড্রাইভিং লাইসেন্স নবায়ন কীভাবে করব?">লাইসেন্স নবায়ন</button>
+          </div>
+        </div>
+      </section>
       <div>
         <div id="status" class="status">Ready</div>
         <form id="form">
@@ -237,6 +361,7 @@ HTML = """<!doctype html>
     const registerLink = document.getElementById("register-link");
     const status = document.getElementById("status");
     const send = document.getElementById("send");
+    const welcome = document.getElementById("welcome");
     const banglaPattern = /[\u0980-\u09FF]/;
 
     function methodLabel(value) {
@@ -270,22 +395,31 @@ HTML = """<!doctype html>
     }
 
     function addMessage(text, role, sources = [], run = null) {
+      if (welcome) welcome.remove();
       const node = document.createElement("div");
       node.className = `message ${role}`;
       node.textContent = text;
       if (role === "bot" && run) {
         const generation = document.createElement("div");
         generation.className = "generation";
-        const route = run.answer_route === "controlled" ? "Controlled answer (LLM bypassed)" : `${run.model} (${run.answer_route || "LLM"})`;
+        const controlledRoutes = ["controlled", "controlled_evidence"];
+        const route = controlledRoutes.includes(run.answer_route)
+          ? (run.answer_route === "controlled_evidence" ? "Evidence-first answer" : "Controlled answer (LLM bypassed)")
+          : `${run.model} (${run.answer_route || "LLM"})`;
         generation.textContent = `${run.domain} | ${methodLabel(run.method)} | ${route}`;
         node.appendChild(generation);
       }
       if (sources.length) {
+        const details = document.createElement("details");
+        details.className = "evidence-details";
+        const summary = document.createElement("summary");
+        summary.textContent = "প্রমাণ ও রিট্রিভাল বিস্তারিত দেখুন";
+        details.appendChild(summary);
         const box = document.createElement("div");
         box.className = "sources";
         const title = document.createElement("div");
         title.className = "links-title";
-        title.textContent = "Retrieved candidate chunks for debugging";
+        title.textContent = "Retrieved candidate chunks";
         box.appendChild(title);
         sources.forEach((source, index) => {
           const item = document.createElement("div");
@@ -297,7 +431,8 @@ HTML = """<!doctype html>
           }
           box.appendChild(item);
         });
-        node.appendChild(box);
+        details.appendChild(box);
+        node.appendChild(details);
       }
       if (role === "bot" && sources.length) {
         const links = uniqueLinksFromSources(sources);
@@ -322,7 +457,8 @@ HTML = """<!doctype html>
             item.appendChild(sourceText);
             linksBox.appendChild(item);
           });
-          node.appendChild(linksBox);
+          const target = node.querySelector(".evidence-details");
+          (target || node).appendChild(linksBox);
         }
       }
       chat.appendChild(node);
@@ -372,6 +508,14 @@ HTML = """<!doctype html>
       registerLink.href = `/data-register?domain=${encodeURIComponent(domain.value)}`;
       domainNote.textContent = domain.value === "birth_death_registration" ? "জন্ম ও মৃত্যু নিবন্ধন: বাংলায় প্রশ্ন করুন।" : "পরীক্ষামূলক ডেটাসেট: বাংলায় প্রশ্ন করুন এবং উৎস ও ডেটা রেজিস্টার দেখুন।";
     });
+    document.querySelectorAll(".example-chip").forEach((chip) => {
+      chip.addEventListener("click", () => {
+        domain.value = chip.dataset.domain;
+        domain.dispatchEvent(new Event("change"));
+        query.value = chip.dataset.query;
+        query.focus();
+      });
+    });
     send.disabled = true;
     fetch("/domains").then(r => r.json()).then(payload => {
       payload.domains.forEach(item => {
@@ -384,7 +528,6 @@ HTML = """<!doctype html>
       domain.dispatchEvent(new Event("change"));
       send.disabled = false;
     }).catch(() => { status.textContent = "Unable to load service domains"; });
-    addMessage("সেবা ডোমেইন ও মডেল নির্বাচন করে বাংলায় প্রশ্ন করুন। উত্তরের সঙ্গে ব্যবহৃত উৎস দেখানো হবে।", "bot");
   </script>
 </body>
 </html>
