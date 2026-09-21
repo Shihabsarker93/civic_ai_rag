@@ -152,7 +152,7 @@ HTML = """<!doctype html>
     }
     form {
       display: grid;
-      grid-template-columns: 1fr auto;
+      grid-template-columns: 1fr auto auto;
       gap: 10px;
       align-items: end;
       position: sticky;
@@ -160,6 +160,10 @@ HTML = """<!doctype html>
       background: rgba(247,249,252,.92);
       padding: 12px 0 4px;
       backdrop-filter: blur(10px);
+    }
+    #domain {
+      min-width: 178px;
+      padding: 12px 10px;
     }
     textarea {
       width: 100%;
@@ -197,7 +201,6 @@ HTML = """<!doctype html>
         <div class="sub" id="domain-note">বাংলা প্রশ্ন করুন এবং সঠিক সেবা ডোমেইন নির্বাচন করুন। BRTA ও Passport ডেটাসেট পরীক্ষামূলক।</div>
       </div>
       <div class="controls">
-        <select id="domain" aria-label="Service domain"></select>
         <a id="register-link" href="/data-register" target="_blank">Data register</a>
         <select id="method" aria-label="RAG method">
           <option value="civic">CivicRAG (ours)</option>
@@ -217,6 +220,7 @@ HTML = """<!doctype html>
         <div id="status" class="status">Ready</div>
         <form id="form">
           <textarea id="query" placeholder="নির্বাচিত সেবা সম্পর্কে বাংলায় প্রশ্ন লিখুন..." required></textarea>
+          <select id="domain" aria-label="Service domain"></select>
           <button id="send" type="submit">প্রশ্ন করুন</button>
         </form>
       </div>
