@@ -83,6 +83,40 @@ def test_experimental_domain_never_uses_birth_templates():
     assert answer['sources'][0]['id'] == 'passport_1'
 
 
+def test_passport_fee_and_office_question_uses_complete_controlled_fee_table():
+    pipeline = CivicRAGPipeline.__new__(CivicRAGPipeline)
+    pipeline.domain_id = 'passport'
+    pipeline.chunks = [
+        {
+            'id': f'fee_{pages}_{years}',
+            'content': (
+                f'### e-Passport with {pages} pages and {years} years validity\n'
+                '* **Fee:** TK 4,025\n* **Fee:** TK 6,325\n* **Fee:** TK 8,625'
+            ),
+            'metadata': {
+                'title': 'e-Passport Fees and Payment Options',
+                'section_title': 'e-Passport Fees for Inside Bangladesh',
+            },
+        }
+        for pages, years in [(48, 5), (48, 10), (64, 5), (64, 10)]
+    ] + [
+        {
+            'id': 'office',
+            'content': 'আবেদন বর্তমান ঠিকানা সংশ্লিষ্ট আঞ্চলিক পাসপোর্ট অফিসে দাখিল করতে হবে।',
+            'metadata': {},
+        }
+    ]
+
+    answer, contexts = pipeline._safe_passport_fee_and_office_answer(
+        'পাসপোর্ট করতে কত টাকা লাগবে? আর কোথায় যাওয়া লাগবে?', 'civic'
+    )
+
+    assert '48 পৃষ্ঠা, 5 বছর' in answer
+    assert '64 পৃষ্ঠা, 10 বছর' in answer
+    assert 'বায়োমেট্রিক এনরোলমেন্টের জন্য' in answer
+    assert len(contexts) == 5
+
+
 def test_birth_boosts_can_be_disabled():
     reranker = HybridReranker(enabled=False, model_name='', device='cpu', local_files_only=True,
                              fallback='none', domain_boosts=False)

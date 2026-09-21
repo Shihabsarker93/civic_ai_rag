@@ -104,26 +104,109 @@ class CivicRAGPipeline:
         }
 
     def _ask_experimental(self, query, model, generate, method):
-        """Reuse retrieval/generation without birth-specific templates or evidence injection."""
+        """Use generic retrieval for experimental domains with narrow safety rules for structured evidence."""
         method = self._normalize_method(method)
         search_query = unicodedata.normalize("NFC", query).strip()
         contexts = [self._context_from_result(r) for r in self.retrieve(search_query, method)]
-        evidence = contexts[:self.generation_config.get("top_k_for_generation", 3)]
         selected_model = model or self.generation_config["default_model"]
         answer, route = "", "retrieval_only"
+        supplemental_contexts: list[dict[str, Any]] = []
+        if generate:
+            answer, supplemental_contexts = self._safe_passport_fee_and_office_answer(search_query, method)
+            if answer:
+                contexts = self._merge_contexts(supplemental_contexts, contexts)
+                route = "controlled"
+
+        evidence = contexts[:self.generation_config.get("top_k_for_generation", 3)]
         if generate and evidence:
-            answer = self._generator(selected_model).answer(search_query, evidence)
-            route = "llm"
-            if self._violates_answer_language(search_query, answer):
-                fallback = self._fallback_evidence_answer(search_query, evidence)
-                answer = fallback or self._bangla_language_safety_answer(evidence)
-                route = "llm_then_evidence_fallback"
+            if not answer:
+                answer = self._generator(selected_model).answer(search_query, evidence)
+                route = "llm"
+                if self._violates_answer_language(search_query, answer):
+                    fallback = self._fallback_evidence_answer(search_query, evidence)
+                    answer = fallback or self._bangla_language_safety_answer(evidence)
+                    route = "llm_then_evidence_fallback"
         elif generate:
             answer = "এই ডোমেইনে প্রশ্নটির জন্য পর্যাপ্ত তথ্য পাওয়া যায়নি।" if self._is_bangla_query(query) else "No supporting evidence was found in this domain."
             route = "no_evidence"
         return {"query": query, "model": selected_model, "method": method,
                 "answer": answer, "sources": contexts, "domain": self.domain_id,
                 "answer_route": route, "experimental": True}
+
+    def _safe_passport_fee_and_office_answer(
+        self,
+        query: str,
+        method: str,
+    ) -> tuple[str, list[dict[str, Any]]]:
+        """Format the complete domestic e-passport fee table for a two-part fee/location question."""
+        if (
+            method != "civic"
+            or self.domain_id != "passport"
+            or not self._is_bangla_query(query)
+            or not any(term in query for term in ["ফি", "টাকা", "খরচ"])
+            or not any(term in query for term in ["কোথায়", "কোথায়", "কোথায় যেতে", "কোথায় যেতে"])
+        ):
+            return "", []
+
+        fee_contexts = [
+            self._context_from_chunk(chunk)
+            for chunk in getattr(self, "chunks", [])
+            if chunk.get("metadata", {}).get("title") == "e-Passport Fees and Payment Options"
+            and "e-Passport Fees for Inside Bangladesh" in str(chunk.get("metadata", {}).get("section_title", ""))
+            and "**Fee:**" in str(chunk.get("content", ""))
+        ]
+        office_context = next(
+            (
+                self._context_from_chunk(chunk)
+                for chunk in getattr(self, "chunks", [])
+                if "আবেদন বর্তমান ঠিকানা" in str(chunk.get("content", ""))
+                and "পাসপোর্ট অফিস" in str(chunk.get("content", ""))
+            ),
+            None,
+        )
+        if len(fee_contexts) != 4 or not office_context:
+            return "", []
+
+        def fee_sort_key(context: dict[str, Any]) -> tuple[int, int]:
+            text = str(context["content"])
+            pages = re.search(r"(48|64) pages", text)
+            years = re.search(r"(5|10) years validity", text)
+            return (int(pages.group(1)) if pages else 0, int(years.group(1)) if years else 0)
+
+        fee_contexts.sort(key=fee_sort_key)
+        rows: list[str] = []
+        for context in fee_contexts:
+            content = str(context["content"])
+            heading = re.search(r"### e-Passport with (\d+) pages and (\d+) years validity", content)
+            fees = re.findall(r"\* \*\*Fee:\*\* TK ([\d,]+)", content)
+            if not heading or len(fees) != 3:
+                return "", []
+            pages, years = heading.groups()
+            rows.append(
+                f"- {pages} পৃষ্ঠা, {years} বছর: নিয়মিত Tk {fees[0]}, এক্সপ্রেস Tk {fees[1]}, সুপার এক্সপ্রেস Tk {fees[2]}।"
+            )
+
+        answer = "\n".join(
+            [
+                "বাংলাদেশের ভিতরে ই-পাসপোর্টের ফি পৃষ্ঠা, মেয়াদ ও ডেলিভারির ধরনভেদে আলাদা (প্রদত্ত ফি-তালিকায় ১৫% ভ্যাট অন্তর্ভুক্ত):",
+                *rows,
+                "",
+                "কোথায় যেতে হবে: অনলাইনে আবেদনের সময় বর্তমান ঠিকানা দিলে সংশ্লিষ্ট বিভাগীয় পাসপোর্ট ও ভিসা অফিস বা আঞ্চলিক পাসপোর্ট অফিস নির্ধারিত হবে। বায়োমেট্রিক এনরোলমেন্টের জন্য সেই নির্ধারিত অফিসে যেতে হবে। বিদেশে থাকলে বাংলাদেশ মিশনে আবেদন করতে হবে।",
+                "",
+                "আপনি ৪৮/৬৪ পৃষ্ঠা, ৫/১০ বছর এবং কোন ডেলিভারি ধরন চান জানালে একটি নির্দিষ্ট ফি বলা যাবে।",
+            ]
+        )
+        cited_contexts = [*fee_contexts, office_context]
+        source_ids = ", ".join(str(context["id"]) for context in cited_contexts)
+        return f"{answer}\n\nSources: {source_ids}", cited_contexts
+
+    @staticmethod
+    def _context_from_chunk(chunk: dict[str, Any]) -> dict[str, Any]:
+        return {
+            "id": str(chunk["id"]),
+            "content": str(chunk["content"]),
+            "metadata": dict(chunk.get("metadata", {})),
+        }
 
     def retrieve(self, query: str, method: str = "civic") -> list[RetrievalResult]:
         normalized_method = self._normalize_method(method)
