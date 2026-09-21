@@ -26,6 +26,26 @@ def test_bangla_query_rejects_mostly_english_answer_prose():
     )
 
 
+def test_dominant_context_is_used_alone_for_single_topic_question():
+    contexts = [
+        {"id": "fitness", "score": 0.65},
+        {"id": "rule", "score": 0.12},
+    ]
+    assert CivicRAGPipeline._has_dominant_single_topic_context(
+        "ফিটনেস সনদ নবায়নের প্রক্রিয়া কী?", contexts
+    )
+
+
+def test_multi_part_question_keeps_multiple_contexts():
+    contexts = [
+        {"id": "fee", "score": 0.80},
+        {"id": "office", "score": 0.15},
+    ]
+    assert not CivicRAGPipeline._has_dominant_single_topic_context(
+        "পাসপোর্টের ফি কত আর কোথায় যেতে হবে?", contexts
+    )
+
+
 def test_lost_certificate_paraphrases_are_detected() -> None:
     queries = [
         "জন্ম নিবন্ধন হারালে কী করব?",

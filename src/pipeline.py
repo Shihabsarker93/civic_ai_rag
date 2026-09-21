@@ -255,6 +255,10 @@ class CivicRAGPipeline:
         contexts: list[dict[str, Any]],
         max_contexts: int,
     ) -> list[dict[str, Any]]:
+        # A clear reranking winner is safer alone than alongside unrelated low-score text.
+        if self._has_dominant_single_topic_context(query, contexts):
+            return contexts[:1]
+
         query_lc = query.lower()
         is_procedure_query = (
             any(term in query for term in ["কীভাবে", "কিভাবে", "করতে পারি", "করবো", "করব", "ধাপ", "আবেদন"])
@@ -278,6 +282,21 @@ class CivicRAGPipeline:
                 remaining = [context for context in contexts if context["id"] != expanded["id"]]
                 return [expanded, *remaining[: max(max_contexts - 1, 0)]]
         return contexts[:max_contexts]
+
+    @staticmethod
+    def _has_dominant_single_topic_context(query: str, contexts: list[dict[str, Any]]) -> bool:
+        """Avoid context pollution when one answer chunk decisively outranks the rest."""
+        if len(contexts) < 2:
+            return bool(contexts)
+
+        # Keep multiple evidence blocks for questions that explicitly request several facts.
+        multi_part_markers = [" আর ", " এবং ", "কী কী", "কি কি", "সহ", "ও কোথায়", "ও কোথায়"]
+        if any(marker in query for marker in multi_part_markers):
+            return False
+
+        top_score = float(contexts[0].get("score", 0.0))
+        second_score = float(contexts[1].get("score", 0.0))
+        return top_score >= 0.40 and top_score >= (second_score * 2.5)
 
     def _augment_contexts(self, query: str, contexts: list[dict[str, Any]]) -> list[dict[str, Any]]:
         augmented = list(contexts)
