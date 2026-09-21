@@ -83,6 +83,57 @@ def test_experimental_domain_never_uses_birth_templates():
     assert answer['sources'][0]['id'] == 'passport_1'
 
 
+def test_direct_bangla_procedure_uses_dominant_citizen_evidence_before_llm():
+    pipeline = CivicRAGPipeline.__new__(CivicRAGPipeline)
+    contexts = [
+        {
+            'id': 'brta_fitness',
+            'content': (
+                '# ফিটনেস নবায়ন\n\nবর্তমানে বিআরটিএর যে কোনো সার্কেল অফিসে মোটরযান হাজির করে '
+                'পরিদর্শনপূর্বক ফিটনেস নবায়ন করা যায়। ঢাকা ও চট্টগ্রাম বিভাগের ক্ষেত্রে অনলাইনে '
+                'অ্যাপয়েন্টমেন্ট নিতে হয়।'
+            ),
+            'metadata': {'document_type': 'সাধারণ তথ্য / নির্দেশিকা', 'title': 'ফিটনেস নবায়ন'},
+            'score': 0.65,
+        },
+        {
+            'id': 'noisy_law',
+            'content': 'সড়ক পরিবহণ বিধিমালার একটি দীর্ঘ অংশ।',
+            'metadata': {'document_type': 'document', 'title': 'সড়ক পরিবহণ বিধিমালা, ২০২২'},
+            'score': 0.12,
+        },
+    ]
+
+    answer = pipeline._evidence_first_answer(
+        'ফিটনেস নবায়ন কীভাবে করব?', contexts, 'civic'
+    )
+
+    assert 'সার্কেল অফিসে' in answer
+    assert 'অনলাইনে' in answer
+    assert answer.endswith('Sources: brta_fitness')
+
+
+def test_evidence_first_does_not_override_fee_or_multi_part_questions():
+    pipeline = CivicRAGPipeline.__new__(CivicRAGPipeline)
+    contexts = [
+        {
+            'id': 'guidance',
+            'content': 'ফিটনেস নবায়নের জন্য নির্ধারিত অফিসে যেতে হবে।',
+            'metadata': {'document_type': 'সাধারণ তথ্য / নির্দেশিকা'},
+            'score': 0.70,
+        },
+        {
+            'id': 'other',
+            'content': 'অন্য তথ্য।',
+            'metadata': {},
+            'score': 0.10,
+        },
+    ]
+
+    assert pipeline._evidence_first_answer('ফিটনেস নবায়নে কত টাকা লাগবে?', contexts, 'civic') == ''
+    assert pipeline._evidence_first_answer('ফিটনেস নবায়ন কীভাবে করব আর কোথায় যাব?', contexts, 'civic') == ''
+
+
 def test_passport_fee_and_office_question_uses_complete_controlled_fee_table():
     pipeline = CivicRAGPipeline.__new__(CivicRAGPipeline)
     pipeline.domain_id = 'passport'

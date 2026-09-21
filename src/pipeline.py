@@ -86,6 +86,8 @@ class CivicRAGPipeline:
             if not answer:
                 answer = self._safe_extractive_answer(search_query, generation_contexts, normalized_method)
             if not answer:
+                answer = self._evidence_first_answer(search_query, generation_contexts, normalized_method)
+            if not answer:
                 answer_route = "llm"
                 answer = self._generator(selected_model).answer(search_query, generation_contexts)
                 if self._violates_answer_language(search_query, answer):
@@ -141,15 +143,20 @@ class CivicRAGPipeline:
                 contexts = self._merge_contexts(supplemental_contexts, contexts)
                 route = "controlled"
 
-        evidence = contexts[:self.generation_config.get("top_k_for_generation", 3)]
+        max_generation_contexts = self.generation_config.get("top_k_for_generation", 3)
+        evidence = self._select_generation_contexts(search_query, contexts, max_generation_contexts)
         if generate and evidence:
             if not answer:
-                answer = self._generator(selected_model).answer(search_query, evidence)
-                route = "llm"
-                if self._violates_answer_language(search_query, answer):
-                    fallback = self._fallback_evidence_answer(search_query, evidence)
-                    answer = fallback or self._bangla_language_safety_answer(evidence)
-                    route = "llm_then_evidence_fallback"
+                answer = self._evidence_first_answer(search_query, evidence, method)
+                if answer:
+                    route = "controlled_evidence"
+                else:
+                    answer = self._generator(selected_model).answer(search_query, evidence)
+                    route = "llm"
+                    if self._violates_answer_language(search_query, answer):
+                        fallback = self._fallback_evidence_answer(search_query, evidence)
+                        answer = fallback or self._bangla_language_safety_answer(evidence)
+                        route = "llm_then_evidence_fallback"
         elif generate:
             answer = "এই ডোমেইনে প্রশ্নটির জন্য পর্যাপ্ত তথ্য পাওয়া যায়নি।" if self._is_bangla_query(query) else "No supporting evidence was found in this domain."
             route = "no_evidence"
@@ -223,6 +230,82 @@ class CivicRAGPipeline:
         cited_contexts = [*fee_contexts, office_context]
         source_ids = ", ".join(str(context["id"]) for context in cited_contexts)
         return f"{answer}\n\nSources: {source_ids}", cited_contexts
+
+    def _evidence_first_answer(
+        self,
+        query: str,
+        contexts: list[dict[str, Any]],
+        method: str,
+    ) -> str:
+        """Return source wording for a simple Bangla request with one decisive evidence chunk.
+
+        This is intentionally conservative. It is not a generic summarizer: fee questions,
+        multi-part requests, legal text, and weak retrieval results still reach the existing
+        controlled routes or the LLM.
+        """
+        if (
+            method != "civic"
+            or not self._is_bangla_query(query)
+            or self._is_fee_query(query)
+            or not self._is_procedure_query(query)
+            or not self._has_dominant_single_topic_context(query, contexts)
+        ):
+            return ""
+
+        top_context = contexts[0]
+        if not self._is_evidence_first_eligible(top_context):
+            return ""
+
+        body = self._extract_direct_evidence_body(str(top_context.get("content", "")))
+        if not body or not self._contains_bangla(body):
+            return ""
+        return f"{body}\n\nSources: {top_context['id']}"
+
+    @staticmethod
+    def _is_evidence_first_eligible(context: dict[str, Any]) -> bool:
+        """Avoid treating a long legal or fee table fragment as a citizen-facing answer."""
+        metadata = context.get("metadata", {})
+        document_type = str(metadata.get("document_type", "")).lower()
+        title = " ".join(
+            str(metadata.get(key, ""))
+            for key in ("title", "section_title", "category")
+        )
+        content = str(context.get("content", ""))
+        blocked_types = {"fee_row", "fees_table", "legal_rules", "legal_act"}
+        blocked_title_terms = ("বিধিমালা", "আইন", "নীতিমালা", "act", "regulation")
+        if document_type in blocked_types or any(term in title.lower() for term in blocked_title_terms):
+            return False
+        # Very large chunks are usually broad reference material, not an answer-sized instruction.
+        return 40 <= len(content.strip()) <= 1800
+
+    @staticmethod
+    def _extract_direct_evidence_body(content: str) -> str:
+        """Keep a stored FAQ answer when present; otherwise preserve the readable source body."""
+        faq_patterns = [
+            r"(?ims)^\s*(?:\*\*)?(?:Bengali Answer \(উত্তর\)|উত্তর|Answer)(?:\*\*)?\s*:\s*(.+?)(?=^\s*(?:---|#{1,6}\s|\*\*(?:Question|প্রশ্ন)|\Z))",
+            r"(?ims)^\s*\*\*(?:Bengali Answer \(উত্তর\)|উত্তর|Answer):?\*\*\s*(.+?)(?=^\s*(?:---|#{1,6}\s)|\Z)",
+        ]
+        for pattern in faq_patterns:
+            match = re.search(pattern, content)
+            if match:
+                answer = CivicRAGPipeline._clean_evidence_body(match.group(1))
+                if answer:
+                    return answer
+
+        labeled = CivicRAGPipeline._extract_labeled_value(content, "Content")
+        if labeled:
+            return CivicRAGPipeline._clean_evidence_body(labeled)
+
+        lines = [line.strip() for line in content.splitlines()]
+        # Drop Markdown headings and title-only lines, while retaining the actual instructions.
+        body_lines = [line for line in lines if line and not re.match(r"^#{1,6}\s+", line)]
+        if body_lines and not re.search(r"[।.!?:]", body_lines[0]) and len(body_lines) > 1:
+            body_lines = body_lines[1:]
+        body = CivicRAGPipeline._clean_evidence_body("\n\n".join(body_lines))
+        if len(body) > 950:
+            cutoff = max(body.rfind("।", 0, 950), body.rfind("\n", 0, 950))
+            body = body[:cutoff if cutoff > 250 else 950].strip()
+        return body
 
     @staticmethod
     def _context_from_chunk(chunk: dict[str, Any]) -> dict[str, Any]:
@@ -1081,7 +1164,9 @@ class CivicRAGPipeline:
     def _is_fee_query(query: str) -> bool:
         query_lc = query.lower()
         return (
-            any(term in query for term in ["ফি", "ফিস", "টাকা", "লাগবে", "খরচ", "বিনামূল্যে", "বিনা ফিসে"])
+            # A bare substring match for "ফি" incorrectly classifies words such as "ফিটনেস" as fees.
+            bool(re.search(r"(?<![\u0980-\u09ff])ফি(?![\u0980-\u09ff])", query))
+            or any(term in query for term in ["ফিস", "টাকা", "লাগবে", "খরচ", "বিনামূল্যে", "বিনা ফিসে"])
             or any(term in query_lc for term in ["fee", "fees", "cost", "charge", "payment", "free"])
         )
 
