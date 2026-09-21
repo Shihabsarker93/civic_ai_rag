@@ -207,6 +207,7 @@ HTML = """<!doctype html>
           <option value="llama3.2">llama3.2</option>
           <option value="llama3">llama3</option>
           <option value="qwen2.5:7b">qwen2.5:7b</option>
+          <option value="qwen3:8b">qwen3:8b</option>
         </select>
       </div>
     </header>

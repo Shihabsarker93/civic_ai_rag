@@ -54,7 +54,8 @@
     "comparison_models": [
       "llama3.2",
       "llama3",
-      "qwen2.5:7b"
+      "qwen2.5:7b",
+      "qwen3:8b"
     ],
     "temperature": 0.05,
     "top_p": 0.9,
