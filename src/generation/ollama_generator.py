@@ -121,9 +121,13 @@ class OllamaAnswerGenerator:
         repeat_last_n: int | None = None,
         repeat_penalty: float | None = None,
     ) -> None:
+        # Qwen3 enables a long reasoning mode by default. Citizen-service answers need the
+        # concise grounded response, not an internal reasoning trace that delays every request.
+        reasoning = False if model.lower().startswith("qwen3") else None
         self.llm = ChatOllama(
             model=model,
             base_url=base_url,
+            reasoning=reasoning,
             temperature=temperature,
             top_p=top_p,
             num_predict=num_predict,
