@@ -58,6 +58,8 @@ class CivicRAGPipeline:
         generate: bool = True,
         method: str = "civic",
     ) -> dict[str, Any]:
+        if self._is_cross_domain_aggregate_query(query):
+            return self._cross_domain_aggregate_response(query, model, method)
         if not self.birth_death_rules:
             return self._ask_experimental(query, model, generate, method)
         normalized_method = self._normalize_method(method)
@@ -101,6 +103,28 @@ class CivicRAGPipeline:
             "sources": contexts,
             "domain": self.domain_id,
             "answer_route": answer_route,
+        }
+
+    def _cross_domain_aggregate_response(
+        self,
+        query: str,
+        model: str | None,
+        method: str,
+    ) -> dict[str, Any]:
+        """Do not combine fees from separate services without evidence for every service."""
+        answer = (
+            "এই প্রশ্নে জন্ম নিবন্ধন, পাসপোর্ট এবং ড্রাইভিং লাইসেন্সের মতো আলাদা সরকারি সেবা একসাথে আছে। "
+            "এগুলোর ফি ও প্রক্রিয়া আলাদা হওয়ায় নির্ভরযোগ্য প্রমাণ ছাড়া মোট খরচ বলা যাবে না। "
+            "অনুগ্রহ করে একটি সেবা বেছে নিয়ে আলাদা প্রশ্ন করুন অথবা সংশ্লিষ্ট ডোমেন নির্বাচন করুন।"
+        )
+        return {
+            "query": query,
+            "model": model or self.generation_config["default_model"],
+            "method": self._normalize_method(method),
+            "answer": answer,
+            "sources": [],
+            "domain": self.domain_id,
+            "answer_route": "cross_domain_clarification",
         }
 
     def _ask_experimental(self, query, model, generate, method):
@@ -1060,6 +1084,22 @@ class CivicRAGPipeline:
             any(term in query for term in ["ফি", "ফিস", "টাকা", "লাগবে", "খরচ", "বিনামূল্যে", "বিনা ফিসে"])
             or any(term in query_lc for term in ["fee", "fees", "cost", "charge", "payment", "free"])
         )
+
+    @staticmethod
+    def _is_cross_domain_aggregate_query(query: str) -> bool:
+        """Recognize requests that combine independent service totals into one answer."""
+        query_lc = query.lower()
+        domains = {
+            "birth_death": ["জন্ম নিবন্ধন", "জন্মসনদ", "জন্ম সনদ", "মৃত্যু নিবন্ধন"],
+            "passport": ["পাসপোর্ট", "ই-পাসপোর্ট", "epassport", "e-passport"],
+            "brta": ["ড্রাইভিং লাইসেন্স", "বিআরটিএ", "brta", "ফিটনেস সনদ"],
+        }
+        mentioned = sum(
+            any(term in query or term in query_lc for term in terms)
+            for terms in domains.values()
+        )
+        aggregation_terms = ["একসাথে", "এক সঙ্গে", "মোট", "সব মিলিয়ে", "সব মিলিয়ে", "মিলিয়ে", "মিলিয়ে"]
+        return mentioned >= 2 and any(term in query or term in query_lc for term in aggregation_terms)
 
     @staticmethod
     def _is_fee_waiver_query(query: str) -> bool:

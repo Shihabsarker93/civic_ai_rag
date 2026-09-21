@@ -46,6 +46,18 @@ def test_multi_part_question_keeps_multiple_contexts():
     )
 
 
+def test_cross_domain_aggregate_question_is_detected():
+    assert CivicRAGPipeline._is_cross_domain_aggregate_query(
+        "জন্ম নিবন্ধন, পাসপোর্ট এবং ড্রাইভিং লাইসেন্স একসাথে করতে মোট কত টাকা লাগবে?"
+    )
+
+
+def test_single_domain_fee_question_is_not_cross_domain_aggregate():
+    assert not CivicRAGPipeline._is_cross_domain_aggregate_query(
+        "ই-পাসপোর্টের জন্য মোট কত টাকা লাগবে?"
+    )
+
+
 def test_lost_certificate_paraphrases_are_detected() -> None:
     queries = [
         "জন্ম নিবন্ধন হারালে কী করব?",
