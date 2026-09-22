@@ -1,0 +1,2235 @@
+{
+  "scope": "Known-failure and preservation diagnostics, no LLM calls; not gold Recall or correctness.",
+  "device": "mps",
+  "rows": [
+    {
+      "variant": "baseline",
+      "query": "নতুন পাসপোর্ট করতে কী কী কাগজপত্র লাগবে?",
+      "support_rank": 2,
+      "generation_evidence_has_support": true,
+      "source_prefixes": [
+        "passport_73ac41f2327257f9",
+        "passport_729010959c882773"
+      ],
+      "content_hint": "",
+      "sources": [
+        {
+          "id": "passport_23d845d3ab38ea43_v2_0040",
+          "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.3 Documents Needed for Passport Collection / নতুন পাসপোর্ট সংগ্রহের প্রয়োজনীয় কাগজপত্র\n\n### 6.3 Documents Needed for Passport Collection / নতুন পাসপোর্ট সংগ্রহের প্রয়োজনীয় কাগজপত্র\n- **Category:** Status, Delivery & Corrections\n- **Topic:** Delivery Verification\n- **English Question:** What types of documents are required to show at passport office to collect a new passport?\n- **Bengali Question (প্রশ্ন):** নতুন পাসপোর্ট সংগ্রহের সময় কি কি কাগজপত্রাদি পাসপোর্ট অফিসে দেখানোর প্রয়োজন?\n- **English Answer:** Required documents for collection:\n  - **a.** Original Delivery Slip.\n  - **b.** For child's passport (<12 years): Parent's NID or Passport.\n  - **c.** If collected by an authorized third party: Signed authorization letter from the applicant along with the authorized person's NID.\n  - **d.** Previous original Passport (for renewal/reissue).\n- **Bengali Answer (উত্তর):** পাসপোর্ট গ্রহণের সময় প্রয়োজনীয় ডকুমেন্ট:\n  - **ক.** ডেলিভারি স্লিপ (Delivery Slip)।\n  - **খ.** সন্তানের পাসপোর্ট হলে (১২ বছরের কম): অভিভাবকের NID/পাসপোর্ট।\n  - **গ.** প্রতিনিধি দিয়ে সংগ্রহ করতে চাইলে: আবেদনকারীর স্বাক্ষরযুক্ত অনুমোদনপত্র (Authorization Letter) এবং প্রতিনিধির NID।\n  - **ঘ.** পূর্বের মূল পাসপোর্ট।\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_23d845d3ab38ea43",
+            "document_id": "passport_23d845d3ab38ea43",
+            "title": "Bangladesh_ePassport_FAQ",
+            "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.3 Documents Needed for Passport Collection / নতুন পাসপোর্ট সংগ্রহের প্রয়োজনীয় কাগজপত্র",
+            "document_type": "document",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+            "original_paths": "[]",
+            "document_date": "unknown",
+            "date_verified": false,
+            "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+            "experimental": true,
+            "body_start": 29551,
+            "body_end": 30674,
+            "source_url": "",
+            "chunking_version": "heading_faq_v2",
+            "faq_unit": true
+          },
+          "score": 0.9824420809745789,
+          "retrievers": [
+            "dense",
+            "bm25",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_73ac41f2327257f9_v2_0004",
+          "content": "Documents need to be carried while enrolment at Passport offices / পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে\nDocuments need to be carried while enrolment at Passport offices > প্রয়োজনীয় কাগজপত্র (বাংলা)\n\n## প্রয়োজনীয় কাগজপত্র (বাংলা)\n* **ক্রমিক ১:** আবেদনপত্রের সারংশের প্রিন্ট কপি (অ্যাপয়েন্টমেন্ট সহ)।\n* **ক্রমিক ২:** সনাক্তকরণ নথির প্রিন্ট কপি (জাতীয় পরিচয় পত্র/ জন্ম নিবন্ধন নং)।\n* **ক্রমিক ৩:** পেমেন্ট স্লিপ (for Offline Payment only) I\n* **ক্রমিক ৪:** পূর্ববর্তী পাসপোর্ট এবং ডাটা পেজের প্রিন্ট কপি (যদি থাকে)।\n* **ক্রমিক ৫:** সরকারি চাকরিজীবীদের ক্ষেত্রে GO/NOC (যদি থাকে)।\n* **ক্রমিক ৬:** আবেদনপত্রের প্রিন্ট কপি।\n* **ক্রমিক ৭:** তথ্য সংশোধনের ক্ষেত্রে প্রয়োজনীয় কাগজপত্র (যদি থাকে)।",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_73ac41f2327257f9",
+            "document_id": "passport_73ac41f2327257f9",
+            "title": "Documents need to be carried while enrolment at Passport offices / পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে",
+            "section_title": "Documents need to be carried while enrolment at Passport offices > প্রয়োজনীয় কাগজপত্র (বাংলা)",
+            "document_type": "সাধারণ তথ্য",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.md",
+            "source_relative_path": "cleaned_md/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.md",
+            "source_sha256": "11f8f5bb9835c318f2ee6fda5b64e345563234278c88ac3062d5e7a89d3d8fe9",
+            "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.pdf\"]",
+            "document_date": "2025-05-07",
+            "date_verified": false,
+            "audit_flags": "no_web_address",
+            "experimental": true,
+            "body_start": 679,
+            "body_end": 1174,
+            "source_url": "",
+            "chunking_version": "heading_faq_v2",
+            "faq_unit": false
+          },
+          "score": 0.9469374418258667,
+          "retrievers": [
+            "dense",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_729010959c882773_v2_0003",
+          "content": "Documents Checklist for e-Passport Enrollment / পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট\nDocuments Checklist for e-Passport Enrollment > পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট > পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট ও প্রয়োজনীয় কাগজপত্রের তালিকা\n\n### পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট ও প্রয়োজনীয় কাগজপত্রের তালিকা\n\n* **ক্রমিক ১:** আবেদনকারী কর্তৃক অনলাইনে আবেদনকৃত (পিডিএফ) ফরম প্রিন্টেড কপি।\n* **ক্রমিক ২:** পাসপোর্টের ফি জমা প্রদানের চালান রশিদ (অফলাইন পেমেন্টের ক্ষেত্রে)।\n* **ক্রমিক ৩:** অনলাইন জন্ম নিবন্ধন সনদ (ইংরেজী ভার্সন) মূলকপি এবং ফটোকপি।\n* **ক্রমিক ৪:** জাতীয় পরিচয় পত্রের মূল ও ফটোকপি (২০ বছরের উর্ধ্বের নাগরিকদের জন্য)।\n* **ক্রমিক ৫:** বর্তমান ঠিকানা প্রমাণের স্বপক্ষে Job ID/Student ID/গ্যাস বিলের কপি/ বিদ্যুৎ বিলের কপি/ টেলিফোন বিলের কপি/পানির বিলের কপি যেটি প্রযোজ্য সেটার মূলকপি প্রদর্শন করা।\n* **ক্রমিক ৬:** দত্তক/অভিভাবকত্ব গ্রহণের ক্ষেত্রে সুরক্ষা সেবা বিভাগ, স্বরাষ্ট্র মন্ত্রণালয় হতে জারীকৃত আদেশের কপি।\n* **ক্রমিক ৭:** টেকনিক্যাল পেশা প্রমাণের স্বপক্ষে (ডাক্তার, ইঞ্জিনিয়ার, ড্রাইভার ইত্যাদি) টেকনিক্যাল সনদের কপি।\n* **ক্রমিক ৮:** রি-ইস্যু আবেদনের ক্ষেত্রে মূল পাসপোর্ট (Original Passport) এবং পাসপোর্টের ফটোকপি।\n* **ক্রমিক ৯:** ধূসর ব্যাকগ্রাউন্ডের 3R সাইজের ফটো (০৬ বছরের নিচে শিশুদের ক্ষেত্রে)।\n* **ক্রমিক ১০:** অপ্রাপ্ত বয়স্ক আবেদনকারীর ক্ষেত্রে পিতা/মাতার জাতীয় পরিচয়পত্রের কপি।\n* **ক্রমিক ১১:** মেডিকেল সনদ (চোখের আইরিশ, ফিঙ্গারপ্রিন্ট মিসিং হবার ক্ষেত্রে)।\n* **ক্রমিক ১২:** সরকারী আদেশ (GO)/অনাপত্তি সনদ (NOC)/প্রত্যয়নপত্র এর কপি যা ইস্যুকারী কর্তৃপক্ষের নিজ নিজ Website এ আপলোড থাকতে হবে। (প্রযোজ্য ক্ষেত্রে)\n* **ক্রমিক ১৩:** PRL এর আদেশ/পেনশন বই এর কপি। (প্রযোজ্য ক্ষেত্রে)\n* **ক্রমিক ",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_729010959c882773",
+            "document_id": "passport_729010959c882773",
+            "title": "Documents Checklist for e-Passport Enrollment / পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট",
+            "section_title": "Documents Checklist for e-Passport Enrollment > পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট > পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট ও প্রয়োজনীয় কাগজপত্রের তালিকা",
+            "document_type": "চেকলিস্ট",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট.md",
+            "source_relative_path": "cleaned_md/পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট.md",
+            "source_sha256": "a6928082079a3dcdcd69832c5e7ff19d7c5152c445c0aaca9cc926262d672050",
+            "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট.pdf\"]",
+            "document_date": "2024-10-21",
+            "date_verified": false,
+            "audit_flags": "no_web_address",
+            "experimental": true,
+            "body_start": 136,
+            "body_end": 1533,
+            "source_url": "",
+            "chunking_version": "heading_faq_v2",
+            "faq_unit": false
+          },
+          "score": 0.9288899302482605,
+          "retrievers": [
+            "dense",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_729010959c882773_v2_0004",
+          "content": "Documents Checklist for e-Passport Enrollment / পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট\nDocuments Checklist for e-Passport Enrollment > পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট > পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট ও প্রয়োজনীয় কাগজপত্রের তালিকা\n\n১৪:** বৈবাহিক অবস্থার পরিবর্তন হলে বিবাহ সনদ/কাবিন নামার কপি।\n* **ক্রমিক ১৫:** বিবাহ বিচ্ছেদ হলে বিচ্ছেদের সনদ/তালাক নামার কপি।\n* **ক্রমিক ১৬:** হারানো পাসপোর্টের ক্ষেত্রে সাধারণ ডায়েরী (GD) এর মূল কপি।\n* **ক্রমিক ১৭:** পূর্বের পাসপোর্ট এবং NID/BRC-তে তথ্য গড়মিল থাকলে নির্ধারিত ফরম্যাটে পূরণকৃত অঙ্গীকারনামা।\n* **ক্রমিক ১৮:** Multiple Active পাসপোর্টের ক্ষেত্রে নির্ধারিত ফরম্যাটে পূরণকৃত অঙ্গীকারনামা।\n* **ক্রমিক ১৯:** তথ্য সংশোধনের জন্য অপ্রাপ্তবয়স্কদের ক্ষেত্রে শিক্ষাগত সনদ (JSC/SSC/HSC/সমমান)।\n* **ক্রমিক ২০:** সরকারী চাকুরীজীবীদের তথ্য সংশোধনের ক্ষেত্রে NID, শিক্ষাগত সনদ ও সার্ভিস রেকর্ড অনুযায়ী অফিসের প্রত্যয়নপত্র এবং সার্ভিস রেকর্ডের ফটোকপি।\n* **ক্রমিক ২১:** দ্বৈত নাগরিকত্বের ক্ষেত্রে স্বরাষ্ট্র মন্ত্রণালয়ের Dual Citizenship সনদ (প্রযোজ্য ক্ষেত্রে)।\n* **ক্রমিক ২২:** অপ্রাপ্ত বয়স্কদের ক্ষেত্রে পিতা-মাতার অনুমতিপত্র এবং পিতা-মাতার উভয় বা যেকোন একজন উপস্থিত থাকা।\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_729010959c882773",
+            "document_id": "passport_729010959c882773",
+            "title": "Documents Checklist for e-Passport Enrollment / পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট",
+            "section_title": "Documents Checklist for e-Passport Enrollment > পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট > পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট ও প্রয়োজনীয় কাগজপত্রের তালিকা",
+            "document_type": "চেকলিস্ট",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট.md",
+            "source_relative_path": "cleaned_md/পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট.md",
+            "source_sha256": "a6928082079a3dcdcd69832c5e7ff19d7c5152c445c0aaca9cc926262d672050",
+            "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট.pdf\"]",
+            "document_date": "2024-10-21",
+            "date_verified": false,
+            "audit_flags": "no_web_address",
+            "experimental": true,
+            "body_start": 1533,
+            "body_end": 2418,
+            "source_url": "",
+            "chunking_version": "heading_faq_v2",
+            "faq_unit": false
+          },
+          "score": 0.9202508330345154,
+          "retrievers": [
+            "dense",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_73ac41f2327257f9_v2_0003",
+          "content": "Documents need to be carried while enrolment at Passport offices / পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে\nDocuments need to be carried while enrolment at Passport offices > Required Documents (English)\n\n## Required Documents (English)\n* **Item 1:** Printed application summary including appointment (if any).\n* **Item 2:** Identification documents (NID card / Birth certificate - Original)\n* **Item 3:** Payment Slip for Offline Payment only.\n* **Item 4:** Previous Passport (if any).\n* **Item 5:** GO/NOC for government service holder (as applicable).\n* **Item 6:** Printed application form.\n* **Item 7:** Further necessity of documents depends on nature of application/corrections (if any).\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_73ac41f2327257f9",
+            "document_id": "passport_73ac41f2327257f9",
+            "title": "Documents need to be carried while enrolment at Passport offices / পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে",
+            "section_title": "Documents need to be carried while enrolment at Passport offices > Required Documents (English)",
+            "document_type": "সাধারণ তথ্য",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.md",
+            "source_relative_path": "cleaned_md/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.md",
+            "source_sha256": "11f8f5bb9835c318f2ee6fda5b64e345563234278c88ac3062d5e7a89d3d8fe9",
+            "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.pdf\"]",
+            "document_date": "2025-05-07",
+            "date_verified": false,
+            "audit_flags": "no_web_address",
+            "experimental": true,
+            "body_start": 188,
+            "body_end": 679,
+            "source_url": "",
+            "chunking_version": "heading_faq_v2",
+            "faq_unit": false
+          },
+          "score": 0.8841585516929626,
+          "retrievers": [
+            "dense",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_23d845d3ab38ea43_v2_0033",
+          "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 5. Document Requirements (প্রয়োজনীয় কাগজপত্র) > 5.2 Documents Required for Retired Government Employees / অবসরপ্রাপ্ত সরকারি কর্মকর্তা-কর্মচারীদের কাগজপত্র\n\n### 5.2 Documents Required for Retired Government Employees / অবসরপ্রাপ্ত সরকারি কর্মকর্তা-কর্মচারীদের কাগজপত্র\n- **Category:** Document Requirements\n- **Topic:** Government Pensioners & PRL Documents\n- **English Question:** I have retired from Government service. Now what documents are required to complete enrollment process of E-Passport?\n- **Bengali Question (প্রশ্ন):** আমি সরকারি চাকরি থেকে অবসর নিয়েছি। এখন ই-পাসপোর্ট প্রক্রিয়া সম্পূর্ণ করতে কী কী কাগজপত্রাদি প্রয়োজন?\n- **English Answer:** When visiting the passport office for enrolment/fingerprints, bring:\n  1. PRL / Post Retirement Leave Order copy.\n  2. NID card.\n  3. Previous Passport (Original).\n  4. Hard copy of Application Form.\n  5. Printed Summary Slip.\n  6. Payment Slip / Fee Receipt.\n- **Bengali Answer (উত্তর):** ই-পাসপোর্ট বায়োমেট্রিক প্রক্রিয়ার জন্য পাসপোর্ট অফিসে নিম্ন লিখিত কাগজপত্র বহন করতে হবে:\n  ১. পিআরএল (PRL) অর্ডার কপি।\n  ২. জাতীয় পরিচয়পত্র (NID)।\n  ৩. পূর্ববর্তী মূল পাসপোর্ট।\n  ৪. আবেদনপত্রের হার্ড কপি (Application Form)।\n  ৫. প্রিন্ট সারাংশ (Summary Slip)।\n  ৬. পাসপোর্ট ফি প্রদানের রসিদ/পেমেন্ট স্লিপ।\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_23d845d3ab38ea43",
+            "document_id": "passport_23d845d3ab38ea43",
+            "title": "Bangladesh_ePassport_FAQ",
+            "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 5. Document Requirements (প্রয়োজনীয় কাগজপত্র) > 5.2 Documents Required for Retired Government Employees / অবসরপ্রাপ্ত সরকারি কর্মকর্তা-কর্মচারীদের কাগজপত্র",
+            "document_type": "document",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+            "original_paths": "[]",
+            "document_date": "unknown",
+            "date_verified": false,
+            "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+            "experimental": true,
+            "body_start": 24471,
+            "body_end": 25579,
+            "source_url": "",
+            "chunking_version": "heading_faq_v2",
+            "faq_unit": true
+          },
+          "score": 0.8784477114677429,
+          "retrievers": [
+            "dense",
+            "bm25",
+            "cross_encoder"
+          ]
+        }
+      ],
+      "seconds": 9.17
+    },
+    {
+      "variant": "baseline",
+      "query": "পাসপোর্ট বানাতে কত টাকা লাগে?",
+      "support_rank": 2,
+      "generation_evidence_has_support": true,
+      "source_prefixes": [
+        "passport_12e10027cfdfeeee"
+      ],
+      "content_hint": "Inside Bangladesh",
+      "sources": [
+        {
+          "id": "passport_6f7d900581956bef_v2_0016",
+          "content": "সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর\nগণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ২. প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > [ক্রমিক ৫] বিদেশীদের পরিচিতি সনদ (Certificate of Identity)\n\n#### [ক্রমিক ৫] বিদেশীদের পরিচিতি সনদ (Certificate of Identity)\n* **সেবার নাম:** বিদেশীদের পরিচিতি সনদ (Certificate of Identity)\n* **সেবা প্রদান পদ্ধতি:** নির্ধারিত আবেদন ফরমে প্রধান কার্যালয়ে পাসপোর্ট শাখায় আবেদন গ্রহণ করা হয়।\n* **প্রয়োজনীয় কাগজপত্র:**\n  - নির্ধারিত আবেদনপত্র\n  - পাসপোর্ট সাইজের ১ কপি ছবি\n  - আবেদনকারীর পাসপোর্টের ফটোকপি (১ টি)\n* **প্রয়োজনীয় কাগজপত্র প্রাপ্তির স্থান:** প্রয়োজনীয় কাগজপত্রের তথ্য ওয়েবসাইট থেকে জানা যাবে।\n* **সেবামূল্য এবং পরিশোধ পদ্ধতি:**\n  - ক. সাধারণ ফি: ৫০০/- টাকা + ১৫% ভ্যাট\n  - খ. জরুরি ফি: ১০০০০/- টাকা + ১৫% ভ্যাট\n* **সেবা প্রদানের সময়সীমা:**\n  - সাধারণ: ০৭ কর্মদিবস\n  - জরুরি: ০৩ কর্মদিবস\n* **দায়িত্বপ্রাপ্ত কর্মকর্তা:** জনাব মোঃ শাহাদাৎ হোসেন, উপপরিচালক (পাসপোর্ট, পলিসি ও সমন্বয় শাখা), ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর, প্রধান কার্যালয়, ঢাকা। ইমেইল: ddpassport@passport.gov.bd\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_6f7d900581956bef",
+            "document_id": "passport_6f7d900581956bef",
+            "title": "সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর",
+            "section_title": "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ২. প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > [ক্রমিক ৫] বিদেশীদের পরিচিতি সনদ (Certificate of Identity)",
+            "document_type": "সিটিজেন চার্টার",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "source_relative_path": "cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "source_sha256": "e875d24b0d749a0a12ff8c30bddac3eabba040af4c3a50348e63f3d086382e87",
+            "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/সিটিজেন চার্টার_ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.pdf\"]",
+            "document_date": "2025-02-18",
+            "date_verified": false,
+            "audit_flags": "",
+            "experimental": true,
+            "body_start": 10741,
+            "body_end": 11583,
+            "source_url": "",
+            "chunking_version": "heading_faq_v2",
+            "faq_unit": false
+          },
+          "score": 0.022040165960788727,
+          "retrievers": [
+            "dense",
+            "bm25",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_12e10027cfdfeeee_v2_0010",
+          "content": "e-Passport Fees and Payment Options\ne-Passport Fees and Payment Options > e-Passport Fees for Inside Bangladesh (Including 15% VAT) > e-Passport with 64 pages and 10 years validity\n\n### e-Passport with 64 pages and 10 years validity\n* **Category:** Inside Bangladesh | 64 pages | 10 years validity | Regular delivery\n  * **Fee:** TK 8,050\n* **Category:** Inside Bangladesh | 64 pages | 10 years validity | Express delivery\n  * **Fee:** TK 10,350\n* **Category:** Inside Bangladesh | 64 pages | 10 years validity | Super Express delivery\n  * **Fee:** TK 13,800\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_12e10027cfdfeeee",
+            "document_id": "passport_12e10027cfdfeeee",
+            "title": "e-Passport Fees and Payment Options",
+            "section_title": "e-Passport Fees and Payment Options > e-Passport Fees for Inside Bangladesh (Including 15% VAT) > e-Passport with 64 pages and 10 years validity",
+            "document_type": "নির্দেশিকা / ফি ও পেমেন্ট সংক্রান্ত তথ্য",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/e-Passport Fees and Payment Options.md",
+            "source_relative_path": "cleaned_md/e-Passport Fees and Payment Options.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/e-Passport Fees and Payment Options.md",
+            "source_sha256": "9b629ab56ed0caa11414d1f5095cf91d85d179af4e910cfcc93bee44af11d7d8",
+            "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/e-Passport Fees and Payment Options.pdf\"]",
+            "document_date": "2026-07-12",
+            "date_verified": false,
+            "audit_flags": "no_web_address",
+            "experimental": true,
+            "body_start": 2657,
+            "body_end": 3040,
+            "source_url": "",
+            "chunking_version": "heading_faq_v2",
+            "faq_unit": false
+          },
+          "score": 0.005923017393797636,
+          "retrievers": [
+            "dense",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_5eb6c21efe103a4f_v2_0026",
+          "content": "Bangladesh Machine Readable Passport (MRP) Online Application Guide 2012\nBangladesh Machine Readable Passport (MRP) Online Application Guide (2012) > 2. Field-Level Application Specifications | ক্ষেত্র-ভিত্তিক ফরম পূরণের নির্দেশাবলী > 2.4 Section D: Fee Payment Details | ফি প্রদান বিবরণী > Field D2: Fee Structure (2012 Standard Schedule) | ফি এর হার (২০১২ নির্দেশিকা অনুযায়ী)\n\n#### Field D2: Fee Structure (2012 Standard Schedule) | ফি এর হার (২০১২ নির্দেশিকা অনুযায়ী)\n\n* **Regular Delivery (সাধারণ ডেলিভারি - 21 Days)**:\n\n  * Ordinary Passport Fee: BDT 3,000 + 15% VAT = **BDT 3,450**\n\n* **Express Delivery (জরুরি ডেলিভারি - 11 Days)**:\n\n  * Ordinary Passport Fee: BDT 6,000 + 15% VAT = **BDT 6,900**\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_5eb6c21efe103a4f",
+            "document_id": "passport_5eb6c21efe103a4f",
+            "title": "Bangladesh Machine Readable Passport (MRP) Online Application Guide 2012",
+            "section_title": "Bangladesh Machine Readable Passport (MRP) Online Application Guide (2012) > 2. Field-Level Application Specifications | ক্ষেত্র-ভিত্তিক ফরম পূরণের নির্দেশাবলী > 2.4 Section D: Fee Payment Details | ফি প্রদান বিবরণী > Field D2: Fee Structure (2012 Standard Schedule) | ফি এর হার (২০১২ নির্দেশিকা অনুযায়ী)",
+            "document_type": "document",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh Machine Readable Passport (MRP) Online Application Guide 2012.md",
+            "source_relative_path": "cleaned_md/Bangladesh Machine Readable Passport (MRP) Online Application Guide 2012.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh Machine Readable Passport (MRP) Online Application Guide 2012.md",
+            "source_sha256": "8ce0916f4e83af158dbdbe22ed97f2b467f71c1f41d3404e33d3c9d0412875e7",
+            "original_paths": "[]",
+            "document_date": "unknown",
+            "date_verified": false,
+            "audit_flags": "original_match_unresolved, no_web_address, nonstandard_metadata_layout, dated_document_review_applicability",
+            "experimental": true,
+            "body_start": 8759,
+            "body_end": 9086,
+            "source_url": "",
+            "chunking_version": "heading_faq_v2",
+            "faq_unit": false
+          },
+          "score": 0.005078848917037249,
+          "retrievers": [
+            "dense",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_6f7d900581956bef_v2_0011",
+          "content": "সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর\nগণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ২. প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > [ক্রমিক ১ (খ)] মেশিন রিডেবল পাসপোর্ট (MRP) ইস্যু\n\nদাখিল করতে হবে।\n* **প্রয়োজনীয় কাগজপত্র প্রাপ্তির স্থান:** অধিদপ্তরের ওয়েবসাইট থেকে আবেদন ফরম অথবা যেকোনো পাসপোর্ট অফিস থেকে ডিআইপি ফরম-১ ও ২ বিনামূল্যে সংগ্রহ করা যাবে।\n* **সেবামূল্য এবং পরিশোধ পদ্ধতি:**\n  - ফি (দেশে): (বিস্তারিত)\n  - ফি (বিদেশে): (বিস্তারিত)\n  - শুধুমাত্র echallan (ই-চালান) এবং সোনালী ব্যাংক এর মাধ্যমে জমাকৃত ফি গ্রহণযোগ্য হবে।\n* **সেবা প্রদানের সময়সীমা:**\n  - ক. সাধারণ ফি এবং অনুকূল পুলিশ প্রতিবেদন প্রাপ্তি সাপেক্ষে ১৫ কর্মদিবসের মধ্যে।\n  - খ. জরুরি ফি এবং পুলিশ প্রতিবেদন প্রাপ্তি সাপেক্ষে ৭ কর্মদিবসের মধ্যে।\n  - গ. পুলিশ প্রতিবেদন যাদের জন্য প্রযোজ্যতা ওয়েবসাইটে জানা যাবে।\n* **দায়িত্বপ্রাপ্ত কর্মকর্তা:** আবেদনকারী যে অধিক্ষেত্রে বসবাস করেন সেই অধিক্ষেত্র সংশ্লিষ্ট বিভাগীয় পাসপোর্ট ও ভিসা অফিস অথবা আঞ্চলিক পাসপোর্ট অফিসের পরিচালক / উপপরিচালক / সহকারী পরিচালক / উপসহকারী পরিচালক (অধিক্ষেত্র www.dip.gov.bd হতে জানা যাবে)।\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_6f7d900581956bef",
+            "document_id": "passport_6f7d900581956bef",
+            "title": "সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর",
+            "section_title": "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ২. প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > [ক্রমিক ১ (খ)] মেশিন রিডেবল পাসপোর্ট (MRP) ইস্যু",
+            "document_type": "সিটিজেন চার্টার",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "source_relative_path": "cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "source_sha256": "e875d24b0d749a0a12ff8c30bddac3eabba040af4c3a50348e63f3d086382e87",
+            "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/সিটিজেন চার্টার_ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.pdf\"]",
+            "document_date": "2025-02-18",
+            "date_verified": false,
+            "audit_flags": "",
+            "experimental": true,
+            "body_start": 6746,
+            "body_end": 7609,
+            "source_url": "",
+            "chunking_version": "heading_faq_v2",
+            "faq_unit": false
+          },
+          "score": 0.0042164805345237255,
+          "retrievers": [
+            "dense",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_6f7d900581956bef_v2_0019",
+          "content": "সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর\nগণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ২. প্রতিশ্রুত সেবাসমূহ > ২.২) দাপ্তরিক সেবা > [ক্রমিক ২] মুদ্রিত পাসপোর্ট সরবরাহ\n\n#### [ক্রমিক ২] মুদ্রিত পাসপোর্ট সরবরাহ\n* **সেবার নাম:** বিভাগীয় পাসপোর্ট ও ভিসা অফিস/ আঞ্চলিক পাসপোর্ট অফিস/ পররাষ্ট্র মন্ত্রণালয়ে মুদ্রিত পাসপোর্ট সরবরাহ।\n* **সেবা প্রদান পদ্ধতি:** ডাক বিভাগের মাধ্যমে।\n* **প্রয়োজনীয় কাগজপত্র:** সিস্টেমে সংশ্লিষ্ট পাসপোর্ট অফিস কর্তৃক এমআরপি প্রদানের অনুমোদনের ভিত্তিতে।\n* **সেবামূল্য এবং পরিশোধ পদ্ধতি:** বিনামূল্যে\n* **সেবা প্রদানের সময়সীমা:** পার্সোনালাইজেশন সেন্টারে প্রাপ্তির ০৩ কর্মদিবস এবং পাসপোর্ট প্রদানের বিধি মোতাবেক।\n* **দায়িত্বপ্রাপ্ত কর্মকর্তা:** পরিচালক, পার্সোনালাইজেশন সেন্টার, ফোনঃ ০১৭৩৩-৩৯৩৩০২, ইমেইল: ddperso@passport.gov.bd\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_6f7d900581956bef",
+            "document_id": "passport_6f7d900581956bef",
+            "title": "সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর",
+            "section_title": "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ২. প্রতিশ্রুত সেবাসমূহ > ২.২) দাপ্তরিক সেবা > [ক্রমিক ২] মুদ্রিত পাসপোর্ট সরবরাহ",
+            "document_type": "সিটিজেন চার্টার",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "source_relative_path": "cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "source_sha256": "e875d24b0d749a0a12ff8c30bddac3eabba040af4c3a50348e63f3d086382e87",
+            "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/সিটিজেন চার্টার_ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.pdf\"]",
+            "document_date": "2025-02-18",
+            "date_verified": false,
+            "audit_flags": "",
+            "experimental": true,
+            "body_start": 12105,
+            "body_end": 12697,
+            "source_url": "",
+            "chunking_version": "heading_faq_v2",
+            "faq_unit": false
+          },
+          "score": 0.0025776263792067766,
+          "retrievers": [
+            "dense",
+            "bm25",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_729010959c882773_v2_0003",
+          "content": "Documents Checklist for e-Passport Enrollment / পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট\nDocuments Checklist for e-Passport Enrollment > পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট > পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট ও প্রয়োজনীয় কাগজপত্রের তালিকা\n\n### পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট ও প্রয়োজনীয় কাগজপত্রের তালিকা\n\n* **ক্রমিক ১:** আবেদনকারী কর্তৃক অনলাইনে আবেদনকৃত (পিডিএফ) ফরম প্রিন্টেড কপি।\n* **ক্রমিক ২:** পাসপোর্টের ফি জমা প্রদানের চালান রশিদ (অফলাইন পেমেন্টের ক্ষেত্রে)।\n* **ক্রমিক ৩:** অনলাইন জন্ম নিবন্ধন সনদ (ইংরেজী ভার্সন) মূলকপি এবং ফটোকপি।\n* **ক্রমিক ৪:** জাতীয় পরিচয় পত্রের মূল ও ফটোকপি (২০ বছরের উর্ধ্বের নাগরিকদের জন্য)।\n* **ক্রমিক ৫:** বর্তমান ঠিকানা প্রমাণের স্বপক্ষে Job ID/Student ID/গ্যাস বিলের কপি/ বিদ্যুৎ বিলের কপি/ টেলিফোন বিলের কপি/পানির বিলের কপি যেটি প্রযোজ্য সেটার মূলকপি প্রদর্শন করা।\n* **ক্রমিক ৬:** দত্তক/অভিভাবকত্ব গ্রহণের ক্ষেত্রে সুরক্ষা সেবা বিভাগ, স্বরাষ্ট্র মন্ত্রণালয় হতে জারীকৃত আদেশের কপি।\n* **ক্রমিক ৭:** টেকনিক্যাল পেশা প্রমাণের স্বপক্ষে (ডাক্তার, ইঞ্জিনিয়ার, ড্রাইভার ইত্যাদি) টেকনিক্যাল সনদের কপি।\n* **ক্রমিক ৮:** রি-ইস্যু আবেদনের ক্ষেত্রে মূল পাসপোর্ট (Original Passport) এবং পাসপোর্টের ফটোকপি।\n* **ক্রমিক ৯:** ধূসর ব্যাকগ্রাউন্ডের 3R সাইজের ফটো (০৬ বছরের নিচে শিশুদের ক্ষেত্রে)।\n* **ক্রমিক ১০:** অপ্রাপ্ত বয়স্ক আবেদনকারীর ক্ষেত্রে পিতা/মাতার জাতীয় পরিচয়পত্রের কপি।\n* **ক্রমিক ১১:** মেডিকেল সনদ (চোখের আইরিশ, ফিঙ্গারপ্রিন্ট মিসিং হবার ক্ষেত্রে)।\n* **ক্রমিক ১২:** সরকারী আদেশ (GO)/অনাপত্তি সনদ (NOC)/প্রত্যয়নপত্র এর কপি যা ইস্যুকারী কর্তৃপক্ষের নিজ নিজ Website এ আপলোড থাকতে হবে। (প্রযোজ্য ক্ষেত্রে)\n* **ক্রমিক ১৩:** PRL এর আদেশ/পেনশন বই এর কপি। (প্রযোজ্য ক্ষেত্রে)\n* **ক্রমিক ",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_729010959c882773",
+            "document_id": "passport_729010959c882773",
+            "title": "Documents Checklist for e-Passport Enrollment / পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট",
+            "section_title": "Documents Checklist for e-Passport Enrollment > পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট > পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট ও প্রয়োজনীয় কাগজপত্রের তালিকা",
+            "document_type": "চেকলিস্ট",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট.md",
+            "source_relative_path": "cleaned_md/পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট.md",
+            "source_sha256": "a6928082079a3dcdcd69832c5e7ff19d7c5152c445c0aaca9cc926262d672050",
+            "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট.pdf\"]",
+            "document_date": "2024-10-21",
+            "date_verified": false,
+            "audit_flags": "no_web_address",
+            "experimental": true,
+            "body_start": 136,
+            "body_end": 1533,
+            "source_url": "",
+            "chunking_version": "heading_faq_v2",
+            "faq_unit": false
+          },
+          "score": 0.0016802857862785459,
+          "retrievers": [
+            "dense",
+            "cross_encoder"
+          ]
+        }
+      ],
+      "seconds": 9.99
+    },
+    {
+      "variant": "baseline",
+      "query": "পাসপোর্ট পেতে কত দিন সময় লাগে?",
+      "support_rank": 2,
+      "generation_evidence_has_support": true,
+      "source_prefixes": [
+        "passport_12e10027cfdfeeee"
+      ],
+      "content_hint": "Delivery Timelines",
+      "sources": [
+        {
+          "id": "passport_9f4e9ffe9f2a07f4_v2_0004",
+          "content": "ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী\nই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী > পাসপোর্ট প্রাপ্তির সময়সীমা\n\n## পাসপোর্ট প্রাপ্তির সময়সীমা\n\n* **১৭।**\n  * **(ক)** দেশের অভ্যন্তরে অতি জরুরী পাসপোর্ট প্রাপ্তির লক্ষ্যে অন্যান্য সকল তথ্য সঠিক থাকা সাপেক্ষে ২ কর্মদিবসের মধ্যে পাসপোর্ট প্রদান করা হবে।\n  * **(খ)** দেশের অভ্যন্তরে জরুরী পাসপোর্ট প্রাপ্তির লক্ষ্যে অন্যান্য সকল তথ্য সঠিক থাকা সাপেক্ষে ৭ কর্মদিবসের মধ্যে পাসপোর্ট প্রদান করা হবে।\n  * **(গ)** দেশের অভ্যন্তরে রেগুলার পাসপোর্ট প্রাপ্তির লক্ষ্যে অন্যান্য সকল তথ্য সঠিক থাকা সাপেক্ষে ১৫ কর্মদিবসের মধ্যে পাসপোর্ট প্রদান করা হবে।\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_9f4e9ffe9f2a07f4",
+            "document_id": "passport_9f4e9ffe9f2a07f4",
+            "title": "ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী",
+            "section_title": "ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী > পাসপোর্ট প্রাপ্তির সময়সীমা",
+            "document_type": "নির্দেশিকা",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী.md",
+            "source_relative_path": "cleaned_md/ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী.md",
+            "source_sha256": "f0bc6e1384dd491baff1dc91061abdd516b283e0e2751cdd793151b09095c61b",
+            "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী.pdf\"]",
+            "document_date": "2026-08-03",
+            "date_verified": false,
+            "audit_flags": "no_web_address",
+            "experimental": true,
+            "body_start": 2477,
+            "body_end": 2953,
+            "source_url": "",
+            "chunking_version": "heading_faq_v2",
+            "faq_unit": false
+          },
+          "score": 0.8716661334037781,
+          "retrievers": [
+            "dense",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_12e10027cfdfeeee_v2_0005",
+          "content": "e-Passport Fees and Payment Options\ne-Passport Fees and Payment Options > Delivery Timelines and Special Provisions (Note)\n\n## Delivery Timelines and Special Provisions (Note)\n\n* **Regular Delivery:** Within 15 Working days / 21 days from the biometric enrolment date.\n* **Express Delivery:** Within 7 Working days / 10 days from the biometric enrolment date.\n* **Super Express Delivery:** Within 2 Working days from the biometric enrolment date.\n* **Govt Employees (with No Objection Certificate (NOC) / Retirement document (PRL)):**\n  * a. Express facilities with Regular fees.\n  * b. Super-Express facilities with Express fees.\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_12e10027cfdfeeee",
+            "document_id": "passport_12e10027cfdfeeee",
+            "title": "e-Passport Fees and Payment Options",
+            "section_title": "e-Passport Fees and Payment Options > Delivery Timelines and Special Provisions (Note)",
+            "document_type": "নির্দেশিকা / ফি ও পেমেন্ট সংক্রান্ত তথ্য",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/e-Passport Fees and Payment Options.md",
+            "source_relative_path": "cleaned_md/e-Passport Fees and Payment Options.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/e-Passport Fees and Payment Options.md",
+            "source_sha256": "9b629ab56ed0caa11414d1f5095cf91d85d179af4e910cfcc93bee44af11d7d8",
+            "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/e-Passport Fees and Payment Options.pdf\"]",
+            "document_date": "2026-07-12",
+            "date_verified": false,
+            "audit_flags": "no_web_address",
+            "experimental": true,
+            "body_start": 960,
+            "body_end": 1473,
+            "source_url": "",
+            "chunking_version": "heading_faq_v2",
+            "faq_unit": false
+          },
+          "score": 0.5375358462333679,
+          "retrievers": [
+            "dense",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_f2c0d221c70d21f2_v2_0003",
+          "content": "Urgent Applications\nUrgent Applications > Super Express Passport Delivery Service Overview > What is Super Express passport delivery service?\n\n### What is Super Express passport delivery service?\n* **Description:** There are occasions when a citizen needs passport urgently. In such situation, citizens can apply for Super Express delivery (specific conditions and fees apply). Passport will be issued within 2 (two) working days for Super Express delivery.\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_f2c0d221c70d21f2",
+            "document_id": "passport_f2c0d221c70d21f2",
+            "title": "Urgent Applications",
+            "section_title": "Urgent Applications > Super Express Passport Delivery Service Overview > What is Super Express passport delivery service?",
+            "document_type": "সাধারণ তথ্য",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Urgent Applications e-Passport.md",
+            "source_relative_path": "cleaned_md/Urgent Applications e-Passport.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Urgent Applications e-Passport.md",
+            "source_sha256": "0f56d10a5a201fbeb31c35857660ef5e83438f9364e749a2110fbed805da7646",
+            "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/Urgent Applications.pdf\"]",
+            "document_date": "2026-06-03",
+            "date_verified": false,
+            "audit_flags": "no_web_address",
+            "experimental": true,
+            "body_start": 108,
+            "body_end": 424,
+            "source_url": "",
+            "chunking_version": "heading_faq_v2",
+            "faq_unit": false
+          },
+          "score": 0.4064716100692749,
+          "retrievers": [
+            "dense",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_6f7d900581956bef_v2_0031",
+          "content": "সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর\nগণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ২. প্রতিশ্রুত সেবাসমূহ > ২.৩) অভ্যন্তরীণ সেবা > [ক্রমিক ১১] পাসপোর্ট গ্রহণের অনুমতি (NOC)\n\n#### [ক্রমিক ১১] পাসপোর্ট গ্রহণের অনুমতি (NOC)\n* **সেবার নাম:** কর্মকর্তা/কর্মচারীদের পাসপোর্ট গ্রহণের অনুমতি।\n* **সেবা প্রদান পদ্ধতি:** নির্ধারিত ফরমে অনাপত্তি (NOC) দেয়া হয়।\n* **প্রয়োজনীয় কাগজপত্র:**\n  - ক. সংশ্লিষ্ট কর্মকর্তা/কর্মচারীদের আবেদন।\n  - খ. সংশ্লিষ্ট অফিস প্রধানের সুপারিশ।\n* **সেবামূল্য এবং পরিশোধ পদ্ধতি:** বিনামূল্যে\n* **সেবা প্রদানের সময়সীমা:** ০৩ দিন\n* **দায়িত্বপ্রাপ্ত কর্মকর্তা:** জনাব মোঃ সালেহ উদ্দিন, সহকারী পরিচালক (প্রশাসন), ফোনঃ ০১৭৩৩-৩৯৩৩ ৩৩, ইমেইল: adadmin@passport.gov.bd\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_6f7d900581956bef",
+            "document_id": "passport_6f7d900581956bef",
+            "title": "সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর",
+            "section_title": "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ২. প্রতিশ্রুত সেবাসমূহ > ২.৩) অভ্যন্তরীণ সেবা > [ক্রমিক ১১] পাসপোর্ট গ্রহণের অনুমতি (NOC)",
+            "document_type": "সিটিজেন চার্টার",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "source_relative_path": "cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "source_sha256": "e875d24b0d749a0a12ff8c30bddac3eabba040af4c3a50348e63f3d086382e87",
+            "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/সিটিজেন চার্টার_ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.pdf\"]",
+            "document_date": "2025-02-18",
+            "date_verified": false,
+            "audit_flags": "",
+            "experimental": true,
+            "body_start": 18645,
+            "body_end": 19159,
+            "source_url": "",
+            "chunking_version": "heading_faq_v2",
+            "faq_unit": false
+          },
+          "score": 0.3713262677192688,
+          "retrievers": [
+            "dense",
+            "bm25",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_6f7d900581956bef_v2_0019",
+          "content": "সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর\nগণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ২. প্রতিশ্রুত সেবাসমূহ > ২.২) দাপ্তরিক সেবা > [ক্রমিক ২] মুদ্রিত পাসপোর্ট সরবরাহ\n\n#### [ক্রমিক ২] মুদ্রিত পাসপোর্ট সরবরাহ\n* **সেবার নাম:** বিভাগীয় পাসপোর্ট ও ভিসা অফিস/ আঞ্চলিক পাসপোর্ট অফিস/ পররাষ্ট্র মন্ত্রণালয়ে মুদ্রিত পাসপোর্ট সরবরাহ।\n* **সেবা প্রদান পদ্ধতি:** ডাক বিভাগের মাধ্যমে।\n* **প্রয়োজনীয় কাগজপত্র:** সিস্টেমে সংশ্লিষ্ট পাসপোর্ট অফিস কর্তৃক এমআরপি প্রদানের অনুমোদনের ভিত্তিতে।\n* **সেবামূল্য এবং পরিশোধ পদ্ধতি:** বিনামূল্যে\n* **সেবা প্রদানের সময়সীমা:** পার্সোনালাইজেশন সেন্টারে প্রাপ্তির ০৩ কর্মদিবস এবং পাসপোর্ট প্রদানের বিধি মোতাবেক।\n* **দায়িত্বপ্রাপ্ত কর্মকর্তা:** পরিচালক, পার্সোনালাইজেশন সেন্টার, ফোনঃ ০১৭৩৩-৩৯৩৩০২, ইমেইল: ddperso@passport.gov.bd\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_6f7d900581956bef",
+            "document_id": "passport_6f7d900581956bef",
+            "title": "সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর",
+            "section_title": "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ২. প্রতিশ্রুত সেবাসমূহ > ২.২) দাপ্তরিক সেবা > [ক্রমিক ২] মুদ্রিত পাসপোর্ট সরবরাহ",
+            "document_type": "সিটিজেন চার্টার",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "source_relative_path": "cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "source_sha256": "e875d24b0d749a0a12ff8c30bddac3eabba040af4c3a50348e63f3d086382e87",
+            "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/সিটিজেন চার্টার_ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.pdf\"]",
+            "document_date": "2025-02-18",
+            "date_verified": false,
+            "audit_flags": "",
+            "experimental": true,
+            "body_start": 12105,
+            "body_end": 12697,
+            "source_url": "",
+            "chunking_version": "heading_faq_v2",
+            "faq_unit": false
+          },
+          "score": 0.26114383339881897,
+          "retrievers": [
+            "dense",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_6f7d900581956bef_v2_0011",
+          "content": "সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর\nগণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ২. প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > [ক্রমিক ১ (খ)] মেশিন রিডেবল পাসপোর্ট (MRP) ইস্যু\n\nদাখিল করতে হবে।\n* **প্রয়োজনীয় কাগজপত্র প্রাপ্তির স্থান:** অধিদপ্তরের ওয়েবসাইট থেকে আবেদন ফরম অথবা যেকোনো পাসপোর্ট অফিস থেকে ডিআইপি ফরম-১ ও ২ বিনামূল্যে সংগ্রহ করা যাবে।\n* **সেবামূল্য এবং পরিশোধ পদ্ধতি:**\n  - ফি (দেশে): (বিস্তারিত)\n  - ফি (বিদেশে): (বিস্তারিত)\n  - শুধুমাত্র echallan (ই-চালান) এবং সোনালী ব্যাংক এর মাধ্যমে জমাকৃত ফি গ্রহণযোগ্য হবে।\n* **সেবা প্রদানের সময়সীমা:**\n  - ক. সাধারণ ফি এবং অনুকূল পুলিশ প্রতিবেদন প্রাপ্তি সাপেক্ষে ১৫ কর্মদিবসের মধ্যে।\n  - খ. জরুরি ফি এবং পুলিশ প্রতিবেদন প্রাপ্তি সাপেক্ষে ৭ কর্মদিবসের মধ্যে।\n  - গ. পুলিশ প্রতিবেদন যাদের জন্য প্রযোজ্যতা ওয়েবসাইটে জানা যাবে।\n* **দায়িত্বপ্রাপ্ত কর্মকর্তা:** আবেদনকারী যে অধিক্ষেত্রে বসবাস করেন সেই অধিক্ষেত্র সংশ্লিষ্ট বিভাগীয় পাসপোর্ট ও ভিসা অফিস অথবা আঞ্চলিক পাসপোর্ট অফিসের পরিচালক / উপপরিচালক / সহকারী পরিচালক / উপসহকারী পরিচালক (অধিক্ষেত্র www.dip.gov.bd হতে জানা যাবে)।\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_6f7d900581956bef",
+            "document_id": "passport_6f7d900581956bef",
+            "title": "সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর",
+            "section_title": "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ২. প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > [ক্রমিক ১ (খ)] মেশিন রিডেবল পাসপোর্ট (MRP) ইস্যু",
+            "document_type": "সিটিজেন চার্টার",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "source_relative_path": "cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "source_sha256": "e875d24b0d749a0a12ff8c30bddac3eabba040af4c3a50348e63f3d086382e87",
+            "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/সিটিজেন চার্টার_ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.pdf\"]",
+            "document_date": "2025-02-18",
+            "date_verified": false,
+            "audit_flags": "",
+            "experimental": true,
+            "body_start": 6746,
+            "body_end": 7609,
+            "source_url": "",
+            "chunking_version": "heading_faq_v2",
+            "faq_unit": false
+          },
+          "score": 0.227011576294899,
+          "retrievers": [
+            "dense",
+            "cross_encoder"
+          ]
+        }
+      ],
+      "seconds": 8.08
+    },
+    {
+      "variant": "baseline",
+      "query": "পাসপোর্টের আবেদন করার পর স্ট্যাটাস কীভাবে দেখব?",
+      "support_rank": 1,
+      "generation_evidence_has_support": true,
+      "source_prefixes": [
+        "passport_23d845d3ab38ea43"
+      ],
+      "content_hint": "Application Status",
+      "sources": [
+        {
+          "id": "passport_23d845d3ab38ea43_v2_0038",
+          "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.1 Checking Passport Application Status / আবেদনের অগ্রগতি পর্যবেক্ষণ\n\n### 6.1 Checking Passport Application Status / আবেদনের অগ্রগতি পর্যবেক্ষণ\n- **Category:** Status, Delivery & Corrections\n- **Topic:** Online Status Tracking\n- **English Question:** How can I check the status of my passport application?\n- **Bengali Question (প্রশ্ন):** আমার পাসপোর্ট আবেদনের অগ্রগতি কি ভাবে দেখতে পারব?\n- **English Answer:** Visit the **Status Check** page on the official ePassport portal. Enter your Application ID or Online Registration ID (OID) along with the applicant's Date of Birth to view current processing status.\n- **Bengali Answer (উত্তর):** ই-পাসপোর্ট পোর্টালে **'স্ট্যাটাস চেক'** মেন্যুতে যান। আবেদনকারীর জন্ম তারিখ এবং Application ID বা Online Registration ID প্রবেশ করিয়ে সার্চ বাটন চাপুন।\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_23d845d3ab38ea43",
+            "document_id": "passport_23d845d3ab38ea43",
+            "title": "Bangladesh_ePassport_FAQ",
+            "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.1 Checking Passport Application Status / আবেদনের অগ্রগতি পর্যবেক্ষণ",
+            "document_type": "document",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+            "original_paths": "[]",
+            "document_date": "unknown",
+            "date_verified": false,
+            "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+            "experimental": true,
+            "body_start": 27885,
+            "body_end": 28615,
+            "source_url": "",
+            "chunking_version": "heading_faq_v2",
+            "faq_unit": true
+          },
+          "score": 0.9621357917785645,
+          "retrievers": [
+            "dense",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_23d845d3ab38ea43_v2_0044",
+          "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.7 Official Link to Check Passport Status / ই-পাসপোর্ট স্ট্যাটাস চেক করার লিংক\n\n### 6.7 Official Link to Check Passport Status / ই-পাসপোর্ট স্ট্যাটাস চেক করার লিংক\n- **Category:** Status, Delivery & Corrections\n- **Topic:** Portal Link\n- **English Question:** How can I check my e-Passport status?\n- **Bengali Question (প্রশ্ন):** কি ভাবে আমি ই-পাসপোর্ট এর বর্তমান অবস্থান জানতে পারব?\n- **English Answer:** Visit the official ePassport Portal status tracking section at: [https://www.epassport.gov.bd/authorization/application-status](https://www.epassport.gov.bd/authorization/application-status)\n- **Bengali Answer (উত্তর):** আপনার ই-পাসপোর্টের স্ট্যাটাস চেক করতে অফিসিয়াল ই-পাসপোর্ট অনলাইন পোর্টালের এই লিংকে যান: [https://www.epassport.gov.bd/authorization/application-status](https://www.epassport.gov.bd/authorization/application-status)\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_23d845d3ab38ea43",
+            "document_id": "passport_23d845d3ab38ea43",
+            "title": "Bangladesh_ePassport_FAQ",
+            "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.7 Official Link to Check Passport Status / ই-পাসপোর্ট স্ট্যাটাস চেক করার লিংক",
+            "document_type": "document",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+            "original_paths": "[]",
+            "document_date": "unknown",
+            "date_verified": false,
+            "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+            "experimental": true,
+            "body_start": 33104,
+            "body_end": 33875,
+            "source_url": "",
+            "chunking_version": "heading_faq_v2",
+            "faq_unit": true
+          },
+          "score": 0.6115719079971313,
+          "retrievers": [
+            "dense",
+            "bm25",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_23d845d3ab38ea43_v2_0043",
+          "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.6 Portal Error: \"Application ID / Online Registration ID Required\" / স্ট্যাটাস দেখার সমস্যা ও সমাধান\n\n### 6.6 Portal Error: \"Application ID / Online Registration ID Required\" / স্ট্যাটাস দেখার সমস্যা ও সমাধান\n- **Category:** Status, Delivery & Corrections\n- **Topic:** Technical Portal Troubleshooting\n- **English Question:** Having trouble viewing online status. \"Application ID / Online Registration ID is required\" despite providing the ID. What can I do?\n- **Bengali Question (প্রশ্ন):** অনলাইন স্ট্যাটাস দেখতে সমস্যা হচ্ছে। Application ID / Online Registration ID প্রদান করা সত্ত্বেও \"Application ID / Online Registration ID is required\" দেখায়। আমি কি করতে পারি?\n- **English Answer:** Clear your web browser's Cache and Cookies, or open the portal in an Incognito/Private window and check again.\n- **Bengali Answer (উত্তর):** আপনার ব্রাউজারের ক্যাশ (Cache) এবং কুকিজ (Cookies) ক্লিয়ার করে পুনরায় স্ট্যাটাস চেক করার চেষ্টা করুন।\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_23d845d3ab38ea43",
+            "document_id": "passport_23d845d3ab38ea43",
+            "title": "Bangladesh_ePassport_FAQ",
+            "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.6 Portal Error: \"Application ID / Online Registration ID Required\" / স্ট্যাটাস দেখার সমস্যা ও সমাধান",
+            "document_type": "document",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+            "original_paths": "[]",
+            "document_date": "unknown",
+            "date_verified": false,
+            "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+            "experimental": true,
+            "body_start": 32264,
+            "body_end": 33104,
+            "source_url": "",
+            "chunking_version": "heading_faq_v2",
+            "faq_unit": true
+          },
+          "score": 0.3528960049152374,
+          "retrievers": [
+            "dense",
+            "bm25",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_23d845d3ab38ea43_v2_0047",
+          "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.10 Status \"Pending for Backend Verification\" / Backend Verification আটকে থাকা\n\n### 6.10 Status \"Pending for Backend Verification\" / Backend Verification আটকে থাকা\n- **Category:** Status, Delivery & Corrections\n- **Topic:** System Processing Stage\n- **English Question:** While checking my passport status, I see \"Pending for Backend Verification\". What should I do?\n- **Bengali Question (প্রশ্ন):** আমি আমার পাসপোর্টের স্ট্যাটাস চেক করার সময় \"Pending for Backend Verification\" দেখতে পাচ্ছি। এখন আমি কি করব?\n- **English Answer:** Please contact your respective Regional Passport Office (RPO) for clarification and further instructions regarding backend checks.\n- **Bengali Answer (উত্তর):** এমন দেখালে অনুগ্রহ করে সরাসরি আপনার সংশ্লিষ্ট আঞ্চলিক পাসপোর্ট অফিসে (RPO) যোগযোগ করুন।\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_23d845d3ab38ea43",
+            "document_id": "passport_23d845d3ab38ea43",
+            "title": "Bangladesh_ePassport_FAQ",
+            "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.10 Status \"Pending for Backend Verification\" / Backend Verification আটকে থাকা",
+            "document_type": "document",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+            "original_paths": "[]",
+            "document_date": "unknown",
+            "date_verified": false,
+            "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+            "experimental": true,
+            "body_start": 35498,
+            "body_end": 36204,
+            "source_url": "",
+            "chunking_version": "heading_faq_v2",
+            "faq_unit": true
+          },
+          "score": 0.2827840745449066,
+          "retrievers": [
+            "dense",
+            "bm25",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_23d845d3ab38ea43_v2_0027",
+          "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 4. Application & Processing (আবেদন ও প্রক্রিয়াকরণ) > 4.9 Upgrading to Express Delivery Post-Enrolment / আবেদনের পর জরুরি সেবায় রূপান্তর\n\n### 4.9 Upgrading to Express Delivery Post-Enrolment / আবেদনের পর জরুরি সেবায় রূপান্তর\n- **Category:** Application & Processing\n- **Topic:** Delivery Speed Upgrade\n- **English Question:** Is it possible to upgrade to express delivery after the enrolment for ePassport was done?\n- **Bengali Question (প্রশ্ন):** আবেদন সম্পন্ন করার পর কি জরুরী সেবার জন্য আবেদন রূপান্তরিত করা যাবে?\n- **English Answer:** Yes, this is possible as long as your passport application is still in processing and not yet produced. Please check your status on the online portal home page first. If eligible, pay the additional fee difference at a supporting bank. When visiting the passport office, bring:\n  1. Delivery Slip of ePassport application.\n  2. Payment slip of supplemental payment from the bank.\n- **Bengali Answer (উত্তর):** হ্যাঁ, আবেদন চূড়ান্ত অনুমোদনের পূর্ব পর্যন্ত এটি সম্ভব। প্রথমে অনলাইন পোর্টালে আবেদনের স্ট্যাটাস পরীক্ষা করুন। যদি পাসপোর্ট এখনও প্রিন্ট না হয়ে থাকে, তবে নির্ধারিত ব্যাংকে অতিরিক্ত জরুরি ফি প্রদান করুন। এরপর নিম্নলিখিত কাগজপত্রসহ পাসপোর্ট অফিসে যোগাযোগ করুন:\n  1. ই-পাসপোর্টের ডেলিভারি স্লিপ।\n  2. ব্যাংকের অতিরিক্ত ফি পরিশোধের রশিদ।\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_23d845d3ab38ea43",
+            "document_id": "passport_23d845d3ab38ea43",
+            "title": "Bangladesh_ePassport_FAQ",
+            "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 4. Application & Processing (আবেদন ও প্রক্রিয়াকরণ) > 4.9 Upgrading to Express Delivery Post-Enrolment / আবেদনের পর জরুরি সেবায় রূপান্তর",
+            "document_type": "document",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+            "original_paths": "[]",
+            "document_date": "unknown",
+            "date_verified": false,
+            "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+            "experimental": true,
+            "body_start": 19134,
+            "body_end": 20289,
+            "source_url": "",
+            "chunking_version": "heading_faq_v2",
+            "faq_unit": true
+          },
+          "score": 0.263622909784317,
+          "retrievers": [
+            "bm25",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_0b74faa4d85a2a58_v2_0006",
+          "content": "অনলাইন সেবাসমূহ (নাগরিক ই-সেবাসমূহের তালিকা)\nইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর - অনলাইন সেবাসমূহ > নাগরিক ই-সেবাসমূহের তালিকা > ৪. ই-পাসপোর্ট অ্যাপলিকেশন স্টেটাস\n\n### ৪. ই-পাসপোর্ট অ্যাপলিকেশন স্টেটাস\n* **ক্রম:** ৪\n* **সেবার শিরোনাম:** ই-পাসপোর্ট অ্যাপলিকেশন স্টেটাস\n* **অনলাইন লিংক:** ওয়েব লিংক\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_0b74faa4d85a2a58",
+            "document_id": "passport_0b74faa4d85a2a58",
+            "title": "অনলাইন সেবাসমূহ (নাগরিক ই-সেবাসমূহের তালিকা)",
+            "section_title": "ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর - অনলাইন সেবাসমূহ > নাগরিক ই-সেবাসমূহের তালিকা > ৪. ই-পাসপোর্ট অ্যাপলিকেশন স্টেটাস",
+            "document_type": "নাগরিক ই-সেবাসমূহের তালিকা",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/অনলাইন সেবাসমূহ (নাগরিক ই-সেবাসমূহের তালিকা).md",
+            "source_relative_path": "cleaned_md/অনলাইন সেবাসমূহ (নাগরিক ই-সেবাসমূহের তালিকা).md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/অনলাইন সেবাসমূহ (নাগরিক ই-সেবাসমূহের তালিকা).md",
+            "source_sha256": "63aad859e13c4416b524e8c7280c02b0cff81de0320bcab222cbd8e2461bd292",
+            "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/নাগরিক ই-সেবাসমূহের তালিকা.pdf\"]",
+            "document_date": "N/A",
+            "date_verified": false,
+            "audit_flags": "no_web_address",
+            "experimental": true,
+            "body_start": 411,
+            "body_end": 546,
+            "source_url": "",
+            "chunking_version": "heading_faq_v2",
+            "faq_unit": false
+          },
+          "score": 0.05103706195950508,
+          "retrievers": [
+            "dense",
+            "cross_encoder"
+          ]
+        }
+      ],
+      "seconds": 8.51
+    },
+    {
+      "variant": "baseline",
+      "query": "ডেলিভারি স্লিপ হারিয়ে গেলে পাসপোর্ট কীভাবে সংগ্রহ করব?",
+      "support_rank": 1,
+      "generation_evidence_has_support": true,
+      "source_prefixes": [
+        "passport_23d845d3ab38ea43"
+      ],
+      "content_hint": "Lost Delivery Slip",
+      "sources": [
+        {
+          "id": "passport_23d845d3ab38ea43_v2_0041",
+          "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.4 Lost Delivery Slip Recovery / ডেলিভারি স্লিপ হারিয়ে গেলে পাসপোর্ট সংগ্রহ\n\n### 6.4 Lost Delivery Slip Recovery / ডেলিভারি স্লিপ হারিয়ে গেলে পাসপোর্ট সংগ্রহ\n- **Category:** Status, Delivery & Corrections\n- **Topic:** Alternative Delivery Protocols\n- **English Question:** I have lost my delivery slip. Now how will I collect my passport?\n- **Bengali Question (প্রশ্ন):** আমি আমার ডেলিভারি স্লিপ হারিয়েছি। এখন আমি কি ভাবে আমার পাসপোর্ট সংগ্রহ করব?\n- **English Answer:** Bring the following items to your designated passport office:\n  1. Printed Application Summary (Appointment copy).\n  2. Photocopy of your NID card.\n  3. Photocopy of the lost Delivery Slip (if available).\n- **Bengali Answer (উত্তর):** নিম্নে বর্ণিত কাগজপত্র নিয়ে অফিসে যোগাযোগ করুন:\n  ১. প্রিন্ট সামারি / অ্যাপয়েন্টমেন্ট কপি।\n  ২. NID কার্ডের ফটোকপি।\n  ৩. হারিয়ে যাওয়া ডেলিভারি স্লিপের ফটোকপি (যদি থাকে)।\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_23d845d3ab38ea43",
+            "document_id": "passport_23d845d3ab38ea43",
+            "title": "Bangladesh_ePassport_FAQ",
+            "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.4 Lost Delivery Slip Recovery / ডেলিভারি স্লিপ হারিয়ে গেলে পাসপোর্ট সংগ্রহ",
+            "document_type": "document",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+            "original_paths": "[]",
+            "document_date": "unknown",
+            "date_verified": false,
+            "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+            "experimental": true,
+            "body_start": 30674,
+            "body_end": 31484,
+            "source_url": "",
+            "chunking_version": "heading_faq_v2",
+            "faq_unit": true
+          },
+          "score": 0.9983684420585632,
+          "retrievers": [
+            "dense",
+            "bm25",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_23d845d3ab38ea43_v2_0048",
+          "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.11 Collection Office Jurisdiction (Chittagong to Dhaka) / চট্টগ্রাম থেকে আবেদন করে ঢাকা থেকে সংগ্রহ\n\n### 6.11 Collection Office Jurisdiction (Chittagong to Dhaka) / চট্টগ্রাম থেকে আবেদন করে ঢাকা থেকে সংগ্রহ\n- **Category:** Status, Delivery & Corrections\n- **Topic:** Pickup Location Policy\n- **English Question:** I have applied for my passport in Chittagong, can I collect it from Dhaka?\n- **Bengali Question (প্রশ্ন):** আমি চট্টগ্রামে পাসপোর্ট করতে দিয়েছি, আমি কি ঢাকা থেকে সংগ্রহ করতে পারব?\n- **English Answer:** No. The passport must be collected from the specific regional or divisional office mentioned on your Delivery Slip.  \n  *Exception:* Only urgent passports processed under the **Super Express** category are issued and collected from the Agargaon Divisional Passport Office in Dhaka.\n- **Bengali Answer (উত্তর):** না। আপনার ডেলিভারি স্লিপে (Delivery Slip) যে আঞ্চলিক বা বিভাগীয় পাসপোর্ট অফিসের নাম দেওয়া রয়েছে, সেখান থেকেই পাসপোর্ট সংগ্রহ করতে হবে।  \n  *(বিশেষ দ্রষ্টব্য: কেবল অতি জরুরি বা Super Express ক্যাটাগরির পাসপোর্ট আগারগাঁও বিভাগীয় পাসপোর্ট অফিস, ঢাকা থেকে সংগ্রহ করা যায়।)*\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_23d845d3ab38ea43",
+            "document_id": "passport_23d845d3ab38ea43",
+            "title": "Bangladesh_ePassport_FAQ",
+            "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.11 Collection Office Jurisdiction (Chittagong to Dhaka) / চট্টগ্রাম থেকে আবেদন করে ঢাকা থেকে সংগ্রহ",
+            "document_type": "document",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+            "original_paths": "[]",
+            "document_date": "unknown",
+            "date_verified": false,
+            "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+            "experimental": true,
+            "body_start": 36204,
+            "body_end": 37213,
+            "source_url": "",
+            "chunking_version": "heading_faq_v2",
+            "faq_unit": true
+          },
+          "score": 0.8682811856269836,
+          "retrievers": [
+            "dense",
+            "bm25",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_6e87d0783a373593_v2_0008",
+          "content": "5 Steps to your e-Passport\n5 Steps to your e-Passport > Application Steps > Step 5: Collect your e-Passport at the passport office\n\n### Step 5: Collect your e-Passport at the passport office\n* **Collection Requirement 1:** Delivery slip you received during passport enrolment\n* **Collection Requirement 2:** Authorized representatives (has to bring his/her NID card) can collect the applicant's new passport.",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_6e87d0783a373593",
+            "document_id": "passport_6e87d0783a373593",
+            "title": "5 Steps to your e-Passport",
+            "section_title": "5 Steps to your e-Passport > Application Steps > Step 5: Collect your e-Passport at the passport office",
+            "document_type": "সাধারণ তথ্য",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/5 Steps to your e-Passport.md",
+            "source_relative_path": "cleaned_md/5 Steps to your e-Passport.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/5 Steps to your e-Passport.md",
+            "source_sha256": "20cf0be15ba261a9be55252bdd4da3d3ebe418c14e4722ec7c509b94bbc0c348",
+            "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/5 Steps to your e-Passport.pdf\"]",
+            "document_date": "2026-06-03",
+            "date_verified": false,
+            "audit_flags": "no_web_address",
+            "experimental": true,
+            "body_start": 685,
+            "body_end": 961,
+            "source_url": "",
+            "chunking_version": "heading_faq_v2",
+            "faq_unit": false
+          },
+          "score": 0.7402267456054688,
+          "retrievers": [
+            "dense",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_23d845d3ab38ea43_v2_0040",
+          "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.3 Documents Needed for Passport Collection / নতুন পাসপোর্ট সংগ্রহের প্রয়োজনীয় কাগজপত্র\n\n### 6.3 Documents Needed for Passport Collection / নতুন পাসপোর্ট সংগ্রহের প্রয়োজনীয় কাগজপত্র\n- **Category:** Status, Delivery & Corrections\n- **Topic:** Delivery Verification\n- **English Question:** What types of documents are required to show at passport office to collect a new passport?\n- **Bengali Question (প্রশ্ন):** নতুন পাসপোর্ট সংগ্রহের সময় কি কি কাগজপত্রাদি পাসপোর্ট অফিসে দেখানোর প্রয়োজন?\n- **English Answer:** Required documents for collection:\n  - **a.** Original Delivery Slip.\n  - **b.** For child's passport (<12 years): Parent's NID or Passport.\n  - **c.** If collected by an authorized third party: Signed authorization letter from the applicant along with the authorized person's NID.\n  - **d.** Previous original Passport (for renewal/reissue).\n- **Bengali Answer (উত্তর):** পাসপোর্ট গ্রহণের সময় প্রয়োজনীয় ডকুমেন্ট:\n  - **ক.** ডেলিভারি স্লিপ (Delivery Slip)।\n  - **খ.** সন্তানের পাসপোর্ট হলে (১২ বছরের কম): অভিভাবকের NID/পাসপোর্ট।\n  - **গ.** প্রতিনিধি দিয়ে সংগ্রহ করতে চাইলে: আবেদনকারীর স্বাক্ষরযুক্ত অনুমোদনপত্র (Authorization Letter) এবং প্রতিনিধির NID।\n  - **ঘ.** পূর্বের মূল পাসপোর্ট।\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_23d845d3ab38ea43",
+            "document_id": "passport_23d845d3ab38ea43",
+            "title": "Bangladesh_ePassport_FAQ",
+            "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.3 Documents Needed for Passport Collection / নতুন পাসপোর্ট সংগ্রহের প্রয়োজনীয় কাগজপত্র",
+            "document_type": "document",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+            "original_paths": "[]",
+            "document_date": "unknown",
+            "date_verified": false,
+            "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+            "experimental": true,
+            "body_start": 29551,
+            "body_end": 30674,
+            "source_url": "",
+            "chunking_version": "heading_faq_v2",
+            "faq_unit": true
+          },
+          "score": 0.5854083299636841,
+          "retrievers": [
+            "dense",
+            "bm25",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_23d845d3ab38ea43_v2_0046",
+          "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.9 Received Email Notification But No Mobile SMS / ই-মেইল এসেছে কিন্তু এসএমএস আসেনি\n\n### 6.9 Received Email Notification But No Mobile SMS / ই-মেইল এসেছে কিন্তু এসএমএস আসেনি\n- **Category:** Status, Delivery & Corrections\n- **Topic:** Collection Eligibility\n- **English Question:** I have received an email for collection of a new Passport from Passport office but I didn't receive a message through mobile. Can I collect my passport?\n- **Bengali Question (প্রশ্ন):** আমি পাসপোর্ট সংগ্রহের জন্য ই-মেইল পেয়েছি কিন্তু কোন মোবাইলে এসএমএস পাই নাই। আমি কি পাসপোর্ট অফিস থেকে পাসপোর্ট সংগ্রহ করতে পারি?\n- **English Answer:** Yes, you can collect your passport if you have received the official readiness email notification.\n- **Bengali Answer (উত্তর):** হ্যাঁ, ই-মেইল নোটিফিকেশন পেয়ে থাকলে আপনি প্রয়োজনীয় কাগজপত্র সহ পাসপোর্ট সংগ্রহ করতে পারবেন।\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_23d845d3ab38ea43",
+            "document_id": "passport_23d845d3ab38ea43",
+            "title": "Bangladesh_ePassport_FAQ",
+            "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.9 Received Email Notification But No Mobile SMS / ই-মেইল এসেছে কিন্তু এসএমএস আসেনি",
+            "document_type": "document",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+            "original_paths": "[]",
+            "document_date": "unknown",
+            "date_verified": false,
+            "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+            "experimental": true,
+            "body_start": 34734,
+            "body_end": 35498,
+            "source_url": "",
+            "chunking_version": "heading_faq_v2",
+            "faq_unit": true
+          },
+          "score": 0.1379414051771164,
+          "retrievers": [
+            "dense",
+            "bm25",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_23d845d3ab38ea43_v2_0027",
+          "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 4. Application & Processing (আবেদন ও প্রক্রিয়াকরণ) > 4.9 Upgrading to Express Delivery Post-Enrolment / আবেদনের পর জরুরি সেবায় রূপান্তর\n\n### 4.9 Upgrading to Express Delivery Post-Enrolment / আবেদনের পর জরুরি সেবায় রূপান্তর\n- **Category:** Application & Processing\n- **Topic:** Delivery Speed Upgrade\n- **English Question:** Is it possible to upgrade to express delivery after the enrolment for ePassport was done?\n- **Bengali Question (প্রশ্ন):** আবেদন সম্পন্ন করার পর কি জরুরী সেবার জন্য আবেদন রূপান্তরিত করা যাবে?\n- **English Answer:** Yes, this is possible as long as your passport application is still in processing and not yet produced. Please check your status on the online portal home page first. If eligible, pay the additional fee difference at a supporting bank. When visiting the passport office, bring:\n  1. Delivery Slip of ePassport application.\n  2. Payment slip of supplemental payment from the bank.\n- **Bengali Answer (উত্তর):** হ্যাঁ, আবেদন চূড়ান্ত অনুমোদনের পূর্ব পর্যন্ত এটি সম্ভব। প্রথমে অনলাইন পোর্টালে আবেদনের স্ট্যাটাস পরীক্ষা করুন। যদি পাসপোর্ট এখনও প্রিন্ট না হয়ে থাকে, তবে নির্ধারিত ব্যাংকে অতিরিক্ত জরুরি ফি প্রদান করুন। এরপর নিম্নলিখিত কাগজপত্রসহ পাসপোর্ট অফিসে যোগাযোগ করুন:\n  1. ই-পাসপোর্টের ডেলিভারি স্লিপ।\n  2. ব্যাংকের অতিরিক্ত ফি পরিশোধের রশিদ।\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_23d845d3ab38ea43",
+            "document_id": "passport_23d845d3ab38ea43",
+            "title": "Bangladesh_ePassport_FAQ",
+            "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 4. Application & Processing (আবেদন ও প্রক্রিয়াকরণ) > 4.9 Upgrading to Express Delivery Post-Enrolment / আবেদনের পর জরুরি সেবায় রূপান্তর",
+            "document_type": "document",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+            "original_paths": "[]",
+            "document_date": "unknown",
+            "date_verified": false,
+            "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+            "experimental": true,
+            "body_start": 19134,
+            "body_end": 20289,
+            "source_url": "",
+            "chunking_version": "heading_faq_v2",
+            "faq_unit": true
+          },
+          "score": 0.10533320903778076,
+          "retrievers": [
+            "dense",
+            "bm25",
+            "cross_encoder"
+          ]
+        }
+      ],
+      "seconds": 7.92
+    },
+    {
+      "variant": "candidate",
+      "query": "নতুন পাসপোর্ট করতে কী কী কাগজপত্র লাগবে?",
+      "support_rank": 2,
+      "generation_evidence_has_support": true,
+      "source_prefixes": [
+        "passport_73ac41f2327257f9",
+        "passport_729010959c882773"
+      ],
+      "content_hint": "",
+      "sources": [
+        {
+          "id": "passport_23d845d3ab38ea43_v3_0040",
+          "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.3 Documents Needed for Passport Collection / নতুন পাসপোর্ট সংগ্রহের প্রয়োজনীয় কাগজপত্র\n\n### 6.3 Documents Needed for Passport Collection / নতুন পাসপোর্ট সংগ্রহের প্রয়োজনীয় কাগজপত্র\n- **Category:** Status, Delivery & Corrections\n- **Topic:** Delivery Verification\n- **English Question:** What types of documents are required to show at passport office to collect a new passport?\n- **Bengali Question (প্রশ্ন):** নতুন পাসপোর্ট সংগ্রহের সময় কি কি কাগজপত্রাদি পাসপোর্ট অফিসে দেখানোর প্রয়োজন?\n- **English Answer:** Required documents for collection:\n  - **a.** Original Delivery Slip.\n  - **b.** For child's passport (<12 years): Parent's NID or Passport.\n  - **c.** If collected by an authorized third party: Signed authorization letter from the applicant along with the authorized person's NID.\n  - **d.** Previous original Passport (for renewal/reissue).\n- **Bengali Answer (উত্তর):** পাসপোর্ট গ্রহণের সময় প্রয়োজনীয় ডকুমেন্ট:\n  - **ক.** ডেলিভারি স্লিপ (Delivery Slip)।\n  - **খ.** সন্তানের পাসপোর্ট হলে (১২ বছরের কম): অভিভাবকের NID/পাসপোর্ট।\n  - **গ.** প্রতিনিধি দিয়ে সংগ্রহ করতে চাইলে: আবেদনকারীর স্বাক্ষরযুক্ত অনুমোদনপত্র (Authorization Letter) এবং প্রতিনিধির NID।\n  - **ঘ.** পূর্বের মূল পাসপোর্ট।\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_23d845d3ab38ea43",
+            "document_id": "passport_23d845d3ab38ea43",
+            "title": "Bangladesh_ePassport_FAQ",
+            "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.3 Documents Needed for Passport Collection / নতুন পাসপোর্ট সংগ্রহের প্রয়োজনীয় কাগজপত্র",
+            "document_type": "document",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+            "original_paths": "[]",
+            "document_date": "unknown",
+            "date_verified": false,
+            "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+            "experimental": true,
+            "body_start": 29480,
+            "body_end": 30603,
+            "source_url": "",
+            "chunking_version": "service_cleanup_v3",
+            "faq_unit": true,
+            "cleaned_path": "docs/data_cleanup/2026_09_22_plain/passport/markdown/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "cleaned_sha256": "129e56b5fb40b44e1433f3603fbbeb955dd9d034ddd34baf7c34ebbaaa44d80a"
+          },
+          "score": 0.9824420809745789,
+          "retrievers": [
+            "dense",
+            "bm25",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_73ac41f2327257f9_v3_0004",
+          "content": "Documents need to be carried while enrolment at Passport offices / পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে\nDocuments need to be carried while enrolment at Passport offices > প্রয়োজনীয় কাগজপত্র (বাংলা)\n\n## প্রয়োজনীয় কাগজপত্র (বাংলা)\n* **ক্রমিক ১:** আবেদনপত্রের সারংশের প্রিন্ট কপি (অ্যাপয়েন্টমেন্ট সহ)।\n* **ক্রমিক ২:** সনাক্তকরণ নথির প্রিন্ট কপি (জাতীয় পরিচয় পত্র/ জন্ম নিবন্ধন নং)।\n* **ক্রমিক ৩:** পেমেন্ট স্লিপ (for Offline Payment only) I\n* **ক্রমিক ৪:** পূর্ববর্তী পাসপোর্ট এবং ডাটা পেজের প্রিন্ট কপি (যদি থাকে)।\n* **ক্রমিক ৫:** সরকারি চাকরিজীবীদের ক্ষেত্রে GO/NOC (যদি থাকে)।\n* **ক্রমিক ৬:** আবেদনপত্রের প্রিন্ট কপি।\n* **ক্রমিক ৭:** তথ্য সংশোধনের ক্ষেত্রে প্রয়োজনীয় কাগজপত্র (যদি থাকে)।",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_73ac41f2327257f9",
+            "document_id": "passport_73ac41f2327257f9",
+            "title": "Documents need to be carried while enrolment at Passport offices / পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে",
+            "section_title": "Documents need to be carried while enrolment at Passport offices > প্রয়োজনীয় কাগজপত্র (বাংলা)",
+            "document_type": "সাধারণ তথ্য",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.md",
+            "source_relative_path": "cleaned_md/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.md",
+            "source_sha256": "11f8f5bb9835c318f2ee6fda5b64e345563234278c88ac3062d5e7a89d3d8fe9",
+            "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.pdf\"]",
+            "document_date": "2025-05-07",
+            "date_verified": false,
+            "audit_flags": "no_web_address",
+            "experimental": true,
+            "body_start": 679,
+            "body_end": 1174,
+            "source_url": "",
+            "chunking_version": "service_cleanup_v3",
+            "faq_unit": false,
+            "cleaned_path": "docs/data_cleanup/2026_09_22_plain/passport/markdown/cleaned_md/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.md",
+            "cleaned_sha256": "f44ef2297a8775519d8a5f716f55c3acedf305033904fae914896c8ebf8a01da"
+          },
+          "score": 0.9469374418258667,
+          "retrievers": [
+            "dense",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_729010959c882773_v3_0003",
+          "content": "Documents Checklist for e-Passport Enrollment / পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট\nDocuments Checklist for e-Passport Enrollment > পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট > পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট ও প্রয়োজনীয় কাগজপত্রের তালিকা\n\n### পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট ও প্রয়োজনীয় কাগজপত্রের তালিকা\n\n* **ক্রমিক ১:** আবেদনকারী কর্তৃক অনলাইনে আবেদনকৃত (পিডিএফ) ফরম প্রিন্টেড কপি।\n* **ক্রমিক ২:** পাসপোর্টের ফি জমা প্রদানের চালান রশিদ (অফলাইন পেমেন্টের ক্ষেত্রে)।\n* **ক্রমিক ৩:** অনলাইন জন্ম নিবন্ধন সনদ (ইংরেজী ভার্সন) মূলকপি এবং ফটোকপি।\n* **ক্রমিক ৪:** জাতীয় পরিচয় পত্রের মূল ও ফটোকপি (২০ বছরের উর্ধ্বের নাগরিকদের জন্য)।\n* **ক্রমিক ৫:** বর্তমান ঠিকানা প্রমাণের স্বপক্ষে Job ID/Student ID/গ্যাস বিলের কপি/ বিদ্যুৎ বিলের কপি/ টেলিফোন বিলের কপি/পানির বিলের কপি যেটি প্রযোজ্য সেটার মূলকপি প্রদর্শন করা।\n* **ক্রমিক ৬:** দত্তক/অভিভাবকত্ব গ্রহণের ক্ষেত্রে সুরক্ষা সেবা বিভাগ, স্বরাষ্ট্র মন্ত্রণালয় হতে জারীকৃত আদেশের কপি।\n* **ক্রমিক ৭:** টেকনিক্যাল পেশা প্রমাণের স্বপক্ষে (ডাক্তার, ইঞ্জিনিয়ার, ড্রাইভার ইত্যাদি) টেকনিক্যাল সনদের কপি।\n* **ক্রমিক ৮:** রি-ইস্যু আবেদনের ক্ষেত্রে মূল পাসপোর্ট (Original Passport) এবং পাসপোর্টের ফটোকপি।\n* **ক্রমিক ৯:** ধূসর ব্যাকগ্রাউন্ডের 3R সাইজের ফটো (০৬ বছরের নিচে শিশুদের ক্ষেত্রে)।\n* **ক্রমিক ১০:** অপ্রাপ্ত বয়স্ক আবেদনকারীর ক্ষেত্রে পিতা/মাতার জাতীয় পরিচয়পত্রের কপি।\n* **ক্রমিক ১১:** মেডিকেল সনদ (চোখের আইরিশ, ফিঙ্গারপ্রিন্ট মিসিং হবার ক্ষেত্রে)।\n* **ক্রমিক ১২:** সরকারী আদেশ (GO)/অনাপত্তি সনদ (NOC)/প্রত্যয়নপত্র এর কপি যা ইস্যুকারী কর্তৃপক্ষের নিজ নিজ Website এ আপলোড থাকতে হবে। (প্রযোজ্য ক্ষেত্রে)\n* **ক্রমিক ১৩:** PRL এর আদেশ/পেনশন বই এর কপি। (প্রযোজ্য ক্ষেত্রে)\n* **ক্রমিক ১৪:** বৈবাহিক অবস্থার পরিবর্তন হলে বিবাহ সনদ/কাবিন নামার কপি।\n* **ক্রমিক ১৫:** বিবাহ বিচ্ছেদ হলে বিচ্ছেদের সনদ/তালাক নামার কপি।\n* **ক্রমিক ১৬:** হারানো পাসপোর্টের ক্ষেত্রে সাধারণ ডায়েরী (GD) এর মূল কপি।\n* **ক্রমিক ১৭:** পূর্বের পাসপোর্ট এবং NID/BRC-তে তথ্য গড়মিল থাকলে নির্ধারিত ফরম্যাটে পূরণকৃত অঙ্গীকারনামা।\n* **ক্রমিক ১৮:** Multiple Active পাসপোর্টের ক্ষেত্রে নির্ধারিত ফরম্যাটে পূরণকৃত অঙ্গীকারনামা।\n* **ক্রমিক ১৯:** তথ্য সংশোধনের জন্য অপ্রাপ্তবয়স্কদের ক্ষেত্রে শিক্ষাগত সনদ (JSC/SSC/HSC/সমমান)।\n* **ক্রমিক ২০:** সরকারী চাকুরীজীবীদের তথ্য সংশোধনের ক্ষেত্রে NID, শিক্ষাগত সনদ ও সার্ভিস রেকর্ড অনুযায়ী অফিসের প্রত্যয়নপত্র এবং সার্ভিস রেকর্ডের ফটোকপি।\n* **ক্রমিক ২১:** দ্বৈত নাগরিকত্বের ক্ষেত্রে স্বরাষ্ট্র মন্ত্রণালয়ের Dual Citizenship সনদ (প্রযোজ্য ক্ষেত্রে)।\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_729010959c882773",
+            "document_id": "passport_729010959c882773",
+            "title": "Documents Checklist for e-Passport Enrollment / পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট",
+            "section_title": "Documents Checklist for e-Passport Enrollment > পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট > পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট ও প্রয়োজনীয় কাগজপত্রের তালিকা",
+            "document_type": "চেকলিস্ট",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট.md",
+            "source_relative_path": "cleaned_md/পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট.md",
+            "source_sha256": "a6928082079a3dcdcd69832c5e7ff19d7c5152c445c0aaca9cc926262d672050",
+            "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট.pdf\"]",
+            "document_date": "2024-10-21",
+            "date_verified": false,
+            "audit_flags": "no_web_address",
+            "experimental": true,
+            "body_start": 136,
+            "body_end": 2302,
+            "source_url": "",
+            "chunking_version": "service_cleanup_v3",
+            "faq_unit": false,
+            "cleaned_path": "docs/data_cleanup/2026_09_22_plain/passport/markdown/cleaned_md/পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট.md",
+            "cleaned_sha256": "c3e57cf0c6068a883ae4b1e06043e4895e871138897d177f5fa721bc43419e5e"
+          },
+          "score": 0.9460045099258423,
+          "retrievers": [
+            "dense",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_73ac41f2327257f9_v3_0003",
+          "content": "Documents need to be carried while enrolment at Passport offices / পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে\nDocuments need to be carried while enrolment at Passport offices > Required Documents (English)\n\n## Required Documents (English)\n* **Item 1:** Printed application summary including appointment (if any).\n* **Item 2:** Identification documents (NID card / Birth certificate - Original)\n* **Item 3:** Payment Slip for Offline Payment only.\n* **Item 4:** Previous Passport (if any).\n* **Item 5:** GO/NOC for government service holder (as applicable).\n* **Item 6:** Printed application form.\n* **Item 7:** Further necessity of documents depends on nature of application/corrections (if any).\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_73ac41f2327257f9",
+            "document_id": "passport_73ac41f2327257f9",
+            "title": "Documents need to be carried while enrolment at Passport offices / পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে",
+            "section_title": "Documents need to be carried while enrolment at Passport offices > Required Documents (English)",
+            "document_type": "সাধারণ তথ্য",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.md",
+            "source_relative_path": "cleaned_md/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.md",
+            "source_sha256": "11f8f5bb9835c318f2ee6fda5b64e345563234278c88ac3062d5e7a89d3d8fe9",
+            "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.pdf\"]",
+            "document_date": "2025-05-07",
+            "date_verified": false,
+            "audit_flags": "no_web_address",
+            "experimental": true,
+            "body_start": 188,
+            "body_end": 679,
+            "source_url": "",
+            "chunking_version": "service_cleanup_v3",
+            "faq_unit": false,
+            "cleaned_path": "docs/data_cleanup/2026_09_22_plain/passport/markdown/cleaned_md/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.md",
+            "cleaned_sha256": "f44ef2297a8775519d8a5f716f55c3acedf305033904fae914896c8ebf8a01da"
+          },
+          "score": 0.8841585516929626,
+          "retrievers": [
+            "dense",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_23d845d3ab38ea43_v3_0033",
+          "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 5. Document Requirements (প্রয়োজনীয় কাগজপত্র) > 5.2 Documents Required for Retired Government Employees / অবসরপ্রাপ্ত সরকারি কর্মকর্তা-কর্মচারীদের কাগজপত্র\n\n### 5.2 Documents Required for Retired Government Employees / অবসরপ্রাপ্ত সরকারি কর্মকর্তা-কর্মচারীদের কাগজপত্র\n- **Category:** Document Requirements\n- **Topic:** Government Pensioners & PRL Documents\n- **English Question:** I have retired from Government service. Now what documents are required to complete enrollment process of E-Passport?\n- **Bengali Question (প্রশ্ন):** আমি সরকারি চাকরি থেকে অবসর নিয়েছি। এখন ই-পাসপোর্ট প্রক্রিয়া সম্পূর্ণ করতে কী কী কাগজপত্রাদি প্রয়োজন?\n- **English Answer:** When visiting the passport office for enrolment/fingerprints, bring:\n  1. PRL / Post Retirement Leave Order copy.\n  2. NID card.\n  3. Previous Passport (Original).\n  4. Hard copy of Application Form.\n  5. Printed Summary Slip.\n  6. Payment Slip / Fee Receipt.\n- **Bengali Answer (উত্তর):** ই-পাসপোর্ট বায়োমেট্রিক প্রক্রিয়ার জন্য পাসপোর্ট অফিসে নিম্ন লিখিত কাগজপত্র বহন করতে হবে:\n  ১. পিআরএল (PRL) অর্ডার কপি।\n  ২. জাতীয় পরিচয়পত্র (NID)।\n  ৩. পূর্ববর্তী মূল পাসপোর্ট।\n  ৪. আবেদনপত্রের হার্ড কপি (Application Form)।\n  ৫. প্রিন্ট সারাংশ (Summary Slip)।\n  ৬. পাসপোর্ট ফি প্রদানের রসিদ/পেমেন্ট স্লিপ।\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_23d845d3ab38ea43",
+            "document_id": "passport_23d845d3ab38ea43",
+            "title": "Bangladesh_ePassport_FAQ",
+            "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 5. Document Requirements (প্রয়োজনীয় কাগজপত্র) > 5.2 Documents Required for Retired Government Employees / অবসরপ্রাপ্ত সরকারি কর্মকর্তা-কর্মচারীদের কাগজপত্র",
+            "document_type": "document",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+            "original_paths": "[]",
+            "document_date": "unknown",
+            "date_verified": false,
+            "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+            "experimental": true,
+            "body_start": 24400,
+            "body_end": 25508,
+            "source_url": "",
+            "chunking_version": "service_cleanup_v3",
+            "faq_unit": true,
+            "cleaned_path": "docs/data_cleanup/2026_09_22_plain/passport/markdown/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "cleaned_sha256": "129e56b5fb40b44e1433f3603fbbeb955dd9d034ddd34baf7c34ebbaaa44d80a"
+          },
+          "score": 0.8784477114677429,
+          "retrievers": [
+            "dense",
+            "bm25",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_6f7d900581956bef_v3_0007",
+          "content": "সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর\nগণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ২. প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > [ক্রমিক ১ (ক)] ইলেকট্রনিক (E-Passport) পাসপোর্ট ইস্যু\n\n* **প্রয়োজনীয় কাগজপত্র:**\n  1. অনলাইনে/অফলাইনে (PDF) পূরণকৃত আবেদন ১ কপি (উল্লেখ্য হাতে লেখা আবেদন গ্রহণযোগ্য নয়)।\n  2. ১ (এক) কপি জাতীয় পরিচয়পত্র (NID - ২০ বছরের ঊর্ধ্বে) অথবা ডিজিটাল জন্ম নিবন্ধন সনদ (BRC - ১৮ বছরের নিম্নে); ১৮-২০ বছরের বয়সীদের ক্ষেত্রে NID/BRC প্রযোজ্য হবে। অপ্রাপ্ত বয়স্ক (১৮ বছরের কম) যাদের NID নাই, তার পিতা/মাতার জাতীয় পরিচয়পত্র (NID) প্রযোজ্য হবে। (উল্লেখ্য যে NID/BRC এর মূল কপি প্রদর্শন বাধ্যতামূলক)।\n  3. পাসপোর্ট ফি জমাদানের এ-চালান (Automated Challan) কপি।\n  4. **মন্ত্রণালয়/বিভাগ/অধিদপ্তর/পরিদপ্তর/অধস্তন অফিস এবং স্বায়ত্তশাসিত সংস্থা/কর্পোরেশনে কর্মরত কর্মকর্তা/কর্মচারীদের ক্ষেত্রে:**\n     - আবেদনকারীর অনুকূলে প্রদত্ত অনাপত্তিসনদ (NOC/GO) ইস্যুকারী কর্তৃপক্ষের ওয়েবসাইটে আপলোড/প্রদর্শিত থাকা।\n     - ১ সেট আবেদন ফরম।\n     - ১ (এক) কপি জাতীয় পরিচয়পত্র।\n  5. **কেবলমাত্র সরকারী কর্মকর্তা-কর্মচারীদের নির্ভরশীল স্বামী/স্ত্রী এর ক্ষেত্রে:**\n     - ইস্যুকারী কর্তৃপক্ষের ওয়েবসাইটে প্রদর্শিত মূল অনাপত্তি সনদ (NOC)।\n     - ১ সেট আবেদন ফরম।\n     - ১ (এক) কপি জাতীয় পরিচয়পত্র (NID - ২০ বছরের ঊর্ধ্বে) / ১৮-২০ বছরের বয়সীদের ক্ষেত্রে NID/BRC প্রযোজ্য হবে।\n  6. **সরকারী কর্মকর্তা-কর্মচারীদের নির্ভরশীল (১৫ বছরের কম বয়সী) সন্তানের ক্ষেত্রে:**\n     - ১ সেট আবেদন ফরম।\n     - ইস্যুকারী কর্তৃপক্ষের ওয়েবসাইটে প্রদর্শিত মূল অনাপত্তি সনদ (NOC)।\n     - ডিজিটাল জন্ম নিবন্ধনের (BRC) ফটোকপি।\n     - পিতা/মাতার জাতীয় পরিচয়পত্র (NID) প্রযোজ্য হবে।\n  7. **কেবলমাত্র অবসরপ্রাপ্ত সরকারী কর্মকর্তা-কর্মচারীদের নির্ভরশীল স্বামী/স্ত্রী'র ক্ষেত্রে:**\n     - ১ সেট আবেদন ফরম।\n     - ১ সেট জাতীয় পরিচয়পত্র।\n     - অবসর আদেশ/পেনশন বইয়ের ফটোকপি (এক্ষেত্রে অবসর আদেশ/পেনশন বইয়ের মূল কপি প্রদর্শন বাধ্যতামূলক)।\n  8. **দত্তক/অভিভাবকত্ব গ্রহণের ক্ষেত্রে:** স্বরাষ্ট্র মন্ত্রণালয় সুরক্ষা সেবা বিভাগ কর্তৃক জারিকৃত আদেশ।\n  9. **রি-ইস্যু আবেদনের ক্ষেত্রে:**\n     - অপরিবর্তিত তথ্যের আবেদনে ফরম পূরণ (পৃষ্ঠা-১ এর ক্রমিক ১-৩৭) সহ পাসপোর্ট এর ফটোকপি।\n     - পরিবর্তিত তথ্যের আবেদনে ফরম (পৃষ্ঠা-২ ও ৩) পূরণসহ পাসপোর্ট এর ফটোকপি।\n     - পূর্ববর্তী মূল পাসপোর্ট প্রদর্শন বাধ্যতামূলক।\n     - উল্লেখ্য, হারানো (LOST) ই-পাসপোর্ট এর ক্ষেত্রে মূল জিডি (GD) দাখিল করতে হবে।\n  10. **০৬ বছর বয়সের নিম্নে আবেদনের ক্ষেত্রে:** ৩R সাইজের ল্যাব প্রিন্ট রঙিন ছবি।\n  11. **তথ্য পরিবর্তনের ক্ষেত্রে:** স্বরাষ্ট্র মন্ত্রণালয় কর্তৃক জারিকৃত পরিপত্র (স্মারক নং: ৫৮.০০.০০০০.০৪৩.৯৯.০০২.২৪.(অংশ-২).৯৭; তারিখ: ১৮ ফেব্রুয়ারি ২০২৫) এর নির্দেশনা মোতাবেক প্রযোজ্য ডকুমেন্ট দাখিল করতে হবে।\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_6f7d900581956bef",
+            "document_id": "passport_6f7d900581956bef",
+            "title": "সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর",
+            "section_title": "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ২. প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > [ক্রমিক ১ (ক)] ইলেকট্রনিক (E-Passport) পাসপোর্ট ইস্যু",
+            "document_type": "সিটিজেন চার্টার",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "source_relative_path": "cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "source_sha256": "e875d24b0d749a0a12ff8c30bddac3eabba040af4c3a50348e63f3d086382e87",
+            "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/সিটিজেন চার্টার_ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.pdf\"]",
+            "document_date": "2025-02-18",
+            "date_verified": false,
+            "audit_flags": "",
+            "experimental": true,
+            "body_start": 1083,
+            "body_end": 3464,
+            "source_url": "",
+            "chunking_version": "service_cleanup_v3",
+            "faq_unit": false,
+            "cleaned_path": "docs/data_cleanup/2026_09_22_plain/passport/markdown/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "cleaned_sha256": "311e340c5dc3ec5c26e498192f7ff598ccd0a649a847174da3baa59bd751b799"
+          },
+          "score": 0.8264957070350647,
+          "retrievers": [
+            "dense",
+            "cross_encoder"
+          ]
+        }
+      ],
+      "seconds": 20.9
+    },
+    {
+      "variant": "candidate",
+      "query": "পাসপোর্ট বানাতে কত টাকা লাগে?",
+      "support_rank": 5,
+      "generation_evidence_has_support": false,
+      "source_prefixes": [
+        "passport_12e10027cfdfeeee"
+      ],
+      "content_hint": "Inside Bangladesh",
+      "sources": [
+        {
+          "id": "passport_6f7d900581956bef_v3_0015",
+          "content": "সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর\nগণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ২. প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > [ক্রমিক ৫] বিদেশীদের পরিচিতি সনদ (Certificate of Identity)\n\n#### [ক্রমিক ৫] বিদেশীদের পরিচিতি সনদ (Certificate of Identity)\n* **সেবার নাম:** বিদেশীদের পরিচিতি সনদ (Certificate of Identity)\n* **সেবা প্রদান পদ্ধতি:** নির্ধারিত আবেদন ফরমে প্রধান কার্যালয়ে পাসপোর্ট শাখায় আবেদন গ্রহণ করা হয়।\n* **প্রয়োজনীয় কাগজপত্র:**\n  - নির্ধারিত আবেদনপত্র\n  - পাসপোর্ট সাইজের ১ কপি ছবি\n  - আবেদনকারীর পাসপোর্টের ফটোকপি (১ টি)\n* **প্রয়োজনীয় কাগজপত্র প্রাপ্তির স্থান:** প্রয়োজনীয় কাগজপত্রের তথ্য ওয়েবসাইট থেকে জানা যাবে।\n* **সেবামূল্য এবং পরিশোধ পদ্ধতি:**\n  - ক. সাধারণ ফি: ৫০০/- টাকা + ১৫% ভ্যাট\n  - খ. জরুরি ফি: ১০০০০/- টাকা + ১৫% ভ্যাট\n* **সেবা প্রদানের সময়সীমা:**\n  - সাধারণ: ০৭ কর্মদিবস\n  - জরুরি: ০৩ কর্মদিবস\n* **দায়িত্বপ্রাপ্ত কর্মকর্তা:** জনাব মোঃ শাহাদাৎ হোসেন, উপপরিচালক (পাসপোর্ট, পলিসি ও সমন্বয় শাখা), ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর, প্রধান কার্যালয়, ঢাকা। ইমেইল: ddpassport@passport.gov.bd\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_6f7d900581956bef",
+            "document_id": "passport_6f7d900581956bef",
+            "title": "সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর",
+            "section_title": "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ২. প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > [ক্রমিক ৫] বিদেশীদের পরিচিতি সনদ (Certificate of Identity)",
+            "document_type": "সিটিজেন চার্টার",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "source_relative_path": "cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "source_sha256": "e875d24b0d749a0a12ff8c30bddac3eabba040af4c3a50348e63f3d086382e87",
+            "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/সিটিজেন চার্টার_ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.pdf\"]",
+            "document_date": "2025-02-18",
+            "date_verified": false,
+            "audit_flags": "",
+            "experimental": true,
+            "body_start": 10741,
+            "body_end": 11583,
+            "source_url": "",
+            "chunking_version": "service_cleanup_v3",
+            "faq_unit": false,
+            "cleaned_path": "docs/data_cleanup/2026_09_22_plain/passport/markdown/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "cleaned_sha256": "311e340c5dc3ec5c26e498192f7ff598ccd0a649a847174da3baa59bd751b799"
+          },
+          "score": 0.022040165960788727,
+          "retrievers": [
+            "dense",
+            "bm25",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_ed7b3ebc56c0094f_v3_0004",
+          "content": "মেশিন রিডেবল পাসপোর্ট (এমআরপি)\nমেশিন রিডেবল পাসপোর্ট (এমআরপি) > প্রয়োজনীয় তথ্য ও নির্দেশাবলী\n\n\n\n1. সরকারি কর্মকর্তা/ কর্মচারী, সরকারি চাকরিজীবীগণের স্বামী/স্ত্রী এবং তাদের নির্ভরশীল ১৫ (পনের) বছরের কম বয়সী সন্তান, ৫ (পাঁচ)/১০ (দশ) বৎসরের অতিক্রান্ত, সমর্পণকৃত (সারেন্ডারড) দের জন্য একটি ফরম ও অন্যান্যদের ক্ষেত্রে নতুন পাসপোর্টের জন্য ২ (দুই) কপি পূরণকৃত পাসপোর্ট ফরম দাখিল করতে হবে।\n2. অপ্রাপ্তবয়স্ক (১৫ বছরের কম) আবেদনকারীর ক্ষেত্রে আবেদনকারীর পিতা ও মাতার একটি করে রঙিন ছবি (৩০ x ২৫ মিঃমিঃ) আঠা দিয়ে লাগানোর পর সত্যায়ন করতে হবে।\n3. জাতীয় পরিচয়পত্র অথবা জন্ম নিবন্ধন সনদ এবং প্রযোজ্য ক্ষেত্রে প্রাসঙ্গিক টেকনক্যাল সনদসমূহের (যেমন ডাক্তার, ইঞ্জিনিয়ার, ড্রাইভার ইত্যাদি) সত্যায়িত ফটোকপি।\n4. যে সকল ব্যক্তিগণ পাসপোর্টের আবেদনপত্র ও ছবি প্রত্যায়ন ও সত্যায়ন করতে পারবেন – সংসদ সদস্য, সিটি কর্পোরেশনের মেয়র, ডেপুটি মেয়র ও কাউন্সিলরগণ, গেজেটেড কর্মকর্তা, পাবলিক বিশ্ববিদ্যালয়ের শিক্ষক, উপজেলা পরিষদের চেয়ারম্যান ও ভাইস চেয়ারম্যান, পৌরসভার মেয়র ও পৌর কাউন্সিলরগণ, বেসরকারি বিশ্ববিদ্যালয়ের অধ্যাপক, বেসরকারি কলেজের অধ্যক্ষ, বেসরকারি উচ্চ বিদ্যালয়ের প্রধান শিক্ষক, জাতীয় দৈনিক পত্রিকার সম্পাদক, নোটারী পাবলিক ও আধাসরকারি/স্বায়ত্তশাসিত/রাষ্ট্রায়ত্ত সংস্থার জাতীয় বেতন স্কেলের ৭ম ও তদুর্ধ্ব গ্রেডের কর্মকর্তা।\n5. সরকারি কর্মকর্তা/কর্মচারী ও তাদের স্বামী/স্ত্রী এবং সরকারি চাকুরীজীবিগণের ১৫ (পনের) বৎসরের কম বয়সের সন্তান সাধারণ ফি জমা করে জরুরী সুবিধা পাবেন।\n6. প্রযোজ্য ক্ষেত্রে প্রাসঙ্গিক জিও (GO)/এনওসি (NOC) দাখিল করতে হবে।\n7. অবসরপ্রাপ্ত সরকারি চাকুরীজীবি ও তাদের নির্ভরশীল স্বামী/স্ত্রী সাধারণ ফি প্রদান করে জরুরী সুবিধা পাবেন। এক্ষেত্রে অবসর গ্রহণের সনদ দাখিল করতে হবে।\n8. পাসপোর্ট সমর্পণকৃতদের (সারেন্ডারড) আবেদনপত্রের সাথে অবশ্যই পূর্বের পাসপোর্ট নিয়ে আসতে হবে।\n9. কূটনৈতিক পাসপোর্ট লাভের যোগ্য আবেদনকারীগণকে পূরণকৃত ফরম ও সংযুক্তিসমূহ পররাষ্ট্র মন্ত্রনালয়ে জমা দিতে হবে।\n10. শিক্ষাগত বা চাকুরীসূত্রে প্রাপ্ত পদবীসমূহ (যেমন ডাক্তার, ইঞ্জিনিয়ার, ডক্টর, পিএইচডি ইত্যাদি) নামের অংশ হিসেবে পরিগণিত হবে না। ফরমের ক্রমিক নং ৩ পূরনের ক্ষেত্রে, একাধিক অংশ থাকলে প্রতি অংশের মাঝখানে ১টি ঘর শূন্য রেখে পূরণ করতে হবে। আবেদনকারীর পিতা, মাতা, স্বামী/স্ত্রী মৃত হলেও তার/তাদের নামের পূর্বে 'মৃত/মরহুম/Late' লেখা যাবে না।\n11. ছবি তোলার সময় সাদা পোশাক, সাদা টুপি এবং চোখে চশমা পরা যাবে না।\n12. ছবি, স্বাক্ষর ও আঙ্গুলের ছাপ প্রদানের পূর্বে একটি প্রাক ডেলিভারী রশিদ প্রদান করা হয় যাতে পাসপোর্ট এ প্রদর্শিত সকল তথ্য দেওয়া থাকে। উক্ত রশিদে আপনার তথ্য সঠিক আছে কিনা যাচাই করে নিন এবং কোন তথ্য ভুল থাকলে সংশ্লিষ্ট অপারেটরকে জানিয়ে তাৎক্ষণিক সংশোধন করে নিতে পারবেন। উল্লেখ্য যে, পাসপোর্ট আবেদনকারীর ছবি, স্বাক্ষর ও আঙ্গুলের ছাপ প্রদানের পর মূল ডেলিভারী রশিদ প্রদান করা হয় এবং এরপর সংশোধনের আর কোন সুযোগ থাকে না। অতএব, কাউন্টার ত্যাগের পূর্বে আপনার তথ্য যাচাই করে ডেলিভারী রশিদ বুঝে নিন।\n13. www.passport.gov.bd এই ঠিকানায় প্রবেশ করে Application Status অপশন থেকে ডেলিভারী রশিদে প্রদত্ত আপনার Enrolment ID এবং Date of Birth প্রদান করে আবেদনের বর্তমান অবস্থা জেনে নিতে পারবেন।",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_ed7b3ebc56c0094f",
+            "document_id": "passport_ed7b3ebc56c0094f",
+            "title": "মেশিন রিডেবল পাসপোর্ট (এমআরপি)",
+            "section_title": "মেশিন রিডেবল পাসপোর্ট (এমআরপি) > প্রয়োজনীয় তথ্য ও নির্দেশাবলী",
+            "document_type": "সাধারণ তথ্য ও নির্দেশিকা",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/মেশিন রিডেবল পাসপোর্ট(এমআরপি).md",
+            "source_relative_path": "cleaned_md/মেশিন রিডেবল পাসপোর্ট(এমআরপি).md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/মেশিন রিডেবল পাসপোর্ট(এমআরপি).md",
+            "source_sha256": "a10a5262eb9bfd3fd6a7a6363e32622101ef48a0eee755f04c5f25fea5df8026",
+            "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/মেশিন রিডেবল পাসপোর্ট(এমআরপি).pdf\"]",
+            "document_date": "N/A",
+            "date_verified": false,
+            "audit_flags": "",
+            "experimental": true,
+            "body_start": 1172,
+            "body_end": 3958,
+            "source_url": "",
+            "chunking_version": "service_cleanup_v3",
+            "faq_unit": false,
+            "cleaned_path": "docs/data_cleanup/2026_09_22_plain/passport/markdown/cleaned_md/মেশিন রিডেবল পাসপোর্ট(এমআরপি).md",
+            "cleaned_sha256": "b7cbed9929029a59c0d8064822e74516a317d588c536d36fdb50ad8d6b3e67e3"
+          },
+          "score": 0.009200324304401875,
+          "retrievers": [
+            "dense",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_6f7d900581956bef_v3_0010",
+          "content": "সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর\nগণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ২. প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > [ক্রমিক ১ (খ)] মেশিন রিডেবল পাসপোর্ট (MRP) ইস্যু\n\n* **প্রয়োজনীয় কাগজপত্র:**\n  1. অনলাইনে/হাতে পূরণকৃত আবেদনে সদ্য তোলা পাসপোর্ট সাইজের ল্যাব প্রিন্ট রঙিন ছবি সংযোজনপূর্বক সত্যায়িত ২ (দুই) সেট পাসপোর্ট আবেদন ফরম (ডি.আই.পি. -১)।\n  2. ২ (দুই) কপি সত্যায়িত জাতীয় পরিচয়পত্র (NID - ২০ বছরের ঊর্ধ্বে) অথবা ডিজিটাল জন্ম নিবন্ধন (BRC - ১৮ বছরের নিম্নে) সনদ; ১৮-২০ বছরের বয়সীদের ক্ষেত্রে NID/BRC প্রযোজ্য হবে। (উল্লেখ্য যে NID/BRC এর মূল কপি প্রদর্শন বাধ্যতামূলক)।\n  3. পাসপোর্ট ফি জমাদানের মূল ব্যাংক রসিদ।\n  4. **মন্ত্রণালয়/বিভাগ/অধিদপ্তর/পরিদপ্তর/অধস্তন অফিস এবং স্বায়ত্তশাসিত সংস্থা/কর্পোরেশনে কর্মরত কর্মকর্তা/কর্মচারীদের ক্ষেত্রে:**\n     - আবেদনকারীর অনুকূলে প্রদত্ত অনাপত্তিসনদ (NOC/GO) ইস্যুকারী কর্তৃপক্ষের ওয়েবসাইটে আপলোড/প্রদর্শিত থাকা।\n     - ১ সেট আবেদন ফরম (ডি.আই.পি. -১) এ সদ্য তোলা পাসপোর্ট সাইজের ল্যাব প্রিন্ট রঙিন ছবি সংযোজনপূর্বক।\n     - একসেট সত্যায়িত জাতীয় পরিচয়পত্র।\n  5. **কেবলমাত্র সরকারী কর্মকর্তা-কর্মচারীদের নির্ভরশীল স্বামী/স্ত্রী এর ক্ষেত্রে:**\n     - ১ সেট আবেদন ফরম (ডি.আই.পি. -১) এ সদ্য তোলা পাসপোর্ট সাইজের ল্যাব প্রিন্ট রঙিন ছবি সংযোজনপূর্বক।\n     - একসেট সত্যায়িত জাতীয় পরিচয়পত্র।\n     - ইস্যুকারী কর্তৃপক্ষের ওয়েবসাইটে প্রদর্শিত অনাপত্তি সনদ (NOC)।\n  6. **সরকারী কর্মকর্তা-কর্মচারীদের নির্ভরশীল (১৫ বছরের কম বয়সী) সন্তানের ক্ষেত্রে:**\n     - ইস্যুকারী কর্তৃপক্ষের ওয়েবসাইটে প্রদর্শিত মূল অনাপত্তি সনদ (NOC)।\n     - ডিজিটাল জন্ম নিবন্ধনের (BRC) ফটোকপি।\n  7. **কেবলমাত্র অবসরপ্রাপ্ত সরকারী কর্মকর্তা-কর্মচারীদের নির্ভরশীল স্বামী/স্ত্রী‘র ক্ষেত্রে:**\n     - ১ সেট আবেদন ফরম (ডি.আই.পি. -১) এ সদ্য তোলা পাসপোর্ট সাইজের ল্যাব প্রিন্ট রঙিন ছবি সংযোজনপূর্বক।\n     - ১ (এক) সেট সত্যায়িত জাতীয় পরিচয়পত্র।\n     - অবসর আদেশ/পেনশন বইয়ের ফটোকপি (এক্ষেত্রে অবসর আদেশ/পেনশন বইয়ের মূল কপি প্রদর্শন বাধ্যতামূলক)।\n  8. **দত্তক/অভিভাবকত্ব গ্রহণের ক্ষেত্রে:** স্বরাষ্ট্র মন্ত্রণালয় সুরক্ষা সেবা বিভাগ কর্তৃক জারিকৃত আদেশ।\n  9. **রি-ইস্যু আবেদনের ক্ষেত্রে:**\n     - ডিআইপি ফরম-২ পূরণসহ পাসপোর্ট এর ১ সেট ফটোকপি।\n     - পূর্ববর্তী মূল পাসপোর্ট প্রদর্শন বাধ্যতামূলক।\n     - উল্লেখ্য, হারানো (LOST) MRP এর ক্ষেত্রে মূল জিডি (GD) দাখিল করতে হবে।\n  10. **ই-পাসপোর্ট সিস্টেমে Spouse Name পরিবর্তন করে Legal Guardian Name অন্তর্ভুক্তকরণ।**\n  11. **০৬ বছর বয়সের নিম্নে আবেদনের ক্ষেত্রে:** ৩R সাইজের ল্যাব প্রিন্ট রঙিন ছবি।\n  12. **তথ্য পরিবর্তনের ক্ষেত্রে:** স্বরাষ্ট্র মন্ত্রণালয় কর্তৃক জারিকৃত পরিপত্র (স্মারক নং: ৫৮.০০.০০০০.০৪৩.৯৯.০০২.২৪.(অংশ-২).৯৭; তারিখ: ১৮ ফেব্রুয়ারি ২০২৫) এর নির্দেশনা মোতাবেক প্রযোজ্য ডকুমেন্ট দাখিল করতে হবে।\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_6f7d900581956bef",
+            "document_id": "passport_6f7d900581956bef",
+            "title": "সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর",
+            "section_title": "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ২. প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > [ক্রমিক ১ (খ)] মেশিন রিডেবল পাসপোর্ট (MRP) ইস্যু",
+            "document_type": "সিটিজেন চার্টার",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "source_relative_path": "cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "source_sha256": "e875d24b0d749a0a12ff8c30bddac3eabba040af4c3a50348e63f3d086382e87",
+            "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/সিটিজেন চার্টার_ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.pdf\"]",
+            "document_date": "2025-02-18",
+            "date_verified": false,
+            "audit_flags": "",
+            "experimental": true,
+            "body_start": 4352,
+            "body_end": 6762,
+            "source_url": "",
+            "chunking_version": "service_cleanup_v3",
+            "faq_unit": false,
+            "cleaned_path": "docs/data_cleanup/2026_09_22_plain/passport/markdown/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "cleaned_sha256": "311e340c5dc3ec5c26e498192f7ff598ccd0a649a847174da3baa59bd751b799"
+          },
+          "score": 0.00853405985981226,
+          "retrievers": [
+            "dense",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_6f7d900581956bef_v3_0007",
+          "content": "সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর\nগণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ২. প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > [ক্রমিক ১ (ক)] ইলেকট্রনিক (E-Passport) পাসপোর্ট ইস্যু\n\n* **প্রয়োজনীয় কাগজপত্র:**\n  1. অনলাইনে/অফলাইনে (PDF) পূরণকৃত আবেদন ১ কপি (উল্লেখ্য হাতে লেখা আবেদন গ্রহণযোগ্য নয়)।\n  2. ১ (এক) কপি জাতীয় পরিচয়পত্র (NID - ২০ বছরের ঊর্ধ্বে) অথবা ডিজিটাল জন্ম নিবন্ধন সনদ (BRC - ১৮ বছরের নিম্নে); ১৮-২০ বছরের বয়সীদের ক্ষেত্রে NID/BRC প্রযোজ্য হবে। অপ্রাপ্ত বয়স্ক (১৮ বছরের কম) যাদের NID নাই, তার পিতা/মাতার জাতীয় পরিচয়পত্র (NID) প্রযোজ্য হবে। (উল্লেখ্য যে NID/BRC এর মূল কপি প্রদর্শন বাধ্যতামূলক)।\n  3. পাসপোর্ট ফি জমাদানের এ-চালান (Automated Challan) কপি।\n  4. **মন্ত্রণালয়/বিভাগ/অধিদপ্তর/পরিদপ্তর/অধস্তন অফিস এবং স্বায়ত্তশাসিত সংস্থা/কর্পোরেশনে কর্মরত কর্মকর্তা/কর্মচারীদের ক্ষেত্রে:**\n     - আবেদনকারীর অনুকূলে প্রদত্ত অনাপত্তিসনদ (NOC/GO) ইস্যুকারী কর্তৃপক্ষের ওয়েবসাইটে আপলোড/প্রদর্শিত থাকা।\n     - ১ সেট আবেদন ফরম।\n     - ১ (এক) কপি জাতীয় পরিচয়পত্র।\n  5. **কেবলমাত্র সরকারী কর্মকর্তা-কর্মচারীদের নির্ভরশীল স্বামী/স্ত্রী এর ক্ষেত্রে:**\n     - ইস্যুকারী কর্তৃপক্ষের ওয়েবসাইটে প্রদর্শিত মূল অনাপত্তি সনদ (NOC)।\n     - ১ সেট আবেদন ফরম।\n     - ১ (এক) কপি জাতীয় পরিচয়পত্র (NID - ২০ বছরের ঊর্ধ্বে) / ১৮-২০ বছরের বয়সীদের ক্ষেত্রে NID/BRC প্রযোজ্য হবে।\n  6. **সরকারী কর্মকর্তা-কর্মচারীদের নির্ভরশীল (১৫ বছরের কম বয়সী) সন্তানের ক্ষেত্রে:**\n     - ১ সেট আবেদন ফরম।\n     - ইস্যুকারী কর্তৃপক্ষের ওয়েবসাইটে প্রদর্শিত মূল অনাপত্তি সনদ (NOC)।\n     - ডিজিটাল জন্ম নিবন্ধনের (BRC) ফটোকপি।\n     - পিতা/মাতার জাতীয় পরিচয়পত্র (NID) প্রযোজ্য হবে।\n  7. **কেবলমাত্র অবসরপ্রাপ্ত সরকারী কর্মকর্তা-কর্মচারীদের নির্ভরশীল স্বামী/স্ত্রী'র ক্ষেত্রে:**\n     - ১ সেট আবেদন ফরম।\n     - ১ সেট জাতীয় পরিচয়পত্র।\n     - অবসর আদেশ/পেনশন বইয়ের ফটোকপি (এক্ষেত্রে অবসর আদেশ/পেনশন বইয়ের মূল কপি প্রদর্শন বাধ্যতামূলক)।\n  8. **দত্তক/অভিভাবকত্ব গ্রহণের ক্ষেত্রে:** স্বরাষ্ট্র মন্ত্রণালয় সুরক্ষা সেবা বিভাগ কর্তৃক জারিকৃত আদেশ।\n  9. **রি-ইস্যু আবেদনের ক্ষেত্রে:**\n     - অপরিবর্তিত তথ্যের আবেদনে ফরম পূরণ (পৃষ্ঠা-১ এর ক্রমিক ১-৩৭) সহ পাসপোর্ট এর ফটোকপি।\n     - পরিবর্তিত তথ্যের আবেদনে ফরম (পৃষ্ঠা-২ ও ৩) পূরণসহ পাসপোর্ট এর ফটোকপি।\n     - পূর্ববর্তী মূল পাসপোর্ট প্রদর্শন বাধ্যতামূলক।\n     - উল্লেখ্য, হারানো (LOST) ই-পাসপোর্ট এর ক্ষেত্রে মূল জিডি (GD) দাখিল করতে হবে।\n  10. **০৬ বছর বয়সের নিম্নে আবেদনের ক্ষেত্রে:** ৩R সাইজের ল্যাব প্রিন্ট রঙিন ছবি।\n  11. **তথ্য পরিবর্তনের ক্ষেত্রে:** স্বরাষ্ট্র মন্ত্রণালয় কর্তৃক জারিকৃত পরিপত্র (স্মারক নং: ৫৮.০০.০০০০.০৪৩.৯৯.০০২.২৪.(অংশ-২).৯৭; তারিখ: ১৮ ফেব্রুয়ারি ২০২৫) এর নির্দেশনা মোতাবেক প্রযোজ্য ডকুমেন্ট দাখিল করতে হবে।\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_6f7d900581956bef",
+            "document_id": "passport_6f7d900581956bef",
+            "title": "সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর",
+            "section_title": "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ২. প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > [ক্রমিক ১ (ক)] ইলেকট্রনিক (E-Passport) পাসপোর্ট ইস্যু",
+            "document_type": "সিটিজেন চার্টার",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "source_relative_path": "cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "source_sha256": "e875d24b0d749a0a12ff8c30bddac3eabba040af4c3a50348e63f3d086382e87",
+            "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/সিটিজেন চার্টার_ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.pdf\"]",
+            "document_date": "2025-02-18",
+            "date_verified": false,
+            "audit_flags": "",
+            "experimental": true,
+            "body_start": 1083,
+            "body_end": 3464,
+            "source_url": "",
+            "chunking_version": "service_cleanup_v3",
+            "faq_unit": false,
+            "cleaned_path": "docs/data_cleanup/2026_09_22_plain/passport/markdown/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "cleaned_sha256": "311e340c5dc3ec5c26e498192f7ff598ccd0a649a847174da3baa59bd751b799"
+          },
+          "score": 0.006420319899916649,
+          "retrievers": [
+            "dense",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_12e10027cfdfeeee_v3_0010",
+          "content": "e-Passport Fees and Payment Options\ne-Passport Fees and Payment Options > e-Passport Fees for Inside Bangladesh (Including 15% VAT) > e-Passport with 64 pages and 10 years validity\n\n### e-Passport with 64 pages and 10 years validity\n* **Category:** Inside Bangladesh | 64 pages | 10 years validity | Regular delivery\n  * **Fee:** TK 8,050\n* **Category:** Inside Bangladesh | 64 pages | 10 years validity | Express delivery\n  * **Fee:** TK 10,350\n* **Category:** Inside Bangladesh | 64 pages | 10 years validity | Super Express delivery\n  * **Fee:** TK 13,800\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_12e10027cfdfeeee",
+            "document_id": "passport_12e10027cfdfeeee",
+            "title": "e-Passport Fees and Payment Options",
+            "section_title": "e-Passport Fees and Payment Options > e-Passport Fees for Inside Bangladesh (Including 15% VAT) > e-Passport with 64 pages and 10 years validity",
+            "document_type": "নির্দেশিকা / ফি ও পেমেন্ট সংক্রান্ত তথ্য",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/e-Passport Fees and Payment Options.md",
+            "source_relative_path": "cleaned_md/e-Passport Fees and Payment Options.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/e-Passport Fees and Payment Options.md",
+            "source_sha256": "9b629ab56ed0caa11414d1f5095cf91d85d179af4e910cfcc93bee44af11d7d8",
+            "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/e-Passport Fees and Payment Options.pdf\"]",
+            "document_date": "2026-07-12",
+            "date_verified": false,
+            "audit_flags": "no_web_address",
+            "experimental": true,
+            "body_start": 2657,
+            "body_end": 3040,
+            "source_url": "",
+            "chunking_version": "service_cleanup_v3",
+            "faq_unit": false,
+            "cleaned_path": "docs/data_cleanup/2026_09_22_plain/passport/markdown/cleaned_md/e-Passport Fees and Payment Options.md",
+            "cleaned_sha256": "cf004e0cd0f1806088ef95756a196395d0e2acd53196334a8811e6a2ef6e791c"
+          },
+          "score": 0.005923017393797636,
+          "retrievers": [
+            "dense",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_5eb6c21efe103a4f_v3_0025",
+          "content": "Bangladesh Machine Readable Passport (MRP) Online Application Guide 2012\nBangladesh Machine Readable Passport (MRP) Online Application Guide (2012) > 2. Field-Level Application Specifications | ক্ষেত্র-ভিত্তিক ফরম পূরণের নির্দেশাবলী > 2.4 Section D: Fee Payment Details | ফি প্রদান বিবরণী > Field D2: Fee Structure (2012 Standard Schedule) | ফি এর হার (২০১২ নির্দেশিকা অনুযায়ী)\n\n#### Field D2: Fee Structure (2012 Standard Schedule) | ফি এর হার (২০১২ নির্দেশিকা অনুযায়ী)\n\n* **Regular Delivery (সাধারণ ডেলিভারি - 21 Days)**:\n\n  * Ordinary Passport Fee: BDT 3,000 + 15% VAT = **BDT 3,450**\n\n* **Express Delivery (জরুরি ডেলিভারি - 11 Days)**:\n\n  * Ordinary Passport Fee: BDT 6,000 + 15% VAT = **BDT 6,900**\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_5eb6c21efe103a4f",
+            "document_id": "passport_5eb6c21efe103a4f",
+            "title": "Bangladesh Machine Readable Passport (MRP) Online Application Guide 2012",
+            "section_title": "Bangladesh Machine Readable Passport (MRP) Online Application Guide (2012) > 2. Field-Level Application Specifications | ক্ষেত্র-ভিত্তিক ফরম পূরণের নির্দেশাবলী > 2.4 Section D: Fee Payment Details | ফি প্রদান বিবরণী > Field D2: Fee Structure (2012 Standard Schedule) | ফি এর হার (২০১২ নির্দেশিকা অনুযায়ী)",
+            "document_type": "document",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh Machine Readable Passport (MRP) Online Application Guide 2012.md",
+            "source_relative_path": "cleaned_md/Bangladesh Machine Readable Passport (MRP) Online Application Guide 2012.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh Machine Readable Passport (MRP) Online Application Guide 2012.md",
+            "source_sha256": "8ce0916f4e83af158dbdbe22ed97f2b467f71c1f41d3404e33d3c9d0412875e7",
+            "original_paths": "[]",
+            "document_date": "2012-01-01",
+            "date_verified": false,
+            "audit_flags": "original_match_unresolved, no_web_address, nonstandard_metadata_layout, dated_document_review_applicability",
+            "experimental": true,
+            "body_start": 7978,
+            "body_end": 8305,
+            "source_url": "",
+            "chunking_version": "service_cleanup_v3",
+            "faq_unit": false,
+            "cleaned_path": "docs/data_cleanup/2026_09_22_plain/passport/markdown/cleaned_md/Bangladesh Machine Readable Passport (MRP) Online Application Guide 2012.md",
+            "cleaned_sha256": "02c0d83fb66254bfd5de3ba06ce2afc2169729cfe93706bced0bc67b5c67ec96"
+          },
+          "score": 0.005078848917037249,
+          "retrievers": [
+            "dense",
+            "cross_encoder"
+          ]
+        }
+      ],
+      "seconds": 31.89
+    },
+    {
+      "variant": "candidate",
+      "query": "পাসপোর্ট পেতে কত দিন সময় লাগে?",
+      "support_rank": 2,
+      "generation_evidence_has_support": true,
+      "source_prefixes": [
+        "passport_12e10027cfdfeeee"
+      ],
+      "content_hint": "Delivery Timelines",
+      "sources": [
+        {
+          "id": "passport_9f4e9ffe9f2a07f4_v3_0004",
+          "content": "ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী\nই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী > পাসপোর্ট প্রাপ্তির সময়সীমা\n\n## পাসপোর্ট প্রাপ্তির সময়সীমা\n\n* **১৭।**\n  * **(ক)** দেশের অভ্যন্তরে অতি জরুরী পাসপোর্ট প্রাপ্তির লক্ষ্যে অন্যান্য সকল তথ্য সঠিক থাকা সাপেক্ষে ২ কর্মদিবসের মধ্যে পাসপোর্ট প্রদান করা হবে।\n  * **(খ)** দেশের অভ্যন্তরে জরুরী পাসপোর্ট প্রাপ্তির লক্ষ্যে অন্যান্য সকল তথ্য সঠিক থাকা সাপেক্ষে ৭ কর্মদিবসের মধ্যে পাসপোর্ট প্রদান করা হবে।\n  * **(গ)** দেশের অভ্যন্তরে রেগুলার পাসপোর্ট প্রাপ্তির লক্ষ্যে অন্যান্য সকল তথ্য সঠিক থাকা সাপেক্ষে ১৫ কর্মদিবসের মধ্যে পাসপোর্ট প্রদান করা হবে।\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_9f4e9ffe9f2a07f4",
+            "document_id": "passport_9f4e9ffe9f2a07f4",
+            "title": "ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী",
+            "section_title": "ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী > পাসপোর্ট প্রাপ্তির সময়সীমা",
+            "document_type": "নির্দেশিকা",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী.md",
+            "source_relative_path": "cleaned_md/ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী.md",
+            "source_sha256": "f0bc6e1384dd491baff1dc91061abdd516b283e0e2751cdd793151b09095c61b",
+            "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী.pdf\"]",
+            "document_date": "2026-08-03",
+            "date_verified": false,
+            "audit_flags": "no_web_address",
+            "experimental": true,
+            "body_start": 2477,
+            "body_end": 2953,
+            "source_url": "",
+            "chunking_version": "service_cleanup_v3",
+            "faq_unit": false,
+            "cleaned_path": "docs/data_cleanup/2026_09_22_plain/passport/markdown/cleaned_md/ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী.md",
+            "cleaned_sha256": "ba83ebd1ce02bea874b2ab9079dd85fb24a2bd1f6fa5132590b479120895a689"
+          },
+          "score": 0.8716661334037781,
+          "retrievers": [
+            "dense",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_12e10027cfdfeeee_v3_0005",
+          "content": "e-Passport Fees and Payment Options\ne-Passport Fees and Payment Options > Delivery Timelines and Special Provisions (Note)\n\n## Delivery Timelines and Special Provisions (Note)\n\n* **Regular Delivery:** Within 15 Working days / 21 days from the biometric enrolment date.\n* **Express Delivery:** Within 7 Working days / 10 days from the biometric enrolment date.\n* **Super Express Delivery:** Within 2 Working days from the biometric enrolment date.\n* **Govt Employees (with No Objection Certificate (NOC) / Retirement document (PRL)):**\n  * a. Express facilities with Regular fees.\n  * b. Super-Express facilities with Express fees.\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_12e10027cfdfeeee",
+            "document_id": "passport_12e10027cfdfeeee",
+            "title": "e-Passport Fees and Payment Options",
+            "section_title": "e-Passport Fees and Payment Options > Delivery Timelines and Special Provisions (Note)",
+            "document_type": "নির্দেশিকা / ফি ও পেমেন্ট সংক্রান্ত তথ্য",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/e-Passport Fees and Payment Options.md",
+            "source_relative_path": "cleaned_md/e-Passport Fees and Payment Options.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/e-Passport Fees and Payment Options.md",
+            "source_sha256": "9b629ab56ed0caa11414d1f5095cf91d85d179af4e910cfcc93bee44af11d7d8",
+            "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/e-Passport Fees and Payment Options.pdf\"]",
+            "document_date": "2026-07-12",
+            "date_verified": false,
+            "audit_flags": "no_web_address",
+            "experimental": true,
+            "body_start": 960,
+            "body_end": 1473,
+            "source_url": "",
+            "chunking_version": "service_cleanup_v3",
+            "faq_unit": false,
+            "cleaned_path": "docs/data_cleanup/2026_09_22_plain/passport/markdown/cleaned_md/e-Passport Fees and Payment Options.md",
+            "cleaned_sha256": "cf004e0cd0f1806088ef95756a196395d0e2acd53196334a8811e6a2ef6e791c"
+          },
+          "score": 0.5375358462333679,
+          "retrievers": [
+            "dense",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_f2c0d221c70d21f2_v3_0003",
+          "content": "Urgent Applications\nUrgent Applications > Super Express Passport Delivery Service Overview > What is Super Express passport delivery service?\n\n### What is Super Express passport delivery service?\n* **Description:** There are occasions when a citizen needs passport urgently. In such situation, citizens can apply for Super Express delivery (specific conditions and fees apply). Passport will be issued within 2 (two) working days for Super Express delivery.\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_f2c0d221c70d21f2",
+            "document_id": "passport_f2c0d221c70d21f2",
+            "title": "Urgent Applications",
+            "section_title": "Urgent Applications > Super Express Passport Delivery Service Overview > What is Super Express passport delivery service?",
+            "document_type": "সাধারণ তথ্য",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Urgent Applications e-Passport.md",
+            "source_relative_path": "cleaned_md/Urgent Applications e-Passport.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Urgent Applications e-Passport.md",
+            "source_sha256": "0f56d10a5a201fbeb31c35857660ef5e83438f9364e749a2110fbed805da7646",
+            "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/Urgent Applications.pdf\"]",
+            "document_date": "2026-06-03",
+            "date_verified": false,
+            "audit_flags": "no_web_address",
+            "experimental": true,
+            "body_start": 108,
+            "body_end": 424,
+            "source_url": "",
+            "chunking_version": "service_cleanup_v3",
+            "faq_unit": false,
+            "cleaned_path": "docs/data_cleanup/2026_09_22_plain/passport/markdown/cleaned_md/Urgent Applications e-Passport.md",
+            "cleaned_sha256": "9fbf89052afa78ae40c91ba36e501689c052df7e43c26ac9c9926ada4c32b4d4"
+          },
+          "score": 0.4064716100692749,
+          "retrievers": [
+            "dense",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_6f7d900581956bef_v3_0030",
+          "content": "সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর\nগণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ২. প্রতিশ্রুত সেবাসমূহ > ২.৩) অভ্যন্তরীণ সেবা > [ক্রমিক ১১] পাসপোর্ট গ্রহণের অনুমতি (NOC)\n\n#### [ক্রমিক ১১] পাসপোর্ট গ্রহণের অনুমতি (NOC)\n* **সেবার নাম:** কর্মকর্তা/কর্মচারীদের পাসপোর্ট গ্রহণের অনুমতি।\n* **সেবা প্রদান পদ্ধতি:** নির্ধারিত ফরমে অনাপত্তি (NOC) দেয়া হয়।\n* **প্রয়োজনীয় কাগজপত্র:**\n  - ক. সংশ্লিষ্ট কর্মকর্তা/কর্মচারীদের আবেদন।\n  - খ. সংশ্লিষ্ট অফিস প্রধানের সুপারিশ।\n* **সেবামূল্য এবং পরিশোধ পদ্ধতি:** বিনামূল্যে\n* **সেবা প্রদানের সময়সীমা:** ০৩ দিন\n* **দায়িত্বপ্রাপ্ত কর্মকর্তা:** জনাব মোঃ সালেহ উদ্দিন, সহকারী পরিচালক (প্রশাসন), ফোনঃ ০১৭৩৩-৩৯৩৩ ৩৩, ইমেইল: adadmin@passport.gov.bd\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_6f7d900581956bef",
+            "document_id": "passport_6f7d900581956bef",
+            "title": "সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর",
+            "section_title": "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ২. প্রতিশ্রুত সেবাসমূহ > ২.৩) অভ্যন্তরীণ সেবা > [ক্রমিক ১১] পাসপোর্ট গ্রহণের অনুমতি (NOC)",
+            "document_type": "সিটিজেন চার্টার",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "source_relative_path": "cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "source_sha256": "e875d24b0d749a0a12ff8c30bddac3eabba040af4c3a50348e63f3d086382e87",
+            "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/সিটিজেন চার্টার_ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.pdf\"]",
+            "document_date": "2025-02-18",
+            "date_verified": false,
+            "audit_flags": "",
+            "experimental": true,
+            "body_start": 18645,
+            "body_end": 19159,
+            "source_url": "",
+            "chunking_version": "service_cleanup_v3",
+            "faq_unit": false,
+            "cleaned_path": "docs/data_cleanup/2026_09_22_plain/passport/markdown/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "cleaned_sha256": "311e340c5dc3ec5c26e498192f7ff598ccd0a649a847174da3baa59bd751b799"
+          },
+          "score": 0.3713262677192688,
+          "retrievers": [
+            "dense",
+            "bm25",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_6f7d900581956bef_v3_0018",
+          "content": "সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর\nগণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ২. প্রতিশ্রুত সেবাসমূহ > ২.২) দাপ্তরিক সেবা > [ক্রমিক ২] মুদ্রিত পাসপোর্ট সরবরাহ\n\n#### [ক্রমিক ২] মুদ্রিত পাসপোর্ট সরবরাহ\n* **সেবার নাম:** বিভাগীয় পাসপোর্ট ও ভিসা অফিস/ আঞ্চলিক পাসপোর্ট অফিস/ পররাষ্ট্র মন্ত্রণালয়ে মুদ্রিত পাসপোর্ট সরবরাহ।\n* **সেবা প্রদান পদ্ধতি:** ডাক বিভাগের মাধ্যমে।\n* **প্রয়োজনীয় কাগজপত্র:** সিস্টেমে সংশ্লিষ্ট পাসপোর্ট অফিস কর্তৃক এমআরপি প্রদানের অনুমোদনের ভিত্তিতে।\n* **সেবামূল্য এবং পরিশোধ পদ্ধতি:** বিনামূল্যে\n* **সেবা প্রদানের সময়সীমা:** পার্সোনালাইজেশন সেন্টারে প্রাপ্তির ০৩ কর্মদিবস এবং পাসপোর্ট প্রদানের বিধি মোতাবেক।\n* **দায়িত্বপ্রাপ্ত কর্মকর্তা:** পরিচালক, পার্সোনালাইজেশন সেন্টার, ফোনঃ ০১৭৩৩-৩৯৩৩০২, ইমেইল: ddperso@passport.gov.bd\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_6f7d900581956bef",
+            "document_id": "passport_6f7d900581956bef",
+            "title": "সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর",
+            "section_title": "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ২. প্রতিশ্রুত সেবাসমূহ > ২.২) দাপ্তরিক সেবা > [ক্রমিক ২] মুদ্রিত পাসপোর্ট সরবরাহ",
+            "document_type": "সিটিজেন চার্টার",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "source_relative_path": "cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "source_sha256": "e875d24b0d749a0a12ff8c30bddac3eabba040af4c3a50348e63f3d086382e87",
+            "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/সিটিজেন চার্টার_ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.pdf\"]",
+            "document_date": "2025-02-18",
+            "date_verified": false,
+            "audit_flags": "",
+            "experimental": true,
+            "body_start": 12105,
+            "body_end": 12697,
+            "source_url": "",
+            "chunking_version": "service_cleanup_v3",
+            "faq_unit": false,
+            "cleaned_path": "docs/data_cleanup/2026_09_22_plain/passport/markdown/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "cleaned_sha256": "311e340c5dc3ec5c26e498192f7ff598ccd0a649a847174da3baa59bd751b799"
+          },
+          "score": 0.26114383339881897,
+          "retrievers": [
+            "dense",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_6f7d900581956bef_v3_0011",
+          "content": "সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর\nগণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ২. প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > [ক্রমিক ১ (খ)] মেশিন রিডেবল পাসপোর্ট (MRP) ইস্যু\n\n* **প্রয়োজনীয় কাগজপত্র প্রাপ্তির স্থান:** অধিদপ্তরের ওয়েবসাইট থেকে আবেদন ফরম অথবা যেকোনো পাসপোর্ট অফিস থেকে ডিআইপি ফরম-১ ও ২ বিনামূল্যে সংগ্রহ করা যাবে।\n* **সেবামূল্য এবং পরিশোধ পদ্ধতি:**\n  - ফি (দেশে): (বিস্তারিত)\n  - ফি (বিদেশে): (বিস্তারিত)\n  - শুধুমাত্র echallan (ই-চালান) এবং সোনালী ব্যাংক এর মাধ্যমে জমাকৃত ফি গ্রহণযোগ্য হবে।\n* **সেবা প্রদানের সময়সীমা:**\n  - ক. সাধারণ ফি এবং অনুকূল পুলিশ প্রতিবেদন প্রাপ্তি সাপেক্ষে ১৫ কর্মদিবসের মধ্যে।\n  - খ. জরুরি ফি এবং পুলিশ প্রতিবেদন প্রাপ্তি সাপেক্ষে ৭ কর্মদিবসের মধ্যে।\n  - গ. পুলিশ প্রতিবেদন যাদের জন্য প্রযোজ্যতা ওয়েবসাইটে জানা যাবে।\n* **দায়িত্বপ্রাপ্ত কর্মকর্তা:** আবেদনকারী যে অধিক্ষেত্রে বসবাস করেন সেই অধিক্ষেত্র সংশ্লিষ্ট বিভাগীয় পাসপোর্ট ও ভিসা অফিস অথবা আঞ্চলিক পাসপোর্ট অফিসের পরিচালক / উপপরিচালক / সহকারী পরিচালক / উপসহকারী পরিচালক (অধিক্ষেত্র www.dip.gov.bd হতে জানা যাবে)।\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_6f7d900581956bef",
+            "document_id": "passport_6f7d900581956bef",
+            "title": "সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর",
+            "section_title": "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ২. প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > [ক্রমিক ১ (খ)] মেশিন রিডেবল পাসপোর্ট (MRP) ইস্যু",
+            "document_type": "সিটিজেন চার্টার",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "source_relative_path": "cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "source_sha256": "e875d24b0d749a0a12ff8c30bddac3eabba040af4c3a50348e63f3d086382e87",
+            "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/সিটিজেন চার্টার_ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.pdf\"]",
+            "document_date": "2025-02-18",
+            "date_verified": false,
+            "audit_flags": "",
+            "experimental": true,
+            "body_start": 6762,
+            "body_end": 7609,
+            "source_url": "",
+            "chunking_version": "service_cleanup_v3",
+            "faq_unit": false,
+            "cleaned_path": "docs/data_cleanup/2026_09_22_plain/passport/markdown/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+            "cleaned_sha256": "311e340c5dc3ec5c26e498192f7ff598ccd0a649a847174da3baa59bd751b799"
+          },
+          "score": 0.234121635556221,
+          "retrievers": [
+            "dense",
+            "cross_encoder"
+          ]
+        }
+      ],
+      "seconds": 30.67
+    },
+    {
+      "variant": "candidate",
+      "query": "পাসপোর্টের আবেদন করার পর স্ট্যাটাস কীভাবে দেখব?",
+      "support_rank": 1,
+      "generation_evidence_has_support": true,
+      "source_prefixes": [
+        "passport_23d845d3ab38ea43"
+      ],
+      "content_hint": "Application Status",
+      "sources": [
+        {
+          "id": "passport_23d845d3ab38ea43_v3_0038",
+          "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.1 Checking Passport Application Status / আবেদনের অগ্রগতি পর্যবেক্ষণ\n\n### 6.1 Checking Passport Application Status / আবেদনের অগ্রগতি পর্যবেক্ষণ\n- **Category:** Status, Delivery & Corrections\n- **Topic:** Online Status Tracking\n- **English Question:** How can I check the status of my passport application?\n- **Bengali Question (প্রশ্ন):** আমার পাসপোর্ট আবেদনের অগ্রগতি কি ভাবে দেখতে পারব?\n- **English Answer:** Visit the **Status Check** page on the official ePassport portal. Enter your Application ID or Online Registration ID (OID) along with the applicant's Date of Birth to view current processing status.\n- **Bengali Answer (উত্তর):** ই-পাসপোর্ট পোর্টালে **'স্ট্যাটাস চেক'** মেন্যুতে যান। আবেদনকারীর জন্ম তারিখ এবং Application ID বা Online Registration ID প্রবেশ করিয়ে সার্চ বাটন চাপুন।\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_23d845d3ab38ea43",
+            "document_id": "passport_23d845d3ab38ea43",
+            "title": "Bangladesh_ePassport_FAQ",
+            "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.1 Checking Passport Application Status / আবেদনের অগ্রগতি পর্যবেক্ষণ",
+            "document_type": "document",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+            "original_paths": "[]",
+            "document_date": "unknown",
+            "date_verified": false,
+            "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+            "experimental": true,
+            "body_start": 27814,
+            "body_end": 28544,
+            "source_url": "",
+            "chunking_version": "service_cleanup_v3",
+            "faq_unit": true,
+            "cleaned_path": "docs/data_cleanup/2026_09_22_plain/passport/markdown/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "cleaned_sha256": "129e56b5fb40b44e1433f3603fbbeb955dd9d034ddd34baf7c34ebbaaa44d80a"
+          },
+          "score": 0.9621357917785645,
+          "retrievers": [
+            "dense",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_23d845d3ab38ea43_v3_0044",
+          "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.7 Official Link to Check Passport Status / ই-পাসপোর্ট স্ট্যাটাস চেক করার লিংক\n\n### 6.7 Official Link to Check Passport Status / ই-পাসপোর্ট স্ট্যাটাস চেক করার লিংক\n- **Category:** Status, Delivery & Corrections\n- **Topic:** Portal Link\n- **English Question:** How can I check my e-Passport status?\n- **Bengali Question (প্রশ্ন):** কি ভাবে আমি ই-পাসপোর্ট এর বর্তমান অবস্থান জানতে পারব?\n- **English Answer:** Visit the official ePassport Portal status tracking section at: [https://www.epassport.gov.bd/authorization/application-status](https://www.epassport.gov.bd/authorization/application-status)\n- **Bengali Answer (উত্তর):** আপনার ই-পাসপোর্টের স্ট্যাটাস চেক করতে অফিসিয়াল ই-পাসপোর্ট অনলাইন পোর্টালের এই লিংকে যান: [https://www.epassport.gov.bd/authorization/application-status](https://www.epassport.gov.bd/authorization/application-status)\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_23d845d3ab38ea43",
+            "document_id": "passport_23d845d3ab38ea43",
+            "title": "Bangladesh_ePassport_FAQ",
+            "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.7 Official Link to Check Passport Status / ই-পাসপোর্ট স্ট্যাটাস চেক করার লিংক",
+            "document_type": "document",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+            "original_paths": "[]",
+            "document_date": "unknown",
+            "date_verified": false,
+            "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+            "experimental": true,
+            "body_start": 33033,
+            "body_end": 33804,
+            "source_url": "",
+            "chunking_version": "service_cleanup_v3",
+            "faq_unit": true,
+            "cleaned_path": "docs/data_cleanup/2026_09_22_plain/passport/markdown/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "cleaned_sha256": "129e56b5fb40b44e1433f3603fbbeb955dd9d034ddd34baf7c34ebbaaa44d80a"
+          },
+          "score": 0.6115719079971313,
+          "retrievers": [
+            "dense",
+            "bm25",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_23d845d3ab38ea43_v3_0043",
+          "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.6 Portal Error: \"Application ID / Online Registration ID Required\" / স্ট্যাটাস দেখার সমস্যা ও সমাধান\n\n### 6.6 Portal Error: \"Application ID / Online Registration ID Required\" / স্ট্যাটাস দেখার সমস্যা ও সমাধান\n- **Category:** Status, Delivery & Corrections\n- **Topic:** Technical Portal Troubleshooting\n- **English Question:** Having trouble viewing online status. \"Application ID / Online Registration ID is required\" despite providing the ID. What can I do?\n- **Bengali Question (প্রশ্ন):** অনলাইন স্ট্যাটাস দেখতে সমস্যা হচ্ছে। Application ID / Online Registration ID প্রদান করা সত্ত্বেও \"Application ID / Online Registration ID is required\" দেখায়। আমি কি করতে পারি?\n- **English Answer:** Clear your web browser's Cache and Cookies, or open the portal in an Incognito/Private window and check again.\n- **Bengali Answer (উত্তর):** আপনার ব্রাউজারের ক্যাশ (Cache) এবং কুকিজ (Cookies) ক্লিয়ার করে পুনরায় স্ট্যাটাস চেক করার চেষ্টা করুন।\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_23d845d3ab38ea43",
+            "document_id": "passport_23d845d3ab38ea43",
+            "title": "Bangladesh_ePassport_FAQ",
+            "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.6 Portal Error: \"Application ID / Online Registration ID Required\" / স্ট্যাটাস দেখার সমস্যা ও সমাধান",
+            "document_type": "document",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+            "original_paths": "[]",
+            "document_date": "unknown",
+            "date_verified": false,
+            "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+            "experimental": true,
+            "body_start": 32193,
+            "body_end": 33033,
+            "source_url": "",
+            "chunking_version": "service_cleanup_v3",
+            "faq_unit": true,
+            "cleaned_path": "docs/data_cleanup/2026_09_22_plain/passport/markdown/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "cleaned_sha256": "129e56b5fb40b44e1433f3603fbbeb955dd9d034ddd34baf7c34ebbaaa44d80a"
+          },
+          "score": 0.3528960049152374,
+          "retrievers": [
+            "dense",
+            "bm25",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_23d845d3ab38ea43_v3_0047",
+          "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.10 Status \"Pending for Backend Verification\" / Backend Verification আটকে থাকা\n\n### 6.10 Status \"Pending for Backend Verification\" / Backend Verification আটকে থাকা\n- **Category:** Status, Delivery & Corrections\n- **Topic:** System Processing Stage\n- **English Question:** While checking my passport status, I see \"Pending for Backend Verification\". What should I do?\n- **Bengali Question (প্রশ্ন):** আমি আমার পাসপোর্টের স্ট্যাটাস চেক করার সময় \"Pending for Backend Verification\" দেখতে পাচ্ছি। এখন আমি কি করব?\n- **English Answer:** Please contact your respective Regional Passport Office (RPO) for clarification and further instructions regarding backend checks.\n- **Bengali Answer (উত্তর):** এমন দেখালে অনুগ্রহ করে সরাসরি আপনার সংশ্লিষ্ট আঞ্চলিক পাসপোর্ট অফিসে (RPO) যোগযোগ করুন।\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_23d845d3ab38ea43",
+            "document_id": "passport_23d845d3ab38ea43",
+            "title": "Bangladesh_ePassport_FAQ",
+            "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.10 Status \"Pending for Backend Verification\" / Backend Verification আটকে থাকা",
+            "document_type": "document",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+            "original_paths": "[]",
+            "document_date": "unknown",
+            "date_verified": false,
+            "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+            "experimental": true,
+            "body_start": 35427,
+            "body_end": 36133,
+            "source_url": "",
+            "chunking_version": "service_cleanup_v3",
+            "faq_unit": true,
+            "cleaned_path": "docs/data_cleanup/2026_09_22_plain/passport/markdown/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "cleaned_sha256": "129e56b5fb40b44e1433f3603fbbeb955dd9d034ddd34baf7c34ebbaaa44d80a"
+          },
+          "score": 0.2827840745449066,
+          "retrievers": [
+            "dense",
+            "bm25",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_0b74faa4d85a2a58_v3_0006",
+          "content": "অনলাইন সেবাসমূহ (নাগরিক ই-সেবাসমূহের তালিকা)\nইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর - অনলাইন সেবাসমূহ > নাগরিক ই-সেবাসমূহের তালিকা > ৪. ই-পাসপোর্ট অ্যাপলিকেশন স্টেটাস\n\n### ৪. ই-পাসপোর্ট অ্যাপলিকেশন স্টেটাস\n* **ক্রম:** ৪\n* **সেবার শিরোনাম:** ই-পাসপোর্ট অ্যাপলিকেশন স্টেটাস\n* **অনলাইন লিংক:** ওয়েব লিংক\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_0b74faa4d85a2a58",
+            "document_id": "passport_0b74faa4d85a2a58",
+            "title": "অনলাইন সেবাসমূহ (নাগরিক ই-সেবাসমূহের তালিকা)",
+            "section_title": "ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর - অনলাইন সেবাসমূহ > নাগরিক ই-সেবাসমূহের তালিকা > ৪. ই-পাসপোর্ট অ্যাপলিকেশন স্টেটাস",
+            "document_type": "নাগরিক ই-সেবাসমূহের তালিকা",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/অনলাইন সেবাসমূহ (নাগরিক ই-সেবাসমূহের তালিকা).md",
+            "source_relative_path": "cleaned_md/অনলাইন সেবাসমূহ (নাগরিক ই-সেবাসমূহের তালিকা).md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/অনলাইন সেবাসমূহ (নাগরিক ই-সেবাসমূহের তালিকা).md",
+            "source_sha256": "63aad859e13c4416b524e8c7280c02b0cff81de0320bcab222cbd8e2461bd292",
+            "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/নাগরিক ই-সেবাসমূহের তালিকা.pdf\"]",
+            "document_date": "N/A",
+            "date_verified": false,
+            "audit_flags": "no_web_address",
+            "experimental": true,
+            "body_start": 411,
+            "body_end": 546,
+            "source_url": "",
+            "chunking_version": "service_cleanup_v3",
+            "faq_unit": false,
+            "cleaned_path": "docs/data_cleanup/2026_09_22_plain/passport/markdown/cleaned_md/অনলাইন সেবাসমূহ (নাগরিক ই-সেবাসমূহের তালিকা).md",
+            "cleaned_sha256": "94ee6d13d229ff5ad0930ba8bb7412ff788a85707629667217ab1741cf43d572"
+          },
+          "score": 0.05103706195950508,
+          "retrievers": [
+            "dense",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_0b74faa4d85a2a58_v3_0007",
+          "content": "অনলাইন সেবাসমূহ (নাগরিক ই-সেবাসমূহের তালিকা)\nইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর - অনলাইন সেবাসমূহ > নাগরিক ই-সেবাসমূহের তালিকা > ৫. এমআরপি অ্যাপলিকেশন স্টেটাস\n\n### ৫. এমআরপি অ্যাপলিকেশন স্টেটাস\n* **ক্রম:** ৫\n* **সেবার শিরোনাম:** এমআরপি অ্যাপলিকেশন স্টেটাস\n* **অনলাইন লিংক:** ওয়েব লিংক",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_0b74faa4d85a2a58",
+            "document_id": "passport_0b74faa4d85a2a58",
+            "title": "অনলাইন সেবাসমূহ (নাগরিক ই-সেবাসমূহের তালিকা)",
+            "section_title": "ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর - অনলাইন সেবাসমূহ > নাগরিক ই-সেবাসমূহের তালিকা > ৫. এমআরপি অ্যাপলিকেশন স্টেটাস",
+            "document_type": "নাগরিক ই-সেবাসমূহের তালিকা",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/অনলাইন সেবাসমূহ (নাগরিক ই-সেবাসমূহের তালিকা).md",
+            "source_relative_path": "cleaned_md/অনলাইন সেবাসমূহ (নাগরিক ই-সেবাসমূহের তালিকা).md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/অনলাইন সেবাসমূহ (নাগরিক ই-সেবাসমূহের তালিকা).md",
+            "source_sha256": "63aad859e13c4416b524e8c7280c02b0cff81de0320bcab222cbd8e2461bd292",
+            "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/নাগরিক ই-সেবাসমূহের তালিকা.pdf\"]",
+            "document_date": "N/A",
+            "date_verified": false,
+            "audit_flags": "no_web_address",
+            "experimental": true,
+            "body_start": 546,
+            "body_end": 671,
+            "source_url": "",
+            "chunking_version": "service_cleanup_v3",
+            "faq_unit": false,
+            "cleaned_path": "docs/data_cleanup/2026_09_22_plain/passport/markdown/cleaned_md/অনলাইন সেবাসমূহ (নাগরিক ই-সেবাসমূহের তালিকা).md",
+            "cleaned_sha256": "94ee6d13d229ff5ad0930ba8bb7412ff788a85707629667217ab1741cf43d572"
+          },
+          "score": 0.043444857001304626,
+          "retrievers": [
+            "dense",
+            "cross_encoder"
+          ]
+        }
+      ],
+      "seconds": 31.39
+    },
+    {
+      "variant": "candidate",
+      "query": "ডেলিভারি স্লিপ হারিয়ে গেলে পাসপোর্ট কীভাবে সংগ্রহ করব?",
+      "support_rank": 1,
+      "generation_evidence_has_support": true,
+      "source_prefixes": [
+        "passport_23d845d3ab38ea43"
+      ],
+      "content_hint": "Lost Delivery Slip",
+      "sources": [
+        {
+          "id": "passport_23d845d3ab38ea43_v3_0041",
+          "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.4 Lost Delivery Slip Recovery / ডেলিভারি স্লিপ হারিয়ে গেলে পাসপোর্ট সংগ্রহ\n\n### 6.4 Lost Delivery Slip Recovery / ডেলিভারি স্লিপ হারিয়ে গেলে পাসপোর্ট সংগ্রহ\n- **Category:** Status, Delivery & Corrections\n- **Topic:** Alternative Delivery Protocols\n- **English Question:** I have lost my delivery slip. Now how will I collect my passport?\n- **Bengali Question (প্রশ্ন):** আমি আমার ডেলিভারি স্লিপ হারিয়েছি। এখন আমি কি ভাবে আমার পাসপোর্ট সংগ্রহ করব?\n- **English Answer:** Bring the following items to your designated passport office:\n  1. Printed Application Summary (Appointment copy).\n  2. Photocopy of your NID card.\n  3. Photocopy of the lost Delivery Slip (if available).\n- **Bengali Answer (উত্তর):** নিম্নে বর্ণিত কাগজপত্র নিয়ে অফিসে যোগাযোগ করুন:\n  ১. প্রিন্ট সামারি / অ্যাপয়েন্টমেন্ট কপি।\n  ২. NID কার্ডের ফটোকপি।\n  ৩. হারিয়ে যাওয়া ডেলিভারি স্লিপের ফটোকপি (যদি থাকে)।\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_23d845d3ab38ea43",
+            "document_id": "passport_23d845d3ab38ea43",
+            "title": "Bangladesh_ePassport_FAQ",
+            "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.4 Lost Delivery Slip Recovery / ডেলিভারি স্লিপ হারিয়ে গেলে পাসপোর্ট সংগ্রহ",
+            "document_type": "document",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+            "original_paths": "[]",
+            "document_date": "unknown",
+            "date_verified": false,
+            "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+            "experimental": true,
+            "body_start": 30603,
+            "body_end": 31413,
+            "source_url": "",
+            "chunking_version": "service_cleanup_v3",
+            "faq_unit": true,
+            "cleaned_path": "docs/data_cleanup/2026_09_22_plain/passport/markdown/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "cleaned_sha256": "129e56b5fb40b44e1433f3603fbbeb955dd9d034ddd34baf7c34ebbaaa44d80a"
+          },
+          "score": 0.9983684420585632,
+          "retrievers": [
+            "dense",
+            "bm25",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_23d845d3ab38ea43_v3_0048",
+          "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.11 Collection Office Jurisdiction (Chittagong to Dhaka) / চট্টগ্রাম থেকে আবেদন করে ঢাকা থেকে সংগ্রহ\n\n### 6.11 Collection Office Jurisdiction (Chittagong to Dhaka) / চট্টগ্রাম থেকে আবেদন করে ঢাকা থেকে সংগ্রহ\n- **Category:** Status, Delivery & Corrections\n- **Topic:** Pickup Location Policy\n- **English Question:** I have applied for my passport in Chittagong, can I collect it from Dhaka?\n- **Bengali Question (প্রশ্ন):** আমি চট্টগ্রামে পাসপোর্ট করতে দিয়েছি, আমি কি ঢাকা থেকে সংগ্রহ করতে পারব?\n- **English Answer:** No. The passport must be collected from the specific regional or divisional office mentioned on your Delivery Slip.  \n  *Exception:* Only urgent passports processed under the **Super Express** category are issued and collected from the Agargaon Divisional Passport Office in Dhaka.\n- **Bengali Answer (উত্তর):** না। আপনার ডেলিভারি স্লিপে (Delivery Slip) যে আঞ্চলিক বা বিভাগীয় পাসপোর্ট অফিসের নাম দেওয়া রয়েছে, সেখান থেকেই পাসপোর্ট সংগ্রহ করতে হবে।  \n  *(বিশেষ দ্রষ্টব্য: কেবল অতি জরুরি বা Super Express ক্যাটাগরির পাসপোর্ট আগারগাঁও বিভাগীয় পাসপোর্ট অফিস, ঢাকা থেকে সংগ্রহ করা যায়।)*\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_23d845d3ab38ea43",
+            "document_id": "passport_23d845d3ab38ea43",
+            "title": "Bangladesh_ePassport_FAQ",
+            "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.11 Collection Office Jurisdiction (Chittagong to Dhaka) / চট্টগ্রাম থেকে আবেদন করে ঢাকা থেকে সংগ্রহ",
+            "document_type": "document",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+            "original_paths": "[]",
+            "document_date": "unknown",
+            "date_verified": false,
+            "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+            "experimental": true,
+            "body_start": 36133,
+            "body_end": 37142,
+            "source_url": "",
+            "chunking_version": "service_cleanup_v3",
+            "faq_unit": true,
+            "cleaned_path": "docs/data_cleanup/2026_09_22_plain/passport/markdown/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "cleaned_sha256": "129e56b5fb40b44e1433f3603fbbeb955dd9d034ddd34baf7c34ebbaaa44d80a"
+          },
+          "score": 0.8682811856269836,
+          "retrievers": [
+            "dense",
+            "bm25",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_6e87d0783a373593_v3_0008",
+          "content": "5 Steps to your e-Passport\n5 Steps to your e-Passport > Application Steps > Step 5: Collect your e-Passport at the passport office\n\n### Step 5: Collect your e-Passport at the passport office\n* **Collection Requirement 1:** Delivery slip you received during passport enrolment\n* **Collection Requirement 2:** Authorized representatives (has to bring his/her NID card) can collect the applicant's new passport.",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_6e87d0783a373593",
+            "document_id": "passport_6e87d0783a373593",
+            "title": "5 Steps to your e-Passport",
+            "section_title": "5 Steps to your e-Passport > Application Steps > Step 5: Collect your e-Passport at the passport office",
+            "document_type": "সাধারণ তথ্য",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/5 Steps to your e-Passport.md",
+            "source_relative_path": "cleaned_md/5 Steps to your e-Passport.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/5 Steps to your e-Passport.md",
+            "source_sha256": "20cf0be15ba261a9be55252bdd4da3d3ebe418c14e4722ec7c509b94bbc0c348",
+            "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/5 Steps to your e-Passport.pdf\"]",
+            "document_date": "2026-06-03",
+            "date_verified": false,
+            "audit_flags": "no_web_address",
+            "experimental": true,
+            "body_start": 685,
+            "body_end": 961,
+            "source_url": "",
+            "chunking_version": "service_cleanup_v3",
+            "faq_unit": false,
+            "cleaned_path": "docs/data_cleanup/2026_09_22_plain/passport/markdown/cleaned_md/5 Steps to your e-Passport.md",
+            "cleaned_sha256": "c0f9c7bfa3cdb7f3f252d8abdf93f42c56bf78e838359bc2d80fd19e33ed3dfc"
+          },
+          "score": 0.7402267456054688,
+          "retrievers": [
+            "dense",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_23d845d3ab38ea43_v3_0040",
+          "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.3 Documents Needed for Passport Collection / নতুন পাসপোর্ট সংগ্রহের প্রয়োজনীয় কাগজপত্র\n\n### 6.3 Documents Needed for Passport Collection / নতুন পাসপোর্ট সংগ্রহের প্রয়োজনীয় কাগজপত্র\n- **Category:** Status, Delivery & Corrections\n- **Topic:** Delivery Verification\n- **English Question:** What types of documents are required to show at passport office to collect a new passport?\n- **Bengali Question (প্রশ্ন):** নতুন পাসপোর্ট সংগ্রহের সময় কি কি কাগজপত্রাদি পাসপোর্ট অফিসে দেখানোর প্রয়োজন?\n- **English Answer:** Required documents for collection:\n  - **a.** Original Delivery Slip.\n  - **b.** For child's passport (<12 years): Parent's NID or Passport.\n  - **c.** If collected by an authorized third party: Signed authorization letter from the applicant along with the authorized person's NID.\n  - **d.** Previous original Passport (for renewal/reissue).\n- **Bengali Answer (উত্তর):** পাসপোর্ট গ্রহণের সময় প্রয়োজনীয় ডকুমেন্ট:\n  - **ক.** ডেলিভারি স্লিপ (Delivery Slip)।\n  - **খ.** সন্তানের পাসপোর্ট হলে (১২ বছরের কম): অভিভাবকের NID/পাসপোর্ট।\n  - **গ.** প্রতিনিধি দিয়ে সংগ্রহ করতে চাইলে: আবেদনকারীর স্বাক্ষরযুক্ত অনুমোদনপত্র (Authorization Letter) এবং প্রতিনিধির NID।\n  - **ঘ.** পূর্বের মূল পাসপোর্ট।\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_23d845d3ab38ea43",
+            "document_id": "passport_23d845d3ab38ea43",
+            "title": "Bangladesh_ePassport_FAQ",
+            "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.3 Documents Needed for Passport Collection / নতুন পাসপোর্ট সংগ্রহের প্রয়োজনীয় কাগজপত্র",
+            "document_type": "document",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+            "original_paths": "[]",
+            "document_date": "unknown",
+            "date_verified": false,
+            "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+            "experimental": true,
+            "body_start": 29480,
+            "body_end": 30603,
+            "source_url": "",
+            "chunking_version": "service_cleanup_v3",
+            "faq_unit": true,
+            "cleaned_path": "docs/data_cleanup/2026_09_22_plain/passport/markdown/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "cleaned_sha256": "129e56b5fb40b44e1433f3603fbbeb955dd9d034ddd34baf7c34ebbaaa44d80a"
+          },
+          "score": 0.5854077339172363,
+          "retrievers": [
+            "dense",
+            "bm25",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_23d845d3ab38ea43_v3_0046",
+          "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.9 Received Email Notification But No Mobile SMS / ই-মেইল এসেছে কিন্তু এসএমএস আসেনি\n\n### 6.9 Received Email Notification But No Mobile SMS / ই-মেইল এসেছে কিন্তু এসএমএস আসেনি\n- **Category:** Status, Delivery & Corrections\n- **Topic:** Collection Eligibility\n- **English Question:** I have received an email for collection of a new Passport from Passport office but I didn't receive a message through mobile. Can I collect my passport?\n- **Bengali Question (প্রশ্ন):** আমি পাসপোর্ট সংগ্রহের জন্য ই-মেইল পেয়েছি কিন্তু কোন মোবাইলে এসএমএস পাই নাই। আমি কি পাসপোর্ট অফিস থেকে পাসপোর্ট সংগ্রহ করতে পারি?\n- **English Answer:** Yes, you can collect your passport if you have received the official readiness email notification.\n- **Bengali Answer (উত্তর):** হ্যাঁ, ই-মেইল নোটিফিকেশন পেয়ে থাকলে আপনি প্রয়োজনীয় কাগজপত্র সহ পাসপোর্ট সংগ্রহ করতে পারবেন।\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_23d845d3ab38ea43",
+            "document_id": "passport_23d845d3ab38ea43",
+            "title": "Bangladesh_ePassport_FAQ",
+            "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.9 Received Email Notification But No Mobile SMS / ই-মেইল এসেছে কিন্তু এসএমএস আসেনি",
+            "document_type": "document",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+            "original_paths": "[]",
+            "document_date": "unknown",
+            "date_verified": false,
+            "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+            "experimental": true,
+            "body_start": 34663,
+            "body_end": 35427,
+            "source_url": "",
+            "chunking_version": "service_cleanup_v3",
+            "faq_unit": true,
+            "cleaned_path": "docs/data_cleanup/2026_09_22_plain/passport/markdown/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "cleaned_sha256": "129e56b5fb40b44e1433f3603fbbeb955dd9d034ddd34baf7c34ebbaaa44d80a"
+          },
+          "score": 0.1379414051771164,
+          "retrievers": [
+            "dense",
+            "bm25",
+            "cross_encoder"
+          ]
+        },
+        {
+          "id": "passport_23d845d3ab38ea43_v3_0027",
+          "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 4. Application & Processing (আবেদন ও প্রক্রিয়াকরণ) > 4.9 Upgrading to Express Delivery Post-Enrolment / আবেদনের পর জরুরি সেবায় রূপান্তর\n\n### 4.9 Upgrading to Express Delivery Post-Enrolment / আবেদনের পর জরুরি সেবায় রূপান্তর\n- **Category:** Application & Processing\n- **Topic:** Delivery Speed Upgrade\n- **English Question:** Is it possible to upgrade to express delivery after the enrolment for ePassport was done?\n- **Bengali Question (প্রশ্ন):** আবেদন সম্পন্ন করার পর কি জরুরী সেবার জন্য আবেদন রূপান্তরিত করা যাবে?\n- **English Answer:** Yes, this is possible as long as your passport application is still in processing and not yet produced. Please check your status on the online portal home page first. If eligible, pay the additional fee difference at a supporting bank. When visiting the passport office, bring:\n  1. Delivery Slip of ePassport application.\n  2. Payment slip of supplemental payment from the bank.\n- **Bengali Answer (উত্তর):** হ্যাঁ, আবেদন চূড়ান্ত অনুমোদনের পূর্ব পর্যন্ত এটি সম্ভব। প্রথমে অনলাইন পোর্টালে আবেদনের স্ট্যাটাস পরীক্ষা করুন। যদি পাসপোর্ট এখনও প্রিন্ট না হয়ে থাকে, তবে নির্ধারিত ব্যাংকে অতিরিক্ত জরুরি ফি প্রদান করুন। এরপর নিম্নলিখিত কাগজপত্রসহ পাসপোর্ট অফিসে যোগাযোগ করুন:\n  1. ই-পাসপোর্টের ডেলিভারি স্লিপ।\n  2. ব্যাংকের অতিরিক্ত ফি পরিশোধের রশিদ।\n\n---\n\n",
+          "metadata": {
+            "domain": "passport",
+            "doc_id": "passport_23d845d3ab38ea43",
+            "document_id": "passport_23d845d3ab38ea43",
+            "title": "Bangladesh_ePassport_FAQ",
+            "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 4. Application & Processing (আবেদন ও প্রক্রিয়াকরণ) > 4.9 Upgrading to Express Delivery Post-Enrolment / আবেদনের পর জরুরি সেবায় রূপান্তর",
+            "document_type": "document",
+            "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+            "original_paths": "[]",
+            "document_date": "unknown",
+            "date_verified": false,
+            "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+            "experimental": true,
+            "body_start": 19063,
+            "body_end": 20218,
+            "source_url": "",
+            "chunking_version": "service_cleanup_v3",
+            "faq_unit": true,
+            "cleaned_path": "docs/data_cleanup/2026_09_22_plain/passport/markdown/cleaned_md/Bangladesh_ePassport_FAQ.md",
+            "cleaned_sha256": "129e56b5fb40b44e1433f3603fbbeb955dd9d034ddd34baf7c34ebbaaa44d80a"
+          },
+          "score": 0.10533320903778076,
+          "retrievers": [
+            "dense",
+            "bm25",
+            "cross_encoder"
+          ]
+        }
+      ],
+      "seconds": 25.12
+    }
+  ],
+  "configs": {
+    "baseline": {
+      "domain": {
+        "id": "passport",
+        "display_name": "Passport and Immigration",
+        "primary_language": "bn",
+        "supported_languages": [
+          "bn",
+          "en",
+          "mixed"
+        ],
+        "description": "Experimental passport corpus; source dates and claims are not independently verified.",
+        "experimental": true
+      },
+      "data": {
+        "chunk_output_path": "domains/passport/data/interim/active_20260919_063632_508964.jsonl",
+        "chroma_persist_dir": "domains/passport/data/processed/chroma_experimental",
+        "collection_name": "passport_20260919_063632_508964",
+        "register_path": "domains/passport/data/register.json",
+        "master_chunk_path": "domains/passport/data/interim/all_chunks_heading_v2_20260919_062421_886195.jsonl"
+      },
+      "preprocessing": {
+        "skip_markdown_faq_duplicates": true,
+        "min_chunk_chars": 180,
+        "max_chunk_chars": 1400,
+        "overlap_paragraphs": 1
+      },
+      "embedding": {
+        "provider": "sentence_transformers",
+        "model": "BAAI/bge-m3",
+        "device": "cpu",
+        "normalize_embeddings": true,
+        "local_files_only": true
+      },
+      "retrieval": {
+        "top_k_dense": 20,
+        "top_k_bm25": 20,
+        "top_k_final": 15,
+        "rrf_k": 50,
+        "rrf_weights": {
+          "dense": 0.55,
+          "bm25": 0.45
+        }
+      },
+      "reranking": {
+        "enabled": true,
+        "model": "BAAI/bge-reranker-v2-m3",
+        "device": "cpu",
+        "local_files_only": true,
+        "top_k": 6,
+        "fallback": "lexical_overlap"
+      },
+      "generation": {
+        "ollama_base_url": "http://localhost:11434",
+        "default_model": "llama3.2",
+        "comparison_models": [
+          "llama3.2",
+          "llama3",
+          "qwen2.5:7b",
+          "qwen3:8b"
+        ],
+        "temperature": 0.05,
+        "top_p": 0.9,
+        "num_predict": 1200,
+        "repeat_last_n": 256,
+        "repeat_penalty": 1.18,
+        "top_k_for_generation": 3
+      }
+    },
+    "candidate": {
+      "domain": {
+        "id": "passport",
+        "display_name": "Passport and Immigration",
+        "primary_language": "bn",
+        "supported_languages": [
+          "bn",
+          "en",
+          "mixed"
+        ],
+        "description": "Experimental passport corpus; source dates and claims are not independently verified.",
+        "experimental": true
+      },
+      "data": {
+        "chunk_output_path": "domains/passport/data/interim/active_20260922_054145_038328.jsonl",
+        "chroma_persist_dir": "domains/passport/data/processed/chroma_experimental",
+        "collection_name": "passport_20260922_054145_038328",
+        "register_path": "domains/passport/data/register.json",
+        "master_chunk_path": "docs/data_cleanup/2026_09_22_plain/passport/chunks.jsonl"
+      },
+      "preprocessing": {
+        "skip_markdown_faq_duplicates": true,
+        "min_chunk_chars": 180,
+        "max_chunk_chars": 1400,
+        "overlap_paragraphs": 1
+      },
+      "embedding": {
+        "provider": "sentence_transformers",
+        "model": "BAAI/bge-m3",
+        "device": "cpu",
+        "normalize_embeddings": true,
+        "local_files_only": true
+      },
+      "retrieval": {
+        "top_k_dense": 20,
+        "top_k_bm25": 20,
+        "top_k_final": 15,
+        "rrf_k": 50,
+        "rrf_weights": {
+          "dense": 0.55,
+          "bm25": 0.45
+        }
+      },
+      "reranking": {
+        "enabled": true,
+        "model": "BAAI/bge-reranker-v2-m3",
+        "device": "cpu",
+        "local_files_only": true,
+        "top_k": 6,
+        "fallback": "lexical_overlap"
+      },
+      "generation": {
+        "ollama_base_url": "http://localhost:11434",
+        "default_model": "llama3.2",
+        "comparison_models": [
+          "llama3.2",
+          "llama3",
+          "qwen2.5:7b",
+          "qwen3:8b"
+        ],
+        "temperature": 0.05,
+        "top_p": 0.9,
+        "num_predict": 1200,
+        "repeat_last_n": 256,
+        "repeat_penalty": 1.18,
+        "top_k_for_generation": 3
+      }
+    }
+  },
+  "summary": {
+    "baseline": {
+      "cases": 5,
+      "support_at_1": 2,
+      "support_in_top_6": 5,
+      "support_in_generation_context": 5
+    },
+    "candidate": {
+      "cases": 5,
+      "support_at_1": 2,
+      "support_in_top_6": 5,
+      "support_in_generation_context": 4
+    }
+  }
+}

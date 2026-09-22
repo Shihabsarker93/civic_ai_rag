@@ -1,0 +1,68 @@
+{
+  "domain": {
+    "id": "passport",
+    "display_name": "Passport and Immigration",
+    "primary_language": "bn",
+    "supported_languages": [
+      "bn",
+      "en",
+      "mixed"
+    ],
+    "description": "Experimental passport corpus; source dates and claims are not independently verified.",
+    "experimental": true
+  },
+  "data": {
+    "chunk_output_path": "domains/passport/data/interim/active_20260922_054145_038328.jsonl",
+    "chroma_persist_dir": "domains/passport/data/processed/chroma_experimental",
+    "collection_name": "passport_20260922_054145_038328",
+    "register_path": "domains/passport/data/register.json",
+    "master_chunk_path": "docs/data_cleanup/2026_09_22_plain/passport/chunks.jsonl"
+  },
+  "preprocessing": {
+    "skip_markdown_faq_duplicates": true,
+    "min_chunk_chars": 180,
+    "max_chunk_chars": 1400,
+    "overlap_paragraphs": 1
+  },
+  "embedding": {
+    "provider": "sentence_transformers",
+    "model": "BAAI/bge-m3",
+    "device": "cpu",
+    "normalize_embeddings": true,
+    "local_files_only": true
+  },
+  "retrieval": {
+    "top_k_dense": 20,
+    "top_k_bm25": 20,
+    "top_k_final": 15,
+    "rrf_k": 50,
+    "rrf_weights": {
+      "dense": 0.55,
+      "bm25": 0.45
+    }
+  },
+  "reranking": {
+    "enabled": true,
+    "model": "BAAI/bge-reranker-v2-m3",
+    "device": "cpu",
+    "local_files_only": true,
+    "top_k": 6,
+    "fallback": "lexical_overlap"
+  },
+  "generation": {
+    "ollama_base_url": "http://localhost:11434",
+    "default_model": "llama3.2",
+    "comparison_models": [
+      "llama3.2",
+      "llama3",
+      "qwen2.5:7b",
+      "qwen3:8b"
+    ],
+    "temperature": 0.05,
+    "top_p": 0.9,
+    "num_predict": 1200,
+    "repeat_last_n": 256,
+    "repeat_penalty": 1.18,
+    "top_k_for_generation": 3
+  }
+}
