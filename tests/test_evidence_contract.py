@@ -4,6 +4,7 @@ from types import SimpleNamespace
 import pytest
 
 from src.generation.evidence_contract import validate_output
+from src.generation.applicability import filter_applicable
 from src.generation.ollama_generator import OllamaAnswerGenerator
 from src.pipeline import CivicRAGPipeline
 from src.retrieval.hybrid_retriever import RetrievalResult
@@ -83,6 +84,28 @@ def test_oversized_evidence_is_recorded_not_truncated():
     result = generator.answer_grounded("কী করব?", [{"id": "too_long", "content": "শর্ত " * 20000}])
     assert result["evidence_check"]["status"] == "evidence_exceeds_context_budget"
     assert result["evidence_check"]["omitted_source_ids"] == ["too_long"]
+
+
+@pytest.mark.parametrize("query,topic", [
+    ("নতুন পাসপোর্ট করতে কী লাগবে?", "Documents Needed for Passport Collection"),
+    ("নতুন লাইসেন্স করতে কী লাগবে?", "লাইসেন্স নবায়ন"),
+    ("ফিটনেস নবায়ন করব", "ড্রাইভিং লাইসেন্স নবায়ন"),
+    ("জন্মতারিখ ভুল হলে সংশোধন করব", "রেজিস্ট্রেশন ও ইস্যু তারিখ সংশোধন"),
+    ("পাসপোর্ট বানাতে কত টাকা লাগে?", "বিদেশীদের পরিচিতি সনদ (Certificate of Identity)"),
+])
+def test_explicit_action_service_and_date_conflicts_are_excluded(query, topic):
+    contexts = [{"id": "wrong", "content": "অন্য কাজের শর্তাবলি", "metadata": {"section_title": topic}},
+                {"id": "unknown", "content": "অজানা শিরোনামের তথ্য", "metadata": {}}]
+    kept, rejected = filter_applicable(query, contexts)
+    assert [c["id"] for c in kept] == ["unknown"]
+    assert rejected[0]["source_id"] == "wrong"
+
+
+def test_matching_collection_and_renewal_are_not_excluded():
+    for query, topic in [("পাসপোর্ট সংগ্রহ করতে কী লাগবে?", "Passport Collection"),
+                         ("লাইসেন্স নবায়নের আবেদন করব", "লাইসেন্স নবায়ন")]:
+        contexts = [{"id": "right", "content": "প্রাসঙ্গিক শর্তাবলি", "metadata": {"section_title": topic}}]
+        assert filter_applicable(query, contexts) == (contexts, [])
 
 
 @pytest.mark.parametrize("domain", ["passport", "brta", "birth_death_registration"])

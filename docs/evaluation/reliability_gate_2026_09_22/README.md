@@ -9,6 +9,12 @@ The unchanged questions and previous answers are in
 New raw results are written incrementally to `answers_qwen3_8b.json` and `.md` here.
 A partial file must not be reported as a completed 30-question evaluation.
 
+The first live smoke test is preserved in `smoke_v1_failed.json` and `.md`.
+It passed quote validation but still included passport-collection requirements for
+a new application. It is a failed semantic result, not a successful answer.
+This directly motivated v2's pre-generation service/action conflict exclusions.
+V2 has NOT yet been demonstrated to improve overall accuracy.
+
 ## Changes
 
 - `generation.evidence_contract=true` activates one shared CivicRAG answer route
@@ -24,6 +30,13 @@ A partial file must not be reported as a completed 30-question evaluation.
 - One structured LLM call uses separate system/user messages. It chooses answer,
   partial answer, clarification or abstention after assessing service, action,
   audience, dates and conditions. It supplies source quotes per answer item.
+- Before that call, shared lexical rules exclude explicit service/action conflicts
+  based on leaf section titles and FAQ questions (application vs collection,
+  renewal, replacement, correction and status). A separate date-field conflict
+  rejects registration/issue-date instructions for a birth-date question. Unknown
+  labels remain candidates, not verified evidence. Excluded IDs/reasons are saved.
+  This can cause false exclusions and must be evaluated; it is not a semantic oracle.
+- Search aliases and internal indexing metadata are not sent to the generator.
 - Local validation rejects malformed JSON, unknown source IDs, quotes absent from
   source content, unsupported numeric values and major language violations.
 - Displayed citations come from validated model-selected supports, not the first
@@ -68,6 +81,6 @@ the server to restore legacy routing without changing any source data. Set the
 default model back separately if needed. The Git tag records the entire previous
 tracked state; do not use destructive reset on a working tree with unrelated files.
 
-Automated verification: 53 tests passed on 2026-09-22, including 15 new contract,
+Automated verification: 59 tests passed on 2026-09-22, including 21 new contract,
 message-role and all-domain routing tests. These are software tests, not model
 accuracy measurements.

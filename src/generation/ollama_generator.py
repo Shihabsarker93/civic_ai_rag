@@ -122,8 +122,11 @@ class OllamaAnswerGenerator:
         budget = context_window - 1200 - 2048 - len(INSTRUCTIONS.encode()) - len(json.dumps(SCHEMA).encode())
         accepted, evidence, omitted = [], [], []
         for context in contexts:
+            metadata = context.get("metadata", {})
             entry = {"source_id": str(context["id"]), "content": context["content"],
-                     "metadata": context.get("metadata", {})}
+                     "metadata": {key: metadata[key] for key in (
+                         "title", "section_title", "domain", "document_type", "source_url",
+                         "document_date", "date_verified", "audit_flags") if key in metadata}}
             candidate = json.dumps({"question": query, "evidence": [*evidence, entry]}, ensure_ascii=False)
             if len(candidate.encode("utf-8")) > budget:
                 omitted.append(str(context["id"]))

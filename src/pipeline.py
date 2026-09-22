@@ -117,15 +117,18 @@ class CivicRAGPipeline:
         selected_model = model or self.generation_config["default_model"]
         result = {"query": query, "model": selected_model, "method": "civic",
                   "domain": self.domain_id, "sources": contexts, "answer": "",
-                  "answer_route": "retrieval_only", "pipeline_version": "evidence_contract_v1"}
+                  "answer_route": "retrieval_only", "pipeline_version": "evidence_contract_v2"}
         if generate:
             from src.generation.evidence_contract import reject
+            from src.generation.applicability import filter_applicable
+            applicable, excluded = filter_applicable(search_query, contexts)
+            result["applicability_exclusions"] = excluded
             if not self._is_bangla_query(query):
                 result.update({"answer": "অনুগ্রহ করে বাংলায় প্রশ্ন করুন।", "answer_route": "language_clarification"})
-            elif not contexts:
-                result.update(reject("no_evidence"))
+            elif not applicable:
+                result.update(reject("no_applicable_evidence"))
             else:
-                evidence = contexts[:self.generation_config.get("evidence_context_limit", 6)]
+                evidence = applicable[:self.generation_config.get("evidence_context_limit", 6)]
                 result["generation_sources"] = [c["id"] for c in evidence]
                 result.update(self._generator(selected_model).answer_grounded(search_query, evidence))
         return result
