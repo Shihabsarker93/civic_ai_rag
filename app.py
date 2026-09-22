@@ -318,7 +318,7 @@ HTML = """<!doctype html>
           <option value="llama3.2">llama3.2</option>
           <option value="llama3">llama3</option>
           <option value="qwen2.5:7b">qwen2.5:7b</option>
-          <option value="qwen3:8b" selected>qwen3:8b</option>
+          <option value="qwen3:8b">qwen3:8b</option>
         </select>
       </div>
     </header>
@@ -435,15 +435,13 @@ HTML = """<!doctype html>
         node.appendChild(details);
       }
       if (role === "bot" && sources.length) {
-        const cited = run && run.cited_source_ids;
-        const links = uniqueLinksFromSources(Array.isArray(cited)
-          ? sources.filter(source => cited.includes(source.id)) : sources);
+        const links = uniqueLinksFromSources(sources);
         if (links.length) {
           const linksBox = document.createElement("div");
           linksBox.className = "links";
           const title = document.createElement("div");
           title.className = "links-title";
-          title.textContent = Array.isArray(cited) ? "Cited source links" : "Retrieved source links";
+          title.textContent = "Relevant official/source links";
           linksBox.appendChild(title);
           links.slice(0, 5).forEach((link, index) => {
             const item = document.createElement("div");
@@ -494,8 +492,7 @@ HTML = """<!doctype html>
           method: payload.method || method.value,
           model: payload.model || model.value,
           domain: payload.domain || selectedDomain,
-          answer_route: payload.answer_route,
-          cited_source_ids: payload.cited_source_ids
+          answer_route: payload.answer_route
         });
         status.textContent = "Ready";
       } catch (error) {
@@ -583,7 +580,7 @@ class ChatHandler(BaseHTTPRequestHandler):
             length = int(self.headers.get("Content-Length", "0"))
             payload = json.loads(self.rfile.read(length).decode("utf-8"))
             query = str(payload.get("query", "")).strip()
-            model = str(payload.get("model", "qwen3:8b")).strip()
+            model = str(payload.get("model", "llama3.2")).strip()
             method = str(payload.get("method", "civic")).strip()
             if not query:
                 raise ValueError("Query is required")

@@ -50,10 +50,8 @@
     "fallback": "lexical_overlap"
   },
   "generation": {
-    "evidence_contract": true,
-    "evidence_context_limit": 6,
     "ollama_base_url": "http://localhost:11434",
-    "default_model": "qwen3:8b",
+    "default_model": "llama3.2",
     "comparison_models": [
       "llama3.2",
       "llama3",

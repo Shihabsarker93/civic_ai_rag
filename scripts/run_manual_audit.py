@@ -2,10 +2,8 @@
 from __future__ import annotations
 
 import argparse
-import hashlib
 import json
 from pathlib import Path
-import subprocess
 import time
 import urllib.error
 import urllib.request
@@ -102,20 +100,6 @@ def main() -> None:
     if args.limit:
         items = items[: args.limit]
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    manifest_path = args.output.with_suffix(".manifest.json")
-    files = [*sorted((ROOT / "src").rglob("*.py")),
-             *[ROOT / "domains" / d / "config.json" for d in ("birth_death_registration", "passport", "brta")]]
-    signature = {"model": args.model, "question_sha256": hashlib.sha256(args.input.read_bytes()).hexdigest(),
-                 "files": {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest() for p in files}}
-    if args.resume and args.output.exists():
-        if not manifest_path.exists() or json.loads(manifest_path.read_text())["signature"] != signature:
-            raise RuntimeError("Refusing to mix runs: missing or changed code/config/question manifest. Use a new output path.")
-    else:
-        manifest_path.write_text(json.dumps({"signature": signature,
-            "git_commit": subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip(),
-            "domain_configs": {d: json.loads((ROOT / "domains" / d / "config.json").read_text())
-                               for d in ("birth_death_registration", "passport", "brta")},
-            "input": str(args.input), "started_at_unix": time.time()}, ensure_ascii=False, indent=2) + "\n")
     rows: list[dict] = []
     completed_ids: set[str] = set()
     if args.resume and args.output.exists():
@@ -140,7 +124,6 @@ def main() -> None:
             json.dumps({"model": args.model, "rows": rows}, ensure_ascii=False, indent=2) + "\n",
             encoding="utf-8",
         )
-        write_markdown(rows, args.output)
         print(item["id"], row["result"]["answer_route"], row["result"]["expected_evidence_present"], flush=True)
     write_markdown(rows, args.output)
 

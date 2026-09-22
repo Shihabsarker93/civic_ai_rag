@@ -1,5 +1,16 @@
 # Evidence-contract reliability update
 
+## Rolled back
+
+The user requested rollback on 2026-09-22. Runtime code, domain configurations,
+UI defaults and audit runner were restored to `codex/pre-reliability-gate-20260922`.
+The experiment and raw results below are retained for transparency, not deployed.
+The batch completed 10 requests: 7 invalid-JSON rejections, 2 quotation mismatches
+and 1 answer passing structural checks (not verified correct). Question 11,
+`birth_01_documents`, timed out. No further evaluation is running.
+The rollback restores earlier behavior and its known limitations; it is not a
+claim that the preceding version produces consistently correct answers.
+
 ## Status and comparison
 
 This is a bounded answer-routing experiment, not a measured accuracy improvement.

@@ -1,12 +1,9 @@
 from __future__ import annotations
 
 import re
-import json
 from typing import Any
 
 from langchain_ollama import ChatOllama
-from langchain_core.messages import HumanMessage, SystemMessage
-from src.generation.evidence_contract import INSTRUCTIONS, SCHEMA, reject, validate_output
 
 
 SYSTEM_INSTRUCTIONS = """You are Civic.ai, a government service guidance assistant for Bangladesh.
@@ -113,46 +110,6 @@ def canonicalize_answer(answer: str, source_ids: list[str]) -> str:
 
 
 class OllamaAnswerGenerator:
-    def answer_grounded(self, query: str, contexts: list[dict[str, Any]]) -> dict:
-        if not contexts:
-            return reject("no_evidence")
-        # Conservative byte budget for byte-level tokenizers: preserve whole chunks,
-        # reserve output/schema overhead, and record omissions instead of cutting clauses.
-        context_window = 16384
-        budget = context_window - 1200 - 2048 - len(INSTRUCTIONS.encode()) - len(json.dumps(SCHEMA).encode())
-        accepted, evidence, omitted = [], [], []
-        for context in contexts:
-            metadata = context.get("metadata", {})
-            entry = {"source_id": str(context["id"]), "content": context["content"],
-                     "metadata": {key: metadata[key] for key in (
-                         "title", "section_title", "domain", "document_type", "source_url",
-                         "document_date", "date_verified", "audit_flags") if key in metadata}}
-            candidate = json.dumps({"question": query, "evidence": [*evidence, entry]}, ensure_ascii=False)
-            if len(candidate.encode("utf-8")) > budget:
-                omitted.append(str(context["id"]))
-            else:
-                evidence.append(entry)
-                accepted.append(context)
-        if not accepted:
-            result = reject("evidence_exceeds_context_budget")
-            result["evidence_check"]["omitted_source_ids"] = omitted
-            result["generation_sources"] = []
-            return result
-        options = {key: getattr(self.llm, key, None) for key in (
-            "temperature", "top_p", "num_predict", "repeat_last_n", "repeat_penalty")}
-        options = {key: value for key, value in options.items() if value is not None}
-        options["num_ctx"] = context_window
-        response = self.llm.bind(format=SCHEMA, options=options).invoke([
-            SystemMessage(content=INSTRUCTIONS),
-            HumanMessage(content=json.dumps({"question": query, "evidence": evidence}, ensure_ascii=False)),
-        ])
-        raw = str(response.content).strip()
-        result = validate_output(raw, accepted)
-        result["evidence_check"]["raw_model_output"] = raw
-        result["evidence_check"]["omitted_source_ids"] = omitted
-        result["generation_sources"] = [c["id"] for c in accepted]
-        return result
-
     def __init__(
         self,
         *,

@@ -1,0 +1,54 @@
+passport_01_documents evidence_abstention None
+passport_02_fee evidence_abstention None
+passport_03_delivery_time evidence_abstention None
+passport_04_apply evidence_abstention None
+passport_05_renewal evidence_abstention None
+passport_06_lost evidence_abstention None
+passport_07_name_correction evidence_abstention None
+passport_08_birth_date evidence_abstention None
+passport_09_status llm_evidence_answer None
+passport_10_urgent evidence_abstention None
+Traceback (most recent call last):
+  File "/Users/shihab/Downloads/AI/Courses/01Portfolio/LangChainKrisnaik/playground/bilingual-rag-thesis/scripts/run_manual_audit.py", line 131, in main
+    row = request_answer(item, args.model)
+  File "/Users/shihab/Downloads/AI/Courses/01Portfolio/LangChainKrisnaik/playground/bilingual-rag-thesis/scripts/run_manual_audit.py", line 30, in request_answer
+    with urllib.request.urlopen(request, timeout=600) as response:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/urllib/request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/urllib/request.py", line 489, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/urllib/request.py", line 506, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/urllib/request.py", line 466, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/urllib/request.py", line 1348, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/urllib/request.py", line 1323, in do_open
+    r = h.getresponse()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/shihab/Downloads/AI/Courses/01Portfolio/LangChainKrisnaik/playground/bilingual-rag-thesis/scripts/run_manual_audit.py", line 149, in <module>
+    main()
+    ~~~~^^
+  File "/Users/shihab/Downloads/AI/Courses/01Portfolio/LangChainKrisnaik/playground/bilingual-rag-thesis/scripts/run_manual_audit.py", line 137, in main
+    raise RuntimeError(f"Audit stopped on {item['id']}: {error}") from error
+RuntimeError: Audit stopped on birth_01_documents: timed out
