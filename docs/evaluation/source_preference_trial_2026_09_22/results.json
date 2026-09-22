@@ -1,0 +1,136 @@
+{
+  "rows": [
+    {
+      "id": "passport_01_documents",
+      "question": "নতুন পাসপোর্ট করতে কী কী কাগজপত্র লাগবে?",
+      "variant": "baseline",
+      "seconds": 148.88,
+      "raw_answer": "- **ক.** ডেলিভারি স্লিপ (Delivery Slip)।  \n- **খ.** সন্তানের পাসপোর্ট হলে (১২ বছরের কম): অভিভাবকের NID/পাসপোর্ট।  \n- **গ.** প্রতিনিধি দিয়ে সংগ্রহ করতে চাইলে: আবেদনকারীর স্বাক্ষরযুক্ত অনুমোদনপত্র (Authorization Letter) এবং প্রতিনিধির NID।  \n- **ঘ.** পূর্বের মূল পাসপোর্ট।",
+      "display_answer": "- **ক.** ডেলিভারি স্লিপ (Delivery Slip)।  \n- **খ.** সন্তানের পাসপোর্ট হলে (১২ বছরের কম): অভিভাবকের NID/পাসপোর্ট।  \n- **গ.** প্রতিনিধি দিয়ে সংগ্রহ করতে চাইলে: আবেদনকারীর স্বাক্ষরযুক্ত অনুমোদনপত্র (Authorization Letter) এবং প্রতিনিধির NID।  \n- **ঘ.** পূর্বের মূল পাসপোর্ট।\n\nSources: passport_23d845d3ab38ea43_v2_0040, passport_73ac41f2327257f9_v2_0004, passport_729010959c882773_v2_0003",
+      "route": "llm",
+      "ollama_metadata": {
+        "model": "qwen3:8b",
+        "created_at": "2026-09-22T17:38:21.910631Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 148834836167,
+        "load_duration": 9532850125,
+        "prompt_eval_count": 3787,
+        "prompt_eval_cached_count": 0,
+        "prompt_eval_duration": 79593211000,
+        "eval_count": 232,
+        "eval_duration": 59671438000
+      }
+    },
+    {
+      "id": "passport_01_documents",
+      "question": "নতুন পাসপোর্ট করতে কী কী কাগজপত্র লাগবে?",
+      "variant": "neutral_prompt",
+      "seconds": 156.53,
+      "raw_answer": "- **ক.** ডেলিভারি স্লিপ (Delivery Slip)।  \n- **খ.** সন্তানের পাসপোর্ট হলে (১২ বছরের কম): অভিভাবকের NID/পাসপোর্ট।  \n- **গ.** প্রতিনিধি দিয়ে সংগ্রহ করতে চাইলে: আবেদনকারীর স্বাক্ষরযুক্ত অনুমোদনপত্র (Authorization Letter) এবং প্রতিনিধির NID।  \n- **ঘ.** পূর্বের মূল পাসপোর্ট।",
+      "display_answer": "- **ক.** ডেলিভারি স্লিপ (Delivery Slip)।  \n- **খ.** সন্তানের পাসপোর্ট হলে (১২ বছরের কম): অভিভাবকের NID/পাসপোর্ট।  \n- **গ.** প্রতিনিধি দিয়ে সংগ্রহ করতে চাইলে: আবেদনকারীর স্বাক্ষরযুক্ত অনুমোদনপত্র (Authorization Letter) এবং প্রতিনিধির NID।  \n- **ঘ.** পূর্বের মূল পাসপোর্ট।\n\nSources: passport_23d845d3ab38ea43_v2_0040, passport_73ac41f2327257f9_v2_0004, passport_729010959c882773_v2_0003",
+      "route": "llm",
+      "ollama_metadata": {
+        "model": "qwen3:8b",
+        "created_at": "2026-09-22T17:40:58.444254Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 156492682542,
+        "load_duration": 10773167,
+        "prompt_eval_count": 3831,
+        "prompt_eval_cached_count": 23,
+        "prompt_eval_duration": 86339380000,
+        "eval_count": 232,
+        "eval_duration": 69948876000
+      }
+    },
+    {
+      "id": "passport_02_fee",
+      "question": "পাসপোর্ট বানাতে কত টাকা লাগে?",
+      "variant": "baseline",
+      "seconds": 134.98,
+      "raw_answer": "পাসপোর্ট বানাতে মূলত নিচের প্রকাশিত ফি হবে:\n\n- **সাধারণ ফি:** ৫০০ টাকা + ১৫% ভ্যাট = ৫৭৫ টাকা  \n- **জরুরি ফি:** ১০,০০০ টাকা + ১৫% ভ্যাট = ১১,৫০০ টাকা  \n\nযদি আপনি ই-পাসপোর্ট চাওয়া হয় তবে ফি হবে:\n\n- **সাধারণ ডেলিভারি (২১ দিন):** ৩,৪৫০ টাকা  \n- **জরুরি ডেলিভারি (১১ দিন):** ৬,৯০০ টাকা  \n- **সুপার জরুরি ডেলিভারি (৮ দিন):** ১০,৩৫০ টাকা",
+      "display_answer": "পাসপোর্ট বানাতে মূলত নিচের প্রকাশিত ফি হবে:\n\n- **সাধারণ ফি:** ৫০০ টাকা + ১৫% ভ্যাট = ৫৭৫ টাকা  \n- **জরুরি ফি:** ১০,০০০ টাকা + ১৫% ভ্যাট = ১১,৫০০ টাকা\n\nযদি আপনি ই-পাসপোর্ট চাওয়া হয় তবে ফি হবে:\n\n- **সাধারণ ডেলিভারি (২১ দিন):** ৩,৪৫০ টাকা  \n- **জরুরি ডেলিভারি (১১ দিন):** ৬,৯০০ টাকা  \n- **সুপার জরুরি ডেলিভারি (৮ দিন):** ১০,৩৫০ টাকা\n\nSources: passport_6f7d900581956bef_v2_0016, passport_12e10027cfdfeeee_v2_0010, passport_5eb6c21efe103a4f_v2_0026",
+      "route": "llm",
+      "ollama_metadata": {
+        "model": "qwen3:8b",
+        "created_at": "2026-09-22T17:43:13.39569Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 134910346333,
+        "load_duration": 13399667,
+        "prompt_eval_count": 2317,
+        "prompt_eval_cached_count": 23,
+        "prompt_eval_duration": 45782532000,
+        "eval_count": 341,
+        "eval_duration": 88985306000
+      }
+    },
+    {
+      "id": "passport_02_fee",
+      "question": "পাসপোর্ট বানাতে কত টাকা লাগে?",
+      "variant": "neutral_prompt",
+      "seconds": 95.6,
+      "raw_answer": "পাসপোর্ট বানাতে মূলত নিচের ফি প্রয়োগ হয়:\n\n- **সাধারণ ফি:** ৫০০ টাকা + ১৫% ভ্যাট = **৬৫০ টাকা**\n- **জরুরি ফি:** ১০,০০০ টাকা + ১৫% ভ্যাট = **১১,৫০০ টাকা**\n\nটাকা অবশ্যই আবেদনকালে পরিশোধ করতে হবে।",
+      "display_answer": "পাসপোর্ট বানাতে মূলত নিচের ফি প্রয়োগ হয়:\n\n- **সাধারণ ফি:** ৫০০ টাকা + ১৫% ভ্যাট = **৬৫০ টাকা**\n- **জরুরি ফি:** ১০,০০০ টাকা + ১৫% ভ্যাট = **১১,৫০০ টাকা**\n\nটাকা অবশ্যই আবেদনকালে পরিশোধ করতে হবে।\n\nSources: passport_6f7d900581956bef_v2_0016, passport_12e10027cfdfeeee_v2_0010, passport_5eb6c21efe103a4f_v2_0026",
+      "route": "llm",
+      "ollama_metadata": {
+        "model": "qwen3:8b",
+        "created_at": "2026-09-22T17:44:49.034549Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 95566313292,
+        "load_duration": 14118458,
+        "prompt_eval_count": 2361,
+        "prompt_eval_cached_count": 23,
+        "prompt_eval_duration": 47790286000,
+        "eval_count": 199,
+        "eval_duration": 47340014000
+      }
+    },
+    {
+      "id": "brta_07_lost",
+      "question": "ড্রাইভিং লাইসেন্স হারিয়ে গেলে কী করতে হবে?",
+      "variant": "baseline",
+      "seconds": 86.88,
+      "raw_answer": "আবেদনপত্র সঠিক বিবেচিত হওয়ার পরে, আবেদনকারীকে তাৎক্ষণিকভাবে প্রাপ্তিস্বীকার রসিদ প্রদান করা হবে। এছাড়া, 30 (ত্রিশ) দিনের মধ্যে ড্রাইভিং লাইসেন্স প্রদান করা হবে।",
+      "display_answer": "আবেদনপত্র সঠিক বিবেচিত হওয়ার পরে, আবেদনকারীকে তাৎক্ষণিকভাবে প্রাপ্তিস্বীকার রসিদ প্রদান করা হবে। এছাড়া, 30 (ত্রিশ) দিনের মধ্যে ড্রাইভিং লাইসেন্স প্রদান করা হবে।\n\nSources: brta_4e08eb4e988d38e4_v2_0200, brta_4e08eb4e988d38e4_v2_0018, brta_4e08eb4e988d38e4_v2_0023",
+      "route": "llm",
+      "ollama_metadata": {
+        "model": "qwen3:8b",
+        "created_at": "2026-09-22T17:46:15.821814Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 86748634750,
+        "load_duration": 52054167,
+        "prompt_eval_count": 2050,
+        "prompt_eval_cached_count": 4,
+        "prompt_eval_duration": 40619937000,
+        "eval_count": 167,
+        "eval_duration": 45655363000
+      }
+    },
+    {
+      "id": "brta_07_lost",
+      "question": "ড্রাইভিং লাইসেন্স হারিয়ে গেলে কী করতে হবে?",
+      "variant": "neutral_prompt",
+      "seconds": 43.1,
+      "raw_answer": "আবেদনপত্র সঠিক বিবেচিত হওয়ার পরে, আবেদনকারীকে তাৎক্ষণিকভাবে প্রাপ্তিস্বীকার রসিদ প্রদান করা হবে। এছাড়া, 30 (ত্রিশ) দিনের মধ্যে ড্রাইভিং লাইসেন্স প্রদান করা হবে।",
+      "display_answer": "আবেদনপত্র সঠিক বিবেচিত হওয়ার পরে, আবেদনকারীকে তাৎক্ষণিকভাবে প্রাপ্তিস্বীকার রসিদ প্রদান করা হবে। এছাড়া, 30 (ত্রিশ) দিনের মধ্যে ড্রাইভিং লাইসেন্স প্রদান করা হবে।\n\nSources: brta_4e08eb4e988d38e4_v2_0200, brta_4e08eb4e988d38e4_v2_0018, brta_4e08eb4e988d38e4_v2_0023",
+      "route": "llm",
+      "ollama_metadata": {
+        "model": "qwen3:8b",
+        "created_at": "2026-09-22T17:46:58.909696Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 42951182875,
+        "load_duration": 11528708,
+        "prompt_eval_count": 2050,
+        "prompt_eval_cached_count": 2049,
+        "prompt_eval_duration": 155635000,
+        "eval_count": 167,
+        "eval_duration": 42755655000
+      }
+    }
+  ]
+}

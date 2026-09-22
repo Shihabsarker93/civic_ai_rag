@@ -1,0 +1,13 @@
+Plan: 6 calls; 0 of 22 LLM cases affected by shortcut
+Starting passport_01_documents baseline
+Completed 1 / 6
+Starting passport_01_documents neutral_prompt
+Completed 2 / 6
+Starting passport_02_fee baseline
+Completed 3 / 6
+Starting passport_02_fee neutral_prompt
+Completed 4 / 6
+Starting brta_07_lost baseline
+Completed 5 / 6
+Starting brta_07_lost neutral_prompt
+Completed 6 / 6
