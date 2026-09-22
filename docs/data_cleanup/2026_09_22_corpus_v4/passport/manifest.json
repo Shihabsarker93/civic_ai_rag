@@ -1,0 +1,2387 @@
+{
+  "version": "service_cleanup_v4",
+  "domain": "passport",
+  "search_labels": false,
+  "source_documents": 30,
+  "baseline_chunk_count": 361,
+  "candidate_chunk_count": 298,
+  "documents": [
+    {
+      "document_id": "passport_6e87d0783a373593",
+      "source": "domains/passport/data/source_snapshots/cleaned_md/5 Steps to your e-Passport.md",
+      "source_sha256": "20cf0be15ba261a9be55252bdd4da3d3ebe418c14e4722ec7c509b94bbc0c348",
+      "cleaned_path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/5 Steps to your e-Passport.md",
+      "cleaned_sha256": "c0f9c7bfa3cdb7f3f252d8abdf93f42c56bf78e838359bc2d80fd19e33ed3dfc",
+      "changes": [],
+      "review_flags": [
+        "no_web_address"
+      ],
+      "chunk_ids": [
+        "passport_6e87d0783a373593_v4_0002",
+        "passport_6e87d0783a373593_v4_0004",
+        "passport_6e87d0783a373593_v4_0005",
+        "passport_6e87d0783a373593_v4_0006",
+        "passport_6e87d0783a373593_v4_0007",
+        "passport_6e87d0783a373593_v4_0008"
+      ],
+      "retained_non_evidence_sections": [
+        {
+          "start": 0,
+          "end": 30,
+          "text": "# 5 Steps to your e-Passport\n\n"
+        },
+        {
+          "start": 147,
+          "end": 169,
+          "text": "## Application Steps\n\n"
+        }
+      ],
+      "declared_metadata": {
+        "title": "5 Steps to your e-Passport",
+        "source_pdf": "5 Steps to your e-Passport.pdf",
+        "document_type": "সাধারণ তথ্য",
+        "issuing_authority": "বহিরাগমন ও পাসপোর্ট অধিদপ্তর",
+        "language": "en",
+        "date": "2026-06-03"
+      },
+      "findings": [
+        {
+          "kind": "missing_link_target",
+          "start": 406,
+          "end": 416,
+          "line": 13,
+          "text": "Click Here"
+        },
+        {
+          "kind": "missing_link_target",
+          "start": 503,
+          "end": 513,
+          "line": 16,
+          "text": "Click Here"
+        }
+      ],
+      "context_spans": {
+        "passport_6e87d0783a373593_v4_0002": [],
+        "passport_6e87d0783a373593_v4_0004": [],
+        "passport_6e87d0783a373593_v4_0005": [],
+        "passport_6e87d0783a373593_v4_0006": [],
+        "passport_6e87d0783a373593_v4_0007": [],
+        "passport_6e87d0783a373593_v4_0008": []
+      }
+    },
+    {
+      "document_id": "passport_5eb6c21efe103a4f",
+      "source": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh Machine Readable Passport (MRP) Online Application Guide 2012.md",
+      "source_sha256": "8ce0916f4e83af158dbdbe22ed97f2b467f71c1f41d3404e33d3c9d0412875e7",
+      "cleaned_path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/Bangladesh Machine Readable Passport (MRP) Online Application Guide 2012.md",
+      "cleaned_sha256": "02c0d83fb66254bfd5de3ba06ce2afc2169729cfe93706bced0bc67b5c67ec96",
+      "changes": [
+        {
+          "reason": "unfenced_metadata",
+          "text": "title: \"Bangladesh Machine Readable Passport (MRP) Online Application Guide 2012\"\noriginal_title_bn: \"মেশিন রিডেবল পাসপোর্ট অনলাইন নির্দেশিকা'২০১২\"\ndocument_id: \"BD-MRP-GUIDE-2012-V1\"\njurisdiction: \"Bangladesh (BD)\"\nissuing_authority: \"Department of Immigration and Passports (DIP) / ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর\"\ndocument_type: \"Official Application Guidelines & Field Specifications\"\neffective_date: \"2012-01-01\"\nlanguage: \"bilingual (en, bn)\"\nrag_metadata:\nchunk_strategy: \"hierarchical_markdown_section_split\"\ncontext_denormalized: true\nembedding_optimized: true\nprimary_entity: \"Bangladesh Machine Readable Passport (MRP)\"\ntags:\n\n* Bangladesh Passport\n\n* MRP Online Application\n\n* মেশিন রিডেবল পাসপোর্ট\n\n* DIP Guidelines 2012\n\n* Passport Form Field Rules\n\n* Challan Payment\n\n"
+        }
+      ],
+      "review_flags": [
+        "original_match_unresolved",
+        "no_web_address",
+        "nonstandard_metadata_layout",
+        "dated_document_review_applicability"
+      ],
+      "chunk_ids": [
+        "passport_5eb6c21efe103a4f_v4_0001",
+        "passport_5eb6c21efe103a4f_v4_0003",
+        "passport_5eb6c21efe103a4f_v4_0004",
+        "passport_5eb6c21efe103a4f_v4_0007",
+        "passport_5eb6c21efe103a4f_v4_0008",
+        "passport_5eb6c21efe103a4f_v4_0009",
+        "passport_5eb6c21efe103a4f_v4_0010",
+        "passport_5eb6c21efe103a4f_v4_0011",
+        "passport_5eb6c21efe103a4f_v4_0012",
+        "passport_5eb6c21efe103a4f_v4_0013",
+        "passport_5eb6c21efe103a4f_v4_0014",
+        "passport_5eb6c21efe103a4f_v4_0015",
+        "passport_5eb6c21efe103a4f_v4_0017",
+        "passport_5eb6c21efe103a4f_v4_0018",
+        "passport_5eb6c21efe103a4f_v4_0019",
+        "passport_5eb6c21efe103a4f_v4_0021",
+        "passport_5eb6c21efe103a4f_v4_0022",
+        "passport_5eb6c21efe103a4f_v4_0024",
+        "passport_5eb6c21efe103a4f_v4_0025",
+        "passport_5eb6c21efe103a4f_v4_0027",
+        "passport_5eb6c21efe103a4f_v4_0028",
+        "passport_5eb6c21efe103a4f_v4_0029",
+        "passport_5eb6c21efe103a4f_v4_0030",
+        "passport_5eb6c21efe103a4f_v4_0032",
+        "passport_5eb6c21efe103a4f_v4_0033",
+        "passport_5eb6c21efe103a4f_v4_0034"
+      ],
+      "retained_non_evidence_sections": [
+        {
+          "start": 126,
+          "end": 203,
+          "text": "## 1. Document Overview & General Instructions | বিবরণ ও সাধারণ নির্দেশাবলী\n\n"
+        },
+        {
+          "start": 1707,
+          "end": 1794,
+          "text": "## 2. Field-Level Application Specifications | ক্ষেত্র-ভিত্তিক ফরম পূরণের নির্দেশাবলী\n\n"
+        },
+        {
+          "start": 1794,
+          "end": 1856,
+          "text": "### 2.1 Section A: Personal Information | ব্যক্তিগত তথ্যাবলী\n\n"
+        },
+        {
+          "start": 5376,
+          "end": 5428,
+          "text": "### 2.2 Section B: Address Details | ঠিকানা বিবরণী\n\n"
+        },
+        {
+          "start": 6627,
+          "end": 6732,
+          "text": "### 2.3 Section C: Passport Type & Previous Passport Info | পাসপোর্টের ধরন ও পূর্ববর্তী পাসপোর্টের তথ্য\n\n"
+        },
+        {
+          "start": 7444,
+          "end": 7503,
+          "text": "### 2.4 Section D: Fee Payment Details | ফি প্রদান বিবরণী\n\n"
+        },
+        {
+          "start": 8305,
+          "end": 8381,
+          "text": "## 3. Required Enclosures & Verification | প্রয়োজনীয় সংযুক্তি ও সত্যায়ন\n\n"
+        },
+        {
+          "start": 10699,
+          "end": 10766,
+          "text": "## 5. Frequently Asked Questions (FAQ) & Answers | প্রশ্ন ও উত্তর\n\n"
+        }
+      ],
+      "declared_metadata": {
+        "title": "Bangladesh Machine Readable Passport (MRP) Online Application Guide 2012",
+        "original_title_bn": "মেশিন রিডেবল পাসপোর্ট অনলাইন নির্দেশিকা'২০১২",
+        "document_id": "BD-MRP-GUIDE-2012-V1",
+        "jurisdiction": "Bangladesh (BD)",
+        "issuing_authority": "Department of Immigration and Passports (DIP) / ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর",
+        "document_type": "Official Application Guidelines & Field Specifications",
+        "effective_date": "2012-01-01",
+        "language": "bilingual (en, bn)",
+        "rag_metadata": "chunk_strategy: \"hierarchical_markdown_section_split",
+        "context_denormalized": "true",
+        "embedding_optimized": "true",
+        "primary_entity": "Bangladesh Machine Readable Passport (MRP)",
+        "tags": "* Bangladesh Passport"
+      },
+      "findings": [],
+      "context_spans": {
+        "passport_5eb6c21efe103a4f_v4_0001": [],
+        "passport_5eb6c21efe103a4f_v4_0003": [
+          {
+            "start": 76,
+            "end": 126
+          }
+        ],
+        "passport_5eb6c21efe103a4f_v4_0004": [
+          {
+            "start": 76,
+            "end": 126
+          }
+        ],
+        "passport_5eb6c21efe103a4f_v4_0007": [
+          {
+            "start": 76,
+            "end": 126
+          }
+        ],
+        "passport_5eb6c21efe103a4f_v4_0008": [
+          {
+            "start": 76,
+            "end": 126
+          }
+        ],
+        "passport_5eb6c21efe103a4f_v4_0009": [
+          {
+            "start": 76,
+            "end": 126
+          }
+        ],
+        "passport_5eb6c21efe103a4f_v4_0010": [
+          {
+            "start": 76,
+            "end": 126
+          }
+        ],
+        "passport_5eb6c21efe103a4f_v4_0011": [
+          {
+            "start": 76,
+            "end": 126
+          }
+        ],
+        "passport_5eb6c21efe103a4f_v4_0012": [
+          {
+            "start": 76,
+            "end": 126
+          }
+        ],
+        "passport_5eb6c21efe103a4f_v4_0013": [
+          {
+            "start": 76,
+            "end": 126
+          }
+        ],
+        "passport_5eb6c21efe103a4f_v4_0014": [
+          {
+            "start": 76,
+            "end": 126
+          }
+        ],
+        "passport_5eb6c21efe103a4f_v4_0015": [
+          {
+            "start": 76,
+            "end": 126
+          }
+        ],
+        "passport_5eb6c21efe103a4f_v4_0017": [
+          {
+            "start": 76,
+            "end": 126
+          }
+        ],
+        "passport_5eb6c21efe103a4f_v4_0018": [
+          {
+            "start": 76,
+            "end": 126
+          }
+        ],
+        "passport_5eb6c21efe103a4f_v4_0019": [
+          {
+            "start": 76,
+            "end": 126
+          }
+        ],
+        "passport_5eb6c21efe103a4f_v4_0021": [
+          {
+            "start": 76,
+            "end": 126
+          }
+        ],
+        "passport_5eb6c21efe103a4f_v4_0022": [
+          {
+            "start": 76,
+            "end": 126
+          }
+        ],
+        "passport_5eb6c21efe103a4f_v4_0024": [
+          {
+            "start": 76,
+            "end": 126
+          }
+        ],
+        "passport_5eb6c21efe103a4f_v4_0025": [
+          {
+            "start": 76,
+            "end": 126
+          }
+        ],
+        "passport_5eb6c21efe103a4f_v4_0027": [
+          {
+            "start": 76,
+            "end": 126
+          }
+        ],
+        "passport_5eb6c21efe103a4f_v4_0028": [
+          {
+            "start": 76,
+            "end": 126
+          }
+        ],
+        "passport_5eb6c21efe103a4f_v4_0029": [
+          {
+            "start": 76,
+            "end": 126
+          }
+        ],
+        "passport_5eb6c21efe103a4f_v4_0030": [
+          {
+            "start": 76,
+            "end": 126
+          },
+          {
+            "start": 9585,
+            "end": 10135
+          }
+        ],
+        "passport_5eb6c21efe103a4f_v4_0032": [
+          {
+            "start": 76,
+            "end": 126
+          }
+        ],
+        "passport_5eb6c21efe103a4f_v4_0033": [
+          {
+            "start": 76,
+            "end": 126
+          }
+        ],
+        "passport_5eb6c21efe103a4f_v4_0034": [
+          {
+            "start": 76,
+            "end": 126
+          }
+        ]
+      }
+    },
+    {
+      "document_id": "passport_23d845d3ab38ea43",
+      "source": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+      "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+      "cleaned_path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/Bangladesh_ePassport_FAQ.md",
+      "cleaned_sha256": "129e56b5fb40b44e1433f3603fbbeb955dd9d034ddd34baf7c34ebbaaa44d80a",
+      "changes": [
+        {
+          "reason": "authoring_boilerplate",
+          "text": "*Optimized for Knowledge Base Retrieval and Searchable Context (RAG).*\n"
+        }
+      ],
+      "review_flags": [
+        "original_match_unresolved",
+        "nonstandard_metadata_layout"
+      ],
+      "chunk_ids": [
+        "passport_23d845d3ab38ea43_v4_0002",
+        "passport_23d845d3ab38ea43_v4_0004",
+        "passport_23d845d3ab38ea43_v4_0005",
+        "passport_23d845d3ab38ea43_v4_0006",
+        "passport_23d845d3ab38ea43_v4_0007",
+        "passport_23d845d3ab38ea43_v4_0008",
+        "passport_23d845d3ab38ea43_v4_0010",
+        "passport_23d845d3ab38ea43_v4_0011",
+        "passport_23d845d3ab38ea43_v4_0012",
+        "passport_23d845d3ab38ea43_v4_0013",
+        "passport_23d845d3ab38ea43_v4_0015",
+        "passport_23d845d3ab38ea43_v4_0016",
+        "passport_23d845d3ab38ea43_v4_0017",
+        "passport_23d845d3ab38ea43_v4_0019",
+        "passport_23d845d3ab38ea43_v4_0020",
+        "passport_23d845d3ab38ea43_v4_0021",
+        "passport_23d845d3ab38ea43_v4_0022",
+        "passport_23d845d3ab38ea43_v4_0023",
+        "passport_23d845d3ab38ea43_v4_0024",
+        "passport_23d845d3ab38ea43_v4_0025",
+        "passport_23d845d3ab38ea43_v4_0026",
+        "passport_23d845d3ab38ea43_v4_0027",
+        "passport_23d845d3ab38ea43_v4_0028",
+        "passport_23d845d3ab38ea43_v4_0029",
+        "passport_23d845d3ab38ea43_v4_0030",
+        "passport_23d845d3ab38ea43_v4_0032",
+        "passport_23d845d3ab38ea43_v4_0033",
+        "passport_23d845d3ab38ea43_v4_0034",
+        "passport_23d845d3ab38ea43_v4_0035",
+        "passport_23d845d3ab38ea43_v4_0036",
+        "passport_23d845d3ab38ea43_v4_0038",
+        "passport_23d845d3ab38ea43_v4_0039",
+        "passport_23d845d3ab38ea43_v4_0040",
+        "passport_23d845d3ab38ea43_v4_0041",
+        "passport_23d845d3ab38ea43_v4_0042",
+        "passport_23d845d3ab38ea43_v4_0043",
+        "passport_23d845d3ab38ea43_v4_0044",
+        "passport_23d845d3ab38ea43_v4_0045",
+        "passport_23d845d3ab38ea43_v4_0046",
+        "passport_23d845d3ab38ea43_v4_0047",
+        "passport_23d845d3ab38ea43_v4_0048",
+        "passport_23d845d3ab38ea43_v4_0050",
+        "passport_23d845d3ab38ea43_v4_0051",
+        "passport_23d845d3ab38ea43_v4_0052",
+        "passport_23d845d3ab38ea43_v4_0053"
+      ],
+      "retained_non_evidence_sections": [
+        {
+          "start": 0,
+          "end": 56,
+          "text": "# Bangladesh ePassport Frequently Asked Questions (FAQ)\n"
+        },
+        {
+          "start": 216,
+          "end": 268,
+          "text": "## 1. Account and Settings (অ্যাকাউন্ট এবং সেটিংস)\n\n"
+        },
+        {
+          "start": 5217,
+          "end": 5256,
+          "text": "## 2. Appointments (অ্যাপয়েন্টমেন্ট)\n\n"
+        },
+        {
+          "start": 9150,
+          "end": 9187,
+          "text": "## 3. Payment & Fees (পেমেন্ট ও ফি)\n\n"
+        },
+        {
+          "start": 11705,
+          "end": 11761,
+          "text": "## 4. Application & Processing (আবেদন ও প্রক্রিয়াকরণ)\n\n"
+        },
+        {
+          "start": 23168,
+          "end": 23220,
+          "text": "## 5. Document Requirements (প্রয়োজনীয় কাগজপত্র)\n\n"
+        },
+        {
+          "start": 27745,
+          "end": 27814,
+          "text": "## 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন)\n\n"
+        },
+        {
+          "start": 37142,
+          "end": 37174,
+          "text": "## 7. Miscellaneous (অন্যান্য)\n\n"
+        }
+      ],
+      "declared_metadata": {},
+      "findings": [],
+      "context_spans": {
+        "passport_23d845d3ab38ea43_v4_0002": [],
+        "passport_23d845d3ab38ea43_v4_0004": [],
+        "passport_23d845d3ab38ea43_v4_0005": [],
+        "passport_23d845d3ab38ea43_v4_0006": [],
+        "passport_23d845d3ab38ea43_v4_0007": [],
+        "passport_23d845d3ab38ea43_v4_0008": [],
+        "passport_23d845d3ab38ea43_v4_0010": [],
+        "passport_23d845d3ab38ea43_v4_0011": [],
+        "passport_23d845d3ab38ea43_v4_0012": [],
+        "passport_23d845d3ab38ea43_v4_0013": [],
+        "passport_23d845d3ab38ea43_v4_0015": [],
+        "passport_23d845d3ab38ea43_v4_0016": [],
+        "passport_23d845d3ab38ea43_v4_0017": [],
+        "passport_23d845d3ab38ea43_v4_0019": [],
+        "passport_23d845d3ab38ea43_v4_0020": [],
+        "passport_23d845d3ab38ea43_v4_0021": [],
+        "passport_23d845d3ab38ea43_v4_0022": [],
+        "passport_23d845d3ab38ea43_v4_0023": [],
+        "passport_23d845d3ab38ea43_v4_0024": [],
+        "passport_23d845d3ab38ea43_v4_0025": [],
+        "passport_23d845d3ab38ea43_v4_0026": [],
+        "passport_23d845d3ab38ea43_v4_0027": [],
+        "passport_23d845d3ab38ea43_v4_0028": [],
+        "passport_23d845d3ab38ea43_v4_0029": [],
+        "passport_23d845d3ab38ea43_v4_0030": [],
+        "passport_23d845d3ab38ea43_v4_0032": [],
+        "passport_23d845d3ab38ea43_v4_0033": [],
+        "passport_23d845d3ab38ea43_v4_0034": [],
+        "passport_23d845d3ab38ea43_v4_0035": [],
+        "passport_23d845d3ab38ea43_v4_0036": [],
+        "passport_23d845d3ab38ea43_v4_0038": [],
+        "passport_23d845d3ab38ea43_v4_0039": [],
+        "passport_23d845d3ab38ea43_v4_0040": [],
+        "passport_23d845d3ab38ea43_v4_0041": [],
+        "passport_23d845d3ab38ea43_v4_0042": [],
+        "passport_23d845d3ab38ea43_v4_0043": [],
+        "passport_23d845d3ab38ea43_v4_0044": [],
+        "passport_23d845d3ab38ea43_v4_0045": [],
+        "passport_23d845d3ab38ea43_v4_0046": [],
+        "passport_23d845d3ab38ea43_v4_0047": [],
+        "passport_23d845d3ab38ea43_v4_0048": [],
+        "passport_23d845d3ab38ea43_v4_0050": [],
+        "passport_23d845d3ab38ea43_v4_0051": [],
+        "passport_23d845d3ab38ea43_v4_0052": [],
+        "passport_23d845d3ab38ea43_v4_0053": []
+      }
+    },
+    {
+      "document_id": "passport_09c70e4e1e93efad",
+      "source": "domains/passport/data/source_snapshots/cleaned_md/Biometric_Enrolment_Citizens_Above_6_Years.md",
+      "source_sha256": "fe351bfefeea3523b87ff37ef2f33e0e0382674aa6c1505d13e10bc5f28f4114",
+      "cleaned_path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/Biometric_Enrolment_Citizens_Above_6_Years.md",
+      "cleaned_sha256": "bf8b9440d94f0e070c342425d0b606df80bacfc737646b3bc3b1ec15bcc2dbaf",
+      "changes": [],
+      "review_flags": [
+        "original_match_unresolved",
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "chunk_ids": [
+        "passport_09c70e4e1e93efad_v4_0002",
+        "passport_09c70e4e1e93efad_v4_0004",
+        "passport_09c70e4e1e93efad_v4_0006"
+      ],
+      "retained_non_evidence_sections": [
+        {
+          "start": 0,
+          "end": 69,
+          "text": "# Enrolment of Biometric Data for Citizens Older Than 06 (Six) Years\n"
+        },
+        {
+          "start": 390,
+          "end": 439,
+          "text": "## 1. Bengali Circular Notice / বাংলা বিজ্ঞপ্তি\n\n"
+        },
+        {
+          "start": 959,
+          "end": 990,
+          "text": "## 2. English Circular Notice\n\n"
+        }
+      ],
+      "declared_metadata": {
+        "title": "Enrolment of Biometric data for the Citizens older than 06 (six) years / ই-পাসপোর্টে এনরোলমেন্ট সিস্টেমে ০৬ (ছয়) বছর ঊর্ধ্ব নাগরিকের বায়োমেট্রিক তথ্য গ্রহণ প্রসঙ্গে",
+        "source_pdf": "Enrolment of Biometric data for the Citizens older than 06 (six) years.pdf",
+        "document_type": "নির্দেশিকা / অফিসিয়াল বিজ্ঞপ্তি",
+        "issuing_authority": "Department of Immigration and Passports (DIP) / বহিরাগমন ও পাসপোর্ট অধিদপ্তর",
+        "language": "bn, en",
+        "date": "2023-10-12"
+      },
+      "findings": [],
+      "context_spans": {
+        "passport_09c70e4e1e93efad_v4_0002": [],
+        "passport_09c70e4e1e93efad_v4_0004": [],
+        "passport_09c70e4e1e93efad_v4_0006": []
+      }
+    },
+    {
+      "document_id": "passport_ff2616b59b20eb7f",
+      "source": "domains/passport/data/source_snapshots/cleaned_md/Country that supported MRV Online Application.md",
+      "source_sha256": "2c08384d56d4b8ba2243abf23addbd341c4a3d35ac0e17903b26643197ce08fc",
+      "cleaned_path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/Country that supported MRV Online Application.md",
+      "cleaned_sha256": "45aeb687abe68d02f04ad409f8e7594e831676957f1ff8e9509b5c322ac64ce3",
+      "changes": [],
+      "review_flags": [
+        "no_web_address"
+      ],
+      "chunk_ids": [
+        "passport_ff2616b59b20eb7f_v4_0002",
+        "passport_ff2616b59b20eb7f_v4_0003",
+        "passport_ff2616b59b20eb7f_v4_0004"
+      ],
+      "retained_non_evidence_sections": [
+        {
+          "start": 0,
+          "end": 49,
+          "text": "# Country that supported MRV Online Application\n\n"
+        }
+      ],
+      "declared_metadata": {
+        "title": "Country that supported MRV Online Application",
+        "source_pdf": "Country that supported MRV Online Application.pdf",
+        "document_type": "সাধারণ তথ্য",
+        "issuing_authority": "বহিরাগমন ও পাসপোর্ট অধিদপ্তর",
+        "language": "en",
+        "date": ""
+      },
+      "findings": [],
+      "context_spans": {
+        "passport_ff2616b59b20eb7f_v4_0002": [],
+        "passport_ff2616b59b20eb7f_v4_0003": [],
+        "passport_ff2616b59b20eb7f_v4_0004": []
+      }
+    },
+    {
+      "document_id": "passport_6327e051fa00a63d",
+      "source": "domains/passport/data/source_snapshots/cleaned_md/Dhaka_Cantonment_Passport_Office_Jurisdiction_Redistribution.md",
+      "source_sha256": "d1086bf92743868e3001994107e3efbfd6bedaa6a43c7cb5bd91c2c76ea63e02",
+      "cleaned_path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/Dhaka_Cantonment_Passport_Office_Jurisdiction_Redistribution.md",
+      "cleaned_sha256": "96f0779798fd5546e9f151311adfc53929722e21a4a7b014ca0562382e00a6c2",
+      "changes": [],
+      "review_flags": [
+        "original_match_unresolved",
+        "no_web_address"
+      ],
+      "chunk_ids": [
+        "passport_6327e051fa00a63d_v4_0002",
+        "passport_6327e051fa00a63d_v4_0004",
+        "passport_6327e051fa00a63d_v4_0005",
+        "passport_6327e051fa00a63d_v4_0006",
+        "passport_6327e051fa00a63d_v4_0007",
+        "passport_6327e051fa00a63d_v4_0008",
+        "passport_6327e051fa00a63d_v4_0010",
+        "passport_6327e051fa00a63d_v4_0011",
+        "passport_6327e051fa00a63d_v4_0012",
+        "passport_6327e051fa00a63d_v4_0013",
+        "passport_6327e051fa00a63d_v4_0014"
+      ],
+      "retained_non_evidence_sections": [
+        {
+          "start": 0,
+          "end": 85,
+          "text": "# Dhaka Cantonment Passport Office Jurisdiction Redistribution of e-Passport Service\n"
+        },
+        {
+          "start": 337,
+          "end": 382,
+          "text": "## 1. English Notice & Jurisdiction Details\n\n"
+        },
+        {
+          "start": 2412,
+          "end": 2508,
+          "text": "## 2. Bengali Notice & Jurisdiction Details / বাংলা বিজ্ঞপ্তি ও অধিক্ষেত্র সংক্রান্ত নির্দেশনা\n\n"
+        }
+      ],
+      "declared_metadata": {
+        "title": "Dhaka Cantonment Passport Office Jurisdiction Redistribution of e-Passport Service / ঢাকা সেনানিবাস পাসপোর্ট অফিস থেকে ই-পাসপোর্ট সেবা গ্রহণের অধিক্ষেত্র পুনঃবণ্টন সংক্রান্ত নোটিশ",
+        "source_pdf": "Dhaka Cantonment Passport Office Jurisdiction Redistribution of e-Passport Service.pdf",
+        "document_type": "অফিসিয়াল নোটিশ / নির্দেশিকা",
+        "issuing_authority": "Divisional Passport and Visa Office, Agargaon & Dhaka Cantonment Passport Office",
+        "language": "en, bn",
+        "date": "2024-09-15"
+      },
+      "findings": [],
+      "context_spans": {
+        "passport_6327e051fa00a63d_v4_0002": [],
+        "passport_6327e051fa00a63d_v4_0004": [],
+        "passport_6327e051fa00a63d_v4_0005": [],
+        "passport_6327e051fa00a63d_v4_0006": [
+          {
+            "start": 902,
+            "end": 1080
+          }
+        ],
+        "passport_6327e051fa00a63d_v4_0007": [
+          {
+            "start": 902,
+            "end": 1080
+          }
+        ],
+        "passport_6327e051fa00a63d_v4_0008": [
+          {
+            "start": 902,
+            "end": 1080
+          }
+        ],
+        "passport_6327e051fa00a63d_v4_0010": [],
+        "passport_6327e051fa00a63d_v4_0011": [],
+        "passport_6327e051fa00a63d_v4_0012": [
+          {
+            "start": 2898,
+            "end": 3091
+          }
+        ],
+        "passport_6327e051fa00a63d_v4_0013": [
+          {
+            "start": 2898,
+            "end": 3091
+          }
+        ],
+        "passport_6327e051fa00a63d_v4_0014": [
+          {
+            "start": 2898,
+            "end": 3091
+          }
+        ]
+      }
+    },
+    {
+      "document_id": "passport_13bb030adf286724",
+      "source": "domains/passport/data/source_snapshots/cleaned_md/Electronic Visa Applications Forms Frequently Asked Questions.md",
+      "source_sha256": "8cdac3f09c8922714d095f1ecbf687c0ac208fe3d2537227f0aa2664c6430bbd",
+      "cleaned_path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/Electronic Visa Applications Forms Frequently Asked Questions.md",
+      "cleaned_sha256": "d2610f292b0af49da3761e5b3f73bb3a89e5766c5085d297e6ed11fe3873806d",
+      "changes": [],
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "chunk_ids": [
+        "passport_13bb030adf286724_v4_0003",
+        "passport_13bb030adf286724_v4_0004",
+        "passport_13bb030adf286724_v4_0005",
+        "passport_13bb030adf286724_v4_0006",
+        "passport_13bb030adf286724_v4_0007",
+        "passport_13bb030adf286724_v4_0008",
+        "passport_13bb030adf286724_v4_0009",
+        "passport_13bb030adf286724_v4_0011",
+        "passport_13bb030adf286724_v4_0012",
+        "passport_13bb030adf286724_v4_0013",
+        "passport_13bb030adf286724_v4_0014"
+      ],
+      "retained_non_evidence_sections": [
+        {
+          "start": 0,
+          "end": 30,
+          "text": "# Frequently Asked Questions\n\n"
+        },
+        {
+          "start": 30,
+          "end": 59,
+          "text": "## Online Application Forms\n\n"
+        },
+        {
+          "start": 2389,
+          "end": 2429,
+          "text": "## Security, Appointments and Payments\n\n"
+        }
+      ],
+      "declared_metadata": {
+        "title": "Frequently Asked Questions - Electronic Visa Applications Forms",
+        "source_pdf": "Electronic Visa Applications Forms Frequently Asked Questions.pdf",
+        "document_type": "সাধারণ তথ্য",
+        "issuing_authority": "বহিরাগমন ও পাসপোর্ট অধিদপ্তর",
+        "language": "en",
+        "date": ""
+      },
+      "findings": [],
+      "context_spans": {
+        "passport_13bb030adf286724_v4_0003": [],
+        "passport_13bb030adf286724_v4_0004": [],
+        "passport_13bb030adf286724_v4_0005": [],
+        "passport_13bb030adf286724_v4_0006": [],
+        "passport_13bb030adf286724_v4_0007": [],
+        "passport_13bb030adf286724_v4_0008": [],
+        "passport_13bb030adf286724_v4_0009": [],
+        "passport_13bb030adf286724_v4_0011": [],
+        "passport_13bb030adf286724_v4_0012": [],
+        "passport_13bb030adf286724_v4_0013": [],
+        "passport_13bb030adf286724_v4_0014": []
+      }
+    },
+    {
+      "document_id": "passport_3ad98eef9fd80aa1",
+      "source": "domains/passport/data/source_snapshots/cleaned_md/Electronic Visa Applications Forms Instructions Page.md",
+      "source_sha256": "850ae4ff02c2c928faee3f30fc9505922a8464edcf928fd4cd70ccf0f39fff3a",
+      "cleaned_path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/Electronic Visa Applications Forms Instructions Page.md",
+      "cleaned_sha256": "c6b9d14e6041d710d38a421aceaec0ddd57c83f32d1450bf51d220eb88923bd2",
+      "changes": [],
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "chunk_ids": [
+        "passport_3ad98eef9fd80aa1_v4_0002",
+        "passport_3ad98eef9fd80aa1_v4_0003",
+        "passport_3ad98eef9fd80aa1_v4_0004",
+        "passport_3ad98eef9fd80aa1_v4_0005",
+        "passport_3ad98eef9fd80aa1_v4_0006",
+        "passport_3ad98eef9fd80aa1_v4_0007",
+        "passport_3ad98eef9fd80aa1_v4_0008"
+      ],
+      "retained_non_evidence_sections": [
+        {
+          "start": 0,
+          "end": 56,
+          "text": "# Electronic Visa Applications Forms Instructions Page\n\n"
+        }
+      ],
+      "declared_metadata": {
+        "title": "Electronic Visa Applications Forms Instructions Page",
+        "source_pdf": "Electronic Visa Applications Forms Instructions Page.pdf",
+        "document_type": "নির্দেশিকা",
+        "issuing_authority": "বহিরাগমন ও পাসপোর্ট অধিদপ্তর",
+        "language": "en",
+        "date": ""
+      },
+      "findings": [],
+      "context_spans": {
+        "passport_3ad98eef9fd80aa1_v4_0002": [],
+        "passport_3ad98eef9fd80aa1_v4_0003": [
+          {
+            "start": 72,
+            "end": 248
+          }
+        ],
+        "passport_3ad98eef9fd80aa1_v4_0004": [
+          {
+            "start": 72,
+            "end": 248
+          }
+        ],
+        "passport_3ad98eef9fd80aa1_v4_0005": [
+          {
+            "start": 72,
+            "end": 248
+          }
+        ],
+        "passport_3ad98eef9fd80aa1_v4_0006": [
+          {
+            "start": 72,
+            "end": 248
+          }
+        ],
+        "passport_3ad98eef9fd80aa1_v4_0007": [
+          {
+            "start": 72,
+            "end": 248
+          }
+        ],
+        "passport_3ad98eef9fd80aa1_v4_0008": [
+          {
+            "start": 72,
+            "end": 248
+          }
+        ]
+      }
+    },
+    {
+      "document_id": "passport_8afcf70c86f24096",
+      "source": "domains/passport/data/source_snapshots/cleaned_md/General Instructions to fill up the MRV form.md",
+      "source_sha256": "55c347c9fbcdb3501c1e13ff370a114df5875bec72fc420c9f5e70835a16101e",
+      "cleaned_path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/General Instructions to fill up the MRV form.md",
+      "cleaned_sha256": "80f248c9ccad320a13ce6ee7772151e8ef8ed5904024eaf625326e4f10ddba37",
+      "changes": [],
+      "review_flags": [
+        "no_web_address"
+      ],
+      "chunk_ids": [
+        "passport_8afcf70c86f24096_v4_0002"
+      ],
+      "retained_non_evidence_sections": [
+        {
+          "start": 0,
+          "end": 48,
+          "text": "# General Instructions to fill up the MRV form\n\n"
+        }
+      ],
+      "declared_metadata": {
+        "title": "General Instructions to fill up the MRV form",
+        "source_pdf": "General Instructions to fill up the MRV form.pdf",
+        "document_type": "নির্দেশিকা",
+        "issuing_authority": "Department of Immigration & Passports",
+        "language": "en",
+        "date": "N/A"
+      },
+      "findings": [],
+      "context_spans": {
+        "passport_8afcf70c86f24096_v4_0002": []
+      }
+    },
+    {
+      "document_id": "passport_14c01dbffa495023",
+      "source": "domains/passport/data/source_snapshots/cleaned_md/Machine Readable Visa Application Form.md",
+      "source_sha256": "856431df9385550c15e5174ad2f6d37b8b34db8afb6be46f2a27c88c9d170409",
+      "cleaned_path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/Machine Readable Visa Application Form.md",
+      "cleaned_sha256": "78108b9ea0908d15a01295e4536536c9b90f733bda720927f71ffb4e4f8ec256",
+      "changes": [],
+      "review_flags": [
+        "no_web_address"
+      ],
+      "chunk_ids": [
+        "passport_14c01dbffa495023_v4_0001",
+        "passport_14c01dbffa495023_v4_0002",
+        "passport_14c01dbffa495023_v4_0003",
+        "passport_14c01dbffa495023_v4_0004",
+        "passport_14c01dbffa495023_v4_0005",
+        "passport_14c01dbffa495023_v4_0006",
+        "passport_14c01dbffa495023_v4_0007",
+        "passport_14c01dbffa495023_v4_0008",
+        "passport_14c01dbffa495023_v4_0009",
+        "passport_14c01dbffa495023_v4_0010",
+        "passport_14c01dbffa495023_v4_0011",
+        "passport_14c01dbffa495023_v4_0012",
+        "passport_14c01dbffa495023_v4_0013"
+      ],
+      "retained_non_evidence_sections": [],
+      "declared_metadata": {
+        "title": "Machine Readable Visa Application Form",
+        "source_pdf": "Machine Readable Visa Application Form.pdf",
+        "document_type": "আবেদন ফরম (Application Form)",
+        "issuing_authority": "Government of the People's Republic of Bangladesh, Department of Immigration & Passports",
+        "language": "en",
+        "date": "N/A"
+      },
+      "findings": [],
+      "context_spans": {
+        "passport_14c01dbffa495023_v4_0001": [],
+        "passport_14c01dbffa495023_v4_0002": [
+          {
+            "start": 40,
+            "end": 572
+          }
+        ],
+        "passport_14c01dbffa495023_v4_0003": [
+          {
+            "start": 40,
+            "end": 572
+          }
+        ],
+        "passport_14c01dbffa495023_v4_0004": [
+          {
+            "start": 40,
+            "end": 572
+          }
+        ],
+        "passport_14c01dbffa495023_v4_0005": [
+          {
+            "start": 40,
+            "end": 572
+          }
+        ],
+        "passport_14c01dbffa495023_v4_0006": [
+          {
+            "start": 40,
+            "end": 572
+          }
+        ],
+        "passport_14c01dbffa495023_v4_0007": [
+          {
+            "start": 40,
+            "end": 572
+          }
+        ],
+        "passport_14c01dbffa495023_v4_0008": [
+          {
+            "start": 40,
+            "end": 572
+          }
+        ],
+        "passport_14c01dbffa495023_v4_0009": [
+          {
+            "start": 40,
+            "end": 572
+          }
+        ],
+        "passport_14c01dbffa495023_v4_0010": [
+          {
+            "start": 40,
+            "end": 572
+          }
+        ],
+        "passport_14c01dbffa495023_v4_0011": [
+          {
+            "start": 40,
+            "end": 572
+          }
+        ],
+        "passport_14c01dbffa495023_v4_0012": [
+          {
+            "start": 40,
+            "end": 572
+          }
+        ],
+        "passport_14c01dbffa495023_v4_0013": [
+          {
+            "start": 40,
+            "end": 572
+          }
+        ]
+      }
+    },
+    {
+      "document_id": "passport_c238b898a2d60cbf",
+      "source": "domains/passport/data/source_snapshots/cleaned_md/Types and Essential Documents of Visa.md",
+      "source_sha256": "2323393e9c804c0d730ede2764bf79fc7aecd9bc54b5a57e5189c62d62b06d4e",
+      "cleaned_path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/Types and Essential Documents of Visa.md",
+      "cleaned_sha256": "f55abe4ac54f0b4762badbcbe3846ef524db6621f745a840a29568b8f2b9d843",
+      "changes": [],
+      "review_flags": [
+        "no_web_address"
+      ],
+      "chunk_ids": [
+        "passport_c238b898a2d60cbf_v4_0001",
+        "passport_c238b898a2d60cbf_v4_0003",
+        "passport_c238b898a2d60cbf_v4_0004",
+        "passport_c238b898a2d60cbf_v4_0005",
+        "passport_c238b898a2d60cbf_v4_0006",
+        "passport_c238b898a2d60cbf_v4_0007",
+        "passport_c238b898a2d60cbf_v4_0008",
+        "passport_c238b898a2d60cbf_v4_0009",
+        "passport_c238b898a2d60cbf_v4_0010",
+        "passport_c238b898a2d60cbf_v4_0011",
+        "passport_c238b898a2d60cbf_v4_0012",
+        "passport_c238b898a2d60cbf_v4_0013",
+        "passport_c238b898a2d60cbf_v4_0014",
+        "passport_c238b898a2d60cbf_v4_0015",
+        "passport_c238b898a2d60cbf_v4_0016",
+        "passport_c238b898a2d60cbf_v4_0017",
+        "passport_c238b898a2d60cbf_v4_0018",
+        "passport_c238b898a2d60cbf_v4_0019",
+        "passport_c238b898a2d60cbf_v4_0020",
+        "passport_c238b898a2d60cbf_v4_0021",
+        "passport_c238b898a2d60cbf_v4_0022",
+        "passport_c238b898a2d60cbf_v4_0023",
+        "passport_c238b898a2d60cbf_v4_0024",
+        "passport_c238b898a2d60cbf_v4_0025",
+        "passport_c238b898a2d60cbf_v4_0026",
+        "passport_c238b898a2d60cbf_v4_0027",
+        "passport_c238b898a2d60cbf_v4_0028",
+        "passport_c238b898a2d60cbf_v4_0029",
+        "passport_c238b898a2d60cbf_v4_0030",
+        "passport_c238b898a2d60cbf_v4_0031",
+        "passport_c238b898a2d60cbf_v4_0032"
+      ],
+      "retained_non_evidence_sections": [
+        {
+          "start": 226,
+          "end": 263,
+          "text": "## Visa Categories and Requirements\n\n"
+        }
+      ],
+      "declared_metadata": {
+        "title": "Types and Essential Documents of Visa",
+        "source_pdf": "Types and Essential Documents of Visa.pdf",
+        "document_type": "নির্দেশিকা / Visa Guidelines",
+        "issuing_authority": "Department of Immigration and Passports, Government of the People's Republic of Bangladesh",
+        "language": "en",
+        "date": "N/A"
+      },
+      "findings": [],
+      "context_spans": {
+        "passport_c238b898a2d60cbf_v4_0001": [],
+        "passport_c238b898a2d60cbf_v4_0003": [
+          {
+            "start": 39,
+            "end": 226
+          }
+        ],
+        "passport_c238b898a2d60cbf_v4_0004": [
+          {
+            "start": 39,
+            "end": 226
+          }
+        ],
+        "passport_c238b898a2d60cbf_v4_0005": [
+          {
+            "start": 39,
+            "end": 226
+          }
+        ],
+        "passport_c238b898a2d60cbf_v4_0006": [
+          {
+            "start": 39,
+            "end": 226
+          }
+        ],
+        "passport_c238b898a2d60cbf_v4_0007": [
+          {
+            "start": 39,
+            "end": 226
+          }
+        ],
+        "passport_c238b898a2d60cbf_v4_0008": [
+          {
+            "start": 39,
+            "end": 226
+          }
+        ],
+        "passport_c238b898a2d60cbf_v4_0009": [
+          {
+            "start": 39,
+            "end": 226
+          }
+        ],
+        "passport_c238b898a2d60cbf_v4_0010": [
+          {
+            "start": 39,
+            "end": 226
+          }
+        ],
+        "passport_c238b898a2d60cbf_v4_0011": [
+          {
+            "start": 39,
+            "end": 226
+          }
+        ],
+        "passport_c238b898a2d60cbf_v4_0012": [
+          {
+            "start": 39,
+            "end": 226
+          }
+        ],
+        "passport_c238b898a2d60cbf_v4_0013": [
+          {
+            "start": 39,
+            "end": 226
+          }
+        ],
+        "passport_c238b898a2d60cbf_v4_0014": [
+          {
+            "start": 39,
+            "end": 226
+          }
+        ],
+        "passport_c238b898a2d60cbf_v4_0015": [
+          {
+            "start": 39,
+            "end": 226
+          }
+        ],
+        "passport_c238b898a2d60cbf_v4_0016": [
+          {
+            "start": 39,
+            "end": 226
+          }
+        ],
+        "passport_c238b898a2d60cbf_v4_0017": [
+          {
+            "start": 39,
+            "end": 226
+          }
+        ],
+        "passport_c238b898a2d60cbf_v4_0018": [
+          {
+            "start": 39,
+            "end": 226
+          }
+        ],
+        "passport_c238b898a2d60cbf_v4_0019": [
+          {
+            "start": 39,
+            "end": 226
+          }
+        ],
+        "passport_c238b898a2d60cbf_v4_0020": [
+          {
+            "start": 39,
+            "end": 226
+          }
+        ],
+        "passport_c238b898a2d60cbf_v4_0021": [
+          {
+            "start": 39,
+            "end": 226
+          }
+        ],
+        "passport_c238b898a2d60cbf_v4_0022": [
+          {
+            "start": 39,
+            "end": 226
+          }
+        ],
+        "passport_c238b898a2d60cbf_v4_0023": [
+          {
+            "start": 39,
+            "end": 226
+          }
+        ],
+        "passport_c238b898a2d60cbf_v4_0024": [
+          {
+            "start": 39,
+            "end": 226
+          }
+        ],
+        "passport_c238b898a2d60cbf_v4_0025": [
+          {
+            "start": 39,
+            "end": 226
+          }
+        ],
+        "passport_c238b898a2d60cbf_v4_0026": [
+          {
+            "start": 39,
+            "end": 226
+          }
+        ],
+        "passport_c238b898a2d60cbf_v4_0027": [
+          {
+            "start": 39,
+            "end": 226
+          }
+        ],
+        "passport_c238b898a2d60cbf_v4_0028": [
+          {
+            "start": 39,
+            "end": 226
+          }
+        ],
+        "passport_c238b898a2d60cbf_v4_0029": [
+          {
+            "start": 39,
+            "end": 226
+          }
+        ],
+        "passport_c238b898a2d60cbf_v4_0030": [
+          {
+            "start": 39,
+            "end": 226
+          }
+        ],
+        "passport_c238b898a2d60cbf_v4_0031": [
+          {
+            "start": 39,
+            "end": 226
+          }
+        ],
+        "passport_c238b898a2d60cbf_v4_0032": [
+          {
+            "start": 39,
+            "end": 226
+          }
+        ]
+      }
+    },
+    {
+      "document_id": "passport_f2c0d221c70d21f2",
+      "source": "domains/passport/data/source_snapshots/cleaned_md/Urgent Applications e-Passport.md",
+      "source_sha256": "0f56d10a5a201fbeb31c35857660ef5e83438f9364e749a2110fbed805da7646",
+      "cleaned_path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/Urgent Applications e-Passport.md",
+      "cleaned_sha256": "9fbf89052afa78ae40c91ba36e501689c052df7e43c26ac9c9926ada4c32b4d4",
+      "changes": [],
+      "review_flags": [
+        "no_web_address"
+      ],
+      "chunk_ids": [
+        "passport_f2c0d221c70d21f2_v4_0002",
+        "passport_f2c0d221c70d21f2_v4_0003",
+        "passport_f2c0d221c70d21f2_v4_0004",
+        "passport_f2c0d221c70d21f2_v4_0005",
+        "passport_f2c0d221c70d21f2_v4_0006",
+        "passport_f2c0d221c70d21f2_v4_0007"
+      ],
+      "retained_non_evidence_sections": [
+        {
+          "start": 0,
+          "end": 23,
+          "text": "# Urgent Applications\n\n"
+        }
+      ],
+      "declared_metadata": {
+        "title": "Urgent Applications",
+        "source_pdf": "Urgent Applications.pdf",
+        "document_type": "সাধারণ তথ্য",
+        "issuing_authority": "বহিরাগমন ও পাসপোর্ট অধিদপ্তর",
+        "language": "en",
+        "date": "2026-06-03"
+      },
+      "findings": [],
+      "context_spans": {
+        "passport_f2c0d221c70d21f2_v4_0002": [],
+        "passport_f2c0d221c70d21f2_v4_0003": [],
+        "passport_f2c0d221c70d21f2_v4_0004": [],
+        "passport_f2c0d221c70d21f2_v4_0005": [],
+        "passport_f2c0d221c70d21f2_v4_0006": [],
+        "passport_f2c0d221c70d21f2_v4_0007": []
+      }
+    },
+    {
+      "document_id": "passport_12e10027cfdfeeee",
+      "source": "domains/passport/data/source_snapshots/cleaned_md/e-Passport Fees and Payment Options.md",
+      "source_sha256": "9b629ab56ed0caa11414d1f5095cf91d85d179af4e910cfcc93bee44af11d7d8",
+      "cleaned_path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/e-Passport Fees and Payment Options.md",
+      "cleaned_sha256": "cf004e0cd0f1806088ef95756a196395d0e2acd53196334a8811e6a2ef6e791c",
+      "changes": [],
+      "review_flags": [
+        "no_web_address"
+      ],
+      "chunk_ids": [
+        "passport_12e10027cfdfeeee_v4_0001",
+        "passport_12e10027cfdfeeee_v4_0002",
+        "passport_12e10027cfdfeeee_v4_0003",
+        "passport_12e10027cfdfeeee_v4_0004",
+        "passport_12e10027cfdfeeee_v4_0005",
+        "passport_12e10027cfdfeeee_v4_0007",
+        "passport_12e10027cfdfeeee_v4_0008",
+        "passport_12e10027cfdfeeee_v4_0009",
+        "passport_12e10027cfdfeeee_v4_0010",
+        "passport_12e10027cfdfeeee_v4_0012",
+        "passport_12e10027cfdfeeee_v4_0013",
+        "passport_12e10027cfdfeeee_v4_0014",
+        "passport_12e10027cfdfeeee_v4_0015",
+        "passport_12e10027cfdfeeee_v4_0017",
+        "passport_12e10027cfdfeeee_v4_0018",
+        "passport_12e10027cfdfeeee_v4_0019",
+        "passport_12e10027cfdfeeee_v4_0020"
+      ],
+      "retained_non_evidence_sections": [
+        {
+          "start": 1473,
+          "end": 1535,
+          "text": "## e-Passport Fees for Inside Bangladesh (Including 15% VAT)\n\n"
+        },
+        {
+          "start": 3040,
+          "end": 3104,
+          "text": "## e-Passport Fees for Bangladesh Mission's General Applicants\n\n"
+        },
+        {
+          "start": 4295,
+          "end": 4360,
+          "text": "## e-Passport Fees for Bangladesh Mission's Labors and Students\n\n"
+        }
+      ],
+      "declared_metadata": {
+        "title": "e-Passport Fees and Payment Options",
+        "source_pdf": "e-Passport Fees and Payment Options.pdf",
+        "document_type": "নির্দেশিকা / ফি ও পেমেন্ট সংক্রান্ত তথ্য",
+        "issuing_authority": "বহিরাগমন ও পাসপোর্ট অধিদপ্তর",
+        "language": "en",
+        "date": "2026-07-12"
+      },
+      "findings": [
+        {
+          "kind": "missing_link_target",
+          "start": 546,
+          "end": 556,
+          "line": 13,
+          "text": "Click here"
+        },
+        {
+          "kind": "missing_link_target",
+          "start": 625,
+          "end": 635,
+          "line": 14,
+          "text": "Click here"
+        },
+        {
+          "kind": "missing_link_target",
+          "start": 707,
+          "end": 717,
+          "line": 15,
+          "text": "Click here"
+        },
+        {
+          "kind": "missing_link_target",
+          "start": 848,
+          "end": 858,
+          "line": 18,
+          "text": "Click Here"
+        },
+        {
+          "kind": "missing_link_target",
+          "start": 948,
+          "end": 958,
+          "line": 19,
+          "text": "Click Here"
+        }
+      ],
+      "context_spans": {
+        "passport_12e10027cfdfeeee_v4_0001": [],
+        "passport_12e10027cfdfeeee_v4_0002": [
+          {
+            "start": 37,
+            "end": 67
+          }
+        ],
+        "passport_12e10027cfdfeeee_v4_0003": [
+          {
+            "start": 37,
+            "end": 67
+          },
+          {
+            "start": 96,
+            "end": 150
+          }
+        ],
+        "passport_12e10027cfdfeeee_v4_0004": [
+          {
+            "start": 37,
+            "end": 67
+          },
+          {
+            "start": 96,
+            "end": 150
+          }
+        ],
+        "passport_12e10027cfdfeeee_v4_0005": [
+          {
+            "start": 37,
+            "end": 67
+          }
+        ],
+        "passport_12e10027cfdfeeee_v4_0007": [
+          {
+            "start": 37,
+            "end": 67
+          }
+        ],
+        "passport_12e10027cfdfeeee_v4_0008": [
+          {
+            "start": 37,
+            "end": 67
+          }
+        ],
+        "passport_12e10027cfdfeeee_v4_0009": [
+          {
+            "start": 37,
+            "end": 67
+          }
+        ],
+        "passport_12e10027cfdfeeee_v4_0010": [
+          {
+            "start": 37,
+            "end": 67
+          }
+        ],
+        "passport_12e10027cfdfeeee_v4_0012": [
+          {
+            "start": 37,
+            "end": 67
+          }
+        ],
+        "passport_12e10027cfdfeeee_v4_0013": [
+          {
+            "start": 37,
+            "end": 67
+          }
+        ],
+        "passport_12e10027cfdfeeee_v4_0014": [
+          {
+            "start": 37,
+            "end": 67
+          }
+        ],
+        "passport_12e10027cfdfeeee_v4_0015": [
+          {
+            "start": 37,
+            "end": 67
+          }
+        ],
+        "passport_12e10027cfdfeeee_v4_0017": [
+          {
+            "start": 37,
+            "end": 67
+          }
+        ],
+        "passport_12e10027cfdfeeee_v4_0018": [
+          {
+            "start": 37,
+            "end": 67
+          }
+        ],
+        "passport_12e10027cfdfeeee_v4_0019": [
+          {
+            "start": 37,
+            "end": 67
+          }
+        ],
+        "passport_12e10027cfdfeeee_v4_0020": [
+          {
+            "start": 37,
+            "end": 67
+          }
+        ]
+      }
+    },
+    {
+      "document_id": "passport_0b74faa4d85a2a58",
+      "source": "domains/passport/data/source_snapshots/cleaned_md/অনলাইন সেবাসমূহ (নাগরিক ই-সেবাসমূহের তালিকা).md",
+      "source_sha256": "63aad859e13c4416b524e8c7280c02b0cff81de0320bcab222cbd8e2461bd292",
+      "cleaned_path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/অনলাইন সেবাসমূহ (নাগরিক ই-সেবাসমূহের তালিকা).md",
+      "cleaned_sha256": "94ee6d13d229ff5ad0930ba8bb7412ff788a85707629667217ab1741cf43d572",
+      "changes": [],
+      "review_flags": [
+        "no_web_address"
+      ],
+      "chunk_ids": [
+        "passport_0b74faa4d85a2a58_v4_0003",
+        "passport_0b74faa4d85a2a58_v4_0004",
+        "passport_0b74faa4d85a2a58_v4_0005",
+        "passport_0b74faa4d85a2a58_v4_0006",
+        "passport_0b74faa4d85a2a58_v4_0007"
+      ],
+      "retained_non_evidence_sections": [
+        {
+          "start": 0,
+          "end": 51,
+          "text": "# ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর - অনলাইন সেবাসমূহ\n\n"
+        },
+        {
+          "start": 51,
+          "end": 82,
+          "text": "## নাগরিক ই-সেবাসমূহের তালিকা\n\n"
+        }
+      ],
+      "declared_metadata": {
+        "title": "অনলাইন সেবাসমূহ (নাগরিক ই-সেবাসমূহের তালিকা)",
+        "source_pdf": "নাগরিক ই-সেবাসমূহের তালিকা.pdf",
+        "document_type": "নাগরিক ই-সেবাসমূহের তালিকা",
+        "issuing_authority": "ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর",
+        "language": "bn",
+        "date": "N/A"
+      },
+      "findings": [],
+      "context_spans": {
+        "passport_0b74faa4d85a2a58_v4_0003": [],
+        "passport_0b74faa4d85a2a58_v4_0004": [],
+        "passport_0b74faa4d85a2a58_v4_0005": [],
+        "passport_0b74faa4d85a2a58_v4_0006": [],
+        "passport_0b74faa4d85a2a58_v4_0007": []
+      }
+    },
+    {
+      "document_id": "passport_9f4e9ffe9f2a07f4",
+      "source": "domains/passport/data/source_snapshots/cleaned_md/ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী.md",
+      "source_sha256": "f0bc6e1384dd491baff1dc91061abdd516b283e0e2751cdd793151b09095c61b",
+      "cleaned_path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী.md",
+      "cleaned_sha256": "ba83ebd1ce02bea874b2ab9079dd85fb24a2bd1f6fa5132590b479120895a689",
+      "changes": [],
+      "review_flags": [
+        "no_web_address"
+      ],
+      "chunk_ids": [
+        "passport_9f4e9ffe9f2a07f4_v4_0001",
+        "passport_9f4e9ffe9f2a07f4_v4_0002",
+        "passport_9f4e9ffe9f2a07f4_v4_0003",
+        "passport_9f4e9ffe9f2a07f4_v4_0004",
+        "passport_9f4e9ffe9f2a07f4_v4_0005",
+        "passport_9f4e9ffe9f2a07f4_v4_0006"
+      ],
+      "retained_non_evidence_sections": [],
+      "declared_metadata": {
+        "title": "ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী",
+        "source_pdf": "ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী.pdf",
+        "document_type": "নির্দেশিকা",
+        "issuing_authority": "বহিরাগমন ও পাসপোর্ট অধিদপ্তর, সুরক্ষা সেবা বিভাগ, স্বরাষ্ট্র মন্ত্রণালয়",
+        "language": "bn",
+        "date": "2026-08-03"
+      },
+      "findings": [],
+      "context_spans": {
+        "passport_9f4e9ffe9f2a07f4_v4_0001": [],
+        "passport_9f4e9ffe9f2a07f4_v4_0002": [
+          {
+            "start": 35,
+            "end": 66
+          }
+        ],
+        "passport_9f4e9ffe9f2a07f4_v4_0003": [
+          {
+            "start": 35,
+            "end": 66
+          }
+        ],
+        "passport_9f4e9ffe9f2a07f4_v4_0004": [
+          {
+            "start": 35,
+            "end": 66
+          }
+        ],
+        "passport_9f4e9ffe9f2a07f4_v4_0005": [
+          {
+            "start": 35,
+            "end": 66
+          }
+        ],
+        "passport_9f4e9ffe9f2a07f4_v4_0006": [
+          {
+            "start": 35,
+            "end": 66
+          }
+        ]
+      }
+    },
+    {
+      "document_id": "passport_01062cca22f95c06",
+      "source": "domains/passport/data/source_snapshots/cleaned_md/চালুকৃত ই-পাসপোর্ট অফিসগুলির তালিকা.md",
+      "source_sha256": "682e8c25515de744c8dcddbaa0300cc6e47a1009202660ebd04a8af52050661d",
+      "cleaned_path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/চালুকৃত ই-পাসপোর্ট অফিসগুলির তালিকা.md",
+      "cleaned_sha256": "86972a2d515fcc60604ffe2c08b413b7f21f49a4f1e34c540639e747f7051193",
+      "changes": [],
+      "review_flags": [
+        "no_web_address",
+        "nonstandard_metadata_layout"
+      ],
+      "chunk_ids": [
+        "passport_01062cca22f95c06_v4_0001",
+        "passport_01062cca22f95c06_v4_0002",
+        "passport_01062cca22f95c06_v4_0003",
+        "passport_01062cca22f95c06_v4_0004",
+        "passport_01062cca22f95c06_v4_0005"
+      ],
+      "retained_non_evidence_sections": [],
+      "declared_metadata": {},
+      "findings": [
+        {
+          "kind": "embedded_metadata",
+          "start": 88,
+          "end": 99,
+          "line": 2,
+          "text": "source_pdf:"
+        }
+      ],
+      "context_spans": {
+        "passport_01062cca22f95c06_v4_0001": [],
+        "passport_01062cca22f95c06_v4_0002": [],
+        "passport_01062cca22f95c06_v4_0003": [
+          {
+            "start": 308,
+            "end": 399
+          }
+        ],
+        "passport_01062cca22f95c06_v4_0004": [],
+        "passport_01062cca22f95c06_v4_0005": [
+          {
+            "start": 3356,
+            "end": 3430
+          }
+        ]
+      }
+    },
+    {
+      "document_id": "passport_a4d61a4d583daa54",
+      "source": "domains/passport/data/source_snapshots/cleaned_md/পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর আবেদন ফরম.md",
+      "source_sha256": "8a3d17fc0dcaa8044c2c1da55f1247561570050576aee18e1783e028b8fdfb34",
+      "cleaned_path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর আবেদন ফরম.md",
+      "cleaned_sha256": "ba4be3728abb5a73886f488e522aa74cbb81ffe6ad30b3317e94a9941302572f",
+      "changes": [],
+      "review_flags": [
+        "no_web_address"
+      ],
+      "chunk_ids": [
+        "passport_a4d61a4d583daa54_v4_0003",
+        "passport_a4d61a4d583daa54_v4_0004",
+        "passport_a4d61a4d583daa54_v4_0005",
+        "passport_a4d61a4d583daa54_v4_0006",
+        "passport_a4d61a4d583daa54_v4_0007",
+        "passport_a4d61a4d583daa54_v4_0008",
+        "passport_a4d61a4d583daa54_v4_0010",
+        "passport_a4d61a4d583daa54_v4_0011",
+        "passport_a4d61a4d583daa54_v4_0012",
+        "passport_a4d61a4d583daa54_v4_0013",
+        "passport_a4d61a4d583daa54_v4_0015",
+        "passport_a4d61a4d583daa54_v4_0016",
+        "passport_a4d61a4d583daa54_v4_0017",
+        "passport_a4d61a4d583daa54_v4_0018",
+        "passport_a4d61a4d583daa54_v4_0019",
+        "passport_a4d61a4d583daa54_v4_0020"
+      ],
+      "retained_non_evidence_sections": [
+        {
+          "start": 0,
+          "end": 32,
+          "text": "# গণপ্রজাতন্ত্রী বাংলাদেশ সরকার\n"
+        },
+        {
+          "start": 32,
+          "end": 65,
+          "text": "## বহিরাগমন ও পাসপোর্ট অধিদপ্তর\n\n"
+        },
+        {
+          "start": 2046,
+          "end": 2104,
+          "text": "## ৬. চাহিদাকৃত সংশোধন (Required Correction Information)\n\n"
+        },
+        {
+          "start": 3465,
+          "end": 3518,
+          "text": "## ৯. অফিসের ব্যবহারের জন্য (For Official Use Only)\n\n"
+        }
+      ],
+      "declared_metadata": {
+        "title": "রি-ইস্যু/তথ্য পরিবর্তন/সংশোধন আবেদন ফরম (Re-Issue/Information Alteration/Correction Application Form)",
+        "source_pdf": "পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর আবেদন ফরম.pdf",
+        "document_type": "আবেদন ফরম / নির্দেশিকা",
+        "issuing_authority": "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার, বহিরাগমন ও পাসপোর্ট অধিদপ্তর",
+        "language": "bn, en",
+        "date": "2026-09-16"
+      },
+      "findings": [],
+      "context_spans": {
+        "passport_a4d61a4d583daa54_v4_0003": [],
+        "passport_a4d61a4d583daa54_v4_0004": [],
+        "passport_a4d61a4d583daa54_v4_0005": [],
+        "passport_a4d61a4d583daa54_v4_0006": [],
+        "passport_a4d61a4d583daa54_v4_0007": [],
+        "passport_a4d61a4d583daa54_v4_0008": [],
+        "passport_a4d61a4d583daa54_v4_0010": [],
+        "passport_a4d61a4d583daa54_v4_0011": [],
+        "passport_a4d61a4d583daa54_v4_0012": [],
+        "passport_a4d61a4d583daa54_v4_0013": [],
+        "passport_a4d61a4d583daa54_v4_0015": [],
+        "passport_a4d61a4d583daa54_v4_0016": [],
+        "passport_a4d61a4d583daa54_v4_0017": [],
+        "passport_a4d61a4d583daa54_v4_0018": [],
+        "passport_a4d61a4d583daa54_v4_0019": [],
+        "passport_a4d61a4d583daa54_v4_0020": []
+      }
+    },
+    {
+      "document_id": "passport_3fcbc40c98aa80bc",
+      "source": "domains/passport/data/source_snapshots/cleaned_md/পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর নিয়মাবলী.md",
+      "source_sha256": "c78d5d5c11702f2a935412c5bd0595c11e7f015a480d70e6f32f03c9fecc6811",
+      "cleaned_path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর নিয়মাবলী.md",
+      "cleaned_sha256": "132c1ba864facce1255f1eb4ddf34d6f67f8bbde339e099c34e64c3617f3cfc5",
+      "changes": [],
+      "review_flags": [
+        "no_web_address"
+      ],
+      "chunk_ids": [
+        "passport_3fcbc40c98aa80bc_v4_0002",
+        "passport_3fcbc40c98aa80bc_v4_0003",
+        "passport_3fcbc40c98aa80bc_v4_0004",
+        "passport_3fcbc40c98aa80bc_v4_0005",
+        "passport_3fcbc40c98aa80bc_v4_0006",
+        "passport_3fcbc40c98aa80bc_v4_0007",
+        "passport_3fcbc40c98aa80bc_v4_0008",
+        "passport_3fcbc40c98aa80bc_v4_0009"
+      ],
+      "retained_non_evidence_sections": [
+        {
+          "start": 0,
+          "end": 76,
+          "text": "# পাসপোর্ট (এমআরপি) রি-ইস্যু/তথ্য পরিবর্তন/সংশোধন এর নিয়মাবলী ও আবেদন ফরম\n\n"
+        }
+      ],
+      "declared_metadata": {
+        "title": "পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর নিয়মাবলী ও আবেদন ফরম",
+        "source_pdf": "পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর নিয়মাবলী.pdf",
+        "document_type": "সাধারণ তথ্য / নির্দেশিকা",
+        "issuing_authority": "বহিরাগমন ও পাসপোর্ট অধিদপ্তর",
+        "language": "bn",
+        "date": "2026-09-16"
+      },
+      "findings": [],
+      "context_spans": {
+        "passport_3fcbc40c98aa80bc_v4_0002": [],
+        "passport_3fcbc40c98aa80bc_v4_0003": [],
+        "passport_3fcbc40c98aa80bc_v4_0004": [
+          {
+            "start": 1010,
+            "end": 1122
+          }
+        ],
+        "passport_3fcbc40c98aa80bc_v4_0005": [
+          {
+            "start": 1010,
+            "end": 1122
+          }
+        ],
+        "passport_3fcbc40c98aa80bc_v4_0006": [
+          {
+            "start": 1010,
+            "end": 1122
+          }
+        ],
+        "passport_3fcbc40c98aa80bc_v4_0007": [
+          {
+            "start": 1010,
+            "end": 1122
+          }
+        ],
+        "passport_3fcbc40c98aa80bc_v4_0008": [
+          {
+            "start": 1010,
+            "end": 1122
+          }
+        ],
+        "passport_3fcbc40c98aa80bc_v4_0009": []
+      }
+    },
+    {
+      "document_id": "passport_73ac41f2327257f9",
+      "source": "domains/passport/data/source_snapshots/cleaned_md/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.md",
+      "source_sha256": "11f8f5bb9835c318f2ee6fda5b64e345563234278c88ac3062d5e7a89d3d8fe9",
+      "cleaned_path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.md",
+      "cleaned_sha256": "f44ef2297a8775519d8a5f716f55c3acedf305033904fae914896c8ebf8a01da",
+      "changes": [],
+      "review_flags": [
+        "no_web_address"
+      ],
+      "chunk_ids": [
+        "passport_73ac41f2327257f9_v4_0002",
+        "passport_73ac41f2327257f9_v4_0003",
+        "passport_73ac41f2327257f9_v4_0004"
+      ],
+      "retained_non_evidence_sections": [
+        {
+          "start": 0,
+          "end": 67,
+          "text": "# Documents need to be carried while enrolment at Passport offices\n"
+        }
+      ],
+      "declared_metadata": {
+        "title": "Documents need to be carried while enrolment at Passport offices / পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে",
+        "source_pdf": "পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.pdf",
+        "document_type": "সাধারণ তথ্য",
+        "issuing_authority": "বহিরাগমন ও পাসপোর্ট অধিদপ্তর",
+        "language": "en/bn",
+        "date": "2025-05-07"
+      },
+      "findings": [],
+      "context_spans": {
+        "passport_73ac41f2327257f9_v4_0002": [],
+        "passport_73ac41f2327257f9_v4_0003": [],
+        "passport_73ac41f2327257f9_v4_0004": []
+      }
+    },
+    {
+      "document_id": "passport_e6ba843f91f57731",
+      "source": "domains/passport/data/source_snapshots/cleaned_md/পাসপোর্ট ও ভিসা সংক্রান্ত কল সেন্টার সেবা.md",
+      "source_sha256": "768dfecbe1b3705607d56a178417ef5d9df6cdda00aff8183a9dcae7e1cfffeb",
+      "cleaned_path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/পাসপোর্ট ও ভিসা সংক্রান্ত কল সেন্টার সেবা.md",
+      "cleaned_sha256": "686625bdb8fed559d056a04ace93ec05e52107d6987fb12c779dda367b710724",
+      "changes": [],
+      "review_flags": [
+        "no_web_address"
+      ],
+      "chunk_ids": [
+        "passport_e6ba843f91f57731_v4_0002",
+        "passport_e6ba843f91f57731_v4_0003"
+      ],
+      "retained_non_evidence_sections": [
+        {
+          "start": 0,
+          "end": 58,
+          "text": "# নিউজ কর্ণার: পাসপোর্ট ও ভিসা সংক্রান্ত কল সেন্টার তথ্য\n\n"
+        }
+      ],
+      "declared_metadata": {
+        "title": "পাসপোর্ট ও ভিসা সংক্রান্ত কল সেন্টার সেবা",
+        "source_pdf": "নিউজ কর্ণার.pdf",
+        "document_type": "সাধারণ তথ্য",
+        "issuing_authority": "ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর",
+        "language": "bn",
+        "date": "2023-03-22"
+      },
+      "findings": [],
+      "context_spans": {
+        "passport_e6ba843f91f57731_v4_0002": [],
+        "passport_e6ba843f91f57731_v4_0003": []
+      }
+    },
+    {
+      "document_id": "passport_049144a6810ecbbf",
+      "source": "domains/passport/data/source_snapshots/cleaned_md/পাসপোর্টে No Visa Required for Travel to Bangladesh (NVR) সীল প্রদান প্রসঙ্গে.md",
+      "source_sha256": "e84036cc777182f32e82f550ea3723a180d9400fb47611c91502d67eeaa47b9b",
+      "cleaned_path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/পাসপোর্টে No Visa Required for Travel to Bangladesh (NVR) সীল প্রদান প্রসঙ্গে.md",
+      "cleaned_sha256": "baf11833177274ce8e48738ba3cbcd60aaed6d4949969d0d9e7c5f79e8775aa1",
+      "changes": [],
+      "review_flags": [
+        "no_web_address"
+      ],
+      "chunk_ids": [
+        "passport_049144a6810ecbbf_v4_0001",
+        "passport_049144a6810ecbbf_v4_0002",
+        "passport_049144a6810ecbbf_v4_0003",
+        "passport_049144a6810ecbbf_v4_0005",
+        "passport_049144a6810ecbbf_v4_0006",
+        "passport_049144a6810ecbbf_v4_0007",
+        "passport_049144a6810ecbbf_v4_0008",
+        "passport_049144a6810ecbbf_v4_0009",
+        "passport_049144a6810ecbbf_v4_0010",
+        "passport_049144a6810ecbbf_v4_0011",
+        "passport_049144a6810ecbbf_v4_0012",
+        "passport_049144a6810ecbbf_v4_0013",
+        "passport_049144a6810ecbbf_v4_0014"
+      ],
+      "retained_non_evidence_sections": [
+        {
+          "start": 1201,
+          "end": 1230,
+          "text": "## ৩. NVR প্রাপ্তির শর্তাদি\n\n"
+        }
+      ],
+      "declared_metadata": {
+        "title": "পাসপোর্টে \\\"No Visa Required for Travel to Bangladesh (NVR)\\\" সীল প্রদান প্রসঙ্গে।",
+        "source_pdf": "NVR (No Visa Required for Travel to Bangladesh).pdf",
+        "document_type": "পরিপত্র",
+        "issuing_authority": "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার, স্বরাষ্ট্র মন্ত্রণালয়, বহিরাগমন-২",
+        "language": "bn",
+        "date": "2012-08-27"
+      },
+      "findings": [],
+      "context_spans": {
+        "passport_049144a6810ecbbf_v4_0001": [],
+        "passport_049144a6810ecbbf_v4_0002": [
+          {
+            "start": 90,
+            "end": 372
+          }
+        ],
+        "passport_049144a6810ecbbf_v4_0003": [
+          {
+            "start": 90,
+            "end": 372
+          }
+        ],
+        "passport_049144a6810ecbbf_v4_0005": [
+          {
+            "start": 90,
+            "end": 372
+          }
+        ],
+        "passport_049144a6810ecbbf_v4_0006": [
+          {
+            "start": 90,
+            "end": 372
+          }
+        ],
+        "passport_049144a6810ecbbf_v4_0007": [
+          {
+            "start": 90,
+            "end": 372
+          }
+        ],
+        "passport_049144a6810ecbbf_v4_0008": [
+          {
+            "start": 90,
+            "end": 372
+          }
+        ],
+        "passport_049144a6810ecbbf_v4_0009": [
+          {
+            "start": 90,
+            "end": 372
+          }
+        ],
+        "passport_049144a6810ecbbf_v4_0010": [
+          {
+            "start": 90,
+            "end": 372
+          }
+        ],
+        "passport_049144a6810ecbbf_v4_0011": [
+          {
+            "start": 90,
+            "end": 372
+          }
+        ],
+        "passport_049144a6810ecbbf_v4_0012": [
+          {
+            "start": 90,
+            "end": 372
+          }
+        ],
+        "passport_049144a6810ecbbf_v4_0013": [
+          {
+            "start": 90,
+            "end": 372
+          }
+        ],
+        "passport_049144a6810ecbbf_v4_0014": [
+          {
+            "start": 90,
+            "end": 372
+          },
+          {
+            "start": 5114,
+            "end": 5229
+          }
+        ]
+      }
+    },
+    {
+      "document_id": "passport_729010959c882773",
+      "source": "domains/passport/data/source_snapshots/cleaned_md/পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট.md",
+      "source_sha256": "a6928082079a3dcdcd69832c5e7ff19d7c5152c445c0aaca9cc926262d672050",
+      "cleaned_path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট.md",
+      "cleaned_sha256": "c3e57cf0c6068a883ae4b1e06043e4895e871138897d177f5fa721bc43419e5e",
+      "changes": [],
+      "review_flags": [
+        "no_web_address"
+      ],
+      "chunk_ids": [
+        "passport_729010959c882773_v4_0002",
+        "passport_729010959c882773_v4_0003",
+        "passport_729010959c882773_v4_0004",
+        "passport_729010959c882773_v4_0005"
+      ],
+      "retained_non_evidence_sections": [
+        {
+          "start": 0,
+          "end": 48,
+          "text": "# Documents Checklist for e-Passport Enrollment\n"
+        }
+      ],
+      "declared_metadata": {
+        "title": "Documents Checklist for e-Passport Enrollment / পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট",
+        "source_pdf": "পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট.pdf",
+        "document_type": "চেকলিস্ট",
+        "issuing_authority": "বহিরাগমন ও পাসপোর্ট অধিদপ্তর",
+        "language": "bn",
+        "date": "2024-10-21"
+      },
+      "findings": [],
+      "context_spans": {
+        "passport_729010959c882773_v4_0002": [],
+        "passport_729010959c882773_v4_0003": [],
+        "passport_729010959c882773_v4_0004": [],
+        "passport_729010959c882773_v4_0005": []
+      }
+    },
+    {
+      "document_id": "passport_f00b2a4caf73fc8e",
+      "source": "domains/passport/data/source_snapshots/cleaned_md/প্রতারণা প্রতিরোধে বিশেষ সতর্কতা.md",
+      "source_sha256": "765013ae3f3be67097cd70611aee38dfb6989b4c27390add1167c16b480c70d3",
+      "cleaned_path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/প্রতারণা প্রতিরোধে বিশেষ সতর্কতা.md",
+      "cleaned_sha256": "ebe0fbcf5f021ab41a5ff1b7ad3a5dd6a0a8bce519c7bbc1dba1d610f140349f",
+      "changes": [],
+      "review_flags": [
+        "no_web_address"
+      ],
+      "chunk_ids": [
+        "passport_f00b2a4caf73fc8e_v4_0002",
+        "passport_f00b2a4caf73fc8e_v4_0003",
+        "passport_f00b2a4caf73fc8e_v4_0004"
+      ],
+      "retained_non_evidence_sections": [
+        {
+          "start": 0,
+          "end": 50,
+          "text": "# Special Attention against Fraudulent Activities\n"
+        }
+      ],
+      "declared_metadata": {
+        "title": "Special Attention against Fraudulent Activities / প্রতারণা প্রতিরোধে বিশেষ সতর্কতা",
+        "source_pdf": "প্রতারণা প্রতিরোধে বিশেষ সতর্কতা.pdf",
+        "document_type": "সাধারণ তথ্য",
+        "issuing_authority": "বহিরাগমন ও পাসপোর্ট অধিদপ্তর",
+        "language": "en/bn",
+        "date": "2026-07-08"
+      },
+      "findings": [],
+      "context_spans": {
+        "passport_f00b2a4caf73fc8e_v4_0002": [],
+        "passport_f00b2a4caf73fc8e_v4_0003": [],
+        "passport_f00b2a4caf73fc8e_v4_0004": []
+      }
+    },
+    {
+      "document_id": "passport_cd3935ff9dcc81c4",
+      "source": "domains/passport/data/source_snapshots/cleaned_md/বিশেষ নোটিশঃ নারায়ণগঞ্জ আঞ্চলিক পাসপোর্ট অফিসের কার্যক্রম পুনরায় শুরু প্রসঙ্গে.md",
+      "source_sha256": "46102ec2ed6eb7a0d24191258493dc66292397ceb554683e28d137fa5c484912",
+      "cleaned_path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/বিশেষ নোটিশঃ নারায়ণগঞ্জ আঞ্চলিক পাসপোর্ট অফিসের কার্যক্রম পুনরায় শুরু প্রসঙ্গে.md",
+      "cleaned_sha256": "98643dfa4516f902f763174d36ce3ef24a759e31ce8cf97ebf7e0f63a767ad91",
+      "changes": [],
+      "review_flags": [
+        "no_web_address"
+      ],
+      "chunk_ids": [
+        "passport_cd3935ff9dcc81c4_v4_0002",
+        "passport_cd3935ff9dcc81c4_v4_0003",
+        "passport_cd3935ff9dcc81c4_v4_0004"
+      ],
+      "retained_non_evidence_sections": [
+        {
+          "start": 0,
+          "end": 87,
+          "text": "# Special Notice: Resumption of Operations of the Narayanganj Regional Passport Office\n"
+        }
+      ],
+      "declared_metadata": {
+        "title": "Special Notice: Resumption of Operations of the Narayanganj Regional Passport Office / বিশেষ নোটিশঃ নারায়ণগঞ্জ আঞ্চলিক পাসপোর্ট অফিসের কার্যক্রম পুনরায় শুরু প্রসঙ্গে",
+        "source_pdf": "বিশেষ নোটিশঃ নারায়ণগঞ্জ আঞ্চলিক পাসপোর্ট অফিসের কার্যক্রম পুনরায় শুরু প্রসঙ্গে.pdf",
+        "document_type": "বিজ্ঞপ্তি",
+        "issuing_authority": "বহিরাগমন ও পাসপোর্ট অধিদপ্তর",
+        "language": "en/bn",
+        "date": "2025-04-30"
+      },
+      "findings": [],
+      "context_spans": {
+        "passport_cd3935ff9dcc81c4_v4_0002": [],
+        "passport_cd3935ff9dcc81c4_v4_0003": [],
+        "passport_cd3935ff9dcc81c4_v4_0004": []
+      }
+    },
+    {
+      "document_id": "passport_caccc3966e7586d0",
+      "source": "domains/passport/data/source_snapshots/cleaned_md/বিশেষ সতর্কতা ই-পাসপোর্ট.md",
+      "source_sha256": "52f1e86dbc27a8985e0ab44328d29782d3c1ae69fed926b06caf504ff30aecbf",
+      "cleaned_path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/বিশেষ সতর্কতা ই-পাসপোর্ট.md",
+      "cleaned_sha256": "9f22bdf805f52a459737e6bf9cb33da62ff0889df26b8db6b3d7008bd1356256",
+      "changes": [],
+      "review_flags": [
+        "no_web_address"
+      ],
+      "chunk_ids": [
+        "passport_caccc3966e7586d0_v4_0002"
+      ],
+      "retained_non_evidence_sections": [
+        {
+          "start": 0,
+          "end": 17,
+          "text": "# বিশেষ সতর্কতা\n\n"
+        }
+      ],
+      "declared_metadata": {
+        "title": "বিশেষ সতর্কতা",
+        "source_pdf": "বিশেষ সতর্কতা ই-পাসপোর্ট.pdf",
+        "document_type": "সাধারণ তথ্য",
+        "issuing_authority": "বহিরাগমন ও পাসপোর্ট অধিদপ্তর",
+        "language": "bn",
+        "date": ""
+      },
+      "findings": [],
+      "context_spans": {
+        "passport_caccc3966e7586d0_v4_0002": []
+      }
+    },
+    {
+      "document_id": "passport_ed7b3ebc56c0094f",
+      "source": "domains/passport/data/source_snapshots/cleaned_md/মেশিন রিডেবল পাসপোর্ট(এমআরপি).md",
+      "source_sha256": "a10a5262eb9bfd3fd6a7a6363e32622101ef48a0eee755f04c5f25fea5df8026",
+      "cleaned_path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/মেশিন রিডেবল পাসপোর্ট(এমআরপি).md",
+      "cleaned_sha256": "b7cbed9929029a59c0d8064822e74516a317d588c536d36fdb50ad8d6b3e67e3",
+      "changes": [],
+      "review_flags": [],
+      "chunk_ids": [
+        "passport_ed7b3ebc56c0094f_v4_0001",
+        "passport_ed7b3ebc56c0094f_v4_0002",
+        "passport_ed7b3ebc56c0094f_v4_0003",
+        "passport_ed7b3ebc56c0094f_v4_0004",
+        "passport_ed7b3ebc56c0094f_v4_0005"
+      ],
+      "retained_non_evidence_sections": [],
+      "declared_metadata": {
+        "title": "মেশিন রিডেবল পাসপোর্ট (এমআরপি)",
+        "source_pdf": "মেশিন রিডেবল পাসপোর্ট(এমআরপি).pdf",
+        "document_type": "সাধারণ তথ্য ও নির্দেশিকা",
+        "issuing_authority": "ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর",
+        "language": "bn",
+        "date": "N/A"
+      },
+      "findings": [],
+      "context_spans": {
+        "passport_ed7b3ebc56c0094f_v4_0001": [],
+        "passport_ed7b3ebc56c0094f_v4_0002": [
+          {
+            "start": 32,
+            "end": 493
+          }
+        ],
+        "passport_ed7b3ebc56c0094f_v4_0003": [
+          {
+            "start": 32,
+            "end": 493
+          }
+        ],
+        "passport_ed7b3ebc56c0094f_v4_0004": [
+          {
+            "start": 32,
+            "end": 493
+          }
+        ],
+        "passport_ed7b3ebc56c0094f_v4_0005": [
+          {
+            "start": 32,
+            "end": 493
+          }
+        ]
+      }
+    },
+    {
+      "document_id": "passport_bc66966daedfe968",
+      "source": "domains/passport/data/source_snapshots/cleaned_md/মেশিন রিডেবল ভিসা (এমআরভি).md",
+      "source_sha256": "bb1891fb9fd77e72968bd3f3b6fd67b09bb99143a33dc796ea806a6fd1d5f358",
+      "cleaned_path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/মেশিন রিডেবল ভিসা (এমআরভি).md",
+      "cleaned_sha256": "52c9da59a4d717f0f0408088131a398f272d123d9d976947fb9ff5813b6a89c6",
+      "changes": [],
+      "review_flags": [],
+      "chunk_ids": [
+        "passport_bc66966daedfe968_v4_0002",
+        "passport_bc66966daedfe968_v4_0003"
+      ],
+      "retained_non_evidence_sections": [
+        {
+          "start": 0,
+          "end": 30,
+          "text": "# মেশিন রিডেবল ভিসা (এমআরভি)\n\n"
+        }
+      ],
+      "declared_metadata": {
+        "title": "মেশিন রিডেবল ভিসা (এমআরভি)",
+        "source_pdf": "মেশিন রিডেবল ভিসা (এমআরভি).pdf",
+        "document_type": "সাধারণ তথ্য / নির্দেশিকা",
+        "issuing_authority": "বহিরাগমন ও পাসপোর্ট অধিদপ্তর",
+        "language": "bn",
+        "date": "N/A"
+      },
+      "findings": [],
+      "context_spans": {
+        "passport_bc66966daedfe968_v4_0002": [],
+        "passport_bc66966daedfe968_v4_0003": []
+      }
+    },
+    {
+      "document_id": "passport_5d0353de7b67a7b5",
+      "source": "domains/passport/data/source_snapshots/cleaned_md/রক্ষণাবেক্ষণ ও আপগ্রেডেশনের জন্য ই-পাসপোর্ট অনলাইন রেজিস্ট্রেশন পোর্টালের ডাউনটাইম প্রসঙ্গে.md",
+      "source_sha256": "5b89df3a38fdbf99bb2728b66880ef18f10ad47d003170dfcc8e87632425ea8e",
+      "cleaned_path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/রক্ষণাবেক্ষণ ও আপগ্রেডেশনের জন্য ই-পাসপোর্ট অনলাইন রেজিস্ট্রেশন পোর্টালের ডাউনটাইম প্রসঙ্গে.md",
+      "cleaned_sha256": "837cd9cb9750f07f29b371801223985f62217d81eee6a8a1f244a541ce410c60",
+      "changes": [],
+      "review_flags": [
+        "no_web_address",
+        "temporary_service_notice"
+      ],
+      "chunk_ids": [
+        "passport_5d0353de7b67a7b5_v4_0002",
+        "passport_5d0353de7b67a7b5_v4_0003",
+        "passport_5d0353de7b67a7b5_v4_0004"
+      ],
+      "retained_non_evidence_sections": [
+        {
+          "start": 0,
+          "end": 84,
+          "text": "# Downtime of e-Passport Online Registration Portal for maintenance and upgradation\n"
+        }
+      ],
+      "declared_metadata": {
+        "title": "Downtime of e-Passport Online Registration Portal for maintenance and upgradation",
+        "source_pdf": "রক্ষণাবেক্ষণ ও আপগ্রেডেশনের জন্য ই-পাসপোর্ট অনলাইন রেজিস্ট্রেশন পোর্টালের ডাউনটাইম প্রসঙ্গে.pdf",
+        "document_type": "বিজ্ঞপ্তি",
+        "issuing_authority": "বহিরাগমন ও পাসপোর্ট অধিদপ্তর",
+        "language": "en/bn",
+        "date": "2026-08-23"
+      },
+      "findings": [],
+      "context_spans": {
+        "passport_5d0353de7b67a7b5_v4_0002": [],
+        "passport_5d0353de7b67a7b5_v4_0003": [],
+        "passport_5d0353de7b67a7b5_v4_0004": []
+      }
+    },
+    {
+      "document_id": "passport_1226f6640ecf3bc7",
+      "source": "domains/passport/data/source_snapshots/cleaned_md/সংক্ষিপ্ত ইতিহাস _ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+      "source_sha256": "4a814a61f7e90278789ee52097613ab6a5260c4bebf2379e8dc040c054260ba0",
+      "cleaned_path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/সংক্ষিপ্ত ইতিহাস _ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+      "cleaned_sha256": "9c55b5f813acc16395c7273467bb3ac3f7597c453f854d019a4240b786ff8892",
+      "changes": [],
+      "review_flags": [
+        "no_web_address"
+      ],
+      "chunk_ids": [
+        "passport_1226f6640ecf3bc7_v4_0001"
+      ],
+      "retained_non_evidence_sections": [],
+      "declared_metadata": {
+        "title": "সংক্ষিপ্ত ইতিহাস",
+        "source_pdf": "সংক্ষিপ্ত ইতিহাস _ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.pdf",
+        "document_type": "সাধারণ তথ্য",
+        "issuing_authority": "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার, ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর",
+        "language": "bn",
+        "date": "2021-09-27"
+      },
+      "findings": [],
+      "context_spans": {
+        "passport_1226f6640ecf3bc7_v4_0001": []
+      }
+    },
+    {
+      "document_id": "passport_6f7d900581956bef",
+      "source": "domains/passport/data/source_snapshots/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+      "source_sha256": "e875d24b0d749a0a12ff8c30bddac3eabba040af4c3a50348e63f3d086382e87",
+      "cleaned_path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+      "cleaned_sha256": "311e340c5dc3ec5c26e498192f7ff598ccd0a649a847174da3baa59bd751b799",
+      "changes": [],
+      "review_flags": [],
+      "chunk_ids": [
+        "passport_6f7d900581956bef_v4_0002",
+        "passport_6f7d900581956bef_v4_0003",
+        "passport_6f7d900581956bef_v4_0006",
+        "passport_6f7d900581956bef_v4_0007",
+        "passport_6f7d900581956bef_v4_0008",
+        "passport_6f7d900581956bef_v4_0009",
+        "passport_6f7d900581956bef_v4_0010",
+        "passport_6f7d900581956bef_v4_0011",
+        "passport_6f7d900581956bef_v4_0012",
+        "passport_6f7d900581956bef_v4_0013",
+        "passport_6f7d900581956bef_v4_0014",
+        "passport_6f7d900581956bef_v4_0015",
+        "passport_6f7d900581956bef_v4_0017",
+        "passport_6f7d900581956bef_v4_0018",
+        "passport_6f7d900581956bef_v4_0020",
+        "passport_6f7d900581956bef_v4_0021",
+        "passport_6f7d900581956bef_v4_0022",
+        "passport_6f7d900581956bef_v4_0023",
+        "passport_6f7d900581956bef_v4_0024",
+        "passport_6f7d900581956bef_v4_0025",
+        "passport_6f7d900581956bef_v4_0026",
+        "passport_6f7d900581956bef_v4_0027",
+        "passport_6f7d900581956bef_v4_0028",
+        "passport_6f7d900581956bef_v4_0029",
+        "passport_6f7d900581956bef_v4_0030",
+        "passport_6f7d900581956bef_v4_0031",
+        "passport_6f7d900581956bef_v4_0033",
+        "passport_6f7d900581956bef_v4_0034",
+        "passport_6f7d900581956bef_v4_0035",
+        "passport_6f7d900581956bef_v4_0036",
+        "passport_6f7d900581956bef_v4_0037",
+        "passport_6f7d900581956bef_v4_0038",
+        "passport_6f7d900581956bef_v4_0039",
+        "passport_6f7d900581956bef_v4_0040",
+        "passport_6f7d900581956bef_v4_0041",
+        "passport_6f7d900581956bef_v4_0042",
+        "passport_6f7d900581956bef_v4_0043",
+        "passport_6f7d900581956bef_v4_0044"
+      ],
+      "retained_non_evidence_sections": [
+        {
+          "start": 0,
+          "end": 32,
+          "text": "# গণপ্রজাতন্ত্রী বাংলাদেশ সরকার\n"
+        },
+        {
+          "start": 703,
+          "end": 730,
+          "text": "## ২. প্রতিশ্রুত সেবাসমূহ\n\n"
+        },
+        {
+          "start": 730,
+          "end": 752,
+          "text": "### ২.১) নাগরিক সেবা\n\n"
+        },
+        {
+          "start": 11583,
+          "end": 11607,
+          "text": "### ২.২) দাপ্তরিক সেবা\n\n"
+        },
+        {
+          "start": 12697,
+          "end": 12723,
+          "text": "### ২.৩) অভ্যন্তরীণ সেবা\n\n"
+        },
+        {
+          "start": 19746,
+          "end": 19794,
+          "text": "## ৩) আওতাধীন বিভাগীয় অফিসসমূহের প্রদত্ত সেবা\n\n"
+        }
+      ],
+      "declared_metadata": {
+        "title": "সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর",
+        "source_pdf": "সিটিজেন চার্টার_ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.pdf",
+        "document_type": "সিটিজেন চার্টার",
+        "issuing_authority": "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার, ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর",
+        "language": "bn",
+        "date": "2025-02-18"
+      },
+      "findings": [],
+      "context_spans": {
+        "passport_6f7d900581956bef_v4_0002": [],
+        "passport_6f7d900581956bef_v4_0003": [],
+        "passport_6f7d900581956bef_v4_0006": [],
+        "passport_6f7d900581956bef_v4_0007": [],
+        "passport_6f7d900581956bef_v4_0008": [],
+        "passport_6f7d900581956bef_v4_0009": [],
+        "passport_6f7d900581956bef_v4_0010": [],
+        "passport_6f7d900581956bef_v4_0011": [],
+        "passport_6f7d900581956bef_v4_0012": [],
+        "passport_6f7d900581956bef_v4_0013": [],
+        "passport_6f7d900581956bef_v4_0014": [],
+        "passport_6f7d900581956bef_v4_0015": [],
+        "passport_6f7d900581956bef_v4_0017": [],
+        "passport_6f7d900581956bef_v4_0018": [],
+        "passport_6f7d900581956bef_v4_0020": [],
+        "passport_6f7d900581956bef_v4_0021": [],
+        "passport_6f7d900581956bef_v4_0022": [],
+        "passport_6f7d900581956bef_v4_0023": [],
+        "passport_6f7d900581956bef_v4_0024": [],
+        "passport_6f7d900581956bef_v4_0025": [],
+        "passport_6f7d900581956bef_v4_0026": [],
+        "passport_6f7d900581956bef_v4_0027": [],
+        "passport_6f7d900581956bef_v4_0028": [],
+        "passport_6f7d900581956bef_v4_0029": [],
+        "passport_6f7d900581956bef_v4_0030": [],
+        "passport_6f7d900581956bef_v4_0031": [],
+        "passport_6f7d900581956bef_v4_0033": [],
+        "passport_6f7d900581956bef_v4_0034": [],
+        "passport_6f7d900581956bef_v4_0035": [],
+        "passport_6f7d900581956bef_v4_0036": [],
+        "passport_6f7d900581956bef_v4_0037": [],
+        "passport_6f7d900581956bef_v4_0038": [],
+        "passport_6f7d900581956bef_v4_0039": [],
+        "passport_6f7d900581956bef_v4_0040": [],
+        "passport_6f7d900581956bef_v4_0041": [],
+        "passport_6f7d900581956bef_v4_0042": [
+          {
+            "start": 21763,
+            "end": 21927
+          }
+        ],
+        "passport_6f7d900581956bef_v4_0043": [
+          {
+            "start": 21763,
+            "end": 21927
+          }
+        ],
+        "passport_6f7d900581956bef_v4_0044": [
+          {
+            "start": 21763,
+            "end": 21927
+          }
+        ]
+      }
+    }
+  ],
+  "review_flag_counts": {
+    "no_web_address": 26,
+    "original_match_unresolved": 4,
+    "nonstandard_metadata_layout": 3,
+    "dated_document_review_applicability": 1,
+    "citation_markers_removed_from_derived_text": 3,
+    "temporary_service_notice": 1
+  }
+}

@@ -1,0 +1,465 @@
+{
+  "domain": "passport",
+  "documents": [
+    {
+      "document_id": "passport_6e87d0783a373593",
+      "path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/5 Steps to your e-Passport.md",
+      "chunks": 6,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 115,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [
+        {
+          "kind": "missing_link_target",
+          "start": 406,
+          "end": 416,
+          "line": 13,
+          "text": "Click Here"
+        },
+        {
+          "kind": "missing_link_target",
+          "start": 503,
+          "end": 513,
+          "line": 16,
+          "text": "Click Here"
+        }
+      ],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "passport_5eb6c21efe103a4f",
+      "path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/Bangladesh Machine Readable Passport (MRP) Online Application Guide 2012.md",
+      "chunks": 26,
+      "errors": [],
+      "inherited_context_spans": 26,
+      "max_embedding_tokens": 321,
+      "review_flags": [
+        "original_match_unresolved",
+        "no_web_address",
+        "nonstandard_metadata_layout",
+        "dated_document_review_applicability"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "passport_23d845d3ab38ea43",
+      "path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/Bangladesh_ePassport_FAQ.md",
+      "chunks": 45,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 478,
+      "review_flags": [
+        "original_match_unresolved",
+        "nonstandard_metadata_layout"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "passport_09c70e4e1e93efad",
+      "path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/Biometric_Enrolment_Citizens_Above_6_Years.md",
+      "chunks": 3,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 310,
+      "review_flags": [
+        "original_match_unresolved",
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "passport_ff2616b59b20eb7f",
+      "path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/Country that supported MRV Online Application.md",
+      "chunks": 3,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 633,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "passport_6327e051fa00a63d",
+      "path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/Dhaka_Cantonment_Passport_Office_Jurisdiction_Redistribution.md",
+      "chunks": 11,
+      "errors": [],
+      "inherited_context_spans": 6,
+      "max_embedding_tokens": 404,
+      "review_flags": [
+        "original_match_unresolved",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "passport_13bb030adf286724",
+      "path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/Electronic Visa Applications Forms Frequently Asked Questions.md",
+      "chunks": 11,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 221,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "passport_3ad98eef9fd80aa1",
+      "path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/Electronic Visa Applications Forms Instructions Page.md",
+      "chunks": 7,
+      "errors": [],
+      "inherited_context_spans": 6,
+      "max_embedding_tokens": 251,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "passport_8afcf70c86f24096",
+      "path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/General Instructions to fill up the MRV form.md",
+      "chunks": 1,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 343,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "passport_14c01dbffa495023",
+      "path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/Machine Readable Visa Application Form.md",
+      "chunks": 13,
+      "errors": [],
+      "inherited_context_spans": 12,
+      "max_embedding_tokens": 469,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "passport_c238b898a2d60cbf",
+      "path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/Types and Essential Documents of Visa.md",
+      "chunks": 31,
+      "errors": [],
+      "inherited_context_spans": 30,
+      "max_embedding_tokens": 275,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "passport_f2c0d221c70d21f2",
+      "path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/Urgent Applications e-Passport.md",
+      "chunks": 6,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 110,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "passport_12e10027cfdfeeee",
+      "path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/e-Passport Fees and Payment Options.md",
+      "chunks": 17,
+      "errors": [],
+      "inherited_context_spans": 18,
+      "max_embedding_tokens": 226,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [
+        {
+          "kind": "missing_link_target",
+          "start": 546,
+          "end": 556,
+          "line": 13,
+          "text": "Click here"
+        },
+        {
+          "kind": "missing_link_target",
+          "start": 625,
+          "end": 635,
+          "line": 14,
+          "text": "Click here"
+        },
+        {
+          "kind": "missing_link_target",
+          "start": 707,
+          "end": 717,
+          "line": 15,
+          "text": "Click here"
+        },
+        {
+          "kind": "missing_link_target",
+          "start": 848,
+          "end": 858,
+          "line": 18,
+          "text": "Click Here"
+        },
+        {
+          "kind": "missing_link_target",
+          "start": 948,
+          "end": 958,
+          "line": 19,
+          "text": "Click Here"
+        }
+      ],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "passport_0b74faa4d85a2a58",
+      "path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/অনলাইন সেবাসমূহ (নাগরিক ই-সেবাসমূহের তালিকা).md",
+      "chunks": 5,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 105,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "passport_9f4e9ffe9f2a07f4",
+      "path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী.md",
+      "chunks": 6,
+      "errors": [],
+      "inherited_context_spans": 5,
+      "max_embedding_tokens": 455,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "passport_01062cca22f95c06",
+      "path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/চালুকৃত ই-পাসপোর্ট অফিসগুলির তালিকা.md",
+      "chunks": 5,
+      "errors": [],
+      "inherited_context_spans": 2,
+      "max_embedding_tokens": 922,
+      "review_flags": [
+        "no_web_address",
+        "nonstandard_metadata_layout"
+      ],
+      "findings": [
+        {
+          "kind": "embedded_metadata",
+          "start": 88,
+          "end": 99,
+          "line": 2,
+          "text": "source_pdf:"
+        }
+      ],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "passport_a4d61a4d583daa54",
+      "path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর আবেদন ফরম.md",
+      "chunks": 16,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 263,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "passport_3fcbc40c98aa80bc",
+      "path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর নিয়মাবলী.md",
+      "chunks": 8,
+      "errors": [],
+      "inherited_context_spans": 5,
+      "max_embedding_tokens": 310,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "passport_73ac41f2327257f9",
+      "path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.md",
+      "chunks": 3,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 242,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "passport_e6ba843f91f57731",
+      "path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/পাসপোর্ট ও ভিসা সংক্রান্ত কল সেন্টার সেবা.md",
+      "chunks": 2,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 165,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "passport_049144a6810ecbbf",
+      "path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/পাসপোর্টে No Visa Required for Travel to Bangladesh (NVR) সীল প্রদান প্রসঙ্গে.md",
+      "chunks": 13,
+      "errors": [],
+      "inherited_context_spans": 13,
+      "max_embedding_tokens": 517,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "passport_729010959c882773",
+      "path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট.md",
+      "chunks": 4,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 823,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "passport_f00b2a4caf73fc8e",
+      "path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/প্রতারণা প্রতিরোধে বিশেষ সতর্কতা.md",
+      "chunks": 3,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 232,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "passport_cd3935ff9dcc81c4",
+      "path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/বিশেষ নোটিশঃ নারায়ণগঞ্জ আঞ্চলিক পাসপোর্ট অফিসের কার্যক্রম পুনরায় শুরু প্রসঙ্গে.md",
+      "chunks": 3,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 250,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "passport_caccc3966e7586d0",
+      "path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/বিশেষ সতর্কতা ই-পাসপোর্ট.md",
+      "chunks": 1,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 284,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "passport_ed7b3ebc56c0094f",
+      "path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/মেশিন রিডেবল পাসপোর্ট(এমআরপি).md",
+      "chunks": 5,
+      "errors": [],
+      "inherited_context_spans": 4,
+      "max_embedding_tokens": 847,
+      "review_flags": [],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "passport_bc66966daedfe968",
+      "path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/মেশিন রিডেবল ভিসা (এমআরভি).md",
+      "chunks": 2,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 163,
+      "review_flags": [],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "passport_5d0353de7b67a7b5",
+      "path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/রক্ষণাবেক্ষণ ও আপগ্রেডেশনের জন্য ই-পাসপোর্ট অনলাইন রেজিস্ট্রেশন পোর্টালের ডাউনটাইম প্রসঙ্গে.md",
+      "chunks": 3,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 201,
+      "review_flags": [
+        "no_web_address",
+        "temporary_service_notice"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "passport_1226f6640ecf3bc7",
+      "path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/সংক্ষিপ্ত ইতিহাস _ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+      "chunks": 1,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 437,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "passport_6f7d900581956bef",
+      "path": "docs/data_cleanup/2026_09_22_corpus_v4/passport/markdown/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+      "chunks": 38,
+      "errors": [],
+      "inherited_context_spans": 3,
+      "max_embedding_tokens": 900,
+      "review_flags": [],
+      "findings": [],
+      "status": "structurally_valid"
+    }
+  ],
+  "document_count": 30,
+  "chunk_count": 298,
+  "errors": [],
+  "duplicate_document_groups": [],
+  "tokenizer_checked": true,
+  "interpretation": "Structural integrity only; not factual correctness, legal currency, or answer accuracy."
+}

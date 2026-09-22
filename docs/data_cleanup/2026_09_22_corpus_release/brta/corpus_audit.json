@@ -1,0 +1,2348 @@
+{
+  "domain": "brta",
+  "documents": [
+    {
+      "document_id": "brta_e83c997ada994127",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/Gazette_Registration of Motor Vehicles Repairing Workshop.md",
+      "chunks": 13,
+      "errors": [],
+      "inherited_context_spans": 25,
+      "max_embedding_tokens": 770,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_cb965b3169c34e73",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/Motor Vehicle Ordinance, 1983 [Modified upto 29th November 1990] (Ordinance No. LV of 1983).md",
+      "chunks": 227,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 454,
+      "review_flags": [
+        "no_web_address",
+        "nonstandard_metadata_layout",
+        "long_document_check_ocr",
+        "unstructured_ocr_preserved_requires_pdf_review"
+      ],
+      "findings": [],
+      "status": "original_pdf_review_required"
+    },
+    {
+      "document_id": "brta_37272db054c15006",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/Motor Vehicle Rules, 1984 [Amendment of Motor Vehicle Rules, 1940].md",
+      "chunks": 153,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 837,
+      "review_flags": [
+        "no_web_address",
+        "nonstandard_metadata_layout",
+        "long_document_check_ocr",
+        "unstructured_ocr_preserved_requires_pdf_review"
+      ],
+      "findings": [],
+      "status": "original_pdf_review_required"
+    },
+    {
+      "document_id": "brta_635674541d226e02",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/Motor Vehicles Regulations, 1984 - এর সংশোধনী (নিবন্ধন ফি সংক্রান্ত).md",
+      "chunks": 14,
+      "errors": [],
+      "inherited_context_spans": 32,
+      "max_embedding_tokens": 1209,
+      "review_flags": [],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_c576dd19ef4a3284",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/The Bengal Motor Vehicles Tax Act, 1932.md",
+      "chunks": 25,
+      "errors": [],
+      "inherited_context_spans": 24,
+      "max_embedding_tokens": 609,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_2cc2fe0d88ced03a",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/The Motor Vehicle Tax Rules, 1966.md",
+      "chunks": 34,
+      "errors": [],
+      "inherited_context_spans": 33,
+      "max_embedding_tokens": 586,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_71628890519b2054",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/অনুমিত আয়কর সংক্রান্ত গেজেট_এস,আর ও নং ২১৫-আইন-আয়কর-২০১৯.md",
+      "chunks": 15,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 699,
+      "review_flags": [
+        "no_web_address",
+        "dated_document_review_applicability"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_61a65856412b6a40",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/অর্থ আইন-২০২১.md",
+      "chunks": 86,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 612,
+      "review_flags": [
+        "no_web_address",
+        "nonstandard_metadata_layout",
+        "long_document_check_ocr",
+        "unstructured_ocr_preserved_requires_pdf_review"
+      ],
+      "findings": [],
+      "status": "original_pdf_review_required"
+    },
+    {
+      "document_id": "brta_338a390935b6c438",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/ই-ড্রাইভিং লাইসেন্স সংক্রান্ত প্রজ্ঞাপন.md",
+      "chunks": 2,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 230,
+      "review_flags": [],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_f609dec009c587e0",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/ই-ড্রাইভিং লাইসেন্স সংক্রান্ত সংশোধিত প্রজ্ঞাপন.md",
+      "chunks": 2,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 379,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_7ce1b424608d9708",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/ইলেক্ট্রিক মোটরযান নিবন্ধন সংক্রান্ত প্রজ্ঞাপন.md",
+      "chunks": 6,
+      "errors": [],
+      "inherited_context_spans": 5,
+      "max_embedding_tokens": 379,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address",
+        "assistant_pdf_reviewed_not_independently_verified"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_b2784bdfab996348",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/এস,আর ও নং ১৬৫-আইন-আয়কর-২০২১.md",
+      "chunks": 2,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 498,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_79376afa424f781b",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/গাড়ির অগ্রিম আয়কর আহরণের ক্ষেএে আয়কর অধ্যাদেশ, ১৯৮৪ এর ধারা 68B এর sub-section (2) এর সংশোধনসমূহ.md",
+      "chunks": 8,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 304,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_33c0c02c5416861c",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/গাড়ির কাগজপত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স এর জরিমানা ব্যতীত মূল কর বা ফি জমা প্রদানপূর্বক গাড়ির কাগজপত্র হালনাগাদ সংক্রান্ত প্রজ্ঞাপন.md",
+      "chunks": 1,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 457,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_1e0b36852a2965ea",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/জরিমানা ব্যতীত মূল কর ও ফি জমাপূর্বক মোটরযানের কাগজপত্র এবং ড্রাইভিং লাইসেন্স হালনাগাদ করার সময়সীমা বৃদ্ধি সংক্রান্ত প্রজ্ঞাপন.md",
+      "chunks": 2,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 274,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_9a180bfd62e0eab9",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/জরিমানা ব্যতীত মূল কর বা ফি জমা প্রদানপূর্বক গাড়ির কাগজপত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স হালনাগাদের সময়সীমা ১৫ এপ্রিল ২০২৪ খ্রিঃ পর্যন্ত বর্ধিতকরণ সংক্রান্ত প্রজ্ঞাপন.md",
+      "chunks": 4,
+      "errors": [],
+      "inherited_context_spans": 1,
+      "max_embedding_tokens": 846,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_7885b246a7398c9d",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/জরিমানা ব্যতীত মূল কর বা ফি জমা প্রদানপূর্বক গাড়ির কাগজপত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স হালনাগাদের সময়সীমা ২৮ ফেব্রুয়ারি ২০২২ পর্যন্ত বর্ধিতকরণ সংক্রান্ত প্রজ্ঞাপন.md",
+      "chunks": 2,
+      "errors": [],
+      "inherited_context_spans": 1,
+      "max_embedding_tokens": 350,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_3d235de785819a1f",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/জরিমানা ব্যতীত মূল কর বা ফি জমা প্রদানপূর্বক গাড়ির কাগজপত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স হালনাগাদের সময়সীমা ৩০ জুন ২০২১ পর্যন্ত বর্ধিতকরণ সংক্রান্ত প্রজ্ঞাপন.md",
+      "chunks": 1,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 448,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_f8c583fcc7bfc082",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/জরিমানা ব্যতীত মূল কর বা ফি জমা প্রদানপূর্বক গাড়ির কাগজপত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স হালনাগাদের সময়সীমা ৩১ ডিসেম্বর ২০২১ পর্যন্ত বর্ধিতকরণ সংক্রান্ত প্রজ্ঞাপন.md",
+      "chunks": 2,
+      "errors": [],
+      "inherited_context_spans": 1,
+      "max_embedding_tokens": 347,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_434172ea3f86a161",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/জাতীয় স্থল পরিবহন নীতিমালা, ২০০৪.md",
+      "chunks": 90,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 543,
+      "review_flags": [
+        "no_web_address",
+        "dated_document_review_applicability",
+        "long_document_check_ocr",
+        "unstructured_ocr_preserved_requires_pdf_review"
+      ],
+      "findings": [],
+      "status": "original_pdf_review_required"
+    },
+    {
+      "document_id": "brta_4ba3dd29ea3234a0",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/টেক্সিক্যাব গাইডলাইন ২০১০.md",
+      "chunks": 23,
+      "errors": [],
+      "inherited_context_spans": 43,
+      "max_embedding_tokens": 852,
+      "review_flags": [
+        "dated_document_review_applicability"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_4c2ab6e3792976c4",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/ঢাকা মেট্রো এলাকার বিআরটিএ সার্কেলসমূহের থানা পুনর্বিন্যাস সংক্রান্ত সংশোধিত প্রজ্ঞাপন.md",
+      "chunks": 8,
+      "errors": [],
+      "inherited_context_spans": 7,
+      "max_embedding_tokens": 673,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_d28acbc1f0fe29b2",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/দুর্ঘটনা ক্ষতিপূরণ সংক্রান্ত আর্থিক সহায়তা তহবিল হতে আর্থিক সহায়তা প্রাপ্তির আবেদন ফরম, চেকলিস্ট ও ফরম পূরণের নির্দেশনা.md",
+      "chunks": 13,
+      "errors": [],
+      "inherited_context_spans": 7,
+      "max_embedding_tokens": 698,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_1b7979079554eb49",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/দেশীয় শিল্প খাতের বিকাশ ও সম্প্রসারণের লক্ষ্যে বিদ্যমান ১৬৫ (একশত পঁয়ষট্টি) সিসির পাশাপাশি দেশের অভ্যন্তরে উৎপাদিত ৩৭৫ (তিনশত পঁচাত্তর) সিসি পর্যন্ত মোটরসাইকেলের রেজিস্ট্রেশন প্রদান সংক্রান্ত প্রজ্ঞাপন.md",
+      "chunks": 2,
+      "errors": [],
+      "inherited_context_spans": 1,
+      "max_embedding_tokens": 341,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_050082b53ac26deb",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/দেশে উৎপাদিত মোটরযানের টাইপ অনুমোদন (Type Approval) নির্দেশিকা (সংশোধিত), ২০২৬.md",
+      "chunks": 13,
+      "errors": [],
+      "inherited_context_spans": 1,
+      "max_embedding_tokens": 503,
+      "review_flags": [
+        "original_match_unresolved"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_052739491b97aa59",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/নং ৩৫.০০.০০০০.০২০.২৬.০০৫.১৬-৪৪৪।--বাস ও মিনিবাসের সর্বোচ্চ ভাড়া পুনঃনির্ধারণ.md",
+      "chunks": 8,
+      "errors": [],
+      "inherited_context_spans": 7,
+      "max_embedding_tokens": 288,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_39e218815548f273",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/পররাষ্ট্র মন্ত্রণালয়ের Note Verbale For Printed Driving License card.md",
+      "chunks": 2,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 323,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_23e4ebfee3c93254",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/বাংলাদেশ রোড সাইন ম্যানুয়াল (ট্রাফিক সাইনস ম্যানুয়াল ভলিউম-০১).md",
+      "chunks": 193,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 488,
+      "review_flags": [
+        "no_web_address",
+        "nonstandard_metadata_layout",
+        "long_document_check_ocr",
+        "unstructured_ocr_preserved_requires_pdf_review"
+      ],
+      "findings": [],
+      "status": "original_pdf_review_required"
+    },
+    {
+      "document_id": "brta_1cdd65b6e0cbd3f6",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/বাংলাদেশ রোড সাইন ম্যানুয়াল (ট্রাফিক সাইনস ম্যানুয়াল ভলিউম-০২).md",
+      "chunks": 50,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 477,
+      "review_flags": [
+        "no_web_address",
+        "nonstandard_metadata_layout",
+        "long_document_check_ocr",
+        "unstructured_ocr_preserved_requires_pdf_review"
+      ],
+      "findings": [],
+      "status": "original_pdf_review_required"
+    },
+    {
+      "document_id": "brta_8b38af8ac3dab592",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/বাংলাদেশ সড়ক পরিবহণ কর্তৃপক্ষ আইন, ২০১৭ কার্যকর সংক্রান্ত গেজেট.md",
+      "chunks": 31,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 584,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address",
+        "dated_document_review_applicability"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_9643eb85a2b55e3b",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/বাংলাদেশ সড়ক পরিবহণ কর্তৃপক্ষ আইন, ২০১৭.md",
+      "chunks": 30,
+      "errors": [],
+      "inherited_context_spans": 57,
+      "max_embedding_tokens": 892,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "dated_document_review_applicability"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_76d085ed61f044f4",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/বাণিজ্যিক মোটরযানের ইকোনমিক লাইফ নির্ধারণ সংক্রান্ত প্রজ্ঞাপন ও গেজেট প্রকাশনার স্মারক.md",
+      "chunks": 5,
+      "errors": [],
+      "inherited_context_spans": 1,
+      "max_embedding_tokens": 537,
+      "review_flags": [],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_f953f2ba886b8dda",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/বাস বা মিনিবাসের ভাড়া বৃদ্ধি সংক্রান্ত প্রজ্ঞাপন.md",
+      "chunks": 3,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 450,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_427f53a2e7bd8de2",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/বিআরটিএ প্রতিষ্ঠা সংক্রান্ত প্রজ্ঞাপন.md",
+      "chunks": 3,
+      "errors": [],
+      "inherited_context_spans": 3,
+      "max_embedding_tokens": 434,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_57a7e75567f9a5c3",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/বিআরটিএ মধ্যম ও ভারী শ্রেণীর পেশাদার ড্রাইভিং লাইসেন্স নিয়ন্ত্রণ সংক্রান্ত নির্দেশিকা ও প্রবিধানমালা.md",
+      "chunks": 10,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 447,
+      "review_flags": [
+        "original_match_unresolved",
+        "no_web_address",
+        "nonstandard_metadata_layout"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_17068ee3db4e5f2d",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/বৈদ্যুতিক যান চার্জিং নির্দেশিকা.md",
+      "chunks": 19,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 968,
+      "review_flags": [
+        "no_web_address",
+        "nonstandard_metadata_layout"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_c1221d4938763d15",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/ব্যক্তিগত একাধিক মোটরযান মালিকগণের নিকট হইতে পরিবেশ সারচার্জ সংগ্রহ সংক্রান্ত বিধানাবলী ও হারের সারণী.md",
+      "chunks": 6,
+      "errors": [],
+      "inherited_context_spans": 5,
+      "max_embedding_tokens": 634,
+      "review_flags": [
+        "original_match_unresolved",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_8991a28505d148dc",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/ব্যক্তিগত মোটরযান মালিকগণের নিকট হইতে অগ্রিম কর সংগ্রহ সংক্রান্ত বিধানাবলী (আয়কর আইন, ২০২৩ - ধারা ১৫৩ ও ১৫৪).md",
+      "chunks": 12,
+      "errors": [],
+      "inherited_context_spans": 19,
+      "max_embedding_tokens": 1071,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_cfb8d605697b4550",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/ভাড়ায় চালিত নহে এইরূপ মোটরকার, জীপ ও মাইক্রোবাসের ২ (দুই) বছর অন্তর ফিটনেস নবায়ন সংক্রান্ত প্রজ্ঞাপন.md",
+      "chunks": 1,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 296,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_90ea5e2f80d89b97",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/ভারী ও মধ্যম শ্রেনীর ড্রাইভিং লাইসেন্স সংক্রান্ত প্রজ্ঞাপন.md",
+      "chunks": 3,
+      "errors": [],
+      "inherited_context_spans": 1,
+      "max_embedding_tokens": 806,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_9612ebaedb933518",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/মহান স্বধীনতা যুদ্ধে যুদ্ধাহত মুক্তিযোদ্ধা ও শীহদ পরিবারের সদস্যদের গাড়ির রোড ট্যাক্স ও ফিটনেস ফি মওকুফ প্রসংগে.md",
+      "chunks": 8,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 316,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_1f0d58fa8bc867d1",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/মুক্তিযোদ্ধাদের জন্য নিবন্ধন ফি মওকুফ সংক্রান্ত প্রজ্ঞাপন.md",
+      "chunks": 3,
+      "errors": [],
+      "inherited_context_spans": 2,
+      "max_embedding_tokens": 703,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text"
+      ],
+      "findings": [
+        {
+          "start": 347,
+          "end": 2327,
+          "reason": "long_parent_context_requires_review"
+        }
+      ],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_8a181349b5846378",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/মোটরকার ও জীপ এর মালিকদের পছন্দমতো নম্বর প্রদান সংক্রান্ত প্রজ্ঞাপন.md",
+      "chunks": 1,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 595,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_bc8d8874a6df0bb5",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/মোটরযান গতিসীমা নির্দেশিকা, ২০২৪.md",
+      "chunks": 17,
+      "errors": [],
+      "inherited_context_spans": 1,
+      "max_embedding_tokens": 530,
+      "review_flags": [],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_b39d3d2ad4bf5f7f",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/মোটরযান স্ক্র্যাপ ও রিসাইক্লিং নীতিমালা, ২০২৬.md",
+      "chunks": 21,
+      "errors": [],
+      "inherited_context_spans": 9,
+      "max_embedding_tokens": 735,
+      "review_flags": [],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_0624a62bdb2bee33",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/মোটরসাইকেল রেজিস্ট্রেশনে বিদ্যমান কর ও ফি’সমূহের পুনঃনির্ধারণ সংক্রান্ত প্রজ্ঞাপন.md",
+      "chunks": 7,
+      "errors": [],
+      "inherited_context_spans": 9,
+      "max_embedding_tokens": 969,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_91979c30a91124e0",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/রাইড শেয়ারিং গাইডলাইন ২০১৭.md",
+      "chunks": 16,
+      "errors": [],
+      "inherited_context_spans": 1,
+      "max_embedding_tokens": 675,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address",
+        "dated_document_review_applicability"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_a9d01ebce3486a30",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/রেট্রো-রিফ্লেক্টিভ নম্বর প্লেট এবং ডিজিটাল রেজিস্ট্রেশন সার্টিফিকেট (DRC) গ্রহণ ও সংযোজন সংক্রান্ত নির্দেশিকা, ২০২৬.md",
+      "chunks": 9,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 615,
+      "review_flags": [
+        "original_match_unresolved"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_4e08eb4e988d38e4",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/সড়ক পরিবহণ বিধিমালা, ২০২২.md",
+      "chunks": 241,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 647,
+      "review_flags": [
+        "no_web_address",
+        "nonstandard_metadata_layout",
+        "long_document_check_ocr",
+        "unstructured_ocr_preserved_requires_pdf_review"
+      ],
+      "findings": [],
+      "status": "original_pdf_review_required"
+    },
+    {
+      "document_id": "brta_71749466ddeeea76",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/সড়ক পরিবহন আইন, ২০১৮ এর অধীনে বিধিমালা না হওয়া পর্যন্ত উক্ত আইনের অধীনে ১২৪(১) থ ক্ষমতাবলে সরকার ড্রাইভিং প্রশিক্ষক লাইসেন্স প্রদানের জন্য পুনরাদেশ না দেওয়া পর্যন্ত পালনীয় আদেশ.md",
+      "chunks": 4,
+      "errors": [],
+      "inherited_context_spans": 2,
+      "max_embedding_tokens": 419,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address",
+        "dated_document_review_applicability"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_edcb265eccf9cd32",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/সড়ক পরিবহন আইন, ২০১৮.md",
+      "chunks": 79,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 592,
+      "review_flags": [
+        "no_web_address",
+        "nonstandard_metadata_layout",
+        "dated_document_review_applicability",
+        "long_document_check_ocr",
+        "unstructured_ocr_preserved_requires_pdf_review"
+      ],
+      "findings": [],
+      "status": "original_pdf_review_required"
+    },
+    {
+      "document_id": "brta_73f9b10e47408c1d",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/সিএনজি বা পেট্রোলচালিত ৪-স্ট্রোক থ্রি-হুইলার সার্ভিস নীতিমালা, ২০০৭.md",
+      "chunks": 16,
+      "errors": [],
+      "inherited_context_spans": 1,
+      "max_embedding_tokens": 664,
+      "review_flags": [
+        "no_web_address",
+        "dated_document_review_applicability"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_0a6926d40f756cb6",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/হালকা মোটরযান চালনার পেশাদার ড্রাইভিং লাইসেন্সে মধ্যম ও ভারী এবং মধ্যম মোটরযান চালনার পেশাদার ড্রাইভিং লাইসেন্সে ভারী শ্রেণির মোটরযান সংযোজনের শর্ত শিথিল ও সময় বৃদ্ধি সংক্রান্ত প্রজ্ঞাপন.md",
+      "chunks": 3,
+      "errors": [],
+      "inherited_context_spans": 1,
+      "max_embedding_tokens": 851,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_04ceda663278421b",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/হুটার, হাইড্রোলিক হর্ন ও অন্যান্য অননুমোদিত হর্ন মোটরযানে ব্যবহার না করা সংক্রান্ত পরিপত্র.md",
+      "chunks": 4,
+      "errors": [],
+      "inherited_context_spans": 3,
+      "max_embedding_tokens": 741,
+      "review_flags": [],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_60726c26293be2e5",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/আইন, বিধি ও নীতিমালা/“সড়ক পরিবহন আইন, ২০১৮” ১ নভেম্বর, ২০১৯ তারিখ থেকে কার্যকরের প্রজ্ঞাপন.md",
+      "chunks": 2,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 155,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address",
+        "dated_document_review_applicability"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_34638661bb8d9f6a",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/ফি, ট্যাক্স ও আয়কর/অর্থ অধ্যাদেশ,২০২৫ ও অর্থ সংক্রান্ত কতিপয় আইন (সংশোধন) অধ্যাদেশ,২০২৫ এর মাধ্যমে আয়কর আইন,২০২৩ এ বিআরটিএ সম্পর্কিত সকল ধারার ক্ষেত্রে আনীত পরিবর্তন সম্পর্কিত স্পষ্টিকরণ.md",
+      "chunks": 14,
+      "errors": [],
+      "inherited_context_spans": 20,
+      "max_embedding_tokens": 647,
+      "review_flags": [],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_51ce9461784a1617",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/ফি, ট্যাক্স ও আয়কর/ডিজিটাল রেজিস্ট্রেশন সার্টিফিকেট, রোট্রো-রিফ্লেক্টিভ নম্বর প্লেট ও আরএফ আইডি ট্যাগ-এর ফি.md",
+      "chunks": 13,
+      "errors": [],
+      "inherited_context_spans": 20,
+      "max_embedding_tokens": 437,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_3cae1ecd59682fa3",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/ফি, ট্যাক্স ও আয়কর/ড্রাইভিং লাইসেন্স ফি.md",
+      "chunks": 11,
+      "errors": [],
+      "inherited_context_spans": 10,
+      "max_embedding_tokens": 314,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_6eb3d41986361dbd",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/ফি, ট্যাক্স ও আয়কর/বিভিন্ন ফি জানার টিউটোরিয়াল ডকুমেন্ট.md",
+      "chunks": 15,
+      "errors": [],
+      "inherited_context_spans": 7,
+      "max_embedding_tokens": 217,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_4830b9c7aa9d017d",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০০৯-২০১০ (বাস, মিনিবাস, কোস্টার, ট্যাক্সিক্যাব, প্রাইমমুভার, ট্রাক, ট্যাংক-লরী, পিক-আপ, হিউম্যান হলার, ম্যাক্সি বা মাল বহনকারী অটোরিকশা).md",
+      "chunks": 11,
+      "errors": [],
+      "inherited_context_spans": 11,
+      "max_embedding_tokens": 970,
+      "review_flags": [
+        "no_web_address",
+        "dated_document_review_applicability"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_30b4c2d7b6e1f540",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০০৯-২০১০ (মোটর কার, জীপ বা মাইক্রোবাস).md",
+      "chunks": 12,
+      "errors": [],
+      "inherited_context_spans": 17,
+      "max_embedding_tokens": 360,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address",
+        "dated_document_review_applicability"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_59c4b843b89942b2",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০১০-২০১১ (মোটর কার, জীপ বা মাইক্রোবাস).md",
+      "chunks": 10,
+      "errors": [],
+      "inherited_context_spans": 15,
+      "max_embedding_tokens": 320,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address",
+        "dated_document_review_applicability"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_eb578cb492080667",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০১১-২০১২ (মোটর কার, জীপ বা মাইক্রোবাস).md",
+      "chunks": 9,
+      "errors": [],
+      "inherited_context_spans": 14,
+      "max_embedding_tokens": 400,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address",
+        "dated_document_review_applicability"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_b15ca727a82c6f30",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০১২-২০১৩ (মোটর কার, জীপ বা মাইক্রোবাস).md",
+      "chunks": 12,
+      "errors": [],
+      "inherited_context_spans": 17,
+      "max_embedding_tokens": 352,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address",
+        "dated_document_review_applicability"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_e0a597ecb2004485",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০১৩-২০১৪ (মোটর কার, জীপ বা মাইক্রোবাস)..md",
+      "chunks": 12,
+      "errors": [],
+      "inherited_context_spans": 17,
+      "max_embedding_tokens": 357,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address",
+        "dated_document_review_applicability"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_dfbee0f342d188f8",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০১৪-২০১৫ (বাস, মিনিবাস, কোস্টার, ট্যাক্সিক্যাব, প্রাইমমুভার, ট্রাক, ট্যাংক-লরী, পিক-আপ, হিউম্যান হলার, ম্যাক্সি বা মাল বহনকারী অটোরিকশা).md",
+      "chunks": 29,
+      "errors": [],
+      "inherited_context_spans": 52,
+      "max_embedding_tokens": 504,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address",
+        "dated_document_review_applicability"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_e6724a03fc2b2575",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০১৪-২০১৫ (মোটর কার, জীপ বা মাইক্রোবাস).md",
+      "chunks": 38,
+      "errors": [],
+      "inherited_context_spans": 68,
+      "max_embedding_tokens": 459,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address",
+        "dated_document_review_applicability"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_34fa7131d5374e7a",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০১৫-২০১৬ (মোটর কার, জীপ বা মাইক্রোবাস).md",
+      "chunks": 14,
+      "errors": [],
+      "inherited_context_spans": 13,
+      "max_embedding_tokens": 385,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address",
+        "dated_document_review_applicability"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_2dd33c08c48bf098",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০১৬-২০১৭ (মোটর কার, জীপ বা মাইক্রোবাস).md",
+      "chunks": 18,
+      "errors": [],
+      "inherited_context_spans": 24,
+      "max_embedding_tokens": 398,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address",
+        "dated_document_review_applicability"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_1582324a435ea475",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০১৯-২০২০ (বাস, মিনিবাস, কোস্টার, ট্যাক্সিক্যাব, প্রাইমমুভার, ট্রাক, ট্যাংক-লরী, পিক-আপ, হিউম্যান হলার, ম্যাক্সি বা মাল বহনকারী অটোরিকশা).md",
+      "chunks": 17,
+      "errors": [],
+      "inherited_context_spans": 28,
+      "max_embedding_tokens": 757,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "dated_document_review_applicability"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_d074755d0136ce4b",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০২০-২০২১ (মোটর কার, জীপ বা মাইক্রোবাস).md",
+      "chunks": 15,
+      "errors": [],
+      "inherited_context_spans": 21,
+      "max_embedding_tokens": 329,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_fbe4e11772830f99",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০২১-২০২২ (মোটর কার, জীপ বা মাইক্রোবাস).md",
+      "chunks": 26,
+      "errors": [],
+      "inherited_context_spans": 25,
+      "max_embedding_tokens": 709,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_0cfecd15e24b39b9",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০২৩-২০২৪ (মোটর কার, জীব বা মাইক্রোবাস).md",
+      "chunks": 31,
+      "errors": [],
+      "inherited_context_spans": 26,
+      "max_embedding_tokens": 946,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_c621e9f59be18a98",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০২৪-২০২৫ (মোটর কার, জীব বা মাইক্রোবাস).md",
+      "chunks": 11,
+      "errors": [],
+      "inherited_context_spans": 18,
+      "max_embedding_tokens": 749,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_4892e263b0cd3df2",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের ক্ষেত্রে অগ্রিম আয়কর (AIT) প্রযোজ্যতার বিষয়ে সাধারণ স্পষ্টীকরণ.md",
+      "chunks": 2,
+      "errors": [],
+      "inherited_context_spans": 1,
+      "max_embedding_tokens": 552,
+      "review_flags": [],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_3a262ccde300696d",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের রেজিস্ট্রেশন, মালিকানা হস্তান্তর, ড্রাইভিং লাইসেন্স, রুট পারমিটসহ অন্যান্য ফি এর পরিমাণ.md",
+      "chunks": 45,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 961,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_09e8cbfff67f117e",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).md",
+      "chunks": 43,
+      "errors": [],
+      "inherited_context_spans": 45,
+      "max_embedding_tokens": 900,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_b6e5fea90b644e91",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/বিআরটিএ সম্পর্কিত/বিআরটিএ'র ইতিহাস, উদ্দেশ্য ও গঠনতন্ত্র.md",
+      "chunks": 4,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 197,
+      "review_flags": [
+        "original_match_unresolved",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_1305b5c0c25efc42",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/বিআরটিএ সম্পর্কিত/বিআরটিএ'র বিভিন্ন বিষয় বা কার্যক্রম ভিত্তিক ফোকাল পয়েন্ট বা বিকল্প ফোকাল পয়েন্ট কর্মকর্তার তালিকা.md",
+      "chunks": 23,
+      "errors": [],
+      "inherited_context_spans": 20,
+      "max_embedding_tokens": 491,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_eb341b3d1f23821d",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/brta/বিআরটিএ সম্পর্কিত/রূপকল্প ও অভিলক্ষ্য.md",
+      "chunks": 2,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 140,
+      "review_flags": [
+        "original_match_unresolved",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_7aacf674cc18dc4d",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/Form-30 Application for Certificate of Endorsemen,Route Permit for Foreigner.md",
+      "chunks": 14,
+      "errors": [],
+      "inherited_context_spans": 12,
+      "max_embedding_tokens": 124,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_33b3fcfce6213054",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/Form-31 Certificate of Endorsement,Route Permit for Foreigner.md",
+      "chunks": 13,
+      "errors": [],
+      "inherited_context_spans": 11,
+      "max_embedding_tokens": 90,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_d78ba24a9cad7c53",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/কতিপয় ট্রাফিক অপরাধের দোষসুচক পয়েন্ট কর্তন তালিকা.md",
+      "chunks": 14,
+      "errors": [],
+      "inherited_context_spans": 13,
+      "max_embedding_tokens": 172,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_94f4ba4f5f79bcc1",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/ফরম-১ শিক্ষানবিশ ড্রাইভিং লাইসেন্স আবেদন.md",
+      "chunks": 14,
+      "errors": [],
+      "inherited_context_spans": 12,
+      "max_embedding_tokens": 204,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_29228d7f41bd4857",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/ফরম-১৭ মোটরযান রেজিস্ট্রেশনের আবেদন.md",
+      "chunks": 68,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 404,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_e919ac0ca6f08972",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/ফরম-১৮ রেজিস্ট্রেশন সনদ.md",
+      "chunks": 24,
+      "errors": [],
+      "inherited_context_spans": 3,
+      "max_embedding_tokens": 77,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_6da9dc3f428980a0",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/ফরম-১৯ অস্থায়ী রেজিস্ট্রেশন সনদ.md",
+      "chunks": 23,
+      "errors": [],
+      "inherited_context_spans": 7,
+      "max_embedding_tokens": 107,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_3b4cd5e6eaf3e001",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/ফরম-২ ড্রাইভিং লাইসেন্সের জন্য মেডিকেল সার্টিফিকেট.md",
+      "chunks": 12,
+      "errors": [],
+      "inherited_context_spans": 13,
+      "max_embedding_tokens": 183,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_77a34fc07ff34054",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/ফরম-২০ মোটরযানের মালিকানা বদলি সংক্রান্ত বিক্রেতার ঘোষণাপত্র.md",
+      "chunks": 8,
+      "errors": [],
+      "inherited_context_spans": 4,
+      "max_embedding_tokens": 155,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_2d2e92b7e02c5193",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/ফরম-২১ মোটরযানের মালিকানা বদলি সংক্রান্ত ক্রেতার ঘোষণাপত্র.md",
+      "chunks": 6,
+      "errors": [],
+      "inherited_context_spans": 2,
+      "max_embedding_tokens": 187,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_296d7da47bd0763c",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/ফরম-২২ বিক্রয় রসিদ.md",
+      "chunks": 6,
+      "errors": [],
+      "inherited_context_spans": 1,
+      "max_embedding_tokens": 126,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_4215ca79fe503349",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/ফরম-২৩ মোটরযান মালিকের ঠিকানা পরিবর্তনের আবেদনপত্র.md",
+      "chunks": 12,
+      "errors": [],
+      "inherited_context_spans": 10,
+      "max_embedding_tokens": 172,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_200a9829df785b7e",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/ফরম-২৪ ফিটনেস সনদ ইস্যু,নবায়ন,প্রতিলিপির আবেদন ফরম.md",
+      "chunks": 12,
+      "errors": [],
+      "inherited_context_spans": 11,
+      "max_embedding_tokens": 129,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_7fc8ae4dfcdf02a7",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/ফরম-২৫ ফিটনেস সন.md",
+      "chunks": 6,
+      "errors": [],
+      "inherited_context_spans": 5,
+      "max_embedding_tokens": 229,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_8b2af10a4d7a407c",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/ফরম-২৬ মোটরযান টেস্টিং রিপোর্ট ফরম (ভিটিআর ফরম).md",
+      "chunks": 91,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 121,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_9ba58460bb57de79",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/ফরম-২৭ স্টেইজ ক্যারিজ রুট পারমিট ইস্যু, নবায়ন বা প্রতিলিপির আবেদন.md",
+      "chunks": 18,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 191,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_10ea1d010a1acd48",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/ফরম-২৮ স্টেইজ ক্যারিজ রুট পারমিট ইস্যু, নবায়ন বা প্রতিলিপির আবেদন.md",
+      "chunks": 8,
+      "errors": [],
+      "inherited_context_spans": 7,
+      "max_embedding_tokens": 221,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_d20cb679a5502e98",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/ফরম-২৯ মোটরযানের রুট পারমিট.md",
+      "chunks": 15,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 290,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_a207b925ed0dc4a9",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/ফরম-৩ শিক্ষানবিশ ড্রাইভিং লাইসেন্স.md",
+      "chunks": 21,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 122,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_ac5b02f4481c1f90",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/ফরম-৩৬ মোটর ড্রাইভিং প্রশিক্ষণ স্কুল স্থাপন ও পরিচালনার লাইসেন্সের জন্য আবেদন.md",
+      "chunks": 9,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 287,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_efe2a7bb53939e81",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/ফরম-৩৭ মোটর ড্রাইভিং প্রশিক্ষণ স্কুল স্থাপন ও পরিচালনার লাইসেন্স.md",
+      "chunks": 4,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 266,
+      "review_flags": [
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_7942fa1ee1d4d8aa",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/ফরম-৩৮ ড্রাইভিং ইনস্ট্রাক্টর লাইসেন্সের আবেদন.md",
+      "chunks": 13,
+      "errors": [],
+      "inherited_context_spans": 1,
+      "max_embedding_tokens": 175,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_e6532cc9dbca65be",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/ফরম-৩৯ ড্রাইভিং ইনস্ট্রাক্টর লাইসেন্স.md",
+      "chunks": 5,
+      "errors": [],
+      "inherited_context_spans": 1,
+      "max_embedding_tokens": 188,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_00cf734ebafbc7c2",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/ফরম-৪(ক) ড্রাইভিং লাইসেন্সের আবেদন.md",
+      "chunks": 31,
+      "errors": [],
+      "inherited_context_spans": 28,
+      "max_embedding_tokens": 215,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_258cf38650a6332b",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.md",
+      "chunks": 22,
+      "errors": [],
+      "inherited_context_spans": 19,
+      "max_embedding_tokens": 406,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_b00eae444d550487",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/ফরম-৪০ মোটরযান মেরামত কারখানা লাইসেন্স গ্রহণের আবেদনপত্র.md",
+      "chunks": 9,
+      "errors": [],
+      "inherited_context_spans": 1,
+      "max_embedding_tokens": 284,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_5c2e3b536d86e6cc",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/ফরম-৪১ মোটরযান মেরামত কারখানা এর লাইসেন্স.md",
+      "chunks": 5,
+      "errors": [],
+      "inherited_context_spans": 1,
+      "max_embedding_tokens": 190,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_c71f060093290a9e",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/ফরম-৪২ কর্তৃপক্ষের সিদ্ধান্ত পুনর্বিবেচনার আবেদন.md",
+      "chunks": 9,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 111,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_e7a5b317cb0f7e5b",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/ফরম-৪৩ কর্তৃপক্ষের পুনর্বিবেচনা সিদ্ধান্তের বিরুদ্ধে আপিল আবেদন ফরম.md",
+      "chunks": 9,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 138,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_85f9e12fa1f422b7",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/ফরম-৪৪ প্রসিকিউশন ফরম.md",
+      "chunks": 10,
+      "errors": [],
+      "inherited_context_spans": 2,
+      "max_embedding_tokens": 108,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_e640c49d6025cc8d",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/ফরম-৫ ড্রাইভিং লাইসেন্সের ঠিকানা পরিবর্তনের আবেদন.md",
+      "chunks": 6,
+      "errors": [],
+      "inherited_context_spans": 2,
+      "max_embedding_tokens": 244,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_406db66f3a35da6e",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/বিদেশি ৭ ব্যক্তিগণের অনুকূলে মোটরযান রেজিস্ট্রেশন সংক্রান্ত প্রযোজ্য তালিকা.md",
+      "chunks": 23,
+      "errors": [],
+      "inherited_context_spans": 22,
+      "max_embedding_tokens": 280,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_e26471369493566e",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/মালবাহী গাড়ির অনুমোদিত এক্সেল ওজন এবং লেডেন ওজন.md",
+      "chunks": 22,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 761,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_1af79b370052bafc",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/মালিকের ব্যক্তিগত তথ্যাবলি,নমুনা স্বাক্ষর.md",
+      "chunks": 23,
+      "errors": [],
+      "inherited_context_spans": 1,
+      "max_embedding_tokens": 195,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_c0cd4c9054b9259d",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/মোটরযানের রেজিস্ট্রেশন আবেদনের সহিত দাখিলিতব্য দলিলসমূহ.md",
+      "chunks": 18,
+      "errors": [],
+      "inherited_context_spans": 17,
+      "max_embedding_tokens": 316,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_fdc5c86584b9d7c1",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/মোটরযানের রেজিস্ট্রেশন, মালিকানা হস্তান্তর, ড্রাইভিং লাইসেন্স, র‍ুট পারমিটসহ অন্যান্য ফি এর পরিমাণ.md",
+      "chunks": 89,
+      "errors": [],
+      "inherited_context_spans": 88,
+      "max_embedding_tokens": 522,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_6f2d952caf7c6169",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/ফরম/মোটরযানের শ্রেণি অনুযায়ী রেজিস্ট্রেশন নম্বরের প্রতীক.md",
+      "chunks": 40,
+      "errors": [],
+      "inherited_context_spans": 39,
+      "max_embedding_tokens": 241,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_14bf6d6b7fa0ab7c",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/সেবাসমূহ/ইঞ্জিন পরিবর্তন.md",
+      "chunks": 16,
+      "errors": [],
+      "inherited_context_spans": 14,
+      "max_embedding_tokens": 677,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_b5a9e5763aa87a48",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/সেবাসমূহ/টায়ার সাইজ(প্রস্থ) সংশোধন.md",
+      "chunks": 2,
+      "errors": [],
+      "inherited_context_spans": 1,
+      "max_embedding_tokens": 579,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_352f4e1416323213",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/সেবাসমূহ/ট্যাক্সটোকেন ইস্যু ও নবায়ন.md",
+      "chunks": 2,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 170,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_1d898fe8a1a3aa31",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/সেবাসমূহ/ডিজিটাল রেজিস্ট্রেশন সার্টিফিকেট.md",
+      "chunks": 5,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 448,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_b00d6a1ae5a038df",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/সেবাসমূহ/ডোপটেস্ট সংক্রান্ত তথ্য.md",
+      "chunks": 1,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 238,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_4b8c25d391e48121",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/সেবাসমূহ/ড্রাইভিং ইন্সট্রাক্টর লাইসেন্স.md",
+      "chunks": 3,
+      "errors": [],
+      "inherited_context_spans": 1,
+      "max_embedding_tokens": 789,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_cbe22ab64acf3d03",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/সেবাসমূহ/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.md",
+      "chunks": 10,
+      "errors": [],
+      "inherited_context_spans": 2,
+      "max_embedding_tokens": 637,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_e21467da1ba75db4",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/সেবাসমূহ/তথ্য সংশোধনপরিবর্তন.md",
+      "chunks": 2,
+      "errors": [],
+      "inherited_context_spans": 1,
+      "max_embedding_tokens": 570,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_846a4041fe96a64e",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/সেবাসমূহ/নতুন ড্রাইভিং লাইসেন্স ইস্যু.md",
+      "chunks": 12,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 710,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_d516e1b85b1f7144",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/সেবাসমূহ/ফিটনেস ইস্যু ও নবায়ন.md",
+      "chunks": 2,
+      "errors": [],
+      "inherited_context_spans": 1,
+      "max_embedding_tokens": 401,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_d9357851a61a163d",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/সেবাসমূহ/মালিকানা বদলী.md",
+      "chunks": 3,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 435,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_4b4c003681ae6872",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/সেবাসমূহ/মোটরযানের নিবন্ধন.md",
+      "chunks": 3,
+      "errors": [],
+      "inherited_context_spans": 2,
+      "max_embedding_tokens": 1108,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_a40ff0f214eb68b8",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/সেবাসমূহ/রং পরিবর্তন.md",
+      "chunks": 2,
+      "errors": [],
+      "inherited_context_spans": 1,
+      "max_embedding_tokens": 555,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_2d6e0fe1670b3aa3",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/সেবাসমূহ/রুট পারমিট ইস্যু ও নবায়ন.md",
+      "chunks": 2,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 401,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    },
+    {
+      "document_id": "brta_1920ac4fff1f8e0a",
+      "path": "docs/data_cleanup/2026_09_22_corpus_release/brta/markdown/fahim_brta/সেবাসমূহ/রেট্রো-রিফ্লেক্টিভ নম্বর প্লেট.md",
+      "chunks": 6,
+      "errors": [],
+      "inherited_context_spans": 0,
+      "max_embedding_tokens": 388,
+      "review_flags": [
+        "citation_markers_removed_from_derived_text",
+        "no_web_address"
+      ],
+      "findings": [],
+      "status": "structurally_valid"
+    }
+  ],
+  "document_count": 132,
+  "chunk_count": 2795,
+  "errors": [],
+  "duplicate_document_groups": [],
+  "repeated_passages": [
+    {
+      "text": "**মোঃ মোশাররফ হোসেন ভূঁইয়া, এনডিসি** সিনিয়র সচিব অভ্যন্তরীণ সম্পদ বিভাগ, অর্থ মন্ত্রণালয় ও চেয়ারম্যান জাতীয় রাজস্ব বোর্ড।",
+      "occurrences": [
+        {
+          "document_id": "brta_71628890519b2054",
+          "start": 4541,
+          "end": 4677
+        },
+        {
+          "document_id": "brta_1582324a435ea475",
+          "start": 5312,
+          "end": 5448
+        }
+      ]
+    },
+    {
+      "text": "# গণপ্রজাতন্ত্রী বাংলাদেশ সরকার ## সড়ক পরিবহন ও সেতু মন্ত্রণালয় ### সড়ক পরিবহন ও মহাসড়ক বিভাগ **বিআরটিএ সংস্থাপন শাখা**",
+      "occurrences": [
+        {
+          "document_id": "brta_f609dec009c587e0",
+          "start": 0,
+          "end": 123
+        },
+        {
+          "document_id": "brta_1e0b36852a2965ea",
+          "start": 0,
+          "end": 123
+        },
+        {
+          "document_id": "brta_9a180bfd62e0eab9",
+          "start": 0,
+          "end": 123
+        }
+      ]
+    },
+    {
+      "text": "# গণপ্রজাতন্ত্রী বাংলাদেশ সরকার ## সড়ক পরিবহন ও সেতু মন্ত্রণালয় ### সড়ক পরিবহন ও মহাসড়ক বিভাগ #### বিআরটিএ সংস্থাপন শাখা",
+      "occurrences": [
+        {
+          "document_id": "brta_33c0c02c5416861c",
+          "start": 0,
+          "end": 124
+        },
+        {
+          "document_id": "brta_3d235de785819a1f",
+          "start": 0,
+          "end": 124
+        },
+        {
+          "document_id": "brta_f953f2ba886b8dda",
+          "start": 0,
+          "end": 124
+        },
+        {
+          "document_id": "brta_cfb8d605697b4550",
+          "start": 0,
+          "end": 124
+        },
+        {
+          "document_id": "brta_8a181349b5846378",
+          "start": 0,
+          "end": 124
+        }
+      ]
+    },
+    {
+      "text": "# গণপ্রজাতন্ত্রী বাংলাদেশ সরকার **সড়ক পরিবহন ও সেতু মন্ত্রণালয়** **সড়ক পরিবহন ও মহাসড়ক বিভাগ** **বিআরটিএ সংস্থাপন শাখা**",
+      "occurrences": [
+        {
+          "document_id": "brta_7885b246a7398c9d",
+          "start": 0,
+          "end": 130
+        },
+        {
+          "document_id": "brta_f8c583fcc7bfc082",
+          "start": 0,
+          "end": 130
+        },
+        {
+          "document_id": "brta_1b7979079554eb49",
+          "start": 0,
+          "end": 124
+        },
+        {
+          "document_id": "brta_052739491b97aa59",
+          "start": 0,
+          "end": 130
+        }
+      ]
+    },
+    {
+      "text": "### ১৭। কমিটি গঠন কর্তৃপক্ষ ইহার কার্যাবলি দক্ষতার সহিত সম্পাদনে সহায়তা করিবার জন্য, প্রয়োজনে, সংশ্লিষ্ট বিষয়ে পারদর্শী বা অভিজ্ঞ ব্যক্তিবর্গের সমন্বয়ে এক বা একাধিক কমিটি গঠন করিতে পারিবে এবং উক্ত কমিটির সদস্য সংখ্যা, কার্যাবলি ও কর্মপরিধি কর্তৃপক্ষ কর্তৃক নির্ধারিত হইবে।",
+      "occurrences": [
+        {
+          "document_id": "brta_8b38af8ac3dab592",
+          "start": 11914,
+          "end": 12190
+        },
+        {
+          "document_id": "brta_9643eb85a2b55e3b",
+          "start": 12122,
+          "end": 12398
+        }
+      ]
+    },
+    {
+      "text": "### ২১। কোম্পানি গঠনের ক্ষমতা কর্তৃপক্ষ, সরকারের পূর্বানুমোদনক্রমে, কোম্পানি আইন, ১৯৯৪ (১৯৯৪ সনের ১৮ নং আইন) এর অধীন এক বা একাধিক কোম্পানি গঠন করিতে পারিবে।",
+      "occurrences": [
+        {
+          "document_id": "brta_8b38af8ac3dab592",
+          "start": 13896,
+          "end": 14052
+        },
+        {
+          "document_id": "brta_9643eb85a2b55e3b",
+          "start": 14246,
+          "end": 14402
+        }
+      ]
+    },
+    {
+      "text": "### ২৫। বিধি প্রণয়নের ক্ষমতা এই আইনের উদ্দেশ্য পূরণকল্পে, সরকার, সরকারি গেজেটে প্রজ্ঞাপন দ্বারা, এই আইনের সহিত সামঞ্জস্যপূর্ণ বিধি প্রণয়ন করিতে পারিবে।",
+      "occurrences": [
+        {
+          "document_id": "brta_8b38af8ac3dab592",
+          "start": 14644,
+          "end": 14797
+        },
+        {
+          "document_id": "brta_9643eb85a2b55e3b",
+          "start": 14973,
+          "end": 15126
+        }
+      ]
+    },
+    {
+      "text": "# গণপ্রজাতন্ত্রী বাংলাদেশ সরকার ## সড়ক পরিবহন ও সেতু মন্ত্রণালয় ### সড়ক পরিবহন ও মহাসড়ক বিভাগ #### বিআরটিএ সংস্থাপন শাখা **ওয়েবসাইট:** www.rthd.gov.bd",
+      "occurrences": [
+        {
+          "document_id": "brta_90ea5e2f80d89b97",
+          "start": 0,
+          "end": 155
+        },
+        {
+          "document_id": "brta_0a6926d40f756cb6",
+          "start": 0,
+          "end": 155
+        }
+      ]
+    },
+    {
+      "text": "দেশে ভারী ও মধ্যম শ্রেণির মোটরযানের তুলনায় ভারী ও মধ্যম মানের ড্রাইভিং লাইসেন্সধারী চালকের সংখ্যার অপ্রতুলতার কারণে যাত্রী ও পণ্যবাহী মোটরযানের স্বাভাবিক চলাচল অব্যাহত রাখা তথা জনস্বার্থ বিবেচনায় সরকার নিম্নরূপ নির্দেশনা জারি করছে:",
+      "occurrences": [
+        {
+          "document_id": "brta_90ea5e2f80d89b97",
+          "start": 266,
+          "end": 499
+        },
+        {
+          "document_id": "brta_0a6926d40f756cb6",
+          "start": 266,
+          "end": 499
+        }
+      ]
+    },
+    {
+      "text": "# গণপ্রজাতন্ত্রী বাংলাদেশ সরকার **জাতীয় রাজস্ব বোর্ড** রাজস্ব ভবন শেরেবাংলা নগর, আগারগাঁও, ঢাকা [www.nbr.gov.bd](http://www.nbr.gov.bd)",
+      "occurrences": [
+        {
+          "document_id": "brta_34638661bb8d9f6a",
+          "start": 0,
+          "end": 144
+        },
+        {
+          "document_id": "brta_c621e9f59be18a98",
+          "start": 0,
+          "end": 144
+        }
+      ]
+    },
+    {
+      "text": "**সরকারি নোটিশ তথ্য:** * **গণপ্রজাতন্ত্রী বাংলাদেশ সরকার** * **অর্থ মন্ত্রণালয়** * **অভ্যন্তরীণ সম্পদ বিভাগ (আয়কর)** * **প্রজ্ঞাপন নম্বর:** এস,আর,ও নং ১৮৭-আইন/২০০৯ * **তারিখ:** ১৭ আষাঢ় ১৪১৬ বঙ্গাব্দ / ০১ জুলাই ২০০৯ খ্রিস্টাব্দ",
+      "occurrences": [
+        {
+          "document_id": "brta_30b4c2d7b6e1f540",
+          "start": 68,
+          "end": 297
+        },
+        {
+          "document_id": "brta_b15ca727a82c6f30",
+          "start": 68,
+          "end": 297
+        }
+      ]
+    },
+    {
+      "text": "* **(২)** উক্ত করদাতা মালিককে সংশ্লিষ্ট মোটর কার, জীপ বা মাইক্রোবাসের রেজিস্ট্রেশনের সময় অথবা ফিটনেস নবায়নের তারিখ উত্তীর্ণ হইবার পূর্বে তাহাকে উপরি-উক্ত হারে আয়কর প্রদান করিতে হইবে; * **(৩)** দফা (১) ও (২) এর অধীন প্রদেয় আয়কর সংশ্লিষ্ট কর সার্কেলের উপ-কর কমিশনার এর বরাবর ইস্যুকৃত কোন তফসিলী ব্যাংকের ব্যাংক ড্রাফট্ বা পে-অর্ডারের মাধ্যমে জাতীয় রাজস্ব বোর্ড কর্তৃক এতদুদ্দেশ্যে নির্ধারিত কর্তৃপক্ষের নিকট জমা প্রদান করিতে হইবে; * **(৪)** এই প্রজ্ঞাপন অনুযায়ী নির্ধারিত হারে নির্দিষ্ট খাতে আয়কর জমা প্রদানের চালান অথবা ব্যাংক ড্রাফট্ বা পে-অর্ডার উপস্থাপন বা জমা প্রদান না করা পর্যন্ত এতদুদ্দেশ্যে নির্ধারিত কর্তৃপক্ষ সংশ্লিষ্ট যানবাহনের রেজিস্ট্রেশন প্রদান করিবে না অথবা, ক্ষেত্রমত, ফিটনেস নবায়ন করিবে না।",
+      "occurrences": [
+        {
+          "document_id": "brta_30b4c2d7b6e1f540",
+          "start": 1562,
+          "end": 2277
+        },
+        {
+          "document_id": "brta_b15ca727a82c6f30",
+          "start": 1734,
+          "end": 2449
+        },
+        {
+          "document_id": "brta_e0a597ecb2004485",
+          "start": 1736,
+          "end": 2451
+        }
+      ]
+    },
+    {
+      "text": "* **২।** এই প্রজ্ঞাপনের অধীন আয়কর প্রদানকারীর আয় তাহার আয়কর রিটার্নে অন্তর্ভুক্ত করা যাইবে, তবে এইরূপ আয়ের জন্য অতিরিক্ত কর প্রদেয় হইবে না এবং এইরূপ আয়ের পরিমাণ করদাতা কর্তৃক প্রদত্ত আয়করের ক্ষেত্রে প্রযোজ্য মোট আয়ের বেশী হইবে না। * **৩।** এই প্রজ্ঞাপনের অধীন প্রদত্ত আয়কর করদাতার মোট আয়ের উপর প্রদেয় আয়করের সহিত সমন্বয় করা যাইবে।",
+      "occurrences": [
+        {
+          "document_id": "brta_30b4c2d7b6e1f540",
+          "start": 2337,
+          "end": 2680
+        },
+        {
+          "document_id": "brta_b15ca727a82c6f30",
+          "start": 2509,
+          "end": 2852
+        },
+        {
+          "document_id": "brta_e0a597ecb2004485",
+          "start": 2511,
+          "end": 2854
+        }
+      ]
+    },
+    {
+      "text": "**আইনি মূল ভিত্তি:** Income-tax Ordinance, 1984 (XXXVI of 1984) এর section 44 এর sub-section (4) এর clause (b) তে প্রদত্ত ক্ষমতাবলে সরকার, যে সকল করদাতা মোটর কার, জীপ বা মাইক্রোবাসের মালিক, তাহাদের মোটর কার, জীপ বা মাইক্রোবাসের মালিকানাজনিত অনুমিত আয়কে, নিম্নবর্ণিত হারে ও পদ্ধতিতে আয়কর প্রদান সাপেক্ষে, কর প্রদান করা হইতে এতদ্বারা অব্যাহতি প্রদান করিল, যথাঃ-",
+      "occurrences": [
+        {
+          "document_id": "brta_b15ca727a82c6f30",
+          "start": 299,
+          "end": 660
+        },
+        {
+          "document_id": "brta_e0a597ecb2004485",
+          "start": 301,
+          "end": 662
+        }
+      ]
+    },
+    {
+      "text": "### ১.১. ১৫০০ সিসি পর্যন্ত প্রতিটি মোটর কার * **ক্রমিক নং:** (ক) * **গাড়ীর ধরণ:** ১৫০০ সিসি পর্যন্ত প্রতিটি মোটর কার এর জন্য * **প্রদেয় আয়করের হার:** টাকা ৩,০০০.০০",
+      "occurrences": [
+        {
+          "document_id": "brta_b15ca727a82c6f30",
+          "start": 740,
+          "end": 906
+        },
+        {
+          "document_id": "brta_e0a597ecb2004485",
+          "start": 742,
+          "end": 908
+        }
+      ]
+    },
+    {
+      "text": "### ১.২. ২০০০ সিসি পর্যন্ত প্রতিটি মোটর কার * **ক্রমিক নং:** (খ) * **গাড়ীর ধরণ:** ২০০০ সিসি পর্যন্ত প্রতিটি মোটর কার এর জন্য * **প্রদেয় আয়করের হার:** টাকা ৪,০০০.০০",
+      "occurrences": [
+        {
+          "document_id": "brta_b15ca727a82c6f30",
+          "start": 908,
+          "end": 1074
+        },
+        {
+          "document_id": "brta_e0a597ecb2004485",
+          "start": 910,
+          "end": 1076
+        }
+      ]
+    },
+    {
+      "text": "### ১.৩. ২০০০ সিসি'র উপরে প্রতিটি মোটর কার * **ক্রমিক নং:** (গ) * **গাড়ীর ধরণ:** ২০০০ সিসি'র উপরে প্রতিটি মোটর কার এর জন্য * **প্রদেয় আয়করের হার:** টাকা ৭,০০০.০০",
+      "occurrences": [
+        {
+          "document_id": "brta_b15ca727a82c6f30",
+          "start": 1076,
+          "end": 1240
+        },
+        {
+          "document_id": "brta_e0a597ecb2004485",
+          "start": 1078,
+          "end": 1242
+        }
+      ]
+    },
+    {
+      "text": "### ১.৪. ২৮০০ সিসি পর্যন্ত প্রতিটি জীপ * **ক্রমিক নং:** (ঘ) * **গাড়ীর ধরণ:** ২৮০০ সিসি পর্যন্ত প্রতিটি জীপ এর জন্য * **প্রদেয় আয়করের হার:** টাকা ৬,০০০.০০",
+      "occurrences": [
+        {
+          "document_id": "brta_b15ca727a82c6f30",
+          "start": 1242,
+          "end": 1398
+        },
+        {
+          "document_id": "brta_e0a597ecb2004485",
+          "start": 1244,
+          "end": 1400
+        }
+      ]
+    },
+    {
+      "text": "### ১.৫. ২৮০০ সিসি'র উপরে প্রতিটি জীপ * **ক্রমিক নং:** (ঙ) * **গাড়ীর ধরণ:** ২৮০০ সিসি'র উপরে প্রতিটি জীপ এর জন্য * **প্রদেয় আয়করের হার:** টাকা ৮,০০০.০০",
+      "occurrences": [
+        {
+          "document_id": "brta_b15ca727a82c6f30",
+          "start": 1400,
+          "end": 1554
+        },
+        {
+          "document_id": "brta_e0a597ecb2004485",
+          "start": 1402,
+          "end": 1556
+        }
+      ]
+    },
+    {
+      "text": "### ১.৬. প্রতিটি মাইক্রোবাস * **ক্রমিক নং:** (চ) * **গাড়ীর ধরণ:** মাইক্রোবাস প্রতিটির জন্য * **প্রদেয় আয়করের হার:** টাকা ৩,০০০.০০",
+      "occurrences": [
+        {
+          "document_id": "brta_b15ca727a82c6f30",
+          "start": 1556,
+          "end": 1688
+        },
+        {
+          "document_id": "brta_e0a597ecb2004485",
+          "start": 1558,
+          "end": 1690
+        }
+      ]
+    },
+    {
+      "text": "* **৪।** সরকারী, আধা-সরকারী, স্বায়ত্বশাসিত প্রতিষ্ঠান এবং বিদেশী দূতাবাস ও মিশনের মালিকানাধীন মোটর কার, জীপ বা মাইক্রোবাসের ক্ষেত্রে এই প্রজ্ঞাপন প্রযোজ্য হইবে না।",
+      "occurrences": [
+        {
+          "document_id": "brta_b15ca727a82c6f30",
+          "start": 2900,
+          "end": 3064
+        },
+        {
+          "document_id": "brta_e0a597ecb2004485",
+          "start": 2902,
+          "end": 3066
+        }
+      ]
+    },
+    {
+      "text": "#### Serial No. 7: A microbus * **Serial No.:** 7 * **Type and engine capacity of motor car:** A microbus * **Amount of tax (in taka):** 30,000/-",
+      "occurrences": [
+        {
+          "document_id": "brta_d074755d0136ce4b",
+          "start": 2641,
+          "end": 2786
+        },
+        {
+          "document_id": "brta_fbe4e11772830f99",
+          "start": 1992,
+          "end": 2137
+        }
+      ]
+    },
+    {
+      "text": "> **বি: দ্র:** সরকারি/আধাসরকারি/স্বায়ত্বশাসিত এইরূপ প্রতিষ্ঠান যাদের NID ও TIN নেই, সে প্রতিষ্ঠানের ক্ষমতাপ্রাপ্ত ব্যক্তির NID এর কপি দাখিল করিতে হইবে এবং তাহাকে সংশ্লিষ্ট আবেদনফর্মে ও উপরের ঘরে স্বাক্ষর করিতে হইবে।",
+      "occurrences": [
+        {
+          "document_id": "brta_29228d7f41bd4857",
+          "start": 12862,
+          "end": 13078
+        },
+        {
+          "document_id": "brta_1af79b370052bafc",
+          "start": 2262,
+          "end": 2478
+        }
+      ]
+    },
+    {
+      "text": "- **আমি/আমরা:** ____________________ - **জাতীয় পরিচয়পত্র নম্বর:** ____________________ - **টিআইএন নম্বর:** ____________________ - **পিতা/স্বামী:** ____________________ - **মাতা:** ____________________ - **ঠিকানা:** ____________________",
+      "occurrences": [
+        {
+          "document_id": "brta_77a34fc07ff34054",
+          "start": 199,
+          "end": 436
+        },
+        {
+          "document_id": "brta_2d2e92b7e02c5193",
+          "start": 190,
+          "end": 427
+        },
+        {
+          "document_id": "brta_296d7da47bd0763c",
+          "start": 78,
+          "end": 315
+        }
+      ]
+    },
+    {
+      "text": "- **রেজিস্ট্রেশন নম্বর:** ____________________ - **ধরন:** ____________________ - **চেসিস নম্বর:** ____________________ - **ইঞ্জিন নম্বর:** ____________________ - **প্রস্তুতকারক:** ____________________ - **প্রস্তুতকাল:** ____________________",
+      "occurrences": [
+        {
+          "document_id": "brta_77a34fc07ff34054",
+          "start": 509,
+          "end": 749
+        },
+        {
+          "document_id": "brta_2d2e92b7e02c5193",
+          "start": 499,
+          "end": 739
+        },
+        {
+          "document_id": "brta_296d7da47bd0763c",
+          "start": 392,
+          "end": 632
+        }
+      ]
+    },
+    {
+      "text": "- ☐ মোটর সাইকেল - ☐ থ্রি হুইলার মোটরযান (অটোরিকশা, মোটরক্যাব রিকশা, অটোটেম্পু) - ☐ হালকা মোটরযান - ☐ মধ্যম মোটরযান - ☐ ভারী মোটরযান - ☐ বিশেষ ধরনের মোটরযান - ☐ প্রতিবন্ধীবান্ধব মোটরযান",
+      "occurrences": [
+        {
+          "document_id": "brta_ac5b02f4481c1f90",
+          "start": 444,
+          "end": 628
+        },
+        {
+          "document_id": "brta_e6532cc9dbca65be",
+          "start": 838,
+          "end": 1022
+        },
+        {
+          "document_id": "brta_5c2e3b536d86e6cc",
+          "start": 765,
+          "end": 949
+        }
+      ]
+    },
+    {
+      "text": "**ড্রাইভিং লাইসেন্স প্রদানকারী কর্তৃপক্ষ (Driving Licensing Authority):** _________________________ **বিআরটিএ (BRTA):** _________________________ **সার্কেল (Circle):** _________________________",
+      "occurrences": [
+        {
+          "document_id": "brta_00cf734ebafbc7c2",
+          "start": 217,
+          "end": 416
+        },
+        {
+          "document_id": "brta_258cf38650a6332b",
+          "start": 317,
+          "end": 516
+        }
+      ]
+    },
+    {
+      "text": "| আবেদন গ্রহণকারী (Dealing Assistant) | মোটরযান পরিদর্শক (Motor Vehicle Inspector) | লাইসেন্সিং কর্তৃপক্ষ (Licensing Authority) | | :--- | :--- | :--- | | **Signature:** ____________________ | **Signature:** ____________________ | **Signature:** ____________________ | | **Seal:** _________________________ | **Seal:** _________________________ | **Seal:** _________________________ |",
+      "occurrences": [
+        {
+          "document_id": "brta_00cf734ebafbc7c2",
+          "start": 5250,
+          "end": 5634
+        },
+        {
+          "document_id": "brta_258cf38650a6332b",
+          "start": 6313,
+          "end": 6697
+        }
+      ]
+    },
+    {
+      "text": "উক্ত আবেদন যাচাই করে সঠিক পাওয়া গেলে সহকারী পরিচালক (ইঞ্জিনিয়ারিং) উক্ত মোটরযানটি পরিদর্শনের জন্য মোটরযান পরিদর্শকে নির্দেশনা প্রদান করবেন। সন্তোষজনক পরিদর্শন প্রতিবেদন পাওয়ার পর কর্তৃপক্ষ উক্ত মোটরযানের তথ্য সংশোধনের অনুমোদন প্রদান করবেন এবং একটি প্রাপ্তিস্বীকার পত্র প্রদান করেন যা অস্থায়ী নিবন্ধন সনদ হিসেবে কাজ করবে। উক্ত প্রাপ্তিস্বীকার পত্রে নতুন নিবন্ধন সনদ/ডিজিটাল রেজিস্ট্রেশন সার্টিফিকেট (ডিআরসি) প্রদানের সম্ভাব্য তারিখ উল্লেখ থাকবে।",
+      "occurrences": [
+        {
+          "document_id": "brta_b5a9e5763aa87a48",
+          "start": 571,
+          "end": 1020
+        },
+        {
+          "document_id": "brta_e21467da1ba75db4",
+          "start": 567,
+          "end": 1016
+        }
+      ]
+    },
+    {
+      "text": "* **১. আবেদনপত্র:** মালিকের স্বাক্ষর সম্বলিত আবেদন পত্র ০১ কপি * **২. মূল নিবন্ধন সনদ:** মূল নিবন্ধন সনদ (কাগজের নিবন্ধন সনদ হলে হোম কপিও জমা দিতে হবে) * **৩. ফি জমার রশিদ:** রং পরিবর্তন ফি জমার রশিদের বিআরটিএ'র কপি * **৪. ফিটনেস সনদ:** হালনাগাদ ফিটনেস সনদের ফটোকপি ০১ কপি * **৫. ট্যাক্স টোকেন:** হালনাগাদ ট্যাক্স টোকেনের ফটোকপি ০১ কপি",
+      "occurrences": [
+        {
+          "document_id": "brta_b5a9e5763aa87a48",
+          "start": 1308,
+          "end": 1643
+        },
+        {
+          "document_id": "brta_e21467da1ba75db4",
+          "start": 1281,
+          "end": 1616
+        }
+      ]
+    }
+  ],
+  "tokenizer_checked": true,
+  "interpretation": "Structural integrity only; not factual correctness, legal currency, or answer accuracy."
+}

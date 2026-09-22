@@ -1,0 +1,10 @@
+{
+  "brta_7ce1b424608d9708": {
+    "source_sha256": "b86b2016d7f56a9d4428a709fff93a4d0b07d41a3d0e998950c4b9fa80f164c7",
+    "original_pdf_sha256": "91448b629aad9359ec8fa24e9189e97cf70664fd305598f9b5b30f4b1a6d957e",
+    "replacement_path": "docs/data_cleanup/reviewed_sources/brta_ev_notice_2020.md",
+    "reviewed_pages": [1, 2],
+    "review_method": "Assistant visual comparison with both supplied scanned PDF pages; not independent human verification or current-law validation.",
+    "reason": "Supplied Markdown contains a broken EV-definition quotation followed by a duplicated embedded Markdown document and metadata. Replace with a structured transcription/summary of the supplied two-page notice. Preserve exclusively battery-powered scope, exclusions, inclusive power boundaries, notice date, immediate-effect clause and signer. Publication headers, printer details and page price are not service evidence."
+  }
+}

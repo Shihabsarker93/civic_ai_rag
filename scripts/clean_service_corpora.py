@@ -11,8 +11,15 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from scripts.manage_experimental_domains import digest, parse_markdown, read_chunks, section_spans, write_chunks, write_json
+from scripts.corpus_structure import document_findings, packed_spans, scope_spans
 
-VERSION = "service_cleanup_v3"
+VERSION = "service_cleanup_v4"
+PREAMBLE_FIELDS = {
+    'title', 'original_title_bn', 'document_id', 'source_pdf', 'jurisdiction',
+    'issuing_authority', 'document_type', 'effective_date', 'language', 'date',
+    'rag_metadata', 'chunk_strategy', 'context_denormalized', 'embedding_optimized',
+    'primary_entity', 'tags', 'keywords', 'enabling_act', 'category', 'target_audience',
+}
 # Search vocabulary describes document sections, never supplies facts to the generator.
 VOCABULARY = [
     (r"e[- ]?passport|ই[- ]?পাসপোর্ট", "ই-পাসপোর্ট e-passport"),
@@ -35,16 +42,31 @@ VOCABULARY = [
 ]
 
 
+def is_metadata_preamble(text):
+    continuation = False
+    for line in text.splitlines():
+        if not line.strip():
+            continue
+        match = re.match(r'^(?:#{1,6}[ \t]+)?([A-Za-z_][\w-]*):', line)
+        if match:
+            if match[1] not in PREAMBLE_FIELDS:
+                return False
+            continuation = match[1] in {'tags', 'keywords'}
+        elif not (continuation and (line.strip() == '$$' or line.lstrip().startswith(('* ', '- ', '"', '[')))):
+            return False
+    return True
+
+
 def clean_document(raw: str):
     metadata, body = parse_markdown(raw)
     changes = []
     # Some supplied MDs use an unfenced metadata preamble. Extract only when
     # it starts with a known field and ends at the first actual Markdown heading.
-    if re.match(r"(?:title|document_id|source_pdf):", body):
-        heading = re.search(r"(?m)^#\s+", body)
-        if heading:
+    if re.match(r"(?:#{1,6}\s+)?(?:title|document_id|source_pdf):", body):
+        heading = re.search(r"(?m)^#{1,6}\s+(?!title:|document_id:|source_pdf:)", body)
+        if heading and is_metadata_preamble(body[:heading.start()]):
             preamble = body[:heading.start()]
-            for key, value in re.findall(r"(?m)^([A-Za-z_][\w-]*):\s*([^\n]*)", preamble):
+            for key, value in re.findall(r"(?m)^(?:#{1,6}[ \t]+)?([A-Za-z_][\w-]*):[ \t]*([^\n]*)", preamble):
                 metadata.setdefault(key, value.strip().strip("\"'"))
             changes.append({"reason": "unfenced_metadata", "text": preamble})
             body = body[heading.start():]
@@ -67,16 +89,8 @@ def evidence_units(body, title, limit=2200):
         if faq or len(text) <= limit:
             yield start, end, heading, faq
             continue
-        # Only break at whole paragraphs or top-level bullet/table rows. A long
-        # indivisible paragraph remains intact and must pass the token check.
-        cuts = sorted({0, len(text), *(m.start() for m in re.finditer(r"(?m)^(?=[*-] |\|)|\n\n", text))})
-        group_start = 0
-        for a, b in zip(cuts, cuts[1:]):
-            if b - group_start > limit and a > group_start:
-                yield start + group_start, start + a, heading, faq
-                group_start = a
-        if group_start < len(text):
-            yield start + group_start, end, heading, faq
+        for a, b in packed_spans(text, limit):
+            yield start + a, start + b, heading, faq
 
 
 def review_catalog(manifest, directory):
@@ -97,6 +111,8 @@ def prepare(domain, output, search_labels=False):
     config = json.loads((base / "config.json").read_text())
     register = json.loads((base / "data/register.json").read_text())
     previous = read_chunks(ROOT / config["data"]["master_chunk_path"])
+    repairs_path = ROOT / 'docs/data_cleanup/reviewed_repairs.json'
+    repairs = json.loads(repairs_path.read_text()) if repairs_path.exists() else {}
     by_document = {}
     for chunk in previous:
         by_document.setdefault(chunk["metadata"]["doc_id"], []).append(chunk)
@@ -111,6 +127,17 @@ def prepare(domain, output, search_labels=False):
         if digest(raw) != doc["sha256"]:
             raise ValueError(f"Source snapshot changed: {doc['document_id']}")
         declared, body, changes = clean_document(raw.decode("utf-8"))
+        repair = repairs.get(doc['document_id'])
+        if repair:
+            if digest(raw) != repair['source_sha256']:
+                raise ValueError('Reviewed repair no longer matches the source snapshot')
+            originals = [o for o in doc.get('original_candidates', [])
+                         if o['sha256'] == repair['original_pdf_sha256']]
+            if not originals or digest(Path(originals[0]['path']).read_bytes()) != repair['original_pdf_sha256']:
+                raise ValueError('Reviewed original PDF missing or changed')
+            changes.append({**repair, 'review_reason': repair['reason'],
+                            'reason': 'original_pdf_reviewed_repair', 'text': body})
+            body = (ROOT / repair['replacement_path']).read_text().strip()
         clean_path = directory / "markdown" / doc["relative_path"]
         clean_path.parent.mkdir(parents=True, exist_ok=True)
         clean_path.write_text(body, encoding="utf-8")
@@ -119,11 +146,12 @@ def prepare(domain, output, search_labels=False):
                   "source_sha256": doc["sha256"], "cleaned_path": str(clean_path.relative_to(ROOT)),
                   "cleaned_sha256": digest(body.encode()), "changes": changes,
                   "review_flags": list(doc.get("audit_flags", [])), "chunk_ids": [],
-                  "retained_non_evidence_sections": [], "declared_metadata": declared}
+                  "retained_non_evidence_sections": [], "declared_metadata": declared,
+                  "findings": document_findings(body), "context_spans": {}}
+        if repair:
+            record['review_flags'].append('assistant_pdf_reviewed_not_independently_verified')
         if not original_chunks:
-            record["review_flags"].append("no_previous_chunks_manual_review")
-            documents.append(record)
-            continue
+            raise ValueError(f"No metadata template for registered document: {doc['document_id']}")
         template = original_chunks[0]["metadata"]
         title = declared.get("title", template["title"])
         # Unstructured OCR laws need PDF comparison; avoid pretending that
@@ -144,13 +172,17 @@ def prepare(domain, output, search_labels=False):
                 continue
             scope = f"{title}\n{section}"
             aliases = [alias for pattern, alias in VOCABULARY if re.search(pattern, scope, re.I)] if search_labels else []
-            content = f"{title}\n{section}\n\n{evidence}"
+            inherited, pending = scope_spans(body, start)
+            record['findings'].extend(pending)
+            context = '\n\n'.join(body[s['start']:s['end']].strip() for s in inherited)
+            content = f"{title}\n{section}\n\n" + (context + '\n\n' if context else '') + evidence
             metadata = {**template, "title": title, "section_title": section,
                         "body_start": start, "body_end": end, "faq_unit": faq,
                         "chunking_version": VERSION, "cleaned_path": str(clean_path.relative_to(ROOT)),
+                        "context_spans": json.dumps(inherited),
                         "cleaned_sha256": record["cleaned_sha256"], "date_verified": False,
                         "document_date": declared.get("date", declared.get("effective_date", template.get("document_date", "unknown")))}
-            cid = f"{doc['document_id']}_v3_{n:04d}"
+            cid = f"{doc['document_id']}_v4_{n:04d}"
             retrieval_text = f"{domain}\n{content}"
             if search_labels:
                 retrieval_text = f"{domain}\n{scope}\nSearch labels: {'; '.join(aliases)}\n\n{evidence}"
@@ -158,6 +190,7 @@ def prepare(domain, output, search_labels=False):
                              "retrieval_text": retrieval_text,
                              "metadata": metadata})
             record["chunk_ids"].append(cid)
+            record['context_spans'][cid] = inherited
         documents.append(record)
     write_chunks(directory / "chunks.jsonl", prepared)
     manifest = {"version": VERSION, "domain": domain, "search_labels": search_labels, "source_documents": len(documents),

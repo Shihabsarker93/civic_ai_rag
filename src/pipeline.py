@@ -302,9 +302,8 @@ class CivicRAGPipeline:
         if body_lines and not re.search(r"[।.!?:]", body_lines[0]) and len(body_lines) > 1:
             body_lines = body_lines[1:]
         body = CivicRAGPipeline._clean_evidence_body("\n\n".join(body_lines))
-        if len(body) > 950:
-            cutoff = max(body.rfind("।", 0, 950), body.rfind("\n", 0, 950))
-            body = body[:cutoff if cutoff > 250 else 950].strip()
+        # Eligibility already bounds direct-answer size. Never truncate evidence:
+        # a trailing exception or condition can reverse the meaning of a rule.
         return body
 
     @staticmethod

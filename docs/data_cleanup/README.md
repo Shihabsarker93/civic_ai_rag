@@ -1,5 +1,7 @@
 # Passport and BRTA source-preserving cleanup
 
+**Latest whole-corpus pass:** [2026-09-22 corpus release](2026_09_22_corpus_release/README.md). This adds all-document/all-chunk validation, stronger structural context preservation, and an original-PDF-reviewed repair. The earlier experiment below is retained as historical evidence, not replaced or relabelled.
+
 ## Scope and preservation
 
 This revision prepares cleaned, traceable derived Markdown and candidate chunks for all 30 Passport and 132 BRTA documents. It does not certify the factual accuracy, legal currency, or original-PDF fidelity of the supplied Markdown. Original snapshots, active domain configs, active registers, and existing Chroma collections are retained.
