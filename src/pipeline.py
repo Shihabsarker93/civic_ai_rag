@@ -60,6 +60,8 @@ class CivicRAGPipeline:
     ) -> dict[str, Any]:
         if self._is_cross_domain_aggregate_query(query):
             return self._cross_domain_aggregate_response(query, model, method)
+        if self.generation_config.get("evidence_contract", False) and self._normalize_method(method) == "civic":
+            return self._ask_evidence_contract(query, model, generate)
         if not self.birth_death_rules:
             return self._ask_experimental(query, model, generate, method)
         normalized_method = self._normalize_method(method)
@@ -106,6 +108,27 @@ class CivicRAGPipeline:
             "domain": self.domain_id,
             "answer_route": answer_route,
         }
+
+    def _ask_evidence_contract(self, query, model, generate):
+        # Keep retrieval unchanged; do not let a rank-only shortcut discard alternatives
+        # before the shared applicability assessment. Legacy controlled routes stay opt-out.
+        search_query = self._normalize_query_text(query)
+        contexts = [self._context_from_result(r) for r in self.retrieve(search_query, method="civic")]
+        selected_model = model or self.generation_config["default_model"]
+        result = {"query": query, "model": selected_model, "method": "civic",
+                  "domain": self.domain_id, "sources": contexts, "answer": "",
+                  "answer_route": "retrieval_only", "pipeline_version": "evidence_contract_v1"}
+        if generate:
+            from src.generation.evidence_contract import reject
+            if not self._is_bangla_query(query):
+                result.update({"answer": "অনুগ্রহ করে বাংলায় প্রশ্ন করুন।", "answer_route": "language_clarification"})
+            elif not contexts:
+                result.update(reject("no_evidence"))
+            else:
+                evidence = contexts[:self.generation_config.get("evidence_context_limit", 6)]
+                result["generation_sources"] = [c["id"] for c in evidence]
+                result.update(self._generator(selected_model).answer_grounded(search_query, evidence))
+        return result
 
     def _cross_domain_aggregate_response(
         self,
