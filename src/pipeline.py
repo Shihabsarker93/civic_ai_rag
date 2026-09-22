@@ -122,13 +122,19 @@ class CivicRAGPipeline:
         evidence = selection.contexts
         selected_model = model or self.generation_config['default_model']
         answer, raw_answer, route = '', '', 'retrieval_only'
+        generation_metadata = {}
         if generate and evidence:
-            answer = self._generator(selected_model, selected_evidence=True).answer(search_query, evidence)
+            generator = self._generator(selected_model, selected_evidence=True)
+            answer = generator.answer(search_query, evidence)
+            generation_metadata = getattr(generator, 'last_metadata', {})
             raw_answer = answer
             route = 'llm_selected_evidence'
             if self._violates_answer_language(search_query, answer):
                 answer = self._bangla_language_safety_answer(evidence)
                 route = 'selected_evidence_language_rejection'
+            elif generation_metadata.get('done_reason') == 'length':
+                answer += '\n\nসতর্কতা: আউটপুট সীমার কারণে উত্তরটি অসম্পূর্ণ। এটিকে সম্পূর্ণ নির্দেশনা হিসেবে ব্যবহার করবেন না।'
+                route = 'selected_evidence_truncated'
         elif generate:
             answer = 'প্রশ্নটির সেবা ও কাজের সঙ্গে মেলে এমন পর্যাপ্ত তথ্য পাওয়া যায়নি। কোন সেবা এবং কী করতে চান একটু স্পষ্ট করে বলুন।'
             route = 'no_applicable_evidence'
@@ -136,6 +142,7 @@ class CivicRAGPipeline:
                 'domain': self.domain_id, 'answer': answer, 'answer_route': route,
                 'sources': candidates, 'answer_contexts': evidence,
                 'raw_generation': raw_answer,
+                'generation_metadata': generation_metadata,
                 'evidence_selection': selection.trace,
                 'pipeline_variant': 'applicability_v1', 'experimental': True}
 

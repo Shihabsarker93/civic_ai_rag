@@ -29,6 +29,14 @@ source text is never rewritten. These bounds can omit evidence; the trace record
 that and the prompt must not invent missing facts. A character budget is not an
 exact token budget. The model context window is explicitly 8192 tokens.
 
+Single-action document questions use one coherent checklist family rather than
+concatenating several alternative checklists. This can omit complementary facts
+from another document; excluded alternatives remain visible for audit. Heading-only
+chunks are skipped. The initial live passport smoke exposed duplicate lists and
+a cutoff; its raw output is preserved, not labeled a success. `followup/` records
+the post-fix check separately. Final code also exposes generation metadata and
+labels a length-stop as `selected_evidence_truncated` with a visible warning.
+
 The candidate does NOT run legacy domain-specific controlled-answer templates
 or the raw extractive shortcut. This is deliberate: those routes could bypass
 screening and would prevent a genuine generator comparison. Existing cross-domain

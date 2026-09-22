@@ -20,27 +20,27 @@
             "reason": "different_action"
           },
           {
-            "id": "passport_73ac41f2327257f9_v2_0004",
-            "decision": "selected",
-            "reason": "compatible_scope"
-          },
-          {
             "id": "passport_729010959c882773_v2_0003",
-            "decision": "selected",
-            "reason": "compatible_scope"
+            "decision": "excluded",
+            "reason": "alternative_checklist_not_merged"
           },
           {
             "id": "passport_729010959c882773_v2_0004",
-            "decision": "selected",
-            "reason": "compatible_scope"
+            "decision": "excluded",
+            "reason": "alternative_checklist_not_merged"
           },
           {
             "id": "passport_73ac41f2327257f9_v2_0003",
-            "decision": "selected",
-            "reason": "compatible_scope"
+            "decision": "excluded",
+            "reason": "alternative_checklist_not_merged"
           },
           {
             "id": "passport_23d845d3ab38ea43_v2_0033",
+            "decision": "excluded",
+            "reason": "alternative_checklist_not_merged"
+          },
+          {
+            "id": "passport_73ac41f2327257f9_v2_0004",
             "decision": "selected",
             "reason": "compatible_scope"
           }
@@ -48,13 +48,9 @@
         "expanded_ids": [],
         "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
         "selected_ids": [
-          "passport_73ac41f2327257f9_v2_0004",
-          "passport_729010959c882773_v2_0003",
-          "passport_729010959c882773_v2_0004",
-          "passport_73ac41f2327257f9_v2_0003",
-          "passport_23d845d3ab38ea43_v2_0033"
+          "passport_73ac41f2327257f9_v2_0004"
         ],
-        "selected_chars": 5654
+        "selected_chars": 743
       }
     },
     {
@@ -1152,22 +1148,22 @@
             "reason": "different_action"
           },
           {
-            "id": "brta_cbe22ab64acf3d03_v2_0004",
-            "decision": "selected",
-            "reason": "compatible_scope"
-          },
-          {
             "id": "brta_cbe22ab64acf3d03_v2_0006",
-            "decision": "selected",
-            "reason": "compatible_scope"
+            "decision": "excluded",
+            "reason": "alternative_checklist_not_merged"
           },
           {
             "id": "brta_cbe22ab64acf3d03_v2_0003",
-            "decision": "selected",
-            "reason": "compatible_scope"
+            "decision": "excluded",
+            "reason": "alternative_checklist_not_merged"
           },
           {
             "id": "brta_4b8c25d391e48121_v2_0003",
+            "decision": "excluded",
+            "reason": "alternative_checklist_not_merged"
+          },
+          {
+            "id": "brta_cbe22ab64acf3d03_v2_0004",
             "decision": "selected",
             "reason": "compatible_scope"
           }
@@ -1175,12 +1171,9 @@
         "expanded_ids": [],
         "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
         "selected_ids": [
-          "brta_cbe22ab64acf3d03_v2_0004",
-          "brta_cbe22ab64acf3d03_v2_0006",
-          "brta_cbe22ab64acf3d03_v2_0003",
-          "brta_4b8c25d391e48121_v2_0003"
+          "brta_cbe22ab64acf3d03_v2_0004"
         ],
-        "selected_chars": 4225
+        "selected_chars": 1245
       }
     },
     {

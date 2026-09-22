@@ -142,6 +142,7 @@ class OllamaAnswerGenerator:
         # concise grounded response, not an internal reasoning trace that delays every request.
         reasoning = False if model.lower().startswith("qwen3") else None
         self.selected_evidence = selected_evidence
+        self.last_metadata = {}
         self.llm = ChatOllama(
             model=model,
             base_url=base_url,
@@ -156,6 +157,7 @@ class OllamaAnswerGenerator:
 
     def answer(self, query: str, contexts: list[dict[str, Any]]) -> str:
         response = self.llm.invoke(build_prompt(query, contexts, selected_evidence=self.selected_evidence))
+        self.last_metadata = dict(response.response_metadata)
         answer = str(response.content).strip()
         cited_contexts = contexts if self.selected_evidence else contexts[:3]
         source_ids = [str(context["id"]) for context in cited_contexts]

@@ -134,6 +134,13 @@ def select_evidence(query, candidates, corpus=(), *, max_contexts=6, max_chars=1
         if context['id'] in seen:
             continue
         seen.add(context['id'])
+        text = str(context.get('content', ''))
+        if '\n\n' in text:
+            body = text.split('\n\n', 1)[1]
+            substantive = '\n'.join(line for line in body.splitlines() if line.strip() and not line.lstrip().startswith('#'))
+            if not substantive.strip():
+                trace['decisions'].append({'id': context['id'], 'decision': 'excluded', 'reason': 'heading_without_evidence'})
+                continue
         d = describe(context)
         reason = None
         if query_services and d['services'] and not query_services & d['services']:
@@ -173,6 +180,19 @@ def select_evidence(query, candidates, corpus=(), *, max_contexts=6, max_chars=1
             trace['decisions'].append({'id': context['id'], 'decision': 'excluded', 'reason': 'unclassified_action_with_direct_alternative'})
         else:
             ordered.append(context)
+    # Avoid concatenating alternative checklists with duplicate or incompatible
+    # conditional requirements. Keep continuations of one retrieved checklist.
+    # Multi-action queries retain alternatives for the explicitly requested parts.
+    if documents and not fee and len(query_actions) <= 1 and ordered:
+        primary = next((c for c in ordered if describe(c)['documents'] and family(c)), None)
+        if primary:
+            coherent = []
+            for c in ordered:
+                if family(c) == family(primary) and c.get('metadata', {}).get('section_title') == primary.get('metadata', {}).get('section_title'):
+                    coherent.append(c)
+                else:
+                    trace['decisions'].append({'id': c['id'], 'decision': 'excluded', 'reason': 'alternative_checklist_not_merged'})
+            ordered = coherent
     # Complete adjacent category/checklist sections only inside an already
     # retrieved document and parent section; never search arbitrary corpus IDs.
     if fee or documents:

@@ -21,9 +21,14 @@ def save(name, value):
 
 
 def main():
+    global OUT
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--live', action='store_true')
+    parser.add_argument('--follow-up', action='store_true')
+    parser.add_argument('--domain', choices=['passport', 'brta', 'birth_death_registration'])
     args = parser.parse_args()
+    if args.follow_up:
+        OUT = OUT / 'followup'
     OUT.mkdir(parents=True, exist_ok=True)
     if not args.live:
         source = json.loads((ROOT / 'docs/evaluation/user_30q_model_comparison_2026_09_22/answers_qwen3_8b.json').read_text())
@@ -44,6 +49,8 @@ def main():
         ('brta', 'ড্রাইভিং লাইসেন্স হারিয়ে গেলে কী করতে হবে?'),
         ('birth_death_registration', 'জন্মনিবন্ধন অনলাইনে কীভাবে করব?'),
     ]
+    if args.domain:
+        jobs = [job for job in jobs if job[0] == args.domain]
     if (OUT / 'smoke.json').exists():
         raise RuntimeError('Refusing to overwrite smoke results')
     rows = []
@@ -66,7 +73,7 @@ def main():
             r = row['result']
             lines += [f"## {r['domain']}", '', r['query'], '', f"Route: {r['answer_route']}; seconds: {row['seconds']}", '', r['answer'], '']
         (OUT / 'smoke.md').write_text('\n'.join(lines))
-        print('Completed', len(rows), '/3', result['answer_route'], flush=True)
+        print('Completed', len(rows), '/', len(jobs), result['answer_route'], flush=True)
 
 
 if __name__ == '__main__':

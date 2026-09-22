@@ -78,6 +78,15 @@ def test_document_continuation_not_parallel_language_or_other_heading():
     assert select_evidence('পাসপোর্টের কাগজপত্র কী লাগে?', [a], [a, b, c]).contexts == [a, b]
 
 
+def test_alternative_checklists_are_not_concatenated_and_heading_only_is_skipped():
+    a = context('a', 'Passport > Application documents', 'List one.', doc_id='doc')
+    b = context('b', 'Passport > Application documents', 'List two.', doc_id='other')
+    empty = context('empty', 'Passport > Application documents', 'Title\n\n## Heading only', doc_id='doc')
+    result = select_evidence('পাসপোর্টের কাগজপত্র কী লাগে?', [empty, a, b])
+    assert result.contexts == [a]
+    assert {d['reason'] for d in result.trace['decisions']} >= {'heading_without_evidence', 'alternative_checklist_not_merged'}
+
+
 def test_whole_chunk_budget_and_duplicate_ids():
     rows = [context('a', 'Unknown', 'a' * 20), context('b', 'Unknown', 'b' * 50)]
     result = select_evidence('প্রশ্ন', [rows[0], *rows], max_chars=25)
@@ -129,3 +138,22 @@ def test_no_applicable_evidence_does_not_invoke_model():
     pipeline.retrieve = lambda *a, **k: []
     pipeline._generator = lambda *a, **k: pytest.fail('Must not generate without evidence')
     assert pipeline.ask('লাইসেন্স হারিয়ে গেলে কী করব?')['answer_route'] == 'no_applicable_evidence'
+
+
+@pytest.mark.parametrize('raw,metadata,route', [
+    ('প্রতিলিপির জন্য আবেদন করতে হবে।', {'done_reason': 'length'}, 'selected_evidence_truncated'),
+    ('根据提供的信息申请。', {'done_reason': 'stop'}, 'selected_evidence_language_rejection'),
+])
+def test_rejections_and_length_stops_preserve_raw_output(raw, metadata, route):
+    pipeline = CivicRAGPipeline.__new__(CivicRAGPipeline)
+    pipeline.domain_id = 'brta'
+    pipeline.birth_death_rules = False
+    pipeline.evidence_selection_enabled = True
+    pipeline.generation_config = {'default_model': 'test'}
+    pipeline.chunks = []
+    pipeline.retrieve = lambda *a, **k: [RetrievalResult(chunk_id='a', content='প্রতিলিপির জন্য আবেদন করতে হবে।', retrieval_text='', metadata={'section_title': 'Duplicate licence'}, score=1, retrievers=['dense'])]
+    pipeline._generator = lambda *a, **k: SimpleNamespace(answer=lambda q, cs: raw, last_metadata=metadata)
+    result = pipeline.ask('লাইসেন্স হারিয়ে গেলে কী করব?')
+    assert result['answer_route'] == route
+    assert result['raw_generation'] == raw
+    assert result['generation_metadata'] == metadata
