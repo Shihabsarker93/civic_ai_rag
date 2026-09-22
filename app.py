@@ -318,7 +318,7 @@ HTML = """<!doctype html>
           <option value="llama3.2">llama3.2</option>
           <option value="llama3">llama3</option>
           <option value="qwen2.5:7b">qwen2.5:7b</option>
-          <option value="qwen3:8b">qwen3:8b</option>
+          <option value="qwen3:8b" selected>qwen3:8b</option>
         </select>
       </div>
     </header>
@@ -408,6 +408,17 @@ HTML = """<!doctype html>
           : `${run.model} (${run.answer_route || "LLM"})`;
         generation.textContent = `${run.domain} | ${methodLabel(run.method)} | ${route}`;
         node.appendChild(generation);
+        if (run.evidence_selection) {
+          const audit = document.createElement("details");
+          const heading = document.createElement("summary");
+          heading.textContent = "Evidence selection: passages sent to the model";
+          audit.appendChild(heading);
+          const body = document.createElement("pre");
+          body.style.whiteSpace = "pre-wrap";
+          body.textContent = JSON.stringify(run.evidence_selection, null, 2);
+          audit.appendChild(body);
+          node.appendChild(audit);
+        }
       }
       if (sources.length) {
         const details = document.createElement("details");
@@ -435,7 +446,7 @@ HTML = """<!doctype html>
         node.appendChild(details);
       }
       if (role === "bot" && sources.length) {
-        const links = uniqueLinksFromSources(sources);
+        const links = uniqueLinksFromSources(run?.answer_contexts || sources);
         if (links.length) {
           const linksBox = document.createElement("div");
           linksBox.className = "links";
@@ -492,7 +503,9 @@ HTML = """<!doctype html>
           method: payload.method || method.value,
           model: payload.model || model.value,
           domain: payload.domain || selectedDomain,
-          answer_route: payload.answer_route
+          answer_route: payload.answer_route,
+          evidence_selection: payload.evidence_selection,
+          answer_contexts: payload.answer_contexts
         });
         status.textContent = "Ready";
       } catch (error) {
@@ -546,7 +559,7 @@ class ChatHandler(BaseHTTPRequestHandler):
             self._send_text(HTML, "text/html; charset=utf-8")
             return
         if path == "/health":
-            self._send_json({"status": "ok"})
+            self._send_json({"status": "ok", "pipeline_variant": "applicability_v1" if getattr(self.pipeline, "evidence_selection_enabled", False) else "legacy"})
             return
         if path == "/domains":
             domains = []

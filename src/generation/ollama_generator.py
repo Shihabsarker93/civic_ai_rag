@@ -42,7 +42,23 @@ def detect_answer_language(query: str) -> str:
     return "the user's language"
 
 
-def build_prompt(query: str, contexts: list[dict[str, Any]]) -> str:
+def build_prompt(query: str, contexts: list[dict[str, Any]], *, selected_evidence: bool = False) -> str:
+    instructions = SYSTEM_INSTRUCTIONS
+    if selected_evidence:
+        instructions = instructions.replace(
+            "The retrieved sources are ranked by relevance. Source 1 is the strongest evidence.\n"
+            "If Source 1 directly answers the user's question, answer from Source 1.\n"
+            "If another retrieved source directly answers the question better than Source 1, use that source.",
+            "Source order is not authority. Check the requested service, action and conditions against every supplied passage.\n"
+            "Do not mix application with collection, replacement with cancellation, or different products, dates and locations.\n"
+            "Ask a short clarification when required conditions are unknown; do not assume them.\n"
+            "Answer supported parts only and explicitly identify missing parts."
+        ).replace(
+            "Use at most 6 short bullets and avoid repeating the same point.",
+            "Use as many concise bullets as needed to preserve all required items and exceptions.\n"
+            "For fees, preserve every applicable category, amount, currency, location, validity, delivery option and VAT condition.\n"
+            "Do not call exact published amounts averages or estimates. Do not calculate extra fees."
+        )
     evidence_blocks = []
     for index, context in enumerate(contexts, start=1):
         metadata = context.get("metadata", {})
@@ -64,7 +80,7 @@ def build_prompt(query: str, contexts: list[dict[str, Any]]) -> str:
         )
 
     evidence = "\n\n".join(evidence_blocks)
-    return f"""{SYSTEM_INSTRUCTIONS}
+    return f"""{instructions}
 
 Question:
 {query}
@@ -120,10 +136,12 @@ class OllamaAnswerGenerator:
         num_predict: int,
         repeat_last_n: int | None = None,
         repeat_penalty: float | None = None,
+        selected_evidence: bool = False,
     ) -> None:
         # Qwen3 enables a long reasoning mode by default. Citizen-service answers need the
         # concise grounded response, not an internal reasoning trace that delays every request.
         reasoning = False if model.lower().startswith("qwen3") else None
+        self.selected_evidence = selected_evidence
         self.llm = ChatOllama(
             model=model,
             base_url=base_url,
@@ -133,10 +151,12 @@ class OllamaAnswerGenerator:
             num_predict=num_predict,
             repeat_last_n=repeat_last_n,
             repeat_penalty=repeat_penalty,
+            num_ctx=8192 if selected_evidence else None,
         )
 
     def answer(self, query: str, contexts: list[dict[str, Any]]) -> str:
-        response = self.llm.invoke(build_prompt(query, contexts))
+        response = self.llm.invoke(build_prompt(query, contexts, selected_evidence=self.selected_evidence))
         answer = str(response.content).strip()
-        source_ids = [str(context["id"]) for context in contexts[:3]]
+        cited_contexts = contexts if self.selected_evidence else contexts[:3]
+        source_ids = [str(context["id"]) for context in cited_contexts]
         return canonicalize_answer(answer, source_ids)

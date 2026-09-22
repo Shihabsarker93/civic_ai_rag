@@ -1,12 +1,14 @@
 from __future__ import annotations
 
 import json
+import os
 import re
 import unicodedata
 from pathlib import Path
 from typing import Any
 
 from src.generation.ollama_generator import OllamaAnswerGenerator
+from src.generation.evidence_selection import select_evidence
 from src.reranking.reranker import HybridReranker
 from src.retrieval.hybrid_retriever import HybridRetriever, RetrievalResult
 
@@ -25,6 +27,7 @@ class CivicRAGPipeline:
         self.retrieval_config = self.config["retrieval"]
         self.reranking_config = self.config["reranking"]
         self.generation_config = self.config["generation"]
+        self.evidence_selection_enabled = os.environ.get("CIVIC_EVIDENCE_SELECTION", "1") != "0"
 
         self.chunks = self._load_jsonl(project_root / self.data_config["chunk_output_path"])
         self.chunks_by_id = {str(chunk["id"]): chunk for chunk in self.chunks}
@@ -60,6 +63,8 @@ class CivicRAGPipeline:
     ) -> dict[str, Any]:
         if self._is_cross_domain_aggregate_query(query):
             return self._cross_domain_aggregate_response(query, model, method)
+        if getattr(self, "evidence_selection_enabled", False) and self._normalize_method(method) == "civic":
+            return self._ask_selected_evidence(query, model, generate)
         if not self.birth_death_rules:
             return self._ask_experimental(query, model, generate, method)
         normalized_method = self._normalize_method(method)
@@ -106,6 +111,33 @@ class CivicRAGPipeline:
             "domain": self.domain_id,
             "answer_route": answer_route,
         }
+
+    def _ask_selected_evidence(self, query, model, generate):
+        """Shared candidate path: no domain-specific template may bypass screening."""
+        search_query = self._normalize_query_text(query)
+        candidates = [self._context_from_result(r) for r in self.retrieve(search_query, 'civic', candidate_limit=15)]
+        if self.birth_death_rules:
+            candidates = self._augment_contexts(search_query, candidates)
+        selection = select_evidence(search_query, candidates, self.chunks)
+        evidence = selection.contexts
+        selected_model = model or self.generation_config['default_model']
+        answer, raw_answer, route = '', '', 'retrieval_only'
+        if generate and evidence:
+            answer = self._generator(selected_model, selected_evidence=True).answer(search_query, evidence)
+            raw_answer = answer
+            route = 'llm_selected_evidence'
+            if self._violates_answer_language(search_query, answer):
+                answer = self._bangla_language_safety_answer(evidence)
+                route = 'selected_evidence_language_rejection'
+        elif generate:
+            answer = 'প্রশ্নটির সেবা ও কাজের সঙ্গে মেলে এমন পর্যাপ্ত তথ্য পাওয়া যায়নি। কোন সেবা এবং কী করতে চান একটু স্পষ্ট করে বলুন।'
+            route = 'no_applicable_evidence'
+        return {'query': query, 'model': selected_model, 'method': 'civic',
+                'domain': self.domain_id, 'answer': answer, 'answer_route': route,
+                'sources': candidates, 'answer_contexts': evidence,
+                'raw_generation': raw_answer,
+                'evidence_selection': selection.trace,
+                'pipeline_variant': 'applicability_v1', 'experimental': True}
 
     def _cross_domain_aggregate_response(
         self,
@@ -314,7 +346,7 @@ class CivicRAGPipeline:
             "metadata": dict(chunk.get("metadata", {})),
         }
 
-    def retrieve(self, query: str, method: str = "civic") -> list[RetrievalResult]:
+    def retrieve(self, query: str, method: str = "civic", *, candidate_limit: int | None = None) -> list[RetrievalResult]:
         normalized_method = self._normalize_method(method)
         search_query = self._normalize_query_text(query) if self.birth_death_rules else unicodedata.normalize("NFC", query).strip()
         if normalized_method == "simple":
@@ -332,7 +364,7 @@ class CivicRAGPipeline:
         return self.reranker.rerank(
             search_query,
             initial_results,
-            top_k=self.reranking_config["top_k"],
+            top_k=candidate_limit or self.reranking_config["top_k"],
         )
 
     @staticmethod
@@ -342,9 +374,10 @@ class CivicRAGPipeline:
             return "simple"
         return "civic"
 
-    def _generator(self, model: str) -> OllamaAnswerGenerator:
-        if model not in self._generators:
-            self._generators[model] = OllamaAnswerGenerator(
+    def _generator(self, model: str, selected_evidence: bool = False) -> OllamaAnswerGenerator:
+        cache_key = f'{model}:selected={selected_evidence}'
+        if cache_key not in self._generators:
+            self._generators[cache_key] = OllamaAnswerGenerator(
                 model=model,
                 base_url=self.generation_config["ollama_base_url"],
                 temperature=self.generation_config["temperature"],
@@ -352,8 +385,9 @@ class CivicRAGPipeline:
                 num_predict=self.generation_config["num_predict"],
                 repeat_last_n=self.generation_config.get("repeat_last_n"),
                 repeat_penalty=self.generation_config.get("repeat_penalty"),
+                selected_evidence=selected_evidence,
             )
-        return self._generators[model]
+        return self._generators[cache_key]
 
     def _select_generation_contexts(
         self,
