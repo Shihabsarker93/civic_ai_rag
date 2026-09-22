@@ -59,6 +59,7 @@ def render(rows):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--resume", action="store_true")
     args = parser.parse_args()
     OUTPUT.mkdir(parents=True, exist_ok=True)
     source = json.loads(INPUT.read_text())["rows"]
@@ -94,14 +95,24 @@ def main():
             "context_comparisons": comparisons, "jobs": jobs,
             "note": "Controlled paths and fresh retrieval not tested. No-op context variants are skipped, not independent results."}
     plan_path = OUTPUT / ("dry_run.json" if args.dry_run else "plan.json")
-    if not args.dry_run and (OUTPUT / "results.json").exists():
-        raise RuntimeError("Existing results: preserve them; do not overwrite or silently resume")
-    plan_path.write_text(json.dumps(plan, ensure_ascii=False, indent=2) + "\n")
+    rows = []
+    if not args.dry_run and args.resume:
+        previous = json.loads(plan_path.read_text())
+        if previous["jobs"] != jobs or previous["input_sha256"] != plan["input_sha256"]:
+            raise RuntimeError("Resume refused: prompts, evidence, settings or inputs changed")
+        if (OUTPUT / "results.json").exists():
+            rows = json.loads((OUTPUT / "results.json").read_text())["rows"]
+    else:
+        if not args.dry_run and (OUTPUT / "results.json").exists():
+            raise RuntimeError("Existing results: use --resume to preserve completed calls")
+        plan_path.write_text(json.dumps(plan, ensure_ascii=False, indent=2) + "\n")
     print(f"Plan: {len(jobs)} calls; {sum(not x['same_contexts'] for x in comparisons)} of {len(comparisons)} LLM cases affected by shortcut", flush=True)
     if args.dry_run:
         return
-    rows = []
+    completed = {(r["id"], r["variant"]) for r in rows}
     for job in jobs:
+        if (job["id"], job["variant"]) in completed:
+            continue
         started = time.monotonic()
         payload = {"model": "qwen3:8b", "messages": [{"role": "user", "content": job["prompt"]}],
                    "stream": False, "think": False, "options": job["options"]}
@@ -114,7 +125,10 @@ def main():
             if "message" not in result:
                 raise RuntimeError(str(result))
         except Exception as exc:
-            (OUTPUT / "failure.json").write_text(json.dumps({"id": job["id"], "variant": job["variant"], "error": str(exc)}, indent=2))
+            failure = {"id": job["id"], "variant": job["variant"], "error": str(exc), "time": time.time()}
+            (OUTPUT / "failure.json").write_text(json.dumps(failure, indent=2))
+            with (OUTPUT / "failures.jsonl").open("a") as log:
+                log.write(json.dumps(failure) + "\n")
             raise
         raw = result["message"]["content"]
         answer = canonicalize_answer(raw, [c["id"] for c in job["contexts"][:3]])
@@ -126,7 +140,9 @@ def main():
         rows.append({"id": job["id"], "question": job["question"], "variant": job["variant"],
                      "seconds": round(time.monotonic()-started, 2), "raw_answer": raw, "display_answer": answer,
                      "route": route, "ollama_metadata": {k: v for k, v in result.items() if k != "message"}})
-        (OUTPUT / "results.json").write_text(json.dumps({"rows": rows}, ensure_ascii=False, indent=2) + "\n")
+        temporary = OUTPUT / "results.json.tmp"
+        temporary.write_text(json.dumps({"rows": rows}, ensure_ascii=False, indent=2) + "\n")
+        temporary.replace(OUTPUT / "results.json")
         (OUTPUT / "results.md").write_text(render(rows))
         print("Completed", len(rows), "/", len(jobs), flush=True)
 
