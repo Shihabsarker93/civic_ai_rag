@@ -1,0 +1,166 @@
+{
+  "rows": [
+    {
+      "id": "passport_01_documents",
+      "model": "qwen3:8b",
+      "question": "নতুন পাসপোর্ট করতে কী কী কাগজপত্র লাগবে?",
+      "seconds": 121.71,
+      "raw_answer": "* **ক্রমিক ১:** আবেদনপত্রের সারংশের প্রিন্ট কপি (অ্যাপয়েন্টমেন্ট সহ)  \n* **ক্রমিক ২:** সনাক্তকরণ নথির প্রিন্ট কপি (জাতীয় পরিচয় পত্র/ জন্ম নিবন্ধন নং)  \n* **ক্রমিক ৩:** পেমেন্ট স্লিপ (অফলাইন পেমেন্টের জন্য)  \n* **ক্রমিক ৪:** পূর্ববর্তী পাসপোর্ট এবং ডাটা পেজের প্রিন্ট কপি (যদি থাকে)  \n* **ক্রমিক ৫:** সরকারি চাকরিজীবীদের ক্ষেত্রে GO/NOC (যদি থাকে)  \n* **ক্রমিক ৭:** তথ্য সংশোধনের ক্ষেত্রে প্রয়োজনীয় কাগজপত্র (যদি থাকে)",
+      "display_answer": "* **ক্রমিক ১:** আবেদনপত্রের সারংশের প্রিন্ট কপি (অ্যাপয়েন্টমেন্ট সহ)  \n* **ক্রমিক ২:** সনাক্তকরণ নথির প্রিন্ট কপি (জাতীয় পরিচয় পত্র/ জন্ম নিবন্ধন নং)  \n* **ক্রমিক ৩:** পেমেন্ট স্লিপ (অফলাইন পেমেন্টের জন্য)  \n* **ক্রমিক ৪:** পূর্ববর্তী পাসপোর্ট এবং ডাটা পেজের প্রিন্ট কপি (যদি থাকে)  \n* **ক্রমিক ৫:** সরকারি চাকরিজীবীদের ক্ষেত্রে GO/NOC (যদি থাকে)  \n* **ক্রমিক ৭:** তথ্য সংশোধনের ক্ষেত্রে প্রয়োজনীয় কাগজপত্র (যদি থাকে)\n\nSources: passport_73ac41f2327257f9_v2_0004",
+      "message": {
+        "role": "assistant",
+        "content": "* **ক্রমিক ১:** আবেদনপত্রের সারংশের প্রিন্ট কপি (অ্যাপয়েন্টমেন্ট সহ)  \n* **ক্রমিক ২:** সনাক্তকরণ নথির প্রিন্ট কপি (জাতীয় পরিচয় পত্র/ জন্ম নিবন্ধন নং)  \n* **ক্রমিক ৩:** পেমেন্ট স্লিপ (অফলাইন পেমেন্টের জন্য)  \n* **ক্রমিক ৪:** পূর্ববর্তী পাসপোর্ট এবং ডাটা পেজের প্রিন্ট কপি (যদি থাকে)  \n* **ক্রমিক ৫:** সরকারি চাকরিজীবীদের ক্ষেত্রে GO/NOC (যদি থাকে)  \n* **ক্রমিক ৭:** তথ্য সংশোধনের ক্ষেত্রে প্রয়োজনীয় কাগজপত্র (যদি থাকে)"
+      },
+      "metadata": {
+        "model": "qwen3:8b",
+        "created_at": "2026-09-22T18:14:44.290725Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 121705671209,
+        "load_duration": 6105349292,
+        "prompt_eval_count": 1255,
+        "prompt_eval_cached_count": 0,
+        "prompt_eval_duration": 22163332000,
+        "eval_count": 403,
+        "eval_duration": 93407049000
+      },
+      "route": "diagnostic_llm",
+      "correctness": "pending_manual_review"
+    },
+    {
+      "id": "passport_02_fee",
+      "model": "qwen3:8b",
+      "question": "পাসপোর্ট বানাতে কত টাকা লাগে?",
+      "seconds": 173.66,
+      "raw_answer": "পাসপোর্ট বানাতে খরচ হয় মূলত পাসপোর্টের ধরন এবং ডেলিভারি অপশনের উপর। নিচে দেওয়া হল কিছু গড় ফি:\n\n- ৪৮ পেজ ও ৫ বছর বৈধতা থাকলে আমলাতন্ত্র ফি ঘটে টক ৪,০২৫ (সাধারণ), টক ৬,৩২৫ (এক্সপ্রেস) এবং টক ৮,৬২৫ (সুপার এক্সপ্রেস)\n- ৪৮ পেজ ও ১০ বছর বৈধতা থাকলে আমলাতন্ত্র ফি ঘটে টক ৫,৭৫০ (সাধারণ), টক ৮,০৫০ (এক্সপ্রেস) এবং টক ১০,৩৫০ (সুপার এক্সপ্রেস)\n- ৬৪ পেজ ও ৫ বছর বৈধতা থাকলে আমলাতন্ত্র ফি ঘটে টক ৬,৩২৫ (সাধারণ), টক ৮,৬২৫ (এক্সপ্রেস) এবং টক ১২,০৭৫ (সুপার এক্সপ্রেস)\n- ৬৪ পেজ ও ১০ বছর বৈধতা থাকলে আমলাতন্ত্র ফি ঘটে টক ৮,০৫০ (সাধারণ), টক ১০,৩৫০ (এক্সপ্রেস) এবং টক ১৩,৮০০ (সুপার এক্সপ্রেস)",
+      "display_answer": "পাসপোর্ট বানাতে খরচ হয় মূলত পাসপোর্টের ধরন এবং ডেলিভারি অপশনের উপর। নিচে দেওয়া হল কিছু গড় ফি:\n\n- ৪৮ পেজ ও ৫ বছর বৈধতা থাকলে আমলাতন্ত্র ফি ঘটে টক ৪,০২৫ (সাধারণ), টক ৬,৩২৫ (এক্সপ্রেস) এবং টক ৮,৬২৫ (সুপার এক্সপ্রেস)\n- ৪৮ পেজ ও ১০ বছর বৈধতা থাকলে আমলাতন্ত্র ফি ঘটে টক ৫,৭৫০ (সাধারণ), টক ৮,০৫০ (এক্সপ্রেস) এবং টক ১০,৩৫০ (সুপার এক্সপ্রেস)\n- ৬৪ পেজ ও ৫ বছর বৈধতা থাকলে আমলাতন্ত্র ফি ঘটে টক ৬,৩২৫ (সাধারণ), টক ৮,৬২৫ (এক্সপ্রেস) এবং টক ১২,০৭৫ (সুপার এক্সপ্রেস)\n- ৬৪ পেজ ও ১০ বছর বৈধতা থাকলে আমলাতন্ত্র ফি ঘটে টক ৮,০৫০ (সাধারণ), টক ১০,৩৫০ (এক্সপ্রেস) এবং টক ১৩,৮০০ (সুপার এক্সপ্রেস)\n\nSources: passport_12e10027cfdfeeee_v2_0007, passport_12e10027cfdfeeee_v2_0008, passport_12e10027cfdfeeee_v2_0009, passport_12e10027cfdfeeee_v2_0010",
+      "message": {
+        "role": "assistant",
+        "content": "পাসপোর্ট বানাতে খরচ হয় মূলত পাসপোর্টের ধরন এবং ডেলিভারি অপশনের উপর। নিচে দেওয়া হল কিছু গড় ফি:\n\n- ৪৮ পেজ ও ৫ বছর বৈধতা থাকলে আমলাতন্ত্র ফি ঘটে টক ৪,০২৫ (সাধারণ), টক ৬,৩২৫ (এক্সপ্রেস) এবং টক ৮,৬২৫ (সুপার এক্সপ্রেস)\n- ৪৮ পেজ ও ১০ বছর বৈধতা থাকলে আমলাতন্ত্র ফি ঘটে টক ৫,৭৫০ (সাধারণ), টক ৮,০৫০ (এক্সপ্রেস) এবং টক ১০,৩৫০ (সুপার এক্সপ্রেস)\n- ৬৪ পেজ ও ৫ বছর বৈধতা থাকলে আমলাতন্ত্র ফি ঘটে টক ৬,৩২৫ (সাধারণ), টক ৮,৬২৫ (এক্সপ্রেস) এবং টক ১২,০৭৫ (সুপার এক্সপ্রেস)\n- ৬৪ পেজ ও ১০ বছর বৈধতা থাকলে আমলাতন্ত্র ফি ঘটে টক ৮,০৫০ (সাধারণ), টক ১০,৩৫০ (এক্সপ্রেস) এবং টক ১৩,৮০০ (সুপার এক্সপ্রেস)"
+      },
+      "metadata": {
+        "model": "qwen3:8b",
+        "created_at": "2026-09-22T18:17:37.951273Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 173653759209,
+        "load_duration": 3930750,
+        "prompt_eval_count": 1539,
+        "prompt_eval_cached_count": 332,
+        "prompt_eval_duration": 22184458000,
+        "eval_count": 641,
+        "eval_duration": 151369435000
+      },
+      "route": "diagnostic_llm",
+      "correctness": "pending_manual_review"
+    },
+    {
+      "id": "brta_07_lost",
+      "model": "qwen3:8b",
+      "question": "ড্রাইভিং লাইসেন্স হারিয়ে গেলে কী করতে হবে?",
+      "seconds": 85.23,
+      "raw_answer": "ড্রাইভিং লাইসেন্স হারিয়ে গেলে নতুন লাইসেন্স পেতে হলে অবশ্যই নিচের কাগজপত্রগুলো জমা দিতে হবে:\n\n- **আবেদনপত্র:** নির্ধারিত ফরমে আবেদন।  \n- **জিডি ও ট্রাফিক ক্লিয়ারেন্স:** জিডি কপি এবং ট্রাফিক ক্লিয়ারেন্স।  \n- **ফি জমাদানের রশিদ:** বিআরটিএ'র নির্ধারিত ব্যাংকে ফি জমা দেওয়ার রশিদ।  \n- **ছবি:** সদ্য তোলা ১ কপি পাসপোর্ট সাইজ ছবি।",
+      "display_answer": "ড্রাইভিং লাইসেন্স হারিয়ে গেলে নতুন লাইসেন্স পেতে হলে অবশ্যই নিচের কাগজপত্রগুলো জমা দিতে হবে:\n\n- **আবেদনপত্র:** নির্ধারিত ফরমে আবেদন।  \n- **জিডি ও ট্রাফিক ক্লিয়ারেন্স:** জিডি কপি এবং ট্রাফিক ক্লিয়ারেন্স।  \n- **ফি জমাদানের রশিদ:** বিআরটিএ'র নির্ধারিত ব্যাংকে ফি জমা দেওয়ার রশিদ।  \n- **ছবি:** সদ্য তোলা ১ কপি পাসপোর্ট সাইজ ছবি।\n\nSources: brta_cbe22ab64acf3d03_v2_0013",
+      "message": {
+        "role": "assistant",
+        "content": "ড্রাইভিং লাইসেন্স হারিয়ে গেলে নতুন লাইসেন্স পেতে হলে অবশ্যই নিচের কাগজপত্রগুলো জমা দিতে হবে:\n\n- **আবেদনপত্র:** নির্ধারিত ফরমে আবেদন।  \n- **জিডি ও ট্রাফিক ক্লিয়ারেন্স:** জিডি কপি এবং ট্রাফিক ক্লিয়ারেন্স।  \n- **ফি জমাদানের রশিদ:** বিআরটিএ'র নির্ধারিত ব্যাংকে ফি জমা দেওয়ার রশিদ।  \n- **ছবি:** সদ্য তোলা ১ কপি পাসপোর্ট সাইজ ছবি।"
+      },
+      "metadata": {
+        "model": "qwen3:8b",
+        "created_at": "2026-09-22T18:19:03.185412Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 85228545500,
+        "load_duration": 3973875,
+        "prompt_eval_count": 995,
+        "prompt_eval_cached_count": 332,
+        "prompt_eval_duration": 12161159000,
+        "eval_count": 316,
+        "eval_duration": 72957441000
+      },
+      "route": "diagnostic_llm",
+      "correctness": "pending_manual_review"
+    },
+    {
+      "id": "passport_01_documents",
+      "model": "llama3",
+      "question": "নতুন পাসপোর্ট করতে কী কী কাগজপত্র লাগবে?",
+      "seconds": 64.91,
+      "raw_answer": "নতুন পাসপোর্ট করতে লাগবে:\n\n1. আবেদনপত্রের সারংশের প্রিন্ট কপি\n2. সনাক্তকরণ নথির প্রিন্ট কপি\n3. পেমেন্ট স্লিপ (Offline Payment only)\n4. পূর্ববর্তী পাসপোর্ট এবং ডাটা পেজের প্রিন্ট কপি (if available)\n5. সরকারি চাকরিজীবীদের ক্ষেত্রে GO/NOC (if applicable)\n\nNote: These documents are required to be carried while enrolling at Passport offices, as per the evidence provided.",
+      "display_answer": "নতুন পাসপোর্ট করতে লাগবে:\n\n1. আবেদনপত্রের সারংশের প্রিন্ট কপি\n2. সনাক্তকরণ নথির প্রিন্ট কপি\n3. পেমেন্ট স্লিপ (Offline Payment only)\n4. পূর্ববর্তী পাসপোর্ট এবং ডাটা পেজের প্রিন্ট কপি (if available)\n5. সরকারি চাকরিজীবীদের ক্ষেত্রে GO/NOC (if applicable)\n\nNote: These documents are required to be carried while enrolling at Passport offices, as per the evidence provided.\n\nSources: passport_73ac41f2327257f9_v2_0004",
+      "message": {
+        "role": "assistant",
+        "content": "নতুন পাসপোর্ট করতে লাগবে:\n\n1. আবেদনপত্রের সারংশের প্রিন্ট কপি\n2. সনাক্তকরণ নথির প্রিন্ট কপি\n3. পেমেন্ট স্লিপ (Offline Payment only)\n4. পূর্ববর্তী পাসপোর্ট এবং ডাটা পেজের প্রিন্ট কপি (if available)\n5. সরকারি চাকরিজীবীদের ক্ষেত্রে GO/NOC (if applicable)\n\nNote: These documents are required to be carried while enrolling at Passport offices, as per the evidence provided."
+      },
+      "metadata": {
+        "model": "llama3",
+        "created_at": "2026-09-22T18:20:08.100361Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 64908560750,
+        "load_duration": 5434164542,
+        "prompt_eval_count": 1361,
+        "prompt_eval_cached_count": 0,
+        "prompt_eval_duration": 16131099000,
+        "eval_count": 258,
+        "eval_duration": 43332945000
+      },
+      "route": "diagnostic_llm",
+      "correctness": "pending_manual_review"
+    },
+    {
+      "id": "passport_02_fee",
+      "model": "llama3",
+      "question": "পাসপোর্ট বানাতে কত টাকা লাগে?",
+      "seconds": 57.71,
+      "raw_answer": "পাসপোর্ট বানাতে কত টাকা লাগে?\n\nআমি দেখছি যে একটি পাসপোর্ট বানাতে হলে ভিন্ন রকম ফি লাগে। উদাহরণস্বরূপ, একটি e-Passport with 48 pages and 5 years validity-এর জন্য অনুমান 4,025 টাকা (Regular delivery) থেকে 8,625 টাকা (Super Express delivery)-এর মধ্যে হওয়া যেতে পারে।\n\n(Translation: How much money is needed to make a passport? I see that making a passport requires different fees. For example, an e-Passport with 48 pages and 5 years validity can cost between Tk 4,025 (Regular delivery) and Tk 8,625 (Super Express delivery).",
+      "display_answer": "পাসপোর্ট বানাতে কত টাকা লাগে?\n\nআমি দেখছি যে একটি পাসপোর্ট বানাতে হলে ভিন্ন রকম ফি লাগে। উদাহরণস্বরূপ, একটি e-Passport with 48 pages and 5 years validity-এর জন্য অনুমান 4,025 টাকা (Regular delivery) থেকে 8,625 টাকা (Super Express delivery)-এর মধ্যে হওয়া যেতে পারে।\n\n(Translation: How much money is needed to make a passport? I see that making a passport requires different fees. For example, an e-Passport with 48 pages and 5 years validity can cost between Tk 4,025 (Regular delivery) and Tk 8,625 (Super Express delivery).\n\nSources: passport_12e10027cfdfeeee_v2_0007, passport_12e10027cfdfeeee_v2_0008, passport_12e10027cfdfeeee_v2_0009, passport_12e10027cfdfeeee_v2_0010",
+      "message": {
+        "role": "assistant",
+        "content": "পাসপোর্ট বানাতে কত টাকা লাগে?\n\nআমি দেখছি যে একটি পাসপোর্ট বানাতে হলে ভিন্ন রকম ফি লাগে। উদাহরণস্বরূপ, একটি e-Passport with 48 pages and 5 years validity-এর জন্য অনুমান 4,025 টাকা (Regular delivery) থেকে 8,625 টাকা (Super Express delivery)-এর মধ্যে হওয়া যেতে পারে।\n\n(Translation: How much money is needed to make a passport? I see that making a passport requires different fees. For example, an e-Passport with 48 pages and 5 years validity can cost between Tk 4,025 (Regular delivery) and Tk 8,625 (Super Express delivery)."
+      },
+      "metadata": {
+        "model": "llama3",
+        "created_at": "2026-09-22T18:21:05.831331Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 57704919042,
+        "load_duration": 7007667,
+        "prompt_eval_count": 1434,
+        "prompt_eval_cached_count": 334,
+        "prompt_eval_duration": 14128030000,
+        "eval_count": 285,
+        "eval_duration": 43522740000
+      },
+      "route": "diagnostic_llm",
+      "correctness": "pending_manual_review"
+    },
+    {
+      "id": "brta_07_lost",
+      "model": "llama3",
+      "question": "ড্রাইভিং লাইসেন্স হারিয়ে গেলে কী করতে হবে?",
+      "seconds": 23.08,
+      "raw_answer": "ড্রাইভিং লাইসেন্স হারিয়ে গেলে আপনাকে অবশ্যই উকিল করতে হবে। \n\n(Note: The retrieved source directly answers the question.)",
+      "display_answer": "ড্রাইভিং লাইসেন্স হারিয়ে গেলে আপনাকে অবশ্যই উকিল করতে হবে।\n\n(Note: The retrieved source directly answers the question.)\n\nSources: brta_cbe22ab64acf3d03_v2_0013",
+      "message": {
+        "role": "assistant",
+        "content": "ড্রাইভিং লাইসেন্স হারিয়ে গেলে আপনাকে অবশ্যই উকিল করতে হবে। \n\n(Note: The retrieved source directly answers the question.)"
+      },
+      "metadata": {
+        "model": "llama3",
+        "created_at": "2026-09-22T18:21:28.915156Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 23073713250,
+        "load_duration": 3375750,
+        "prompt_eval_count": 1041,
+        "prompt_eval_cached_count": 335,
+        "prompt_eval_duration": 9633825000,
+        "eval_count": 83,
+        "eval_duration": 13377146000
+      },
+      "route": "diagnostic_llm",
+      "correctness": "pending_manual_review"
+    }
+  ]
+}

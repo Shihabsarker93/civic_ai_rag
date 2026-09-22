@@ -1,0 +1,13 @@
+Starting qwen3:8b passport_01_documents
+Completed 1/6 requests; correctness not yet reviewed.
+Starting qwen3:8b passport_02_fee
+Completed 2/6 requests; correctness not yet reviewed.
+Starting qwen3:8b brta_07_lost
+Completed 3/6 requests; correctness not yet reviewed.
+Starting llama3 passport_01_documents
+Completed 4/6 requests; correctness not yet reviewed.
+Starting llama3 passport_02_fee
+Completed 5/6 requests; correctness not yet reviewed.
+Starting llama3 brta_07_lost
+Completed 6/6 requests; correctness not yet reviewed.
+COMPLETE: 6/6. Manual review pending.
