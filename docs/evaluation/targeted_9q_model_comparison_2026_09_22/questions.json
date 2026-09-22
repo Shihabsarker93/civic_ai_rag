@@ -1,0 +1,14 @@
+{
+  "description": "Nine user-supplied Bangla questions. This set is a model-comparison audit, not a held-out accuracy benchmark.",
+  "questions": [
+    {"id": "passport_01_documents", "domain": "passport", "family": "direct", "variant": "single", "question": "নতুন পাসপোর্ট করতে কী কী কাগজপত্র লাগবে?"},
+    {"id": "passport_02_fee", "domain": "passport", "family": "direct", "variant": "single", "question": "পাসপোর্ট বানাতে কত টাকা লাগে?"},
+    {"id": "passport_03_timeline", "domain": "passport", "family": "direct", "variant": "single", "question": "পাসপোর্ট পেতে কত দিন সময় লাগে?"},
+    {"id": "birth_01_documents", "domain": "birth_death_registration", "family": "direct", "variant": "single", "question": "জন্মনিবন্ধন করতে কী কী কাগজপত্র লাগে?"},
+    {"id": "birth_02_online", "domain": "birth_death_registration", "family": "procedure", "variant": "single", "question": "জন্মনিবন্ধন অনলাইনে কীভাবে করব?"},
+    {"id": "birth_03_birth_date_correction", "domain": "birth_death_registration", "family": "correction", "variant": "single", "question": "জন্মনিবন্ধনে জন্মতারিখ ভুল হলে কীভাবে সংশোধন করব?"},
+    {"id": "brta_01_documents", "domain": "brta", "family": "direct", "variant": "single", "question": "ড্রাইভিং লাইসেন্স করতে কী কী কাগজপত্র লাগবে?"},
+    {"id": "brta_02_fee", "domain": "brta", "family": "direct", "variant": "single", "question": "ড্রাইভিং লাইসেন্স করতে মোট কত টাকা লাগে?"},
+    {"id": "brta_03_learner", "domain": "brta", "family": "procedure", "variant": "single", "question": "লার্নার ড্রাইভিং লাইসেন্স কীভাবে করব?"}
+  ]
+}
