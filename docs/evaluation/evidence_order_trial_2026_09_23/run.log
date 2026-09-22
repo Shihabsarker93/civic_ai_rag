@@ -1,0 +1,19 @@
+Starting passport_01_documents selected_only
+Completed 1/9 requests; correctness not scored.
+Starting passport_01_documents relevant_first
+Completed 2/9 requests; correctness not scored.
+Starting passport_01_documents distractors_first
+Completed 3/9 requests; correctness not scored.
+Starting passport_02_fee selected_only
+Completed 4/9 requests; correctness not scored.
+Starting passport_02_fee relevant_first
+Completed 5/9 requests; correctness not scored.
+Starting passport_02_fee distractors_first
+Completed 6/9 requests; correctness not scored.
+Starting brta_07_lost selected_only
+Completed 7/9 requests; correctness not scored.
+Starting brta_07_lost relevant_first
+Completed 8/9 requests; correctness not scored.
+Starting brta_07_lost distractors_first
+Completed 9/9 requests; correctness not scored.
+COMPLETE: 9/9
