@@ -27,6 +27,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--output', default=str(OUT.relative_to(ROOT)))
     parser.add_argument('--selector-version')
+    parser.add_argument('--model', default='qwen3:8b')
     args = parser.parse_args()
     OUT = (ROOT / args.output).resolve()
     OUT.relative_to(ROOT / 'docs/evaluation')
@@ -43,7 +44,7 @@ def main():
         config = ROOT / f'domains/{domain}/config.json'
         files.extend([config, ROOT / json.loads(config.read_text())['data']['chunk_output_path']])
     hashes = {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest() for p in files}
-    save('plan.json', {'model': 'qwen3:8b', 'revision': revision, 'branch': branch,
+    save('plan.json', {'model': args.model, 'revision': revision, 'branch': branch,
                        'questions': items, 'file_hashes': hashes,
                        'note': 'Existing development questions. Full local CivicRAG candidate, not manually selected context. No correctness scoring.'})
     rows = []
@@ -53,7 +54,7 @@ def main():
                 raise RuntimeError('Code/config/corpus changed during frozen run; stopped.')
             with urllib.request.urlopen('http://127.0.0.1:7860/health', timeout=10) as response:
                 assert json.load(response).get('pipeline_variant') == 'applicability_v1'
-            payload = {'query': item['question'], 'domain': item['domain'], 'model': 'qwen3:8b', 'method': 'civic'}
+            payload = {'query': item['question'], 'domain': item['domain'], 'model': args.model, 'method': 'civic'}
             print('Starting', item['id'], flush=True)
             started = time.monotonic()
             request = urllib.request.Request('http://127.0.0.1:7860/chat', data=json.dumps(payload).encode(), headers={'Content-Type': 'application/json'})
@@ -63,8 +64,8 @@ def main():
             if args.selector_version and result.get('evidence_selection'):
                 assert result['evidence_selection']['version'] == args.selector_version, 'Unexpected selector version'
             rows.append({'audit_item': item, 'elapsed_seconds': round(time.monotonic()-started, 2), 'result': result})
-            save('answers.json', {'model': 'qwen3:8b', 'rows': rows})
-            lines = ['# Overnight Qwen3 candidate outputs', '', 'Raw outputs; correctness review pending. Sources are context IDs, not verified claim-level citations.', '']
+            save('answers.json', {'model': args.model, 'rows': rows})
+            lines = [f'# Overnight {args.model} candidate outputs', '', 'Raw outputs; correctness review pending. Sources are context IDs, not verified claim-level citations.', '']
             for row in rows:
                 r = row['result']
                 lines += [f"## {row['audit_item']['id']}", '', r['query'], '', f"Route: {r['answer_route']}; time: {row['elapsed_seconds']} s", '', r['answer'], '', 'Selected evidence: ' + ', '.join(c['id'] for c in r.get('answer_contexts', [])), '']
@@ -80,7 +81,7 @@ def main():
         raise RuntimeError('Other staged work exists; outputs kept locally, automatic commit skipped.')
     names = ['plan.json', 'answers.json', 'answers.md', 'completion.json']
     git('add', *[str((OUT / n).relative_to(ROOT)) for n in names])
-    git('commit', '-m', 'Save overnight 30-question Qwen3 candidate outputs; review pending')
+    git('commit', '-m', f'Save overnight 30-question {args.model} candidate outputs; review pending')
     git('push', 'origin', 'HEAD')
     print('Complete and pushed. No correctness audit performed.', flush=True)
 
