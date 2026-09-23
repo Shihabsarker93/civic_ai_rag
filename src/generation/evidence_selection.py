@@ -125,7 +125,7 @@ def select_evidence(query, candidates, corpus=(), *, max_contexts=6, max_chars=1
     documents = has(query, DOCUMENT_TERMS)
     if not query_actions and documents:
         query_actions = {'application'}
-    trace = {'version': 'applicability_v1', 'query_actions': sorted(query_actions),
+    trace = {'version': 'applicability_v1_family_order', 'query_actions': sorted(query_actions),
              'query_services': sorted(query_services), 'decisions': [], 'expanded_ids': [],
              'warning': 'Heuristic applicability screening, not verified relevance or factual correctness.'}
     seen = set()
@@ -217,6 +217,31 @@ def select_evidence(query, candidates, corpus=(), *, max_contexts=6, max_chars=1
             ordered.append({'id': c['id'], 'content': c['content'], 'metadata': dict(c.get('metadata', {}))})
             seen.add(c['id'])
             trace['expanded_ids'].append(c['id'])
+    # Keep compatible fee/checklist continuations beside their earliest ranked
+    # anchor before budgeting. Expansion at the tail can otherwise be starved.
+    if fee or documents:
+        def group_key(c):
+            parent = family(c)
+            d = describe(c)
+            if not parent or not (d['fee'] if fee else d['documents']):
+                return None
+            return parent if fee else (parent, c.get('metadata', {}).get('section_title'))
+
+        groups = {}
+        for c in ordered:
+            key = group_key(c)
+            if key is not None:
+                groups.setdefault(key, []).append(c)
+        grouped, emitted = [], set()
+        for c in ordered:
+            key = group_key(c)
+            if key is None:
+                grouped.append(c)
+            elif key not in emitted:
+                grouped.extend(groups[key])
+                emitted.add(key)
+        ordered = grouped
+    trace['budget_order_ids'] = [c['id'] for c in ordered]
     chosen, length = [], 0
     for c in ordered:
         size = len(str(c.get('content', '')))

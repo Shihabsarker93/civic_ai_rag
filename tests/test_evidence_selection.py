@@ -59,6 +59,38 @@ def test_historical_and_wrong_service_are_not_mixed_with_current_scope():
     assert [c['id'] for c in select_evidence('২০১২ সালের MRP পাসপোর্টের ফি কত?', rows).contexts] == ['mrp']
 
 
+@pytest.mark.parametrize('service', ['Passport', 'Driving licence', 'Birth registration'])
+def test_related_fee_chunks_survive_full_candidate_budget(service):
+    base = context('fee1', f'{service} > Fees > Category 1', doc_id='fees')
+    siblings = [context(f'fee{i}', f'{service} > Fees > Category {i}', doc_id='fees')
+                for i in range(2, 5)]
+    other = [context(f'other{i}', f'{service} information {i}') for i in range(5)]
+    rows = [base, *other]
+    before = deepcopy(rows)
+    result = select_evidence(f'{service} fee?', rows, [base, *siblings])
+    assert [c['id'] for c in result.contexts] == ['fee1', 'fee2', 'fee3', 'fee4', 'other0', 'other1']
+    assert rows == before
+    assert result.trace['expanded_ids'] == ['fee2', 'fee3', 'fee4']
+
+
+def test_already_retrieved_fee_sibling_is_grouped_without_duplication():
+    a = context('a', 'Passport > Fees > A', doc_id='fees')
+    b = context('b', 'Passport > Fees > B', doc_id='fees')
+    other = context('other', 'Passport > Fees > Other', doc_id='other')
+    result = select_evidence('Passport fee?', [a, other, b], [a, b], max_contexts=2)
+    assert result.contexts == [a, b]
+    assert result.trace['expanded_ids'] == []
+
+
+def test_family_priority_still_respects_whole_chunk_character_budget():
+    a = context('a', 'Passport > Fees > A', 'a' * 10, doc_id='fees')
+    b = context('b', 'Passport > Fees > B', 'b' * 30, doc_id='fees')
+    other = context('other', 'Passport information', 'c' * 10)
+    result = select_evidence('Passport fee?', [a, other], [a, b], max_chars=20)
+    assert result.contexts == [a, other]
+    assert {'id': 'b', 'decision': 'excluded', 'reason': 'whole_chunk_budget'} in result.trace['decisions']
+
+
 def test_explicit_foreign_scope_not_domestic():
     rows = [context('home', 'e-Passport fees inside Bangladesh'), context('away', 'e-Passport mission fees')]
     assert select_evidence('বিদেশে ই-পাসপোর্টের ফি কত?', rows).contexts == rows[1:]

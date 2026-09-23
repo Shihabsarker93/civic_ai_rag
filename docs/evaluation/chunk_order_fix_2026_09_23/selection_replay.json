@@ -1,0 +1,3917 @@
+{
+  "note": "Selection-only replay of saved candidates with current corpus. No new retrieval or generation. Correctness not assessed.",
+  "baseline": "codex/pre-chunk-order-fix-20260923",
+  "corpora": {
+    "passport": {
+      "path": "domains/passport/data/interim/active_20260919_063632_508964.jsonl",
+      "sha256": "e50f1bf74778d6c49ad7171428431e7df3d434b9ac8671753fb7c4a0f3ca0fa2"
+    },
+    "birth_death_registration": {
+      "path": "domains/birth_death_registration/data/interim/birth_death_chunks.jsonl",
+      "sha256": "b46443cd630a76c4a66134cadcc4a5a243f2f479b4ee97ba220582375ca1a6cf"
+    },
+    "brta": {
+      "path": "domains/brta/data/interim/active_20260919_062310_302306.jsonl",
+      "sha256": "2ac675c1cca65b6a72bb4b61f4d7edbc20c01316a2211619309e53fbb23da359"
+    }
+  },
+  "rows": [
+    {
+      "id": "passport_01_documents",
+      "domain": "passport",
+      "question": "নতুন পাসপোর্ট করতে কী কী কাগজপত্র লাগবে?",
+      "baseline_ids": [
+        "passport_73ac41f2327257f9_v2_0004"
+      ],
+      "new_ids": [
+        "passport_73ac41f2327257f9_v2_0004"
+      ],
+      "matches_saved_baseline": true,
+      "added": [],
+      "removed": [],
+      "changed": false,
+      "trace": {
+        "version": "applicability_v1_family_order",
+        "query_actions": [
+          "application"
+        ],
+        "query_services": [
+          "passport"
+        ],
+        "decisions": [
+          {
+            "id": "passport_23d845d3ab38ea43_v2_0040",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_6f7d900581956bef_v2_0007",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_3fcbc40c98aa80bc_v2_0002",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_3fcbc40c98aa80bc_v2_0008",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_3fcbc40c98aa80bc_v2_0009",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_3fcbc40c98aa80bc_v2_0003",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_ed7b3ebc56c0094f_v2_0004",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_23d845d3ab38ea43_v2_0015",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_729010959c882773_v2_0003",
+            "decision": "excluded",
+            "reason": "alternative_checklist_not_merged"
+          },
+          {
+            "id": "passport_729010959c882773_v2_0004",
+            "decision": "excluded",
+            "reason": "alternative_checklist_not_merged"
+          },
+          {
+            "id": "passport_73ac41f2327257f9_v2_0003",
+            "decision": "excluded",
+            "reason": "alternative_checklist_not_merged"
+          },
+          {
+            "id": "passport_73ac41f2327257f9_v2_0002",
+            "decision": "excluded",
+            "reason": "alternative_checklist_not_merged"
+          },
+          {
+            "id": "passport_23d845d3ab38ea43_v2_0033",
+            "decision": "excluded",
+            "reason": "alternative_checklist_not_merged"
+          },
+          {
+            "id": "passport_ed7b3ebc56c0094f_v2_0003",
+            "decision": "excluded",
+            "reason": "alternative_checklist_not_merged"
+          },
+          {
+            "id": "passport_73ac41f2327257f9_v2_0004",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          }
+        ],
+        "expanded_ids": [],
+        "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+        "budget_order_ids": [
+          "passport_73ac41f2327257f9_v2_0004"
+        ],
+        "selected_ids": [
+          "passport_73ac41f2327257f9_v2_0004"
+        ],
+        "selected_chars": 743
+      }
+    },
+    {
+      "id": "passport_02_fee",
+      "domain": "passport",
+      "question": "পাসপোর্ট বানাতে কত টাকা লাগে?",
+      "baseline_ids": [
+        "passport_12e10027cfdfeeee_v2_0010",
+        "passport_6f7d900581956bef_v2_0011",
+        "passport_6f7d900581956bef_v2_0019",
+        "passport_729010959c882773_v2_0003",
+        "passport_6f7d900581956bef_v2_0006",
+        "passport_6f7d900581956bef_v2_0031"
+      ],
+      "new_ids": [
+        "passport_12e10027cfdfeeee_v2_0010",
+        "passport_12e10027cfdfeeee_v2_0007",
+        "passport_12e10027cfdfeeee_v2_0008",
+        "passport_12e10027cfdfeeee_v2_0009",
+        "passport_6f7d900581956bef_v2_0011",
+        "passport_6f7d900581956bef_v2_0019"
+      ],
+      "matches_saved_baseline": true,
+      "added": [
+        "passport_12e10027cfdfeeee_v2_0007",
+        "passport_12e10027cfdfeeee_v2_0008",
+        "passport_12e10027cfdfeeee_v2_0009"
+      ],
+      "removed": [
+        "passport_729010959c882773_v2_0003",
+        "passport_6f7d900581956bef_v2_0006",
+        "passport_6f7d900581956bef_v2_0031"
+      ],
+      "changed": true,
+      "trace": {
+        "version": "applicability_v1_family_order",
+        "query_actions": [],
+        "query_services": [
+          "passport"
+        ],
+        "decisions": [
+          {
+            "id": "passport_6f7d900581956bef_v2_0016",
+            "decision": "excluded",
+            "reason": "different_service"
+          },
+          {
+            "id": "passport_6f7d900581956bef_v2_0012",
+            "decision": "excluded",
+            "reason": "different_service"
+          },
+          {
+            "id": "passport_bc66966daedfe968_v2_0002",
+            "decision": "excluded",
+            "reason": "different_service"
+          },
+          {
+            "id": "passport_5eb6c21efe103a4f_v2_0026",
+            "decision": "excluded",
+            "reason": "historical_alternative_requires_explicit_scope"
+          },
+          {
+            "id": "passport_12e10027cfdfeeee_v2_0010",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_12e10027cfdfeeee_v2_0007",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_12e10027cfdfeeee_v2_0008",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_12e10027cfdfeeee_v2_0009",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_6f7d900581956bef_v2_0011",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_6f7d900581956bef_v2_0019",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_729010959c882773_v2_0003",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "passport_6f7d900581956bef_v2_0006",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "passport_6f7d900581956bef_v2_0031",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "passport_6f7d900581956bef_v2_0009",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "passport_ed7b3ebc56c0094f_v2_0003",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "passport_3fcbc40c98aa80bc_v2_0002",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "passport_6f7d900581956bef_v2_0010",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "passport_ed7b3ebc56c0094f_v2_0001",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          }
+        ],
+        "expanded_ids": [
+          "passport_12e10027cfdfeeee_v2_0007",
+          "passport_12e10027cfdfeeee_v2_0008",
+          "passport_12e10027cfdfeeee_v2_0009"
+        ],
+        "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+        "budget_order_ids": [
+          "passport_12e10027cfdfeeee_v2_0010",
+          "passport_12e10027cfdfeeee_v2_0007",
+          "passport_12e10027cfdfeeee_v2_0008",
+          "passport_12e10027cfdfeeee_v2_0009",
+          "passport_6f7d900581956bef_v2_0011",
+          "passport_6f7d900581956bef_v2_0019",
+          "passport_729010959c882773_v2_0003",
+          "passport_6f7d900581956bef_v2_0006",
+          "passport_6f7d900581956bef_v2_0031",
+          "passport_6f7d900581956bef_v2_0009",
+          "passport_ed7b3ebc56c0094f_v2_0003",
+          "passport_3fcbc40c98aa80bc_v2_0002",
+          "passport_6f7d900581956bef_v2_0010",
+          "passport_ed7b3ebc56c0094f_v2_0001"
+        ],
+        "selected_ids": [
+          "passport_12e10027cfdfeeee_v2_0010",
+          "passport_12e10027cfdfeeee_v2_0007",
+          "passport_12e10027cfdfeeee_v2_0008",
+          "passport_12e10027cfdfeeee_v2_0009",
+          "passport_6f7d900581956bef_v2_0011",
+          "passport_6f7d900581956bef_v2_0019"
+        ],
+        "selected_chars": 4078
+      }
+    },
+    {
+      "id": "passport_03_delivery_time",
+      "domain": "passport",
+      "question": "পাসপোর্ট পেতে কত দিন সময় লাগে?",
+      "baseline_ids": [
+        "passport_9f4e9ffe9f2a07f4_v2_0004",
+        "passport_12e10027cfdfeeee_v2_0005",
+        "passport_f2c0d221c70d21f2_v2_0003",
+        "passport_6f7d900581956bef_v2_0031",
+        "passport_6f7d900581956bef_v2_0019",
+        "passport_6f7d900581956bef_v2_0011"
+      ],
+      "new_ids": [
+        "passport_9f4e9ffe9f2a07f4_v2_0004",
+        "passport_12e10027cfdfeeee_v2_0005",
+        "passport_f2c0d221c70d21f2_v2_0003",
+        "passport_6f7d900581956bef_v2_0031",
+        "passport_6f7d900581956bef_v2_0019",
+        "passport_6f7d900581956bef_v2_0011"
+      ],
+      "matches_saved_baseline": true,
+      "added": [],
+      "removed": [],
+      "changed": false,
+      "trace": {
+        "version": "applicability_v1_family_order",
+        "query_actions": [],
+        "query_services": [
+          "passport"
+        ],
+        "decisions": [
+          {
+            "id": "passport_6f7d900581956bef_v2_0012",
+            "decision": "excluded",
+            "reason": "different_service"
+          },
+          {
+            "id": "passport_6f7d900581956bef_v2_0016",
+            "decision": "excluded",
+            "reason": "different_service"
+          },
+          {
+            "id": "passport_bc66966daedfe968_v2_0002",
+            "decision": "excluded",
+            "reason": "different_service"
+          },
+          {
+            "id": "passport_9f4e9ffe9f2a07f4_v2_0004",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_12e10027cfdfeeee_v2_0005",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_f2c0d221c70d21f2_v2_0003",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_6f7d900581956bef_v2_0031",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_6f7d900581956bef_v2_0019",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_6f7d900581956bef_v2_0011",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_9f4e9ffe9f2a07f4_v2_0003",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "passport_6f7d900581956bef_v2_0006",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "passport_23d845d3ab38ea43_v2_0039",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "passport_ed7b3ebc56c0094f_v2_0003",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "passport_6f7d900581956bef_v2_0025",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "passport_6f7d900581956bef_v2_0015",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          }
+        ],
+        "expanded_ids": [],
+        "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+        "budget_order_ids": [
+          "passport_9f4e9ffe9f2a07f4_v2_0004",
+          "passport_12e10027cfdfeeee_v2_0005",
+          "passport_f2c0d221c70d21f2_v2_0003",
+          "passport_6f7d900581956bef_v2_0031",
+          "passport_6f7d900581956bef_v2_0019",
+          "passport_6f7d900581956bef_v2_0011",
+          "passport_9f4e9ffe9f2a07f4_v2_0003",
+          "passport_6f7d900581956bef_v2_0006",
+          "passport_23d845d3ab38ea43_v2_0039",
+          "passport_ed7b3ebc56c0094f_v2_0003",
+          "passport_6f7d900581956bef_v2_0025",
+          "passport_6f7d900581956bef_v2_0015"
+        ],
+        "selected_ids": [
+          "passport_9f4e9ffe9f2a07f4_v2_0004",
+          "passport_12e10027cfdfeeee_v2_0005",
+          "passport_f2c0d221c70d21f2_v2_0003",
+          "passport_6f7d900581956bef_v2_0031",
+          "passport_6f7d900581956bef_v2_0019",
+          "passport_6f7d900581956bef_v2_0011"
+        ],
+        "selected_chars": 4231
+      }
+    },
+    {
+      "id": "passport_04_apply",
+      "domain": "passport",
+      "question": "ই-পাসপোর্টের জন্য কীভাবে আবেদন করব?",
+      "baseline_ids": [
+        "passport_9f4e9ffe9f2a07f4_v2_0002",
+        "passport_6e87d0783a373593_v2_0005",
+        "passport_6f7d900581956bef_v2_0006",
+        "passport_0b74faa4d85a2a58_v2_0003",
+        "passport_23d845d3ab38ea43_v2_0024",
+        "passport_23d845d3ab38ea43_v2_0026"
+      ],
+      "new_ids": [
+        "passport_9f4e9ffe9f2a07f4_v2_0002",
+        "passport_6e87d0783a373593_v2_0005",
+        "passport_6f7d900581956bef_v2_0006",
+        "passport_0b74faa4d85a2a58_v2_0003",
+        "passport_23d845d3ab38ea43_v2_0024",
+        "passport_23d845d3ab38ea43_v2_0026"
+      ],
+      "matches_saved_baseline": true,
+      "added": [],
+      "removed": [],
+      "changed": false,
+      "trace": {
+        "version": "applicability_v1_family_order",
+        "query_actions": [
+          "application"
+        ],
+        "query_services": [
+          "passport"
+        ],
+        "decisions": [
+          {
+            "id": "passport_6e87d0783a373593_v2_0008",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_6f7d900581956bef_v2_0007",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_f00b2a4caf73fc8e_v2_0004",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_caccc3966e7586d0_v2_0002",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_9f4e9ffe9f2a07f4_v2_0002",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_6e87d0783a373593_v2_0005",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_6f7d900581956bef_v2_0006",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_0b74faa4d85a2a58_v2_0003",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_23d845d3ab38ea43_v2_0024",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_23d845d3ab38ea43_v2_0026",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_6e87d0783a373593_v2_0007",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "passport_9f4e9ffe9f2a07f4_v2_0003",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "passport_6e87d0783a373593_v2_0002",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "passport_6f7d900581956bef_v2_0008",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "passport_23d845d3ab38ea43_v2_0016",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          }
+        ],
+        "expanded_ids": [],
+        "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+        "budget_order_ids": [
+          "passport_9f4e9ffe9f2a07f4_v2_0002",
+          "passport_6e87d0783a373593_v2_0005",
+          "passport_6f7d900581956bef_v2_0006",
+          "passport_0b74faa4d85a2a58_v2_0003",
+          "passport_23d845d3ab38ea43_v2_0024",
+          "passport_23d845d3ab38ea43_v2_0026",
+          "passport_6e87d0783a373593_v2_0007",
+          "passport_9f4e9ffe9f2a07f4_v2_0003",
+          "passport_6e87d0783a373593_v2_0002",
+          "passport_6f7d900581956bef_v2_0008",
+          "passport_23d845d3ab38ea43_v2_0016"
+        ],
+        "selected_ids": [
+          "passport_9f4e9ffe9f2a07f4_v2_0002",
+          "passport_6e87d0783a373593_v2_0005",
+          "passport_6f7d900581956bef_v2_0006",
+          "passport_0b74faa4d85a2a58_v2_0003",
+          "passport_23d845d3ab38ea43_v2_0024",
+          "passport_23d845d3ab38ea43_v2_0026"
+        ],
+        "selected_chars": 5493
+      }
+    },
+    {
+      "id": "passport_05_renewal",
+      "domain": "passport",
+      "question": "পাসপোর্টের মেয়াদ শেষ হলে কীভাবে নবায়ন করব?",
+      "baseline_ids": [
+        "passport_23d845d3ab38ea43_v2_0017",
+        "passport_23d845d3ab38ea43_v2_0050"
+      ],
+      "new_ids": [
+        "passport_23d845d3ab38ea43_v2_0017",
+        "passport_23d845d3ab38ea43_v2_0050"
+      ],
+      "matches_saved_baseline": true,
+      "added": [],
+      "removed": [],
+      "changed": false,
+      "trace": {
+        "version": "applicability_v1_family_order",
+        "query_actions": [
+          "renewal"
+        ],
+        "query_services": [
+          "passport"
+        ],
+        "decisions": [
+          {
+            "id": "passport_3fcbc40c98aa80bc_v2_0002",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_9f4e9ffe9f2a07f4_v2_0003",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_23d845d3ab38ea43_v2_0029",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_ed7b3ebc56c0094f_v2_0003",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_3fcbc40c98aa80bc_v2_0009",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_a4d61a4d583daa54_v2_0004",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_9f4e9ffe9f2a07f4_v2_0005",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_3fcbc40c98aa80bc_v2_0006",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_6f7d900581956bef_v2_0010",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_3fcbc40c98aa80bc_v2_0008",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_3fcbc40c98aa80bc_v2_0005",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_3fcbc40c98aa80bc_v2_0007",
+            "decision": "excluded",
+            "reason": "different_service"
+          },
+          {
+            "id": "passport_a4d61a4d583daa54_v2_0007",
+            "decision": "excluded",
+            "reason": "unclassified_action_with_direct_alternative"
+          },
+          {
+            "id": "passport_23d845d3ab38ea43_v2_0017",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_23d845d3ab38ea43_v2_0050",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          }
+        ],
+        "expanded_ids": [],
+        "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+        "budget_order_ids": [
+          "passport_23d845d3ab38ea43_v2_0017",
+          "passport_23d845d3ab38ea43_v2_0050"
+        ],
+        "selected_ids": [
+          "passport_23d845d3ab38ea43_v2_0017",
+          "passport_23d845d3ab38ea43_v2_0050"
+        ],
+        "selected_chars": 1954
+      }
+    },
+    {
+      "id": "passport_06_lost",
+      "domain": "passport",
+      "question": "পাসপোর্ট হারিয়ে গেলে কী করতে হবে?",
+      "baseline_ids": [
+        "passport_9f4e9ffe9f2a07f4_v2_0005",
+        "passport_23d845d3ab38ea43_v2_0041",
+        "passport_23d845d3ab38ea43_v2_0036",
+        "passport_6f7d900581956bef_v2_0007",
+        "passport_6f7d900581956bef_v2_0010"
+      ],
+      "new_ids": [
+        "passport_9f4e9ffe9f2a07f4_v2_0005",
+        "passport_23d845d3ab38ea43_v2_0041",
+        "passport_23d845d3ab38ea43_v2_0036",
+        "passport_6f7d900581956bef_v2_0007",
+        "passport_6f7d900581956bef_v2_0010"
+      ],
+      "matches_saved_baseline": true,
+      "added": [],
+      "removed": [],
+      "changed": false,
+      "trace": {
+        "version": "applicability_v1_family_order",
+        "query_actions": [
+          "replacement"
+        ],
+        "query_services": [
+          "passport"
+        ],
+        "decisions": [
+          {
+            "id": "passport_3fcbc40c98aa80bc_v2_0002",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_ed7b3ebc56c0094f_v2_0002",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_ed7b3ebc56c0094f_v2_0003",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_ed7b3ebc56c0094f_v2_0004",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_6f7d900581956bef_v2_0015",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_729010959c882773_v2_0004",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_6f7d900581956bef_v2_0006",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_73ac41f2327257f9_v2_0004",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_23d845d3ab38ea43_v2_0042",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_5eb6c21efe103a4f_v2_0034",
+            "decision": "excluded",
+            "reason": "historical_alternative_requires_explicit_scope"
+          },
+          {
+            "id": "passport_9f4e9ffe9f2a07f4_v2_0005",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_23d845d3ab38ea43_v2_0041",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_23d845d3ab38ea43_v2_0036",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_6f7d900581956bef_v2_0007",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_6f7d900581956bef_v2_0010",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          }
+        ],
+        "expanded_ids": [],
+        "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+        "budget_order_ids": [
+          "passport_9f4e9ffe9f2a07f4_v2_0005",
+          "passport_23d845d3ab38ea43_v2_0041",
+          "passport_23d845d3ab38ea43_v2_0036",
+          "passport_6f7d900581956bef_v2_0007",
+          "passport_6f7d900581956bef_v2_0010"
+        ],
+        "selected_ids": [
+          "passport_9f4e9ffe9f2a07f4_v2_0005",
+          "passport_23d845d3ab38ea43_v2_0041",
+          "passport_23d845d3ab38ea43_v2_0036",
+          "passport_6f7d900581956bef_v2_0007",
+          "passport_6f7d900581956bef_v2_0010"
+        ],
+        "selected_chars": 6160
+      }
+    },
+    {
+      "id": "passport_07_name_correction",
+      "domain": "passport",
+      "question": "পাসপোর্টে নাম ভুল থাকলে কীভাবে ঠিক করব?",
+      "baseline_ids": [
+        "passport_ed7b3ebc56c0094f_v2_0004",
+        "passport_23d845d3ab38ea43_v2_0042",
+        "passport_23d845d3ab38ea43_v2_0023",
+        "passport_23d845d3ab38ea43_v2_0021",
+        "passport_a4d61a4d583daa54_v2_0004",
+        "passport_a4d61a4d583daa54_v2_0010"
+      ],
+      "new_ids": [
+        "passport_ed7b3ebc56c0094f_v2_0004",
+        "passport_23d845d3ab38ea43_v2_0042",
+        "passport_23d845d3ab38ea43_v2_0023",
+        "passport_23d845d3ab38ea43_v2_0021",
+        "passport_a4d61a4d583daa54_v2_0004",
+        "passport_a4d61a4d583daa54_v2_0010"
+      ],
+      "matches_saved_baseline": true,
+      "added": [],
+      "removed": [],
+      "changed": false,
+      "trace": {
+        "version": "applicability_v1_family_order",
+        "query_actions": [
+          "correction"
+        ],
+        "query_services": [
+          "passport"
+        ],
+        "decisions": [
+          {
+            "id": "passport_5eb6c21efe103a4f_v2_0033",
+            "decision": "excluded",
+            "reason": "different_service"
+          },
+          {
+            "id": "passport_a4d61a4d583daa54_v2_0006",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_3fcbc40c98aa80bc_v2_0007",
+            "decision": "excluded",
+            "reason": "different_service"
+          },
+          {
+            "id": "passport_a4d61a4d583daa54_v2_0017",
+            "decision": "excluded",
+            "reason": "unclassified_action_with_direct_alternative"
+          },
+          {
+            "id": "passport_a4d61a4d583daa54_v2_0019",
+            "decision": "excluded",
+            "reason": "unclassified_action_with_direct_alternative"
+          },
+          {
+            "id": "passport_ed7b3ebc56c0094f_v2_0004",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_23d845d3ab38ea43_v2_0042",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_23d845d3ab38ea43_v2_0023",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_23d845d3ab38ea43_v2_0021",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_a4d61a4d583daa54_v2_0004",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_a4d61a4d583daa54_v2_0010",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_3fcbc40c98aa80bc_v2_0004",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "passport_a4d61a4d583daa54_v2_0011",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "passport_3fcbc40c98aa80bc_v2_0005",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "passport_23d845d3ab38ea43_v2_0019",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          }
+        ],
+        "expanded_ids": [],
+        "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+        "budget_order_ids": [
+          "passport_ed7b3ebc56c0094f_v2_0004",
+          "passport_23d845d3ab38ea43_v2_0042",
+          "passport_23d845d3ab38ea43_v2_0023",
+          "passport_23d845d3ab38ea43_v2_0021",
+          "passport_a4d61a4d583daa54_v2_0004",
+          "passport_a4d61a4d583daa54_v2_0010",
+          "passport_3fcbc40c98aa80bc_v2_0004",
+          "passport_a4d61a4d583daa54_v2_0011",
+          "passport_3fcbc40c98aa80bc_v2_0005",
+          "passport_23d845d3ab38ea43_v2_0019"
+        ],
+        "selected_ids": [
+          "passport_ed7b3ebc56c0094f_v2_0004",
+          "passport_23d845d3ab38ea43_v2_0042",
+          "passport_23d845d3ab38ea43_v2_0023",
+          "passport_23d845d3ab38ea43_v2_0021",
+          "passport_a4d61a4d583daa54_v2_0004",
+          "passport_a4d61a4d583daa54_v2_0010"
+        ],
+        "selected_chars": 6064
+      }
+    },
+    {
+      "id": "passport_08_birth_date",
+      "domain": "passport",
+      "question": "পাসপোর্টে জন্মতারিখ পরিবর্তন করা যায় কি?",
+      "baseline_ids": [
+        "passport_3fcbc40c98aa80bc_v2_0007",
+        "passport_3fcbc40c98aa80bc_v2_0002",
+        "passport_9f4e9ffe9f2a07f4_v2_0006",
+        "passport_049144a6810ecbbf_v2_0002",
+        "passport_23d845d3ab38ea43_v2_0019",
+        "passport_3fcbc40c98aa80bc_v2_0004"
+      ],
+      "new_ids": [
+        "passport_3fcbc40c98aa80bc_v2_0007",
+        "passport_3fcbc40c98aa80bc_v2_0002",
+        "passport_9f4e9ffe9f2a07f4_v2_0006",
+        "passport_049144a6810ecbbf_v2_0002",
+        "passport_23d845d3ab38ea43_v2_0019",
+        "passport_3fcbc40c98aa80bc_v2_0004"
+      ],
+      "matches_saved_baseline": true,
+      "added": [],
+      "removed": [],
+      "changed": false,
+      "trace": {
+        "version": "applicability_v1_family_order",
+        "query_actions": [
+          "correction"
+        ],
+        "query_services": [
+          "birth",
+          "passport"
+        ],
+        "decisions": [
+          {
+            "id": "passport_5eb6c21efe103a4f_v2_0033",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_a4d61a4d583daa54_v2_0012",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_a4d61a4d583daa54_v2_0020",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_ed7b3ebc56c0094f_v2_0003",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_a4d61a4d583daa54_v2_0007",
+            "decision": "excluded",
+            "reason": "unclassified_action_with_direct_alternative"
+          },
+          {
+            "id": "passport_a4d61a4d583daa54_v2_0017",
+            "decision": "excluded",
+            "reason": "unclassified_action_with_direct_alternative"
+          },
+          {
+            "id": "passport_a4d61a4d583daa54_v2_0019",
+            "decision": "excluded",
+            "reason": "unclassified_action_with_direct_alternative"
+          },
+          {
+            "id": "passport_3fcbc40c98aa80bc_v2_0007",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_3fcbc40c98aa80bc_v2_0002",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_9f4e9ffe9f2a07f4_v2_0006",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_049144a6810ecbbf_v2_0002",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_23d845d3ab38ea43_v2_0019",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_3fcbc40c98aa80bc_v2_0004",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_3fcbc40c98aa80bc_v2_0005",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "passport_23d845d3ab38ea43_v2_0006",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          }
+        ],
+        "expanded_ids": [],
+        "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+        "budget_order_ids": [
+          "passport_3fcbc40c98aa80bc_v2_0007",
+          "passport_3fcbc40c98aa80bc_v2_0002",
+          "passport_9f4e9ffe9f2a07f4_v2_0006",
+          "passport_049144a6810ecbbf_v2_0002",
+          "passport_23d845d3ab38ea43_v2_0019",
+          "passport_3fcbc40c98aa80bc_v2_0004",
+          "passport_3fcbc40c98aa80bc_v2_0005",
+          "passport_23d845d3ab38ea43_v2_0006"
+        ],
+        "selected_ids": [
+          "passport_3fcbc40c98aa80bc_v2_0007",
+          "passport_3fcbc40c98aa80bc_v2_0002",
+          "passport_9f4e9ffe9f2a07f4_v2_0006",
+          "passport_049144a6810ecbbf_v2_0002",
+          "passport_23d845d3ab38ea43_v2_0019",
+          "passport_3fcbc40c98aa80bc_v2_0004"
+        ],
+        "selected_chars": 3965
+      }
+    },
+    {
+      "id": "passport_09_status",
+      "domain": "passport",
+      "question": "পাসপোর্টের আবেদন করার পর স্ট্যাটাস কীভাবে দেখব?",
+      "baseline_ids": [
+        "passport_23d845d3ab38ea43_v2_0038",
+        "passport_23d845d3ab38ea43_v2_0044",
+        "passport_ed7b3ebc56c0094f_v2_0004",
+        "passport_23d845d3ab38ea43_v2_0043",
+        "passport_23d845d3ab38ea43_v2_0047"
+      ],
+      "new_ids": [
+        "passport_23d845d3ab38ea43_v2_0038",
+        "passport_23d845d3ab38ea43_v2_0044",
+        "passport_ed7b3ebc56c0094f_v2_0004",
+        "passport_23d845d3ab38ea43_v2_0043",
+        "passport_23d845d3ab38ea43_v2_0047"
+      ],
+      "matches_saved_baseline": true,
+      "added": [],
+      "removed": [],
+      "changed": false,
+      "trace": {
+        "version": "applicability_v1_family_order",
+        "query_actions": [
+          "status"
+        ],
+        "query_services": [
+          "passport"
+        ],
+        "decisions": [
+          {
+            "id": "passport_6f7d900581956bef_v2_0006",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_729010959c882773_v2_0003",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_729010959c882773_v2_0004",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_9f4e9ffe9f2a07f4_v2_0002",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_9f4e9ffe9f2a07f4_v2_0005",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_23d845d3ab38ea43_v2_0023",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_6f7d900581956bef_v2_0012",
+            "decision": "excluded",
+            "reason": "different_service"
+          },
+          {
+            "id": "passport_6f7d900581956bef_v2_0014",
+            "decision": "excluded",
+            "reason": "different_service"
+          },
+          {
+            "id": "passport_729010959c882773_v2_0002",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_14c01dbffa495023_v2_0003",
+            "decision": "excluded",
+            "reason": "different_service"
+          },
+          {
+            "id": "passport_23d845d3ab38ea43_v2_0038",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_23d845d3ab38ea43_v2_0044",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_ed7b3ebc56c0094f_v2_0004",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_23d845d3ab38ea43_v2_0043",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_23d845d3ab38ea43_v2_0047",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          }
+        ],
+        "expanded_ids": [],
+        "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+        "budget_order_ids": [
+          "passport_23d845d3ab38ea43_v2_0038",
+          "passport_23d845d3ab38ea43_v2_0044",
+          "passport_ed7b3ebc56c0094f_v2_0004",
+          "passport_23d845d3ab38ea43_v2_0043",
+          "passport_23d845d3ab38ea43_v2_0047"
+        ],
+        "selected_ids": [
+          "passport_23d845d3ab38ea43_v2_0038",
+          "passport_23d845d3ab38ea43_v2_0044",
+          "passport_ed7b3ebc56c0094f_v2_0004",
+          "passport_23d845d3ab38ea43_v2_0043",
+          "passport_23d845d3ab38ea43_v2_0047"
+        ],
+        "selected_chars": 5465
+      }
+    },
+    {
+      "id": "passport_10_urgent",
+      "domain": "passport",
+      "question": "জরুরি পাসপোর্ট করতে কত দিন লাগে?",
+      "baseline_ids": [
+        "passport_f2c0d221c70d21f2_v2_0003",
+        "passport_9f4e9ffe9f2a07f4_v2_0004",
+        "passport_6f7d900581956bef_v2_0031",
+        "passport_12e10027cfdfeeee_v2_0005",
+        "passport_f2c0d221c70d21f2_v2_0002",
+        "passport_ed7b3ebc56c0094f_v2_0003"
+      ],
+      "new_ids": [
+        "passport_f2c0d221c70d21f2_v2_0003",
+        "passport_9f4e9ffe9f2a07f4_v2_0004",
+        "passport_6f7d900581956bef_v2_0031",
+        "passport_12e10027cfdfeeee_v2_0005",
+        "passport_f2c0d221c70d21f2_v2_0002",
+        "passport_ed7b3ebc56c0094f_v2_0003"
+      ],
+      "matches_saved_baseline": true,
+      "added": [],
+      "removed": [],
+      "changed": false,
+      "trace": {
+        "version": "applicability_v1_family_order",
+        "query_actions": [
+          "application"
+        ],
+        "query_services": [
+          "passport"
+        ],
+        "decisions": [
+          {
+            "id": "passport_6f7d900581956bef_v2_0016",
+            "decision": "excluded",
+            "reason": "different_service"
+          },
+          {
+            "id": "passport_6f7d900581956bef_v2_0011",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_6f7d900581956bef_v2_0012",
+            "decision": "excluded",
+            "reason": "different_service"
+          },
+          {
+            "id": "passport_3fcbc40c98aa80bc_v2_0002",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "passport_f2c0d221c70d21f2_v2_0003",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_9f4e9ffe9f2a07f4_v2_0004",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_6f7d900581956bef_v2_0031",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_12e10027cfdfeeee_v2_0005",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_f2c0d221c70d21f2_v2_0002",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_ed7b3ebc56c0094f_v2_0003",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "passport_6f7d900581956bef_v2_0025",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "passport_6f7d900581956bef_v2_0030",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "passport_6f7d900581956bef_v2_0023",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "passport_6f7d900581956bef_v2_0015",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "passport_6f7d900581956bef_v2_0043",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          }
+        ],
+        "expanded_ids": [],
+        "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+        "budget_order_ids": [
+          "passport_f2c0d221c70d21f2_v2_0003",
+          "passport_9f4e9ffe9f2a07f4_v2_0004",
+          "passport_6f7d900581956bef_v2_0031",
+          "passport_12e10027cfdfeeee_v2_0005",
+          "passport_f2c0d221c70d21f2_v2_0002",
+          "passport_ed7b3ebc56c0094f_v2_0003",
+          "passport_6f7d900581956bef_v2_0025",
+          "passport_6f7d900581956bef_v2_0030",
+          "passport_6f7d900581956bef_v2_0023",
+          "passport_6f7d900581956bef_v2_0015",
+          "passport_6f7d900581956bef_v2_0043"
+        ],
+        "selected_ids": [
+          "passport_f2c0d221c70d21f2_v2_0003",
+          "passport_9f4e9ffe9f2a07f4_v2_0004",
+          "passport_6f7d900581956bef_v2_0031",
+          "passport_12e10027cfdfeeee_v2_0005",
+          "passport_f2c0d221c70d21f2_v2_0002",
+          "passport_ed7b3ebc56c0094f_v2_0003"
+        ],
+        "selected_chars": 4051
+      }
+    },
+    {
+      "id": "birth_01_documents",
+      "domain": "birth_death_registration",
+      "question": "জন্মনিবন্ধন করতে কী কী কাগজপত্র লাগে?",
+      "baseline_ids": [
+        "birth_registration_application_process_02_cleaned_010_01",
+        "birth_and_death_registration_rules_2018_বিধি_১০_01",
+        "birth_registration_application_process_cleaned_004_01",
+        "birth_and_death_registration_rules_2018_বিধি_৯_02",
+        "bdris_faq_02_q08",
+        "birth_registration_application_process_cleaned_002_01"
+      ],
+      "new_ids": [
+        "birth_registration_application_process_02_cleaned_010_01",
+        "birth_and_death_registration_rules_2018_বিধি_১০_01",
+        "birth_registration_application_process_cleaned_004_01",
+        "birth_and_death_registration_rules_2018_বিধি_৯_02",
+        "bdris_faq_02_q08",
+        "birth_registration_application_process_cleaned_002_01"
+      ],
+      "matches_saved_baseline": true,
+      "added": [],
+      "removed": [],
+      "changed": false,
+      "trace": {
+        "version": "applicability_v1_family_order",
+        "query_actions": [
+          "application"
+        ],
+        "query_services": [
+          "birth"
+        ],
+        "decisions": [
+          {
+            "id": "bdris_faq_01_q01",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১৩_01",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "bdris_faq_01_q03",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "know_this_01_cleaned_003_01",
+            "decision": "excluded",
+            "reason": "unclassified_action_with_direct_alternative"
+          },
+          {
+            "id": "know_this_01_cleaned_002_01",
+            "decision": "excluded",
+            "reason": "unclassified_action_with_direct_alternative"
+          },
+          {
+            "id": "bdris_faq_02_preamble",
+            "decision": "excluded",
+            "reason": "unclassified_action_with_direct_alternative"
+          },
+          {
+            "id": "bdris_faq_01_q10",
+            "decision": "excluded",
+            "reason": "unclassified_action_with_direct_alternative"
+          },
+          {
+            "id": "birth_and_death_registration_act_2004_ধারা_৮_01",
+            "decision": "excluded",
+            "reason": "unclassified_action_with_direct_alternative"
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_010_01",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১০_01",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_004_01",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_02",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "bdris_faq_02_q08",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_002_01",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_016_01",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          }
+        ],
+        "expanded_ids": [],
+        "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+        "budget_order_ids": [
+          "birth_registration_application_process_02_cleaned_010_01",
+          "birth_and_death_registration_rules_2018_বিধি_১০_01",
+          "birth_registration_application_process_cleaned_004_01",
+          "birth_and_death_registration_rules_2018_বিধি_৯_02",
+          "bdris_faq_02_q08",
+          "birth_registration_application_process_cleaned_002_01",
+          "birth_registration_application_process_cleaned_016_01"
+        ],
+        "selected_ids": [
+          "birth_registration_application_process_02_cleaned_010_01",
+          "birth_and_death_registration_rules_2018_বিধি_১০_01",
+          "birth_registration_application_process_cleaned_004_01",
+          "birth_and_death_registration_rules_2018_বিধি_৯_02",
+          "bdris_faq_02_q08",
+          "birth_registration_application_process_cleaned_002_01"
+        ],
+        "selected_chars": 5004
+      }
+    },
+    {
+      "id": "birth_02_online_apply",
+      "domain": "birth_death_registration",
+      "question": "জন্মনিবন্ধন অনলাইনে কীভাবে করব?",
+      "baseline_ids": [
+        "bdris_faq_02_q04",
+        "know_this_01_cleaned_008_01",
+        "bdris_faq_01_q05",
+        "birth_registration_application_process_cleaned_008_01",
+        "birth_registration_application_process_02_cleaned_003_01",
+        "birth_and_death_registration_rules_2018_বিধি_২০_01"
+      ],
+      "new_ids": [
+        "bdris_faq_02_q04",
+        "know_this_01_cleaned_008_01",
+        "bdris_faq_01_q05",
+        "birth_registration_application_process_cleaned_008_01",
+        "birth_registration_application_process_02_cleaned_003_01",
+        "birth_and_death_registration_rules_2018_বিধি_২০_01"
+      ],
+      "matches_saved_baseline": true,
+      "added": [],
+      "removed": [],
+      "changed": false,
+      "trace": {
+        "version": "applicability_v1_family_order",
+        "query_actions": [
+          "application"
+        ],
+        "query_services": [
+          "birth"
+        ],
+        "decisions": [
+          {
+            "id": "bdris_faq_01_q02",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_04",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১৯_03",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "notice_birth_and_death_registration_certificate_correction_steps_ocr_004_01",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১২_01",
+            "decision": "excluded",
+            "reason": "different_service"
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১৯_02",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১৯_01",
+            "decision": "excluded",
+            "reason": "unclassified_action_with_direct_alternative"
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১৮_03",
+            "decision": "excluded",
+            "reason": "unclassified_action_with_direct_alternative"
+          },
+          {
+            "id": "bdris_faq_02_q04",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "know_this_01_cleaned_008_01",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "bdris_faq_01_q05",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_008_01",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_003_01",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_২০_01",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_004_01",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          }
+        ],
+        "expanded_ids": [],
+        "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+        "budget_order_ids": [
+          "bdris_faq_02_q04",
+          "know_this_01_cleaned_008_01",
+          "bdris_faq_01_q05",
+          "birth_registration_application_process_cleaned_008_01",
+          "birth_registration_application_process_02_cleaned_003_01",
+          "birth_and_death_registration_rules_2018_বিধি_২০_01",
+          "birth_registration_application_process_02_cleaned_004_01"
+        ],
+        "selected_ids": [
+          "bdris_faq_02_q04",
+          "know_this_01_cleaned_008_01",
+          "bdris_faq_01_q05",
+          "birth_registration_application_process_cleaned_008_01",
+          "birth_registration_application_process_02_cleaned_003_01",
+          "birth_and_death_registration_rules_2018_বিধি_২০_01"
+        ],
+        "selected_chars": 3242
+      }
+    },
+    {
+      "id": "birth_03_birth_date_correction",
+      "domain": "birth_death_registration",
+      "question": "জন্মনিবন্ধনে জন্মতারিখ ভুল হলে কীভাবে সংশোধন করব?",
+      "baseline_ids": [
+        "application_for_birth_information_correction_cleaned_008_01",
+        "application_for_birth_information_correction_cleaned_006_01",
+        "birth_and_death_registration_act_2004_ধারা_১৫_01",
+        "application_for_birth_information_correction_cleaned_003_01",
+        "application_for_birth_information_correction_cleaned_004_01",
+        "notice_birth_and_death_registration_certificate_correction_steps_ocr_006_01"
+      ],
+      "new_ids": [
+        "application_for_birth_information_correction_cleaned_008_01",
+        "application_for_birth_information_correction_cleaned_006_01",
+        "birth_and_death_registration_act_2004_ধারা_১৫_01",
+        "application_for_birth_information_correction_cleaned_003_01",
+        "application_for_birth_information_correction_cleaned_004_01",
+        "notice_birth_and_death_registration_certificate_correction_steps_ocr_006_01"
+      ],
+      "matches_saved_baseline": true,
+      "added": [],
+      "removed": [],
+      "changed": false,
+      "trace": {
+        "version": "applicability_v1_family_order",
+        "query_actions": [
+          "correction"
+        ],
+        "query_services": [
+          "birth"
+        ],
+        "decisions": [
+          {
+            "id": "birth_registration_application_process_cleaned_017_01",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "birth_and_death_registration_act_2004_ধারা_১৫ক_01",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_009_01",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_005_01",
+            "decision": "excluded",
+            "reason": "unclassified_action_with_direct_alternative"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_008_01",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_006_01",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "birth_and_death_registration_act_2004_ধারা_১৫_01",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_003_01",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_004_01",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "notice_birth_and_death_registration_certificate_correction_steps_ocr_006_01",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "notice_birth_and_death_registration_certificate_correction_steps_ocr_005_01",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "notice_birth_and_death_registration_certificate_correction_steps_ocr_007_01",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_010_01",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_013_01",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_002_01",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          }
+        ],
+        "expanded_ids": [],
+        "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+        "budget_order_ids": [
+          "application_for_birth_information_correction_cleaned_008_01",
+          "application_for_birth_information_correction_cleaned_006_01",
+          "birth_and_death_registration_act_2004_ধারা_১৫_01",
+          "application_for_birth_information_correction_cleaned_003_01",
+          "application_for_birth_information_correction_cleaned_004_01",
+          "notice_birth_and_death_registration_certificate_correction_steps_ocr_006_01",
+          "notice_birth_and_death_registration_certificate_correction_steps_ocr_005_01",
+          "notice_birth_and_death_registration_certificate_correction_steps_ocr_007_01",
+          "application_for_birth_information_correction_cleaned_010_01",
+          "application_for_birth_information_correction_cleaned_013_01",
+          "application_for_birth_information_correction_cleaned_002_01"
+        ],
+        "selected_ids": [
+          "application_for_birth_information_correction_cleaned_008_01",
+          "application_for_birth_information_correction_cleaned_006_01",
+          "birth_and_death_registration_act_2004_ধারা_১৫_01",
+          "application_for_birth_information_correction_cleaned_003_01",
+          "application_for_birth_information_correction_cleaned_004_01",
+          "notice_birth_and_death_registration_certificate_correction_steps_ocr_006_01"
+        ],
+        "selected_chars": 3937
+      }
+    },
+    {
+      "id": "birth_04_name_spelling",
+      "domain": "birth_death_registration",
+      "question": "জন্মনিবন্ধনে নামের বানান ভুল হলে কী করব?",
+      "baseline_ids": [
+        "application_for_birth_information_correction_cleaned_003_01",
+        "application_for_birth_information_correction_cleaned_008_01",
+        "application_for_birth_information_correction_cleaned_006_01",
+        "application_for_birth_information_correction_cleaned_004_01",
+        "birth_and_death_registration_rules_2018_বিধি_১৫_01",
+        "birth_and_death_registration_fees_cleaned_fee_row_05"
+      ],
+      "new_ids": [
+        "application_for_birth_information_correction_cleaned_003_01",
+        "application_for_birth_information_correction_cleaned_008_01",
+        "application_for_birth_information_correction_cleaned_006_01",
+        "application_for_birth_information_correction_cleaned_004_01",
+        "birth_and_death_registration_rules_2018_বিধি_১৫_01",
+        "birth_and_death_registration_fees_cleaned_fee_row_05"
+      ],
+      "matches_saved_baseline": true,
+      "added": [],
+      "removed": [],
+      "changed": false,
+      "trace": {
+        "version": "applicability_v1_family_order",
+        "query_actions": [
+          "correction"
+        ],
+        "query_services": [
+          "birth"
+        ],
+        "decisions": [
+          {
+            "id": "birth_registration_application_process_cleaned_017_01",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "birth_and_death_registration_act_2004_ধারা_১৫ক_01",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_009_01",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_005_01",
+            "decision": "excluded",
+            "reason": "unclassified_action_with_direct_alternative"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_003_01",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_008_01",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_006_01",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_004_01",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১৫_01",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "birth_and_death_registration_fees_cleaned_fee_row_05",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "notice_birth_and_death_registration_certificate_correction_steps_ocr_007_01",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_013_01",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_010_01",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_002_01",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_011_01",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১৬_01",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          }
+        ],
+        "expanded_ids": [],
+        "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+        "budget_order_ids": [
+          "application_for_birth_information_correction_cleaned_003_01",
+          "application_for_birth_information_correction_cleaned_008_01",
+          "application_for_birth_information_correction_cleaned_006_01",
+          "application_for_birth_information_correction_cleaned_004_01",
+          "birth_and_death_registration_rules_2018_বিধি_১৫_01",
+          "birth_and_death_registration_fees_cleaned_fee_row_05",
+          "notice_birth_and_death_registration_certificate_correction_steps_ocr_007_01",
+          "application_for_birth_information_correction_cleaned_013_01",
+          "application_for_birth_information_correction_cleaned_010_01",
+          "application_for_birth_information_correction_cleaned_002_01",
+          "application_for_birth_information_correction_cleaned_011_01",
+          "birth_and_death_registration_rules_2018_বিধি_১৬_01"
+        ],
+        "selected_ids": [
+          "application_for_birth_information_correction_cleaned_003_01",
+          "application_for_birth_information_correction_cleaned_008_01",
+          "application_for_birth_information_correction_cleaned_006_01",
+          "application_for_birth_information_correction_cleaned_004_01",
+          "birth_and_death_registration_rules_2018_বিধি_১৫_01",
+          "birth_and_death_registration_fees_cleaned_fee_row_05"
+        ],
+        "selected_chars": 3543
+      }
+    },
+    {
+      "id": "birth_05_lost",
+      "domain": "birth_death_registration",
+      "question": "জন্মনিবন্ধন হারিয়ে গেলে নতুন কপি কীভাবে পাব?",
+      "baseline_ids": [
+        "bdris_faq_01_q12",
+        "bdris_faq_01_q15",
+        "birth_and_death_registration_rules_2018_বিধি_১৩_01"
+      ],
+      "new_ids": [
+        "bdris_faq_01_q12",
+        "bdris_faq_01_q15",
+        "birth_and_death_registration_rules_2018_বিধি_১৩_01"
+      ],
+      "matches_saved_baseline": true,
+      "added": [],
+      "removed": [],
+      "changed": false,
+      "trace": {
+        "version": "applicability_v1_family_order",
+        "query_actions": [
+          "replacement"
+        ],
+        "query_services": [
+          "birth"
+        ],
+        "decisions": [
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১২_03",
+            "decision": "excluded",
+            "reason": "different_service"
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১২_01",
+            "decision": "excluded",
+            "reason": "different_service"
+          },
+          {
+            "id": "birth_and_death_registration_act_2004_ধারা_১৫_01",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_02",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১৫_01",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "birth_and_death_registration_act_2004_ধারা_১৫ক_01",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_004_01",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১২_02",
+            "decision": "excluded",
+            "reason": "different_service"
+          },
+          {
+            "id": "bdris_faq_01_q02",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "bdris_faq_02_q08",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_005_01",
+            "decision": "excluded",
+            "reason": "unclassified_action_with_direct_alternative"
+          },
+          {
+            "id": "bdris_faq_01_q10",
+            "decision": "excluded",
+            "reason": "unclassified_action_with_direct_alternative"
+          },
+          {
+            "id": "bdris_faq_01_q12",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "bdris_faq_01_q15",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১৩_01",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          }
+        ],
+        "expanded_ids": [],
+        "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+        "budget_order_ids": [
+          "bdris_faq_01_q12",
+          "bdris_faq_01_q15",
+          "birth_and_death_registration_rules_2018_বিধি_১৩_01"
+        ],
+        "selected_ids": [
+          "bdris_faq_01_q12",
+          "bdris_faq_01_q15",
+          "birth_and_death_registration_rules_2018_বিধি_১৩_01"
+        ],
+        "selected_chars": 3591
+      }
+    },
+    {
+      "id": "birth_06_verify",
+      "domain": "birth_death_registration",
+      "question": "অনলাইনে জন্মনিবন্ধন যাচাই কীভাবে করব?",
+      "baseline_ids": [
+        "birth_and_death_registration_rules_2018_বিধি_১৯_03",
+        "birth_registration_application_process_cleaned_012_01",
+        "birth_and_death_registration_rules_2018_বিধি_১৯_02",
+        "birth_registration_application_process_cleaned_017_01",
+        "birth_registration_application_process_02_cleaned_011_01"
+      ],
+      "new_ids": [
+        "birth_and_death_registration_rules_2018_বিধি_১৯_03",
+        "birth_registration_application_process_cleaned_012_01",
+        "birth_and_death_registration_rules_2018_বিধি_১৯_02",
+        "birth_registration_application_process_cleaned_017_01",
+        "birth_registration_application_process_02_cleaned_011_01"
+      ],
+      "matches_saved_baseline": true,
+      "added": [],
+      "removed": [],
+      "changed": false,
+      "trace": {
+        "version": "applicability_v1_family_order",
+        "query_actions": [
+          "verification"
+        ],
+        "query_services": [
+          "birth"
+        ],
+        "decisions": [
+          {
+            "id": "know_this_01_cleaned_008_01",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_২০_01",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "bdris_faq_01_q02",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_04",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "bdris_faq_02_q04",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "bdris_faq_01_q05",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_008_01",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_003_01",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_02",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_010_01",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১৯_03",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_012_01",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১৯_02",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_017_01",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_011_01",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          }
+        ],
+        "expanded_ids": [],
+        "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+        "budget_order_ids": [
+          "birth_and_death_registration_rules_2018_বিধি_১৯_03",
+          "birth_registration_application_process_cleaned_012_01",
+          "birth_and_death_registration_rules_2018_বিধি_১৯_02",
+          "birth_registration_application_process_cleaned_017_01",
+          "birth_registration_application_process_02_cleaned_011_01"
+        ],
+        "selected_ids": [
+          "birth_and_death_registration_rules_2018_বিধি_১৯_03",
+          "birth_registration_application_process_cleaned_012_01",
+          "birth_and_death_registration_rules_2018_বিধি_১৯_02",
+          "birth_registration_application_process_cleaned_017_01",
+          "birth_registration_application_process_02_cleaned_011_01"
+        ],
+        "selected_chars": 3692
+      }
+    },
+    {
+      "id": "birth_07_correction_fee",
+      "domain": "birth_death_registration",
+      "question": "জন্মনিবন্ধন সংশোধন করতে কত টাকা লাগে?",
+      "baseline_ids": [
+        "birth_and_death_registration_fees_cleaned_table_full",
+        "birth_and_death_registration_fees_cleaned_fee_row_05",
+        "birth_and_death_registration_fees_cleaned_fee_row_04",
+        "birth_and_death_registration_fees_cleaned_fee_row_06",
+        "birth_and_death_registration_rules_2018_বিধি_২১_01",
+        "birth_and_death_registration_act_2004_ধারা_১৫_01"
+      ],
+      "new_ids": [
+        "birth_and_death_registration_fees_cleaned_table_full",
+        "birth_and_death_registration_fees_cleaned_fee_row_05",
+        "birth_and_death_registration_fees_cleaned_fee_row_04",
+        "birth_and_death_registration_fees_cleaned_fee_row_06",
+        "birth_and_death_registration_rules_2018_বিধি_২১_01",
+        "birth_and_death_registration_act_2004_ধারা_১৫_01"
+      ],
+      "matches_saved_baseline": true,
+      "added": [],
+      "removed": [],
+      "changed": false,
+      "trace": {
+        "version": "applicability_v1_family_order",
+        "query_actions": [
+          "correction"
+        ],
+        "query_services": [
+          "birth"
+        ],
+        "decisions": [
+          {
+            "id": "bdris_faq_02_preamble",
+            "decision": "excluded",
+            "reason": "unclassified_action_with_direct_alternative"
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_২_01",
+            "decision": "excluded",
+            "reason": "unclassified_action_with_direct_alternative"
+          },
+          {
+            "id": "birth_and_death_registration_act_2004_ধারা_২১_01",
+            "decision": "excluded",
+            "reason": "unclassified_action_with_direct_alternative"
+          },
+          {
+            "id": "birth_and_death_registration_fees_cleaned_table_full",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "birth_and_death_registration_fees_cleaned_fee_row_05",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "birth_and_death_registration_fees_cleaned_fee_row_04",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "birth_and_death_registration_fees_cleaned_fee_row_06",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_২১_01",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "birth_and_death_registration_act_2004_ধারা_১৫_01",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_004_01",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "bdris_faq_01_q01",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "bdris_faq_01_q12",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "birth_and_death_registration_fees_cleaned_fee_row_02",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "birth_and_death_registration_fees_cleaned_fee_row_03",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "birth_and_death_registration_fees_cleaned_fee_row_07",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          }
+        ],
+        "expanded_ids": [],
+        "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+        "budget_order_ids": [
+          "birth_and_death_registration_fees_cleaned_table_full",
+          "birth_and_death_registration_fees_cleaned_fee_row_05",
+          "birth_and_death_registration_fees_cleaned_fee_row_04",
+          "birth_and_death_registration_fees_cleaned_fee_row_06",
+          "birth_and_death_registration_rules_2018_বিধি_২১_01",
+          "birth_and_death_registration_act_2004_ধারা_১৫_01",
+          "application_for_birth_information_correction_cleaned_004_01",
+          "bdris_faq_01_q01",
+          "bdris_faq_01_q12",
+          "birth_and_death_registration_fees_cleaned_fee_row_02",
+          "birth_and_death_registration_fees_cleaned_fee_row_03",
+          "birth_and_death_registration_fees_cleaned_fee_row_07"
+        ],
+        "selected_ids": [
+          "birth_and_death_registration_fees_cleaned_table_full",
+          "birth_and_death_registration_fees_cleaned_fee_row_05",
+          "birth_and_death_registration_fees_cleaned_fee_row_04",
+          "birth_and_death_registration_fees_cleaned_fee_row_06",
+          "birth_and_death_registration_rules_2018_বিধি_২১_01",
+          "birth_and_death_registration_act_2004_ধারা_১৫_01"
+        ],
+        "selected_chars": 4702
+      }
+    },
+    {
+      "id": "birth_08_birth_date_proof",
+      "domain": "birth_death_registration",
+      "question": "জন্মতারিখ সংশোধনের জন্য কী কী প্রমাণ লাগবে?",
+      "baseline_ids": [
+        "application_for_birth_information_correction_cleaned_008_01",
+        "application_for_birth_information_correction_cleaned_006_01",
+        "birth_and_death_registration_fees_cleaned_fee_row_04",
+        "application_for_birth_information_correction_cleaned_003_01",
+        "birth_and_death_registration_fees_cleaned_fee_row_05",
+        "birth_and_death_registration_fees_cleaned_table_full"
+      ],
+      "new_ids": [
+        "application_for_birth_information_correction_cleaned_008_01",
+        "application_for_birth_information_correction_cleaned_006_01",
+        "birth_and_death_registration_fees_cleaned_fee_row_04",
+        "application_for_birth_information_correction_cleaned_003_01",
+        "birth_and_death_registration_fees_cleaned_fee_row_05",
+        "birth_and_death_registration_fees_cleaned_table_full"
+      ],
+      "matches_saved_baseline": true,
+      "added": [],
+      "removed": [],
+      "changed": false,
+      "trace": {
+        "version": "applicability_v1_family_order",
+        "query_actions": [
+          "correction"
+        ],
+        "query_services": [
+          "birth"
+        ],
+        "decisions": [
+          {
+            "id": "application_for_birth_information_correction_cleaned_009_01",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_02",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_005_01",
+            "decision": "excluded",
+            "reason": "unclassified_action_with_direct_alternative"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_007_01",
+            "decision": "excluded",
+            "reason": "unclassified_action_with_direct_alternative"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_008_01",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_006_01",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "birth_and_death_registration_fees_cleaned_fee_row_04",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_003_01",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "birth_and_death_registration_fees_cleaned_fee_row_05",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "birth_and_death_registration_fees_cleaned_table_full",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_004_01",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "birth_and_death_registration_act_2004_ধারা_১৫_01",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "notice_birth_and_death_registration_certificate_correction_steps_ocr_007_01",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_010_01",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "notice_birth_and_death_registration_certificate_correction_steps_ocr_006_01",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          }
+        ],
+        "expanded_ids": [],
+        "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+        "budget_order_ids": [
+          "application_for_birth_information_correction_cleaned_008_01",
+          "application_for_birth_information_correction_cleaned_006_01",
+          "birth_and_death_registration_fees_cleaned_fee_row_04",
+          "application_for_birth_information_correction_cleaned_003_01",
+          "birth_and_death_registration_fees_cleaned_fee_row_05",
+          "birth_and_death_registration_fees_cleaned_table_full",
+          "application_for_birth_information_correction_cleaned_004_01",
+          "birth_and_death_registration_act_2004_ধারা_১৫_01",
+          "notice_birth_and_death_registration_certificate_correction_steps_ocr_007_01",
+          "application_for_birth_information_correction_cleaned_010_01",
+          "notice_birth_and_death_registration_certificate_correction_steps_ocr_006_01"
+        ],
+        "selected_ids": [
+          "application_for_birth_information_correction_cleaned_008_01",
+          "application_for_birth_information_correction_cleaned_006_01",
+          "birth_and_death_registration_fees_cleaned_fee_row_04",
+          "application_for_birth_information_correction_cleaned_003_01",
+          "birth_and_death_registration_fees_cleaned_fee_row_05",
+          "birth_and_death_registration_fees_cleaned_table_full"
+        ],
+        "selected_chars": 2736
+      }
+    },
+    {
+      "id": "birth_09_parent_name",
+      "domain": "birth_death_registration",
+      "question": "বাবা-মায়ের নাম ভুল থাকলে কীভাবে সংশোধন করব?",
+      "baseline_ids": [
+        "application_for_birth_information_correction_cleaned_008_01",
+        "application_for_birth_information_correction_cleaned_002_01",
+        "application_for_birth_information_correction_cleaned_006_01",
+        "application_for_birth_information_correction_cleaned_003_01",
+        "application_for_birth_information_correction_cleaned_004_01",
+        "notice_birth_and_death_registration_certificate_correction_steps_ocr_007_01"
+      ],
+      "new_ids": [
+        "application_for_birth_information_correction_cleaned_008_01",
+        "application_for_birth_information_correction_cleaned_002_01",
+        "application_for_birth_information_correction_cleaned_006_01",
+        "application_for_birth_information_correction_cleaned_003_01",
+        "application_for_birth_information_correction_cleaned_004_01",
+        "notice_birth_and_death_registration_certificate_correction_steps_ocr_007_01"
+      ],
+      "matches_saved_baseline": true,
+      "added": [],
+      "removed": [],
+      "changed": false,
+      "trace": {
+        "version": "applicability_v1_family_order",
+        "query_actions": [
+          "correction"
+        ],
+        "query_services": [],
+        "decisions": [
+          {
+            "id": "application_for_birth_information_correction_cleaned_009_01",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_012_01",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_005_01",
+            "decision": "excluded",
+            "reason": "unclassified_action_with_direct_alternative"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_007_01",
+            "decision": "excluded",
+            "reason": "unclassified_action_with_direct_alternative"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_008_01",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_002_01",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_006_01",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_003_01",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_004_01",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "notice_birth_and_death_registration_certificate_correction_steps_ocr_007_01",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "bdris_faq_02_q01",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "bdris_faq_02_q03",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_013_01",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_011_01",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "bdris_faq_01_q12",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "birth_and_death_registration_fees_cleaned_fee_row_05",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          }
+        ],
+        "expanded_ids": [],
+        "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+        "budget_order_ids": [
+          "application_for_birth_information_correction_cleaned_008_01",
+          "application_for_birth_information_correction_cleaned_002_01",
+          "application_for_birth_information_correction_cleaned_006_01",
+          "application_for_birth_information_correction_cleaned_003_01",
+          "application_for_birth_information_correction_cleaned_004_01",
+          "notice_birth_and_death_registration_certificate_correction_steps_ocr_007_01",
+          "bdris_faq_02_q01",
+          "bdris_faq_02_q03",
+          "application_for_birth_information_correction_cleaned_013_01",
+          "application_for_birth_information_correction_cleaned_011_01",
+          "bdris_faq_01_q12",
+          "birth_and_death_registration_fees_cleaned_fee_row_05"
+        ],
+        "selected_ids": [
+          "application_for_birth_information_correction_cleaned_008_01",
+          "application_for_birth_information_correction_cleaned_002_01",
+          "application_for_birth_information_correction_cleaned_006_01",
+          "application_for_birth_information_correction_cleaned_003_01",
+          "application_for_birth_information_correction_cleaned_004_01",
+          "notice_birth_and_death_registration_certificate_correction_steps_ocr_007_01"
+        ],
+        "selected_chars": 2269
+      }
+    },
+    {
+      "id": "birth_10_delivery_time",
+      "domain": "birth_death_registration",
+      "question": "জন্মনিবন্ধন করতে কত দিন সময় লাগে?",
+      "baseline_ids": [
+        "birth_and_death_registration_rules_2018_বিধি_৯_02",
+        "birth_and_death_registration_rules_2018_বিধি_৯_03",
+        "birth_and_death_registration_rules_2018_বিধি_২০_01"
+      ],
+      "new_ids": [
+        "birth_and_death_registration_rules_2018_বিধি_৯_02",
+        "birth_and_death_registration_rules_2018_বিধি_৯_03",
+        "birth_and_death_registration_rules_2018_বিধি_২০_01"
+      ],
+      "matches_saved_baseline": true,
+      "added": [],
+      "removed": [],
+      "changed": false,
+      "trace": {
+        "version": "applicability_v1_family_order",
+        "query_actions": [
+          "application"
+        ],
+        "query_services": [
+          "birth"
+        ],
+        "decisions": [
+          {
+            "id": "bdris_faq_02_q01",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "bdris_faq_01_q01",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_04",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৮_01",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১১_03",
+            "decision": "excluded",
+            "reason": "different_service"
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_২১_01",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "birth_and_death_registration_fees_cleaned_table_full",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "birth_and_death_registration_act_2004_ধারা_৮_01",
+            "decision": "excluded",
+            "reason": "unclassified_action_with_direct_alternative"
+          },
+          {
+            "id": "birth_and_death_registration_fees_cleaned_fee_row_02",
+            "decision": "excluded",
+            "reason": "unclassified_action_with_direct_alternative"
+          },
+          {
+            "id": "birth_and_death_registration_fees_cleaned_fee_row_01",
+            "decision": "excluded",
+            "reason": "unclassified_action_with_direct_alternative"
+          },
+          {
+            "id": "home_registrar_generals_office_birth_and_death_registration_009_01",
+            "decision": "excluded",
+            "reason": "unclassified_action_with_direct_alternative"
+          },
+          {
+            "id": "birth_and_death_registration_act_2004_ধারা_১০_01",
+            "decision": "excluded",
+            "reason": "unclassified_action_with_direct_alternative"
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_02",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_03",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_২০_01",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          }
+        ],
+        "expanded_ids": [],
+        "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+        "budget_order_ids": [
+          "birth_and_death_registration_rules_2018_বিধি_৯_02",
+          "birth_and_death_registration_rules_2018_বিধি_৯_03",
+          "birth_and_death_registration_rules_2018_বিধি_২০_01"
+        ],
+        "selected_ids": [
+          "birth_and_death_registration_rules_2018_বিধি_৯_02",
+          "birth_and_death_registration_rules_2018_বিধি_৯_03",
+          "birth_and_death_registration_rules_2018_বিধি_২০_01"
+        ],
+        "selected_chars": 3851
+      }
+    },
+    {
+      "id": "brta_01_documents",
+      "domain": "brta",
+      "question": "ড্রাইভিং লাইসেন্স করতে কী কী কাগজপত্র লাগবে?",
+      "baseline_ids": [
+        "brta_cbe22ab64acf3d03_v2_0004"
+      ],
+      "new_ids": [
+        "brta_cbe22ab64acf3d03_v2_0004"
+      ],
+      "matches_saved_baseline": true,
+      "added": [],
+      "removed": [],
+      "changed": false,
+      "trace": {
+        "version": "applicability_v1_family_order",
+        "query_actions": [
+          "application"
+        ],
+        "query_services": [
+          "licence"
+        ],
+        "decisions": [
+          {
+            "id": "brta_cbe22ab64acf3d03_v2_0011",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_cbe22ab64acf3d03_v2_0013",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0008",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_2d6e0fe1670b3aa3_v2_0003",
+            "decision": "excluded",
+            "reason": "different_service"
+          },
+          {
+            "id": "brta_6eb3d41986361dbd_v2_0003",
+            "decision": "excluded",
+            "reason": "unclassified_action_with_direct_alternative"
+          },
+          {
+            "id": "brta_cbe22ab64acf3d03_v2_0006",
+            "decision": "excluded",
+            "reason": "alternative_checklist_not_merged"
+          },
+          {
+            "id": "brta_57a7e75567f9a5c3_v2_0010",
+            "decision": "excluded",
+            "reason": "alternative_checklist_not_merged"
+          },
+          {
+            "id": "brta_cbe22ab64acf3d03_v2_0003",
+            "decision": "excluded",
+            "reason": "alternative_checklist_not_merged"
+          },
+          {
+            "id": "brta_4b8c25d391e48121_v2_0003",
+            "decision": "excluded",
+            "reason": "alternative_checklist_not_merged"
+          },
+          {
+            "id": "brta_846a4041fe96a64e_v2_0003",
+            "decision": "excluded",
+            "reason": "alternative_checklist_not_merged"
+          },
+          {
+            "id": "brta_4b8c25d391e48121_v2_0004",
+            "decision": "excluded",
+            "reason": "alternative_checklist_not_merged"
+          },
+          {
+            "id": "brta_846a4041fe96a64e_v2_0008",
+            "decision": "excluded",
+            "reason": "alternative_checklist_not_merged"
+          },
+          {
+            "id": "brta_09e8cbfff67f117e_v2_0005",
+            "decision": "excluded",
+            "reason": "alternative_checklist_not_merged"
+          },
+          {
+            "id": "brta_cbe22ab64acf3d03_v2_0002",
+            "decision": "excluded",
+            "reason": "alternative_checklist_not_merged"
+          },
+          {
+            "id": "brta_cbe22ab64acf3d03_v2_0004",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          }
+        ],
+        "expanded_ids": [],
+        "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+        "budget_order_ids": [
+          "brta_cbe22ab64acf3d03_v2_0004"
+        ],
+        "selected_ids": [
+          "brta_cbe22ab64acf3d03_v2_0004"
+        ],
+        "selected_chars": 1245
+      }
+    },
+    {
+      "id": "brta_02_fee",
+      "domain": "brta",
+      "question": "ড্রাইভিং লাইসেন্স করতে মোট কত টাকা লাগে?",
+      "baseline_ids": [
+        "brta_3cae1ecd59682fa3_v2_0009",
+        "brta_3cae1ecd59682fa3_v2_0008",
+        "brta_4b8c25d391e48121_v2_0003",
+        "brta_846a4041fe96a64e_v2_0005"
+      ],
+      "new_ids": [
+        "brta_3cae1ecd59682fa3_v2_0009",
+        "brta_3cae1ecd59682fa3_v2_0008",
+        "brta_4b8c25d391e48121_v2_0003",
+        "brta_846a4041fe96a64e_v2_0005"
+      ],
+      "matches_saved_baseline": true,
+      "added": [],
+      "removed": [],
+      "changed": false,
+      "trace": {
+        "version": "applicability_v1_family_order",
+        "query_actions": [
+          "application"
+        ],
+        "query_services": [
+          "licence"
+        ],
+        "decisions": [
+          {
+            "id": "brta_846a4041fe96a64e_v2_0006",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_3cae1ecd59682fa3_v2_0012",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_3cae1ecd59682fa3_v2_0004",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_3cae1ecd59682fa3_v2_0017",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_3cae1ecd59682fa3_v2_0018",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_3cae1ecd59682fa3_v2_0005",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_09e8cbfff67f117e_v2_0011",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_3cae1ecd59682fa3_v2_0014",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_3cae1ecd59682fa3_v2_0011",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_3cae1ecd59682fa3_v2_0015",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_3a262ccde300696d_v2_0013",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_3cae1ecd59682fa3_v2_0009",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_3cae1ecd59682fa3_v2_0008",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_4b8c25d391e48121_v2_0003",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_846a4041fe96a64e_v2_0005",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          }
+        ],
+        "expanded_ids": [],
+        "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+        "budget_order_ids": [
+          "brta_3cae1ecd59682fa3_v2_0009",
+          "brta_3cae1ecd59682fa3_v2_0008",
+          "brta_4b8c25d391e48121_v2_0003",
+          "brta_846a4041fe96a64e_v2_0005"
+        ],
+        "selected_ids": [
+          "brta_3cae1ecd59682fa3_v2_0009",
+          "brta_3cae1ecd59682fa3_v2_0008",
+          "brta_4b8c25d391e48121_v2_0003",
+          "brta_846a4041fe96a64e_v2_0005"
+        ],
+        "selected_chars": 2605
+      }
+    },
+    {
+      "id": "brta_03_learner",
+      "domain": "brta",
+      "question": "লার্নার ড্রাইভিং লাইসেন্স কীভাবে করব?",
+      "baseline_ids": [
+        "brta_cbe22ab64acf3d03_v2_0003",
+        "brta_cbe22ab64acf3d03_v2_0004",
+        "brta_846a4041fe96a64e_v2_0011",
+        "brta_09e8cbfff67f117e_v2_0005",
+        "brta_846a4041fe96a64e_v2_0002",
+        "brta_cbe22ab64acf3d03_v2_0002"
+      ],
+      "new_ids": [
+        "brta_cbe22ab64acf3d03_v2_0003",
+        "brta_cbe22ab64acf3d03_v2_0004",
+        "brta_846a4041fe96a64e_v2_0011",
+        "brta_09e8cbfff67f117e_v2_0005",
+        "brta_846a4041fe96a64e_v2_0002",
+        "brta_cbe22ab64acf3d03_v2_0002"
+      ],
+      "matches_saved_baseline": true,
+      "added": [],
+      "removed": [],
+      "changed": false,
+      "trace": {
+        "version": "applicability_v1_family_order",
+        "query_actions": [
+          "application"
+        ],
+        "query_services": [
+          "licence"
+        ],
+        "decisions": [
+          {
+            "id": "brta_3cae1ecd59682fa3_v2_0005",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0008",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_3cae1ecd59682fa3_v2_0004",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_3cae1ecd59682fa3_v2_0003",
+            "decision": "excluded",
+            "reason": "heading_without_evidence"
+          },
+          {
+            "id": "brta_cbe22ab64acf3d03_v2_0003",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_cbe22ab64acf3d03_v2_0004",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_846a4041fe96a64e_v2_0011",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_09e8cbfff67f117e_v2_0005",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_846a4041fe96a64e_v2_0002",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_cbe22ab64acf3d03_v2_0002",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_846a4041fe96a64e_v2_0007",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "brta_846a4041fe96a64e_v2_0008",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "brta_4b8c25d391e48121_v2_0004",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "brta_846a4041fe96a64e_v2_0015",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "brta_57a7e75567f9a5c3_v2_0008",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          }
+        ],
+        "expanded_ids": [],
+        "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+        "budget_order_ids": [
+          "brta_cbe22ab64acf3d03_v2_0003",
+          "brta_cbe22ab64acf3d03_v2_0004",
+          "brta_846a4041fe96a64e_v2_0011",
+          "brta_09e8cbfff67f117e_v2_0005",
+          "brta_846a4041fe96a64e_v2_0002",
+          "brta_cbe22ab64acf3d03_v2_0002",
+          "brta_846a4041fe96a64e_v2_0007",
+          "brta_846a4041fe96a64e_v2_0008",
+          "brta_4b8c25d391e48121_v2_0004",
+          "brta_846a4041fe96a64e_v2_0015",
+          "brta_57a7e75567f9a5c3_v2_0008"
+        ],
+        "selected_ids": [
+          "brta_cbe22ab64acf3d03_v2_0003",
+          "brta_cbe22ab64acf3d03_v2_0004",
+          "brta_846a4041fe96a64e_v2_0011",
+          "brta_09e8cbfff67f117e_v2_0005",
+          "brta_846a4041fe96a64e_v2_0002",
+          "brta_cbe22ab64acf3d03_v2_0002"
+        ],
+        "selected_chars": 5166
+      }
+    },
+    {
+      "id": "brta_04_delivery_time",
+      "domain": "brta",
+      "question": "ড্রাইভিং লাইসেন্স পেতে কত দিন সময় লাগে?",
+      "baseline_ids": [
+        "brta_846a4041fe96a64e_v2_0016",
+        "brta_846a4041fe96a64e_v2_0007",
+        "brta_cbe22ab64acf3d03_v2_0003",
+        "brta_09e8cbfff67f117e_v2_0010",
+        "brta_09e8cbfff67f117e_v2_0008",
+        "brta_cbe22ab64acf3d03_v2_0009"
+      ],
+      "new_ids": [
+        "brta_846a4041fe96a64e_v2_0016",
+        "brta_846a4041fe96a64e_v2_0007",
+        "brta_cbe22ab64acf3d03_v2_0003",
+        "brta_09e8cbfff67f117e_v2_0010",
+        "brta_09e8cbfff67f117e_v2_0008",
+        "brta_cbe22ab64acf3d03_v2_0009"
+      ],
+      "matches_saved_baseline": true,
+      "added": [],
+      "removed": [],
+      "changed": false,
+      "trace": {
+        "version": "applicability_v1_family_order",
+        "query_actions": [],
+        "query_services": [
+          "licence"
+        ],
+        "decisions": [
+          {
+            "id": "brta_846a4041fe96a64e_v2_0016",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_846a4041fe96a64e_v2_0007",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_cbe22ab64acf3d03_v2_0003",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_09e8cbfff67f117e_v2_0010",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_09e8cbfff67f117e_v2_0008",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_cbe22ab64acf3d03_v2_0009",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_09e8cbfff67f117e_v2_0007",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "brta_cbe22ab64acf3d03_v2_0007",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "brta_846a4041fe96a64e_v2_0002",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "brta_cbe22ab64acf3d03_v2_0002",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0013",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0009",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0014",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0015",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0135",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          }
+        ],
+        "expanded_ids": [],
+        "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+        "budget_order_ids": [
+          "brta_846a4041fe96a64e_v2_0016",
+          "brta_846a4041fe96a64e_v2_0007",
+          "brta_cbe22ab64acf3d03_v2_0003",
+          "brta_09e8cbfff67f117e_v2_0010",
+          "brta_09e8cbfff67f117e_v2_0008",
+          "brta_cbe22ab64acf3d03_v2_0009",
+          "brta_09e8cbfff67f117e_v2_0007",
+          "brta_cbe22ab64acf3d03_v2_0007",
+          "brta_846a4041fe96a64e_v2_0002",
+          "brta_cbe22ab64acf3d03_v2_0002",
+          "brta_4e08eb4e988d38e4_v2_0013",
+          "brta_4e08eb4e988d38e4_v2_0009",
+          "brta_4e08eb4e988d38e4_v2_0014",
+          "brta_4e08eb4e988d38e4_v2_0015",
+          "brta_4e08eb4e988d38e4_v2_0135"
+        ],
+        "selected_ids": [
+          "brta_846a4041fe96a64e_v2_0016",
+          "brta_846a4041fe96a64e_v2_0007",
+          "brta_cbe22ab64acf3d03_v2_0003",
+          "brta_09e8cbfff67f117e_v2_0010",
+          "brta_09e8cbfff67f117e_v2_0008",
+          "brta_cbe22ab64acf3d03_v2_0009"
+        ],
+        "selected_chars": 5503
+      }
+    },
+    {
+      "id": "brta_05_test",
+      "domain": "brta",
+      "question": "BRTA-এর ড্রাইভিং পরীক্ষায় কী কী থাকে?",
+      "baseline_ids": [
+        "brta_4b8c25d391e48121_v2_0001",
+        "brta_57a7e75567f9a5c3_v2_0001",
+        "brta_846a4041fe96a64e_v2_0012",
+        "brta_57a7e75567f9a5c3_v2_0012",
+        "brta_57a7e75567f9a5c3_v2_0010",
+        "brta_4e08eb4e988d38e4_v2_0013"
+      ],
+      "new_ids": [
+        "brta_4b8c25d391e48121_v2_0001",
+        "brta_57a7e75567f9a5c3_v2_0001",
+        "brta_846a4041fe96a64e_v2_0012",
+        "brta_57a7e75567f9a5c3_v2_0012",
+        "brta_57a7e75567f9a5c3_v2_0010",
+        "brta_4e08eb4e988d38e4_v2_0013"
+      ],
+      "matches_saved_baseline": true,
+      "added": [],
+      "removed": [],
+      "changed": false,
+      "trace": {
+        "version": "applicability_v1_family_order",
+        "query_actions": [],
+        "query_services": [
+          "licence"
+        ],
+        "decisions": [
+          {
+            "id": "brta_4b8c25d391e48121_v2_0001",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_57a7e75567f9a5c3_v2_0001",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_846a4041fe96a64e_v2_0012",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_57a7e75567f9a5c3_v2_0012",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_57a7e75567f9a5c3_v2_0010",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0013",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0158",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "brta_57a7e75567f9a5c3_v2_0004",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0196",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0178",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0195",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "brta_434172ea3f86a161_v2_0056",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0138",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0207",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "brta_6eb3d41986361dbd_v2_0003",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          }
+        ],
+        "expanded_ids": [],
+        "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+        "budget_order_ids": [
+          "brta_4b8c25d391e48121_v2_0001",
+          "brta_57a7e75567f9a5c3_v2_0001",
+          "brta_846a4041fe96a64e_v2_0012",
+          "brta_57a7e75567f9a5c3_v2_0012",
+          "brta_57a7e75567f9a5c3_v2_0010",
+          "brta_4e08eb4e988d38e4_v2_0013",
+          "brta_4e08eb4e988d38e4_v2_0158",
+          "brta_57a7e75567f9a5c3_v2_0004",
+          "brta_4e08eb4e988d38e4_v2_0196",
+          "brta_4e08eb4e988d38e4_v2_0178",
+          "brta_4e08eb4e988d38e4_v2_0195",
+          "brta_434172ea3f86a161_v2_0056",
+          "brta_4e08eb4e988d38e4_v2_0138",
+          "brta_4e08eb4e988d38e4_v2_0207",
+          "brta_6eb3d41986361dbd_v2_0003"
+        ],
+        "selected_ids": [
+          "brta_4b8c25d391e48121_v2_0001",
+          "brta_57a7e75567f9a5c3_v2_0001",
+          "brta_846a4041fe96a64e_v2_0012",
+          "brta_57a7e75567f9a5c3_v2_0012",
+          "brta_57a7e75567f9a5c3_v2_0010",
+          "brta_4e08eb4e988d38e4_v2_0013"
+        ],
+        "selected_chars": 5770
+      }
+    },
+    {
+      "id": "brta_06_renewal",
+      "domain": "brta",
+      "question": "ড্রাইভিং লাইসেন্সের মেয়াদ শেষ হলে কীভাবে নবায়ন করব?",
+      "baseline_ids": [
+        "brta_cbe22ab64acf3d03_v2_0009",
+        "brta_cbe22ab64acf3d03_v2_0010",
+        "brta_09e8cbfff67f117e_v2_0009",
+        "brta_09e8cbfff67f117e_v2_0011",
+        "brta_cbe22ab64acf3d03_v2_0011",
+        "brta_09e8cbfff67f117e_v2_0007"
+      ],
+      "new_ids": [
+        "brta_cbe22ab64acf3d03_v2_0009",
+        "brta_cbe22ab64acf3d03_v2_0010",
+        "brta_09e8cbfff67f117e_v2_0009",
+        "brta_09e8cbfff67f117e_v2_0011",
+        "brta_cbe22ab64acf3d03_v2_0011",
+        "brta_09e8cbfff67f117e_v2_0007"
+      ],
+      "matches_saved_baseline": true,
+      "added": [],
+      "removed": [],
+      "changed": false,
+      "trace": {
+        "version": "applicability_v1_family_order",
+        "query_actions": [
+          "renewal"
+        ],
+        "query_services": [
+          "licence"
+        ],
+        "decisions": [
+          {
+            "id": "brta_cbe22ab64acf3d03_v2_0008",
+            "decision": "excluded",
+            "reason": "heading_without_evidence"
+          },
+          {
+            "id": "brta_cbe22ab64acf3d03_v2_0009",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_cbe22ab64acf3d03_v2_0010",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_09e8cbfff67f117e_v2_0009",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_09e8cbfff67f117e_v2_0011",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_cbe22ab64acf3d03_v2_0011",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_09e8cbfff67f117e_v2_0007",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_258cf38650a6332b_v2_0009",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "brta_3cae1ecd59682fa3_v2_0005",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0014",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0015",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0026",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0016",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0139",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "brta_cb965b3169c34e73_v2_0032",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          }
+        ],
+        "expanded_ids": [],
+        "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+        "budget_order_ids": [
+          "brta_cbe22ab64acf3d03_v2_0009",
+          "brta_cbe22ab64acf3d03_v2_0010",
+          "brta_09e8cbfff67f117e_v2_0009",
+          "brta_09e8cbfff67f117e_v2_0011",
+          "brta_cbe22ab64acf3d03_v2_0011",
+          "brta_09e8cbfff67f117e_v2_0007",
+          "brta_258cf38650a6332b_v2_0009",
+          "brta_3cae1ecd59682fa3_v2_0005",
+          "brta_4e08eb4e988d38e4_v2_0014",
+          "brta_4e08eb4e988d38e4_v2_0015",
+          "brta_4e08eb4e988d38e4_v2_0026",
+          "brta_4e08eb4e988d38e4_v2_0016",
+          "brta_4e08eb4e988d38e4_v2_0139",
+          "brta_cb965b3169c34e73_v2_0032"
+        ],
+        "selected_ids": [
+          "brta_cbe22ab64acf3d03_v2_0009",
+          "brta_cbe22ab64acf3d03_v2_0010",
+          "brta_09e8cbfff67f117e_v2_0009",
+          "brta_09e8cbfff67f117e_v2_0011",
+          "brta_cbe22ab64acf3d03_v2_0011",
+          "brta_09e8cbfff67f117e_v2_0007"
+        ],
+        "selected_chars": 6198
+      }
+    },
+    {
+      "id": "brta_07_lost",
+      "domain": "brta",
+      "question": "ড্রাইভিং লাইসেন্স হারিয়ে গেলে কী করতে হবে?",
+      "baseline_ids": [
+        "brta_258cf38650a6332b_v2_0012",
+        "brta_4e08eb4e988d38e4_v2_0200",
+        "brta_4e08eb4e988d38e4_v2_0018"
+      ],
+      "new_ids": [
+        "brta_258cf38650a6332b_v2_0012",
+        "brta_4e08eb4e988d38e4_v2_0200",
+        "brta_4e08eb4e988d38e4_v2_0018"
+      ],
+      "matches_saved_baseline": true,
+      "added": [],
+      "removed": [],
+      "changed": false,
+      "trace": {
+        "version": "applicability_v1_family_order",
+        "query_actions": [
+          "replacement"
+        ],
+        "query_services": [
+          "licence"
+        ],
+        "decisions": [
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0023",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0025",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_cbe22ab64acf3d03_v2_0003",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_cbe22ab64acf3d03_v2_0009",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_edcb265eccf9cd32_v2_0016",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_846a4041fe96a64e_v2_0007",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_09e8cbfff67f117e_v2_0005",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_846a4041fe96a64e_v2_0008",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_cbe22ab64acf3d03_v2_0011",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_cbe22ab64acf3d03_v2_0004",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_91979c30a91124e0_v2_0012",
+            "decision": "excluded",
+            "reason": "historical_alternative_requires_explicit_scope"
+          },
+          {
+            "id": "brta_4ba3dd29ea3234a0_v2_0014",
+            "decision": "excluded",
+            "reason": "historical_alternative_requires_explicit_scope"
+          },
+          {
+            "id": "brta_258cf38650a6332b_v2_0012",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0200",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0018",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          }
+        ],
+        "expanded_ids": [],
+        "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+        "budget_order_ids": [
+          "brta_258cf38650a6332b_v2_0012",
+          "brta_4e08eb4e988d38e4_v2_0200",
+          "brta_4e08eb4e988d38e4_v2_0018"
+        ],
+        "selected_ids": [
+          "brta_258cf38650a6332b_v2_0012",
+          "brta_4e08eb4e988d38e4_v2_0200",
+          "brta_4e08eb4e988d38e4_v2_0018"
+        ],
+        "selected_chars": 3701
+      }
+    },
+    {
+      "id": "brta_08_correction",
+      "domain": "brta",
+      "question": "ড্রাইভিং লাইসেন্সে নাম বা জন্মতারিখ ভুল হলে কীভাবে ঠিক করব?",
+      "baseline_ids": [
+        "brta_258cf38650a6332b_v2_0021",
+        "brta_258cf38650a6332b_v2_0006",
+        "brta_258cf38650a6332b_v2_0018",
+        "brta_258cf38650a6332b_v2_0019",
+        "brta_258cf38650a6332b_v2_0020",
+        "brta_258cf38650a6332b_v2_0008"
+      ],
+      "new_ids": [
+        "brta_258cf38650a6332b_v2_0021",
+        "brta_258cf38650a6332b_v2_0006",
+        "brta_258cf38650a6332b_v2_0018",
+        "brta_258cf38650a6332b_v2_0019",
+        "brta_258cf38650a6332b_v2_0020",
+        "brta_258cf38650a6332b_v2_0008"
+      ],
+      "matches_saved_baseline": true,
+      "added": [],
+      "removed": [],
+      "changed": false,
+      "trace": {
+        "version": "applicability_v1_family_order",
+        "query_actions": [
+          "correction"
+        ],
+        "query_services": [
+          "birth",
+          "licence"
+        ],
+        "decisions": [
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0237",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_00cf734ebafbc7c2_v2_0034",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_00cf734ebafbc7c2_v2_0007",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_90ea5e2f80d89b97_v2_0005",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_0a6926d40f756cb6_v2_0005",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_258cf38650a6332b_v2_0021",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_258cf38650a6332b_v2_0006",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_258cf38650a6332b_v2_0018",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_258cf38650a6332b_v2_0019",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_258cf38650a6332b_v2_0020",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_258cf38650a6332b_v2_0008",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_258cf38650a6332b_v2_0024",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "brta_258cf38650a6332b_v2_0011",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0016",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0199",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          }
+        ],
+        "expanded_ids": [],
+        "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+        "budget_order_ids": [
+          "brta_258cf38650a6332b_v2_0021",
+          "brta_258cf38650a6332b_v2_0006",
+          "brta_258cf38650a6332b_v2_0018",
+          "brta_258cf38650a6332b_v2_0019",
+          "brta_258cf38650a6332b_v2_0020",
+          "brta_258cf38650a6332b_v2_0008",
+          "brta_258cf38650a6332b_v2_0024",
+          "brta_258cf38650a6332b_v2_0011",
+          "brta_4e08eb4e988d38e4_v2_0016",
+          "brta_4e08eb4e988d38e4_v2_0199"
+        ],
+        "selected_ids": [
+          "brta_258cf38650a6332b_v2_0021",
+          "brta_258cf38650a6332b_v2_0006",
+          "brta_258cf38650a6332b_v2_0018",
+          "brta_258cf38650a6332b_v2_0019",
+          "brta_258cf38650a6332b_v2_0020",
+          "brta_258cf38650a6332b_v2_0008"
+        ],
+        "selected_chars": 2806
+      }
+    },
+    {
+      "id": "brta_09_online_apply",
+      "domain": "brta",
+      "question": "ড্রাইভিং লাইসেন্সের আবেদন অনলাইনে কীভাবে করব?",
+      "baseline_ids": [
+        "brta_846a4041fe96a64e_v2_0007",
+        "brta_cbe22ab64acf3d03_v2_0003",
+        "brta_846a4041fe96a64e_v2_0003",
+        "brta_846a4041fe96a64e_v2_0011",
+        "brta_cbe22ab64acf3d03_v2_0004",
+        "brta_09e8cbfff67f117e_v2_0005"
+      ],
+      "new_ids": [
+        "brta_846a4041fe96a64e_v2_0007",
+        "brta_cbe22ab64acf3d03_v2_0003",
+        "brta_846a4041fe96a64e_v2_0003",
+        "brta_846a4041fe96a64e_v2_0011",
+        "brta_cbe22ab64acf3d03_v2_0004",
+        "brta_09e8cbfff67f117e_v2_0005"
+      ],
+      "matches_saved_baseline": true,
+      "added": [],
+      "removed": [],
+      "changed": false,
+      "trace": {
+        "version": "applicability_v1_family_order",
+        "query_actions": [
+          "application"
+        ],
+        "query_services": [
+          "licence"
+        ],
+        "decisions": [
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0148",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0149",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0008",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_846a4041fe96a64e_v2_0014",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_846a4041fe96a64e_v2_0007",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_cbe22ab64acf3d03_v2_0003",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_846a4041fe96a64e_v2_0003",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_846a4041fe96a64e_v2_0011",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_cbe22ab64acf3d03_v2_0004",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_09e8cbfff67f117e_v2_0005",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          },
+          {
+            "id": "brta_846a4041fe96a64e_v2_0013",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "brta_846a4041fe96a64e_v2_0008",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "brta_57a7e75567f9a5c3_v2_0010",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0194",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          },
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0196",
+            "decision": "excluded",
+            "reason": "whole_chunk_budget"
+          }
+        ],
+        "expanded_ids": [],
+        "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+        "budget_order_ids": [
+          "brta_846a4041fe96a64e_v2_0007",
+          "brta_cbe22ab64acf3d03_v2_0003",
+          "brta_846a4041fe96a64e_v2_0003",
+          "brta_846a4041fe96a64e_v2_0011",
+          "brta_cbe22ab64acf3d03_v2_0004",
+          "brta_09e8cbfff67f117e_v2_0005",
+          "brta_846a4041fe96a64e_v2_0013",
+          "brta_846a4041fe96a64e_v2_0008",
+          "brta_57a7e75567f9a5c3_v2_0010",
+          "brta_4e08eb4e988d38e4_v2_0194",
+          "brta_4e08eb4e988d38e4_v2_0196"
+        ],
+        "selected_ids": [
+          "brta_846a4041fe96a64e_v2_0007",
+          "brta_cbe22ab64acf3d03_v2_0003",
+          "brta_846a4041fe96a64e_v2_0003",
+          "brta_846a4041fe96a64e_v2_0011",
+          "brta_cbe22ab64acf3d03_v2_0004",
+          "brta_09e8cbfff67f117e_v2_0005"
+        ],
+        "selected_chars": 6452
+      }
+    },
+    {
+      "id": "brta_10_status",
+      "domain": "brta",
+      "question": "আমার ড্রাইভিং লাইসেন্সের বর্তমান স্ট্যাটাস কীভাবে দেখব?",
+      "baseline_ids": [
+        "brta_00cf734ebafbc7c2_v2_0012"
+      ],
+      "new_ids": [
+        "brta_00cf734ebafbc7c2_v2_0012"
+      ],
+      "matches_saved_baseline": true,
+      "added": [],
+      "removed": [],
+      "changed": false,
+      "trace": {
+        "version": "applicability_v1_family_order",
+        "query_actions": [
+          "status"
+        ],
+        "query_services": [
+          "licence"
+        ],
+        "decisions": [
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0237",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0205",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0203",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_00cf734ebafbc7c2_v2_0026",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_e640c49d6025cc8d_v2_0006",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_00cf734ebafbc7c2_v2_0017",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_258cf38650a6332b_v2_0015",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0196",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_846a4041fe96a64e_v2_0007",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_cbe22ab64acf3d03_v2_0004",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_cbe22ab64acf3d03_v2_0003",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_4e08eb4e988d38e4_v2_0149",
+            "decision": "excluded",
+            "reason": "different_action"
+          },
+          {
+            "id": "brta_91979c30a91124e0_v2_0011",
+            "decision": "excluded",
+            "reason": "historical_alternative_requires_explicit_scope"
+          },
+          {
+            "id": "brta_a207b925ed0dc4a9_v2_0020",
+            "decision": "excluded",
+            "reason": "unclassified_action_with_direct_alternative"
+          },
+          {
+            "id": "brta_00cf734ebafbc7c2_v2_0012",
+            "decision": "selected",
+            "reason": "compatible_scope"
+          }
+        ],
+        "expanded_ids": [],
+        "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+        "budget_order_ids": [
+          "brta_00cf734ebafbc7c2_v2_0012"
+        ],
+        "selected_ids": [
+          "brta_00cf734ebafbc7c2_v2_0012"
+        ],
+        "selected_chars": 224
+      }
+    }
+  ]
+}
