@@ -1,0 +1,203 @@
+{
+  "model": "qwen3:8b",
+  "revision": "b0e654b95e8b8cbe5256ea68fb7d41345db534ef",
+  "branch": "feature/add-birth-death-domain",
+  "questions": [
+    {
+      "id": "passport_01_documents",
+      "domain": "passport",
+      "category": "direct",
+      "question": "নতুন পাসপোর্ট করতে কী কী কাগজপত্র লাগবে?"
+    },
+    {
+      "id": "passport_02_fee",
+      "domain": "passport",
+      "category": "direct",
+      "question": "পাসপোর্ট বানাতে কত টাকা লাগে?"
+    },
+    {
+      "id": "passport_03_delivery_time",
+      "domain": "passport",
+      "category": "direct",
+      "question": "পাসপোর্ট পেতে কত দিন সময় লাগে?"
+    },
+    {
+      "id": "passport_04_apply",
+      "domain": "passport",
+      "category": "direct",
+      "question": "ই-পাসপোর্টের জন্য কীভাবে আবেদন করব?"
+    },
+    {
+      "id": "passport_05_renewal",
+      "domain": "passport",
+      "category": "direct",
+      "question": "পাসপোর্টের মেয়াদ শেষ হলে কীভাবে নবায়ন করব?"
+    },
+    {
+      "id": "passport_06_lost",
+      "domain": "passport",
+      "category": "direct",
+      "question": "পাসপোর্ট হারিয়ে গেলে কী করতে হবে?"
+    },
+    {
+      "id": "passport_07_name_correction",
+      "domain": "passport",
+      "category": "direct",
+      "question": "পাসপোর্টে নাম ভুল থাকলে কীভাবে ঠিক করব?"
+    },
+    {
+      "id": "passport_08_birth_date",
+      "domain": "passport",
+      "category": "direct",
+      "question": "পাসপোর্টে জন্মতারিখ পরিবর্তন করা যায় কি?"
+    },
+    {
+      "id": "passport_09_status",
+      "domain": "passport",
+      "category": "direct",
+      "question": "পাসপোর্টের আবেদন করার পর স্ট্যাটাস কীভাবে দেখব?"
+    },
+    {
+      "id": "passport_10_urgent",
+      "domain": "passport",
+      "category": "direct",
+      "question": "জরুরি পাসপোর্ট করতে কত দিন লাগে?"
+    },
+    {
+      "id": "birth_01_documents",
+      "domain": "birth_death_registration",
+      "category": "direct",
+      "question": "জন্মনিবন্ধন করতে কী কী কাগজপত্র লাগে?"
+    },
+    {
+      "id": "birth_02_online_apply",
+      "domain": "birth_death_registration",
+      "category": "direct",
+      "question": "জন্মনিবন্ধন অনলাইনে কীভাবে করব?"
+    },
+    {
+      "id": "birth_03_birth_date_correction",
+      "domain": "birth_death_registration",
+      "category": "direct",
+      "question": "জন্মনিবন্ধনে জন্মতারিখ ভুল হলে কীভাবে সংশোধন করব?"
+    },
+    {
+      "id": "birth_04_name_spelling",
+      "domain": "birth_death_registration",
+      "category": "direct",
+      "question": "জন্মনিবন্ধনে নামের বানান ভুল হলে কী করব?"
+    },
+    {
+      "id": "birth_05_lost",
+      "domain": "birth_death_registration",
+      "category": "direct",
+      "question": "জন্মনিবন্ধন হারিয়ে গেলে নতুন কপি কীভাবে পাব?"
+    },
+    {
+      "id": "birth_06_verify",
+      "domain": "birth_death_registration",
+      "category": "direct",
+      "question": "অনলাইনে জন্মনিবন্ধন যাচাই কীভাবে করব?"
+    },
+    {
+      "id": "birth_07_correction_fee",
+      "domain": "birth_death_registration",
+      "category": "direct",
+      "question": "জন্মনিবন্ধন সংশোধন করতে কত টাকা লাগে?"
+    },
+    {
+      "id": "birth_08_birth_date_proof",
+      "domain": "birth_death_registration",
+      "category": "direct",
+      "question": "জন্মতারিখ সংশোধনের জন্য কী কী প্রমাণ লাগবে?"
+    },
+    {
+      "id": "birth_09_parent_name",
+      "domain": "birth_death_registration",
+      "category": "direct",
+      "question": "বাবা-মায়ের নাম ভুল থাকলে কীভাবে সংশোধন করব?"
+    },
+    {
+      "id": "birth_10_delivery_time",
+      "domain": "birth_death_registration",
+      "category": "direct",
+      "question": "জন্মনিবন্ধন করতে কত দিন সময় লাগে?"
+    },
+    {
+      "id": "brta_01_documents",
+      "domain": "brta",
+      "category": "direct",
+      "question": "ড্রাইভিং লাইসেন্স করতে কী কী কাগজপত্র লাগবে?"
+    },
+    {
+      "id": "brta_02_fee",
+      "domain": "brta",
+      "category": "direct",
+      "question": "ড্রাইভিং লাইসেন্স করতে মোট কত টাকা লাগে?"
+    },
+    {
+      "id": "brta_03_learner",
+      "domain": "brta",
+      "category": "direct",
+      "question": "লার্নার ড্রাইভিং লাইসেন্স কীভাবে করব?"
+    },
+    {
+      "id": "brta_04_delivery_time",
+      "domain": "brta",
+      "category": "direct",
+      "question": "ড্রাইভিং লাইসেন্স পেতে কত দিন সময় লাগে?"
+    },
+    {
+      "id": "brta_05_test",
+      "domain": "brta",
+      "category": "direct",
+      "question": "BRTA-এর ড্রাইভিং পরীক্ষায় কী কী থাকে?"
+    },
+    {
+      "id": "brta_06_renewal",
+      "domain": "brta",
+      "category": "direct",
+      "question": "ড্রাইভিং লাইসেন্সের মেয়াদ শেষ হলে কীভাবে নবায়ন করব?"
+    },
+    {
+      "id": "brta_07_lost",
+      "domain": "brta",
+      "category": "direct",
+      "question": "ড্রাইভিং লাইসেন্স হারিয়ে গেলে কী করতে হবে?"
+    },
+    {
+      "id": "brta_08_correction",
+      "domain": "brta",
+      "category": "direct",
+      "question": "ড্রাইভিং লাইসেন্সে নাম বা জন্মতারিখ ভুল হলে কীভাবে ঠিক করব?"
+    },
+    {
+      "id": "brta_09_online_apply",
+      "domain": "brta",
+      "category": "direct",
+      "question": "ড্রাইভিং লাইসেন্সের আবেদন অনলাইনে কীভাবে করব?"
+    },
+    {
+      "id": "brta_10_status",
+      "domain": "brta",
+      "category": "direct",
+      "question": "আমার ড্রাইভিং লাইসেন্সের বর্তমান স্ট্যাটাস কীভাবে দেখব?"
+    }
+  ],
+  "file_hashes": {
+    "src/pipeline.py": "e1b5f52800e7b4dcfe77302cf6992c57ac11d5b9d3ede0fab0b665354430e9ff",
+    "src/retrieval/hybrid_retriever.py": "8f031ad63fac93543e350668b7311acf8bbf476e99b45aab1a699e33461ced9a",
+    "src/evaluation/metrics.py": "f0a7242f6dc93d2471a19054261b51f4a043ba48cbbd208a18410174b1e1d837",
+    "src/reranking/reranker.py": "6b04cc53cd795d591d2b45847ed2510789fd8cc0bfbb0b53bfed5e3cc9612d4a",
+    "src/generation/ollama_generator.py": "f45d468f4d2278e181cd54c7dcf350e10982988e3a7ff038b3c3d6bf8252bba5",
+    "src/generation/evidence_selection.py": "149c882ab7717e67c97c459dfc74aee2b06211b587057a6285bf459e5170e420",
+    "app.py": "420cd654258a1618da89975ae8052d4bb3280a5e8de759f8d0f804ca47b64838",
+    "domains/passport/config.json": "10d6f28f1624547a4a675659a8aaf1a930d00ce4046294ddb036443b26d5dafc",
+    "domains/passport/data/interim/active_20260919_063632_508964.jsonl": "e50f1bf74778d6c49ad7171428431e7df3d434b9ac8671753fb7c4a0f3ca0fa2",
+    "domains/brta/config.json": "cdf184d6ed3d13f05b26784bc64ae0b8cad37717037805d714f50d033fca2b21",
+    "domains/brta/data/interim/active_20260919_062310_302306.jsonl": "2ac675c1cca65b6a72bb4b61f4d7edbc20c01316a2211619309e53fbb23da359",
+    "domains/birth_death_registration/config.json": "9919c3b3ed70085dc05dd6159c6eb8dae3b4e6801cad3d9f9c6d24f4bfad5fd1",
+    "domains/birth_death_registration/data/interim/birth_death_chunks.jsonl": "b46443cd630a76c4a66134cadcc4a5a243f2f479b4ee97ba220582375ca1a6cf"
+  },
+  "note": "Existing development questions. Full local CivicRAG candidate, not manually selected context. No correctness scoring."
+}
