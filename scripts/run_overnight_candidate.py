@@ -1,5 +1,6 @@
 """One local batch, no AI monitoring or automatic answer scoring."""
 import hashlib
+import argparse
 import json
 from pathlib import Path
 import subprocess
@@ -22,6 +23,13 @@ def git(*args):
 
 
 def main():
+    global OUT
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--output', default=str(OUT.relative_to(ROOT)))
+    parser.add_argument('--selector-version')
+    args = parser.parse_args()
+    OUT = (ROOT / args.output).resolve()
+    OUT.relative_to(ROOT / 'docs/evaluation')
     OUT.mkdir(parents=True, exist_ok=True)
     if (OUT / 'plan.json').exists():
         raise RuntimeError('Existing run preserved. Refusing overwrite.')
@@ -52,6 +60,8 @@ def main():
             with urllib.request.urlopen(request, timeout=1800) as response:
                 result = json.load(response)
             assert result.get('pipeline_variant') == 'applicability_v1', result
+            if args.selector_version and result.get('evidence_selection'):
+                assert result['evidence_selection']['version'] == args.selector_version, 'Unexpected selector version'
             rows.append({'audit_item': item, 'elapsed_seconds': round(time.monotonic()-started, 2), 'result': result})
             save('answers.json', {'model': 'qwen3:8b', 'rows': rows})
             lines = ['# Overnight Qwen3 candidate outputs', '', 'Raw outputs; correctness review pending. Sources are context IDs, not verified claim-level citations.', '']
