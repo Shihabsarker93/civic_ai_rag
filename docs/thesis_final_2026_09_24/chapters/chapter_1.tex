@@ -5,7 +5,7 @@ Civic.ai, implemented in the repository as CivicRAG, addresses this problem thro
 
 Retrieval-augmented generation conditions a language model on external evidence rather than relying solely on information encoded in its parameters \cite{lewis2020rag}. This permits source inspection and corpus updates without retraining the answer model. However, retrieval and generation remain separate sources of error: a relevant-looking passage may concern a different procedure, and a generator may misinterpret even an appropriate passage.
 
-\section{Rationale and Motivation}
+\section{Rational of the Study or Motivation}
 The project's central motivation is to make collected civic-service information searchable through ordinary Bangla questions. The dataset-development effort is especially important because operational information is not supplied as a uniform question-answer database. Scanned material, inconsistent Markdown, legal tables and historical instructions require organization before an embedding model can use them meaningfully.
 
 The contribution is therefore not a claim to invent RAG or outperform all existing assistants. It is the development of a traceable civic-service corpus, its integration into a locally executable system and an auditable comparison with a dense-only baseline. NextRAG provides the principal architectural inspiration because it studies retrieval over Bangla and English documents in a Bangladesh-specific financial setting \cite{nextrag}. CivicRAG changes the domain, corpus preparation, number of retrieval channels and answer-processing logic.
@@ -22,17 +22,17 @@ The study asks:
 \item What do the saved outputs reveal about evidence relevance, generation behaviour and the limitations of automatic evaluation?
 \end{enumerate}
 
-\section{Objectives}
+\section{Objective}
 The implemented objectives are to organize the three service domains; preserve source-to-chunk mappings; index search-oriented text while retaining original evidence content; implement dense and lexical retrieval with rank fusion; provide a local Bangla answer interface; and retain reproducible experiments with source IDs, routes and configuration hashes.
 
 Objectives proposed earlier but not substantiated by the final artifacts are not reported as completed. These include training a new bilingual language model, fine-tuning BanglaBERT with Llama, conducting a citizen survey, automatically verifying credentials and evaluating general-language benchmarks such as GLUE. Model downloads and vector indexing are not described as model training.
 
-\section{Methodology in Brief}
+\section{Methodology in Brief }
 The offline workflow preserves original materials, reads prepared text, assigns document and chunk identifiers and creates separate search and answer representations. BGE-M3 encodes retrieval text into vectors. ChromaDB stores vectors alongside evidence text and metadata, while BM25 is constructed from the same searchable corpus.
 
 At question time, CivicRAG searches the selected domain through both channels, combines ranks and reranks candidates. A post-P2 applicability selector screens and arranges passages before Qwen3 generates an answer. The evaluated Simple RAG baseline uses dense retrieval without hybrid fusion, reranking or that selector. Both use the same generator prompt and limits through an isolated comparison runner.
 
-\section{Scope and Challenges}
+\section{Scopes and Challenges}
 The final 30-question comparison contains ten passport, ten birth-registration and ten driving-licence questions. Death-registration material exists in the corpus, but the selected comparison has no death-specific questions. BRTA corpus coverage extends beyond driving licences, while those broader services are not represented in the main test set. Accordingly, results cannot establish performance across every indexed service.
 
 The questions were reused during development. They are a development-set comparison, not an unseen benchmark. Single-turn direct questions dominate this experiment; conversational memory, long scenarios, paraphrase robustness and code-mixed input require separate evaluation. A selectable domain restricts the evidence pool, but does not by itself prove that every out-of-domain question is rejected.

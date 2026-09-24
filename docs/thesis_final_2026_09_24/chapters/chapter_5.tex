@@ -1,4 +1,4 @@
-\section{Design Process and Methodology Overview}
+\section{Design Process or Methodology Overview }
 CivicRAG separates offline corpus/index construction from online retrieval and answer generation. The pipeline diagram in Figure~\ref{fig:architecture} describes the selected-evidence configuration used by the main CivicRAG run. Legacy controlled-answer branches remain in the repository for rollback but are not the answer route of this comparison.
 
 \begin{figure}[htbp]\centering
@@ -19,13 +19,18 @@ CivicRAG separates offline corpus/index construction from online retrieval and a
 \caption{Implemented offline preparation and online selected-evidence path. The dashed link denotes access to the stored indexes, not an index-generated answer.}\label{fig:architecture}
 \end{figure}
 
-\section{Preliminary Design and Final Specification}
+\section{Preliminary Design or Design (Model) Specification}
 The P2 design emphasized birth/death registration, hybrid retrieval and controlled answer paths. Later work extended the corpus to passport and BRTA, added applicability selection and changed the main generator comparison to Qwen3. The final reported route therefore differs from the old diagrams that send every answer through a generic safe-path box.
 
 The system is not an autonomous agent that performs government actions. Its task is single-turn retrieval and evidence-conditioned text generation. A domain is selected before retrieval. A targeted cross-domain aggregate guard handles certain multi-service questions, but comprehensive intent recognition is not claimed. Neither the lexical rules nor the selector is a separately trained classifier.
 
-\section{Data Collection and Dataset Development}
-\subsection{Source Families and Original Preservation}
+The implemented alternatives are the matched dense-only baseline and the design using hybrid retrieval, reranking and selected evidence. Both have saved 30-question executions. The relevant-only and evidence-order diagnostics isolate context handling but do not simulate a complete deployment. Their outputs verify specific design behaviours; a selector-off ablation remains unexecuted. Controlled settings appear in Section 4.4 and observed outcomes in Chapter 5.
+
+\pending{Task DS-01: if component-level verification is required, freeze both configurations and run a selector-off comparison on the same questions, saving contexts, answers, timings and routes. Do not describe it as completed before its artifacts exist. The existing paired design comparison can be reported without inventing a simulation.}
+
+\section{Data Collection -(If
+Applicable)}
+\paragraph{Source Families and Original Preservation.}
 The birth/death collection contains structured JSON and prepared Markdown derived from FAQs, laws, rules, fees, correction processes and application guidance. Passport and BRTA were supplied as original-file directories and separately prepared Markdown. Passport derivatives are registered from \code{cleaned_md}; BRTA derivatives from \code{brta} and \code{fahim_brta}. Directories explicitly marked original are reference materials, not duplicate text automatically added to the answer corpus.
 
 The register preserves document IDs, relative paths, snapshots, hashes, candidate original-file matches, inclusion history and chunk IDs. Candidate original matches do not certify textual fidelity. Some matches remain unresolved and are flagged. The distinction between collected originals and derivatives avoids counting the same information twice as independent evidence.
@@ -51,7 +56,7 @@ Each domain has its own configured JSONL corpus and Chroma collection. Metadata 
 
 In \code{scripts/build_index.py}, embeddings are computed from \code{retrieval_text}, whereas Chroma's \code{documents} contain \code{content}. The versioned ingestion script follows the same storage separation. Therefore answer evidence is stored alongside a vector; it is not itself an answer produced by Chroma. Chroma is a retrieval store, and the LLM produces the response only after evidence selection.
 
-\subsection{Data Reduction and Inclusion}
+\subsection{Data Reduction }
 Reduction is treated conservatively. FAQ duplicate handling and chunk boundaries can reduce repeated text, but semantic deduplication of the complete three-domain corpus has not been independently established. Original archives are retained. Passport and BRTA registers contain 30 and 132 derivative documents respectively; the active snapshot includes chunks from all of those registered derivatives. This statement does not imply that every original file has a resolved one-to-one derivative match.
 
 \subsection{Summary of Preprocessed Data}
@@ -61,8 +66,8 @@ The table is computed from the configured JSONL files, not from unrelated candid
 \input{generated/audit_table}
 Review flags count documents in the passport/BRTA registers or their associated chunk metadata, as indicated in the table. Multiple flags may apply to one document. A missing URL does not prove that a source is false, while a present URL does not prove that the derived text is correct. The flags identify where provenance and applicability need further review.
 
-\section{Implementation of the Selected Design}
-\subsection{Dense Embedding and Search}
+\section{Implementation of Selected Design}
+\paragraph{Dense Embedding and Search.}
 With encoder $f_\theta$, normalized vectors are
 \begin{equation}
 v_i=\frac{f_\theta(r_i)}{\|f_\theta(r_i)\|_2},\qquad
@@ -76,7 +81,7 @@ Thus distance and cosine induce the same exact ranking for normalized vectors. T
 
 BGE-M3 supplies the embedding model \cite{bgem3}; Chroma stores the vectors and linked documents \cite{chroma}. The implementation uses local cached model files and CPU embedding configuration. No corpus-specific gradient training occurs during this step.
 
-\subsection{BM25 Sparse Search}
+\paragraph{BM25 Sparse Search.}
 BM25 indexes tokens from $r_i$. Tokenization normalizes NFC, removes zero-width characters and extracts lower-case word/Bangla token sequences. The standard scoring structure is
 \begin{equation}
 \mathrm{BM25}(q,d)=\sum_{t\in q}\mathrm{IDF}(t)
@@ -84,7 +89,7 @@ BM25 indexes tokens from $r_i$. Tokenization normalizes NFC, removes zero-width 
 \end{equation}
 Here $f(t,d)$ is term frequency, $|d|$ is token length and $\overline L$ is mean document length. The code instantiates \code{BM25Okapi} without explicit parameter overrides, so the installed library defaults determine $k_1$, $b$ and its IDF-floor behaviour \cite{bm25,rankbm25}. Lexical matching is a separate channel; it does not construct Chroma's vectors.
 
-\subsection{Weighted Reciprocal Rank Fusion}
+\paragraph{Weighted Reciprocal Rank Fusion.}
 The implementation retrieves at most 20 candidates from each channel, omitting BM25 results with non-positive scores. It assigns one-based ranks and computes
 \begin{equation}
 S(d)=\frac{0.55\,\mathbf{1}[d\in D]}{50+r_D(d)}+
@@ -92,27 +97,27 @@ S(d)=\frac{0.55\,\mathbf{1}[d\in D]}{50+r_D(d)}+
 \end{equation}
 A missing-channel term contributes zero. As an illustrative calculation, a chunk at dense rank 2 and BM25 rank 5 receives $0.55/52+0.45/55\approx0.01876$. This is a rank-combination value, not confidence in factual accuracy. The fused list is limited to 15 before reranking. The weights are implementation settings; this thesis does not claim they are optimal for the dataset.
 
-\subsection{Reranking and Domain-Specific Logic}
+\paragraph{Reranking and Domain-Specific Logic.}
 The configured cross-encoder scores query/search-text pairs. If loading fails, the code can add a lexical-coverage adjustment of $0.05\,|T_q\cap T_d|/\max(|T_q|,1)$ to the incoming score. The saved primary CivicRAG candidate traces contain cross-encoder markers, establishing that the cross-encoder route was used in those records rather than merely being configured.
 
 Birth/death-specific boosts and evidence augmentation remain part of the selected route. These are not universal learned mechanisms for passport and BRTA. This asymmetry should be disclosed when interpreting domain differences. An isolated ablation would be required to attribute an observed change to those rules.
 
-\subsection{Applicability Selection and Context Budget}
+\paragraph{Applicability Selection and Context Budget.}
 The selector introduced after P2 uses service, action, product and location vocabularies. It prefers section scope over broad document titles and can reject a passport-collection passage for an application question. It also screens heading-only fragments, handles explicitly flagged historical alternatives and expands compatible fee/checklist families.
 
 The selector is implemented in \code{src/generation/evidence_selection.py}; it is neither a second LLM nor a human choosing passages during normal operation. It retains at most six whole chunks within 14,000 characters. A chunk that does not fit is skipped rather than silently cut. A later ordering fix groups compatible family members near the first eligible anchor before applying the budget. Saved replay on 30 candidate sets changed the selected IDs for the passport-fee question while leaving the other 29 selections unchanged. This establishes the scope of that replay, not a general accuracy improvement.
 
 An unknown or broad query can still retain unrelated material. Lexical applicability is not entailment, and a passage may contain mixed procedures even when its heading matches. The selector's decisions and expanded IDs are therefore retained in a trace. Removing the selector remains a proposed ablation, not a completed experiment in this manuscript.
 
-\subsection{Answer Generation and Safety Behaviour}
+\paragraph{Answer Generation and Safety Behaviour.}
 Qwen3:8b receives the normalized question and selected evidence through Ollama \cite{qwen3,ollama}. The comparison uses temperature 0.05, top-$p$ 0.9, output limit 1,200 tokens, repetition penalty 1.18, repeat window 256 and selected-route context window 8,192. Qwen3 thinking is disabled. The prompt requests evidence-grounded Bangla responses and preservation of service conditions.
 
 The current comparison bypasses legacy controlled extraction and question-category templates. If no applicable evidence remains, it returns a clarification/insufficient-information response. A heuristic language check can replace unsuitable-language output. A length finish reason produces an explicit incomplete-output warning. These are operational safeguards, not a complete factual verifier.
 
 The answer's Sources footer identifies supplied context IDs, not verified supporting citations for each claim. The saved \code{raw_generation} field is produced after the generator's existing response canonicalization and should not be described as untouched token-level model output. Candidate sources and actual \code{answer_contexts} are stored separately to avoid evaluating unused passages as if the model had seen them.
 
-\subsection{Matched Simple RAG Baseline}
-The isolated runner \code{scripts/run_simple_matched.py} performs dense-only top-six retrieval. It does not call BM25 fusion, reranking, applicability selection, sibling expansion or controlled answers. It applies the same whole-chunk character budget, selected-route generation prompt, Qwen3 settings and language/truncation handling as the comparison configuration. The \code{selected_evidence=True} generator flag chooses the shared prompt; it does not invoke the selector inside the baseline.
+\paragraph{Matched Simple RAG Baseline.}
+The isolated runner \path{scripts/run_simple_matched.py} performs dense-only top-six retrieval. It does not call BM25 fusion, reranking, applicability selection, sibling expansion or controlled answers. It applies the same whole-chunk character budget, selected-route generation prompt, Qwen3 settings and language/truncation handling as the comparison configuration. The \code{selected_evidence=True} generator flag chooses the shared prompt; it does not invoke the selector inside the baseline.
 
 \begin{table}[htbp]\centering\small
 \caption{Controlled and varied elements of the main comparison.}

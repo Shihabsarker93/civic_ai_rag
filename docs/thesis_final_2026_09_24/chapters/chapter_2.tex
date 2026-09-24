@@ -1,17 +1,17 @@
 \section{Preliminaries}
-\subsection{Retrieval-Augmented Generation}
+\paragraph{Retrieval-Augmented Generation.}
 RAG combines an external retrieval mechanism with a generator \cite{lewis2020rag}. In this implementation, retrieval selects passages at inference time and passes them to a pretrained model. No joint retriever-generator training is performed. This distinction matters because updating the corpus changes available evidence, but not the model's learned ability to reason about that evidence.
 
-\subsection{Dense Retrieval, Lexical Retrieval and Fusion}
+\paragraph{Dense Retrieval, Lexical Retrieval and Fusion.}
 Dense retrieval maps text to vectors and ranks candidate passages by vector proximity. BM25 instead ranks token overlap using term frequency and length normalization \cite{bm25}. The channels can complement one another: semantic matching may accommodate paraphrases, while token matching can preserve important form numbers and service names. Neither channel checks whether a legal provision remains in force.
 
 RRF combines ordered result lists rather than directly adding incompatible raw scores \cite{rrf}. CivicRAG uses a weighted form. Fusion is a way to construct a hybrid result list, not the definition of hybrid retrieval itself: weighted score fusion would be another possible combination method. Its effectiveness must be tested rather than inferred from the presence of two retrievers.
 
-\subsection{Reranking and Context Selection}
+\paragraph{Reranking and Context Selection.}
 A cross-encoder scores a query and passage jointly, unlike independently encoded dense vectors. CivicRAG configures the multilingual BGE reranker \cite{bgereranker}. Applicability selection is a separate, project-specific rule layer. It uses section scope and service/action vocabulary to remove or reorder passages. A reranker relevance score and a selector decision are neither probabilities of truth nor substitutes for claim-level validation.
 
 \section{Review of Existing Research}
-\subsection{NextRAG: Principal Architectural Inspiration}
+\paragraph{NextRAG: Principal Architectural Inspiration.}
 NextRAG addresses bilingual financial QA from Bangladeshi documents. Its method combines dense retrieval, BM25 and Dirichlet-smoothed query-likelihood retrieval, followed by weighted RRF, reranking and language-aware generation. Its reported evaluation includes reference-answer cosine similarity, F1 and inference time \cite{nextrag}. The shared document-language setting motivates borrowing retrieval components, but financial and civic-service applicability are not equivalent tasks.
 
 \begin{table}[htbp]\centering\small
@@ -29,20 +29,20 @@ Generator identity & Includes Llama 3.1 8B & Main comparison Qwen3:8b; local lla
 
 This relationship is described as inspiration rather than replication. CivicRAG does not implement the third Dirichlet channel or reproduce the financial benchmark. The paper's numerical results are not used as baselines for our different corpus and question set. Its reference-answer metrics are also not replaced by unlabelled similarity between two model outputs.
 
-\subsection{Multilingual Embeddings and Local Generators}
+\paragraph{Multilingual Embeddings and Local Generators.}
 BGE-M3 supports multilingual text representation and multiple retrieval modes \cite{bgem3}. CivicRAG uses its dense embeddings only; its sparse branch is separately implemented BM25, not BGE-M3's learned sparse mode. This clarification prevents the embedding model's full capabilities from being mistaken for implemented functionality.
 
 Qwen3 supplies thinking and non-thinking modes in the same model family \cite{qwen3}. The selected local deployment uses the non-thinking mode for the recorded main comparison. This is an inference setting, not evidence that reasoning would improve or reduce civic-answer quality. No controlled thinking-mode ablation was completed. Qwen2.5 and Llama 3 were also tested locally \cite{qwen25,llama3card}. These are specific deployed model variants, not interchangeable labels for their entire families.
 
-\subsection{Context Distraction and Diagnostic Evaluation}
+\paragraph{Context Distraction and Diagnostic Evaluation.}
 Research on long-context language models shows that access to relevant information does not guarantee its effective use, and that placement can affect performance \cite{lostmiddle}. The project's selected-evidence and evidence-order trials investigate a related practical issue: whether unrelated service passages change an otherwise useful answer. They are small generation-only diagnostics. They do not demonstrate that a manually chosen context can be selected automatically for arbitrary questions.
 
-\subsection{Other Bangla RAG Approaches}
+\paragraph{Other Bangla RAG Approaches.}
 TraSe investigates Bangla Wikipedia question answering using translative prompting and answer selection, with both automatic and human-in-the-loop retrieval \cite{trase}. Its distinction between automatically retrieved and human-selected contexts is useful for diagnosing our system: generation with manually selected evidence tests a different capability from end-to-end retrieval. CivicRAG's relevant-only trials follow this diagnostic logic, but do not implement TraSe's translation and answer-selection architecture. Their better outputs cannot be reported as automatic retrieval accuracy.
 
 HybridRAG-BN is a recent preprint combining BM25 and BGE-M3 retrieval with generation and a fine-tuned verification stage \cite{hybridragbn}. Its use of verification highlights that retrieval relevance and answer correctness are separate problems. CivicRAG shares established retrieval components but does not train a verifier or implement that paper's web-assisted fallback. Its competition scores are not directly comparable with our civic-service questions. These approaches inform possible future experiments, rather than retrospectively becoming components of our implementation.
 
-\subsection{Automatic RAG Evaluation}
+\paragraph{Automatic RAG Evaluation.}
 RAGAS separates aspects of retrieval and generation quality through model-assisted metrics \cite{ragas}. Faithfulness checks whether response claims are supported by the supplied context. Response relevance concerns how well an answer addresses its question. A source-supported response can still answer the wrong task, so no single score is a comprehensive measure of factual correctness.
 
 The implemented evaluator uses a local judge and documents its limitations. It does not have reviewed reference answers or gold relevance labels for the current 30 questions. Therefore reference semantic similarity, retrieval recall, MRR and nDCG are not reported for that experiment. Reusing metric names from an earlier submission without the necessary labels would be methodologically incorrect.

@@ -2,7 +2,7 @@
 
 ## What this manuscript is
 
-A full six-chapter working thesis in the supplied template's chapter order, with revised front matter, references, equations, an architecture diagram and reproducible tables. It is not yet submission-ready because the following items require real evidence or author confirmation.
+A full six-chapter working thesis preserving the supplied template's exact chapter/section/subsection headings and index order, with references, equations, an architecture diagram and reproducible tables. It is not yet submission-ready because the following items require real evidence or author confirmation. TEMPLATE_COMPLETION_MAP.md maps each original section to its evidence and remaining tasks.
 
 The original Abstract file, including keywords and LaTeX markup, is byte-for-byte unchanged. The original submission and template folders were not edited.
 
@@ -62,7 +62,9 @@ The evaluated active corpus contains 187 birth/death, 361 passport and 3161 BRTA
 
 ## Template adaptations
 
-Six required chapters and front-matter order retained; optional dedication omitted. Example appendices about installing LaTeX/Overleaf replaced with project reproducibility and completion requirements. IEEE-style numeric citations retained via BibTeX/IEEEtran instead of Biber, to compile with local Tectonic. XeTeX/fontspec enables the Bangla question appendix. Font names are local: Times New Roman and Kohinoor Bangla; another machine needs equivalent installed fonts, with layout rechecked.
+All six chapters and every original section/subsection title are retained, including the template's spelling. Dedication, Acknowledgment, Table of Contents and both original appendix titles are retained in their original order. Extra explanatory headings are unnumbered paragraphs and do not add index entries. Earlier project-specific appendix material is retained under supplement/ outside the template index. IEEE-style numeric citations use BibTeX/IEEEtran instead of Biber to compile with local Tectonic. XeTeX/fontspec supports Unicode text. Font names are local: Times New Roman and Kohinoor Bangla; another machine needs equivalent installed fonts, with layout rechecked.
+
+Run `.venv/bin/python scripts/check_thesis_template.py` from the repository root after compiling to check all 43 original numbered headings, front-matter/appendix TOC order and the Abstract. Page numbers change automatically as writing is completed; the index hierarchy and names do not.
 
 ## Final claims
 

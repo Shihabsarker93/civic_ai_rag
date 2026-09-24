@@ -1,0 +1,27 @@
+% Supporting material retained outside the official template's index.
+\section{Repository and Artifact Identity}
+The repository is \url{https://github.com/Shihabsarker93/civic_ai_rag}. The main CivicRAG answer artifact is retained at revision \code{32228dc}; the matched Simple RAG artifact at \code{76a4537}. The initial automatic-evaluation setup is retained at \code{49b8440}. These revisions identify saved artifacts, while the plan files identify their generation revisions and hashed inputs.
+
+\begin{longtable}{p{55mm}p{82mm}}
+\caption{Implementation map.}\\\toprule
+Repository path & Responsibility\\\midrule\endfirsthead\toprule Path & Responsibility\\\midrule\endhead
+\path{scripts/manage_experimental_domains.py} & Versioned passport/BRTA ingestion and source register\\
+\path{scripts/clean_service_corpora.py} & Separate cleanup candidate generation\\
+\path{scripts/build_index.py} & Embed retrieval text, store evidence documents\\
+\path{src/retrieval/hybrid_retriever.py} & Dense, BM25 and weighted RRF\\
+\path{src/reranking/reranker.py} & Cross-encoder/fallback and domain boosts\\
+\path{src/generation/evidence_selection.py} & Applicability and context budget\\
+\path{src/generation/ollama_generator.py} & Local prompting and generation\\
+\path{src/pipeline.py} & Route orchestration and legacy branches\\
+\path{scripts/run_simple_matched.py} & Matched dense-only baseline\\
+\path{scripts/evaluate_saved_ragas.py} & Saved-output automatic evaluation\\
+\path{app.py} & Local browser interface\\\bottomrule
+\end{longtable}
+
+\section{Reproduction Procedure}
+Use the checked-in plan files to recover the relevant source/configuration revisions. Verify the recorded corpus hashes and use the matching Chroma collections. Load the exact model tag and record its digest; a mutable model tag alone is not a permanent model identity. Reproducing all text exactly is not guaranteed without controlling stochastic generation and runtime versions.
+
+For the already saved results, run the thesis audit script to regenerate inventory and result tables. It reads files and never rebuilds an index or regenerates answers. The generated manifest records hashes, code revision and the immutable Abstract hash. The original template and submitted directory are not modified.
+
+\section{Main Evaluation Questions}
+\input{generated/questions}

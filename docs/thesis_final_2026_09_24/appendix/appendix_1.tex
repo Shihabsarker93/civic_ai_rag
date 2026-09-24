@@ -1,26 +1,11 @@
-\section{Repository and Artifact Identity}
-The repository is \url{https://github.com/Shihabsarker93/civic_ai_rag}. The main CivicRAG answer artifact is retained at revision \code{32228dc}; the matched Simple RAG artifact at \code{76a4537}. The initial automatic-evaluation setup is retained at \code{49b8440}. These revisions identify saved artifacts, while the plan files identify their generation revisions and hashed inputs.
+This appendix retains the title in the official template and describes the build requirements for this manuscript. The source uses XeTeX-compatible Unicode fonts. The verified local build uses Tectonic, which handles compilation passes and bibliography processing.
 
-\begin{longtable}{p{55mm}p{82mm}}
-\caption{Implementation map.}\\\toprule
-Repository path & Responsibility\\\midrule\endfirsthead\toprule Path & Responsibility\\\midrule\endhead
-\path{scripts/manage_experimental_domains.py} & Versioned passport/BRTA ingestion and source register\\
-\path{scripts/clean_service_corpora.py} & Separate cleanup candidate generation\\
-\path{scripts/build_index.py} & Embed retrieval text, store evidence documents\\
-\path{src/retrieval/hybrid_retriever.py} & Dense, BM25 and weighted RRF\\
-\path{src/reranking/reranker.py} & Cross-encoder/fallback and domain boosts\\
-\path{src/generation/evidence_selection.py} & Applicability and context budget\\
-\path{src/generation/ollama_generator.py} & Local prompting and generation\\
-\path{src/pipeline.py} & Route orchestration and legacy branches\\
-\path{scripts/run_simple_matched.py} & Matched dense-only baseline\\
-\path{scripts/evaluate_saved_ragas.py} & Saved-output automatic evaluation\\
-\path{app.py} & Local browser interface\\\bottomrule
-\end{longtable}
+\begin{enumerate}
+\item Install a compatible TeX toolchain. This manuscript was verified with Tectonic; XeLaTeX with BibTeX is an alternative.
+\item Ensure Times New Roman and Kohinoor Bangla are available. If replacement fonts are necessary, change only the font declarations in \code{main.tex} and recheck all pages. The Abstract text must remain unchanged.
+\item Keep \code{core}, \code{chapters}, \code{appendix}, \code{bibliography} and \code{generated} beside \code{main.tex}.
+\item From the manuscript directory run \code{tectonic --keep-logs --keep-intermediates main.tex}.
+\item Review the PDF, contents pages, equations and tables. Resolve missing characters, undefined references and overflowing text before submission.
+\end{enumerate}
 
-\section{Reproduction Procedure}
-Use the checked-in plan files to recover the relevant source/configuration revisions. Verify the recorded corpus hashes and use the matching Chroma collections. Load the exact model tag and record its digest; a mutable model tag alone is not a permanent model identity. Reproducing all text exactly is not guaranteed without controlling stochastic generation and runtime versions.
-
-For the already saved results, run the thesis audit script to regenerate inventory and result tables. It reads files and never rebuilds an index or regenerates answers. The generated manifest records hashes, code revision and the immutable Abstract hash. The original template and submitted directory are not modified.
-
-\section{Main Evaluation Questions}
-\input{generated/questions}
+The generated tables are included in the source package. Rebuilding the PDF does not require running the chatbot or downloading language models. Updating experimental results is a separate operation: the repository audit script reads saved artifacts and checks their configuration hashes before regenerating tables.

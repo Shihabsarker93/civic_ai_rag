@@ -28,7 +28,7 @@ Three ethical concerns guide the design. First, evidence may be outdated or inap
 
 Data curation preserves original files and records derivation rather than silently overwriting sources. Automatically detected flags indicate unresolved checks, not conclusive judgments that a file is wrong. Human review remains necessary for conflicting fees, applicability dates and OCR-sensitive legal text. Informal user preference is recorded as an observation, not converted into an invented expert accuracy score.
 
-\section{Standards and Interoperability}
+\section{Standards - if applicable}
 The implementation uses UTF-8 text, Unicode NFC normalization, JSON/JSONL records and SHA-256 hashes. These choices support interoperable storage and change detection. They do not constitute certification under a government, security, accessibility or quality-management standard. No compliance audit is claimed.
 
 The source and search representations retain machine-readable identifiers that permit reproducible joins across retrieval, evidence selection and evaluation. Documents without public URLs still retain local provenance; they must not be assigned fabricated URLs. Redistribution of original PDFs and personal information requires separate permission review.
@@ -37,6 +37,10 @@ The source and search representations retain machine-readable identifiers that p
 The completed work proceeded through corpus preparation, a birth/death-registration implementation, extension to passport and BRTA, generation diagnostics and a matched baseline comparison. Later changes were preserved as candidates and Git revisions. The final evaluation configuration is identified through hashes rather than by describing every subsequent draft as active.
 
 For finalization, architecture and corpus changes are separated from reporting. The outstanding automatic evaluation may finish without modifying the answer files. The thesis tables are regenerated from those artifacts, while the Abstract is checked against its immutable source. Changes that would require new answer generation are not silently included in the current comparison.
+
+The remaining work follows dependency-based milestones rather than invented historical dates: freeze the corpus and answer revisions; finish or formally close the automatic evaluation; review paired answers; insert validated results into Chapter 5; reconcile the conclusion; and confirm administrative information before the final compile. Evaluation uses the existing local machine and Ollama models. Manuscript work uses saved artifacts and does not require repeated generation.
+
+\pending{Task PM-01: obtain team-confirmed milestone dates, responsibility assignments, available hardware and a budget/resource record. The sequence above is a plan, not a reconstructed account of hours worked. Populate this section with the confirmed schedule and budget before submission.}
 
 \section{Risk Management}
 \begin{longtable}{p{34mm}p{49mm}p{54mm}}
@@ -57,3 +61,11 @@ Version confusion & Hash manifests and rollback revisions & Index rebuilds and d
 The main generation runs use local Ollama rather than paid per-request inference. This establishes the absence of such API charges for those runs, not a zero-cost system. Hardware ownership, electricity, source preparation and review time remain costs. No invoices, time sheets or power logs support a complete monetary analysis, so no fabricated budget or savings figure is included.
 
 At the recorded mean latency, a sequential 30-question run takes substantial wall-clock time. This limits the practicality of repeated full-batch experiments on the available machine and motivates reusing saved outputs for evaluation. Latency reduction through different hardware or smaller contexts is a future optimization, not a demonstrated economic benefit.
+
+For a measured run, let $P_{\mathrm{avg}}$ be average electrical power in watts, $t$ elapsed hours and $p$ the electricity price per kWh. The estimated energy charge is
+\begin{equation}
+C_{\mathrm{energy}}=\frac{P_{\mathrm{avg}}t}{1000}\,p.
+\end{equation}
+Total project cost also includes attributable hardware, storage and documented labour. Hardware ownership cost must be distinguished from the incremental cost of one evaluation. Monetary benefits require a defensible comparator; no savings estimate is justified merely because the chatbot answers a question.
+
+\pending{Task EC-01: obtain equipment/access cost, electricity tariff, measured power and run duration, storage cost and any logged preparation/review hours. Calculate the cost table from these inputs with explicit assumptions. Citizen time savings would require an appropriate measured comparator, not generated observations.}

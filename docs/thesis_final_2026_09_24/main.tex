@@ -29,8 +29,12 @@
 \input{core/frontmatter}
 \phantomsection\addcontentsline{toc}{chapter}{Abstract}
 \input{core/abstract}
-\chapter*{Acknowledgement}\addcontentsline{toc}{chapter}{Acknowledgement}
+\chapter*{Dedication}\addcontentsline{toc}{chapter}{Dedication}
+\textit{The authors' dedication text is awaiting confirmation. This page is retained in the supplied template's position.}
+\chapter*{Acknowledgment}\addcontentsline{toc}{chapter}{Acknowledgment}
 We acknowledge the guidance provided during the thesis process and the public institutions whose service documents informed the knowledge corpus. We also acknowledge the developers of the open-source retrieval, embedding and local language-model software used in the implementation. Individual acknowledgements will be confirmed by the authors before submission.
+\renewcommand{\contentsname}{Table of Contents}
+\clearpage\phantomsection\addcontentsline{toc}{chapter}{Table of Contents}
 \tableofcontents
 \listoffigures
 \listoftables
@@ -55,7 +59,10 @@ RRF & Reciprocal rank fusion\\
 \chapter{Result Analysis}\input{chapters/chapter_6}
 \chapter{Conclusion}\input{chapters/chapter_9}
 \bibliographystyle{IEEEtran}\bibliography{bibliography/references}
-\appendix
-\chapter{Reproducibility and Evaluation Questions}\input{appendix/appendix_1}
-\chapter{Completion and Verification Requirements}\input{appendix/appendix_2}
+\chapter*{Appendix A\\How to install \LaTeX}
+\addcontentsline{toc}{chapter}{Appendix A How to install \LaTeX}
+\input{appendix/appendix_1}
+\chapter*{Appendix B\\Overleaf: GitHub for \LaTeX\ projects}
+\addcontentsline{toc}{chapter}{Appendix B Overleaf: GitHub for \LaTeX\ projects}
+\input{appendix/appendix_2}
 \end{document}

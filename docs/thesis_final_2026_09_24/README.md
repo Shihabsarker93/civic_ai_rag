@@ -1,10 +1,12 @@
 # Civic.ai thesis manuscript
 
-Open `main.pdf` for the compiled thesis. `main.tex` is the entry point for the LaTeX source. The supplied template's six-chapter structure is retained. Original inputs were not changed.
+Open `main.pdf` for the compiled thesis. `main.tex` is the entry point for the LaTeX source. The supplied template's original chapter/section/subsection names and index order are retained. Original inputs were not changed. `TEMPLATE_COMPLETION_MAP.md` identifies the remaining evidence needed in each original section and gives follow-up task prompts.
 
 The Abstract is preserved byte-for-byte, including its keywords and LaTeX markup. The hash and implementation/data evidence are recorded in `evidence_manifest.json`.
 
 This is a full working manuscript, not a claim that every submission requirement is complete. Read `COMPLETION_CHECKLIST.md` for the outstanding evaluation results, administrative details and author confirmations. Partial RAGAS scores are not presented as final results.
+
+The pre-correction draft is preserved at Git revision `64d3650`. The original appendix titles are restored; the former project-specific appendices and question list remain available in `supplement/` and `generated/questions.tex`, outside the official index. New technical paragraph labels do not change the template's section numbering.
 
 ## Build
 
