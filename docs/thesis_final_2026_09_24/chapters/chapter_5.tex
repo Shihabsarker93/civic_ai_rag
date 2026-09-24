@@ -1,23 +1,9 @@
 \section{Design Process or Methodology Overview }
 CivicRAG separates offline corpus/index construction from online retrieval and answer generation. The pipeline diagram in Figure~\ref{fig:architecture} describes the selected-evidence configuration used by the main CivicRAG run. Legacy controlled-answer branches remain in the repository for rollback but are not the answer route of this comparison.
 
-\begin{figure}[htbp]\centering
-\begin{tikzpicture}[node distance=6mm, every node/.style={font=\small,align=center}, box/.style={draw,rounded corners,fill=gray!8,text width=116mm,minimum height=9mm}, arr/.style={-{Latex},thick}]
-\node[box] (raw) {Original documents and team-prepared text derivatives};
-\node[box,below=of raw] (clean) {Source register, normalization, typed chunks and provenance};
-\node[box,below=of clean] (texts) {Search text $r_i$ \quad | \quad Evidence content $e_i$ and metadata $m_i$};
-\node[box,below=of texts] (index) {BGE-M3($r_i$) $\rightarrow$ Chroma vectors\quad |\quad BM25($r_i$)\\Evidence $e_i$ is stored and linked by chunk ID, not generated};
-\node[box,below=9mm of index] (query) {Bangla query and selected domain $\rightarrow$ normalized search query};
-\node[box,below=of query] (retrieval) {Dense top 20 + BM25 top 20 $\rightarrow$ weighted RRF top 15};
-\node[box,below=of retrieval] (rank) {Reranking; birth/death-specific boosts and augmentation where applicable};
-\node[box,below=of rank] (select) {Heuristic applicability selector and compatible family expansion\\Up to 6 evidence chunks, 14,000 characters};
-\node[box,below=of select] (llm) {Qwen3:8b with query + selected original evidence};
-\node[box,below=of llm] (out) {Language check / truncation warning $\rightarrow$ answer + supplied source IDs};
-\foreach \a/\b in {raw/clean,clean/texts,texts/index,query/retrieval,retrieval/rank,rank/select,select/llm,llm/out}{\draw[arr] (\a)--(\b);}
-\draw[arr,dashed] (index.east)--++(8mm,0)|-(retrieval.east);
-\end{tikzpicture}
-\caption{Implemented offline preparation and online selected-evidence path. The dashed link denotes access to the stored indexes, not an index-generated answer.}\label{fig:architecture}
-\end{figure}
+\input{generated/architecture}
+
+The diagram retains the P2 separation between offline preparation and online answering, but explicitly connects stored evidence to generation and distinguishes shared components from conditional rules. The upper stage constructs retrieval resources; it is indexing, not LLM training. The lower stage searches and selects evidence before generating text. Dense retrieval, BM25, rank fusion, cross-encoder reranking, applicability selection and local generation are shared across all three configured domains. Only the additional registration-specific adjustments are conditional on the birth/death domain.
 
 \section{Preliminary Design or Design (Model) Specification}
 The P2 design emphasized birth/death registration, hybrid retrieval and controlled answer paths. Later work extended the corpus to passport and BRTA, added applicability selection and changed the main generator comparison to Qwen3. The final reported route therefore differs from the old diagrams that send every answer through a generic safe-path box.
@@ -45,6 +31,9 @@ The register preserves document IDs, relative paths, snapshots, hashes, candidat
 The corpus is a retrieval resource, not a newly annotated gold-answer benchmark. Its novelty is the organization of selected civic-service material into a source-traceable, machine-usable representation spanning the three domains. It is neither a census of all government documents nor a guarantee of current legal validity.
 
 \subsection{Data Cleaning}
+\input{generated/preprocessing}
+Figure~\ref{fig:preprocessing} separates preservation of original materials from transformations applied to the machine-readable derivatives. The archived P2 diagram is a design reference; this final diagram describes supported preparation steps rather than assuming every originally illustrated operation was automated.
+
 The active passport/BRTA ingestion parses simple front matter, normalizes NFC text, removes explicit authoring citation markers and selected invisible characters, and tracks headings. It preserves malformed or unrecognized material instead of making broad deletions. The work does not substantiate a universal automatic OCR repair or Bijoy-to-Unicode conversion stage for every supplied file; such claims from illustrative diagrams are not carried forward.
 
 Separate cleanup candidates remove recognized authoring preambles and boilerplate and preserve larger structural units. Their manifests record changes and review flags. Those candidates must be distinguished from the evaluated corpus. At the audited snapshot, the active domain configurations still reference the heading-aware v2 passport/BRTA files. A later cleanup directory alone is not evidence that its contents were activated in ChromaDB or used in the saved answers.
@@ -54,20 +43,32 @@ Document-type-aware transformation retains question-answer pairs, headings, fee 
 
 Each chunk has the form
 \begin{equation}
-c_i=(\mathrm{id}_i,e_i,r_i,m_i),
+c_i=(\mathrm{id}_i,r_i,e_i,m_i),
 \end{equation}
 where $e_i$ is evidence content, $r_i$ is search text and $m_i$ is metadata. Search text may include aliases or section descriptors. These additions help search; they are not source facts and are not meant to become answer evidence. No query-specific reference answer is inserted into the generator merely because it resembles a test question.
 
 \subsection{Data Integration}
+\input{generated/evidence_linkage}
 Each domain has its own configured JSONL corpus and Chroma collection. Metadata preserves service context and available source URLs. A stable chunk ID joins vector results back to the source record. The runtime dense retriever obtains IDs from Chroma and reconstructs retrieval results from the in-memory chunk map, making the active JSONL and index consistency essential.
 
 In \code{scripts/build_index.py}, embeddings are computed from \code{retrieval_text}, whereas Chroma's \code{documents} contain \code{content}. The versioned ingestion script follows the same storage separation. Therefore answer evidence is stored alongside a vector; it is not itself an answer produced by Chroma. Chroma is a retrieval store, and the LLM produces the response only after evidence selection.
+
+Figure~\ref{fig:evidence-linkage} makes this relationship explicit. If $I_q$ is a list of retrieved chunk IDs and $M$ is the active chunk map, then the corresponding evidence is obtained by
+\begin{equation}
+E_q=[M[i].\mathrm{content}:i\in I_q].
+\end{equation}
+This is an identifier lookup, not a comparison between a database-generated answer and a reference answer. The subsequent selector can remove candidates or append compatible family members; therefore the final supplied evidence need not equal the first retrieved list.
 
 \subsection{Data Reduction }
 Reduction is treated conservatively. FAQ duplicate handling and chunk boundaries can reduce repeated text, but semantic deduplication of the complete three-domain corpus has not been independently established. Original archives are retained. Passport and BRTA registers contain 30 and 132 derivative documents respectively; the active snapshot includes chunks from all of those registered derivatives. This statement does not imply that every original file has a resolved one-to-one derivative match.
 
 \subsection{Summary of Preprocessed Data}
 \input{generated/corpus_table}
+\begin{figure}[htbp]\centering
+\includegraphics[width=\linewidth]{generated/corpus_distribution.pdf}
+\caption{Active corpus composition from the frozen evidence manifest: 3,709 chunks and 174 prepared source units. Chunk share reflects document length and splitting, not demand, accuracy or unique facts.}\label{fig:corpus-distribution}
+\end{figure}
+Figure~\ref{fig:corpus-distribution} shows the corpus imbalance: BRTA accounts for 85.2\% of chunks, passport for 9.7\% and birth/death registration for 5.0\% (rounded independently). Domain-scoped retrieval prevents this corpus-size imbalance from directly mixing unrelated services in one query. It does not establish equal retrieval difficulty or equal source coverage across domains.
 The table is computed from the configured JSONL files, not from unrelated candidate directories. For the older birth/death corpus, source units are counted using its source-path metadata. That count is not equated to a unique original-PDF count. Across domains, chunk counts are an indexing property rather than the number of independent facts or questions.
 
 \input{generated/audit_table}
@@ -109,10 +110,34 @@ The configured cross-encoder scores query/search-text pairs. If loading fails, t
 
 Birth/death-specific boosts and evidence augmentation remain part of the selected route. These are not universal learned mechanisms for passport and BRTA. This asymmetry should be disclosed when interpreting domain differences. An isolated ablation would be required to attribute an observed change to those rules.
 
+\paragraph{Shared Reranking versus Registration-Specific Adjustments.}
+The distinction is explicit in \code{src/pipeline.py}: \code{birth_death_rules} is true only for the \code{birth_death_registration} domain, and that flag is passed to the reranker's \code{domain_boosts} option. The cross-encoder itself is shared; passport and BRTA do not skip reranking. Its base score may be written as $s_{\mathrm{CE}}(q,r_i)=g_\phi(q,r_i)$, where the pretrained cross-encoder jointly processes the query and searchable passage. For a domain $d$, the implemented adjustment has the form
+\begin{equation}
+s_d(q,c_i)=s_{\mathrm{base}}(q,c_i)+
+\mathbf{1}[d=\mathrm{birth/death}]\,\Delta_{\mathrm{registration}}(q,c_i).
+\end{equation}
+Here $s_{\mathrm{base}}$ is the cross-encoder score, or the documented fallback score when that model is unavailable. $\Delta_{\mathrm{registration}}$ is the sum of applicable hand-written adjustments, not a learned probability. For example, an application-process record receives an increment of 0.08 for a detected registration how-to query; additional heading conditions can further alter that score. These increments do not have a calibrated confidence interpretation.
+
+Separately, \code{_augment_contexts} can append an existing correction-fee row for a detected date-of-birth or other data-correction query, provided its ID is not already present. It neither writes a new fact nor creates a synthetic answer. This registration-specific supplementation is different from the shared selector's compatible-family expansion, which can also operate on passport or BRTA evidence.
+
+These rules reflect the earlier registration-focused implementation and its document-type schema. Applying the same conditions unchanged to other domains would be inappropriate: a birth-registration correction fee is not a passport or driving-licence correction fee. Equivalent domain rules were not implemented for passport and BRTA. This is an engineering asymmetry to disclose, not evidence that the extra rules are necessary or beneficial in every case. No pipeline change is made by documenting it.
+
 \paragraph{Applicability Selection and Context Budget.}
 The selector introduced after P2 uses service, action, product and location vocabularies. It prefers section scope over broad document titles and can reject a passport-collection passage for an application question. It also screens heading-only fragments, handles explicitly flagged historical alternatives and expands compatible fee/checklist families.
 
 The selector is implemented in \code{src/generation/evidence_selection.py}; it is neither a second LLM nor a human choosing passages during normal operation. It retains at most six whole chunks within 14,000 characters. A chunk that does not fit is skipped rather than silently cut. A later ordering fix groups compatible family members near the first eligible anchor before applying the budget. Saved replay on 30 candidate sets changed the selected IDs for the passport-fee question while leaving the other 29 selections unchanged. This establishes the scope of that replay, not a general accuracy improvement.
+
+For eligible candidates, the selector's initial priority is
+\begin{equation}
+h(q,c_i)=3A_i+S_i+2T_i,
+\end{equation}
+where $A_i$ indicates an overlapping action label, $S_i$ an overlapping service label and $T_i$ a fee/document-type match. Product, location and action conflicts can exclude a candidate before ordering. Ties retain the incoming candidate order. Historical-alternative filtering, checklist handling and compatible-family grouping are additional procedural steps, so this equation alone is not the entire selection algorithm.
+
+For the resulting ordered list, the greedy whole-chunk selection obeys
+\begin{equation}
+|E|\leq 6,\qquad \sum_{c_i\in E}\operatorname{len}(e_i)\leq 14{,}000.
+\end{equation}
+The second bound uses Python string length in characters, not tokenizer tokens. This is a budget constraint, not a globally optimized evidence set. Skipping an oversized chunk can allow a later shorter chunk to enter the prompt.
 
 An unknown or broad query can still retain unrelated material. Lexical applicability is not entailment, and a passage may contain mixed procedures even when its heading matches. The selector's decisions and expanded IDs are therefore retained in a trace. Removing the selector remains a proposed ablation, not a completed experiment in this manuscript.
 

@@ -1,0 +1,40 @@
+\begin{figure}[p]\centering
+\begin{singlespace}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\tikzset{civicbox/.append style={font=\footnotesize,inner sep=2mm}}
+\fill[rounded corners=3mm,civicTeal!4] (-0.2,0.9) rectangle (14.2,-4.1);
+\node[anchor=west,font=\small\bfseries,text=civicTeal] at (0,0.55) {OFFLINE: CORPUS AND INDEX PREPARATION};
+\node[civicbox,text width=5.5cm] (raw) at (3.1,-0.45) {Source files + prepared text\\PDF / DOCX / HTML / JSON};
+\node[civicbox,text width=5.5cm] (chunk) at (10.6,-0.45) {Normalize and create typed chunks\\Attach IDs and provenance};
+\draw[civicarr] (raw)--(chunk);
+\node[civicbox,text width=12.6cm] (represent) at (7,-1.85) {Linked representations per chunk: search text $r_i$ and evidence $e_i$\\Only $r_i$ is embedded; $e_i$ is preserved as source content};
+\draw[civicarr] (chunk.south)--(represent.north -| chunk.south);
+\node[civicbox,text width=12.6cm] (indexes) at (7,-3.2) {BGE-M3($r_i$) $\rightarrow$ Chroma dense index\quad |\quad BM25 tokens from $r_i$\\Evidence and metadata remain linked by the same chunk ID};
+\draw[civicarr] (represent)--(indexes);
+
+\fill[rounded corners=3mm,civicBlue!4] (-0.2,-4.5) rectangle (14.2,-16.95);
+\node[anchor=west,font=\small\bfseries,text=civicBlue] at (0,-4.9) {ONLINE: SHARED THREE-DOMAIN QUESTION ANSWERING};
+\node[civicbox,text width=11.6cm] (query) at (7,-5.8) {Bangla question + selected domain\\Birth/death registration / Passport / BRTA};
+\node[civicbox,text width=5.3cm] (dense) at (3.3,-7.25) {Dense search: top 20\\BGE-M3 query vector + Chroma};
+\node[civicbox,text width=5.3cm] (sparse) at (10.7,-7.25) {BM25 search: top 20\\Query tokens + sparse index};
+\draw[civicarr] (query.south)--++(0,-0.25)-|(dense.north);
+\draw[civicarr] (query.south)--++(0,-0.25)-|(sparse.north);
+\draw[civicarr,dashed] (indexes.west)--(-0.05,-3.2)--(-0.05,-7.25)--(dense.west);
+\draw[civicarr,dashed] (indexes.east)--(14.05,-3.2)--(14.05,-7.25)--(sparse.east);
+\node[civicbox,text width=11.6cm] (rrf) at (7,-8.75) {Weighted RRF: merge ranks, retain up to 15 candidates};
+\draw[civicarr] (dense.south)--++(0,-0.25)-|(rrf.north);
+\draw[civicarr] (sparse.south)--++(0,-0.25)-|(rrf.north);
+\node[civicbox,text width=11.6cm] (rank) at (7,-10.0) {BGE cross-encoder reranking: ALL domains\\Lexical fallback if the cross-encoder is unavailable};
+\draw[civicarr] (rrf)--(rank);
+\node[civicbox,draw=civicGold,fill=civicGold!8,text width=11.6cm] (rules) at (7,-11.5) {Conditional birth/death rules only:\\score adjustments and correction-fee supplementation\\Passport / BRTA skip these extra rules, not reranking};
+\draw[civicarr] (rank)--(rules);
+\node[civicbox,text width=11.6cm] (select) at (7,-13.1) {Shared applicability selector + compatible-family ordering\\Original evidence by ID; at most 6 chunks / 14,000 characters};
+\draw[civicarr] (rules)--(select);
+\node[civicbox,text width=11.6cm] (llm) at (7,-14.6) {Qwen3:8b: question + selected source evidence\\No evidence: clarification instead of an LLM answer};
+\draw[civicarr] (select)--(llm);
+\node[civicbox,text width=11.6cm] (answer) at (7,-16.1) {Bangla response + supplied source IDs\\Language check and incomplete-output warning};
+\draw[civicarr] (llm)--(answer);
+\end{tikzpicture}
+\end{singlespace}
+\caption{Current CivicRAG architecture, redrawn from the P2 offline/online organization and updated for three domains. Dashed arrows indicate index access. The gold box distinguishes domain-specific rules from shared reranking. The selected-evidence route bypasses the legacy controlled-answer branch.}\label{fig:architecture}
+\end{figure}

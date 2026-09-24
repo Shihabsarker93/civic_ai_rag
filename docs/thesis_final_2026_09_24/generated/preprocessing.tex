@@ -1,0 +1,13 @@
+\begin{figure}[htbp]\centering
+\begin{singlespace}
+\begin{tikzpicture}[node distance=7mm]
+\node[civicbox,text width=12.3cm] (original) {Collected originals + team-prepared derivatives\\Preserve originals; record the source relationship};
+\node[civicbox,text width=12.3cm,below=of original] (parse) {Parse Markdown / structured JSON; read available front matter\\Normalize Unicode NFC and remove selected authoring artifacts};
+\node[civicbox,text width=12.3cm,below=of parse] (split) {Document-type / heading-aware chunking\\Preserve FAQ pairs, fee conditions and procedure sections where available};
+\node[civicbox,text width=12.3cm,below=of split] (meta) {Attach chunk IDs, document types, headings, source paths and available URLs\\Retain unresolved provenance / OCR / applicability flags};
+\node[civicbox,text width=12.3cm,below=of meta] (output) {Domain JSONL: $(\mathrm{id}_i,r_i,e_i,m_i)$\\Build indexes from the configured active corpus};
+\foreach \a/\b in {original/parse,parse/split,split/meta,meta/output}{\draw[civicarr] (\a)--(\b);}
+\end{tikzpicture}
+\end{singlespace}
+\caption{Data preparation and provenance flow. This redraw of the P2 cleaning diagram removes unverified claims of universal OCR repair or automatic Bijoy conversion. Separate cleanup candidates are not substituted for the evaluated active corpus.}\label{fig:preprocessing}
+\end{figure}

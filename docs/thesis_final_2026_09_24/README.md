@@ -16,7 +16,9 @@ With Tectonic and the Times New Roman and Kohinoor Bangla fonts installed:
 tectonic --keep-logs --keep-intermediates main.tex
 ```
 
-XeLaTeX plus BibTeX is an alternative. A different computer may require changing the font names and reviewing the layout again. The architecture is drawn in LaTeX; two survey charts are included as vector PDFs generated from aggregate counts. No external image downloads are needed.
+XeLaTeX plus BibTeX is an alternative. A different computer may require changing the font names and reviewing the layout again. Architecture, preparation and evidence-linkage diagrams are drawn in LaTeX. Two survey charts and the corpus-distribution chart are included as vector PDFs generated from aggregate counts. No external image downloads are needed.
+
+Chapter 4 now contains four figures, including an updated P2-style offline/online architecture and explicit differentiation of shared reranking from registration-only rules. See ARCHITECTURE_VERIFICATION.md for source/code mappings. These documentation changes do not alter the frozen chatbot or evaluation.
 
 `SURVEY_ANALYSIS.md` documents the needs-analysis questionnaire and reproducible inclusion/counting rules. There are 79 consenting adult submissions in the primary analysis, with item-specific denominators. Only aggregate artifacts are distributed, not the private raw archive. The survey measures stated needs, not chatbot accuracy or demonstrated social impact.
 
