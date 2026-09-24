@@ -1,0 +1,119 @@
+{
+  "archive_sha256": "95b8dd81f654fa293b7970525edc3ca58cece910a4cf66443747382d7327adfa",
+  "forms": [
+    {
+      "form": 1,
+      "submitted": 66
+    },
+    {
+      "form": 2,
+      "submitted": 13
+    },
+    {
+      "form": 3,
+      "submitted": 7
+    }
+  ],
+  "submitted_n": 86,
+  "consented_n": 85,
+  "nonconsenting_excluded_n": 1,
+  "identical_consented_duplicates_removed_n": 0,
+  "consented_under18_held_out_n": 4,
+  "consented_age_missing_held_out_n": 2,
+  "primary": {
+    "n": 79,
+    "items": {
+      "willingness": {
+        "valid_n": 77,
+        "missing_n": 2,
+        "counts": {
+          "Would use": 55,
+          "Would not use": 13,
+          "Unsure": 9
+        },
+        "other_response_n": 0,
+        "unexpanded_all_options_n": 0
+      },
+      "verified_trust": {
+        "valid_n": 76,
+        "missing_n": 3,
+        "counts": {
+          "Yes": 30,
+          "No": 4,
+          "Would recheck": 42
+        },
+        "other_response_n": 0,
+        "unexpanded_all_options_n": 0
+      },
+      "language": {
+        "valid_n": 77,
+        "missing_n": 2,
+        "counts": {
+          "Bangla more comfortable": 19,
+          "No": 8,
+          "Either Bangla or English": 50
+        },
+        "other_response_n": 0,
+        "unexpanded_all_options_n": 0
+      },
+      "recommendation": {
+        "valid_n": 76,
+        "missing_n": 3,
+        "counts": {
+          "Yes, if it works well": 67,
+          "Maybe": 8
+        },
+        "other_response_n": 1,
+        "unexpanded_all_options_n": 0
+      },
+      "payment": {
+        "valid_n": 78,
+        "missing_n": 1,
+        "counts": {
+          "Free only": 33,
+          "Would pay if fast and secure": 39
+        },
+        "other_response_n": 6,
+        "unexpanded_all_options_n": 0
+      },
+      "features": {
+        "valid_n": 77,
+        "missing_n": 2,
+        "counts": {
+          "Required documents / information": 62,
+          "Help completing online forms": 64,
+          "Check uploaded documents": 56,
+          "Payment / appointment information": 58
+        },
+        "other_response_n": 7,
+        "unexpanded_all_options_n": 1
+      },
+      "trust_factors": {
+        "valid_n": 77,
+        "missing_n": 2,
+        "counts": {
+          "Official logo / website link": 46,
+          "Secure information handling": 50,
+          "Simple and clear language": 46,
+          "24/7 assistance": 56,
+          "Access to a real official": 58
+        },
+        "other_response_n": 0,
+        "unexpanded_all_options_n": 0
+      }
+    },
+    "age_counts": {
+      "১৮ - ২৫ বছর": 63,
+      "২৬ - ৩৫ বছর": 15,
+      "৩৬ - ৫০ বছর": 1
+    },
+    "student_n": 57,
+    "gender_counts": {
+      "পুরুষ": 73,
+      "অন্য": 1,
+      "নারী": 4,
+      "জানাতে চাই না": 1
+    }
+  },
+  "policy": "Confirmed adults with affirmative consent only. Percentages use nonblank item denominators. Multi-select explicit choices only; all-options text is not expanded. No unique-person or population claim. Raw/free-text data remain private."
+}

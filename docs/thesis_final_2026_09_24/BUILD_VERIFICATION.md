@@ -1,5 +1,7 @@
 # Build verification
 
+- Survey update: 50-page PDF compiled and all pages rendered for visual review; survey charts and the count table appear under existing sections. Consent/age exclusions and item denominators are recorded in SURVEY_ANALYSIS.md and generated/survey_aggregate.json. Raw respondent records are not published.
+
 - Recompiled with local Tectonic on 24 September 2026 after restoring the official template headings.
 - Original and delivered `core/abstract.tex` compared with `cmp`: identical bytes.
 - Final PDF pages rendered with Poppler for layout inspection; the generated Table of Contents is additionally checked against the template by script.

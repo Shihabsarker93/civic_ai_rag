@@ -1,4 +1,6 @@
 \section{Final Specifications and Requirements}
+The needs-analysis results help explain the selected informational scope. Required-document guidance was explicitly selected by 62/77 valid respondents (80.5\%), and payment/appointment information by 58/77 (75.3\%). CivicRAG addresses these needs through source-grounded explanations. The same questionnaire also elicited demand for online-form help (64/77, 83.1\%) and uploaded-document checking (56/77, 72.7\%); these preferences must not be confused with implemented form submission or document authentication. Neither transaction execution nor uploaded-document verification is claimed.
+
 The functional requirements are domain-scoped retrieval, Bangla-oriented generation, inspectable evidence, model selection and persistent experiment records. The system must distinguish the search representation from answer evidence, expose the passages actually supplied to generation and preserve a rollback path for changes. These requirements are implemented through domain configurations, the source register, structured response fields and Git revisions.
 
 \begin{table}[htbp]\centering\small
@@ -16,6 +18,8 @@ Reversible development & Git revisions and rollback tags & Untracked artifacts n
 The selected comparison requests Qwen3 explicitly. Some configuration files retain Llama 3.2 as a default; this does not identify the model used in saved experiments. Execution records, not an isolated default value, determine the evaluated configuration. Similarly, the selected-evidence branch allows six passages even though the legacy generation configuration retains a three-passage setting.
 
 \section{Societal Impact}
+The questionnaire records a perceived need for assistance rather than a measured social impact. Even when the hypothetical chatbot supplied verified information, 42/76 respondents (55.3\%) chose to recheck it. This supports providing inspectable evidence and avoiding claims of official authority. A combined ``official logo/website link'' option was selected by 46/77 (59.7\%); the combined wording does not establish a separate preference for logos and does not authorize official branding.
+
 The intended benefit is easier access to structured explanations of civic procedures. Bangla responses and inspectable evidence may reduce the effort needed to navigate multiple files. However, the reported experiments involve questions and saved model outputs rather than a deployed population study. Improvements in accessibility, trust or intermediary dependence remain intended outcomes, not measured effects.
 
 Incorrect fees or procedure instructions can create practical harm. The interface should therefore be understood as guidance to inspect alongside official sources. A source link gives a route for checking information, but some corpus records have missing URLs or unresolved original matches. The manuscript does not imply official endorsement or authoritative legal status.
@@ -24,6 +28,8 @@ Incorrect fees or procedure instructions can create practical harm. The interfac
 Local inference uses electricity and hardware resources. The project reuses pretrained models rather than training a foundation model, but no power measurements or carbon accounting were performed. Response time is not a substitute for energy measurement. A future study would log power draw, duration and system utilization under comparable conditions before making environmental-efficiency claims.
 
 \section{Ethical Issues}
+Survey reporting uses consenting adult submissions only and publishes aggregate counts rather than raw demographics, timestamps or free-text experiences. Four consenting submissions reporting an age below 18 and two with missing age are held out; the original files are preserved privately rather than erased. Participant identity and repeat participation cannot be reliably established from these exports. The analysis therefore refers to submissions and valid item responses, not a verified count of unique citizens.
+
 Three ethical concerns guide the design. First, evidence may be outdated or inapplicable even when faithfully quoted. Second, local models can combine requirements from different categories. Third, a user may interpret a confident answer as official advice. The system exposes provenance and incomplete-output warnings, but these mechanisms do not eliminate those risks.
 
 Data curation preserves original files and records derivation rather than silently overwriting sources. Automatically detected flags indicate unresolved checks, not conclusive judgments that a file is wrong. Human review remains necessary for conflicting fees, applicability dates and OCR-sensitive legal text. Informal user preference is recorded as an observation, not converted into an invented expert accuracy score.
@@ -58,6 +64,8 @@ Version confusion & Hash manifests and rollback revisions & Index rebuilds and d
 \end{longtable}
 
 \section{Economic Analysis}
+The survey's hypothetical payment item received 78 valid adult responses: 33 (42.3\%) selected free-only use and 39 (50.0\%) would pay if the service were fast and secure; six (7.7\%) supplied other responses. These are stated conditions, not observed purchases, a price estimate or a revenue forecast. They do not demonstrate that CivicRAG reduces citizens' costs.
+
 The main generation runs use local Ollama rather than paid per-request inference. This establishes the absence of such API charges for those runs, not a zero-cost system. Hardware ownership, electricity, source preparation and review time remain costs. No invoices, time sheets or power logs support a complete monetary analysis, so no fabricated budget or savings figure is included.
 
 At the recorded mean latency, a sequential 30-question run takes substantial wall-clock time. This limits the practicality of repeated full-batch experiments on the available machine and motivates reusing saved outputs for evaluation. Latency reduction through different hardware or smaller contexts is a future optimization, not a demonstrated economic benefit.

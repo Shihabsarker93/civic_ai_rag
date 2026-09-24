@@ -16,7 +16,9 @@ With Tectonic and the Times New Roman and Kohinoor Bangla fonts installed:
 tectonic --keep-logs --keep-intermediates main.tex
 ```
 
-XeLaTeX plus BibTeX is an alternative. A different computer may require changing the font names and reviewing the layout again. All figures are drawn in LaTeX; no external image downloads are needed.
+XeLaTeX plus BibTeX is an alternative. A different computer may require changing the font names and reviewing the layout again. The architecture is drawn in LaTeX; two survey charts are included as vector PDFs generated from aggregate counts. No external image downloads are needed.
+
+`SURVEY_ANALYSIS.md` documents the needs-analysis questionnaire and reproducible inclusion/counting rules. There are 79 consenting adult submissions in the primary analysis, with item-specific denominators. Only aggregate artifacts are distributed, not the private raw archive. The survey measures stated needs, not chatbot accuracy or demonstrated social impact.
 
 From the repository root, `scripts/build_thesis_evidence.py` regenerates tables from the frozen evaluation artifacts and active corpus, verifies matched input hashes and checks the Abstract against the original local submission. The packaged source already includes the generated tables and can compile without rerunning that audit.
 

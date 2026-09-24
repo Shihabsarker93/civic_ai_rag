@@ -53,7 +53,11 @@ Suggested task prompt: "Review the two anonymized answers using the original Ban
 
 - MRR, nDCG, Hit/Recall@k: first annotate relevant chunk IDs (including multiple relevant chunks where needed). Use a held-out set for generalization claims.
 - Reference semantic similarity or factual correctness: first write or approve evidence-backed reference answers. Do not treat another model's response as gold.
-- User impact, time saved, trust or satisfaction: requires an actual participant study and any necessary ethics approval.
+- User impact, time saved or post-use trust/satisfaction: requires a chatbot-use study and any necessary ethics approval. The supplied needs-analysis questionnaire now supports stated preferences only; see SURVEY_ANALYSIS.md.
+
+## Needs-analysis confirmation
+
+The survey is now incorporated under existing headings with two charts. Confirm recruitment, collection dates, invitation count, repeat-participation controls, form assignment and ethics/consent documentation. The main analysis excludes one non-consenting submission and holds out four minors and two missing-age submissions. Do not restore these held-out records without clarifying eligibility and consent. Raw survey responses remain private.
 - Hardware efficiency/cost/carbon: requires controlled hardware records, utilization/power data or invoices. Existing saved latency alone is insufficient.
 
 ## Corpus version warning

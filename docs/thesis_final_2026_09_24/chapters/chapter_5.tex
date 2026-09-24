@@ -30,6 +30,13 @@ The implemented alternatives are the matched dense-only baseline and the design 
 
 \section{Data Collection -(If
 Applicable)}
+\paragraph{Needs-Analysis Questionnaire.}
+The team supplied three CSV questionnaire exports, each containing 46 columns. They cover demographics, experiences with birth registration, passport and BRTA services, and a common nine-item block concerning a prospective AI assistant. The three versions place the service-specific blocks in different orders. Analysis aligns those blocks before checking identical submissions and uses column positions because several free-response headers repeat. The survey is a requirements input, not additional retrieval evidence, and is not ingested into the chatbot's knowledge base.
+
+Only affirmative-consent records with a declared adult age group enter the main descriptive analysis. This conservative inclusion rule was applied when preparing the thesis analysis; it is not claimed to have been preregistered. Missing responses are excluded separately for each item, not interpreted as rejection. Percentages are computed as $100c/n_v$, where $c$ is the number selecting a response and $n_v$ the number answering that item. Multiple-selection items count each explicitly selected option once per submission, so their percentages need not sum to 100. A free-text ``all options'' response is retained in the denominator but not expanded into checked options. Open-text answers are not quoted publicly or automatically coded as validated themes.
+
+The exported consent field establishes an affirmative response, not independent ethics approval. Recruitment method, invitation count, repeat-participation controls and consent arrangements for minors were not supplied. Accordingly, a response rate and nationally representative estimates cannot be calculated. The BRTA website question also combines a Bangladesh address with \code{rsta.gov.bt}; that item is not used to claim verified BRTA website usage. The main findings use the identically positioned common AI block and are reported in Chapter 5.
+
 \paragraph{Source Families and Original Preservation.}
 The birth/death collection contains structured JSON and prepared Markdown derived from FAQs, laws, rules, fees, correction processes and application guidance. Passport and BRTA were supplied as original-file directories and separately prepared Markdown. Passport derivatives are registered from \code{cleaned_md}; BRTA derivatives from \code{brta} and \code{fahim_brta}. Directories explicitly marked original are reference materials, not duplicate text automatically added to the answer corpus.
 

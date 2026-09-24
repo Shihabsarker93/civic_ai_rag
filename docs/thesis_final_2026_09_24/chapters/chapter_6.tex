@@ -1,4 +1,26 @@
 \section{Performance Evaluation}
+\paragraph{Needs-Analysis Results: Separate from System Performance.}
+The three survey exports contain 66, 13 and 7 submissions, respectively (86 total). One explicit non-consenting submission is excluded. Of the 85 affirmative-consent submissions, four report an age below 18 and two omit age. The primary analysis therefore includes 79 adult submissions. No identical complete submission was found after aligning the service blocks, but this does not establish unique participant identities. The analysis is reproducible from the private archive using \path{scripts/analyze_needs_survey.py}; public artifacts contain aggregate counts, inclusion rules and an archive hash only.
+
+The sample is concentrated among younger adults and men: 63/79 (79.7\%) report age 18--25, and 73/79 (92.4\%) report male gender. Recruitment and invitation counts are unavailable. Findings describe this responding sample and must not be extrapolated to all Bangladeshi citizens. They are not results from the 30-question chatbot experiment.
+
+\input{generated/survey_table}
+Among valid willingness responses, 55/77 (71.4\%) would use the prospective assistant, 13/77 (16.9\%) would not and 9/77 (11.7\%) were unsure. The two missing responses are not counted as either acceptance or rejection. For trust in verified information, 30/76 (39.5\%) answered yes, 4/76 (5.3\%) no and 42/76 (55.3\%) would recheck. Positive willingness and cautious trust can coexist: the questionnaire supports the need for helpful information with verification opportunities, not unrestricted reliance on AI.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=\linewidth]{generated/survey_willingness_trust.pdf}
+\caption{Stated willingness and conditional trust in the needs-analysis questionnaire. Only consenting adult submissions are included; denominators differ because of missing answers.}\label{fig:survey-trust}
+\end{figure}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=\linewidth]{generated/survey_features.pdf}
+\caption{Requested assistance, based on explicit selections among 77 valid responses. Multiple choices were allowed. One ``all options'' response is not expanded, so explicit-choice counts are conservative. Requested features are not necessarily implemented capabilities.}\label{fig:survey-features}
+\end{figure}
+
+Required-document information (80.5\%) and payment/appointment information (75.3\%) align with the implemented question-answering scope. Form-completion assistance (83.1\%) and uploaded-document checking (72.7\%) indicate additional expectations beyond that scope. This distinction prevents reporting questionnaire demand as proof that the system already satisfies every requested function.
+
+The language item does not establish a majority preference for Bangla-only operation. Nineteen of 77 respondents (24.7\%) said Bangla would be more comfortable, 50 (64.9\%) accepted either Bangla or English and eight (10.4\%) answered no. Bangla-focused evaluation is therefore a project scope decision consistent with part of the expressed need, rather than a requirement endorsed exclusively by most respondents. Conditional recommendation was positive for 67/76 (88.2\%), but the question assumes the assistant works well; it is not satisfaction measured after using CivicRAG.
+
 \paragraph{Experimental Design.}
 The primary comparison contains 30 paired questions with Qwen3:8b. Each question is answered once by the frozen CivicRAG selected-evidence configuration and once by the matched dense-only runner. Question records and the saved configuration/corpus hashes are checked for equality. No new answers are generated for this manuscript.
 
@@ -58,6 +80,8 @@ The final evaluated adjustment is the compatible-family ordering fix. Prior sele
 The thesis does not attribute all differences between older and newer answers to that single change. The current main comparison uses the ordering-fixed CivicRAG output, not the earlier overnight file. Proposed selector-off or dense-plus-reranker variants were discussed but are not reported as completed experiments.
 
 \section{Statistical Analysis}
+Survey percentages use the valid-response denominator for each item, with integer counts retained in Table~\ref{tab:needs-survey}. The questionnaire's convenience of availability, unknown recruitment process and demographic imbalance preclude a population sampling-error claim. No population confidence interval, causal impact estimate or significance test is attached to the survey percentages. Multiple-choice percentages overlap, and the recommendations are conditional on the proposed service working well. These descriptive survey statistics are separate from the paired system-comparison statistics below.
+
 \input{generated/domain_table}
 Domain-specific operational statistics expose heterogeneity hidden by a global mean. They do not measure document correctness or demonstrate performance on all services within each domain. In particular, ten birth questions do not evaluate the death-registration portion of the knowledge base.
 

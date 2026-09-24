@@ -1,5 +1,7 @@
 # Template-preserving completion plan
 
+Survey update: the supplied needs-analysis questionnaire is integrated into Sections 1.2, 1.4, 3.1, 3.2, 3.4, 3.8, 4.3, 5.1, 5.4 and 6.1 without changing numbered headings. See SURVEY_ANALYSIS.md for aggregate evidence, exclusions and outstanding recruitment/consent confirmations. This is distinct from a chatbot user-impact experiment.
+
 The official template controls names, order and numbering. All six chapters, all original sections and the five Data Collection subsections are retained. Extra explanations use unnumbered paragraph labels rather than adding index entries. Original appendix titles and front-matter order are restored. Pagination necessarily changes with the manuscript content.
 
 The original appendix source files were empty, although main.tex specified their titles. They now contain relevant manuscript build/version-control guidance under those exact titles. Earlier project-specific appendices are retained in supplement/ outside the official index.
