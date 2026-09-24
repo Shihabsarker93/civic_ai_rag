@@ -1,0 +1,34 @@
+{
+  "inputs": {
+    "simple": "docs/evaluation/simple_matched_qwen3_30q_2026_09_24/answers.json",
+    "civic": "docs/evaluation/chunk_order_fixed_qwen3_30q_2026_09_23/answers.json"
+  },
+  "input_hashes": {
+    "simple": "58b7c51fd1bfe8cf38393cd17b741b98fd671af7594b691a9464f9ebe391312f",
+    "civic": "38d890dfdf55f52ef94e96921235ef7456e2c2a80330f2a5d8f650bc7d90b669"
+  },
+  "judge": "qwen3:8b",
+  "judge_is_same_as_generator": true,
+  "embedding": "BAAI/bge-m3",
+  "metrics": [
+    "faithfulness",
+    "answer_relevancy",
+    "context_relevance_binary"
+  ],
+  "context_relevance_binary": "Custom RAGAS AspectCritic, not standard context precision or retrieval recall",
+  "dataset_role": "reused development set; not held-out",
+  "revision": "76a4537681ffe1faffb7a00b7d654664f88987fc",
+  "packages": {
+    "ragas": "0.2.15",
+    "langchain-ollama": "0.3.10",
+    "sentence-transformers": "6.1.0"
+  },
+  "unsupported_without_labels": [
+    "factual_accuracy",
+    "reference_answer_similarity",
+    "recall@k",
+    "MRR",
+    "nDCG",
+    "reference_context_precision"
+  ]
+}

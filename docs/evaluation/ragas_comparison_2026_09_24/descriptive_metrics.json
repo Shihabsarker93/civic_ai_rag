@@ -1,0 +1,32 @@
+{
+  "simple": {
+    "completed_requests": 30,
+    "mean_latency_seconds": 193.699,
+    "median_latency_seconds": 181.06,
+    "p95_latency_seconds_nearest_rank": 319.91,
+    "routes": {
+      "llm_dense_evidence": 30
+    },
+    "finish_reasons": {
+      "stop": 30
+    },
+    "mean_context_count": 6,
+    "mean_context_characters": 5218.9,
+    "mean_bangla_fraction_of_letters": 0.9351746169010805
+  },
+  "civic": {
+    "completed_requests": 30,
+    "mean_latency_seconds": 181.82333333333332,
+    "median_latency_seconds": 161.845,
+    "p95_latency_seconds_nearest_rank": 285.1,
+    "routes": {
+      "llm_selected_evidence": 30
+    },
+    "finish_reasons": {
+      "stop": 30
+    },
+    "mean_context_count": 4.9,
+    "mean_context_characters": 3948.0333333333333,
+    "mean_bangla_fraction_of_letters": 0.9325165748919539
+  }
+}
