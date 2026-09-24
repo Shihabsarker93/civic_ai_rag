@@ -1,0 +1,61 @@
+% Based on the supplied Brac University CSE400 final-year thesis template.
+% Original abstract is copied byte-for-byte; see evidence_manifest.json.
+\documentclass[12pt,oneside,openany]{report}
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm]{geometry}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\newfontfamily\banglafont{Kohinoor Bangla}[Script=Bengali]
+\newcommand{\bn}[1]{{\banglafont #1}}
+\usepackage[english]{babel}
+\usepackage{amsmath,amssymb,graphicx,booktabs,longtable,tabularx,array}
+\usepackage{caption,float,tikz,enumitem,setspace,cite}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric}
+\usepackage[hyphens]{url}
+\usepackage[colorlinks=true,allcolors=black]{hyperref}
+\usepackage[nottoc]{tocbibind}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\setlength{\emergencystretch}{3em}
+\renewcommand{\tabularxcolumn}[1]{>{\raggedright\arraybackslash}p{#1}}
+\setlist{nosep,leftmargin=*}
+\onehalfspacing
+\newcommand{\code}[1]{\texttt{\small\detokenize{#1}}}
+\newcommand{\pending}[1]{\textbf{Completion requirement:} #1}
+\begin{document}
+\hypersetup{pageanchor=false}
+\input{core/titlepage}
+\pagenumbering{roman}
+\hypersetup{pageanchor=true}
+\input{core/frontmatter}
+\phantomsection\addcontentsline{toc}{chapter}{Abstract}
+\input{core/abstract}
+\chapter*{Acknowledgement}\addcontentsline{toc}{chapter}{Acknowledgement}
+We acknowledge the guidance provided during the thesis process and the public institutions whose service documents informed the knowledge corpus. We also acknowledge the developers of the open-source retrieval, embedding and local language-model software used in the implementation. Individual acknowledgements will be confirmed by the authors before submission.
+\tableofcontents
+\listoffigures
+\listoftables
+\chapter*{Nomenclature}\addcontentsline{toc}{chapter}{Nomenclature}
+\begin{tabularx}{\linewidth}{lX}
+BDRIS & Birth and Death Registration Information System\\
+BRTA & Bangladesh Road Transport Authority\\
+BM25 & Best Matching 25 lexical ranking method\\
+LLM & Large language model\\
+MRP & Machine-readable passport\\
+NFC & Unicode Normalization Form C\\
+OCR & Optical character recognition\\
+QA & Question answering\\
+RAG & Retrieval-augmented generation\\
+RRF & Reciprocal rank fusion\\
+\end{tabularx}
+\clearpage\pagenumbering{arabic}
+\chapter{Introduction}\input{chapters/chapter_1}
+\chapter{Literature Review}\input{chapters/chapter_2}
+\chapter{Requirements, Impacts and Constraints}\input{chapters/chapter_3}
+\chapter{Proposed Methodology}\input{chapters/chapter_5}
+\chapter{Result Analysis}\input{chapters/chapter_6}
+\chapter{Conclusion}\input{chapters/chapter_9}
+\bibliographystyle{IEEEtran}\bibliography{bibliography/references}
+\appendix
+\chapter{Reproducibility and Evaluation Questions}\input{appendix/appendix_1}
+\chapter{Completion and Verification Requirements}\input{appendix/appendix_2}
+\end{document}

@@ -1,0 +1,59 @@
+\section{Final Specifications and Requirements}
+The functional requirements are domain-scoped retrieval, Bangla-oriented generation, inspectable evidence, model selection and persistent experiment records. The system must distinguish the search representation from answer evidence, expose the passages actually supplied to generation and preserve a rollback path for changes. These requirements are implemented through domain configurations, the source register, structured response fields and Git revisions.
+
+\begin{table}[htbp]\centering\small
+\caption{Implemented requirements and limits of verification.}
+\begin{tabularx}{\linewidth}{p{36mm}XX}\toprule
+Requirement & Implementation & Verification boundary\\\midrule
+Domain selection & Separate configurations and Chroma collections & Does not guarantee all out-of-domain rejection\\
+Evidence traceability & Chunk IDs, metadata, source paths and available URLs & Footer is not claim-level citation verification\\
+Bangla response & Prompt and language safety check & Fluency and semantic accuracy remain imperfect\\
+Local execution & Ollama generation; locally cached embeddings & Latency remains substantial\\
+Reproducible comparison & Saved questions, answers, contexts and hashes & One run per configuration; reused questions\\
+Reversible development & Git revisions and rollback tags & Untracked artifacts need explicit preservation\\\bottomrule
+\end{tabularx}\end{table}
+
+The selected comparison requests Qwen3 explicitly. Some configuration files retain Llama 3.2 as a default; this does not identify the model used in saved experiments. Execution records, not an isolated default value, determine the evaluated configuration. Similarly, the selected-evidence branch allows six passages even though the legacy generation configuration retains a three-passage setting.
+
+\section{Societal Impact}
+The intended benefit is easier access to structured explanations of civic procedures. Bangla responses and inspectable evidence may reduce the effort needed to navigate multiple files. However, the reported experiments involve questions and saved model outputs rather than a deployed population study. Improvements in accessibility, trust or intermediary dependence remain intended outcomes, not measured effects.
+
+Incorrect fees or procedure instructions can create practical harm. The interface should therefore be understood as guidance to inspect alongside official sources. A source link gives a route for checking information, but some corpus records have missing URLs or unresolved original matches. The manuscript does not imply official endorsement or authoritative legal status.
+
+\section{Environmental Impact}
+Local inference uses electricity and hardware resources. The project reuses pretrained models rather than training a foundation model, but no power measurements or carbon accounting were performed. Response time is not a substitute for energy measurement. A future study would log power draw, duration and system utilization under comparable conditions before making environmental-efficiency claims.
+
+\section{Ethical Issues}
+Three ethical concerns guide the design. First, evidence may be outdated or inapplicable even when faithfully quoted. Second, local models can combine requirements from different categories. Third, a user may interpret a confident answer as official advice. The system exposes provenance and incomplete-output warnings, but these mechanisms do not eliminate those risks.
+
+Data curation preserves original files and records derivation rather than silently overwriting sources. Automatically detected flags indicate unresolved checks, not conclusive judgments that a file is wrong. Human review remains necessary for conflicting fees, applicability dates and OCR-sensitive legal text. Informal user preference is recorded as an observation, not converted into an invented expert accuracy score.
+
+\section{Standards and Interoperability}
+The implementation uses UTF-8 text, Unicode NFC normalization, JSON/JSONL records and SHA-256 hashes. These choices support interoperable storage and change detection. They do not constitute certification under a government, security, accessibility or quality-management standard. No compliance audit is claimed.
+
+The source and search representations retain machine-readable identifiers that permit reproducible joins across retrieval, evidence selection and evaluation. Documents without public URLs still retain local provenance; they must not be assigned fabricated URLs. Redistribution of original PDFs and personal information requires separate permission review.
+
+\section{Project Management Plan}
+The completed work proceeded through corpus preparation, a birth/death-registration implementation, extension to passport and BRTA, generation diagnostics and a matched baseline comparison. Later changes were preserved as candidates and Git revisions. The final evaluation configuration is identified through hashes rather than by describing every subsequent draft as active.
+
+For finalization, architecture and corpus changes are separated from reporting. The outstanding automatic evaluation may finish without modifying the answer files. The thesis tables are regenerated from those artifacts, while the Abstract is checked against its immutable source. Changes that would require new answer generation are not silently included in the current comparison.
+
+\section{Risk Management}
+\begin{longtable}{p{34mm}p{49mm}p{54mm}}
+\caption{Principal project risks and controls.}\label{tab:risks}\\\toprule
+Risk & Existing control & Residual issue\\\midrule\endfirsthead
+\toprule Risk & Existing control & Residual issue\\\midrule\endhead
+Wrong procedure & Domain scope, reranking, applicability vocabulary & Similar headings and unclassified passages remain\\
+Historical rules & Date fields and audit flags & Dates and legal applicability not independently verified\\
+OCR corruption & Original-file links and review flags & Not all long legal documents manually checked\\
+Context crowding & Whole-chunk budget and family-order fix & Broad queries may still require omitted evidence\\
+Wrong generation & Evidence prompt and language check & No complete semantic entailment guard\\
+Truncation & Finish-reason warning & Warning does not complete an interrupted answer\\
+Evaluation bias & Matched inputs and disclosed development set & Reuse, self-judging and small sample remain\\
+Version confusion & Hash manifests and rollback revisions & Index rebuilds and deployment must respect the manifest\\\bottomrule
+\end{longtable}
+
+\section{Economic Analysis}
+The main generation runs use local Ollama rather than paid per-request inference. This establishes the absence of such API charges for those runs, not a zero-cost system. Hardware ownership, electricity, source preparation and review time remain costs. No invoices, time sheets or power logs support a complete monetary analysis, so no fabricated budget or savings figure is included.
+
+At the recorded mean latency, a sequential 30-question run takes substantial wall-clock time. This limits the practicality of repeated full-batch experiments on the available machine and motivates reusing saved outputs for evaluation. Latency reduction through different hardware or smaller contexts is a future optimization, not a demonstrated economic benefit.

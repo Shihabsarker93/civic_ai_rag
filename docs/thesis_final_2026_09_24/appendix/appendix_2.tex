@@ -1,0 +1,18 @@
+\section{Required Before Final Submission}
+This is a complete chapter manuscript with explicitly unresolved evidence and administrative fields, not a claim that every finalization requirement has been satisfied. The following items require completion rather than invented values.
+\begin{enumerate}
+\item Confirm the degree wording, submission semester/date, supervisor and committee details. The previous submission contains inconsistent 2025/2026 dates and placeholder names.
+\item Complete or formally exclude the outstanding RAGAS batch. Retain failed-call counts and the self-judge limitation. Do not report an unfinished subset as the full comparison.
+\item Complete a consistent paired human review if aggregate answer correctness or expert preference is to be claimed. Record reasons and source evidence. Existing informal observations do not constitute an adjudicated benchmark.
+\item Confirm source redistribution permissions and unresolved original-file matches. Verify government-rule currency before recommending outputs as current advice.
+\item Confirm individual contribution statements, acknowledgements and the university's required AI-assistance disclosure wording. Signatures must come from the authors and committee.
+\end{enumerate}
+
+\section{Optional Experiments for Stronger Claims}
+Retrieval Hit/Recall@k, MRR and nDCG require gold relevant-chunk labels for the question set. Reference-answer similarity and factual-correctness metrics require reviewed reference responses. They are optional extensions to the present protocol, not missing scores that may be filled by guessing. A held-out set is necessary for a stronger generalization claim; repeated use of the 30 development questions cannot be undone by renaming them test questions.
+
+\section{Concrete Evaluation Task}
+For each question, independently identify applicable source passages, inspect both anonymized responses and assign separate labels for relevance, factual support and completeness. Mark uncertain applicability rather than forcing a decision. After labels are reconciled, calculate system-level counts and paired differences with all questions retained. Do not remove examples where the baseline performs better. The accompanying completion checklist supplies the exact local commands and records needed to update this manuscript.
+
+\section{Claim Boundaries}
+No new foundation model was trained. No completed citizen-impact survey, official endorsement, legal-validity certification, independent expert accuracy percentage or state-of-the-art benchmark result is claimed. The Abstract remains verbatim as instructed; the body explicitly distinguishes its intended social benefits from measured engineering outcomes.

@@ -1,0 +1,46 @@
+\section{Background}
+Government-service information is distributed across instructions, frequently asked questions, citizen charters, forms and legal documents. A citizen's question usually names a task rather than a document: applying for a passport, correcting a registration record or replacing a lost driving licence. A useful assistant must connect that task to the applicable procedure and preserve qualifications such as age, application stage and service type. Merely locating a document containing the same service name is insufficient.
+
+Civic.ai, implemented in the repository as CivicRAG, addresses this problem through a curated, predominantly Bangla knowledge corpus and retrieval-augmented generation. Its final evaluated scope comprises birth and death registration, passport services and BRTA services. The records contain Bangla, English and mixed-language material, while the principal generation comparison uses Bangla questions and seeks Bangla answers. The system is a document-grounded information interface, not an integration with government transaction databases.
+
+Retrieval-augmented generation conditions a language model on external evidence rather than relying solely on information encoded in its parameters \cite{lewis2020rag}. This permits source inspection and corpus updates without retraining the answer model. However, retrieval and generation remain separate sources of error: a relevant-looking passage may concern a different procedure, and a generator may misinterpret even an appropriate passage.
+
+\section{Rationale and Motivation}
+The project's central motivation is to make collected civic-service information searchable through ordinary Bangla questions. The dataset-development effort is especially important because operational information is not supplied as a uniform question-answer database. Scanned material, inconsistent Markdown, legal tables and historical instructions require organization before an embedding model can use them meaningfully.
+
+The contribution is therefore not a claim to invent RAG or outperform all existing assistants. It is the development of a traceable civic-service corpus, its integration into a locally executable system and an auditable comparison with a dense-only baseline. NextRAG provides the principal architectural inspiration because it studies retrieval over Bangla and English documents in a Bangladesh-specific financial setting \cite{nextrag}. CivicRAG changes the domain, corpus preparation, number of retrieval channels and answer-processing logic.
+
+Local inference was selected to support development without transmitting each question and retrieved passage to a paid hosted model. This choice also exposes a practical trade-off: compact local models are accessible, but may produce incomplete, poorly phrased or incorrectly combined instructions. The study records these limitations rather than treating local execution as a guarantee of reliability.
+
+\section{Problem Statement}
+The research problem is to develop and evaluate a source-traceable Bangla civic-service assistant from heterogeneous documents under local hardware constraints. Three technical difficulties define this problem. First, document structure and provenance must survive transformation into retrieval units. Second, the retriever must distinguish similar but non-equivalent tasks, such as passport application versus collection. Third, the generator must answer the actual question without merging conditions from unrelated passages.
+
+The study asks:
+\begin{enumerate}
+\item How can collected civic-service files be transformed into domain-specific, auditable evidence units while preserving originals and unresolved quality flags?
+\item How does the implemented hybrid retrieval and applicability-selection configuration compare with dense-only retrieval when the question set and generator settings are held fixed?
+\item What do the saved outputs reveal about evidence relevance, generation behaviour and the limitations of automatic evaluation?
+\end{enumerate}
+
+\section{Objectives}
+The implemented objectives are to organize the three service domains; preserve source-to-chunk mappings; index search-oriented text while retaining original evidence content; implement dense and lexical retrieval with rank fusion; provide a local Bangla answer interface; and retain reproducible experiments with source IDs, routes and configuration hashes.
+
+Objectives proposed earlier but not substantiated by the final artifacts are not reported as completed. These include training a new bilingual language model, fine-tuning BanglaBERT with Llama, conducting a citizen survey, automatically verifying credentials and evaluating general-language benchmarks such as GLUE. Model downloads and vector indexing are not described as model training.
+
+\section{Methodology in Brief}
+The offline workflow preserves original materials, reads prepared text, assigns document and chunk identifiers and creates separate search and answer representations. BGE-M3 encodes retrieval text into vectors. ChromaDB stores vectors alongside evidence text and metadata, while BM25 is constructed from the same searchable corpus.
+
+At question time, CivicRAG searches the selected domain through both channels, combines ranks and reranks candidates. A post-P2 applicability selector screens and arranges passages before Qwen3 generates an answer. The evaluated Simple RAG baseline uses dense retrieval without hybrid fusion, reranking or that selector. Both use the same generator prompt and limits through an isolated comparison runner.
+
+\section{Scope and Challenges}
+The final 30-question comparison contains ten passport, ten birth-registration and ten driving-licence questions. Death-registration material exists in the corpus, but the selected comparison has no death-specific questions. BRTA corpus coverage extends beyond driving licences, while those broader services are not represented in the main test set. Accordingly, results cannot establish performance across every indexed service.
+
+The questions were reused during development. They are a development-set comparison, not an unseen benchmark. Single-turn direct questions dominate this experiment; conversational memory, long scenarios, paraphrase robustness and code-mixed input require separate evaluation. A selectable domain restricts the evidence pool, but does not by itself prove that every out-of-domain question is rejected.
+
+\section{Team Overview}
+The authors listed in the previous submission are G.Araf Ahmed, Mohammad Zunaid, Md Shihab Sarker, Fahim Foysal Abir and Tapu Mohammad Fahad. Source directories and revision history record contributions to collection and development, but do not establish a complete person-by-person division of labour. A verified responsibility table should be supplied by the authors rather than inferred from filenames.
+
+\section{Key Learnings and Insights}
+The development process demonstrates the importance of separating document relevance from answer correctness. A retrieved chunk can mention passports but describe collection rather than application. A model can faithfully repeat that chunk and still fail the user's question. Conversely, a broader answer can cover useful cases yet introduce a merged condition or exceed its output limit. The evaluation therefore distinguishes applicability, faithfulness, completeness and presentation instead of interpreting answer length or the presence of source IDs as correctness.
+
+The Abstract is reproduced unchanged from the earlier submission. Its statements about citizen empowerment and reduced reliance on intermediaries describe the intended social outcome. This thesis does not claim a measured reduction in financial burden, office visits or intermediary use because no corresponding user-impact study was completed.

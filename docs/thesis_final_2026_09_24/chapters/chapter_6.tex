@@ -1,0 +1,79 @@
+\section{Performance Evaluation}
+\subsection{Experimental Design}
+The primary comparison contains 30 paired questions with Qwen3:8b. Each question is answered once by the frozen CivicRAG selected-evidence configuration and once by the matched dense-only runner. Question records and the saved configuration/corpus hashes are checked for equality. No new answers are generated for this manuscript.
+
+The question distribution is ten per selected domain. All 30 are labelled direct in the saved plan. Questions address documents, fees, time, application, correction, renewal, replacement and status. The balanced domain count is not a population sample of citizen demand. Because these questions were repeatedly inspected during development, the experiment estimates behaviour on a reused development set rather than unseen performance.
+
+The outcome of a completed HTTP/model request is not equivalent to a correct answer. The route label records how the answer was produced, not whether the advice is reliable. Likewise, a finish reason of stop does not establish that every required fact was included. Completeness and correctness require inspection against applicable evidence.
+
+\subsection{Operational Metrics}
+For saved response times $t_1,\ldots,t_n$, the reported mean is $\bar t=n^{-1}\sum_i t_i$. Median and nearest-rank 95th percentile summarize the distribution without assuming normality. Context count and character count describe what the model received. The Bangla-letter fraction divides Bengali-script letters by all Unicode letters in the response body after removing the source footer; it is not a measure of grammar or fluency.
+
+\input{generated/comparison_table}
+Both runs completed all 30 requests. The observed mean latency is lower in the CivicRAG run, but the runs occurred separately and did not control thermal state, concurrent activity or all initialization boundaries. Therefore this observation is not reported as a proven speed advantage. Fewer supplied characters may contribute to response-time differences, but the experiment does not isolate that explanation.
+
+\subsection{RAGAS Evaluation Protocol and Status}
+The local evaluator uses RAGAS 0.2.15 \cite{ragas,ragasdocs}. It evaluates actual answer contexts rather than the larger candidate list. It strips the appended source footer and otherwise preserves the response wording. The selected metrics are faithfulness, response relevance and a separately defined binary context-relevance AspectCritic.
+
+For response statements $a_j$, faithfulness is conceptually the supported-statement fraction,
+\begin{equation}
+F=\frac{\sum_{j=1}^{m}\mathbf{1}[a_j\text{ supported by supplied context}]}{m}.
+\end{equation}
+An empty or invalid judgment is recorded as missing, not assigned a favourable score. Response relevance reconstructs questions from the answer and compares their embeddings with the user question; the implementation uses three reconstructions and BGE-M3. It must not be relabelled as similarity to a gold answer. The custom context critic asks whether most supplied evidence is applicable to the requested service and procedure; it is not standard context precision or recall.
+
+The local judge is Qwen3:8b, which also generated the answers. Its temperature is zero, seed 20260924, reasoning disabled, context window 16,384 and output allowance 4,096. This self-judging design is exploratory and may favour familiar output patterns. Stock English evaluation prompts applied to Bangla content add a further source of measurement uncertainty. Two simple synthetic Bangla faithfulness checks precede the batch, but passing them does not validate complex government-service judgments.
+
+\input{generated/ragas_status}
+No partial mean is used as a final headline score. Failed metric calls must be disclosed with their denominators. A model can produce a highly faithful answer to an inapplicable passage; this explains why an automatic faithfulness result cannot settle the relative correctness of the two systems.
+
+\section{Analysis of Design Solutions}
+\subsection{Selected-Evidence Diagnostics}
+Before the main comparison, a generation-only experiment supplied manually inspected relevant passages for three known problem questions. Qwen3 produced more useful content in these cases than when inappropriate passages dominated its context. The LLM was still invoked; the experiment did not use a hardcoded response. Retrieval and normal answer-route logic were bypassed deliberately, so the result is a diagnostic of evidence-conditioned generation rather than end-to-end retrieval performance.
+
+An additional nine-output Qwen3 experiment used three context conditions for the same three questions: relevant-only, relevant-first with distractors, and distractor-first. Saved outputs show sensitivity to collection versus application passages, historical passport-fee information and licence cancellation versus replacement rules. The trial motivates attention to context applicability and ordering. Its small, selected sample does not establish a general causal effect across the corpus.
+
+\subsection{Observed Successes and Failure Modes}
+The saved baseline response to the new-passport-document question describes collection documents. The current CivicRAG response instead gives an application-oriented checklist, although its wording contains a corrupted payment phrase. For the passport-fee question, Simple RAG gives a document list rather than costs, while CivicRAG lists the four page/validity combinations present in the selected evidence. These are concrete task-alignment improvements, not a global accuracy estimate.
+
+Conversely, the Simple RAG birth-registration timing response includes a processing period, while CivicRAG answers with the deadline for applying after birth. This is a regression in question interpretation. Both systems have problematic examples involving name correction, duplicate certificates and driving-licence status. Contradictory dates, mixed requirements and administrative instructions directed to staff can reach the answer even when the underlying source is relevant to the broad domain.
+
+\begin{table}[htbp]\centering\small
+\caption{Qualitative paired examples from saved outputs; not adjudicated accuracy labels.}
+\begin{tabularx}{\linewidth}{p{30mm}XX}\toprule
+Question topic & Simple RAG observation & CivicRAG observation\\\midrule
+Passport documents & Collection rather than application & Application checklist; wording issue\\
+Passport fees & Documents instead of requested fees & Fee categories and values supplied\\
+Birth processing time & Includes processing period & Gives application deadline instead\\
+Lost driving licence & New-licence application procedure & Replacement form and GD procedure\\
+Driving licence status & Unrelated address/form information & Unrelated form/marital information\\\bottomrule
+\end{tabularx}\end{table}
+
+These examples support a limited conclusion: the additional pipeline can improve task alignment but does not uniformly dominate dense-only retrieval. The authors' informal domain-informed preference for broader CivicRAG responses is relevant design feedback. It has not been converted into an aggregate expert score because no completed, consistently labelled review sheet is available.
+
+\section{Final Design Adjustments}
+The final evaluated adjustment is the compatible-family ordering fix. Prior selection could append useful sibling fee chunks after unrelated candidates, allowing the context limit to exclude them. The revised selector groups compatible family members earlier. A saved candidate replay changes one of 30 selected context lists. New generation after this fix can still vary because inference was not established as exactly deterministic across runs.
+
+The thesis does not attribute all differences between older and newer answers to that single change. The current main comparison uses the ordering-fixed CivicRAG output, not the earlier overnight file. Proposed selector-off or dense-plus-reranker variants were discussed but are not reported as completed experiments.
+
+\section{Statistical Analysis}
+\input{generated/domain_table}
+Domain-specific operational statistics expose heterogeneity hidden by a global mean. They do not measure document correctness or demonstrate performance on all services within each domain. In particular, ten birth questions do not evaluate the death-registration portion of the knowledge base.
+
+If complete automatic scores are available, paired differences should use the same question in both systems. The evaluator computes CivicRAG minus Simple RAG on pairs with valid scores in both runs and a descriptive bootstrap interval. This interval reflects question resampling within the reused set, not the judge's calibration uncertainty, corpus representativeness or repeated-generation variance. A small interval should not be interpreted as eliminating those limitations.
+
+No significance test for factual superiority is reported without a reviewed correctness variable. The earlier informal assistant estimates of correct-answer counts are excluded. Human reviewers should score relevance, correctness and completeness separately, retain their evidence basis and review system outputs without knowing which pipeline produced them where feasible.
+
+\section{Comparisons and Relationships}
+\input{generated/model_table}
+The secondary model runs use the same selected-evidence configuration. The artifact audit checks ordered context IDs and content equality against the Qwen3 run. Their operational outcomes provide useful engineering information, but language rejection is not equivalent to every rejected answer being factually wrong. Conversely, a non-rejected answer may still contain irrelevant or incorrect content.
+
+Qwen3 is used as the main generator based on the project's development observations and its consistent use in the matched baseline. This is a pragmatic selection, not a statistically established claim that Qwen3 is the best Bangla model. Different model quantizations and inference behaviour also limit attribution of secondary differences solely to model architecture.
+
+The P2 birth-domain retrieval table is not pooled into this experiment. It used a different question set and scope. NextRAG's published financial QA results likewise cannot be directly ranked against these outputs. A fair external comparison would require a shared corpus, labels, model settings and protocol.
+
+\section{Discussion}
+The dataset effort creates an auditable foundation for iterative civic-service QA. A source-linked corpus makes it possible to inspect why a response used a particular procedure and to correct preparation without discarding the original files. This is a substantive contribution even when answer-generation quality remains imperfect.
+
+The principal residual problem is applicability rather than merely vocabulary matching. A fee table, application checklist and collection FAQ can all be relevant to the word passport but serve different questions. Automatic selection reduces some distractions but remains heuristic. The generation layer then introduces another risk by combining independently plausible requirements into an incorrect statement.
+
+The current evidence does not support 90--95\% accuracy, universal superiority over Simple RAG or readiness for unsupervised official advice. It does support a developed system, a traceable multi-domain corpus, completed paired outputs and identifiable improvement/regression cases. Deployment decisions should consider both coverage and the severity of remaining errors.

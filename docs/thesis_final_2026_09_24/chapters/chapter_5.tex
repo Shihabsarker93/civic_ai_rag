@@ -1,0 +1,131 @@
+\section{Design Process and Methodology Overview}
+CivicRAG separates offline corpus/index construction from online retrieval and answer generation. The pipeline diagram in Figure~\ref{fig:architecture} describes the selected-evidence configuration used by the main CivicRAG run. Legacy controlled-answer branches remain in the repository for rollback but are not the answer route of this comparison.
+
+\begin{figure}[htbp]\centering
+\begin{tikzpicture}[node distance=6mm, every node/.style={font=\small,align=center}, box/.style={draw,rounded corners,fill=gray!8,text width=116mm,minimum height=9mm}, arr/.style={-{Latex},thick}]
+\node[box] (raw) {Original documents and team-prepared text derivatives};
+\node[box,below=of raw] (clean) {Source register, normalization, typed chunks and provenance};
+\node[box,below=of clean] (texts) {Search text $r_i$ \quad | \quad Evidence content $e_i$ and metadata $m_i$};
+\node[box,below=of texts] (index) {BGE-M3($r_i$) $\rightarrow$ Chroma vectors\quad |\quad BM25($r_i$)\\Evidence $e_i$ is stored and linked by chunk ID, not generated};
+\node[box,below=9mm of index] (query) {Bangla query and selected domain $\rightarrow$ normalized search query};
+\node[box,below=of query] (retrieval) {Dense top 20 + BM25 top 20 $\rightarrow$ weighted RRF top 15};
+\node[box,below=of retrieval] (rank) {Reranking; birth/death-specific boosts and augmentation where applicable};
+\node[box,below=of rank] (select) {Heuristic applicability selector and compatible family expansion\\Up to 6 evidence chunks, 14,000 characters};
+\node[box,below=of select] (llm) {Qwen3:8b with query + selected original evidence};
+\node[box,below=of llm] (out) {Language check / truncation warning $\rightarrow$ answer + supplied source IDs};
+\foreach \a/\b in {raw/clean,clean/texts,texts/index,query/retrieval,retrieval/rank,rank/select,select/llm,llm/out}{\draw[arr] (\a)--(\b);}
+\draw[arr,dashed] (index.east)--++(8mm,0)|-(retrieval.east);
+\end{tikzpicture}
+\caption{Implemented offline preparation and online selected-evidence path. The dashed link denotes access to the stored indexes, not an index-generated answer.}\label{fig:architecture}
+\end{figure}
+
+\section{Preliminary Design and Final Specification}
+The P2 design emphasized birth/death registration, hybrid retrieval and controlled answer paths. Later work extended the corpus to passport and BRTA, added applicability selection and changed the main generator comparison to Qwen3. The final reported route therefore differs from the old diagrams that send every answer through a generic safe-path box.
+
+The system is not an autonomous agent that performs government actions. Its task is single-turn retrieval and evidence-conditioned text generation. A domain is selected before retrieval. A targeted cross-domain aggregate guard handles certain multi-service questions, but comprehensive intent recognition is not claimed. Neither the lexical rules nor the selector is a separately trained classifier.
+
+\section{Data Collection and Dataset Development}
+\subsection{Source Families and Original Preservation}
+The birth/death collection contains structured JSON and prepared Markdown derived from FAQs, laws, rules, fees, correction processes and application guidance. Passport and BRTA were supplied as original-file directories and separately prepared Markdown. Passport derivatives are registered from \code{cleaned_md}; BRTA derivatives from \code{brta} and \code{fahim_brta}. Directories explicitly marked original are reference materials, not duplicate text automatically added to the answer corpus.
+
+The register preserves document IDs, relative paths, snapshots, hashes, candidate original-file matches, inclusion history and chunk IDs. Candidate original matches do not certify textual fidelity. Some matches remain unresolved and are flagged. The distinction between collected originals and derivatives avoids counting the same information twice as independent evidence.
+
+The corpus is a retrieval resource, not a newly annotated gold-answer benchmark. Its novelty is the organization of selected civic-service material into a source-traceable, machine-usable representation spanning the three domains. It is neither a census of all government documents nor a guarantee of current legal validity.
+
+\subsection{Data Cleaning}
+The active passport/BRTA ingestion parses simple front matter, normalizes NFC text, removes explicit authoring citation markers and selected invisible characters, and tracks headings. It preserves malformed or unrecognized material instead of making broad deletions. The work does not substantiate a universal automatic OCR repair or Bijoy-to-Unicode conversion stage for every supplied file; such claims from illustrative diagrams are not carried forward.
+
+Separate cleanup candidates remove recognized authoring preambles and boilerplate and preserve larger structural units. Their manifests record changes and review flags. Those candidates must be distinguished from the evaluated corpus. At the audited snapshot, the active domain configurations still reference the heading-aware v2 passport/BRTA files. A later cleanup directory alone is not evidence that its contents were activated in ChromaDB or used in the saved answers.
+
+\subsection{Data Transformation}
+Document-type-aware transformation retains question-answer pairs, headings, fee rows and process sections where the source permits. A chunk should keep its governing condition with its answer. Splitting a heading from its body can make retrieval apparently relevant while the actual content answers a different question. Heading-aware ingestion was introduced to reduce this failure, but long unstructured legal OCR remains difficult.
+
+Each chunk has the form
+\begin{equation}
+c_i=(\mathrm{id}_i,e_i,r_i,m_i),
+\end{equation}
+where $e_i$ is evidence content, $r_i$ is search text and $m_i$ is metadata. Search text may include aliases or section descriptors. These additions help search; they are not source facts and are not meant to become answer evidence. No query-specific reference answer is inserted into the generator merely because it resembles a test question.
+
+\subsection{Data Integration}
+Each domain has its own configured JSONL corpus and Chroma collection. Metadata preserves service context and available source URLs. A stable chunk ID joins vector results back to the source record. The runtime dense retriever obtains IDs from Chroma and reconstructs retrieval results from the in-memory chunk map, making the active JSONL and index consistency essential.
+
+In \code{scripts/build_index.py}, embeddings are computed from \code{retrieval_text}, whereas Chroma's \code{documents} contain \code{content}. The versioned ingestion script follows the same storage separation. Therefore answer evidence is stored alongside a vector; it is not itself an answer produced by Chroma. Chroma is a retrieval store, and the LLM produces the response only after evidence selection.
+
+\subsection{Data Reduction and Inclusion}
+Reduction is treated conservatively. FAQ duplicate handling and chunk boundaries can reduce repeated text, but semantic deduplication of the complete three-domain corpus has not been independently established. Original archives are retained. Passport and BRTA registers contain 30 and 132 derivative documents respectively; the active snapshot includes chunks from all of those registered derivatives. This statement does not imply that every original file has a resolved one-to-one derivative match.
+
+\subsection{Summary of Preprocessed Data}
+\input{generated/corpus_table}
+The table is computed from the configured JSONL files, not from unrelated candidate directories. For the older birth/death corpus, source units are counted using its source-path metadata. That count is not equated to a unique original-PDF count. Across domains, chunk counts are an indexing property rather than the number of independent facts or questions.
+
+\input{generated/audit_table}
+Review flags count documents in the passport/BRTA registers or their associated chunk metadata, as indicated in the table. Multiple flags may apply to one document. A missing URL does not prove that a source is false, while a present URL does not prove that the derived text is correct. The flags identify where provenance and applicability need further review.
+
+\section{Implementation of the Selected Design}
+\subsection{Dense Embedding and Search}
+With encoder $f_\theta$, normalized vectors are
+\begin{equation}
+v_i=\frac{f_\theta(r_i)}{\|f_\theta(r_i)\|_2},\qquad
+v_q=\frac{f_\theta(q)}{\|f_\theta(q)\|_2}.
+\end{equation}
+For unit vectors, squared Euclidean distance satisfies
+\begin{equation}
+\|v_q-v_i\|_2^2=2-2v_q^\top v_i.
+\end{equation}
+Thus distance and cosine induce the same exact ranking for normalized vectors. The index construction does not explicitly override Chroma's distance configuration; the thesis therefore does not assert that a cosine collection was manually configured. Approximate index search can differ from an exhaustive mathematical ranking.
+
+BGE-M3 supplies the embedding model \cite{bgem3}; Chroma stores the vectors and linked documents \cite{chroma}. The implementation uses local cached model files and CPU embedding configuration. No corpus-specific gradient training occurs during this step.
+
+\subsection{BM25 Sparse Search}
+BM25 indexes tokens from $r_i$. Tokenization normalizes NFC, removes zero-width characters and extracts lower-case word/Bangla token sequences. The standard scoring structure is
+\begin{equation}
+\mathrm{BM25}(q,d)=\sum_{t\in q}\mathrm{IDF}(t)
+\frac{f(t,d)(k_1+1)}{f(t,d)+k_1(1-b+b|d|/\overline L)}.
+\end{equation}
+Here $f(t,d)$ is term frequency, $|d|$ is token length and $\overline L$ is mean document length. The code instantiates \code{BM25Okapi} without explicit parameter overrides, so the installed library defaults determine $k_1$, $b$ and its IDF-floor behaviour \cite{bm25,rankbm25}. Lexical matching is a separate channel; it does not construct Chroma's vectors.
+
+\subsection{Weighted Reciprocal Rank Fusion}
+The implementation retrieves at most 20 candidates from each channel, omitting BM25 results with non-positive scores. It assigns one-based ranks and computes
+\begin{equation}
+S(d)=\frac{0.55\,\mathbf{1}[d\in D]}{50+r_D(d)}+
+\frac{0.45\,\mathbf{1}[d\in B]}{50+r_B(d)}.
+\end{equation}
+A missing-channel term contributes zero. As an illustrative calculation, a chunk at dense rank 2 and BM25 rank 5 receives $0.55/52+0.45/55\approx0.01876$. This is a rank-combination value, not confidence in factual accuracy. The fused list is limited to 15 before reranking. The weights are implementation settings; this thesis does not claim they are optimal for the dataset.
+
+\subsection{Reranking and Domain-Specific Logic}
+The configured cross-encoder scores query/search-text pairs. If loading fails, the code can add a lexical-coverage adjustment of $0.05\,|T_q\cap T_d|/\max(|T_q|,1)$ to the incoming score. The saved primary CivicRAG candidate traces contain cross-encoder markers, establishing that the cross-encoder route was used in those records rather than merely being configured.
+
+Birth/death-specific boosts and evidence augmentation remain part of the selected route. These are not universal learned mechanisms for passport and BRTA. This asymmetry should be disclosed when interpreting domain differences. An isolated ablation would be required to attribute an observed change to those rules.
+
+\subsection{Applicability Selection and Context Budget}
+The selector introduced after P2 uses service, action, product and location vocabularies. It prefers section scope over broad document titles and can reject a passport-collection passage for an application question. It also screens heading-only fragments, handles explicitly flagged historical alternatives and expands compatible fee/checklist families.
+
+The selector is implemented in \code{src/generation/evidence_selection.py}; it is neither a second LLM nor a human choosing passages during normal operation. It retains at most six whole chunks within 14,000 characters. A chunk that does not fit is skipped rather than silently cut. A later ordering fix groups compatible family members near the first eligible anchor before applying the budget. Saved replay on 30 candidate sets changed the selected IDs for the passport-fee question while leaving the other 29 selections unchanged. This establishes the scope of that replay, not a general accuracy improvement.
+
+An unknown or broad query can still retain unrelated material. Lexical applicability is not entailment, and a passage may contain mixed procedures even when its heading matches. The selector's decisions and expanded IDs are therefore retained in a trace. Removing the selector remains a proposed ablation, not a completed experiment in this manuscript.
+
+\subsection{Answer Generation and Safety Behaviour}
+Qwen3:8b receives the normalized question and selected evidence through Ollama \cite{qwen3,ollama}. The comparison uses temperature 0.05, top-$p$ 0.9, output limit 1,200 tokens, repetition penalty 1.18, repeat window 256 and selected-route context window 8,192. Qwen3 thinking is disabled. The prompt requests evidence-grounded Bangla responses and preservation of service conditions.
+
+The current comparison bypasses legacy controlled extraction and question-category templates. If no applicable evidence remains, it returns a clarification/insufficient-information response. A heuristic language check can replace unsuitable-language output. A length finish reason produces an explicit incomplete-output warning. These are operational safeguards, not a complete factual verifier.
+
+The answer's Sources footer identifies supplied context IDs, not verified supporting citations for each claim. The saved \code{raw_generation} field is produced after the generator's existing response canonicalization and should not be described as untouched token-level model output. Candidate sources and actual \code{answer_contexts} are stored separately to avoid evaluating unused passages as if the model had seen them.
+
+\subsection{Matched Simple RAG Baseline}
+The isolated runner \code{scripts/run_simple_matched.py} performs dense-only top-six retrieval. It does not call BM25 fusion, reranking, applicability selection, sibling expansion or controlled answers. It applies the same whole-chunk character budget, selected-route generation prompt, Qwen3 settings and language/truncation handling as the comparison configuration. The \code{selected_evidence=True} generator flag chooses the shared prompt; it does not invoke the selector inside the baseline.
+
+\begin{table}[htbp]\centering\small
+\caption{Controlled and varied elements of the main comparison.}
+\begin{tabularx}{\linewidth}{p{44mm}XX}\toprule
+Element & Simple RAG & CivicRAG\\\midrule
+Corpus and questions & Same & Same\\
+Generator and prompt & Qwen3, matched & Qwen3, matched\\
+Dense retrieval & Top 6 & Top 20\\
+BM25 and RRF & Absent & Present\\
+Reranker & Absent & Present\\
+Applicability/expansion & Absent & Present\\
+Final context limit & 6 / 14,000 characters & 6 / 14,000 characters\\
+Controlled answer bypass & Absent & Absent\\\bottomrule
+\end{tabularx}\end{table}
+
+The comparison intentionally keeps the baseline credible. It does not weaken the generator, restrict access to the corpus or remove successful baseline answers. It measures a bundled pipeline difference and cannot independently establish the benefit of every additional component.

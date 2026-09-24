@@ -1,0 +1,20 @@
+\section{Summary of Findings}
+This thesis develops Civic.ai as a locally executable RAG-based civic-service information system. Its evaluated corpus covers birth/death registration, passport and BRTA through 3,709 active chunks. Search-oriented text and source evidence are kept distinct, and retrieved records remain connected to their provenance. The system integrates BGE-M3 dense retrieval, BM25, weighted RRF, reranking and a post-P2 applicability selector with local generation.
+
+Thirty Bangla questions were answered by both the current CivicRAG configuration and a matched dense-only baseline using Qwen3. All saved requests completed, while qualitative inspection found both improvements and regressions. The broader pipeline produced more task-appropriate evidence in several application, fee and replacement cases, but did not reliably resolve all procedural distinctions. Completion, language-script statistics and response time do not establish factual accuracy.
+
+The principal experimental limitation is the reuse of development questions and the absence of a completed independent correctness annotation. The local RAGAS evaluation is explicitly separated from factual verification and is reported only according to the available artifact status. No incomplete automatic run, unverified manual count or planned benchmark is presented as a completed result.
+
+\section{Contributions to the Field}
+The primary contribution is dataset development: organizing selected civic-service documents into domain-specific, source-traceable retrieval records while retaining originals, metadata and unresolved review flags. The second contribution is an implemented system that makes the distinction between searchable aliases and answer evidence operational. The third is a reproducible evaluation record that separates manually selected diagnostics, automatic selected-evidence generation and a matched Simple RAG baseline.
+
+The work adapts established retrieval techniques rather than claiming a new foundational RAG architecture. Its value is in the application-specific corpus and engineering evidence about where local Bangla service QA succeeds or fails. Applicability screening and trace preservation make failures inspectable, but are not claimed as complete solutions to hallucination or legal interpretation.
+
+\section{Recommendations for Future Work}
+The most immediate research priority is independent review of a held-out question set, including death-registration questions, broader BRTA services, paraphrases, conditional scenarios and insufficient-evidence cases. Reviewers should identify applicable passages as well as acceptable answers. This would enable retrieval recall and ranking metrics alongside answer correctness and completeness.
+
+Data work should prioritize unresolved original matches, source dates, historical instructions and long legal OCR. Cleanup candidates should be activated only with versioned index rebuilds and renewed evaluation, rather than being assumed equivalent to the current corpus. Provenance verification and relevance labelling are different tasks and should be recorded separately.
+
+Architecture changes should be tested through single-factor ablations, particularly selector-on versus selector-off, before introducing further retrievers or additional LLM selection stages. Better multilingual generators or independent judges may help, but their benefit must be measured under comparable conditions. Runtime optimization and concise answer composition are also needed for practical interaction.
+
+Finally, a prospective user study could assess clarity, accessibility and practical usefulness. Such a study would be required to substantiate the social outcomes described in the preserved Abstract. Until then, Civic.ai should be presented as a developed and evaluated information system with documented scope, rather than as an official decision service or a guaranteed replacement for human guidance.

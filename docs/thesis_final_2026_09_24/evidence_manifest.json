@@ -1,0 +1,162 @@
+{
+  "abstract_sha256": "802f7c1f4f4f78752e9f1e5ce7b1baf6bb6dac64fde3234d984b25947e8901ac",
+  "abstract_unchanged": true,
+  "audit_revision": "49b8440d6fa24e3ee1ce550faecbabeb17a6e6ac",
+  "files": {
+    "domains/birth_death_registration/data/interim/birth_death_chunks.jsonl": "b46443cd630a76c4a66134cadcc4a5a243f2f479b4ee97ba220582375ca1a6cf",
+    "domains/passport/data/interim/active_20260919_063632_508964.jsonl": "e50f1bf74778d6c49ad7171428431e7df3d434b9ac8671753fb7c4a0f3ca0fa2",
+    "domains/brta/data/interim/active_20260919_062310_302306.jsonl": "2ac675c1cca65b6a72bb4b61f4d7edbc20c01316a2211619309e53fbb23da359",
+    "docs/evaluation/simple_matched_qwen3_30q_2026_09_24/answers.json": "58b7c51fd1bfe8cf38393cd17b741b98fd671af7594b691a9464f9ebe391312f",
+    "docs/evaluation/chunk_order_fixed_qwen3_30q_2026_09_23/answers.json": "38d890dfdf55f52ef94e96921235ef7456e2c2a80330f2a5d8f650bc7d90b669",
+    "docs/evaluation/chunk_order_fixed_llama3_30q_2026_09_23/answers.json": "61b01eff2b2cdf2ebdd57f161b7756e5854cd1e86fbd2c84b617679f2dc05a06",
+    "docs/evaluation/chunk_order_fixed_qwen25_30q_2026_09_23/answers.json": "2874f120df8a8e63f7b20f826e29fdd9aef17deabbe29f40706a147678f53166"
+  },
+  "corpus": {
+    "birth_death_registration": {
+      "chunks": 187,
+      "source_units": 12,
+      "registered_originals": "Not comparable",
+      "document_types": {
+        "faq": 26,
+        "faq_preamble": 1,
+        "correction_process": 12,
+        "legal_act": 30,
+        "fees_table": 1,
+        "fee_row": 7,
+        "guidelines_ocr": 12,
+        "legal_rules": 45,
+        "application_process": 30,
+        "portal_summary": 9,
+        "general_guidance": 8,
+        "correction_notice_ocr": 6
+      }
+    },
+    "passport": {
+      "chunks": 361,
+      "source_units": 30,
+      "registered_originals": 27,
+      "document_types": {
+        "সাধারণ তথ্য": 48,
+        "document": 95,
+        "নির্দেশিকা / অফিসিয়াল বিজ্ঞপ্তি": 6,
+        "অফিসিয়াল নোটিশ / নির্দেশিকা": 14,
+        "নির্দেশিকা": 16,
+        "আবেদন ফরম (Application Form)": 13,
+        "নির্দেশিকা / Visa Guidelines": 32,
+        "নির্দেশিকা / ফি ও পেমেন্ট সংক্রান্ত তথ্য": 20,
+        "নাগরিক ই-সেবাসমূহের তালিকা": 7,
+        "আবেদন ফরম / নির্দেশিকা": 20,
+        "সাধারণ তথ্য / নির্দেশিকা": 12,
+        "পরিপত্র": 14,
+        "চেকলিস্ট": 5,
+        "বিজ্ঞপ্তি": 8,
+        "সাধারণ তথ্য ও নির্দেশিকা": 6,
+        "সিটিজেন চার্টার": 45
+      }
+    },
+    "brta": {
+      "chunks": 3161,
+      "source_units": 132,
+      "registered_originals": 133,
+      "document_types": {
+        "প্রজ্ঞাপন": 255,
+        "document": 1071,
+        "আইন / Act": 30,
+        "বিধিমালা / Rules": 43,
+        "প্রজ্ঞাপন (গেজেট)": 51,
+        "সংশোধিত প্রজ্ঞাপন": 13,
+        "সরকারী চিঠি / নোটিশ": 11,
+        "নীতিমালা": 90,
+        "প্রজ্ঞাপন / নির্দেশিকা": 84,
+        "আবেদন ফরম / নির্দেশিকা / অফিস আদেশ": 18,
+        "Note Verbale / কূটনৈতিক পত্র": 4,
+        "আইন ও প্রজ্ঞাপন (গেজেট)": 37,
+        "আইন": 31,
+        "প্রজ্ঞাপন / সরকারি স্মারক": 10,
+        "আইন / বাংলাদেশ গেজেট / আয়কর পরিপত্র": 7,
+        "আইন / বাংলাদেশ গেজেট": 13,
+        "সরকারি পত্র / স্মারক": 9,
+        "প্রজ্ঞাপন / নীতিমালা": 69,
+        "পরিপত্র": 25,
+        "পরিপত্র / স্পষ্টিকরণ": 14,
+        "প্রজ্ঞাপন / সরকারি আদেশ": 13,
+        "সাধারণ তথ্য / নির্দেশিকা": 105,
+        "নির্দেশিকা / টিউটোরিয়াল": 16,
+        "সরকারি চিঠি / অফিসিয়াল নির্দেশাবলী": 40,
+        "আইন / গেজেট": 49,
+        "প্রজ্ঞাপন / সাধারণ তথ্য": 33,
+        "পরিপত্র / সাধারণ তথ্য": 13,
+        "সাধারণ স্পষ্টীকরণ / পরিপত্র": 2,
+        "গেজেট / বিধিমালা": 54,
+        "সিটিজেন্স চার্টার": 57,
+        "সাধারণ তথ্য": 131,
+        "অফিস আদেশ\"[cite: 2]": 26,
+        "form": 737
+      }
+    }
+  },
+  "runs": {
+    "Simple RAG / Qwen3": {
+      "n": 30,
+      "routes": {
+        "llm_dense_evidence": 30
+      }
+    },
+    "CivicRAG / Qwen3": {
+      "n": 30,
+      "routes": {
+        "llm_selected_evidence": 30
+      }
+    },
+    "CivicRAG / Llama3": {
+      "n": 30,
+      "routes": {
+        "llm_selected_evidence": 23,
+        "selected_evidence_language_rejection": 7
+      },
+      "contexts_equal_to_qwen3": true
+    },
+    "CivicRAG / Qwen2.5": {
+      "n": 30,
+      "routes": {
+        "llm_selected_evidence": 29,
+        "selected_evidence_language_rejection": 1
+      },
+      "contexts_equal_to_qwen3": true
+    }
+  },
+  "frozen_hashes_verified": {
+    "src/pipeline.py": "e1b5f52800e7b4dcfe77302cf6992c57ac11d5b9d3ede0fab0b665354430e9ff",
+    "src/retrieval/hybrid_retriever.py": "8f031ad63fac93543e350668b7311acf8bbf476e99b45aab1a699e33461ced9a",
+    "src/evaluation/metrics.py": "f0a7242f6dc93d2471a19054261b51f4a043ba48cbbd208a18410174b1e1d837",
+    "src/reranking/reranker.py": "6b04cc53cd795d591d2b45847ed2510789fd8cc0bfbb0b53bfed5e3cc9612d4a",
+    "src/generation/ollama_generator.py": "f45d468f4d2278e181cd54c7dcf350e10982988e3a7ff038b3c3d6bf8252bba5",
+    "src/generation/evidence_selection.py": "149c882ab7717e67c97c459dfc74aee2b06211b587057a6285bf459e5170e420",
+    "app.py": "420cd654258a1618da89975ae8052d4bb3280a5e8de759f8d0f804ca47b64838",
+    "domains/passport/config.json": "10d6f28f1624547a4a675659a8aaf1a930d00ce4046294ddb036443b26d5dafc",
+    "domains/passport/data/interim/active_20260919_063632_508964.jsonl": "e50f1bf74778d6c49ad7171428431e7df3d434b9ac8671753fb7c4a0f3ca0fa2",
+    "domains/brta/config.json": "cdf184d6ed3d13f05b26784bc64ae0b8cad37717037805d714f50d033fca2b21",
+    "domains/brta/data/interim/active_20260919_062310_302306.jsonl": "2ac675c1cca65b6a72bb4b61f4d7edbc20c01316a2211619309e53fbb23da359",
+    "domains/birth_death_registration/config.json": "9919c3b3ed70085dc05dd6159c6eb8dae3b4e6801cad3d9f9c6d24f4bfad5fd1",
+    "domains/birth_death_registration/data/interim/birth_death_chunks.jsonl": "b46443cd630a76c4a66134cadcc4a5a243f2f479b4ee97ba220582375ca1a6cf"
+  },
+  "candidate_retriever_markers": {
+    "dense": 426,
+    "bm25": 203,
+    "cross_encoder": 450
+  },
+  "ragas_progress_at_snapshot": {
+    "metric_attempts": 21,
+    "expected": 180,
+    "valid": 21,
+    "last": {
+      "system": "civic",
+      "question_id": "passport_04_apply",
+      "domain": "passport",
+      "metric": "context_relevance_binary",
+      "score": 1.0,
+      "error": null,
+      "seconds": 142.09
+    }
+  }
+}
