@@ -1,0 +1,14 @@
+[
+  {
+    "expected": 1,
+    "score": 1.0,
+    "error": null,
+    "seconds": 62.42
+  },
+  {
+    "expected": 0,
+    "score": 0.0,
+    "error": null,
+    "seconds": 59.99
+  }
+]

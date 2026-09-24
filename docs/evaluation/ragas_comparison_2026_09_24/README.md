@@ -37,11 +37,17 @@ Earlier informal assistant correctness counts are not imported as ground truth.
 
 ## Run
 
-Environment: /tmp/civic-ragas-env (recreate if temporary directory is cleared).
+Environment: /Users/shihab/.cache/civic-ragas-env (restored from environment.txt after the previous /tmp environment disappeared).
 Install the versions in environment.txt into a separate environment.
 Run `python scripts/evaluate_saved_ragas.py --descriptive-only` for non-judge statistics.
 Run `python scripts/evaluate_saved_ragas.py` for resumable local judging.
 The job saves each metric attempt; it does not silently retry failed records on resume.
 Inspect failure.json if present; completion.json indicates the full batch finished, not that all scores are valid.
+
+## Resume record
+
+On 24 September 2026, no evaluator screen session or Ollama listener was present. The previous temporary environment and temporary log were also absent. The precise cause of the interruption is unknown. All 66 saved scores were retained; evaluation resumes at the first unscored item using the same dependency versions and judge settings. No chatbot answer is regenerated. This comparison contains only Simple RAG and CivicRAG on the existing 30 paired Qwen3 answers, not another paper's system or financial-domain benchmark.
+
+The resumed evaluator uses the persistent screen session `civic-ragas-eval`, with its log under this evaluation directory as `resume.log`. The website remains stopped. RAGAS judge calls produce evaluation judgments, not replacement answers to the original questions.
 
 References: https://docs.ragas.io/en/v0.2.12/references/metrics/

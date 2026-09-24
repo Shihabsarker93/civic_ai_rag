@@ -1,0 +1,65 @@
+{
+  "note": "Exploratory self-judge scores, NOT factual accuracy. Missing scores are excluded, never zero-filled.",
+  "systems": {
+    "simple": {
+      "answer_relevancy": {
+        "valid": 11,
+        "failed": 0,
+        "mean": 0.8619372533521177
+      },
+      "context_relevance_binary": {
+        "valid": 11,
+        "failed": 0,
+        "mean": 0.9090909090909091
+      },
+      "faithfulness": {
+        "valid": 11,
+        "failed": 0,
+        "mean": 0.8954545454545455
+      }
+    },
+    "civic": {
+      "answer_relevancy": {
+        "valid": 11,
+        "failed": 0,
+        "mean": 0.8410456539951711
+      },
+      "context_relevance_binary": {
+        "valid": 11,
+        "failed": 0,
+        "mean": 1.0
+      },
+      "faithfulness": {
+        "valid": 11,
+        "failed": 0,
+        "mean": 0.8194805194805195
+      }
+    }
+  },
+  "paired_civic_minus_simple": {
+    "answer_relevancy": {
+      "paired_n": 11,
+      "mean_difference": -0.020891599356946653,
+      "bootstrap_95_percent_interval": [
+        -0.05607141881928689,
+        0.009714533173179375
+      ]
+    },
+    "context_relevance_binary": {
+      "paired_n": 11,
+      "mean_difference": 0.09090909090909091,
+      "bootstrap_95_percent_interval": [
+        0.0,
+        0.2727272727272727
+      ]
+    },
+    "faithfulness": {
+      "paired_n": 11,
+      "mean_difference": -0.07597402597402597,
+      "bootstrap_95_percent_interval": [
+        -0.18961038961038962,
+        0.031818181818181815
+      ]
+    }
+  }
+}

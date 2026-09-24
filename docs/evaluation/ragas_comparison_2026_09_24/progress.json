@@ -1,0 +1,14 @@
+{
+  "metric_attempts": 66,
+  "expected": 180,
+  "valid": 66,
+  "last": {
+    "system": "civic",
+    "question_id": "birth_01_documents",
+    "domain": "birth_death_registration",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 104.02
+  }
+}

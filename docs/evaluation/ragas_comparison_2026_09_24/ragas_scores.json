@@ -1,0 +1,596 @@
+[
+  {
+    "system": "simple",
+    "question_id": "passport_01_documents",
+    "domain": "passport",
+    "metric": "faithfulness",
+    "score": 1.0,
+    "error": null,
+    "seconds": 234.08
+  },
+  {
+    "system": "simple",
+    "question_id": "passport_01_documents",
+    "domain": "passport",
+    "metric": "answer_relevancy",
+    "score": 0.9025032979291702,
+    "error": null,
+    "seconds": 44.38
+  },
+  {
+    "system": "simple",
+    "question_id": "passport_01_documents",
+    "domain": "passport",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 127.7
+  },
+  {
+    "system": "civic",
+    "question_id": "passport_01_documents",
+    "domain": "passport",
+    "metric": "faithfulness",
+    "score": 1.0,
+    "error": null,
+    "seconds": 182.85
+  },
+  {
+    "system": "civic",
+    "question_id": "passport_01_documents",
+    "domain": "passport",
+    "metric": "answer_relevancy",
+    "score": 0.9078824680779226,
+    "error": null,
+    "seconds": 30.62
+  },
+  {
+    "system": "civic",
+    "question_id": "passport_01_documents",
+    "domain": "passport",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 30.12
+  },
+  {
+    "system": "civic",
+    "question_id": "passport_02_fee",
+    "domain": "passport",
+    "metric": "faithfulness",
+    "score": 1.0,
+    "error": null,
+    "seconds": 446.84
+  },
+  {
+    "system": "civic",
+    "question_id": "passport_02_fee",
+    "domain": "passport",
+    "metric": "answer_relevancy",
+    "score": 0.7403516012182813,
+    "error": null,
+    "seconds": 40.99
+  },
+  {
+    "system": "civic",
+    "question_id": "passport_02_fee",
+    "domain": "passport",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 97.42
+  },
+  {
+    "system": "simple",
+    "question_id": "passport_02_fee",
+    "domain": "passport",
+    "metric": "faithfulness",
+    "score": 1.0,
+    "error": null,
+    "seconds": 483.09
+  },
+  {
+    "system": "simple",
+    "question_id": "passport_02_fee",
+    "domain": "passport",
+    "metric": "answer_relevancy",
+    "score": 0.661374827942717,
+    "error": null,
+    "seconds": 37.01
+  },
+  {
+    "system": "simple",
+    "question_id": "passport_02_fee",
+    "domain": "passport",
+    "metric": "context_relevance_binary",
+    "score": 0.0,
+    "error": null,
+    "seconds": 238.47
+  },
+  {
+    "system": "simple",
+    "question_id": "passport_03_delivery_time",
+    "domain": "passport",
+    "metric": "faithfulness",
+    "score": 1.0,
+    "error": null,
+    "seconds": 240.86
+  },
+  {
+    "system": "simple",
+    "question_id": "passport_03_delivery_time",
+    "domain": "passport",
+    "metric": "answer_relevancy",
+    "score": 0.8362901458833365,
+    "error": null,
+    "seconds": 42.31
+  },
+  {
+    "system": "simple",
+    "question_id": "passport_03_delivery_time",
+    "domain": "passport",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 119.14
+  },
+  {
+    "system": "civic",
+    "question_id": "passport_03_delivery_time",
+    "domain": "passport",
+    "metric": "faithfulness",
+    "score": 0.8,
+    "error": null,
+    "seconds": 400.54
+  },
+  {
+    "system": "civic",
+    "question_id": "passport_03_delivery_time",
+    "domain": "passport",
+    "metric": "answer_relevancy",
+    "score": 0.7965250515625438,
+    "error": null,
+    "seconds": 36.75
+  },
+  {
+    "system": "civic",
+    "question_id": "passport_03_delivery_time",
+    "domain": "passport",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 87.71
+  },
+  {
+    "system": "civic",
+    "question_id": "passport_04_apply",
+    "domain": "passport",
+    "metric": "faithfulness",
+    "score": 0.7142857142857143,
+    "error": null,
+    "seconds": 293.69
+  },
+  {
+    "system": "civic",
+    "question_id": "passport_04_apply",
+    "domain": "passport",
+    "metric": "answer_relevancy",
+    "score": 0.9465414499213413,
+    "error": null,
+    "seconds": 34.83
+  },
+  {
+    "system": "civic",
+    "question_id": "passport_04_apply",
+    "domain": "passport",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 142.09
+  },
+  {
+    "system": "simple",
+    "question_id": "passport_04_apply",
+    "domain": "passport",
+    "metric": "faithfulness",
+    "score": 1.0,
+    "error": null,
+    "seconds": 355.91
+  },
+  {
+    "system": "simple",
+    "question_id": "passport_04_apply",
+    "domain": "passport",
+    "metric": "answer_relevancy",
+    "score": 0.9465414499213413,
+    "error": null,
+    "seconds": 42.43
+  },
+  {
+    "system": "simple",
+    "question_id": "passport_04_apply",
+    "domain": "passport",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 199.03
+  },
+  {
+    "system": "simple",
+    "question_id": "passport_05_renewal",
+    "domain": "passport",
+    "metric": "faithfulness",
+    "score": 0.8,
+    "error": null,
+    "seconds": 264.8
+  },
+  {
+    "system": "simple",
+    "question_id": "passport_05_renewal",
+    "domain": "passport",
+    "metric": "answer_relevancy",
+    "score": 0.8584609194419807,
+    "error": null,
+    "seconds": 38.96
+  },
+  {
+    "system": "simple",
+    "question_id": "passport_05_renewal",
+    "domain": "passport",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 138.4
+  },
+  {
+    "system": "civic",
+    "question_id": "passport_05_renewal",
+    "domain": "passport",
+    "metric": "faithfulness",
+    "score": 1.0,
+    "error": null,
+    "seconds": 119.58
+  },
+  {
+    "system": "civic",
+    "question_id": "passport_05_renewal",
+    "domain": "passport",
+    "metric": "answer_relevancy",
+    "score": 0.7427756634249265,
+    "error": null,
+    "seconds": 31.47
+  },
+  {
+    "system": "civic",
+    "question_id": "passport_05_renewal",
+    "domain": "passport",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 43.61
+  },
+  {
+    "system": "civic",
+    "question_id": "passport_06_lost",
+    "domain": "passport",
+    "metric": "faithfulness",
+    "score": 0.5,
+    "error": null,
+    "seconds": 273.84
+  },
+  {
+    "system": "civic",
+    "question_id": "passport_06_lost",
+    "domain": "passport",
+    "metric": "answer_relevancy",
+    "score": 0.9020515046363359,
+    "error": null,
+    "seconds": 31.15
+  },
+  {
+    "system": "civic",
+    "question_id": "passport_06_lost",
+    "domain": "passport",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 147.58
+  },
+  {
+    "system": "simple",
+    "question_id": "passport_06_lost",
+    "domain": "passport",
+    "metric": "faithfulness",
+    "score": 0.8,
+    "error": null,
+    "seconds": 302.74
+  },
+  {
+    "system": "simple",
+    "question_id": "passport_06_lost",
+    "domain": "passport",
+    "metric": "answer_relevancy",
+    "score": 0.9158832881749804,
+    "error": null,
+    "seconds": 46.52
+  },
+  {
+    "system": "simple",
+    "question_id": "passport_06_lost",
+    "domain": "passport",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 209.19
+  },
+  {
+    "system": "simple",
+    "question_id": "passport_07_name_correction",
+    "domain": "passport",
+    "metric": "faithfulness",
+    "score": 1.0,
+    "error": null,
+    "seconds": 242.46
+  },
+  {
+    "system": "simple",
+    "question_id": "passport_07_name_correction",
+    "domain": "passport",
+    "metric": "answer_relevancy",
+    "score": 0.9239298199947953,
+    "error": null,
+    "seconds": 39.16
+  },
+  {
+    "system": "simple",
+    "question_id": "passport_07_name_correction",
+    "domain": "passport",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 96.78
+  },
+  {
+    "system": "civic",
+    "question_id": "passport_07_name_correction",
+    "domain": "passport",
+    "metric": "faithfulness",
+    "score": 0.6,
+    "error": null,
+    "seconds": 245.27
+  },
+  {
+    "system": "civic",
+    "question_id": "passport_07_name_correction",
+    "domain": "passport",
+    "metric": "answer_relevancy",
+    "score": 0.9148076931274612,
+    "error": null,
+    "seconds": 52.52
+  },
+  {
+    "system": "civic",
+    "question_id": "passport_07_name_correction",
+    "domain": "passport",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 130.64
+  },
+  {
+    "system": "civic",
+    "question_id": "passport_08_birth_date",
+    "domain": "passport",
+    "metric": "faithfulness",
+    "score": 0.4,
+    "error": null,
+    "seconds": 227.55
+  },
+  {
+    "system": "civic",
+    "question_id": "passport_08_birth_date",
+    "domain": "passport",
+    "metric": "answer_relevancy",
+    "score": 0.9354202692810633,
+    "error": null,
+    "seconds": 41.7
+  },
+  {
+    "system": "civic",
+    "question_id": "passport_08_birth_date",
+    "domain": "passport",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 104.52
+  },
+  {
+    "system": "simple",
+    "question_id": "passport_08_birth_date",
+    "domain": "passport",
+    "metric": "faithfulness",
+    "score": 0.25,
+    "error": null,
+    "seconds": 469.69
+  },
+  {
+    "system": "simple",
+    "question_id": "passport_08_birth_date",
+    "domain": "passport",
+    "metric": "answer_relevancy",
+    "score": 0.9354202692810633,
+    "error": null,
+    "seconds": 28.85
+  },
+  {
+    "system": "simple",
+    "question_id": "passport_08_birth_date",
+    "domain": "passport",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 89.77
+  },
+  {
+    "system": "simple",
+    "question_id": "passport_09_status",
+    "domain": "passport",
+    "metric": "faithfulness",
+    "score": 1.0,
+    "error": null,
+    "seconds": 251.08
+  },
+  {
+    "system": "simple",
+    "question_id": "passport_09_status",
+    "domain": "passport",
+    "metric": "answer_relevancy",
+    "score": 0.7788953358886199,
+    "error": null,
+    "seconds": 36.12
+  },
+  {
+    "system": "simple",
+    "question_id": "passport_09_status",
+    "domain": "passport",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 111.16
+  },
+  {
+    "system": "civic",
+    "question_id": "passport_09_status",
+    "domain": "passport",
+    "metric": "faithfulness",
+    "score": 1.0,
+    "error": null,
+    "seconds": 200.97
+  },
+  {
+    "system": "civic",
+    "question_id": "passport_09_status",
+    "domain": "passport",
+    "metric": "answer_relevancy",
+    "score": 0.643008896332503,
+    "error": null,
+    "seconds": 25.66
+  },
+  {
+    "system": "civic",
+    "question_id": "passport_09_status",
+    "domain": "passport",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 76.76
+  },
+  {
+    "system": "civic",
+    "question_id": "passport_10_urgent",
+    "domain": "passport",
+    "metric": "faithfulness",
+    "score": 1.0,
+    "error": null,
+    "seconds": 110.02
+  },
+  {
+    "system": "civic",
+    "question_id": "passport_10_urgent",
+    "domain": "passport",
+    "metric": "answer_relevancy",
+    "score": 0.8716983633828465,
+    "error": null,
+    "seconds": 33.06
+  },
+  {
+    "system": "civic",
+    "question_id": "passport_10_urgent",
+    "domain": "passport",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 93.04
+  },
+  {
+    "system": "simple",
+    "question_id": "passport_10_urgent",
+    "domain": "passport",
+    "metric": "faithfulness",
+    "score": 1.0,
+    "error": null,
+    "seconds": 121.92
+  },
+  {
+    "system": "simple",
+    "question_id": "passport_10_urgent",
+    "domain": "passport",
+    "metric": "answer_relevancy",
+    "score": 0.871571199433634,
+    "error": null,
+    "seconds": 22.51
+  },
+  {
+    "system": "simple",
+    "question_id": "passport_10_urgent",
+    "domain": "passport",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 79.24
+  },
+  {
+    "system": "simple",
+    "question_id": "birth_01_documents",
+    "domain": "birth_death_registration",
+    "metric": "faithfulness",
+    "score": 1.0,
+    "error": null,
+    "seconds": 178.62
+  },
+  {
+    "system": "simple",
+    "question_id": "birth_01_documents",
+    "domain": "birth_death_registration",
+    "metric": "answer_relevancy",
+    "score": 0.8504392329816564,
+    "error": null,
+    "seconds": 28.94
+  },
+  {
+    "system": "simple",
+    "question_id": "birth_01_documents",
+    "domain": "birth_death_registration",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 94.08
+  },
+  {
+    "system": "civic",
+    "question_id": "birth_01_documents",
+    "domain": "birth_death_registration",
+    "metric": "faithfulness",
+    "score": 1.0,
+    "error": null,
+    "seconds": 899.33
+  },
+  {
+    "system": "civic",
+    "question_id": "birth_01_documents",
+    "domain": "birth_death_registration",
+    "metric": "answer_relevancy",
+    "score": 0.8504392329816564,
+    "error": null,
+    "seconds": 29.97
+  },
+  {
+    "system": "civic",
+    "question_id": "birth_01_documents",
+    "domain": "birth_death_registration",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 104.02
+  }
+]
