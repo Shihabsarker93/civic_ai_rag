@@ -1,5 +1,12 @@
 # Build verification
 
+## Portrait-layout correction
+
+- Replaced the split landscape figures with one complete architecture and a separate complete evaluation diagram, both proportional and embedded alongside text.
+- Rendered and inspected the revised Chapter 4 pages: no severed connectors or clipped panel edges.
+- All 65 PDF pages are A4 portrait with zero rotation. All 43 original headings, index order and unchanged Abstract pass verification.
+- Rollback tag: codex/pre-portrait-diagrams-20260925. Earlier landscape-layout notes below are historical.
+
 ## Latest integration: 25 September 2026
 
 - The integrated PDF contains 68 pages; all pages were rendered and inspected in contact sheets, with the architecture page also checked separately.

@@ -6,7 +6,7 @@ The architecture figures in Section 4.2 show how source content remains connecte
 To connect these stages, we use the saved question \bn{BRTA-এর ড্রাইভিং পরীক্ষায় কী কী থাকে?} (What does the BRTA driving test include?) as a running example. The record is identified as \code{brta_05_test}. It illustrates an actual execution, not a reference answer or a demonstration that every selected passage is relevant.
 
 \section{Preliminary Design or Design (Model) Specification}
-Figures~\ref{fig:architecture} and \ref{fig:answer-architecture} present the implemented architecture using corrected exports of the supplied draw.io design. The panels retain the original flow while clarifying terminology and component limits. Figure~\ref{fig:evaluation-architecture} separates the two evaluation designs from the online chatbot.
+Figure~\ref{fig:architecture} presents the complete implemented architecture using a corrected export of the supplied draw.io design. All three stages and their connecting arrows remain together in one figure. Figure~\ref{fig:evaluation-architecture} separates the two evaluation designs from the online chatbot.
 
 \input{generated/architecture_integrated}
 
@@ -14,9 +14,14 @@ In Figure~\ref{fig:architecture}, the first panel starts from source files and p
 
 The second panel follows a question through domain-scoped retrieval. After input checks and normalization, semantic and lexical searches produce at most 20 results each. Weighted RRF retains up to 15 fused candidates, and the shared reranker reorders them \cite{rrf,bgereranker}. The local chunk map supplies evidence throughout retrieval; the evidence-context box denotes preparation for selection, not the first moment the code accesses text. Registration-only score adjustments and fee supplementation are conditional additions, not separate retrieval methods.
 
-Figure~\ref{fig:answer-architecture} runs from right to left. A rule-based selector checks service/action scope and orders compatible sections before applying the whole-chunk budget. With no selected evidence, the system requests clarification. Otherwise, the question and source text enter the generator; vectors and search aliases are not factual answer content. Source-ID canonicalization occurs inside the generator wrapper, while language and truncation checks occur in the pipeline. The grouped output-check box summarizes these operations rather than defining a strict internal order. There is no second model verifying every final claim.
+The bottom panel of Figure~\ref{fig:architecture} runs from right to left. A rule-based selector checks service/action scope and orders compatible sections before applying the whole-chunk budget. With no selected evidence, the system requests clarification. Otherwise, the question and source text enter the generator; vectors and search aliases are not factual answer content. Source-ID canonicalization occurs inside the generator wrapper, while language and truncation checks occur in the pipeline. The grouped output-check box summarizes these operations rather than defining a strict internal order. There is no second model verifying every final claim.
 
 Figure~\ref{fig:evaluation-architecture} has two independent branches. The first compares saved answers from matched Simple RAG and CivicRAG configurations. The same prompt means the same generation instructions, not the same passages or selector. The second compares BM25, dense search and RRF before reranking or selection. RAGAS scoring and passage-label review occur outside the citizen-facing request path. The diagram reports their evidential limits; the retrieval-only study does not measure complete chatbot accuracy.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=\linewidth,keepaspectratio]{generated/evaluation_design.png}
+\caption[Comparison and evaluation boundaries]{Evaluation boundaries. Panel A compares matched answer pipelines; Panel B evaluates retrieval before reranking and evidence selection. Assistant-reviewed labels and local self-judge scores are distinct from independent ground truth.}\label{fig:evaluation-architecture}
+\end{figure}
 
 The initial design emphasized birth registration, hybrid retrieval and controlled answer paths. Later work extended the corpus to passport and BRTA, added applicability selection and changed the main generator comparison to Qwen3. The final reported route therefore differs from the old diagrams that send every answer through a generic safe-path box.
 

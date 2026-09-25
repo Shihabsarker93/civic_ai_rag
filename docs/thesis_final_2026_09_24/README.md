@@ -20,7 +20,7 @@ tectonic --keep-logs --keep-intermediates main.tex
 
 XeLaTeX plus BibTeX is an alternative. A different computer may require changing the font names and reviewing the layout again. Architecture exports are included as PNG/SVG; preparation and evidence-linkage figures use LaTeX. Survey, corpus and evaluation charts are included as vector PDFs. No external image downloads are needed.
 
-Chapter 4 contains six figures. Section 4.2 presents the offline/online architecture, generation flow and evaluation boundaries. Section 4.4 maps these to implementation modules. These documentation changes do not alter the frozen chatbot or evaluation.
+Chapter 4 contains five figures. Section 4.2 presents the complete architecture as a single portrait-page figure, followed by the evaluation boundaries near their explanation. No diagram is split across pages. Section 4.4 maps these to implementation modules. These documentation changes do not alter the frozen chatbot or evaluation.
 
 `SURVEY_ANALYSIS.md` documents the needs-analysis questionnaire and reproducible inclusion/counting rules. There are 79 consenting adult submissions in the primary analysis, with item-specific denominators. Only aggregate artifacts are distributed, not the private raw archive. The survey measures stated needs, not chatbot accuracy or demonstrated social impact.
 

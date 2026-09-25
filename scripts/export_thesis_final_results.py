@@ -75,6 +75,7 @@ def main():
     source = ROOT / "docs/architecture/final_2026_09_25"
     ET.register_namespace("", "http://www.w3.org/2000/svg")
     for file, name, view in [
+        ("civicrag_final_architecture", "architecture_complete", (30, 130, 1740, 1185)),
         ("civicrag_final_architecture", "architecture_retrieval", (30, 130, 1740, 775)),
         ("civicrag_final_architecture", "architecture_generation", (30, 925, 1740, 390)),
         ("evaluation_boundaries", "evaluation_design", (30, 140, 1740, 950)),
