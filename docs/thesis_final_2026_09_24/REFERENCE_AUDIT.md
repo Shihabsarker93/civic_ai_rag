@@ -19,6 +19,7 @@ References were selected for actual use, not copied wholesale from the previous 
 | chroma | Official Chroma documentation | Vector/document storage |
 | rankbm25 | Upstream source repository | BM25Okapi implementation |
 | ollama | Official API documentation | Local inference |
+| docling | arXiv 2408.09869, checked 2026-09-25 | Structured document conversion; project use remains unconfirmed |
 
 Dataset-specific source titles, available URLs and IDs are supplied in dataset_catalog.json, derived from the active corpus. Missing URLs are not filled with guesses. That catalog documents provenance; it does not certify current government rules or original-to-Markdown fidelity.
 

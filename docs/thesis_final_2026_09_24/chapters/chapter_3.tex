@@ -1,79 +1,108 @@
 \section{Final Specifications and Requirements}
-The needs-analysis results help explain the selected informational scope. Required-document guidance was explicitly selected by 62/77 valid respondents (80.5\%), and payment/appointment information by 58/77 (75.3\%). CivicRAG addresses these needs through source-grounded explanations. The same questionnaire also elicited demand for online-form help (64/77, 83.1\%) and uploaded-document checking (56/77, 72.7\%); these preferences must not be confused with implemented form submission or document authentication. Neither transaction execution nor uploaded-document verification is claimed.
+The needs-analysis survey informed the informational scope. Required-document guidance was selected by 62/77 valid respondents (80.5\%), and payment/appointment information by 58/77 (75.3\%). These preferences map to searchable instructions and source-grounded explanations. Demand for online-form help (64/77, 83.1\%) and uploaded-document checking (56/77, 72.7\%) was also recorded, but automatic submission and document authentication are outside the implemented requirements.
 
-The functional requirements are domain-scoped retrieval, Bangla-oriented generation, inspectable evidence, model selection and persistent experiment records. The system must distinguish the search representation from answer evidence, expose the passages actually supplied to generation and preserve a rollback path for changes. These requirements are implemented through domain configurations, the source register, structured response fields and Git revisions.
+\paragraph{Functional Requirements.}
+The system must accept a question with a selected domain, retrieve relevant passages, generate a Bangla response and expose the evidence supplied to the model. It must also support model selection and record answers, routes and source identifiers for comparison. A targeted clarification path handles recognized cross-domain aggregate requests; it is not a complete classifier for every out-of-domain question.
 
+\paragraph{Non-functional Requirements.}
+Traceability, maintainability and reproducibility guide the implementation. Original files must remain separate from derivatives, evidence must remain linked to stable IDs, and changes must be reversible. Language and incomplete-output checks support usability, while saved configurations permit reproducible analysis. Local response time is measured rather than treated as a guaranteed real-time service level.
+
+\paragraph{Software Requirements.}
+The implementation uses Python, domain data files, configuration files, BGE-M3 embeddings, ChromaDB, BM25, a BGE reranker and Ollama. The browser interface provides domain and model selection. Model weights must be available locally for offline execution; network access is needed for initial downloads and following external source links. Qwen3:8b is explicitly requested in the main comparison, irrespective of default model names retained in other configurations.
+
+\paragraph{Resource Requirements.}
+Execution requires storage for the source archive, prepared corpus, indexes, model weights and experiment outputs. Available memory must support the selected embedding, reranking and generation components. Sequential batch execution and model sharing reduce concurrent resource demand. No minimum GPU specification is asserted because the project did not perform a hardware-capacity benchmark.
+
+Table~\ref{tab:requirements} connects the requirements with their implemented checks.
 \begin{table}[htbp]\centering\small
-\caption{Implemented requirements and limits of verification.}
-\begin{tabularx}{\linewidth}{p{36mm}XX}\toprule
-Requirement & Implementation & Verification boundary\\\midrule
-Domain selection & Separate configurations and Chroma collections & Does not guarantee all out-of-domain rejection\\
-Evidence traceability & Chunk IDs, metadata, source paths and available URLs & Footer is not claim-level citation verification\\
-Bangla response & Prompt and language safety check & Fluency and semantic accuracy remain imperfect\\
-Local execution & Ollama generation; locally cached embeddings & Latency remains substantial\\
-Reproducible comparison & Saved questions, answers, contexts and hashes & One run per configuration; reused questions\\
-Reversible development & Git revisions and rollback tags & Untracked artifacts need explicit preservation\\\bottomrule
+\caption{Requirement-to-implementation mapping for the final system.}\label{tab:requirements}
+\begin{tabularx}{\linewidth}{p{32mm}XX}\toprule
+Requirement & Mechanism & Verification boundary\\\midrule
+Domain-scoped guidance & Separate configurations and collections & Not universal out-of-domain rejection\\
+Evidence inspection & IDs, source metadata and answer contexts & Not claim-level citation validation\\
+Bangla response & Prompt and language check & Does not guarantee fluent or correct wording\\
+Local execution & Cached models and Ollama & Latency depends on resources\\
+Reproducible comparison & Fixed inputs and recorded hashes & Questions reused during development\\
+Reversible changes & Git revisions and saved artifacts & Only recorded files belong to a snapshot\\\bottomrule
 \end{tabularx}\end{table}
-
-The selected comparison requests Qwen3 explicitly. Some configuration files retain Llama 3.2 as a default; this does not identify the model used in saved experiments. Execution records, not an isolated default value, determine the evaluated configuration. Similarly, the selected-evidence branch allows six passages even though the legacy generation configuration retains a three-passage setting.
+This mapping separates an implemented mechanism from the broader quality it supports. For example, displaying sources satisfies traceability but cannot alone establish correctness.
 
 \section{Societal Impact}
-The questionnaire records a perceived need for assistance rather than a measured social impact. Even when the hypothetical chatbot supplied verified information, 42/76 respondents (55.3\%) chose to recheck it. This supports providing inspectable evidence and avoiding claims of official authority. A combined ``official logo/website link'' option was selected by 46/77 (59.7\%); the combined wording does not establish a separate preference for logos and does not authorize official branding.
+Civic.ai is intended to help citizens understand published procedures, not replace government services. Bangla explanations and inspectable evidence can make a dispersed collection easier to navigate. The survey indicates perceived demand for such assistance, but the completed experiments do not measure changes in office visits, financial burden or dependence on intermediaries.
 
-The intended benefit is easier access to structured explanations of civic procedures. Bangla responses and inspectable evidence may reduce the effort needed to navigate multiple files. However, the reported experiments involve questions and saved model outputs rather than a deployed population study. Improvements in accessibility, trust or intermediary dependence remain intended outcomes, not measured effects.
+The trust responses reinforce this distinction. Under a hypothetical verified-information condition, 42/76 respondents (55.3\%) still preferred to recheck answers. A combined official-logo/website-link option was selected by 46/77 (59.7\%). Its wording does not identify separate preferences for logos and links or justify official branding. We consequently emphasize source inspection without implying institutional endorsement.
 
-Incorrect fees or procedure instructions can create practical harm. The interface should therefore be understood as guidance to inspect alongside official sources. A source link gives a route for checking information, but some corpus records have missing URLs or unresolved original matches. The manuscript does not imply official endorsement or authoritative legal status.
+Incorrect guidance can waste time or cause an applicant to prepare the wrong documents. Fees and procedures should therefore remain associated with their source conditions. Missing URLs and unresolved original-to-derivative matches are visible limitations of the dataset, not details to hide from users.
 
 \section{Environmental Impact}
-Local inference uses electricity and hardware resources. The project reuses pretrained models rather than training a foundation model, but no power measurements or carbon accounting were performed. Response time is not a substitute for energy measurement. A future study would log power draw, duration and system utilization under comparable conditions before making environmental-efficiency claims.
+Local inference consumes electricity and hardware resources. Reusing pretrained models avoids conducting foundation-model training within this project, but does not establish a low-carbon system. Long inference and evaluation runs can still accumulate resource use.
+
+We reuse saved answers for evaluation and preserve checkpoints instead of repeatedly regenerating completed batches. These practices avoid redundant work; their energy benefit was not measured. No power logs or carbon accounting were collected, so latency is reported as an operational measure rather than converted into unsupported environmental claims.
 
 \section{Ethical Issues}
-Survey reporting uses consenting adult submissions only and publishes aggregate counts rather than raw demographics, timestamps or free-text experiences. Four consenting submissions reporting an age below 18 and two with missing age are held out; the original files are preserved privately rather than erased. Participant identity and repeat participation cannot be reliably established from these exports. The analysis therefore refers to submissions and valid item responses, not a verified count of unique citizens.
+Source traceability is important because civic guidance can affect practical decisions. Original documents and derivatives are preserved separately, while identifiers and available URLs allow a response to be inspected. A correct source link does not certify that the derived text is accurate, current or applicable to every citizen.
 
-Three ethical concerns guide the design. First, evidence may be outdated or inapplicable even when faithfully quoted. Second, local models can combine requirements from different categories. Third, a user may interpret a confident answer as official advice. The system exposes provenance and incomplete-output warnings, but these mechanisms do not eliminate those risks.
+The evidence-only prompt aims to reduce unsupported generation, and the pipeline can return clarification when no applicable evidence remains. Nevertheless, models can combine unrelated requirements or omit conditions. The system exposes incomplete-output warnings and selected passages rather than presenting these safeguards as a full factual verifier. Document dates and audit flags also identify where freshness and applicability require further checking.
 
-Data curation preserves original files and records derivation rather than silently overwriting sources. Automatically detected flags indicate unresolved checks, not conclusive judgments that a file is wrong. Human review remains necessary for conflicting fees, applicability dates and OCR-sensitive legal text. Informal user preference is recorded as an observation, not converted into an invented expert accuracy score.
+Privacy is addressed differently for the corpus and survey. Public-service instructions form the retrieval corpus; respondent experiences are not added to it. Survey reporting uses aggregate counts from consenting adult submissions and excludes raw demographics, timestamps and free-text accounts from the distributed thesis artifacts. Four consenting under-18 submissions and two missing-age submissions are held out of the primary analysis. Participant identity and repeat participation cannot be reliably established, so counts refer to submissions rather than verified unique citizens.
+
+Local inference avoids sending each question and passage to a hosted generator in the recorded runs, but saved local logs can still contain sensitive user input. Their use in an operational deployment would require access and retention controls. No ethics approval or privacy certification is inferred from a consent checkbox or local execution alone.
 
 \section{Standards - if applicable}
-The implementation uses UTF-8 text, Unicode NFC normalization, JSON/JSONL records and SHA-256 hashes. These choices support interoperable storage and change detection. They do not constitute certification under a government, security, accessibility or quality-management standard. No compliance audit is claimed.
+\textbf{Encoding.} UTF-8 storage and Unicode NFC normalization provide a consistent representation of Bangla and mixed-language text. Normalization standardizes encoding; it does not repair every OCR or spelling error.
 
-The source and search representations retain machine-readable identifiers that permit reproducible joins across retrieval, evidence selection and evaluation. Documents without public URLs still retain local provenance; they must not be assigned fabricated URLs. Redistribution of original PDFs and personal information requires separate permission review.
+\textbf{Documentation.} JSON/JSONL records, stable identifiers, source-relative paths and SHA-256 hashes support consistent data exchange and change detection. Missing URLs remain missing rather than being replaced with guessed addresses.
+
+\textbf{Software.} Versioned code, configuration files and saved experiment artifacts support reproducibility. Matching the active corpus to its index is essential because retrieved IDs are resolved against the configured chunk map.
+
+\textbf{Government documents.} Official titles, dates, forms and conditions are retained where present. Their preservation supports provenance but is not certification that a document is current or that redistribution is authorized. The study claims no formal government, security, accessibility or quality-management compliance audit.
 
 \section{Project Management Plan}
-The completed work proceeded through corpus preparation, a birth/death-registration implementation, extension to passport and BRTA, generation diagnostics and a matched baseline comparison. Later changes were preserved as candidates and Git revisions. The final evaluation configuration is identified through hashes rather than by describing every subsequent draft as active.
+We organized the work in successive stages: source preparation, a registration-focused implementation, extension to two further domains, generation diagnostics and controlled comparison. The sequence allowed changes to be tested without overwriting earlier results. Table~\ref{tab:milestones} records milestones visible in the repository; dates identify recorded revisions, not the start or total duration of each activity.
 
-For finalization, architecture and corpus changes are separated from reporting. The outstanding automatic evaluation may finish without modifying the answer files. The thesis tables are regenerated from those artifacts, while the Abstract is checked against its immutable source. Changes that would require new answer generation are not silently included in the current comparison.
+\begin{table}[htbp]\centering\small
+\caption{Completed development milestones documented by repository revisions.}\label{tab:milestones}
+\begin{tabularx}{\linewidth}{p{24mm}Xp{24mm}}\toprule
+Recorded date & Milestone & Revision\\\midrule
+19 Sep 2026 & Passport/BRTA integration and three-domain audit preparation & \code{ceba176}\\
+20--22 Sep 2026 & Bangla policy, model audits and source-preserving cleanup candidates & \code{61dd907}, \code{143a552}\\
+23 Sep 2026 & Context diagnostics, applicability selection and family-order correction & \code{5389f7b}, \code{27a1de4}\\
+23 Sep 2026 & Saved local-model batches on the selected configuration & \code{32228dc}, \code{7ac52a1}\\
+24 Sep 2026 & Matched Simple RAG run and needs-survey analysis & \code{76a4537}, \code{c09fc42}\\
+25 Sep 2026 & Retrieval-only measurements and completed saved-answer RAGAS evaluation & \code{2ba8820}, \code{d32c107}\\\bottomrule
+\end{tabularx}\end{table}
+The milestone record covers the final development period; earlier collection and P2 work precede these entries. Keeping the sequence tied to artifacts avoids reconstructing unrecorded working hours or assigning responsibilities retrospectively.
 
-The remaining work follows dependency-based milestones rather than invented historical dates: freeze the corpus and answer revisions; finish or formally close the automatic evaluation; review paired answers; insert validated results into Chapter 5; reconcile the conclusion; and confirm administrative information before the final compile. Evaluation uses the existing local machine and Ollama models. Manuscript work uses saved artifacts and does not require repeated generation.
-
-\pending{Task PM-01: obtain team-confirmed milestone dates, responsibility assignments, available hardware and a budget/resource record. The sequence above is a plan, not a reconstructed account of hours worked. Populate this section with the confirmed schedule and budget before submission.}
+Version control was also a risk-control mechanism. Unsuccessful candidate changes were retained with their outputs, while rollback revisions preserved earlier behaviour. For comparison, the corpus, questions and generation settings were frozen so that later reporting did not silently change the experiment. Evaluation of saved answers was separated from model generation to reduce repeated local runs.
 
 \section{Risk Management}
-\begin{longtable}{p{34mm}p{49mm}p{54mm}}
-\caption{Principal project risks and controls.}\label{tab:risks}\\\toprule
+Risks arise at each boundary between source material, retrieval and generation. Table~\ref{tab:risks} summarizes the controls already implemented and the issues that remain.
+
+\begin{longtable}{p{32mm}p{48mm}p{54mm}}
+\caption{Implementation-specific risks, controls and residual limitations.}\label{tab:risks}\\\toprule
 Risk & Existing control & Residual issue\\\midrule\endfirsthead
 \toprule Risk & Existing control & Residual issue\\\midrule\endhead
-Wrong procedure & Domain scope, reranking, applicability vocabulary & Similar headings and unclassified passages remain\\
-Historical rules & Date fields and audit flags & Dates and legal applicability not independently verified\\
-OCR corruption & Original-file links and review flags & Not all long legal documents manually checked\\
-Context crowding & Whole-chunk budget and family-order fix & Broad queries may still require omitted evidence\\
-Wrong generation & Evidence prompt and language check & No complete semantic entailment guard\\
-Truncation & Finish-reason warning & Warning does not complete an interrupted answer\\
-Evaluation bias & Matched inputs and disclosed development set & Reuse, self-judging and small sample remain\\
-Version confusion & Hash manifests and rollback revisions & Index rebuilds and deployment must respect the manifest\\\bottomrule
+OCR corruption & Originals, source links and review flags & Long legal text not exhaustively checked\\
+Wrong procedure & Domain scope, reranking and applicability cues & Similar headings or mixed passages remain\\
+Outdated instructions & Date fields and audit flags & Legal currency not independently certified\\
+Context omission & Whole-chunk budgeting and family ordering & Budget can omit relevant material\\
+Incorrect generation & Source-grounded prompt and language check & No complete semantic verifier\\
+Output truncation & Finish-reason warning & Warning does not complete the answer\\
+Resource interruption & Checkpointed batch artifacts & Slow local inference remains\\
+Evaluation bias & Matched inputs and disclosed label provenance & Reused questions and self-judging\\
+Version mismatch & Corpus/configuration hashes and Git records & Rebuilds must match the intended snapshot\\\bottomrule
 \end{longtable}
+These controls reduce specific failure opportunities but do not remove the need to inspect errors. Keeping retrieval traces and answer contexts separate helps locate whether a failure originated before or after evidence selection.
 
 \section{Economic Analysis}
-The survey's hypothetical payment item received 78 valid adult responses: 33 (42.3\%) selected free-only use and 39 (50.0\%) would pay if the service were fast and secure; six (7.7\%) supplied other responses. These are stated conditions, not observed purchases, a price estimate or a revenue forecast. They do not demonstrate that CivicRAG reduces citizens' costs.
+The recorded generation runs use local Ollama rather than paid per-request inference. This removes hosted generation API charges for those runs, not all project costs. Hardware access, electricity, storage, document preparation and review remain resource inputs. The project did not collect a complete invoice, power or labour record, so an itemized monetary total cannot be reported reliably.
 
-The main generation runs use local Ollama rather than paid per-request inference. This establishes the absence of such API charges for those runs, not a zero-cost system. Hardware ownership, electricity, source preparation and review time remain costs. No invoices, time sheets or power logs support a complete monetary analysis, so no fabricated budget or savings figure is included.
+The economic trade-off is therefore described in terms of resources and workflow. Reusing pretrained models avoids a new training programme. Saved-answer evaluation avoids repeating generation, while checkpointed batches preserve completed work after interruptions. On the other hand, sequential local inference limits how many experiments can be completed in the available time.
 
-At the recorded mean latency, a sequential 30-question run takes substantial wall-clock time. This limits the practicality of repeated full-batch experiments on the available machine and motivates reusing saved outputs for evaluation. Latency reduction through different hardware or smaller contexts is a future optimization, not a demonstrated economic benefit.
-
-For a measured run, let $P_{\mathrm{avg}}$ be average electrical power in watts, $t$ elapsed hours and $p$ the electricity price per kWh. The estimated energy charge is
+For a measured run, an energy charge could be calculated as
 \begin{equation}
-C_{\mathrm{energy}}=\frac{P_{\mathrm{avg}}t}{1000}\,p.
+C_{\mathrm{energy}}=\frac{P_{\mathrm{avg}}t}{1000}\,p,
 \end{equation}
-Total project cost also includes attributable hardware, storage and documented labour. Hardware ownership cost must be distinguished from the incremental cost of one evaluation. Monetary benefits require a defensible comparator; no savings estimate is justified merely because the chatbot answers a question.
+where $P_{\mathrm{avg}}$ is average power in watts, $t$ is elapsed hours and $p$ is the tariff per kWh. This equation defines a cost model; it is not a measured cost result. Total attributable cost would also include hardware, storage and documented labour.
 
-\pending{Task EC-01: obtain equipment/access cost, electricity tariff, measured power and run duration, storage cost and any logged preparation/review hours. Calculate the cost table from these inputs with explicit assumptions. Citizen time savings would require an appropriate measured comparator, not generated observations.}
+The survey provides a separate view of stated willingness to pay. Of 78 valid adult responses, 33 (42.3\%) selected free-only use and 39 (50.0\%) would pay if the service were fast and secure; six supplied other responses. These preferences are neither purchases nor a revenue forecast. Consequently, our economic contribution is a locally executable and inspectable workflow, not a demonstrated financial saving for citizens.

@@ -1,5 +1,7 @@
 # Civic.ai thesis manuscript
 
+Chapters 1-4 were revised on 2026-09-25 following the supplied rewrite brief. See `CHAPTERS_1_4_REVISION_2026_09_25.md` for verification and rollback. The Abstract and Chapters 5-6 are unchanged; completed evaluation artifacts still need to be incorporated into those later chapters. Docling is cited as related document-conversion work, not claimed as implemented without a conversion record.
+
 Open `main.pdf` for the compiled thesis. `main.tex` is the entry point for the LaTeX source. The supplied template's original chapter/section/subsection names and index order are retained. Original inputs were not changed. `TEMPLATE_COMPLETION_MAP.md` identifies the remaining evidence needed in each original section and gives follow-up task prompts.
 
 The Abstract is preserved byte-for-byte, including its keywords and LaTeX markup. The hash and implementation/data evidence are recorded in `evidence_manifest.json`.

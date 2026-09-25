@@ -1,53 +1,65 @@
 \section{Preliminaries}
+This section introduces the concepts needed to understand our design. Preparing knowledge, finding applicable passages and generating an explanation are distinct activities; they should not be treated as one model operation.
+
 \paragraph{Retrieval-Augmented Generation.}
-RAG combines an external retrieval mechanism with a generator \cite{lewis2020rag}. In this implementation, retrieval selects passages at inference time and passes them to a pretrained model. No joint retriever-generator training is performed. This distinction matters because updating the corpus changes available evidence, but not the model's learned ability to reason about that evidence.
+RAG supplies external evidence to a language model at inference time \cite{lewis2020rag}. A simplified formulation is $a=G(q,E_q)$, where $q$ is the question, $E_q$ is the evidence and $a$ is the response. This makes the supporting information available separately from the model parameters. In Civic.ai, document updates do not require retraining the answer model, and the supplied context is retained with each saved result.
 
-\paragraph{Dense Retrieval, Lexical Retrieval and Fusion.}
-Dense retrieval maps text to vectors and ranks candidate passages by vector proximity. BM25 instead ranks token overlap using term frequency and length normalization \cite{bm25}. The channels can complement one another: semantic matching may accommodate paraphrases, while token matching can preserve important form numbers and service names. Neither channel checks whether a legal provision remains in force.
+\paragraph{Document Understanding and Structured Text.}
+Document conversion must preserve more than words: headings, tables and reading order help determine which conditions govern a statement. Docling is a document-understanding framework for structured PDF conversion, including layout analysis and table recognition, with machine-readable outputs such as Markdown \cite{docling}. In Civic.ai, the confirmed ingestion stage reads team-prepared Markdown and structured JSON; the archived records do not establish Docling as the converter used for those derivatives. We distinguish this relevant preprocessing framework from the verified implemented stages.
 
-RRF combines ordered result lists rather than directly adding incompatible raw scores \cite{rrf}. CivicRAG uses a weighted form. Fusion is a way to construct a hybrid result list, not the definition of hybrid retrieval itself: weighted score fusion would be another possible combination method. Its effectiveness must be tested rather than inferred from the presence of two retrievers.
+\paragraph{Dense Retrieval and Vector Storage.}
+Dense retrieval encodes queries and passages into vectors and ranks them by proximity. BGE-M3 supports multilingual representations, motivating its use with our Bangla and English source material \cite{bgem3}. ChromaDB associates embeddings, document text and metadata through shared identifiers \cite{chroma}. In Civic.ai, BGE-M3 supplies dense vectors and a persistent Chroma collection per domain links results back to evidence. The storage choice supports local operation; ChromaDB does not generate answers.
 
-\paragraph{Reranking and Context Selection.}
-A cross-encoder scores a query and passage jointly, unlike independently encoded dense vectors. CivicRAG configures the multilingual BGE reranker \cite{bgereranker}. Applicability selection is a separate, project-specific rule layer. It uses section scope and service/action vocabulary to remove or reorder passages. A reranker relevance score and a selector decision are neither probabilities of truth nor substitutes for claim-level validation.
+\paragraph{Lexical Retrieval and Rank Fusion.}
+BM25 uses term frequency, inverse document frequency and length normalization to rank lexical matches \cite{bm25}. It can retain exact service terms and form labels when those words matter. RRF merges ranked lists without assuming their raw scores share a common scale \cite{rrf}. In Civic.ai, a separate BM25 index complements dense search, and weighted RRF combines the rankings. Hybrid retrieval means combining these channels; RRF is our chosen combination method, not the only possible one.
+
+\paragraph{Reranking and Evidence Selection.}
+A cross-encoder evaluates a query and passage together, allowing finer interaction after initial retrieval. The multilingual BGE reranker is configured for this stage \cite{bgereranker}. Evidence selection then determines which candidates fit the service and action within a finite prompt budget. In Civic.ai, the selector is a heuristic function, not a second LLM or a human choosing passages during normal operation. Its trace makes decisions inspectable, but does not certify relevance.
+
+\paragraph{Local Generation and Evaluation.}
+Ollama provides a local model-serving interface \cite{ollama}. Qwen3 supports thinking and non-thinking operation \cite{qwen3}; the principal experiment uses the latter. RAGAS supplies model-assisted measures of RAG outputs \cite{ragas}. In Civic.ai, generation and saved-answer evaluation are separate processes: evaluating an existing response does not require generating it again. Answer support and relevance are also distinguished from passage-ranking quality.
 
 \section{Review of Existing Research}
-\paragraph{NextRAG: Principal Architectural Inspiration.}
-NextRAG addresses bilingual financial QA from Bangladeshi documents. Its method combines dense retrieval, BM25 and Dirichlet-smoothed query-likelihood retrieval, followed by weighted RRF, reranking and language-aware generation. Its reported evaluation includes reference-answer cosine similarity, F1 and inference time \cite{nextrag}. The shared document-language setting motivates borrowing retrieval components, but financial and civic-service applicability are not equivalent tasks.
+Existing work addresses complementary parts of the problem. General RAG provides the retrieval-generation foundation, multilingual systems address language coverage, and Bangla-focused research examines context use and verification. These contributions inform our design but do not remove the need to collect and structure applicable civic-service evidence.
 
+\paragraph{Bilingual Retrieval and NextRAG.}
+NextRAG is our principal architectural inspiration. It studies bilingual financial question answering using dense retrieval, BM25 and Dirichlet-smoothed query-likelihood retrieval, followed by weighted RRF, reranking and language-aware generation \cite{nextrag}. Its relevance is methodological: heterogeneous Bangla and English documents motivate complementary retrieval channels. Financial questions are not treated as a government-service benchmark or as directly comparable results.
+
+Compared with NextRAG's three retrieval channels, CivicRAG uses two: BGE-M3 dense retrieval and BM25. We retain fusion and reranking while introducing our civic corpus, linked search/evidence representations and applicability selection. This is an adaptation rather than a replication of the paper's data, models or reported scores.
+
+Table~\ref{tab:related-design} summarizes this relationship without implying a cross-dataset performance comparison.
 \begin{table}[htbp]\centering\small
-\caption{Relationship between NextRAG and the implemented CivicRAG configuration.}
-\begin{tabularx}{\linewidth}{p{30mm}XX}\toprule
+\caption{Architectural relationship to NextRAG; the systems address different datasets and tasks.}\label{tab:related-design}
+\begin{tabularx}{\linewidth}{p{28mm}XX}\toprule
 Aspect & NextRAG & CivicRAG\\\midrule
-Application & Financial information & Three civic-service domains\\
+Knowledge domain & Financial documents & Birth/death, passport and BRTA documents\\
 Retrieval & Dense, BM25, Dirichlet QLM & Dense and BM25\\
-Combination & Weighted RRF & Weighted RRF, two channels\\
-Post-retrieval & Reranking & Reranking and heuristic applicability selection\\
-Evidence preparation & Financial document processing & Typed evidence, source register and dual text representations\\
-Reported comparison & Bilingual reference-answer evaluation & Paired Bangla development questions; saved outputs and diagnostic analysis\\
-Generator identity & Includes Llama 3.1 8B & Main comparison Qwen3:8b; local llama3 is not Llama 3.1\\\bottomrule
+Combination & Weighted RRF and reranking & Weighted RRF and reranking\\
+Context handling & Bilingual retrieval/generation design & Applicability selection and whole-chunk budget\\
+Evaluation setting & Financial question answering & Matched civic questions and separate retrieval tests\\\bottomrule
 \end{tabularx}\end{table}
+The shared components explain our starting point. The different evidence requirements explain why our measured comparison uses Simple RAG on the same civic corpus rather than the paper's numerical results.
 
-This relationship is described as inspiration rather than replication. CivicRAG does not implement the third Dirichlet channel or reproduce the financial benchmark. The paper's numerical results are not used as baselines for our different corpus and question set. Its reference-answer metrics are also not replaced by unlabelled similarity between two model outputs.
+\paragraph{Bangla Context Use and Verification.}
+TraSe investigates Bangla question answering through translative prompting and answer selection, including automatic and human-in-the-loop retrieval \cite{trase}. In contrast, HybridRAG-BN combines retrieval with a fine-tuned verification stage \cite{hybridragbn}. The former helps distinguish context limitations from generation limitations; the latter emphasizes verification after retrieval. They address related problems through different designs.
 
-\paragraph{Multilingual Embeddings and Local Generators.}
-BGE-M3 supports multilingual text representation and multiple retrieval modes \cite{bgem3}. CivicRAG uses its dense embeddings only; its sparse branch is separately implemented BM25, not BGE-M3's learned sparse mode. This clarification prevents the embedding model's full capabilities from being mistaken for implemented functionality.
+For Civic.ai, the distinction between manually selected and automatically retrieved evidence motivated small diagnostic trials. Better generation with manually chosen passages does not establish that those passages will be selected automatically. We do not implement TraSe's translation-and-selection architecture or train HybridRAG-BN's verifier. Our selector instead uses service and action cues before generation, keeping the additional runtime mechanism relatively simple while leaving its decisions open to evaluation.
 
-Qwen3 supplies thinking and non-thinking modes in the same model family \cite{qwen3}. The selected local deployment uses the non-thinking mode for the recorded main comparison. This is an inference setting, not evidence that reasoning would improve or reduce civic-answer quality. No controlled thinking-mode ablation was completed. Qwen2.5 and Llama 3 were also tested locally \cite{qwen25,llama3card}. These are specific deployed model variants, not interchangeable labels for their entire families.
+Long-context research also shows that information placement can affect model performance \cite{lostmiddle}. Our evidence-order trials examine a related practical concern using known civic questions. This motivates examining both context content and ordering; it does not prove that ordering alone explains every error or that our small diagnostic reproduces the published study.
 
-\paragraph{Context Distraction and Diagnostic Evaluation.}
-Research on long-context language models shows that access to relevant information does not guarantee its effective use, and that placement can affect performance \cite{lostmiddle}. The project's selected-evidence and evidence-order trials investigate a related practical issue: whether unrelated service passages change an otherwise useful answer. They are small generation-only diagnostics. They do not demonstrate that a manually chosen context can be selected automatically for arbitrary questions.
+\paragraph{Multilingual Models and Document Infrastructure.}
+BGE-M3 supports dense, sparse and multi-vector retrieval \cite{bgem3}. We use only its dense mode; CivicRAG's sparse component is BM25. This separates multilingual semantic representation from an interpretable lexical channel. ChromaDB provides persistent vector and document storage rather than a new ranking algorithm \cite{chroma}. These components support the dataset contribution but are not architectural novelty by themselves.
 
-\paragraph{Other Bangla RAG Approaches.}
-TraSe investigates Bangla Wikipedia question answering using translative prompting and answer selection, with both automatic and human-in-the-loop retrieval \cite{trase}. Its distinction between automatically retrieved and human-selected contexts is useful for diagnosing our system: generation with manually selected evidence tests a different capability from end-to-end retrieval. CivicRAG's relevant-only trials follow this diagnostic logic, but do not implement TraSe's translation and answer-selection architecture. Their better outputs cannot be reported as automatic retrieval accuracy.
+Qwen3, Qwen2.5 and Llama 3 provide locally deployable model families \cite{qwen3,qwen25,llama3card}. Our experiments concern the specific Ollama models requested in each run; local \code{llama3} is not NextRAG's Llama 3.1 variant. We selected Qwen3:8b for the principal paired comparison after project-level diagnostic runs, without claiming it is the best model for Bangla generally. Fixing the generator allows a clearer comparison of the retrieval-and-selection configurations.
 
-HybridRAG-BN is a recent preprint combining BM25 and BGE-M3 retrieval with generation and a fine-tuned verification stage \cite{hybridragbn}. Its use of verification highlights that retrieval relevance and answer correctness are separate problems. CivicRAG shares established retrieval components but does not train a verifier or implement that paper's web-assisted fallback. Its competition scores are not directly comparable with our civic-service questions. These approaches inform possible future experiments, rather than retrospectively becoming components of our implementation.
+\paragraph{Evaluation of Retrieval and Answers.}
+RAGAS distinguishes context-supported statements from answer relevance \cite{ragas}. An answer can repeat evidence accurately while discussing the wrong task. We therefore use saved contexts and responses for answer-level measures, and ranked chunk IDs with relevance labels for retrieval-level measures. Our custom binary context-relevance measure is identified separately from standard RAGAS metrics \cite{ragasdocs}.
 
-\paragraph{Automatic RAG Evaluation.}
-RAGAS separates aspects of retrieval and generation quality through model-assisted metrics \cite{ragas}. Faithfulness checks whether response claims are supported by the supplied context. Response relevance concerns how well an answer addresses its question. A source-supported response can still answer the wrong task, so no single score is a comprehensive measure of factual correctness.
+The current retrieval study includes assistant-reviewed pooled labels, not independently human-verified ground truth. Reference-answer similarity likewise requires reference answers; agreement between two generated outputs cannot substitute for them. These distinctions enable measurement without treating every available score as a correctness estimate.
 
-The implemented evaluator uses a local judge and documents its limitations. It does not have reviewed reference answers or gold relevance labels for the current 30 questions. Therefore reference semantic similarity, retrieval recall, MRR and nDCG are not reported for that experiment. Reusing metric names from an earlier submission without the necessary labels would be methodologically incorrect.
+Taken together, existing research provides established retrieval, generation and evaluation methods. The remaining project-specific gap is a structured, traceable collection of civic-service information and an implementation that preserves service conditions from documents to responses. Civic.ai addresses this gap through dataset development and an evaluated integration of existing methods, not a new general-purpose RAG architecture.
 
 \section{Summary of Key Findings}
-The literature motivates multilingual retrieval, complementary lexical matching, reranking and separate assessment of context and response. Our contribution lies in the civic corpus and its traceable operationalization, with an evaluated integration of established methods. Neither the evidence selector nor the local model is presented as a newly trained state-of-the-art method.
+Three findings guide the design. First, multilingual semantic search and lexical matching address different retrieval needs, but their combination requires evaluation. Second, document structure and applicability matter alongside ranking: even a capable generator can receive the wrong procedure. Third, answer support, relevance and retrieval coverage describe different qualities.
 
-Only sources that can be tied to the implemented method or a specific discussion are retained. Earlier draft reference lists are not inherited wholesale. Related architectures mentioned during development but not implemented are not presented as components of CivicRAG. The main comparison tests the combined configuration against dense-only retrieval; it cannot isolate the causal effect of RRF, reranking or selection individually.
+These findings lead to the requirements in Chapter 3: preserve source structure, expose evidence, keep the pipeline modular and compare configurations under controlled conditions. They place dataset development at the centre of our contribution. The following chapters explain how these requirements are implemented and how the recorded experiments are interpreted.
