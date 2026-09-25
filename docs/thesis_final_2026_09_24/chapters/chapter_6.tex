@@ -26,7 +26,7 @@ The language item does not establish a majority preference for Bangla-only opera
 \paragraph{Experimental Design.}
 The primary comparison uses the same 30 Bangla questions and domain-scoped corpus for Simple RAG and CivicRAG. Each system produced one saved answer per question using Qwen3:8b, the matched generation prompt and the same context and output limits. Simple RAG uses dense retrieval without fusion, reranking or applicability selection; CivicRAG includes these stages as described in Section 4.2. The comparison measures the combined configuration difference, not the isolated contribution of each component.
 
-There are ten questions each for birth registration, passport and driving-licence services. All are labelled direct in the saved plan. They concern requirements, fees, time, application, correction, renewal, replacement and status. They were reused during development, so these are development-set results rather than estimates on an unseen benchmark. The source answers and hashes are preserved in the evaluation archive \cite{project_ragas}. No answers were regenerated for scoring or thesis preparation.
+There are ten questions each for birth registration, passport and driving-licence services. All are labelled direct in the saved plan. They concern requirements, fees, time, application, correction, renewal, replacement and status. They were reused during development, so these are development-set results rather than estimates on an unseen benchmark. The source answers and hashes are preserved in the evaluation archive. No answers were regenerated for scoring or thesis preparation.
 
 \paragraph{Operational Outcomes.}
 Table~\ref{tab:operational-final} reports saved latency and context size. Both systems completed 30 requests; completion is not a correctness label.
@@ -45,13 +45,13 @@ Mean Bangla-letter fraction & 0.935 & 0.933\\\bottomrule
 CivicRAG supplied fewer passages and characters on average. Its saved mean latency was also lower, but machine load, thermal conditions and initialization were not controlled across the two runs. Therefore the table does not establish a hardware-normalized speed advantage. Bangla-letter fraction measures script use after removing the source footer; it is not a fluency or correctness score.
 
 \paragraph{Completed RAGAS and Custom Context Evaluation.}
-The evaluator uses RAGAS 0.2.15 and actual supplied answer contexts, not every retrieved candidate \cite{ragas,ragasdocs}. There are $30\times2\times3=180$ completed metric scores, all valid, with no missing final scores. The appended Sources footer is removed before evaluation; response wording is otherwise preserved \cite{project_ragas}.
+The evaluator uses RAGAS 0.2.15 and actual supplied answer contexts, not every retrieved candidate \cite{ragas}. There are $30\times2\times3=180$ completed metric scores, all valid, with no missing final scores. The appended Sources footer is removed before evaluation; response wording is otherwise preserved.
 
 Faithfulness estimates support for the response statements in the supplied context:
 \begin{equation}
 F=\frac{\sum_{j=1}^{m}\mathbf{1}[a_j\text{ is supported by context}]}{m}.
 \end{equation}
-Here $a_j$ is a judge-extracted statement. This tests textual support, not current legal validity. Answer relevancy reconstructs three questions from a response and compares their BGE-M3 embeddings with the original question, with the metric's noncommittal-response handling \cite{ragasdocs}. It is not similarity to a reviewed reference answer.
+Here $a_j$ is a judge-extracted statement. This tests textual support, not current legal validity. Answer relevancy reconstructs three questions from a response and compares their BGE-M3 embeddings with the original question, with the metric's noncommittal-response handling. It is not similarity to a reviewed reference answer.
 
 The third measure is a custom binary RAGAS AspectCritic. It asks whether most supplied context concerns the requested service, procedure and conditions, instructing the judge to ignore the response. Each context set receives 0 or 1. Its mean is therefore a share of positively judged context sets, not passage-level context precision or recall.
 
@@ -66,18 +66,18 @@ Table~\ref{tab:ragas-final} presents the completed means, and Figure~\ref{fig:ra
 Simple RAG has higher mean faithfulness (0.7983 versus 0.7323) and slightly higher answer relevancy (0.8460 versus 0.8375). CivicRAG has higher custom context relevance (0.9667 versus 0.9333), corresponding to 29 versus 28 positive context-set judgments. These results describe different aspects of behaviour and do not establish a single overall winner.
 
 \paragraph{Provisional Retrieval-Only Evaluation.}
-A separate experiment compares BM25-only, dense-only and weighted Hybrid RRF on the same 30 questions before reranking, registration boosts and evidence selection \cite{project_retrieval}. No answer generation occurs in this experiment. The top-five result union for each question forms a relevance pool; an assistant reviewed 309 question/passage pairs representing 192 unique passages. The labels are 105 relevant, 199 irrelevant and five uncertain.
+A separate experiment compares BM25-only, dense-only and weighted Hybrid RRF on the same 30 questions before reranking, registration boosts and evidence selection. No answer generation occurs in this experiment. The top-five result union for each question forms a relevance pool; an assistant reviewed 309 question/passage pairs representing 192 unique passages. The labels are 105 relevant, 199 irrelevant and five uncertain.
 
 These are unblinded, single-assistant labels, not independently human-verified ground truth or original-document legal verification. Four questions containing uncertain labels are excluded from all three methods, leaving 26 for Hit, Precision and MRR. One further question has no relevant passage in its judged pool; pooled Recall and nDCG therefore use 25 questions. This exclusion does not prove that the entire database lacks useful evidence.
 
-The metrics follow established ranked-retrieval principles \cite{irbook}. Let $z_{qi}$ indicate whether the chunk at rank $i$ is labelled relevant, and let $R_q$ be the relevant IDs in the judged pool. For each eligible question:
+The following equations specify the ranked-retrieval measures used in this study. Let $z_{qi}$ indicate whether the chunk at rank $i$ is labelled relevant, and let $R_q$ be the relevant IDs in the judged pool. For each eligible question:
 \begin{align}
 \mathrm{Precision@5}(q)&=\frac{1}{5}\sum_{i=1}^{5}z_{qi},\\
 \mathrm{Hit@k}(q)&=\mathbf{1}\left[\sum_{i=1}^{k}z_{qi}>0\right],\quad k\in\{1,5\},\\
 \mathrm{RR@5}(q)&=\begin{cases}1/r_q,&r_q\leq5,\\0,&\text{no relevant result in top five},\end{cases}\\
 \mathrm{Recall@5}_{\mathrm{pool}}(q)&=\frac{|\mathrm{Top5}(q)\cap R_q|}{|R_q|}.
 \end{align}
-MRR@5 averages RR@5 over eligible questions. Recall is undefined for an empty relevant pool. With binary relevance, the discounted measure is
+MRR@5 averages RR@5 over eligible questions. Recall is undefined for an empty relevant pool. Following the normalized cumulative-gain framework \cite{ndcg}, with binary relevance the discounted measure is
 \begin{equation}
 \mathrm{nDCG@5}_{\mathrm{pool}}(q)=
 \frac{\sum_{i=1}^{5}z_{qi}/\log_2(i+1)}
@@ -135,7 +135,7 @@ Documentation refinements, including birth-registration terminology and the arch
 \section{Statistical Analysis}
 Survey percentages use valid item responses rather than a fixed denominator for every question. Unknown recruitment, demographic concentration and unverified repeat participation prevent nationally representative inference. These descriptive needs-analysis statistics are separate from the paired system results.
 
-For each automatic metric, define $\delta_q=s_{\mathrm{Civic},q}-s_{\mathrm{Simple},q}$. All 30 pairs have valid scores. The saved evaluator resamples the 30 paired differences with replacement 2,000 times, using seed 20260924, and reports empirical 95\% intervals \cite{project_ragas}. Table~\ref{tab:ragas-intervals} reproduces those saved intervals rather than recomputing a different protocol.
+For each automatic metric, define $\delta_q=s_{\mathrm{Civic},q}-s_{\mathrm{Simple},q}$. All 30 pairs have valid scores. The saved evaluator resamples the 30 paired differences with replacement 2,000 times, using seed 20260924, and reports empirical 95\% intervals. Table~\ref{tab:ragas-intervals} reproduces those saved intervals rather than recomputing a different protocol.
 \input{generated/ragas_intervals}
 The faithfulness and answer-relevancy intervals span zero; the custom binary context-relevance interval reaches zero. They reflect question resampling within this reused set, not judge calibration, repeated-generation variance or corpus representativeness. We therefore make no statistically established claim of overall factual superiority.
 
@@ -148,7 +148,7 @@ Dense and hybrid search both achieve passport Hit@5 of 1.0000 on eight eligible 
 Uncertain questions excluded consistently across methods concern passport fees, passport renewal, birth-date proof and licence renewal. The licence-status pool contains no labelled relevant passage and is omitted only from pooled Recall/nDCG denominators. Uncertain labels are not treated as irrelevant, and missing scores are not replaced with zeros.
 
 \paragraph{Exploratory Overnight Labeling.}
-A separate Qwen3 labeling job completed 455 judgments over saved candidate and supplied passages: 176 relevant, 191 irrelevant and 88 uncertain \cite{project_pool}. It hides system names, ranks and responses from the judge, but shares the generator's model family. Under its stricter requirement for complete, nonempty relevant pools, only one of 30 questions is scorable. This is a completed labeling run with incomplete adjudication, not a completed 30-question retrieval benchmark.
+A separate Qwen3 labeling job completed 455 judgments over saved candidate and supplied passages: 176 relevant, 191 irrelevant and 88 uncertain. It hides system names, ranks and responses from the judge, but shares the generator's model family. Under its stricter requirement for complete, nonempty relevant pools, only one of 30 questions is scorable. This is a completed labeling run with incomplete adjudication, not a completed 30-question retrieval benchmark.
 
 The single scorable passport question has Precision@5 of 0.8 for Simple RAG and 1.0 for CivicRAG, with pooled Recall@5 of 0.8 and 1.0. Those numbers cannot support a system-level conclusion. This pool differs from the three-retriever top-five pool and its labels were not merged with the assistant-reviewed study. In particular, 455 judgments and 309 judgments are not two versions of one gold dataset.
 

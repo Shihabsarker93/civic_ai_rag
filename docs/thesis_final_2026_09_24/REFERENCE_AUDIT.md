@@ -1,5 +1,15 @@
 # Reference audit
 
+## Paper-only bibliography revision
+
+At the authors' request, the numbered bibliography now contains research papers and identifiable technical reports/preprints only. Software documentation, model cards, Unicode documentation, the IR textbook and internal Civic.ai experiment archives were removed from the BibTeX file and numbered citations. The historical source-verification table below remains a reproducibility record, not the current bibliography.
+
+Old references 17, 21, 22 and 24 were RAGAS documentation and three internal project reports, respectively. Internal reports remain available at revision d32c107 in the evaluation directories identified in FINAL_REVISION_2026_09_25.md; they are evidence for our own experiments, not external research papers.
+
+Ollama, Chroma, LangChain, model checkpoint IDs and package versions remain implementation details. No fictitious Ollama paper was introduced. Qwen technical reports support model-family statements; no newer Llama-family paper is substituted as if it documented the exact original Llama 3 checkpoint.
+
+Added Nogueira and Cho, Passage Re-ranking with BERT (arXiv:1901.04085), for the cross-encoder approach, not as a BGE checkpoint citation. Added Jarvelin and Kekalainen, Cumulated Gain-Based Evaluation of IR Techniques, ACM TOIS 20(4), 422-446 (2002), DOI 10.1145/582415.582418, for normalized cumulative gain. Verified against the paper's arXiv record and the authors' institutional publication record. Preprints remain distinguishable from peer-reviewed publications.
+
 References were selected for actual use, not copied wholesale from the previous bibliography.
 
 | Key | Verification source | Role |

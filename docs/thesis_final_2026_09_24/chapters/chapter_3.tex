@@ -49,7 +49,7 @@ Privacy is addressed differently for the corpus and survey. Public-service instr
 Local inference avoids sending each question and passage to a hosted generator in the recorded runs, but saved local logs can still contain sensitive user input. Their use in an operational deployment would require access and retention controls. No ethics approval or privacy certification is inferred from a consent checkbox or local execution alone.
 
 \section{Standards - if applicable}
-\textbf{Encoding.} UTF-8 storage and Unicode NFC normalization provide a consistent representation of Bangla and mixed-language text \cite{unicode_nfc}. Normalization standardizes encoding; it does not repair every OCR or spelling error.
+\textbf{Encoding.} UTF-8 storage and Unicode NFC normalization provide a consistent representation of Bangla and mixed-language text. Normalization standardizes encoding; it does not repair every OCR or spelling error.
 
 \textbf{Documentation.} JSON/JSONL records, stable identifiers, source-relative paths and SHA-256 hashes support consistent data exchange and change detection. Missing URLs remain missing rather than being replaced with guessed addresses.
 
