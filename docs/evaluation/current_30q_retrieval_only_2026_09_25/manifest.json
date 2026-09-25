@@ -1,0 +1,233 @@
+{
+  "git_commit": "7c470e21d69ca169feb6d24fdf719690f21715a2",
+  "question_file": "docs/evaluation/user_30q_model_comparison_2026_09_22/questions.json",
+  "question_sha256": "3401a72babdde86b533e0590e844da8740229bbb35533e1aa3a0e243570d0f4f",
+  "llm_calls": 0,
+  "judging": false,
+  "generation": false,
+  "reranking": false,
+  "evidence_selection": false,
+  "protocol": "Raw questions; domain-filtered current indices; top-20 component rankings; production weighted RRF; top-5 passages exported for review.",
+  "domains": {
+    "passport": {
+      "config": {
+        "domain": {
+          "id": "passport",
+          "display_name": "Passport and Immigration",
+          "primary_language": "bn",
+          "supported_languages": [
+            "bn",
+            "en",
+            "mixed"
+          ],
+          "description": "Experimental passport corpus; source dates and claims are not independently verified.",
+          "experimental": true
+        },
+        "data": {
+          "chunk_output_path": "domains/passport/data/interim/active_20260919_063632_508964.jsonl",
+          "chroma_persist_dir": "domains/passport/data/processed/chroma_experimental",
+          "collection_name": "passport_20260919_063632_508964",
+          "register_path": "domains/passport/data/register.json",
+          "master_chunk_path": "domains/passport/data/interim/all_chunks_heading_v2_20260919_062421_886195.jsonl"
+        },
+        "preprocessing": {
+          "skip_markdown_faq_duplicates": true,
+          "min_chunk_chars": 180,
+          "max_chunk_chars": 1400,
+          "overlap_paragraphs": 1
+        },
+        "embedding": {
+          "provider": "sentence_transformers",
+          "model": "BAAI/bge-m3",
+          "device": "cpu",
+          "normalize_embeddings": true,
+          "local_files_only": true
+        },
+        "retrieval": {
+          "top_k_dense": 20,
+          "top_k_bm25": 20,
+          "top_k_final": 15,
+          "rrf_k": 50,
+          "rrf_weights": {
+            "dense": 0.55,
+            "bm25": 0.45
+          }
+        },
+        "reranking": {
+          "enabled": true,
+          "model": "BAAI/bge-reranker-v2-m3",
+          "device": "cpu",
+          "local_files_only": true,
+          "top_k": 6,
+          "fallback": "lexical_overlap"
+        },
+        "generation": {
+          "ollama_base_url": "http://localhost:11434",
+          "default_model": "llama3.2",
+          "comparison_models": [
+            "llama3.2",
+            "llama3",
+            "qwen2.5:7b",
+            "qwen3:8b"
+          ],
+          "temperature": 0.05,
+          "top_p": 0.9,
+          "num_predict": 1200,
+          "repeat_last_n": 256,
+          "repeat_penalty": 1.18,
+          "top_k_for_generation": 3
+        }
+      },
+      "chunks": 361,
+      "config_sha256": "10d6f28f1624547a4a675659a8aaf1a930d00ce4046294ddb036443b26d5dafc",
+      "corpus_sha256": "e50f1bf74778d6c49ad7171428431e7df3d434b9ac8671753fb7c4a0f3ca0fa2"
+    },
+    "birth_death_registration": {
+      "config": {
+        "domain": {
+          "id": "birth_death_registration",
+          "display_name": "Birth and Death Registration",
+          "primary_language": "bn",
+          "supported_languages": [
+            "bn",
+            "en",
+            "mixed"
+          ],
+          "description": "Bangladeshi birth and death registration guidance, fees, FAQs, legal rules, and correction/application processes."
+        },
+        "data": {
+          "raw_json_dir": "domains/birth_death_registration/data/raw/json",
+          "raw_markdown_dir": "domains/birth_death_registration/data/raw/md",
+          "chunk_output_path": "domains/birth_death_registration/data/interim/birth_death_chunks.jsonl",
+          "chroma_persist_dir": "domains/birth_death_registration/data/processed/chroma_birth_death_bge_m3",
+          "collection_name": "birth_death_registration_chunks"
+        },
+        "preprocessing": {
+          "skip_markdown_faq_duplicates": true,
+          "min_chunk_chars": 180,
+          "max_chunk_chars": 1400,
+          "overlap_paragraphs": 1
+        },
+        "embedding": {
+          "provider": "sentence_transformers",
+          "model": "BAAI/bge-m3",
+          "device": "cpu",
+          "normalize_embeddings": true,
+          "local_files_only": true
+        },
+        "retrieval": {
+          "top_k_dense": 20,
+          "top_k_bm25": 20,
+          "top_k_final": 15,
+          "rrf_k": 50,
+          "rrf_weights": {
+            "dense": 0.55,
+            "bm25": 0.45
+          }
+        },
+        "reranking": {
+          "enabled": true,
+          "model": "BAAI/bge-reranker-v2-m3",
+          "device": "cpu",
+          "local_files_only": true,
+          "top_k": 6,
+          "fallback": "lexical_overlap"
+        },
+        "generation": {
+          "ollama_base_url": "http://localhost:11434",
+          "default_model": "llama3.2",
+          "comparison_models": [
+            "llama3.2",
+            "llama3",
+            "qwen2.5:7b",
+            "qwen3:8b"
+          ],
+          "temperature": 0.05,
+          "top_p": 0.9,
+          "num_predict": 1200,
+          "repeat_last_n": 256,
+          "repeat_penalty": 1.18,
+          "top_k_for_generation": 3
+        }
+      },
+      "chunks": 187,
+      "config_sha256": "9919c3b3ed70085dc05dd6159c6eb8dae3b4e6801cad3d9f9c6d24f4bfad5fd1",
+      "corpus_sha256": "b46443cd630a76c4a66134cadcc4a5a243f2f479b4ee97ba220582375ca1a6cf"
+    },
+    "brta": {
+      "config": {
+        "domain": {
+          "id": "brta",
+          "display_name": "BRTA",
+          "primary_language": "bn",
+          "supported_languages": [
+            "bn",
+            "en",
+            "mixed"
+          ],
+          "description": "Experimental brta corpus; source dates and claims are not independently verified.",
+          "experimental": true
+        },
+        "data": {
+          "chunk_output_path": "domains/brta/data/interim/active_20260919_062310_302306.jsonl",
+          "chroma_persist_dir": "domains/brta/data/processed/chroma_experimental",
+          "collection_name": "brta_20260919_062310_302306",
+          "register_path": "domains/brta/data/register.json",
+          "master_chunk_path": "domains/brta/data/interim/all_chunks_heading_v2_20260919_062254_757446.jsonl"
+        },
+        "preprocessing": {
+          "skip_markdown_faq_duplicates": true,
+          "min_chunk_chars": 180,
+          "max_chunk_chars": 1400,
+          "overlap_paragraphs": 1
+        },
+        "embedding": {
+          "provider": "sentence_transformers",
+          "model": "BAAI/bge-m3",
+          "device": "cpu",
+          "normalize_embeddings": true,
+          "local_files_only": true
+        },
+        "retrieval": {
+          "top_k_dense": 20,
+          "top_k_bm25": 20,
+          "top_k_final": 15,
+          "rrf_k": 50,
+          "rrf_weights": {
+            "dense": 0.55,
+            "bm25": 0.45
+          }
+        },
+        "reranking": {
+          "enabled": true,
+          "model": "BAAI/bge-reranker-v2-m3",
+          "device": "cpu",
+          "local_files_only": true,
+          "top_k": 6,
+          "fallback": "lexical_overlap"
+        },
+        "generation": {
+          "ollama_base_url": "http://localhost:11434",
+          "default_model": "llama3.2",
+          "comparison_models": [
+            "llama3.2",
+            "llama3",
+            "qwen2.5:7b",
+            "qwen3:8b"
+          ],
+          "temperature": 0.05,
+          "top_p": 0.9,
+          "num_predict": 1200,
+          "repeat_last_n": 256,
+          "repeat_penalty": 1.18,
+          "top_k_for_generation": 3
+        }
+      },
+      "chunks": 3161,
+      "config_sha256": "cdf184d6ed3d13f05b26784bc64ae0b8cad37717037805d714f50d033fca2b21",
+      "corpus_sha256": "2ac675c1cca65b6a72bb4b61f4d7edbc20c01316a2211619309e53fbb23da359"
+    }
+  },
+  "elapsed_seconds": 16.089786208001897,
+  "completed_questions": 30
+}
