@@ -1,0 +1,231 @@
+{
+  "checked_at_utc": "2026-09-25T13:51:05.837319+00:00",
+  "method": "curl GET with redirects; TLS verification enabled",
+  "warning": "HTTP success does not prove bibliographic identity. See REFERENCE_AUDIT.md for title/metadata review. Access restrictions are not broken-link proof.",
+  "references": [
+    {
+      "key": "lewis2020rag",
+      "url": "https://arxiv.org/abs/2005.11401",
+      "http_status": "200",
+      "final_url": "https://arxiv.org/abs/2005.11401",
+      "curl_exit_code": 0,
+      "error": null
+    },
+    {
+      "key": "nextrag",
+      "url": "https://doi.org/10.1109/ICCIT68739.2025.11491522",
+      "http_status": "202",
+      "final_url": "https://ieeexplore.ieee.org/document/11491522/",
+      "curl_exit_code": 0,
+      "error": null
+    },
+    {
+      "key": "bm25",
+      "url": "https://doi.org/10.1561/1500000019",
+      "http_status": "403",
+      "final_url": "https://www.emerald.com/ftinr/article/4/1-2/1/1326508/The-Probabilistic-Relevance-Framework-BM25-and",
+      "curl_exit_code": 0,
+      "error": null
+    },
+    {
+      "key": "rrf",
+      "url": "https://cormack.uwaterloo.ca/cormacksigir09-rrf.pdf",
+      "http_status": "200",
+      "final_url": "https://cormack.uwaterloo.ca/cormacksigir09-rrf.pdf",
+      "curl_exit_code": 0,
+      "error": null
+    },
+    {
+      "key": "bgem3",
+      "url": "https://aclanthology.org/2024.findings-acl.137/",
+      "http_status": "200",
+      "final_url": "https://aclanthology.org/2024.findings-acl.137/",
+      "curl_exit_code": 0,
+      "error": null
+    },
+    {
+      "key": "qwen3",
+      "url": "https://arxiv.org/abs/2505.09388",
+      "http_status": "200",
+      "final_url": "https://arxiv.org/abs/2505.09388",
+      "curl_exit_code": 0,
+      "error": null
+    },
+    {
+      "key": "qwen25",
+      "url": "https://arxiv.org/abs/2412.15115",
+      "http_status": "200",
+      "final_url": "https://arxiv.org/abs/2412.15115",
+      "curl_exit_code": 0,
+      "error": null
+    },
+    {
+      "key": "lostmiddle",
+      "url": "https://aclanthology.org/2024.tacl-1.9/",
+      "http_status": "200",
+      "final_url": "https://aclanthology.org/2024.tacl-1.9/",
+      "curl_exit_code": 0,
+      "error": null
+    },
+    {
+      "key": "ragas",
+      "url": "https://aclanthology.org/2024.eacl-demo.16/",
+      "http_status": "200",
+      "final_url": "https://aclanthology.org/2024.eacl-demo.16/",
+      "curl_exit_code": 0,
+      "error": null
+    },
+    {
+      "key": "docling",
+      "url": "https://arxiv.org/abs/2408.09869",
+      "http_status": "200",
+      "final_url": "https://arxiv.org/abs/2408.09869",
+      "curl_exit_code": 0,
+      "error": null
+    },
+    {
+      "key": "trase",
+      "url": "https://aclanthology.org/2025.lm4uc-1.2/",
+      "http_status": "200",
+      "final_url": "https://aclanthology.org/2025.lm4uc-1.2/",
+      "curl_exit_code": 0,
+      "error": null
+    },
+    {
+      "key": "hybridragbn",
+      "url": "https://arxiv.org/abs/2608.13004",
+      "http_status": "200",
+      "final_url": "https://arxiv.org/abs/2608.13004",
+      "curl_exit_code": 0,
+      "error": null
+    },
+    {
+      "key": "bert_reranking",
+      "url": "https://arxiv.org/abs/1901.04085",
+      "http_status": "200",
+      "final_url": "https://arxiv.org/abs/1901.04085",
+      "curl_exit_code": 0,
+      "error": null
+    },
+    {
+      "key": "ndcg",
+      "url": "https://researchportal.tuni.fi/en/publications/cumulated-gain-based-evaluation-of-ir-techniques/",
+      "http_status": "200",
+      "final_url": "https://researchportal.tuni.fi/en/publications/cumulated-gain-based-evaluation-of-ir-techniques/",
+      "curl_exit_code": 0,
+      "error": null
+    },
+    {
+      "key": "dpr",
+      "url": "https://aclanthology.org/2020.emnlp-main.550/",
+      "http_status": "200",
+      "final_url": "https://aclanthology.org/2020.emnlp-main.550/",
+      "curl_exit_code": 0,
+      "error": null
+    },
+    {
+      "key": "beir",
+      "url": "https://arxiv.org/abs/2104.08663",
+      "http_status": "200",
+      "final_url": "https://arxiv.org/abs/2104.08663",
+      "curl_exit_code": 0,
+      "error": null
+    },
+    {
+      "key": "datasheets",
+      "url": "https://arxiv.org/abs/1803.09010",
+      "http_status": "200",
+      "final_url": "https://arxiv.org/abs/1803.09010",
+      "curl_exit_code": 0,
+      "error": null
+    },
+    {
+      "key": "datastatements",
+      "url": "https://aclanthology.org/Q18-1041/",
+      "http_status": "200",
+      "final_url": "https://aclanthology.org/Q18-1041/",
+      "curl_exit_code": 0,
+      "error": null
+    },
+    {
+      "key": "ares",
+      "url": "https://aclanthology.org/2024.naacl-long.20/",
+      "http_status": "200",
+      "final_url": "https://aclanthology.org/2024.naacl-long.20/",
+      "curl_exit_code": 0,
+      "error": null
+    },
+    {
+      "key": "llmjudge",
+      "url": "https://arxiv.org/abs/2306.05685",
+      "http_status": "200",
+      "final_url": "https://arxiv.org/abs/2306.05685",
+      "curl_exit_code": 0,
+      "error": null
+    },
+    {
+      "key": "drorstats",
+      "url": "https://aclanthology.org/P18-1128/",
+      "http_status": "200",
+      "final_url": "https://aclanthology.org/P18-1128/",
+      "curl_exit_code": 0,
+      "error": null
+    },
+    {
+      "key": "incompletejudgments",
+      "url": "https://www.nist.gov/publications/retrieval-evaluation-incomplete-information",
+      "http_status": "200",
+      "final_url": "https://www.nist.gov/publications/retrieval-evaluation-incomplete-information",
+      "curl_exit_code": 0,
+      "error": null
+    },
+    {
+      "key": "chroma_chunking",
+      "url": "https://www.trychroma.com/research/evaluating-chunking",
+      "http_status": "200",
+      "final_url": "https://www.trychroma.com/research/evaluating-chunking",
+      "curl_exit_code": 0,
+      "error": null
+    },
+    {
+      "key": "chroma_docs",
+      "url": "https://docs.trychroma.com/docs/collections/add-data",
+      "http_status": "200",
+      "final_url": "https://docs.trychroma.com/docs/collections/add-data",
+      "curl_exit_code": 0,
+      "error": null
+    },
+    {
+      "key": "ollama_docs",
+      "url": "https://docs.ollama.com/api/chat",
+      "http_status": "200",
+      "final_url": "https://docs.ollama.com/api/chat",
+      "curl_exit_code": 0,
+      "error": null
+    },
+    {
+      "key": "ragas_docs",
+      "url": "https://docs.ragas.io/en/v0.2.12/references/metrics/",
+      "http_status": "200",
+      "final_url": "https://docs.ragas.io/en/v0.2.12/references/metrics/",
+      "curl_exit_code": 0,
+      "error": null
+    },
+    {
+      "key": "langchain_ollama",
+      "url": "https://docs.langchain.com/oss/python/integrations/chat/ollama",
+      "http_status": "200",
+      "final_url": "https://docs.langchain.com/oss/python/integrations/chat/ollama",
+      "curl_exit_code": 0,
+      "error": null
+    },
+    {
+      "key": "bge_checkpoint",
+      "url": "https://huggingface.co/BAAI/bge-reranker-v2-m3",
+      "http_status": "200",
+      "final_url": "https://huggingface.co/BAAI/bge-reranker-v2-m3",
+      "curl_exit_code": 0,
+      "error": null
+    }
+  ]
+}

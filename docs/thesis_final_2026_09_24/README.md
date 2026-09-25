@@ -1,5 +1,7 @@
 # Civic.ai thesis manuscript
 
+The September 25 citation audit includes 23 research papers/reports and five official documentation entries, each cited in the text. See `REFERENCE_AUDIT.md` and `reference_link_check.json` for verified identities, redirects and publisher access restrictions. No internal project/team entries are numbered bibliography references.
+
 All six chapters were revised on 2026-09-25 following the supplied briefs. See `FINAL_REVISION_2026_09_25.md` for the latest integration and diagram audit; `CHAPTERS_1_4_REVISION_2026_09_25.md` records the earlier revision. The Abstract remains unchanged. Completed RAGAS results, provisional retrieval metrics and exploratory passage judgments are now incorporated into Chapters 5-6. Docling is related work, not claimed as implemented without a conversion record.
 
 Open `main.pdf` for the compiled thesis. `main.tex` is the entry point for the LaTeX source. The supplied template's original chapter/section/subsection names and index order are retained. Original inputs were not changed. `TEMPLATE_COMPLETION_MAP.md` identifies the remaining evidence needed in each original section and gives follow-up task prompts.

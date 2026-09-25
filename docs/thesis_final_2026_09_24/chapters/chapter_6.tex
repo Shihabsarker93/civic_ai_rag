@@ -45,7 +45,7 @@ Mean Bangla-letter fraction & 0.935 & 0.933\\\bottomrule
 CivicRAG supplied fewer passages and characters on average. Its saved mean latency was also lower, but machine load, thermal conditions and initialization were not controlled across the two runs. Therefore the table does not establish a hardware-normalized speed advantage. Bangla-letter fraction measures script use after removing the source footer; it is not a fluency or correctness score.
 
 \paragraph{Completed RAGAS and Custom Context Evaluation.}
-The evaluator uses RAGAS 0.2.15 and actual supplied answer contexts, not every retrieved candidate \cite{ragas}. There are $30\times2\times3=180$ completed metric scores, all valid, with no missing final scores. The appended Sources footer is removed before evaluation; response wording is otherwise preserved.
+The evaluator uses RAGAS 0.2.15 and actual supplied answer contexts, not every retrieved candidate \cite{ragas}. The official versioned metrics reference documents the metric interfaces \cite{ragas_docs}; its cited documentation snapshot is 0.2.12, whereas the recorded installed package is 0.2.15. There are $30\times2\times3=180$ completed metric scores, all valid, with no missing final scores. The appended Sources footer is removed before evaluation; response wording is otherwise preserved.
 
 Faithfulness estimates support for the response statements in the supplied context:
 \begin{equation}
@@ -83,7 +83,7 @@ MRR@5 averages RR@5 over eligible questions. Recall is undefined for an empty re
 \frac{\sum_{i=1}^{5}z_{qi}/\log_2(i+1)}
 {\sum_{i=1}^{\min(5,|R_q|)}1/\log_2(i+1)}.
 \end{equation}
-Pooled Recall and nDCG use only relevant passages found in the pooled rankings, not exhaustive corpus labels. Missing retrieved positions contribute zero to Precision's fixed denominator of five. Near-duplicate IDs remain distinct scoring units.
+Incomplete relevance judgments can affect retrieval evaluation \cite{incompletejudgments}. Pooled Recall and nDCG use only relevant passages found in the pooled rankings, not exhaustive corpus labels. Missing retrieved positions contribute zero to Precision's fixed denominator of five. Near-duplicate IDs remain distinct scoring units.
 
 Table~\ref{tab:retrieval-overall} gives overall results. Asterisks denote pooled, rather than corpus-wide, relevance denominators.
 \input{generated/retrieval_overall}
@@ -135,7 +135,7 @@ Documentation refinements, including birth-registration terminology and the arch
 \section{Statistical Analysis}
 Survey percentages use valid item responses rather than a fixed denominator for every question. Unknown recruitment, demographic concentration and unverified repeat participation prevent nationally representative inference. These descriptive needs-analysis statistics are separate from the paired system results.
 
-For each automatic metric, define $\delta_q=s_{\mathrm{Civic},q}-s_{\mathrm{Simple},q}$. All 30 pairs have valid scores. The saved evaluator resamples the 30 paired differences with replacement 2,000 times, using seed 20260924, and reports empirical 95\% intervals. Table~\ref{tab:ragas-intervals} reproduces those saved intervals rather than recomputing a different protocol.
+Statistical conclusions depend on the evaluation design and the assumptions of the selected procedure \cite{drorstats}. Our paired resampling describes uncertainty within the saved question set; it does not establish external validity. For each automatic metric, define $\delta_q=s_{\mathrm{Civic},q}-s_{\mathrm{Simple},q}$. All 30 pairs have valid scores. The saved evaluator resamples the 30 paired differences with replacement 2,000 times, using seed 20260924, and reports empirical 95\% intervals. Table~\ref{tab:ragas-intervals} reproduces those saved intervals rather than recomputing a different protocol.
 \input{generated/ragas_intervals}
 The faithfulness and answer-relevancy intervals span zero; the custom binary context-relevance interval reaches zero. They reflect question resampling within this reused set, not judge calibration, repeated-generation variance or corpus representativeness. We therefore make no statistically established claim of overall factual superiority.
 

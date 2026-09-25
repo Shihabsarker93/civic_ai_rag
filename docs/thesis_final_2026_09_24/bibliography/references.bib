@@ -1,5 +1,5 @@
 @inproceedings{lewis2020rag,
- author={Patrick Lewis and Ethan Perez and Aleksandra Piktus and Fabio Petroni and Vladimir Karpukhin and Naman Goyal and Heinrich K{\"u}ttler and Mike Lewis and Wen-tau Yih and Tim Rockt{\"a}schel and Sebastian Riedel and Douwe Kiela},
+ author={Patrick Lewis and Ethan Perez and Aleksandra Piktus and Fabio Petroni and Vladimir Karpukhin and Naman Goyal and Heinrich K{\"u}ttler and Mike Lewis and Yih, Wen-tau and Tim Rockt{\"a}schel and Sebastian Riedel and Douwe Kiela},
  title={Retrieval-Augmented Generation for Knowledge-Intensive {NLP} Tasks},
  booktitle={Advances in Neural Information Processing Systems}, volume={33}, pages={9459--9474}, year={2020}, url={https://arxiv.org/abs/2005.11401}
 }
@@ -7,22 +7,23 @@
  author={Sayed Ashraful Islam Opin and Raiyan Ahmed Thakur and Ahsanul Karim Raiyan and Muhammad Rafsan Kabir and Shafin Rahman},
  title={{NextRAG}: A Bilingual Retrieval-Augmented Generation Framework for Financial Question-Answering},
  booktitle={2025 28th International Conference on Computer and Information Technology (ICCIT)},
- year={2025}, doi={10.1109/ICCIT68739.2025.11491522}, publisher={IEEE}, url={https://doi.org/10.1109/ICCIT68739.2025.11491522}
+ year={2025}, pages={3604--3609}, doi={10.1109/ICCIT68739.2025.11491522}, publisher={IEEE}, url={https://doi.org/10.1109/ICCIT68739.2025.11491522}
 }
 @article{bm25,
  author={Stephen Robertson and Hugo Zaragoza}, title={The Probabilistic Relevance Framework: {BM25} and Beyond},
- journal={Foundations and Trends in Information Retrieval}, volume={3}, number={4}, pages={333--389}, year={2009}, doi={10.1561/1500000019}
+ journal={Foundations and Trends in Information Retrieval}, volume={3}, number={4}, pages={333--389}, year={2009}, doi={10.1561/1500000019}, url={https://doi.org/10.1561/1500000019}
 }
 @inproceedings{rrf,
  author={Gordon V. Cormack and Charles L. A. Clarke and Stefan B{\"u}ttcher},
  title={Reciprocal Rank Fusion Outperforms Condorcet and Individual Rank Learning Methods},
  booktitle={Proceedings of the 32nd International ACM SIGIR Conference on Research and Development in Information Retrieval},
- pages={758--759}, year={2009}, doi={10.1145/1571941.1572114}
+ pages={758--759}, year={2009}, doi={10.1145/1571941.1572114}, url={https://cormack.uwaterloo.ca/cormacksigir09-rrf.pdf}
 }
-@misc{bgem3,
- author={Jianlv Chen and Shitao Xiao and Peitian Zhang and Kun Luo and Defu Lian and Zheng Liu},
- title={{BGE M3}-Embedding: Multi-Lingual, Multi-Functionality, Multi-Granularity Text Embeddings Through Self-Knowledge Distillation},
- year={2024}, howpublished={arXiv:2402.03216}, url={https://arxiv.org/abs/2402.03216}
+@inproceedings{bgem3,
+ author={Jianlyu Chen and Shitao Xiao and Peitian Zhang and Kun Luo and Defu Lian and Zheng Liu},
+ title={{M3}-Embedding: Multi-Linguality, Multi-Functionality, Multi-Granularity Text Embeddings Through Self-Knowledge Distillation},
+ booktitle={Findings of the Association for Computational Linguistics: ACL 2024},
+ pages={2318--2335}, year={2024}, doi={10.18653/v1/2024.findings-acl.137}, url={https://aclanthology.org/2024.findings-acl.137/}
 }
 @misc{qwen3,
  author={An Yang and Anfeng Li and Baosong Yang and others}, title={{Qwen3} Technical Report},
@@ -32,10 +33,11 @@
  author={{Qwen Team}}, title={{Qwen2.5} Technical Report}, year={2024},
  howpublished={arXiv:2412.15115}, url={https://arxiv.org/abs/2412.15115}, note={First submitted December 2024; subsequent revisions available}
 }
-@misc{lostmiddle,
+@article{lostmiddle,
  author={Nelson F. Liu and Kevin Lin and John Hewitt and Ashwin Paranjape and Michele Bevilacqua and Fabio Petroni and Percy Liang},
- title={Lost in the Middle: How Language Models Use Long Contexts}, year={2023},
- howpublished={arXiv:2307.03172}, url={https://arxiv.org/abs/2307.03172}
+ title={Lost in the Middle: How Language Models Use Long Contexts}, year={2024},
+ journal={Transactions of the Association for Computational Linguistics}, volume={12}, pages={157--173},
+ doi={10.1162/tacl_a_00638}, url={https://aclanthology.org/2024.tacl-1.9/}
 }
 @inproceedings{ragas,
  author={Shahul Es and Jithin James and Luis Espinosa Anke and Steven Schockaert},
@@ -73,5 +75,91 @@
  title={Cumulated Gain-Based Evaluation of {IR} Techniques},
  journal={ACM Transactions on Information Systems},
  volume={20}, number={4}, pages={422--446}, year={2002},
- doi={10.1145/582415.582418}
+ doi={10.1145/582415.582418}, url={https://researchportal.tuni.fi/en/publications/cumulated-gain-based-evaluation-of-ir-techniques/}
+}
+
+@inproceedings{dpr,
+ author={Vladimir Karpukhin and Barlas Oguz and Sewon Min and Patrick Lewis and Ledell Wu and Sergey Edunov and Danqi Chen and Yih, Wen-tau},
+ title={Dense Passage Retrieval for Open-Domain Question Answering},
+ booktitle={Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+ pages={6769--6781}, year={2020}, doi={10.18653/v1/2020.emnlp-main.550},
+ url={https://aclanthology.org/2020.emnlp-main.550/}
+}
+@inproceedings{beir,
+ author={Nandan Thakur and Nils Reimers and Andreas R{\"u}ckl{\'e} and Abhishek Srivastava and Iryna Gurevych},
+ title={{BEIR}: A Heterogeneous Benchmark for Zero-shot Evaluation of Information Retrieval Models},
+ booktitle={Proceedings of the Neural Information Processing Systems Track on Datasets and Benchmarks},
+ volume={1}, year={2021}, url={https://arxiv.org/abs/2104.08663}
+}
+@article{datasheets,
+ author={Timnit Gebru and Jamie Morgenstern and Briana Vecchione and Jennifer Wortman Vaughan and Hanna Wallach and Hal {Daum{\'e} III} and Kate Crawford},
+ title={Datasheets for Datasets},
+ journal={Communications of the ACM}, volume={64}, number={12}, pages={86--92},
+ year={2021}, doi={10.1145/3458723}, url={https://arxiv.org/abs/1803.09010}
+}
+@article{datastatements,
+ author={Emily M. Bender and Batya Friedman},
+ title={Data Statements for Natural Language Processing: Toward Mitigating System Bias and Enabling Better Science},
+ journal={Transactions of the Association for Computational Linguistics}, volume={6}, pages={587--604}, year={2018},
+ doi={10.1162/tacl_a_00041}, url={https://aclanthology.org/Q18-1041/}
+}
+@inproceedings{ares,
+ author={Jon Saad-Falcon and Omar Khattab and Christopher Potts and Matei Zaharia},
+ title={{ARES}: An Automated Evaluation Framework for Retrieval-Augmented Generation Systems},
+ booktitle={Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)},
+ pages={338--354}, year={2024}, doi={10.18653/v1/2024.naacl-long.20},
+ url={https://aclanthology.org/2024.naacl-long.20/}
+}
+@inproceedings{llmjudge,
+ author={Lianmin Zheng and Wei-Lin Chiang and Ying Sheng and Siyuan Zhuang and Zhanghao Wu and Yonghao Zhuang and Zi Lin and Zhuohan Li and Dacheng Li and Eric P. Xing and Hao Zhang and Joseph E. Gonzalez and Ion Stoica},
+ title={Judging {LLM}-as-a-Judge with {MT-Bench} and Chatbot Arena},
+ booktitle={Advances in Neural Information Processing Systems}, volume={36}, year={2023},
+ url={https://arxiv.org/abs/2306.05685}
+}
+@inproceedings{drorstats,
+ author={Rotem Dror and Gili Baumer and Segev Shlomov and Roi Reichart},
+ title={The Hitchhiker's Guide to Testing Statistical Significance in Natural Language Processing},
+ booktitle={Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+ pages={1383--1392}, year={2018}, doi={10.18653/v1/P18-1128},
+ url={https://aclanthology.org/P18-1128/}
+}
+@inproceedings{incompletejudgments,
+ author={Chris Buckley and Ellen M. Voorhees},
+ title={Retrieval Evaluation with Incomplete Information},
+ booktitle={Proceedings of the 27th Annual International ACM SIGIR Conference on Research and Development in Information Retrieval},
+ pages={25--32}, year={2004}, doi={10.1145/1008992.1009000},
+ url={https://www.nist.gov/publications/retrieval-evaluation-incomplete-information}
+}
+@techreport{chroma_chunking,
+ author={Brandon Smith and Anton Troynikov},
+ title={Evaluating Chunking Strategies for Retrieval},
+ institution={Chroma}, year={2024}, month={July},
+ url={https://www.trychroma.com/research/evaluating-chunking}
+}
+@misc{chroma_docs,
+ author={{Chroma}}, title={Adding Data to {Chroma} Collections},
+ howpublished={Official documentation},
+ url={https://docs.trychroma.com/docs/collections/add-data}, note={Accessed September 25, 2026}
+}
+@misc{ollama_docs,
+ author={{Ollama}}, title={Generate a Chat Message},
+ howpublished={Official API documentation},
+ url={https://docs.ollama.com/api/chat}, note={Accessed September 25, 2026}
+}
+@misc{ragas_docs,
+ author={{Ragas}}, title={Metrics Reference, Version 0.2.12},
+ howpublished={Official versioned documentation},
+ url={https://docs.ragas.io/en/v0.2.12/references/metrics/},
+ note={Accessed September 25, 2026; the experiment used package version 0.2.15}
+}
+@misc{langchain_ollama,
+ author={{LangChain}}, title={{ChatOllama} Integration},
+ howpublished={Official documentation},
+ url={https://docs.langchain.com/oss/python/integrations/chat/ollama}, note={Accessed September 25, 2026}
+}
+@misc{bge_checkpoint,
+ author={{Beijing Academy of Artificial Intelligence}},
+ title={{bge-reranker-v2-m3}: Official Model Card},
+ howpublished={BAAI model documentation},
+ url={https://huggingface.co/BAAI/bge-reranker-v2-m3}, note={Accessed September 25, 2026}
 }
