@@ -309,7 +309,6 @@ HTML = """<!doctype html>
         </div>
       </div>
       <div class="controls">
-        <a id="register-link" href="/data-register" target="_blank">Data register</a>
         <select id="method" aria-label="RAG method">
           <option value="civic">CivicRAG (ours)</option>
           <option value="simple">Simple RAG</option>
@@ -358,7 +357,6 @@ HTML = """<!doctype html>
     const method = document.getElementById("method");
     const domain = document.getElementById("domain");
     const domainNote = document.getElementById("domain-note");
-    const registerLink = document.getElementById("register-link");
     const status = document.getElementById("status");
     const send = document.getElementById("send");
     const welcome = document.getElementById("welcome");
@@ -518,8 +516,7 @@ HTML = """<!doctype html>
     });
 
     domain.addEventListener("change", () => {
-      registerLink.href = `/data-register?domain=${encodeURIComponent(domain.value)}`;
-      domainNote.textContent = domain.value === "birth_death_registration" ? "জন্ম ও মৃত্যু নিবন্ধন: বাংলায় প্রশ্ন করুন।" : "পরীক্ষামূলক ডেটাসেট: বাংলায় প্রশ্ন করুন এবং উৎস ও ডেটা রেজিস্টার দেখুন।";
+      domainNote.textContent = domain.value === "birth_death_registration" ? "জন্ম ও মৃত্যু নিবন্ধন: বাংলায় প্রশ্ন করুন।" : "বাংলায় প্রশ্ন করুন এবং উৎস দেখুন।";
     });
     document.querySelectorAll(".example-chip").forEach((chip) => {
       chip.addEventListener("click", () => {
@@ -534,7 +531,7 @@ HTML = """<!doctype html>
       payload.domains.forEach(item => {
         const option = document.createElement("option");
         option.value = item.id;
-        option.textContent = item.name + (item.experimental ? " (experimental)" : "");
+        option.textContent = item.name;
         domain.appendChild(option);
       });
       domain.value = payload.default_domain;
