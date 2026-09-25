@@ -1,0 +1,83 @@
+{
+  "git_commit": "9d1e05f856b1da4b5e29af37134e7912c1914db3",
+  "config": {
+    "domain": {
+      "id": "birth_death_registration",
+      "display_name": "Birth and Death Registration",
+      "primary_language": "bn",
+      "supported_languages": [
+        "bn",
+        "en",
+        "mixed"
+      ],
+      "description": "Bangladeshi birth and death registration guidance, fees, FAQs, legal rules, and correction/application processes."
+    },
+    "data": {
+      "raw_json_dir": "domains/birth_death_registration/data/raw/json",
+      "raw_markdown_dir": "domains/birth_death_registration/data/raw/md",
+      "chunk_output_path": "domains/birth_death_registration/data/interim/birth_death_chunks.jsonl",
+      "chroma_persist_dir": "domains/birth_death_registration/data/processed/chroma_birth_death_bge_m3",
+      "collection_name": "birth_death_registration_chunks"
+    },
+    "preprocessing": {
+      "skip_markdown_faq_duplicates": true,
+      "min_chunk_chars": 180,
+      "max_chunk_chars": 1400,
+      "overlap_paragraphs": 1
+    },
+    "embedding": {
+      "provider": "sentence_transformers",
+      "model": "BAAI/bge-m3",
+      "device": "cpu",
+      "normalize_embeddings": true,
+      "local_files_only": true
+    },
+    "retrieval": {
+      "top_k_dense": 20,
+      "top_k_bm25": 20,
+      "top_k_final": 15,
+      "rrf_k": 50,
+      "rrf_weights": {
+        "dense": 0.55,
+        "bm25": 0.45
+      }
+    },
+    "reranking": {
+      "enabled": true,
+      "model": "BAAI/bge-reranker-v2-m3",
+      "device": "cpu",
+      "local_files_only": true,
+      "top_k": 6,
+      "fallback": "lexical_overlap"
+    },
+    "generation": {
+      "ollama_base_url": "http://localhost:11434",
+      "default_model": "llama3.2",
+      "comparison_models": [
+        "llama3.2",
+        "llama3",
+        "qwen2.5:7b",
+        "qwen3:8b"
+      ],
+      "temperature": 0.05,
+      "top_p": 0.9,
+      "num_predict": 1200,
+      "repeat_last_n": 256,
+      "repeat_penalty": 1.18,
+      "top_k_for_generation": 3
+    }
+  },
+  "questions": 58,
+  "chunks": 187,
+  "groups": 19,
+  "sha256": {
+    "domains/birth_death_registration/config.json": "9919c3b3ed70085dc05dd6159c6eb8dae3b4e6801cad3d9f9c6d24f4bfad5fd1",
+    "domains/birth_death_registration/data/interim/birth_death_chunks.jsonl": "b46443cd630a76c4a66134cadcc4a5a243f2f479b4ee97ba220582375ca1a6cf",
+    "domains/birth_death_registration/data/evaluation/mixed_paraphrase_eval_flat_v1.json": "3eb173f372b261e75bc0d4ba78cc839e322a7974364fae6873c4f242b18578fa",
+    "src/retrieval/hybrid_retriever.py": "8f031ad63fac93543e350668b7311acf8bbf476e99b45aab1a699e33461ced9a"
+  },
+  "llm_calls": 0,
+  "reranking": false,
+  "evidence_selection": false,
+  "ranking_protocol": "Retrieve top 20 per component once, fuse using production RRF, score top 5. Raw labelled questions; no query rewriting."
+}
