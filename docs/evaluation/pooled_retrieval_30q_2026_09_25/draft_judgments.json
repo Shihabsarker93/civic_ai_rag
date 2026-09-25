@@ -1,0 +1,2337 @@
+{
+  "birth_01_documents": {
+    "bdris_faq_01_q03": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses data correction in the BDRIS software and does not provide information about the documents required for birth registration."
+    },
+    "birth_and_death_registration_act_2004_ধারা_৮_01": {
+      "label": "relevant",
+      "quote": "শিশুর পিতা বা মাতা বা অভিভাবক বা নির্ধারিত ব্যক্তি উক্ত শিশুর জন্মের ৪৫ (পঁয়তাল্লিশ) দিনের মধ্যে জন্ম সংক্রান্ত তথ্য নিবন্ধকের নিকট প্রদানের জন্য বাধ্য থাকিবেন।",
+      "reason": "The passage mentions that the father, mother, guardian, or designated person must provide birth-related information to the registrar within 45 days, which is relevant to the process of birth registration."
+    },
+    "bdris_faq_01_q01": {
+      "label": "relevant",
+      "quote": "জন্ম নিবন্ধন সকলের জন্য বাধ্যতামূলক (ধারা ৫(১), ৬ক এবং ৮(১))।",
+      "reason": "The passage states that birth registration is mandatory for everyone, which is relevant to the question about the documents required for birth registration."
+    },
+    "bdris_faq_02_preamble": {
+      "label": "relevant",
+      "quote": "জন্ম নিবন্ধন সকলের জন্য বাধ্যতামূলক (ধারা ৫(১), ৬ক এবং ৮(১))।",
+      "reason": "The passage confirms that birth registration is mandatory for everyone, which is relevant to the question about the documents required for birth registration."
+    },
+    "bdris_faq_02_q08": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the registration of birth when one parent is missing or untraceable, but it does not provide a list of required documents for birth registration."
+    },
+    "birth_and_death_registration_rules_2018_বিধি_১৩_01": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage outlines legal procedures for obtaining copies of birth and death records, but it does not provide a list of required documents for birth registration."
+    },
+    "birth_registration_application_process_cleaned_016_01": {
+      "label": "relevant",
+      "quote": "- জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক",
+      "reason": "The passage explicitly lists the required documents for birth registration: proof of birth date, proof of birthplace, and proof of permanent address."
+    },
+    "birth_registration_application_process_02_cleaned_010_01": {
+      "label": "relevant",
+      "quote": "- বয়স প্রমাণের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক",
+      "reason": "The passage lists two required documents for birth registration: proof of age and proof of permanent address."
+    },
+    "birth_registration_application_process_cleaned_002_01": {
+      "label": "uncertain",
+      "quote": "জন্ম নিবন্ধনের ক্ষেত্রে নিম্নোক্ত তিন ধরনের ঠিকানার তথ্য প্রয়োজন হবে: - জন্মস্থান - স্থায়ী ঠিকানা - বর্তমান ঠিকানা",
+      "reason": "Failed exact supporting-quote validation. The passage provides specific information about the types of address information required for birth registration, which is directly relevant to the question."
+    },
+    "know_this_01_cleaned_002_01": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage explains what birth and death registration are, but it does not provide any information about the documents required for birth registration."
+    },
+    "birth_registration_application_process_cleaned_004_01": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the requirement for parents' birth registration based on the year of birth, but it does not provide information about the documents needed for birth registration."
+    },
+    "bdris_faq_01_q10": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage addresses special cases for birth registration, such as divorce or missing parents, but it does not provide information about the documents required for birth registration."
+    },
+    "birth_and_death_registration_rules_2018_বিধি_৯_02": {
+      "label": "uncertain",
+      "quote": "",
+      "reason": "Invalid judge output; inspect judge_trace.jsonl"
+    },
+    "know_this_01_cleaned_003_01": {
+      "label": "uncertain",
+      "quote": "",
+      "reason": "Invalid judge output; inspect judge_trace.jsonl"
+    },
+    "birth_and_death_registration_rules_2018_বিধি_১০_01": {
+      "label": "uncertain",
+      "quote": "",
+      "reason": "Invalid judge output; inspect judge_trace.jsonl"
+    }
+  },
+  "birth_02_online_apply": {
+    "birth_and_death_registration_rules_2018_বিধি_২০_01": {
+      "label": "relevant",
+      "quote": "বিধি ২০ অনলাইনে আবেদন বা তথ্য প্রদান",
+      "reason": "The passage mentions that information can be provided online for birth registration, which is directly relevant to the question."
+    },
+    "birth_and_death_registration_rules_2018_বিধি_১৯_02": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses user authentication and software operations for record-keeping, which does not provide direct steps for online birth registration."
+    },
+    "bdris_faq_01_q02": {
+      "label": "relevant",
+      "quote": "ম্যানুয়াল জন্ম নিবন্ধনসমূহ অনলাইনে অন্তর্ভুক্তির জন্য একাধিকবার সময় দেওয়া হয়েছে। এখন একই নম্বর দিয়ে অনলাইনে অন্তর্ভুক্তির সুযোগ নেই।",
+      "reason": "The passage provides information about migrating manual birth registrations to online, which is relevant to the question."
+    },
+    "birth_and_death_registration_rules_2018_বিধি_১৯_01": {
+      "label": "uncertain",
+      "quote": "তথ্য প্রযুক্তি ব্যবহারের সুযোগ থাকিলে নিবন্ধক নিজ অধিক্ষেত্রে সনাতন নিবন্ধন বহির পরিবর্তে তথ্য প্রযুক্তির মাধ্যামে জন্ম ও মৃত্যুর তথ্য লিপিবদ্ধ করিবেন এবং উক্তরূপ সুযোগ না থাকিলে আইনের ধারা ১৪ এর উপ-ধারা (৩) এর বিধান অনুযায়ী নিবন্ধক নির্ধারিত বহি ছাড়া জন্ম ও মৃত্যু সংক্রান্ত তথ্য সনাতন পদ্ধতিতে সংক্ষণ করিবেন।",
+      "reason": "Failed exact supporting-quote validation. The passage mentions that birth registration can be done through information technology, which is directly relevant to the question."
+    },
+    "birth_and_death_registration_rules_2018_বিধি_৯_04": {
+      "label": "relevant",
+      "quote": "আবেদন মুদ্রিত ফরমে বা অনলাইনে যে কোন পদ্ধতিতে করা যাইবে এবং মুদ্রিত ফরমে আবেদন করিলে নিবন্ধক উহা কার্যপ্রণালিতে বর্ণিত পদ্ধতি অনুসারে অনলাইনে এন্ট্রি করিবেন এবং অনলাইন আবেদনপত্রের ক্ষেত্রে অনলাইনে আবেদন দাখিলের পর আবেদনকারী অনলাইন হইতে মুদ্রিত আবেদনপত্রের কপি নিবন্ধকের নিকট দাখিল করিবেন।",
+      "reason": "পাসেজটি অনলাইনে জন্মনিবন্ধন করার পদ্ধতি বর্ণনা করে।"
+    },
+    "birth_registration_application_process_02_cleaned_004_01": {
+      "label": "relevant",
+      "quote": "“জন্ম নিবন্ধনের আবেদন” অপশনে ক্লিক করুন।",
+      "reason": "পাসেজটি অনলাইনে জন্মনিবন্ধন করার প্রক্রিয়ার একটি ধাপ বর্ণনা করে।"
+    },
+    "birth_and_death_registration_rules_2018_বিধি_১৯_03": {
+      "label": "relevant",
+      "quote": "অনলাইনে জন্ম নিবন্ধন তথ্য প্রদানের জন্য চিকিৎসা প্রতিষ্ঠান, স্বাস্থ্য কর্মী নিজ নিজ নিবন্ধক এলাকায় Informant এর 'ব্যবহারকারী পরিচিতি' ও 'পাসওয়ার্ড' পাইবে।",
+      "reason": "পাসেজটি অনলাইনে জন্মনিবন্ধন করার জন্য প্রয়োজনীয় ব্যবহারকারী পরিচিতি ও পাসওয়ার্ড সম্পর্কে তথ্য দেয়।"
+    },
+    "notice_birth_and_death_registration_certificate_correction_steps_ocr_004_01": {
+      "label": "irrelevant",
+      "quote": "ধাপ ১: `https://bdris.gov.bd` ওয়েবসাইটে নিবন্ধক সহকারীর আইডি দিয়ে প্রবেশ করতে হবে।",
+      "reason": "পাসেজটি জন্ম নিবন্ধন সনদ বাতিল করার প্রক্রিয়া বর্ণনা করে, যা প্রশ্নের বিষয় নয়।"
+    },
+    "bdris_faq_01_q05": {
+      "label": "relevant",
+      "quote": "প্রথমে একটি আবেদন অনলাইনে সাবমিট করে নিবন্ধন সম্পন্ন করতে হবে, তারপর দ্বিতীয় আবেদন সাবমিট করতে হবে।",
+      "reason": "The passage provides a step-by-step instruction on how to submit online applications for twin birth registration, which is directly relevant to the question."
+    },
+    "bdris_faq_02_q04": {
+      "label": "relevant",
+      "quote": "প্রথমে একটি আবেদন অনলাইনে সাবমিট করে নিবন্ধন সম্পন্ন করতে হবে, তারপর দ্বিতীয় আবেদন সাবমিট করতে হবে।",
+      "reason": "The passage provides a step-by-step instruction on how to submit online applications for twin birth registration, which is directly relevant to the question."
+    },
+    "birth_and_death_registration_rules_2018_বিধি_১৮_03": {
+      "label": "irrelevant",
+      "quote": "রেজিস্ট্রার জেনারেল দূতাবাস এর নিবন্ধন সংক্রান্ত কার্যক্রম তদারক করিবেন।",
+      "reason": "The passage discusses the monitoring of registration processes by the General Registrar's office, which is not directly relevant to the question about how to register twin births online."
+    },
+    "birth_and_death_registration_rules_2018_বিধি_১২_01": {
+      "label": "relevant",
+      "quote": "আবেদনপত্র মুদ্রিত ফরমে বা অনলাইনে যে কোন পদ্ধতিতে করা যাইবে এবং মুদ্রিত ফরমে আবেদন করিলে নিবন্ধক উহা অনলাইনে এন্ট্রি করিবেন এবং অনলাইনে আবেদনপত্রের ক্ষেত্রে অনলাইনে আবেদন দাখিলের পর আবেদনকারী অনলাইন হইতে মুদ্রিত আবেদনপত্রের কপি নিবন্ধকের নিকট দাখিল করিবেন।",
+      "reason": "The passage provides information on how to submit birth registration applications online, which is directly relevant to the question."
+    },
+    "birth_registration_application_process_cleaned_008_01": {
+      "label": "uncertain",
+      "quote": "নতুন জন্ম নিবন্ধনের জন্য: https://bdris.gov.bd ওয়েবসাইটে প্রবেশ করুন।",
+      "reason": "Failed exact supporting-quote validation. পাসেজটি জন্মনিবন্ধন অনলাইনে করার প্রক্রিয়া সম্পর্কে বিস্তারিত তথ্য দিয়েছে।"
+    },
+    "know_this_01_cleaned_008_01": {
+      "label": "irrelevant",
+      "quote": "অনলাইনে জন্ম নিবন্ধন করা থাকলে orgbdr.gov.bd ওয়েবসাইটে প্রবেশ করে **“জন্ম তথ্য যাচাই”** অপশনে ব্যক্তির জন্ম নিবন্ধন নম্বর এবং জন্ম তারিখ প্রদান করে জন্ম নিবন্ধন হয়েছে কিনা তা নিশ্চিত হওয়া যাবে।",
+      "reason": "পাসেজটি জন্ম নিবন্ধন যাচাই করার প্রক্রিয়া সম্পর্কে তথ্য দিয়েছে, যা প্রশ্নের উত্তর দেওয়ার জন্য সম্পূর্ণ নয়।"
+    },
+    "birth_registration_application_process_02_cleaned_003_01": {
+      "label": "relevant",
+      "quote": "জন্ম নিবন্ধন ওয়েবসাইট (https://bdris.gov.bd) ভিজিট করুন।",
+      "reason": "পাসেজটি জন্মনিবন্ধন অনলাইনে করার প্রক্রিয়া সম্পর্কে বিস্তারিত তথ্য দিয়েছে।"
+    }
+  },
+  "birth_03_birth_date_correction": {
+    "notice_birth_and_death_registration_certificate_correction_steps_ocr_005_01": {
+      "label": "relevant",
+      "quote": "পূর্বের হাতে লেখা জন্ম ও মৃত্যু নিবন্ধন তথ্য অনলাইনে স্থানান্তরের সময় অনেক ক্ষেত্রে রেজিস্ট্রেশন তারিখ ও ইস্যু তারিখ ভুলভাবে লিপিবদ্ধ হয়েছে।",
+      "reason": "প্রসঙ্গে জন্মতারিখ ভুল হওয়ার কারণ উল্লেখ করা হয়েছে এবং সংশোধনের জন্য সফটওয়্যারে একটি ফিচার যুক্ত করা হয়েছে।"
+    },
+    "application_for_birth_information_correction_cleaned_004_01": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "প্রসঙ্গে জন্মতারিখ ভুল হওয়া সম্পর্কে কোন তথ্য দেওয়া হয়নি। এখানে জন্ম নিবন্ধনে পিতা বা মাতার জন্ম নিবন্ধন নম্বর সংশোধনের বিষয়টি আলোচিত হয়েছে।"
+    },
+    "notice_birth_and_death_registration_certificate_correction_steps_ocr_007_01": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "প্রসঙ্গে জন্মতারিখ ভুল হওয়া সম্পর্কে কোন তথ্য দেওয়া হয়নি। এখানে জাতীয়তা সংশোধনের বিষয়টি আলোচিত হয়েছে।"
+    },
+    "application_for_birth_information_correction_cleaned_008_01": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "প্রসঙ্গে জন্মতারিখ ভুল হওয়া সম্পর্কে কোন তথ্য দেওয়া হয়নি। এখানে জন্ম তারিখ এবং পিতা বা মাতার জন্ম নিবন্ধন নম্বর সংশোধনের বিষয়টি আলোচিত হয়েছে।"
+    },
+    "application_for_birth_information_correction_cleaned_002_01": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage only mentions the need to follow instructions for changing the parent's name, but does not provide any information about correcting the birth date in a birth registration."
+    },
+    "application_for_birth_information_correction_cleaned_003_01": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the correction of a parent's name using the birth registration number, but does not provide any information about correcting the birth date in a birth registration."
+    },
+    "notice_birth_and_death_registration_certificate_correction_steps_ocr_006_01": {
+      "label": "relevant",
+      "quote": "ধাপ ৪: জন্ম নিবন্ধন নম্বর ও জন্ম তারিখ লিখে `অনুসন্ধান` বাটনে ক্লিক করতে হবে।",
+      "reason": "The passage provides a step-by-step process for correcting registration and issue dates in birth registration, which includes entering the birth registration number and date of birth."
+    },
+    "application_for_birth_information_correction_cleaned_010_01": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage only mentions the need to include contact information when applying for the correction of birth registration details, but does not provide any information about correcting the birth date in a birth registration."
+    },
+    "birth_and_death_registration_act_2004_ধারা_১৫_01": {
+      "label": "relevant",
+      "quote": "নিবন্ধন বহিতে বা, ক্ষেত্রমত, জন্ম বা মৃত্যু সনদে কোন ভুল তথ্য লিপিবদ্ধ হইয়া থাকিলে, উহা সংশোধনের জন্য নির্ধারিত ফিসহ সংশ্লিষ্ট নিবন্ধকের বরাবরে আবেদন করা যাইবে।",
+      "reason": "পাসেজটি জন্মতারিখ ভুল হলে সংশোধনের জন্য আবেদন করার প্রক্রিয়া বর্ণনা করে।"
+    },
+    "application_for_birth_information_correction_cleaned_006_01": {
+      "label": "uncertain",
+      "quote": "যদি: পিতা বা মাতার জন্ম নিবন্ধন নম্বর না থাকে, এবং আপনার জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে হয়, তাহলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করার সময় পিতা বা মাতার নাম সংশোধন করা যাবে।",
+      "reason": "Failed exact supporting-quote validation. পাসেজটি জন্মতারিখ ভুল হলে সংশোধনের জন্য আবেদন করার কিছু পরিস্থিতি বর্ণনা করে।"
+    },
+    "application_for_birth_information_correction_cleaned_009_01": {
+      "label": "irrelevant",
+      "quote": "এই ক্ষেত্রে পিতা বা মাতার মৃত্যুর প্রমাণপত্র দাখিল করতে হবে।",
+      "reason": "পাসেজটি জন্মতারিখ ভুল হলে সংশোধনের সাথে সম্পৃক্ত নয়।"
+    },
+    "birth_registration_application_process_cleaned_017_01": {
+      "label": "relevant",
+      "quote": "ভুল থাকলে \"পূর্ববর্তী\" বাটনে ফিরে গিয়ে সংশোধন করতে হবে।",
+      "reason": "পাসেজটি জন্মতারিখ ভুল হলে সংশোধনের জন্য একটি পদক্ষেপ বর্ণনা করে।"
+    },
+    "birth_and_death_registration_act_2004_ধারা_১৫ক_01": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the legal consequences of providing false information in birth or death registration, but it does not provide a clear procedure for correcting a birth date error."
+    },
+    "application_for_birth_information_correction_cleaned_005_01": {
+      "label": "relevant",
+      "quote": "ম্যাপিং সম্পন্ন হওয়ার পর জন্ম নিবন্ধন সনদ পুনর্মুদ্রণ করলে সেখানে সংশোধিত নাম প্রদর্শিত হবে।",
+      "reason": "This passage provides a step-by-step process for correcting birth registration information, including mapping the parent's registration number and redacting the document with the corrected name."
+    },
+    "application_for_birth_information_correction_cleaned_013_01": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the need for contact information when applying for birth registration corrections, but it does not provide a clear procedure for correcting a birth date error."
+    }
+  },
+  "birth_04_name_spelling": {
+    "birth_and_death_registration_rules_2018_বিধি_১৬_01": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses legal consequences for intentionally including incorrect information in birth registration, but it does not provide any actionable steps or procedures for correcting a name spelling error."
+    },
+    "application_for_birth_information_correction_cleaned_003_01": {
+      "label": "relevant",
+      "quote": "যদি আপনার পিতা বা মাতার জন্ম নিবন্ধন নম্বর থাকে, তাহলে প্রথমে তাদের জন্ম নিবন্ধন নম্বর ব্যবহার করে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করে তাদের নাম সংশোধন করতে হবে।",
+      "reason": "This passage provides a relevant procedure for correcting name information in birth registration by using the parent's birth registration number."
+    },
+    "birth_and_death_registration_act_2004_ধারা_১৫ক_01": {
+      "label": "uncertain",
+      "quote": "ভুল তথ্য প্রদান বা মিথ্যা ঘোষণার কারণে কোন জন্ম বা মৃত্যু সনদ প্রদান করা হইলে, উহা বাতিলের জন্য নির্ধারিত ফিসহ কোন ব্যক্তির আবেদনের প্রেক্ষিতে ধারা ১৫ এর উপ-ধারা (২) হইতে (৬) এর বিধান অনুসরণক্রমে নিবন্ধক সংশ্লিষ্ট জন্ম বা মৃত্যু সনদ বাতিল করিবেন এবং তদনুসারে নিবন্ধন বহির সংশলিষ্ট অংশ সংশোধনক্রমে স্বাক্ষর করিবেন।",
+      "reason": "Failed exact supporting-quote validation. This passage explains that incorrect information in birth registration can lead to the cancellation of the document, which is relevant to understanding the consequences of a name spelling error."
+    },
+    "application_for_birth_information_correction_cleaned_005_01": {
+      "label": "relevant",
+      "quote": "ম্যাপিং সম্পন্ন হওয়ার পর জন্ম নিবন্ধন সনদ পুনর্মুদ্রণ করলে সেখানে সংশোধিত নাম প্রদর্শিত হবে।",
+      "reason": "This passage provides a relevant step for correcting name information in birth registration by mapping the parent's birth registration number and then reprinting the document with the corrected name."
+    },
+    "birth_and_death_registration_fees_cleaned_fee_row_05": {
+      "label": "relevant",
+      "quote": "জন্ম তারিখ ব্যতীত নাম, পিতার নাম, মাতার নাম, ঠিকানা ইত্যাদি অন্যান্য তথ্য সংশোধনের জন্য আবেদন ফি",
+      "reason": "পাসপোর্ট নামের বানান ভুল হলে এটি অন্যান্য তথ্য সংশোধনের জন্য আবেদন ফি সংক্রান্ত তথ্য দেখায়।"
+    },
+    "notice_birth_and_death_registration_certificate_correction_steps_ocr_007_01": {
+      "label": "relevant",
+      "quote": "জন্ম সনদ সংশোধনের স্বাভাবিক প্রক্রিয়ায় জাতীয়তা সংশোধন করা যাবে।",
+      "reason": "পাসপোর্ট নামের বানান ভুল হলে সংশোধনের প্রক্রিয়া সংক্রান্ত তথ্য দেখায়।"
+    },
+    "application_for_birth_information_correction_cleaned_010_01": {
+      "label": "relevant",
+      "quote": "জন্ম নিবন্ধনের তথ্য সংশোধনের আবেদন করতে হলে যোগাযোগের তথ্য সংযুক্ত থাকতে হবে।",
+      "reason": "পাসপোর্ট নামের বানান ভুল হলে সংশোধনের জন্য যোগাযোগের তথ্য সংক্রান্ত তথ্য দেখায়।"
+    },
+    "birth_and_death_registration_rules_2018_বিধি_১৫_01": {
+      "label": "relevant",
+      "quote": "বিধি ২১ এ নির্ধারিত ফিস প্রদান করিয়া জমনি ফরম-৮ অনুযায়ী কোন ব্যক্তি জন্ম বা মৃত্যু সনদ সংশোধন বা বাতিলের জন্য আবেদন করিতে পারিবেন।",
+      "reason": "পাসপোর্ট নামের বানান ভুল হলে সংশোধনের জন্য আবেদন করতে হবে এবং ফরম-৮ অনুযায়ী আবেদন করতে হবে এটি বলে।"
+    },
+    "birth_registration_application_process_cleaned_017_01": {
+      "label": "relevant",
+      "quote": "ভুল থাকলে \"পূর্ববর্তী\" বাটনে ফিরে গিয়ে সংশোধন করতে হবে।",
+      "reason": "প্রসঙ্গ বানান ভুল হলে কী করতে হবে তা বর্ণনা করেছে।"
+    },
+    "application_for_birth_information_correction_cleaned_009_01": {
+      "label": "irrelevant",
+      "quote": "এই ক্ষেত্রে পিতা বা মাতার মৃত্যুর প্রমাণপত্র দাখিল করতে হবে।",
+      "reason": "এটি মৃত্যুর প্রমাণপত্র সংক্রান্ত তথ্য দেখায়, যা জন্মনিবন্ধনে নামের বানান ভুল সম্পর্কে কোনো তথ্য দেয় না।"
+    },
+    "application_for_birth_information_correction_cleaned_002_01": {
+      "label": "relevant",
+      "quote": "আপনার পিতা বা মাতার নাম সংশোধন করতে হলে নিম্নোক্ত নির্দেশনা অনুসরণ করতে হবে।",
+      "reason": "নামের বানান ভুল সংশোধনের জন্য নির্দেশনা দেখায়।"
+    },
+    "application_for_birth_information_correction_cleaned_013_01": {
+      "label": "irrelevant",
+      "quote": "মোবাইল নম্বর বা ইমেইল সংযুক্ত না থাকলে সংশ্লিষ্ট নিবন্ধন কার্যালয়ের সাথে যোগাযোগ করতে হবে।",
+      "reason": "এটি যোগাযোগের তথ্য সংক্রান্ত তথ্য দেখায়, যা জন্মনিবন্ধনে নামের বানান ভুল সম্পর্কে কোনো তথ্য দেয় না।"
+    },
+    "application_for_birth_information_correction_cleaned_004_01": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the automatic update of the father's or mother's name in the birth registration after their name is corrected, but it does not address the correction of a name spelling error in the birth registration itself."
+    },
+    "application_for_birth_information_correction_cleaned_011_01": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage mentions the requirement of a mobile number, which is unrelated to the correction of a name spelling error in the birth registration."
+    },
+    "application_for_birth_information_correction_cleaned_006_01": {
+      "label": "relevant",
+      "quote": "যদি:\n\n- পিতা বা মাতার জন্ম নিবন্ধন নম্বর না থাকে, এবং\n- আপনার জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে হয়,\n\nতাহলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করার সময় পিতা বা মাতার নাম সংশোধন করা যাবে।",
+      "reason": "The passage provides information about the process of correcting the name of the father or mother in the birth registration if their birth registration number is not available and the birth date is before 01/01/2001, which is relevant to the question."
+    },
+    "application_for_birth_information_correction_cleaned_008_01": {
+      "label": "relevant",
+      "quote": "যদি:\n\n- পিতা বা মাতার জন্ম নিবন্ধন নম্বর না থাকে,\n- পিতা বা মাতা মৃত হন, এবং\n- আপনার জন্ম তারিখ ০১/০১/২০০১-এর পরে হয়,\n\nতাহলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করার সময় পিতা বা মাতার নাম সংশোধন করা যাবে।",
+      "reason": "The passage provides information about the process of correcting the name of the father or mother in the birth registration if their birth registration number is not available, they are deceased, and the birth date is after 01/01/2001, which is relevant to the question."
+    }
+  },
+  "birth_05_lost": {
+    "birth_and_death_registration_act_2004_ধারা_১৫_01": {
+      "label": "uncertain",
+      "quote": "নিবন্ধন বহি বা সনদ সংশোধন করিবেন; সংশোধিত স্থানে তারিখসহ স্বাক্ষর প্রদান করিবেন; এবং সংশোধিত আকারে নূতন সনদ প্রদান করিয়া পূর্বের সনদ ফেরত লইবেন।",
+      "reason": "Failed exact supporting-quote validation. The passage provides a direct method for obtaining a new copy of a birth registration document after an error or correction."
+    },
+    "application_for_birth_information_correction_cleaned_005_01": {
+      "label": "relevant",
+      "quote": "জন্ম নিবন্ধন সনদ পুনর্মুদ্রণ করলে সেখানে সংশোধিত নাম প্রদর্শিত হবে।",
+      "reason": "The passage explains that a corrected birth registration document can be reprinted with the updated information."
+    },
+    "birth_and_death_registration_rules_2018_বিধি_৯_02": {
+      "label": "irrelevant",
+      "quote": "ব্যক্তির জন্মের ৪৫ (পঁয়তাল্লিশ) দিনের মধ্যে দাখিলকৃত আবেদনপত্রের সহিত নিম্নলিখিত প্রমাণাদি সংযুক্ত করিতে হইবে, যথা:",
+      "reason": "The passage discusses the requirements for submitting an application for birth registration, not the process of obtaining a new copy after losing the original."
+    },
+    "birth_and_death_registration_rules_2018_বিধি_১২_01": {
+      "label": "irrelevant",
+      "quote": "আবেদনপত্র মুদ্রিত ফরমে বা অনলাইনে যে কোন পদ্ধতিতে করা যাইবে এবং মুদ্রিত ফরমে আবেদন করিলে নিবন্ধক উহা অনলাইনে এন্ট্রি করিবেন এবং অনলাইনে আবেদনপত্রের ক্ষেত্রে অনলাইনে আবেদন দাখিলের পর আবেদনকারী অনলাইন হইতে মুদ্রিত আবেদনপত্রের কপি নিবন্ধকের নিকট দাখিল করিবেন।",
+      "reason": "The passage discusses the process of submitting an application for death registration, not the process of obtaining a new copy of a birth registration document."
+    },
+    "birth_and_death_registration_rules_2018_বিধি_১৫_01": {
+      "label": "relevant",
+      "quote": "বিধি ২১ এ নির্ধারিত ফিস প্রদান করিয়া জমনি ফরম-৮ অনুযায়ী কোন ব্যক্তি জন্ম বা মৃত্যু সনদ সংশোধন বা বাতিলের জন্য আবেদন করিতে পারিবেন।",
+      "reason": "The passage explains that a person can apply for correction or cancellation of a birth or death certificate by paying the specified fee and submitting Form-8."
+    },
+    "birth_and_death_registration_act_2004_ধারা_১৫ক_01": {
+      "label": "relevant",
+      "quote": "ভুল তথ্য প্রদান বা মিথ্যা ঘোষণার কারণে কোন জন্ম বা মৃত্যু সনদ প্রদান করা হইলে, উহা বাতিলের জন্য নির্ধারিত ফিসহ কোন ব্যক্তির আবেদনের প্রেক্ষিতে ধারা ১৫ এর উপ-ধারা (২) হইতে (৬) এর বিধান অনুসরণক্রমে নিবন্ধক সংশ্লিষ্ট জন্ম বা মৃত্যু সনদ বাতিল করিবেন এবং তদনুসারে নিবন্ধন বহির সংশ্লিষ্ট অংশ সংশোধনক্রমে স্বাক্ষর করিবেন।",
+      "reason": "The passage states that if a birth or death certificate was issued due to incorrect or false information, it can be canceled by paying the specified fee and following the procedures outlined in Section 15."
+    },
+    "bdris_faq_01_q10": {
+      "label": "irrelevant",
+      "quote": "এইরূপ ক্ষেত্রে পিতামাতার একজনের তথ্য দিয়ে এবং অপরজনের শুধু নাম উল্লেখ করে সন্তানের জন্ম নিবন্ধন করা যাবে।",
+      "reason": "The passage discusses birth registration in cases of divorce or missing parents, which is unrelated to the question about obtaining a new copy of a lost birth certificate."
+    },
+    "bdris_faq_02_q08": {
+      "label": "irrelevant",
+      "quote": "চেয়ারম্যান কর্তৃক প্রত্যয়ন নিতে হবে এবং আবেদনপত্রটি নিয়ে উপজেলা নির্বাহী অফিসে শুনানীতে জমা দিতে হবে।",
+      "reason": "The passage discusses the process for birth registration in specific cases, which is unrelated to the question about obtaining a new copy of a lost birth certificate."
+    },
+    "birth_and_death_registration_rules_2018_বিধি_১২_02": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses death registration and does not provide information about obtaining a copy of a lost birth certificate."
+    },
+    "bdris_faq_01_q12": {
+      "label": "relevant",
+      "quote": "সংশোধন বা পুনঃমুদ্রণ কেবল মূল নিবন্ধন অফিস থেকেই করা যাবে। তবে স্থানীয় নিবন্ধন অফিসের সহায়তায় বা নাগরিক নিজে অনলাইনে মূল অফিস বরাবর আবেদন করতে পারেন।",
+      "reason": "The passage provides information about obtaining a copy of a lost birth certificate by applying to the original registration office, either through local office assistance or online."
+    },
+    "application_for_birth_information_correction_cleaned_004_01": {
+      "label": "relevant",
+      "quote": "আপনার জন্ম নিবন্ধন করার সময় যদি পিতা বা মাতার জন্ম নিবন্ধন নম্বর প্রদান করা হয়ে থাকে, তাহলে তাদের নাম সংশোধনের পর আপনার জন্ম নিবন্ধন সনদ পুনর্মুদ্রণ করলে সেখানে সংশোধিত নাম স্বয়ংক্রিয়ভাবে প্রদর্শিত হবে।",
+      "reason": "The passage explains that if there are changes in the parent's information, the birth certificate can be reprinted with the updated details."
+    },
+    "birth_and_death_registration_rules_2018_বিধি_১৩_01": {
+      "label": "relevant",
+      "quote": "নিবন্ধিত কোন ব্যক্তির সনদ হারাইয়া গেলে বা নষ্ট হইলে, নিবন্ধক, উপ-বিধি (২) ও (৩) এর বিধান সাপেক্ষে, জমনি ফরম-৭ অনুযায়ী উক্ত ব্যক্তির আবেদন প্রাপ্তির ৭ (সাত) কার্য দিবসের মধ্যে জমনি ফরম-৩ ও জমনি ফরম-৬ অনুযায়ী জন্ম ও মৃত্যু নিবন্ধন সনদের প্রতিলিপি প্রদান করিবেন।",
+      "reason": "The passage states that if a birth certificate is lost, the registrar will provide a copy within 7 working days after receiving the application."
+    },
+    "bdris_faq_01_q15": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses duplicate registration issues and number reset procedures, which are not directly related to obtaining a duplicate birth certificate when the original is lost."
+    },
+    "bdris_faq_01_q02": {
+      "label": "relevant",
+      "quote": "যে এলাকায় হাতে লেখা নিবন্ধন হয়েছিল সেই কার্যালয়ে রক্ষিত বইতে তথ্য পাওয়া গেলে, নিবন্ধক সরাসরি সেই তথ্য দিয়ে অনলাইন নিবন্ধন করে দেবেন — যদি ইতঃপূর্বে অন্য কোথাও নিবন্ধন না হয়ে থাকে।",
+      "reason": "The passage provides a method to obtain a duplicate birth certificate by using manual registration records if the original is lost."
+    },
+    "birth_and_death_registration_rules_2018_বিধি_১২_03": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the legal procedures for the registration of the death of a person living abroad, which is not relevant to the question about obtaining a duplicate birth certificate."
+    }
+  },
+  "birth_06_verify": {
+    "birth_and_death_registration_rules_2018_বিধি_১৯_03": {
+      "label": "relevant",
+      "quote": "অনলাইনে জন্ম নিবন্ধন তথ্য প্রদানের জন্য চিকিৎসা প্রতিষ্ঠান, স্বাস্থ্য কর্মী নিজ নিজ নিবন্ধক এলাকায় Informant এর 'ব্যবহারকারী পরিচিতি' ও 'পাসওয়ার্ড' পাইবে।",
+      "reason": "The passage explains that online birth registration information is provided to healthcare institutions and health workers in their respective registration areas, which is relevant to the question about how to verify birth registration online."
+    },
+    "bdris_faq_02_q04": {
+      "label": "irrelevant",
+      "quote": "জমজ সন্তানের ক্ষেত্রে প্রথমে একটি আবেদন অনলাইনে সাবমিট করে নিবন্ধন সম্পন্ন করতে হবে, তারপর দ্বিতীয় আবেদন সাবমিট করতে হবে।",
+      "reason": "The passage discusses the process for twin children's birth registration, which is not directly relevant to the question about verifying birth registration online."
+    },
+    "birth_registration_application_process_02_cleaned_010_01": {
+      "label": "irrelevant",
+      "quote": "নিম্নোক্ত প্রমাণক সংযুক্ত করুন: বয়স প্রমাণের প্রমাণক, স্থায়ী ঠিকানার প্রমাণক",
+      "reason": "The passage provides information about required documents for birth registration, which is not directly relevant to the question about verifying birth registration online."
+    },
+    "birth_registration_application_process_cleaned_008_01": {
+      "label": "uncertain",
+      "quote": "https://bdris.gov.bd ওয়েবসাইটে প্রবেশ করুন। হোমপেজে \"জন্ম নিবন্ধন\" মেনু নির্বাচন করুন। এরপর \"জন্ম নিবন্ধন আবেদন\" অপশনে ক্লিক করুন।",
+      "reason": "Failed exact supporting-quote validation. The passage provides specific steps for accessing the online birth registration portal, which is directly relevant to the question about how to verify birth registration online."
+    },
+    "know_this_01_cleaned_008_01": {
+      "label": "relevant",
+      "quote": "অনলাইনে জন্ম নিবন্ধন করা থাকলে orgbdr.gov.bd ওয়েবসাইটে প্রবেশ করে **“জন্ম তথ্য যাচাই”** অপশনে ব্যক্তির জন্ম নিবন্ধন নম্বর এবং জন্ম তারিখ প্রদান করে জন্ম নিবন্ধন হয়েছে কিনা তা নিশ্চিত হওয়া যাবে।",
+      "reason": "পাসেজটি অনলাইনে জন্মনিবন্ধন যাচাই করার পদ্ধতি স্পষ্টভাবে বর্ণনা করেছে।"
+    },
+    "birth_and_death_registration_rules_2018_বিধি_৯_02": {
+      "label": "irrelevant",
+      "quote": "(ক) ব্যক্তির জন্মের ৪৫ (পঁয়তাল্লিশ) দিনের মধ্যে দাখিলকৃত আবেদনপত্রের সহিত নিম্নলিখিত প্রমাণাদি সংযুক্ত করিতে হইবে, যথা:",
+      "reason": "পাসেজটি জন্মনিবন্ধন করার প্রক্রিয়া সম্পর্কে তথ্য দিয়েছে, কিন্তু জন্মনিবন্ধন যাচাই সম্পর্কে কোন তথ্য দেয়নি।"
+    },
+    "birth_registration_application_process_02_cleaned_003_01": {
+      "label": "relevant",
+      "quote": "জন্ম নিবন্ধন ওয়েবসাইট (https://bdris.gov.bd) ভিজিট করুন।",
+      "reason": "পাসেজটি জন্মনিবন্ধন যাচাই করার জন্য ওয়েবসাইট প্রবেশ করার পদ্ধতি বর্ণনা করেছে।"
+    },
+    "birth_registration_application_process_cleaned_017_01": {
+      "label": "uncertain",
+      "quote": "এই ধাপে আবেদনকারীর পূরণকৃত সকল তথ্য প্রদর্শিত হবে।",
+      "reason": "পাসেজটি জন্মনিবন্ধন যাচাই পদ্ধতি সম্পর্কে স্পষ্ট তথ্য দেয়নি, কেবল আবেদন প্রক্রিয়া সম্পর্কে তথ্য দিয়েছে।"
+    },
+    "birth_registration_application_process_02_cleaned_011_01": {
+      "label": "relevant",
+      "quote": "আবেদনের সকল তথ্য পুনরায় পর্যালোচনা করুন এবং আপনার মোবাইল নম্বরে OTP পাঠান।",
+      "reason": "পাসেজটি অনলাইনে জন্মনিবন্ধন যাচাই করার প্রক্রিয়া সম্পর্কে বিশেষ তথ্য দিয়েছে যেমন তথ্য পুনরায় পর্যালোচনা এবং OTP পাঠানো।"
+    },
+    "bdris_faq_01_q05": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "পাসেজটি জমজ সন্তানের জন্ম নিবন্ধন সম্পর্কে বিশেষ তথ্য দিয়েছে, যা প্রশ্নের সাথে সম্পৃক্ত নয়।"
+    },
+    "birth_and_death_registration_rules_2018_বিধি_১৯_02": {
+      "label": "uncertain",
+      "quote": "",
+      "reason": "পাসেজটি জন্ম ও মৃত্যু নিবন্ধন বিধিমালা সম্পর্কে বিস্তারিত তথ্য দিয়েছে, কিন্তু অনলাইনে জন্মনিবন্ধন যাচাই করার প্রক্রিয়া সম্পর্কে স্পষ্ট তথ্য নেই।"
+    },
+    "birth_and_death_registration_rules_2018_বিধি_৯_04": {
+      "label": "relevant",
+      "quote": "আবেদন মুদ্রিত ফরমে বা অনলাইনে যে কোন পদ্ধতিতে করা যাইবে এবং মুদ্রিত ফরমে আবেদন করিলে নিবন্ধক উহা কার্যপ্রণালিতে বর্ণিত পদ্ধতি অনুসারে অনলাইনে এন্ট্রি করিবেন এবং অনলাইন আবেদনপত্রের ক্ষেত্রে অনলাইনে আবেদন দাখিলের পর আবেদনকারী অনলাইন হইতে মুদ্রিত আবেদনপত্রের কপি নিবন্ধকের নিকট দাখিল করিবেন।",
+      "reason": "পাসেজটি অনলাইনে জন্মনিবন্ধন আবেদন করার প্রক্রিয়া সম্পর্কে বিশেষ তথ্য দিয়েছে যেমন অনলাইন আবেদনপত্রের ক্ষেত্রে আবেদনকারী অনলাইন হইতে মুদ্রিত আবেদনপত্রের কপি নিবন্ধকের নিকট দাখিল করিবেন।"
+    },
+    "bdris_faq_01_q02": {
+      "label": "relevant",
+      "quote": "যে এলাকায় হাতে লেখা নিবন্ধন হয়েছিল সেই কার্যালয়ে রক্ষিত বইতে তথ্য পাওয়া গেলে, নিবন্ধক সরাসরি সেই তথ্য দিয়ে অনলাইন নিবন্ধন করে দেবেন — যদি ইতঃপূর্বে অন্য কোথাও নিবন্ধন না হয়ে থাকে।",
+      "reason": "The passage provides a step-by-step method for online birth registration for manual records that have not yet been migrated, which directly answers the question."
+    },
+    "birth_registration_application_process_cleaned_012_01": {
+      "label": "relevant",
+      "quote": "এরপর **Verify** বাটনে ক্লিক করতে হবে।",
+      "reason": "The passage describes the process of online birth registration, including the verification step, which is directly relevant to the question."
+    },
+    "birth_and_death_registration_rules_2018_বিধি_২০_01": {
+      "label": "irrelevant",
+      "quote": "চিকিৎসা প্রতিষ্ঠান বা স্বাস্থ্যকর্মীগণ নিবন্ধনযোগ্য ব্যক্তির জন্ম বা মৃত্যুর তথ্য ৪৫ (পঁয়তাল্লিশ) দিনের মধ্যে নিবন্ধনের যোগ্য স্থানের নিবন্ধকের নিকট অনলাইনে প্রদান করিতে পারিবেন।",
+      "reason": "The passage discusses legal rules for submitting birth and death information online, but it does not provide a direct method for verifying online birth registration, which is the focus of the question."
+    }
+  },
+  "birth_07_correction_fee": {
+    "birth_and_death_registration_rules_2018_বিধি_২_01": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage provides definitions and legal terms related to birth and death registration but does not mention any fees for birth registration amendment."
+    },
+    "birth_and_death_registration_fees_cleaned_fee_row_04": {
+      "label": "uncertain",
+      "quote": "Fee item: জন্ম তারিখ সংশোধনের জন্য আবেদন ফি | Fee amount: ১০০ টাকা",
+      "reason": "Failed exact supporting-quote validation. The passage directly states the fee for birth date amendment, which is relevant to the question."
+    },
+    "bdris_faq_01_q12": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses procedures for overseas registration and correction but does not mention the cost of birth registration amendment."
+    },
+    "application_for_birth_information_correction_cleaned_004_01": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage explains the process for correcting birth registration details but does not mention any fees related to the amendment."
+    },
+    "birth_and_death_registration_fees_cleaned_fee_row_07": {
+      "label": "relevant",
+      "quote": "Fee amount: ৫০ টাকা",
+      "reason": "The passage mentions a fee of 50 taka for providing copies of documents in both Bangla and English."
+    },
+    "birth_and_death_registration_act_2004_ধারা_২১_01": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses legal penalties for providing false information during registration, not the cost of modifying birth registration."
+    },
+    "birth_and_death_registration_act_2004_ধারা_১৫_01": {
+      "label": "uncertain",
+      "quote": "নিবন্ধন বহি বা সনদ সংশোধন করিবেন; সংশোধিত স্থানে তারিখসহ স্বাক্ষর প্রদান করিবেন; এবং সংশোধিত আকারে নূতন সনদ প্রদান করিয়া পূর্বের সনদ ফেরত লইবেন।",
+      "reason": "Failed exact supporting-quote validation. The passage outlines the procedure for modifying birth or death registration, which is relevant to the question."
+    },
+    "birth_and_death_registration_fees_cleaned_fee_row_05": {
+      "label": "relevant",
+      "quote": "Fee amount: ৫০ টাকা",
+      "reason": "The passage mentions a fee of 50 taka for modifying information such as name, father's name, mother's name, and address in birth registration."
+    },
+    "birth_and_death_registration_fees_cleaned_fee_row_03": {
+      "label": "relevant",
+      "quote": "জন্ম বা মৃত্যুর ৫ (পাঁচ) বৎসর পর হইতে কোনো ব্যক্তির জন্ম বা মৃত্যু নিবন্ধন (সাকুল্য) | ৫০ টাকা",
+      "reason": "The passage mentions the fee for birth or death registration after 5 years, which is relevant to the question about the cost of birth registration amendment."
+    },
+    "birth_and_death_registration_fees_cleaned_fee_row_06": {
+      "label": "irrelevant",
+      "quote": "বাংলা ও ইংরেজি উভয় ভাষায় মূল সনদ বা তথ্য সংশোধনের পর সনদের কপি সরবরাহ | বিনা ফিসে",
+      "reason": "The passage discusses the cost of providing a copy of the document after amendment in both languages, which is not directly related to the cost of birth registration amendment."
+    },
+    "birth_and_death_registration_fees_cleaned_fee_row_02": {
+      "label": "relevant",
+      "quote": "জন্ম বা মৃত্যুর ৪৫ (পঁয়তাল্লিশ) দিন পর হইতে ৫ (পাঁচ) বৎসর পর্যন্ত কোনো ব্যক্তির জন্ম বা মৃত্যু নিবন্ধন (সাকুল্য) | ২৫ টাকা",
+      "reason": "The passage mentions the fee for birth or death registration between 45 days and 5 years, which is relevant to the question about the cost of birth registration amendment."
+    },
+    "birth_and_death_registration_fees_cleaned_table_full": {
+      "label": "relevant",
+      "quote": "জন্ম বা মৃত্যুর ৪৫ (পঁয়তাল্লিশ) দিন পর হইতে ৫ (পাঁচ) বৎসর পর্যন্ত কোনো ব্যক্তির জন্ম বা মৃত্যু নিবন্ধন (সাকুল্য) | ২৫ টাকা",
+      "reason": "The passage provides the fee for birth or death registration between 45 days and 5 years, which is relevant to the question about the cost of birth registration amendment."
+    },
+    "bdris_faq_01_q01": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses mandatory birth registration and penalties for non-compliance, but does not provide specific information about the cost of modifying birth registration."
+    },
+    "bdris_faq_02_preamble": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage outlines mandatory birth registration and penalties for non-compliance, but does not provide specific information about the cost of modifying birth registration."
+    },
+    "birth_and_death_registration_rules_2018_বিধি_২১_01": {
+      "label": "relevant",
+      "quote": "| তথ্য সংশোধনের জন্য আবেদন ফি | ১০০ টাকা | ২ মার্কিন ডলার |",
+      "reason": "The passage explicitly states that the fee for information amendment (which includes birth registration modification) is 100 taka."
+    }
+  },
+  "birth_08_birth_date_proof": {
+    "application_for_birth_information_correction_cleaned_005_01": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses mapping a parent's birth registration number to a child's birth registration number but does not mention the required documents for correcting the birth date."
+    },
+    "application_for_birth_information_correction_cleaned_007_01": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage mentions that no proof of death is required if a parent is deceased, but it does not provide information about the required documents for correcting the birth date."
+    },
+    "application_for_birth_information_correction_cleaned_010_01": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the need for contact information when applying for birth registration correction, but it does not mention the required documents for correcting the birth date."
+    },
+    "birth_and_death_registration_fees_cleaned_fee_row_05": {
+      "label": "relevant",
+      "quote": "জন্ম তারিখ ব্যতীত নাম, পিতার নাম, মাতার নাম, ঠিকানা ইত্যাদি অন্যান্য তথ্য সংশোধনের জন্য আবেদন ফি",
+      "reason": "The passage mentions that a fee is required for correcting information such as name, father's name, mother's name, and address, which includes the birth date."
+    },
+    "birth_and_death_registration_fees_cleaned_table_full": {
+      "label": "relevant",
+      "quote": "জন্ম তারিখ সংশোধনের জন্য আবেদন ফি | ১০০ টাকা",
+      "reason": "প্রসঙ্গ করা হয়েছে জন্ম তারিখ সংশোধনের জন্য আবেদন ফি হল ১০০ টাকা।"
+    },
+    "notice_birth_and_death_registration_certificate_correction_steps_ocr_006_01": {
+      "label": "relevant",
+      "quote": "প্রয়োজনীয় সংযুক্তি দিতে হবে, যেমন ব্যক্তির অঙ্গীকারনামা, নিবন্ধকের প্রত্যয়নপত্র, হাতে লেখা নিবন্ধন বহির সংশ্লিষ্ট পৃষ্ঠার নিবন্ধক কর্তৃক সত্যায়িত কপি এবং হাতে লেখা জন্ম সনদের কপি।",
+      "reason": "প্রসঙ্গ করা হয়েছে জন্ম তারিখ সংশোধনের জন্য প্রয়োজনীয় প্রমাণ হল ব্যক্তির অঙ্গীকারনামা, নিবন্ধকের প্রত্যয়নপত্র, হাতে লেখা নিবন্ধন বহির সংশ্লিষ্ট পৃষ্ঠার নিবন্ধক কর্তৃক সত্যায়িত কপি এবং হাতে লেখা জন্ম সনদের কপি।"
+    },
+    "application_for_birth_information_correction_cleaned_003_01": {
+      "label": "irrelevant",
+      "quote": "যদি আপনার পিতা বা মাতার জন্ম নিবন্ধন নম্বর থাকে, তাহলে প্রথমে তাদের জন্ম নিবন্ধন নম্বর ব্যবহার করে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করে তাদের নাম সংশোধন করতে হবে।",
+      "reason": "প্রসঙ্গ করা হয়েছে পিতা বা মাতার জন্ম নিবন্ধন নম্বর থাকার ক্ষেত্রে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করা প্রয়োজন, যা প্রশ্নের বিষয় নয়।"
+    },
+    "application_for_birth_information_correction_cleaned_004_01": {
+      "label": "irrelevant",
+      "quote": "আপনার জন্ম নিবন্ধন করার সময় যদি পিতা বা মাতার জন্ম নিবন্ধন নম্বর প্রদান করা হয়ে থাকে, তাহলে তাদের নাম সংশোধনের পর আপনার জন্ম নিবন্ধন সনদ পুনর্মুদ্রণ করলে সেখানে সংশোধিত নাম স্বয়ংক্রিয়ভাবে প্রদর্শিত হবে।",
+      "reason": "প্রসঙ্গ করা হয়েছে পিতা বা মাতার জন্ম নিবন্ধন নম্বর প্রদান করার ক্ষেত্রে জন্ম নিবন্ধন সনদ পুনর্মুদ্রণের বিষয়, যা প্রশ্নের বিষয় নয়।"
+    },
+    "notice_birth_and_death_registration_certificate_correction_steps_ocr_007_01": {
+      "label": "relevant",
+      "quote": "প্রমাণক হিসেবে পিতা বা মাতার পাসপোর্টের কপি অথবা যুক্তিগ্রাহ্য অন্য প্রমাণক সংযুক্ত করা যেতে পারে।",
+      "reason": "প্রমাণপত্র হিসেবে পিতা বা মাতার পাসপোর্টের কপি বা যুক্তিগ্রাহ্য অন্য প্রমাণক ব্যবহার করা যেতে পারে এটি জন্মতারিখ সংশোধনের জন্য প্রয়োজনীয় প্রমাণপত্র সম্পর্কে বিস্তারিত তথ্য দেয়।"
+    },
+    "birth_and_death_registration_act_2004_ধারা_১৫_01": {
+      "label": "irrelevant",
+      "quote": "নিবন্ধন বহিতে বা, ক্ষেত্রমত, জন্ম বা মৃত্যু সনদে কোন ভুল তথ্য লিপিবদ্ধ হইয়া থাকিলে, উহা সংশোধনের জন্য নির্ধারিত ফিসহ সংশ্লিষ্ট নিবন্ধকের বরাবরে আবেদন করা যাইবে।",
+      "reason": "এটি জন্ম ও মৃত্যু নিবন্ধন আইনের ধারা সম্পর্কে তথ্য দেয়, কিন্তু জন্মতারিখ সংশোধনের জন্য প্রয়োজনীয় প্রমাণপত্র সম্পর্কে কোন বিশেষ তথ্য দেয় না।"
+    },
+    "application_for_birth_information_correction_cleaned_006_01": {
+      "label": "uncertain",
+      "quote": "যদি: পিতা বা মাতার জন্ম নিবন্ধন নম্বর না থাকে, এবং আপনার জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে হয়, তাহলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করার সময় পিতা বা মাতার নাম সংশোধন করা যাবে।",
+      "reason": "Failed exact supporting-quote validation. এটি জন্মতারিখ সংশোধনের পরিস্থিতি সম্পর্কে তথ্য দেয়, যেখানে পিতা বা মাতার জন্ম নিবন্ধন নম্বর না থাকলে জন্ম তারিখ সংশোধনের প্রক্রিয়া সম্পর্কে বিস্তারিত তথ্য দেয়।"
+    },
+    "application_for_birth_information_correction_cleaned_009_01": {
+      "label": "relevant",
+      "quote": "এই ক্ষেত্রে পিতা বা মাতার মৃত্যুর প্রমাণপত্র দাখিল করতে হবে।",
+      "reason": "এটি জন্মতারিখ সংশোধনের জন্য প্রয়োজনীয় প্রমাণপত্র সম্পর্কে তথ্য দেয়, যেখানে পিতা বা মাতার মৃত্যুর প্রমাণপত্র দাখিল করতে হবে।"
+    },
+    "application_for_birth_information_correction_cleaned_008_01": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the correction of birth registration information under specific conditions but does not mention the required documents for changing the birth date."
+    },
+    "birth_and_death_registration_fees_cleaned_fee_row_04": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage provides information about the fee for birth date correction but does not mention the required documents for the process."
+    },
+    "birth_and_death_registration_rules_2018_বিধি_৯_02": {
+      "label": "uncertain",
+      "quote": "ব্যক্তির জন্মের ৪৫ (পঁয়তাল্লিশ) দিনের মধ্যে দাখিলকৃত আবেদনপত্রের সহিত নিম্নলিখিত প্রমাণাদি সংযুক্ত করিতে হইবে, যথা: (অ) জন্মস্থান ও জন্ম তারিখের প্রমাণ হিসাবে সংশ্লিষ্ট চিকিৎসা প্রতিষ্ঠানের ছাড়পত্র বা উক্ত প্রতিষ্ঠান হইতে প্রাপ্ত জন্ম সংক্রান্ত সনদের সত্যায়িত অনুলিপি অথবা বার্থ এটেন্ডেন্ট এর প্রত্যয়ন বা অন্য কোন প্রমাণপত্র অথবা (আ) ব্যক্তির স্থায়ী ঠিকানার প্রমাণ হিসাবে ব্যক্তির নিজের বা পিতা বা মাতা বা পিতামহ বা পিতামহীর দ্বারা স্বনামে স্থায়ী ঠিকানা হিসাবে ঘোষিত আবাসস্থলের বিপরীতে হালনাগাদ কর পরিশোধের প্রমাণপত্র অথবা পিতা বা মাতা বা পিতামহ বা পিতামহীর জাতীয় পরিচয়পত্র বা পাসপোর্টে ঘোষিত স্থায়ী ঠিকানা অথবা অন্যকোন প্রমাণপত্র এবং জন্ম ও মৃত্যু নিবন্ধনের দ্বৈততা পরিহার করিবার লক্ষ্যে, প্রযোজ্য ক্ষেত্রে, জন্ম নিবন্ধনাধীন ব্যক্তির পিতা ও মাতার জন্ম নিবন্ধন নম্বর অথবা জাতীয় পরিচয়পত্র নম্বর উল্লেখসহ উহার সনদ দাখিল করিতে হইবে",
+      "reason": "Failed exact supporting-quote validation. The passage explicitly states that for birth registration correction, the applicant must submit documents such as a certificate from a medical institution, a birth certificate, or other proof of birth date and place."
+    }
+  },
+  "birth_09_parent_name": {
+    "bdris_faq_02_q01": {
+      "label": "relevant",
+      "quote": "তবে পূর্ব থেকে পিতামাতার নিবন্ধন থাকলে এবং তাতে ভুল থাকলে, সন্তানের নিবন্ধনের আগে সংশোধন আবেদন করে সংশোধন করে নিতে হবে।",
+      "reason": "The passage explicitly states that if there is a mistake in the parents' registration, a correction application must be submitted before the child's registration."
+    },
+    "application_for_birth_information_correction_cleaned_009_01": {
+      "label": "irrelevant",
+      "quote": "এই ক্ষেত্রে পিতা বা মাতার মৃত্যুর প্রমাণপত্র দাখিল করতে হবে।",
+      "reason": "The passage discusses the requirement of a death certificate for a different scenario, not the correction of parents' names in birth registration."
+    },
+    "application_for_birth_information_correction_cleaned_003_01": {
+      "label": "relevant",
+      "quote": "যদি আপনার পিতা বা মাতার জন্ম নিবন্ধন নম্বর থাকে, তাহলে প্রথমে তাদের জন্ম নিবন্ধন নম্বর ব্যবহার করে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করে তাদের নাম সংশোধন করতে হবে।",
+      "reason": "The passage provides a step-by-step process for correcting the parents' names in birth registration by using their birth registration number."
+    },
+    "application_for_birth_information_correction_cleaned_004_01": {
+      "label": "relevant",
+      "quote": "আপনার জন্ম নিবন্ধন করার সময় যদি পিতা বা মাতার জন্ম নিবন্ধন নম্বর প্রদান করা হয়ে থাকে, তাহলে তাদের নাম সংশোধনের পর আপনার জন্ম নিবন্ধন সনদ পুনর্মুদ্রণ করলে সেখানে সংশোধিত নাম স্বয়ংক্রিয়ভাবে প্রদর্শিত হবে।",
+      "reason": "The passage explains that after correcting the parents' names, the updated name will automatically appear in the birth registration certificate upon reissuance."
+    },
+    "application_for_birth_information_correction_cleaned_011_01": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage only mentions the requirement of a mobile number but does not provide any specific information on how to correct parent names in birth registration."
+    },
+    "application_for_birth_information_correction_cleaned_005_01": {
+      "label": "relevant",
+      "quote": "ম্যাপিং সম্পন্ন হওয়ার পর জন্ম নিবন্ধন সনদ পুনর্মুদ্রণ করলে সেখানে সংশোধিত নাম প্রদর্শিত হবে।",
+      "reason": "The passage explains that after mapping the parent's birth registration number with the child's registration, the corrected name will be displayed in the birth certificate."
+    },
+    "application_for_birth_information_correction_cleaned_006_01": {
+      "label": "uncertain",
+      "quote": "যদি: পিতা বা মাতার জন্ম নিবন্ধন নম্বর না থাকে, এবং আপনার জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে হয়, তাহলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করার সময় পিতা বা মাতার নাম সংশোধন করা যাবে।",
+      "reason": "Failed exact supporting-quote validation. The passage provides a specific condition under which the name of the father or mother can be corrected in the birth registration."
+    },
+    "birth_registration_application_process_cleaned_012_01": {
+      "label": "uncertain",
+      "quote": "পিতার নাম (বাংলা ও ইংরেজি) মাতার নাম (বাংলা ও ইংরেজি) সঠিকভাবে লিখতে হবে। পিতা-মাতার নাম তাদের অনলাইন জন্ম নিবন্ধনে যেভাবে আছে, ঠিক সেভাবেই লিখতে হবে।",
+      "reason": "Failed exact supporting-quote validation. The passage explains that the names of the father and mother must be written exactly as they appear in their online birth registration, which is relevant to correcting names."
+    },
+    "application_for_birth_information_correction_cleaned_008_01": {
+      "label": "uncertain",
+      "quote": "যদি: পিতা বা মাতার জন্ম নিবন্ধন নম্বর না থাকে, পিতা বা মাতা মৃত হন, এবং আপনার জন্ম তারিখ ০১/০১/২০০১-এর পরে হয়, তাহলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করার সময় পিতা বা মাতার নাম সংশোধন করা যাবে।",
+      "reason": "Failed exact supporting-quote validation. পাসেজটি বাবা-মায়ের নাম ভুল থাকলে সংশোধন করার প্রক্রিয়া বর্ণনা করে যে যদি পিতা বা মাতা মৃত হন এবং জন্ম তারিখ ০১/০১/২০০১-এর পরে হয়, তাহলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করা যাবে।"
+    },
+    "bdris_faq_02_q03": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "পাসেজটি হাতে লেখা জন্ম নিবন্ধনের তথ্য গড়মিল সম্পর্কে আলোচনা করে, যা বাবা-মায়ের নাম ভুল থাকলে সংশোধন করার প্রক্রিয়া সম্পর্কে কোনো তথ্য দেয় না।"
+    },
+    "application_for_birth_information_correction_cleaned_013_01": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "পাসেজটি যোগাযোগের তথ্য সংযুক্ত না থাকলে কী করা যাবে সম্পর্কে আলোচনা করে, যা বাবা-মায়ের নাম ভুল থাকলে সংশোধন করার প্রক্রিয়া সম্পর্কে কোনো তথ্য দেয় না।"
+    },
+    "application_for_birth_information_correction_cleaned_007_01": {
+      "label": "relevant",
+      "quote": "এই ক্ষেত্রে পিতা বা মাতা মৃত হলেও তাদের মৃত্যুর কোনো প্রমাণপত্র দাখিল করতে হবে না।",
+      "reason": "পাসেজটি বাবা-মায়ের নাম ভুল থাকলে সংশোধন করার প্রক্রিয়া সম্পর্কে তথ্য দেয় যে যদি পিতা বা মাতা মৃত হন, তাহলে তাদের মৃত্যুর প্রমাণপত্র দাখিল করতে হবে না।"
+    },
+    "application_for_birth_information_correction_cleaned_002_01": {
+      "label": "relevant",
+      "quote": "আপনার পিতা বা মাতার নাম সংশোধন করতে হলে নিম্নোক্ত নির্দেশনা অনুসরণ করতে হবে।",
+      "reason": "পাসেজটি পিতা বা মাতার নাম সংশোধনের জন্য নির্দেশনা সম্পর্কে উল্লেখ করেছে, যা প্রশ্নটির সাথে সম্পর্কিত।"
+    },
+    "notice_birth_and_death_registration_certificate_correction_steps_ocr_007_01": {
+      "label": "relevant",
+      "quote": "প্রমাণক হিসেবে পিতা বা মাতার পাসপোর্টের কপি অথবা যুক্তিগ্রাহ্য অন্য প্রমাণক সংযুক্ত করা যেতে পারে।",
+      "reason": "পাসেজটি পিতা বা মাতার নাম ভুল থাকলে সংশোধনের জন্য প্রমাণক হিসেবে কী ব্যবহার করা যেতে পারে তা বর্ণনা করেছে, যা প্রশ্নটির সাথে সম্পর্কিত।"
+    },
+    "bdris_faq_01_q12": {
+      "label": "irrelevant",
+      "quote": "সংশোধন বা পুনঃমুদ্রণ কেবল মূল নিবন্ধন অফিস থেকেই করা যাবে।",
+      "reason": "পাসেজটি বিদেশে জন্ম নিবন্ধন সংশোধন সম্পর্কে বর্ণনা করেছে, যা প্রশ্নটির সাথে সম্পর্কিত নয়।"
+    },
+    "birth_and_death_registration_fees_cleaned_fee_row_05": {
+      "label": "relevant",
+      "quote": "জন্ম তারিখ ব্যতীত নাম, পিতার নাম, মাতার নাম, ঠিকানা ইত্যাদি অন্যান্য তথ্য সংশোধনের জন্য আবেদন ফি",
+      "reason": "পাসেজটি পিতা বা মাতার নাম সংশোধনের জন্য আবেদন ফি সম্পর্কে উল্লেখ করেছে, যা প্রশ্নটির সাথে সম্পর্কিত।"
+    }
+  },
+  "birth_10_delivery_time": {
+    "home_registrar_generals_office_birth_and_death_registration_009_01": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage provides links to pages but does not contain any direct information about the time required for birth registration."
+    },
+    "birth_and_death_registration_rules_2018_বিধি_৯_03": {
+      "label": "relevant",
+      "quote": "উপ-বিধি (১) এর অধীন আবেদনপত্র প্রাপ্তির পর নিবন্ধক বা তৎকর্তৃক ক্ষমতাপ্রাপ্ত ব্যক্তি পরবর্তী ১৫ (পনের) কার্য দিবসের মধ্যে সনদ প্রদানের সম্ভাব্য তারিখ উল্লেখপূর্বক আবেদনকারীর অংশে স্বাক্ষর করিয়া উহা আবেদনকারীর নিকট হস্তান্তর করিবেন।",
+      "reason": "The passage mentions that the registrar or authorized person must hand over the certificate to the applicant within 15 working days after receiving the application."
+    },
+    "birth_and_death_registration_fees_cleaned_fee_row_01": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses fees for birth or death registration but does not provide information about the time required for the process."
+    },
+    "birth_and_death_registration_act_2004_ধারা_৮_01": {
+      "label": "relevant",
+      "quote": "শিশুর পিতা বা মাতা বা অভিভাবক বা নির্ধারিত ব্যক্তি উক্ত শিশুর জন্মের ৪৫ (পঁয়তাল্লিশ) দিনের মধ্যে জন্ম সংক্রান্ত তথ্য নিবন্ধকের নিকট প্রদানের জন্য বাধ্য থাকিবেন।",
+      "reason": "The passage states that the father, mother, guardian, or designated person must provide birth information to the registrar within 45 days of the child's birth."
+    },
+    "birth_and_death_registration_rules_2018_বিধি_২১_01": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses fees for birth and death registration but does not mention the time required to complete the registration process."
+    },
+    "birth_and_death_registration_act_2004_ধারা_১০_01": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the requirement to determine a child's name before birth registration but does not mention the time required to complete the registration process."
+    },
+    "birth_and_death_registration_rules_2018_বিধি_৯_02": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the documents required for birth registration but does not mention the time required to complete the registration process."
+    },
+    "birth_and_death_registration_fees_cleaned_fee_row_02": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the fee for birth or death registration after 45 days but does not mention the time required to complete the registration process."
+    },
+    "birth_and_death_registration_rules_2018_বিধি_২০_01": {
+      "label": "relevant",
+      "quote": "চিকিৎসা প্রতিষ্ঠান বা স্বাস্থ্যকর্মীগণ নিবন্ধনযোগ্য ব্যক্তির জন্ম বা মৃত্যুর তথ্য ৪৫ (পঁয়তাল্লিশ) দিনের মধ্যে নিবন্ধনের যোগ্য স্থানের নিবন্ধকের নিকট অনলাইনে প্রদান করিতে পারিবেন।",
+      "reason": "The passage states that medical institutions or health workers must provide birth or death information within 45 days to the registrar."
+    },
+    "birth_and_death_registration_rules_2018_বিধি_৮_01": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses who is responsible for providing birth or death information but does not mention the time required to complete the registration process."
+    },
+    "bdris_faq_01_q01": {
+      "label": "relevant",
+      "quote": "জন্ম ও মৃত্যু নিবন্ধন আইন ২০০৪ অনুযায়ী জন্ম নিবন্ধন সকলের জন্য বাধ্যতামূলক (ধারা ৫(১), ৬ক এবং ৮(১))।",
+      "reason": "The passage mentions that birth registration is mandatory under the Birth and Death Registration Act 2004, but it does not specify the time required for the registration process."
+    },
+    "birth_and_death_registration_fees_cleaned_table_full": {
+      "label": "uncertain",
+      "quote": "জন্ম বা মৃত্যুর ৪৫ (পঁয়তাল্লিশ) দিন পর্যন্ত কোনো ব্যক্তির জন্ম বা মৃত্যু নিবন্ধন বিনা ফিসে।",
+      "reason": "Failed exact supporting-quote validation. The passage states that birth or death registration can be done within 45 days without any fee, which directly answers the question about the time required for registration."
+    },
+    "birth_and_death_registration_rules_2018_বিধি_৯_04": {
+      "label": "uncertain",
+      "quote": "নিবন্ধক সর্বোচ্চ ৫ (পাঁচ) কার্য দিবসের মধ্যে জন্ম নিবন্ধন সম্পন্ন করিয়া জমনি ফরম-২ অনুযায়ী জন্ম নিবন্ধন বহিতে লিপিবদ্ধ করিয়া আবেদনকারীর নিকট জমনি ফরম-৩ অনুযায়ী জন্ম নিবন্ধন সনদ হস্তান্তর করিবেন।",
+      "reason": "Failed exact supporting-quote validation. The passage explicitly states that the registrar must complete the birth registration within 5 working days."
+    },
+    "birth_and_death_registration_rules_2018_বিধি_১১_03": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the processing time for death registration, which is not relevant to the question about birth registration."
+    },
+    "bdris_faq_02_q01": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage addresses the registration of parents and the correction of previous registrations, which is not directly relevant to the question about the time required for birth registration."
+    }
+  },
+  "brta_01_documents": {
+    "brta_4b8c25d391e48121_v2_0003": {
+      "label": "relevant",
+      "quote": "ড্রাইভিং ইন্সট্রাক্টর লাইসেন্স এর আবেদনপত্রের সাথে নিম্নোল্লিখিত কাগজপত্র দাখিল করতে হবে (নিম্নের ক্রমনম্বর অনুযায়ী কাগজপত্র সংযুক্ত করতে হবে এবং প্রতিটি ডকুমেন্ট এর উপর সংশ্লিষ্ট ডকুমেন্ট এর ক্রমনম্বর লিখতে হবে):",
+      "reason": "পাসেজটি ড্রাইভিং লাইসেন্স করতে প্রয়োজনীয় কাগজপত্রের তালিকা দেখায়, যা প্রশ্নটির উত্তর দেওয়ার জন্য সাহায্য করে।"
+    },
+    "brta_4e08eb4e988d38e4_v2_0008": {
+      "label": "relevant",
+      "quote": "জাতীয় পরিচয়পত্রের অনুলিপি; (খ) ফরম ২ অনুযায়ী রেজিস্টার্ড চিকিৎসক কর্তৃক প্রদত্ত মেডিকেল সা্টিফিকেট;",
+      "reason": "পাসেজটি শিক্ষানবিশ ড্রাইভিং লাইসেন্স করতে প্রয়োজনীয় কাগজপত্রের তালিকা দেখায়, যা প্রশ্নটির উত্তর দেওয়ার জন্য সাহায্য করে।"
+    },
+    "brta_6eb3d41986361dbd_v2_0003": {
+      "label": "irrelevant",
+      "quote": "বিভিন্ন ফি জানার টিউটোরিয়াল > ২. বিএসপি পোর্টালে প্রবেশ",
+      "reason": "পাসেজটি ফি জানার প্রক্রিয়া সম্পর্কে বর্ণনা করে, যা প্রশ্নটির উত্তর দেওয়ার জন্য সাহায্য করে না।"
+    },
+    "brta_cbe22ab64acf3d03_v2_0004": {
+      "label": "relevant",
+      "quote": "লার্নার বা শিক্ষানবিশ ড্রাইভিং লাইসেন্স এর জন্য প্রয়োজনীয় কাগজপত্র",
+      "reason": "পাসেজটি ড্রাইভিং লাইসেন্স করতে প্রয়োজনীয় কাগজপত্রের তালিকা দেখায়, যা প্রশ্নটির উত্তর দেওয়ার জন্য সাহায্য করে।"
+    },
+    "brta_846a4041fe96a64e_v2_0008": {
+      "label": "relevant",
+      "quote": "পূর্বে শিক্ষানবিশ ড্রাইভিং লাইসেন্স করার সময় যদি কোন Attachment সঠিকভাবে দেয়া না হয় তবে Additional Attachment হিসেবে সেগুলো (যেমন: মেডিকেল সনদ/স্কুল সনদ/ইউটিলিটি বিল) সঠিকভাবে স্ক্যান করে আপলোড করতে হবে।",
+      "reason": "পাস/ফেল সিলসহ শিক্ষানবিশ ড্রাইভিং লাইসেন্স স্ক্যান করে আপলোড করতে হবে এবং যদি কোনো সঠিকভাবে দেয়া না হয় তবে অতিরিক্ত কাগজপত্র আপলোড করতে হবে।"
+    },
+    "brta_09e8cbfff67f117e_v2_0005": {
+      "label": "uncertain",
+      "quote": "প্রয়োজনীয় কাগজপত্র ও প্রাপ্তিস্থান: 1. রেজিস্টার্ড ডাক্তার কর্তৃক প্রদত্ত মেডিকেল সার্টিফিকেট ফরম ডাউনলোড (সর্বোচ্চ ৬০০ কিলোবাইট); 2. জাতীয় পরিচয়পত্রের স্ক্যান কপি (সর্বোচ্চ ৬০০ কিলোবাইট); 3. ইউটিলিটি (বিদ্যুৎ/টেলিফোন/পানির বিল) স্ক্যান কপি (সর্বোচ্চ ৬০০ কিলোবাইট);",
+      "reason": "Failed exact supporting-quote validation. প্রয়োজনীয় কাগজপত্র সমূহ বর্ণনা করা হয়েছে, যেমন মেডিকেল সার্টিফিকেট, জাতীয় পরিচয়পত্র, ইউটিলিটি বিল ইত্যাদি।"
+    },
+    "brta_2d6e0fe1670b3aa3_v2_0003": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "প্রসঙ্গ করা হয়েছে রুট পারমিট ইস্যু ও নবায়ন সম্পর্কে, যা প্রশ্নের বিষয় ড্রাইভিং লাইসেন্স করতে কী কী কাগজপত্র লাগবে সম্পর্কে নয়।"
+    },
+    "brta_846a4041fe96a64e_v2_0003": {
+      "label": "uncertain",
+      "quote": "মেডিকেল সার্টিফিকেট: রেজিষ্টার্ড ডাক্তার কর্তৃক মেডিকেল সার্টিফিকেট (সর্বোচ্চ ৬০০ কে.বি)। জাতীয় পরিচয়পত্রের স্ক্যান কপি (সর্বোচ্চ ৬০০ কে.বি)। ইউটিলিটি বিলের স্ক্যান কপি (সর্বোচ্চ ৬০০ কে.বি), [আবেদনকারীর বর্তমান ঠিকানা এবং জাতীয় পরিচয়পত্রের ঠিকানা যদি ভিন্ন হয় তবে বর্তমান ঠিকানার ইউটিলিটি বিল সংযুক্ত করতে হবে]।",
+      "reason": "Failed exact supporting-quote validation. প্রয়োজনীয় কাগজপত্র সমূহ বর্ণনা করা হয়েছে, যেমন মেডিকেল সার্টিফিকেট, জাতীয় পরিচয়পত্র, ইউটিলিটি বিল ইত্যাদি।"
+    },
+    "brta_cbe22ab64acf3d03_v2_0006": {
+      "label": "relevant",
+      "quote": "* **১. আবেদনপত্র:** নির্ধারিত ফরমে আবেদন।\n* **২. মেডিকেল সার্টিফিকেট:** রেজিষ্টার্ড ডাক্তার কর্তৃক মেডিকেল সার্টিফিকেট।\n* **৩. পরিচয়পত্র:** ন্যাশনাল আইডি কার্ড এর সত্যায়িত ফটোকপি।\n* **৪. ফি জমাদানের রশিদ:** নির্ধারিত ফি বিআরটিএ'র নির্ধারিত ব্যাংকে জমাদানের রশিদ।\n* **৫. পুলিশি তদন্ত প্রতিবেদন:** পেশাদার ড্রাইভিং লাইসেন্স-এর জন্য পুলিশি তদন্ত প্রতিবেদন।\n* **৬. ছবি:** সদ্য তোলা ১ কপি পাসপোর্ট সাইজ ছবি।",
+      "reason": "প্রদত্ত পাসেজটি স্মার্টকার্ড ড্রাইভিং লাইসেন্স অর্জনের জন্য প্রয়োজনীয় কাগজপত্রগুলি বর্ণনা করে।"
+    },
+    "brta_cbe22ab64acf3d03_v2_0013": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "প্রদত্ত পাসেজটি ডুপ্লিকেট ড্রাইভিং লাইসেন্স অর্জনের জন্য প্রয়োজনীয় কাগজপত্রগুলি বর্ণনা করে, যা প্রশ্নের বিষয় নয়।"
+    },
+    "brta_cbe22ab64acf3d03_v2_0011": {
+      "label": "relevant",
+      "quote": "* **১. আবেদনপত্র:** নির্ধারিত ফরমে আবেদন।\n* **২. মেডিকেল সার্টিফিকেট:** রেজিষ্টার্ড ডাক্তার কর্তৃক মেডিকেল সার্টিফিকেট (পেশাদার ড্রাইভিং লাইসেন্সের ক্ষেত্রে প্রযোজ্য)।\n* **৩. পরিচয়পত্র:** ন্যাশনাল আইডি কার্ড-এর সত্যায়িত ফটোকপি।\n* **৪. ফি জমাদানের রশিদ:** নির্ধারিত ফি জমাদানের রশিদের বিআরটিএ কপি।\n* **৫. ছবি:** সদ্য তোলা ০২ কপি পাসপোর্ট সাইজ ছবি।",
+      "reason": "প্রদত্ত পাসেজটি ড্রাইভিং লাইসেন্স নবায়নের জন্য প্রয়োজনীয় কাগজপত্রগুলি বর্ণনা করে, যা প্রশ্নের বিষয়।"
+    },
+    "brta_4b8c25d391e48121_v2_0004": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "প্রদত্ত পাসেজটি ড্রাইভিং ইন্সট্রাক্টর লাইসেন্স অর্জনের জন্য প্রয়োজনীয় কাগজপত্রগুলি বর্ণনা করে, যা প্রশ্নের বিষয় নয়।"
+    },
+    "brta_cbe22ab64acf3d03_v2_0002": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses prerequisites for a driving license but does not provide specific information about the required documents for obtaining one."
+    },
+    "brta_cbe22ab64acf3d03_v2_0003": {
+      "label": "relevant",
+      "quote": "গ্রাহককে প্রথমে লার্নার বা শিক্ষানবিশ ড্রাইভিং লাইসেন্স-এর জন্য প্রয়োজনীয় কাগজপত্রসহ অনলাইনে (`bsp.brta.gov.bd`)-এর মাধ্যমে আবেদন করতে হবে।",
+      "reason": "The passage explicitly mentions that applicants need to submit necessary documents along with their learner or novice driving license application online."
+    },
+    "brta_57a7e75567f9a5c3_v2_0010": {
+      "label": "relevant",
+      "quote": "জাতীয় পরিচয়পত্র (NID)-এর সত্যায়িত কপি।",
+      "reason": "The passage lists the National ID (NID) as a required document for applying for a driving license."
+    }
+  },
+  "brta_02_fee": {
+    "brta_3cae1ecd59682fa3_v2_0014": {
+      "label": "uncertain",
+      "quote": "সর্বমোট (সকল খরচ মিলিয়ে): ৯৯২/-",
+      "reason": "Failed exact supporting-quote validation. প্রতিলিপি ফি সম্পর্কে সর্বমোট খরচ উল্লেখ করা হয়েছে।"
+    },
+    "brta_3cae1ecd59682fa3_v2_0018": {
+      "label": "irrelevant",
+      "quote": "বিশেষ নোট: বিদ্যমান ড্রাইভিং লাইসেন্সের মেয়াদ ০২ (দুই) মাসের কম থাকলে ড্রাইভিং লাইসেন্স নবায়ন ফি প্রযোজ্য হবে।",
+      "reason": "এটি ড্রাইভিং লাইসেন্স নবায়ন ফি সম্পর্কে বলেছে, যা প্রশ্নের বিষয় নয়।"
+    },
+    "brta_3cae1ecd59682fa3_v2_0011": {
+      "label": "uncertain",
+      "quote": "সর্বমোট (সকল খরচ মিলিয়ে): ৪,২১২/-",
+      "reason": "Failed exact supporting-quote validation. অপেশাদার (১০ বছর) ড্রাইভিং লাইসেন্স সম্পর্কে সর্বমোট খরচ উল্লেখ করা হয়েছে।"
+    },
+    "brta_3a262ccde300696d_v2_0013": {
+      "label": "uncertain",
+      "quote": "ফি এর পরিমাণ (টাকা): ৪০০",
+      "reason": "Failed exact supporting-quote validation. ড্রাইভিং লাইসেন্সের প্রতিলিপি ফি উল্লেখ করা হয়েছে।"
+    },
+    "brta_3cae1ecd59682fa3_v2_0009": {
+      "label": "uncertain",
+      "quote": "* সর্বমোট (সকল খরচ মিলিয়ে): ২,৮৩২/-",
+      "reason": "Failed exact supporting-quote validation. The passage provides the total cost of ২,৮৩২/- for a professional driving license (5 years) after passing the driving skill test."
+    },
+    "brta_3cae1ecd59682fa3_v2_0015": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses fees for license amendment or address change, which is not relevant to the total cost of obtaining a new driving license."
+    },
+    "brta_3cae1ecd59682fa3_v2_0017": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses fees for adding a vehicle category to a license, which is not relevant to the total cost of obtaining a new driving license."
+    },
+    "brta_3cae1ecd59682fa3_v2_0012": {
+      "label": "uncertain",
+      "quote": "* সর্বমোট (সকল খরচ মিলিয়ে): ২,৮৬৯/-",
+      "reason": "Failed exact supporting-quote validation. The passage provides the total cost of ২,৮৬৯/- for a professional driving license (5 years) after passing the driving skill test."
+    },
+    "brta_3cae1ecd59682fa3_v2_0005": {
+      "label": "relevant",
+      "quote": "সর্বমোট:** ৭৪৮/-",
+      "reason": "পাঠটি দুই শ্রেণীর মোটরযানের জন্য শিক্ষানবিশ ড্রাইভিং লাইসেন্স ফি এবং অন্যান্য ফি সহ মোট ফি বর্ণনা করে।"
+    },
+    "brta_3cae1ecd59682fa3_v2_0004": {
+      "label": "relevant",
+      "quote": "সর্বমোট:** ৫১৮/-",
+      "reason": "পাঠটি এক শ্রেণীর মোটরযানের জন্য শিক্ষানবিশ ড্রাইভিং লাইসেন্স ফি এবং অন্যান্য ফি সহ মোট ফি বর্ণনা করে।"
+    },
+    "brta_4b8c25d391e48121_v2_0003": {
+      "label": "irrelevant",
+      "quote": "ড্রাইভিং ইন্সট্রাক্টর লাইসেন্স প্রাপ্তির প্রক্রিয়া",
+      "reason": "পাঠটি ড্রাইভিং ইন্সট্রাক্টর লাইসেন্স প্রাপ্তির প্রক্রিয়া সম্পর্কে বর্ণনা করে, যা প্রশ্নের বিষয় নয়।"
+    },
+    "brta_846a4041fe96a64e_v2_0006": {
+      "label": "relevant",
+      "quote": "অপেশাদার লাইসেন্স:** ৪,৪৯৭/- টাকা (মেয়াদঃ ১০ বছর)।",
+      "reason": "পাঠটি অপেশাদার ড্রাইভিং লাইসেন্স অর্জনের জন্য মোট ফি বর্ণনা করে।"
+    },
+    "brta_846a4041fe96a64e_v2_0005": {
+      "label": "uncertain",
+      "quote": "১ ক্যাটাগরি (যেমন: শুধু কার): ৫১৮/- টাকা।\n* **২ ক্যাটাগরি (যেমন: কার ও মোটর সাইকেল):** ৭৪৮/- টাকা।",
+      "reason": "Failed exact supporting-quote validation. The passage provides the exact fees for obtaining a new driving license for different categories."
+    },
+    "brta_09e8cbfff67f117e_v2_0011": {
+      "label": "relevant",
+      "quote": "পেশাদার স্মার্ট কার্ড ড্রাইভিং লাইসেন্স নবায়নের জন্য ২,৪২৭/- টাকা (লাইসেন্স ফি) + ৬০/- টাকা (পোষ্টাল ফি)।",
+      "reason": "The passage provides the fee for renewing a professional driving license, which is relevant to the question."
+    },
+    "brta_3cae1ecd59682fa3_v2_0008": {
+      "label": "relevant",
+      "quote": "অপেশাদার (১০ বছর) ৩০০০১০\n* **আবেদন ফি:** ৩,০০০/-\n* **কার্ড ফি:** ৩০০/-\n* **ভ্যাট (১৫%):** ৬১০/-\n* **পোষ্টাল সার্ভিস চার্জ:** ৫৮৭/-\n* **সর্বমোট:** ৬০/-\n* **সর্বমোট (সকল খরচ মিলিয়ে):** ৪,৫৫৭/-",
+      "reason": "The passage provides the total fees for obtaining a driving license for non-professionals, which is relevant to the question."
+    }
+  },
+  "brta_03_learner": {
+    "brta_cbe22ab64acf3d03_v2_0004": {
+      "label": "relevant",
+      "quote": "লার্নার বা শিক্ষানবিশ ড্রাইভিং লাইসেন্স এর জন্য প্রয়োজনীয় কাগজপত্র",
+      "reason": "প্রসঙ্গে লার্নার ড্রাইভিং লাইসেন্স করার জন্য প্রয়োজনীয় কাগজপত্র বর্ণিত হয়েছে।"
+    },
+    "brta_846a4041fe96a64e_v2_0015": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "প্রসঙ্গে লার্নার ড্রাইভিং লাইসেন্স করার প্রক্রিয়া বর্ণিত হয়নি।"
+    },
+    "brta_3cae1ecd59682fa3_v2_0003": {
+      "label": "uncertain",
+      "quote": "",
+      "reason": "প্রসঙ্গে লার্নার ড্রাইভিং লাইসেন্স করার জন্য প্রয়োজনীয় তথ্য অস্পষ্ট এবং সম্পূর্ণ বিবরণ নেই।"
+    },
+    "brta_846a4041fe96a64e_v2_0002": {
+      "label": "uncertain",
+      "quote": "শিক্ষানবিশ লাইসেন্স: ড্রাইভিং লাইসেন্সের পূর্বশর্ত হলো লার্নার বা শিক্ষানবিশ ড্রাইভিং লাইসেন্স ইস্যু/গ্রহণ।",
+      "reason": "Failed exact supporting-quote validation. প্রসঙ্গে লার্নার ড্রাইভিং লাইসেন্স করার জন্য পূর্বশর্ত বর্ণিত হয়েছে।"
+    },
+    "brta_cbe22ab64acf3d03_v2_0003": {
+      "label": "relevant",
+      "quote": "গ্রাহককে প্রথমে লার্নার বা শিক্ষানবিশ ড্রাইভিং লাইসেন্স-এর জন্য প্রয়োজনীয় কাগজপত্রসহ অনলাইনে (`bsp.brta.gov.bd`)-এর মাধ্যমে আবেদন করতে হবে।",
+      "reason": "প্রসঙ্গে লার্নার ড্রাইভিং লাইসেন্স করার প্রক্রিয়া বর্ণিত হয়েছে।"
+    },
+    "brta_09e8cbfff67f117e_v2_0005": {
+      "label": "relevant",
+      "quote": "গ্রাহক বিআরটিএ সার্ভিস পোর্টালে (BSP) অ্যাকাউন্ট রেজিস্ট্রেশন/নিবন্ধন (গ্রাহকের এনআইডি'র বিপরীতে নিবন্ধিত মোবাইল নম্বর দিয়ে bsp তে অ্যাকাউন্ট ওপেন করতে হবে) করে লার্নার বা শিক্ষানবিশ ড্রাইভিং লাইসেন্সের জন্য অনলাইনে প্রয়োজনীয় কাগজপত্র সংযুক্ত করত: আবেদন দাখিল করবেন।",
+      "reason": "প্রসঙ্গে লার্নার ড্রাইভিং লাইসেন্স করার প্রক্রিয়া বর্ণিত হয়েছে।"
+    },
+    "brta_4e08eb4e988d38e4_v2_0008": {
+      "label": "irrelevant",
+      "quote": "শিক্ষানবিশ ড্রাইভিং লাইসেন্স পাইবার জন্য ফরম-১ অনুযায়ী অথবা কর্তৃপক্ষ কর্তৃক চালুকৃত ইলেকক্ট্রনিক পদ্ধতিতে আবেদন করিতে হইবে এবং আবেদনপত্রের সহিত নিম্নবর্ণিত কাগজপত্র বা তথ্যাদি সংযুক্ত করিয়া দাখিল করিতে হইবে, যথা: জাতীয় পরিচয়পত্রের অনুলিপি; (খ) ফরম ২ অনুযায়ী রেজিস্টার্ড চিকিৎসক কর্তৃক প্রদত্ত মেডিকেল সা্টিফিকেট;",
+      "reason": "প্রসঙ্গে লার্নার ড্রাইভিং লাইসেন্স করার প্রক্রিয়া বর্ণিত হয়নি।"
+    },
+    "brta_846a4041fe96a64e_v2_0011": {
+      "label": "uncertain",
+      "quote": "ধাপ-১: অনলাইনে আবেদন দাখিল প্রয়োজনীয় তথ্য ও ডকুমেন্ট: জাতীয় পরিচয়পত্র (NID), ছবি, মেডিকেল সার্টিফিকেট, শিক্ষাগত যোগ্যতার সনদ এবং অন্যান্য প্রয়োজনীয় কাগজপত্র।",
+      "reason": "Failed exact supporting-quote validation. প্রসঙ্গে লার্নার ড্রাইভিং লাইসেন্স করার প্রক্রিয়া বর্ণিত হয়েছে।"
+    },
+    "brta_57a7e75567f9a5c3_v2_0008": {
+      "label": "relevant",
+      "quote": "সরাসরি মধ্যম বা ভারী শ্রেণীর পেশাদার ড্রাইভিং লাইসেন্সের জন্য আবেদন করা সম্পূর্ণ নিষিদ্ধ। চালকদের পর্যায়ক্রমিক অভিজ্ঞতার মাধ্যমে লাইসেন্স উন্নত (Upgrade) করিতে হইবে:",
+      "reason": "পাসেজটি লার্নার ড্রাইভিং লাইসেন্স অর্জনের প্রক্রিয়া সম্পর্কে বিস্তারিত তথ্য দেয়, যেমন মধ্যম হতে ভারী শ্রেণী উন্নত করার জন্য প্রয়োজনীয় অভিজ্ঞতা এবং পরীক্ষা।"
+    },
+    "brta_4b8c25d391e48121_v2_0004": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "পাসেজটি ড্রাইভিং ইন্সট্রাক্টর লাইসেন্স প্রাপ্তির প্রক্রিয়া সম্পর্কে বর্ণনা করে, যা লার্নার ড্রাইভিং লাইসেন্স অর্জনের প্রশ্নে সম্পৃক্ত নয়।"
+    },
+    "brta_846a4041fe96a64e_v2_0007": {
+      "label": "uncertain",
+      "quote": "অনলাইন অ্যাকাউন্ট তৈরি: শিক্ষানবিশ ড্রাইভিং লাইসেন্সের জন্য অনলাইনে (বিআরটিএ সার্ভিস পোর্টাল) এর মাধ্যমে আবেদন করতে হবে। এই জন্য ড্রাইভিং লাইসেন্স প্রত্যাশীকে তার এনআইডি (NID) ব্যবহার করে একটি ইউজার অ্যাকাউন্ট তৈরি করতে হবে।",
+      "reason": "Failed exact supporting-quote validation. পাসেজটি লার্নার ড্রাইভিং লাইসেন্স অর্জনের জন্য অনলাইন আবেদন প্রক্রিয়া বর্ণনা করে, যা প্রশ্নের উত্তর দেওয়ার জন্য সাহায্যকারী।"
+    },
+    "brta_3cae1ecd59682fa3_v2_0004": {
+      "label": "uncertain",
+      "quote": "শিক্ষানবিশ ড্রাইভিং লাইসেন্স ফি (মেয়াদ ০৬ মাস): ২৫০/-",
+      "reason": "Failed exact supporting-quote validation. পাসেজটি লার্নার ড্রাইভিং লাইসেন্স অর্জনের জন্য আবেদন করার জন্য প্রয়োজনীয় ফি সম্পর্কে তথ্য দেয়, যা প্রশ্নের উত্তর দেওয়ার জন্য সাহায্যকারী।"
+    },
+    "brta_846a4041fe96a64e_v2_0008": {
+      "label": "relevant",
+      "quote": "শিক্ষানবিশ ড্রাইভিং লাইসেন্স করার সময় যদি কোন Attachment সঠিকভাবে দেয়া না হয় তবে Additional Attachment হিসেবে সেগুলো (যেমন: মেডিকেল সনদ/স্কুল সনদ/ইউটিলিটি বিল) সঠিকভাবে স্ক্যান করে আপলোড করতে হবে।",
+      "reason": "প্রসঙ্গে শিক্ষানবিশ ড্রাইভিং লাইসেন্স করার প্রক্রিয়া বর্ণিত হয়েছে যা লার্নার ড্রাইভিং লাইসেন্স করার পদক্ষেপের একটি অংশ।"
+    },
+    "brta_cbe22ab64acf3d03_v2_0002": {
+      "label": "uncertain",
+      "quote": "শিক্ষানবিশ লাইসেন্স: ড্রাইভিং লাইসেন্সের পূর্বশর্ত হলো লার্নার বা শিক্ষানবিশ ড্রাইভিং লাইসেন্স।",
+      "reason": "Failed exact supporting-quote validation. প্রসঙ্গে লার্নার ড্রাইভিং লাইসেন্স প্রাপ্তির পূর্বশর্ত বর্ণিত হয়েছে যা প্রশ্নের উত্তর দেওয়ার জন্য কার্যকর তথ্য।"
+    },
+    "brta_3cae1ecd59682fa3_v2_0005": {
+      "label": "relevant",
+      "quote": "লার্নার ড্রাইভিং লাইসেন্স (পেশাদার/অপেশাদার) > দুই শ্রেণীর মোটরযানের জন্য (উদাহরণ: মোটরসাইকেল+কার/লাইট মোটরযান)",
+      "reason": "প্রসঙ্গে লার্নার ড্রাইভিং লাইসেন্স প্রাপ্তির সাথে সম্পর্কিত তথ্য বর্ণিত হয়েছে যা প্রশ্নের উত্তর দেওয়ার জন্য কার্যকর তথ্য।"
+    }
+  },
+  "brta_04_delivery_time": {
+    "brta_846a4041fe96a64e_v2_0007": {
+      "label": "relevant",
+      "quote": "সর্বোচ্চ ১ (এক) কর্মদিবসের মধ্যে বিআরটিএ কর্তৃক উত্তীর্ণ/অনুত্তীর্ণ এর ফলাফল অনলাইনে আপলোড এবং আবেদনকারীর মোবাইলে SMS এর মাধ্যমে উত্তীর্ণ/অনুত্তীর্ণ ফলাফল জানানো হবে।",
+      "reason": "পাসেজটি ড্রাইভিং লাইসেন্স প্রাপ্তির প্রক্রিয়ার একটি ধাপ হিসাবে সর্বোচ্চ ১ কর্মদিবসের মধ্যে ফলাফল প্রদানের বিষয়টি উল্লেখ করেছে।"
+    },
+    "brta_09e8cbfff67f117e_v2_0010": {
+      "label": "uncertain",
+      "quote": "সেবা প্রদানের সময়সীমা: আবেদন: ০১- কার্যদিবস (শুধুমাত্র ই-ড্রাইভিং লাইসেন্স এর ক্ষেত্রে)।",
+      "reason": "Failed exact supporting-quote validation. পাসেজটি ড্রাইভিং লাইসেন্স প্রাপ্তির সময়সীমা সম্পর্কে বলেছে যে আবেদন করা হলে সর্বোচ্চ ১ কর্মদিবসের মধ্যে প্রক্রিয়া সম্পন্ন হতে পারে।"
+    },
+    "brta_09e8cbfff67f117e_v2_0008": {
+      "label": "uncertain",
+      "quote": "সেবা প্রদানের সময়সীমা: আবেদন: ০১- কার্যদিবস (শুধুমাত্র ই-ড্রাইভিং লাইসেন্স এর ক্ষেত্রে)।",
+      "reason": "Failed exact supporting-quote validation. পাসেজটি ড্রাইভিং লাইসেন্স প্রাপ্তির সময়সীমা সম্পর্কে বলেছে যে আবেদন করা হলে সর্বোচ্চ ১ কর্মদিবসের মধ্যে প্রক্রিয়া সম্পন্ন হতে পারে।"
+    },
+    "brta_4e08eb4e988d38e4_v2_0013": {
+      "label": "uncertain",
+      "quote": "ড্রাইভিং লাইসেন্স প্রদানকারী কর্তৃপক্ষ উপ-বিধি (১) অনুযায়ী ড্রাইভিং লাইসেন্সের আবেদন প্রাপ্তির অনধিক ৩০ (ত্রিশ) দিনের মধ্যে সকল আনুষ্ঠানিকতা সম্পন্ন করিয়া ড্রাইভিং লাইসেন্স ইস্যু করিবে।",
+      "reason": "Failed exact supporting-quote validation. পাসেজটি ড্রাইভিং লাইসেন্স প্রাপ্তির সময়সীমা সম্পর্কে বলেছে যে আবেদন প্রাপ্তির অনধিক ৩০ দিনের মধ্যে প্রক্রিয়া সম্পন্ন হতে পারে।"
+    },
+    "brta_cbe22ab64acf3d03_v2_0007": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the requirements and conditions for obtaining different types of professional driving licenses, but it does not mention the time duration required to obtain a driving license."
+    },
+    "brta_cbe22ab64acf3d03_v2_0003": {
+      "label": "relevant",
+      "quote": "এরপর ২/৩ মাস প্রশিক্ষণ গ্রহণের পর তাকে নির্ধারিত তারিখ ও সময়ে নির্ধারিত কেন্দ্রে লিখিত, মৌখিক ও ফিল্ড টেস্ট-এ অংশ গ্রহণ করতে হবে।",
+      "reason": "The passage states that after 2-3 months of training, the applicant must take written, oral, and field tests, which implies that the process takes at least 2-3 months."
+    },
+    "brta_4e08eb4e988d38e4_v2_0014": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the Road Transport Act 2022, including license validity periods and renewal procedures, but it does not mention the time duration required to obtain a driving license."
+    },
+    "brta_cbe22ab64acf3d03_v2_0009": {
+      "label": "relevant",
+      "quote": "গ্রাহককে প্রথমে নির্ধারিত ফি (মেয়াদোত্তীর্ণের ১৫ দিনের মধ্যে হলে ৪,২১২/- টাকা ও মেয়াদোত্তীর্ণের ১৫ দিন পরে প্রতি বছর ৫১৮/- টাকা জরিমানাসহ) জমা দিয়ে প্রয়োজনীয় কাগজপত্রসহ বিআরটিএর নির্দিষ্ট সার্কেল অফিসে আবেদন করতে হবে।",
+      "reason": "The passage mentions that the applicant must pay a fee and submit documents to the BRTE office, but it does not specify the time duration required to obtain a driving license."
+    },
+    "brta_846a4041fe96a64e_v2_0002": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage provides prerequisites for obtaining a driving license but does not mention the time required to obtain it."
+    },
+    "brta_846a4041fe96a64e_v2_0016": {
+      "label": "relevant",
+      "quote": "পোস্ট অফিস/কুরিয়ার সার্ভিসের মাধ্যমে গ্রাহকের দোরগোড়ায় ০৭ দিনের মধ্যে প্রেরণ।",
+      "reason": "The passage states that the smart card driving license is delivered to the customer's doorstep within 07 days."
+    },
+    "brta_4e08eb4e988d38e4_v2_0009": {
+      "label": "relevant",
+      "quote": "অনধিক '9) (তিন) কার্যদিবসের মধ্যে ফরম-৩ অনুযায়ী শিক্ষানবিশ ড্রাইভিং লাইসেন্স প্রদান করিবে",
+      "reason": "The passage mentions that the learner's driving license is issued within three working days."
+    },
+    "brta_09e8cbfff67f117e_v2_0007": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the process for applying for a driving license re-examination and associated fees, but not the time required to obtain a driving license."
+    },
+    "brta_4e08eb4e988d38e4_v2_0135": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the renewal of motor vehicle driving training school licenses and related procedures, but does not provide information about the time required to obtain a driving license."
+    },
+    "brta_4e08eb4e988d38e4_v2_0015": {
+      "label": "relevant",
+      "quote": "ড্রাইভিং লাইসেন্স নবায়নের আবেদন দাখিল হইবার অনধিক ১৫ (পনেরো) দিনের মধ্যে সকল আনুষ্ঠানিকতা সম্পন্ন করিয়া আবেদন নিষ্পত্তি করিবে",
+      "reason": "The passage states that the processing time for a driving license renewal application is up to 15 days."
+    },
+    "brta_cbe22ab64acf3d03_v2_0002": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage outlines the prerequisites for obtaining a driving license, such as educational qualifications, age limits, and physical fitness, but does not mention the time required to obtain the license."
+    }
+  },
+  "brta_05_test": {
+    "brta_4e08eb4e988d38e4_v2_0207": {
+      "label": "uncertain",
+      "quote": "",
+      "reason": "Invalid judge output; inspect judge_trace.jsonl"
+    },
+    "brta_4e08eb4e988d38e4_v2_0195": {
+      "label": "uncertain",
+      "quote": "",
+      "reason": "Invalid judge output; inspect judge_trace.jsonl"
+    },
+    "brta_846a4041fe96a64e_v2_0012": {
+      "label": "uncertain",
+      "quote": "",
+      "reason": "Invalid judge output; inspect judge_trace.jsonl"
+    },
+    "brta_4e08eb4e988d38e4_v2_0196": {
+      "label": "uncertain",
+      "quote": "",
+      "reason": "Invalid judge output; inspect judge_trace.jsonl"
+    },
+    "brta_57a7e75567f9a5c3_v2_0001": {
+      "label": "relevant",
+      "quote": "BRTA-PROF-DL-2026-MED-HEAVY",
+      "reason": "The passage mentions the keywords related to BRTA driving license, including 'Dope Test', 'Learner License', and 'Demerit Points', which are relevant to the driving exam content."
+    },
+    "brta_4e08eb4e988d38e4_v2_0178": {
+      "label": "relevant",
+      "quote": "ভারী মোটরযানের ড্রাইভিং লাইসেন্স ও গণপরিবহণ চালকের অনুমতিপত্র পাইবার নিমিত্তে নিম্নবর্ণিত সাধারণ কারিগরি বিষয়ে লিখিত মৌখিক পরীক্ষায় অংশগ্রহণ করিতে হইবে:",
+      "reason": "The passage lists the topics that are part of the written examination for a heavy vehicle driving license, which directly answers the question about what is included in the BRTA driving exam."
+    },
+    "brta_4e08eb4e988d38e4_v2_0138": {
+      "label": "uncertain",
+      "quote": "মোটরযান সংক্রান্ত শিক্ষণীয় পদ্ধতি চালকের আসনে বসা; ইঞ্জিন চালু ও বন্ধকরণ, অগ্রসর হওয়া, সোজা সামনে চালানো, গয়ার পরিবর্তন, থামা, মোটরযান স্টিয়ারিংকরণ, ক্লাচ পরিচালনা, সমতল স্থানে মোড় নেওয়া এবং পিছনে আসা, উঁচু- নিচু রাস্তায় মোটরযাজন চালানো, স্বাভাবিক অবস্থায় এবং অন্য মোটরযানের মধ্যবর্তী স্থানে পার্কিং, সংরাক্ষত এলাকায় মোটরযান চালানো, রাত্রিকালে এবং সড়কে মোটরযান চালানো); এবং (ঙ) মোটরযান চালাইবার নিয়ম এবং ট্রাফিক সাইন",
+      "reason": "Failed exact supporting-quote validation. The passage includes details about the practical and theoretical aspects of driving, which are part of the BRTA driving exam content."
+    },
+    "brta_4b8c25d391e48121_v2_0001": {
+      "label": "irrelevant",
+      "quote": "ড্রাইভিং ইন্সট্রাক্টর লাইসেন্স প্রাপ্তির প্রক্রিয়া",
+      "reason": "The passage discusses the process of obtaining a driving instructor license, which is unrelated to the content of the BRTA driving exam."
+    },
+    "brta_57a7e75567f9a5c3_v2_0012": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the mandatory dope test and health standards for professional driving licenses but does not provide information about the content of the BRTA driving exam."
+    },
+    "brta_434172ea3f86a161_v2_0056": {
+      "label": "uncertain",
+      "quote": "6.8.1 The Government will adopt 2 mouern curriculum for driver training and testing:",
+      "reason": "Failed exact supporting-quote validation. This passage mentions that the government will adopt a modern curriculum for driver training and testing, which is relevant to understanding what is included in the BRTA driving exam."
+    },
+    "brta_57a7e75567f9a5c3_v2_0010": {
+      "label": "relevant",
+      "quote": "1. বিআরটিএ সার্ভিস পোর্টাল (BSP)-এ অনলাইনে আবেদন ও ট্র্যাকিং প্রাপ্তি।",
+      "reason": "This passage provides information about the required documents and procedures for applying for a driving license, which includes details about the BRTA driving exam process."
+    },
+    "brta_6eb3d41986361dbd_v2_0003": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses fee tutorials and how to access the BSP portal but does not provide information about the content of the BRTA driving exam."
+    },
+    "brta_57a7e75567f9a5c3_v2_0004": {
+      "label": "relevant",
+      "quote": "বিআরটিএ-এর অধীনে মধ্যম ও ভারী শ্রেণীর পেশাদার ড্রাইভিং লাইসেন্স অর্জন, মানোন্নয়ন (Upgradation), ডোপ টেস্ট কমপ্লায়েন্স, শারীরিক যোগ্যতা ও ডিমেরিট পয়েন্ট সংক্রান্ত নিয়মাবলী।",
+      "reason": "পাসেজটি বিআরটিএ-এর ড্রাইভিং লাইসেন্স অর্জন ও নিয়মাবলী সম্পর্কে বিস্তারিত তথ্য দেয়, যা প্রশ্নের উত্তর দেওয়ার জন্য কার্যকর।"
+    },
+    "brta_4e08eb4e988d38e4_v2_0158": {
+      "label": "relevant",
+      "quote": "মোটরযান চালনার নিয়মাবলি এবং সিগন্যাল প্রদান [২ এবং ২খে) তফসিল] ৩1 পাবলিক সার্ভিস মোটরযান চালকদের দাযিত্ব কর্তব্য [তফসিল-২(গ)] 8 / ট্রাফিক রুলস এবং রেগুলেশনের জ্ঞান, বিশেষ করে মোটরযানের লাইট ব্যবহার, পার্কিং, জরুরি পরিস্সথিতিতে   মোটরযান থামানো; সড়কের   অধিকার, পথচারী পারাপার, লাইট সিগন্যাল, ওয়ানওয়ে ট্রাফিক, লেইন ডিসিপ্লিন, রাতে মোটরযান চালনা এবং সংশ্লিষ্ট অন্যান্য বিষয়াদি তফসিল-২(ঘ) এ বর্ণিত ট্রাফিক সাইন; সিগন্যাল ও রোড মার্কিং সংক্রান্ত জ্ঞান",
+      "reason": "পাসেজটি ড্রাইভিং পরীক্ষার বিষয়বস্তু সম্পর্কে বিস্তারিত তথ্য দেয়, যা প্রশ্নের উত্তর দেওয়ার জন্য কার্যকর।"
+    },
+    "brta_4e08eb4e988d38e4_v2_0013": {
+      "label": "irrelevant",
+      "quote": "ড্রাইভিং লাইসেন্স প্রদানের সময়সীমা ও প্রযোজ্যতা (১) ড্রাইভিং দক্ষতা যাচাই পরীক্ষায় উত্তীণ প্রার্থীকে ড্রাইভিং লাইসেন্স পাইবার জন্য তফসিল-১ এ বর্ণিত ফি (ড্রাইভিং লাইসেন্স ইস্যু ও য মেযাদের জন্য লাইসেন্স প্রদান করা হইবে সেই নির্দিষ্ট মেয়াদের জন্য ফি) প্রদান সাপেক্ষে ফরম-৪ অনুযাযী সংশ্লিষ্ট লাইসেন্স প্রদানকারী কর্তৃপক্ষ বরাবর লিখিতভাবে বা ইলেকট্রনিক মাধ্যমে আবেদন দাখিল করিতে হইবে",
+      "reason": "পাসেজটি ড্রাইভিং পরীক্ষার সময়সীমা ও আবেদন প্রক্রিয়া সম্পর্কে তথ্য দেয়, যা প্রশ্নের উত্তর দেওয়ার জন্য সম্পূর্ণ বা সম্পূরক নয়।"
+    }
+  },
+  "brta_06_renewal": {
+    "brta_09e8cbfff67f117e_v2_0011": {
+      "label": "relevant",
+      "quote": "বিআরটিএ সার্ভিস পোর্টালে নিজের অ্যাকাউন্টের মাধ্যমে স্মার্ট ড্রাইভিং লাইসেন্স নবায়নের জন্য আবেদনপূর্বক পেশাদার ড্রাইভিং লাইসেন্স রিফ্রেশার প্রবেশপত্র গ্রহণ করতে হবে।",
+      "reason": "পাসেজটি ড্রাইভিং লাইসেন্স নবায়নের জন্য আবেদন করার পদ্ধতি বর্ণনা করে।"
+    },
+    "brta_cbe22ab64acf3d03_v2_0008": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "পাসেজটি কোনো বিশেষ তথ্য বা পদ্ধতি বর্ণনা করে নি যা ড্রাইভিং লাইসেন্স নবায়নের প্রক্রিয়া সম্পর্কে সাহায্য করে।"
+    },
+    "brta_cbe22ab64acf3d03_v2_0010": {
+      "label": "relevant",
+      "quote": "পেশাদার ড্রাইভিং লাইসেন্সধারীদেরকে পুনরায় একটি ব্যবহারিক পরীক্ষায় অংশগ্রহণ করতে হবে।",
+      "reason": "পাসেজটি ড্রাইভিং লাইসেন্স নবায়নের জন্য পরীক্ষার প্রয়োজনীয়তা বর্ণনা করে।"
+    },
+    "brta_09e8cbfff67f117e_v2_0007": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "পাসেজটি ড্রাইভিং লাইসেন্স নবায়নের প্রক্রিয়া সম্পর্কে কোনো বিশেষ তথ্য বা পদ্ধতি বর্ণনা করে নি।"
+    },
+    "brta_4e08eb4e988d38e4_v2_0139": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses driving instructor licenses and motor vehicle repair shop licenses, not the renewal process for a driving license."
+    },
+    "brta_4e08eb4e988d38e4_v2_0026": {
+      "label": "uncertain",
+      "quote": "উপ-বিধি (৩) এর অধীন প্রাপ্ত ড্রাইভিং লাইসেন্সের মেয়াদ শেষে উক্ত লাইসেন্স নবায়নযোগ্য হইবে না তবে, উপ-বিধি (৫) অনুসরণ করিয়া নূতন লাইসেন্স গ্রহণ করিতে পারিবেন",
+      "reason": "Failed exact supporting-quote validation. This passage mentions that after the expiry of a driving license, a new license can be obtained by following the provisions of sub-clause (5)."
+    },
+    "brta_cbe22ab64acf3d03_v2_0009": {
+      "label": "relevant",
+      "quote": "গ্রাহককে প্রথমে নির্ধারিত ফি (মেয়াদোত্তীর্ণের ১৫ দিনের মধ্যে হলে ৪,২১২/- টাকা ও মেয়াদোত্তীর্ণের ১৫ দিন পরে প্রতি বছর ৫১৮/- টাকা জরিমানাসহ) জমা দিয়ে প্রয়োজনীয় কাগজপত্রসহ বিআরটিএর নির্দিষ্ট সার্কেল অফিসে আবেদন করতে হবে।",
+      "reason": "This passage provides specific information about the process of renewing a driving license, including the required fee and the need to submit documents to a specific office."
+    },
+    "brta_4e08eb4e988d38e4_v2_0014": {
+      "label": "relevant",
+      "quote": "ড্রাইভিং লাইসেন্সের মেয়াদ উত্তীরণ হইবার ৬০ (ষাট) দিন পূর্ব হইতে মেয়াদ অতিক্রান্তের অনধিক ১৫ (পনেরো) দিন পূর্ব পর্যন্ত উক্ত লাইসেন্সের মেয়াদ নবায়নের জন্য সংশ্লিষ্ট লাইসেন্স প্রদানকারী কর্তৃপক্ষ বরাবর তফসিল-১ এ বর্ণিত ফি প্রদান করিয়া ফরম ৪ অনুযায়ী লিখিতভাবে বা ইলেকট্রনিক মাধ্যমে আবেদন দাখিল করিতে হইবে এবং সেইক্ষেত্রে ড্রাইভিং লাইসেন্সের মেয়াদ উত্তীর্ণের তারিখ হইতে ড্রাইভিং লাইসেন্স নবায়ন করা হইবে",
+      "reason": "This passage outlines the procedure for renewing a driving license, including the required fee and the need to submit an application form within a specific time frame."
+    },
+    "brta_4e08eb4e988d38e4_v2_0016": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses license address changes and does not provide information on renewing a driving license when its validity has expired."
+    },
+    "brta_cb965b3169c34e73_v2_0032": {
+      "label": "uncertain",
+      "quote": "12. Renewal of driving licenses (1) Any licensing authority may, on receipt of an application made to it, renew a driving license issued under the provisions of this ordinance with effect from the date of its expiry",
+      "reason": "Failed exact supporting-quote validation. This passage provides a direct reference to the renewal process of a driving license when its validity has expired."
+    },
+    "brta_cbe22ab64acf3d03_v2_0011": {
+      "label": "relevant",
+      "quote": "### নবায়নের জন্য প্রয়োজনীয় কাগজপত্র\n* **১. আবেদনপত্র:** নির্ধারিত ফরমে আবেদন।\n* **২. মেডিকেল সার্টিফিকেট:** রেজিষ্টার্ড ডাক্তার কর্তৃক মেডিকেল সার্টিফিকেট (পেশাদার ড্রাইভিং লাইসেন্সের ক্ষেত্রে প্রযোজ্য)।",
+      "reason": "This passage lists the required documents for renewing a driving license, which is directly relevant to the question."
+    },
+    "brta_09e8cbfff67f117e_v2_0009": {
+      "label": "uncertain",
+      "quote": "সেবার মূল্য এবং পরিশোধ পদ্ধতি: \n  * অপেশাদার স্মার্ট কার্ড ড্রাইভিং লাইসেন্স নবায়নের জন্য ৪,১৫২/- টাকা (লাইসেন্স ফি) + ৬০/- টাকা (পোষ্টাল ফি)।",
+      "reason": "Failed exact supporting-quote validation. This passage provides specific information on the fees and payment methods for renewing a driving license, which is directly relevant to the question."
+    },
+    "brta_4e08eb4e988d38e4_v2_0015": {
+      "label": "relevant",
+      "quote": "ড্রাইভিং লাইসেন্স নবায়নের আবেদন দাখিল হইবার অনধিক ১৫ (পনেরো) দিনের মধ্যে সকল আনুষ্ঠানিকতা সম্পন্ন করিয়া আবেদন নিষ্পত্তি করিবে এবং কোনো আবেদন অসম্পূর্ণ বা ক্রুটিপূর্ণ হইলে তাৎক্ষণিকভাবে কারণ উল্লেখপূর্বক আবেদনটি ফেরত প্রদান করিতে হইবে",
+      "reason": "পাসেজটি ড্রাইভিং লাইসেন্স নবায়নের আবেদন প্রক্রিয়া সম্পর্কে বিস্তারিত তথ্য দিয়েছে যা প্রশ্নের উত্তর দেওয়ার জন্য কার্যকর।"
+    },
+    "brta_3cae1ecd59682fa3_v2_0005": {
+      "label": "uncertain",
+      "quote": "পরীক্ষায় অকৃতকার্য হলে প্রতি শ্রেণীর পুনঃপরীক্ষার ফি (২০০+১৫% ভ্যাট): ২৩০/-",
+      "reason": "Failed exact supporting-quote validation. পাসেজটি ড্রাইভিং লাইসেন্স নবায়নের পরীক্ষা সম্পর্কে তথ্য দিয়েছে যা প্রশ্নের উত্তর দেওয়ার জন্য কার্যকর।"
+    },
+    "brta_258cf38650a6332b_v2_0009": {
+      "label": "uncertain",
+      "quote": "মেয়াদ উত্তীর্ণের তারিখ (Expiry): ____ / ____ / 20____",
+      "reason": "Failed exact supporting-quote validation. পাসেজটি ড্রাইভিং লাইসেন্সের মেয়াদ শেষ হওয়ার তারিখ সম্পর্কে তথ্য দিয়েছে যা প্রশ্নের উত্তর দেওয়ার জন্য কার্যকর।"
+    }
+  },
+  "brta_07_lost": {
+    "brta_846a4041fe96a64e_v2_0007": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the process of obtaining a driving license, not the procedure for replacing a lost license."
+    },
+    "brta_4e08eb4e988d38e4_v2_0018": {
+      "label": "uncertain",
+      "quote": "ড্রাইভিং লাইসেন্স হারাইয়া গেলে বা নষ্ট হইলে লাইসেন্সের প্রতিলিপি উত্তোলনের জন্য লাইসেন্সধারী ক্ষেত্রমত, ফরম-৪(খ) অনুযায়ী বা ইলেকট্রনিক মাধ্যমে তফসিল-১ '9 বর্ণিত ফিসহ লাইসেন্সের বিবরণাদি উল্লেখপূর্বক যে লাইসেন্স প্রদানকারী কর্তৃপক্ষ কর্তৃক লাইসেন্স ইস্যু করা হইয়াছে অথবা উহা সর্বশেষ রেকর্ডভুক্ত করা হইয়াছে এলাকার লাইসেন্স প্রদানকারী কর্তৃপক্ষ বরাবর আবেদনপত্র দাখিল করিবেন",
+      "reason": "Failed exact supporting-quote validation. The passage provides information about the process of obtaining a duplicate driving license if it is lost or damaged, which is directly relevant to the question."
+    },
+    "brta_edcb265eccf9cd32_v2_0016": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses traffic laws and penalties for violations, not the procedure for replacing a lost driving license."
+    },
+    "brta_258cf38650a6332b_v2_0012": {
+      "label": "uncertain",
+      "quote": "হারিয়ে যাওয়ার কারণে প্রতিলিপি গ্রহণের ক্ষেত্রে: সংশ্লিষ্ট থানার নাম (Name of PS): ________________________________________ জিডি নম্বর (GD No.): ________________________ তারিখ (Date): ________________________",
+      "reason": "Failed exact supporting-quote validation. The passage provides specific details about the process of obtaining a duplicate driving license when it is lost, including the need to submit information to the police station."
+    },
+    "brta_09e8cbfff67f117e_v2_0005": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the issuance of a learner or new driver's license, not the process for replacing a lost license."
+    },
+    "brta_4e08eb4e988d38e4_v2_0023": {
+      "label": "relevant",
+      "quote": "ড্রাইভিং লাইসেন্স বাতিলের পর সংশ্লিষ্ট ব্যক্তির ড্রাইভিং লাইসেন্সটি ড্রাইভিং লাইসেন্স প্রদানকারী কর্তৃপক্ষের নিকট সমর্পণ করিতে হইবে এবং ড্রাইভিং লাইসেন্স বাতিলের ক্ষেত্রে ১ (এক) বৎসর অতিক্রান্ত না হইলে সংশ্লিষ্ট ব্যক্তি নূতন ড্রাইভিং লাইসেন্সের জন্য আবেদন করিতে পারিবেন",
+      "reason": "The passage states that if a driving license is revoked, the individual must surrender it to the licensing authority and can apply for a new license if one year has not passed since the revocation."
+    },
+    "brta_91979c30a91124e0_v2_0012": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the regulations for ride-sharing services and their licensing, not the process for replacing a lost driving license."
+    },
+    "brta_cbe22ab64acf3d03_v2_0004": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage outlines the process for obtaining or renewing a driving license, not the procedure for replacing a lost license."
+    },
+    "brta_cbe22ab64acf3d03_v2_0003": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the process of obtaining a learner or provisional driving license, not the procedure for replacing a lost license."
+    },
+    "brta_846a4041fe96a64e_v2_0008": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage outlines the process of obtaining a driving license, not the steps to replace a lost license."
+    },
+    "brta_4e08eb4e988d38e4_v2_0200": {
+      "label": "uncertain",
+      "quote": "Duplicate in case of lost, name of PS: UD1T0. Date: নষ্ট হওয়ার কারণে প্রতিলিপি গ্রহণের ক্ষেত্রে ড্রাইভিং লাইসেন্সের সংশ্লিষ্ট অংশ দাখিল করিতে হইবে (Duplicate in case of damage, relevant part to be submitted)",
+      "reason": "Failed exact supporting-quote validation. The passage mentions that in the case of a lost license, the relevant part of the license must be submitted for a duplicate."
+    },
+    "brta_4e08eb4e988d38e4_v2_0025": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses points deduction and license suspension, not the procedure for replacing a lost license."
+    },
+    "brta_cbe22ab64acf3d03_v2_0011": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the renewal process for a driving license but does not address what to do if a driving license is lost."
+    },
+    "brta_cbe22ab64acf3d03_v2_0009": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the renewal process for a driving license but does not address what to do if a driving license is lost."
+    },
+    "brta_4ba3dd29ea3234a0_v2_0014": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses taxi-cab replacement and registration issues, which are unrelated to what to do if a driving license is lost."
+    }
+  },
+  "brta_08_correction": {
+    "brta_258cf38650a6332b_v2_0018": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the correction of the father's name, not the name or date of birth on a driving license."
+    },
+    "brta_258cf38650a6332b_v2_0008": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the input of the NID number, not the correction of name or date of birth on a driving license."
+    },
+    "brta_4e08eb4e988d38e4_v2_0016": {
+      "label": "uncertain",
+      "quote": "কোনো ব্যকতি ড্রাইভিং লাইসেন্সে উল্লিখিত ঠিকানা পরিবর্তন করিলে) পরিবর্তিত ঠিকানা লাইসেন্স প্রদানকারী কর্তৃপক্ষের অধিক্ষেত্রের অধীন হইলে; তিনি উক্ত ঠিকানা পরিবর্তনের বিষয়টি অবহিত করিয়া অনধিক 9 (তিন) মাসের মধ্যে তফসিল-১ এ বর্ণিত ফি প্রদান সাপেক্ষে এবং ফরম-৫ অনুযায়ী উক্ত লাইসেন্স প্রদানকারী কর্তৃপক্ষের নিকট লিখিতভাবে অথবা ইলেকট্রনিক মাধ্যমে রেকর্ডভুক্তির জন্য আবেদন করিবেন",
+      "reason": "Failed exact supporting-quote validation. The passage provides information about the process of correcting information on a driving license, including the need to submit a form and pay a fee."
+    },
+    "brta_258cf38650a6332b_v2_0020": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the correction of the spouse's name, not the name or date of birth on a driving license."
+    },
+    "brta_0a6926d40f756cb6_v2_0005": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the conditions for adding motor vehicle classes to a driving license but does not provide information on correcting errors in the name or date of birth on a driving license."
+    },
+    "brta_258cf38650a6332b_v2_0019": {
+      "label": "relevant",
+      "quote": "- **প্রস্তাবিত সংশোধন (Proposed Correction):** ________________________________________",
+      "reason": "The passage mentions the process of proposing a correction to information on a driving license, which includes the possibility of correcting errors such as name or date of birth."
+    },
+    "brta_258cf38650a6332b_v2_0006": {
+      "label": "relevant",
+      "quote": "**Input:** ________________________________________",
+      "reason": "The passage refers to the process of providing input for changes to a driving license, which could include correcting errors in the name or date of birth."
+    },
+    "brta_00cf734ebafbc7c2_v2_0034": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses a declaration form for a driving license application but does not provide information on correcting errors in the name or date of birth on an existing license."
+    },
+    "brta_90ea5e2f80d89b97_v2_0005": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses license class upgrades and does not address correcting name or date of birth errors on a driving license."
+    },
+    "brta_258cf38650a6332b_v2_0024": {
+      "label": "uncertain",
+      "quote": "ফরম-৪ (খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন/প্রতিলিপি / শ্রেণি পরিবর্তন বা সংযোজন/ধরন পরিবর্তন/ ঠিকানা পরিবর্তন/তথ্য সংশোধনের আবেদন",
+      "reason": "Failed exact supporting-quote validation. The passage mentions the form for information correction, which includes updating details like name or date of birth on a driving license."
+    },
+    "brta_4e08eb4e988d38e4_v2_0199": {
+      "label": "uncertain",
+      "quote": "ড্রাইভিং লাইসেন্স প্রদানকারী কর্তৃপক্ষ (Driving Licensing Authority / বিআরটিএ (BRTA), সার্কেল (Circle) , বিষয় (Subject): মোটর ড্রাইভিং লাইসেন্স নবায়ন প্রতিলিপি শ্রেণি পরিবর্তন বা সংযোজন ধরন পরিবর্তন ঠিকানা পরিবর্তন তথ্য সংশোধন এর আবেদন",
+      "reason": "Failed exact supporting-quote validation. The passage refers to the process of applying for information correction on a driving license, which includes updating name or date of birth."
+    },
+    "brta_258cf38650a6332b_v2_0021": {
+      "label": "relevant",
+      "quote": "বিষয়: জন্ম তারিখ (Date of Birth)\n- **বিদ্যমান তথ্য (Current Information):** ________________________________________\n- **প্রস্তাবিত সংশোধন (Proposed Correction):** ________________________________________",
+      "reason": "The passage specifically mentions the correction of date of birth on a driving license, which directly addresses the question."
+    },
+    "brta_4e08eb4e988d38e4_v2_0237": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage contains information about the format of a form for a driving instructor license and details about motor vehicles, but it does not provide any specific information on how to correct errors in a driving license, such as a wrong name or birthdate."
+    },
+    "brta_258cf38650a6332b_v2_0011": {
+      "label": "relevant",
+      "quote": "ফরম-৪ (খ) > মোটর ড্রাইভিং লাইসেন্স নবায়ন/প্রতিলিপি / শ্রেণি পরিবর্তন বা সংযোজন/ধরন পরিবর্তন/ ঠিকানা পরিবর্তন/তথ্য সংশোধনের আবেদন",
+      "reason": "This passage mentions the form for applying for the renewal, copy, or modification of a driving license, which includes updating information such as address or other details. This is relevant to the question about correcting errors in a driving license."
+    },
+    "brta_00cf734ebafbc7c2_v2_0007": {
+      "label": "relevant",
+      "quote": "ফরম-৪ (ক) > ড্রাইভিং লাইসেন্সের আবেদন > ২. জন্ম তারিখ (Date of Birth)",
+      "reason": "This passage specifically mentions the section for providing the date of birth when applying for a driving license, which is directly relevant to the question about correcting a birthdate error in a driving license."
+    }
+  },
+  "brta_09_online_apply": {
+    "brta_846a4041fe96a64e_v2_0003": {
+      "label": "relevant",
+      "quote": "অনলাইনে (বিআরটিএ সার্ভিস পোর্টাল) আবেদনের প্রয়োজনীয় ডকুমেন্টসমূহ",
+      "reason": "পাসেজটি ড্রাইভিং লাইসেন্স আবেদনের জন্য অনলাইনে প্রয়োজনীয় ডকুমেন্টগুলি বর্ণনা করে।"
+    },
+    "brta_cbe22ab64acf3d03_v2_0004": {
+      "label": "relevant",
+      "quote": "নির্ধারিত ফি, ১ ক্যাটাগরি-৫১৮/-টাকা ও ২ ক্যাটাগরি-৭৪৮/-টাকা অনলাইনে পরিশোধ।",
+      "reason": "পাসেজটি ড্রাইভিং লাইসেন্স আবেদনের জন্য অনলাইনে প্রয়োজনীয় ফি বর্ণনা করে।"
+    },
+    "brta_846a4041fe96a64e_v2_0007": {
+      "label": "uncertain",
+      "quote": "অনলাইন অ্যাকাউন্ট তৈরি: শিক্ষানবিশ ড্রাইভিং লাইসেন্সের জন্য অনলাইনে (বিআরটিএ সার্ভিস পোর্টাল) এর মাধ্যমে আবেদন করতে হবে।",
+      "reason": "Failed exact supporting-quote validation. পাসেজটি ড্রাইভিং লাইসেন্স আবেদনের জন্য অনলাইনে আবেদন করার প্রক্রিয়া বর্ণনা করে।"
+    },
+    "brta_4e08eb4e988d38e4_v2_0194": {
+      "label": "irrelevant",
+      "quote": "সড়ক পরিবহণ বিধিমালা, ২০২২",
+      "reason": "পাসেজটি ড্রাইভিং লাইসেন্স আবেদন প্রক্রিয়া বর্ণনা করে না, বরং সড়ক পরিবহণ বিধিমালা সম্পর্কে তথ্য প্রদান করে।"
+    },
+    "brta_4e08eb4e988d38e4_v2_0196": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage contains form details and legal information about driving licenses but does not provide a clear step-by-step guide on how to apply for a driving license online."
+    },
+    "brta_846a4041fe96a64e_v2_0013": {
+      "label": "relevant",
+      "quote": "ধাপ-৩: অনলাইনে নির্ধারিত ফি জমা ও প্রয়োজনীয় কাগজপত্র দাখিল",
+      "reason": "The passage provides a relevant step about submitting the required documents and paying the fee online as part of the driving license application process."
+    },
+    "brta_846a4041fe96a64e_v2_0014": {
+      "label": "uncertain",
+      "quote": "ধাপ-৪: অনলাইনে কর্তৃপক্ষের অনুমোদন",
+      "reason": "The passage mentions an online approval step but lacks specific details on how to obtain the approval, making it uncertain whether it directly answers the question."
+    },
+    "brta_4e08eb4e988d38e4_v2_0149": {
+      "label": "relevant",
+      "quote": "অনলাইন এ্যাপয়েন্টমেন্ট এর মাধ্যমে ড্রাইভিং লাইসেন্স বিতরণের ব্যবস্থা করিবে",
+      "reason": "The passage mentions that the online appointment method is used for distributing driving licenses, which is relevant to the question about applying online."
+    },
+    "brta_846a4041fe96a64e_v2_0008": {
+      "label": "uncertain",
+      "quote": "গ্রাহককে প্রথমে লার্নার বা শিক্ষানবিশ ড্রাইভিং লাইসেন্স-এর জন্য প্রয়োজনীয় কাগজপত্রসহ অনলাইনে (`bsp.brta.gov.bd`)-এর মাধ্যমে আবেদন করতে হবে।",
+      "reason": "Failed exact supporting-quote validation. পাসেজটি অনলাইনে ড্রাইভিং লাইসেন্স আবেদনের প্রক্রিয়া বর্ণনা করে এবং আবেদনের জন্য ব্যবহার করা যাওয়া সার্ভিস পোর্টালের ঠিকানা দেয়।"
+    },
+    "brta_cbe22ab64acf3d03_v2_0003": {
+      "label": "relevant",
+      "quote": "গ্রাহককে প্রথমে লার্নার বা শিক্ষানবিশ ড্রাইভিং লাইসেন্স-এর জন্য প্রয়োজনীয় কাগজপত্রসহ অনলাইনে (`bsp.brta.gov.bd`)-এর মাধ্যমে আবেদন করতে হবে।",
+      "reason": "পাসেজটি অনলাইনে ড্রাইভিং লাইসেন্স আবেদনের প্রক্রিয়া বর্ণনা করে এবং আবেদনের জন্য ব্যবহার করা যাওয়া সার্ভিস পোর্টালের ঠিকানা দেয়।"
+    },
+    "brta_4e08eb4e988d38e4_v2_0148": {
+      "label": "relevant",
+      "quote": "সরকারের পূর্বানুমতিক্রমে অনলাইনে শিক্ষানবিশ ড্রাইভিং লাইসেন্সের জন্য আবেদন দাখিল এবং শিক্ষানবিশ ড্রাইভিং লাইসেন্স স্বয়ংক্রিয়ভাবে প্রিন্টের ব্যবস্থা করিবে;",
+      "reason": "পাসেজটি অনলাইনে ড্রাইভিং লাইসেন্স আবেদনের প্রক্রিয়া বর্ণনা করে এবং আবেদনের জন্য ব্যবহার করা যাওয়া সার্ভিস পোর্টালের ঠিকানা দেয়।"
+    },
+    "brta_09e8cbfff67f117e_v2_0005": {
+      "label": "relevant",
+      "quote": "গ্রাহক বিআরটিএ সার্ভিস পোর্টালে (BSP) অ্যাকাউন্ট রেজিস্ট্রেশন/নিবন্ধন (গ্রাহকের এনআইডি'র বিপরীতে নিবন্ধিত মোবাইল নম্বর দিয়ে bsp তে অ্যাকাউন্ট ওপেন করতে হবে) করে লার্নার বা শিক্ষানবিশ ড্রাইভিং লাইসেন্সের জন্য অনলাইনে প্রয়োজনীয় কাগজপত্র সংযুক্ত করত: আবেদন দাখিল করবেন।",
+      "reason": "পাসেজটি অনলাইনে ড্রাইভিং লাইসেন্স আবেদনের প্রক্রিয়া বর্ণনা করে এবং আবেদনের জন্য ব্যবহার করা যাওয়া সার্ভিস পোর্টালের ঠিকানা দেয়।"
+    },
+    "brta_4e08eb4e988d38e4_v2_0008": {
+      "label": "relevant",
+      "quote": "কর্তৃপক্ষ কর্তৃক এতদুদ্দেশ্যে দায়িত্বপ্রাপ্ত কর্মচারী লিখিতভাবে উপ-বিধি (২) এর অধীন দাখিলকৃত আবেদনপত্র গ্রহণের প্রাপ্তি স্বীকার করিবেন: শত থাকে যে, ইলেকট্রনিক পদ্ধতিতে আবেদনের ক্ষেত্রে কর্তৃপক্ষ বরাবর আবেদন দাখিলই প্রাপ্তি স্বীকার বলিয়া গণ্য হইবে",
+      "reason": "পাঠটি ইলেকট্রনিক পদ্ধতিতে আবেদনের প্রক্রিয়া সম্পর্কে বিস্তারিত বর্ণনা করে এবং অনলাইন আবেদনের প্রাপ্তি স্বীকৃতি সম্পর্কে তথ্য দেয়।"
+    },
+    "brta_57a7e75567f9a5c3_v2_0010": {
+      "label": "relevant",
+      "quote": "বিআরটিএ সার্ভিস পোর্টাল (BSP)-এ অনলাইনে আবেদন ও ট্র্যাকিং প্রাপ্তি।",
+      "reason": "পাঠটি অনলাইনে আবেদন করার জন্য বিআরটিএ সার্ভিস পোর্টাল ব্যবহার করার প্রয়োজনীয়তা উল্লেখ করে।"
+    },
+    "brta_846a4041fe96a64e_v2_0011": {
+      "label": "relevant",
+      "quote": "ধাপ-১: অনলাইনে আবেদন দাখিল",
+      "reason": "পাঠটি অনলাইনে আবেদন করার প্রক্রিয়া সম্পর্কে সংক্ষিপ্ত বর্ণনা দেয় এবং আবেদন করার প্রয়োজনীয় তথ্য ও ডকুমেন্ট সম্পর্কে তথ্য প্রদান করে।"
+    }
+  },
+  "brta_10_status": {
+    "brta_4e08eb4e988d38e4_v2_0205": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the suspension, revocation, or cancellation of a driving license due to legal violations, but it does not provide information on how to check the current status of a driving license."
+    },
+    "brta_00cf734ebafbc7c2_v2_0012": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage provides information about the marital status section of a driving license application form, which is unrelated to checking the current status of an existing license."
+    },
+    "brta_4e08eb4e988d38e4_v2_0196": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage describes the format of a learner's driving license application form and includes details about the license type, issue date, and expiry date, but it does not provide information on how to check the current status of an existing license."
+    },
+    "brta_a207b925ed0dc4a9_v2_0020": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage provides information about the present address section of a learner's driving license application form, which is unrelated to checking the current status of an existing license."
+    },
+    "brta_846a4041fe96a64e_v2_0007": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the process of obtaining a driving license, not checking its current status."
+    },
+    "brta_cbe22ab64acf3d03_v2_0003": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage describes the process of obtaining and renewing a driving license, not checking its current status."
+    },
+    "brta_00cf734ebafbc7c2_v2_0017": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage provides information about the form for applying for a driving license, not checking its current status."
+    },
+    "brta_4e08eb4e988d38e4_v2_0149": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the Road Transport Act, 2022, and related procedures, not checking the current status of a driving license."
+    },
+    "brta_258cf38650a6332b_v2_0015": {
+      "label": "relevant",
+      "quote": "**(ক) বিদ্যমান ইস্যুকারী লাইসেন্সিং কর্তৃপক্ষ (Current Issuing Authority):** ________________________________________",
+      "reason": "The passage mentions the current issuing authority of the driving license, which is a relevant piece of information for determining the current status of a driving license."
+    },
+    "brta_91979c30a91124e0_v2_0011": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the requirements for ride-sharing services and does not provide any information about checking the current status of a driving license."
+    },
+    "brta_cbe22ab64acf3d03_v2_0004": {
+      "label": "relevant",
+      "quote": "**৬. বিদ্যমান ড্রাইভিং লাইসেন্স:** বিদ্যমান ড্রাইভিং লাইসেন্সের স্ক্যান কপি [ড্রাইভিং লাইসেন্সের নবায়ন/শ্রেণী পরিবর্তন/শ্রেণী সংযোজন/লাইসেন্সের ধরণ পরিবর্তনের ক্ষেত্রে প্রযোজ্য (সর্বোচ্চ ৬০০ কে.বি)]।",
+      "reason": "The passage mentions the requirement to submit a copy of the existing driving license, which implies that checking the current status may involve verifying the existing license details."
+    },
+    "brta_4e08eb4e988d38e4_v2_0237": {
+      "label": "uncertain",
+      "quote": "**(গ) ড্রাইভিং লাইসেন্স ইস্যুকারী কর্তৃপক্ষ:** ড্রাইভিং লাইসেন্সে অনুমোদিত মোটরযানের শ্রেণি: ১০| আবেদনকারীর ফোন নম্বর:",
+      "reason": "Failed exact supporting-quote validation. The passage mentions the issuing authority of the driving license, which is a relevant piece of information for determining the current status of a driving license."
+    },
+    "brta_00cf734ebafbc7c2_v2_0026": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses form-4 (k) for driving license application and mentions 'Most Recent DL/Learner License Number,' but it does not provide any information on how to check the current status of a driving license."
+    },
+    "brta_4e08eb4e988d38e4_v2_0203": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage contains information about the Road Transport Act, 2022, and form-5 and form-6 for license address changes and permit applications. However, it does not provide any direct information on how to check the current status of a driving license."
+    },
+    "brta_e640c49d6025cc8d_v2_0006": {
+      "label": "relevant",
+      "quote": "বর্তমান ড্রাইভিং লাইসেন্সে উল্লিখিত ঠিকানা",
+      "reason": "The passage mentions 'বর্তমান ড্রাইভিং লাইসেন্সে উল্লিখিত ঠিকানা' (current address mentioned in the driving license), which is relevant to checking the current status of a driving license."
+    }
+  },
+  "passport_01_documents": {
+    "passport_73ac41f2327257f9_v2_0004": {
+      "label": "relevant",
+      "quote": "* **ক্রমিক ১:** আবেদনপত্রের সারংশের প্রিন্ট কপি (অ্যাপয়েন্টমেন্ট সহ)।\n* **ক্রমিক ২:** সনাক্তকরণ নথির প্রিন্ট কপি (জাতীয় পরিচয় পত্র/ জন্ম নিবন্ধন নং)।\n* **ক্রমিক ৩:** পেমেন্ট স্লিপ (for Offline Payment only) I\n* **ক্রমিক ৪:** পূর্ববর্তী পাসপোর্ট এবং ডাটা পেজের প্রিন্ট কপি (যদি থাকে)।\n* **ক্রমিক ৫:** সরকারি চাকরিজীবীদের ক্ষেত্রে GO/NOC (যদি থাকে)।\n* **ক্রমিক ৬:** আবেদনপত্রের প্রিন্ট কপি।\n* **ক্রমিক ৭:** তথ্য সংশোধনের ক্ষেত্রে প্রয়োজনীয় কাগজপত্র (যদি থাকে)।",
+      "reason": "The passage lists the required documents for applying for a new passport, including the application summary, identification documents, payment slip, previous passport copy, GO/NOC for government employees, and other relevant documents."
+    },
+    "passport_23d845d3ab38ea43_v2_0015": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses online payment issues and refunds, which is unrelated to the required documents for applying for a new passport."
+    },
+    "passport_3fcbc40c98aa80bc_v2_0008": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage focuses on the required documents for passport re-issue or information change, not for applying for a new passport."
+    },
+    "passport_ed7b3ebc56c0094f_v2_0003": {
+      "label": "relevant",
+      "quote": "1. সরকারি কর্মকর্তা/ কর্মচারী, সরকারি চাকরিজীবীগণের স্বামী/স্ত্রী এবং তাদের নির্ভরশীল ১৫ (পনের) বছরের কম বয়সী সন্তান, ৫ (পাঁচ)/১০ (দশ) বৎসরের অতিক্রান্ত, সমর্পণকৃত (সারেন্ডারড) দের জন্য একটি ফরম ও অন্যান্যদের ক্ষেত্রে নতুন পাসপোর্টের জন্য ২ (দুই) কপি পূরণকৃত পাসপোর্ট ফরম দাখিল করতে হবে।\n2. অপ্রাপ্তবয়স্ক (১৫ বছরের কম) আবেদনকারীর ক্ষেত্রে আবেদনকারীর পিতা ও মাতার একটি করে রঙিন ছবি (৩০ x ২৫ মিঃমিঃ) আঠা দিয়ে লাগানোর পর সত্যায়ন করতে হবে।\n3. জাতীয় পরিচয়পত্র অথবা জন্ম নিবন্ধন সনদ এবং প্রযোজ্য ক্ষেত্রে প্রাসঙ্গিক টেকনক্যাল সনদসমূহের (যেমন ডাক্তার, ইঞ্জিনিয়ার, ড্রাইভার ইত্যাদি) সত্যায়িত ফটোকপি।",
+      "reason": "The passage provides information about the required documents for applying for a new passport, including the passport form, photographs, and supporting documents like national ID or birth certificate."
+    },
+    "passport_3fcbc40c98aa80bc_v2_0002": {
+      "label": "relevant",
+      "quote": "পাসপোর্ট নবায়ন এর জন্য এই ফরমটি পূরণ করে বর্তমান পাসপোর্ট এর ফটোকপি ও ব্যাংকে টাকা জমার রশিদ সংযুক্ত করতে হবে এবং মূল পাসপোর্টটি অবশ্যই সঙ্গে নিয়ে আসতে হবে।",
+      "reason": "পাসপোর্ট নবায়নের জন্য বর্তমান পাসপোর্টের ফটোকপি এবং ব্যাংকে টাকা জমার রশিদ প্রয়োজন হয়।"
+    },
+    "passport_73ac41f2327257f9_v2_0003": {
+      "label": "relevant",
+      "quote": "Identification documents (NID card / Birth certificate - Original)",
+      "reason": "পাসপোর্ট আবেদনের জন্য জাতীয় পরিচয় পত্র (NID) এবং জন্ম সনদ প্রয়োজন হয়।"
+    },
+    "passport_729010959c882773_v2_0003": {
+      "label": "relevant",
+      "quote": "জাতীয় পরিচয় পত্রের মূল ও ফটোকপি (২০ বছরের উর্ধ্বের নাগরিকদের জন্য)।",
+      "reason": "পাসপোর্ট আবেদনের জন্য জাতীয় পরিচয় পত্রের মূল ও ফটোকপি প্রয়োজন হয়।"
+    },
+    "passport_23d845d3ab38ea43_v2_0033": {
+      "label": "relevant",
+      "quote": "পূর্ববর্তী মূল পাসপোর্ট।",
+      "reason": "পাসপোর্ট আবেদনের জন্য পূর্ববর্তী মূল পাসপোর্ট প্রয়োজন হয়।"
+    },
+    "passport_3fcbc40c98aa80bc_v2_0009": {
+      "label": "relevant",
+      "quote": "পুরাতন পাসপোর্ট অবশ্যই সাথে আনতে হবে।",
+      "reason": "পাসপোর্ট তথ্য পরিবর্তন বা সংশোধনের ক্ষেত্রে পুরাতন পাসপোর্ট সাথে আনতে হবে এটি প্রয়োজনীয় কাগজপত্রের একটি বিশেষ ধরন।"
+    },
+    "passport_ed7b3ebc56c0094f_v2_0004": {
+      "label": "irrelevant",
+      "quote": "মেশিন রিডেবল পাসপোর্ট (এমআরপি) > প্রয়োজনীয় তথ্য ও নির্দেশাবলী",
+      "reason": "পাসপোর্ট করতে কী কী কাগজপত্র লাগবে এই প্রশ্নের জন্য এই পাসপোর্ট সংক্রান্ত সাধারণ নির্দেশাবলী বা তথ্য সম্পর্কে কোন বিশেষ তথ্য দেওয়া হয়নি।"
+    },
+    "passport_73ac41f2327257f9_v2_0002": {
+      "label": "uncertain",
+      "quote": "Documents need to be carried while enrolment at Passport offices / পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে",
+      "reason": "পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় কী কী কাগজপত্র লাগবে এই বিষয়টি স্পষ্ট করে বলা হয়নি এবং কোন বিশেষ তথ্য দেওয়া হয়নি।"
+    },
+    "passport_23d845d3ab38ea43_v2_0040": {
+      "label": "relevant",
+      "quote": "পূর্বের মূল পাসপোর্ট।",
+      "reason": "নতুন পাসপোর্ট সংগ্রহের সময় পূর্বের মূল পাসপোর্ট দেখানো প্রয়োজন এটি প্রয়োজনীয় কাগজপত্রের একটি বিশেষ ধরন।"
+    },
+    "passport_6f7d900581956bef_v2_0007": {
+      "label": "relevant",
+      "quote": "ক্ষেত্রে NID/BRC প্রযোজ্য হবে।",
+      "reason": "পাসপোর্ট করতে NID বা BRC প্রয়োজন হতে পারে।"
+    },
+    "passport_3fcbc40c98aa80bc_v2_0003": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "পাসপোর্ট আবেদনের কাগজপত্র সম্পর্কে কোন তথ্য দেওয়া হয়নি।"
+    },
+    "passport_729010959c882773_v2_0004": {
+      "label": "relevant",
+      "quote": "১৪:** বৈবাহিক অবস্থার পরিবর্তন হলে বিবাহ সনদ/কাবিন নামার কপি।",
+      "reason": "বৈবাহিক অবস্থার পরিবর্তনে বিবাহ সনদ প্রয়োজন হতে পারে।"
+    }
+  },
+  "passport_02_fee": {
+    "passport_6f7d900581956bef_v2_0011": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage does not provide any specific information about the cost of obtaining a passport."
+    },
+    "passport_5eb6c21efe103a4f_v2_0026": {
+      "label": "uncertain",
+      "quote": "Ordinary Passport Fee: BDT 3,000 + 15% VAT = BDT 3,450",
+      "reason": "Failed exact supporting-quote validation. The passage provides the cost of a regular passport (BDT 3,450) which is directly relevant to the question."
+    },
+    "passport_3fcbc40c98aa80bc_v2_0002": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the process and conditions for passport re-issue or information modification, but does not provide any information about the cost of obtaining a passport."
+    },
+    "passport_ed7b3ebc56c0094f_v2_0003": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage provides information about the required documents and procedures for obtaining a passport, but does not mention the cost."
+    },
+    "passport_12e10027cfdfeeee_v2_0009": {
+      "label": "relevant",
+      "quote": "**Fee:** TK 6,325",
+      "reason": "The passage provides the exact fee for an e-Passport with 64 pages and 5 years validity under regular delivery."
+    },
+    "passport_12e10027cfdfeeee_v2_0010": {
+      "label": "relevant",
+      "quote": "**Fee:** TK 8,050",
+      "reason": "The passage provides the exact fee for an e-Passport with 64 pages and 10 years validity under regular delivery."
+    },
+    "passport_ed7b3ebc56c0094f_v2_0001": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the features and benefits of an MRZ (Machine Readable Zone) in an e-Passport, but it does not provide any information about the cost of obtaining a passport."
+    },
+    "passport_6f7d900581956bef_v2_0006": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage outlines the procedures and required documents for applying for an e-Passport, but it does not provide any information about the cost of obtaining a passport."
+    },
+    "passport_6f7d900581956bef_v2_0016": {
+      "label": "uncertain",
+      "quote": "সেবামূল্য এবং পরিশোধ পদ্ধতি: - ক. সাধারণ ফি: ৫০০/- টাকা + ১৫% ভ্যাট",
+      "reason": "Failed exact supporting-quote validation. পাসপোর্ট বানানোর সাধারণ ফি এবং ভ্যাট সম্পর্কে তথ্য প্রদান করেছে।"
+    },
+    "passport_6f7d900581956bef_v2_0010": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "পাসপোর্ট বানানোর ফি সম্পর্কে কোনো তথ্য প্রদান করে নি।"
+    },
+    "passport_12e10027cfdfeeee_v2_0007": {
+      "label": "uncertain",
+      "quote": "Fee: TK 4,025",
+      "reason": "Failed exact supporting-quote validation. পাসপোর্ট বানানোর ফি সম্পর্কে তথ্য প্রদান করেছে।"
+    },
+    "passport_729010959c882773_v2_0003": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "পাসপোর্ট বানানোর ফি সম্পর্কে কোনো তথ্য প্রদান করে নি।"
+    },
+    "passport_12e10027cfdfeeee_v2_0008": {
+      "label": "relevant",
+      "quote": "**Fee:** TK 5,750",
+      "reason": "The passage provides the exact fee for an e-Passport with 48 pages and 10 years validity for Inside Bangladesh."
+    },
+    "passport_6f7d900581956bef_v2_0019": {
+      "label": "irrelevant",
+      "quote": "সেবামূল্য এবং পরিশোধ পদ্ধতি: বিনামূল্যে",
+      "reason": "The passage mentions that the service is free, but it refers to a printed passport service, not the cost of creating a passport."
+    },
+    "passport_6f7d900581956bef_v2_0012": {
+      "label": "irrelevant",
+      "quote": "সেবামূল্য এবং পরিশোধ পদ্ধতি: ক) দেশভিত্তিক ভিসা ফিসের তালিকা অনুযায়ী সোনালী ব্যাংকের নির্ধারিত শাখায় জমা করতে হবে।",
+      "reason": "The passage discusses visa fees, not passport creation fees, and is therefore irrelevant to the question."
+    },
+    "passport_6f7d900581956bef_v2_0031": {
+      "label": "irrelevant",
+      "quote": "সেবামূল্য এবং পরিশোধ পদ্ধতি: বিনামূল্যে",
+      "reason": "The passage refers to a service for passport acceptance (NOC), not the cost of creating a passport, and is therefore irrelevant."
+    },
+    "passport_6f7d900581956bef_v2_0009": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage does not mention the cost of obtaining a passport."
+    },
+    "passport_bc66966daedfe968_v2_0002": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses machine-readable visas (MRV) and their features, not the cost of obtaining a passport."
+    }
+  },
+  "passport_03_delivery_time": {
+    "passport_6f7d900581956bef_v2_0019": {
+      "label": "uncertain",
+      "quote": "সেবা প্রদানের সময়সীমা: পার্সোনালাইজেশন সেন্টারে প্রাপ্তির ০৩ কর্মদিবস এবং পাসপোর্ট প্রদানের বিধি মোতাবেক।",
+      "reason": "Failed exact supporting-quote validation. The passage mentions the time limit for passport delivery as 03 working days after receiving at the personalization center."
+    },
+    "passport_6f7d900581956bef_v2_0025": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses a different service related to travel allowances, which is not relevant to the question about passport processing time."
+    },
+    "passport_6f7d900581956bef_v2_0011": {
+      "label": "uncertain",
+      "quote": "সেবা প্রদানের সময়সীমা: ক. সাধারণ ফি এবং অনুকূল পুলিশ প্রতিবেদন প্রাপ্তি সাপেক্ষে ১৫ কর্মদিবসের মধ্যে।",
+      "reason": "Failed exact supporting-quote validation. The passage provides information about the time limit for passport delivery as 15 working days for regular fees and police report receipt."
+    },
+    "passport_9f4e9ffe9f2a07f4_v2_0004": {
+      "label": "relevant",
+      "quote": "দেশের অভ্যন্তরে রেগুলার পাসপোর্ট প্রাপ্তির লক্ষ্যে অন্যান্য সকল তথ্য সঠিক থাকা সাপেক্ষে ১৫ কর্মদিবসের মধ্যে পাসপোর্ট প্রদান করা হবে।",
+      "reason": "The passage specifies that regular passport delivery takes 15 working days if all other information is correct."
+    },
+    "passport_9f4e9ffe9f2a07f4_v2_0003": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses requirements for filling an e-passport form, such as uploading documents and fees, but does not mention the time required to obtain a passport."
+    },
+    "passport_6f7d900581956bef_v2_0006": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage outlines the necessary documents and procedures for applying for an e-passport but does not specify the time duration required to obtain a passport."
+    },
+    "passport_6f7d900581956bef_v2_0015": {
+      "label": "uncertain",
+      "quote": "সেবা প্রদানের সময়সীমা: ০৩ কর্মদিবস",
+      "reason": "Failed exact supporting-quote validation. The passage explicitly states that the time limit for providing the service (root change permit) is 03 working days, which is relevant to the question about the time required to obtain a passport."
+    },
+    "passport_6f7d900581956bef_v2_0012": {
+      "label": "uncertain",
+      "quote": "সেবা প্রদানের সময়সীমা: ০৭ কর্মদিবস থেকে ৩০ কর্মদিবস (শ্রেণিভেদে এবং অনুকূল তদন্ত প্রতিবেদন সাপেক্ষে)",
+      "reason": "Failed exact supporting-quote validation. The passage provides a time frame for the visa issuance service, which is relevant to the question about the time required to obtain a passport."
+    },
+    "passport_23d845d3ab38ea43_v2_0039": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses reasons for passport delays, not the time required to obtain a passport."
+    },
+    "passport_6f7d900581956bef_v2_0031": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage provides information about the process for granting passport permission (NOC) for employees, not the time required to obtain a passport."
+    },
+    "passport_12e10027cfdfeeee_v2_0005": {
+      "label": "uncertain",
+      "quote": "Regular Delivery: Within 15 Working days / 21 days from the biometric enrolment date.",
+      "reason": "Failed exact supporting-quote validation. The passage provides a direct answer to the question about the time required to obtain a passport."
+    },
+    "passport_f2c0d221c70d21f2_v2_0003": {
+      "label": "relevant",
+      "quote": "Passport will be issued within 2 (two) working days for Super Express delivery.",
+      "reason": "The passage provides a specific time frame for obtaining a passport through the Super Express delivery service."
+    },
+    "passport_bc66966daedfe968_v2_0002": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses machine-readable visas (MRV) and their features, but it does not provide any information about the time required to obtain a passport."
+    },
+    "passport_6f7d900581956bef_v2_0016": {
+      "label": "uncertain",
+      "quote": "সেবা প্রদানের সময়সীমা: সাধারণ: ০৭ কর্মদিবস - জরুরি: ০৩ কর্মদিবস",
+      "reason": "Failed exact supporting-quote validation. The passage explicitly states that the time required for passport service is 7 working days for general cases and 3 working days for urgent cases."
+    },
+    "passport_ed7b3ebc56c0094f_v2_0003": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the requirements for a machine-readable passport (MRP) and does not provide any information about the time required to obtain a passport."
+    }
+  },
+  "passport_04_apply": {
+    "passport_23d845d3ab38ea43_v2_0024": {
+      "label": "relevant",
+      "quote": "আপনার যদি এমআরপি (MRP) থাকে, তবে সম্পূর্ণ অনলাইন আবেদন ফরমটি নতুন করে পূরণ করুন। পূর্বের এমআরপি থেকে তথ্য স্বয়ংক্রিয়ভাবে যুক্ত (Auto fill-in) হবে না। আবেদন জমা দেওয়ার পর পাসপোর্ট অফিসে যান এবং আপনার এমআরপি, এনআইডি/বিআরসি এবং প্রয়োজনীয় কাগজপত্র সঙ্গে নিয়ে আসুন।",
+      "reason": "The passage provides specific instructions on how to apply for an ePassport if you already have an MRP, including filling out the online form and submitting required documents."
+    },
+    "passport_caccc3966e7586d0_v2_0002": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses fraud prevention and warnings related to ePassport, but it does not provide any information on how to apply for an ePassport."
+    },
+    "passport_9f4e9ffe9f2a07f4_v2_0003": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage outlines rules and guidelines for filling out the ePassport form, including submission requirements and fees, but it does not provide a direct step-by-step guide on how to apply for an ePassport."
+    },
+    "passport_6e87d0783a373593_v2_0005": {
+      "label": "uncertain",
+      "quote": "For Online Application Click Here",
+      "reason": "The passage mentions an online application link, but it does not provide the actual link or detailed steps on how to apply for an ePassport."
+    },
+    "passport_6e87d0783a373593_v2_0007": {
+      "label": "relevant",
+      "quote": "Make sure you have all required documents with you when you visit the passport office.",
+      "reason": "The passage mentions that one must have all required documents when visiting the passport office for biometric enrolment, which is a relevant step in the e-Passport application process."
+    },
+    "passport_23d845d3ab38ea43_v2_0026": {
+      "label": "irrelevant",
+      "quote": "No, applications for ePassport can only be completed via the online application on the official ePassport portal.",
+      "reason": "The passage states that the MRP application form cannot be used for ePassport applications, which is not directly relevant to the question about how to apply for an e-Passport."
+    },
+    "passport_9f4e9ffe9f2a07f4_v2_0002": {
+      "label": "relevant",
+      "quote": "ই-পাসপোর্টের আবেদনপত্র অনলাইনে পূরণ করা যাবে।",
+      "reason": "The passage explicitly states that the e-Passport application form can be filled out online, which is a direct and relevant step in the application process."
+    },
+    "passport_6f7d900581956bef_v2_0007": {
+      "label": "uncertain",
+      "quote": "ক্ষেত্রে NID/BRC প্রযোজ্য হবে।",
+      "reason": "The passage mentions that NID/BRC is applicable, but it does not provide a clear, direct answer on how to apply for an e-Passport. The context is ambiguous and lacks specific procedural details."
+    },
+    "passport_6f7d900581956bef_v2_0006": {
+      "label": "uncertain",
+      "quote": "সেবা প্রদান পদ্ধতি: অফলাইন (PDF) অথবা অনলাইনের মাধ্যমে আবেদন গ্রহণ করা হয়। আবেদনকারী যে এলাকায় বসবাস করেন সেই এলাকা সংশ্লিষ্ট বিভাগীয় পাসপোর্ট ও ভিসা অফিস অথবা আঞ্চলিক পাসপোর্ট অফিস হতে সেবা প্রদান করা হয়।",
+      "reason": "Failed exact supporting-quote validation. The passage explains that e-Passport applications can be submitted online or offline, and specifies that the service is provided by the relevant passport office in the applicant's area of residence."
+    },
+    "passport_f00b2a4caf73fc8e_v2_0004": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage provides information about fraud prevention and does not directly address how to apply for an e-Passport."
+    },
+    "passport_6e87d0783a373593_v2_0008": {
+      "label": "uncertain",
+      "quote": "Step 5: Collect your e-Passport at the passport office\n* Collection Requirement 1: Delivery slip you received during passport enrolment\n* Collection Requirement 2: Authorized representatives (has to bring his/her NID card) can collect the applicant's new passport.",
+      "reason": "Failed exact supporting-quote validation. The passage provides information about collecting the e-Passport from the passport office, which is relevant to the application process."
+    },
+    "passport_23d845d3ab38ea43_v2_0016": {
+      "label": "uncertain",
+      "quote": "How can I pay for the ePassport?\n- English Answer: If you use the online application, you can pay directly online via the eChallan payment gateway. You can also make your payment for the ePassport at any scheduled bank in Bangladesh.",
+      "reason": "Failed exact supporting-quote validation. The passage explains the payment methods for the e-Passport, which is a relevant part of the application process."
+    },
+    "passport_6f7d900581956bef_v2_0008": {
+      "label": "relevant",
+      "quote": "আবেদন ফরমে নির্দেশনা রয়েছে (বিস্তারিত)।",
+      "reason": "The passage provides information about the application form instructions for an e-passport."
+    },
+    "passport_0b74faa4d85a2a58_v2_0003": {
+      "label": "relevant",
+      "quote": "ই-পাসপোর্ট আবেদন",
+      "reason": "The passage mentions the online application process for an e-passport."
+    },
+    "passport_6e87d0783a373593_v2_0002": {
+      "label": "relevant",
+      "quote": "You can apply for the new e-Passport in 5 easy steps",
+      "reason": "The passage outlines the process of applying for an e-passport in five steps."
+    }
+  },
+  "passport_05_renewal": {
+    "passport_23d845d3ab38ea43_v2_0017": {
+      "label": "relevant",
+      "quote": "There is no fee or penalty to pay simply because the passport validity date has expired. In case of passport re-issue or renewal, only the standard fee prescribed by the Government of Bangladesh needs to be paid.",
+      "reason": "The passage explains that there is no additional fee for an expired passport, and only the standard fee is required for re-issue or renewal."
+    },
+    "passport_a4d61a4d583daa54_v2_0007": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage provides details about the information required for a passport application but does not directly address the process of renewing an expired passport."
+    },
+    "passport_9f4e9ffe9f2a07f4_v2_0005": {
+      "label": "relevant",
+      "quote": "পাসপোর্ট রি-ইস্যুর ক্ষেত্রে মূল পাসপোর্ট প্রদর্শন করতে হবে।",
+      "reason": "The passage mentions that the original passport must be presented during re-issue, which is a relevant step in the renewal process."
+    },
+    "passport_23d845d3ab38ea43_v2_0050": {
+      "label": "relevant",
+      "quote": "You can apply to re-issue a new passport before or after the expiry date as per your requirement by citing your previous passport number.",
+      "reason": "The passage states that a passport can be re-issued before or after its expiry date, which is directly relevant to the question."
+    },
+    "passport_3fcbc40c98aa80bc_v2_0005": {
+      "label": "relevant",
+      "quote": "পরিবর্তন যোগ্য নহে।",
+      "reason": "পাসপোর্ট রি-ইস্যু প্রক্রিয়ায় তথ্য পরিবর্তনের জন্য প্রয়োজনীয় কাগজপত্র সম্পর্কে তথ্য প্রদান করেছে।"
+    },
+    "passport_6f7d900581956bef_v2_0010": {
+      "label": "uncertain",
+      "quote": "রি-ইস্যু আবেদনের ক্ষেত্রে: ডিআইপি ফরম-২ পূরণসহ পাসপোর্ট এর ১ সেট ফটোকপি।",
+      "reason": "Failed exact supporting-quote validation. পাসপোর্ট মেয়াদ শেষ হলে রি-ইস্যু প্রক্রিয়ায় প্রয়োজনীয় কাগজপত্র সম্পর্কে তথ্য প্রদান করেছে।"
+    },
+    "passport_ed7b3ebc56c0094f_v2_0003": {
+      "label": "relevant",
+      "quote": "পাসপোর্টের আবেদনপত্র ও ছবি প্রত্যায়ন ও সত্যায়ন করতে পারবেন – সংসদ সদস্য, সিটি কর্পোরেশনের মেয়র, ডেপুটি মেয়র ও কাউন্সিলরগণ, গেজেটেড কর্মকর্তা, পাবলিক বিশ্ববিদ্যালয়ের শিক্ষক, উপজেলা পরিষদের চেয়ারম্যান ও ভাইস চেয়ারম্যান, পৌরসভার মেয়র ও পৌর কাউন্সিলরগণ, বেসরকারি বিশ্ববিদ্যালয়ের অধ্যাপক, বেসরকারি কলেজের অধ্যক্ষ, বেসরকারি উচ্চ বিদ্যালয়ের প্রধান শিক্ষক, জাতীয় দৈনিক পত্রিকার সম্পাদক, নোটারী পাবলিক ও আধাসরকারি/স্বায়ত্তশাসিত/রাষ্ট্রায়ত্ত সংস্থার জাতীয় বেতন স্কেলের ৭ম ও তদুর্ধ্ব গ্রেডের কর্মকর্তা।",
+      "reason": "পাসপোর্ট রি-ইস্যু প্রক্রিয়ায় প্রয়োজনীয় কাগজপত্র সম্পর্কে তথ্য প্রদান করেছে।"
+    },
+    "passport_3fcbc40c98aa80bc_v2_0006": {
+      "label": "uncertain",
+      "quote": "প্রয়োজনীয় কাগজপত্র / শর্ত: নিকাহনামা / তালাকনামা (যেখানে যেটি প্রযোজ্য)",
+      "reason": "Failed exact supporting-quote validation. পাসপোর্ট রি-ইস্যু প্রক্রিয়ায় তথ্য পরিবর্তনের জন্য প্রয়োজনীয় কাগজপত্র সম্পর্কে তথ্য প্রদান করেছে।"
+    },
+    "passport_3fcbc40c98aa80bc_v2_0008": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses changing a permanent address and the required documents, which is not relevant to renewing a passport when its validity has expired."
+    },
+    "passport_3fcbc40c98aa80bc_v2_0007": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses changing a birth date and the required documents, which is not relevant to renewing a passport when its validity has expired."
+    },
+    "passport_23d845d3ab38ea43_v2_0029": {
+      "label": "relevant",
+      "quote": "Any person can apply for an ePassport even if their Machine-Readable Passport (MRP) is still valid. However, once the new ePassport is issued, the previous MRP can no longer be used because its validity will be automatically cancelled in the system.",
+      "reason": "The passage provides information about applying for an ePassport while the MRP is still valid and explains that the previous MRP will be automatically cancelled once the new ePassport is issued."
+    },
+    "passport_3fcbc40c98aa80bc_v2_0009": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the requirement to submit the old passport when applying for a new one, which is not directly relevant to the process of renewing a passport when its validity has expired."
+    },
+    "passport_a4d61a4d583daa54_v2_0004": {
+      "label": "relevant",
+      "quote": "এ ফরমটি মেয়াদ উত্তীর্ণ, পাসপোর্টে প্রদর্শিত তথ্য পরিবর্তন/মুদ্রণজনিত ভুল সংশোধন সংক্রান্তে ব্যবহৃত হবে।",
+      "reason": "পাসপোর্টের মেয়াদ শেষ হলে নবায়নের জন্য এই ফরমটি ব্যবহার করা হয়।"
+    },
+    "passport_3fcbc40c98aa80bc_v2_0002": {
+      "label": "relevant",
+      "quote": "পাসপোর্ট নবায়ন এর জন্য এই ফরমটি পূরণ করে বর্তমান পাসপোর্ট এর ফটোকপি ও ব্যাংকে টাকা জমার রশিদ সংযুক্ত করতে হবে এবং মূল পাসপোর্টটি অবশ্যই সঙ্গে নিয়ে আসতে হবে।",
+      "reason": "পাসপোর্টের মেয়াদ শেষ হলে নবায়নের জন্য বর্তমান পাসপোর্ট এর ফটোকপি ও ব্যাংকে টাকা জমার রশিদ সংযুক্ত করতে হবে।"
+    },
+    "passport_9f4e9ffe9f2a07f4_v2_0003": {
+      "label": "uncertain",
+      "quote": "১৮ বছরের নিম্নের সকল আবেদনে ই-পাসপোর্টের মেয়াদ হবে ০৫ বছর এবং ৪৮ পৃষ্ঠার।",
+      "reason": "পাসপোর্টের মেয়াদ শেষ হলে নবায়নের জন্য এই তথ্য সংক্রান্ত স্পষ্ট বিবরণ নেই।"
+    }
+  },
+  "passport_06_lost": {
+    "passport_73ac41f2327257f9_v2_0004": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the required documents for passport enrollment but does not address what to do if a passport is lost."
+    },
+    "passport_729010959c882773_v2_0004": {
+      "label": "relevant",
+      "quote": "হারানো পাসপোর্টের ক্ষেত্রে সাধারণ ডায়েরী (GD) এর মূল কপি।",
+      "reason": "The passage explicitly mentions that if a passport is lost, a copy of the General Diary (GD) is required."
+    },
+    "passport_ed7b3ebc56c0094f_v2_0002": {
+      "label": "relevant",
+      "quote": "প্রথমে এমআরপি ফরম সংগ্রহ করতে হবে। আঞ্চলিক পাসপোর্ট অফিস থেকে অথবা ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর এর ওয়েবসাইট থেকে আবেদন ফরম সংগ্রহ করুন।",
+      "reason": "The passage provides information on how to apply for an MR Passport, which includes steps to take if a passport is lost."
+    },
+    "passport_6f7d900581956bef_v2_0006": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the citizen's charter and service delivery but does not provide specific information on what to do if a passport is lost."
+    },
+    "passport_3fcbc40c98aa80bc_v2_0002": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses passport re-issue and information modification but does not specifically address the scenario of losing a passport."
+    },
+    "passport_23d845d3ab38ea43_v2_0036": {
+      "label": "relevant",
+      "quote": "Please communicate directly with your designated Regional Passport Office for assistance. You must bring your original NID card and BRC to retrieve your previous ePassport number.",
+      "reason": "The passage provides specific instructions on how to retrieve a previous ePassport number if it is lost, which is directly relevant to the question."
+    },
+    "passport_9f4e9ffe9f2a07f4_v2_0005": {
+      "label": "relevant",
+      "quote": "পাসপোর্ট হারিয়ে গেলে অথবা চুরি হলে দ্রুত নিকটস্থ থানায় জিডি করতে হবে। পুনরায় পাসপোর্টের জন্য আবেদনের সময় পুরাতন পাসপোর্টের ফটোকপি এবং জিডি কপিসহ আবেদনপত্র দাখিল করতে হবে।",
+      "reason": "The passage provides specific instructions on what to do if a passport is lost, including reporting it to the nearest police station and submitting a copy of the lost passport along with a police report when reapplying."
+    },
+    "passport_ed7b3ebc56c0094f_v2_0004": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses general requirements for an MR Passport but does not specifically address the scenario of losing a passport."
+    },
+    "passport_6f7d900581956bef_v2_0015": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses a 'রুট চেঞ্জ পারমিট' (Route Change Permit), which is unrelated to the question about losing a passport."
+    },
+    "passport_6f7d900581956bef_v2_0010": {
+      "label": "relevant",
+      "quote": "হারানো (LOST) MRP এর ক্ষেত্রে মূল জিডি (GD) দাখিল করতে হবে।",
+      "reason": "The passage mentions that for a lost MRP (Machine Readable Passport), the original GD (General Diary) must be submitted, which is directly relevant to the question about losing a passport."
+    },
+    "passport_23d845d3ab38ea43_v2_0042": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses printing errors in a passport and the process for correcting them, which is unrelated to the question about losing a passport."
+    },
+    "passport_23d845d3ab38ea43_v2_0041": {
+      "label": "relevant",
+      "quote": "আমি আমার ডেলিভারি স্লিপ হারিয়েছি। এখন আমি কি ভাবে আমার পাসপোর্ট সংগ্রহ করব?",
+      "reason": "The passage directly addresses the scenario of losing a delivery slip and provides information on how to collect a passport, which is relevant to the question about losing a passport."
+    },
+    "passport_ed7b3ebc56c0094f_v2_0003": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses requirements for obtaining a new passport, not what to do if a passport is lost."
+    },
+    "passport_5eb6c21efe103a4f_v2_0034": {
+      "label": "uncertain",
+      "quote": "Answer: File a General Diary (GD) report at the nearest police station immediately. When filling out the online MRP form, select `DUPLICATE` as the application type, enter the lost passport number, and present the original GD copy along with your application at the RPO.",
+      "reason": "Failed exact supporting-quote validation. The passage provides specific steps to take if a passport is lost, including filing a GD report and applying for a duplicate passport."
+    },
+    "passport_6f7d900581956bef_v2_0007": {
+      "label": "relevant",
+      "quote": "উল্লেখ্য, হারানো (LOST) ই-পাসপোর্ট এর ক্ষেত্রে মূল জিডি (GD) দাখিল করতে হবে।",
+      "reason": "The passage explicitly mentions that a GD (General Diary) report must be submitted if an e-passport is lost, which is directly relevant to the question."
+    }
+  },
+  "passport_07_name_correction": {
+    "passport_a4d61a4d583daa54_v2_0010": {
+      "label": "relevant",
+      "quote": "রি-ইস্যু/তথ্য পরিবর্তন/সংশোধন আবেদন ফরম (Re-Issue/Information Alteration/Correction Application Form)",
+      "reason": "The passage mentions a form for passport information correction, which is directly relevant to the question."
+    },
+    "passport_3fcbc40c98aa80bc_v2_0005": {
+      "label": "relevant",
+      "quote": "পরিবর্তন যোগ্য নহে।",
+      "reason": "The passage discusses the process of changing passport information, which is relevant to the question."
+    },
+    "passport_a4d61a4d583daa54_v2_0011": {
+      "label": "relevant",
+      "quote": "রি-ইস্যু/তথ্য পরিবর্তন/সংশোধন আবেদন ফরম (Re-Issue/Information Alteration/Correction Application Form)",
+      "reason": "The passage mentions a form for passport information correction, which is directly relevant to the question."
+    },
+    "passport_23d845d3ab38ea43_v2_0021": {
+      "label": "relevant",
+      "quote": "প্রিন্টকৃত 'Application Summary' (আবেদন সারাংশ) নিয়ে আপনার নির্ধারিত পাসপোর্ট অফিসে যোগাযোগ করুন।",
+      "reason": "The passage provides specific instructions on how to correct passport information after submission, which is directly relevant to the question."
+    },
+    "passport_23d845d3ab38ea43_v2_0023": {
+      "label": "relevant",
+      "quote": "You have to apply for a new ePassport as per the updated NID.",
+      "reason": "The passage explains that if there is a name error in the passport, a new ePassport must be applied for based on the updated NID."
+    },
+    "passport_ed7b3ebc56c0094f_v2_0004": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses general requirements for an MRP passport and does not provide specific information on correcting a name error in a passport."
+    },
+    "passport_23d845d3ab38ea43_v2_0019": {
+      "label": "relevant",
+      "quote": "Provide supporting documents for changes (e.g., Professional Certificate, Marriage Certificate). Major changes like name or date of birth require official documents like NID/BRC and previous passport.",
+      "reason": "The passage provides information on how to handle data changes, including name changes, and mentions the need for supporting documents like NID and previous passport."
+    },
+    "passport_23d845d3ab38ea43_v2_0042": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses printing errors in a passport and does not provide information on correcting a name error."
+    },
+    "passport_3fcbc40c98aa80bc_v2_0007": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses changing the birth date in a passport, not the name. It does not provide information on correcting a name error in a passport."
+    },
+    "passport_a4d61a4d583daa54_v2_0019": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage provides details about the passport issuing officer, which is not relevant to correcting a name error in a passport."
+    },
+    "passport_3fcbc40c98aa80bc_v2_0004": {
+      "label": "uncertain",
+      "quote": "পরিবর্তনযোগ্য তথ্য: নিজের নাম / পিতা / মাতার নাম আংশিক পরিবর্তন",
+      "reason": "Failed exact supporting-quote validation. The passage mentions that partial changes to the name, father's name, or mother's name are permissible, which is relevant to correcting a name error in a passport."
+    },
+    "passport_a4d61a4d583daa54_v2_0006": {
+      "label": "uncertain",
+      "quote": "আবেদনকারীর নাম (বাংলায়): [________________________]",
+      "reason": "Failed exact supporting-quote validation. The passage includes a field for the applicant's name in Bangla, which is relevant to the process of correcting a name error in a passport."
+    },
+    "passport_5eb6c21efe103a4f_v2_0033": {
+      "label": "relevant",
+      "quote": "The name and date of birth in the MRP application must strictly align with your National ID (NID) or 17-digit Birth Registration Certificate (BRC). Any alterations to key personal details require prior correction of the underlying NID/BRC records before submitting the passport application.",
+      "reason": "The passage explains that correcting a name in a passport application requires prior correction of the underlying NID/BRC records."
+    },
+    "passport_a4d61a4d583daa54_v2_0004": {
+      "label": "relevant",
+      "quote": "This form will be used only to change shown information/rectify printing errors of the valid passport.",
+      "reason": "The passage mentions that this form is used to change information in a valid passport, which is relevant to the question about correcting a name."
+    },
+    "passport_a4d61a4d583daa54_v2_0017": {
+      "label": "irrelevant",
+      "quote": "পাসপোর্ট ইস্যু/অনুমোদনকারী কর্মকর্তা:",
+      "reason": "The passage contains information about passport issuing officers, which is not directly relevant to correcting a name in a passport."
+    }
+  },
+  "passport_08_birth_date": {
+    "passport_a4d61a4d583daa54_v2_0017": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage provides form details for passport re-issue or information alteration but does not mention anything about changing the birth date in a passport."
+    },
+    "passport_3fcbc40c98aa80bc_v2_0005": {
+      "label": "relevant",
+      "quote": "পরিবর্তন যোগ্য নহে।",
+      "reason": "The passage indicates that full name, father's name, and mother's name can be altered, but it states that the information is not changeable, implying that birth date might not be alterable."
+    },
+    "passport_a4d61a4d583daa54_v2_0019": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage provides form details for passport re-issue or information alteration but does not mention anything about changing the birth date in a passport."
+    },
+    "passport_9f4e9ffe9f2a07f4_v2_0006": {
+      "label": "uncertain",
+      "quote": "৬৫ বছর উর্ধ বয়সী নাগরিকের ০৫ বছরের পাসপোর্ট হবার শর্তটি বাতিল",
+      "reason": "The passage mentions a condition related to passport validity for elderly citizens but does not provide clear information about changing the birth date in a passport."
+    },
+    "passport_3fcbc40c98aa80bc_v2_0002": {
+      "label": "relevant",
+      "quote": "তথ্য পরিবর্তন/সংশোধনের ক্ষেত্রে সংশ্লিষ্ট প্রমানপত্র সংযুক্ত করতে হবে।",
+      "reason": "পাসপোর্টে তথ্য পরিবর্তন করার জন্য প্রমানপত্র জমা দিতে হয় এবং এটি প্রশ্নের সাথে সম্পর্কিত।"
+    },
+    "passport_a4d61a4d583daa54_v2_0020": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "পাসপোর্ট গ্রহণ বিবরণ সংক্রান্ত তথ্য প্রশ্নের সাথে সম্পর্ক নেই।"
+    },
+    "passport_23d845d3ab38ea43_v2_0019": {
+      "label": "relevant",
+      "quote": "নাম বা জন্ম তারিখ পরিবর্তনের ক্ষেত্রে এনআইডি (NID)/বিআরসি (BRC) এবং আগের পাসপোর্ট আবশ্যক।",
+      "reason": "পাসপোর্টে জন্মতারিখ পরিবর্তন করার জন্য এনআইডি এবং আগের পাসপোর্ট আবশ্যক হতে পারে এবং এটি প্রশ্নের সাথে সম্পর্কিত।"
+    },
+    "passport_049144a6810ecbbf_v2_0002": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "পাসপোর্টে ভ্রমণ জন্য ভ্রমণ সীল সংক্রান্ত তথ্য প্রশ্নের সাথে সম্পর্ক নেই।"
+    },
+    "passport_ed7b3ebc56c0094f_v2_0003": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses requirements for various passport applications but does not mention anything about changing the date of birth in a passport."
+    },
+    "passport_3fcbc40c98aa80bc_v2_0007": {
+      "label": "uncertain",
+      "quote": "পরিবর্তনযোগ্য তথ্য: জন্ম তারিখ পরিবর্তন",
+      "reason": "Failed exact supporting-quote validation. The passage explicitly states that the date of birth can be changed in the passport application process."
+    },
+    "passport_23d845d3ab38ea43_v2_0006": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses changing an email address for an online account, which is unrelated to changing the date of birth in a passport."
+    },
+    "passport_5eb6c21efe103a4f_v2_0033": {
+      "label": "uncertain",
+      "quote": "Answer: No. The name and date of birth in the MRP application must strictly align with your National ID (NID) or 17-digit Birth Registration Certificate (BRC).",
+      "reason": "Failed exact supporting-quote validation. The passage states that the date of birth in the passport application must align with the National ID or Birth Registration Certificate, implying that changes to the date of birth may not be allowed without prior correction of the underlying records."
+    },
+    "passport_a4d61a4d583daa54_v2_0012": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the signature and date section of the application form but does not provide any information about changing the birth date in a passport."
+    },
+    "passport_3fcbc40c98aa80bc_v2_0004": {
+      "label": "uncertain",
+      "quote": "পরিবর্তনযোগ্য তথ্য: নিজের নাম / পিতা / মাতার নাম আংশিক পরিবর্তন",
+      "reason": "Failed exact supporting-quote validation. The passage mentions that partial changes to personal information, such as name, father's name, or mother's name, are allowed, which implies that changes to passport information, including birth date, may be possible under certain conditions."
+    },
+    "passport_a4d61a4d583daa54_v2_0007": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage provides details about the passport number, expiry date, and issue date, but it does not mention anything about changing the birth date in a passport."
+    }
+  },
+  "passport_09_status": {
+    "passport_729010959c882773_v2_0004": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage provides a checklist of required documents for e-Passport enrollment but does not mention how to check the status of a passport application."
+    },
+    "passport_23d845d3ab38ea43_v2_0044": {
+      "label": "relevant",
+      "quote": "Visit the official ePassport Portal status tracking section at: [https://www.epassport.gov.bd/authorization/application-status](https://www.epassport.gov.bd/authorization/application-status)",
+      "reason": "The passage provides a direct link to check the e-Passport status, which is the main focus of the question."
+    },
+    "passport_23d845d3ab38ea43_v2_0023": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses how to correct passport information after NID correction, which is unrelated to checking the status of a passport application."
+    },
+    "passport_729010959c882773_v2_0003": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage provides a checklist of required documents for e-Passport enrollment but does not mention how to check the status of a passport application."
+    },
+    "passport_6f7d900581956bef_v2_0014": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the process for issuing a SARC visa exemption sticker, not how to check the status of a passport application."
+    },
+    "passport_729010959c882773_v2_0002": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage provides a checklist for e-passport enrollment, not how to check the status of a passport application."
+    },
+    "passport_6f7d900581956bef_v2_0012": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the process for issuing a visa, not how to check the status of a passport application."
+    },
+    "passport_9f4e9ffe9f2a07f4_v2_0005": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage provides instructions for filling out an e-passport form and handling lost passports, not how to check the status of a passport application."
+    },
+    "passport_ed7b3ebc56c0094f_v2_0004": {
+      "label": "relevant",
+      "quote": "www.passport.gov.bd এই ঠিকানায় প্রবেশ করে Application Status অপশন থেকে ডেলিভারী রশিদে প্রদত্ত আপনার Enrolment ID এবং Date of Birth প্রদান করে আবেদনের",
+      "reason": "The passage provides a direct method to check the application status by visiting the official website and using the Enrolment ID and Date of Birth."
+    },
+    "passport_23d845d3ab38ea43_v2_0043": {
+      "label": "relevant",
+      "quote": "Clear your web browser's Cache and Cookies, or open the portal in an Incognito/Private window and check again.",
+      "reason": "The passage provides a solution to a common issue when checking the status online, which is relevant to the user's question."
+    },
+    "passport_23d845d3ab38ea43_v2_0047": {
+      "label": "relevant",
+      "quote": "Please contact your respective Regional Passport Office (RPO) for clarification and further instructions regarding backend checks.",
+      "reason": "The passage provides an alternative method to check the status if there is a system delay, which is relevant to the user's question."
+    },
+    "passport_9f4e9ffe9f2a07f4_v2_0002": {
+      "label": "irrelevant",
+      "quote": "ই-পাসপোর্টের আবেদনপত্র অনলাইনে পূরণ করা যাবে।",
+      "reason": "The passage discusses the process of filling out an e-passport form, which is not directly related to checking the application status."
+    },
+    "passport_14c01dbffa495023_v2_0003": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage provides details about a Machine Readable Visa Application Form, which is unrelated to checking the status of a passport application."
+    },
+    "passport_23d845d3ab38ea43_v2_0038": {
+      "label": "relevant",
+      "quote": "Visit the **Status Check** page on the official ePassport portal. Enter your Application ID or Online Registration ID (OID) along with the applicant's Date of Birth to view current processing status.",
+      "reason": "The passage provides a direct method to check the status of a passport application by visiting the official ePassport portal and entering specific details."
+    },
+    "passport_6f7d900581956bef_v2_0006": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the process of applying for an ePassport, including required documents and service delivery methods, but does not provide information on how to check the status of an application."
+    }
+  },
+  "passport_10_urgent": {
+    "passport_f2c0d221c70d21f2_v2_0003": {
+      "label": "relevant",
+      "quote": "Passport will be issued within 2 (two) working days for Super Express delivery.",
+      "reason": "The passage explicitly states that the Super Express delivery service issues passports within 2 working days, which directly answers the question about the time required for an urgent passport."
+    },
+    "passport_ed7b3ebc56c0094f_v2_0003": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the required information and documents for applying for a machine-readable passport (MRP), but it does not mention the time required for processing an urgent passport."
+    },
+    "passport_6f7d900581956bef_v2_0031": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage provides information about the process for granting passport permission (NOC) for government employees, but it does not address the time required for obtaining an urgent passport."
+    },
+    "passport_6f7d900581956bef_v2_0016": {
+      "label": "relevant",
+      "quote": "জরুরি: ০৩ কর্মদিবস",
+      "reason": "The passage explicitly states that the processing time for an urgent passport is 3 working days, which directly answers the question about the time required for an urgent passport."
+    },
+    "passport_6f7d900581956bef_v2_0011": {
+      "label": "relevant",
+      "quote": "খ. জরুরি ফি এবং পুলিশ প্রতিবেদন প্রাপ্তি সাপেক্ষে ৭ কর্মদিবসের মধ্যে।",
+      "reason": "পাসপোর্ট জরুরি ফি প্রদানের সময়সীমা স্পষ্টভাবে উল্লেখ করা হয়েছে।"
+    },
+    "passport_6f7d900581956bef_v2_0043": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "পাসপোর্ট জরুরি ফি প্রদানের সময়সীমা সম্পর্কে কোন তথ্য প্রদান করা হয়নি।"
+    },
+    "passport_3fcbc40c98aa80bc_v2_0002": {
+      "label": "uncertain",
+      "quote": "সরকারি, আধাসরকারী, স্বায়ত্ত্বশাসিত ও রাষ্ট্রায়ত্ত সংস্থার স্থায়ী কর্মকর্তা/ কর্মচারী ও সরকারি চাকুরীজীবির স্বামী/স্ত্রী, এবং সরকারি চাকুরীজীবির নির্ভরশীল ১৫ (পনের) বৎসরের কম বয়সী সন্তান সাধারণ ফি জমা করে জরুরি সুবিধা পাবেন।",
+      "reason": "Failed exact supporting-quote validation. জরুরি সুবিধা পাওয়ার জন্য সময়সীমা সম্পর্কে কোন তথ্য প্রদান করা হয়নি, কিন্তু জরুরি সুবিধা সম্পর্কে তথ্য প্রদান করা হয়েছে।"
+    },
+    "passport_9f4e9ffe9f2a07f4_v2_0004": {
+      "label": "uncertain",
+      "quote": "খ. দেশের অভ্যন্তরে জরুরী পাসপোর্ট প্রাপ্তির লক্ষ্যে অন্যান্য সকল তথ্য সঠিক থাকা সাপেক্ষে ৭ কর্মদিবসের মধ্যে পাসপোর্ট প্রদান করা হবে।",
+      "reason": "Failed exact supporting-quote validation. পাসপোর্ট জরুরী ফি প্রদানের সময়সীমা স্পষ্টভাবে উল্লেখ করা হয়েছে।"
+    },
+    "passport_6f7d900581956bef_v2_0015": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the 'Route Change Permit' service, not the urgent passport service. Therefore, it does not provide relevant information about the time required for an urgent passport."
+    },
+    "passport_6f7d900581956bef_v2_0012": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the 'Visa Issue' service, not the urgent passport service. Therefore, it does not provide relevant information about the time required for an urgent passport."
+    },
+    "passport_6f7d900581956bef_v2_0023": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the 'Leave Approval for Officers and Employees' service, not the urgent passport service. Therefore, it does not provide relevant information about the time required for an urgent passport."
+    },
+    "passport_12e10027cfdfeeee_v2_0005": {
+      "label": "uncertain",
+      "quote": "Regular Delivery: Within 15 Working days / 21 days from the biometric enrolment date.",
+      "reason": "Failed exact supporting-quote validation. The passage provides information about the delivery timelines for e-passports, which includes the time required for regular delivery, which is relevant to the question about the time required for an urgent passport."
+    },
+    "passport_6f7d900581956bef_v2_0030": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the process for granting permission for higher education, not for obtaining an emergency passport."
+    },
+    "passport_6f7d900581956bef_v2_0025": {
+      "label": "irrelevant",
+      "quote": "",
+      "reason": "The passage discusses the process for granting travel allowances, not for obtaining an emergency passport."
+    },
+    "passport_f2c0d221c70d21f2_v2_0002": {
+      "label": "uncertain",
+      "quote": "Urgent Applications > Super Express Passport Delivery Service Overview",
+      "reason": "The passage mentions an urgent application service but does not provide specific information about the time required to obtain an emergency passport."
+    }
+  }
+}

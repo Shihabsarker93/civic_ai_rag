@@ -1,0 +1,985 @@
+{
+  "label_status": "UNREVIEWED LOCAL MODEL DRAFT",
+  "questions": [
+    {
+      "question_id": "birth_01_documents",
+      "domain": "birth_death_registration",
+      "system": "simple",
+      "ranked_ids_top5": [
+        "birth_and_death_registration_rules_2018_বিধি_৯_02",
+        "bdris_faq_02_preamble",
+        "bdris_faq_01_q01",
+        "birth_registration_application_process_cleaned_016_01",
+        "birth_registration_application_process_cleaned_004_01"
+      ],
+      "known_relevant_pool_size": 5,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "birth_01_documents",
+      "domain": "birth_death_registration",
+      "system": "civic",
+      "ranked_ids_top5": [
+        "birth_registration_application_process_02_cleaned_010_01",
+        "birth_and_death_registration_rules_2018_বিধি_১০_01",
+        "birth_registration_application_process_cleaned_004_01",
+        "birth_and_death_registration_rules_2018_বিধি_৯_02",
+        "bdris_faq_02_q08"
+      ],
+      "known_relevant_pool_size": 5,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "birth_02_online_apply",
+      "domain": "birth_death_registration",
+      "system": "simple",
+      "ranked_ids_top5": [
+        "bdris_faq_01_q02",
+        "know_this_01_cleaned_008_01",
+        "birth_and_death_registration_rules_2018_বিধি_২০_01",
+        "birth_and_death_registration_rules_2018_বিধি_১৯_03",
+        "birth_registration_application_process_02_cleaned_003_01"
+      ],
+      "known_relevant_pool_size": 9,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "birth_02_online_apply",
+      "domain": "birth_death_registration",
+      "system": "civic",
+      "ranked_ids_top5": [
+        "bdris_faq_02_q04",
+        "know_this_01_cleaned_008_01",
+        "bdris_faq_01_q05",
+        "birth_registration_application_process_cleaned_008_01",
+        "birth_registration_application_process_02_cleaned_003_01"
+      ],
+      "known_relevant_pool_size": 9,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "birth_03_birth_date_correction",
+      "domain": "birth_death_registration",
+      "system": "simple",
+      "ranked_ids_top5": [
+        "application_for_birth_information_correction_cleaned_006_01",
+        "application_for_birth_information_correction_cleaned_008_01",
+        "application_for_birth_information_correction_cleaned_005_01",
+        "application_for_birth_information_correction_cleaned_003_01",
+        "application_for_birth_information_correction_cleaned_004_01"
+      ],
+      "known_relevant_pool_size": 5,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "birth_03_birth_date_correction",
+      "domain": "birth_death_registration",
+      "system": "civic",
+      "ranked_ids_top5": [
+        "application_for_birth_information_correction_cleaned_008_01",
+        "application_for_birth_information_correction_cleaned_006_01",
+        "birth_and_death_registration_act_2004_ধারা_১৫_01",
+        "application_for_birth_information_correction_cleaned_003_01",
+        "application_for_birth_information_correction_cleaned_004_01"
+      ],
+      "known_relevant_pool_size": 5,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "birth_04_name_spelling",
+      "domain": "birth_death_registration",
+      "system": "simple",
+      "ranked_ids_top5": [
+        "application_for_birth_information_correction_cleaned_005_01",
+        "application_for_birth_information_correction_cleaned_002_01",
+        "application_for_birth_information_correction_cleaned_004_01",
+        "application_for_birth_information_correction_cleaned_003_01",
+        "notice_birth_and_death_registration_certificate_correction_steps_ocr_007_01"
+      ],
+      "known_relevant_pool_size": 10,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "birth_04_name_spelling",
+      "domain": "birth_death_registration",
+      "system": "civic",
+      "ranked_ids_top5": [
+        "application_for_birth_information_correction_cleaned_003_01",
+        "application_for_birth_information_correction_cleaned_008_01",
+        "application_for_birth_information_correction_cleaned_006_01",
+        "application_for_birth_information_correction_cleaned_004_01",
+        "birth_and_death_registration_rules_2018_বিধি_১৫_01"
+      ],
+      "known_relevant_pool_size": 10,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "birth_05_lost",
+      "domain": "birth_death_registration",
+      "system": "simple",
+      "ranked_ids_top5": [
+        "birth_and_death_registration_rules_2018_বিধি_১৩_01",
+        "bdris_faq_02_q08",
+        "birth_and_death_registration_rules_2018_বিধি_১২_01",
+        "bdris_faq_01_q10",
+        "bdris_faq_01_q12"
+      ],
+      "known_relevant_pool_size": 7,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "birth_05_lost",
+      "domain": "birth_death_registration",
+      "system": "civic",
+      "ranked_ids_top5": [
+        "bdris_faq_01_q12",
+        "bdris_faq_01_q15",
+        "birth_and_death_registration_rules_2018_বিধি_১৩_01"
+      ],
+      "known_relevant_pool_size": 7,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "birth_06_verify",
+      "domain": "birth_death_registration",
+      "system": "simple",
+      "ranked_ids_top5": [
+        "know_this_01_cleaned_008_01",
+        "birth_and_death_registration_rules_2018_বিধি_২০_01",
+        "birth_registration_application_process_cleaned_012_01",
+        "birth_and_death_registration_rules_2018_বিধি_৯_04",
+        "bdris_faq_01_q02"
+      ],
+      "known_relevant_pool_size": 7,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "birth_06_verify",
+      "domain": "birth_death_registration",
+      "system": "civic",
+      "ranked_ids_top5": [
+        "birth_and_death_registration_rules_2018_বিধি_১৯_03",
+        "birth_registration_application_process_cleaned_012_01",
+        "birth_and_death_registration_rules_2018_বিধি_১৯_02",
+        "birth_registration_application_process_cleaned_017_01",
+        "birth_registration_application_process_02_cleaned_011_01"
+      ],
+      "known_relevant_pool_size": 7,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "birth_07_correction_fee",
+      "domain": "birth_death_registration",
+      "system": "simple",
+      "ranked_ids_top5": [
+        "birth_and_death_registration_fees_cleaned_fee_row_04",
+        "birth_and_death_registration_fees_cleaned_table_full",
+        "birth_and_death_registration_fees_cleaned_fee_row_05",
+        "birth_and_death_registration_rules_2018_বিধি_২১_01",
+        "bdris_faq_02_preamble"
+      ],
+      "known_relevant_pool_size": 6,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "birth_07_correction_fee",
+      "domain": "birth_death_registration",
+      "system": "civic",
+      "ranked_ids_top5": [
+        "birth_and_death_registration_fees_cleaned_table_full",
+        "birth_and_death_registration_fees_cleaned_fee_row_05",
+        "birth_and_death_registration_fees_cleaned_fee_row_04",
+        "birth_and_death_registration_fees_cleaned_fee_row_06",
+        "birth_and_death_registration_rules_2018_বিধি_২১_01"
+      ],
+      "known_relevant_pool_size": 6,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "birth_08_birth_date_proof",
+      "domain": "birth_death_registration",
+      "system": "simple",
+      "ranked_ids_top5": [
+        "application_for_birth_information_correction_cleaned_006_01",
+        "application_for_birth_information_correction_cleaned_008_01",
+        "application_for_birth_information_correction_cleaned_009_01",
+        "application_for_birth_information_correction_cleaned_003_01",
+        "application_for_birth_information_correction_cleaned_005_01"
+      ],
+      "known_relevant_pool_size": 5,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "birth_08_birth_date_proof",
+      "domain": "birth_death_registration",
+      "system": "civic",
+      "ranked_ids_top5": [
+        "application_for_birth_information_correction_cleaned_008_01",
+        "application_for_birth_information_correction_cleaned_006_01",
+        "birth_and_death_registration_fees_cleaned_fee_row_04",
+        "application_for_birth_information_correction_cleaned_003_01",
+        "birth_and_death_registration_fees_cleaned_fee_row_05"
+      ],
+      "known_relevant_pool_size": 5,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "birth_09_parent_name",
+      "domain": "birth_death_registration",
+      "system": "simple",
+      "ranked_ids_top5": [
+        "application_for_birth_information_correction_cleaned_002_01",
+        "application_for_birth_information_correction_cleaned_003_01",
+        "application_for_birth_information_correction_cleaned_006_01",
+        "application_for_birth_information_correction_cleaned_005_01",
+        "application_for_birth_information_correction_cleaned_004_01"
+      ],
+      "known_relevant_pool_size": 8,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "birth_09_parent_name",
+      "domain": "birth_death_registration",
+      "system": "civic",
+      "ranked_ids_top5": [
+        "application_for_birth_information_correction_cleaned_008_01",
+        "application_for_birth_information_correction_cleaned_002_01",
+        "application_for_birth_information_correction_cleaned_006_01",
+        "application_for_birth_information_correction_cleaned_003_01",
+        "application_for_birth_information_correction_cleaned_004_01"
+      ],
+      "known_relevant_pool_size": 8,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "birth_10_delivery_time",
+      "domain": "birth_death_registration",
+      "system": "simple",
+      "ranked_ids_top5": [
+        "birth_and_death_registration_rules_2018_বিধি_৯_02",
+        "bdris_faq_01_q01",
+        "birth_and_death_registration_rules_2018_বিধি_৯_04",
+        "bdris_faq_02_q01",
+        "birth_and_death_registration_rules_2018_বিধি_৯_03"
+      ],
+      "known_relevant_pool_size": 4,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "birth_10_delivery_time",
+      "domain": "birth_death_registration",
+      "system": "civic",
+      "ranked_ids_top5": [
+        "birth_and_death_registration_rules_2018_বিধি_৯_02",
+        "birth_and_death_registration_rules_2018_বিধি_৯_03",
+        "birth_and_death_registration_rules_2018_বিধি_২০_01"
+      ],
+      "known_relevant_pool_size": 4,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "brta_01_documents",
+      "domain": "brta",
+      "system": "simple",
+      "ranked_ids_top5": [
+        "brta_cbe22ab64acf3d03_v2_0004",
+        "brta_cbe22ab64acf3d03_v2_0006",
+        "brta_cbe22ab64acf3d03_v2_0013",
+        "brta_cbe22ab64acf3d03_v2_0011",
+        "brta_4b8c25d391e48121_v2_0003"
+      ],
+      "known_relevant_pool_size": 8,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "brta_01_documents",
+      "domain": "brta",
+      "system": "civic",
+      "ranked_ids_top5": [
+        "brta_cbe22ab64acf3d03_v2_0004"
+      ],
+      "known_relevant_pool_size": 8,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "brta_02_fee",
+      "domain": "brta",
+      "system": "simple",
+      "ranked_ids_top5": [
+        "brta_3cae1ecd59682fa3_v2_0005",
+        "brta_3cae1ecd59682fa3_v2_0017",
+        "brta_3cae1ecd59682fa3_v2_0004",
+        "brta_3cae1ecd59682fa3_v2_0014",
+        "brta_3cae1ecd59682fa3_v2_0018"
+      ],
+      "known_relevant_pool_size": 5,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "brta_02_fee",
+      "domain": "brta",
+      "system": "civic",
+      "ranked_ids_top5": [
+        "brta_3cae1ecd59682fa3_v2_0009",
+        "brta_3cae1ecd59682fa3_v2_0008",
+        "brta_4b8c25d391e48121_v2_0003",
+        "brta_846a4041fe96a64e_v2_0005"
+      ],
+      "known_relevant_pool_size": 5,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "brta_03_learner",
+      "domain": "brta",
+      "system": "simple",
+      "ranked_ids_top5": [
+        "brta_cbe22ab64acf3d03_v2_0003",
+        "brta_cbe22ab64acf3d03_v2_0004",
+        "brta_846a4041fe96a64e_v2_0011",
+        "brta_09e8cbfff67f117e_v2_0005",
+        "brta_846a4041fe96a64e_v2_0007"
+      ],
+      "known_relevant_pool_size": 6,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "brta_03_learner",
+      "domain": "brta",
+      "system": "civic",
+      "ranked_ids_top5": [
+        "brta_cbe22ab64acf3d03_v2_0003",
+        "brta_cbe22ab64acf3d03_v2_0004",
+        "brta_846a4041fe96a64e_v2_0011",
+        "brta_09e8cbfff67f117e_v2_0005",
+        "brta_846a4041fe96a64e_v2_0002"
+      ],
+      "known_relevant_pool_size": 6,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "brta_04_delivery_time",
+      "domain": "brta",
+      "system": "simple",
+      "ranked_ids_top5": [
+        "brta_4e08eb4e988d38e4_v2_0009",
+        "brta_cbe22ab64acf3d03_v2_0003",
+        "brta_cbe22ab64acf3d03_v2_0007",
+        "brta_846a4041fe96a64e_v2_0002",
+        "brta_4e08eb4e988d38e4_v2_0013"
+      ],
+      "known_relevant_pool_size": 6,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "brta_04_delivery_time",
+      "domain": "brta",
+      "system": "civic",
+      "ranked_ids_top5": [
+        "brta_846a4041fe96a64e_v2_0016",
+        "brta_846a4041fe96a64e_v2_0007",
+        "brta_cbe22ab64acf3d03_v2_0003",
+        "brta_09e8cbfff67f117e_v2_0010",
+        "brta_09e8cbfff67f117e_v2_0008"
+      ],
+      "known_relevant_pool_size": 6,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "brta_05_test",
+      "domain": "brta",
+      "system": "simple",
+      "ranked_ids_top5": [
+        "brta_4e08eb4e988d38e4_v2_0158",
+        "brta_57a7e75567f9a5c3_v2_0010",
+        "brta_4e08eb4e988d38e4_v2_0196",
+        "brta_57a7e75567f9a5c3_v2_0012",
+        "brta_57a7e75567f9a5c3_v2_0001"
+      ],
+      "known_relevant_pool_size": 5,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "brta_05_test",
+      "domain": "brta",
+      "system": "civic",
+      "ranked_ids_top5": [
+        "brta_4b8c25d391e48121_v2_0001",
+        "brta_57a7e75567f9a5c3_v2_0001",
+        "brta_846a4041fe96a64e_v2_0012",
+        "brta_57a7e75567f9a5c3_v2_0012",
+        "brta_57a7e75567f9a5c3_v2_0010"
+      ],
+      "known_relevant_pool_size": 5,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "brta_06_renewal",
+      "domain": "brta",
+      "system": "simple",
+      "ranked_ids_top5": [
+        "brta_cbe22ab64acf3d03_v2_0009",
+        "brta_09e8cbfff67f117e_v2_0009",
+        "brta_cbe22ab64acf3d03_v2_0011",
+        "brta_09e8cbfff67f117e_v2_0011",
+        "brta_4e08eb4e988d38e4_v2_0014"
+      ],
+      "known_relevant_pool_size": 6,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "brta_06_renewal",
+      "domain": "brta",
+      "system": "civic",
+      "ranked_ids_top5": [
+        "brta_cbe22ab64acf3d03_v2_0009",
+        "brta_cbe22ab64acf3d03_v2_0010",
+        "brta_09e8cbfff67f117e_v2_0009",
+        "brta_09e8cbfff67f117e_v2_0011",
+        "brta_cbe22ab64acf3d03_v2_0011"
+      ],
+      "known_relevant_pool_size": 6,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "brta_07_lost",
+      "domain": "brta",
+      "system": "simple",
+      "ranked_ids_top5": [
+        "brta_cbe22ab64acf3d03_v2_0003",
+        "brta_4e08eb4e988d38e4_v2_0200",
+        "brta_4e08eb4e988d38e4_v2_0023",
+        "brta_cbe22ab64acf3d03_v2_0004",
+        "brta_4e08eb4e988d38e4_v2_0025"
+      ],
+      "known_relevant_pool_size": 1,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "brta_07_lost",
+      "domain": "brta",
+      "system": "civic",
+      "ranked_ids_top5": [
+        "brta_258cf38650a6332b_v2_0012",
+        "brta_4e08eb4e988d38e4_v2_0200",
+        "brta_4e08eb4e988d38e4_v2_0018"
+      ],
+      "known_relevant_pool_size": 1,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "brta_08_correction",
+      "domain": "brta",
+      "system": "simple",
+      "ranked_ids_top5": [
+        "brta_258cf38650a6332b_v2_0021",
+        "brta_258cf38650a6332b_v2_0018",
+        "brta_258cf38650a6332b_v2_0019",
+        "brta_4e08eb4e988d38e4_v2_0199",
+        "brta_258cf38650a6332b_v2_0020"
+      ],
+      "known_relevant_pool_size": 5,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "brta_08_correction",
+      "domain": "brta",
+      "system": "civic",
+      "ranked_ids_top5": [
+        "brta_258cf38650a6332b_v2_0021",
+        "brta_258cf38650a6332b_v2_0006",
+        "brta_258cf38650a6332b_v2_0018",
+        "brta_258cf38650a6332b_v2_0019",
+        "brta_258cf38650a6332b_v2_0020"
+      ],
+      "known_relevant_pool_size": 5,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "brta_09_online_apply",
+      "domain": "brta",
+      "system": "simple",
+      "ranked_ids_top5": [
+        "brta_846a4041fe96a64e_v2_0007",
+        "brta_cbe22ab64acf3d03_v2_0003",
+        "brta_846a4041fe96a64e_v2_0011",
+        "brta_4e08eb4e988d38e4_v2_0149",
+        "brta_cbe22ab64acf3d03_v2_0004"
+      ],
+      "known_relevant_pool_size": 10,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "brta_09_online_apply",
+      "domain": "brta",
+      "system": "civic",
+      "ranked_ids_top5": [
+        "brta_846a4041fe96a64e_v2_0007",
+        "brta_cbe22ab64acf3d03_v2_0003",
+        "brta_846a4041fe96a64e_v2_0003",
+        "brta_846a4041fe96a64e_v2_0011",
+        "brta_cbe22ab64acf3d03_v2_0004"
+      ],
+      "known_relevant_pool_size": 10,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "brta_10_status",
+      "domain": "brta",
+      "system": "simple",
+      "ranked_ids_top5": [
+        "brta_00cf734ebafbc7c2_v2_0017",
+        "brta_a207b925ed0dc4a9_v2_0020",
+        "brta_e640c49d6025cc8d_v2_0006",
+        "brta_4e08eb4e988d38e4_v2_0196",
+        "brta_00cf734ebafbc7c2_v2_0026"
+      ],
+      "known_relevant_pool_size": 3,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "brta_10_status",
+      "domain": "brta",
+      "system": "civic",
+      "ranked_ids_top5": [
+        "brta_00cf734ebafbc7c2_v2_0012"
+      ],
+      "known_relevant_pool_size": 3,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "passport_01_documents",
+      "domain": "passport",
+      "system": "simple",
+      "ranked_ids_top5": [
+        "passport_23d845d3ab38ea43_v2_0040",
+        "passport_73ac41f2327257f9_v2_0004",
+        "passport_3fcbc40c98aa80bc_v2_0002",
+        "passport_73ac41f2327257f9_v2_0003",
+        "passport_ed7b3ebc56c0094f_v2_0003"
+      ],
+      "known_relevant_pool_size": 10,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "passport_01_documents",
+      "domain": "passport",
+      "system": "civic",
+      "ranked_ids_top5": [
+        "passport_73ac41f2327257f9_v2_0004"
+      ],
+      "known_relevant_pool_size": 10,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "passport_02_fee",
+      "domain": "passport",
+      "system": "simple",
+      "ranked_ids_top5": [
+        "passport_6f7d900581956bef_v2_0016",
+        "passport_6f7d900581956bef_v2_0011",
+        "passport_ed7b3ebc56c0094f_v2_0003",
+        "passport_6f7d900581956bef_v2_0009",
+        "passport_6f7d900581956bef_v2_0006"
+      ],
+      "known_relevant_pool_size": 3,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "passport_02_fee",
+      "domain": "passport",
+      "system": "civic",
+      "ranked_ids_top5": [
+        "passport_12e10027cfdfeeee_v2_0010",
+        "passport_12e10027cfdfeeee_v2_0007",
+        "passport_12e10027cfdfeeee_v2_0008",
+        "passport_12e10027cfdfeeee_v2_0009",
+        "passport_6f7d900581956bef_v2_0011"
+      ],
+      "known_relevant_pool_size": 3,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "passport_03_delivery_time",
+      "domain": "passport",
+      "system": "simple",
+      "ranked_ids_top5": [
+        "passport_9f4e9ffe9f2a07f4_v2_0004",
+        "passport_6f7d900581956bef_v2_0031",
+        "passport_12e10027cfdfeeee_v2_0005",
+        "passport_6f7d900581956bef_v2_0011",
+        "passport_f2c0d221c70d21f2_v2_0003"
+      ],
+      "known_relevant_pool_size": 2,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "passport_03_delivery_time",
+      "domain": "passport",
+      "system": "civic",
+      "ranked_ids_top5": [
+        "passport_9f4e9ffe9f2a07f4_v2_0004",
+        "passport_12e10027cfdfeeee_v2_0005",
+        "passport_f2c0d221c70d21f2_v2_0003",
+        "passport_6f7d900581956bef_v2_0031",
+        "passport_6f7d900581956bef_v2_0019"
+      ],
+      "known_relevant_pool_size": 2,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "passport_04_apply",
+      "domain": "passport",
+      "system": "simple",
+      "ranked_ids_top5": [
+        "passport_9f4e9ffe9f2a07f4_v2_0002",
+        "passport_6f7d900581956bef_v2_0006",
+        "passport_0b74faa4d85a2a58_v2_0003",
+        "passport_23d845d3ab38ea43_v2_0024",
+        "passport_6e87d0783a373593_v2_0005"
+      ],
+      "known_relevant_pool_size": 6,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "passport_04_apply",
+      "domain": "passport",
+      "system": "civic",
+      "ranked_ids_top5": [
+        "passport_9f4e9ffe9f2a07f4_v2_0002",
+        "passport_6e87d0783a373593_v2_0005",
+        "passport_6f7d900581956bef_v2_0006",
+        "passport_0b74faa4d85a2a58_v2_0003",
+        "passport_23d845d3ab38ea43_v2_0024"
+      ],
+      "known_relevant_pool_size": 6,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "passport_05_renewal",
+      "domain": "passport",
+      "system": "simple",
+      "ranked_ids_top5": [
+        "passport_3fcbc40c98aa80bc_v2_0002",
+        "passport_23d845d3ab38ea43_v2_0017",
+        "passport_9f4e9ffe9f2a07f4_v2_0003",
+        "passport_3fcbc40c98aa80bc_v2_0009",
+        "passport_ed7b3ebc56c0094f_v2_0003"
+      ],
+      "known_relevant_pool_size": 8,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "passport_05_renewal",
+      "domain": "passport",
+      "system": "civic",
+      "ranked_ids_top5": [
+        "passport_23d845d3ab38ea43_v2_0017",
+        "passport_23d845d3ab38ea43_v2_0050"
+      ],
+      "known_relevant_pool_size": 8,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "passport_06_lost",
+      "domain": "passport",
+      "system": "simple",
+      "ranked_ids_top5": [
+        "passport_23d845d3ab38ea43_v2_0041",
+        "passport_5eb6c21efe103a4f_v2_0034",
+        "passport_9f4e9ffe9f2a07f4_v2_0005",
+        "passport_ed7b3ebc56c0094f_v2_0004",
+        "passport_3fcbc40c98aa80bc_v2_0002"
+      ],
+      "known_relevant_pool_size": 7,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "passport_06_lost",
+      "domain": "passport",
+      "system": "civic",
+      "ranked_ids_top5": [
+        "passport_9f4e9ffe9f2a07f4_v2_0005",
+        "passport_23d845d3ab38ea43_v2_0041",
+        "passport_23d845d3ab38ea43_v2_0036",
+        "passport_6f7d900581956bef_v2_0007",
+        "passport_6f7d900581956bef_v2_0010"
+      ],
+      "known_relevant_pool_size": 7,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "passport_07_name_correction",
+      "domain": "passport",
+      "system": "simple",
+      "ranked_ids_top5": [
+        "passport_5eb6c21efe103a4f_v2_0033",
+        "passport_23d845d3ab38ea43_v2_0021",
+        "passport_23d845d3ab38ea43_v2_0042",
+        "passport_3fcbc40c98aa80bc_v2_0005",
+        "passport_3fcbc40c98aa80bc_v2_0004"
+      ],
+      "known_relevant_pool_size": 8,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "passport_07_name_correction",
+      "domain": "passport",
+      "system": "civic",
+      "ranked_ids_top5": [
+        "passport_ed7b3ebc56c0094f_v2_0004",
+        "passport_23d845d3ab38ea43_v2_0042",
+        "passport_23d845d3ab38ea43_v2_0023",
+        "passport_23d845d3ab38ea43_v2_0021",
+        "passport_a4d61a4d583daa54_v2_0004"
+      ],
+      "known_relevant_pool_size": 8,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "passport_08_birth_date",
+      "domain": "passport",
+      "system": "simple",
+      "ranked_ids_top5": [
+        "passport_3fcbc40c98aa80bc_v2_0007",
+        "passport_23d845d3ab38ea43_v2_0019",
+        "passport_5eb6c21efe103a4f_v2_0033",
+        "passport_3fcbc40c98aa80bc_v2_0005",
+        "passport_3fcbc40c98aa80bc_v2_0004"
+      ],
+      "known_relevant_pool_size": 3,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "passport_08_birth_date",
+      "domain": "passport",
+      "system": "civic",
+      "ranked_ids_top5": [
+        "passport_3fcbc40c98aa80bc_v2_0007",
+        "passport_3fcbc40c98aa80bc_v2_0002",
+        "passport_9f4e9ffe9f2a07f4_v2_0006",
+        "passport_049144a6810ecbbf_v2_0002",
+        "passport_23d845d3ab38ea43_v2_0019"
+      ],
+      "known_relevant_pool_size": 3,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "passport_09_status",
+      "domain": "passport",
+      "system": "simple",
+      "ranked_ids_top5": [
+        "passport_23d845d3ab38ea43_v2_0038",
+        "passport_23d845d3ab38ea43_v2_0047",
+        "passport_23d845d3ab38ea43_v2_0044",
+        "passport_23d845d3ab38ea43_v2_0043",
+        "passport_6f7d900581956bef_v2_0012"
+      ],
+      "known_relevant_pool_size": 5,
+      "scores": {
+        "Hit@5": 1.0,
+        "Precision@5": 0.8,
+        "PooledRecall@5": 0.8,
+        "MRR@5": 1.0,
+        "PooledNDCG@5": 0.8687949224876582
+      },
+      "excluded_reason": null
+    },
+    {
+      "question_id": "passport_09_status",
+      "domain": "passport",
+      "system": "civic",
+      "ranked_ids_top5": [
+        "passport_23d845d3ab38ea43_v2_0038",
+        "passport_23d845d3ab38ea43_v2_0044",
+        "passport_ed7b3ebc56c0094f_v2_0004",
+        "passport_23d845d3ab38ea43_v2_0043",
+        "passport_23d845d3ab38ea43_v2_0047"
+      ],
+      "known_relevant_pool_size": 5,
+      "scores": {
+        "Hit@5": 1.0,
+        "Precision@5": 1.0,
+        "PooledRecall@5": 1.0,
+        "MRR@5": 1.0,
+        "PooledNDCG@5": 1.0
+      },
+      "excluded_reason": null
+    },
+    {
+      "question_id": "passport_10_urgent",
+      "domain": "passport",
+      "system": "simple",
+      "ranked_ids_top5": [
+        "passport_9f4e9ffe9f2a07f4_v2_0004",
+        "passport_f2c0d221c70d21f2_v2_0003",
+        "passport_12e10027cfdfeeee_v2_0005",
+        "passport_6f7d900581956bef_v2_0011",
+        "passport_6f7d900581956bef_v2_0031"
+      ],
+      "known_relevant_pool_size": 3,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    },
+    {
+      "question_id": "passport_10_urgent",
+      "domain": "passport",
+      "system": "civic",
+      "ranked_ids_top5": [
+        "passport_f2c0d221c70d21f2_v2_0003",
+        "passport_9f4e9ffe9f2a07f4_v2_0004",
+        "passport_6f7d900581956bef_v2_0031",
+        "passport_12e10027cfdfeeee_v2_0005",
+        "passport_f2c0d221c70d21f2_v2_0002"
+      ],
+      "known_relevant_pool_size": 3,
+      "scores": null,
+      "excluded_reason": "unjudged_or_uncertain"
+    }
+  ],
+  "summary": {
+    "birth_death_registration/simple": {
+      "valid_questions": 0,
+      "total_questions": 10,
+      "means": {
+        "Hit@5": null,
+        "Precision@5": null,
+        "PooledRecall@5": null,
+        "MRR@5": null,
+        "PooledNDCG@5": null
+      }
+    },
+    "birth_death_registration/civic": {
+      "valid_questions": 0,
+      "total_questions": 10,
+      "means": {
+        "Hit@5": null,
+        "Precision@5": null,
+        "PooledRecall@5": null,
+        "MRR@5": null,
+        "PooledNDCG@5": null
+      }
+    },
+    "passport/simple": {
+      "valid_questions": 1,
+      "total_questions": 10,
+      "means": {
+        "Hit@5": 1.0,
+        "Precision@5": 0.8,
+        "PooledRecall@5": 0.8,
+        "MRR@5": 1.0,
+        "PooledNDCG@5": 0.8687949224876582
+      }
+    },
+    "passport/civic": {
+      "valid_questions": 1,
+      "total_questions": 10,
+      "means": {
+        "Hit@5": 1.0,
+        "Precision@5": 1.0,
+        "PooledRecall@5": 1.0,
+        "MRR@5": 1.0,
+        "PooledNDCG@5": 1.0
+      }
+    },
+    "brta/simple": {
+      "valid_questions": 0,
+      "total_questions": 10,
+      "means": {
+        "Hit@5": null,
+        "Precision@5": null,
+        "PooledRecall@5": null,
+        "MRR@5": null,
+        "PooledNDCG@5": null
+      }
+    },
+    "brta/civic": {
+      "valid_questions": 0,
+      "total_questions": 10,
+      "means": {
+        "Hit@5": null,
+        "Precision@5": null,
+        "PooledRecall@5": null,
+        "MRR@5": null,
+        "PooledNDCG@5": null
+      }
+    },
+    "overall/simple": {
+      "valid_questions": 1,
+      "total_questions": 30,
+      "means": {
+        "Hit@5": 1.0,
+        "Precision@5": 0.8,
+        "PooledRecall@5": 0.8,
+        "MRR@5": 1.0,
+        "PooledNDCG@5": 0.8687949224876582
+      }
+    },
+    "overall/civic": {
+      "valid_questions": 1,
+      "total_questions": 30,
+      "means": {
+        "Hit@5": 1.0,
+        "Precision@5": 1.0,
+        "PooledRecall@5": 1.0,
+        "MRR@5": 1.0,
+        "PooledNDCG@5": 1.0
+      }
+    }
+  }
+}

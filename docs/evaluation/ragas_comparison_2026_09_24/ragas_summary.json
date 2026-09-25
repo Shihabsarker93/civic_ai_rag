@@ -3,62 +3,62 @@
   "systems": {
     "simple": {
       "answer_relevancy": {
-        "valid": 11,
+        "valid": 30,
         "failed": 0,
-        "mean": 0.8619372533521177
+        "mean": 0.8460138342615872
       },
       "context_relevance_binary": {
-        "valid": 11,
+        "valid": 30,
         "failed": 0,
-        "mean": 0.9090909090909091
+        "mean": 0.9333333333333333
       },
       "faithfulness": {
-        "valid": 11,
+        "valid": 30,
         "failed": 0,
-        "mean": 0.8954545454545455
+        "mean": 0.7982936507936508
       }
     },
     "civic": {
       "answer_relevancy": {
-        "valid": 11,
+        "valid": 30,
         "failed": 0,
-        "mean": 0.8410456539951711
+        "mean": 0.8375197361095578
       },
       "context_relevance_binary": {
-        "valid": 11,
+        "valid": 30,
         "failed": 0,
-        "mean": 1.0
+        "mean": 0.9666666666666667
       },
       "faithfulness": {
-        "valid": 11,
+        "valid": 30,
         "failed": 0,
-        "mean": 0.8194805194805195
+        "mean": 0.7323412698412698
       }
     }
   },
   "paired_civic_minus_simple": {
     "answer_relevancy": {
-      "paired_n": 11,
-      "mean_difference": -0.020891599356946653,
+      "paired_n": 30,
+      "mean_difference": -0.008494098152029457,
       "bootstrap_95_percent_interval": [
-        -0.05607141881928689,
-        0.009714533173179375
+        -0.0347208314106026,
+        0.019419796155173773
       ]
     },
     "context_relevance_binary": {
-      "paired_n": 11,
-      "mean_difference": 0.09090909090909091,
+      "paired_n": 30,
+      "mean_difference": 0.03333333333333333,
       "bootstrap_95_percent_interval": [
         0.0,
-        0.2727272727272727
+        0.1
       ]
     },
     "faithfulness": {
-      "paired_n": 11,
-      "mean_difference": -0.07597402597402597,
+      "paired_n": 30,
+      "mean_difference": -0.06595238095238096,
       "bootstrap_95_percent_interval": [
-        -0.18961038961038962,
-        0.031818181818181815
+        -0.1786904761904762,
+        0.04095238095238096
       ]
     }
   }

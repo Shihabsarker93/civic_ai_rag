@@ -1,14 +1,14 @@
 {
-  "metric_attempts": 66,
+  "metric_attempts": 180,
   "expected": 180,
-  "valid": 66,
+  "valid": 180,
   "last": {
-    "system": "civic",
-    "question_id": "birth_01_documents",
-    "domain": "birth_death_registration",
+    "system": "simple",
+    "question_id": "brta_10_status",
+    "domain": "brta",
     "metric": "context_relevance_binary",
-    "score": 1.0,
+    "score": 0.0,
     "error": null,
-    "seconds": 104.02
+    "seconds": 83.62
   }
 }

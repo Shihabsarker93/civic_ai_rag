@@ -592,5 +592,1031 @@
     "score": 1.0,
     "error": null,
     "seconds": 104.02
+  },
+  {
+    "system": "civic",
+    "question_id": "birth_02_online_apply",
+    "domain": "birth_death_registration",
+    "metric": "faithfulness",
+    "score": 0.7142857142857143,
+    "error": null,
+    "seconds": 204.16
+  },
+  {
+    "system": "civic",
+    "question_id": "birth_02_online_apply",
+    "domain": "birth_death_registration",
+    "metric": "answer_relevancy",
+    "score": 0.8384231264492835,
+    "error": null,
+    "seconds": 57.47
+  },
+  {
+    "system": "civic",
+    "question_id": "birth_02_online_apply",
+    "domain": "birth_death_registration",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 64.2
+  },
+  {
+    "system": "simple",
+    "question_id": "birth_02_online_apply",
+    "domain": "birth_death_registration",
+    "metric": "faithfulness",
+    "score": 0.25,
+    "error": null,
+    "seconds": 198.98
+  },
+  {
+    "system": "simple",
+    "question_id": "birth_02_online_apply",
+    "domain": "birth_death_registration",
+    "metric": "answer_relevancy",
+    "score": 0.8399394007365594,
+    "error": null,
+    "seconds": 28.39
+  },
+  {
+    "system": "simple",
+    "question_id": "birth_02_online_apply",
+    "domain": "birth_death_registration",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 119.19
+  },
+  {
+    "system": "simple",
+    "question_id": "birth_03_birth_date_correction",
+    "domain": "birth_death_registration",
+    "metric": "faithfulness",
+    "score": 0.6,
+    "error": null,
+    "seconds": 204.42
+  },
+  {
+    "system": "simple",
+    "question_id": "birth_03_birth_date_correction",
+    "domain": "birth_death_registration",
+    "metric": "answer_relevancy",
+    "score": 0.8644885814694939,
+    "error": null,
+    "seconds": 34.21
+  },
+  {
+    "system": "simple",
+    "question_id": "birth_03_birth_date_correction",
+    "domain": "birth_death_registration",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 98.0
+  },
+  {
+    "system": "civic",
+    "question_id": "birth_03_birth_date_correction",
+    "domain": "birth_death_registration",
+    "metric": "faithfulness",
+    "score": 0.875,
+    "error": null,
+    "seconds": 311.32
+  },
+  {
+    "system": "civic",
+    "question_id": "birth_03_birth_date_correction",
+    "domain": "birth_death_registration",
+    "metric": "answer_relevancy",
+    "score": 0.9250563214639705,
+    "error": null,
+    "seconds": 37.96
+  },
+  {
+    "system": "civic",
+    "question_id": "birth_03_birth_date_correction",
+    "domain": "birth_death_registration",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 99.18
+  },
+  {
+    "system": "civic",
+    "question_id": "birth_04_name_spelling",
+    "domain": "birth_death_registration",
+    "metric": "faithfulness",
+    "score": 0.75,
+    "error": null,
+    "seconds": 182.95
+  },
+  {
+    "system": "civic",
+    "question_id": "birth_04_name_spelling",
+    "domain": "birth_death_registration",
+    "metric": "answer_relevancy",
+    "score": 0.875378810877463,
+    "error": null,
+    "seconds": 31.73
+  },
+  {
+    "system": "civic",
+    "question_id": "birth_04_name_spelling",
+    "domain": "birth_death_registration",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 87.58
+  },
+  {
+    "system": "simple",
+    "question_id": "birth_04_name_spelling",
+    "domain": "birth_death_registration",
+    "metric": "faithfulness",
+    "score": 0.6,
+    "error": null,
+    "seconds": 162.07
+  },
+  {
+    "system": "simple",
+    "question_id": "birth_04_name_spelling",
+    "domain": "birth_death_registration",
+    "metric": "answer_relevancy",
+    "score": 0.875378810877463,
+    "error": null,
+    "seconds": 33.75
+  },
+  {
+    "system": "simple",
+    "question_id": "birth_04_name_spelling",
+    "domain": "birth_death_registration",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 53.78
+  },
+  {
+    "system": "simple",
+    "question_id": "birth_05_lost",
+    "domain": "birth_death_registration",
+    "metric": "faithfulness",
+    "score": 0.5,
+    "error": null,
+    "seconds": 287.35
+  },
+  {
+    "system": "simple",
+    "question_id": "birth_05_lost",
+    "domain": "birth_death_registration",
+    "metric": "answer_relevancy",
+    "score": 0.8465877981385682,
+    "error": null,
+    "seconds": 34.52
+  },
+  {
+    "system": "simple",
+    "question_id": "birth_05_lost",
+    "domain": "birth_death_registration",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 190.14
+  },
+  {
+    "system": "civic",
+    "question_id": "birth_05_lost",
+    "domain": "birth_death_registration",
+    "metric": "faithfulness",
+    "score": 1.0,
+    "error": null,
+    "seconds": 264.21
+  },
+  {
+    "system": "civic",
+    "question_id": "birth_05_lost",
+    "domain": "birth_death_registration",
+    "metric": "answer_relevancy",
+    "score": 0.8490697370248356,
+    "error": null,
+    "seconds": 36.11
+  },
+  {
+    "system": "civic",
+    "question_id": "birth_05_lost",
+    "domain": "birth_death_registration",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 100.08
+  },
+  {
+    "system": "civic",
+    "question_id": "birth_06_verify",
+    "domain": "birth_death_registration",
+    "metric": "faithfulness",
+    "score": 1.0,
+    "error": null,
+    "seconds": 202.88
+  },
+  {
+    "system": "civic",
+    "question_id": "birth_06_verify",
+    "domain": "birth_death_registration",
+    "metric": "answer_relevancy",
+    "score": 0.8534272787685383,
+    "error": null,
+    "seconds": 32.41
+  },
+  {
+    "system": "civic",
+    "question_id": "birth_06_verify",
+    "domain": "birth_death_registration",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 100.44
+  },
+  {
+    "system": "simple",
+    "question_id": "birth_06_verify",
+    "domain": "birth_death_registration",
+    "metric": "faithfulness",
+    "score": 0.8,
+    "error": null,
+    "seconds": 190.09
+  },
+  {
+    "system": "simple",
+    "question_id": "birth_06_verify",
+    "domain": "birth_death_registration",
+    "metric": "answer_relevancy",
+    "score": 0.8554504677305853,
+    "error": null,
+    "seconds": 23.21
+  },
+  {
+    "system": "simple",
+    "question_id": "birth_06_verify",
+    "domain": "birth_death_registration",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 119.48
+  },
+  {
+    "system": "simple",
+    "question_id": "birth_07_correction_fee",
+    "domain": "birth_death_registration",
+    "metric": "faithfulness",
+    "score": 1.0,
+    "error": null,
+    "seconds": 184.49
+  },
+  {
+    "system": "simple",
+    "question_id": "birth_07_correction_fee",
+    "domain": "birth_death_registration",
+    "metric": "answer_relevancy",
+    "score": 0.7675550941995081,
+    "error": null,
+    "seconds": 27.26
+  },
+  {
+    "system": "simple",
+    "question_id": "birth_07_correction_fee",
+    "domain": "birth_death_registration",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 111.98
+  },
+  {
+    "system": "civic",
+    "question_id": "birth_07_correction_fee",
+    "domain": "birth_death_registration",
+    "metric": "faithfulness",
+    "score": 1.0,
+    "error": null,
+    "seconds": 205.93
+  },
+  {
+    "system": "civic",
+    "question_id": "birth_07_correction_fee",
+    "domain": "birth_death_registration",
+    "metric": "answer_relevancy",
+    "score": 0.6770992391661205,
+    "error": null,
+    "seconds": 32.93
+  },
+  {
+    "system": "civic",
+    "question_id": "birth_07_correction_fee",
+    "domain": "birth_death_registration",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 121.97
+  },
+  {
+    "system": "civic",
+    "question_id": "birth_08_birth_date_proof",
+    "domain": "birth_death_registration",
+    "metric": "faithfulness",
+    "score": 0.25,
+    "error": null,
+    "seconds": 182.9
+  },
+  {
+    "system": "civic",
+    "question_id": "birth_08_birth_date_proof",
+    "domain": "birth_death_registration",
+    "metric": "answer_relevancy",
+    "score": 0.8766822346304363,
+    "error": null,
+    "seconds": 32.91
+  },
+  {
+    "system": "civic",
+    "question_id": "birth_08_birth_date_proof",
+    "domain": "birth_death_registration",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 81.11
+  },
+  {
+    "system": "simple",
+    "question_id": "birth_08_birth_date_proof",
+    "domain": "birth_death_registration",
+    "metric": "faithfulness",
+    "score": 0.25,
+    "error": null,
+    "seconds": 207.68
+  },
+  {
+    "system": "simple",
+    "question_id": "birth_08_birth_date_proof",
+    "domain": "birth_death_registration",
+    "metric": "answer_relevancy",
+    "score": 0.878250955770851,
+    "error": null,
+    "seconds": 35.53
+  },
+  {
+    "system": "simple",
+    "question_id": "birth_08_birth_date_proof",
+    "domain": "birth_death_registration",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 73.0
+  },
+  {
+    "system": "simple",
+    "question_id": "birth_09_parent_name",
+    "domain": "birth_death_registration",
+    "metric": "faithfulness",
+    "score": 0.8,
+    "error": null,
+    "seconds": 223.63
+  },
+  {
+    "system": "simple",
+    "question_id": "birth_09_parent_name",
+    "domain": "birth_death_registration",
+    "metric": "answer_relevancy",
+    "score": 0.8778234625147076,
+    "error": null,
+    "seconds": 48.5
+  },
+  {
+    "system": "simple",
+    "question_id": "birth_09_parent_name",
+    "domain": "birth_death_registration",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 64.27
+  },
+  {
+    "system": "civic",
+    "question_id": "birth_09_parent_name",
+    "domain": "birth_death_registration",
+    "metric": "faithfulness",
+    "score": 0.5,
+    "error": null,
+    "seconds": 299.19
+  },
+  {
+    "system": "civic",
+    "question_id": "birth_09_parent_name",
+    "domain": "birth_death_registration",
+    "metric": "answer_relevancy",
+    "score": 0.8983955720304042,
+    "error": null,
+    "seconds": 42.81
+  },
+  {
+    "system": "civic",
+    "question_id": "birth_09_parent_name",
+    "domain": "birth_death_registration",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 62.37
+  },
+  {
+    "system": "civic",
+    "question_id": "birth_10_delivery_time",
+    "domain": "birth_death_registration",
+    "metric": "faithfulness",
+    "score": 0.0,
+    "error": null,
+    "seconds": 132.52
+  },
+  {
+    "system": "civic",
+    "question_id": "birth_10_delivery_time",
+    "domain": "birth_death_registration",
+    "metric": "answer_relevancy",
+    "score": 0.8016694887299517,
+    "error": null,
+    "seconds": 26.72
+  },
+  {
+    "system": "civic",
+    "question_id": "birth_10_delivery_time",
+    "domain": "birth_death_registration",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 86.41
+  },
+  {
+    "system": "simple",
+    "question_id": "birth_10_delivery_time",
+    "domain": "birth_death_registration",
+    "metric": "faithfulness",
+    "score": 1.0,
+    "error": null,
+    "seconds": 153.5
+  },
+  {
+    "system": "simple",
+    "question_id": "birth_10_delivery_time",
+    "domain": "birth_death_registration",
+    "metric": "answer_relevancy",
+    "score": 0.7185613447233866,
+    "error": null,
+    "seconds": 36.88
+  },
+  {
+    "system": "simple",
+    "question_id": "birth_10_delivery_time",
+    "domain": "birth_death_registration",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 151.8
+  },
+  {
+    "system": "simple",
+    "question_id": "brta_01_documents",
+    "domain": "brta",
+    "metric": "faithfulness",
+    "score": 0.9166666666666666,
+    "error": null,
+    "seconds": 355.89
+  },
+  {
+    "system": "simple",
+    "question_id": "brta_01_documents",
+    "domain": "brta",
+    "metric": "answer_relevancy",
+    "score": 0.929525342839537,
+    "error": null,
+    "seconds": 41.25
+  },
+  {
+    "system": "simple",
+    "question_id": "brta_01_documents",
+    "domain": "brta",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 131.88
+  },
+  {
+    "system": "civic",
+    "question_id": "brta_01_documents",
+    "domain": "brta",
+    "metric": "faithfulness",
+    "score": 1.0,
+    "error": null,
+    "seconds": 224.41
+  },
+  {
+    "system": "civic",
+    "question_id": "brta_01_documents",
+    "domain": "brta",
+    "metric": "answer_relevancy",
+    "score": 0.929525342839537,
+    "error": null,
+    "seconds": 36.06
+  },
+  {
+    "system": "civic",
+    "question_id": "brta_01_documents",
+    "domain": "brta",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 50.95
+  },
+  {
+    "system": "civic",
+    "question_id": "brta_02_fee",
+    "domain": "brta",
+    "metric": "faithfulness",
+    "score": 1.0,
+    "error": null,
+    "seconds": 170.43
+  },
+  {
+    "system": "civic",
+    "question_id": "brta_02_fee",
+    "domain": "brta",
+    "metric": "answer_relevancy",
+    "score": 0.7366821936417592,
+    "error": null,
+    "seconds": 28.0
+  },
+  {
+    "system": "civic",
+    "question_id": "brta_02_fee",
+    "domain": "brta",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 70.12
+  },
+  {
+    "system": "simple",
+    "question_id": "brta_02_fee",
+    "domain": "brta",
+    "metric": "faithfulness",
+    "score": 1.0,
+    "error": null,
+    "seconds": 172.35
+  },
+  {
+    "system": "simple",
+    "question_id": "brta_02_fee",
+    "domain": "brta",
+    "metric": "answer_relevancy",
+    "score": 0.8027149870052801,
+    "error": null,
+    "seconds": 34.24
+  },
+  {
+    "system": "simple",
+    "question_id": "brta_02_fee",
+    "domain": "brta",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 83.38
+  },
+  {
+    "system": "simple",
+    "question_id": "brta_03_learner",
+    "domain": "brta",
+    "metric": "faithfulness",
+    "score": 0.8,
+    "error": null,
+    "seconds": 253.15
+  },
+  {
+    "system": "simple",
+    "question_id": "brta_03_learner",
+    "domain": "brta",
+    "metric": "answer_relevancy",
+    "score": 0.654736185903708,
+    "error": null,
+    "seconds": 32.61
+  },
+  {
+    "system": "simple",
+    "question_id": "brta_03_learner",
+    "domain": "brta",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 153.48
+  },
+  {
+    "system": "civic",
+    "question_id": "brta_03_learner",
+    "domain": "brta",
+    "metric": "faithfulness",
+    "score": 0.8,
+    "error": null,
+    "seconds": 185.97
+  },
+  {
+    "system": "civic",
+    "question_id": "brta_03_learner",
+    "domain": "brta",
+    "metric": "answer_relevancy",
+    "score": 0.654736185903708,
+    "error": null,
+    "seconds": 33.17
+  },
+  {
+    "system": "civic",
+    "question_id": "brta_03_learner",
+    "domain": "brta",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 146.25
+  },
+  {
+    "system": "civic",
+    "question_id": "brta_04_delivery_time",
+    "domain": "brta",
+    "metric": "faithfulness",
+    "score": 0.0,
+    "error": null,
+    "seconds": 211.46
+  },
+  {
+    "system": "civic",
+    "question_id": "brta_04_delivery_time",
+    "domain": "brta",
+    "metric": "answer_relevancy",
+    "score": 0.7930658162491976,
+    "error": null,
+    "seconds": 28.67
+  },
+  {
+    "system": "civic",
+    "question_id": "brta_04_delivery_time",
+    "domain": "brta",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 121.2
+  },
+  {
+    "system": "simple",
+    "question_id": "brta_04_delivery_time",
+    "domain": "brta",
+    "metric": "faithfulness",
+    "score": 0.5,
+    "error": null,
+    "seconds": 282.63
+  },
+  {
+    "system": "simple",
+    "question_id": "brta_04_delivery_time",
+    "domain": "brta",
+    "metric": "answer_relevancy",
+    "score": 0.7779464820611254,
+    "error": null,
+    "seconds": 33.88
+  },
+  {
+    "system": "simple",
+    "question_id": "brta_04_delivery_time",
+    "domain": "brta",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 113.95
+  },
+  {
+    "system": "simple",
+    "question_id": "brta_05_test",
+    "domain": "brta",
+    "metric": "faithfulness",
+    "score": 0.8571428571428571,
+    "error": null,
+    "seconds": 356.27
+  },
+  {
+    "system": "simple",
+    "question_id": "brta_05_test",
+    "domain": "brta",
+    "metric": "answer_relevancy",
+    "score": 0.8677081179015596,
+    "error": null,
+    "seconds": 39.41
+  },
+  {
+    "system": "simple",
+    "question_id": "brta_05_test",
+    "domain": "brta",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 158.79
+  },
+  {
+    "system": "civic",
+    "question_id": "brta_05_test",
+    "domain": "brta",
+    "metric": "faithfulness",
+    "score": 1.0,
+    "error": null,
+    "seconds": 176.28
+  },
+  {
+    "system": "civic",
+    "question_id": "brta_05_test",
+    "domain": "brta",
+    "metric": "answer_relevancy",
+    "score": 0.712784719063139,
+    "error": null,
+    "seconds": 24.62
+  },
+  {
+    "system": "civic",
+    "question_id": "brta_05_test",
+    "domain": "brta",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 121.85
+  },
+  {
+    "system": "civic",
+    "question_id": "brta_06_renewal",
+    "domain": "brta",
+    "metric": "faithfulness",
+    "score": 0.6666666666666666,
+    "error": null,
+    "seconds": 300.45
+  },
+  {
+    "system": "civic",
+    "question_id": "brta_06_renewal",
+    "domain": "brta",
+    "metric": "answer_relevancy",
+    "score": 0.8379867180853727,
+    "error": null,
+    "seconds": 31.56
+  },
+  {
+    "system": "civic",
+    "question_id": "brta_06_renewal",
+    "domain": "brta",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 152.32
+  },
+  {
+    "system": "simple",
+    "question_id": "brta_06_renewal",
+    "domain": "brta",
+    "metric": "faithfulness",
+    "score": 1.0,
+    "error": null,
+    "seconds": 425.63
+  },
+  {
+    "system": "simple",
+    "question_id": "brta_06_renewal",
+    "domain": "brta",
+    "metric": "answer_relevancy",
+    "score": 0.885512689021179,
+    "error": null,
+    "seconds": 45.96
+  },
+  {
+    "system": "simple",
+    "question_id": "brta_06_renewal",
+    "domain": "brta",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 190.57
+  },
+  {
+    "system": "simple",
+    "question_id": "brta_07_lost",
+    "domain": "brta",
+    "metric": "faithfulness",
+    "score": 1.0,
+    "error": null,
+    "seconds": 470.85
+  },
+  {
+    "system": "simple",
+    "question_id": "brta_07_lost",
+    "domain": "brta",
+    "metric": "answer_relevancy",
+    "score": 0.6735101457690343,
+    "error": null,
+    "seconds": 50.66
+  },
+  {
+    "system": "simple",
+    "question_id": "brta_07_lost",
+    "domain": "brta",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 239.29
+  },
+  {
+    "system": "civic",
+    "question_id": "brta_07_lost",
+    "domain": "brta",
+    "metric": "faithfulness",
+    "score": 1.0,
+    "error": null,
+    "seconds": 241.03
+  },
+  {
+    "system": "civic",
+    "question_id": "brta_07_lost",
+    "domain": "brta",
+    "metric": "answer_relevancy",
+    "score": 0.9403063890389148,
+    "error": null,
+    "seconds": 39.63
+  },
+  {
+    "system": "civic",
+    "question_id": "brta_07_lost",
+    "domain": "brta",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 84.05
+  },
+  {
+    "system": "civic",
+    "question_id": "brta_08_correction",
+    "domain": "brta",
+    "metric": "faithfulness",
+    "score": 0.2,
+    "error": null,
+    "seconds": 237.24
+  },
+  {
+    "system": "civic",
+    "question_id": "brta_08_correction",
+    "domain": "brta",
+    "metric": "answer_relevancy",
+    "score": 0.9353128400622023,
+    "error": null,
+    "seconds": 43.86
+  },
+  {
+    "system": "civic",
+    "question_id": "brta_08_correction",
+    "domain": "brta",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 81.57
+  },
+  {
+    "system": "simple",
+    "question_id": "brta_08_correction",
+    "domain": "brta",
+    "metric": "faithfulness",
+    "score": 0.625,
+    "error": null,
+    "seconds": 306.82
+  },
+  {
+    "system": "simple",
+    "question_id": "brta_08_correction",
+    "domain": "brta",
+    "metric": "answer_relevancy",
+    "score": 0.9353128400622023,
+    "error": null,
+    "seconds": 47.83
+  },
+  {
+    "system": "simple",
+    "question_id": "brta_08_correction",
+    "domain": "brta",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 103.11
+  },
+  {
+    "system": "simple",
+    "question_id": "brta_09_online_apply",
+    "domain": "brta",
+    "metric": "faithfulness",
+    "score": 1.0,
+    "error": null,
+    "seconds": 345.88
+  },
+  {
+    "system": "simple",
+    "question_id": "brta_09_online_apply",
+    "domain": "brta",
+    "metric": "answer_relevancy",
+    "score": 0.9409667300643806,
+    "error": null,
+    "seconds": 37.99
+  },
+  {
+    "system": "simple",
+    "question_id": "brta_09_online_apply",
+    "domain": "brta",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 220.01
+  },
+  {
+    "system": "civic",
+    "question_id": "brta_09_online_apply",
+    "domain": "brta",
+    "metric": "faithfulness",
+    "score": 1.0,
+    "error": null,
+    "seconds": 301.76
+  },
+  {
+    "system": "civic",
+    "question_id": "brta_09_online_apply",
+    "domain": "brta",
+    "metric": "answer_relevancy",
+    "score": 0.9472332989143201,
+    "error": null,
+    "seconds": 40.36
+  },
+  {
+    "system": "civic",
+    "question_id": "brta_09_online_apply",
+    "domain": "brta",
+    "metric": "context_relevance_binary",
+    "score": 1.0,
+    "error": null,
+    "seconds": 161.29
+  },
+  {
+    "system": "civic",
+    "question_id": "brta_10_status",
+    "domain": "brta",
+    "metric": "faithfulness",
+    "score": 0.2,
+    "error": null,
+    "seconds": 154.73
+  },
+  {
+    "system": "civic",
+    "question_id": "brta_10_status",
+    "domain": "brta",
+    "metric": "answer_relevancy",
+    "score": 0.7912545764006955,
+    "error": null,
+    "seconds": 31.14
+  },
+  {
+    "system": "civic",
+    "question_id": "brta_10_status",
+    "domain": "brta",
+    "metric": "context_relevance_binary",
+    "score": 0.0,
+    "error": null,
+    "seconds": 25.72
+  },
+  {
+    "system": "simple",
+    "question_id": "brta_10_status",
+    "domain": "brta",
+    "metric": "faithfulness",
+    "score": 0.6,
+    "error": null,
+    "seconds": 232.85
+  },
+  {
+    "system": "simple",
+    "question_id": "brta_10_status",
+    "domain": "brta",
+    "metric": "answer_relevancy",
+    "score": 0.9071358041851911,
+    "error": null,
+    "seconds": 42.29
+  },
+  {
+    "system": "simple",
+    "question_id": "brta_10_status",
+    "domain": "brta",
+    "metric": "context_relevance_binary",
+    "score": 0.0,
+    "error": null,
+    "seconds": 83.62
   }
 ]

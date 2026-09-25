@@ -2,7 +2,7 @@
 
 Same 30 questions and existing saved answers. No answer regeneration. No external-paper benchmark comparison.
 
-Judge metric attempts: 66/180. Status: incomplete.
+Judge metric attempts: 180/180. Status: complete.
 
 ## Descriptive results for all 30 answers per system
 
@@ -20,7 +20,13 @@ Saved latency comes from separate runs, not a controlled hardware speed experime
 
 ## RAGAS comparison
 
-Final full-set judge averages are withheld until the batch finishes. Partial scores are saved for recovery, not presented as final results.
+| Metric | Simple mean (valid/30) | Civic mean (valid/30) | Paired Civic minus Simple |
+|---|---:|---:|---:|
+| faithfulness | 0.7983 (30/30; failed 0) | 0.7323 (30/30; failed 0) | -0.0660 (n=30) |
+| answer_relevancy | 0.8460 (30/30; failed 0) | 0.8375 (30/30; failed 0) | -0.0085 (n=30) |
+| context_relevance_binary | 0.9333 (30/30; failed 0) | 0.9667 (30/30; failed 0) | 0.0333 (n=30) |
+
+Paired descriptive bootstrap intervals are retained in ragas_summary.json. Missing judgments are excluded, not treated as zero.
 
 ## Interpretation limits
 

@@ -1,0 +1,10 @@
+{
+  "judged_pairs": 455,
+  "expected_pairs": 455,
+  "labels": {
+    "irrelevant": 191,
+    "relevant": 176,
+    "uncertain": 88
+  },
+  "status": "draft_complete_review_pending"
+}
