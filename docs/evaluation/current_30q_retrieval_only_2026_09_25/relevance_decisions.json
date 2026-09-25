@@ -1,0 +1,161 @@
+{
+  "reviewer": "Codex assistant; single AI-assisted review, not human verification",
+  "results_sha256": "095a5cb485807aef6a50f1728cb4782cccb0165d887735fb2011cd2eb68a8903",
+  "index_protocol": "Zero-based domain-local unique passage order from results.json, traversing questions then top5_passages in saved order. Exporter resolves indices to immutable chunk IDs and validates every pool partition.",
+  "questions": {
+    "passport_01_documents": {
+      "relevant": [[0,"PRL / Post Retirement Leave Order copy.","Conditional enrolment checklist for retired government employees."],[5,"আবেদনপত্রের সারংশের প্রিন্ট কপি","Application enrolment checklist."],[7,"Identification documents (NID card / Birth certificate - Original)","Application identification requirement."],[8,"জাতীয় পরিচয়পত্র অথবা জন্ম নিবন্ধন সনদ","MRP application documents; legacy/type-specific, not automatically current e-passport guidance."]],
+      "irrelevant": [1,2,3,4,6,9],
+      "rejection_reason": "Payment failures, appointment availability, submitted-data correction, collection, renewal, or address changes do not specify the requested new-application document checklist."
+    },
+    "passport_02_fee": {
+      "relevant": [],
+      "uncertain": [[6,"Special regular-fee/urgent-service concession, but no amount; reviewer must decide whether this conditional price rule is sufficient for a cost question."],[8,"Special regular-fee/urgent-service concession, but no amount; same ambiguity as the other concession passage."]],
+      "irrelevant": [1,10,11,12,13,14,15,16,17],
+      "rejection_reason": "No passport price or explicit passport fee amount: these passages concern payment troubleshooting, definitions, certificate-of-identity fees, validity, unspecified payment channels, document receipts, or free inter-office dispatch. Free dispatch is not a free passport."
+    },
+    "passport_03_delivery_time": {
+      "relevant": [[14,"১৫ কর্মদিবসের মধ্যে","MRP issuance time, conditional on police report; preserve type/condition."],[20,"৭ কর্মদিবসের মধ্যে পাসপোর্ট প্রদান করা হবে","Explicit passport delivery times by service tier."],[22,"Within 15 Working days / 21 days from the biometric enrolment date.","Delivery timing with start point and service tiers."],[23,"Passport will be issued within 2 (two) working days","Super Express conditional delivery duration."]],
+      "irrelevant": [10,11,13,18,19,21,24],
+      "rejection_reason": "Definitions, validity years, reasons for delay without duration, appointment scheduling, employee NOC processing, and travel allowances are not passport issuance turnaround times."
+    },
+    "passport_04_apply": {
+      "relevant": [[16,"অফলাইন (PDF) অথবা অনলাইনের মাধ্যমে আবেদন গ্রহণ করা হয়","Application channel and responsible office; corpus conflicts with online-only FAQ need reconciliation before advice."],[25,"applications for ePassport can only be completed via the online application","Specified application channel and form eligibility."],[27,"Any person can apply for an ePassport even if their Machine-Readable Passport (MRP) is still valid.","Eligibility condition for applicants holding MRP."],[28,"সাদা পোশাকের পরিবর্তে রঙ্গিন পোশাক পরিধান করতে হবে","Specific biometric-enrolment preparation step, not a complete application procedure."],[30,"ই-পাসপোর্টের আবেদনপত্র অনলাইনে পূরণ করা যাবে","Online form instructions, supporting identity and submission office."],[32,"please fill in the complete online application form.","Conditional MRP-to-ePassport application workflow."],[33,"Fill in your e-Passport application online","Explicit application step; link target is missing, so incomplete guidance."]],
+      "irrelevant": [26,29,31,34],
+      "rejection_reason": "Dated downtime, generic anti-fraud warnings, and a service-list entry with only a placeholder link do not explain the application workflow."
+    },
+    "passport_05_renewal": {
+      "relevant": [[6,"পাসপোর্ট নবায়ন এর জন্য এই ফরমটি পূরণ করে","MRP renewal instructions and attachments; type-specific."],[13,"You can apply to re-issue a new passport before or after the expiry date","Direct reissue guidance after expiry."],[35,"only the standard fee prescribed by the Government of Bangladesh needs to be paid.","Explains payment/no-expiry-penalty condition of renewal."],[38,"মেয়াদ উত্তীর্ণের তারিখ (Date of Expiry)","Old-passport details requested on the reissue form; partial form-filling evidence."],[39,"সকল আবেদনকারীকে আবেদনপত্র স্বশরীরে উপস্থিত হয়ে জমা দিতে হবে।","In-person submission instruction for MRP reissue/renewal."]],
+      "uncertain": [[8,"Truncated/awkward MRP text refers to expired passports and form counts; renewal-specific applicability is not sufficiently clear."]],
+      "irrelevant": [27,36,37],
+      "rejection_reason": "Still-valid MRP overlap, general new-application attachments without renewal instructions, and NVR validity do not directly describe renewal after expiry."
+    },
+    "passport_06_lost": {
+      "relevant": [[40,"পাসপোর্ট হারিয়ে গেলে অথবা চুরি হলে দ্রুত নিকটস্থ থানায় জিডি করতে হবে।","Direct loss report and replacement-application instructions."],[41,"You must bring your original NID card and BRC to retrieve your previous ePassport number.","Lost-passport number recovery, conditional subcase."],[43,"File a General Diary (GD) report at the nearest police station immediately.","Legacy MRP duplicate application after loss; retain type distinction."]],
+      "irrelevant": [0,6,36,42,44],
+      "rejection_reason": "Retirement documents, ordinary renewal, general attachments, lost delivery slip, and surrendered-passport instructions are not lost-passport replacement procedures."
+    },
+    "passport_07_name_correction": {
+      "relevant": [[45,"attach relevant papers in favour of your application.","Correction form and supporting-document instruction."],[46,"পরিবর্তিত/সংশোধিত তথ্য (Changed/Corrected Information)","Correction form asks for existing and proposed details."],[47,"পরিবর্তিত/সংশোধিত তথ্য (Changed/Corrected Information)","Second correction entry, duplicate but relevant form requirement."],[48,"require prior correction of the underlying NID/BRC records","Identity-record alignment prerequisite in legacy MRP guide."],[49,"Report the error immediately to your designated Regional Passport Office","Post-issuance printing-error correction route."],[50,"পরিবর্তন যোগ্য নহে।","Legacy MRP full-name-change restriction; relevant to permissibility, not verified current law."],[51,"পরিবর্তন যোগ্য নহে।","Legacy MRP partial-name-change restriction; conflicts need human/source review."],[52,"Major changes like name or date of birth require official documents like NID/BRC and previous passport.","Direct name-change supporting documents."]],
+      "irrelevant": [3,44],
+      "rejection_reason": "These describe correcting pre-issuance application/receipt data, not an already-issued passport."
+    },
+    "passport_08_birth_date": {
+      "relevant": [[48,"require prior correction of the underlying NID/BRC records","Legacy MRP identity-record prerequisite for date changes."],[49,"Report the error immediately to your designated Regional Passport Office","Conditional post-issuance printing-error remedy."],[52,"Major changes like name or date of birth require official documents like NID/BRC and previous passport.","Explicit date-change evidence requirement."],[57,"পরিবর্তন যোগ্য নহে।","Legacy MRP birth-date restriction; topical but conflicts with other corpus guidance."]],
+      "irrelevant": [50,51,53,54,55,56],
+      "rejection_reason": "Name-only restrictions, email changes, NVR circular introduction, payments, and SMS settings do not answer birth-date alteration."
+    },
+    "passport_09_status": {
+      "relevant": [[58,"Please check your status on the online portal home page first.","Partial status-check location within an upgrade workflow."],[60,"https://www.epassport.gov.bd/authorization/application-status","Direct status lookup URL."],[62,"Clear your web browser's Cache and Cookies","Conditional troubleshooting when status lookup fails; not the main lookup procedure."],[63,"Enter your Application ID or Online Registration ID (OID) along with the applicant's Date of Birth","Direct status-check inputs and procedure."]],
+      "irrelevant": [27,59,61,64,65,66,67],
+      "rejection_reason": "Validity/correction, interpretation of an already-displayed backend status, visa sticker service, placeholder-only listing, and enrolment documents do not explain how to obtain application status."
+    },
+    "passport_10_urgent": {
+      "relevant": [[14,"৭ কর্মদিবসের মধ্যে","Conditional urgent MRP turnaround."],[20,"৭ কর্মদিবসের মধ্যে পাসপোর্ট প্রদান করা হবে","Urgent and super-urgent delivery timing."],[22,"Within 7 Working days / 10 days from the biometric enrolment date.","Express timing with start point; super-express also specified."],[23,"within 2 (two) working days","Super Express timing."]],
+      "irrelevant": [6,12,13,21,24,52,68,69,70,71],
+      "rejection_reason": "Fee concessions without duration, other services, validity, personal-data changes, choosing urgent service without its duration, and emergency-contact fields do not answer how long an urgent passport takes."
+    },
+    "birth_01_documents": {
+      "relevant": [[5,"জন্মস্থান ও জন্ম তারিখের প্রমাণ হিসাবে","Explicit birth/address evidence and parent identifiers."],[7,"পিতামাতার বয়স প্রমাণের রেকর্ড","Conditional documents when parent registrations are missing."],[8,"জন্ম তারিখের প্রমাণক","Required proof attachments and upload constraint."],[9,"পিতা-মাতার জন্ম নিবন্ধন বাধ্যতামূলক","Parent-registration requirement, dated condition retained; currency not verified."]],
+      "irrelevant": [0,1,2,3,4,6],
+      "rejection_reason": "Definitions, legacy synchronization, link lists, death-registration navigation, government fee remittance and legal preamble lack a birth-application document requirement."
+    },
+    "birth_02_online_apply": {
+      "relevant": [[10,"আবেদনপত্রের একটি প্রিন্ট কপি পাওয়া যাইবে","Online information submission followed by printed documents to registrar; institutional conditions retained."],[11,"নিবন্ধক সরাসরি সেই তথ্য দিয়ে অনলাইন নিবন্ধন করে দেবেন","Conditional manual-to-online migration procedure."],[14,"প্রথমে একটি আবেদন অনলাইনে সাবমিট করে নিবন্ধন সম্পন্ন করতে হবে","Conditional twin-registration sequence."],[17,"https://bdris.gov.bd","Application starting website."],[18,"অনলাইন হইতে মুদ্রিত আবেদনপত্রের কপি নিবন্ধকের নিকট দাখিল করিবেন","Direct online application and physical submission step."]],
+      "irrelevant": [12,13,15,16],
+      "rejection_reason": "Death registration, existing-certificate verification, and staff credentials/privacy rules are different procedures from citizen online birth application."
+    },
+    "birth_03_birth_date_correction": {
+      "relevant": [[23,"যোগাযোগের তথ্য সংযুক্ত থাকতে হবে","General correction-application contact requirement, partial evidence."],[29,"নির্ধারিত ফিসহ সংশ্লিষ্ট নিবন্ধকের বরাবরে আবেদন করা যাইবে","Direct correction application and approval procedure."]],
+      "irrelevant": [19,20,21,22,24,25,26,27,28,30],
+      "rejection_reason": "Pre-submission editing, criminal prohibition, nationality/parent-name corrections, empty heading, and cancellation do not describe correcting the person's recorded birth date."
+    },
+    "birth_04_name_spelling": {
+      "relevant": [[23,"যোগাযোগের তথ্য সংযুক্ত থাকতে হবে","General correction-application requirement."],[32,"অনলাইনে মূল অফিস বরাবর আবেদন করতে পারেন","Conditional correction route for overseas registration."]],
+      "irrelevant": [19,20,21,22,26,27,28,30,31,33,34],
+      "rejection_reason": "Question interpreted as applicant's own spelling. Pre-submission edits, nationality, parent-name mapping, duplicate-number handling, cancellation and parent-registration cases do not provide that correction procedure."
+    },
+    "birth_05_lost": {
+      "relevant": [[32,"সংশোধন বা পুনঃমুদ্রণ কেবল মূল নিবন্ধন অফিস থেকেই করা যাবে।","Conditional overseas-certificate reprint route."],[37,"সনদ হারাইয়া গেলে বা নষ্ট হইলে","Direct duplicate-certificate application after loss."]],
+      "irrelevant": [1,5,11,13,31,35,36,38,39,40],
+      "rejection_reason": "Legacy data migration, initial registration, death registration, duplicate record numbers, number upgrades and missing parents are not replacement of a lost birth certificate."
+    },
+    "birth_06_verify": {
+      "relevant": [[15,"জন্ম নিবন্ধন নম্বর এবং জন্ম তারিখ প্রদান করে","Direct online verification option and required inputs."]],
+      "irrelevant": [10,11,16,18,19,41,42],
+      "rejection_reason": "Application/migration, generic legal permission without lookup instructions, OTP review, and parent verification inside an application do not explain checking an existing certificate online."
+    },
+    "birth_07_correction_fee": {
+      "relevant": [[43,"জন্ম তারিখ সংশোধনের জন্য আবেদন ফি | ১০০ টাকা","Correction fee table; other-field fees also present."],[44,"তথ্য সংশোধনের জন্য আবেদন ফি | ১০০ টাকা","Correction fees with domestic/foreign columns."],[45,"Fee amount: ১০০ টাকা","Birth-date correction fee."],[46,"Fee amount: ৫০ টাকা","Other-information correction fee."]],
+      "irrelevant": [2,6,47],
+      "rejection_reason": "Navigation, penalties for nonregistration, and duplicate-copy fees are not correction application fees."
+    },
+    "birth_08_birth_date_proof": {
+      "relevant": [],
+      "uncertain": [[5,"Contains genuine birth-date proof for initial registration, but does not establish which proof is accepted for correction. Do not transfer the rule without checking."]],
+      "irrelevant": [0,1,11,23,24,25,26,27,28,33,34,48],
+      "rejection_reason": "Definitions, synchronization/migration, contact requirements, parents' names/ages/deaths, and duplicate detection do not identify evidence required for the applicant's birth-date correction."
+    },
+    "birth_09_parent_name": {
+      "relevant": [[24,"পিতা বা মাতার নাম সংশোধন করা যাবে","Conditional route where parent registration numbers are absent and applicant born before 2001."],[26,"জন্ম নিবন্ধন নম্বর ম্যাপ করতে হবে","Parent-child record mapping and corrected reprint."],[27,"প্রথমে তাদের জন্ম নিবন্ধন নম্বর ব্যবহার করে","Correct parent records first when their registration numbers exist."],[28,"সংশোধিত নাম স্বয়ংক্রিয়ভাবে প্রদর্শিত হবে","Already-linked parent records update on reprint."],[34,"সংশোধন আবেদন করে সংশোধন করে নিতে হবে","Correct existing erroneous parent records before child's registration."],[50,"সংশ্লিষ্ট নিবন্ধন কার্যালয়ের সাথে যোগাযোগ করতে হবে","Correction route if contact details are absent."]],
+      "irrelevant": [19,22,49,51],
+      "rejection_reason": "Pre-submission edit, heading-only instruction, definition and historical explanations without a correction procedure do not answer the requested remedy."
+    },
+    "birth_10_delivery_time": {
+      "relevant": [[18,"সর্বোচ্চ ৫ (পাঁচ) কার্য দিবসের মধ্যে","Explicit registration completion time conditional on a valid complete application."]],
+      "irrelevant": [2,3,5,7,34,43,52,53,54],
+      "rejection_reason": "Link lists, documents, age-based registration/fee deadlines and receipt acknowledgement are not certificate completion times. Passage 54's 15 days concerns acknowledgement with an estimated date, not completed registration."
+    },
+    "brta_01_documents": {
+      "relevant": [[3,"পুনরায় একটি নির্ধারিত ফরমে","Application form and biometric requirements for smartcard licence; partial checklist."],[5,"জাতীয় পরিচয়পত্রের স্ক্যান কপি","Learner application document checklist, initial stage of licensing."],[6,"রেজিষ্টার্ড ডাক্তার কর্তৃক মেডিকেল সার্টিফিকেট","Smartcard application checklist; source currency requires separate review."]],
+      "irrelevant": [0,1,2,4,7,8],
+      "rejection_reason": "Fee portal navigation, instructor licensing, renewal and duplicate replacement are not first-issue driver-licence document requirements."
+    },
+    "brta_02_fee": {
+      "relevant": [[10,"৪,৪৯৭/- টাকা","Smartcard fee component plus postal charge; not by itself the whole process cost."],[12,"সর্বমোট:** ৭৪৮/-","Two-category learner fee component."],[14,"সর্বমোট:** ৫১৮/-","One-category learner fee component."]],
+      "irrelevant": [2,4,9,11,13,15,16,17],
+      "rejection_reason": "Instructor documents, renewal, bus tax, endorsements/class changes and duplicate fees are different transactions from obtaining a new driving licence."
+    },
+    "brta_03_learner": {
+      "relevant": [[5,"নির্ধারিত ফরমে অনলাইনে আবেদন।","Learner application documents and payment."],[12,"শিক্ষানবিশ ড্রাইভিং লাইসেন্স ফি","Learner fee and two-class option."],[19,"bsp.brta.gov.bd","Learner online portal and printing procedure."],[20,"অ্যাকাউন্ট রেজিস্ট্রেশন/নিবন্ধন","Account and attachment instructions for learner application."],[21,"লার্নার ড্রাইভিং লাইসেন্স অনলাইন প্রিন্ট","Online learner application stage and documents."],[22,"তার এনআইডি (NID) ব্যবহার করে একটি ইউজার অ্যাকাউন্ট তৈরি করতে হবে","Account creation and online application workflow."],[23,"ন্যূনতম শিক্ষাগত যোগ্যতা ৮ম শ্রেণী পাশ","Licence eligibility prerequisites, partial evidence."]],
+      "irrelevant": [18],
+      "rejection_reason": "Learner-fee heading alone has no substantive instruction or amount."
+    },
+    "brta_04_delivery_time": {
+      "relevant": [[19,"২/৩ মাস প্রশিক্ষণ গ্রহণের পর","Training-stage wait in licence acquisition; not final card delivery time."],[27,"তাৎক্ষণিক শিক্ষানবিশ ড্রাইভিং লাইসেন্সটি প্রিন্ট করিয়া লইতে পারিবেন","Learner-stage turnaround, explicitly distinct from smartcard delivery."],[29,"অনধিক ৩০ (ত্রিশ) দিনের মধ্যে","Licence issuance deadline after application."]],
+      "irrelevant": [2,9,22,23,24,25,26,28,30,31],
+      "rejection_reason": "Instructor service, bus tax, exam-result upload time, eligibility, validity, form fields, career upgrade experience, renewal biometrics and school licensing are not requested first-issue turnaround."
+    },
+    "brta_05_test": {
+      "relevant": [[11,"পুনরায় একটি ব্যবহারিক পরীক্ষায় অংশগ্রহণ করতে হবে","Conditional professional-renewal practical test; not full initial-test syllabus."],[29,"ব্যবহারিক পরীক্ষা হইতে অব্যাহতি পাইবেন","Conditional exemption for valid foreign-licence holders identifies practical-test component."],[32,"ট্রাফিক রুলস এবং রেগুলেশনের জ্ঞান","Direct driving-skill test syllabus and practical skills."]],
+      "irrelevant": [0,1,10,27,33,34,35,36],
+      "rejection_reason": "Portal/fees, instructor exam, scheduling/eligibility, document checklist, blank form, medical drug screening and metadata do not describe driver skill-test content."
+    },
+    "brta_06_renewal": {
+      "relevant": [[4,"স্মার্ট ড্রাইভিং লাইসেন্স নবায়নের জন্য আবেদনপূর্বক","Professional renewal via BSP and refresher assessment."],[8,"রেজিষ্টার্ড ডাক্তার কর্তৃক মেডিকেল সার্টিফিকেট","Renewal document checklist."],[11,"বিআরটিএর নির্দিষ্ট সার্কেল অফিসে আবেদন করতে হবে","Professional renewal procedure, fees and practical assessment."],[24,"বিলম্ব ফি প্রদান করিতে হইবে","Renewal application and late-fee rule; OCR date wording requires caution."],[30,"প্রয়োজনীয় কাগজপত্রসহ বিআরটিএর নির্দিষ্ট সার্কেল অফিসে আবেদন করতে হবে","Nonprofessional renewal procedure."],[39,"ড্রাইভিং লাইসেন্স নবায়নের জন্য অনলাইনে আবেদন করতে পারবেন","Nonprofessional BSP renewal procedure."],[40,"ইস্যু বা সর্বশেষ নবায়নের তারিখ","Licence details required by renewal form, partial evidence."]],
+      "uncertain": [[17,"Fee row has visibly shifted columns and contradictory totals (60 versus 2869). Topic matches renewal but numerical evidence is unreliable without checking the original table."]],
+      "irrelevant": [12,37,38],
+      "rejection_reason": "Learner validity extension and adding heavier vehicle classes are not renewal of a full driving licence."
+    },
+    "brta_07_lost": {
+      "relevant": [[44,"Duplicate in case of lost, name of PS:","Loss-duplicate form requires police-station/GD details; fragmentary but usable partial evidence."]],
+      "irrelevant": [5,19,22,30,41,42,43,45,46,47,48],
+      "rejection_reason": "Learner/first issue, ordinary renewal, ridesharing certificates, taxi penalties/replacement, licence cancellation and demerit/foreign-endorsement rules are not loss replacement."
+    },
+    "brta_08_correction": {
+      "relevant": [[52,"প্রস্তাবিত সংশোধন (Proposed Correction)","DOB correction form entry requires current and proposed values."],[55,"তথ্য সংশোধনের আবেদন","Form 4(b) correction application with identifying particulars; partial procedure."]],
+      "irrelevant": [37,38,49,50,51,53,54,56],
+      "rejection_reason": "Class upgrades, school/instructor forms, address change and parent/spouse-only corrections do not directly address the applicant's own name or date of birth."
+    },
+    "brta_09_online_apply": {
+      "relevant": [[5,"নির্ধারিত ফরমে অনলাইনে আবেদন।","Online learner step and supporting documents."],[19,"bsp.brta.gov.bd","Portal, learner application and printing."],[21,"অনলাইনে আবেদন দাখিল","Direct online application step and prerequisites."],[22,"একটি ইউজার অ্যাকাউন্ট তৈরি করতে হবে","BSP account and application procedure."],[57,"অনলাইনে নির্ধারিত ফি জমা প্রদান","Post-test online fee and document submission step."],[58,"যাচাই-বাছাই ও কর্তৃপক্ষের অনুমোদন","Approval stage of the documented online workflow, partial process evidence."]],
+      "irrelevant": [59],
+      "rejection_reason": "Institutional duty to establish online services lacks citizen application instructions or an actionable portal path."
+    },
+    "brta_10_status": {
+      "relevant": [],
+      "irrelevant": [34,50,51,60,61,62,63,64],
+      "rejection_reason": "Blank licence/address forms, instructor particulars and ridesharing qualification rules provide no licence-status lookup instructions."
+    }
+  }
+}
