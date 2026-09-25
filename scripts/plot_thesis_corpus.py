@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 BASE = Path(__file__).resolve().parents[1] / "docs/thesis_final_2026_09_24"
 corpus = json.loads((BASE / "evidence_manifest.json").read_text())["corpus"]
 keys = ["birth_death_registration", "passport", "brta"]
-labels = ["Birth/death", "Passport", "BRTA"]
+labels = ["Birth registration", "Passport", "BRTA"]
 counts = [corpus[k]["chunks"] for k in keys]
 sources = [corpus[k]["source_units"] for k in keys]
 assert sum(counts) == 3709

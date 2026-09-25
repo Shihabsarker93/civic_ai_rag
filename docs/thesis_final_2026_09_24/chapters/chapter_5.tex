@@ -1,22 +1,30 @@
 \section{Design Process or Methodology Overview }
 Our design follows the journey from a collected document to an inspectable answer. We first prepare a reusable knowledge base offline, then search it and generate a response when a question arrives. This separation allows source preparation, retrieval and generation to be examined independently, rather than rebuilding the entire system for every question.
 
-Figure~\ref{fig:architecture} presents this modular design. Its offline panel shows corpus and index preparation; the online panel shows the selected-evidence route used in the main CivicRAG comparison. Legacy controlled-answer branches remain available in the repository, but do not generate answers in this route.
-
-\input{generated/architecture}
-
-The diagram shows that source content remains connected to generation through chunk identifiers. The upper stage constructs indexes; it does not train an LLM. Dense search, BM25, rank fusion, reranking, applicability selection and local generation are shared across the three domains. The gold box identifies additional registration-specific adjustments, separating them from shared reranking.
+The architecture figures in Section 4.2 show how source content remains connected to generation through chunk identifiers. Index construction does not train an LLM. Dense search, BM25, fusion, reranking, applicability selection and generation are shared across the three domains. Additional registration-specific adjustments are distinguished from shared reranking. Legacy controlled-answer branches remain in the repository but do not generate answers in the evaluated selected-evidence route.
 
 To connect these stages, we use the saved question \bn{BRTA-এর ড্রাইভিং পরীক্ষায় কী কী থাকে?} (What does the BRTA driving test include?) as a running example. The record is identified as \code{brta_05_test}. It illustrates an actual execution, not a reference answer or a demonstration that every selected passage is relevant.
 
 \section{Preliminary Design or Design (Model) Specification}
-The P2 design emphasized birth/death registration, hybrid retrieval and controlled answer paths. Later work extended the corpus to passport and BRTA, added applicability selection and changed the main generator comparison to Qwen3. The final reported route therefore differs from the old diagrams that send every answer through a generic safe-path box.
+Figures~\ref{fig:architecture} and \ref{fig:answer-architecture} present the implemented architecture using corrected exports of the supplied draw.io design. The panels retain the original flow while clarifying terminology and component limits. Figure~\ref{fig:evaluation-architecture} separates the two evaluation designs from the online chatbot.
+
+\input{generated/architecture_integrated}
+
+In Figure~\ref{fig:architecture}, the first panel starts from source files and prepared derivatives. Each chunk supplies search text for BGE-M3 and BM25, while evidence content stays linked by ID. Only search text is embedded; Chroma stores the vector, linked document and metadata \cite{bgem3,chroma}. BM25 is constructed from tokenized text when the retriever loads, rather than stored as a Chroma vector.
+
+The second panel follows a question through domain-scoped retrieval. After input checks and normalization, semantic and lexical searches produce at most 20 results each. Weighted RRF retains up to 15 fused candidates, and the shared reranker reorders them \cite{rrf,bgereranker}. The local chunk map supplies evidence throughout retrieval; the evidence-context box denotes preparation for selection, not the first moment the code accesses text. Registration-only score adjustments and fee supplementation are conditional additions, not separate retrieval methods.
+
+Figure~\ref{fig:answer-architecture} runs from right to left. A rule-based selector checks service/action scope and orders compatible sections before applying the whole-chunk budget. With no selected evidence, the system requests clarification. Otherwise, the question and source text enter the generator; vectors and search aliases are not factual answer content. Source-ID canonicalization occurs inside the generator wrapper, while language and truncation checks occur in the pipeline. The grouped output-check box summarizes these operations rather than defining a strict internal order. There is no second model verifying every final claim.
+
+Figure~\ref{fig:evaluation-architecture} has two independent branches. The first compares saved answers from matched Simple RAG and CivicRAG configurations. The same prompt means the same generation instructions, not the same passages or selector. The second compares BM25, dense search and RRF before reranking or selection. RAGAS scoring and passage-label review occur outside the citizen-facing request path. The diagram reports their evidential limits; the retrieval-only study does not measure complete chatbot accuracy.
+
+The initial design emphasized birth registration, hybrid retrieval and controlled answer paths. Later work extended the corpus to passport and BRTA, added applicability selection and changed the main generator comparison to Qwen3. The final reported route therefore differs from the old diagrams that send every answer through a generic safe-path box.
 
 The system is not an autonomous agent that performs government actions. Its task is single-turn retrieval and evidence-conditioned text generation. A domain is selected before retrieval. A targeted cross-domain aggregate guard handles certain multi-service questions, but comprehensive intent recognition is not claimed. Neither the lexical rules nor the selector is a separately trained classifier.
 
 We considered lexical-only retrieval, dense-only retrieval and their hybrid combination. BM25 provides exact-term matching with little model computation, while dense retrieval accommodates semantic similarity. Hybrid retrieval makes both signals available, at the cost of additional ranking and potentially distracting candidates. The end-to-end alternatives are the matched dense-only Simple RAG baseline and CivicRAG's hybrid, reranking and selected-evidence configuration.
 
-We retained the hybrid configuration as the design under investigation because exact service terms and semantically related wording both occur in the corpus. This is an engineering rationale, not a claim that hybrid retrieval won every comparison. The P2 retrieval results favoured dense-only search on several reported measures. Later relevant-only and evidence-order diagnostics showed why context applicability also matters, motivating selection after retrieval. Those diagnostics do not establish the selector's benefit on arbitrary questions. The bundled comparison and retrieval-only tests evaluate these choices; a selector-off answer ablation was not completed.
+We retained the hybrid configuration as the design under investigation because exact service terms and semantically related wording both occur in the corpus. This is an engineering rationale, not a claim that hybrid retrieval won every comparison. The earlier registration-focused retrieval results favoured dense-only search on several reported measures. Later relevant-only and evidence-order diagnostics showed why context applicability also matters, motivating selection after retrieval. Those diagnostics do not establish the selector's benefit on arbitrary questions. The bundled comparison and retrieval-only tests evaluate these choices; a selector-off answer ablation was not completed.
 
 Table~\ref{tab:design-decisions} explains the principal decisions and their trade-offs.
 \begin{table}[htbp]\centering\small
@@ -44,7 +52,7 @@ Only affirmative-consent records with a declared adult age group enter the main 
 The exported consent field establishes an affirmative response, not independent ethics approval. Recruitment method, invitation count, repeat-participation controls and consent arrangements for minors were not supplied. Accordingly, a response rate and nationally representative estimates cannot be calculated. The BRTA website question also combines a Bangladesh address with \code{rsta.gov.bt}; that item is not used to claim verified BRTA website usage. The main findings use the identically positioned common AI block and are reported in Chapter 5.
 
 \paragraph{Source Families and Original Preservation.}
-The birth/death collection contains structured JSON and prepared Markdown derived from FAQs, laws, rules, fees, correction processes and application guidance. Passport and BRTA were supplied as original-file directories and separately prepared Markdown. Passport derivatives are registered from \code{cleaned_md}; BRTA derivatives from \code{brta} and \code{fahim_brta}. Directories explicitly marked original are reference materials, not duplicate text automatically added to the answer corpus.
+The birth registration collection contains structured JSON and prepared Markdown derived from FAQs, laws, rules, fees, correction processes and application guidance. Passport and BRTA were supplied as original-file directories and separately prepared Markdown. Passport derivatives are registered from \code{cleaned_md}; BRTA derivatives from \code{brta} and \code{fahim_brta}. Directories explicitly marked original are reference materials, not duplicate text automatically added to the answer corpus.
 
 The register preserves document IDs, relative paths, snapshots, hashes, candidate original-file matches, inclusion history and chunk IDs. Candidate original matches do not certify textual fidelity. Some matches remain unresolved and are flagged. The distinction between collected originals and derivatives avoids counting the same information twice as independent evidence.
 
@@ -97,13 +105,15 @@ The corpus table reports the active, configured source units and chunk counts. F
 \includegraphics[width=\linewidth]{generated/corpus_distribution.pdf}
 \caption{Active corpus composition from the frozen evidence manifest: 3,709 chunks and 174 prepared source units. Chunk share reflects document length and splitting, not demand, accuracy or unique facts.}\label{fig:corpus-distribution}
 \end{figure}
-Figure~\ref{fig:corpus-distribution} shows the corpus imbalance: BRTA accounts for 85.2\% of chunks, passport for 9.7\% and birth/death registration for 5.0\% (rounded independently). Domain-scoped retrieval prevents this corpus-size imbalance from directly mixing unrelated services in one query. It does not establish equal retrieval difficulty or equal source coverage across domains.
-The table is computed from the configured JSONL files, not from unrelated candidate directories. For the older birth/death corpus, source units are counted using its source-path metadata. That count is not equated to a unique original-PDF count. Across domains, chunk counts are an indexing property rather than the number of independent facts or questions.
+Figure~\ref{fig:corpus-distribution} shows the corpus imbalance: BRTA accounts for 85.2\% of chunks, passport for 9.7\% and birth registration for 5.0\% (rounded independently). Domain-scoped retrieval prevents this corpus-size imbalance from directly mixing unrelated services in one query. It does not establish equal retrieval difficulty or equal source coverage across domains.
+The table is computed from the configured JSONL files, not from unrelated candidate directories. For the older birth registration corpus, source units are counted using its source-path metadata. That count is not equated to a unique original-PDF count. Across domains, chunk counts are an indexing property rather than the number of independent facts or questions.
 
 \input{generated/audit_table}
 Review flags count documents in the passport/BRTA registers or their associated chunk metadata, as indicated in the table. Multiple flags may apply to one document. A missing URL does not prove that a source is false, while a present URL does not prove that the derived text is correct. The flags identify where provenance and applicability need further review.
 
 \section{Implementation of Selected Design}
+The implementation follows Section 4.2 through explicit modules rather than an autonomous-agent framework. The index builder constructs Chroma records; \code{HybridRetriever} implements retrieval and fusion; \code{HybridReranker} performs reranking; and \code{select_evidence} implements applicability and budgeting. \code{CivicRAGPipeline} coordinates these stages and response routes. Finally, \code{OllamaAnswerGenerator} calls LangChain's \code{ChatOllama} integration \cite{langchain_ollama}, while separate evaluation scripts consume saved outputs. LangChain is an adapter here, not another retriever or a trained model.
+
 The following stages describe the implementation used by the saved comparison. For the running example, the user selects BRTA and submits a Bangla question. The interface applies its Bangla-oriented input policy; the pipeline normalizes the query and uses only that domain's configured collection. This does not require the question to match a stored FAQ exactly. The recognized cross-domain aggregate guard can request a narrower question before retrieval, but it is not a general intent classifier.
 
 \paragraph{Dense Embedding and Search.}
@@ -145,13 +155,13 @@ The example calculation is explanatory rather than a reconstruction of the saved
 \paragraph{Reranking and Domain-Specific Logic.}
 The configured cross-encoder scores query/search-text pairs. If loading fails, the code can add a lexical-coverage adjustment of $0.05\,|T_q\cap T_d|/\max(|T_q|,1)$ to the incoming score. The saved primary CivicRAG candidate traces contain cross-encoder markers, establishing that the cross-encoder route was used in those records rather than merely being configured.
 
-Birth/death-specific boosts and evidence augmentation remain part of the selected route. These are not universal learned mechanisms for passport and BRTA. This asymmetry should be disclosed when interpreting domain differences. An isolated ablation would be required to attribute an observed change to those rules.
+Birth registration-specific boosts and evidence augmentation remain part of the selected route. These are not universal learned mechanisms for passport and BRTA. This asymmetry should be disclosed when interpreting domain differences. An isolated ablation would be required to attribute an observed change to those rules.
 
 \paragraph{Shared Reranking versus Registration-Specific Adjustments.}
 The distinction is explicit in \code{src/pipeline.py}: \code{birth_death_rules} is true only for the \code{birth_death_registration} domain, and that flag is passed to the reranker's \code{domain_boosts} option. The cross-encoder itself is shared; passport and BRTA do not skip reranking. Its base score may be written as $s_{\mathrm{CE}}(q,r_i)=g_\phi(q,r_i)$, where the pretrained cross-encoder jointly processes the query and searchable passage. For a domain $d$, the implemented adjustment has the form
 \begin{equation}
 s_d(q,c_i)=s_{\mathrm{base}}(q,c_i)+
-\mathbf{1}[d=\mathrm{birth/death}]\,\Delta_{\mathrm{registration}}(q,c_i).
+\mathbf{1}[d=\mathrm{birth registration}]\,\Delta_{\mathrm{registration}}(q,c_i).
 \end{equation}
 Here $s_{\mathrm{base}}$ is the cross-encoder score, or the documented fallback score when that model is unavailable. $\Delta_{\mathrm{registration}}$ is the sum of applicable hand-written adjustments, not a learned probability. For example, an application-process record receives an increment of 0.08 for a detected registration how-to query; additional heading conditions can further alter that score. These increments do not have a calibrated confidence interpretation.
 
@@ -162,7 +172,7 @@ These rules reflect the earlier registration-focused implementation and its docu
 Accordingly, the BRTA running example receives shared reranking but skips the additional registration rules. The saved trace includes cross-encoder markers, while the highest-ranked initial candidate concerns a professional-licence dope test. This illustrates why a high relevance score is not sufficient to determine whether a passage directly answers the intended examination question.
 
 \paragraph{Applicability Selection and Context Budget.}
-The selector introduced after P2 uses service, action, product and location vocabularies. It prefers section scope over broad document titles and can reject a passport-collection passage for an application question. It also screens heading-only fragments, handles explicitly flagged historical alternatives and expands compatible fee/checklist families.
+The selector introduced during incremental development uses service, action, product and location vocabularies. It prefers section scope over broad document titles and can reject a passport-collection passage for an application question. It also screens heading-only fragments, handles explicitly flagged historical alternatives and expands compatible fee/checklist families.
 
 The selector is implemented in \code{src/generation/evidence_selection.py}; it is neither a second LLM nor a human choosing passages during normal operation. It retains at most six whole chunks within 14,000 characters. A chunk that does not fit is skipped rather than silently cut. A later ordering fix groups compatible family members near the first eligible anchor before applying the budget. Saved replay on 30 candidate sets changed the selected IDs for the passport-fee question while leaving the other 29 selections unchanged. This establishes the scope of that replay, not a general accuracy improvement.
 

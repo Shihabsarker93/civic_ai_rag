@@ -8,7 +8,7 @@
         <mxCell id="title" parent="1" vertex="1" value="CivicRAG | Final evaluated architecture" style="text;html=0;align=left;fontSize=34;fontStyle=1;fontColor=#203448;">
           <mxGeometry x="45" y="25" width="1700" height="45" as="geometry" />
         </mxCell>
-        <mxCell id="subtitle" parent="1" vertex="1" value="Bangla civic-service QA | Birth/death registration, Passport and BRTA | Selected-evidence path" style="text;html=0;align=left;fontSize=18;fontColor=#526578;">
+        <mxCell id="subtitle" parent="1" vertex="1" value="Bangla civic-service QA | Birth registration, Passport and BRTA | Selected-evidence path" style="text;html=0;align=left;fontSize=18;fontColor=#526578;">
           <mxGeometry x="45" y="78" width="1710" height="40" as="geometry" />
         </mxCell>
         <mxCell id="panel0" parent="1" vertex="1" value="" style="rounded=1;arcSize=4;fillColor=#fafcfd;strokeColor=#d6e1e8;strokeWidth=1;container=0;">
@@ -220,22 +220,22 @@
         <mxCell id="qembed" parent="1" vertex="1" value="BAAI/bge-m3&#10;Encode query" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#eaf1fb;strokeColor=#5276a6;strokeWidth=1.8;fontColor=#203448;fontSize=18;spacing=10;">
           <mxGeometry x="795" y="585" width="205" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="dense" parent="1" vertex="1" value="Dense search&#10;Chroma similarity&#10;Top 20 chunk IDs" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#eaf1fb;strokeColor=#5276a6;strokeWidth=1.8;fontColor=#203448;fontSize=14.7;spacing=10;">
+        <mxCell id="dense" parent="1" vertex="1" value="Dense search&#10;Chroma similarity&#10;Up to 20 chunk IDs" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#eaf1fb;strokeColor=#5276a6;strokeWidth=1.8;fontColor=#203448;fontSize=14.7;spacing=10;">
           <mxGeometry x="1040" y="585" width="215" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="bmsearch" parent="1" vertex="1" value="BM25 search&#10;Keyword scoring&#10;Top 20 chunk IDs" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#eaf1fb;strokeColor=#5276a6;strokeWidth=1.8;fontColor=#203448;fontSize=14.7;spacing=10;">
+        <mxCell id="bmsearch" parent="1" vertex="1" value="BM25 search&#10;Keyword scoring&#10;Up to 20 chunk IDs" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#eaf1fb;strokeColor=#5276a6;strokeWidth=1.8;fontColor=#203448;fontSize=14.7;spacing=10;">
           <mxGeometry x="1040" y="760" width="215" height="80" as="geometry" />
         </mxCell>
         <mxCell id="rrf" parent="1" vertex="1" value="Weighted RRF&#10;k = 50&#10;Dense .55 / BM25 .45&#10;Keep top 15" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#e6f5f1;strokeColor=#238578;strokeWidth=1.8;fontColor=#203448;fontSize=14.5;spacing=10;">
           <mxGeometry x="1295" y="665" width="195" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="rerank" parent="1" vertex="1" value="Rerank candidates&#10;BGE cross-encoder OR&#10;lexical-overlap fallback&#10;Birth/death boosts only" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#e6f5f1;strokeColor=#238578;strokeWidth=1.8;fontColor=#203448;fontSize=13.5;spacing=10;">
+        <mxCell id="rerank" parent="1" vertex="1" value="Rerank candidates&#10;BGE cross-encoder OR&#10;lexical-overlap fallback&#10;Birth-registration boosts only" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#e6f5f1;strokeColor=#238578;strokeWidth=1.8;fontColor=#203448;fontSize=10.8;spacing=10;">
           <mxGeometry x="1530" y="610" width="205" height="115" as="geometry" />
         </mxCell>
-        <mxCell id="resolve" parent="1" vertex="1" value="Resolve source content&#10;Chunk IDs -&gt; local JSONL&#10;Birth/death fee-context&#10;augmentation if triggered" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#fff4dd;strokeColor=#b88426;strokeWidth=1.8;fontColor=#203448;fontSize=12.9;spacing=10;">
+        <mxCell id="resolve" parent="1" vertex="1" value="Evidence contexts by ID&#10;Linked local JSONL content&#10;Birth-registration fee-context&#10;augmentation if triggered" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#fff4dd;strokeColor=#b88426;strokeWidth=1.8;fontColor=#203448;fontSize=10.8;spacing=10;">
           <mxGeometry x="1530" y="765" width="205" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="reject" parent="1" vertex="1" value="Clarification response&#10;Unsupported input / scope" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#fcece9;strokeColor=#ba6152;strokeWidth=1.8;fontColor=#203448;fontSize=12.9;spacing=10;">
+        <mxCell id="reject" parent="1" vertex="1" value="Clarification response&#10;Recognized input / scope issue" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#fcece9;strokeColor=#ba6152;strokeWidth=1.8;fontColor=#203448;fontSize=10.8;spacing=10;">
           <mxGeometry x="305" y="795" width="205" height="65" as="geometry" />
         </mxCell>
         <mxCell id="select" parent="1" vertex="1" value="Automatic evidence selector&#10;Service / action / scope checks&#10;Compatible section expansion&#10;Group continuations first&#10;Whole-chunk budget:&#10;6 passages / 14,000 chars max" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#fff4dd;strokeColor=#b88426;strokeWidth=1.8;fontColor=#203448;fontSize=14.7;spacing=10;">
@@ -279,7 +279,7 @@
         <mxCell id="title" parent="1" vertex="1" value="CivicRAG | Comparison and evaluation boundaries" style="text;html=0;align=left;fontSize=34;fontStyle=1;fontColor=#203448;">
           <mxGeometry x="45" y="25" width="1700" height="45" as="geometry" />
         </mxCell>
-        <mxCell id="subtitle" parent="1" vertex="1" value="Keep answer-pipeline comparison separate from retrieval-only ablations and legacy P2 evaluation." style="text;html=0;align=left;fontSize=18;fontColor=#526578;">
+        <mxCell id="subtitle" parent="1" vertex="1" value="Keep answer-pipeline comparison separate from retrieval-only ablations and historical retrieval checks." style="text;html=0;align=left;fontSize=18;fontColor=#526578;">
           <mxGeometry x="45" y="78" width="1710" height="40" as="geometry" />
         </mxCell>
         <mxCell id="panel0" parent="1" vertex="1" value="" style="rounded=1;arcSize=4;fillColor=#fafcfd;strokeColor=#d6e1e8;strokeWidth=1;container=0;">
@@ -351,7 +351,7 @@
         <mxCell id="edge8" parent="1" edge="1" source="labels" target="metrics" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#526578;strokeWidth=2;exitX=1.0;exitY=0.48484848484848486;exitPerimeter=0;entryX=0.0;entryY=0.48484848484848486;entryPerimeter=0;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="shared" parent="1" vertex="1" value="Shared experimental inputs&#10;Same 30 Bangla questions&#10;Same domain-scoped corpus&#10;Same BGE-M3 embeddings&#10;Same Qwen3:8b generator&#10;Same selected-evidence prompt" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#e6f5f1;strokeColor=#238578;strokeWidth=1.8;fontColor=#203448;fontSize=15.1;spacing=10;">
+        <mxCell id="shared" parent="1" vertex="1" value="Shared experimental inputs&#10;Same 30 Bangla questions&#10;Same domain-scoped corpus&#10;Same BGE-M3 embeddings&#10;Same Qwen3:8b generator&#10;Same generation prompt" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#e6f5f1;strokeColor=#238578;strokeWidth=1.8;fontColor=#203448;fontSize=16.9;spacing=10;">
           <mxGeometry x="65" y="260" width="270" height="165" as="geometry" />
         </mxCell>
         <mxCell id="simple" parent="1" vertex="1" value="Matched Simple RAG&#10;Dense top 6&#10;Whole-chunk context budget&#10;No RRF / reranker / selector" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#eaf1fb;strokeColor=#5276a6;strokeWidth=1.8;fontColor=#203448;fontSize=18;spacing=10;">
@@ -372,7 +372,7 @@
         <mxCell id="q" parent="1" vertex="1" value="Current 30 questions&#10;10 per domain&#10;Domain-scoped indices" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#e6f5f1;strokeColor=#238578;strokeWidth=1.8;fontColor=#203448;fontSize=18;spacing=10;">
           <mxGeometry x="65" y="805" width="250" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="methods" parent="1" vertex="1" value="Three retrieval variants&#10;BM25-only&#10;BGE-M3 dense-only&#10;Weighted Hybrid RRF&#10;Top 20 -&gt; evaluate top 5" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#eaf1fb;strokeColor=#5276a6;strokeWidth=1.8;fontColor=#203448;fontSize=18;spacing=10;">
+        <mxCell id="methods" parent="1" vertex="1" value="Three retrieval variants&#10;BM25-only&#10;BGE-M3 dense-only&#10;Weighted Hybrid RRF&#10;Up to 20/channel -&gt; score top 5" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#eaf1fb;strokeColor=#5276a6;strokeWidth=1.8;fontColor=#203448;fontSize=18;spacing=10;">
           <mxGeometry x="385" y="780" width="350" height="165" as="geometry" />
         </mxCell>
         <mxCell id="labels" parent="1" vertex="1" value="Pooled relevance labels&#10;Union of each variant's top 5&#10;Assistant-reviewed, not human gold&#10;Uncertain questions excluded&#10;26/30 provisionally scorable" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fillColor=#fff4dd;strokeColor=#b88426;strokeWidth=1.8;fontColor=#203448;fontSize=17.6;spacing=10;">
@@ -384,7 +384,7 @@
         <mxCell id="note0" parent="1" vertex="1" value="This baseline is scripts/run_simple_matched.py, not necessarily every legacy branch of the live Simple RAG option." style="text;html=0;align=left;fontSize=17;fontColor=#526578;whiteSpace=wrap;">
           <mxGeometry x="65" y="570" width="1640" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="note1" parent="1" vertex="1" value="Separate historical check: the current birth/death index was also tested on 58 existing P2-labelled questions (19 paraphrase groups).&#10;Do not merge those scores with the current 30-question results or interpret pooled recall as exhaustive corpus recall." style="text;html=0;align=left;fontSize=17;fontColor=#526578;whiteSpace=wrap;">
+        <mxCell id="note1" parent="1" vertex="1" value="Separate historical check: the current registration index was also tested on 58 previously labelled questions (19 paraphrase groups).&#10;Do not merge those scores with the current 30-question results or interpret pooled recall as exhaustive corpus recall." style="text;html=0;align=left;fontSize=17;fontColor=#526578;whiteSpace=wrap;">
           <mxGeometry x="65" y="990" width="1630" height="65" as="geometry" />
         </mxCell>
         <mxCell id="note2" parent="1" vertex="1" value="The overnight Qwen draft-labeling experiment is a separate exploratory artifact with unresolved judgments, not final ground truth.&#10;Evaluation is outside the online chatbot path. No RAGAS judge or relevance-review process runs when a citizen submits a normal query.&#10;These diagrams describe implemented paths, not a novel-model-training claim or proof that one method is universally superior." style="text;html=0;align=left;fontSize=17;fontColor=#526578;whiteSpace=wrap;">

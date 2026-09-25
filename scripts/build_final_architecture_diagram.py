@@ -100,7 +100,7 @@ class Page:
 
 
 def architecture():
-    p = Page("CivicRAG | Final evaluated architecture", "Bangla civic-service QA | Birth/death registration, Passport and BRTA | Selected-evidence path")
+    p = Page("CivicRAG | Final evaluated architecture", "Bangla civic-service QA | Birth registration, Passport and BRTA | Selected-evidence path")
     p.panel(35, 135, 1730, 365, "01  OFFLINE DATA PREPARATION AND INDEXING")
     p.node("raw", 65, 235, 195, 120, "Source documents\nPDF / DOCX / HTML\nPrepared MD / JSON", "gray")
     p.node("clean", 300, 235, 215, 120, "Data preparation\nManual / scripted cleanup\nText normalization\nSource tracking")
@@ -125,12 +125,12 @@ def architecture():
     p.node("checks", 305, 645, 205, 105, "Input / scope checks\nBangla input check\nCross-domain aggregate\nclarification guard", "amber")
     p.node("normalize", 550, 645, 205, 105, "Normalize query\nUnicode / wording\nUse selected domain")
     p.node("qembed", 795, 585, 205, 80, "BAAI/bge-m3\nEncode query", "blue")
-    p.node("dense", 1040, 585, 215, 80, "Dense search\nChroma similarity\nTop 20 chunk IDs", "blue")
-    p.node("bmsearch", 1040, 760, 215, 80, "BM25 search\nKeyword scoring\nTop 20 chunk IDs", "blue")
+    p.node("dense", 1040, 585, 215, 80, "Dense search\nChroma similarity\nUp to 20 chunk IDs", "blue")
+    p.node("bmsearch", 1040, 760, 215, 80, "BM25 search\nKeyword scoring\nUp to 20 chunk IDs", "blue")
     p.node("rrf", 1295, 665, 195, 100, "Weighted RRF\nk = 50\nDense .55 / BM25 .45\nKeep top 15", "teal")
-    p.node("rerank", 1530, 610, 205, 115, "Rerank candidates\nBGE cross-encoder OR\nlexical-overlap fallback\nBirth/death boosts only", "teal")
-    p.node("resolve", 1530, 765, 205, 100, "Resolve source content\nChunk IDs -> local JSONL\nBirth/death fee-context\naugmentation if triggered", "amber")
-    p.node("reject", 305, 795, 205, 65, "Clarification response\nUnsupported input / scope", "red")
+    p.node("rerank", 1530, 610, 205, 115, "Rerank candidates\nBGE cross-encoder OR\nlexical-overlap fallback\nBirth-registration boosts only", "teal")
+    p.node("resolve", 1530, 765, 205, 100, "Evidence contexts by ID\nLinked local JSONL content\nBirth-registration fee-context\naugmentation if triggered", "amber")
+    p.node("reject", 305, 795, 205, 65, "Clarification response\nRecognized input / scope issue", "red")
     p.edge("query", "checks", [(260,697),(305,697)])
     p.edge("checks", "normalize", [(510,697),(550,697)])
     p.edge("checks", "reject", [(407,750),(407,795)])
@@ -166,9 +166,9 @@ def architecture():
 
 
 def evaluation():
-    p = Page("CivicRAG | Comparison and evaluation boundaries", "Keep answer-pipeline comparison separate from retrieval-only ablations and legacy P2 evaluation.", height=1260)
+    p = Page("CivicRAG | Comparison and evaluation boundaries", "Keep answer-pipeline comparison separate from retrieval-only ablations and historical retrieval checks.", height=1260)
     p.panel(35,145,1730,485,"A  MATCHED ANSWER-PIPELINE COMPARISON: EXISTING 30 QUESTIONS / THREE DOMAINS")
-    p.node("shared",65,260,270,165,"Shared experimental inputs\nSame 30 Bangla questions\nSame domain-scoped corpus\nSame BGE-M3 embeddings\nSame Qwen3:8b generator\nSame selected-evidence prompt")
+    p.node("shared",65,260,270,165,"Shared experimental inputs\nSame 30 Bangla questions\nSame domain-scoped corpus\nSame BGE-M3 embeddings\nSame Qwen3:8b generator\nSame generation prompt")
     p.node("simple",400,225,355,120,"Matched Simple RAG\nDense top 6\nWhole-chunk context budget\nNo RRF / reranker / selector", "blue")
     p.node("civic",400,410,355,140,"CivicRAG\nDense + BM25 -> RRF -> reranking\nDomain-specific processing if triggered\nAutomatic evidence selection\nand compatible-section expansion", "teal")
     p.node("gen",840,285,300,185,"Matched generation settings\nQwen3:8b through Ollama\nUp to 6 passages / 14,000 chars\nSame prompt and output checks\nSaved answers + actual contexts\nNo regenerated answers for scoring", "blue")
@@ -183,13 +183,13 @@ def evaluation():
     p.note(65,570,1640,40,"This baseline is scripts/run_simple_matched.py, not necessarily every legacy branch of the live Simple RAG option.")
     p.panel(35,675,1730,410,"B  RETRIEVAL-ONLY ABLATION: NO ANSWER GENERATION, RERANKING OR EVIDENCE SELECTION")
     p.node("q",65,805,250,110,"Current 30 questions\n10 per domain\nDomain-scoped indices")
-    p.node("methods",385,780,350,165,"Three retrieval variants\nBM25-only\nBGE-M3 dense-only\nWeighted Hybrid RRF\nTop 20 -> evaluate top 5", "blue")
+    p.node("methods",385,780,350,165,"Three retrieval variants\nBM25-only\nBGE-M3 dense-only\nWeighted Hybrid RRF\nUp to 20/channel -> score top 5", "blue")
     p.node("labels",805,780,360,165,"Pooled relevance labels\nUnion of each variant's top 5\nAssistant-reviewed, not human gold\nUncertain questions excluded\n26/30 provisionally scorable", "amber")
     p.node("metrics",1235,780,470,165,"Per-domain and overall retrieval metrics\nHit@1 / Hit@5 / Precision@5 / MRR@5\nPooled Recall@5 / pooled nDCG@5\nRecall/nDCG: 25 nonempty eligible pools\nNot end-to-end chatbot correctness")
     p.edge("q","methods",[(315,860),(385,860)])
     p.edge("methods","labels",[(735,860),(805,860)])
     p.edge("labels","metrics",[(1165,860),(1235,860)])
-    p.note(65,990,1630,65,"Separate historical check: the current birth/death index was also tested on 58 existing P2-labelled questions (19 paraphrase groups).\nDo not merge those scores with the current 30-question results or interpret pooled recall as exhaustive corpus recall.")
+    p.note(65,990,1630,65,"Separate historical check: the current registration index was also tested on 58 previously labelled questions (19 paraphrase groups).\nDo not merge those scores with the current 30-question results or interpret pooled recall as exhaustive corpus recall.")
     p.note(65,1120,1650,85,"The overnight Qwen draft-labeling experiment is a separate exploratory artifact with unresolved judgments, not final ground truth.\nEvaluation is outside the online chatbot path. No RAGAS judge or relevance-review process runs when a citizen submits a normal query.\nThese diagrams describe implemented paths, not a novel-model-training claim or proof that one method is universally superior.")
     return p
 

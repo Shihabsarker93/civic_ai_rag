@@ -26,7 +26,7 @@
 \draw[civicarr] (sparse.south)--++(0,-0.25)-|(rrf.north);
 \node[civicbox,text width=11.6cm] (rank) at (7,-10.0) {BGE cross-encoder reranking: ALL domains\\Lexical fallback if the cross-encoder is unavailable};
 \draw[civicarr] (rrf)--(rank);
-\node[civicbox,draw=civicGold,fill=civicGold!8,text width=11.6cm] (rules) at (7,-11.5) {Conditional birth/death rules only:\\score adjustments and correction-fee supplementation\\Passport / BRTA skip these extra rules, not reranking};
+\node[civicbox,draw=civicGold,fill=civicGold!8,text width=11.6cm] (rules) at (7,-11.5) {Conditional birth-registration rules only:\\score adjustments and correction-fee supplementation\\Passport / BRTA skip these extra rules, not reranking};
 \draw[civicarr] (rank)--(rules);
 \node[civicbox,text width=11.6cm] (select) at (7,-13.1) {Shared applicability selector + compatible-family ordering\\Original evidence by ID; at most 6 chunks / 14,000 characters};
 \draw[civicarr] (rules)--(select);
@@ -36,5 +36,5 @@
 \draw[civicarr] (llm)--(answer);
 \end{tikzpicture}
 \end{singlespace}
-\caption{Current CivicRAG architecture, redrawn from the P2 offline/online organization and updated for three domains. Dashed arrows indicate index access. The gold box distinguishes domain-specific rules from shared reranking. The selected-evidence route bypasses the legacy controlled-answer branch.}\label{fig:architecture}
+\caption{Earlier compact CivicRAG architecture with offline/online organization for three domains. Dashed arrows indicate index access. The gold box distinguishes domain-specific rules from shared reranking. The selected-evidence route bypasses the legacy controlled-answer branch.}\label{fig:architecture}
 \end{figure}

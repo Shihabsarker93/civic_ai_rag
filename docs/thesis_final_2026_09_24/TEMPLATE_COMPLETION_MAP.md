@@ -1,5 +1,9 @@
 # Template-preserving completion plan
 
+## Latest closure: 25 September 2026
+
+EV-01 and ST-01 below are now complete: all 180 metric scores and paired bootstrap intervals are integrated into Chapter 5. Chapter 6 is reconciled with those results. Sections 4.2 and 4.4 now contain the audited architecture and implementation mapping. Assistant-reviewed retrieval tables are included per domain and overall; the separate overnight pool remains exploratory. The task prompts below are retained as a record, not instructions to restart completed evaluations. EV-02 and administrative confirmations remain open only where their stronger claims or approvals are required.
+
 Survey update: the supplied needs-analysis questionnaire is integrated into Sections 1.2, 1.4, 3.1, 3.2, 3.4, 3.8, 4.3, 5.1, 5.4 and 6.1 without changing numbered headings. See SURVEY_ANALYSIS.md for aggregate evidence, exclusions and outstanding recruitment/consent confirmations. This is distinct from a chatbot user-impact experiment.
 
 The official template controls names, order and numbering. All six chapters, all original sections and the five Data Collection subsections are retained. Extra explanations use unnumbered paragraph labels rather than adding index entries. Original appendix titles and front-matter order are restored. Pagination necessarily changes with the manuscript content.
@@ -29,7 +33,7 @@ The original appendix source files were empty, although main.tex specified their
 | 3.6 Project Management Plan | Dependency-based completion plan | PM-01: dates, responsibilities, resources, budget supplied by team |
 | 3.7 Risk Management | Risks, controls, residual issues | Team review |
 | 3.8 Economic Analysis | Cost components and calculation model | EC-01: measured/input costs and defensible comparator |
-| 4.1 Design Process or Methodology Overview | Implemented architecture diagram and narrative | No new experiment needed |
+| 4.1 Design Process or Methodology Overview | Implemented methodology narrative; diagrams in 4.2 | No new experiment needed |
 | 4.2 Preliminary Design or Design (Model) Specification | Existing baseline and proposed-design executions | DS-01 optional selector-off ablation if component-level claims are needed |
 | 4.3 Data Collection -(If Applicable) | Source families and provenance | Confirm unresolved original matches and redistribution permissions |
 | 4.3.1 Data Cleaning | Actual normalization and separate candidates | No candidate activation implied |
@@ -38,13 +42,13 @@ The original appendix source files were empty, although main.tex specified their
 | 4.3.4 Data Reduction | Conservative reduction and inclusion | No invented dimensionality-reduction experiment |
 | 4.3.5 Summary of Preprocessed Data | Active inventory and flags | Regenerate only if frozen data version changes |
 | 4.4 Implementation of Selected Design | Code-grounded retrieval/generation details | No new experiment needed |
-| 5.1 Performance Evaluation | Saved outputs, operational metrics, RAGAS protocol | EV-01 finish automatic batch; EV-02 review correctness if claimed |
-| 5.2 Analysis of Design Solutions | Diagnostics, strengths, failures | Extend using finalized EV-01/EV-02 results |
+| 5.1 Performance Evaluation | Completed automatic and provisional retrieval metrics | EV-01 complete; EV-02 review correctness if claimed |
+| 5.2 Analysis of Design Solutions | Diagnostics, supplied qualitative examples, strengths and failures | Author review; do not turn examples into accuracy labels |
 | 5.3 Final Design Adjustments | Recorded ordering fix | No additional changes described as implemented |
-| 5.4 Statistical Analysis | Operational statistics and paired method | ST-01 calculate paired results after valid judgments exist |
-| 5.5 Comparisons and Relationships | Matched baseline/model comparison | Add finalized evaluation, retain fair denominators |
-| 5.6 Discussions | Interpretation/limitations | Reconcile with completed metrics |
-| 6.1 Summary of Findings | Current evidence-supported conclusions | Update after Chapter 5 is finalized |
+| 5.4 Statistical Analysis | Completed paired intervals and per-domain retrieval tables | ST-01 complete; preserve provisional-label caveat |
+| 5.5 Comparisons and Relationships | Matched baseline/model comparison | Completed scores integrated; author review |
+| 5.6 Discussions | Interpretation/limitations | Reconciled with completed metrics |
+| 6.1 Summary of Findings | Current evidence-supported conclusions | Reconciled with Chapter 5 |
 | 6.2 Contributions to the Field | Dataset and system integration | No architectural novelty inflation |
 | 6.3 Recommendations for Future Work | Evidence selection, data and evaluation | No new experiment needed |
 

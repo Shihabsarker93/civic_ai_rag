@@ -49,7 +49,7 @@ Privacy is addressed differently for the corpus and survey. Public-service instr
 Local inference avoids sending each question and passage to a hosted generator in the recorded runs, but saved local logs can still contain sensitive user input. Their use in an operational deployment would require access and retention controls. No ethics approval or privacy certification is inferred from a consent checkbox or local execution alone.
 
 \section{Standards - if applicable}
-\textbf{Encoding.} UTF-8 storage and Unicode NFC normalization provide a consistent representation of Bangla and mixed-language text. Normalization standardizes encoding; it does not repair every OCR or spelling error.
+\textbf{Encoding.} UTF-8 storage and Unicode NFC normalization provide a consistent representation of Bangla and mixed-language text \cite{unicode_nfc}. Normalization standardizes encoding; it does not repair every OCR or spelling error.
 
 \textbf{Documentation.} JSON/JSONL records, stable identifiers, source-relative paths and SHA-256 hashes support consistent data exchange and change detection. Missing URLs remain missing rather than being replaced with guessed addresses.
 
@@ -71,7 +71,7 @@ Recorded date & Milestone & Revision\\\midrule
 24 Sep 2026 & Matched Simple RAG run and needs-survey analysis & \code{76a4537}, \code{c09fc42}\\
 25 Sep 2026 & Retrieval-only measurements and completed saved-answer RAGAS evaluation & \code{2ba8820}, \code{d32c107}\\\bottomrule
 \end{tabularx}\end{table}
-The milestone record covers the final development period; earlier collection and P2 work precede these entries. Keeping the sequence tied to artifacts avoids reconstructing unrecorded working hours or assigning responsibilities retrospectively.
+The milestone record covers the final development period; earlier collection and initial implementation work precede these entries. Keeping the sequence tied to artifacts avoids reconstructing unrecorded working hours or assigning responsibilities retrospectively.
 
 Version control was also a risk-control mechanism. Unsuccessful candidate changes were retained with their outputs, while rollback revisions preserved earlier behaviour. For comparison, the corpus, questions and generation settings were frozen so that later reporting did not silently change the experiment. Evaluation of saved answers was separated from model generation to reduce repeated local runs.
 

@@ -15,16 +15,10 @@ The original Abstract file, including keywords and LaTeX markup, is byte-for-byt
 
 ## Required evaluation closure
 
-The RAGAS job is independent of this writing task and should not be restarted merely to update the thesis. Inspect:
-
-`docs/evaluation/ragas_comparison_2026_09_24/completion.json`
-
-If it is absent, inspect progress.json and failure.json plus `/tmp/civic-ragas-eval.log`. A metric attempt is not a correct answer. The complete workload is 180 attempts: 30 questions x 2 systems x 3 metrics. The thesis generation script excludes partial headline scores.
-
-After completion, from the repository root:
+Completed: 180/180 RAGAS/custom metric calculations, with 30 valid scores per system per measure. Chapters 5-6 include the final aggregates and paired intervals. Do not restart generation or evaluation merely to compile the thesis. To regenerate final tables from saved artifacts, run from the repository root:
 
 ```sh
-.venv/bin/python scripts/build_thesis_evidence.py
+python3 scripts/export_thesis_final_results.py
 ```
 
 Then compile in this manuscript directory:
@@ -51,7 +45,8 @@ Suggested task prompt: "Review the two anonymized answers using the original Ban
 
 ## Metrics intentionally not invented
 
-- MRR, nDCG, Hit/Recall@k: first annotate relevant chunk IDs (including multiple relevant chunks where needed). Use a held-out set for generalization claims.
+- MRR@5, pooled nDCG@5, Hit@1/5, Precision@5 and pooled Recall@5 are now reported from assistant-reviewed labels, explicitly provisional. There are 26 eligible questions for Hit/Precision/MRR and 25 for Recall/nDCG. Independent expert labels and held-out questions remain necessary for stronger claims.
+- The separate overnight pool has 455 completed judgments but 88 uncertain labels and only one scorable question. It is exploratory, not a substitute for the 30-question comparison.
 - Reference semantic similarity or factual correctness: first write or approve evidence-backed reference answers. Do not treat another model's response as gold.
 - User impact, time saved or post-use trust/satisfaction: requires a chatbot-use study and any necessary ethics approval. The supplied needs-analysis questionnaire now supports stated preferences only; see SURVEY_ANALYSIS.md.
 
@@ -62,7 +57,7 @@ The survey is now incorporated under existing headings with two charts. Confirm 
 
 ## Corpus version warning
 
-The evaluated active corpus contains 187 birth/death, 361 passport and 3161 BRTA chunks (3709 total). Separate cleanup candidates exist (including 297 passport and 2795 BRTA chunks), but are not the corpus behind the main saved runs. Do not substitute candidate counts or claim they were active without a new manifest-backed run.
+The evaluated active corpus contains 187 registration, 361 passport and 3161 BRTA chunks (3709 total). The registration collection includes combined legal sources, but the study focuses on birth registration. Separate cleanup candidates exist (including 297 passport and 2795 BRTA chunks), but are not the corpus behind the main saved runs. Do not substitute candidate counts or claim they were active without a new manifest-backed run.
 
 ## Template adaptations
 

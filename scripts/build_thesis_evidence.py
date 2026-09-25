@@ -51,7 +51,7 @@ def main():
     manifest['frozen_hashes_verified'] = primary_plan['file_hashes']
     catalog = []
     corpus_rows, flags_rows = [], []
-    for domain, display in [('birth_death_registration', 'Birth/death'), ('passport', 'Passport'), ('brta', 'BRTA')]:
+    for domain, display in [('birth_death_registration', 'Birth registration'), ('passport', 'Passport'), ('brta', 'BRTA')]:
         config_path = ROOT / 'domains' / domain / 'config.json'
         config = json.loads(config_path.read_text())
         path = ROOT / config['data']['chunk_output_path']
