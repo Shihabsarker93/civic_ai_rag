@@ -1,0 +1,919 @@
+# Civic.ai Sample Model Answers
+
+Pipeline: `CivicRAG (ours)`
+
+Models: `llama3.2`, `llama3`, `qwen2.5:7b`
+
+Questions: 6 basic Bangla birth-registration questions.
+
+## Q1 - llama3.2
+
+**Question:** জন্ম নিবন্ধনের জন্য আবেদন করব কীভাবে?
+
+**Elapsed:** 21.05 seconds
+
+**Answer:**
+
+আবেদন করার পূর্ব প্রস্তুতি: নতুন জন্ম নিবন্ধন আবেদনের পূর্বে প্রয়োজনীয় তথ্য ও ডকুমেন্ট সংগ্রহ করে রাখুন।
+
+জন্ম নিবন্ধনের ক্ষেত্রে নিম্নোক্ত তিন ধরনের ঠিকানার তথ্য প্রয়োজন হবে:
+
+- জন্মস্থান
+- স্থায়ী ঠিকানা
+- বর্তমান ঠিকানা
+
+প্রতিটি ঠিকানার জন্য নিম্নোক্ত তথ্য প্রয়োজন হতে পারে:
+
+- ইউনিয়ন পরিষদ/পৌরসভা/সিটি কর্পোরেশন/ক্যান্টনমেন্টের নাম
+- ওয়ার্ড নম্বর
+- ডাকঘর
+- গ্রাম/পাড়া/মহল্লা
+- বাসা ও সড়কের নাম ও নম্বর
+
+সকল তথ্য বাংলা ও ইংরেজি উভয় ভাষায় সঠিক বানানে লিখতে হবে।
+
+ধাপ ১: ওয়েবসাইটে প্রবেশ: নতুন জন্ম নিবন্ধনের জন্য:
+
+https://bdris.gov.bd
+
+ওয়েবসাইটে প্রবেশ করুন।
+
+হোমপেজে "জন্ম নিবন্ধন" মেনু নির্বাচন করুন।
+
+এরপর "জন্ম নিবন্ধন আবেদন" অপশনে ক্লিক করুন।
+
+ধাপ ২: সনদ সংগ্রহের স্থান নির্বাচন: এখানে আবেদনকারীকে নির্বাচন করতে হবে তিনি কোথা থেকে জন্ম সনদ গ্রহণ বা সংগ্রহ করতে চান।
+
+নিম্নোক্ত ঠিকানার ভিত্তিতে সনদ সংগ্রহ করা যেতে পারে:
+
+- জন্মস্থান
+- স্থায়ী ঠিকানা
+
+সাধারণভাবে স্থায়ী ঠিকানা থেকে সনদ সংগ্রহ করার জন্য উৎসাহিত করা হয়।
+
+বিদেশে জন্মগ্রহণকারী শিশু নিকটস্থ বাংলাদেশ দূতাবাস থেকে জন্ম সনদ সংগ্রহ করতে পারে।
+
+এরপর "পরবর্তী" বাটনে ক্লিক করুন।
+
+ধাপ ৩: জন্ম তথ্য প্রদান: এই ধাপে আবেদনকারীর জন্মসংক্রান্ত তথ্য ধাপে ধাপে পূরণ করতে হবে।
+
+তথ্য প্রদানের সময় সতর্কতা অবলম্বন করতে হবে।
+
+জন্ম তারিখ প্রদান করার পর সিস্টেম প্রয়োজনীয় নির্দেশনা প্রদর্শন করবে।
+
+নির্দেশনা পড়ে "আমার কাছে এই ডকুমেন্টগুলো আছে" অপশন নির্বাচন করতে হবে।
+
+এরপর "পরবর্তী" বাটনে ক্লিক করুন।
+
+ধাপ ৪: পিতা ও মাতার তথ্য প্রদান: এই ধাপে পিতা ও মাতার তথ্য প্রদান করতে হবে।
+
+ধাপ ৫: স্থায়ী ও বর্তমান ঠিকানা প্রদান: এই ধাপে:
+
+- স্থায়ী ঠিকানা
+- বর্তমান ঠিকানা
+
+প্রদান করতে হবে।
+
+যদি জন্মস্থান এবং স্থায়ী ঠিকানা একই হয়, তাহলে নির্ধারিত ঘরে টিক চিহ্ন দিলে তথ্য স্বয়ংক্রিয়ভাবে পূরণ হবে।
+
+অন্যথায় স্থায়ী ঠিকানা ও বর্তমান ঠিকানার তথ্য আলাদাভাবে পূরণ করতে হবে।
+
+সব তথ্য সঠিকভাবে পূরণ করার পর "পরবর্তী" বাটনে ক্লিক করুন।
+
+ধাপ ৬: আবেদনকারীর তথ্য ও ডকুমেন্ট সংযুক্তি: যদি ব্যক্তি নিজে আবেদন করেন, তাহলে "নিজ" অপশন নির্বাচন করতে হবে।
+
+অন্য কেউ আবেদন করলে "অন্যান্য" অপশন নির্বাচন করতে হবে।
+
+"অন্যান্য" নির্বাচন করলে আবেদনকারীর জন্ম নিবন্ধন নম্বর প্রদান করতে হবে।
+
+এরপর ঘোষণা দিতে হবে যে:
+
+- প্রদত্ত তথ্যসমূহ সঠিক
+- পূর্বে জন্ম নিবন্ধন করা হয়নি
+
+সংযুক্ত করতে হবে: - জন্ম তারিখের প্রমাণক
+- জন্মস্থানের প্রমাণক
+- স্থায়ী ঠিকানার প্রমাণক
+
+সংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।
+
+এরপর "পরবর্তী" বাটনে ক্লিক করুন।
+
+ধাপ ৭: তথ্য যাচাই ও OTP: এই ধাপে আবেদনকারীর পূরণকৃত সকল তথ্য প্রদর্শিত হবে।
+
+সকল তথ্য সতর্কতার সাথে যাচাই করতে হবে।
+
+ভুল থাকলে "পূর্ববর্তী" বাটনে ফিরে গিয়ে সংশোধন করতে হবে।
+
+তথ্য সঠিক হলে:
+
+- ইমেইল অথবা
+- মোবাইল নম্বর
+
+প্রদান করতে হবে।
+
+OTP গ্রহণ: - দূতাবাসের মাধ্যমে আবেদনের ক্ষেত্রে ইমেইলে OTP যাবে।
+- বাংলাদেশের অভ্যন্তরে আবেদনের ক্ষেত্রে মোবাইল নম্বরে OTP যাবে।
+
+OTP প্রদান করার পর "সাবমিট" বাটনে ক্লিক করুন।
+
+Sources: birth_registration_application_process_cleaned_008_01, birth_registration_application_process_cleaned_002_01, birth_registration_application_process_02_cleaned_003_01
+
+**Top Sources:**
+
+1. `birth_registration_application_process_cleaned_008_01` | `application_process` | `ধাপ ১: ওয়েবসাইটে প্রবেশ` | score `1.1247772026062013`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf
+2. `birth_registration_application_process_cleaned_002_01` | `application_process` | `আবেদন করার পূর্ব প্রস্তুতি` | score `1.1073419308662416`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf
+3. `birth_registration_application_process_02_cleaned_003_01` | `application_process` | `ধাপ ১: ওয়েবসাইটে প্রবেশ` | score `1.1039367961883546`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf
+4. `birth_registration_application_process_02_cleaned_014_01` | `application_process` | `ধাপ ১২: আবেদনপত্র জমা` | score `1.0940280914306642`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf
+5. `birth_registration_application_process_02_cleaned_005_01` | `application_process` | `ধাপ ৩: নিবন্ধন কার্যালয় নির্বাচন` | score `1.0926704168319703`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf
+
+## Q1 - llama3
+
+**Question:** জন্ম নিবন্ধনের জন্য আবেদন করব কীভাবে?
+
+**Elapsed:** 14.71 seconds
+
+**Answer:**
+
+আবেদন করার পূর্ব প্রস্তুতি: নতুন জন্ম নিবন্ধন আবেদনের পূর্বে প্রয়োজনীয় তথ্য ও ডকুমেন্ট সংগ্রহ করে রাখুন।
+
+জন্ম নিবন্ধনের ক্ষেত্রে নিম্নোক্ত তিন ধরনের ঠিকানার তথ্য প্রয়োজন হবে:
+
+- জন্মস্থান
+- স্থায়ী ঠিকানা
+- বর্তমান ঠিকানা
+
+প্রতিটি ঠিকানার জন্য নিম্নোক্ত তথ্য প্রয়োজন হতে পারে:
+
+- ইউনিয়ন পরিষদ/পৌরসভা/সিটি কর্পোরেশন/ক্যান্টনমেন্টের নাম
+- ওয়ার্ড নম্বর
+- ডাকঘর
+- গ্রাম/পাড়া/মহল্লা
+- বাসা ও সড়কের নাম ও নম্বর
+
+সকল তথ্য বাংলা ও ইংরেজি উভয় ভাষায় সঠিক বানানে লিখতে হবে।
+
+ধাপ ১: ওয়েবসাইটে প্রবেশ: নতুন জন্ম নিবন্ধনের জন্য:
+
+https://bdris.gov.bd
+
+ওয়েবসাইটে প্রবেশ করুন।
+
+হোমপেজে "জন্ম নিবন্ধন" মেনু নির্বাচন করুন।
+
+এরপর "জন্ম নিবন্ধন আবেদন" অপশনে ক্লিক করুন।
+
+ধাপ ২: সনদ সংগ্রহের স্থান নির্বাচন: এখানে আবেদনকারীকে নির্বাচন করতে হবে তিনি কোথা থেকে জন্ম সনদ গ্রহণ বা সংগ্রহ করতে চান।
+
+নিম্নোক্ত ঠিকানার ভিত্তিতে সনদ সংগ্রহ করা যেতে পারে:
+
+- জন্মস্থান
+- স্থায়ী ঠিকানা
+
+সাধারণভাবে স্থায়ী ঠিকানা থেকে সনদ সংগ্রহ করার জন্য উৎসাহিত করা হয়।
+
+বিদেশে জন্মগ্রহণকারী শিশু নিকটস্থ বাংলাদেশ দূতাবাস থেকে জন্ম সনদ সংগ্রহ করতে পারে।
+
+এরপর "পরবর্তী" বাটনে ক্লিক করুন।
+
+ধাপ ৩: জন্ম তথ্য প্রদান: এই ধাপে আবেদনকারীর জন্মসংক্রান্ত তথ্য ধাপে ধাপে পূরণ করতে হবে।
+
+তথ্য প্রদানের সময় সতর্কতা অবলম্বন করতে হবে।
+
+জন্ম তারিখ প্রদান করার পর সিস্টেম প্রয়োজনীয় নির্দেশনা প্রদর্শন করবে।
+
+নির্দেশনা পড়ে "আমার কাছে এই ডকুমেন্টগুলো আছে" অপশন নির্বাচন করতে হবে।
+
+এরপর "পরবর্তী" বাটনে ক্লিক করুন।
+
+ধাপ ৪: পিতা ও মাতার তথ্য প্রদান: এই ধাপে পিতা ও মাতার তথ্য প্রদান করতে হবে।
+
+ধাপ ৫: স্থায়ী ও বর্তমান ঠিকানা প্রদান: এই ধাপে:
+
+- স্থায়ী ঠিকানা
+- বর্তমান ঠিকানা
+
+প্রদান করতে হবে।
+
+যদি জন্মস্থান এবং স্থায়ী ঠিকানা একই হয়, তাহলে নির্ধারিত ঘরে টিক চিহ্ন দিলে তথ্য স্বয়ংক্রিয়ভাবে পূরণ হবে।
+
+অন্যথায় স্থায়ী ঠিকানা ও বর্তমান ঠিকানার তথ্য আলাদাভাবে পূরণ করতে হবে।
+
+সব তথ্য সঠিকভাবে পূরণ করার পর "পরবর্তী" বাটনে ক্লিক করুন।
+
+ধাপ ৬: আবেদনকারীর তথ্য ও ডকুমেন্ট সংযুক্তি: যদি ব্যক্তি নিজে আবেদন করেন, তাহলে "নিজ" অপশন নির্বাচন করতে হবে।
+
+অন্য কেউ আবেদন করলে "অন্যান্য" অপশন নির্বাচন করতে হবে।
+
+"অন্যান্য" নির্বাচন করলে আবেদনকারীর জন্ম নিবন্ধন নম্বর প্রদান করতে হবে।
+
+এরপর ঘোষণা দিতে হবে যে:
+
+- প্রদত্ত তথ্যসমূহ সঠিক
+- পূর্বে জন্ম নিবন্ধন করা হয়নি
+
+সংযুক্ত করতে হবে: - জন্ম তারিখের প্রমাণক
+- জন্মস্থানের প্রমাণক
+- স্থায়ী ঠিকানার প্রমাণক
+
+সংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।
+
+এরপর "পরবর্তী" বাটনে ক্লিক করুন।
+
+ধাপ ৭: তথ্য যাচাই ও OTP: এই ধাপে আবেদনকারীর পূরণকৃত সকল তথ্য প্রদর্শিত হবে।
+
+সকল তথ্য সতর্কতার সাথে যাচাই করতে হবে।
+
+ভুল থাকলে "পূর্ববর্তী" বাটনে ফিরে গিয়ে সংশোধন করতে হবে।
+
+তথ্য সঠিক হলে:
+
+- ইমেইল অথবা
+- মোবাইল নম্বর
+
+প্রদান করতে হবে।
+
+OTP গ্রহণ: - দূতাবাসের মাধ্যমে আবেদনের ক্ষেত্রে ইমেইলে OTP যাবে।
+- বাংলাদেশের অভ্যন্তরে আবেদনের ক্ষেত্রে মোবাইল নম্বরে OTP যাবে।
+
+OTP প্রদান করার পর "সাবমিট" বাটনে ক্লিক করুন।
+
+Sources: birth_registration_application_process_cleaned_008_01, birth_registration_application_process_cleaned_002_01, birth_registration_application_process_02_cleaned_003_01
+
+**Top Sources:**
+
+1. `birth_registration_application_process_cleaned_008_01` | `application_process` | `ধাপ ১: ওয়েবসাইটে প্রবেশ` | score `1.1247772026062013`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf
+2. `birth_registration_application_process_cleaned_002_01` | `application_process` | `আবেদন করার পূর্ব প্রস্তুতি` | score `1.1073419308662416`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf
+3. `birth_registration_application_process_02_cleaned_003_01` | `application_process` | `ধাপ ১: ওয়েবসাইটে প্রবেশ` | score `1.1039367961883546`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf
+4. `birth_registration_application_process_02_cleaned_014_01` | `application_process` | `ধাপ ১২: আবেদনপত্র জমা` | score `1.0940280914306642`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf
+5. `birth_registration_application_process_02_cleaned_005_01` | `application_process` | `ধাপ ৩: নিবন্ধন কার্যালয় নির্বাচন` | score `1.0926704168319703`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf
+
+## Q1 - qwen2.5:7b
+
+**Question:** জন্ম নিবন্ধনের জন্য আবেদন করব কীভাবে?
+
+**Elapsed:** 14.55 seconds
+
+**Answer:**
+
+আবেদন করার পূর্ব প্রস্তুতি: নতুন জন্ম নিবন্ধন আবেদনের পূর্বে প্রয়োজনীয় তথ্য ও ডকুমেন্ট সংগ্রহ করে রাখুন।
+
+জন্ম নিবন্ধনের ক্ষেত্রে নিম্নোক্ত তিন ধরনের ঠিকানার তথ্য প্রয়োজন হবে:
+
+- জন্মস্থান
+- স্থায়ী ঠিকানা
+- বর্তমান ঠিকানা
+
+প্রতিটি ঠিকানার জন্য নিম্নোক্ত তথ্য প্রয়োজন হতে পারে:
+
+- ইউনিয়ন পরিষদ/পৌরসভা/সিটি কর্পোরেশন/ক্যান্টনমেন্টের নাম
+- ওয়ার্ড নম্বর
+- ডাকঘর
+- গ্রাম/পাড়া/মহল্লা
+- বাসা ও সড়কের নাম ও নম্বর
+
+সকল তথ্য বাংলা ও ইংরেজি উভয় ভাষায় সঠিক বানানে লিখতে হবে।
+
+ধাপ ১: ওয়েবসাইটে প্রবেশ: নতুন জন্ম নিবন্ধনের জন্য:
+
+https://bdris.gov.bd
+
+ওয়েবসাইটে প্রবেশ করুন।
+
+হোমপেজে "জন্ম নিবন্ধন" মেনু নির্বাচন করুন।
+
+এরপর "জন্ম নিবন্ধন আবেদন" অপশনে ক্লিক করুন।
+
+ধাপ ২: সনদ সংগ্রহের স্থান নির্বাচন: এখানে আবেদনকারীকে নির্বাচন করতে হবে তিনি কোথা থেকে জন্ম সনদ গ্রহণ বা সংগ্রহ করতে চান।
+
+নিম্নোক্ত ঠিকানার ভিত্তিতে সনদ সংগ্রহ করা যেতে পারে:
+
+- জন্মস্থান
+- স্থায়ী ঠিকানা
+
+সাধারণভাবে স্থায়ী ঠিকানা থেকে সনদ সংগ্রহ করার জন্য উৎসাহিত করা হয়।
+
+বিদেশে জন্মগ্রহণকারী শিশু নিকটস্থ বাংলাদেশ দূতাবাস থেকে জন্ম সনদ সংগ্রহ করতে পারে।
+
+এরপর "পরবর্তী" বাটনে ক্লিক করুন।
+
+ধাপ ৩: জন্ম তথ্য প্রদান: এই ধাপে আবেদনকারীর জন্মসংক্রান্ত তথ্য ধাপে ধাপে পূরণ করতে হবে।
+
+তথ্য প্রদানের সময় সতর্কতা অবলম্বন করতে হবে।
+
+জন্ম তারিখ প্রদান করার পর সিস্টেম প্রয়োজনীয় নির্দেশনা প্রদর্শন করবে।
+
+নির্দেশনা পড়ে "আমার কাছে এই ডকুমেন্টগুলো আছে" অপশন নির্বাচন করতে হবে।
+
+এরপর "পরবর্তী" বাটনে ক্লিক করুন।
+
+ধাপ ৪: পিতা ও মাতার তথ্য প্রদান: এই ধাপে পিতা ও মাতার তথ্য প্রদান করতে হবে।
+
+ধাপ ৫: স্থায়ী ও বর্তমান ঠিকানা প্রদান: এই ধাপে:
+
+- স্থায়ী ঠিকানা
+- বর্তমান ঠিকানা
+
+প্রদান করতে হবে।
+
+যদি জন্মস্থান এবং স্থায়ী ঠিকানা একই হয়, তাহলে নির্ধারিত ঘরে টিক চিহ্ন দিলে তথ্য স্বয়ংক্রিয়ভাবে পূরণ হবে।
+
+অন্যথায় স্থায়ী ঠিকানা ও বর্তমান ঠিকানার তথ্য আলাদাভাবে পূরণ করতে হবে।
+
+সব তথ্য সঠিকভাবে পূরণ করার পর "পরবর্তী" বাটনে ক্লিক করুন।
+
+ধাপ ৬: আবেদনকারীর তথ্য ও ডকুমেন্ট সংযুক্তি: যদি ব্যক্তি নিজে আবেদন করেন, তাহলে "নিজ" অপশন নির্বাচন করতে হবে।
+
+অন্য কেউ আবেদন করলে "অন্যান্য" অপশন নির্বাচন করতে হবে।
+
+"অন্যান্য" নির্বাচন করলে আবেদনকারীর জন্ম নিবন্ধন নম্বর প্রদান করতে হবে।
+
+এরপর ঘোষণা দিতে হবে যে:
+
+- প্রদত্ত তথ্যসমূহ সঠিক
+- পূর্বে জন্ম নিবন্ধন করা হয়নি
+
+সংযুক্ত করতে হবে: - জন্ম তারিখের প্রমাণক
+- জন্মস্থানের প্রমাণক
+- স্থায়ী ঠিকানার প্রমাণক
+
+সংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।
+
+এরপর "পরবর্তী" বাটনে ক্লিক করুন।
+
+ধাপ ৭: তথ্য যাচাই ও OTP: এই ধাপে আবেদনকারীর পূরণকৃত সকল তথ্য প্রদর্শিত হবে।
+
+সকল তথ্য সতর্কতার সাথে যাচাই করতে হবে।
+
+ভুল থাকলে "পূর্ববর্তী" বাটনে ফিরে গিয়ে সংশোধন করতে হবে।
+
+তথ্য সঠিক হলে:
+
+- ইমেইল অথবা
+- মোবাইল নম্বর
+
+প্রদান করতে হবে।
+
+OTP গ্রহণ: - দূতাবাসের মাধ্যমে আবেদনের ক্ষেত্রে ইমেইলে OTP যাবে।
+- বাংলাদেশের অভ্যন্তরে আবেদনের ক্ষেত্রে মোবাইল নম্বরে OTP যাবে।
+
+OTP প্রদান করার পর "সাবমিট" বাটনে ক্লিক করুন।
+
+Sources: birth_registration_application_process_cleaned_008_01, birth_registration_application_process_cleaned_002_01, birth_registration_application_process_02_cleaned_003_01
+
+**Top Sources:**
+
+1. `birth_registration_application_process_cleaned_008_01` | `application_process` | `ধাপ ১: ওয়েবসাইটে প্রবেশ` | score `1.1247772026062013`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf
+2. `birth_registration_application_process_cleaned_002_01` | `application_process` | `আবেদন করার পূর্ব প্রস্তুতি` | score `1.1073419308662416`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf
+3. `birth_registration_application_process_02_cleaned_003_01` | `application_process` | `ধাপ ১: ওয়েবসাইটে প্রবেশ` | score `1.1039367961883546`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf
+4. `birth_registration_application_process_02_cleaned_014_01` | `application_process` | `ধাপ ১২: আবেদনপত্র জমা` | score `1.0940280914306642`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf
+5. `birth_registration_application_process_02_cleaned_005_01` | `application_process` | `ধাপ ৩: নিবন্ধন কার্যালয় নির্বাচন` | score `1.0926704168319703`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf
+
+## Q2 - llama3.2
+
+**Question:** জন্ম নিবন্ধন সনদ হারিয়ে গেলে কী করতে হবে?
+
+**Elapsed:** 18.7 seconds
+
+**Answer:**
+
+জন্ম নিবন্ধন সনদ হারিয়ে গেলে বা নষ্ট হলে নিবন্ধকের কাছে সনদের প্রতিলিপির জন্য আবেদন করতে হবে। বিধি ১৩ অনুযায়ী, আবেদন পাওয়ার ৭ কার্য দিবসের মধ্যে জন্ম/মৃত্যু নিবন্ধন সনদের প্রতিলিপি প্রদান করা হয়। প্রতিলিপির জন্য বিধি ২১ অনুযায়ী নির্ধারিত ফি প্রযোজ্য হতে পারে।
+
+প্রাসঙ্গিক বিধি: (১) নিবন্ধিত কোন ব্যক্তির সনদ হারাইয়া গেলে বা নষ্ট হইলে, নিবন্ধক, উপ-বিধি (২) ও (৩) এর বিধান সাপেক্ষে, জমনি ফরম-৭ অনুযায়ী উক্ত ব্যক্তির আবেদন প্রাপ্তির ৭ (সাত) কার্য দিবসের মধ্যে জমনি ফরম-৩ ও জমনি ফরম-৬ অনুযায়ী জন্ম ও মৃত্যু নিবন্ধন সনদের প্রতিলিপি প্রদান করিবেন। (২) বিধি ২১ এ নির্ধারিত ফিস প্রদান সাপেক্ষে, নিম্নবর্ণিত কোন ব্যক্তি জন্ম ও মৃত্যু নিবন্ধন সনদের প্রতিলিপির জন্য জমনি ফরম-৭ অনুযায়ী নিবন্ধকের নিকট আবেদন করিতে পারিবেন, যথা:
+(ক) যাহার জন্য জন্ম সনদ প্রদান করা হইবে তাহার বয়স ১৮ (আঠার) বৎসর বা তদূর্ধ্ব হইলে তিনি স্বয়ং অথবা (খ) জন্ম তথ্য প্রদানকারী অথবা (গ) মৃত্যু তথ্য প্রদানকারী অথবা (ঘ) জন্ম বা মৃত্যু তথ্য দ্বারা সংক্ষুব্ধ ব্যক্তি। (৩) উপ-বিধি (২) এর অধীন আবেদনপত্র প্রাপ্তির পর নিবন্ধক যদি নিশ্চিত হন যে, উক্ত আবেদনপত্র যথাযথভাবে পূরণ করা হইয়াছে এবং ফিস প্রদান করা হইয়াছে তাহা হইলে তিনি আবেদনকারীর অংশ স্বাক্ষরপূর্বক উহা আবেদনকারীর নিকট হস্তান্তর করিবেন। (৪) উপ-বিধি (৩) এর অধীন আবেদনপত্র প্রাপ্তির পর নিবন্ধক সনদের প্রতিলিপি প্রস্তুত করিবেন এবং আবেদনকারীর অংশ গ্রহণ করিয়া সনদের প্রতিলিপি আবেদনকারীর নিকট হস্তান্তরের ব্যবস্থা করিবেন। (৫) প্রতিলিপি সনদের উপরিভাগে প্রতিলিপি বা উঁঢ়ষরপধঃব শব্দটি এবং, ক্ষেত্রমত, সংশোধিত সনদের ক্ষেত্রে সংশোধিত শব্দটি উল্লেখ থাকিবে এবং প্রথম বার জন্ম বা মৃত্যু নিবন্ধন সনদ যে তারিখে ইস্যু হইয়াছে প্রতিলিপি সনদ ইস্যুর সেই তারিখ বহাল থাকিবে ও প্রতিলিপি সনদ ইস্যুর তারিখ লিপিবদ্ধ করিতে হইবে।
+
+Sources: birth_and_death_registration_rules_2018_বিধি_১৩_01
+
+**Top Sources:**
+
+1. `birth_and_death_registration_rules_2018_বিধি_১৩_01` | `legal_rules` | `সনদের প্রতিলিপি প্রদান` | score `1.1268100452423095`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf
+2. `bdris_faq_01_q03` | `faq` | `None` | score `0.6865785837173461`
+   Source URL: https://orgbdr.portal.gov.bd/pages/static-pages/6922e065933eb65569e26d6e
+3. `birth_and_death_registration_act_2004_ধারা_১৫_01` | `legal_act` | `নিবন্ধন বহি এবং জন্ম বা মৃত্যু সনদ সংশোধন` | score `0.6001486778259277`
+4. `birth_and_death_registration_rules_2018_বিধি_১৫_01` | `legal_rules` | `জন্ম বা মৃত্যু সনদ সংশোধন ও বাতিল` | score `0.5989630818367004`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf
+5. `birth_registration_application_process_cleaned_020_01` | `application_process` | `পরবর্তী করণীয়` | score `0.5566831350326538`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf
+
+## Q2 - llama3
+
+**Question:** জন্ম নিবন্ধন সনদ হারিয়ে গেলে কী করতে হবে?
+
+**Elapsed:** 20.18 seconds
+
+**Answer:**
+
+জন্ম নিবন্ধন সনদ হারিয়ে গেলে বা নষ্ট হলে নিবন্ধকের কাছে সনদের প্রতিলিপির জন্য আবেদন করতে হবে। বিধি ১৩ অনুযায়ী, আবেদন পাওয়ার ৭ কার্য দিবসের মধ্যে জন্ম/মৃত্যু নিবন্ধন সনদের প্রতিলিপি প্রদান করা হয়। প্রতিলিপির জন্য বিধি ২১ অনুযায়ী নির্ধারিত ফি প্রযোজ্য হতে পারে।
+
+প্রাসঙ্গিক বিধি: (১) নিবন্ধিত কোন ব্যক্তির সনদ হারাইয়া গেলে বা নষ্ট হইলে, নিবন্ধক, উপ-বিধি (২) ও (৩) এর বিধান সাপেক্ষে, জমনি ফরম-৭ অনুযায়ী উক্ত ব্যক্তির আবেদন প্রাপ্তির ৭ (সাত) কার্য দিবসের মধ্যে জমনি ফরম-৩ ও জমনি ফরম-৬ অনুযায়ী জন্ম ও মৃত্যু নিবন্ধন সনদের প্রতিলিপি প্রদান করিবেন। (২) বিধি ২১ এ নির্ধারিত ফিস প্রদান সাপেক্ষে, নিম্নবর্ণিত কোন ব্যক্তি জন্ম ও মৃত্যু নিবন্ধন সনদের প্রতিলিপির জন্য জমনি ফরম-৭ অনুযায়ী নিবন্ধকের নিকট আবেদন করিতে পারিবেন, যথা:
+(ক) যাহার জন্য জন্ম সনদ প্রদান করা হইবে তাহার বয়স ১৮ (আঠার) বৎসর বা তদূর্ধ্ব হইলে তিনি স্বয়ং অথবা (খ) জন্ম তথ্য প্রদানকারী অথবা (গ) মৃত্যু তথ্য প্রদানকারী অথবা (ঘ) জন্ম বা মৃত্যু তথ্য দ্বারা সংক্ষুব্ধ ব্যক্তি। (৩) উপ-বিধি (২) এর অধীন আবেদনপত্র প্রাপ্তির পর নিবন্ধক যদি নিশ্চিত হন যে, উক্ত আবেদনপত্র যথাযথভাবে পূরণ করা হইয়াছে এবং ফিস প্রদান করা হইয়াছে তাহা হইলে তিনি আবেদনকারীর অংশ স্বাক্ষরপূর্বক উহা আবেদনকারীর নিকট হস্তান্তর করিবেন। (৪) উপ-বিধি (৩) এর অধীন আবেদনপত্র প্রাপ্তির পর নিবন্ধক সনদের প্রতিলিপি প্রস্তুত করিবেন এবং আবেদনকারীর অংশ গ্রহণ করিয়া সনদের প্রতিলিপি আবেদনকারীর নিকট হস্তান্তরের ব্যবস্থা করিবেন। (৫) প্রতিলিপি সনদের উপরিভাগে প্রতিলিপি বা উঁঢ়ষরপধঃব শব্দটি এবং, ক্ষেত্রমত, সংশোধিত সনদের ক্ষেত্রে সংশোধিত শব্দটি উল্লেখ থাকিবে এবং প্রথম বার জন্ম বা মৃত্যু নিবন্ধন সনদ যে তারিখে ইস্যু হইয়াছে প্রতিলিপি সনদ ইস্যুর সেই তারিখ বহাল থাকিবে ও প্রতিলিপি সনদ ইস্যুর তারিখ লিপিবদ্ধ করিতে হইবে।
+
+Sources: birth_and_death_registration_rules_2018_বিধি_১৩_01
+
+**Top Sources:**
+
+1. `birth_and_death_registration_rules_2018_বিধি_১৩_01` | `legal_rules` | `সনদের প্রতিলিপি প্রদান` | score `1.1268100452423095`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf
+2. `bdris_faq_01_q03` | `faq` | `None` | score `0.6865785837173461`
+   Source URL: https://orgbdr.portal.gov.bd/pages/static-pages/6922e065933eb65569e26d6e
+3. `birth_and_death_registration_act_2004_ধারা_১৫_01` | `legal_act` | `নিবন্ধন বহি এবং জন্ম বা মৃত্যু সনদ সংশোধন` | score `0.6001486778259277`
+4. `birth_and_death_registration_rules_2018_বিধি_১৫_01` | `legal_rules` | `জন্ম বা মৃত্যু সনদ সংশোধন ও বাতিল` | score `0.5989630818367004`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf
+5. `birth_registration_application_process_cleaned_020_01` | `application_process` | `পরবর্তী করণীয়` | score `0.5566831350326538`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf
+
+## Q2 - qwen2.5:7b
+
+**Question:** জন্ম নিবন্ধন সনদ হারিয়ে গেলে কী করতে হবে?
+
+**Elapsed:** 17.15 seconds
+
+**Answer:**
+
+জন্ম নিবন্ধন সনদ হারিয়ে গেলে বা নষ্ট হলে নিবন্ধকের কাছে সনদের প্রতিলিপির জন্য আবেদন করতে হবে। বিধি ১৩ অনুযায়ী, আবেদন পাওয়ার ৭ কার্য দিবসের মধ্যে জন্ম/মৃত্যু নিবন্ধন সনদের প্রতিলিপি প্রদান করা হয়। প্রতিলিপির জন্য বিধি ২১ অনুযায়ী নির্ধারিত ফি প্রযোজ্য হতে পারে।
+
+প্রাসঙ্গিক বিধি: (১) নিবন্ধিত কোন ব্যক্তির সনদ হারাইয়া গেলে বা নষ্ট হইলে, নিবন্ধক, উপ-বিধি (২) ও (৩) এর বিধান সাপেক্ষে, জমনি ফরম-৭ অনুযায়ী উক্ত ব্যক্তির আবেদন প্রাপ্তির ৭ (সাত) কার্য দিবসের মধ্যে জমনি ফরম-৩ ও জমনি ফরম-৬ অনুযায়ী জন্ম ও মৃত্যু নিবন্ধন সনদের প্রতিলিপি প্রদান করিবেন। (২) বিধি ২১ এ নির্ধারিত ফিস প্রদান সাপেক্ষে, নিম্নবর্ণিত কোন ব্যক্তি জন্ম ও মৃত্যু নিবন্ধন সনদের প্রতিলিপির জন্য জমনি ফরম-৭ অনুযায়ী নিবন্ধকের নিকট আবেদন করিতে পারিবেন, যথা:
+(ক) যাহার জন্য জন্ম সনদ প্রদান করা হইবে তাহার বয়স ১৮ (আঠার) বৎসর বা তদূর্ধ্ব হইলে তিনি স্বয়ং অথবা (খ) জন্ম তথ্য প্রদানকারী অথবা (গ) মৃত্যু তথ্য প্রদানকারী অথবা (ঘ) জন্ম বা মৃত্যু তথ্য দ্বারা সংক্ষুব্ধ ব্যক্তি। (৩) উপ-বিধি (২) এর অধীন আবেদনপত্র প্রাপ্তির পর নিবন্ধক যদি নিশ্চিত হন যে, উক্ত আবেদনপত্র যথাযথভাবে পূরণ করা হইয়াছে এবং ফিস প্রদান করা হইয়াছে তাহা হইলে তিনি আবেদনকারীর অংশ স্বাক্ষরপূর্বক উহা আবেদনকারীর নিকট হস্তান্তর করিবেন। (৪) উপ-বিধি (৩) এর অধীন আবেদনপত্র প্রাপ্তির পর নিবন্ধক সনদের প্রতিলিপি প্রস্তুত করিবেন এবং আবেদনকারীর অংশ গ্রহণ করিয়া সনদের প্রতিলিপি আবেদনকারীর নিকট হস্তান্তরের ব্যবস্থা করিবেন। (৫) প্রতিলিপি সনদের উপরিভাগে প্রতিলিপি বা উঁঢ়ষরপধঃব শব্দটি এবং, ক্ষেত্রমত, সংশোধিত সনদের ক্ষেত্রে সংশোধিত শব্দটি উল্লেখ থাকিবে এবং প্রথম বার জন্ম বা মৃত্যু নিবন্ধন সনদ যে তারিখে ইস্যু হইয়াছে প্রতিলিপি সনদ ইস্যুর সেই তারিখ বহাল থাকিবে ও প্রতিলিপি সনদ ইস্যুর তারিখ লিপিবদ্ধ করিতে হইবে।
+
+Sources: birth_and_death_registration_rules_2018_বিধি_১৩_01
+
+**Top Sources:**
+
+1. `birth_and_death_registration_rules_2018_বিধি_১৩_01` | `legal_rules` | `সনদের প্রতিলিপি প্রদান` | score `1.1268100452423095`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf
+2. `bdris_faq_01_q03` | `faq` | `None` | score `0.6865785837173461`
+   Source URL: https://orgbdr.portal.gov.bd/pages/static-pages/6922e065933eb65569e26d6e
+3. `birth_and_death_registration_act_2004_ধারা_১৫_01` | `legal_act` | `নিবন্ধন বহি এবং জন্ম বা মৃত্যু সনদ সংশোধন` | score `0.6001486778259277`
+4. `birth_and_death_registration_rules_2018_বিধি_১৫_01` | `legal_rules` | `জন্ম বা মৃত্যু সনদ সংশোধন ও বাতিল` | score `0.5989630818367004`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf
+5. `birth_registration_application_process_cleaned_020_01` | `application_process` | `পরবর্তী করণীয়` | score `0.5566831350326538`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf
+
+## Q3 - llama3.2
+
+**Question:** জন্ম নিবন্ধনের জন্য কী কী কাগজপত্র লাগে?
+
+**Elapsed:** 15.39 seconds
+
+**Answer:**
+
+জন্ম নিবন্ধনের জন্য সাধারণত জন্মস্থান, স্থায়ী ঠিকানা এবং বর্তমান ঠিকানার তথ্য প্রস্তুত রাখতে হয়।
+
+নতুন জন্ম নিবন্ধন আবেদনের পূর্বে প্রয়োজনীয় তথ্য ও ডকুমেন্ট সংগ্রহ করে রাখুন।
+
+জন্ম নিবন্ধনের ক্ষেত্রে নিম্নোক্ত তিন ধরনের ঠিকানার তথ্য প্রয়োজন হবে:
+
+- জন্মস্থান
+- স্থায়ী ঠিকানা
+- বর্তমান ঠিকানা
+
+প্রতিটি ঠিকানার জন্য নিম্নোক্ত তথ্য প্রয়োজন হতে পারে:
+
+- ইউনিয়ন পরিষদ/পৌরসভা/সিটি কর্পোরেশন/ক্যান্টনমেন্টের নাম
+- ওয়ার্ড নম্বর
+- ডাকঘর
+- গ্রাম/পাড়া/মহল্লা
+- বাসা ও সড়কের নাম ও নম্বর
+
+সকল তথ্য বাংলা ও ইংরেজি উভয় ভাষায় সঠিক বানানে লিখতে হবে।
+
+- জন্ম তারিখের প্রমাণক
+- জন্মস্থানের প্রমাণক
+- স্থায়ী ঠিকানার প্রমাণক
+
+সংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।
+
+এরপর "পরবর্তী" বাটনে ক্লিক করুন।
+
+বিধি ৯ অনুযায়ী প্রাসঙ্গিক প্রমাণের মধ্যে জন্মস্থান ও জন্ম তারিখের প্রমাণ, স্থায়ী ঠিকানার প্রমাণ, এবং প্রযোজ্য ক্ষেত্রে পিতা-মাতার জন্ম নিবন্ধন নম্বর বা জাতীয় পরিচয়পত্রের তথ্য থাকতে পারে।
+
+Sources: birth_registration_application_process_cleaned_002_01, birth_registration_application_process_cleaned_016_01, birth_registration_application_process_cleaned_020_01
+
+**Top Sources:**
+
+1. `birth_registration_application_process_cleaned_002_01` | `application_process` | `আবেদন করার পূর্ব প্রস্তুতি` | score `1.1047904539108275`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf
+2. `birth_registration_application_process_cleaned_016_01` | `application_process` | `সংযুক্ত করতে হবে` | score `1.0546102571487426`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf
+3. `birth_registration_application_process_cleaned_020_01` | `application_process` | `পরবর্তী করণীয়` | score `0.9667743444442749`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf
+4. `birth_and_death_registration_rules_2018_বিধি_৯_02` | `legal_rules` | `জন্ম নিবন্ধন` | score `0.9517575645446777`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf
+5. `birth_registration_application_process_02_cleaned_005_01` | `application_process` | `ধাপ ৩: নিবন্ধন কার্যালয় নির্বাচন` | score `0.9301950931549072`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf
+
+## Q3 - llama3
+
+**Question:** জন্ম নিবন্ধনের জন্য কী কী কাগজপত্র লাগে?
+
+**Elapsed:** 14.59 seconds
+
+**Answer:**
+
+জন্ম নিবন্ধনের জন্য সাধারণত জন্মস্থান, স্থায়ী ঠিকানা এবং বর্তমান ঠিকানার তথ্য প্রস্তুত রাখতে হয়।
+
+নতুন জন্ম নিবন্ধন আবেদনের পূর্বে প্রয়োজনীয় তথ্য ও ডকুমেন্ট সংগ্রহ করে রাখুন।
+
+জন্ম নিবন্ধনের ক্ষেত্রে নিম্নোক্ত তিন ধরনের ঠিকানার তথ্য প্রয়োজন হবে:
+
+- জন্মস্থান
+- স্থায়ী ঠিকানা
+- বর্তমান ঠিকানা
+
+প্রতিটি ঠিকানার জন্য নিম্নোক্ত তথ্য প্রয়োজন হতে পারে:
+
+- ইউনিয়ন পরিষদ/পৌরসভা/সিটি কর্পোরেশন/ক্যান্টনমেন্টের নাম
+- ওয়ার্ড নম্বর
+- ডাকঘর
+- গ্রাম/পাড়া/মহল্লা
+- বাসা ও সড়কের নাম ও নম্বর
+
+সকল তথ্য বাংলা ও ইংরেজি উভয় ভাষায় সঠিক বানানে লিখতে হবে।
+
+- জন্ম তারিখের প্রমাণক
+- জন্মস্থানের প্রমাণক
+- স্থায়ী ঠিকানার প্রমাণক
+
+সংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।
+
+এরপর "পরবর্তী" বাটনে ক্লিক করুন।
+
+বিধি ৯ অনুযায়ী প্রাসঙ্গিক প্রমাণের মধ্যে জন্মস্থান ও জন্ম তারিখের প্রমাণ, স্থায়ী ঠিকানার প্রমাণ, এবং প্রযোজ্য ক্ষেত্রে পিতা-মাতার জন্ম নিবন্ধন নম্বর বা জাতীয় পরিচয়পত্রের তথ্য থাকতে পারে।
+
+Sources: birth_registration_application_process_cleaned_002_01, birth_registration_application_process_cleaned_016_01, birth_registration_application_process_cleaned_020_01
+
+**Top Sources:**
+
+1. `birth_registration_application_process_cleaned_002_01` | `application_process` | `আবেদন করার পূর্ব প্রস্তুতি` | score `1.1047904539108275`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf
+2. `birth_registration_application_process_cleaned_016_01` | `application_process` | `সংযুক্ত করতে হবে` | score `1.0546102571487426`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf
+3. `birth_registration_application_process_cleaned_020_01` | `application_process` | `পরবর্তী করণীয়` | score `0.9667743444442749`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf
+4. `birth_and_death_registration_rules_2018_বিধি_৯_02` | `legal_rules` | `জন্ম নিবন্ধন` | score `0.9517575645446777`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf
+5. `birth_registration_application_process_02_cleaned_005_01` | `application_process` | `ধাপ ৩: নিবন্ধন কার্যালয় নির্বাচন` | score `0.9301950931549072`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf
+
+## Q3 - qwen2.5:7b
+
+**Question:** জন্ম নিবন্ধনের জন্য কী কী কাগজপত্র লাগে?
+
+**Elapsed:** 15.35 seconds
+
+**Answer:**
+
+জন্ম নিবন্ধনের জন্য সাধারণত জন্মস্থান, স্থায়ী ঠিকানা এবং বর্তমান ঠিকানার তথ্য প্রস্তুত রাখতে হয়।
+
+নতুন জন্ম নিবন্ধন আবেদনের পূর্বে প্রয়োজনীয় তথ্য ও ডকুমেন্ট সংগ্রহ করে রাখুন।
+
+জন্ম নিবন্ধনের ক্ষেত্রে নিম্নোক্ত তিন ধরনের ঠিকানার তথ্য প্রয়োজন হবে:
+
+- জন্মস্থান
+- স্থায়ী ঠিকানা
+- বর্তমান ঠিকানা
+
+প্রতিটি ঠিকানার জন্য নিম্নোক্ত তথ্য প্রয়োজন হতে পারে:
+
+- ইউনিয়ন পরিষদ/পৌরসভা/সিটি কর্পোরেশন/ক্যান্টনমেন্টের নাম
+- ওয়ার্ড নম্বর
+- ডাকঘর
+- গ্রাম/পাড়া/মহল্লা
+- বাসা ও সড়কের নাম ও নম্বর
+
+সকল তথ্য বাংলা ও ইংরেজি উভয় ভাষায় সঠিক বানানে লিখতে হবে।
+
+- জন্ম তারিখের প্রমাণক
+- জন্মস্থানের প্রমাণক
+- স্থায়ী ঠিকানার প্রমাণক
+
+সংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।
+
+এরপর "পরবর্তী" বাটনে ক্লিক করুন।
+
+বিধি ৯ অনুযায়ী প্রাসঙ্গিক প্রমাণের মধ্যে জন্মস্থান ও জন্ম তারিখের প্রমাণ, স্থায়ী ঠিকানার প্রমাণ, এবং প্রযোজ্য ক্ষেত্রে পিতা-মাতার জন্ম নিবন্ধন নম্বর বা জাতীয় পরিচয়পত্রের তথ্য থাকতে পারে।
+
+Sources: birth_registration_application_process_cleaned_002_01, birth_registration_application_process_cleaned_016_01, birth_registration_application_process_cleaned_020_01
+
+**Top Sources:**
+
+1. `birth_registration_application_process_cleaned_002_01` | `application_process` | `আবেদন করার পূর্ব প্রস্তুতি` | score `1.1047904539108275`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf
+2. `birth_registration_application_process_cleaned_016_01` | `application_process` | `সংযুক্ত করতে হবে` | score `1.0546102571487426`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf
+3. `birth_registration_application_process_cleaned_020_01` | `application_process` | `পরবর্তী করণীয়` | score `0.9667743444442749`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf
+4. `birth_and_death_registration_rules_2018_বিধি_৯_02` | `legal_rules` | `জন্ম নিবন্ধন` | score `0.9517575645446777`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf
+5. `birth_registration_application_process_02_cleaned_005_01` | `application_process` | `ধাপ ৩: নিবন্ধন কার্যালয় নির্বাচন` | score `0.9301950931549072`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf
+
+## Q4 - llama3.2
+
+**Question:** জন্ম তারিখ ভুল হলে কীভাবে সংশোধন করব?
+
+**Elapsed:** 11.77 seconds
+
+**Answer:**
+
+জন্ম তারিখ ভুল হলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করতে হবে।
+
+BDRIS সংশোধন-সংক্রান্ত ফিচারের তালিকায় জন্ম তারিখ সংশোধন অন্তর্ভুক্ত আছে।
+
+জন্ম তারিখ সংশোধনের আবেদন ফি: ১০০ টাকা।
+
+তবে এই ডেটাসেটে জন্ম তারিখ সংশোধনের সম্পূর্ণ ধাপে-ধাপে প্রক্রিয়া নেই; তাই সংশ্লিষ্ট নিবন্ধন কার্যালয়/BDRIS নির্দেশনা অনুসরণ করা উচিত।
+
+Sources: notice_birth_and_death_registration_certificate_correction_steps_ocr_006_01, application_for_birth_information_correction_cleaned_008_01, application_for_birth_information_correction_cleaned_006_01, notice_birth_and_death_registration_certificate_correction_steps_ocr_002_01, birth_and_death_registration_fees_cleaned_fee_row_04
+
+**Top Sources:**
+
+1. `notice_birth_and_death_registration_certificate_correction_steps_ocr_006_01` | `correction_notice_ocr` | `রেজিস্ট্রেশন ও ইস্যু তারিখ সংশোধনের ধাপ` | score `1.0707480454444886`
+   Source URL: https://orgbdr.portal.gov.bd/pages/notices/6922ea5adbfbab28ce0b3736
+2. `application_for_birth_information_correction_cleaned_008_01` | `correction_process` | `পরিস্থিতি ৩: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই, পিতা বা মাতা মৃত এবং জন্ম তারিখ ০১/০১/২০০১-এর পরে` | score `1.0030576920509338`
+   Source URL: https://bdris.gov.bd/br/correction
+3. `application_for_birth_information_correction_cleaned_006_01` | `correction_process` | `পরিস্থিতি ২: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই এবং জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে` | score `0.9988264179229736`
+   Source URL: https://bdris.gov.bd/br/correction
+4. `notice_birth_and_death_registration_certificate_correction_steps_ocr_005_01` | `correction_notice_ocr` | `রেজিস্ট্রেশন ও ইস্যু তারিখ সংশোধনের কারণ` | score `0.9386224746704103`
+   Source URL: https://orgbdr.portal.gov.bd/pages/notices/6922ea5adbfbab28ce0b3736
+5. `notice_birth_and_death_registration_certificate_correction_steps_ocr_002_01` | `correction_notice_ocr` | `বিজ্ঞপ্তির বিষয়` | score `0.9177741718292236`
+   Source URL: https://orgbdr.portal.gov.bd/pages/notices/6922ea5adbfbab28ce0b3736
+
+## Q4 - llama3
+
+**Question:** জন্ম তারিখ ভুল হলে কীভাবে সংশোধন করব?
+
+**Elapsed:** 10.94 seconds
+
+**Answer:**
+
+জন্ম তারিখ ভুল হলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করতে হবে।
+
+BDRIS সংশোধন-সংক্রান্ত ফিচারের তালিকায় জন্ম তারিখ সংশোধন অন্তর্ভুক্ত আছে।
+
+জন্ম তারিখ সংশোধনের আবেদন ফি: ১০০ টাকা।
+
+তবে এই ডেটাসেটে জন্ম তারিখ সংশোধনের সম্পূর্ণ ধাপে-ধাপে প্রক্রিয়া নেই; তাই সংশ্লিষ্ট নিবন্ধন কার্যালয়/BDRIS নির্দেশনা অনুসরণ করা উচিত।
+
+Sources: notice_birth_and_death_registration_certificate_correction_steps_ocr_006_01, application_for_birth_information_correction_cleaned_008_01, application_for_birth_information_correction_cleaned_006_01, notice_birth_and_death_registration_certificate_correction_steps_ocr_002_01, birth_and_death_registration_fees_cleaned_fee_row_04
+
+**Top Sources:**
+
+1. `notice_birth_and_death_registration_certificate_correction_steps_ocr_006_01` | `correction_notice_ocr` | `রেজিস্ট্রেশন ও ইস্যু তারিখ সংশোধনের ধাপ` | score `1.0707480454444886`
+   Source URL: https://orgbdr.portal.gov.bd/pages/notices/6922ea5adbfbab28ce0b3736
+2. `application_for_birth_information_correction_cleaned_008_01` | `correction_process` | `পরিস্থিতি ৩: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই, পিতা বা মাতা মৃত এবং জন্ম তারিখ ০১/০১/২০০১-এর পরে` | score `1.0030576920509338`
+   Source URL: https://bdris.gov.bd/br/correction
+3. `application_for_birth_information_correction_cleaned_006_01` | `correction_process` | `পরিস্থিতি ২: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই এবং জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে` | score `0.9988264179229736`
+   Source URL: https://bdris.gov.bd/br/correction
+4. `notice_birth_and_death_registration_certificate_correction_steps_ocr_005_01` | `correction_notice_ocr` | `রেজিস্ট্রেশন ও ইস্যু তারিখ সংশোধনের কারণ` | score `0.9386224746704103`
+   Source URL: https://orgbdr.portal.gov.bd/pages/notices/6922ea5adbfbab28ce0b3736
+5. `notice_birth_and_death_registration_certificate_correction_steps_ocr_002_01` | `correction_notice_ocr` | `বিজ্ঞপ্তির বিষয়` | score `0.9177741718292236`
+   Source URL: https://orgbdr.portal.gov.bd/pages/notices/6922ea5adbfbab28ce0b3736
+
+## Q4 - qwen2.5:7b
+
+**Question:** জন্ম তারিখ ভুল হলে কীভাবে সংশোধন করব?
+
+**Elapsed:** 11.32 seconds
+
+**Answer:**
+
+জন্ম তারিখ ভুল হলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করতে হবে।
+
+BDRIS সংশোধন-সংক্রান্ত ফিচারের তালিকায় জন্ম তারিখ সংশোধন অন্তর্ভুক্ত আছে।
+
+জন্ম তারিখ সংশোধনের আবেদন ফি: ১০০ টাকা।
+
+তবে এই ডেটাসেটে জন্ম তারিখ সংশোধনের সম্পূর্ণ ধাপে-ধাপে প্রক্রিয়া নেই; তাই সংশ্লিষ্ট নিবন্ধন কার্যালয়/BDRIS নির্দেশনা অনুসরণ করা উচিত।
+
+Sources: notice_birth_and_death_registration_certificate_correction_steps_ocr_006_01, application_for_birth_information_correction_cleaned_008_01, application_for_birth_information_correction_cleaned_006_01, notice_birth_and_death_registration_certificate_correction_steps_ocr_002_01, birth_and_death_registration_fees_cleaned_fee_row_04
+
+**Top Sources:**
+
+1. `notice_birth_and_death_registration_certificate_correction_steps_ocr_006_01` | `correction_notice_ocr` | `রেজিস্ট্রেশন ও ইস্যু তারিখ সংশোধনের ধাপ` | score `1.0707480454444886`
+   Source URL: https://orgbdr.portal.gov.bd/pages/notices/6922ea5adbfbab28ce0b3736
+2. `application_for_birth_information_correction_cleaned_008_01` | `correction_process` | `পরিস্থিতি ৩: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই, পিতা বা মাতা মৃত এবং জন্ম তারিখ ০১/০১/২০০১-এর পরে` | score `1.0030576920509338`
+   Source URL: https://bdris.gov.bd/br/correction
+3. `application_for_birth_information_correction_cleaned_006_01` | `correction_process` | `পরিস্থিতি ২: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই এবং জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে` | score `0.9988264179229736`
+   Source URL: https://bdris.gov.bd/br/correction
+4. `notice_birth_and_death_registration_certificate_correction_steps_ocr_005_01` | `correction_notice_ocr` | `রেজিস্ট্রেশন ও ইস্যু তারিখ সংশোধনের কারণ` | score `0.9386224746704103`
+   Source URL: https://orgbdr.portal.gov.bd/pages/notices/6922ea5adbfbab28ce0b3736
+5. `notice_birth_and_death_registration_certificate_correction_steps_ocr_002_01` | `correction_notice_ocr` | `বিজ্ঞপ্তির বিষয়` | score `0.9177741718292236`
+   Source URL: https://orgbdr.portal.gov.bd/pages/notices/6922ea5adbfbab28ce0b3736
+
+## Q5 - llama3.2
+
+**Question:** এতিম শিশুর জন্ম নিবন্ধনে ফি লাগবে কি?
+
+**Elapsed:** 18.66 seconds
+
+**Answer:**
+
+সরাসরি সব ক্ষেত্রে ফি লাগবে না বলা যায় না। তবে বিধি ২১ অনুযায়ী, ১৮ বছরের কম বয়সী এতিমের জন্ম নিবন্ধনের ক্ষেত্রে যথাযথভাবে ক্ষমতাপ্রাপ্ত কর্তৃপক্ষের সনদের ভিত্তিতে আবেদন করলে নিবন্ধক প্রদেয় ফি সম্পূর্ণ বা আংশিক মওকুফ করার বিষয়টি বিবেচনা করতে পারেন। ফি মওকুফের বিষয়ে নিবন্ধকের সিদ্ধান্ত চূড়ান্ত।
+
+প্রাসঙ্গিক বিধি: (৪) যথাযথভাবে ক্ষমতাপ্রাপ্ত কর্তৃপক্ষের সনদের ভিত্তিতে সহায় সম্বলহীন ব্যক্তির সন্তানের বা কোন প্রতিবন্ধী বা ১৮ (আঠার) বৎসরের কম বয়সী এতিমের জন্ম নিবন্ধন বা কোন প্রতিবন্ধী বা সহায় সম্বলহীন ব্যক্তির বা তাহার পিতা ও মাতা বা সন্তানের বা পোষ্যের জন্ম বা মৃত্যু নিবন্ধনের ক্ষেত্রে আবেদন করিলে নিবন্ধক স্বীয় ক্ষমতাবলে উপ-বিধি (১) এ বর্ণিত প্রদেয় ফিস সম্পূর্ণ বা আংশিক মওকুফ করিবার বিষয়ে বিবেচনা করিতে পারিবেন এবং ফিস মওকুফের বিষয়ে নিবন্ধকের সিদ্ধান্তই চূড়ান্ত বলিয়া গণ্য হইবে এবং ফিস হ্রাস বা মওকুফ করা হইলে আদেশের স্মারক নম্বর ও তারিখ ফিস আদায়ের রসিদে উল্লেখ করিতে হইবে।
+
+Sources: birth_and_death_registration_rules_2018_বিধি_২১_02, birth_and_death_registration_rules_2018_বিধি_২১_01, birth_and_death_registration_fees_cleaned_table_full
+
+**Top Sources:**
+
+1. `birth_and_death_registration_rules_2018_বিধি_২১_02` | `legal_rules` | `ফিস` | score `1.0145289182662964`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf
+2. `birth_and_death_registration_rules_2018_বিধি_২১_01` | `legal_rules` | `ফিস` | score `0.42866152763366694`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf
+3. `birth_and_death_registration_fees_cleaned_table_full` | `fees_table` | `None` | score `0.35415002763271336`
+   Source URL: https://orgbdr.gov.bd/pages/static-pages/69cf48059d736d71f1a34c8c
+4. `birth_and_death_registration_fees_cleaned_fee_row_02` | `fee_row` | `None` | score `0.322944433093071`
+   Source URL: https://orgbdr.gov.bd/pages/static-pages/69cf48059d736d71f1a34c8c
+5. `birth_and_death_registration_fees_cleaned_fee_row_03` | `fee_row` | `None` | score `0.31138618469238283`
+   Source URL: https://orgbdr.gov.bd/pages/static-pages/69cf48059d736d71f1a34c8c
+
+## Q5 - llama3
+
+**Question:** এতিম শিশুর জন্ম নিবন্ধনে ফি লাগবে কি?
+
+**Elapsed:** 17.76 seconds
+
+**Answer:**
+
+সরাসরি সব ক্ষেত্রে ফি লাগবে না বলা যায় না। তবে বিধি ২১ অনুযায়ী, ১৮ বছরের কম বয়সী এতিমের জন্ম নিবন্ধনের ক্ষেত্রে যথাযথভাবে ক্ষমতাপ্রাপ্ত কর্তৃপক্ষের সনদের ভিত্তিতে আবেদন করলে নিবন্ধক প্রদেয় ফি সম্পূর্ণ বা আংশিক মওকুফ করার বিষয়টি বিবেচনা করতে পারেন। ফি মওকুফের বিষয়ে নিবন্ধকের সিদ্ধান্ত চূড়ান্ত।
+
+প্রাসঙ্গিক বিধি: (৪) যথাযথভাবে ক্ষমতাপ্রাপ্ত কর্তৃপক্ষের সনদের ভিত্তিতে সহায় সম্বলহীন ব্যক্তির সন্তানের বা কোন প্রতিবন্ধী বা ১৮ (আঠার) বৎসরের কম বয়সী এতিমের জন্ম নিবন্ধন বা কোন প্রতিবন্ধী বা সহায় সম্বলহীন ব্যক্তির বা তাহার পিতা ও মাতা বা সন্তানের বা পোষ্যের জন্ম বা মৃত্যু নিবন্ধনের ক্ষেত্রে আবেদন করিলে নিবন্ধক স্বীয় ক্ষমতাবলে উপ-বিধি (১) এ বর্ণিত প্রদেয় ফিস সম্পূর্ণ বা আংশিক মওকুফ করিবার বিষয়ে বিবেচনা করিতে পারিবেন এবং ফিস মওকুফের বিষয়ে নিবন্ধকের সিদ্ধান্তই চূড়ান্ত বলিয়া গণ্য হইবে এবং ফিস হ্রাস বা মওকুফ করা হইলে আদেশের স্মারক নম্বর ও তারিখ ফিস আদায়ের রসিদে উল্লেখ করিতে হইবে।
+
+Sources: birth_and_death_registration_rules_2018_বিধি_২১_02, birth_and_death_registration_rules_2018_বিধি_২১_01, birth_and_death_registration_fees_cleaned_table_full
+
+**Top Sources:**
+
+1. `birth_and_death_registration_rules_2018_বিধি_২১_02` | `legal_rules` | `ফিস` | score `1.0145289182662964`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf
+2. `birth_and_death_registration_rules_2018_বিধি_২১_01` | `legal_rules` | `ফিস` | score `0.42866152763366694`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf
+3. `birth_and_death_registration_fees_cleaned_table_full` | `fees_table` | `None` | score `0.35415002763271336`
+   Source URL: https://orgbdr.gov.bd/pages/static-pages/69cf48059d736d71f1a34c8c
+4. `birth_and_death_registration_fees_cleaned_fee_row_02` | `fee_row` | `None` | score `0.322944433093071`
+   Source URL: https://orgbdr.gov.bd/pages/static-pages/69cf48059d736d71f1a34c8c
+5. `birth_and_death_registration_fees_cleaned_fee_row_03` | `fee_row` | `None` | score `0.31138618469238283`
+   Source URL: https://orgbdr.gov.bd/pages/static-pages/69cf48059d736d71f1a34c8c
+
+## Q5 - qwen2.5:7b
+
+**Question:** এতিম শিশুর জন্ম নিবন্ধনে ফি লাগবে কি?
+
+**Elapsed:** 16.38 seconds
+
+**Answer:**
+
+সরাসরি সব ক্ষেত্রে ফি লাগবে না বলা যায় না। তবে বিধি ২১ অনুযায়ী, ১৮ বছরের কম বয়সী এতিমের জন্ম নিবন্ধনের ক্ষেত্রে যথাযথভাবে ক্ষমতাপ্রাপ্ত কর্তৃপক্ষের সনদের ভিত্তিতে আবেদন করলে নিবন্ধক প্রদেয় ফি সম্পূর্ণ বা আংশিক মওকুফ করার বিষয়টি বিবেচনা করতে পারেন। ফি মওকুফের বিষয়ে নিবন্ধকের সিদ্ধান্ত চূড়ান্ত।
+
+প্রাসঙ্গিক বিধি: (৪) যথাযথভাবে ক্ষমতাপ্রাপ্ত কর্তৃপক্ষের সনদের ভিত্তিতে সহায় সম্বলহীন ব্যক্তির সন্তানের বা কোন প্রতিবন্ধী বা ১৮ (আঠার) বৎসরের কম বয়সী এতিমের জন্ম নিবন্ধন বা কোন প্রতিবন্ধী বা সহায় সম্বলহীন ব্যক্তির বা তাহার পিতা ও মাতা বা সন্তানের বা পোষ্যের জন্ম বা মৃত্যু নিবন্ধনের ক্ষেত্রে আবেদন করিলে নিবন্ধক স্বীয় ক্ষমতাবলে উপ-বিধি (১) এ বর্ণিত প্রদেয় ফিস সম্পূর্ণ বা আংশিক মওকুফ করিবার বিষয়ে বিবেচনা করিতে পারিবেন এবং ফিস মওকুফের বিষয়ে নিবন্ধকের সিদ্ধান্তই চূড়ান্ত বলিয়া গণ্য হইবে এবং ফিস হ্রাস বা মওকুফ করা হইলে আদেশের স্মারক নম্বর ও তারিখ ফিস আদায়ের রসিদে উল্লেখ করিতে হইবে।
+
+Sources: birth_and_death_registration_rules_2018_বিধি_২১_02, birth_and_death_registration_rules_2018_বিধি_২১_01, birth_and_death_registration_fees_cleaned_table_full
+
+**Top Sources:**
+
+1. `birth_and_death_registration_rules_2018_বিধি_২১_02` | `legal_rules` | `ফিস` | score `1.0145289182662964`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf
+2. `birth_and_death_registration_rules_2018_বিধি_২১_01` | `legal_rules` | `ফিস` | score `0.42866152763366694`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf
+3. `birth_and_death_registration_fees_cleaned_table_full` | `fees_table` | `None` | score `0.35415002763271336`
+   Source URL: https://orgbdr.gov.bd/pages/static-pages/69cf48059d736d71f1a34c8c
+4. `birth_and_death_registration_fees_cleaned_fee_row_02` | `fee_row` | `None` | score `0.322944433093071`
+   Source URL: https://orgbdr.gov.bd/pages/static-pages/69cf48059d736d71f1a34c8c
+5. `birth_and_death_registration_fees_cleaned_fee_row_03` | `fee_row` | `None` | score `0.31138618469238283`
+   Source URL: https://orgbdr.gov.bd/pages/static-pages/69cf48059d736d71f1a34c8c
+
+## Q6 - llama3.2
+
+**Question:** আমার জন্ম নিবন্ধন অনলাইনে দেখা যাচ্ছে না, কী করব?
+
+**Elapsed:** 15.94 seconds
+
+**Answer:**
+
+অনলাইনে জন্ম নিবন্ধন করা থাকলে orgbdr.gov.bd ওয়েবসাইটে প্রবেশ করে **“জন্ম তথ্য যাচাই”** অপশনে ব্যক্তির জন্ম নিবন্ধন নম্বর এবং জন্ম তারিখ প্রদান করে জন্ম নিবন্ধন হয়েছে কিনা তা নিশ্চিত হওয়া যাবে।
+
+যদি এটি পুরোনো/ম্যানুয়াল নিবন্ধন হয়ে থাকে: ম্যানুয়াল জন্ম নিবন্ধনসমূহ অনলাইনে অন্তর্ভুক্তির জন্য একাধিকবার সময় দেওয়া হয়েছে। এখন একই নম্বর দিয়ে অনলাইনে অন্তর্ভুক্তির সুযোগ নেই। যে এলাকায় হাতে লেখা নিবন্ধন হয়েছিল সেই কার্যালয়ে রক্ষিত বইতে তথ্য পাওয়া গেলে, নিবন্ধক সরাসরি সেই তথ্য দিয়ে অনলাইন নিবন্ধন করে দেবেন — যদি ইতঃপূর্বে অন্য কোথাও নিবন্ধন না হয়ে থাকে। তবে নিবন্ধন নম্বর পরিবর্তিত হবে; এতে নাগরিকের কোনো ক্ষতি বা অসুবিধা হবে না।
+
+২০০৭/২০০৮ সালে হাতে লেখা নিবন্ধন ইস্যু করা হয়। পরবর্তীতে ২০১০ সালের দিকে রেজিস্টার বহি থেকে সব নিবন্ধন অনলাইনে এন্ট্রি করা হয়। ২০১০ থেকে ২০২০ সালের জুন পর্যন্ত (১০ বছর) ইউনিয়ন পরিষদ থেকে নাম সংশোধন করা যেত।
+
+গড়মিলের সাধারণ কারণসমূহ:
+• একসাথে পুরো ইউনিয়নের তথ্য এন্ট্রির সময় কিছু ভুল এন্ট্রি হয়েছে।
+• শিক্ষা সনদ জন্ম নিবন্ধন অনুযায়ী বা জন্ম নিবন্ধন শিক্ষা সনদ অনুযায়ী করা হয়নি।
+• ভিন্ন সন্তানের ক্ষেত্রে পিতামাতার নাম একই রকম লেখা হয়নি।
+• ডাক নাম দিয়ে নিবন্ধন করা হয়েছে; পরে এনআইডিতে নাম পরিবর্তিত হয়েছে।
+• স্কুলে ভর্তির সময় বয়স কমিয়ে বা বাড়িয়ে লেখা হয়েছে।
+• পিএসসি সনদে নাম, জন্ম তারিখ ও পিতামাতার নাম জন্ম সনদ বা এনআইডির সঙ্গে মেলেনি।
+• ৮ম শ্রেণির রেজিস্ট্রেশনে পিএসসি সনদ ও পিতামাতার এনআইডি অনুসরণ না করা।
+
+যদি সঠিক জন্ম নিবন্ধন নম্বর ও জন্ম তারিখ দিয়েও তথ্য না পাওয়া যায়, তাহলে সংশ্লিষ্ট নিবন্ধন কার্যালয়ের সংরক্ষিত রেকর্ড যাচাই করানো উচিত।
+
+Sources: know_this_01_cleaned_008_01, bdris_faq_01_q02, bdris_faq_02_q03
+
+**Top Sources:**
+
+1. `bdris_faq_01_q02` | `faq` | `None` | score `0.942029869556427`
+   Source URL: https://orgbdr.portal.gov.bd/pages/static-pages/6922e065933eb65569e26d6e
+2. `bdris_faq_02_q03` | `faq` | `None` | score `0.8533758282661438`
+   Source URL: https://goradubaup.netrokona.gov.bd/pages/static-pages/69708eb0a31054345f15bdab
+3. `birth_and_death_registration_rules_2018_বিধি_৯_04` | `legal_rules` | `জন্ম নিবন্ধন` | score `0.6468271327018738`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf
+4. `know_this_01_cleaned_008_01` | `general_guidance` | `একজন ব্যক্তি জন্ম নিবন্ধন হয়েছে কিনা তা কিভাবে পরীক্ষা করবে?` | score `0.6437220525741577`
+   Source URL: https://orgbdr.portal.gov.bd/pages/static-pages/6922de23933eb65569e18817
+5. `bdris_faq_01_q01` | `faq` | `None` | score `0.6325728917121887`
+   Source URL: https://orgbdr.portal.gov.bd/pages/static-pages/6922e065933eb65569e26d6e
+
+## Q6 - llama3
+
+**Question:** আমার জন্ম নিবন্ধন অনলাইনে দেখা যাচ্ছে না, কী করব?
+
+**Elapsed:** 16.01 seconds
+
+**Answer:**
+
+অনলাইনে জন্ম নিবন্ধন করা থাকলে orgbdr.gov.bd ওয়েবসাইটে প্রবেশ করে **“জন্ম তথ্য যাচাই”** অপশনে ব্যক্তির জন্ম নিবন্ধন নম্বর এবং জন্ম তারিখ প্রদান করে জন্ম নিবন্ধন হয়েছে কিনা তা নিশ্চিত হওয়া যাবে।
+
+যদি এটি পুরোনো/ম্যানুয়াল নিবন্ধন হয়ে থাকে: ম্যানুয়াল জন্ম নিবন্ধনসমূহ অনলাইনে অন্তর্ভুক্তির জন্য একাধিকবার সময় দেওয়া হয়েছে। এখন একই নম্বর দিয়ে অনলাইনে অন্তর্ভুক্তির সুযোগ নেই। যে এলাকায় হাতে লেখা নিবন্ধন হয়েছিল সেই কার্যালয়ে রক্ষিত বইতে তথ্য পাওয়া গেলে, নিবন্ধক সরাসরি সেই তথ্য দিয়ে অনলাইন নিবন্ধন করে দেবেন — যদি ইতঃপূর্বে অন্য কোথাও নিবন্ধন না হয়ে থাকে। তবে নিবন্ধন নম্বর পরিবর্তিত হবে; এতে নাগরিকের কোনো ক্ষতি বা অসুবিধা হবে না।
+
+২০০৭/২০০৮ সালে হাতে লেখা নিবন্ধন ইস্যু করা হয়। পরবর্তীতে ২০১০ সালের দিকে রেজিস্টার বহি থেকে সব নিবন্ধন অনলাইনে এন্ট্রি করা হয়। ২০১০ থেকে ২০২০ সালের জুন পর্যন্ত (১০ বছর) ইউনিয়ন পরিষদ থেকে নাম সংশোধন করা যেত।
+
+গড়মিলের সাধারণ কারণসমূহ:
+• একসাথে পুরো ইউনিয়নের তথ্য এন্ট্রির সময় কিছু ভুল এন্ট্রি হয়েছে।
+• শিক্ষা সনদ জন্ম নিবন্ধন অনুযায়ী বা জন্ম নিবন্ধন শিক্ষা সনদ অনুযায়ী করা হয়নি।
+• ভিন্ন সন্তানের ক্ষেত্রে পিতামাতার নাম একই রকম লেখা হয়নি।
+• ডাক নাম দিয়ে নিবন্ধন করা হয়েছে; পরে এনআইডিতে নাম পরিবর্তিত হয়েছে।
+• স্কুলে ভর্তির সময় বয়স কমিয়ে বা বাড়িয়ে লেখা হয়েছে।
+• পিএসসি সনদে নাম, জন্ম তারিখ ও পিতামাতার নাম জন্ম সনদ বা এনআইডির সঙ্গে মেলেনি।
+• ৮ম শ্রেণির রেজিস্ট্রেশনে পিএসসি সনদ ও পিতামাতার এনআইডি অনুসরণ না করা।
+
+যদি সঠিক জন্ম নিবন্ধন নম্বর ও জন্ম তারিখ দিয়েও তথ্য না পাওয়া যায়, তাহলে সংশ্লিষ্ট নিবন্ধন কার্যালয়ের সংরক্ষিত রেকর্ড যাচাই করানো উচিত।
+
+Sources: know_this_01_cleaned_008_01, bdris_faq_01_q02, bdris_faq_02_q03
+
+**Top Sources:**
+
+1. `bdris_faq_01_q02` | `faq` | `None` | score `0.942029869556427`
+   Source URL: https://orgbdr.portal.gov.bd/pages/static-pages/6922e065933eb65569e26d6e
+2. `bdris_faq_02_q03` | `faq` | `None` | score `0.8533758282661438`
+   Source URL: https://goradubaup.netrokona.gov.bd/pages/static-pages/69708eb0a31054345f15bdab
+3. `birth_and_death_registration_rules_2018_বিধি_৯_04` | `legal_rules` | `জন্ম নিবন্ধন` | score `0.6468271327018738`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf
+4. `know_this_01_cleaned_008_01` | `general_guidance` | `একজন ব্যক্তি জন্ম নিবন্ধন হয়েছে কিনা তা কিভাবে পরীক্ষা করবে?` | score `0.6437220525741577`
+   Source URL: https://orgbdr.portal.gov.bd/pages/static-pages/6922de23933eb65569e18817
+5. `bdris_faq_01_q01` | `faq` | `None` | score `0.6325728917121887`
+   Source URL: https://orgbdr.portal.gov.bd/pages/static-pages/6922e065933eb65569e26d6e
+
+## Q6 - qwen2.5:7b
+
+**Question:** আমার জন্ম নিবন্ধন অনলাইনে দেখা যাচ্ছে না, কী করব?
+
+**Elapsed:** 16.83 seconds
+
+**Answer:**
+
+অনলাইনে জন্ম নিবন্ধন করা থাকলে orgbdr.gov.bd ওয়েবসাইটে প্রবেশ করে **“জন্ম তথ্য যাচাই”** অপশনে ব্যক্তির জন্ম নিবন্ধন নম্বর এবং জন্ম তারিখ প্রদান করে জন্ম নিবন্ধন হয়েছে কিনা তা নিশ্চিত হওয়া যাবে।
+
+যদি এটি পুরোনো/ম্যানুয়াল নিবন্ধন হয়ে থাকে: ম্যানুয়াল জন্ম নিবন্ধনসমূহ অনলাইনে অন্তর্ভুক্তির জন্য একাধিকবার সময় দেওয়া হয়েছে। এখন একই নম্বর দিয়ে অনলাইনে অন্তর্ভুক্তির সুযোগ নেই। যে এলাকায় হাতে লেখা নিবন্ধন হয়েছিল সেই কার্যালয়ে রক্ষিত বইতে তথ্য পাওয়া গেলে, নিবন্ধক সরাসরি সেই তথ্য দিয়ে অনলাইন নিবন্ধন করে দেবেন — যদি ইতঃপূর্বে অন্য কোথাও নিবন্ধন না হয়ে থাকে। তবে নিবন্ধন নম্বর পরিবর্তিত হবে; এতে নাগরিকের কোনো ক্ষতি বা অসুবিধা হবে না।
+
+২০০৭/২০০৮ সালে হাতে লেখা নিবন্ধন ইস্যু করা হয়। পরবর্তীতে ২০১০ সালের দিকে রেজিস্টার বহি থেকে সব নিবন্ধন অনলাইনে এন্ট্রি করা হয়। ২০১০ থেকে ২০২০ সালের জুন পর্যন্ত (১০ বছর) ইউনিয়ন পরিষদ থেকে নাম সংশোধন করা যেত।
+
+গড়মিলের সাধারণ কারণসমূহ:
+• একসাথে পুরো ইউনিয়নের তথ্য এন্ট্রির সময় কিছু ভুল এন্ট্রি হয়েছে।
+• শিক্ষা সনদ জন্ম নিবন্ধন অনুযায়ী বা জন্ম নিবন্ধন শিক্ষা সনদ অনুযায়ী করা হয়নি।
+• ভিন্ন সন্তানের ক্ষেত্রে পিতামাতার নাম একই রকম লেখা হয়নি।
+• ডাক নাম দিয়ে নিবন্ধন করা হয়েছে; পরে এনআইডিতে নাম পরিবর্তিত হয়েছে।
+• স্কুলে ভর্তির সময় বয়স কমিয়ে বা বাড়িয়ে লেখা হয়েছে।
+• পিএসসি সনদে নাম, জন্ম তারিখ ও পিতামাতার নাম জন্ম সনদ বা এনআইডির সঙ্গে মেলেনি।
+• ৮ম শ্রেণির রেজিস্ট্রেশনে পিএসসি সনদ ও পিতামাতার এনআইডি অনুসরণ না করা।
+
+যদি সঠিক জন্ম নিবন্ধন নম্বর ও জন্ম তারিখ দিয়েও তথ্য না পাওয়া যায়, তাহলে সংশ্লিষ্ট নিবন্ধন কার্যালয়ের সংরক্ষিত রেকর্ড যাচাই করানো উচিত।
+
+Sources: know_this_01_cleaned_008_01, bdris_faq_01_q02, bdris_faq_02_q03
+
+**Top Sources:**
+
+1. `bdris_faq_01_q02` | `faq` | `None` | score `0.942029869556427`
+   Source URL: https://orgbdr.portal.gov.bd/pages/static-pages/6922e065933eb65569e26d6e
+2. `bdris_faq_02_q03` | `faq` | `None` | score `0.8533758282661438`
+   Source URL: https://goradubaup.netrokona.gov.bd/pages/static-pages/69708eb0a31054345f15bdab
+3. `birth_and_death_registration_rules_2018_বিধি_৯_04` | `legal_rules` | `জন্ম নিবন্ধন` | score `0.6468271327018738`
+   Source URL: https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf
+4. `know_this_01_cleaned_008_01` | `general_guidance` | `একজন ব্যক্তি জন্ম নিবন্ধন হয়েছে কিনা তা কিভাবে পরীক্ষা করবে?` | score `0.6437220525741577`
+   Source URL: https://orgbdr.portal.gov.bd/pages/static-pages/6922de23933eb65569e18817
+5. `bdris_faq_01_q01` | `faq` | `None` | score `0.6325728917121887`
+   Source URL: https://orgbdr.portal.gov.bd/pages/static-pages/6922e065933eb65569e26d6e

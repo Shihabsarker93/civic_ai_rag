@@ -1,0 +1,53 @@
+\documentclass[12pt,oneside,openany]{report}
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm]{geometry}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+\usepackage{csquotes}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black,urlcolor=black,citecolor=black}
+\graphicspath{{images/}}
+\setlength{\parindent}{0em}
+\setlength{\parskip}{0.6em}
+\usepackage[backend=bibtex,style=ieee,sorting=ynt]{biblatex}
+\addbibresource{bibliography/references.bib}
+
+\begin{document}
+
+\begin{titlepage}
+\centering
+{\Large Civic.ai: A Bilingual Retrieval-Augmented Generation System for Bangladeshi Government-Service Question Answering\\[1cm]}
+{\large Merged Draft from Phase 1 and Phase 2\\[0.5cm]}
+{\large Prepared for thesis review and future integration into the official template\\[2cm]}
+{\large Current implementation domain: Birth and Death Registration\\[0.5cm]}
+{\large Date: June 2026}
+\end{titlepage}
+
+\phantomsection
+\addcontentsline{toc}{chapter}{Abstract}
+\input{core/abstract.tex}
+
+\tableofcontents
+\listoffigures
+\listoftables
+\clearpage
+
+\chapter{Introduction}
+\input{chapters/chapter_1.tex}
+
+\chapter{Literature Review}
+\input{chapters/chapter_2.tex}
+
+\chapter{Proposed Methodology}
+\input{chapters/chapter_3.tex}
+
+\printbibliography
+
+\end{document}

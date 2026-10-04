@@ -1,0 +1,54 @@
+\section{Introduction}
+This chapter presents the background, motivation, problem statement, objectives, scope, and methodological direction of the thesis. The project, Civic.ai, is designed as a bilingual and evidence-grounded government-service question-answering system for Bangladesh. The work began with a broad idea of an AI-powered civic assistant, but the current thesis direction is more specific: building and evaluating a Retrieval-Augmented Generation (RAG) based chatbot that retrieves trusted government-service evidence before producing an answer.
+
+The main focus of the current phase is the birth and death registration domain. This narrow scope is intentional. Government-service information is sensitive because inaccurate guidance can waste time, money, and trust. Therefore, before expanding to future domains such as passport, BRTA, birth certificate, death certificate, or other public services, the thesis first studies whether a carefully designed RAG system can provide grounded and explainable answers for one domain.
+
+\section{Background}
+Digital government services are now an important part of public administration. Bangladesh has introduced many online portals and digital services to make public service delivery more accessible. However, citizens still face practical difficulties while using these systems. Information is often scattered across multiple websites, service portals, notices, PDF files, FAQ pages, and legal documents. Many documents contain Bangla, English, mixed-language terms, tables, scanned pages, or formatting noise. As a result, even when information is technically available online, it is not always easy for ordinary citizens to find, understand, and apply.
+
+Recent progress in natural language processing has made conversational systems more capable. The Transformer architecture introduced self-attention as a scalable method for language modeling \cite{vaswani2017attention}. Large language models such as LLaMA show that open-weight models can be used for local language generation tasks \cite{touvron2023llama,dubey2024llama3}. Bangla-focused models and resources, such as BanglaBERT, show the importance of language-specific modeling for low-resource languages like Bangla \cite{bhattacharjee2021banglabert}. However, general-purpose LLMs alone are not enough for government-service question answering because they may hallucinate or produce unsupported claims.
+
+Retrieval-Augmented Generation addresses this limitation by connecting a language model with an external knowledge source. In a RAG system, the retriever first finds relevant evidence from a document collection, and the generator then uses that evidence to produce an answer \cite{lewis2020rag}. This design is suitable for Civic.ai because factual correctness, source grounding, and explainability are more important than creative fluency.
+
+\section{Rationale of the Study or Motivation}
+The motivation for this research comes from both social need and technical opportunity. From the citizen's perspective, many government-service procedures remain difficult to understand. People often depend on unofficial intermediaries to fill forms, understand requirements, or know where to go next. This can increase cost, delay, confusion, and risk of misinformation.
+
+From the technical perspective, RAG provides a practical way to build a trustworthy assistant without fine-tuning a large model on every government document. Instead of depending only on the model's internal memory, Civic.ai retrieves evidence from curated government-service documents. This allows the system to be updated when documents change, makes answers easier to audit, and supports source-based verification.
+
+The academic motivation is to study how a bilingual Bangla-English RAG pipeline can be designed for noisy real-world government documents. Unlike clean tutorial datasets, government-service data includes PDFs, converted DOCX files, HTML pages, FAQs, tables, notices, legal rules, scanned documents, encoding problems, and repeated web boilerplate. Therefore, this thesis emphasizes data cleaning, document-type-aware chunking, metadata handling, retrieval evaluation, and grounded answer generation.
+
+\section{Problem Statement}
+Despite the growth of e-government services, citizens in Bangladesh still face several barriers:
+
+\begin{itemize}
+    \item \textbf{Dispersed information:} Service instructions, document requirements, fees, and correction procedures are spread across different pages and document formats.
+    \item \textbf{Language and wording barriers:} Citizens may ask in Bangla, English, or code-mixed language, while source documents may use formal Bangla, English terms, or official phrases.
+    \item \textbf{Document noise:} Government pages often include menus, footers, accessibility text, duplicated links, scanned content, and formatting artifacts that can damage retrieval quality.
+    \item \textbf{Lack of interactive guidance:} Existing portals mostly provide static pages or FAQs, not scenario-based conversational support.
+    \item \textbf{Risk of hallucination:} A general chatbot may produce fluent but unsupported answers, which is unsafe for public-service guidance.
+\end{itemize}
+
+\textbf{Research Problem:} How can a bilingual, retrieval-based AI assistant be designed and evaluated so that it gives accurate, source-grounded, and explainable answers for Bangladeshi government-service questions?
+
+\section{Objectives}
+\textbf{Overall Objective:} To design, implement, and evaluate Civic.ai, a bilingual RAG-based government-service question-answering system that prioritizes factual correctness, retrieval quality, and explainability.
+
+\textbf{Specific Objectives:}
+\begin{itemize}
+    \item Build a modular RAG pipeline with clear separation between ingestion, cleaning, chunking, embedding, retrieval, reranking, generation, and evaluation.
+    \item Prepare a Bangla-heavy government-service knowledge base from noisy real-world sources.
+    \item Design document-type-aware chunking for FAQ, rule, fee-table, application-process, and correction-process documents.
+    \item Evaluate dense retrieval, BM25 retrieval, and hybrid retrieval alternatives using retrieval metrics such as Hit@k/Recall@k, MRR, nDCG, and context precision.
+    \item Compare local LLM backends such as llama3.2, llama3, and qwen2.5:7b for grounded answer generation.
+    \item Produce answers with source IDs, retrieval scores, and official links so that users and evaluators can inspect the evidence.
+\end{itemize}
+
+\section{Methodology in Brief}
+The thesis follows an iterative design and evaluation methodology. First, raw government-service documents are collected from official and related sources. Second, the documents are manually and semi-manually cleaned to remove noise, duplicate navigation text, encoding issues, and irrelevant fragments. Third, cleaned files are converted into typed chunks according to document structure. Fourth, each chunk is stored with metadata and two text versions: a search-optimized \texttt{retrieval\_text} and an original \texttt{answer\_evidence} field for grounding.
+
+The retrieval pipeline uses multilingual dense embeddings through BAAI/bge-m3 \cite{chen2024bgem3}, a sparse BM25 index \cite{robertson2009bm25}, and rank fusion through Reciprocal Rank Fusion \cite{cormack2009rrf}. The answer generation layer uses local Ollama models so that the system can run without external API keys. Evaluation is performed in two parts: retrieval-side evaluation using a curated Bangla question set, and generation-side evaluation through faithfulness, relevance, correctness, stability, and manual qualitative review.
+
+\section{Scope and Challenges}
+The current implementation scope is limited to the birth and death registration domain. This includes application procedures, correction guidance, fees, FAQ entries, legal rules, and general service guidance. The system architecture is still designed as a multi-domain system so that future domains can be added under separate domain folders without creating separate repositories.
+
+The main challenges include noisy source data, Bangla and mixed-language retrieval, variation between citizen wording and official wording, local hardware limitations, hallucination risk, and the need for reliable evaluation data. These challenges guide the design choices made in Chapter 3.

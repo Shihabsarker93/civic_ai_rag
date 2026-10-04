@@ -1,0 +1,1591 @@
+{
+  "model": "qwen3:8b",
+  "rows": [
+    {
+      "audit_item": {
+        "id": "birth_01_deadline",
+        "domain": "birth_death_registration",
+        "category": "direct_fact",
+        "question": "শিশুর জন্মের কত দিনের মধ্যে জন্ম নিবন্ধনের তথ্য দিতে হয়?",
+        "expected_evidence_hint": "birth_and_death_registration_act_2004_ধারা_৮"
+      },
+      "elapsed_seconds": 22.53,
+      "result": {
+        "query": "শিশুর জন্মের কত দিনের মধ্যে জন্ম নিবন্ধনের তথ্য দিতে হয়?",
+        "model": "qwen3:8b",
+        "method": "civic",
+        "answer": "জন্মের ৪৫ দিনের মধ্যে জন্ম সংক্রান্ত তথ্য নিবন্ধকের নিকট প্রদান করতে হবে।\n\nপ্রাসঙ্গিক বিধি/আইন: (১) শিশুর পিতা বা মাতা বা অভিভাবক বা নির্ধারিত ব্যক্তি উক্ত শিশুর জন্মের ৪৫ (পঁয়তাল্লিশ) দিনের মধ্যে জন্ম সংক্রান্ত তথ্য নিবন্ধকের নিকট প্রদানের জন্য বাধ্য থাকিবেন।\n\n(২) মৃত ব্যক্তির পুত্র বা কন্যা বা অভিভাবক বা নির্ধারিত ব্যক্তি মৃত্যুর ৪৫ (পঁয়তাল্লিশ) দিনের মধ্যে মৃত্যু সংক্রান্ত তথ্য নিবন্ধকের নিকট প্রদানের জন্য বাধ্য থাকিবেন।\n\nSources: birth_and_death_registration_act_2004_ধারা_৮_01, birth_and_death_registration_rules_2018_বিধি_৮_01, birth_and_death_registration_rules_2018_বিধি_২০_01",
+        "sources": [
+          {
+            "id": "birth_and_death_registration_act_2004_ধারা_৮_01",
+            "content": "Service: birth and death registration\nDocument type: legal_act\nTitle: জন্ম ও মৃত্যু নিবন্ধন আইন, ২০০৪\nChapter: \nLegal unit: ধারা ৮ জন্ম ও মৃত্যু তথ্য প্রদানের জন্য দায়ী ব্যক্তি\nContent: (১) শিশুর পিতা বা মাতা বা অভিভাবক বা নির্ধারিত ব্যক্তি উক্ত শিশুর জন্মের ৪৫ (পঁয়তাল্লিশ) দিনের মধ্যে জন্ম সংক্রান্ত তথ্য নিবন্ধকের নিকট প্রদানের জন্য বাধ্য থাকিবেন।\n\n(২) মৃত ব্যক্তির পুত্র বা কন্যা বা অভিভাবক বা নির্ধারিত ব্যক্তি মৃত্যুর ৪৫ (পঁয়তাল্লিশ) দিনের মধ্যে মৃত্যু সংক্রান্ত তথ্য নিবন্ধকের নিকট প্রদানের জন্য বাধ্য থাকিবেন।",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth_death",
+              "document_type": "legal_act",
+              "title": "জন্ম ও মৃত্যু নিবন্ধন আইন, ২০০৪",
+              "source_file": "birth_and_death_registration_act_2004.md",
+              "source_path": "md/birth_and_death_registration_act_2004.md",
+              "source_url": "",
+              "encoding": "",
+              "language": "bn",
+              "chapter": "",
+              "legal_unit_type": "ধারা",
+              "legal_unit_no": "৮",
+              "section_title": "জন্ম ও মৃত্যু তথ্য প্রদানের জন্য দায়ী ব্যক্তি",
+              "part_index": 1,
+              "search_aliases": "act, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, civil registration, death certificate, death certificate registration, death registration, death registration certificate, father mother information, law, legal requirement, legal rule, local government office, online birth registration, online death registration, parent information, parents registration, registrar office, registration office, registration rule, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 151,
+              "retrieval_token_count": 324,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.9907163977622986,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৮_01",
+            "content": "Service: birth and death registration\nDocument type: legal_rules\nTitle: জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮\nChapter: দ্বিতীয় অধ্যায়: জন্ম নিবন্ধন\nLegal unit: বিধি ৮ তথ্য প্রদানকারী অন্যান্য ব্যক্তি\nContent: (১) কোন ব্যক্তির জন্ম বা মৃত্যুর সময় আইনের ধারা ৮ এ উল্লিখিত ব্যক্তিবর্গের কেহ উপস্থিত না থাকিলে সেই ক্ষেত্রে নিম্নবর্ণিত ব্যক্তিবর্গের যে কেহ জন্ম বা মৃত্যুর ৪৫ (পঁয়তাল্লিশ) দিনের মধ্যে জন্ম বা মৃত্যুর তথ্য নিবন্ধকের নিকট প্রেরণ করিবেন, যথা:-\n(ক) জন্মের ক্ষেত্রে সংশ্লিষ্ট ব্যক্তির ভাই, বোন, পিতামহ, পিতামহী, মাতামহ বা মাতামহী এবং মৃত্যুর ক্ষেত্রে পিতা, মাতা, ভাই, বোন, পুত্রবধূ, জামাতা, পৌত্র, পৌত্রী, দৌহিত্র বা দৌহিত্রী (খ) কোন প্রতিষ্ঠানে জন্ম বা মৃত্যুর ক্ষেত্রে উক্ত প্রতিষ্ঠানের প্রধান বা তৎকর্তৃক ক্ষমতাপ্রাপ্ত ব্যক্তি (গ) কোন দালান বা বাড়িতে জন্ম বা মৃত্যুর ক্ষেত্রে উক্ত দালান বা বাড়ির মালিক বা তৎকর্তৃক ক্ষমতাপ্রাপ্ত ব্যক্তি (ঘ) কোন সড়কযান, নৌযান বা আকাশযানে জন্ম বা মৃত্যুর ক্ষেত্রে উক্ত যান পরিচালনাকারী বা নিয়ন্ত্রণকারী বা তৎকর্তৃক ক্ষমতাপ্রাপ্ত ব্যক্তি এবং (ঙ) রাস্তায় বা উন্মুক্ত স্থানে জন্ম বা মৃত্যুর ক্ষেত্রে, উক্ত রাস্তা বা উন্মুক্ত স্থান যে থানার অধীন সেই থানার ভারপ্রাপ্ত কর্মকর্তা। (২) আইনের ধারা ৯ এর উপ-ধারা (১) এর দফা (ট) এর উদ্দেশ্য পূরণকল্পে নিবন্ধক তাহার নিয়ন্ত্রণাধীন এলাকার সরকারি ও বেসরকারি শিক্ষা প্রতিষ্ঠানের শিক্ষক, সমাজকর্মী, মসজিদের ইমাম, পুরোহিত বা সৎকার (অন্ত্যেষ্টিক্রিয়া) সম্পন্নকারী বা অনুরূপ গ্রহণযোগ্য কোন ব্যক্তি বা বেসরকারি প্রতিষ্ঠানের কর্মী বা স্বেচ্ছাসেবী বা অন্য কোন ব্যক্তি বা প্রতিষ্ঠানকে কোন শিশুর জন্ম বা কোন ব্যক্তির মৃত্যুর তথ্য সংগ্রহের দায়িত্ব প্রদান করিতে পারিবেন।",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth_death",
+              "document_type": "legal_rules",
+              "title": "জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮",
+              "source_file": "birth_and_death_registration_rules_2018.docx",
+              "source_path": "md/birth_and_death_registration_rules_2018.md",
+              "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "chapter": "দ্বিতীয় অধ্যায়: জন্ম নিবন্ধন",
+              "legal_unit_type": "বিধি",
+              "legal_unit_no": "৮",
+              "section_title": "তথ্য প্রদানকারী অন্যান্য ব্যক্তি",
+              "part_index": 1,
+              "search_aliases": "act, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, civil registration, death certificate, death certificate registration, death registration, death registration certificate, father mother information, law, legal requirement, legal rule, local government office, online birth registration, online death registration, parent information, parents registration, registrar office, registration office, registration rule, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 466,
+              "retrieval_token_count": 639,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.9678413271903992,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_২০_01",
+            "content": "Service: birth and death registration\nDocument type: legal_rules\nTitle: জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮\nChapter: সপ্তম অধ্যায়: বিবিধ\nLegal unit: বিধি ২০ অনলাইনে আবেদন বা তথ্য প্রদান\nContent: (১) চিকিৎসা প্রতিষ্ঠান বা স্বাস্থ্যকর্মীগণ নিবন্ধনযোগ্য ব্যক্তির জন্ম বা মৃত্যুর তথ্য ৪৫ (পঁয়তাল্লিশ) দিনের মধ্যে নিবন্ধনের যোগ্য স্থানের নিবন্ধকের নিকট অনলাইনে প্রদান করিতে পারিবেন। (২) বিদেশে জন্ম গ্রহণকারী শিশু ব্যতীত বাংলাদেশ দূতাবাস নিবন্ধনযোগ্য অন্যান্য ব্যক্তির জন্ম বা মৃত্যুর তথ্য ব্যক্তির স্থায়ী ঠিকানার নিবন্ধকের নিকট অনলাইনে প্রদান করিতে পারিবেন। (৩) সরকারের সিদ্ধান্ত অনুযায়ী দূতাবাসসমূহ বিদেশে জন্ম হয় নাই তবে বৈধ পাসপোর্টধারী এমন কোন প্রবাসী বাংলাদেশী নাগরিকের জন্ম নিবন্ধন করিতে পারিবে। (৪) উপ-বিধি (১) এর অধীন অনলাইনে তথ্য প্রেরণের পর কম্পিউটার জেনারেটেড নম্বরসহ ব্যক্তির আবেদনপত্রের একটি প্রিন্ট কপি পাওয়া যাইবে এবং উক্ত প্রিন্ট কপির সহিত প্রয়োজনীয় দলিলাদি ও প্রত্যয়ন সংযুক্ত করিয়া, ক্ষেত্র বিশেষে, ব্যক্তি বা ব্যক্তির অভিভাবক সশরীরে নিবন্ধকের নিকট উহা দাখিল করিবেন। (৫) উপ-বিধি (৪) এর বিধান অনুযায়ী আবেদনপত্র প্রাপ্তির পর নিবন্ধক জন্ম নিবন্ধনের ক্ষেত্রে বিধি ৯ বা, ক্ষেত্রমত, বিধি ১০ এবং মৃত্যু নিবন্ধনের ক্ষেত্রে বিধি ১১ বা, ক্ষেত্রমত, বিধি ১২ অনুযায়ী ব্যবস্থা গ্রহণ করিবেন।",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth_death",
+              "document_type": "legal_rules",
+              "title": "জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮",
+              "source_file": "birth_and_death_registration_rules_2018.docx",
+              "source_path": "md/birth_and_death_registration_rules_2018.md",
+              "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "chapter": "সপ্তম অধ্যায়: বিবিধ",
+              "legal_unit_type": "বিধি",
+              "legal_unit_no": "২০",
+              "section_title": "অনলাইনে আবেদন বা তথ্য প্রদান",
+              "part_index": 1,
+              "search_aliases": "act, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, civil registration, death certificate, death certificate registration, death registration, death registration certificate, law, legal requirement, legal rule, local government office, online birth registration, online death registration, registrar office, registration office, registration rule, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 346,
+              "retrieval_token_count": 509,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.962911069393158,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_act_2004_ধারা_১০_01",
+            "content": "Service: birth and death registration\nDocument type: legal_act\nTitle: জন্ম ও মৃত্যু নিবন্ধন আইন, ২০০৪\nChapter: \nLegal unit: ধারা ১০ শিশুর নাম নির্ধারণ\nContent: জন্ম নিবন্ধনের পূর্বে শিশুর নাম নির্ধারণ করিতে হইবে।\n\nতবে শর্ত থাকে যে, কোন শিশুর নাম নির্ধারণ করা না হইলে উক্ত শিশুর জন্ম নিবন্ধন করা যাইবে এবং সেইক্ষেত্রে নিবন্ধনের পরবর্তী ৪৫ (পঁয়তাল্লিশ) দিনের মধ্যে তাহার নাম সরবরাহ করিতে হইবে।",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth_death",
+              "document_type": "legal_act",
+              "title": "জন্ম ও মৃত্যু নিবন্ধন আইন, ২০০৪",
+              "source_file": "birth_and_death_registration_act_2004.md",
+              "source_path": "md/birth_and_death_registration_act_2004.md",
+              "source_url": "",
+              "encoding": "",
+              "language": "bn",
+              "chapter": "",
+              "legal_unit_type": "ধারা",
+              "legal_unit_no": "১০",
+              "section_title": "শিশুর নাম নির্ধারণ",
+              "part_index": 1,
+              "search_aliases": "act, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, civil registration, death certificate, death certificate registration, death registration, death registration certificate, law, legal requirement, legal rule, online birth registration, online death registration, registration rule, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 116,
+              "retrieval_token_count": 269,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.953827977180481,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "bdris_faq_02_q01",
+            "content": "Service: birth and death registration\nDocument type: faq\nCategory: parents_registration\nTitle: জন্ম ও মৃত্যু নিবন্ধন সংক্রান্ত সচরাচর জিজ্ঞাসিত প্রশ্ন ও তার উত্তর\nTitle EN: Frequently Asked Questions on Birth and Death Registration\nQuestion: জন্মের ৪৫ দিনের মধ্যে কিংবা পরবর্তী সময়েও নিবন্ধন করতে পিতামাতার জন্ম নিবন্ধন পাওয়া যায় না, করণীয় কী?\nAnswer: সন্তানের জন্ম নিবন্ধনের সঙ্গে পিতামাতার জন্ম নিবন্ধন একসাথে করা অপেক্ষাকৃত সহজ। সন্তানের নিবন্ধনের প্রয়োজনীয় তথ্যের সঙ্গে পিতামাতার বয়স প্রমাণের রেকর্ড (শিক্ষা সনদ বা আইনের ৭(১) ধারা অনুযায়ী তদন্তসহ এনআইডি) যোগ করলেই তাদের জন্ম নিবন্ধন করা সম্ভব। বিষয়টিকে সমস্যা না ভেবে 'সুযোগ' হিসেবে দেখা যেতে পারে।\n\nতবে পূর্ব থেকে পিতামাতার নিবন্ধন থাকলে এবং তাতে ভুল থাকলে, সন্তানের নিবন্ধনের আগে সংশোধন আবেদন করে সংশোধন করে নিতে হবে।\nLegal references: জন্ম ও মৃত্যু নিবন্ধন আইন ২০০৪, ধারা ৭(১)\nKeywords BN: পিতামাতার নিবন্ধন, ৪৫ দিন, বয়স প্রমাণ, পূর্ব সংশোধন\nKeywords EN: parents registration, 45 days, age proof, prior correction",
+            "metadata": {
+              "doc_id": "bdris_faq_02",
+              "title": "জন্ম ও মৃত্যু নিবন্ধন সংক্রান্ত সচরাচর জিজ্ঞাসিত প্রশ্ন ও তার উত্তর",
+              "title_en": "Frequently Asked Questions on Birth and Death Registration",
+              "source_url": "https://goradubaup.netrokona.gov.bd/pages/static-pages/69708eb0a31054345f15bdab",
+              "issuing_authority": "গড়াডোবা ইউনিয়ন পরিষদ",
+              "issuing_authority_en": "Goraduba Union Parishad",
+              "district": "নেত্রকোনা",
+              "district_en": "Netrokona",
+              "last_updated": "2024-12-25",
+              "language": "bn",
+              "doc_type": "faq",
+              "domain": "civil_registration",
+              "country": "BD",
+              "total_faqs": 10,
+              "source_path": "faqs_birth_death_registration_02.json",
+              "document_type": "faq",
+              "category": "parents_registration",
+              "faq_number": 1,
+              "service": "birth_death_registration",
+              "service_scope": "birth",
+              "search_aliases": "amend registration information, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, certificate, certificate correction, citizen question, civil registration, common question, death certificate correction, FAQ, father mother information, fix certificate information, name correction, online birth registration, parent information, parents registration, question answer, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, প্রশ্ন উত্তর, মৃত্যু নিবন্ধন সংশোধন, সংশোধন আবেদন, সাধারণ জিজ্ঞাসা",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 262,
+              "retrieval_token_count": 423,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.9450334310531616,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_02",
+            "content": "Service: birth and death registration\nDocument type: legal_rules\nTitle: জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮\nChapter: দ্বিতীয় অধ্যায়: জন্ম নিবন্ধন\nLegal unit: বিধি ৯ জন্ম নিবন্ধন\nContent: (ক) ব্যক্তির জন্মের ৪৫ (পঁয়তাল্লিশ) দিনের মধ্যে দাখিলকৃত আবেদনপত্রের সহিত নিম্নলিখিত প্রমাণাদি সংযুক্ত করিতে হইবে, যথা:\n(অ) জন্মস্থান ও জন্ম তারিখের প্রমাণ হিসাবে সংশ্লিষ্ট চিকিৎসা প্রতিষ্ঠানের ছাড়পত্র বা উক্ত প্রতিষ্ঠান হইতে প্রাপ্ত জন্ম সংক্রান্ত সনদের সত্যায়িত অনুলিপি অথবা বার্থ এটেন্ডেন্ট এর প্রত্যয়ন বা অন্য কোন প্রমাণপত্র অথবা (আ) ব্যক্তির স্থায়ী ঠিকানার প্রমাণ হিসাবে ব্যক্তির নিজের বা পিতা বা মাতা বা পিতামহ বা পিতামহীর দ্বারা স্বনামে স্থায়ী ঠিকানা হিসাবে ঘোষিত আবাসস্থলের বিপরীতে হালনাগাদ কর পরিশোধের প্রমাণপত্র অথবা পিতা বা মাতা বা পিতামহ বা পিতামহীর জাতীয় পরিচয়পত্র বা পাসপোর্টে ঘোষিত স্থায়ী ঠিকানা বা অন্যকোন প্রমাণপত্র এবং জন্ম ও মৃত্যু নিবন্ধনের দ্বৈততা পরিহার করিবার লক্ষ্যে, প্রযোজ্য ক্ষেত্রে, জন্ম নিবন্ধনাধীন ব্যক্তির পিতা ও মাতার জন্ম নিবন্ধন ন¤¦র অথবা জাতীয় পরিচয়পত্র নম্বর উল্লেখসহ উহার সনদ দাখিল করিতে হইবে (ই) নদী ভাঙ্গন বা অন্য কোন কারণে স্থায়ী ঠিকানা বিলুপ্ত হইয়া থাকিলে নতুন স্থায়ী বসতির অনুকূলে প্রমাণক হিসাবে জমি বা বাড়ি ক্রয়ের দলিল, খাজনা ও কর পরিশোধের রসিদ, প্রভৃতি দাখিল করিলে নতুন বসতির ঠিকানা স্থায়ী ঠিকানা হিসাবে গণ্য করা যাইবে (ঈ) কোন কারণে কোন ব্যক্তির স্থায়ী ঠিকানা না থাকিলে স্থায়ী ঠিকানার স্থানে অপ্রাপ্য লিখিয়া জন্মস্থানের নিবন্ধকের নিকট জন্ম নিবন্ধন করিতে হইবে এবং এই ক্ষেত্রে আইনের ধারা ৯ এর উপ-ধারা",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth_death",
+              "document_type": "legal_rules",
+              "title": "জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮",
+              "source_file": "birth_and_death_registration_rules_2018.docx",
+              "source_path": "md/birth_and_death_registration_rules_2018.md",
+              "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "chapter": "দ্বিতীয় অধ্যায়: জন্ম নিবন্ধন",
+              "legal_unit_type": "বিধি",
+              "legal_unit_no": "৯",
+              "section_title": "জন্ম নিবন্ধন",
+              "part_index": 2,
+              "search_aliases": "act, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, civil registration, date of birth correction, death certificate, death certificate registration, death registration, death registration certificate, father mother information, law, legal requirement, legal rule, local government office, online birth registration, online death registration, parent information, parents registration, registrar office, registration office, registration rule, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম তারিখ সংশোধন, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 458,
+              "retrieval_token_count": 643,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.9368899464607239,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          }
+        ],
+        "domain": "birth_death_registration",
+        "answer_route": "controlled",
+        "expected_evidence_present": true
+      }
+    },
+    {
+      "audit_item": {
+        "id": "birth_02_lost",
+        "domain": "birth_death_registration",
+        "category": "direct_fact",
+        "question": "জন্ম নিবন্ধনের মূল সনদ হারিয়ে গেলে কী করতে হবে?",
+        "expected_evidence_hint": "birth_and_death_registration_rules_2018_বিধি_১৩"
+      },
+      "elapsed_seconds": 20.69,
+      "result": {
+        "query": "জন্ম নিবন্ধনের মূল সনদ হারিয়ে গেলে কী করতে হবে?",
+        "model": "qwen3:8b",
+        "method": "civic",
+        "answer": "জন্ম নিবন্ধন সনদ হারিয়ে গেলে বা নষ্ট হলে নিবন্ধকের কাছে সনদের প্রতিলিপির জন্য আবেদন করতে হবে। বিধি ১৩ অনুযায়ী, আবেদন পাওয়ার ৭ কার্য দিবসের মধ্যে জন্ম/মৃত্যু নিবন্ধন সনদের প্রতিলিপি প্রদান করা হয়। প্রতিলিপির জন্য বিধি ২১ অনুযায়ী নির্ধারিত ফি প্রযোজ্য হতে পারে।\n\nপ্রাসঙ্গিক বিধি: (১) নিবন্ধিত কোন ব্যক্তির সনদ হারাইয়া গেলে বা নষ্ট হইলে, নিবন্ধক, উপ-বিধি (২) ও (৩) এর বিধান সাপেক্ষে, জমনি ফরম-৭ অনুযায়ী উক্ত ব্যক্তির আবেদন প্রাপ্তির ৭ (সাত) কার্য দিবসের মধ্যে জমনি ফরম-৩ ও জমনি ফরম-৬ অনুযায়ী জন্ম ও মৃত্যু নিবন্ধন সনদের প্রতিলিপি প্রদান করিবেন। (২) বিধি ২১ এ নির্ধারিত ফিস প্রদান সাপেক্ষে, নিম্নবর্ণিত কোন ব্যক্তি জন্ম ও মৃত্যু নিবন্ধন সনদের প্রতিলিপির জন্য জমনি ফরম-৭ অনুযায়ী নিবন্ধকের নিকট আবেদন করিতে পারিবেন, যথা:\n(ক) যাহার জন্য জন্ম সনদ প্রদান করা হইবে তাহার বয়স ১৮ (আঠার) বৎসর বা তদূর্ধ্ব হইলে তিনি স্বয়ং অথবা (খ) জন্ম তথ্য প্রদানকারী অথবা (গ) মৃত্যু তথ্য প্রদানকারী অথবা (ঘ) জন্ম বা মৃত্যু তথ্য দ্বারা সংক্ষুব্ধ ব্যক্তি। (৩) উপ-বিধি (২) এর অধীন আবেদনপত্র প্রাপ্তির পর নিবন্ধক যদি নিশ্চিত হন যে, উক্ত আবেদনপত্র যথাযথভাবে পূরণ করা হইয়াছে এবং ফিস প্রদান করা হইয়াছে তাহা হইলে তিনি আবেদনকারীর অংশ স্বাক্ষরপূর্বক উহা আবেদনকারীর নিকট হস্তান্তর করিবেন। (৪) উপ-বিধি (৩) এর অধীন আবেদনপত্র প্রাপ্তির পর নিবন্ধক সনদের প্রতিলিপি প্রস্তুত করিবেন এবং আবেদনকারীর অংশ গ্রহণ করিয়া সনদের প্রতিলিপি আবেদনকারীর নিকট হস্তান্তরের ব্যবস্থা করিবেন। (৫) প্রতিলিপি সনদের উপরিভাগে প্রতিলিপি বা উঁঢ়ষরপধঃব শব্দটি এবং, ক্ষেত্রমত, সংশোধিত সনদের ক্ষেত্রে সংশোধিত শব্দটি উল্লেখ থাকিবে এবং প্রথম বার জন্ম বা মৃত্যু নিবন্ধন সনদ যে তারিখে ইস্যু হইয়াছে প্রতিলিপি সনদ ইস্যুর সেই তারিখ বহাল থাকিবে ও প্রতিলিপি সনদ ইস্যুর তারিখ লিপিবদ্ধ করিতে হইবে।\n\nSources: birth_and_death_registration_rules_2018_বিধি_১৩_01",
+        "sources": [
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১৩_01",
+            "content": "Service: birth and death registration\nDocument type: legal_rules\nTitle: জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮\nChapter: পঞ্চম অধ্যায়: রেকর্ড সংরক্ষণ, সংশোধন এবং পরিবীক্ষণ\nLegal unit: বিধি ১৩ সনদের প্রতিলিপি প্রদান\nContent: (১) নিবন্ধিত কোন ব্যক্তির সনদ হারাইয়া গেলে বা নষ্ট হইলে, নিবন্ধক, উপ-বিধি (২) ও (৩) এর বিধান সাপেক্ষে, জমনি ফরম-৭ অনুযায়ী উক্ত ব্যক্তির আবেদন প্রাপ্তির ৭ (সাত) কার্য দিবসের মধ্যে জমনি ফরম-৩ ও জমনি ফরম-৬ অনুযায়ী জন্ম ও মৃত্যু নিবন্ধন সনদের প্রতিলিপি প্রদান করিবেন। (২) বিধি ২১ এ নির্ধারিত ফিস প্রদান সাপেক্ষে, নিম্নবর্ণিত কোন ব্যক্তি জন্ম ও মৃত্যু নিবন্ধন সনদের প্রতিলিপির জন্য জমনি ফরম-৭ অনুযায়ী নিবন্ধকের নিকট আবেদন করিতে পারিবেন, যথা:\n(ক) যাহার জন্য জন্ম সনদ প্রদান করা হইবে তাহার বয়স ১৮ (আঠার) বৎসর বা তদূর্ধ্ব হইলে তিনি স্বয়ং অথবা (খ) জন্ম তথ্য প্রদানকারী অথবা (গ) মৃত্যু তথ্য প্রদানকারী অথবা (ঘ) জন্ম বা মৃত্যু তথ্য দ্বারা সংক্ষুব্ধ ব্যক্তি। (৩) উপ-বিধি (২) এর অধীন আবেদনপত্র প্রাপ্তির পর নিবন্ধক যদি নিশ্চিত হন যে, উক্ত আবেদনপত্র যথাযথভাবে পূরণ করা হইয়াছে এবং ফিস প্রদান করা হইয়াছে তাহা হইলে তিনি আবেদনকারীর অংশ স্বাক্ষরপূর্বক উহা আবেদনকারীর নিকট হস্তান্তর করিবেন। (৪) উপ-বিধি (৩) এর অধীন আবেদনপত্র প্রাপ্তির পর নিবন্ধক সনদের প্রতিলিপি প্রস্তুত করিবেন এবং আবেদনকারীর অংশ গ্রহণ করিয়া সনদের প্রতিলিপি আবেদনকারীর নিকট হস্তান্তরের ব্যবস্থা করিবেন। (৫) প্রতিলিপি সনদের উপরিভাগে প্রতিলিপি বা উঁঢ়ষরপধঃব শব্দটি এবং, ক্ষেত্রমত, সংশোধিত সনদের ক্ষেত্রে সংশোধিত শব্দটি উল্লেখ থাকিবে এবং প্রথম বার জন্ম বা মৃত্যু নিবন্ধন সনদ যে তারিখে ইস্যু হইয়াছে প্রতিলিপি সনদ ইস্যুর সেই তারিখ বহাল থাকিবে ও প্রতিলিপি সনদ ইস্যুর তারিখ লিপিবদ্ধ করিতে হইবে।",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth_death",
+              "document_type": "legal_rules",
+              "title": "জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮",
+              "source_file": "birth_and_death_registration_rules_2018.docx",
+              "source_path": "md/birth_and_death_registration_rules_2018.md",
+              "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "chapter": "পঞ্চম অধ্যায়: রেকর্ড সংরক্ষণ, সংশোধন এবং পরিবীক্ষণ",
+              "legal_unit_type": "বিধি",
+              "legal_unit_no": "১৩",
+              "section_title": "সনদের প্রতিলিপি প্রদান",
+              "part_index": 1,
+              "search_aliases": "act, amend registration information, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, certificate, certificate correction, civil registration, death certificate, death certificate correction, death certificate registration, death registration, death registration certificate, fix certificate information, law, legal requirement, legal rule, local government office, name correction, online birth registration, online death registration, registrar office, registration office, registration rule, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু নিবন্ধন সংশোধন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন, সংশোধন আবেদন",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 543,
+              "retrieval_token_count": 750,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 1.0918233108520508,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "bdris_faq_01_q12",
+            "content": "Service: birth and death registration\nDocument type: faq\nCategory: overseas_registration\nTitle: জন্ম ও মৃত্যু নিবন্ধন বিষয়ক প্রায়শই জিজ্ঞাসিত প্রশ্ন\nTitle EN: FAQs on Birth and Death Registration\nQuestion: বিদেশে জন্ম নিবন্ধন করে দেশে ফেরা কোনো প্রবাসী তথ্য সংশোধন অথবা সনদ পুনঃমুদ্রণের আবেদন করলে করণীয় কী?\nAnswer: সংশোধন বা পুনঃমুদ্রণ কেবল মূল নিবন্ধন অফিস থেকেই করা যাবে। তবে স্থানীয় নিবন্ধন অফিসের সহায়তায় বা নাগরিক নিজে অনলাইনে মূল অফিস বরাবর আবেদন করতে পারেন। আবেদনের অনুলিপি রেজিস্ট্রার জেনারেলের কার্যালয়ে (arg1bdr@gmail.com) পাঠালে প্রয়োজনে পররাষ্ট্র মন্ত্রণালয়ের সঙ্গে যোগাযোগ করে নিষ্পত্তি করা হবে।\n\nভবিষ্যতে করণিক ভুল সংশোধন বা প্রতিলিপি প্রদানের জন্য যেকোনো নিবন্ধন অফিস থেকে সুবিধা পাওয়ার ব্যবস্থা গ্রহণ করা হবে।\nLegal references: \nKeywords BN: প্রবাসী নিবন্ধন, বিদেশে নিবন্ধন, সংশোধন, পুনঃমুদ্রণ, মূল অফিস, পররাষ্ট্র মন্ত্রণালয়\nKeywords EN: expatriate registration, overseas registration, correction, reprint, original office, foreign ministry",
+            "metadata": {
+              "doc_id": "bdris_faq_01",
+              "title": "জন্ম ও মৃত্যু নিবন্ধন বিষয়ক প্রায়শই জিজ্ঞাসিত প্রশ্ন",
+              "title_en": "FAQs on Birth and Death Registration",
+              "source_url": "https://orgbdr.portal.gov.bd/pages/static-pages/6922e065933eb65569e26d6e",
+              "issuing_authority": "রেজিস্ট্রার জেনারেলের কার্যালয়, জন্ম ও মৃত্যু নিবন্ধন",
+              "issuing_authority_en": "Office of the Registrar General, Birth and Death Registration",
+              "department": "স্থানীয় সরকার বিভাগ",
+              "department_en": "Local Government Division",
+              "system": "BDRIS",
+              "last_updated": "2026-04-04",
+              "language": "bn",
+              "doc_type": "faq",
+              "domain": "civil_registration",
+              "country": "BD",
+              "total_faqs": 16,
+              "source_path": "faqs_birth_death_registration_01.json",
+              "document_type": "faq",
+              "category": "overseas_registration",
+              "faq_number": 12,
+              "service": "birth_death_registration",
+              "service_scope": "birth",
+              "search_aliases": "amend registration information, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, certificate, certificate correction, citizen question, civil registration, common question, death certificate correction, FAQ, fix certificate information, local government office, name correction, online birth registration, question answer, registrar office, registration office, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, প্রশ্ন উত্তর, মৃত্যু নিবন্ধন সংশোধন, সংশোধন আবেদন, সাধারণ জিজ্ঞাসা",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 258,
+              "retrieval_token_count": 419,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.7347877740859985,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১৫_01",
+            "content": "Service: birth and death registration\nDocument type: legal_rules\nTitle: জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮\nChapter: পঞ্চম অধ্যায়: রেকর্ড সংরক্ষণ, সংশোধন এবং পরিবীক্ষণ\nLegal unit: বিধি ১৫ জন্ম বা মৃত্যু সনদ সংশোধন ও বাতিল\nContent: (১) আইনের ধারা ১১, ১৩ ও ১৫ তে বর্ণিত বিধান অনুসরণপূর্বক রেজিস্ট্রার জেনারেল অথবা তাহার পক্ষে অন্য কোন ক্ষমতাসম্পন্ন কর্মচারীর নিকট হইতে কারিগরি সহায়তা গ্রহণ করিয়া জন্ম বা মৃত্যু সনদ বাতিল বা সংশোধন করা যাইবে। (২) বিধি ২১ এ নির্ধারিত ফিস প্রদান করিয়া জমনি ফরম-৮ অনুযায়ী কোন ব্যক্তি জন্ম বা মৃত্যু সনদ সংশোধন বা বাতিলের জন্য আবেদন করিতে পারিবেন। (৩) কোন ব্যক্তির অনুকূলে সরল বিশ্বাসে বা অন্য কোন যৌক্তিক কারণে একাধিক জন্ম বা মৃত্যু নিবন্ধন সনদ ইস্যু হইয়া থাকিলে, নিবন্ধনপ্রাপ্ত উক্ত ব্যক্তি বা, ক্ষেত্র বিশেষে, তাহার আইনানুগ অভিভাবকের আবেদনের পরিপ্রেক্ষিতে নিবন্ধক যাচাই করিয়া অপ্রয়োজনীয় সনদটি বাতিল করিবেন। (৪) নিবন্ধক, কোন ব্যক্তির অনুকূলে অসৎ উদ্দেশ্যে মিথ্যা তথ্যের ভিত্তিতে একাধিক জন্ম বা মৃত্যু নিবন্ধন সনদ ইস্যুর তথ্য প্রাপ্ত হইলে, উহা যাচাই করিয়া দায়ী ব্যক্তির সনদ বাতিল এবং উক্ত দায়ী ব্যক্তি বা উহার সহিত সংশ্লিষ্ট কর্মচারীর বিরুদ্ধে আইনের ধারা ২১ এর বিধান অনুযায়ী দণ্ডমূলক ব্যবস্থা গ্রহণ করিতে পারিবেন। (৫) মিথ্যা তথ্যের ভিত্তিতে জন্ম বা মৃত্যু নিবন্ধন সনদ বাতিল করা হইলে সংক্ষুব্ধ ব্যক্তির আবেদনক্রমে নিবন্ধক শুনানি গ্রহণ করিবেন এবং মিথ্যা তথ্য প্রদানকারী বা সনদ লিপিবদ্ধকারী বা ইস্যুকারীর বিরুদ্ধে আইনগত ব্যবস্থা গ্রহণের নির্দেশ প্রদান করিতে পারিবেন এবং উক্তরূপ অভিযোগ উত্থাপিত হইলে রেজিস্ট্রার জেনারেল বা উপ-রেজিস্ট্রার জেনারেলের পূর্বানুমোদনক্রমে উপযুক্ত আদালতে মামলা দায়ের করিতে এবং মামলার রায়ের ভিত্তিতে আইনের ধারা ১৫ অনুযায়ী ব্যবস্থা গ্রহণ করিতে পারিবেন।",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth_death",
+              "document_type": "legal_rules",
+              "title": "জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮",
+              "source_file": "birth_and_death_registration_rules_2018.docx",
+              "source_path": "md/birth_and_death_registration_rules_2018.md",
+              "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "chapter": "পঞ্চম অধ্যায়: রেকর্ড সংরক্ষণ, সংশোধন এবং পরিবীক্ষণ",
+              "legal_unit_type": "বিধি",
+              "legal_unit_no": "১৫",
+              "section_title": "জন্ম বা মৃত্যু সনদ সংশোধন ও বাতিল",
+              "part_index": 1,
+              "search_aliases": "act, amend registration information, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, cancel duplicate birth certificate, cancel duplicate death certificate, certificate, certificate correction, certificate verification, civil registration, death certificate, death certificate correction, death certificate registration, death registration, death registration certificate, duplicate certificate cancellation, fix certificate information, law, legal requirement, legal rule, local government office, name correction, online birth registration, online death registration, registrar office, registration office, registration rule, registration verification, verify certificate, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, একাধিক জন্ম সনদ বাতিল, একাধিক মৃত্যু সনদ বাতিল, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, ডুপ্লিকেট জন্ম সনদ বাতিল, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু নিবন্ধন সংশোধন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন, সংশোধন আবেদন",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 508,
+              "retrieval_token_count": 772,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.5698047280311584,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_act_2004_ধারা_১৫_01",
+            "content": "Service: birth and death registration\nDocument type: legal_act\nTitle: জন্ম ও মৃত্যু নিবন্ধন আইন, ২০০৪\nChapter: \nLegal unit: ধারা ১৫ নিবন্ধন বহি এবং জন্ম বা মৃত্যু সনদ সংশোধন\nContent: (১) নিবন্ধন বহিতে বা, ক্ষেত্রমত, জন্ম বা মৃত্যু সনদে কোন ভুল তথ্য লিপিবদ্ধ হইয়া থাকিলে, উহা সংশোধনের জন্য নির্ধারিত ফিসহ সংশ্লিষ্ট নিবন্ধকের বরাবরে আবেদন করা যাইবে। (২) জন্ম বা মৃত্যু সনদ প্রদানের ৯০ (নববই) দিনের মধ্যে উপ-ধারা (১) এর অধীন আবেদন প্রাপ্ত হইলে, নিবন্ধক উক্ত আবেদন প্রাপ্তির ৩০ (ত্রিশ) কার্যদিবসের মধ্যে—\n\n- ** (ক)** আবেদন যথাযথ মনে করিলে— (অ) নিবন্ধন বহি বা সনদ সংশোধন করিবেন; (আ) সংশোধিত স্থানে তারিখসহ স্বাক্ষর প্রদান করিবেন; এবং (ই) সংশোধিত আকারে নূতন সনদ প্রদান করিয়া পূর্বের সনদ ফেরত লইবেন। - ** (খ)** আবেদন বিবেচনার যুক্তিসঙ্গত কারণ না থাকিলে, নামঞ্জুর করিয়া আবেদনকারীকে লিখিতভাবে অবহিত করিবেন। (৩) জন্ম বা মৃত্যু সনদ প্রদানের ৯০ (নববই) দিন অতিক্রান্ত হইবার পর আবেদন প্রাপ্ত হইলে, উক্ত আবেদন প্রাপ্তির ১০ (দশ) কার্যদিবসের মধ্যে নিবন্ধক উহা সংশ্লিষ্ট উর্ধ্বতন কর্তৃপক্ষের নিকট প্রেরণ করিবেন:\n\n- **(অ)** দফা (ক), (খ) ও (ঘ) এ উল্লিখিত নিবন্ধক সংশ্লিষ্ট জেলা প্রশাসকের নিকট। - **(আ)** দফা (গ) এ উল্লিখিত নিবন্ধক সংশ্লিষ্ট উপজেলা নির্বাহী অফিসারের নিকট। - **(ই)** দফা (ঙ) এ উল্লিখিত নিবন্ধক রেজিস্ট্রার জেনারেল এর নিকট। (৪) উপ-ধারা (৩) এর অধীন আবেদন প্রাপ্তির ১৫ (পনের) কার্যদিবসের মধ্যে, ক্ষেত্রমত, সংশ্লিষ্ট উপজেলা নির্বাহী অফিসার, জেলা প্রশাসক বা রেজিস্ট্রার জেনারেল উক্ত আবেদন পরীক্ষা করিয়া মঞ্জুর বা নামঞ্জুর আদেশ প্রদান করিয়া সংশ্লিষ্ট নিবন্ধকের বরাবরে প্রেরণ করিবেন। (৫) উপ-ধারা",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth_death",
+              "document_type": "legal_act",
+              "title": "জন্ম ও মৃত্যু নিবন্ধন আইন, ২০০৪",
+              "source_file": "birth_and_death_registration_act_2004.md",
+              "source_path": "md/birth_and_death_registration_act_2004.md",
+              "source_url": "",
+              "encoding": "",
+              "language": "bn",
+              "chapter": "",
+              "legal_unit_type": "ধারা",
+              "legal_unit_no": "১৫",
+              "section_title": "নিবন্ধন বহি এবং জন্ম বা মৃত্যু সনদ সংশোধন",
+              "part_index": 1,
+              "search_aliases": "act, amend registration information, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, certificate, certificate correction, civil registration, death certificate, death certificate correction, death certificate registration, death registration, death registration certificate, fix certificate information, law, legal requirement, legal rule, local government office, name correction, online birth registration, online death registration, registrar office, registration office, registration rule, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু নিবন্ধন সংশোধন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন, সংশোধন আবেদন",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 528,
+              "retrieval_token_count": 735,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.5449568033218384,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_020_01",
+            "content": "Service: birth and death registration\nDocument type: application_process\nTitle: জন্ম নিবন্ধিকরণ প্রক্রিয়া\nSection: পরবর্তী করণীয়\nContent: নিম্নোক্ত নথিপত্র নিয়ে সংশ্লিষ্ট নিবন্ধন কার্যালয়ে যোগাযোগ করতে হবে:\n\n- আবেদনপত্র\n- সংযুক্ত ডকুমেন্টসমূহের ফটোকপি\n\nসংশ্লিষ্ট নিবন্ধন কার্যালয়:\n\n- ইউনিয়ন পরিষদ\n- পৌরসভা\n- সিটি কর্পোরেশন\n- ক্যান্টনমেন্ট\n\nনিবন্ধন সহকারী এবং নিবন্ধক কর্তৃক যাচাই-বাছাই শেষে তথ্য সঠিক পাওয়া গেলে জন্ম নিবন্ধন সনদ প্রদান করা হবে।",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth",
+              "document_type": "application_process",
+              "title": "জন্ম নিবন্ধিকরণ প্রক্রিয়া",
+              "source_file": "birth_registration_application_process.docx",
+              "source_path": "md/birth_registration_application_process_cleaned.md",
+              "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "section_title": "পরবর্তী করণীয়",
+              "section_index": 20,
+              "part_index": 1,
+              "search_aliases": "application process, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, certificate verification, citizen service, civil registration, how to apply, local government office, online application, online birth registration, registrar office, registration office, registration process, registration verification, required documents, verify certificate, আবেদন পদ্ধতি, আবেদন প্রক্রিয়া, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, ধাপে ধাপে আবেদন, নিবন্ধন পদ্ধতি, নিবন্ধন প্রক্রিয়া, প্রয়োজনীয় কাগজপত্র",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 107,
+              "retrieval_token_count": 264,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.4562030553817749,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১২_02",
+            "content": "Service: birth and death registration\nDocument type: legal_rules\nTitle: জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮\nChapter: চতুর্থ অধ্যায়: সনদের প্রতিলিপি প্রদান\nLegal unit: বিধি ১২ প্রবাসীগণের মৃত্যু নিবন্ধন\nContent: (২) এর অধীন মৃত্যু নিবন্ধন আবেদনপত্র প্রাপ্তির পর নিবন্ধক মৃত্যু নিবন্ধন আবেদনপত্রটি পরীক্ষা করিয়া যদি নিশ্চিত হন যে, উক্ত আবেদনপত্রের সকল প্রয়োজনীয় অংশ সঠিকভাবে পূরণ ও প্রয়োজনীয় কাগজপত্রাদি সংযুক্ত করা হইয়াছে এবং পূর্বে মৃত্যু নিবন্ধন হয় নাই, তাহা হইলে তিনি পরবর্তী ৭ (সাত) কার্য দিবসের মধ্যে মৃত্যু নিবন্ধন সম্পন্ন করিয়া জমনি ফরম-৫ অনুযায়ী মৃত্যু নিবন্ধন বহিতে লিপিবদ্ধ করিয়া জমনি ফরম-৬ অনুযায়ী আবেদনকারীর নিকট মৃত্যু নিবন্ধন সনদ হস্তান্তর করিবেন। (৬) উপ-বিধি (২) এর অধীন মৃত্যু নিবন্ধন আবেদনপত্র প্রাপ্তির পর নিবন্ধক আবেদনপত্রটি পরীক্ষা করিয়া যদি নিশ্চিত হন যে, উক্ত আবেদনপত্রের সকল প্রয়োজনীয় অংশ সঠিকভাবে পূরণ করা হয় নাই ও প্রয়োজনীয় কাগজপত্রাদি সংযুক্ত করা হয় নাই, তাহা হইলে তিনি উপ-বিধি (৩) এর বিধান অনুযায়ী প্রয়োজনীয় কাগজপত্রাদি জমা প্রদানের জন্য আবেদনকারীকে লিখিতভাবে অনুরোধ করিবেন। (৭) নিবন্ধক কর্তৃক উপ-বিধি (৬) এ বর্ণিত লিখিত অনুরোধের পরিপ্রেক্ষিতে আবেদনকারী কর্তৃক উপ-বিধি (৩) এর বিধান অনুযায়ী প্রয়োজনীয় কাগজপত্রাদি নিবন্ধকের নিকট জমা প্রদান করিলে নিবন্ধক পরবর্তী ৭ (সাত) কার্য দিবসের মধ্যে মৃত্যু নিবন্ধন সম্পন্ন করিয়া জমনি ফরম-৫ অনুযায়ী মৃত্যু নিবন্ধন বহিতে লিপিবদ্ধ করিয়া জমনি ফরম-৬ অনুযায়ী আবেদনকারীর নিকট মৃত্যু নিবন্ধন সনদ হস্তান্তর করিবেন। (৮) উপ-বিধি (১)-",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth_death",
+              "document_type": "legal_rules",
+              "title": "জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮",
+              "source_file": "birth_and_death_registration_rules_2018.docx",
+              "source_path": "md/birth_and_death_registration_rules_2018.md",
+              "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "chapter": "চতুর্থ অধ্যায়: সনদের প্রতিলিপি প্রদান",
+              "legal_unit_type": "বিধি",
+              "legal_unit_no": "১২",
+              "section_title": "প্রবাসীগণের মৃত্যু নিবন্ধন",
+              "part_index": 2,
+              "search_aliases": "act, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, civil registration, death certificate, death certificate registration, death registration, death registration certificate, law, legal requirement, legal rule, local government office, online birth registration, online death registration, registrar office, registration office, registration rule, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 415,
+              "retrieval_token_count": 578,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.4410605728626251,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          }
+        ],
+        "domain": "birth_death_registration",
+        "answer_route": "controlled",
+        "expected_evidence_present": true
+      }
+    },
+    {
+      "audit_item": {
+        "id": "birth_03_documents_paraphrase",
+        "domain": "birth_death_registration",
+        "category": "paraphrase",
+        "question": "নতুন বাচ্চার জন্মসনদ করতে কী কী প্রমাণপত্র আপলোড করতে হয়?",
+        "expected_evidence_hint": "birth_registration_application_process_cleaned_016"
+      },
+      "elapsed_seconds": 18.63,
+      "result": {
+        "query": "নতুন বাচ্চার জন্মসনদ করতে কী কী প্রমাণপত্র আপলোড করতে হয়?",
+        "model": "qwen3:8b",
+        "method": "civic",
+        "answer": "সংযুক্ত করতে হবে: - জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nসংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nআপনার বর্ণিত `প্রয়োজনীয় ফাইল আপলোড করেননি` ধরনের নির্দিষ্ট error message-এর পূর্ণ troubleshooting এই ডেটাসেটে নেই। তবে প্রমাণকগুলো সঠিক আলাদা ঘরে যুক্ত হয়েছে কিনা, ফাইল ফরম্যাট/সাইজ গ্রহণযোগ্য কিনা, এবং সব বাধ্যতামূলক প্রমাণক সংযুক্ত হয়েছে কিনা যাচাই করা উচিত। সমস্যা চলতে থাকলে সংশ্লিষ্ট নিবন্ধন কার্যালয় বা BDRIS সহায়তার সঙ্গে যোগাযোগ করা নিরাপদ।\n\nSources: birth_registration_application_process_cleaned_016_01",
+        "sources": [
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_৯_02",
+            "content": "Service: birth and death registration\nDocument type: legal_rules\nTitle: জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮\nChapter: দ্বিতীয় অধ্যায়: জন্ম নিবন্ধন\nLegal unit: বিধি ৯ জন্ম নিবন্ধন\nContent: (ক) ব্যক্তির জন্মের ৪৫ (পঁয়তাল্লিশ) দিনের মধ্যে দাখিলকৃত আবেদনপত্রের সহিত নিম্নলিখিত প্রমাণাদি সংযুক্ত করিতে হইবে, যথা:\n(অ) জন্মস্থান ও জন্ম তারিখের প্রমাণ হিসাবে সংশ্লিষ্ট চিকিৎসা প্রতিষ্ঠানের ছাড়পত্র বা উক্ত প্রতিষ্ঠান হইতে প্রাপ্ত জন্ম সংক্রান্ত সনদের সত্যায়িত অনুলিপি অথবা বার্থ এটেন্ডেন্ট এর প্রত্যয়ন বা অন্য কোন প্রমাণপত্র অথবা (আ) ব্যক্তির স্থায়ী ঠিকানার প্রমাণ হিসাবে ব্যক্তির নিজের বা পিতা বা মাতা বা পিতামহ বা পিতামহীর দ্বারা স্বনামে স্থায়ী ঠিকানা হিসাবে ঘোষিত আবাসস্থলের বিপরীতে হালনাগাদ কর পরিশোধের প্রমাণপত্র অথবা পিতা বা মাতা বা পিতামহ বা পিতামহীর জাতীয় পরিচয়পত্র বা পাসপোর্টে ঘোষিত স্থায়ী ঠিকানা বা অন্যকোন প্রমাণপত্র এবং জন্ম ও মৃত্যু নিবন্ধনের দ্বৈততা পরিহার করিবার লক্ষ্যে, প্রযোজ্য ক্ষেত্রে, জন্ম নিবন্ধনাধীন ব্যক্তির পিতা ও মাতার জন্ম নিবন্ধন ন¤¦র অথবা জাতীয় পরিচয়পত্র নম্বর উল্লেখসহ উহার সনদ দাখিল করিতে হইবে (ই) নদী ভাঙ্গন বা অন্য কোন কারণে স্থায়ী ঠিকানা বিলুপ্ত হইয়া থাকিলে নতুন স্থায়ী বসতির অনুকূলে প্রমাণক হিসাবে জমি বা বাড়ি ক্রয়ের দলিল, খাজনা ও কর পরিশোধের রসিদ, প্রভৃতি দাখিল করিলে নতুন বসতির ঠিকানা স্থায়ী ঠিকানা হিসাবে গণ্য করা যাইবে (ঈ) কোন কারণে কোন ব্যক্তির স্থায়ী ঠিকানা না থাকিলে স্থায়ী ঠিকানার স্থানে অপ্রাপ্য লিখিয়া জন্মস্থানের নিবন্ধকের নিকট জন্ম নিবন্ধন করিতে হইবে এবং এই ক্ষেত্রে আইনের ধারা ৯ এর উপ-ধারা",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth_death",
+              "document_type": "legal_rules",
+              "title": "জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮",
+              "source_file": "birth_and_death_registration_rules_2018.docx",
+              "source_path": "md/birth_and_death_registration_rules_2018.md",
+              "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "chapter": "দ্বিতীয় অধ্যায়: জন্ম নিবন্ধন",
+              "legal_unit_type": "বিধি",
+              "legal_unit_no": "৯",
+              "section_title": "জন্ম নিবন্ধন",
+              "part_index": 2,
+              "search_aliases": "act, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, civil registration, date of birth correction, death certificate, death certificate registration, death registration, death registration certificate, father mother information, law, legal requirement, legal rule, local government office, online birth registration, online death registration, parent information, parents registration, registrar office, registration office, registration rule, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম তারিখ সংশোধন, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 458,
+              "retrieval_token_count": 643,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.8000457882881165,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_002_01",
+            "content": "Service: birth and death registration\nDocument type: application_process\nTitle: জন্ম নিবন্ধিকরণ প্রক্রিয়া\nSection: আবেদন করার পূর্ব প্রস্তুতি\nContent: নতুন জন্ম নিবন্ধন আবেদনের পূর্বে প্রয়োজনীয় তথ্য ও ডকুমেন্ট সংগ্রহ করে রাখুন।\n\nজন্ম নিবন্ধনের ক্ষেত্রে নিম্নোক্ত তিন ধরনের ঠিকানার তথ্য প্রয়োজন হবে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রতিটি ঠিকানার জন্য নিম্নোক্ত তথ্য প্রয়োজন হতে পারে:\n\n- ইউনিয়ন পরিষদ/পৌরসভা/সিটি কর্পোরেশন/ক্যান্টনমেন্টের নাম\n- ওয়ার্ড নম্বর\n- ডাকঘর\n- গ্রাম/পাড়া/মহল্লা\n- বাসা ও সড়কের নাম ও নম্বর\n\nসকল তথ্য বাংলা ও ইংরেজি উভয় ভাষায় সঠিক বানানে লিখতে হবে।",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth",
+              "document_type": "application_process",
+              "title": "জন্ম নিবন্ধিকরণ প্রক্রিয়া",
+              "source_file": "birth_registration_application_process.docx",
+              "source_path": "md/birth_registration_application_process_cleaned.md",
+              "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "section_title": "আবেদন করার পূর্ব প্রস্তুতি",
+              "section_index": 2,
+              "part_index": 1,
+              "search_aliases": "application process, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, citizen service, civil registration, how to apply, online application, online birth registration, registration process, required documents, আবেদন পদ্ধতি, আবেদন প্রক্রিয়া, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, ধাপে ধাপে আবেদন, নিবন্ধন পদ্ধতি, নিবন্ধন প্রক্রিয়া, প্রয়োজনীয় কাগজপত্র",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 155,
+              "retrieval_token_count": 290,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.5799944400787354,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_009_01",
+            "content": "Service: birth and death registration\nDocument type: correction_process\nTitle: জন্ম তথ্য সংশোধনের জন্য আবেদন\nSection: প্রয়োজনীয় প্রমাণপত্র\nContent: এই ক্ষেত্রে পিতা বা মাতার মৃত্যুর প্রমাণপত্র দাখিল করতে হবে।\n\n---",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth",
+              "document_type": "correction_process",
+              "title": "জন্ম তথ্য সংশোধনের জন্য আবেদন",
+              "source_file": "application_for_birth_information_correction.docx",
+              "source_path": "md/application_for_birth_information_correction_cleaned.md",
+              "source_url": "https://bdris.gov.bd/br/correction",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "section_title": "প্রয়োজনীয় প্রমাণপত্র",
+              "section_index": 9,
+              "part_index": 1,
+              "search_aliases": "amend registration information, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, certificate, certificate correction, civil registration, death certificate correction, father mother information, fix certificate information, name correction, online birth registration, parent information, parents registration, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন সংশোধন, সংশোধন আবেদন",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 49,
+              "retrieval_token_count": 193,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.5623095035552979,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_016_01",
+            "content": "Service: birth and death registration\nDocument type: application_process\nTitle: জন্ম নিবন্ধিকরণ প্রক্রিয়া\nSection: সংযুক্ত করতে হবে\nContent: - জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nসংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\n---",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth",
+              "document_type": "application_process",
+              "title": "জন্ম নিবন্ধিকরণ প্রক্রিয়া",
+              "source_file": "birth_registration_application_process.docx",
+              "source_path": "md/birth_registration_application_process_cleaned.md",
+              "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "section_title": "সংযুক্ত করতে হবে",
+              "section_index": 16,
+              "part_index": 1,
+              "search_aliases": "application process, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, citizen service, civil registration, date of birth correction, how to apply, online application, online birth registration, registration process, required documents, আবেদন পদ্ধতি, আবেদন প্রক্রিয়া, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম তারিখ সংশোধন, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, ধাপে ধাপে আবেদন, নিবন্ধন পদ্ধতি, নিবন্ধন প্রক্রিয়া, প্রয়োজনীয় কাগজপত্র",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 83,
+              "retrieval_token_count": 230,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.559694230556488,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_02_cleaned_010_01",
+            "content": "Service: birth and death registration\nDocument type: application_process\nTitle: জন্ম নিবন্ধনের আবেদন প্রসেস\nSection: ধাপ ৮: প্রয়োজনীয় প্রমাণক সংযুক্তি\nContent: নিম্নোক্ত প্রমাণক সংযুক্ত করুন:\n\n- বয়স প্রমাণের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nএরপর “পরবর্তী” বাটনে ক্লিক করুন।",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth",
+              "document_type": "application_process",
+              "title": "জন্ম নিবন্ধনের আবেদন প্রসেস",
+              "source_file": "birth_registration_application_process_02.docx",
+              "source_path": "md/birth_registration_application_process_02_cleaned.md",
+              "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "section_title": "ধাপ ৮: প্রয়োজনীয় প্রমাণক সংযুক্তি",
+              "section_index": 10,
+              "part_index": 1,
+              "search_aliases": "application process, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, citizen service, civil registration, how to apply, online application, online birth registration, registration process, required documents, আবেদন পদ্ধতি, আবেদন প্রক্রিয়া, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, ধাপে ধাপে আবেদন, নিবন্ধন পদ্ধতি, নিবন্ধন প্রক্রিয়া, প্রয়োজনীয় কাগজপত্র",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 72,
+              "retrieval_token_count": 207,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.5590645670890808,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১০_01",
+            "content": "Service: birth and death registration\nDocument type: legal_rules\nTitle: জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮\nChapter: তৃতীয় অধ্যায়: মৃত্যু নিবন্ধন\nLegal unit: বিধি ১০ প্রবাসীগণের জন্ম নিবন্ধন\nContent: (১) বিদেশে অবস্থিত বাংলাদেশ দূতাবাসের নিবন্ধক জমনি ফরম-১ অনুযায়ী আবেদনপত্রের সহিত নিম্নবর্ণিত তথ্যাদি প্রাপ্তি সাপেক্ষে তাহার অধিক্ষেত্রে বসবাসকারী বা জন্ম গ্রহণকারী ব্যক্তির জন্ম নিবন্ধন করিবেন, যথা:- (ক) জন্মস্থান ও জন্ম তারিখের প্রমাণ হিসাবে সংশ্লিষ্ট চিকিৎসা প্রতিষ্ঠানের ছাড়পত্র বা উক্ত প্রতিষ্ঠান হইতে প্রাপ্ত জন্ম সংক্রান্ত সনদের অনুলিপি অথবা বার্থ এটেন্ডেন্টের প্রত্যয়ন বা সংশ্লিষ্ট ব্যক্তির মেশিন রিডেবল পাসপোর্টের প্রথম ২ (দুই) পাতার অনুলিপি (খ) পিতা বা মাতার মেশিন রিডেবল পাসপোর্টের প্রথম ০৭ (সাত) পাতার অনুলিপি (গ) পিতা বা মাতা অথবা নিজের পাসপোর্টে বর্ণিত স্থায়ী ঠিকানাই ব্যক্তির স্থায়ী ঠিকানা হিসাবে গণ্য হইবে (ঘ) আবেদনকারী কোন যৌক্তিক কারণে বাংলাদেশী পাসপোর্ট উপস্থাপনে ব্যর্থ হইলে নিবন্ধক কর্তৃক প্রয়োজনবোধে চাহিত স্থায়ী ঠিকানা বা বর্তমান ঠিকানা সংক্রান্ত অন্য কোন কাগজপত্রাদির অনুলিপি এবং (ঙ) পূর্বে জন্ম নিবন্ধন হয় নাই এই মর্মে আবেদনপত্রে আবেদনকারীর ঘোষণা। (২) আবেদন মুদ্রিত ফরমে বা অনলাইনে যে কোন পদ্ধতিতে করা যাইবে এবং মুদ্রিত ফরমে আবেদন করিলে নিবন্ধক উহা কার্যপ্রণালীতে বর্ণিত পদ্ধতি অনুসারে অনলাইনে এন্ট্রি করিবেন এবং অনলাইন আবেদনপত্রের ক্ষেত্রে, অনলাইনে আবেদন দাখিলের পর আবেদনকারী অনলাইন হইতে মুদ্রিত আবেদনপত্রের কপি নিবন্ধকের নিকট দাখিল করিবেন। (৩) উপ-বিধি (২) এর অধীন আবেদনপত্র প্রাপ্তির পর নিবন্ধক বা তৎকর্তৃক ক্ষমতাপ্রাপ্ত ব্যক্তি পরবর্তী ৭ (সাত) কার্য দিবসের মধ্যে সনদ প্রদানের তারিখ উল্লেখপূর্বক আবেদনকারীর অংশ স্বাক্ষর করিয়া উহা আবেদনকারীর নিকট হস্তান্তর করিবেন।",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth_death",
+              "document_type": "legal_rules",
+              "title": "জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮",
+              "source_file": "birth_and_death_registration_rules_2018.docx",
+              "source_path": "md/birth_and_death_registration_rules_2018.md",
+              "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "chapter": "তৃতীয় অধ্যায়: মৃত্যু নিবন্ধন",
+              "legal_unit_type": "বিধি",
+              "legal_unit_no": "১০",
+              "section_title": "প্রবাসীগণের জন্ম নিবন্ধন",
+              "part_index": 1,
+              "search_aliases": "act, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, civil registration, date of birth correction, death certificate, death certificate registration, death registration, death registration certificate, father mother information, law, legal requirement, legal rule, local government office, online birth registration, online death registration, parent information, parents registration, registrar office, registration office, registration rule, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম তারিখ সংশোধন, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 486,
+              "retrieval_token_count": 671,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.541203498840332,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          }
+        ],
+        "domain": "birth_death_registration",
+        "answer_route": "controlled",
+        "expected_evidence_present": true
+      }
+    },
+    {
+      "audit_item": {
+        "id": "birth_04_manual_online",
+        "domain": "birth_death_registration",
+        "category": "paraphrase",
+        "question": "আমার পুরোনো হাতে লেখা জন্ম নিবন্ধন অনলাইনে পাওয়া যাচ্ছে না। এখন কীভাবে ডিজিটাল করব?",
+        "expected_evidence_hint": "bdris_faq_01_q02"
+      },
+      "elapsed_seconds": 21.52,
+      "result": {
+        "query": "আমার পুরোনো হাতে লেখা জন্ম নিবন্ধন অনলাইনে পাওয়া যাচ্ছে না। এখন কীভাবে ডিজিটাল করব?",
+        "model": "qwen3:8b",
+        "method": "civic",
+        "answer": "আপনার প্রশ্নে কয়েকটি আলাদা বিষয় আছে। প্রাপ্ত সরকারি/উৎস ডেটার ভিত্তিতে অংশভাগ করে উত্তর দিচ্ছি:\n\n1. অনলাইনে নিবন্ধন খুঁজে না পেলে\nঅনলাইনে জন্ম নিবন্ধন করা থাকলে orgbdr.gov.bd ওয়েবসাইটে প্রবেশ করে **“জন্ম তথ্য যাচাই”** অপশনে ব্যক্তির জন্ম নিবন্ধন নম্বর এবং জন্ম তারিখ প্রদান করে জন্ম নিবন্ধন হয়েছে কিনা তা নিশ্চিত হওয়া যাবে।\n\nযদি এটি পুরোনো/ম্যানুয়াল নিবন্ধন হয়ে থাকে: ম্যানুয়াল জন্ম নিবন্ধনসমূহ অনলাইনে অন্তর্ভুক্তির জন্য একাধিকবার সময় দেওয়া হয়েছে। এখন একই নম্বর দিয়ে অনলাইনে অন্তর্ভুক্তির সুযোগ নেই। যে এলাকায় হাতে লেখা নিবন্ধন হয়েছিল সেই কার্যালয়ে রক্ষিত বইতে তথ্য পাওয়া গেলে, নিবন্ধক সরাসরি সেই তথ্য দিয়ে অনলাইন নিবন্ধন করে দেবেন — যদি ইতঃপূর্বে অন্য কোথাও নিবন্ধন না হয়ে থাকে। তবে নিবন্ধন নম্বর পরিবর্তিত হবে; এতে নাগরিকের কোনো ক্ষতি বা অসুবিধা হবে না।\n\n২০০৭/২০০৮ সালে হাতে লেখা নিবন্ধন ইস্যু করা হয়। পরবর্তীতে ২০১০ সালের দিকে রেজিস্টার বহি থেকে সব নিবন্ধন অনলাইনে এন্ট্রি করা হয়। ২০১০ থেকে ২০২০ সালের জুন পর্যন্ত (১০ বছর) ইউনিয়ন পরিষদ থেকে নাম সংশোধন করা যেত।\n\nগড়মিলের সাধারণ কারণসমূহ:\n• একসাথে পুরো ইউনিয়নের তথ্য এন্ট্রির সময় কিছু ভুল এন্ট্রি হয়েছে।\n• শিক্ষা সনদ জন্ম নিবন্ধন অনুযায়ী বা জন্ম নিবন্ধন শিক্ষা সনদ অনুযায়ী করা হয়নি।\n• ভিন্ন সন্তানের ক্ষেত্রে পিতামাতার নাম একই রকম লেখা হয়নি।\n• ডাক নাম দিয়ে নিবন্ধন করা হয়েছে; পরে এনআইডিতে নাম পরিবর্তিত হয়েছে।\n• স্কুলে ভর্তির সময় বয়স কমিয়ে বা বাড়িয়ে লেখা হয়েছে।\n• পিএসসি সনদে নাম, জন্ম তারিখ ও পিতামাতার নাম জন্ম সনদ বা এনআইডির সঙ্গে মেলেনি।\n• ৮ম শ্রেণির রেজিস্ট্রেশনে পিএসসি সনদ ও পিতামাতার এনআইডি অনুসরণ না করা।\n\nযদি সঠিক জন্ম নিবন্ধন নম্বর ও জন্ম তারিখ দিয়েও তথ্য না পাওয়া যায়, তাহলে সংশ্লিষ্ট নিবন্ধন কার্যালয়ের সংরক্ষিত রেকর্ড যাচাই করানো উচিত।\n\n2. পুরোনো/ম্যানুয়াল নিবন্ধন অনলাইনে না থাকলে\nম্যানুয়াল জন্ম নিবন্ধনসমূহ অনলাইনে অন্তর্ভুক্তির জন্য একাধিকবার সময় দেওয়া হয়েছে। এখন একই নম্বর দিয়ে অনলাইনে অন্তর্ভুক্তির সুযোগ নেই। যে এলাকায় হাতে লেখা নিবন্ধন হয়েছিল সেই কার্যালয়ে রক্ষিত বইতে তথ্য পাওয়া গেলে, নিবন্ধক সরাসরি সেই তথ্য দিয়ে অনলাইন নিবন্ধন করে দেবেন — যদি ইতঃপূর্বে অন্য কোথাও নিবন্ধন না হয়ে থাকে। তবে নিবন্ধন নম্বর পরিবর্তিত হবে; এতে নাগরিকের কোনো ক্ষতি বা অসুবিধা হবে না।\n\n3. জন্ম নিবন্ধনের আবেদন\nআবেদন করার পূর্ব প্রস্তুতি: নতুন জন্ম নিবন্ধন আবেদনের পূর্বে প্রয়োজনীয় তথ্য ও ডকুমেন্ট সংগ্রহ করে রাখুন।\n\nজন্ম নিবন্ধনের ক্ষেত্রে নিম্নোক্ত তিন ধরনের ঠিকানার তথ্য প্রয়োজন হবে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রতিটি ঠিকানার জন্য নিম্নোক্ত তথ্য প্রয়োজন হতে পারে:\n\n- ইউনিয়ন পরিষদ/পৌরসভা/সিটি কর্পোরেশন/ক্যান্টনমেন্টের নাম\n- ওয়ার্ড নম্বর\n- ডাকঘর\n- গ্রাম/পাড়া/মহল্লা\n- বাসা ও সড়কের নাম ও নম্বর\n\nসকল তথ্য বাংলা ও ইংরেজি উভয় ভাষায় সঠিক বানানে লিখতে হবে।\n\nধাপ ১: ওয়েবসাইটে প্রবেশ: নতুন জন্ম নিবন্ধনের জন্য:\n\nhttps://bdris.gov.bd\n\nওয়েবসাইটে প্রবেশ করুন।\n\nহোমপেজে \"জন্ম নিবন্ধন\" মেনু নির্বাচন করুন।\n\nএরপর \"জন্ম নিবন্ধন আবেদন\" অপশনে ক্লিক করুন।\n\nধাপ ২: সনদ সংগ্রহের স্থান নির্বাচন: এখানে আবেদনকারীকে নির্বাচন করতে হবে তিনি কোথা থেকে জন্ম সনদ গ্রহণ বা সংগ্রহ করতে চান।\n\nনিম্নোক্ত ঠিকানার ভিত্তিতে সনদ সংগ্রহ করা যেতে পারে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n\nসাধারণভাবে স্থায়ী ঠিকানা থেকে সনদ সংগ্রহ করার জন্য উৎসাহিত করা হয়।\n\nবিদেশে জন্মগ্রহণকারী শিশু নিকটস্থ বাংলাদেশ দূতাবাস থেকে জন্ম সনদ সংগ্রহ করতে পারে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৩: জন্ম তথ্য প্রদান: এই ধাপে আবেদনকারীর জন্মসংক্রান্ত তথ্য ধাপে ধাপে পূরণ করতে হবে।\n\nতথ্য প্রদানের সময় সতর্কতা অবলম্বন করতে হবে।\n\nজন্ম তারিখ প্রদান করার পর সিস্টেম প্রয়োজনীয় নির্দেশনা প্রদর্শন করবে।\n\nনির্দেশনা পড়ে \"আমার কাছে এই ডকুমেন্টগুলো আছে\" অপশন নির্বাচন করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৪: পিতা ও মাতার তথ্য প্রদান: এই ধাপে পিতা ও মাতার তথ্য প্রদান করতে হবে।\n\nধাপ ৫: স্থায়ী ও বর্তমান ঠিকানা প্রদান: এই ধাপে:\n\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রদান করতে হবে।\n\nযদি জন্মস্থান এবং স্থায়ী ঠিকানা একই হয়, তাহলে নির্ধারিত ঘরে টিক চিহ্ন দিলে তথ্য স্বয়ংক্রিয়ভাবে পূরণ হবে।\n\nঅন্যথায় স্থায়ী ঠিকানা ও বর্তমান ঠিকানার তথ্য আলাদাভাবে পূরণ করতে হবে।\n\nসব তথ্য সঠিকভাবে পূরণ করার পর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৬: আবেদনকারীর তথ্য ও ডকুমেন্ট সংযুক্তি: যদি ব্যক্তি নিজে আবেদন করেন, তাহলে \"নিজ\" অপশন নির্বাচন করতে হবে।\n\nঅন্য কেউ আবেদন করলে \"অন্যান্য\" অপশন নির্বাচন করতে হবে।\n\n\"অন্যান্য\" নির্বাচন করলে আবেদনকারীর জন্ম নিবন্ধন নম্বর প্রদান করতে হবে।\n\nএরপর ঘোষণা দিতে হবে যে:\n\n- প্রদত্ত তথ্যসমূহ সঠিক\n- পূর্বে জন্ম নিবন্ধন করা হয়নি\n\nসংযুক্ত করতে হবে: - জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nসংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nধাপ ৭: তথ্য যাচাই ও OTP: এই ধাপে আবেদনকারীর পূরণকৃত সকল তথ্য প্রদর্শিত হবে।\n\nসকল তথ্য সতর্কতার সাথে যাচাই করতে হবে।\n\nভুল থাকলে \"পূর্ববর্তী\" বাটনে ফিরে গিয়ে সংশোধন করতে হবে।\n\nতথ্য সঠিক হলে:\n\n- ইমেইল অথবা\n- মোবাইল নম্বর\n\nপ্রদান করতে হবে।\n\nOTP গ্রহণ: - দূতাবাসের মাধ্যমে আবেদনের ক্ষেত্রে ইমেইলে OTP যাবে।\n- বাংলাদেশের অভ্যন্তরে আবেদনের ক্ষেত্রে মোবাইল নম্বরে OTP যাবে।\n\nOTP প্রদান করার পর \"সাবমিট\" বাটনে ক্লিক করুন।\n\nSources: know_this_01_cleaned_008_01, bdris_faq_01_q02, bdris_faq_02_q03, bdris_faq_01_q03, birth_and_death_registration_rules_2018_বিধি_১৯_02, birth_and_death_registration_rules_2018_বিধি_২০_01, birth_registration_application_process_cleaned_008_01, birth_registration_application_process_cleaned_002_01",
+        "sources": [
+          {
+            "id": "bdris_faq_01_q02",
+            "content": "Service: birth and death registration\nDocument type: faq\nCategory: manual_to_online_migration\nTitle: জন্ম ও মৃত্যু নিবন্ধন বিষয়ক প্রায়শই জিজ্ঞাসিত প্রশ্ন\nTitle EN: FAQs on Birth and Death Registration\nQuestion: ম্যানুয়াল জন্ম নিবন্ধন, যেগুলি এখনও অনলাইনে করা হয়নি — এগুলির বিষয়ে করণীয় কী?\nAnswer: ম্যানুয়াল জন্ম নিবন্ধনসমূহ অনলাইনে অন্তর্ভুক্তির জন্য একাধিকবার সময় দেওয়া হয়েছে। এখন একই নম্বর দিয়ে অনলাইনে অন্তর্ভুক্তির সুযোগ নেই। যে এলাকায় হাতে লেখা নিবন্ধন হয়েছিল সেই কার্যালয়ে রক্ষিত বইতে তথ্য পাওয়া গেলে, নিবন্ধক সরাসরি সেই তথ্য দিয়ে অনলাইন নিবন্ধন করে দেবেন — যদি ইতঃপূর্বে অন্য কোথাও নিবন্ধন না হয়ে থাকে। তবে নিবন্ধন নম্বর পরিবর্তিত হবে; এতে নাগরিকের কোনো ক্ষতি বা অসুবিধা হবে না।\nLegal references: \nKeywords BN: ম্যানুয়াল নিবন্ধন, অনলাইন অন্তর্ভুক্তি, হাতে লেখা সনদ, নম্বর পরিবর্তন\nKeywords EN: manual registration, online migration, handwritten certificate, number change",
+            "metadata": {
+              "doc_id": "bdris_faq_01",
+              "title": "জন্ম ও মৃত্যু নিবন্ধন বিষয়ক প্রায়শই জিজ্ঞাসিত প্রশ্ন",
+              "title_en": "FAQs on Birth and Death Registration",
+              "source_url": "https://orgbdr.portal.gov.bd/pages/static-pages/6922e065933eb65569e26d6e",
+              "issuing_authority": "রেজিস্ট্রার জেনারেলের কার্যালয়, জন্ম ও মৃত্যু নিবন্ধন",
+              "issuing_authority_en": "Office of the Registrar General, Birth and Death Registration",
+              "department": "স্থানীয় সরকার বিভাগ",
+              "department_en": "Local Government Division",
+              "system": "BDRIS",
+              "last_updated": "2026-04-04",
+              "language": "bn",
+              "doc_type": "faq",
+              "domain": "civil_registration",
+              "country": "BD",
+              "total_faqs": 16,
+              "source_path": "faqs_birth_death_registration_01.json",
+              "document_type": "faq",
+              "category": "manual_to_online_migration",
+              "faq_number": 2,
+              "service": "birth_death_registration",
+              "service_scope": "birth",
+              "search_aliases": "apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, cancel duplicate birth certificate, cancel duplicate death certificate, certificate, citizen question, civil registration, common question, duplicate certificate cancellation, FAQ, local government office, online birth registration, question answer, registrar office, registration office, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, একাধিক জন্ম সনদ বাতিল, একাধিক মৃত্যু সনদ বাতিল, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, ডুপ্লিকেট জন্ম সনদ বাতিল, প্রশ্ন উত্তর, সাধারণ জিজ্ঞাসা",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 221,
+              "retrieval_token_count": 383,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 1.0431483745574952,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "bdris_faq_02_q03",
+            "content": "Service: birth and death registration\nDocument type: faq\nCategory: data_discrepancy\nTitle: জন্ম ও মৃত্যু নিবন্ধন সংক্রান্ত সচরাচর জিজ্ঞাসিত প্রশ্ন ও তার উত্তর\nTitle EN: Frequently Asked Questions on Birth and Death Registration\nQuestion: হাতে লেখা জন্ম নিবন্ধনের অনলাইন কপিতে হাতে লেখা তথ্য, শিক্ষাগত সনদ বা জাতীয় পরিচয়পত্রের সঙ্গে গড়মিল দেখা যাচ্ছে — কারণ কী?\nAnswer: ২০০৭/২০০৮ সালে হাতে লেখা নিবন্ধন ইস্যু করা হয়। পরবর্তীতে ২০১০ সালের দিকে রেজিস্টার বহি থেকে সব নিবন্ধন অনলাইনে এন্ট্রি করা হয়। ২০১০ থেকে ২০২০ সালের জুন পর্যন্ত (১০ বছর) ইউনিয়ন পরিষদ থেকে নাম সংশোধন করা যেত।\n\nগড়মিলের সাধারণ কারণসমূহ:\n• একসাথে পুরো ইউনিয়নের তথ্য এন্ট্রির সময় কিছু ভুল এন্ট্রি হয়েছে।\n• শিক্ষা সনদ জন্ম নিবন্ধন অনুযায়ী বা জন্ম নিবন্ধন শিক্ষা সনদ অনুযায়ী করা হয়নি।\n• ভিন্ন সন্তানের ক্ষেত্রে পিতামাতার নাম একই রকম লেখা হয়নি।\n• ডাক নাম দিয়ে নিবন্ধন করা হয়েছে; পরে এনআইডিতে নাম পরিবর্তিত হয়েছে।\n• স্কুলে ভর্তির সময় বয়স কমিয়ে বা বাড়িয়ে লেখা হয়েছে।\n• পিএসসি সনদে নাম, জন্ম তারিখ ও পিতামাতার নাম জন্ম সনদ বা এনআইডির সঙ্গে মেলেনি।\n• ৮ম শ্রেণির রেজিস্ট্রেশনে পিএসসি সনদ ও পিতামাতার এনআইডি অনুসরণ না করা।\nLegal references: \nKeywords BN: হাতে লেখা নিবন্ধন, তথ্য গড়মিল, অনলাইন এন্ট্রি, শিক্ষাগত সনদ, পিএসসি, এনআইডি\nKeywords EN: manual registration, data discrepancy, online entry, education certificate, PSC, NID",
+            "metadata": {
+              "doc_id": "bdris_faq_02",
+              "title": "জন্ম ও মৃত্যু নিবন্ধন সংক্রান্ত সচরাচর জিজ্ঞাসিত প্রশ্ন ও তার উত্তর",
+              "title_en": "Frequently Asked Questions on Birth and Death Registration",
+              "source_url": "https://goradubaup.netrokona.gov.bd/pages/static-pages/69708eb0a31054345f15bdab",
+              "issuing_authority": "গড়াডোবা ইউনিয়ন পরিষদ",
+              "issuing_authority_en": "Goraduba Union Parishad",
+              "district": "নেত্রকোনা",
+              "district_en": "Netrokona",
+              "last_updated": "2024-12-25",
+              "language": "bn",
+              "doc_type": "faq",
+              "domain": "civil_registration",
+              "country": "BD",
+              "total_faqs": 10,
+              "source_path": "faqs_birth_death_registration_02.json",
+              "document_type": "faq",
+              "category": "data_discrepancy",
+              "faq_number": 3,
+              "service": "birth_death_registration",
+              "service_scope": "birth",
+              "search_aliases": "amend registration information, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, certificate, certificate correction, citizen question, civil registration, common question, date of birth correction, death certificate correction, FAQ, father mother information, fix certificate information, name correction, online birth registration, parent information, parents registration, question answer, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম তারিখ সংশোধন, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, প্রশ্ন উত্তর, মৃত্যু নিবন্ধন সংশোধন, সংশোধন আবেদন, সাধারণ জিজ্ঞাসা",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 372,
+              "retrieval_token_count": 545,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.9308537602424621,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "bdris_faq_01_q03",
+            "content": "Service: birth and death registration\nDocument type: faq\nCategory: data_correction_legacy\nTitle: জন্ম ও মৃত্যু নিবন্ধন বিষয়ক প্রায়শই জিজ্ঞাসিত প্রশ্ন\nTitle EN: FAQs on Birth and Death Registration\nQuestion: পূর্বের সফটওয়্যারে সংশোধিত কোনো তথ্য BDRIS সফটওয়্যারে পাওয়া না গেলে কী করতে হবে?\nAnswer: পূর্বে সংশোধিত তথ্য BDRIS-এ না পাওয়া গেলে, সংশোধনের বিস্তারিত তালিকা নির্বাহী অফিসার/ডিডিএলজির মাধ্যমে রেজিস্ট্রার জেনারেলের কার্যালয়ে পাঠালে তা হালনাগাদ করে দেওয়া হবে।\nLegal references: \nKeywords BN: BDRIS, পূর্ববর্তী সফটওয়্যার, তথ্য হালনাগাদ, ডিডিএলজি, রেজিস্ট্রার জেনারেল\nKeywords EN: BDRIS, previous software, data update, DDLG, Registrar General",
+            "metadata": {
+              "doc_id": "bdris_faq_01",
+              "title": "জন্ম ও মৃত্যু নিবন্ধন বিষয়ক প্রায়শই জিজ্ঞাসিত প্রশ্ন",
+              "title_en": "FAQs on Birth and Death Registration",
+              "source_url": "https://orgbdr.portal.gov.bd/pages/static-pages/6922e065933eb65569e26d6e",
+              "issuing_authority": "রেজিস্ট্রার জেনারেলের কার্যালয়, জন্ম ও মৃত্যু নিবন্ধন",
+              "issuing_authority_en": "Office of the Registrar General, Birth and Death Registration",
+              "department": "স্থানীয় সরকার বিভাগ",
+              "department_en": "Local Government Division",
+              "system": "BDRIS",
+              "last_updated": "2026-04-04",
+              "language": "bn",
+              "doc_type": "faq",
+              "domain": "civil_registration",
+              "country": "BD",
+              "total_faqs": 16,
+              "source_path": "faqs_birth_death_registration_01.json",
+              "document_type": "faq",
+              "category": "data_correction_legacy",
+              "faq_number": 3,
+              "service": "birth_death_registration",
+              "service_scope": "birth",
+              "search_aliases": "amend registration information, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, certificate, certificate correction, citizen question, civil registration, common question, death certificate correction, FAQ, fix certificate information, name correction, online birth registration, question answer, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, প্রশ্ন উত্তর, মৃত্যু নিবন্ধন সংশোধন, সংশোধন আবেদন, সাধারণ জিজ্ঞাসা",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 177,
+              "retrieval_token_count": 328,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.4662097990512848,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১৯_02",
+            "content": "Service: birth and death registration\nDocument type: legal_rules\nTitle: জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮\nChapter: ষষ্ঠ অধ্যায়: তথ্য প্রযুক্তির মাধ্যমে জন্ম ও মৃত্যুর তথ্য সংরক্ষণ ও প্রেরণ\nLegal unit: বিধি ১৯ তথ্য প্রযুক্তির মাধ্যমে জন্ম ও মৃত্যুর তথ্য সংরক্ষণ, গোপনীয়তা ও সরবরাহ\nContent: (৪) নিবন্ধক তাহার কার্যালয়ে নিয়মিত বেতন কাঠামোর আওতায় চাকরিরত কোন কর্মচারীর অনুকূলে রেজিস্ট্রার জেনারেল এর নিকট হইতে অঁঃযড়ৎরুবফ চবৎংড়হ হিসাবে 'ব্যবহারকারী পরিচিতি' ও 'পাসওয়ার্ড' পাইবেন, যাহার সাহায্যে উক্ত কর্মচারী সফ্টওয়্যারটিতে প্রবেশ করিয়া জন্ম ও মৃত্যু নিবন্ধন বিষয়ক কার্যাদি সম্পন্ন করিতে পারিবেন এবং এইরূপ সকল ব্যবহারকারীর পরিচিতি সংশ্লিষ্ট উপজেলা নির্বাহী অফিসার এবং উপ-পরিচালক, স্থানীয় সরকার কর্তৃক যথাযথভাবে যাচাইকৃত হইতে হইবে। (৫) Data entry operator বা Informant হিসাবে নিবন্ধকের চাহিদা অনুযায়ী তাহার কার্যালয়ে বা অধিক্ষেত্রে এক বা একাধিক ব্যক্তিকে 'ব্যবহারকারী পরিচিতি' ও 'পাসওয়ার্ড' প্রদান করা হইবে যাহারা কেবল জন্ম ও মৃত্যুর তথ্য প্রদানের এখতিয়ারসম্পন্ন হইবেন। (৬) ই-স্বাক্ষর পদ্ধতি চালু হইলে জন্ম ও মৃত্যুর তথ্য লিপিবদ্ধ হইবার পর নিবন্ধক তাহার অনুকূলে প্রদেয় Register এর 'ব্যবহারকারী পরিচিতি' ও 'পাসওয়ার্ড' ব্যবহার করিয়া ই-স্বাক্ষর প্রদানপূর্বক সনদ প্রিন্ট করিবেন এবং নিবন্ধক তাহার কার্যালয়ের অন্যান্য পাসওয়ার্ডধারীদের উপর ন্যস্ত দায়িত্বও পালন করিবার অধিকারী হইবেন এবং নিবন্ধক ব্যতীত তাহার কার্যালয়ের অপর কোন কর্মচারী সনদ প্রিন্ট করিবার সুযোগ লাভ করিবে না। (৭) পররাষ্ট্র মন্ত্রণালয়ের একজন সহকারী সচিব বা তদূর্ধ্ব পদমর্যাদার কর্মচারী বিদেশে অবস্থিত বাংলাদেশ দূতাবাসমূহের জন্য এবং জেলা প্রশাসক কার্যালয়ের উপ-পরিচালক, স্থানীয় সরকার ও উপজেলা নির্বাহী অফিসার স্ব-স্ব অধিক্ষেত্রে Local Administrator হিসাবে দায়িত্ব পালন করিবেন।",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth_death",
+              "document_type": "legal_rules",
+              "title": "জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮",
+              "source_file": "birth_and_death_registration_rules_2018.docx",
+              "source_path": "md/birth_and_death_registration_rules_2018.md",
+              "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "chapter": "ষষ্ঠ অধ্যায়: তথ্য প্রযুক্তির মাধ্যমে জন্ম ও মৃত্যুর তথ্য সংরক্ষণ ও প্রেরণ",
+              "legal_unit_type": "বিধি",
+              "legal_unit_no": "১৯",
+              "section_title": "তথ্য প্রযুক্তির মাধ্যমে জন্ম ও মৃত্যুর তথ্য সংরক্ষণ, গোপনীয়তা ও সরবরাহ",
+              "part_index": 2,
+              "search_aliases": "act, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, cancel duplicate birth certificate, cancel duplicate death certificate, certificate, certificate verification, civil registration, death certificate, death certificate registration, death registration, death registration certificate, duplicate certificate cancellation, law, legal requirement, legal rule, local government office, online birth registration, online death registration, registrar office, registration office, registration rule, registration verification, verify certificate, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, একাধিক জন্ম সনদ বাতিল, একাধিক মৃত্যু সনদ বাতিল, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, ডুপ্লিকেট জন্ম সনদ বাতিল, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 496,
+              "retrieval_token_count": 716,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.4378380787372589,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_২০_01",
+            "content": "Service: birth and death registration\nDocument type: legal_rules\nTitle: জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮\nChapter: সপ্তম অধ্যায়: বিবিধ\nLegal unit: বিধি ২০ অনলাইনে আবেদন বা তথ্য প্রদান\nContent: (১) চিকিৎসা প্রতিষ্ঠান বা স্বাস্থ্যকর্মীগণ নিবন্ধনযোগ্য ব্যক্তির জন্ম বা মৃত্যুর তথ্য ৪৫ (পঁয়তাল্লিশ) দিনের মধ্যে নিবন্ধনের যোগ্য স্থানের নিবন্ধকের নিকট অনলাইনে প্রদান করিতে পারিবেন। (২) বিদেশে জন্ম গ্রহণকারী শিশু ব্যতীত বাংলাদেশ দূতাবাস নিবন্ধনযোগ্য অন্যান্য ব্যক্তির জন্ম বা মৃত্যুর তথ্য ব্যক্তির স্থায়ী ঠিকানার নিবন্ধকের নিকট অনলাইনে প্রদান করিতে পারিবেন। (৩) সরকারের সিদ্ধান্ত অনুযায়ী দূতাবাসসমূহ বিদেশে জন্ম হয় নাই তবে বৈধ পাসপোর্টধারী এমন কোন প্রবাসী বাংলাদেশী নাগরিকের জন্ম নিবন্ধন করিতে পারিবে। (৪) উপ-বিধি (১) এর অধীন অনলাইনে তথ্য প্রেরণের পর কম্পিউটার জেনারেটেড নম্বরসহ ব্যক্তির আবেদনপত্রের একটি প্রিন্ট কপি পাওয়া যাইবে এবং উক্ত প্রিন্ট কপির সহিত প্রয়োজনীয় দলিলাদি ও প্রত্যয়ন সংযুক্ত করিয়া, ক্ষেত্র বিশেষে, ব্যক্তি বা ব্যক্তির অভিভাবক সশরীরে নিবন্ধকের নিকট উহা দাখিল করিবেন। (৫) উপ-বিধি (৪) এর বিধান অনুযায়ী আবেদনপত্র প্রাপ্তির পর নিবন্ধক জন্ম নিবন্ধনের ক্ষেত্রে বিধি ৯ বা, ক্ষেত্রমত, বিধি ১০ এবং মৃত্যু নিবন্ধনের ক্ষেত্রে বিধি ১১ বা, ক্ষেত্রমত, বিধি ১২ অনুযায়ী ব্যবস্থা গ্রহণ করিবেন।",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth_death",
+              "document_type": "legal_rules",
+              "title": "জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮",
+              "source_file": "birth_and_death_registration_rules_2018.docx",
+              "source_path": "md/birth_and_death_registration_rules_2018.md",
+              "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "chapter": "সপ্তম অধ্যায়: বিবিধ",
+              "legal_unit_type": "বিধি",
+              "legal_unit_no": "২০",
+              "section_title": "অনলাইনে আবেদন বা তথ্য প্রদান",
+              "part_index": 1,
+              "search_aliases": "act, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, civil registration, death certificate, death certificate registration, death registration, death registration certificate, law, legal requirement, legal rule, local government office, online birth registration, online death registration, registrar office, registration office, registration rule, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 346,
+              "retrieval_token_count": 509,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.3334780347347259,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_008_01",
+            "content": "Service: birth and death registration\nDocument type: application_process\nTitle: জন্ম নিবন্ধিকরণ প্রক্রিয়া\nSection: ধাপ ১: ওয়েবসাইটে প্রবেশ\nContent: নতুন জন্ম নিবন্ধনের জন্য:\n\nhttps://bdris.gov.bd\n\nওয়েবসাইটে প্রবেশ করুন।\n\nহোমপেজে \"জন্ম নিবন্ধন\" মেনু নির্বাচন করুন।\n\nএরপর \"জন্ম নিবন্ধন আবেদন\" অপশনে ক্লিক করুন।\n\n---",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth",
+              "document_type": "application_process",
+              "title": "জন্ম নিবন্ধিকরণ প্রক্রিয়া",
+              "source_file": "birth_registration_application_process.docx",
+              "source_path": "md/birth_registration_application_process_cleaned.md",
+              "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "section_title": "ধাপ ১: ওয়েবসাইটে প্রবেশ",
+              "section_index": 8,
+              "part_index": 1,
+              "search_aliases": "application process, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, citizen service, civil registration, how to apply, online application, online birth registration, online portal, registration process, required documents, service portal, website, অনলাইন আবেদন, অনলাইন পোর্টাল, আবেদন পদ্ধতি, আবেদন প্রক্রিয়া, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, ওয়েবসাইটে আবেদন, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, ধাপে ধাপে আবেদন, নিবন্ধন পদ্ধতি, নিবন্ধন প্রক্রিয়া, প্রয়োজনীয় কাগজপত্র",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 78,
+              "retrieval_token_count": 233,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.3261494302749634,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "know_this_01_cleaned_008_01",
+            "content": "Service: birth and death registration\nDocument type: general_guidance\nTitle: জেনে রাখুন\nSection: একজন ব্যক্তি জন্ম নিবন্ধন হয়েছে কিনা তা কিভাবে পরীক্ষা করবে?\nContent: অনলাইনে জন্ম নিবন্ধন করা থাকলে orgbdr.gov.bd ওয়েবসাইটে প্রবেশ করে **“জন্ম তথ্য যাচাই”** অপশনে ব্যক্তির জন্ম নিবন্ধন নম্বর এবং জন্ম তারিখ প্রদান করে জন্ম নিবন্ধন হয়েছে কিনা তা নিশ্চিত হওয়া যাবে।",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth",
+              "document_type": "general_guidance",
+              "title": "জেনে রাখুন",
+              "source_file": "know_this_01.docx",
+              "source_path": "md/know_this_01_cleaned.md",
+              "source_url": "https://orgbdr.portal.gov.bd/pages/static-pages/6922de23933eb65569e18817",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "section_title": "একজন ব্যক্তি জন্ম নিবন্ধন হয়েছে কিনা তা কিভাবে পরীক্ষা করবে?",
+              "section_index": 8,
+              "part_index": 1,
+              "search_aliases": "application process, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, certificate verification, citizen service, civil registration, date of birth correction, how to apply, online application, online birth registration, online portal, registration process, registration verification, required documents, service portal, verify certificate, website, অনলাইন আবেদন, অনলাইন পোর্টাল, আবেদন পদ্ধতি, আবেদন প্রক্রিয়া, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, ওয়েবসাইটে আবেদন, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম তারিখ সংশোধন, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, ধাপে ধাপে আবেদন, নিবন্ধন পদ্ধতি, নিবন্ধন প্রক্রিয়া, প্রয়োজনীয় কাগজপত্র",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 85,
+              "retrieval_token_count": 264,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.0,
+            "retrievers": [
+              "safe_path"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_002_01",
+            "content": "Service: birth and death registration\nDocument type: application_process\nTitle: জন্ম নিবন্ধিকরণ প্রক্রিয়া\nSection: আবেদন করার পূর্ব প্রস্তুতি\nContent: নতুন জন্ম নিবন্ধন আবেদনের পূর্বে প্রয়োজনীয় তথ্য ও ডকুমেন্ট সংগ্রহ করে রাখুন।\n\nজন্ম নিবন্ধনের ক্ষেত্রে নিম্নোক্ত তিন ধরনের ঠিকানার তথ্য প্রয়োজন হবে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রতিটি ঠিকানার জন্য নিম্নোক্ত তথ্য প্রয়োজন হতে পারে:\n\n- ইউনিয়ন পরিষদ/পৌরসভা/সিটি কর্পোরেশন/ক্যান্টনমেন্টের নাম\n- ওয়ার্ড নম্বর\n- ডাকঘর\n- গ্রাম/পাড়া/মহল্লা\n- বাসা ও সড়কের নাম ও নম্বর\n\nসকল তথ্য বাংলা ও ইংরেজি উভয় ভাষায় সঠিক বানানে লিখতে হবে।",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth",
+              "document_type": "application_process",
+              "title": "জন্ম নিবন্ধিকরণ প্রক্রিয়া",
+              "source_file": "birth_registration_application_process.docx",
+              "source_path": "md/birth_registration_application_process_cleaned.md",
+              "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "section_title": "আবেদন করার পূর্ব প্রস্তুতি",
+              "section_index": 2,
+              "part_index": 1,
+              "search_aliases": "application process, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, citizen service, civil registration, how to apply, online application, online birth registration, registration process, required documents, আবেদন পদ্ধতি, আবেদন প্রক্রিয়া, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, ধাপে ধাপে আবেদন, নিবন্ধন পদ্ধতি, নিবন্ধন প্রক্রিয়া, প্রয়োজনীয় কাগজপত্র",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 155,
+              "retrieval_token_count": 290,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.0,
+            "retrievers": [
+              "safe_path"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_016_01",
+            "content": "Service: birth and death registration\nDocument type: application_process\nTitle: জন্ম নিবন্ধিকরণ প্রক্রিয়া\nSection: সংযুক্ত করতে হবে\nContent: - জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nসংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\n---",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth",
+              "document_type": "application_process",
+              "title": "জন্ম নিবন্ধিকরণ প্রক্রিয়া",
+              "source_file": "birth_registration_application_process.docx",
+              "source_path": "md/birth_registration_application_process_cleaned.md",
+              "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "section_title": "সংযুক্ত করতে হবে",
+              "section_index": 16,
+              "part_index": 1,
+              "search_aliases": "application process, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, citizen service, civil registration, date of birth correction, how to apply, online application, online birth registration, registration process, required documents, আবেদন পদ্ধতি, আবেদন প্রক্রিয়া, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম তারিখ সংশোধন, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, ধাপে ধাপে আবেদন, নিবন্ধন পদ্ধতি, নিবন্ধন প্রক্রিয়া, প্রয়োজনীয় কাগজপত্র",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 83,
+              "retrieval_token_count": 230,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.0,
+            "retrievers": [
+              "safe_path"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_019_01",
+            "content": "Service: birth and death registration\nDocument type: application_process\nTitle: জন্ম নিবন্ধিকরণ প্রক্রিয়া\nSection: ধাপ ৮: আবেদন সম্পন্ন ও সনদ গ্রহণ\nContent: \"সাবমিট\" বাটনে ক্লিক করার পর আবেদন সফলভাবে জমা হয়েছে মর্মে বার্তা প্রদর্শিত হবে।\n\nএখানে একটি আবেদনপত্র নম্বর (Application ID) প্রদান করা হবে।\n\nএই নম্বর:\n\n- মোবাইল নম্বরে\n- ইমেইলে\n\nপাঠানো হবে।",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth",
+              "document_type": "application_process",
+              "title": "জন্ম নিবন্ধিকরণ প্রক্রিয়া",
+              "source_file": "birth_registration_application_process.docx",
+              "source_path": "md/birth_registration_application_process_cleaned.md",
+              "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "section_title": "ধাপ ৮: আবেদন সম্পন্ন ও সনদ গ্রহণ",
+              "section_index": 19,
+              "part_index": 1,
+              "search_aliases": "application process, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, citizen service, civil registration, how to apply, online application, online birth registration, registration process, required documents, আবেদন পদ্ধতি, আবেদন প্রক্রিয়া, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, ধাপে ধাপে আবেদন, নিবন্ধন পদ্ধতি, নিবন্ধন প্রক্রিয়া, প্রয়োজনীয় কাগজপত্র",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 91,
+              "retrieval_token_count": 226,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.0,
+            "retrievers": [
+              "safe_path"
+            ]
+          },
+          {
+            "id": "birth_registration_application_process_cleaned_020_01",
+            "content": "Service: birth and death registration\nDocument type: application_process\nTitle: জন্ম নিবন্ধিকরণ প্রক্রিয়া\nSection: পরবর্তী করণীয়\nContent: নিম্নোক্ত নথিপত্র নিয়ে সংশ্লিষ্ট নিবন্ধন কার্যালয়ে যোগাযোগ করতে হবে:\n\n- আবেদনপত্র\n- সংযুক্ত ডকুমেন্টসমূহের ফটোকপি\n\nসংশ্লিষ্ট নিবন্ধন কার্যালয়:\n\n- ইউনিয়ন পরিষদ\n- পৌরসভা\n- সিটি কর্পোরেশন\n- ক্যান্টনমেন্ট\n\nনিবন্ধন সহকারী এবং নিবন্ধক কর্তৃক যাচাই-বাছাই শেষে তথ্য সঠিক পাওয়া গেলে জন্ম নিবন্ধন সনদ প্রদান করা হবে।",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth",
+              "document_type": "application_process",
+              "title": "জন্ম নিবন্ধিকরণ প্রক্রিয়া",
+              "source_file": "birth_registration_application_process.docx",
+              "source_path": "md/birth_registration_application_process_cleaned.md",
+              "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "section_title": "পরবর্তী করণীয়",
+              "section_index": 20,
+              "part_index": 1,
+              "search_aliases": "application process, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, certificate verification, citizen service, civil registration, how to apply, local government office, online application, online birth registration, registrar office, registration office, registration process, registration verification, required documents, verify certificate, আবেদন পদ্ধতি, আবেদন প্রক্রিয়া, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, ধাপে ধাপে আবেদন, নিবন্ধন পদ্ধতি, নিবন্ধন প্রক্রিয়া, প্রয়োজনীয় কাগজপত্র",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 107,
+              "retrieval_token_count": 264,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.0,
+            "retrievers": [
+              "safe_path"
+            ]
+          }
+        ],
+        "domain": "birth_death_registration",
+        "answer_route": "controlled",
+        "expected_evidence_present": true
+      }
+    },
+    {
+      "audit_item": {
+        "id": "birth_05_orphan_fee",
+        "domain": "birth_death_registration",
+        "category": "condition_scenario",
+        "question": "একটি এতিম শিশুর জন্ম নিবন্ধন করতে চাই। কর্তৃপক্ষের সনদ থাকলে কি ফি মওকুফের সুযোগ আছে?",
+        "expected_evidence_hint": "birth_and_death_registration_rules_2018_বিধি_২১_02"
+      },
+      "elapsed_seconds": 17.16,
+      "result": {
+        "query": "একটি এতিম শিশুর জন্ম নিবন্ধন করতে চাই। কর্তৃপক্ষের সনদ থাকলে কি ফি মওকুফের সুযোগ আছে?",
+        "model": "qwen3:8b",
+        "method": "civic",
+        "answer": "সরাসরি সব ক্ষেত্রে ফি লাগবে না বলা যায় না। তবে বিধি ২১ অনুযায়ী, ১৮ বছরের কম বয়সী এতিমের জন্ম নিবন্ধনের ক্ষেত্রে যথাযথভাবে ক্ষমতাপ্রাপ্ত কর্তৃপক্ষের সনদের ভিত্তিতে আবেদন করলে নিবন্ধক প্রদেয় ফি সম্পূর্ণ বা আংশিক মওকুফ করার বিষয়টি বিবেচনা করতে পারেন। ফি মওকুফের বিষয়ে নিবন্ধকের সিদ্ধান্ত চূড়ান্ত।\n\nপ্রাসঙ্গিক বিধি: (৪) যথাযথভাবে ক্ষমতাপ্রাপ্ত কর্তৃপক্ষের সনদের ভিত্তিতে সহায় সম্বলহীন ব্যক্তির সন্তানের বা কোন প্রতিবন্ধী বা ১৮ (আঠার) বৎসরের কম বয়সী এতিমের জন্ম নিবন্ধন বা কোন প্রতিবন্ধী বা সহায় সম্বলহীন ব্যক্তির বা তাহার পিতা ও মাতা বা সন্তানের বা পোষ্যের জন্ম বা মৃত্যু নিবন্ধনের ক্ষেত্রে আবেদন করিলে নিবন্ধক স্বীয় ক্ষমতাবলে উপ-বিধি (১) এ বর্ণিত প্রদেয় ফিস সম্পূর্ণ বা আংশিক মওকুফ করিবার বিষয়ে বিবেচনা করিতে পারিবেন এবং ফিস মওকুফের বিষয়ে নিবন্ধকের সিদ্ধান্তই চূড়ান্ত বলিয়া গণ্য হইবে এবং ফিস হ্রাস বা মওকুফ করা হইলে আদেশের স্মারক নম্বর ও তারিখ ফিস আদায়ের রসিদে উল্লেখ করিতে হইবে।\n\nSources: birth_and_death_registration_rules_2018_বিধি_২১_02, birth_and_death_registration_rules_2018_বিধি_২১_01, birth_and_death_registration_fees_cleaned_table_full",
+        "sources": [
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_২১_02",
+            "content": "Service: birth and death registration\nDocument type: legal_rules\nTitle: জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮\nChapter: সপ্তম অধ্যায়: বিবিধ\nLegal unit: বিধি ২১ ফিস\nContent: (৪) যথাযথভাবে ক্ষমতাপ্রাপ্ত কর্তৃপক্ষের সনদের ভিত্তিতে সহায় সম্বলহীন ব্যক্তির সন্তানের বা কোন প্রতিবন্ধী বা ১৮ (আঠার) বৎসরের কম বয়সী এতিমের জন্ম নিবন্ধন বা কোন প্রতিবন্ধী বা সহায় সম্বলহীন ব্যক্তির বা তাহার পিতা ও মাতা বা সন্তানের বা পোষ্যের জন্ম বা মৃত্যু নিবন্ধনের ক্ষেত্রে আবেদন করিলে নিবন্ধক স্বীয় ক্ষমতাবলে উপ-বিধি (১) এ বর্ণিত প্রদেয় ফিস সম্পূর্ণ বা আংশিক মওকুফ করিবার বিষয়ে বিবেচনা করিতে পারিবেন এবং ফিস মওকুফের বিষয়ে নিবন্ধকের সিদ্ধান্তই চূড়ান্ত বলিয়া গণ্য হইবে এবং ফিস হ্রাস বা মওকুফ করা হইলে আদেশের স্মারক নম্বর ও তারিখ ফিস আদায়ের রসিদে উল্লেখ করিতে হইবে। (৫) সরকার কোন নির্দিষ্ট সময়ের জন্য কোন নির্দিষ্ট এলাকা বা জনগোষ্ঠীর বা সমগ্র দেশের জনগণের জন্ম বা মৃত্যু নিবন্ধন ফিস সম্পূর্ণ বা আংশিক মওকুফ করিতে পারিবে। (৬) প্রতি মাসে ফিস বাবদ আদায়কৃত অর্থ পরবর্তী মাসের প্রথম ৭ (সাত) কার্য দিবসের মধ্যে সরকারি তহবিলে জমা প্রদান করিতে হইবে। (৭) সরকার, সময় সময়, সরকারি গেজেটে প্রজ্ঞাপন দ্বারা উপ-বিধি (১) এ বর্ণিত ফিস পুনঃনির্ধারণ করিতে পারিবে।",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth_death",
+              "document_type": "legal_rules",
+              "title": "জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮",
+              "source_file": "birth_and_death_registration_rules_2018.docx",
+              "source_path": "md/birth_and_death_registration_rules_2018.md",
+              "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "chapter": "সপ্তম অধ্যায়: বিবিধ",
+              "legal_unit_type": "বিধি",
+              "legal_unit_no": "২১",
+              "section_title": "ফিস",
+              "part_index": 2,
+              "search_aliases": "act, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, civil registration, death certificate, death certificate registration, death registration, death registration certificate, father mother information, law, legal requirement, legal rule, local government office, online birth registration, online death registration, parent information, parents registration, registrar office, registration office, registration rule, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 364,
+              "retrieval_token_count": 537,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 1.2460960626602173,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_২১_01",
+            "content": "Service: birth and death registration\nDocument type: legal_rules\nTitle: জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮\nChapter: সপ্তম অধ্যায়: বিবিধ\nLegal unit: বিধি ২১ ফিস\nContent: (১) আইনের ধারা ১১, ১৩ ও ১৫ তে বর্ণিত বিধান এবং উপ-বিধি (২) এর বিধান সাপেক্ষে, নিবন্ধক নিম্নবর্ণিত টেবিলের কলাম (১) এ উল্লিখিত ক্রমিকের বিপরীতে কলাম (২) এ উল্লিখিত ক্ষেত্রে উহার বিপরীতে কলাম (৩) (১) ও (৩) (২) এ উল্লিখিত হারে ফিস আদায় করিবেন, যথা:\n\n| ক্ষেত্র | দেশে (টাকা) | বিদেশে (ডলার) |\n|---------|-------------|----------------|\n| জন্ম বা মৃত্যুর ৪৫ দিন পর্যন্ত নিবন্ধন | বিনা ফিসে | বিনা ফিসে |\n| জন্ম বা মৃত্যুর ৪৫ দিন পর হইতে ৫ বৎসর পর্যন্ত নিবন্ধন | ২৫ টাকা | ১ মার্কিন ডলার |\n| জন্ম বা মৃত্যুর ৫ বৎসর পর নিবন্ধন | ৫০ টাকা | ১ মার্কিন ডলার |\n| তথ্য সংশোধনের জন্য আবেদন ফি | ১০০ টাকা | ২ মার্কিন ডলার |\n| জন্ম তারিখ ব্যতীত অন্যান্য তথ্য সংশোধন | ৫০ টাকা | ১ মার্কিন ডলার |\n| বাংলা ও ইংরেজিতে মূল সনদ বা সংশোধিত সনদ | বিনা ফিসে | বিনা ফিসে |\n| সনদের নকল সরবরাহ | ৫০ টাকা | ১ মার্কিন ডলার | (২) জমনি ফরম-১৪ বা ক্ষেত্রমত জমনি ফরম-১৫ তে বর্ণিত রসিদ ছাড়া উপ-বিধি (১) এর অধীন নির্ধারিত কোন ফিস আদায় করা যাইবে না এবং বিনা ফিসে বা ফিস মওকুফ করা হইলে উহাও রসিদে উল্লেখ করিতে হইবে: তবে শর্ত থাকে যে, মৃত্যু নিবন্ধনের জন্য জন্ম নিবন্ধন প্রয়োজন হইলে সেক্ষেত্রে জন্ম নিবন্ধনের জন্য কোন ফি প্রযোজ্য হইবে না। (৩) অনলাইনে ফিস আদায়ের একটি সফট্ওয়্যার ব্যবহার করিতে হইবে।",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth_death",
+              "document_type": "legal_rules",
+              "title": "জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮",
+              "source_file": "birth_and_death_registration_rules_2018.docx",
+              "source_path": "md/birth_and_death_registration_rules_2018.md",
+              "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "chapter": "সপ্তম অধ্যায়: বিবিধ",
+              "legal_unit_type": "বিধি",
+              "legal_unit_no": "২১",
+              "section_title": "ফিস",
+              "part_index": 1,
+              "search_aliases": "act, amend registration information, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, certificate, certificate correction, civil registration, date of birth correction, death certificate, death certificate correction, death certificate registration, death registration, death registration certificate, fix certificate information, law, legal requirement, legal rule, local government office, name correction, online birth registration, online death registration, registrar office, registration office, registration rule, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম তারিখ সংশোধন, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু নিবন্ধন সংশোধন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন, সংশোধন আবেদন",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 514,
+              "retrieval_token_count": 733,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.9350183033943176,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_fees_cleaned_table_full",
+            "content": "Service: birth and death registration\nDocument type: fees_table\nTitle: জন্ম ও মৃত্যু নিবন্ধনের ফিসমূহ\n# জন্ম ও মৃত্যু নিবন্ধনের ফিসমূহ\n\n## নিবন্ধন ও সংশোধন ফি\n\n| ক্রম নং | বাবদ | হার |\n|----------|-------|------|\n| ১ | জন্ম বা মৃত্যুর ৪৫ (পঁয়তাল্লিশ) দিন পর্যন্ত কোনো ব্যক্তির জন্ম বা মৃত্যু নিবন্ধন | বিনা ফিসে |\n| ২ | জন্ম বা মৃত্যুর ৪৫ (পঁয়তাল্লিশ) দিন পর হইতে ৫ (পাঁচ) বৎসর পর্যন্ত কোনো ব্যক্তির জন্ম বা মৃত্যু নিবন্ধন (সাকুল্য) | ২৫ টাকা |\n| ৩ | জন্ম বা মৃত্যুর ৫ (পাঁচ) বৎসর পর হইতে কোনো ব্যক্তির জন্ম বা মৃত্যু নিবন্ধন (সাকুল্য) | ৫০ টাকা |\n| ৪ | জন্ম তারিখ সংশোধনের জন্য আবেদন ফি | ১০০ টাকা |\n| ৫ | জন্ম তারিখ ব্যতীত নাম, পিতার নাম, মাতার নাম, ঠিকানা ইত্যাদি অন্যান্য তথ্য সংশোধনের জন্য আবেদন ফি | ৫০ টাকা |\n| ৬ | বাংলা ও ইংরেজি উভয় ভাষায় মূল সনদ বা তথ্য সংশোধনের পর সনদের কপি সরবরাহ | বিনা ফিসে |\n| ৭ | বাংলা ও ইংরেজি উভয় ভাষায় সনদের নকল সরবরাহ | ৫০ টাকা |\n\n## গুরুত্বপূর্ণ তথ্য\n\nউপরোক্ত ফিসমূহ জন্ম ও মৃত্যু নিবন্ধন, তথ্য সংশোধন এবং সনদের নকল সংগ্রহের ক্ষেত্রে প্রযোজ্য।",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth_death",
+              "document_type": "fees_table",
+              "title": "জন্ম ও মৃত্যু নিবন্ধনের ফিসমূহ",
+              "source_file": "birth_and_death_registration_fees.docx",
+              "source_path": "md/birth_and_death_registration_fees_cleaned.md",
+              "source_url": "https://orgbdr.gov.bd/pages/static-pages/69cf48059d736d71f1a34c8c",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "search_aliases": "amend registration information, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, certificate, certificate correction, certificate fee, civil registration, cost, date of birth correction, death certificate, death certificate correction, death certificate registration, death registration, death registration certificate, father mother information, fix certificate information, government fee, name correction, online birth registration, online death registration, parent information, parents registration, payment, registration fee, আবেদন ফি, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম তারিখ সংশোধন, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, নিবন্ধন ফি, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু নিবন্ধন সংশোধন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন, সংশোধন আবেদন, সনদ ফি",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 350,
+              "retrieval_token_count": 579,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.1869747197628021,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_fees_cleaned_fee_row_01",
+            "content": "Service: birth and death registration\nDocument type: fee_row\nTitle: জন্ম ও মৃত্যু নিবন্ধনের ফিসমূহ\nFee item: জন্ম বা মৃত্যুর ৪৫ (পঁয়তাল্লিশ) দিন পর্যন্ত কোনো ব্যক্তির জন্ম বা মৃত্যু নিবন্ধন\nFee amount: বিনা ফিসে\nOriginal row: | ১ | জন্ম বা মৃত্যুর ৪৫ (পঁয়তাল্লিশ) দিন পর্যন্ত কোনো ব্যক্তির জন্ম বা মৃত্যু নিবন্ধন | বিনা ফিসে |",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth_death",
+              "document_type": "fee_row",
+              "title": "জন্ম ও মৃত্যু নিবন্ধনের ফিসমূহ",
+              "source_file": "birth_and_death_registration_fees.docx",
+              "source_path": "md/birth_and_death_registration_fees_cleaned.md",
+              "source_url": "https://orgbdr.gov.bd/pages/static-pages/69cf48059d736d71f1a34c8c",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "row_index": 1,
+              "fee_item": "জন্ম বা মৃত্যুর ৪৫ (পঁয়তাল্লিশ) দিন পর্যন্ত কোনো ব্যক্তির জন্ম বা মৃত্যু নিবন্ধন",
+              "fee_amount": "বিনা ফিসে",
+              "search_aliases": "apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, certificate fee, civil registration, cost, death certificate, death certificate registration, death registration, death registration certificate, government fee, online birth registration, online death registration, payment, registration fee, আবেদন ফি, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, নিবন্ধন ফি, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন, সনদ ফি",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 98,
+              "retrieval_token_count": 261,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.14482110798358916,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_fees_cleaned_fee_row_06",
+            "content": "Service: birth and death registration\nDocument type: fee_row\nTitle: জন্ম ও মৃত্যু নিবন্ধনের ফিসমূহ\nFee item: বাংলা ও ইংরেজি উভয় ভাষায় মূল সনদ বা তথ্য সংশোধনের পর সনদের কপি সরবরাহ\nFee amount: বিনা ফিসে\nOriginal row: | ৬ | বাংলা ও ইংরেজি উভয় ভাষায় মূল সনদ বা তথ্য সংশোধনের পর সনদের কপি সরবরাহ | বিনা ফিসে |",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth_death",
+              "document_type": "fee_row",
+              "title": "জন্ম ও মৃত্যু নিবন্ধনের ফিসমূহ",
+              "source_file": "birth_and_death_registration_fees.docx",
+              "source_path": "md/birth_and_death_registration_fees_cleaned.md",
+              "source_url": "https://orgbdr.gov.bd/pages/static-pages/69cf48059d736d71f1a34c8c",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "row_index": 6,
+              "fee_item": "বাংলা ও ইংরেজি উভয় ভাষায় মূল সনদ বা তথ্য সংশোধনের পর সনদের কপি সরবরাহ",
+              "fee_amount": "বিনা ফিসে",
+              "search_aliases": "amend registration information, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, certificate, certificate correction, certificate fee, civil registration, cost, death certificate, death certificate correction, death certificate registration, death registration, death registration certificate, fix certificate information, government fee, name correction, online birth registration, online death registration, payment, registration fee, আবেদন ফি, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, নিবন্ধন ফি, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু নিবন্ধন সংশোধন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন, সংশোধন আবেদন, সনদ ফি",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 106,
+              "retrieval_token_count": 313,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.13273732982575892,
+            "retrievers": [
+              "dense",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_fees_cleaned_fee_row_07",
+            "content": "Service: birth and death registration\nDocument type: fee_row\nTitle: জন্ম ও মৃত্যু নিবন্ধনের ফিসমূহ\nFee item: বাংলা ও ইংরেজি উভয় ভাষায় সনদের নকল সরবরাহ\nFee amount: ৫০ টাকা\nOriginal row: | ৭ | বাংলা ও ইংরেজি উভয় ভাষায় সনদের নকল সরবরাহ | ৫০ টাকা |",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth_death",
+              "document_type": "fee_row",
+              "title": "জন্ম ও মৃত্যু নিবন্ধনের ফিসমূহ",
+              "source_file": "birth_and_death_registration_fees.docx",
+              "source_path": "md/birth_and_death_registration_fees_cleaned.md",
+              "source_url": "https://orgbdr.gov.bd/pages/static-pages/69cf48059d736d71f1a34c8c",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "row_index": 7,
+              "fee_item": "বাংলা ও ইংরেজি উভয় ভাষায় সনদের নকল সরবরাহ",
+              "fee_amount": "৫০ টাকা",
+              "search_aliases": "apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, certificate fee, civil registration, cost, death certificate, death certificate registration, death registration, death registration certificate, government fee, online birth registration, online death registration, payment, registration fee, আবেদন ফি, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, নিবন্ধন ফি, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন, সনদ ফি",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 84,
+              "retrieval_token_count": 247,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.11280353546142578,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          }
+        ],
+        "domain": "birth_death_registration",
+        "answer_route": "controlled",
+        "expected_evidence_present": true
+      }
+    },
+    {
+      "audit_item": {
+        "id": "birth_06_parent_correction",
+        "domain": "birth_death_registration",
+        "category": "long_scenario",
+        "question": "আমার ছেলের জন্ম নিবন্ধনে ভুল করে অন্য আত্মীয়ের নাম বাবা-মায়ের জায়গায় আছে। সঠিক বাবা-মায়ের নাম দিতে কীভাবে সংশোধনের আবেদন করব এবং নাম সংশোধনের ফি কত?",
+        "expected_evidence_hint": "application_for_birth_information_correction_cleaned_003"
+      },
+      "elapsed_seconds": 13.43,
+      "result": {
+        "query": "আমার ছেলের জন্ম নিবন্ধনে ভুল করে অন্য আত্মীয়ের নাম বাবা-মায়ের জায়গায় আছে। সঠিক বাবা-মায়ের নাম দিতে কীভাবে সংশোধনের আবেদন করব এবং নাম সংশোধনের ফি কত?",
+        "model": "qwen3:8b",
+        "method": "civic",
+        "answer": "জন্ম তারিখ ব্যতীত নাম, পিতার নাম, মাতার নাম, ঠিকানা ইত্যাদি অন্যান্য তথ্য সংশোধনের জন্য আবেদন ফি: ৫০ টাকা\n\nSources: birth_and_death_registration_fees_cleaned_fee_row_05, application_for_birth_information_correction_cleaned_008_01, application_for_birth_information_correction_cleaned_002_01",
+        "sources": [
+          {
+            "id": "birth_and_death_registration_fees_cleaned_fee_row_05",
+            "content": "Service: birth and death registration\nDocument type: fee_row\nTitle: জন্ম ও মৃত্যু নিবন্ধনের ফিসমূহ\nFee item: জন্ম তারিখ ব্যতীত নাম, পিতার নাম, মাতার নাম, ঠিকানা ইত্যাদি অন্যান্য তথ্য সংশোধনের জন্য আবেদন ফি\nFee amount: ৫০ টাকা\nOriginal row: | ৫ | জন্ম তারিখ ব্যতীত নাম, পিতার নাম, মাতার নাম, ঠিকানা ইত্যাদি অন্যান্য তথ্য সংশোধনের জন্য আবেদন ফি | ৫০ টাকা |",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth_death",
+              "document_type": "fee_row",
+              "title": "জন্ম ও মৃত্যু নিবন্ধনের ফিসমূহ",
+              "source_file": "birth_and_death_registration_fees.docx",
+              "source_path": "md/birth_and_death_registration_fees_cleaned.md",
+              "source_url": "https://orgbdr.gov.bd/pages/static-pages/69cf48059d736d71f1a34c8c",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "row_index": 5,
+              "fee_item": "জন্ম তারিখ ব্যতীত নাম, পিতার নাম, মাতার নাম, ঠিকানা ইত্যাদি অন্যান্য তথ্য সংশোধনের জন্য আবেদন ফি",
+              "fee_amount": "৫০ টাকা",
+              "search_aliases": "amend registration information, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, certificate, certificate correction, certificate fee, civil registration, cost, date of birth correction, death certificate, death certificate correction, death certificate registration, death registration, death registration certificate, father mother information, fix certificate information, government fee, name correction, online birth registration, online death registration, parent information, parents registration, payment, registration fee, আবেদন ফি, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম তারিখ সংশোধন, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, নিবন্ধন ফি, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু নিবন্ধন সংশোধন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন, সংশোধন আবেদন, সনদ ফি",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 102,
+              "retrieval_token_count": 331,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 1.1599931812286377,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_008_01",
+            "content": "Service: birth and death registration\nDocument type: correction_process\nTitle: জন্ম তথ্য সংশোধনের জন্য আবেদন\nSection: পরিস্থিতি ৩: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই, পিতা বা মাতা মৃত এবং জন্ম তারিখ ০১/০১/২০০১-এর পরে\nContent: যদি:\n\n- পিতা বা মাতার জন্ম নিবন্ধন নম্বর না থাকে,\n- পিতা বা মাতা মৃত হন, এবং\n- আপনার জন্ম তারিখ ০১/০১/২০০১-এর পরে হয়,\n\nতাহলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করার সময় পিতা বা মাতার নাম সংশোধন করা যাবে।",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth",
+              "document_type": "correction_process",
+              "title": "জন্ম তথ্য সংশোধনের জন্য আবেদন",
+              "source_file": "application_for_birth_information_correction.docx",
+              "source_path": "md/application_for_birth_information_correction_cleaned.md",
+              "source_url": "https://bdris.gov.bd/br/correction",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "section_title": "পরিস্থিতি ৩: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই, পিতা বা মাতা মৃত এবং জন্ম তারিখ ০১/০১/২০০১-এর পরে",
+              "section_index": 8,
+              "part_index": 1,
+              "search_aliases": "amend registration information, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, certificate, certificate correction, civil registration, date of birth correction, death certificate correction, father mother information, fix certificate information, name correction, online birth registration, parent information, parents registration, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম তারিখ সংশোধন, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন সংশোধন, সংশোধন আবেদন",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 122,
+              "retrieval_token_count": 278,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 1.1323294520378113,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_002_01",
+            "content": "Service: birth and death registration\nDocument type: correction_process\nTitle: জন্ম তথ্য সংশোধনের জন্য আবেদন\nSection: পিতা বা মাতার নাম সংশোধন সংক্রান্ত নির্দেশনা\nContent: আপনার পিতা বা মাতার নাম সংশোধন করতে হলে নিম্নোক্ত নির্দেশনা অনুসরণ করতে হবে।\n\n---",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth",
+              "document_type": "correction_process",
+              "title": "জন্ম তথ্য সংশোধনের জন্য আবেদন",
+              "source_file": "application_for_birth_information_correction.docx",
+              "source_path": "md/application_for_birth_information_correction_cleaned.md",
+              "source_url": "https://bdris.gov.bd/br/correction",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "section_title": "পিতা বা মাতার নাম সংশোধন সংক্রান্ত নির্দেশনা",
+              "section_index": 2,
+              "part_index": 1,
+              "search_aliases": "amend registration information, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, certificate, certificate correction, civil registration, death certificate correction, father mother information, fix certificate information, name correction, online birth registration, parent information, parents registration, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন সংশোধন, সংশোধন আবেদন",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 64,
+              "retrieval_token_count": 208,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 1.1283784985542298,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_003_01",
+            "content": "Service: birth and death registration\nDocument type: correction_process\nTitle: জন্ম তথ্য সংশোধনের জন্য আবেদন\nSection: পরিস্থিতি ১: পিতা বা মাতার জন্ম নিবন্ধন নম্বর আছে\nContent: যদি আপনার পিতা বা মাতার জন্ম নিবন্ধন নম্বর থাকে, তাহলে প্রথমে তাদের জন্ম নিবন্ধন নম্বর ব্যবহার করে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করে তাদের নাম সংশোধন করতে হবে।",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth",
+              "document_type": "correction_process",
+              "title": "জন্ম তথ্য সংশোধনের জন্য আবেদন",
+              "source_file": "application_for_birth_information_correction.docx",
+              "source_path": "md/application_for_birth_information_correction_cleaned.md",
+              "source_url": "https://bdris.gov.bd/br/correction",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "section_title": "পরিস্থিতি ১: পিতা বা মাতার জন্ম নিবন্ধন নম্বর আছে",
+              "section_index": 3,
+              "part_index": 1,
+              "search_aliases": "amend registration information, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, certificate, certificate correction, civil registration, death certificate correction, father mother information, fix certificate information, name correction, online birth registration, parent information, parents registration, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন সংশোধন, সংশোধন আবেদন",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 77,
+              "retrieval_token_count": 221,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 1.0378051280975342,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_fees_cleaned_table_full",
+            "content": "Service: birth and death registration\nDocument type: fees_table\nTitle: জন্ম ও মৃত্যু নিবন্ধনের ফিসমূহ\n# জন্ম ও মৃত্যু নিবন্ধনের ফিসমূহ\n\n## নিবন্ধন ও সংশোধন ফি\n\n| ক্রম নং | বাবদ | হার |\n|----------|-------|------|\n| ১ | জন্ম বা মৃত্যুর ৪৫ (পঁয়তাল্লিশ) দিন পর্যন্ত কোনো ব্যক্তির জন্ম বা মৃত্যু নিবন্ধন | বিনা ফিসে |\n| ২ | জন্ম বা মৃত্যুর ৪৫ (পঁয়তাল্লিশ) দিন পর হইতে ৫ (পাঁচ) বৎসর পর্যন্ত কোনো ব্যক্তির জন্ম বা মৃত্যু নিবন্ধন (সাকুল্য) | ২৫ টাকা |\n| ৩ | জন্ম বা মৃত্যুর ৫ (পাঁচ) বৎসর পর হইতে কোনো ব্যক্তির জন্ম বা মৃত্যু নিবন্ধন (সাকুল্য) | ৫০ টাকা |\n| ৪ | জন্ম তারিখ সংশোধনের জন্য আবেদন ফি | ১০০ টাকা |\n| ৫ | জন্ম তারিখ ব্যতীত নাম, পিতার নাম, মাতার নাম, ঠিকানা ইত্যাদি অন্যান্য তথ্য সংশোধনের জন্য আবেদন ফি | ৫০ টাকা |\n| ৬ | বাংলা ও ইংরেজি উভয় ভাষায় মূল সনদ বা তথ্য সংশোধনের পর সনদের কপি সরবরাহ | বিনা ফিসে |\n| ৭ | বাংলা ও ইংরেজি উভয় ভাষায় সনদের নকল সরবরাহ | ৫০ টাকা |\n\n## গুরুত্বপূর্ণ তথ্য\n\nউপরোক্ত ফিসমূহ জন্ম ও মৃত্যু নিবন্ধন, তথ্য সংশোধন এবং সনদের নকল সংগ্রহের ক্ষেত্রে প্রযোজ্য।",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth_death",
+              "document_type": "fees_table",
+              "title": "জন্ম ও মৃত্যু নিবন্ধনের ফিসমূহ",
+              "source_file": "birth_and_death_registration_fees.docx",
+              "source_path": "md/birth_and_death_registration_fees_cleaned.md",
+              "source_url": "https://orgbdr.gov.bd/pages/static-pages/69cf48059d736d71f1a34c8c",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "search_aliases": "amend registration information, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, certificate, certificate correction, certificate fee, civil registration, cost, date of birth correction, death certificate, death certificate correction, death certificate registration, death registration, death registration certificate, father mother information, fix certificate information, government fee, name correction, online birth registration, online death registration, parent information, parents registration, payment, registration fee, আবেদন ফি, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম তারিখ সংশোধন, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, নিবন্ধন ফি, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু নিবন্ধন সংশোধন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন, সংশোধন আবেদন, সনদ ফি",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 350,
+              "retrieval_token_count": 579,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 1.0256828093528747,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "application_for_birth_information_correction_cleaned_006_01",
+            "content": "Service: birth and death registration\nDocument type: correction_process\nTitle: জন্ম তথ্য সংশোধনের জন্য আবেদন\nSection: পরিস্থিতি ২: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই এবং জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে\nContent: যদি:\n\n- পিতা বা মাতার জন্ম নিবন্ধন নম্বর না থাকে, এবং\n- আপনার জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে হয়,\n\nতাহলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করার সময় পিতা বা মাতার নাম সংশোধন করা যাবে।",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth",
+              "document_type": "correction_process",
+              "title": "জন্ম তথ্য সংশোধনের জন্য আবেদন",
+              "source_file": "application_for_birth_information_correction.docx",
+              "source_path": "md/application_for_birth_information_correction_cleaned.md",
+              "source_url": "https://bdris.gov.bd/br/correction",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "section_title": "পরিস্থিতি ২: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই এবং জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে",
+              "section_index": 6,
+              "part_index": 1,
+              "search_aliases": "amend registration information, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, certificate, certificate correction, civil registration, date of birth correction, death certificate correction, father mother information, fix certificate information, name correction, online birth registration, parent information, parents registration, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম তারিখ সংশোধন, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন সংশোধন, সংশোধন আবেদন",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 108,
+              "retrieval_token_count": 264,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 1.019876229763031,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          }
+        ],
+        "domain": "birth_death_registration",
+        "answer_route": "controlled",
+        "expected_evidence_present": true
+      }
+    },
+    {
+      "audit_item": {
+        "id": "birth_07_overseas",
+        "domain": "birth_death_registration",
+        "category": "scenario",
+        "question": "আমি বিদেশে থাকি এবং আমার সন্তানের জন্ম বিদেশে হয়েছে। বাংলাদেশি জন্ম নিবন্ধনের জন্য কোথায় যোগাযোগ করব?",
+        "expected_evidence_hint": "birth_and_death_registration_rules_2018_বিধি_১০"
+      },
+      "elapsed_seconds": 17.45,
+      "result": {
+        "query": "আমি বিদেশে থাকি এবং আমার সন্তানের জন্ম বিদেশে হয়েছে। বাংলাদেশি জন্ম নিবন্ধনের জন্য কোথায় যোগাযোগ করব?",
+        "model": "qwen3:8b",
+        "method": "civic",
+        "answer": "প্রবাসে জন্ম নিবন্ধনের ক্ষেত্রে বিধি ১০ অনুযায়ী বিদেশে অবস্থিত বাংলাদেশ দূতাবাসের নিবন্ধক প্রয়োজনীয় তথ্য/প্রমাণ পেলে জন্ম নিবন্ধন করতে পারেন।\n\nএখানে আবেদনকারীকে নির্বাচন করতে হবে তিনি কোথা থেকে জন্ম সনদ গ্রহণ বা সংগ্রহ করতে চান।\n\nনিম্নোক্ত ঠিকানার ভিত্তিতে সনদ সংগ্রহ করা যেতে পারে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n\nসাধারণভাবে স্থায়ী ঠিকানা থেকে সনদ সংগ্রহ করার জন্য উৎসাহিত করা হয়।\n\nবিদেশে জন্মগ্রহণকারী শিশু নিকটস্থ বাংলাদেশ দূতাবাস থেকে জন্ম সনদ সংগ্রহ করতে পারে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\nবিদেশে নিবন্ধন করে দেশে ফেরা বা মূল অফিস-সংক্রান্ত ক্ষেত্রে: সংশোধন বা পুনঃমুদ্রণ কেবল মূল নিবন্ধন অফিস থেকেই করা যাবে। তবে স্থানীয় নিবন্ধন অফিসের সহায়তায় বা নাগরিক নিজে অনলাইনে মূল অফিস বরাবর আবেদন করতে পারেন। আবেদনের অনুলিপি রেজিস্ট্রার জেনারেলের কার্যালয়ে (arg1bdr@gmail.com) পাঠালে প্রয়োজনে পররাষ্ট্র মন্ত্রণালয়ের সঙ্গে যোগাযোগ করে নিষ্পত্তি করা হবে।\n\nভবিষ্যতে করণিক ভুল সংশোধন বা প্রতিলিপি প্রদানের জন্য যেকোনো নিবন্ধন অফিস থেকে সুবিধা পাওয়ার ব্যবস্থা গ্রহণ করা হবে।\n\nতবে আপনি যদি বাংলাদেশে জন্মগ্রহণ করে থাকেন কিন্তু আগে অনলাইনে নিবন্ধন না হয়ে থাকে, তাহলে মূল/স্থানীয় নিবন্ধন কার্যালয়ের রেকর্ডও গুরুত্বপূর্ণ হতে পারে।\n\nSources: birth_and_death_registration_rules_2018_বিধি_১০_01, bdris_faq_01_q12, birth_registration_application_process_cleaned_009_01",
+        "sources": [
+          {
+            "id": "birth_registration_application_process_cleaned_009_01",
+            "content": "Service: birth and death registration\nDocument type: application_process\nTitle: জন্ম নিবন্ধিকরণ প্রক্রিয়া\nSection: ধাপ ২: সনদ সংগ্রহের স্থান নির্বাচন\nContent: এখানে আবেদনকারীকে নির্বাচন করতে হবে তিনি কোথা থেকে জন্ম সনদ গ্রহণ বা সংগ্রহ করতে চান।\n\nনিম্নোক্ত ঠিকানার ভিত্তিতে সনদ সংগ্রহ করা যেতে পারে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n\nসাধারণভাবে স্থায়ী ঠিকানা থেকে সনদ সংগ্রহ করার জন্য উৎসাহিত করা হয়।\n\nবিদেশে জন্মগ্রহণকারী শিশু নিকটস্থ বাংলাদেশ দূতাবাস থেকে জন্ম সনদ সংগ্রহ করতে পারে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\n---",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth",
+              "document_type": "application_process",
+              "title": "জন্ম নিবন্ধিকরণ প্রক্রিয়া",
+              "source_file": "birth_registration_application_process.docx",
+              "source_path": "md/birth_registration_application_process_cleaned.md",
+              "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "section_title": "ধাপ ২: সনদ সংগ্রহের স্থান নির্বাচন",
+              "section_index": 9,
+              "part_index": 1,
+              "search_aliases": "application process, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, citizen service, civil registration, how to apply, online application, online birth registration, registration process, required documents, আবেদন পদ্ধতি, আবেদন প্রক্রিয়া, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, ধাপে ধাপে আবেদন, নিবন্ধন পদ্ধতি, নিবন্ধন প্রক্রিয়া, প্রয়োজনীয় কাগজপত্র",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 141,
+              "retrieval_token_count": 276,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 1.0039341211318968,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "bdris_faq_01_q12",
+            "content": "Service: birth and death registration\nDocument type: faq\nCategory: overseas_registration\nTitle: জন্ম ও মৃত্যু নিবন্ধন বিষয়ক প্রায়শই জিজ্ঞাসিত প্রশ্ন\nTitle EN: FAQs on Birth and Death Registration\nQuestion: বিদেশে জন্ম নিবন্ধন করে দেশে ফেরা কোনো প্রবাসী তথ্য সংশোধন অথবা সনদ পুনঃমুদ্রণের আবেদন করলে করণীয় কী?\nAnswer: সংশোধন বা পুনঃমুদ্রণ কেবল মূল নিবন্ধন অফিস থেকেই করা যাবে। তবে স্থানীয় নিবন্ধন অফিসের সহায়তায় বা নাগরিক নিজে অনলাইনে মূল অফিস বরাবর আবেদন করতে পারেন। আবেদনের অনুলিপি রেজিস্ট্রার জেনারেলের কার্যালয়ে (arg1bdr@gmail.com) পাঠালে প্রয়োজনে পররাষ্ট্র মন্ত্রণালয়ের সঙ্গে যোগাযোগ করে নিষ্পত্তি করা হবে।\n\nভবিষ্যতে করণিক ভুল সংশোধন বা প্রতিলিপি প্রদানের জন্য যেকোনো নিবন্ধন অফিস থেকে সুবিধা পাওয়ার ব্যবস্থা গ্রহণ করা হবে।\nLegal references: \nKeywords BN: প্রবাসী নিবন্ধন, বিদেশে নিবন্ধন, সংশোধন, পুনঃমুদ্রণ, মূল অফিস, পররাষ্ট্র মন্ত্রণালয়\nKeywords EN: expatriate registration, overseas registration, correction, reprint, original office, foreign ministry",
+            "metadata": {
+              "doc_id": "bdris_faq_01",
+              "title": "জন্ম ও মৃত্যু নিবন্ধন বিষয়ক প্রায়শই জিজ্ঞাসিত প্রশ্ন",
+              "title_en": "FAQs on Birth and Death Registration",
+              "source_url": "https://orgbdr.portal.gov.bd/pages/static-pages/6922e065933eb65569e26d6e",
+              "issuing_authority": "রেজিস্ট্রার জেনারেলের কার্যালয়, জন্ম ও মৃত্যু নিবন্ধন",
+              "issuing_authority_en": "Office of the Registrar General, Birth and Death Registration",
+              "department": "স্থানীয় সরকার বিভাগ",
+              "department_en": "Local Government Division",
+              "system": "BDRIS",
+              "last_updated": "2026-04-04",
+              "language": "bn",
+              "doc_type": "faq",
+              "domain": "civil_registration",
+              "country": "BD",
+              "total_faqs": 16,
+              "source_path": "faqs_birth_death_registration_01.json",
+              "document_type": "faq",
+              "category": "overseas_registration",
+              "faq_number": 12,
+              "service": "birth_death_registration",
+              "service_scope": "birth",
+              "search_aliases": "amend registration information, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, certificate, certificate correction, citizen question, civil registration, common question, death certificate correction, FAQ, fix certificate information, local government office, name correction, online birth registration, question answer, registrar office, registration office, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, প্রশ্ন উত্তর, মৃত্যু নিবন্ধন সংশোধন, সংশোধন আবেদন, সাধারণ জিজ্ঞাসা",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 258,
+              "retrieval_token_count": 419,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.9527387022972107,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "bdris_faq_02_q09",
+            "content": "Service: birth and death registration\nDocument type: faq\nCategory: special_cases\nTitle: জন্ম ও মৃত্যু নিবন্ধন সংক্রান্ত সচরাচর জিজ্ঞাসিত প্রশ্ন ও তার উত্তর\nTitle EN: Frequently Asked Questions on Birth and Death Registration\nQuestion: পিতামাতার যে কোনো একজন বিদেশী হলে কীভাবে সন্তানের জন্ম নিবন্ধন করা হবে?\nAnswer: যিনি বাংলাদেশী তার স্থায়ী ঠিকানার প্রয়োজনীয় দলিলাদি নিয়ে নিবন্ধন অফিসে যোগাযোগ করতে হবে। নিবন্ধক প্রয়োজনীয় অনুসন্ধান শেষে ঊর্ধ্বতন কর্তৃপক্ষের অনুমতিক্রমে নিবন্ধন করবেন।\nLegal references: \nKeywords BN: বিদেশী পিতামাতা, মিশ্র জাতীয়তা, ঊর্ধ্বতন অনুমতি\nKeywords EN: foreign parent, mixed nationality, higher authority approval",
+            "metadata": {
+              "doc_id": "bdris_faq_02",
+              "title": "জন্ম ও মৃত্যু নিবন্ধন সংক্রান্ত সচরাচর জিজ্ঞাসিত প্রশ্ন ও তার উত্তর",
+              "title_en": "Frequently Asked Questions on Birth and Death Registration",
+              "source_url": "https://goradubaup.netrokona.gov.bd/pages/static-pages/69708eb0a31054345f15bdab",
+              "issuing_authority": "গড়াডোবা ইউনিয়ন পরিষদ",
+              "issuing_authority_en": "Goraduba Union Parishad",
+              "district": "নেত্রকোনা",
+              "district_en": "Netrokona",
+              "last_updated": "2024-12-25",
+              "language": "bn",
+              "doc_type": "faq",
+              "domain": "civil_registration",
+              "country": "BD",
+              "total_faqs": 10,
+              "source_path": "faqs_birth_death_registration_02.json",
+              "document_type": "faq",
+              "category": "special_cases",
+              "faq_number": 9,
+              "service": "birth_death_registration",
+              "service_scope": "birth",
+              "search_aliases": "apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, citizen question, civil registration, common question, FAQ, father mother information, local government office, nationality correction, online birth registration, parent information, parents registration, question answer, registrar office, registration office, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, জাতীয়তা সংশোধন, প্রশ্ন উত্তর, সাধারণ জিজ্ঞাসা",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 169,
+              "retrieval_token_count": 307,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.9213714623451232,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "bdris_faq_01_q11",
+            "content": "Service: birth and death registration\nDocument type: faq\nCategory: special_cases\nTitle: জন্ম ও মৃত্যু নিবন্ধন বিষয়ক প্রায়শই জিজ্ঞাসিত প্রশ্ন\nTitle EN: FAQs on Birth and Death Registration\nQuestion: পিতামাতার যে কোনো একজন বিদেশী হলে কীভাবে সন্তানের জন্ম নিবন্ধন করা হবে?\nAnswer: যিনি বাংলাদেশী তার স্থায়ী ঠিকানার প্রয়োজনীয় দলিলাদি নিয়ে নিবন্ধন অফিসে যোগাযোগ করতে হবে। নিবন্ধক প্রয়োজনীয় অনুসন্ধান শেষে ঊর্ধ্বতন কর্তৃপক্ষের অনুমতিক্রমে নিবন্ধন করবেন।\nLegal references: \nKeywords BN: বিদেশী পিতামাতা, মিশ্র জাতীয়তা, ঊর্ধ্বতন অনুমতি\nKeywords EN: foreign parent, mixed nationality, higher authority approval",
+            "metadata": {
+              "doc_id": "bdris_faq_01",
+              "title": "জন্ম ও মৃত্যু নিবন্ধন বিষয়ক প্রায়শই জিজ্ঞাসিত প্রশ্ন",
+              "title_en": "FAQs on Birth and Death Registration",
+              "source_url": "https://orgbdr.portal.gov.bd/pages/static-pages/6922e065933eb65569e26d6e",
+              "issuing_authority": "রেজিস্ট্রার জেনারেলের কার্যালয়, জন্ম ও মৃত্যু নিবন্ধন",
+              "issuing_authority_en": "Office of the Registrar General, Birth and Death Registration",
+              "department": "স্থানীয় সরকার বিভাগ",
+              "department_en": "Local Government Division",
+              "system": "BDRIS",
+              "last_updated": "2026-04-04",
+              "language": "bn",
+              "doc_type": "faq",
+              "domain": "civil_registration",
+              "country": "BD",
+              "total_faqs": 16,
+              "source_path": "faqs_birth_death_registration_01.json",
+              "document_type": "faq",
+              "category": "special_cases",
+              "faq_number": 11,
+              "service": "birth_death_registration",
+              "service_scope": "birth",
+              "search_aliases": "apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, citizen question, civil registration, common question, FAQ, father mother information, local government office, nationality correction, online birth registration, parent information, parents registration, question answer, registrar office, registration office, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, জাতীয়তা সংশোধন, প্রশ্ন উত্তর, সাধারণ জিজ্ঞাসা",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 159,
+              "retrieval_token_count": 297,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.9161303067207336,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_১০_01",
+            "content": "Service: birth and death registration\nDocument type: legal_rules\nTitle: জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮\nChapter: তৃতীয় অধ্যায়: মৃত্যু নিবন্ধন\nLegal unit: বিধি ১০ প্রবাসীগণের জন্ম নিবন্ধন\nContent: (১) বিদেশে অবস্থিত বাংলাদেশ দূতাবাসের নিবন্ধক জমনি ফরম-১ অনুযায়ী আবেদনপত্রের সহিত নিম্নবর্ণিত তথ্যাদি প্রাপ্তি সাপেক্ষে তাহার অধিক্ষেত্রে বসবাসকারী বা জন্ম গ্রহণকারী ব্যক্তির জন্ম নিবন্ধন করিবেন, যথা:- (ক) জন্মস্থান ও জন্ম তারিখের প্রমাণ হিসাবে সংশ্লিষ্ট চিকিৎসা প্রতিষ্ঠানের ছাড়পত্র বা উক্ত প্রতিষ্ঠান হইতে প্রাপ্ত জন্ম সংক্রান্ত সনদের অনুলিপি অথবা বার্থ এটেন্ডেন্টের প্রত্যয়ন বা সংশ্লিষ্ট ব্যক্তির মেশিন রিডেবল পাসপোর্টের প্রথম ২ (দুই) পাতার অনুলিপি (খ) পিতা বা মাতার মেশিন রিডেবল পাসপোর্টের প্রথম ০৭ (সাত) পাতার অনুলিপি (গ) পিতা বা মাতা অথবা নিজের পাসপোর্টে বর্ণিত স্থায়ী ঠিকানাই ব্যক্তির স্থায়ী ঠিকানা হিসাবে গণ্য হইবে (ঘ) আবেদনকারী কোন যৌক্তিক কারণে বাংলাদেশী পাসপোর্ট উপস্থাপনে ব্যর্থ হইলে নিবন্ধক কর্তৃক প্রয়োজনবোধে চাহিত স্থায়ী ঠিকানা বা বর্তমান ঠিকানা সংক্রান্ত অন্য কোন কাগজপত্রাদির অনুলিপি এবং (ঙ) পূর্বে জন্ম নিবন্ধন হয় নাই এই মর্মে আবেদনপত্রে আবেদনকারীর ঘোষণা। (২) আবেদন মুদ্রিত ফরমে বা অনলাইনে যে কোন পদ্ধতিতে করা যাইবে এবং মুদ্রিত ফরমে আবেদন করিলে নিবন্ধক উহা কার্যপ্রণালীতে বর্ণিত পদ্ধতি অনুসারে অনলাইনে এন্ট্রি করিবেন এবং অনলাইন আবেদনপত্রের ক্ষেত্রে, অনলাইনে আবেদন দাখিলের পর আবেদনকারী অনলাইন হইতে মুদ্রিত আবেদনপত্রের কপি নিবন্ধকের নিকট দাখিল করিবেন। (৩) উপ-বিধি (২) এর অধীন আবেদনপত্র প্রাপ্তির পর নিবন্ধক বা তৎকর্তৃক ক্ষমতাপ্রাপ্ত ব্যক্তি পরবর্তী ৭ (সাত) কার্য দিবসের মধ্যে সনদ প্রদানের তারিখ উল্লেখপূর্বক আবেদনকারীর অংশ স্বাক্ষর করিয়া উহা আবেদনকারীর নিকট হস্তান্তর করিবেন।",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth_death",
+              "document_type": "legal_rules",
+              "title": "জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮",
+              "source_file": "birth_and_death_registration_rules_2018.docx",
+              "source_path": "md/birth_and_death_registration_rules_2018.md",
+              "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "chapter": "তৃতীয় অধ্যায়: মৃত্যু নিবন্ধন",
+              "legal_unit_type": "বিধি",
+              "legal_unit_no": "১০",
+              "section_title": "প্রবাসীগণের জন্ম নিবন্ধন",
+              "part_index": 1,
+              "search_aliases": "act, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, civil registration, date of birth correction, death certificate, death certificate registration, death registration, death registration certificate, father mother information, law, legal requirement, legal rule, local government office, online birth registration, online death registration, parent information, parents registration, registrar office, registration office, registration rule, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম তারিখ সংশোধন, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 486,
+              "retrieval_token_count": 671,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.8772441673278808,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          },
+          {
+            "id": "birth_and_death_registration_rules_2018_বিধি_২০_01",
+            "content": "Service: birth and death registration\nDocument type: legal_rules\nTitle: জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮\nChapter: সপ্তম অধ্যায়: বিবিধ\nLegal unit: বিধি ২০ অনলাইনে আবেদন বা তথ্য প্রদান\nContent: (১) চিকিৎসা প্রতিষ্ঠান বা স্বাস্থ্যকর্মীগণ নিবন্ধনযোগ্য ব্যক্তির জন্ম বা মৃত্যুর তথ্য ৪৫ (পঁয়তাল্লিশ) দিনের মধ্যে নিবন্ধনের যোগ্য স্থানের নিবন্ধকের নিকট অনলাইনে প্রদান করিতে পারিবেন। (২) বিদেশে জন্ম গ্রহণকারী শিশু ব্যতীত বাংলাদেশ দূতাবাস নিবন্ধনযোগ্য অন্যান্য ব্যক্তির জন্ম বা মৃত্যুর তথ্য ব্যক্তির স্থায়ী ঠিকানার নিবন্ধকের নিকট অনলাইনে প্রদান করিতে পারিবেন। (৩) সরকারের সিদ্ধান্ত অনুযায়ী দূতাবাসসমূহ বিদেশে জন্ম হয় নাই তবে বৈধ পাসপোর্টধারী এমন কোন প্রবাসী বাংলাদেশী নাগরিকের জন্ম নিবন্ধন করিতে পারিবে। (৪) উপ-বিধি (১) এর অধীন অনলাইনে তথ্য প্রেরণের পর কম্পিউটার জেনারেটেড নম্বরসহ ব্যক্তির আবেদনপত্রের একটি প্রিন্ট কপি পাওয়া যাইবে এবং উক্ত প্রিন্ট কপির সহিত প্রয়োজনীয় দলিলাদি ও প্রত্যয়ন সংযুক্ত করিয়া, ক্ষেত্র বিশেষে, ব্যক্তি বা ব্যক্তির অভিভাবক সশরীরে নিবন্ধকের নিকট উহা দাখিল করিবেন। (৫) উপ-বিধি (৪) এর বিধান অনুযায়ী আবেদনপত্র প্রাপ্তির পর নিবন্ধক জন্ম নিবন্ধনের ক্ষেত্রে বিধি ৯ বা, ক্ষেত্রমত, বিধি ১০ এবং মৃত্যু নিবন্ধনের ক্ষেত্রে বিধি ১১ বা, ক্ষেত্রমত, বিধি ১২ অনুযায়ী ব্যবস্থা গ্রহণ করিবেন।",
+            "metadata": {
+              "service": "birth_death_registration",
+              "service_scope": "birth_death",
+              "document_type": "legal_rules",
+              "title": "জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮",
+              "source_file": "birth_and_death_registration_rules_2018.docx",
+              "source_path": "md/birth_and_death_registration_rules_2018.md",
+              "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf",
+              "encoding": "unicode_converted",
+              "language": "bn",
+              "chapter": "সপ্তম অধ্যায়: বিবিধ",
+              "legal_unit_type": "বিধি",
+              "legal_unit_no": "২০",
+              "section_title": "অনলাইনে আবেদন বা তথ্য প্রদান",
+              "part_index": 1,
+              "search_aliases": "act, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, civil registration, death certificate, death certificate registration, death registration, death registration certificate, law, legal requirement, legal rule, local government office, online birth registration, online death registration, registrar office, registration office, registration rule, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন",
+              "chunking_version": "2026-06-07-nfc-token-audit",
+              "content_token_count": 346,
+              "retrieval_token_count": 509,
+              "embedding_model_max_tokens": 8192
+            },
+            "score": 0.8685024690628051,
+            "retrievers": [
+              "dense",
+              "bm25",
+              "cross_encoder"
+            ]
+          }
+        ],
+        "domain": "birth_death_registration",
+        "answer_route": "controlled",
+        "expected_evidence_present": true
+      }
+    }
+  ]
+}

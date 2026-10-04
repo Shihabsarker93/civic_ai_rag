@@ -1,0 +1,13 @@
+\section*{Abstract}
+
+Accessing government-service information in Bangladesh is often difficult because service procedures, fees, legal rules, correction instructions and frequently asked questions are scattered across different portals, documents and formats. Citizens may ask questions in Bangla, English or code-mixed language, while source documents are often noisy, Bangla-heavy and affected by formatting, OCR or encoding issues. A general chatbot is not sufficient for this setting because fluent answers without reliable evidence can create misinformation in public-service guidance.
+
+This thesis proposes Civic.ai, a bilingual Retrieval-Augmented Generation (RAG) based question-answering system for Bangladeshi government services. The current phase focuses on the birth registration domain as the first testable implementation. The system uses a modular pipeline consisting of data collection, manual and semi-manual cleaning, document-type-aware chunking, metadata preservation, dense embedding, sparse retrieval, rank fusion, reranking, safe answer path checking and local LLM-based answer generation. To improve retrieval while preserving factual grounding, each chunk is represented using two separate text fields: \texttt{retrieval\_text} for search and \texttt{answer\_evidence} for generation.
+
+The Phase 2 implementation evaluates multiple retrieval alternatives, including BM25-only retrieval, dense-only retrieval and hybrid RRF retrieval. A curated Bangla evaluation set with paraphrased citizen-style questions is used to measure retrieval behavior using Hit@k/Recall@k, Mean Reciprocal Rank (MRR), normalized Discounted Cumulative Gain (nDCG) and context precision. Preliminary results show that dense-only retrieval currently performs strongest for the single-domain birth registration dataset, while the full CivicRAG design remains important for explainability, source grounding and future multi-domain expansion. The system is implemented with local LLM backends such as llama3.2, llama3 and qwen2.5:7b so that the prototype can be tested without depending on external API keys.
+
+The work contributes a practical and academically defensible design process for a Bangla-priority civic-service RAG system. It emphasizes factual correctness, retrieval quality, explainability, multilingual support and evaluation-driven design rather than general-purpose chatbot fluency.
+
+\vspace{1cm}
+\textbf{Keywords:} Retrieval-Augmented Generation, Civic AI, Bangla NLP, Government Services, Dense Retrieval, BM25, Reciprocal Rank Fusion, Local LLM
+\pagebreak

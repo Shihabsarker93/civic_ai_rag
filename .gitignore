@@ -11,3 +11,16 @@ domains/*/data/processed/chroma_*/
 # Python caches
 __pycache__/
 *.py[cod]
+
+# Local environments and credentials
+.venv/
+.env
+.env.*
+!.env.example
+
+# Transient evaluation process files (saved JSON/JSONL results remain tracked)
+docs/evaluation/**/*.log
+docs/evaluation/**/watchdog.lock
+
+# Downloaded reading copies; retain literature notes and original source links
+docs/literature/**/*.pdf
