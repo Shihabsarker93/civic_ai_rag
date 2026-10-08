@@ -1,0 +1,784 @@
+{
+  "status": "unactivated_partial_review_candidate",
+  "original_root": "/Users/shihab/01 Thesis/Rag/Pipeline/p2/raw_data/raw_docs",
+  "original_inventory": [
+    {
+      "path": "bijoy_pdf/application_for_birth_information_correction.pdf",
+      "sha256": "86243eb66517ec3f6cb65ef2688e6ab67ff01828f1b7e4a56cb1c33dcba29792"
+    },
+    {
+      "path": "bijoy_pdf/birth_and_death_registration_rules_2018.pdf",
+      "sha256": "353eb7d07b6a558df21ad65d0dd7365e8a23aee97ef179f842631f44a70fdd6d"
+    },
+    {
+      "path": "bijoy_pdf/birth_registration_application_process.pdf",
+      "sha256": "571f385921ea9e312608df7b9093a93c1d7886b24b146e3346f521a7c6161b6c"
+    },
+    {
+      "path": "bijoy_pdf/birth_registration_application_process_02.pdf",
+      "sha256": "3f85423c99c75e336d248f9efd5cb182092d858240e18252e77ee9e414a1a6b8"
+    },
+    {
+      "path": "bijoy_pdf/know_this_01.pdf",
+      "sha256": "d2cd8b41889f45c395c88c495064e9229ee14c8fbfcacff4ab45499b43d247af"
+    },
+    {
+      "path": "bijoy_pdf/notice_birth_and_death_registration_certificate_correction_steps.pdf",
+      "sha256": "0469faf38b954ba3c29d809d98c0038f3b938715544b5a9d8fca4f330d53ad5f"
+    },
+    {
+      "path": "converted_docx/application_for_birth_information_correction.docx",
+      "sha256": "3e91de5cfdc2fde0ee8bdb2c92d0964272e8a784b935b65c512fd4cab710df68"
+    },
+    {
+      "path": "converted_docx/birth_and_death_registration_fees.docx",
+      "sha256": "818be263a9f56b7a260233a4e0f79d1acccade2fbbff77bf2e0a7788aec509ab"
+    },
+    {
+      "path": "converted_docx/birth_and_death_registration_rules_2018.docx",
+      "sha256": "399b102db03af2f5bff2d6ebe805a8b775e4b1ad04479ca7584d588a53ea04ad"
+    },
+    {
+      "path": "converted_docx/birth_registration_application_process.docx",
+      "sha256": "37f334dbcab812fcfbc6e52a1b6972631e173fb399872ac5e6fe2fc263937b41"
+    },
+    {
+      "path": "converted_docx/birth_registration_application_process_02.docx",
+      "sha256": "e23584b2c67b2aad07e358290b07fcbb7bb6f98a00c5e91d7612611595f1ce93"
+    },
+    {
+      "path": "converted_docx/know_this_01.docx",
+      "sha256": "7b1eb2e2fcf8219417d78c21a4ef3edeb13e39a8876a503e1a43458946f1a8cc"
+    },
+    {
+      "path": "html_unicode/birth_and_death_registration_act_2004.html",
+      "sha256": "590b82f6a406b5be51519b1f42610b191805f9184527ec20c799cdb86b142aab"
+    },
+    {
+      "path": "html_unicode/faqs_on_birth_and_death_registration.html",
+      "sha256": "43b419f26cd8305551415eeda9677c5701309ae8baacd4581788d0acd59d92e1"
+    },
+    {
+      "path": "html_unicode/faqs_on_birth_and_death_registration_02.html",
+      "sha256": "a5153c8a559cd1de2e291093962477bf2b4f891d987bb051da397eb64de52d93"
+    },
+    {
+      "path": "html_unicode/home_registrar_generals_office_birth_and_death_registration.html",
+      "sha256": "33353a6848ccdfbc65e7704fc9d9d4964999cbb3874016f76f455c0261f4bf4c"
+    },
+    {
+      "path": "scanned_pdf/birth_and_death_registration_guidelines_2021.pdf",
+      "sha256": "bb090e73b34eb43e34d9a1deab3d88b047f57eea59f5d6539163ba990dbd9dd2"
+    },
+    {
+      "path": "scanned_pdf/notice_birth_and_death_registration_certificate_correction_steps.pdf",
+      "sha256": "47638e4023bfbe67100493a3833996d04ad7b7d7fe2878751f617f45172395b4"
+    },
+    {
+      "path": "scanned_pdf/thesis_ocr_data.zip",
+      "sha256": "549ac0fc731eda42677072a2d6606382cc170d479843a9f161756632476c5a77"
+    }
+  ],
+  "repairs_sha256": "65ba35893557259a1de4d250e24df889357ac84ac8dc1cf551e5ec1cb17edb80",
+  "documents": [
+    {
+      "prepared_file": "json/faqs_birth_death_registration_01.json",
+      "baseline_sha256": "5e800152de46dbef5f80a1079dea575893a2b668ae88866113095e84a623b6a9",
+      "candidate_sha256": "5e800152de46dbef5f80a1079dea575893a2b668ae88866113095e84a623b6a9",
+      "declared_source_file": null,
+      "mapping_basis": "filename_hypothesis",
+      "selected_original": null,
+      "original_candidates": [
+        {
+          "path": "html_unicode/faqs_on_birth_and_death_registration.html",
+          "sha256": "43b419f26cd8305551415eeda9677c5701309ae8baacd4581788d0acd59d92e1"
+        }
+      ],
+      "review_status": "pending_original_content_review",
+      "changes": [],
+      "section_coverage": [],
+      "chunk_ids": [
+        "bdris_faq_01_q01",
+        "bdris_faq_01_q02",
+        "bdris_faq_01_q03",
+        "bdris_faq_01_q04",
+        "bdris_faq_01_q05",
+        "bdris_faq_01_q06",
+        "bdris_faq_01_q07",
+        "bdris_faq_01_q08",
+        "bdris_faq_01_q09",
+        "bdris_faq_01_q10",
+        "bdris_faq_01_q11",
+        "bdris_faq_01_q12",
+        "bdris_faq_01_q13",
+        "bdris_faq_01_q14",
+        "bdris_faq_01_q15",
+        "bdris_faq_01_q16"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "prepared_file": "json/faqs_birth_death_registration_02.json",
+      "baseline_sha256": "1bc091a1b8ed37980de5f0efeb0c97d3ef92832a655cfd19aeb226705ce615fc",
+      "candidate_sha256": "1bc091a1b8ed37980de5f0efeb0c97d3ef92832a655cfd19aeb226705ce615fc",
+      "declared_source_file": null,
+      "mapping_basis": "filename_hypothesis",
+      "selected_original": null,
+      "original_candidates": [
+        {
+          "path": "html_unicode/faqs_on_birth_and_death_registration_02.html",
+          "sha256": "a5153c8a559cd1de2e291093962477bf2b4f891d987bb051da397eb64de52d93"
+        }
+      ],
+      "review_status": "pending_original_content_review",
+      "changes": [],
+      "section_coverage": [],
+      "chunk_ids": [
+        "bdris_faq_02_preamble",
+        "bdris_faq_02_q01",
+        "bdris_faq_02_q02",
+        "bdris_faq_02_q03",
+        "bdris_faq_02_q04",
+        "bdris_faq_02_q05",
+        "bdris_faq_02_q06",
+        "bdris_faq_02_q07",
+        "bdris_faq_02_q08",
+        "bdris_faq_02_q09",
+        "bdris_faq_02_q10"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "prepared_file": "md/application_for_birth_information_correction_cleaned.md",
+      "baseline_sha256": "c15ede73a2afd32cc1869e9f5366e75ceec10d1a2a3ae64a5a5fb1a62972b2ae",
+      "candidate_sha256": "c15ede73a2afd32cc1869e9f5366e75ceec10d1a2a3ae64a5a5fb1a62972b2ae",
+      "declared_source_file": "application_for_birth_information_correction.docx",
+      "mapping_basis": "declared_filename",
+      "selected_original": null,
+      "original_candidates": [
+        {
+          "path": "converted_docx/application_for_birth_information_correction.docx",
+          "sha256": "3e91de5cfdc2fde0ee8bdb2c92d0964272e8a784b935b65c512fd4cab710df68"
+        }
+      ],
+      "review_status": "pending_original_content_review",
+      "changes": [],
+      "section_coverage": [],
+      "chunk_ids": [
+        "application_for_birth_information_correction_cleaned_002_01",
+        "application_for_birth_information_correction_cleaned_003_01",
+        "application_for_birth_information_correction_cleaned_004_01",
+        "application_for_birth_information_correction_cleaned_005_01",
+        "application_for_birth_information_correction_cleaned_006_01",
+        "application_for_birth_information_correction_cleaned_007_01",
+        "application_for_birth_information_correction_cleaned_008_01",
+        "application_for_birth_information_correction_cleaned_009_01",
+        "application_for_birth_information_correction_cleaned_010_01",
+        "application_for_birth_information_correction_cleaned_011_01",
+        "application_for_birth_information_correction_cleaned_012_01",
+        "application_for_birth_information_correction_cleaned_013_01"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "prepared_file": "md/birth_and_death_registration_act_2004.md",
+      "baseline_sha256": "c50c63b63efe17f6133cc7297c4437848a7f8f525eef6a5c84a8fd142155ce8d",
+      "candidate_sha256": "c50c63b63efe17f6133cc7297c4437848a7f8f525eef6a5c84a8fd142155ce8d",
+      "declared_source_file": null,
+      "mapping_basis": "filename_hypothesis",
+      "selected_original": null,
+      "original_candidates": [
+        {
+          "path": "html_unicode/birth_and_death_registration_act_2004.html",
+          "sha256": "590b82f6a406b5be51519b1f42610b191805f9184527ec20c799cdb86b142aab"
+        }
+      ],
+      "review_status": "pending_original_content_review",
+      "changes": [],
+      "section_coverage": [],
+      "chunk_ids": [
+        "birth_and_death_registration_act_2004_document_জন্ম_ও_মৃত্যু_নিবন্ধন_আইন_২০০৪_01",
+        "birth_and_death_registration_act_2004_ধারা_১_01",
+        "birth_and_death_registration_act_2004_ধারা_২_01",
+        "birth_and_death_registration_act_2004_ধারা_২_02",
+        "birth_and_death_registration_act_2004_ধারা_৩_01",
+        "birth_and_death_registration_act_2004_ধারা_৪_01",
+        "birth_and_death_registration_act_2004_ধারা_৫_01",
+        "birth_and_death_registration_act_2004_ধারা_৬_01",
+        "birth_and_death_registration_act_2004_ধারা_৭_01",
+        "birth_and_death_registration_act_2004_ধারা_৭ক_01",
+        "birth_and_death_registration_act_2004_ধারা_৮_01",
+        "birth_and_death_registration_act_2004_ধারা_৯_01",
+        "birth_and_death_registration_act_2004_ধারা_১০_01",
+        "birth_and_death_registration_act_2004_ধারা_১১_01",
+        "birth_and_death_registration_act_2004_ধারা_১২_01",
+        "birth_and_death_registration_act_2004_ধারা_১৩_01",
+        "birth_and_death_registration_act_2004_ধারা_১৪_01",
+        "birth_and_death_registration_act_2004_ধারা_১৫_01",
+        "birth_and_death_registration_act_2004_ধারা_১৫_02",
+        "birth_and_death_registration_act_2004_ধারা_১৫ক_01",
+        "birth_and_death_registration_act_2004_ধারা_১৬_01",
+        "birth_and_death_registration_act_2004_ধারা_১৭_01",
+        "birth_and_death_registration_act_2004_ধারা_১৮_01",
+        "birth_and_death_registration_act_2004_ধারা_১৮_02",
+        "birth_and_death_registration_act_2004_ধারা_১৯_01",
+        "birth_and_death_registration_act_2004_ধারা_২০_01",
+        "birth_and_death_registration_act_2004_ধারা_২১_01",
+        "birth_and_death_registration_act_2004_ধারা_২২_01",
+        "birth_and_death_registration_act_2004_ধারা_২৩_01",
+        "birth_and_death_registration_act_2004_ধারা_২৪_01"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "prepared_file": "md/birth_and_death_registration_fees_cleaned.md",
+      "baseline_sha256": "5d36ead2e73a41539e96424aa019e5fa34142c7057857024fdbc793529f199a1",
+      "candidate_sha256": "5d36ead2e73a41539e96424aa019e5fa34142c7057857024fdbc793529f199a1",
+      "declared_source_file": "birth_and_death_registration_fees.docx",
+      "mapping_basis": "declared_filename",
+      "selected_original": null,
+      "original_candidates": [
+        {
+          "path": "converted_docx/birth_and_death_registration_fees.docx",
+          "sha256": "818be263a9f56b7a260233a4e0f79d1acccade2fbbff77bf2e0a7788aec509ab"
+        }
+      ],
+      "review_status": "pending_original_content_review",
+      "changes": [],
+      "section_coverage": [],
+      "chunk_ids": [
+        "birth_and_death_registration_fees_cleaned_table_full",
+        "birth_and_death_registration_fees_cleaned_fee_row_01",
+        "birth_and_death_registration_fees_cleaned_fee_row_02",
+        "birth_and_death_registration_fees_cleaned_fee_row_03",
+        "birth_and_death_registration_fees_cleaned_fee_row_04",
+        "birth_and_death_registration_fees_cleaned_fee_row_05",
+        "birth_and_death_registration_fees_cleaned_fee_row_06",
+        "birth_and_death_registration_fees_cleaned_fee_row_07"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "prepared_file": "md/birth_and_death_registration_guidelines_2021_ocr.md",
+      "baseline_sha256": "8c1411f7f87e0193348042dfc39778e93e0386e04d15b2f9d2928d266af3ceec",
+      "candidate_sha256": "87a49053d1a95c6c34c4fecf678c6d0d383c1284a3de17f4cbeb0f2c812b5ef9",
+      "declared_source_file": "birth_and_death_registration_guidelines_2021.pdf",
+      "mapping_basis": "repair_source_hash",
+      "selected_original": "scanned_pdf/birth_and_death_registration_guidelines_2021.pdf",
+      "original_candidates": [
+        {
+          "path": "scanned_pdf/birth_and_death_registration_guidelines_2021.pdf",
+          "sha256": "bb090e73b34eb43e34d9a1deab3d88b047f57eea59f5d6539163ba990dbd9dd2"
+        }
+      ],
+      "review_status": "assistant_transcribed_requires_independent_review",
+      "changes": [],
+      "section_coverage": [
+        {
+          "section": "পৃষ্ঠা ১ | জারিকারী ও তারিখ",
+          "status": "provenance_only",
+          "text": "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার\nস্থানীয় সরকার, পল্লী উন্নয়ন ও সমবায় মন্ত্রণালয়\nস্থানীয় সরকার বিভাগ\nইউপি-২ শাখা\nবাংলাদেশ সচিবালয়, ঢাকা\nwww.lgd.gov.bd\n\nস্মারক নং-৪৬.০০.০০০০.০১৮.২৩.০০১.১৭-৩৯২\nতারিখ: ০৩ ভাদ্র ১৪২৮ / ১৮ আগস্ট ২০২১\nবিষয়: জন্ম ও মৃত্যু নিবন্ধন নির্দেশিকা ২০২১।"
+        },
+        {
+          "section": "পৃষ্ঠা ১ | বিধান ১: নির্দেশিকার উদ্দেশ্য",
+          "status": "retained",
+          "parts": 1
+        },
+        {
+          "section": "পৃষ্ঠা ১ | বিধান ২: আইনি কাঠামো",
+          "status": "retained",
+          "parts": 1
+        },
+        {
+          "section": "পৃষ্ঠা ১ | বিধান ৩: নিবন্ধকের দায়িত্ব ও ক্ষমতা",
+          "status": "retained",
+          "parts": 1
+        },
+        {
+          "section": "পৃষ্ঠা ১ | বিধান ৪: নিবন্ধন কার্যালয়ের অগ্রাধিকার",
+          "status": "retained",
+          "parts": 1
+        },
+        {
+          "section": "পৃষ্ঠা ১ | বিধান ৫: উদ্বুদ্ধকরণ ও আবেদন ফরম বিতরণ",
+          "status": "retained",
+          "parts": 1
+        },
+        {
+          "section": "পৃষ্ঠা ২ | বিধান ৬: পরিদর্শন ও কর্মসম্পাদন মূল্যায়ন",
+          "status": "retained",
+          "parts": 1
+        },
+        {
+          "section": "পৃষ্ঠা ২ | বিধান ৭: টাস্ক ফোর্স গঠনের উদ্দেশ্য",
+          "status": "retained",
+          "parts": 1
+        },
+        {
+          "section": "পৃষ্ঠা ২ | বিভাগীয় জন্ম ও মৃত্যু নিবন্ধন টাস্ক ফোর্স: গঠন",
+          "status": "retained",
+          "parts": 1
+        },
+        {
+          "section": "পৃষ্ঠা ২ | বিভাগীয় জন্ম ও মৃত্যু নিবন্ধন টাস্ক ফোর্স: দায়িত্ব",
+          "status": "retained",
+          "parts": 1
+        },
+        {
+          "section": "পৃষ্ঠা ২ | সিটি কর্পোরেশন জন্ম ও মৃত্যু নিবন্ধন টাস্ক ফোর্স: গঠন",
+          "status": "retained",
+          "parts": 1
+        },
+        {
+          "section": "পৃষ্ঠা ২ | সিটি কর্পোরেশন জন্ম ও মৃত্যু নিবন্ধন টাস্ক ফোর্স: দায়িত্ব",
+          "status": "retained",
+          "parts": 1
+        },
+        {
+          "section": "পৃষ্ঠা ৩ | জেলা জন্ম ও মৃত্যু নিবন্ধন টাস্ক ফোর্স: গঠন",
+          "status": "retained",
+          "parts": 1
+        },
+        {
+          "section": "পৃষ্ঠা ৩ | জেলা জন্ম ও মৃত্যু নিবন্ধন টাস্ক ফোর্স: দায়িত্ব",
+          "status": "retained",
+          "parts": 1
+        },
+        {
+          "section": "পৃষ্ঠা ৩ | উপজেলা জন্ম ও মৃত্যু নিবন্ধন টাস্ক ফোর্স: গঠন",
+          "status": "retained",
+          "parts": 1
+        },
+        {
+          "section": "পৃষ্ঠা ৩ | উপজেলা জন্ম ও মৃত্যু নিবন্ধন টাস্ক ফোর্স: দায়িত্ব",
+          "status": "retained",
+          "parts": 1
+        },
+        {
+          "section": "পৃষ্ঠা ৪ | পৌরসভা জন্ম ও মৃত্যু নিবন্ধন টাস্ক ফোর্স: গঠন",
+          "status": "retained",
+          "parts": 1
+        },
+        {
+          "section": "পৃষ্ঠা ৪ | পৌরসভা জন্ম ও মৃত্যু নিবন্ধন টাস্ক ফোর্স: দায়িত্ব",
+          "status": "retained",
+          "parts": 1
+        },
+        {
+          "section": "পৃষ্ঠা ৪ | ক্যান্টনমেন্ট বোর্ড জন্ম ও মৃত্যু নিবন্ধন টাস্ক ফোর্স: গঠন",
+          "status": "retained",
+          "parts": 1
+        },
+        {
+          "section": "পৃষ্ঠা ৪ | ক্যান্টনমেন্ট বোর্ড জন্ম ও মৃত্যু নিবন্ধন টাস্ক ফোর্স: দায়িত্ব",
+          "status": "retained",
+          "parts": 1
+        },
+        {
+          "section": "পৃষ্ঠা ৫ | ইউনিয়ন জন্ম ও মৃত্যু নিবন্ধন টাস্ক ফোর্স: গঠন",
+          "status": "retained",
+          "parts": 1
+        },
+        {
+          "section": "পৃষ্ঠা ৫ | ইউনিয়ন জন্ম ও মৃত্যু নিবন্ধন টাস্ক ফোর্স: দায়িত্ব",
+          "status": "retained",
+          "parts": 1
+        },
+        {
+          "section": "পৃষ্ঠা ৫ | সিটি কর্পোরেশন/পৌরসভা/ইউপি ওয়ার্ড জন্ম ও মৃত্যু নিবন্ধন টাস্ক ফোর্স: গঠন",
+          "status": "retained",
+          "parts": 1
+        },
+        {
+          "section": "পৃষ্ঠা ৫ | সিটি কর্পোরেশন/পৌরসভা/ইউপি ওয়ার্ড জন্ম ও মৃত্যু নিবন্ধন টাস্ক ফোর্স: দায়িত্ব",
+          "status": "retained",
+          "parts": 1
+        },
+        {
+          "section": "পৃষ্ঠা ৫ | স্বাক্ষরকারী",
+          "status": "provenance_only",
+          "text": "(হেলালুদ্দীন আহমদ)\nসিনিয়র সচিব"
+        },
+        {
+          "section": "পৃষ্ঠা ৬ | অনুলিপি বিতরণ তালিকা",
+          "status": "provenance_only",
+          "text": "সদয় অবগতি ও প্রয়োজনীয় ব্যবস্থা গ্রহণের জন্য অনুলিপি প্রেরিত হল (জ্যেষ্ঠতার ক্রমানুসারে নয়):\n\n১. মন্ত্রিপরিষদ সচিব, মন্ত্রিপরিষদ বিভাগ, বাংলাদেশ সচিবালয়, ঢাকা।\n২. মুখ্য সচিব, প্রধানমন্ত্রীর কার্যালয়, তেজগাঁও, ঢাকা।\n৩. সিনিয়র সচিব, জননিরাপত্তা বিভাগ, স্বরাষ্ট্র মন্ত্রণালয়, বাংলাদেশ সচিবালয়, ঢাকা।\n৪. সিনিয়র সচিব, প্রতিরক্ষা মন্ত্রণালয়, শেরে বাংলানগর, ঢাকা।\n৫. সিনিয়র সচিব, যুব ও ক্রীড়া মন্ত্রণালয়, বাংলাদেশ সচিবালয়, ঢাকা।\n৬. সিনিয়র সচিব, স্বাস্থ্য সেবা বিভাগ, স্বাস্থ্য ও পরিবার কল্যাণ মন্ত্রণালয়, বাংলাদেশ সচিবালয়, ঢাকা।\n৭. সচিব, স্বাস্থ্য শিক্ষা ও পরিবার কল্যাণ বিভাগ, স্বাস্থ্য ও পরিবার কল্যাণ মন্ত্রণালয়, বাংলাদেশ সচিবালয়, ঢাকা।\n৮. সচিব, মাধ্যমিক ও উচ্চ শিক্ষা বিভাগ, শিক্ষা মন্ত্রণালয়, বাংলাদেশ সচিবালয়, ঢাকা।\n৯. সচিব, কারিগরি ও মাদ্রাসা শিক্ষা বিভাগ, শিক্ষা মন্ত্রণালয়, বাংলাদেশ সচিবালয়, ঢাকা।\n১০. সচিব, প্রাথমিক ও গণশিক্ষা মন্ত্রণালয়, বাংলাদেশ সচিবালয়, ঢাকা।\n১১. সচিব, মহিলা ও শিশু বিষয়ক মন্ত্রণালয়, বাংলাদেশ সচিবালয়, ঢাকা।\n১২. সচিব, সুরক্ষা সেবা বিভাগ, স্বরাষ্ট্র মন্ত্রণালয়, বাংলাদেশ সচিবালয়, ঢাকা।\n১৩. সচিব, শ্রম ও কর্মসংস্থান মন্ত্রণালয়, বাংলাদেশ সচিবালয়, ঢাকা।\n১৪. সচিব, সমাজকল্যাণ মন্ত্রণালয়, বাংলাদেশ সচিবালয়, ঢাকা।\n১৫. সচিব, ধর্ম বিষয়ক মন্ত্রণালয়, বাংলাদেশ সচিবালয়, ঢাকা।\n১৬. সচিব, পল্লী উন্নয়ন ও সমবায় বিভাগ, বাংলাদেশ সচিবালয়, ঢাকা।\n১৭. সচিব, খাদ্য মন্ত্রণালয়, বাংলাদেশ সচিবালয়, ঢাকা।\n১৮. সচিব, দুর্যোগ ব্যবস্থাপনা ও ত্রাণ মন্ত্রণালয়, বাংলাদেশ সচিবালয়, ঢাকা।\n১৯. সচিব, সংস্কৃতি বিষয়ক মন্ত্রণালয়, বাংলাদেশ সচিবালয়, ঢাকা।\n২০. রেজিস্ট্রার জেনারেল, জন্ম ও মৃত্যু নিবন্ধন, পরিবহন পুল ভবন, সচিবালয় লিংক রোড, ঢাকা।\n২১. মহাপরিচালক, এনজিও বিষয়ক ব্যুরো।\n২২. বিভাগীয় কমিশনার (সকল)।\n২৩. মহাপরিচালক, বাংলাদেশ পরিসংখ্যান ব্যুরো।\n২৪. মহাপরিচালক, স্বাস্থ্য অধিদপ্তর।\n২৫. মহাপরিচালক, পরিবার পরিকল্পনা অধিদপ্তর।\n২৬. জেলা প্রশাসক (সকল)।\n২৭. প্রধান নির্বাহী কর্মকর্তা, সিটি কর্পোরেশন (সকল)।\n২৮. জন্ম ও মৃত্যু নিবন্ধন বিষয়ক টাস্ক ফোর্সের সদস্য (সকল)।\n২৯. উপজেলা নির্বাহী অফিসার (সকল)।\n৩০. ক্যান্টনমেন্ট এক্সিকিউটিভ অফিসার (সকল)।\n৩১. মেয়র, পৌরসভা (সকল)।\n৩২. কাউন্সিলর, সিটি কর্পোরেশন/পৌরসভা (সকল)।\n৩৩. চেয়ারম্যান, ইউনিয়ন পরিষদ (সকল)।\n৩৪. ইউনিয়ন পরিষদ সদস্য (সকল) ও\n৩৫. ইউনিয়ন পরিষদ সচিব (সকল)।"
+        },
+        {
+          "section": "পৃষ্ঠা ৬ | স্বাক্ষরকারী ও যোগাযোগ",
+          "status": "provenance_only",
+          "text": "(মোঃ আকবর হোসেন)\nউপসচিব\nইমেইল: up2lgd@gmail.com\n\nসম্পাদনা নোট: হাতের স্বাক্ষর ও অস্পষ্ট ফোন নম্বর প্রতিলিপি করা হয়নি; মূল স্ক্যানে সংরক্ষিত আছে।"
+        }
+      ],
+      "chunk_ids": [
+        "review_v2_birth_and_death_registration_guidelines_2021_ocr_003_01",
+        "review_v2_birth_and_death_registration_guidelines_2021_ocr_004_01",
+        "review_v2_birth_and_death_registration_guidelines_2021_ocr_005_01",
+        "review_v2_birth_and_death_registration_guidelines_2021_ocr_006_01",
+        "review_v2_birth_and_death_registration_guidelines_2021_ocr_007_01",
+        "review_v2_birth_and_death_registration_guidelines_2021_ocr_008_01",
+        "review_v2_birth_and_death_registration_guidelines_2021_ocr_009_01",
+        "review_v2_birth_and_death_registration_guidelines_2021_ocr_010_01",
+        "review_v2_birth_and_death_registration_guidelines_2021_ocr_011_01",
+        "review_v2_birth_and_death_registration_guidelines_2021_ocr_012_01",
+        "review_v2_birth_and_death_registration_guidelines_2021_ocr_013_01",
+        "review_v2_birth_and_death_registration_guidelines_2021_ocr_014_01",
+        "review_v2_birth_and_death_registration_guidelines_2021_ocr_015_01",
+        "review_v2_birth_and_death_registration_guidelines_2021_ocr_016_01",
+        "review_v2_birth_and_death_registration_guidelines_2021_ocr_017_01",
+        "review_v2_birth_and_death_registration_guidelines_2021_ocr_018_01",
+        "review_v2_birth_and_death_registration_guidelines_2021_ocr_019_01",
+        "review_v2_birth_and_death_registration_guidelines_2021_ocr_020_01",
+        "review_v2_birth_and_death_registration_guidelines_2021_ocr_021_01",
+        "review_v2_birth_and_death_registration_guidelines_2021_ocr_022_01",
+        "review_v2_birth_and_death_registration_guidelines_2021_ocr_023_01",
+        "review_v2_birth_and_death_registration_guidelines_2021_ocr_024_01",
+        "review_v2_birth_and_death_registration_guidelines_2021_ocr_025_01"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "prepared_file": "md/birth_and_death_registration_rules_2018.md",
+      "baseline_sha256": "4684fac41a3084ea4de475699815ce67ee75e697a60715fb9a21f5db2871b05b",
+      "candidate_sha256": "4684fac41a3084ea4de475699815ce67ee75e697a60715fb9a21f5db2871b05b",
+      "declared_source_file": "birth_and_death_registration_rules_2018.docx",
+      "mapping_basis": "declared_filename",
+      "selected_original": null,
+      "original_candidates": [
+        {
+          "path": "converted_docx/birth_and_death_registration_rules_2018.docx",
+          "sha256": "399b102db03af2f5bff2d6ebe805a8b775e4b1ad04479ca7584d588a53ea04ad"
+        }
+      ],
+      "review_status": "pending_original_content_review",
+      "changes": [],
+      "section_coverage": [],
+      "chunk_ids": [
+        "birth_and_death_registration_rules_2018_বিধি_১_01",
+        "birth_and_death_registration_rules_2018_বিধি_২_01",
+        "birth_and_death_registration_rules_2018_বিধি_২_02",
+        "birth_and_death_registration_rules_2018_বিধি_২_03",
+        "birth_and_death_registration_rules_2018_বিধি_২_04",
+        "birth_and_death_registration_rules_2018_বিধি_৩_01",
+        "birth_and_death_registration_rules_2018_বিধি_৩_02",
+        "birth_and_death_registration_rules_2018_বিধি_৪_01",
+        "birth_and_death_registration_rules_2018_বিধি_৫_01",
+        "birth_and_death_registration_rules_2018_বিধি_৬_01",
+        "birth_and_death_registration_rules_2018_বিধি_৭_01",
+        "birth_and_death_registration_rules_2018_বিধি_৮_01",
+        "birth_and_death_registration_rules_2018_বিধি_৯_01",
+        "birth_and_death_registration_rules_2018_বিধি_৯_02",
+        "birth_and_death_registration_rules_2018_বিধি_৯_03",
+        "birth_and_death_registration_rules_2018_বিধি_৯_04",
+        "birth_and_death_registration_rules_2018_বিধি_১০_01",
+        "birth_and_death_registration_rules_2018_বিধি_১০_02",
+        "birth_and_death_registration_rules_2018_বিধি_১১_01",
+        "birth_and_death_registration_rules_2018_বিধি_১১_02",
+        "birth_and_death_registration_rules_2018_বিধি_১১_03",
+        "birth_and_death_registration_rules_2018_বিধি_১২_01",
+        "birth_and_death_registration_rules_2018_বিধি_১২_02",
+        "birth_and_death_registration_rules_2018_বিধি_১২_03",
+        "birth_and_death_registration_rules_2018_বিধি_১৩_01",
+        "birth_and_death_registration_rules_2018_বিধি_১৪_01",
+        "birth_and_death_registration_rules_2018_বিধি_১৫_01",
+        "birth_and_death_registration_rules_2018_বিধি_১৫_02",
+        "birth_and_death_registration_rules_2018_বিধি_১৬_01",
+        "birth_and_death_registration_rules_2018_বিধি_১৭_01",
+        "birth_and_death_registration_rules_2018_বিধি_১৭_02",
+        "birth_and_death_registration_rules_2018_বিধি_১৮_01",
+        "birth_and_death_registration_rules_2018_বিধি_১৮_02",
+        "birth_and_death_registration_rules_2018_বিধি_১৮_03",
+        "birth_and_death_registration_rules_2018_বিধি_১৯_01",
+        "birth_and_death_registration_rules_2018_বিধি_১৯_02",
+        "birth_and_death_registration_rules_2018_বিধি_১৯_03",
+        "birth_and_death_registration_rules_2018_বিধি_২০_01",
+        "birth_and_death_registration_rules_2018_বিধি_২১_01",
+        "birth_and_death_registration_rules_2018_বিধি_২১_02",
+        "birth_and_death_registration_rules_2018_বিধি_২২_01",
+        "birth_and_death_registration_rules_2018_বিধি_২৩_01",
+        "birth_and_death_registration_rules_2018_বিধি_২৪_01",
+        "birth_and_death_registration_rules_2018_বিধি_২৫_01",
+        "birth_and_death_registration_rules_2018_বিধি_২৬_01"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "prepared_file": "md/birth_registration_application_process_02_cleaned.md",
+      "baseline_sha256": "6ed812d51a02efd001ef8e290576e69791eec70f5f9ec73ee2bd67f448d7a0ff",
+      "candidate_sha256": "6ed812d51a02efd001ef8e290576e69791eec70f5f9ec73ee2bd67f448d7a0ff",
+      "declared_source_file": "birth_registration_application_process_02.docx",
+      "mapping_basis": "declared_filename",
+      "selected_original": null,
+      "original_candidates": [
+        {
+          "path": "converted_docx/birth_registration_application_process_02.docx",
+          "sha256": "e23584b2c67b2aad07e358290b07fcbb7bb6f98a00c5e91d7612611595f1ce93"
+        }
+      ],
+      "review_status": "pending_original_content_review",
+      "changes": [],
+      "section_coverage": [],
+      "chunk_ids": [
+        "birth_registration_application_process_02_cleaned_003_01",
+        "birth_registration_application_process_02_cleaned_004_01",
+        "birth_registration_application_process_02_cleaned_005_01",
+        "birth_registration_application_process_02_cleaned_006_01",
+        "birth_registration_application_process_02_cleaned_007_01",
+        "birth_registration_application_process_02_cleaned_008_01",
+        "birth_registration_application_process_02_cleaned_009_01",
+        "birth_registration_application_process_02_cleaned_010_01",
+        "birth_registration_application_process_02_cleaned_011_01",
+        "birth_registration_application_process_02_cleaned_012_01",
+        "birth_registration_application_process_02_cleaned_013_01",
+        "birth_registration_application_process_02_cleaned_014_01"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "prepared_file": "md/birth_registration_application_process_cleaned.md",
+      "baseline_sha256": "19e4c20a410c4fe463a42baa1ed54e5ad5e4e493f83dfc15044ab1aed36a4809",
+      "candidate_sha256": "2f3523ca356fc1519f2fd5ad46cd667ae5495be06a74c303980dee6fbf3b5ac7",
+      "declared_source_file": "birth_registration_application_process.docx",
+      "mapping_basis": "repair_source_hash",
+      "selected_original": "converted_docx/birth_registration_application_process.docx",
+      "original_candidates": [
+        {
+          "path": "converted_docx/birth_registration_application_process.docx",
+          "sha256": "37f334dbcab812fcfbc6e52a1b6972631e173fb399872ac5e6fe2fc263937b41"
+        }
+      ],
+      "review_status": "targeted_source_review",
+      "changes": [
+        {
+          "id": "restore_prohibition_strength",
+          "source_locator": "Initial instruction bullet beginning ফরম পূরণ করার সময়",
+          "before": "ফরম পূরণের সময় ডট (.), হাইফেন (-), কোলন (:) ইত্যাদি চিহ্ন ব্যবহার না করাই উত্তম।",
+          "after": "ফরম পূরণ করার সময় কোন ডট (.), হাইফেন (-), কোলন (:) ব্যবহার করবেন না।",
+          "reason": "The supplied DOCX prohibits these characters; the prepared text incorrectly weakened this into a recommendation. This records the supplied document, not current portal behavior."
+        }
+      ],
+      "section_coverage": [],
+      "chunk_ids": [
+        "birth_registration_application_process_cleaned_002_01",
+        "birth_registration_application_process_cleaned_003_01",
+        "birth_registration_application_process_cleaned_004_01",
+        "birth_registration_application_process_cleaned_005_01",
+        "birth_registration_application_process_cleaned_006_01",
+        "birth_registration_application_process_cleaned_008_01",
+        "birth_registration_application_process_cleaned_009_01",
+        "birth_registration_application_process_cleaned_010_01",
+        "birth_registration_application_process_cleaned_011_01",
+        "birth_registration_application_process_cleaned_012_01",
+        "birth_registration_application_process_cleaned_013_01",
+        "birth_registration_application_process_cleaned_014_01",
+        "birth_registration_application_process_cleaned_015_01",
+        "birth_registration_application_process_cleaned_016_01",
+        "birth_registration_application_process_cleaned_017_01",
+        "birth_registration_application_process_cleaned_018_01",
+        "birth_registration_application_process_cleaned_019_01",
+        "birth_registration_application_process_cleaned_020_01"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "prepared_file": "md/faqs_on_birth_and_death_registration_02_cleaned.md",
+      "baseline_sha256": "29290534a91a803c788c67f890bbbd8bff2793717762a21c524d81a31b8f6dee",
+      "candidate_sha256": "29290534a91a803c788c67f890bbbd8bff2793717762a21c524d81a31b8f6dee",
+      "declared_source_file": "faqs_on_birth_and_death_registration_02.html",
+      "mapping_basis": "declared_filename",
+      "selected_original": null,
+      "original_candidates": [
+        {
+          "path": "html_unicode/faqs_on_birth_and_death_registration_02.html",
+          "sha256": "a5153c8a559cd1de2e291093962477bf2b4f891d987bb051da397eb64de52d93"
+        }
+      ],
+      "review_status": "pending_original_content_review",
+      "changes": [],
+      "section_coverage": [],
+      "chunk_ids": [],
+      "exclusion_reason": "FAQ Markdown excluded in favor of JSON; equivalence pending review"
+    },
+    {
+      "prepared_file": "md/faqs_on_birth_and_death_registration_cleaned.md",
+      "baseline_sha256": "2e91def085595cf4c6c94a7224f2865c7ceac7e6a1c05ec03604affaff0a77c3",
+      "candidate_sha256": "2e91def085595cf4c6c94a7224f2865c7ceac7e6a1c05ec03604affaff0a77c3",
+      "declared_source_file": "faqs_on_birth_and_death_registration.html",
+      "mapping_basis": "declared_filename",
+      "selected_original": null,
+      "original_candidates": [
+        {
+          "path": "html_unicode/faqs_on_birth_and_death_registration.html",
+          "sha256": "43b419f26cd8305551415eeda9677c5701309ae8baacd4581788d0acd59d92e1"
+        }
+      ],
+      "review_status": "pending_original_content_review",
+      "changes": [],
+      "section_coverage": [],
+      "chunk_ids": [],
+      "exclusion_reason": "FAQ Markdown excluded in favor of JSON; equivalence pending review"
+    },
+    {
+      "prepared_file": "md/home_registrar_generals_office_birth_and_death_registration.md",
+      "baseline_sha256": "b354dd1d33af98d23a3c283dbd57a3c5e21916640c0df33e488dde4db43ade9a",
+      "candidate_sha256": "b354dd1d33af98d23a3c283dbd57a3c5e21916640c0df33e488dde4db43ade9a",
+      "declared_source_file": null,
+      "mapping_basis": "filename_hypothesis",
+      "selected_original": null,
+      "original_candidates": [
+        {
+          "path": "html_unicode/home_registrar_generals_office_birth_and_death_registration.html",
+          "sha256": "33353a6848ccdfbc65e7704fc9d9d4964999cbb3874016f76f455c0261f4bf4c"
+        }
+      ],
+      "review_status": "pending_original_content_review",
+      "changes": [],
+      "section_coverage": [],
+      "chunk_ids": [
+        "home_registrar_generals_office_birth_and_death_registration_002_01",
+        "home_registrar_generals_office_birth_and_death_registration_006_01",
+        "home_registrar_generals_office_birth_and_death_registration_007_01",
+        "home_registrar_generals_office_birth_and_death_registration_008_01",
+        "home_registrar_generals_office_birth_and_death_registration_009_01",
+        "home_registrar_generals_office_birth_and_death_registration_010_01",
+        "home_registrar_generals_office_birth_and_death_registration_011_01",
+        "home_registrar_generals_office_birth_and_death_registration_022_01",
+        "home_registrar_generals_office_birth_and_death_registration_024_01"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "prepared_file": "md/know_this_01_cleaned.md",
+      "baseline_sha256": "02ebb6f01d8cc0e44284805de391f78bccf7232d048e32e319d1b3a63a3fc897",
+      "candidate_sha256": "02ebb6f01d8cc0e44284805de391f78bccf7232d048e32e319d1b3a63a3fc897",
+      "declared_source_file": "know_this_01.docx",
+      "mapping_basis": "declared_filename",
+      "selected_original": null,
+      "original_candidates": [
+        {
+          "path": "converted_docx/know_this_01.docx",
+          "sha256": "7b1eb2e2fcf8219417d78c21a4ef3edeb13e39a8876a503e1a43458946f1a8cc"
+        }
+      ],
+      "review_status": "pending_original_content_review",
+      "changes": [],
+      "section_coverage": [],
+      "chunk_ids": [
+        "know_this_01_cleaned_002_01",
+        "know_this_01_cleaned_003_01",
+        "know_this_01_cleaned_004_01",
+        "know_this_01_cleaned_005_01",
+        "know_this_01_cleaned_006_01",
+        "know_this_01_cleaned_007_01",
+        "know_this_01_cleaned_008_01",
+        "know_this_01_cleaned_009_01"
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "prepared_file": "md/notice_birth_and_death_registration_certificate_correction_steps_ocr.md",
+      "baseline_sha256": "79a330f3847a08c2d11f80981fb7016b42d96a5ad5d5375ea17710842ab8282e",
+      "candidate_sha256": "6a3079babf6cfca435749a78d59d7cfcab837187e48559c765622fa0bd8eca69",
+      "declared_source_file": "notice_birth_and_death_registration_certificate_correction_steps.pdf",
+      "mapping_basis": "repair_source_hash",
+      "selected_original": "scanned_pdf/notice_birth_and_death_registration_certificate_correction_steps.pdf",
+      "original_candidates": [
+        {
+          "path": "bijoy_pdf/notice_birth_and_death_registration_certificate_correction_steps.pdf",
+          "sha256": "0469faf38b954ba3c29d809d98c0038f3b938715544b5a9d8fca4f330d53ad5f"
+        },
+        {
+          "path": "scanned_pdf/notice_birth_and_death_registration_certificate_correction_steps.pdf",
+          "sha256": "47638e4023bfbe67100493a3833996d04ad7b7d7fe2878751f617f45172395b4"
+        }
+      ],
+      "review_status": "targeted_source_review",
+      "changes": [
+        {
+          "id": "restore_attachment_requirement",
+          "source_locator": "Page 2, continuation of registration/issue-date correction, step 6",
+          "before": "ধাপ ৬: প্রয়োজনীয় সংযুক্তি দিতে হবে, যেমন ব্যক্তির অঙ্গীকারনামা, নিবন্ধকের প্রত্যয়নপত্র, হাতে লেখা নিবন্ধন বহির সংশ্লিষ্ট পৃষ্ঠার নিবন্ধক কর্তৃক সত্যায়িত কপি এবং হাতে লেখা জন্ম সনদের কপি।",
+          "after": "ধাপ ৬: ব্যক্তির অঙ্গীকারনামা, নিবন্ধকের প্রত্যয়নপত্র, হাতে লেখা নিবন্ধন বহির সংশ্লিষ্ট পৃষ্ঠার নিবন্ধক কর্তৃক সত্যায়িত কপি এবং হাতে লেখা জন্ম সনদের কপি সংযুক্ত করতে হবে।",
+          "reason": "The source presents required attachments, not an illustrative list."
+        },
+        {
+          "id": "restore_nationality_operator",
+          "source_locator": "Page 2, nationality row",
+          "before": "জন্ম সনদ সংশোধনের স্বাভাবিক প্রক্রিয়ায় জাতীয়তা সংশোধন করা যাবে।",
+          "after": "জন্ম সনদ সংশোধনের স্বাভাবিক প্রক্রিয়ায় জাতীয়তা সংশোধন করা যাবে। এ ক্ষেত্রে ব্যক্তির জাতীয়তা সংশোধন করার জন্য http://bdris.gov.bd ওয়েবসাইটে নিবন্ধক সহকারী তার আইডি দিয়ে প্রবেশ করবে।",
+          "reason": "Restores the specified operator; this is not an unrestricted citizen self-service instruction."
+        },
+        {
+          "id": "restore_missing_birth_date_provision",
+          "source_locator": "Page 2, final service row: জন্ম তারিখ সংশোধন; notice dated 22 December 2022",
+          "before": "প্রমাণক হিসেবে পিতা বা মাতার পাসপোর্টের কপি অথবা যুক্তিগ্রাহ্য অন্য প্রমাণক সংযুক্ত করা যেতে পারে।",
+          "after": "প্রমাণক হিসেবে পিতা বা মাতার পাসপোর্টের কপি অথবা যুক্তিগ্রাহ্য অন্য প্রমাণক সংযুক্ত করা যেতে পারে।\n\n## জন্ম তারিখ সংশোধন\n\nবর্তমান BDRIS সফটওয়্যারে ০১-০১-২০১৩ তারিখের পর জন্ম তারিখ সংশোধন করা যায় না। অনেক ক্ষেত্রে নিবন্ধক ভুল জন্ম তারিখ লিপিবদ্ধ করার কারণে তা সংশোধন করা যেত না। এখন থেকে BDRIS সফটওয়্যারে জন্ম তারিখের শুধুমাত্র দিন ও মাসের সংশোধন সংশ্লিষ্ট জেলার উপপরিচালক স্থানীয় সরকার ও উপজেলা প্রশাসনের আইডি থেকে সংশোধন করতে পারবেন।",
+          "reason": "Restores an omitted service row, retaining the historical restriction, day/month-only limitation and authorized offices. The source's বর্তমান/এখন refers to the 2022 notice, not to today's rules."
+        }
+      ],
+      "section_coverage": [],
+      "chunk_ids": [
+        "notice_birth_and_death_registration_certificate_correction_steps_ocr_002_01",
+        "notice_birth_and_death_registration_certificate_correction_steps_ocr_003_01",
+        "notice_birth_and_death_registration_certificate_correction_steps_ocr_004_01",
+        "notice_birth_and_death_registration_certificate_correction_steps_ocr_005_01",
+        "notice_birth_and_death_registration_certificate_correction_steps_ocr_006_01",
+        "notice_birth_and_death_registration_certificate_correction_steps_ocr_007_01",
+        "notice_birth_and_death_registration_certificate_correction_steps_ocr_008_01"
+      ],
+      "exclusion_reason": null
+    }
+  ],
+  "supplement_sha256": "12bfd5a05126775ea055684180481f8aece3e47ab6ed9e42e1f79bf70ec8ac36",
+  "baseline_chunks": 187,
+  "candidate_chunks": 199,
+  "changed_content_ids": [
+    "birth_registration_application_process_cleaned_005_01",
+    "notice_birth_and_death_registration_certificate_correction_steps_ocr_006_01",
+    "notice_birth_and_death_registration_certificate_correction_steps_ocr_007_01"
+  ],
+  "added_ids": [
+    "notice_birth_and_death_registration_certificate_correction_steps_ocr_008_01",
+    "review_v2_birth_and_death_registration_guidelines_2021_ocr_003_01",
+    "review_v2_birth_and_death_registration_guidelines_2021_ocr_004_01",
+    "review_v2_birth_and_death_registration_guidelines_2021_ocr_005_01",
+    "review_v2_birth_and_death_registration_guidelines_2021_ocr_006_01",
+    "review_v2_birth_and_death_registration_guidelines_2021_ocr_007_01",
+    "review_v2_birth_and_death_registration_guidelines_2021_ocr_008_01",
+    "review_v2_birth_and_death_registration_guidelines_2021_ocr_009_01",
+    "review_v2_birth_and_death_registration_guidelines_2021_ocr_010_01",
+    "review_v2_birth_and_death_registration_guidelines_2021_ocr_011_01",
+    "review_v2_birth_and_death_registration_guidelines_2021_ocr_012_01",
+    "review_v2_birth_and_death_registration_guidelines_2021_ocr_013_01",
+    "review_v2_birth_and_death_registration_guidelines_2021_ocr_014_01",
+    "review_v2_birth_and_death_registration_guidelines_2021_ocr_015_01",
+    "review_v2_birth_and_death_registration_guidelines_2021_ocr_016_01",
+    "review_v2_birth_and_death_registration_guidelines_2021_ocr_017_01",
+    "review_v2_birth_and_death_registration_guidelines_2021_ocr_018_01",
+    "review_v2_birth_and_death_registration_guidelines_2021_ocr_019_01",
+    "review_v2_birth_and_death_registration_guidelines_2021_ocr_020_01",
+    "review_v2_birth_and_death_registration_guidelines_2021_ocr_021_01",
+    "review_v2_birth_and_death_registration_guidelines_2021_ocr_022_01",
+    "review_v2_birth_and_death_registration_guidelines_2021_ocr_023_01",
+    "review_v2_birth_and_death_registration_guidelines_2021_ocr_024_01",
+    "review_v2_birth_and_death_registration_guidelines_2021_ocr_025_01"
+  ],
+  "removed_ids": [
+    "birth_and_death_registration_guidelines_2021_ocr_002_01",
+    "birth_and_death_registration_guidelines_2021_ocr_002_02",
+    "birth_and_death_registration_guidelines_2021_ocr_003_01",
+    "birth_and_death_registration_guidelines_2021_ocr_003_02",
+    "birth_and_death_registration_guidelines_2021_ocr_004_01",
+    "birth_and_death_registration_guidelines_2021_ocr_004_02",
+    "birth_and_death_registration_guidelines_2021_ocr_005_01",
+    "birth_and_death_registration_guidelines_2021_ocr_005_02",
+    "birth_and_death_registration_guidelines_2021_ocr_006_01",
+    "birth_and_death_registration_guidelines_2021_ocr_006_02",
+    "birth_and_death_registration_guidelines_2021_ocr_007_01",
+    "birth_and_death_registration_guidelines_2021_ocr_007_02"
+  ],
+  "max_retrieval_tokens": 772,
+  "token_warnings": [],
+  "limits": "Source fidelity review is incomplete. No current-rule or answer-quality claim. No index built.",
+  "baseline_inputs_unchanged": true
+}

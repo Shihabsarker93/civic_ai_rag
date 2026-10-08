@@ -1,0 +1,11 @@
+{
+  "files": [{
+    "prepared_file": "md/birth_and_death_registration_guidelines_2021_ocr.md",
+    "prepared_sha256": "8c1411f7f87e0193348042dfc39778e93e0386e04d15b2f9d2928d266af3ceec",
+    "original_file": "scanned_pdf/birth_and_death_registration_guidelines_2021.pdf",
+    "original_sha256": "bb090e73b34eb43e34d9a1deab3d88b047f57eea59f5d6539163ba990dbd9dd2",
+    "replacement_file": "docs/data_cleanup/birth_review_20261008/reviewed_sources/guidelines_2021.md",
+    "replacement_sha256": "87a49053d1a95c6c34c4fecf678c6d0d383c1284a3de17f4cbeb0f2c812b5ef9",
+    "excluded_sections": ["পৃষ্ঠা ১ | জারিকারী ও তারিখ", "পৃষ্ঠা ৫ | স্বাক্ষরকারী", "পৃষ্ঠা ৬ | অনুলিপি বিতরণ তালিকা", "পৃষ্ঠা ৬ | স্বাক্ষরকারী ও যোগাযোগ"]
+  }]
+}

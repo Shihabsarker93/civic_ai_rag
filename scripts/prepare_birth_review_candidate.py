@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import re
 from pathlib import Path
 import shutil
 import sys
@@ -25,7 +26,48 @@ def apply_changes(text: str, changes: list[dict]) -> str:
     return text
 
 
-def build(original_root: Path, output: Path, repairs_path: Path) -> dict:
+def replacement_text(repair: dict) -> str:
+    path = ROOT / repair['replacement_file']
+    if sha(path) != repair['replacement_sha256']:
+        raise ValueError('Reviewed replacement changed')
+    return path.read_text(encoding='utf-8')
+
+
+def reviewed_rows(prep, target: Path, repair: dict, max_chars: int):
+    metadata, body = prep.parse_frontmatter(target.read_text())
+    sections = prep.split_heading_sections(prep.normalize_text(body))
+    excluded = [prep.normalize_text(title) for title in repair['excluded_sections']]
+    titles = {s['title'] for s in sections}
+    if not set(excluded).issubset(titles):
+        raise ValueError('Excluded section missing from reviewed source')
+    rows = prep.markdown_chunks(target, skip_faq=True, max_chars=max_chars)
+    rows = [r for r in rows if r['metadata']['section_title'] not in excluded]
+    coverage = []
+    for section in sections:
+        title = section['title']
+        if title in ('document', prep.normalize_text(metadata.get('bengali_title', ''))):
+            continue
+        content = prep.normalize_text('\n'.join(section['lines']))
+        if title in excluded:
+            coverage.append({'section': title, 'status': 'provenance_only', 'text': content})
+            continue
+        parts = [r['content'].split('\nContent: ', 1)[1] for r in rows
+                 if r['metadata']['section_title'] == title]
+        if ''.join(''.join(parts).split()) != ''.join(content.split()):
+            raise ValueError(f'Section coverage mismatch: {title}')
+        coverage.append({'section': title, 'status': 'retained', 'parts': len(parts)})
+    for row in rows:
+        match = re.match(r'পৃষ্ঠা ([১-৬])', row['metadata']['section_title'])
+        if not match:
+            raise ValueError('Reviewed section has no source page')
+        row['id'] = 'review_v2_' + row['id']
+        row['metadata'].update(source_page=int(match[1]), document_date='2021-08-18',
+                               current_applicability_verified=False,
+                               original_sha256=repair['original_sha256'])
+    return rows, coverage
+
+
+def build(original_root: Path, output: Path, repairs_path: Path, supplement_path: Path | None = None) -> dict:
     from domains.birth_death_registration.scripts import prepare_chunks as prep
 
     raw = ROOT / "domains/birth_death_registration/data/raw"
@@ -40,14 +82,21 @@ def build(original_root: Path, output: Path, repairs_path: Path) -> dict:
     if not original_root.is_dir():
         raise ValueError("Original source directory is required")
     repairs = json.loads(repairs_path.read_text())["files"]
+    if supplement_path:
+        repairs += json.loads(supplement_path.read_text())["files"]
     repair_by_file = {r["prepared_file"]: r for r in repairs}
+    if len(repair_by_file) != len(repairs):
+        raise ValueError('Duplicate repair files')
     baseline_hashes = {str(p): sha(p) for p in [*files, config_path, active_chunks]}
     for repair in repairs:
         if sha(raw / repair["prepared_file"]) != repair["prepared_sha256"]:
             raise ValueError(f"Prepared source changed: {repair['prepared_file']}")
         if sha(original_root / repair["original_file"]) != repair["original_sha256"]:
             raise ValueError(f"Original source changed: {repair['original_file']}")
-        apply_changes((raw / repair["prepared_file"]).read_text(), repair["changes"])
+        if 'replacement_file' in repair:
+            replacement_text(repair)
+        else:
+            apply_changes((raw / repair["prepared_file"]).read_text(), repair["changes"])
 
     original_files = sorted(p for p in original_root.rglob("*") if p.is_file())
     output.mkdir(parents=True)
@@ -64,7 +113,9 @@ def build(original_root: Path, output: Path, repairs_path: Path) -> dict:
         target.parent.mkdir(parents=True, exist_ok=True)
         repair = repair_by_file.get(relative)
         if repair:
-            target.write_text(apply_changes(source.read_text(), repair["changes"]), encoding="utf-8")
+            text = (replacement_text(repair) if 'replacement_file' in repair else
+                    apply_changes(source.read_text(), repair["changes"]))
+            target.write_text(text, encoding="utf-8")
         else:
             shutil.copy2(source, target)
         metadata = prep.parse_frontmatter(source.read_text())[0] if source.suffix == ".md" else {}
@@ -77,6 +128,10 @@ def build(original_root: Path, output: Path, repairs_path: Path) -> dict:
         review = "targeted_source_review" if repair else "pending_original_content_review"
         if "guidelines_2021_ocr" in source.name:
             review = "ocr_page_review_required"
+        coverage = []
+        if repair and 'replacement_file' in repair:
+            rows, coverage = reviewed_rows(prep, target, repair, config['preprocessing']['max_chunk_chars'])
+            review = 'assistant_transcribed_requires_independent_review'
         for row in rows:
             row["metadata"].update({
                 "candidate_source": relative,
@@ -96,7 +151,8 @@ def build(original_root: Path, output: Path, repairs_path: Path) -> dict:
             "selected_original": selected,
             "original_candidates": [{"path": str(p.relative_to(original_root)), "sha256": sha(p)} for p in matches],
             "review_status": review,
-            "changes": repair["changes"] if repair else [],
+            "changes": repair.get("changes", []) if repair else [],
+            "section_coverage": coverage,
             "chunk_ids": [row["id"] for row in rows],
             "exclusion_reason": "FAQ Markdown excluded in favor of JSON; equivalence pending review" if not rows else None,
         })
@@ -114,6 +170,7 @@ def build(original_root: Path, output: Path, repairs_path: Path) -> dict:
         "original_root": str(original_root),
         "original_inventory": [{"path": str(p.relative_to(original_root)), "sha256": sha(p)} for p in original_files],
         "repairs_sha256": sha(repairs_path), "documents": records,
+        "supplement_sha256": sha(supplement_path) if supplement_path else None,
         "baseline_chunks": len(active), "candidate_chunks": len(chunks),
         "changed_content_ids": changed, "added_ids": sorted(set(ids) - active.keys()),
         "removed_ids": sorted(active.keys() - set(ids)),
@@ -134,6 +191,7 @@ if __name__ == "__main__":
     parser.add_argument("--original-root", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--repairs", type=Path, default=ROOT / "docs/data_cleanup/birth_review_20261008/repairs.json")
+    parser.add_argument('--supplement', type=Path)
     args = parser.parse_args()
-    result = build(args.original_root, args.output, args.repairs)
+    result = build(args.original_root, args.output, args.repairs, args.supplement)
     print(json.dumps({k: result[k] for k in ("status", "baseline_chunks", "candidate_chunks", "changed_content_ids", "added_ids", "removed_ids", "max_retrieval_tokens", "baseline_inputs_unchanged")}, indent=2))
