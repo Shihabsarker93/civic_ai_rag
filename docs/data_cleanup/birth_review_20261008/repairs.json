@@ -1,0 +1,51 @@
+{
+  "scope": "Candidate-only source-fidelity corrections. Not verification of current rules.",
+  "files": [
+    {
+      "prepared_file": "md/birth_registration_application_process_cleaned.md",
+      "prepared_sha256": "19e4c20a410c4fe463a42baa1ed54e5ad5e4e493f83dfc15044ab1aed36a4809",
+      "original_file": "converted_docx/birth_registration_application_process.docx",
+      "original_sha256": "37f334dbcab812fcfbc6e52a1b6972631e173fb399872ac5e6fe2fc263937b41",
+      "review_method": "Original DOCX paragraph text inspected; targeted correction only, not complete document certification.",
+      "changes": [
+        {
+          "id": "restore_prohibition_strength",
+          "source_locator": "Initial instruction bullet beginning ফরম পূরণ করার সময়",
+          "before": "ফরম পূরণের সময় ডট (.), হাইফেন (-), কোলন (:) ইত্যাদি চিহ্ন ব্যবহার না করাই উত্তম।",
+          "after": "ফরম পূরণ করার সময় কোন ডট (.), হাইফেন (-), কোলন (:) ব্যবহার করবেন না।",
+          "reason": "The supplied DOCX prohibits these characters; the prepared text incorrectly weakened this into a recommendation. This records the supplied document, not current portal behavior."
+        }
+      ]
+    },
+    {
+      "prepared_file": "md/notice_birth_and_death_registration_certificate_correction_steps_ocr.md",
+      "prepared_sha256": "79a330f3847a08c2d11f80981fb7016b42d96a5ad5d5375ea17710842ab8282e",
+      "original_file": "scanned_pdf/notice_birth_and_death_registration_certificate_correction_steps.pdf",
+      "original_sha256": "47638e4023bfbe67100493a3833996d04ad7b7d7fe2878751f617f45172395b4",
+      "review_method": "Both scanned PDF pages rendered and visually inspected by assistant. No independent human verification or current-law validation.",
+      "changes": [
+        {
+          "id": "restore_attachment_requirement",
+          "source_locator": "Page 2, continuation of registration/issue-date correction, step 6",
+          "before": "ধাপ ৬: প্রয়োজনীয় সংযুক্তি দিতে হবে, যেমন ব্যক্তির অঙ্গীকারনামা, নিবন্ধকের প্রত্যয়নপত্র, হাতে লেখা নিবন্ধন বহির সংশ্লিষ্ট পৃষ্ঠার নিবন্ধক কর্তৃক সত্যায়িত কপি এবং হাতে লেখা জন্ম সনদের কপি।",
+          "after": "ধাপ ৬: ব্যক্তির অঙ্গীকারনামা, নিবন্ধকের প্রত্যয়নপত্র, হাতে লেখা নিবন্ধন বহির সংশ্লিষ্ট পৃষ্ঠার নিবন্ধক কর্তৃক সত্যায়িত কপি এবং হাতে লেখা জন্ম সনদের কপি সংযুক্ত করতে হবে।",
+          "reason": "The source presents required attachments, not an illustrative list."
+        },
+        {
+          "id": "restore_nationality_operator",
+          "source_locator": "Page 2, nationality row",
+          "before": "জন্ম সনদ সংশোধনের স্বাভাবিক প্রক্রিয়ায় জাতীয়তা সংশোধন করা যাবে।",
+          "after": "জন্ম সনদ সংশোধনের স্বাভাবিক প্রক্রিয়ায় জাতীয়তা সংশোধন করা যাবে। এ ক্ষেত্রে ব্যক্তির জাতীয়তা সংশোধন করার জন্য http://bdris.gov.bd ওয়েবসাইটে নিবন্ধক সহকারী তার আইডি দিয়ে প্রবেশ করবে।",
+          "reason": "Restores the specified operator; this is not an unrestricted citizen self-service instruction."
+        },
+        {
+          "id": "restore_missing_birth_date_provision",
+          "source_locator": "Page 2, final service row: জন্ম তারিখ সংশোধন; notice dated 22 December 2022",
+          "before": "প্রমাণক হিসেবে পিতা বা মাতার পাসপোর্টের কপি অথবা যুক্তিগ্রাহ্য অন্য প্রমাণক সংযুক্ত করা যেতে পারে।",
+          "after": "প্রমাণক হিসেবে পিতা বা মাতার পাসপোর্টের কপি অথবা যুক্তিগ্রাহ্য অন্য প্রমাণক সংযুক্ত করা যেতে পারে।\n\n## জন্ম তারিখ সংশোধন\n\nবর্তমান BDRIS সফটওয়্যারে ০১-০১-২০১৩ তারিখের পর জন্ম তারিখ সংশোধন করা যায় না। অনেক ক্ষেত্রে নিবন্ধক ভুল জন্ম তারিখ লিপিবদ্ধ করার কারণে তা সংশোধন করা যেত না। এখন থেকে BDRIS সফটওয়্যারে জন্ম তারিখের শুধুমাত্র দিন ও মাসের সংশোধন সংশ্লিষ্ট জেলার উপপরিচালক স্থানীয় সরকার ও উপজেলা প্রশাসনের আইডি থেকে সংশোধন করতে পারবেন।",
+          "reason": "Restores an omitted service row, retaining the historical restriction, day/month-only limitation and authorized offices. The source's বর্তমান/এখন refers to the 2022 notice, not to today's rules."
+        }
+      ]
+    }
+  ]
+}
