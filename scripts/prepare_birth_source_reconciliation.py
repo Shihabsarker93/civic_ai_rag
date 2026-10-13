@@ -14,6 +14,58 @@ from scripts.extract_birth_sources import ArticleParser, docx_text, html_text
 from scripts.prepare_birth_review_candidate import sha
 
 
+class ActStructureParser(ArticleParser):
+    """Capture chapter and section blocks in source order, not separate lists."""
+
+    def __init__(self):
+        super().__init__(root_class='__none__', root_id=None, omit_footnotes=True)
+        self.events = []
+        self.kind = None
+
+    def handle_starttag(self, tag, attrs):
+        if self.root_depth is None:
+            classes = dict(attrs).get('class', '').split()
+            self.root_class = next((c for c in classes if c in
+                                    {'act-chapter-group', 'txt-head', 'txt-details'}), '__none__')
+            self.kind = self.root_class
+        super().handle_starttag(tag, attrs)
+
+    def handle_endtag(self, tag):
+        count = len(self.articles)
+        super().handle_endtag(tag)
+        if len(self.articles) > count:
+            self.events.append((self.kind, self.articles[-1]))
+
+
+def act_sections(html: str):
+    parser = ActStructureParser()
+    parser.feed(html)
+    chapter = heading = None
+    sections = []
+    for kind, text in parser.events:
+        if kind == 'act-chapter-group':
+            if heading is not None:
+                raise ValueError('Chapter interrupts an Act section')
+            chapter = ' / '.join(text.splitlines())
+        elif kind == 'txt-head':
+            if heading is not None:
+                raise ValueError('Act heading has no body')
+            heading = text
+        else:
+            number = re.match(r'\[?([০-৯]+[ক-হ]?)[।৷]', text)
+            if not chapter or not heading or not number:
+                raise ValueError('Act chapter, heading or section number missing')
+            sections.append({'chapter': chapter, 'heading': heading,
+                             'number': number[1], 'body': text})
+            heading = None
+    if heading is not None or not sections:
+        raise ValueError('Incomplete Act structure')
+    numbers = [s['number'] for s in sections]
+    if len(numbers) != len(set(numbers)):
+        raise ValueError('Duplicate Act section number')
+    return sections
+
+
 def parse_faq(text: str, expected: int):
     matches = list(re.finditer(r'^([০-৯]+)।\s*(.+)$', text, re.M))
     if [int(m[1]) for m in matches] != list(range(1, expected + 1)):
@@ -83,22 +135,19 @@ def prepare(original_root: Path, output: Path):
 
     source = original_root / 'html_unicode/birth_and_death_registration_act_2004.html'
     prepared = raw / 'md/birth_and_death_registration_act_2004.md'
-    headings = ArticleParser(root_class='txt-head', root_id=None)
-    bodies = ArticleParser(root_class='txt-details', root_id=None, omit_footnotes=True)
-    html = source.read_text()
-    headings.feed(html)
-    bodies.feed(html)
-    if len(headings.articles) != len(bodies.articles) or len(bodies.articles) < 20:
+    sections = act_sections(source.read_text())
+    if len(sections) != 26:
         raise ValueError('Act section mapping failed')
     text = ('---\nsource_file: ' + source.name + '\nbengali_title: জন্ম ও মৃত্যু নিবন্ধন আইন, ২০০৪\n'
             'source_url: http://bdlaws.minlaw.gov.bd/act-921.html\n'
             'note: Supplied HTML snapshot; amendment footnote markers omitted from evidence, original retained.\n'
             '---\n\n# জন্ম ও মৃত্যু নিবন্ধন আইন, ২০০৪\n\n')
-    for heading, body in zip(headings.articles, bodies.articles):
-        number = re.match(r'\[?([০-৯]+[ক-হ]?)[।৷]', body)
-        if not number:
-            raise ValueError(f'Act section number missing: {body[:40]}')
-        text += f'### ধারা {number[1]}: {heading}\n\n{body}\n\n'
+    chapter = None
+    for section in sections:
+        if section['chapter'] != chapter:
+            chapter = section['chapter']
+            text += f'## {chapter}\n\n'
+        text += f"### ধারা {section['number']}: {section['heading']}\n\n{section['body']}\n\n"
     planned.append((prepared, source, text))
 
     output.mkdir(parents=True)

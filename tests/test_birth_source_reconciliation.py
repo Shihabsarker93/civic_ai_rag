@@ -3,11 +3,37 @@ from pathlib import Path
 
 import pytest
 
-from scripts.extract_birth_sources import ArticleParser, html_text
+from scripts.extract_birth_sources import ArticleParser, html_text, normalized
 from scripts.prepare_birth_review_candidate import ROOT, apply_changes
-from scripts.prepare_birth_source_reconciliation import parse_faq
+from scripts.prepare_birth_source_reconciliation import act_sections, parse_faq
 
 REVIEW = ROOT / 'docs/data_cleanup/birth_review_20261009'
+
+
+def test_act_structure_keeps_order_and_footnote_text():
+    html = ('<div class="act-chapter-group"><p>অধ্যায়-১</p><p>প্রারম্ভিক</p></div>'
+            '<div class="txt-head">Name</div><div class="txt-details">১। First</div>'
+            '<div class="act-chapter-group"><p>অধ্যায়-২</p></div>'
+            '<div class="txt-head">Next</div><div class="txt-details">'
+            '<span class="footnote">99</span>[২। Amended]</div>')
+    sections = act_sections(html)
+    assert sections[0]['chapter'] == normalized('অধ্যায়-১ / প্রারম্ভিক')
+    assert sections[1]['chapter'] == normalized('অধ্যায়-২')
+    assert sections[1]['body'] == '[২। Amended]'
+    with pytest.raises(ValueError):
+        act_sections('<div class="txt-head">Orphan</div>')
+
+
+def test_legal_chunker_flushes_before_chapter_change():
+    from domains.birth_death_registration.scripts import prepare_chunks as prep
+    body = '# Act\n\n## অধ্যায়-১\n\n### ধারা ১: First\nFirst condition\n\n'
+    body += '## অধ্যায়-২\n\n### ধারা ২: Second\nSecond condition\n'
+    rows = prep.legal_chunks(Path('act.md'), {}, prep.normalize_text(body),
+                             doc_type='act', max_chars=1400)
+    assert len(rows) == 2
+    assert rows[0]['metadata']['chapter'] == prep.normalize_text('অধ্যায়-১')
+    assert rows[1]['metadata']['chapter'] == prep.normalize_text('অধ্যায়-২')
+    assert 'Second condition' not in rows[0]['content']
 
 
 def test_html_extraction_keeps_paragraphs_and_excludes_navigation(tmp_path):

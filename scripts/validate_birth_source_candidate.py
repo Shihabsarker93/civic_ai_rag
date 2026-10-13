@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from scripts.extract_birth_sources import ArticleParser, docx_text, html_text, normalized
 from scripts.prepare_birth_review_candidate import sha
-from scripts.prepare_birth_source_reconciliation import parse_faq
+from scripts.prepare_birth_source_reconciliation import act_sections, parse_faq
 
 
 def compact(text):
@@ -71,6 +71,12 @@ def validate(original_root: Path, candidate: Path):
                  if r['metadata']['legal_unit_no'] == number]
         check('act_section:' + number, compact(''.join(parts)) == compact(body),
               'Full source section retained in ordered chunks; HTML footnote markers excluded.')
+
+    for section in act_sections(source.read_text()):
+        parts = [r for r in act_rows if r['metadata']['legal_unit_no'] == section['number']]
+        check('act_chapter:' + section['number'], bool(parts) and all(
+            compact(r['metadata']['chapter']) == compact(section['chapter']) for r in parts),
+            'Chapter association compared with ordered source HTML blocks.')
 
     check('unique_ids', len(chunks) == len({r['id'] for r in chunks}), 'No duplicate IDs.')
     check('token_limits', all(r['metadata']['retrieval_token_count'] <= r['metadata']['embedding_model_max_tokens']

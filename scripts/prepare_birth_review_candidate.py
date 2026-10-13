@@ -48,6 +48,9 @@ def reviewed_rows(prep, target: Path, repair: dict, max_chars: int):
         if title in ('document', prep.normalize_text(metadata.get('bengali_title', ''))):
             continue
         content = prep.normalize_text('\n'.join(section['lines']))
+        if prep.CHAPTER_HEADING_RE.match('## ' + title) and not content:
+            coverage.append({'section': title, 'status': 'chapter_metadata'})
+            continue
         if title in excluded:
             coverage.append({'section': title, 'status': 'provenance_only', 'text': content})
             continue

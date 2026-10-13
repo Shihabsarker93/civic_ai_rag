@@ -14,7 +14,7 @@ from transformers import AutoTokenizer
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(PROJECT_ROOT))
 
-CHUNKING_VERSION = "2026-06-07-nfc-token-audit"
+CHUNKING_VERSION = "2026-10-14-chapter-boundaries"
 PRACTICAL_TOKEN_WARNING_THRESHOLD = 1024
 ZERO_WIDTH_RE = re.compile(r"[\u200b\u200c\u200d\u200e\u200f\ufeff]")
 
@@ -22,7 +22,7 @@ FRONTMATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n?", re.DOTALL)
 HEADING_RE = re.compile(r"^(#{1,6})\s+(.+)$", re.MULTILINE)
 TABLE_ROW_RE = re.compile(r"^\|(.+)\|$", re.MULTILINE)
 LEGAL_HEADING_RE = re.compile(r"^###\s+(ধারা|বিধি)\s+([০-৯0-9কখগঘঙচছজঝঞটঠডঢণতথদধনপফবভমযরলশষসহড়ঢ়য়]+)[।\s—:-]*(.*)$")
-CHAPTER_HEADING_RE = re.compile(r"^##\s+(.+অধ্যা[য়য়].*)$")
+CHAPTER_HEADING_RE = re.compile(r"^##\s+(.*অধ্যা[য়য়].*)$")
 QUESTION_HEADING_RE = re.compile(r"^##\s+প্রশ্ন\s+([০-৯0-9]+)[।:]?\s*(.*)$")
 STEP_HEADING_RE = re.compile(r"^##+\s+(ধাপ\s+[০-৯0-9]+|পরিস্থিতি\s+[০-৯0-9]+|.+প্রক্রিয়া|.+প্রক্রিয়া|.+নির্দেশনা|.+তথ্য|.+পদ্ধতি|.+সেবাসমূহ|.+যোগাযোগ).*$")
 SENTENCE_SPLIT_RE = re.compile(r"(?<=[।.!?])\s+|(?=\([০-৯0-9কখগঘঙচছজঝঞটঠডঢণতথদধনপফবভমযরলশষসহড়ঢ়য়]+\))")
@@ -485,6 +485,8 @@ def legal_chunks(path: Path, metadata: dict[str, str], body: str, *, doc_type: s
         if not current_lines:
             return
         text = normalize_text("\n".join(current_lines))
+        if not text:
+            return
         for index, part in enumerate(split_long_text(text, max_chars), start=1):
             chunks.append(
                 make_chunk(
@@ -513,6 +515,8 @@ def legal_chunks(path: Path, metadata: dict[str, str], body: str, *, doc_type: s
     for line in body.splitlines():
         chapter = CHAPTER_HEADING_RE.match(line)
         if chapter:
+            flush()
+            current_lines = []
             current_chapter = chapter.group(1).strip()
             continue
         legal = LEGAL_HEADING_RE.match(line)

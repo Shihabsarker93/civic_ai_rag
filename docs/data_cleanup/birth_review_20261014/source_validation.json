@@ -1,0 +1,808 @@
+{
+  "validation_scope": "source extraction, condition retention and artifact integrity; not retrieval accuracy",
+  "passed": true,
+  "checks": [
+    {
+      "check": "active_source_hash:json/faqs_birth_death_registration_01.json",
+      "passed": true,
+      "detail": "Original prepared input must remain unchanged."
+    },
+    {
+      "check": "candidate_source_hash:json/faqs_birth_death_registration_01.json",
+      "passed": true,
+      "detail": "Candidate input must match the generated manifest."
+    },
+    {
+      "check": "active_source_hash:json/faqs_birth_death_registration_02.json",
+      "passed": true,
+      "detail": "Original prepared input must remain unchanged."
+    },
+    {
+      "check": "candidate_source_hash:json/faqs_birth_death_registration_02.json",
+      "passed": true,
+      "detail": "Candidate input must match the generated manifest."
+    },
+    {
+      "check": "active_source_hash:md/application_for_birth_information_correction_cleaned.md",
+      "passed": true,
+      "detail": "Original prepared input must remain unchanged."
+    },
+    {
+      "check": "candidate_source_hash:md/application_for_birth_information_correction_cleaned.md",
+      "passed": true,
+      "detail": "Candidate input must match the generated manifest."
+    },
+    {
+      "check": "active_source_hash:md/birth_and_death_registration_act_2004.md",
+      "passed": true,
+      "detail": "Original prepared input must remain unchanged."
+    },
+    {
+      "check": "candidate_source_hash:md/birth_and_death_registration_act_2004.md",
+      "passed": true,
+      "detail": "Candidate input must match the generated manifest."
+    },
+    {
+      "check": "active_source_hash:md/birth_and_death_registration_fees_cleaned.md",
+      "passed": true,
+      "detail": "Original prepared input must remain unchanged."
+    },
+    {
+      "check": "candidate_source_hash:md/birth_and_death_registration_fees_cleaned.md",
+      "passed": true,
+      "detail": "Candidate input must match the generated manifest."
+    },
+    {
+      "check": "active_source_hash:md/birth_and_death_registration_guidelines_2021_ocr.md",
+      "passed": true,
+      "detail": "Original prepared input must remain unchanged."
+    },
+    {
+      "check": "candidate_source_hash:md/birth_and_death_registration_guidelines_2021_ocr.md",
+      "passed": true,
+      "detail": "Candidate input must match the generated manifest."
+    },
+    {
+      "check": "active_source_hash:md/birth_and_death_registration_rules_2018.md",
+      "passed": true,
+      "detail": "Original prepared input must remain unchanged."
+    },
+    {
+      "check": "candidate_source_hash:md/birth_and_death_registration_rules_2018.md",
+      "passed": true,
+      "detail": "Candidate input must match the generated manifest."
+    },
+    {
+      "check": "active_source_hash:md/birth_registration_application_process_02_cleaned.md",
+      "passed": true,
+      "detail": "Original prepared input must remain unchanged."
+    },
+    {
+      "check": "candidate_source_hash:md/birth_registration_application_process_02_cleaned.md",
+      "passed": true,
+      "detail": "Candidate input must match the generated manifest."
+    },
+    {
+      "check": "active_source_hash:md/birth_registration_application_process_cleaned.md",
+      "passed": true,
+      "detail": "Original prepared input must remain unchanged."
+    },
+    {
+      "check": "candidate_source_hash:md/birth_registration_application_process_cleaned.md",
+      "passed": true,
+      "detail": "Candidate input must match the generated manifest."
+    },
+    {
+      "check": "active_source_hash:md/faqs_on_birth_and_death_registration_02_cleaned.md",
+      "passed": true,
+      "detail": "Original prepared input must remain unchanged."
+    },
+    {
+      "check": "candidate_source_hash:md/faqs_on_birth_and_death_registration_02_cleaned.md",
+      "passed": true,
+      "detail": "Candidate input must match the generated manifest."
+    },
+    {
+      "check": "active_source_hash:md/faqs_on_birth_and_death_registration_cleaned.md",
+      "passed": true,
+      "detail": "Original prepared input must remain unchanged."
+    },
+    {
+      "check": "candidate_source_hash:md/faqs_on_birth_and_death_registration_cleaned.md",
+      "passed": true,
+      "detail": "Candidate input must match the generated manifest."
+    },
+    {
+      "check": "active_source_hash:md/home_registrar_generals_office_birth_and_death_registration.md",
+      "passed": true,
+      "detail": "Original prepared input must remain unchanged."
+    },
+    {
+      "check": "candidate_source_hash:md/home_registrar_generals_office_birth_and_death_registration.md",
+      "passed": true,
+      "detail": "Candidate input must match the generated manifest."
+    },
+    {
+      "check": "active_source_hash:md/know_this_01_cleaned.md",
+      "passed": true,
+      "detail": "Original prepared input must remain unchanged."
+    },
+    {
+      "check": "candidate_source_hash:md/know_this_01_cleaned.md",
+      "passed": true,
+      "detail": "Candidate input must match the generated manifest."
+    },
+    {
+      "check": "active_source_hash:md/notice_birth_and_death_registration_certificate_correction_steps_ocr.md",
+      "passed": true,
+      "detail": "Original prepared input must remain unchanged."
+    },
+    {
+      "check": "candidate_source_hash:md/notice_birth_and_death_registration_certificate_correction_steps_ocr.md",
+      "passed": true,
+      "detail": "Candidate input must match the generated manifest."
+    },
+    {
+      "check": "original_hash:bijoy_pdf/application_for_birth_information_correction.pdf",
+      "passed": true,
+      "detail": "Supplied original remains unchanged."
+    },
+    {
+      "check": "original_hash:bijoy_pdf/birth_and_death_registration_rules_2018.pdf",
+      "passed": true,
+      "detail": "Supplied original remains unchanged."
+    },
+    {
+      "check": "original_hash:bijoy_pdf/birth_registration_application_process.pdf",
+      "passed": true,
+      "detail": "Supplied original remains unchanged."
+    },
+    {
+      "check": "original_hash:bijoy_pdf/birth_registration_application_process_02.pdf",
+      "passed": true,
+      "detail": "Supplied original remains unchanged."
+    },
+    {
+      "check": "original_hash:bijoy_pdf/know_this_01.pdf",
+      "passed": true,
+      "detail": "Supplied original remains unchanged."
+    },
+    {
+      "check": "original_hash:bijoy_pdf/notice_birth_and_death_registration_certificate_correction_steps.pdf",
+      "passed": true,
+      "detail": "Supplied original remains unchanged."
+    },
+    {
+      "check": "original_hash:converted_docx/application_for_birth_information_correction.docx",
+      "passed": true,
+      "detail": "Supplied original remains unchanged."
+    },
+    {
+      "check": "original_hash:converted_docx/birth_and_death_registration_fees.docx",
+      "passed": true,
+      "detail": "Supplied original remains unchanged."
+    },
+    {
+      "check": "original_hash:converted_docx/birth_and_death_registration_rules_2018.docx",
+      "passed": true,
+      "detail": "Supplied original remains unchanged."
+    },
+    {
+      "check": "original_hash:converted_docx/birth_registration_application_process.docx",
+      "passed": true,
+      "detail": "Supplied original remains unchanged."
+    },
+    {
+      "check": "original_hash:converted_docx/birth_registration_application_process_02.docx",
+      "passed": true,
+      "detail": "Supplied original remains unchanged."
+    },
+    {
+      "check": "original_hash:converted_docx/know_this_01.docx",
+      "passed": true,
+      "detail": "Supplied original remains unchanged."
+    },
+    {
+      "check": "original_hash:html_unicode/birth_and_death_registration_act_2004.html",
+      "passed": true,
+      "detail": "Supplied original remains unchanged."
+    },
+    {
+      "check": "original_hash:html_unicode/faqs_on_birth_and_death_registration.html",
+      "passed": true,
+      "detail": "Supplied original remains unchanged."
+    },
+    {
+      "check": "original_hash:html_unicode/faqs_on_birth_and_death_registration_02.html",
+      "passed": true,
+      "detail": "Supplied original remains unchanged."
+    },
+    {
+      "check": "original_hash:html_unicode/home_registrar_generals_office_birth_and_death_registration.html",
+      "passed": true,
+      "detail": "Supplied original remains unchanged."
+    },
+    {
+      "check": "original_hash:scanned_pdf/birth_and_death_registration_guidelines_2021.pdf",
+      "passed": true,
+      "detail": "Supplied original remains unchanged."
+    },
+    {
+      "check": "original_hash:scanned_pdf/notice_birth_and_death_registration_certificate_correction_steps.pdf",
+      "passed": true,
+      "detail": "Supplied original remains unchanged."
+    },
+    {
+      "check": "original_hash:scanned_pdf/thesis_ocr_data.zip",
+      "passed": true,
+      "detail": "Supplied original remains unchanged."
+    },
+    {
+      "check": "faq_1_1_source_text",
+      "passed": true,
+      "detail": "Compared with freshly extracted source HTML, not an earlier generated comparison."
+    },
+    {
+      "check": "faq_1_1_chunk_payload",
+      "passed": true,
+      "detail": "Full answer retained in one chunk, including qualifications."
+    },
+    {
+      "check": "faq_1_2_source_text",
+      "passed": true,
+      "detail": "Compared with freshly extracted source HTML, not an earlier generated comparison."
+    },
+    {
+      "check": "faq_1_2_chunk_payload",
+      "passed": true,
+      "detail": "Full answer retained in one chunk, including qualifications."
+    },
+    {
+      "check": "faq_1_3_source_text",
+      "passed": true,
+      "detail": "Compared with freshly extracted source HTML, not an earlier generated comparison."
+    },
+    {
+      "check": "faq_1_3_chunk_payload",
+      "passed": true,
+      "detail": "Full answer retained in one chunk, including qualifications."
+    },
+    {
+      "check": "faq_1_4_source_text",
+      "passed": true,
+      "detail": "Compared with freshly extracted source HTML, not an earlier generated comparison."
+    },
+    {
+      "check": "faq_1_4_chunk_payload",
+      "passed": true,
+      "detail": "Full answer retained in one chunk, including qualifications."
+    },
+    {
+      "check": "faq_1_5_source_text",
+      "passed": true,
+      "detail": "Compared with freshly extracted source HTML, not an earlier generated comparison."
+    },
+    {
+      "check": "faq_1_5_chunk_payload",
+      "passed": true,
+      "detail": "Full answer retained in one chunk, including qualifications."
+    },
+    {
+      "check": "faq_1_6_source_text",
+      "passed": true,
+      "detail": "Compared with freshly extracted source HTML, not an earlier generated comparison."
+    },
+    {
+      "check": "faq_1_6_chunk_payload",
+      "passed": true,
+      "detail": "Full answer retained in one chunk, including qualifications."
+    },
+    {
+      "check": "faq_1_7_source_text",
+      "passed": true,
+      "detail": "Compared with freshly extracted source HTML, not an earlier generated comparison."
+    },
+    {
+      "check": "faq_1_7_chunk_payload",
+      "passed": true,
+      "detail": "Full answer retained in one chunk, including qualifications."
+    },
+    {
+      "check": "faq_1_8_source_text",
+      "passed": true,
+      "detail": "Compared with freshly extracted source HTML, not an earlier generated comparison."
+    },
+    {
+      "check": "faq_1_8_chunk_payload",
+      "passed": true,
+      "detail": "Full answer retained in one chunk, including qualifications."
+    },
+    {
+      "check": "faq_1_9_source_text",
+      "passed": true,
+      "detail": "Compared with freshly extracted source HTML, not an earlier generated comparison."
+    },
+    {
+      "check": "faq_1_9_chunk_payload",
+      "passed": true,
+      "detail": "Full answer retained in one chunk, including qualifications."
+    },
+    {
+      "check": "faq_1_10_source_text",
+      "passed": true,
+      "detail": "Compared with freshly extracted source HTML, not an earlier generated comparison."
+    },
+    {
+      "check": "faq_1_10_chunk_payload",
+      "passed": true,
+      "detail": "Full answer retained in one chunk, including qualifications."
+    },
+    {
+      "check": "faq_1_11_source_text",
+      "passed": true,
+      "detail": "Compared with freshly extracted source HTML, not an earlier generated comparison."
+    },
+    {
+      "check": "faq_1_11_chunk_payload",
+      "passed": true,
+      "detail": "Full answer retained in one chunk, including qualifications."
+    },
+    {
+      "check": "faq_1_12_source_text",
+      "passed": true,
+      "detail": "Compared with freshly extracted source HTML, not an earlier generated comparison."
+    },
+    {
+      "check": "faq_1_12_chunk_payload",
+      "passed": true,
+      "detail": "Full answer retained in one chunk, including qualifications."
+    },
+    {
+      "check": "faq_1_13_source_text",
+      "passed": true,
+      "detail": "Compared with freshly extracted source HTML, not an earlier generated comparison."
+    },
+    {
+      "check": "faq_1_13_chunk_payload",
+      "passed": true,
+      "detail": "Full answer retained in one chunk, including qualifications."
+    },
+    {
+      "check": "faq_1_14_source_text",
+      "passed": true,
+      "detail": "Compared with freshly extracted source HTML, not an earlier generated comparison."
+    },
+    {
+      "check": "faq_1_14_chunk_payload",
+      "passed": true,
+      "detail": "Full answer retained in one chunk, including qualifications."
+    },
+    {
+      "check": "faq_1_15_source_text",
+      "passed": true,
+      "detail": "Compared with freshly extracted source HTML, not an earlier generated comparison."
+    },
+    {
+      "check": "faq_1_15_chunk_payload",
+      "passed": true,
+      "detail": "Full answer retained in one chunk, including qualifications."
+    },
+    {
+      "check": "faq_1_16_source_text",
+      "passed": true,
+      "detail": "Compared with freshly extracted source HTML, not an earlier generated comparison."
+    },
+    {
+      "check": "faq_1_16_chunk_payload",
+      "passed": true,
+      "detail": "Full answer retained in one chunk, including qualifications."
+    },
+    {
+      "check": "faq_1_count",
+      "passed": true,
+      "detail": "Source question count."
+    },
+    {
+      "check": "faq_2_1_source_text",
+      "passed": true,
+      "detail": "Compared with freshly extracted source HTML, not an earlier generated comparison."
+    },
+    {
+      "check": "faq_2_1_chunk_payload",
+      "passed": true,
+      "detail": "Full answer retained in one chunk, including qualifications."
+    },
+    {
+      "check": "faq_2_2_source_text",
+      "passed": true,
+      "detail": "Compared with freshly extracted source HTML, not an earlier generated comparison."
+    },
+    {
+      "check": "faq_2_2_chunk_payload",
+      "passed": true,
+      "detail": "Full answer retained in one chunk, including qualifications."
+    },
+    {
+      "check": "faq_2_3_source_text",
+      "passed": true,
+      "detail": "Compared with freshly extracted source HTML, not an earlier generated comparison."
+    },
+    {
+      "check": "faq_2_3_chunk_payload",
+      "passed": true,
+      "detail": "Full answer retained in one chunk, including qualifications."
+    },
+    {
+      "check": "faq_2_4_source_text",
+      "passed": true,
+      "detail": "Compared with freshly extracted source HTML, not an earlier generated comparison."
+    },
+    {
+      "check": "faq_2_4_chunk_payload",
+      "passed": true,
+      "detail": "Full answer retained in one chunk, including qualifications."
+    },
+    {
+      "check": "faq_2_5_source_text",
+      "passed": true,
+      "detail": "Compared with freshly extracted source HTML, not an earlier generated comparison."
+    },
+    {
+      "check": "faq_2_5_chunk_payload",
+      "passed": true,
+      "detail": "Full answer retained in one chunk, including qualifications."
+    },
+    {
+      "check": "faq_2_6_source_text",
+      "passed": true,
+      "detail": "Compared with freshly extracted source HTML, not an earlier generated comparison."
+    },
+    {
+      "check": "faq_2_6_chunk_payload",
+      "passed": true,
+      "detail": "Full answer retained in one chunk, including qualifications."
+    },
+    {
+      "check": "faq_2_7_source_text",
+      "passed": true,
+      "detail": "Compared with freshly extracted source HTML, not an earlier generated comparison."
+    },
+    {
+      "check": "faq_2_7_chunk_payload",
+      "passed": true,
+      "detail": "Full answer retained in one chunk, including qualifications."
+    },
+    {
+      "check": "faq_2_8_source_text",
+      "passed": true,
+      "detail": "Compared with freshly extracted source HTML, not an earlier generated comparison."
+    },
+    {
+      "check": "faq_2_8_chunk_payload",
+      "passed": true,
+      "detail": "Full answer retained in one chunk, including qualifications."
+    },
+    {
+      "check": "faq_2_9_source_text",
+      "passed": true,
+      "detail": "Compared with freshly extracted source HTML, not an earlier generated comparison."
+    },
+    {
+      "check": "faq_2_9_chunk_payload",
+      "passed": true,
+      "detail": "Full answer retained in one chunk, including qualifications."
+    },
+    {
+      "check": "faq_2_10_source_text",
+      "passed": true,
+      "detail": "Compared with freshly extracted source HTML, not an earlier generated comparison."
+    },
+    {
+      "check": "faq_2_10_chunk_payload",
+      "passed": true,
+      "detail": "Full answer retained in one chunk, including qualifications."
+    },
+    {
+      "check": "faq_2_count",
+      "passed": true,
+      "detail": "Source question count."
+    },
+    {
+      "check": "faq_2_preamble",
+      "passed": true,
+      "detail": "Preamble retained separately from the ten questions."
+    },
+    {
+      "check": "parent_correction_case_1",
+      "passed": true,
+      "detail": "Entire original condition and requirement must occur together in one candidate chunk."
+    },
+    {
+      "check": "parent_correction_case_2",
+      "passed": true,
+      "detail": "Entire original condition and requirement must occur together in one candidate chunk."
+    },
+    {
+      "check": "parent_correction_case_3",
+      "passed": true,
+      "detail": "Entire original condition and requirement must occur together in one candidate chunk."
+    },
+    {
+      "check": "parent_correction_case_4",
+      "passed": true,
+      "detail": "Entire original condition and requirement must occur together in one candidate chunk."
+    },
+    {
+      "check": "act_section:১",
+      "passed": true,
+      "detail": "Full source section retained in ordered chunks; HTML footnote markers excluded."
+    },
+    {
+      "check": "act_section:২",
+      "passed": true,
+      "detail": "Full source section retained in ordered chunks; HTML footnote markers excluded."
+    },
+    {
+      "check": "act_section:৩",
+      "passed": true,
+      "detail": "Full source section retained in ordered chunks; HTML footnote markers excluded."
+    },
+    {
+      "check": "act_section:৪",
+      "passed": true,
+      "detail": "Full source section retained in ordered chunks; HTML footnote markers excluded."
+    },
+    {
+      "check": "act_section:৫",
+      "passed": true,
+      "detail": "Full source section retained in ordered chunks; HTML footnote markers excluded."
+    },
+    {
+      "check": "act_section:৬",
+      "passed": true,
+      "detail": "Full source section retained in ordered chunks; HTML footnote markers excluded."
+    },
+    {
+      "check": "act_section:৭",
+      "passed": true,
+      "detail": "Full source section retained in ordered chunks; HTML footnote markers excluded."
+    },
+    {
+      "check": "act_section:৭ক",
+      "passed": true,
+      "detail": "Full source section retained in ordered chunks; HTML footnote markers excluded."
+    },
+    {
+      "check": "act_section:৮",
+      "passed": true,
+      "detail": "Full source section retained in ordered chunks; HTML footnote markers excluded."
+    },
+    {
+      "check": "act_section:৯",
+      "passed": true,
+      "detail": "Full source section retained in ordered chunks; HTML footnote markers excluded."
+    },
+    {
+      "check": "act_section:১০",
+      "passed": true,
+      "detail": "Full source section retained in ordered chunks; HTML footnote markers excluded."
+    },
+    {
+      "check": "act_section:১১",
+      "passed": true,
+      "detail": "Full source section retained in ordered chunks; HTML footnote markers excluded."
+    },
+    {
+      "check": "act_section:১২",
+      "passed": true,
+      "detail": "Full source section retained in ordered chunks; HTML footnote markers excluded."
+    },
+    {
+      "check": "act_section:১৩",
+      "passed": true,
+      "detail": "Full source section retained in ordered chunks; HTML footnote markers excluded."
+    },
+    {
+      "check": "act_section:১৪",
+      "passed": true,
+      "detail": "Full source section retained in ordered chunks; HTML footnote markers excluded."
+    },
+    {
+      "check": "act_section:১৫",
+      "passed": true,
+      "detail": "Full source section retained in ordered chunks; HTML footnote markers excluded."
+    },
+    {
+      "check": "act_section:১৫ক",
+      "passed": true,
+      "detail": "Full source section retained in ordered chunks; HTML footnote markers excluded."
+    },
+    {
+      "check": "act_section:১৬",
+      "passed": true,
+      "detail": "Full source section retained in ordered chunks; HTML footnote markers excluded."
+    },
+    {
+      "check": "act_section:১৭",
+      "passed": true,
+      "detail": "Full source section retained in ordered chunks; HTML footnote markers excluded."
+    },
+    {
+      "check": "act_section:১৮",
+      "passed": true,
+      "detail": "Full source section retained in ordered chunks; HTML footnote markers excluded."
+    },
+    {
+      "check": "act_section:১৯",
+      "passed": true,
+      "detail": "Full source section retained in ordered chunks; HTML footnote markers excluded."
+    },
+    {
+      "check": "act_section:২০",
+      "passed": true,
+      "detail": "Full source section retained in ordered chunks; HTML footnote markers excluded."
+    },
+    {
+      "check": "act_section:২১",
+      "passed": true,
+      "detail": "Full source section retained in ordered chunks; HTML footnote markers excluded."
+    },
+    {
+      "check": "act_section:২২",
+      "passed": true,
+      "detail": "Full source section retained in ordered chunks; HTML footnote markers excluded."
+    },
+    {
+      "check": "act_section:২৩",
+      "passed": true,
+      "detail": "Full source section retained in ordered chunks; HTML footnote markers excluded."
+    },
+    {
+      "check": "act_section:২৪",
+      "passed": true,
+      "detail": "Full source section retained in ordered chunks; HTML footnote markers excluded."
+    },
+    {
+      "check": "act_chapter:১",
+      "passed": true,
+      "detail": "Chapter association compared with ordered source HTML blocks."
+    },
+    {
+      "check": "act_chapter:২",
+      "passed": true,
+      "detail": "Chapter association compared with ordered source HTML blocks."
+    },
+    {
+      "check": "act_chapter:৩",
+      "passed": true,
+      "detail": "Chapter association compared with ordered source HTML blocks."
+    },
+    {
+      "check": "act_chapter:৪",
+      "passed": true,
+      "detail": "Chapter association compared with ordered source HTML blocks."
+    },
+    {
+      "check": "act_chapter:৫",
+      "passed": true,
+      "detail": "Chapter association compared with ordered source HTML blocks."
+    },
+    {
+      "check": "act_chapter:৬",
+      "passed": true,
+      "detail": "Chapter association compared with ordered source HTML blocks."
+    },
+    {
+      "check": "act_chapter:৭",
+      "passed": true,
+      "detail": "Chapter association compared with ordered source HTML blocks."
+    },
+    {
+      "check": "act_chapter:৭ক",
+      "passed": true,
+      "detail": "Chapter association compared with ordered source HTML blocks."
+    },
+    {
+      "check": "act_chapter:৮",
+      "passed": true,
+      "detail": "Chapter association compared with ordered source HTML blocks."
+    },
+    {
+      "check": "act_chapter:৯",
+      "passed": true,
+      "detail": "Chapter association compared with ordered source HTML blocks."
+    },
+    {
+      "check": "act_chapter:১০",
+      "passed": true,
+      "detail": "Chapter association compared with ordered source HTML blocks."
+    },
+    {
+      "check": "act_chapter:১১",
+      "passed": true,
+      "detail": "Chapter association compared with ordered source HTML blocks."
+    },
+    {
+      "check": "act_chapter:১২",
+      "passed": true,
+      "detail": "Chapter association compared with ordered source HTML blocks."
+    },
+    {
+      "check": "act_chapter:১৩",
+      "passed": true,
+      "detail": "Chapter association compared with ordered source HTML blocks."
+    },
+    {
+      "check": "act_chapter:১৪",
+      "passed": true,
+      "detail": "Chapter association compared with ordered source HTML blocks."
+    },
+    {
+      "check": "act_chapter:১৫",
+      "passed": true,
+      "detail": "Chapter association compared with ordered source HTML blocks."
+    },
+    {
+      "check": "act_chapter:১৫ক",
+      "passed": true,
+      "detail": "Chapter association compared with ordered source HTML blocks."
+    },
+    {
+      "check": "act_chapter:১৬",
+      "passed": true,
+      "detail": "Chapter association compared with ordered source HTML blocks."
+    },
+    {
+      "check": "act_chapter:১৭",
+      "passed": true,
+      "detail": "Chapter association compared with ordered source HTML blocks."
+    },
+    {
+      "check": "act_chapter:১৮",
+      "passed": true,
+      "detail": "Chapter association compared with ordered source HTML blocks."
+    },
+    {
+      "check": "act_chapter:১৯",
+      "passed": true,
+      "detail": "Chapter association compared with ordered source HTML blocks."
+    },
+    {
+      "check": "act_chapter:২০",
+      "passed": true,
+      "detail": "Chapter association compared with ordered source HTML blocks."
+    },
+    {
+      "check": "act_chapter:২১",
+      "passed": true,
+      "detail": "Chapter association compared with ordered source HTML blocks."
+    },
+    {
+      "check": "act_chapter:২২",
+      "passed": true,
+      "detail": "Chapter association compared with ordered source HTML blocks."
+    },
+    {
+      "check": "act_chapter:২৩",
+      "passed": true,
+      "detail": "Chapter association compared with ordered source HTML blocks."
+    },
+    {
+      "check": "act_chapter:২৪",
+      "passed": true,
+      "detail": "Chapter association compared with ordered source HTML blocks."
+    },
+    {
+      "check": "unique_ids",
+      "passed": true,
+      "detail": "No duplicate IDs."
+    },
+    {
+      "check": "token_limits",
+      "passed": true,
+      "detail": "Uses locally recorded BGE-M3 token counts."
+    }
+  ],
+  "candidate_chunks": 190,
+  "max_retrieval_tokens": 809
+}

@@ -1,0 +1,98 @@
+{
+  "files": [
+    {
+      "prepared_file": "md/birth_and_death_registration_guidelines_2021_ocr.md",
+      "prepared_sha256": "8c1411f7f87e0193348042dfc39778e93e0386e04d15b2f9d2928d266af3ceec",
+      "original_file": "scanned_pdf/birth_and_death_registration_guidelines_2021.pdf",
+      "original_sha256": "bb090e73b34eb43e34d9a1deab3d88b047f57eea59f5d6539163ba990dbd9dd2",
+      "replacement_file": "docs/data_cleanup/birth_review_20261008/reviewed_sources/guidelines_2021.md",
+      "replacement_sha256": "87a49053d1a95c6c34c4fecf678c6d0d383c1284a3de17f4cbeb0f2c812b5ef9",
+      "excluded_sections": [
+        "পৃষ্ঠা ১ | জারিকারী ও তারিখ",
+        "পৃষ্ঠা ৫ | স্বাক্ষরকারী",
+        "পৃষ্ঠা ৬ | অনুলিপি বিতরণ তালিকা",
+        "পৃষ্ঠা ৬ | স্বাক্ষরকারী ও যোগাযোগ"
+      ]
+    },
+    {
+      "prepared_file": "json/faqs_birth_death_registration_01.json",
+      "prepared_sha256": "5e800152de46dbef5f80a1079dea575893a2b668ae88866113095e84a623b6a9",
+      "original_file": "html_unicode/faqs_on_birth_and_death_registration.html",
+      "original_sha256": "43b419f26cd8305551415eeda9677c5701309ae8baacd4581788d0acd59d92e1",
+      "replacement_file": "docs/data_cleanup/birth_review_20261014/reviewed_sources/faqs_birth_death_registration_01.json",
+      "replacement_sha256": "2c664e9eb321447472e9163ba1010f5bd6dd1efeca65f7191b90d4255afeabef",
+      "excluded_sections": [],
+      "require_page": false,
+      "id_prefix": "review_v3_",
+      "review_status": "source_text_reconciled_independent_review_pending"
+    },
+    {
+      "prepared_file": "json/faqs_birth_death_registration_02.json",
+      "prepared_sha256": "1bc091a1b8ed37980de5f0efeb0c97d3ef92832a655cfd19aeb226705ce615fc",
+      "original_file": "html_unicode/faqs_on_birth_and_death_registration_02.html",
+      "original_sha256": "a5153c8a559cd1de2e291093962477bf2b4f891d987bb051da397eb64de52d93",
+      "replacement_file": "docs/data_cleanup/birth_review_20261014/reviewed_sources/faqs_birth_death_registration_02.json",
+      "replacement_sha256": "7c6a57333b9c35e73a0f90d9af542d9579909dc42ab6e21163838dfdae36aefc",
+      "excluded_sections": [],
+      "require_page": false,
+      "id_prefix": "review_v3_",
+      "review_status": "source_text_reconciled_independent_review_pending"
+    },
+    {
+      "prepared_file": "md/application_for_birth_information_correction_cleaned.md",
+      "prepared_sha256": "c15ede73a2afd32cc1869e9f5366e75ceec10d1a2a3ae64a5a5fb1a62972b2ae",
+      "original_file": "converted_docx/application_for_birth_information_correction.docx",
+      "original_sha256": "3e91de5cfdc2fde0ee8bdb2c92d0964272e8a784b935b65c512fd4cab710df68",
+      "replacement_file": "docs/data_cleanup/birth_review_20261014/reviewed_sources/application_for_birth_information_correction_cleaned.md",
+      "replacement_sha256": "73a8b14143d06becd599cd33295a07ec6f6d8c5ccae991691b6b415824a70523",
+      "excluded_sections": [],
+      "require_page": false,
+      "id_prefix": "review_v3_",
+      "review_status": "source_text_reconciled_independent_review_pending"
+    },
+    {
+      "prepared_file": "md/birth_and_death_registration_act_2004.md",
+      "prepared_sha256": "c50c63b63efe17f6133cc7297c4437848a7f8f525eef6a5c84a8fd142155ce8d",
+      "original_file": "html_unicode/birth_and_death_registration_act_2004.html",
+      "original_sha256": "590b82f6a406b5be51519b1f42610b191805f9184527ec20c799cdb86b142aab",
+      "replacement_file": "docs/data_cleanup/birth_review_20261014/reviewed_sources/birth_and_death_registration_act_2004.md",
+      "replacement_sha256": "3262997d5f065019310f5b2305cc1c4c3dfc5b3a21e79f1d48226f616648b591",
+      "excluded_sections": [],
+      "require_page": false,
+      "id_prefix": "review_v3_",
+      "review_status": "source_text_reconciled_independent_review_pending"
+    },
+    {
+      "prepared_file": "md/birth_and_death_registration_rules_2018.md",
+      "prepared_sha256": "4684fac41a3084ea4de475699815ce67ee75e697a60715fb9a21f5db2871b05b",
+      "original_file": "bijoy_pdf/birth_and_death_registration_rules_2018.pdf",
+      "original_sha256": "353eb7d07b6a558df21ad65d0dd7365e8a23aee97ef179f842631f44a70fdd6d",
+      "changes": [
+        {
+          "id": "remove-gazette-cover-price-from-rule-2",
+          "before": "(২৮৬১)মূল্যঃ টাকা ৪০.০০ ",
+          "after": "",
+          "reason": "PDF page 1 footer is publication price, not a registration fee or definition."
+        },
+        {
+          "id": "restore-rule-21-row-5-scope",
+          "before": "| জন্ম তারিখ ব্যতীত অন্যান্য তথ্য সংশোধন |",
+          "after": "| জন্ম তারিখ ব্যতীত নাম, পিতার নাম, মাতার নাম, ঠিকানা, ইত্যাদি অন্যান্য তথ্য সংশোধনের জন্য আবেদন ফি |",
+          "reason": "Restore full label from PDF page 20 without changing the amount."
+        },
+        {
+          "id": "restore-rule-21-row-6-scope",
+          "before": "| বাংলা ও ইংরেজিতে মূল সনদ বা সংশোধিত সনদ |",
+          "after": "| বাংলা ও ইংরেজি উভয় ভাষায় মূল সনদ বা তথ্য সংশোধনের পর সনদের কপি সরবরাহ |",
+          "reason": "Restore full label from PDF page 20."
+        },
+        {
+          "id": "restore-rule-21-row-7-scope",
+          "before": "| সনদের নকল সরবরাহ |",
+          "after": "| বাংলা ও ইংরেজি উভয় ভাষায় সনদের নকল সরবরাহ |",
+          "reason": "Restore both-language qualification from PDF page 20."
+        }
+      ]
+    }
+  ]
+}
