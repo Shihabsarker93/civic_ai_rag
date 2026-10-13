@@ -51,19 +51,22 @@ def reviewed_rows(prep, target: Path, repair: dict, max_chars: int):
         if title in excluded:
             coverage.append({'section': title, 'status': 'provenance_only', 'text': content})
             continue
+        legal = prep.LEGAL_HEADING_RE.match('### ' + title)
+        lookup_title = legal[3].strip() if legal else title
         parts = [r['content'].split('\nContent: ', 1)[1] for r in rows
-                 if r['metadata']['section_title'] == title]
+                 if r['metadata']['section_title'] == lookup_title]
         if ''.join(''.join(parts).split()) != ''.join(content.split()):
             raise ValueError(f'Section coverage mismatch: {title}')
         coverage.append({'section': title, 'status': 'retained', 'parts': len(parts)})
     for row in rows:
         match = re.match(r'পৃষ্ঠা ([১-৬])', row['metadata']['section_title'])
-        if not match:
+        if not match and repair.get('require_page', True):
             raise ValueError('Reviewed section has no source page')
-        row['id'] = 'review_v2_' + row['id']
-        row['metadata'].update(source_page=int(match[1]), document_date='2021-08-18',
-                               current_applicability_verified=False,
+        row['id'] = repair.get('id_prefix', 'review_v2_') + row['id']
+        row['metadata'].update(current_applicability_verified=False,
                                original_sha256=repair['original_sha256'])
+        if match:
+            row['metadata'].update(source_page=int(match[1]), document_date='2021-08-18')
     return rows, coverage
 
 
@@ -130,14 +133,18 @@ def build(original_root: Path, output: Path, repairs_path: Path, supplement_path
             review = "ocr_page_review_required"
         coverage = []
         if repair and 'replacement_file' in repair:
-            rows, coverage = reviewed_rows(prep, target, repair, config['preprocessing']['max_chunk_chars'])
-            review = 'assistant_transcribed_requires_independent_review'
+            if source.suffix == '.md':
+                rows, coverage = reviewed_rows(prep, target, repair, config['preprocessing']['max_chunk_chars'])
+            review = repair.get('review_status', 'assistant_transcribed_requires_independent_review')
         for row in rows:
             row["metadata"].update({
                 "candidate_source": relative,
                 "candidate_source_sha256": sha(target),
                 "source_review_status": review,
             })
+            if repair:
+                row['metadata']['original_sha256'] = repair['original_sha256']
+                row['metadata']['current_applicability_verified'] = False
             if repair and "notice_" in source.name:
                 row["metadata"]["document_date"] = "2022-12-22"
                 row["metadata"]["date_basis"] = "assistant_visual_review_of_supplied_pdf"
