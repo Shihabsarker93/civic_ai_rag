@@ -1,0 +1,90 @@
+{
+  "results": [
+    {
+      "domain": "birth_death_registration",
+      "variant": "baseline",
+      "questions": 10,
+      "mean_selected_chars": 3656.7,
+      "empty_selections": 0,
+      "known_failure_cases": 0,
+      "known_failure_selected_support": 0
+    },
+    {
+      "domain": "birth_death_registration",
+      "variant": "candidate",
+      "questions": 10,
+      "mean_selected_chars": 4583.4,
+      "empty_selections": 0,
+      "known_failure_cases": 0,
+      "known_failure_selected_support": 0
+    },
+    {
+      "domain": "passport",
+      "variant": "baseline",
+      "questions": 10,
+      "mean_selected_chars": 4220.4,
+      "empty_selections": 0,
+      "known_failure_cases": 5,
+      "known_failure_selected_support": 5
+    },
+    {
+      "domain": "passport",
+      "variant": "candidate",
+      "questions": 10,
+      "mean_selected_chars": 4220.8,
+      "empty_selections": 0,
+      "known_failure_cases": 5,
+      "known_failure_selected_support": 5
+    },
+    {
+      "domain": "passport",
+      "variant": "structural",
+      "questions": 10,
+      "mean_selected_chars": 4819.8,
+      "empty_selections": 0,
+      "known_failure_cases": 5,
+      "known_failure_selected_support": 5
+    },
+    {
+      "domain": "brta",
+      "variant": "baseline",
+      "questions": 10,
+      "mean_selected_chars": 3967.0,
+      "empty_selections": 0,
+      "known_failure_cases": 5,
+      "known_failure_selected_support": 4
+    },
+    {
+      "domain": "brta",
+      "variant": "candidate",
+      "questions": 10,
+      "mean_selected_chars": 3968.8,
+      "empty_selections": 0,
+      "known_failure_cases": 5,
+      "known_failure_selected_support": 4
+    },
+    {
+      "domain": "brta",
+      "variant": "structural",
+      "questions": 10,
+      "mean_selected_chars": 4599.5,
+      "empty_selections": 0,
+      "known_failure_cases": 5,
+      "known_failure_selected_support": 4
+    }
+  ],
+  "question_file_sha256": "3401a72babdde86b533e0590e844da8740229bbb35533e1aa3a0e243570d0f4f",
+  "code_hashes": {
+    "src/pipeline.py": "e1b5f52800e7b4dcfe77302cf6992c57ac11d5b9d3ede0fab0b665354430e9ff",
+    "src/generation/evidence_selection.py": "149c882ab7717e67c97c459dfc74aee2b06211b587057a6285bf459e5170e420",
+    "src/retrieval/hybrid_retriever.py": "8f031ad63fac93543e350668b7311acf8bbf476e99b45aab1a699e33461ced9a",
+    "src/reranking/reranker.py": "6b04cc53cd795d591d2b45847ed2510789fd8cc0bfbb0b53bfed5e3cc9612d4a"
+  },
+  "completed_runs": 110,
+  "llm_calls": 0,
+  "cross_encoder_used": true,
+  "device": "mps",
+  "scope": "Reused development questions and designated-source diagnostics, not held-out accuracy.",
+  "metric_limit": "No fresh relevance labels; no new Hit/Precision/context-relevance scores claimed.",
+  "baseline_files_unchanged": true
+}

@@ -1,0 +1,336 @@
+{
+  "domain": "passport",
+  "variant": "structural",
+  "id": "passport_06_lost",
+  "query": "পাসপোর্ট হারিয়ে গেলে কী করতে হবে?",
+  "candidate_ids": [
+    "passport_9f4e9ffe9f2a07f4_v4_0005",
+    "passport_5eb6c21efe103a4f_v4_0033",
+    "passport_23d845d3ab38ea43_v4_0041",
+    "passport_23d845d3ab38ea43_v4_0036",
+    "passport_6f7d900581956bef_v4_0010",
+    "passport_6f7d900581956bef_v4_0007",
+    "passport_3fcbc40c98aa80bc_v4_0002",
+    "passport_ed7b3ebc56c0094f_v4_0003",
+    "passport_6f7d900581956bef_v4_0042",
+    "passport_ed7b3ebc56c0094f_v4_0002",
+    "passport_3fcbc40c98aa80bc_v4_0009",
+    "passport_6f7d900581956bef_v4_0014",
+    "passport_73ac41f2327257f9_v4_0004",
+    "passport_6f7d900581956bef_v4_0015",
+    "passport_23d845d3ab38ea43_v4_0042"
+  ],
+  "selected_ids": [
+    "passport_9f4e9ffe9f2a07f4_v4_0005",
+    "passport_23d845d3ab38ea43_v4_0041",
+    "passport_23d845d3ab38ea43_v4_0036",
+    "passport_6f7d900581956bef_v4_0010",
+    "passport_6f7d900581956bef_v4_0007"
+  ],
+  "selected_characters": 8182,
+  "selected_tokens": 2638,
+  "tokenizer": "BGE-M3; not generator tokens",
+  "selected_passages": [
+    {
+      "id": "passport_9f4e9ffe9f2a07f4_v4_0005",
+      "content": "ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী\nই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী > প্রদর্শন, রি-ইস্যু, হারানো ও ছবি সংক্রান্ত নির্দেশাবলী\n\nLast updated: 3 August 2026\n\n## প্রদর্শন, রি-ইস্যু, হারানো ও ছবি সংক্রান্ত নির্দেশাবলী\n\n* **১৮।** আবেদনের সময় মূল জাতীয় পরিচয়পত্র (NID), অনলাইন জন্মনিবন্ধন সনদ (BRC English Version) এবং প্রযোজ্য ক্ষেত্রে টেকনিক্যাল সনদ, সরকারি আদেশ (GO)/অনাপত্তি (NOC) প্রদর্শন/দাখিল করতে হবে।\n* **১৯।** পাসপোর্ট রি-ইস্যুর ক্ষেত্রে মূল পাসপোর্ট প্রদর্শন করতে হবে।\n* **২০।** হারানো পাসপোর্টের ক্ষেত্রে মূল জিডির কপি প্রদর্শন/দাখিল করতে হবে। পাসপোর্ট হারিয়ে গেলে অথবা চুরি হলে দ্রুত নিকটস্থ থানায় জিডি করতে হবে। পুনরায় পাসপোর্টের জন্য আবেদনের সময় পুরাতন পাসপোর্টের ফটোকপি এবং জিডি কপিসহ আবেদনপত্র দাখিল করতে হবে।\n* **২১।** ০৬ বছর বয়সের নিম্নের আবেদনের ক্ষেত্রে ৩ আর (3R Size) সাইজের (ল্যাব প্রিন্ট গ্রে ব্যাকগ্রাউন্ড) ছবি দাখিল করতে হবে।\n\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_9f4e9ffe9f2a07f4",
+        "document_id": "passport_9f4e9ffe9f2a07f4",
+        "title": "ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী",
+        "section_title": "ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী > প্রদর্শন, রি-ইস্যু, হারানো ও ছবি সংক্রান্ত নির্দেশাবলী",
+        "document_type": "নির্দেশিকা",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী.md",
+        "source_relative_path": "cleaned_md/ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী.md",
+        "source_sha256": "f0bc6e1384dd491baff1dc91061abdd516b283e0e2751cdd793151b09095c61b",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী.pdf\"]",
+        "document_date": "2026-08-03",
+        "date_verified": false,
+        "audit_flags": "no_web_address",
+        "experimental": true,
+        "body_start": 2953,
+        "body_end": 3652,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/passport/markdown/cleaned_md/ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী.md",
+        "context_spans": "[{\"start\": 35, \"end\": 66}]",
+        "cleaned_sha256": "ba83ebd1ce02bea874b2ab9079dd85fb24a2bd1f6fa5132590b479120895a689"
+      },
+      "score": 0.8588060736656189,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "passport_23d845d3ab38ea43_v4_0041",
+      "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.4 Lost Delivery Slip Recovery / ডেলিভারি স্লিপ হারিয়ে গেলে পাসপোর্ট সংগ্রহ\n\n### 6.4 Lost Delivery Slip Recovery / ডেলিভারি স্লিপ হারিয়ে গেলে পাসপোর্ট সংগ্রহ\n- **Category:** Status, Delivery & Corrections\n- **Topic:** Alternative Delivery Protocols\n- **English Question:** I have lost my delivery slip. Now how will I collect my passport?\n- **Bengali Question (প্রশ্ন):** আমি আমার ডেলিভারি স্লিপ হারিয়েছি। এখন আমি কি ভাবে আমার পাসপোর্ট সংগ্রহ করব?\n- **English Answer:** Bring the following items to your designated passport office:\n  1. Printed Application Summary (Appointment copy).\n  2. Photocopy of your NID card.\n  3. Photocopy of the lost Delivery Slip (if available).\n- **Bengali Answer (উত্তর):** নিম্নে বর্ণিত কাগজপত্র নিয়ে অফিসে যোগাযোগ করুন:\n  ১. প্রিন্ট সামারি / অ্যাপয়েন্টমেন্ট কপি।\n  ২. NID কার্ডের ফটোকপি।\n  ৩. হারিয়ে যাওয়া ডেলিভারি স্লিপের ফটোকপি (যদি থাকে)।\n\n---\n\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_23d845d3ab38ea43",
+        "document_id": "passport_23d845d3ab38ea43",
+        "title": "Bangladesh_ePassport_FAQ",
+        "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.4 Lost Delivery Slip Recovery / ডেলিভারি স্লিপ হারিয়ে গেলে পাসপোর্ট সংগ্রহ",
+        "document_type": "document",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+        "original_paths": "[]",
+        "document_date": "unknown",
+        "date_verified": false,
+        "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+        "experimental": true,
+        "body_start": 30603,
+        "body_end": 31413,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": true,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/passport/markdown/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "context_spans": "[]",
+        "cleaned_sha256": "129e56b5fb40b44e1433f3603fbbeb955dd9d034ddd34baf7c34ebbaaa44d80a"
+      },
+      "score": 0.7542046904563904,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "passport_23d845d3ab38ea43_v4_0036",
+      "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 5. Document Requirements (প্রয়োজনীয় কাগজপত্র) > 5.5 Lost ePassport and Missing Previous Passport Number / ই-পাসপোর্ট হারিয়ে গেলে নম্বর সংগ্রহ\n\n### 5.5 Lost ePassport and Missing Previous Passport Number / ই-পাসপোর্ট হারিয়ে গেলে নম্বর সংগ্রহ\n- **Category:** Document Requirements\n- **Topic:** Lost Passport Recovery\n- **English Question:** I have lost my e-Passport. I don't have my previous e-Passport number. How can I get my previous e-Passport number?\n- **Bengali Question (প্রশ্ন):** আমি আমার ই-পাসপোর্ট হারিয়ে ফেলেছি। আমার আগের ই-পাসপোর্ট নম্বর মনে নেই। আমি কি ভাবে আমার আগের ই-পাসপোর্ট নম্বর পেতে পারি?\n- **English Answer:** Please communicate directly with your designated Regional Passport Office for assistance. You must bring your original NID card and BRC to retrieve your previous ePassport number.\n- **Bengali Answer (উত্তর):** প্রয়োজনীয় সহায়তার জন্য আপনার আঞ্চলিক পাসপোর্ট অফিসে (RPO) সরাসরি যোগাযোগ করুন। পূর্ববর্তী ই-পাসপোর্ট নম্বর সংগ্রহের জন্য আপনাকে NID এবং BRC সাথে আনতে হবে।\n\n---\n\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_23d845d3ab38ea43",
+        "document_id": "passport_23d845d3ab38ea43",
+        "title": "Bangladesh_ePassport_FAQ",
+        "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 5. Document Requirements (প্রয়োজনীয় কাগজপত্র) > 5.5 Lost ePassport and Missing Previous Passport Number / ই-পাসপোর্ট হারিয়ে গেলে নম্বর সংগ্রহ",
+        "document_type": "document",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+        "original_paths": "[]",
+        "document_date": "unknown",
+        "date_verified": false,
+        "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+        "experimental": true,
+        "body_start": 26881,
+        "body_end": 27745,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": true,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/passport/markdown/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "context_spans": "[]",
+        "cleaned_sha256": "129e56b5fb40b44e1433f3603fbbeb955dd9d034ddd34baf7c34ebbaaa44d80a"
+      },
+      "score": 0.5985463261604309,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "passport_6f7d900581956bef_v4_0010",
+      "content": "সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর\nগণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ২. প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > [ক্রমিক ১ (খ)] মেশিন রিডেবল পাসপোর্ট (MRP) ইস্যু\n\n* **প্রয়োজনীয় কাগজপত্র:**\n  1. অনলাইনে/হাতে পূরণকৃত আবেদনে সদ্য তোলা পাসপোর্ট সাইজের ল্যাব প্রিন্ট রঙিন ছবি সংযোজনপূর্বক সত্যায়িত ২ (দুই) সেট পাসপোর্ট আবেদন ফরম (ডি.আই.পি. -১)।\n  2. ২ (দুই) কপি সত্যায়িত জাতীয় পরিচয়পত্র (NID - ২০ বছরের ঊর্ধ্বে) অথবা ডিজিটাল জন্ম নিবন্ধন (BRC - ১৮ বছরের নিম্নে) সনদ; ১৮-২০ বছরের বয়সীদের ক্ষেত্রে NID/BRC প্রযোজ্য হবে। (উল্লেখ্য যে NID/BRC এর মূল কপি প্রদর্শন বাধ্যতামূলক)।\n  3. পাসপোর্ট ফি জমাদানের মূল ব্যাংক রসিদ।\n  4. **মন্ত্রণালয়/বিভাগ/অধিদপ্তর/পরিদপ্তর/অধস্তন অফিস এবং স্বায়ত্তশাসিত সংস্থা/কর্পোরেশনে কর্মরত কর্মকর্তা/কর্মচারীদের ক্ষেত্রে:**\n     - আবেদনকারীর অনুকূলে প্রদত্ত অনাপত্তিসনদ (NOC/GO) ইস্যুকারী কর্তৃপক্ষের ওয়েবসাইটে আপলোড/প্রদর্শিত থাকা।\n     - ১ সেট আবেদন ফরম (ডি.আই.পি. -১) এ সদ্য তোলা পাসপোর্ট সাইজের ল্যাব প্রিন্ট রঙিন ছবি সংযোজনপূর্বক।\n     - একসেট সত্যায়িত জাতীয় পরিচয়পত্র।\n  5. **কেবলমাত্র সরকারী কর্মকর্তা-কর্মচারীদের নির্ভরশীল স্বামী/স্ত্রী এর ক্ষেত্রে:**\n     - ১ সেট আবেদন ফরম (ডি.আই.পি. -১) এ সদ্য তোলা পাসপোর্ট সাইজের ল্যাব প্রিন্ট রঙিন ছবি সংযোজনপূর্বক।\n     - একসেট সত্যায়িত জাতীয় পরিচয়পত্র।\n     - ইস্যুকারী কর্তৃপক্ষের ওয়েবসাইটে প্রদর্শিত অনাপত্তি সনদ (NOC)।\n  6. **সরকারী কর্মকর্তা-কর্মচারীদের নির্ভরশীল (১৫ বছরের কম বয়সী) সন্তানের ক্ষেত্রে:**\n     - ইস্যুকারী কর্তৃপক্ষের ওয়েবসাইটে প্রদর্শিত মূল অনাপত্তি সনদ (NOC)।\n     - ডিজিটাল জন্ম নিবন্ধনের (BRC) ফটোকপি।\n  7. **কেবলমাত্র অবসরপ্রাপ্ত সরকারী কর্মকর্তা-কর্মচারীদের নির্ভরশীল স্বামী/স্ত্রী‘র ক্ষেত্রে:**\n     - ১ সেট আবেদন ফরম (ডি.আই.পি. -১) এ সদ্য তোলা পাসপোর্ট সাইজের ল্যাব প্রিন্ট রঙিন ছবি সংযোজনপূর্বক।\n     - ১ (এক) সেট সত্যায়িত জাতীয় পরিচয়পত্র।\n     - অবসর আদেশ/পেনশন বইয়ের ফটোকপি (এক্ষেত্রে অবসর আদেশ/পেনশন বইয়ের মূল কপি প্রদর্শন বাধ্যতামূলক)।\n  8. **দত্তক/অভিভাবকত্ব গ্রহণের ক্ষেত্রে:** স্বরাষ্ট্র মন্ত্রণালয় সুরক্ষা সেবা বিভাগ কর্তৃক জারিকৃত আদেশ।\n  9. **রি-ইস্যু আবেদনের ক্ষেত্রে:**\n     - ডিআইপি ফরম-২ পূরণসহ পাসপোর্ট এর ১ সেট ফটোকপি।\n     - পূর্ববর্তী মূল পাসপোর্ট প্রদর্শন বাধ্যতামূলক।\n     - উল্লেখ্য, হারানো (LOST) MRP এর ক্ষেত্রে মূল জিডি (GD) দাখিল করতে হবে।\n  10. **ই-পাসপোর্ট সিস্টেমে Spouse Name পরিবর্তন করে Legal Guardian Name অন্তর্ভুক্তকরণ।**\n  11. **০৬ বছর বয়সের নিম্নে আবেদনের ক্ষেত্রে:** ৩R সাইজের ল্যাব প্রিন্ট রঙিন ছবি।\n  12. **তথ্য পরিবর্তনের ক্ষেত্রে:** স্বরাষ্ট্র মন্ত্রণালয় কর্তৃক জারিকৃত পরিপত্র (স্মারক নং: ৫৮.০০.০০০০.০৪৩.৯৯.০০২.২৪.(অংশ-২).৯৭; তারিখ: ১৮ ফেব্রুয়ারি ২০২৫) এর নির্দেশনা মোতাবেক প্রযোজ্য ডকুমেন্ট দাখিল করতে হবে।\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_6f7d900581956bef",
+        "document_id": "passport_6f7d900581956bef",
+        "title": "সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর",
+        "section_title": "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ২. প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > [ক্রমিক ১ (খ)] মেশিন রিডেবল পাসপোর্ট (MRP) ইস্যু",
+        "document_type": "সিটিজেন চার্টার",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+        "source_relative_path": "cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+        "source_sha256": "e875d24b0d749a0a12ff8c30bddac3eabba040af4c3a50348e63f3d086382e87",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/সিটিজেন চার্টার_ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.pdf\"]",
+        "document_date": "2025-02-18",
+        "date_verified": false,
+        "audit_flags": "",
+        "experimental": true,
+        "body_start": 4352,
+        "body_end": 6762,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/passport/markdown/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+        "context_spans": "[]",
+        "cleaned_sha256": "311e340c5dc3ec5c26e498192f7ff598ccd0a649a847174da3baa59bd751b799"
+      },
+      "score": 0.13876181840896606,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "passport_6f7d900581956bef_v4_0007",
+      "content": "সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর\nগণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ২. প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > [ক্রমিক ১ (ক)] ইলেকট্রনিক (E-Passport) পাসপোর্ট ইস্যু\n\n* **প্রয়োজনীয় কাগজপত্র:**\n  1. অনলাইনে/অফলাইনে (PDF) পূরণকৃত আবেদন ১ কপি (উল্লেখ্য হাতে লেখা আবেদন গ্রহণযোগ্য নয়)।\n  2. ১ (এক) কপি জাতীয় পরিচয়পত্র (NID - ২০ বছরের ঊর্ধ্বে) অথবা ডিজিটাল জন্ম নিবন্ধন সনদ (BRC - ১৮ বছরের নিম্নে); ১৮-২০ বছরের বয়সীদের ক্ষেত্রে NID/BRC প্রযোজ্য হবে। অপ্রাপ্ত বয়স্ক (১৮ বছরের কম) যাদের NID নাই, তার পিতা/মাতার জাতীয় পরিচয়পত্র (NID) প্রযোজ্য হবে। (উল্লেখ্য যে NID/BRC এর মূল কপি প্রদর্শন বাধ্যতামূলক)।\n  3. পাসপোর্ট ফি জমাদানের এ-চালান (Automated Challan) কপি।\n  4. **মন্ত্রণালয়/বিভাগ/অধিদপ্তর/পরিদপ্তর/অধস্তন অফিস এবং স্বায়ত্তশাসিত সংস্থা/কর্পোরেশনে কর্মরত কর্মকর্তা/কর্মচারীদের ক্ষেত্রে:**\n     - আবেদনকারীর অনুকূলে প্রদত্ত অনাপত্তিসনদ (NOC/GO) ইস্যুকারী কর্তৃপক্ষের ওয়েবসাইটে আপলোড/প্রদর্শিত থাকা।\n     - ১ সেট আবেদন ফরম।\n     - ১ (এক) কপি জাতীয় পরিচয়পত্র।\n  5. **কেবলমাত্র সরকারী কর্মকর্তা-কর্মচারীদের নির্ভরশীল স্বামী/স্ত্রী এর ক্ষেত্রে:**\n     - ইস্যুকারী কর্তৃপক্ষের ওয়েবসাইটে প্রদর্শিত মূল অনাপত্তি সনদ (NOC)।\n     - ১ সেট আবেদন ফরম।\n     - ১ (এক) কপি জাতীয় পরিচয়পত্র (NID - ২০ বছরের ঊর্ধ্বে) / ১৮-২০ বছরের বয়সীদের ক্ষেত্রে NID/BRC প্রযোজ্য হবে।\n  6. **সরকারী কর্মকর্তা-কর্মচারীদের নির্ভরশীল (১৫ বছরের কম বয়সী) সন্তানের ক্ষেত্রে:**\n     - ১ সেট আবেদন ফরম।\n     - ইস্যুকারী কর্তৃপক্ষের ওয়েবসাইটে প্রদর্শিত মূল অনাপত্তি সনদ (NOC)।\n     - ডিজিটাল জন্ম নিবন্ধনের (BRC) ফটোকপি।\n     - পিতা/মাতার জাতীয় পরিচয়পত্র (NID) প্রযোজ্য হবে।\n  7. **কেবলমাত্র অবসরপ্রাপ্ত সরকারী কর্মকর্তা-কর্মচারীদের নির্ভরশীল স্বামী/স্ত্রী'র ক্ষেত্রে:**\n     - ১ সেট আবেদন ফরম।\n     - ১ সেট জাতীয় পরিচয়পত্র।\n     - অবসর আদেশ/পেনশন বইয়ের ফটোকপি (এক্ষেত্রে অবসর আদেশ/পেনশন বইয়ের মূল কপি প্রদর্শন বাধ্যতামূলক)।\n  8. **দত্তক/অভিভাবকত্ব গ্রহণের ক্ষেত্রে:** স্বরাষ্ট্র মন্ত্রণালয় সুরক্ষা সেবা বিভাগ কর্তৃক জারিকৃত আদেশ।\n  9. **রি-ইস্যু আবেদনের ক্ষেত্রে:**\n     - অপরিবর্তিত তথ্যের আবেদনে ফরম পূরণ (পৃষ্ঠা-১ এর ক্রমিক ১-৩৭) সহ পাসপোর্ট এর ফটোকপি।\n     - পরিবর্তিত তথ্যের আবেদনে ফরম (পৃষ্ঠা-২ ও ৩) পূরণসহ পাসপোর্ট এর ফটোকপি।\n     - পূর্ববর্তী মূল পাসপোর্ট প্রদর্শন বাধ্যতামূলক।\n     - উল্লেখ্য, হারানো (LOST) ই-পাসপোর্ট এর ক্ষেত্রে মূল জিডি (GD) দাখিল করতে হবে।\n  10. **০৬ বছর বয়সের নিম্নে আবেদনের ক্ষেত্রে:** ৩R সাইজের ল্যাব প্রিন্ট রঙিন ছবি।\n  11. **তথ্য পরিবর্তনের ক্ষেত্রে:** স্বরাষ্ট্র মন্ত্রণালয় কর্তৃক জারিকৃত পরিপত্র (স্মারক নং: ৫৮.০০.০০০০.০৪৩.৯৯.০০২.২৪.(অংশ-২).৯৭; তারিখ: ১৮ ফেব্রুয়ারি ২০২৫) এর নির্দেশনা মোতাবেক প্রযোজ্য ডকুমেন্ট দাখিল করতে হবে।\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_6f7d900581956bef",
+        "document_id": "passport_6f7d900581956bef",
+        "title": "সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর",
+        "section_title": "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ২. প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > [ক্রমিক ১ (ক)] ইলেকট্রনিক (E-Passport) পাসপোর্ট ইস্যু",
+        "document_type": "সিটিজেন চার্টার",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+        "source_relative_path": "cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+        "source_sha256": "e875d24b0d749a0a12ff8c30bddac3eabba040af4c3a50348e63f3d086382e87",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/সিটিজেন চার্টার_ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.pdf\"]",
+        "document_date": "2025-02-18",
+        "date_verified": false,
+        "audit_flags": "",
+        "experimental": true,
+        "body_start": 1083,
+        "body_end": 3464,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/passport/markdown/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+        "context_spans": "[]",
+        "cleaned_sha256": "311e340c5dc3ec5c26e498192f7ff598ccd0a649a847174da3baa59bd751b799"
+      },
+      "score": 0.12354659289121628,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    }
+  ],
+  "selection_trace": {
+    "version": "applicability_v1_family_order",
+    "query_actions": [
+      "replacement"
+    ],
+    "query_services": [
+      "passport"
+    ],
+    "decisions": [
+      {
+        "id": "passport_3fcbc40c98aa80bc_v4_0002",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_ed7b3ebc56c0094f_v4_0003",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_6f7d900581956bef_v4_0042",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_ed7b3ebc56c0094f_v4_0002",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_3fcbc40c98aa80bc_v4_0009",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_6f7d900581956bef_v4_0014",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_73ac41f2327257f9_v4_0004",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_6f7d900581956bef_v4_0015",
+        "decision": "excluded",
+        "reason": "different_service"
+      },
+      {
+        "id": "passport_23d845d3ab38ea43_v4_0042",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_5eb6c21efe103a4f_v4_0033",
+        "decision": "excluded",
+        "reason": "historical_alternative_requires_explicit_scope"
+      },
+      {
+        "id": "passport_9f4e9ffe9f2a07f4_v4_0005",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_23d845d3ab38ea43_v4_0041",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_23d845d3ab38ea43_v4_0036",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_6f7d900581956bef_v4_0010",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_6f7d900581956bef_v4_0007",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      }
+    ],
+    "expanded_ids": [],
+    "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+    "budget_order_ids": [
+      "passport_9f4e9ffe9f2a07f4_v4_0005",
+      "passport_23d845d3ab38ea43_v4_0041",
+      "passport_23d845d3ab38ea43_v4_0036",
+      "passport_6f7d900581956bef_v4_0010",
+      "passport_6f7d900581956bef_v4_0007"
+    ],
+    "selected_ids": [
+      "passport_9f4e9ffe9f2a07f4_v4_0005",
+      "passport_23d845d3ab38ea43_v4_0041",
+      "passport_23d845d3ab38ea43_v4_0036",
+      "passport_6f7d900581956bef_v4_0010",
+      "passport_6f7d900581956bef_v4_0007"
+    ],
+    "selected_chars": 8182
+  },
+  "seconds": 20.077,
+  "top5": {
+    "dense": [
+      "passport_23d845d3ab38ea43_v4_0041",
+      "passport_5eb6c21efe103a4f_v4_0033",
+      "passport_9f4e9ffe9f2a07f4_v4_0005",
+      "passport_6f7d900581956bef_v4_0010",
+      "passport_6f7d900581956bef_v4_0007"
+    ],
+    "bm25": [
+      "passport_9f4e9ffe9f2a07f4_v4_0005",
+      "passport_23d845d3ab38ea43_v4_0036",
+      "passport_23d845d3ab38ea43_v4_0041",
+      "passport_23d845d3ab38ea43_v4_0033",
+      "passport_9f4e9ffe9f2a07f4_v4_0002"
+    ],
+    "hybrid": [
+      "passport_23d845d3ab38ea43_v4_0041",
+      "passport_9f4e9ffe9f2a07f4_v4_0005",
+      "passport_23d845d3ab38ea43_v4_0036",
+      "passport_3fcbc40c98aa80bc_v4_0002",
+      "passport_ed7b3ebc56c0094f_v4_0003"
+    ]
+  }
+}

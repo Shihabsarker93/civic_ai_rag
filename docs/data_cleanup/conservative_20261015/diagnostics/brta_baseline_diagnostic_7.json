@@ -1,0 +1,342 @@
+{
+  "domain": "brta",
+  "variant": "baseline",
+  "id": "diagnostic_7",
+  "query": "ড্রাইভিং লাইসেন্সের মেয়াদ শেষ হলে কীভাবে নবায়ন করব?",
+  "candidate_ids": [
+    "brta_cbe22ab64acf3d03_v2_0009",
+    "brta_4e08eb4e988d38e4_v2_0014",
+    "brta_cbe22ab64acf3d03_v2_0010",
+    "brta_4e08eb4e988d38e4_v2_0015",
+    "brta_4e08eb4e988d38e4_v2_0026",
+    "brta_09e8cbfff67f117e_v2_0009",
+    "brta_09e8cbfff67f117e_v2_0011",
+    "brta_cbe22ab64acf3d03_v2_0011",
+    "brta_cbe22ab64acf3d03_v2_0008",
+    "brta_4e08eb4e988d38e4_v2_0016",
+    "brta_09e8cbfff67f117e_v2_0007",
+    "brta_4e08eb4e988d38e4_v2_0139",
+    "brta_258cf38650a6332b_v2_0009",
+    "brta_cb965b3169c34e73_v2_0032",
+    "brta_3cae1ecd59682fa3_v2_0005"
+  ],
+  "selected_ids": [
+    "brta_cbe22ab64acf3d03_v2_0009",
+    "brta_cbe22ab64acf3d03_v2_0010",
+    "brta_09e8cbfff67f117e_v2_0009",
+    "brta_09e8cbfff67f117e_v2_0011",
+    "brta_cbe22ab64acf3d03_v2_0011",
+    "brta_09e8cbfff67f117e_v2_0007"
+  ],
+  "selected_characters": 6198,
+  "selected_tokens": 2119,
+  "tokenizer": "BGE-M3; not generator tokens",
+  "selected_passages": [
+    {
+      "id": "brta_cbe22ab64acf3d03_v2_0009",
+      "content": "ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন প্রক্রিয়া\nড্রাইভিং লাইসেন্স > ড্রাইভিং লাইসেন্স নবায়ন প্রক্রিয়া > (ক) অপেশাদার ড্রাইভিং লাইসেন্স নবায়ন\n\n### (ক) অপেশাদার ড্রাইভিং লাইসেন্স নবায়ন\nগ্রাহককে প্রথমে নির্ধারিত ফি (মেয়াদোত্তীর্ণের ১৫ দিনের মধ্যে হলে ৪,২১২/- টাকা ও মেয়াদোত্তীর্ণের ১৫ দিন পরে প্রতি বছর ৫১৮/- টাকা জরিমানাসহ) জমা দিয়ে প্রয়োজনীয় কাগজপত্রসহ বিআরটিএর নির্দিষ্ট সার্কেল অফিসে আবেদন করতে হবে। আবেদনপত্র ও সংযুক্ত কাগজপত্র সঠিক পাওয়া গেলে একইদিনে গ্রাহকের বায়োমেট্রিক্স (ডিজিটাল ছবি, ডিজিটাল স্বাক্ষর ও আঙ্গুলের ছাপ) গ্রহণ করা হয়। স্মার্ট কার্ড প্রিন্টিং সম্পন্ন হলে গ্রাহককে এসএমএস এর মাধ্যমে জানিয়ে দেয়া হয়।\n\n",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_cbe22ab64acf3d03",
+        "document_id": "brta_cbe22ab64acf3d03",
+        "title": "ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন প্রক্রিয়া",
+        "section_title": "ড্রাইভিং লাইসেন্স > ড্রাইভিং লাইসেন্স নবায়ন প্রক্রিয়া > (ক) অপেশাদার ড্রাইভিং লাইসেন্স নবায়ন",
+        "document_type": "সাধারণ তথ্য / নির্দেশিকা",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta/সেবাসমূহ/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.md",
+        "source_relative_path": "fahim_brta/সেবাসমূহ/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.md",
+        "snapshot_path": "domains/brta/data/source_snapshots/fahim_brta/সেবাসমূহ/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.md",
+        "source_sha256": "c19bf1f86060bfd79b729b7a10cbc7d8a403d918cc21511262cff6d5d4a3a114",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/সেবাসমূহ_original/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.pdf\"]",
+        "document_date": "N/A",
+        "date_verified": false,
+        "audit_flags": "citation_markers_removed_from_derived_text, no_web_address",
+        "experimental": true,
+        "body_start": 3916,
+        "body_end": 4404,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": false
+      },
+      "score": 0.9837808609008789,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "brta_cbe22ab64acf3d03_v2_0010",
+      "content": "ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন প্রক্রিয়া\nড্রাইভিং লাইসেন্স > ড্রাইভিং লাইসেন্স নবায়ন প্রক্রিয়া > (খ) পেশাদার ড্রাইভিং লাইসেন্স নবায়ন\n\n### (খ) পেশাদার ড্রাইভিং লাইসেন্স নবায়ন\nপেশাদার ড্রাইভিং লাইসেন্সধারীদেরকে পুনরায় একটি ব্যবহারিক পরীক্ষায় অংশগ্রহণ করতে হবে। পরীক্ষায় উত্তীর্ণ হওয়ার পর নির্ধারিত ফি (মেয়াদোত্তীর্ণের ১৫ দিনের মধ্যে হলে ২,৪৮৭/- টাকা ও মেয়াদোত্তীর্ণের ১৫ দিন পরে প্রতি বছর ৫১৮/- টাকা জরিমানাসহ) জমা দিয়ে প্রয়োজনীয় কাগজপত্রসহ বিআরটিএর নির্দিষ্ট সার্কেল অফিসে আবেদন করতে হবে। গ্রাহকের বায়োমেট্রিক্স (ডিজিটাল ছবি, ডিজিটাল স্বাক্ষর ও আঙ্গুলের ছাপ) গ্রহণের জন্য গ্রাহককে নির্দিষ্ট সার্কেল অফিসে উপস্থিত হতে হয়। স্মার্ট কার্ড প্রিন্টিং-এর সমস্ত প্রক্রিয়া সম্পন্ন হলে গ্রাহককে এসএমএস এর মাধ্যমে জানিয়ে দেয়া হয়।\n\n",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_cbe22ab64acf3d03",
+        "document_id": "brta_cbe22ab64acf3d03",
+        "title": "ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন প্রক্রিয়া",
+        "section_title": "ড্রাইভিং লাইসেন্স > ড্রাইভিং লাইসেন্স নবায়ন প্রক্রিয়া > (খ) পেশাদার ড্রাইভিং লাইসেন্স নবায়ন",
+        "document_type": "সাধারণ তথ্য / নির্দেশিকা",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta/সেবাসমূহ/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.md",
+        "source_relative_path": "fahim_brta/সেবাসমূহ/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.md",
+        "snapshot_path": "domains/brta/data/source_snapshots/fahim_brta/সেবাসমূহ/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.md",
+        "source_sha256": "c19bf1f86060bfd79b729b7a10cbc7d8a403d918cc21511262cff6d5d4a3a114",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/সেবাসমূহ_original/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.pdf\"]",
+        "document_date": "N/A",
+        "date_verified": false,
+        "audit_flags": "citation_markers_removed_from_derived_text, no_web_address",
+        "experimental": true,
+        "body_start": 4404,
+        "body_end": 5005,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": false
+      },
+      "score": 0.9759268164634705,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "brta_09e8cbfff67f117e_v2_0009",
+      "content": "বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার)\nবিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার) > ২) প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > ০৪. ড্রাইভিং লাইসেন্স নবায়ন (অপেশাদার)\n\n#### ০৪. ড্রাইভিং লাইসেন্স নবায়ন (অপেশাদার)\n* **সেবার নাম:** ড্রাইভিং লাইসেন্স নবায়ন (অপেশাদার)\n* **সেবা প্রদান পদ্ধতি:** গ্রাহক বিআরটিএ সার্ভিস পোর্টালে নিজ অ্যাকাউন্টের মাধ্যমে ড্রাইভিং লাইসেন্স নবায়নের জন্য অনলাইনে আবেদন করতে পারবেন।\n* **প্রয়োজনীয় কাগজপত্র ও প্রাপ্তিস্থান:** \n  1. জাতীয় পরিচয়পত্র (এনআইডি) এর ফটোকপি;\n  2. পূর্বের ড্রাইভিং লাইসেন্সের ফটোকপি;\n  3. ডোপ টেস্ট সনদ।\n* **সেবার মূল্য এবং পরিশোধ পদ্ধতি:** \n  * অপেশাদার স্মার্ট কার্ড ড্রাইভিং লাইসেন্স নবায়নের জন্য ৪,১৫২/- টাকা (লাইসেন্স ফি) + ৬০/- টাকা (পোষ্টাল ফি)।\n  * এছাড়া মেয়াদোত্তীর্ণ হলে প্রতি বছরের জন্য ৫১৮/- টাকা বিলম্ব ফি প্রদান করতে হবে।\n  * *ফি পরিশোধ পদ্ধতি:* অনলাইন পেমেন্ট (bKash, Rocket, Nagad, Card) অথবা বিআরটিএ অনুমোদিত ব্যাংকের মাধ্যমে।\n* **সেবা প্রদানের সময়সীমা:** \n  * আবেদন: ০১- কার্যদিবস (শুধুমাত্র ই-ড্রাইভিং লাইসেন্স এর ক্ষেত্রে)।\n  * ফি প্রদান সাপেক্ষে ১৫-২০ কর্মদিবসের মধ্যে ডাকযোগে গ্রাহকের ঠিকানায় পৌঁছে দেওয়া হবে।\n* **দায়িত্বপ্রাপ্ত কর্মকর্তা:** সহকারী পরিচালক (ইঞ্জি:) ও রেজিস্ট্রেশন কর্তৃপক্ষ, বিআরটিএ সার্কেল অফিস সকল।\n\n",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_09e8cbfff67f117e",
+        "document_id": "brta_09e8cbfff67f117e",
+        "title": "বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার)",
+        "section_title": "বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার) > ২) প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > ০৪. ড্রাইভিং লাইসেন্স নবায়ন (অপেশাদার)",
+        "document_type": "সিটিজেন্স চার্টার",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).md",
+        "source_relative_path": "brta/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).md",
+        "snapshot_path": "domains/brta/data/source_snapshots/brta/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).md",
+        "source_sha256": "5f20f60f6759d980b46043726dbf0bfa79f09acc61b4a4c861c07b98f840e090",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).pdf\"]",
+        "document_date": "2022-06-05",
+        "date_verified": false,
+        "audit_flags": "no_web_address",
+        "experimental": true,
+        "body_start": 4918,
+        "body_end": 5951,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": false
+      },
+      "score": 0.9232005476951599,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "brta_09e8cbfff67f117e_v2_0011",
+      "content": "বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার)\nবিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার) > ২) প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > ০৬. ড্রাইভিং লাইসেন্স নবায়ন (পেশাদার)\n\n#### ০৬. ড্রাইভিং লাইসেন্স নবায়ন (পেশাদার)\n* **সেবার নাম:** ড্রাইভিং লাইসেন্স নবায়ন (পেশাদার)\n* **সেবা প্রদান পদ্ধতি:** \n  * বিআরটিএ সার্ভিস পোর্টালে নিজের অ্যাকাউন্টের মাধ্যমে স্মার্ট ড্রাইভিং লাইসেন্স নবায়নের জন্য আবেদনপূর্বক পেশাদার ড্রাইভিং লাইসেন্স রিফ্রেশার প্রবেশপত্র গ্রহণ করতে হবে।\n  * *নোট:* ড্রাইভিং লাইসেন্স ও জাতীয় পরিচয়পত্রের কার্ডের সহিত কোনো রকমের গরমিল থাকলে রিফ্রেশার প্রবেশপত্র গ্রহণের পূর্বেই BSP এর মাধ্যমে অমিল অনুমোদনের জন্য আবেদন করতে হবে। অনুমোদনের পর রিফ্রেশার প্রবেশপত্র গ্রহণ করতে হবে।\n  * পরবর্তীতে প্রবেশপত্রে নির্ধারিত তারিখে রিফ্রেশার ট্রেনিং ও ড্রাইভিং লাইসেন্স এর দক্ষতা যাচাই পরীক্ষায় কৃতকার্য হলে গ্রাহক বিআরটিএ সার্ভিস পোর্টালে নিজের অ্যাকাউন্টে প্রবেশ করে ফি প্রদান সাপেক্ষে ই-ড্রাইভিং লাইসেন্স গ্রহণ করতে পারবে।\n* **প্রয়োজনীয় কাগজপত্র ও প্রাপ্তিস্থান:** \n  1. বর্তমান ড্রাইভিং লাইসেন্সের ফটোকপি;\n  2. জাতীয় পরিচয়পত্রের ফটোকপি;\n  3. মেডিকেল সার্টিফিকেট (ফরম ডাউনলোড লিংক বিআরটিএ পোর্টালে রয়েছে);\n  4. ডোপ টেস্টের রিপোর্ট (ডোপ টেস্টের রিপোর্ট দক্ষতা যাচাই পরীক্ষার পূর্বে অথবা পরেও সংযুক্ত করা যাবে)।\n* **সেবার মূল্য এবং পরিশোধ পদ্ধতি:** \n  * পেশাদার স্মার্ট কার্ড ড্রাইভিং লাইসেন্স নবায়নের জন্য ২,৪২৭/- টাকা (লাইসেন্স ফি) + ৬০/- টাকা (পোষ্টাল ফি)।\n  * এছাড়া মেয়াদোত্তীর্ণ হলে প্রতি বছরের জন্য ৫১৮/- টাকা ফি প্রদান করতে হবে।\n  * *ফি পরিশোধ পদ্ধতি:* BSP Account বা অনলাইন পেমেন্ট গেটওয়ে।\n* **সেবা প্রদানের সময়সীমা:** \n  * আবেদন: ০১- কার্যদিবস ",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_09e8cbfff67f117e",
+        "document_id": "brta_09e8cbfff67f117e",
+        "title": "বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার)",
+        "section_title": "বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার) > ২) প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > ০৬. ড্রাইভিং লাইসেন্স নবায়ন (পেশাদার)",
+        "document_type": "সিটিজেন্স চার্টার",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).md",
+        "source_relative_path": "brta/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).md",
+        "snapshot_path": "domains/brta/data/source_snapshots/brta/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).md",
+        "source_sha256": "5f20f60f6759d980b46043726dbf0bfa79f09acc61b4a4c861c07b98f840e090",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).pdf\"]",
+        "document_date": "2022-06-05",
+        "date_verified": false,
+        "audit_flags": "no_web_address",
+        "experimental": true,
+        "body_start": 6901,
+        "body_end": 8296,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": false
+      },
+      "score": 0.9167789220809937,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "brta_cbe22ab64acf3d03_v2_0011",
+      "content": "ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন প্রক্রিয়া\nড্রাইভিং লাইসেন্স > ড্রাইভিং লাইসেন্স নবায়ন প্রক্রিয়া > নবায়নের জন্য প্রয়োজনীয় কাগজপত্র\n\n### নবায়নের জন্য প্রয়োজনীয় কাগজপত্র\n* **১. আবেদনপত্র:** নির্ধারিত ফরমে আবেদন।\n* **২. মেডিকেল সার্টিফিকেট:** রেজিষ্টার্ড ডাক্তার কর্তৃক মেডিকেল সার্টিফিকেট (পেশাদার ড্রাইভিং লাইসেন্সের ক্ষেত্রে প্রযোজ্য)।\n* **৩. পরিচয়পত্র:** ন্যাশনাল আইডি কার্ড-এর সত্যায়িত ফটোকপি।\n* **৪. ফি জমাদানের রশিদ:** নির্ধারিত ফি জমাদানের রশিদের বিআরটিএ কপি।\n* **৫. ছবি:** সদ্য তোলা ০২ কপি পাসপোর্ট সাইজ ছবি।\n\n---\n\n",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_cbe22ab64acf3d03",
+        "document_id": "brta_cbe22ab64acf3d03",
+        "title": "ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন প্রক্রিয়া",
+        "section_title": "ড্রাইভিং লাইসেন্স > ড্রাইভিং লাইসেন্স নবায়ন প্রক্রিয়া > নবায়নের জন্য প্রয়োজনীয় কাগজপত্র",
+        "document_type": "সাধারণ তথ্য / নির্দেশিকা",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta/সেবাসমূহ/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.md",
+        "source_relative_path": "fahim_brta/সেবাসমূহ/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.md",
+        "snapshot_path": "domains/brta/data/source_snapshots/fahim_brta/সেবাসমূহ/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.md",
+        "source_sha256": "c19bf1f86060bfd79b729b7a10cbc7d8a403d918cc21511262cff6d5d4a3a114",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/সেবাসমূহ_original/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.pdf\"]",
+        "document_date": "N/A",
+        "date_verified": false,
+        "audit_flags": "citation_markers_removed_from_derived_text, no_web_address",
+        "experimental": true,
+        "body_start": 5005,
+        "body_end": 5399,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": false
+      },
+      "score": 0.8868931531906128,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "brta_09e8cbfff67f117e_v2_0007",
+      "content": "বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার)\nবিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার) > ২) প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > ০২. ড্রাইভিং লাইসেন্স পুনঃপরীক্ষার তারিখ গ্রহণ (পেশাদার ও অপেশাদার)\n\n#### ০২. ড্রাইভিং লাইসেন্স পুনঃপরীক্ষার তারিখ গ্রহণ (পেশাদার ও অপেশাদার)\n* **সেবার নাম:** ড্রাইভিং লাইসেন্স পুনঃপরীক্ষার তারিখ গ্রহণ (পেশাদার ও অপেশাদার)\n* **সেবা প্রদান পদ্ধতি:** বিআরটিএ সার্ভিস পোর্টালে নিজ অ্যাকাউন্টে প্রবেশ করে শিক্ষানবিশ ড্রাইভিং লাইসেন্সের পুনঃপরীক্ষার জন্য আবেদন দাখিল করবেন।\n* **প্রয়োজনীয় কাগজপত্র ও প্রাপ্তিস্থান:** প্রযোজ্য নহে।\n* **সেবার মূল্য এবং পরিশোধ পদ্ধতি:** \n  * ড্রাইভিং লাইসেন্স পরীক্ষার ফিস বাবদ ২৩০০/- টাকা পরিশোধপূর্বক পুনঃপরীক্ষার তারিখ নির্ধারণ করা যাবে।\n  * তবে শিক্ষানবীশ লাইসেন্সটির মেয়াদ উত্তীর্ণ হলে (ইস্যূ তারিখ হতে ছয় মাস) নিম্নে বর্ণিত ফি প্রদানপূর্বক নবায়ন করা যাবে:\n    1. মোটরসাইকেল/থ্রি-হুইলার/হালকা মোটরযান: ৫১৮/- টাকা\n    2. যেকোনো দুই ক্যাটাগরি মোটরযান: ৭৪৮/- টাকা\n  * *ফি পরিশোধ পদ্ধতি:* অনলাইন পেমেন্ট গেটওয়ে চার্জ প্রযোজ্য। (MASTER Card, VISA Card, NEXUS Card, AMEX Card, bKash, Rocket মোবাইল ব্যাংকিং, নগদ এর মাধ্যমে গ্রাহক নিজ BSP একাউন্টের মাধ্যমে ফি জমা প্রদান করতে পারবেন)।\n* **সেবা প্রদানের সময়সীমা:** \n  * আবেদন গ্রহণ: ০১- কার্যদিবস।\n  * শুধুমাত্র ই-ড্রাইভিং লাইসেন্স এর ক্ষেত্রে ফি প্রদান সাপেক্ষে ১৫-২০ কর্মদিবসের মধ্যে ডাকযোগে গ্রাহকের ঠিকানায় পৌঁছে দেওয়া হবে।\n* **দায়িত্বপ্রাপ্ত কর্মকর্তা:** সহকারী পরিচালক (ইঞ্জি:) ও রেজিস্ট্রেশন কর্তৃপক্ষ, বিআরটিএ সার্কেল অফিস সকল।\n\n",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_09e8cbfff67f117e",
+        "document_id": "brta_09e8cbfff67f117e",
+        "title": "বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার)",
+        "section_title": "বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার) > ২) প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > ০২. ড্রাইভিং লাইসেন্স পুনঃপরীক্ষার তারিখ গ্রহণ (পেশাদার ও অপেশাদার)",
+        "document_type": "সিটিজেন্স চার্টার",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).md",
+        "source_relative_path": "brta/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).md",
+        "snapshot_path": "domains/brta/data/source_snapshots/brta/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).md",
+        "source_sha256": "5f20f60f6759d980b46043726dbf0bfa79f09acc61b4a4c861c07b98f840e090",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).pdf\"]",
+        "document_date": "2022-06-05",
+        "date_verified": false,
+        "audit_flags": "no_web_address",
+        "experimental": true,
+        "body_start": 2693,
+        "body_end": 3943,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": false
+      },
+      "score": 0.7884993553161621,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    }
+  ],
+  "selection_trace": {
+    "version": "applicability_v1_family_order",
+    "query_actions": [
+      "renewal"
+    ],
+    "query_services": [
+      "licence"
+    ],
+    "decisions": [
+      {
+        "id": "brta_cbe22ab64acf3d03_v2_0008",
+        "decision": "excluded",
+        "reason": "heading_without_evidence"
+      },
+      {
+        "id": "brta_cbe22ab64acf3d03_v2_0009",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_cbe22ab64acf3d03_v2_0010",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_09e8cbfff67f117e_v2_0009",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_09e8cbfff67f117e_v2_0011",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_cbe22ab64acf3d03_v2_0011",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_09e8cbfff67f117e_v2_0007",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_258cf38650a6332b_v2_0009",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_3cae1ecd59682fa3_v2_0005",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_4e08eb4e988d38e4_v2_0014",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_4e08eb4e988d38e4_v2_0015",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_4e08eb4e988d38e4_v2_0026",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_4e08eb4e988d38e4_v2_0016",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_4e08eb4e988d38e4_v2_0139",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_cb965b3169c34e73_v2_0032",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      }
+    ],
+    "expanded_ids": [],
+    "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+    "budget_order_ids": [
+      "brta_cbe22ab64acf3d03_v2_0009",
+      "brta_cbe22ab64acf3d03_v2_0010",
+      "brta_09e8cbfff67f117e_v2_0009",
+      "brta_09e8cbfff67f117e_v2_0011",
+      "brta_cbe22ab64acf3d03_v2_0011",
+      "brta_09e8cbfff67f117e_v2_0007",
+      "brta_258cf38650a6332b_v2_0009",
+      "brta_3cae1ecd59682fa3_v2_0005",
+      "brta_4e08eb4e988d38e4_v2_0014",
+      "brta_4e08eb4e988d38e4_v2_0015",
+      "brta_4e08eb4e988d38e4_v2_0026",
+      "brta_4e08eb4e988d38e4_v2_0016",
+      "brta_4e08eb4e988d38e4_v2_0139",
+      "brta_cb965b3169c34e73_v2_0032"
+    ],
+    "selected_ids": [
+      "brta_cbe22ab64acf3d03_v2_0009",
+      "brta_cbe22ab64acf3d03_v2_0010",
+      "brta_09e8cbfff67f117e_v2_0009",
+      "brta_09e8cbfff67f117e_v2_0011",
+      "brta_cbe22ab64acf3d03_v2_0011",
+      "brta_09e8cbfff67f117e_v2_0007"
+    ],
+    "selected_chars": 6198
+  },
+  "seconds": 8.931,
+  "support_rank": 1,
+  "selected_support": true
+}

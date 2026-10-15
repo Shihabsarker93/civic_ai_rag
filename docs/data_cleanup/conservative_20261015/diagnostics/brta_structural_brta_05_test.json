@@ -1,0 +1,369 @@
+{
+  "domain": "brta",
+  "variant": "structural",
+  "id": "brta_05_test",
+  "query": "BRTA-এর ড্রাইভিং পরীক্ষায় কী কী থাকে?",
+  "candidate_ids": [
+    "brta_57a7e75567f9a5c3_v4_0011",
+    "brta_57a7e75567f9a5c3_v4_0009",
+    "brta_4e08eb4e988d38e4_v2_0013",
+    "brta_4e08eb4e988d38e4_v2_0019",
+    "brta_4e08eb4e988d38e4_v2_0158",
+    "brta_57a7e75567f9a5c3_v4_0003",
+    "brta_4e08eb4e988d38e4_v2_0196",
+    "brta_4e08eb4e988d38e4_v2_0178",
+    "brta_4e08eb4e988d38e4_v2_0195",
+    "brta_846a4041fe96a64e_v4_0011",
+    "brta_434172ea3f86a161_v2_0056",
+    "brta_4e08eb4e988d38e4_v2_0138",
+    "brta_4e08eb4e988d38e4_v2_0207",
+    "brta_4e08eb4e988d38e4_v2_0198",
+    "brta_6eb3d41986361dbd_v4_0003"
+  ],
+  "selected_ids": [
+    "brta_846a4041fe96a64e_v4_0011",
+    "brta_57a7e75567f9a5c3_v4_0011",
+    "brta_57a7e75567f9a5c3_v4_0009",
+    "brta_4e08eb4e988d38e4_v2_0013",
+    "brta_4e08eb4e988d38e4_v2_0019",
+    "brta_4e08eb4e988d38e4_v2_0158"
+  ],
+  "selected_characters": 6161,
+  "selected_tokens": 2123,
+  "tokenizer": "BGE-M3; not generator tokens",
+  "selected_passages": [
+    {
+      "id": "brta_846a4041fe96a64e_v4_0011",
+      "content": "ড্রাইভিং লাইসেন্স পাওয়ার প্রক্রিয়া\nড্রাইভিং লাইসেন্স পাওয়ার প্রক্রিয়া > সহজিকৃত ড্রাইভিং লাইসেন্সের প্রসেস ফ্লো (পেশাদার এবং অপেশাদার) > ধাপ-২: পরীক্ষা কেন্দ্রে (DCTB) উপস্থিতি\n\n### ধাপ-২: পরীক্ষা কেন্দ্রে (DCTB) উপস্থিতি\n* **ক)** ফিঙ্গারপ্রিন্ট মেশিনে পরীক্ষার্থী যাচাইকরণ এবং বায়োমেট্রিক গ্রহণ।\n* **খ)** লিখিত পরীক্ষা।\n* **গ)** মৌখিক পরীক্ষা।\n* **ঘ)** ব্যবহারিক পরীক্ষা।\n\n",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_846a4041fe96a64e",
+        "document_id": "brta_846a4041fe96a64e",
+        "title": "ড্রাইভিং লাইসেন্স পাওয়ার প্রক্রিয়া",
+        "section_title": "ড্রাইভিং লাইসেন্স পাওয়ার প্রক্রিয়া > সহজিকৃত ড্রাইভিং লাইসেন্সের প্রসেস ফ্লো (পেশাদার এবং অপেশাদার) > ধাপ-২: পরীক্ষা কেন্দ্রে (DCTB) উপস্থিতি",
+        "document_type": "সাধারণ তথ্য / নির্দেশিকা",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta/সেবাসমূহ/নতুন ড্রাইভিং লাইসেন্স ইস্যু.md",
+        "source_relative_path": "fahim_brta/সেবাসমূহ/নতুন ড্রাইভিং লাইসেন্স ইস্যু.md",
+        "snapshot_path": "domains/brta/data/source_snapshots/fahim_brta/সেবাসমূহ/নতুন ড্রাইভিং লাইসেন্স ইস্যু.md",
+        "source_sha256": "26232309419850bdddfee1e1a7d9342ed13e5233176db8359ba06cdd3146f6f5",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/সেবাসমূহ_original/নতুন ড্রাইভিং লাইসেন্স ইস্যু.pdf\"]",
+        "document_date": "2022-12-21",
+        "date_verified": false,
+        "audit_flags": "citation_markers_removed_from_derived_text, no_web_address",
+        "experimental": true,
+        "body_start": 4864,
+        "body_end": 5061,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/brta/markdown/fahim_brta/সেবাসমূহ/নতুন ড্রাইভিং লাইসেন্স ইস্যু.md",
+        "context_spans": "[]",
+        "cleaned_sha256": "d1258362c87c542b48361fec85750efbf484529064ef65599638d87f9b17ab71"
+      },
+      "score": 0.46380048990249634,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "brta_57a7e75567f9a5c3_v4_0011",
+      "content": "বিআরটিএ মধ্যম ও ভারী শ্রেণীর পেশাদার ড্রাইভিং লাইসেন্স নিয়ন্ত্রণ সংক্রান্ত নির্দেশিকা ও প্রবিধানমালা\nবাংলাদেশ সড়ক পরিবহন কর্তৃপক্ষ (বিআরটিএ) > ৫। ডোপ টেস্ট ও স্বাস্থ্যগত মানদণ্ড (Dope Test Protocol)\n\n## ৫। ডোপ টেস্ট ও স্বাস্থ্যগত মানদণ্ড (Dope Test Protocol)\n\nপেশাদার ড্রাইভিং লাইসেন্স ইস্যু, মানোন্নয়ন বা ৫ (পাঁচ) বছর পর নবায়নের ক্ষেত্রে ডোপ টেস্ট বাধ্যতামূলক:\n\n* **পরীক্ষাযোগ্য মাদকদ্রব্য:** Opioids, Amphetamines, Cannabis, Cocaine, এবং Benzodiazepines।\n* **ফলাফল পজিটিভ হলে দণ্ড:** \n  * আবেদন সরাসরি বাতিল করা হইবে।\n  * সংশ্লিষ্ট চালক পরবর্তী **১ (এক) বছরের** জন্য নতুন কোনো পরীক্ষা বা আবেদনের জন্য অযোগ্য (Blacklisted) বলিয়া গণ্য হইবেন।\n\n---\n\n",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_57a7e75567f9a5c3",
+        "document_id": "brta_57a7e75567f9a5c3",
+        "title": "বিআরটিএ মধ্যম ও ভারী শ্রেণীর পেশাদার ড্রাইভিং লাইসেন্স নিয়ন্ত্রণ সংক্রান্ত নির্দেশিকা ও প্রবিধানমালা",
+        "section_title": "বাংলাদেশ সড়ক পরিবহন কর্তৃপক্ষ (বিআরটিএ) > ৫। ডোপ টেস্ট ও স্বাস্থ্যগত মানদণ্ড (Dope Test Protocol)",
+        "document_type": "document",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta/আইন, বিধি ও নীতিমালা/বিআরটিএ মধ্যম ও ভারী শ্রেণীর পেশাদার ড্রাইভিং লাইসেন্স নিয়ন্ত্রণ সংক্রান্ত নির্দেশিকা ও প্রবিধানমালা.md",
+        "source_relative_path": "brta/আইন, বিধি ও নীতিমালা/বিআরটিএ মধ্যম ও ভারী শ্রেণীর পেশাদার ড্রাইভিং লাইসেন্স নিয়ন্ত্রণ সংক্রান্ত নির্দেশিকা ও প্রবিধানমালা.md",
+        "snapshot_path": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/বিআরটিএ মধ্যম ও ভারী শ্রেণীর পেশাদার ড্রাইভিং লাইসেন্স নিয়ন্ত্রণ সংক্রান্ত নির্দেশিকা ও প্রবিধানমালা.md",
+        "source_sha256": "a00e05ee17383f825cfec99e2458e0fe0af6b27e9c013c5ec6da9b858fe9e8df",
+        "original_paths": "[]",
+        "document_date": "2026-06-01",
+        "date_verified": false,
+        "audit_flags": "original_match_unresolved, no_web_address, nonstandard_metadata_layout",
+        "experimental": true,
+        "body_start": 3913,
+        "body_end": 4364,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/brta/markdown/brta/আইন, বিধি ও নীতিমালা/বিআরটিএ মধ্যম ও ভারী শ্রেণীর পেশাদার ড্রাইভিং লাইসেন্স নিয়ন্ত্রণ সংক্রান্ত নির্দেশিকা ও প্রবিধানমালা.md",
+        "context_spans": "[]",
+        "cleaned_sha256": "0ee097c4ba18f5416f25bfaea998cfda23dd447e000fe21f24eeb93a213fcef6"
+      },
+      "score": 0.9075112342834473,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "brta_57a7e75567f9a5c3_v4_0009",
+      "content": "বিআরটিএ মধ্যম ও ভারী শ্রেণীর পেশাদার ড্রাইভিং লাইসেন্স নিয়ন্ত্রণ সংক্রান্ত নির্দেশিকা ও প্রবিধানমালা\nবাংলাদেশ সড়ক পরিবহন কর্তৃপক্ষ (বিআরটিএ) > ৪। আবেদন প্রক্রিয়া, ডোপ টেস্ট ও ফি সারণী (Application Workflow & Fee Structure) > ৪.১ প্রয়োজনীয় ডকুমেন্টস ও ফিঙ্গারপ্রিন্ট (Checklist)\n\n### ৪.১ প্রয়োজনীয় ডকুমেন্টস ও ফিঙ্গারপ্রিন্ট (Checklist)\n\n1. বিআরটিএ সার্ভিস পোর্টাল (BSP)-এ অনলাইনে আবেদন ও ট্র্যাকিং প্রাপ্তি।\n2. রেজিস্টার্ড মেডিকেল ফিজিশিয়ান কর্তৃক প্রদত্ত **মেডিকেল ফিটনেস সার্টিফিকেট**।\n3. সরকারি ল্যাবরেটরি বা অনুমোদিত হাসপাতাল কর্তৃক প্রদেয় **ডোপ টেস্ট (Dope Test) রিপোর্ট** (নেগেটিভ হওয়া বাধ্যতামূলক)।\n4. জাতীয় পরিচয়পত্র (NID)-এর সত্যায়িত কপি।\n5. নূন্যতম অষ্টম শ্রেণী পাসের প্রমানপত্র।\n6. পূর্ববর্তী ড্রাইভিং লাইসেন্সের অনুলিপি (মানোন্নয়নের ক্ষেত্রে)।\n\n",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_57a7e75567f9a5c3",
+        "document_id": "brta_57a7e75567f9a5c3",
+        "title": "বিআরটিএ মধ্যম ও ভারী শ্রেণীর পেশাদার ড্রাইভিং লাইসেন্স নিয়ন্ত্রণ সংক্রান্ত নির্দেশিকা ও প্রবিধানমালা",
+        "section_title": "বাংলাদেশ সড়ক পরিবহন কর্তৃপক্ষ (বিআরটিএ) > ৪। আবেদন প্রক্রিয়া, ডোপ টেস্ট ও ফি সারণী (Application Workflow & Fee Structure) > ৪.১ প্রয়োজনীয় ডকুমেন্টস ও ফিঙ্গারপ্রিন্ট (Checklist)",
+        "document_type": "document",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta/আইন, বিধি ও নীতিমালা/বিআরটিএ মধ্যম ও ভারী শ্রেণীর পেশাদার ড্রাইভিং লাইসেন্স নিয়ন্ত্রণ সংক্রান্ত নির্দেশিকা ও প্রবিধানমালা.md",
+        "source_relative_path": "brta/আইন, বিধি ও নীতিমালা/বিআরটিএ মধ্যম ও ভারী শ্রেণীর পেশাদার ড্রাইভিং লাইসেন্স নিয়ন্ত্রণ সংক্রান্ত নির্দেশিকা ও প্রবিধানমালা.md",
+        "snapshot_path": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/বিআরটিএ মধ্যম ও ভারী শ্রেণীর পেশাদার ড্রাইভিং লাইসেন্স নিয়ন্ত্রণ সংক্রান্ত নির্দেশিকা ও প্রবিধানমালা.md",
+        "source_sha256": "a00e05ee17383f825cfec99e2458e0fe0af6b27e9c013c5ec6da9b858fe9e8df",
+        "original_paths": "[]",
+        "document_date": "2026-06-01",
+        "date_verified": false,
+        "audit_flags": "original_match_unresolved, no_web_address, nonstandard_metadata_layout",
+        "experimental": true,
+        "body_start": 2898,
+        "body_end": 3385,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/brta/markdown/brta/আইন, বিধি ও নীতিমালা/বিআরটিএ মধ্যম ও ভারী শ্রেণীর পেশাদার ড্রাইভিং লাইসেন্স নিয়ন্ত্রণ সংক্রান্ত নির্দেশিকা ও প্রবিধানমালা.md",
+        "context_spans": "[]",
+        "cleaned_sha256": "0ee097c4ba18f5416f25bfaea998cfda23dd447e000fe21f24eeb93a213fcef6"
+      },
+      "score": 0.7999173998832703,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "brta_4e08eb4e988d38e4_v2_0013",
+      "content": "সড়ক পরিবহণ বিধিমালা, ২০২২\nসড়ক পরিবহণ বিধিমালা, ২০২২\n\n২ক) , ২খখ) ও ২ঘ) মোতাবেক প্রার্থীর যোগ্যতা যাচাই পরীক্ষা গ্রহণপূর্বক পরীক্ষার ফলাফল লাইসেন্স প্রদানকারী কর্তৃপক্ষের নিকট প্রেরণ করিবে এবং যদি কোনো প্রার্থী দক্ষতা যাচাই পরীক্ষায় উত্তীর্ণ না হন তবে উক্ত প্রার্থী দক্ষতা যাচাই পরীক্ষার ফি প্রদানপূর্বক ১ (এক) মাস পর পুনরায় পরীক্ষায় অংশগ্রহণ করিতে পারিবেন /\n\n---\n\nবাংলাদেশ গেজেট, অতিরিক্ত, ডিসেম্বর ২৭, ২০২২ আবেদনকারী বাংলাদেশের নাগরিক এবং বিদেশি কোনো কর্তৃপক্ষ কর্তৃক হালনাগাদ বৈধ লাইসেন্সধারী হইলে শিক্ষানবিশ ড্রাইভিং লাইসেন্সের প্রয়োজন হইবে না এবং দক্ষতা যাচাই পরীক্ষায় ব্যবহারিক পরীক্ষা হইতে অব্যাহতি পাইবেন  9)/ ড্রাইভিং লাইসেন্স প্রদানের সময়সীমা ও প্রযোজ্যতা (১) ড্রাইভিং দক্ষতা যাচাই পরীক্ষায় উত্তীণ প্রার্থীকে ড্রাইভিং লাইসেন্স পাইবার জন্য তফসিল-১ এ বর্ণিত ফি (ড্রাইভিং লাইসেন্স ইস্যু ও য মেযাদের জন্য লাইসেন্স প্রদান করা হইবে সেই নির্দিষ্ট মেয়াদের জন্য ফি) প্রদান সাপেক্ষে ফরম-৪ অনুযাযী সংশ্লিষ্ট লাইসেন্স প্রদানকারী কর্তৃপক্ষ বরাবর লিখিতভাবে বা ইলেকট্রনিক মাধ্যমে আবেদন দাখিল করিতে হইবে (২) ড্রাইভিং লাইসেন্স প্রদানকারী কর্তৃপক্ষ উপ-বিধি (১) অনুযায়ী ড্রাইভিং লাইসেন্সের আবেদন প্রাপ্তির অনধিক ৩০ (ত্রিশ) দিনের মধ্যে সকল আনুষ্ঠানিকতা সম্পন্ন করিয়া ড্রাইভিং লাইসেন্স ইস্যু করিবে এবং কোনো আবেদন ত্রুটিপূর্ণ হইলে তাৎক্ষণিকভাবে কারণ উল্লেখপূর্বক আবেদনটি ফেরত প্রদান করিবে এবং স্মার্ট কার্ড বা এইরূপ কোনো আধুনিক কার্ড ফরমেটে ড্রাইভিং লাইসেন্স প্রদানের ক্ষেত্রে কার্ড বাবদ সময় সময় সরকার কর্তৃক নির্ধারিত মূল্য লাইসেন্সধারীকে পরিশোধ করিতে ",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_4e08eb4e988d38e4",
+        "document_id": "brta_4e08eb4e988d38e4",
+        "title": "সড়ক পরিবহণ বিধিমালা, ২০২২",
+        "section_title": "সড়ক পরিবহণ বিধিমালা, ২০২২",
+        "document_type": "document",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta/আইন, বিধি ও নীতিমালা/সড়ক পরিবহণ বিধিমালা, ২০২২.md",
+        "source_relative_path": "brta/আইন, বিধি ও নীতিমালা/সড়ক পরিবহণ বিধিমালা, ২০২২.md",
+        "snapshot_path": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/সড়ক পরিবহণ বিধিমালা, ২০২২.md",
+        "source_sha256": "2a08b085cecd864def8bf31ffcc5d1e8538a8fc2d6a064c49d6443aeacca26ee",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/সড়ক পরিবহণ বিধিমালা, ২০২২.pdf\"]",
+        "document_date": "unknown",
+        "date_verified": false,
+        "audit_flags": "no_web_address, nonstandard_metadata_layout, long_document_check_ocr",
+        "experimental": true,
+        "body_start": 15155,
+        "body_end": 16553,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": false
+      },
+      "score": 0.643994927406311,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "brta_4e08eb4e988d38e4_v2_0019",
+      "content": "সড়ক পরিবহণ বিধিমালা, ২০২২\nসড়ক পরিবহণ বিধিমালা, ২০২২\n\n\n\nবাংলাদেশ গেজেট, অতিরিক্ত, ডিসেম্বর ২৭, ২০২২ ১৭ / গণপরিবহণ চালাইবার অনুমতিপত্র (পিটিএ), ইত্যাদি}   (১) গণপরিবহণ চালাইবার জন্য, ধারা ৫ এর বিধান মোতাবেক, প্রত্যেক চালককে তাহার ড্রাইভিং লাইসেন্সের অতিরিক্ত হিসাবে লাইসেন্স প্রদানকারী কর্তৃপক্ষের নিকট হইতে ফরম-৬ এ বর্ণিত অনুমতিপত্র গ্রহণ করিতে হইবে| (২) উপ-বিধি (১) এ বর্ণিত অনুমতিপত্রের জন্য ফরম-৭ অনুযায়ী আবেদন করিতে হইবে এবং উহার সহিত নিম্নবর্ণিত দলিলাদি সংযুক্ত করিতে হইবে, যথা: হালনাগাদ ড্রাইভিং লাইসেন্সের অনুলিপি; নিয়োগকারী কর্তৃক প্রদত্ত অভিজ্ঞতা সনদপত্র নিয়োগপত্র; গ) তফসিল-১ এ বর্ণিত প্রযোজ্য ফি পরিশোধের প্রমাণপত্র (৩) অনুমতিপত্রের জন্য আবেদনের পূর্বে প্রার্থীর হালকা মোটরযান চালাইবার অন্যূন ২ (দুই) বৎসরের অভিজ্ঞতা থাকিতে হইবে এবং এই সংক্রান্ত প্রমাণপত্র আবেদনপত্রের সহিত সংযুক্ত করিতে হহবে (৪) প্রার্থীকে তফসিল-৩ এ বর্ণিত বিষয়াদির পরীক্ষায় উত্তীর্ণ হইতে হইবে এবং তফসিল-২গ) বর্ণিত গণপরিবহণ চালাইবার দায়িত্ব কর্তব্য সম্পরকে জ্ঞাত থাকিতে হইবে: শর্ত থাকে যে, যে সকল প্রার্থীর ভারী মোটরযান চালাইবার লাইসেন্স এবং অন্যূন ২ বৎসরের অভিজ্ঞতা রহিয়াছে তাহাকে উক্ত পরীক্ষায় অংশগ্রহণ করিতে হইবে না ৫৫) আবেদনপত্র সঠিক পাওয়া গেলে লাইসেন্স প্রদানকারী কর্তৃপক্ষ, পরিদর্শকের নিম্নে নহেন বাংলাদেশ পুলিশের এইরূপ ১ (এক) জন প্রতিনিধি ও মোটরযান পরিদর্শকের সমন্বয়ে গঠিত ৩ (তিন) সদস্যের কমিটি প্রার্থীর যোগ্যতা যাচাই করিবে (৬) যোগ্যতা যাচাই পরীক্ষায় উত্তীর্ণ প্রার্থীর অনুকূলে লাইসেন্স প্রদানকারী কর্তৃপক্ষ গণপরিবহণ চালাইবার অনুমতিপত্র প্রদান করিবে  (৭)  ",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_4e08eb4e988d38e4",
+        "document_id": "brta_4e08eb4e988d38e4",
+        "title": "সড়ক পরিবহণ বিধিমালা, ২০২২",
+        "section_title": "সড়ক পরিবহণ বিধিমালা, ২০২২",
+        "document_type": "document",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta/আইন, বিধি ও নীতিমালা/সড়ক পরিবহণ বিধিমালা, ২০২২.md",
+        "source_relative_path": "brta/আইন, বিধি ও নীতিমালা/সড়ক পরিবহণ বিধিমালা, ২০২২.md",
+        "snapshot_path": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/সড়ক পরিবহণ বিধিমালা, ২০২২.md",
+        "source_sha256": "2a08b085cecd864def8bf31ffcc5d1e8538a8fc2d6a064c49d6443aeacca26ee",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/সড়ক পরিবহণ বিধিমালা, ২০২২.pdf\"]",
+        "document_date": "unknown",
+        "date_verified": false,
+        "audit_flags": "no_web_address, nonstandard_metadata_layout, long_document_check_ocr",
+        "experimental": true,
+        "body_start": 22842,
+        "body_end": 24242,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": false
+      },
+      "score": 0.6435737609863281,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "brta_4e08eb4e988d38e4_v2_0158",
+      "content": "সড়ক পরিবহণ বিধিমালা, ২০২২\nসড়ক পরিবহণ বিধিমালা, ২০২২\n\n\n\nবাংলাদেশ গেজেট, অতিরিক্ত, ডিসেম্বর ২৭, ২০২২ তফসিল-২ মোটরযান চালনার দক্ষতা যাচাই পরীক্ষা [বিধি ৮৮)ও ১১৫৫) দ্রষ্টব্য] মোটর ডাইভিং লাইসেন্সের জন্য প্রার্থীকে নিমনবর্ণিত বিষয়ে দক্ষতা পরীক্ষায় অংশগ্রহণ করিতে হইবে প্রথম অংশ ১| মোটরযান চালকদের কর্ম ঘণ্টা (সড়ক পরিবহণ আইন; ২০১৮ এর ধারা ৩৯) ২| মোটরযান চালনার নিয়মাবলি এবং সিগন্যাল প্রদান [২ এবং ২খে) তফসিল] ৩1 পাবলিক সার্ভিস মোটরযান চালকদের দাযিত্ব কর্তব্য [তফসিল-২(গ)] 8 / ট্রাফিক রুলস এবং রেগুলেশনের জ্ঞান, বিশেষ করে মোটরযানের লাইট ব্যবহার, পার্কিং, জরুরি পরিস্সথিতিতে   মোটরযান থামানো; সড়কের   অধিকার, পথচারী পারাপার, লাইট সিগন্যাল, ওয়ানওয়ে ট্রাফিক, লেইন ডিসিপ্লিন, রাতে মোটরযান চালনা এবং সংশ্লিষ্ট অন্যান্য বিষয়াদি তফসিল-২(ঘ) এ বর্ণিত ট্রাফিক সাইন; সিগন্যাল ও রোড মার্কিং সংক্রান্ত জ্ঞান খ) পেশাদার চালকদের জন্য প্রথম অংশসহ নিম্নবর্ণিত অতিরিক্ত বিষয়াদি: ১| মোটরযানের বিভিন্ন যন্ত্রাংশ ও সিস্টেম কার্যপদ্ধতি সম্পর্কে প্রাথমিক জ্ঞান < মোটরযানের নিয়মিত রক্ষণাবেক্ষণের জ্ঞান ৩1 প্রাথমিক চিকিংসা জ্ঞান 8 / অগ্নিকাণ্ড প্রতিরোধে সতর্কতামূলক ব্যবস্থাসমূহ এবং অগ্নিনির্বাপক যন্ত্রপাতির ব্যবহার সম্পর্কে জ্ঞান ৫| মোটরযানের দৈনিক সার্ভিসিং এবং চেকলিস্ট সংক্রান্ত জ্ঞান ৬ / মোটরযানের স্কিডিং এবং টায়ার বা্স্ট নিয়ন্ত্রণ সম্পর্কে জ্ঞান (গ) ডাইভিং লাইসেন্স প্রার্থী দক্ষতা যাচাই কমিটিকে এই মর্মে সন্তুষ্ট করিবেন যে; তিনি নিম্নবর্ণিত কাজগুলি করিতে সক্ষম: ১| মোটরযানের ইঞ্জিন স্টাট করা $| অগ্রসর হওয়া (সোজা এবং কোণাকুণি) গিয়ার পরিবর্তন করা এবং বিভিন্ন ",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_4e08eb4e988d38e4",
+        "document_id": "brta_4e08eb4e988d38e4",
+        "title": "সড়ক পরিবহণ বিধিমালা, ২০২২",
+        "section_title": "সড়ক পরিবহণ বিধিমালা, ২০২২",
+        "document_type": "document",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta/আইন, বিধি ও নীতিমালা/সড়ক পরিবহণ বিধিমালা, ২০২২.md",
+        "source_relative_path": "brta/আইন, বিধি ও নীতিমালা/সড়ক পরিবহণ বিধিমালা, ২০২২.md",
+        "snapshot_path": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/সড়ক পরিবহণ বিধিমালা, ২০২২.md",
+        "source_sha256": "2a08b085cecd864def8bf31ffcc5d1e8538a8fc2d6a064c49d6443aeacca26ee",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/সড়ক পরিবহণ বিধিমালা, ২০২২.pdf\"]",
+        "document_date": "unknown",
+        "date_verified": false,
+        "audit_flags": "no_web_address, nonstandard_metadata_layout, long_document_check_ocr",
+        "experimental": true,
+        "body_start": 194619,
+        "body_end": 196015,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": false
+      },
+      "score": 0.6181659698486328,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    }
+  ],
+  "selection_trace": {
+    "version": "applicability_v1_family_order",
+    "query_actions": [],
+    "query_services": [
+      "licence"
+    ],
+    "decisions": [
+      {
+        "id": "brta_846a4041fe96a64e_v4_0011",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_57a7e75567f9a5c3_v4_0011",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_57a7e75567f9a5c3_v4_0009",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_4e08eb4e988d38e4_v2_0013",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_4e08eb4e988d38e4_v2_0019",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_4e08eb4e988d38e4_v2_0158",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_57a7e75567f9a5c3_v4_0003",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_4e08eb4e988d38e4_v2_0196",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_4e08eb4e988d38e4_v2_0178",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_4e08eb4e988d38e4_v2_0195",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_434172ea3f86a161_v2_0056",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_4e08eb4e988d38e4_v2_0138",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_4e08eb4e988d38e4_v2_0207",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_4e08eb4e988d38e4_v2_0198",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_6eb3d41986361dbd_v4_0003",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      }
+    ],
+    "expanded_ids": [],
+    "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+    "budget_order_ids": [
+      "brta_846a4041fe96a64e_v4_0011",
+      "brta_57a7e75567f9a5c3_v4_0011",
+      "brta_57a7e75567f9a5c3_v4_0009",
+      "brta_4e08eb4e988d38e4_v2_0013",
+      "brta_4e08eb4e988d38e4_v2_0019",
+      "brta_4e08eb4e988d38e4_v2_0158",
+      "brta_57a7e75567f9a5c3_v4_0003",
+      "brta_4e08eb4e988d38e4_v2_0196",
+      "brta_4e08eb4e988d38e4_v2_0178",
+      "brta_4e08eb4e988d38e4_v2_0195",
+      "brta_434172ea3f86a161_v2_0056",
+      "brta_4e08eb4e988d38e4_v2_0138",
+      "brta_4e08eb4e988d38e4_v2_0207",
+      "brta_4e08eb4e988d38e4_v2_0198",
+      "brta_6eb3d41986361dbd_v4_0003"
+    ],
+    "selected_ids": [
+      "brta_846a4041fe96a64e_v4_0011",
+      "brta_57a7e75567f9a5c3_v4_0011",
+      "brta_57a7e75567f9a5c3_v4_0009",
+      "brta_4e08eb4e988d38e4_v2_0013",
+      "brta_4e08eb4e988d38e4_v2_0019",
+      "brta_4e08eb4e988d38e4_v2_0158"
+    ],
+    "selected_chars": 6161
+  },
+  "seconds": 10.053,
+  "top5": {
+    "dense": [
+      "brta_4e08eb4e988d38e4_v2_0158",
+      "brta_57a7e75567f9a5c3_v4_0009",
+      "brta_4e08eb4e988d38e4_v2_0196",
+      "brta_57a7e75567f9a5c3_v4_0011",
+      "brta_4e08eb4e988d38e4_v2_0207"
+    ],
+    "bm25": [
+      "brta_6eb3d41986361dbd_v4_0003",
+      "brta_4b8c25d391e48121_v4_0001",
+      "brta_4e08eb4e988d38e4_v2_0009",
+      "brta_cbe22ab64acf3d03_v4_0010",
+      "brta_846a4041fe96a64e_v4_0006"
+    ],
+    "hybrid": [
+      "brta_4e08eb4e988d38e4_v2_0013",
+      "brta_4e08eb4e988d38e4_v2_0019",
+      "brta_4e08eb4e988d38e4_v2_0158",
+      "brta_57a7e75567f9a5c3_v4_0009",
+      "brta_4e08eb4e988d38e4_v2_0196"
+    ]
+  }
+}

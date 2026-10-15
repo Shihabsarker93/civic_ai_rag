@@ -1,0 +1,185 @@
+{
+  "domain": "brta",
+  "variant": "candidate",
+  "id": "brta_10_status",
+  "query": "আমার ড্রাইভিং লাইসেন্সের বর্তমান স্ট্যাটাস কীভাবে দেখব?",
+  "candidate_ids": [
+    "brta_a207b925ed0dc4a9_v2_0020",
+    "brta_4e08eb4e988d38e4_v2_0237",
+    "brta_4e08eb4e988d38e4_v2_0205",
+    "brta_4e08eb4e988d38e4_v2_0203",
+    "brta_00cf734ebafbc7c2_v2_0026",
+    "brta_e640c49d6025cc8d_v2_0006",
+    "brta_00cf734ebafbc7c2_v2_0017",
+    "brta_258cf38650a6332b_v2_0015",
+    "brta_4e08eb4e988d38e4_v2_0196",
+    "brta_846a4041fe96a64e_v2_0007",
+    "brta_cbe22ab64acf3d03_v2_0004",
+    "brta_00cf734ebafbc7c2_v2_0012",
+    "brta_cbe22ab64acf3d03_v2_0003",
+    "brta_4e08eb4e988d38e4_v2_0149",
+    "brta_91979c30a91124e0_v2_0011"
+  ],
+  "selected_ids": [
+    "brta_00cf734ebafbc7c2_v2_0012"
+  ],
+  "selected_characters": 224,
+  "selected_tokens": 92,
+  "tokenizer": "BGE-M3; not generator tokens",
+  "selected_passages": [
+    {
+      "id": "brta_00cf734ebafbc7c2_v2_0012",
+      "content": "ফরম-৪ (ক) ড্রাইভিং লাইসেন্সের আবেদন\nফরম-৪ (ক) > ড্রাইভিং লাইসেন্সের আবেদন > ৭. বৈবাহিক অবস্থা (Marital Status)\n\n### ৭. বৈবাহিক অবস্থা (Marital Status)\n**Options:**\n- ☐ Married\n- ☐ Unmarried\n- ☐ Widowed/Widower\n- ☐ Divorced\n\n",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_00cf734ebafbc7c2",
+        "document_id": "brta_00cf734ebafbc7c2",
+        "title": "ফরম-৪ (ক) ড্রাইভিং লাইসেন্সের আবেদন",
+        "section_title": "ফরম-৪ (ক) > ড্রাইভিং লাইসেন্সের আবেদন > ৭. বৈবাহিক অবস্থা (Marital Status)",
+        "document_type": "form",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta/ফরম/ফরম-৪(ক) ড্রাইভিং লাইসেন্সের আবেদন.md",
+        "source_relative_path": "fahim_brta/ফরম/ফরম-৪(ক) ড্রাইভিং লাইসেন্সের আবেদন.md",
+        "snapshot_path": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-৪(ক) ড্রাইভিং লাইসেন্সের আবেদন.md",
+        "source_sha256": "60023bbc5cf06603f67c420c40e90840b93964d3a67189b4cb8bed7c098cbb68",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-৪(ক) ড্রাইভিং লাইসেন্সের আবেদন.pdf\"]",
+        "document_date": "Not specified",
+        "date_verified": false,
+        "audit_flags": "citation_markers_removed_from_derived_text, no_web_address",
+        "experimental": true,
+        "body_start": 1215,
+        "body_end": 1327,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": false,
+        "cleanup_revision": "conservative_20261015",
+        "retrieval_token_count": 94,
+        "embedding_model_max_tokens": 8192
+      },
+      "score": 0.05598030239343643,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    }
+  ],
+  "selection_trace": {
+    "version": "applicability_v1_family_order",
+    "query_actions": [
+      "status"
+    ],
+    "query_services": [
+      "licence"
+    ],
+    "decisions": [
+      {
+        "id": "brta_4e08eb4e988d38e4_v2_0237",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_4e08eb4e988d38e4_v2_0205",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_4e08eb4e988d38e4_v2_0203",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_00cf734ebafbc7c2_v2_0026",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_e640c49d6025cc8d_v2_0006",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_00cf734ebafbc7c2_v2_0017",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_258cf38650a6332b_v2_0015",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_4e08eb4e988d38e4_v2_0196",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_846a4041fe96a64e_v2_0007",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_cbe22ab64acf3d03_v2_0004",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_cbe22ab64acf3d03_v2_0003",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_4e08eb4e988d38e4_v2_0149",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_91979c30a91124e0_v2_0011",
+        "decision": "excluded",
+        "reason": "historical_alternative_requires_explicit_scope"
+      },
+      {
+        "id": "brta_a207b925ed0dc4a9_v2_0020",
+        "decision": "excluded",
+        "reason": "unclassified_action_with_direct_alternative"
+      },
+      {
+        "id": "brta_00cf734ebafbc7c2_v2_0012",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      }
+    ],
+    "expanded_ids": [],
+    "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+    "budget_order_ids": [
+      "brta_00cf734ebafbc7c2_v2_0012"
+    ],
+    "selected_ids": [
+      "brta_00cf734ebafbc7c2_v2_0012"
+    ],
+    "selected_chars": 224
+  },
+  "seconds": 7.798,
+  "top5": {
+    "dense": [
+      "brta_00cf734ebafbc7c2_v2_0017",
+      "brta_a207b925ed0dc4a9_v2_0020",
+      "brta_e640c49d6025cc8d_v2_0006",
+      "brta_4e08eb4e988d38e4_v2_0196",
+      "brta_00cf734ebafbc7c2_v2_0026"
+    ],
+    "bm25": [
+      "brta_00cf734ebafbc7c2_v2_0012",
+      "brta_4e08eb4e988d38e4_v2_0203",
+      "brta_4e08eb4e988d38e4_v2_0237",
+      "brta_e640c49d6025cc8d_v2_0006",
+      "brta_4e08eb4e988d38e4_v2_0206"
+    ],
+    "hybrid": [
+      "brta_e640c49d6025cc8d_v2_0006",
+      "brta_00cf734ebafbc7c2_v2_0017",
+      "brta_4e08eb4e988d38e4_v2_0237",
+      "brta_00cf734ebafbc7c2_v2_0012",
+      "brta_a207b925ed0dc4a9_v2_0020"
+    ]
+  }
+}

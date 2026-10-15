@@ -1,0 +1,374 @@
+{
+  "domain": "brta",
+  "variant": "structural",
+  "id": "brta_08_correction",
+  "query": "ড্রাইভিং লাইসেন্সে নাম বা জন্মতারিখ ভুল হলে কীভাবে ঠিক করব?",
+  "candidate_ids": [
+    "brta_4e08eb4e988d38e4_v2_0237",
+    "brta_258cf38650a6332b_v4_0021",
+    "brta_00cf734ebafbc7c2_v4_0034",
+    "brta_00cf734ebafbc7c2_v4_0007",
+    "brta_4e08eb4e988d38e4_v2_0199",
+    "brta_258cf38650a6332b_v4_0017",
+    "brta_90ea5e2f80d89b97_v4_0005",
+    "brta_258cf38650a6332b_v4_0006",
+    "brta_258cf38650a6332b_v4_0018",
+    "brta_258cf38650a6332b_v4_0020",
+    "brta_258cf38650a6332b_v4_0024",
+    "brta_0a6926d40f756cb6_v4_0005",
+    "brta_258cf38650a6332b_v4_0019",
+    "brta_258cf38650a6332b_v4_0008",
+    "brta_258cf38650a6332b_v4_0011"
+  ],
+  "selected_ids": [
+    "brta_258cf38650a6332b_v4_0021",
+    "brta_258cf38650a6332b_v4_0017",
+    "brta_258cf38650a6332b_v4_0006",
+    "brta_258cf38650a6332b_v4_0018",
+    "brta_258cf38650a6332b_v4_0020",
+    "brta_258cf38650a6332b_v4_0024"
+  ],
+  "selected_characters": 3082,
+  "selected_tokens": 1073,
+  "tokenizer": "BGE-M3; not generator tokens",
+  "selected_passages": [
+    {
+      "id": "brta_258cf38650a6332b_v4_0021",
+      "content": "ফরম-৪ (খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন/প্রতিলিপি / শ্রেণি পরিবর্তন বা সংযোজন/ধরন পরিবর্তন/ ঠিকানা পরিবর্তন/তথ্য সংশোধনের আবেদন\nফরম-৪ (খ) > মোটর ড্রাইভিং লাইসেন্স নবায়ন/প্রতিলিপি / শ্রেণি পরিবর্তন বা সংযোজন/ধরন পরিবর্তন/ ঠিকানা পরিবর্তন/তথ্য সংশোধনের আবেদন > বিষয়: জন্ম তারিখ (Date of Birth)\n\n[বিধি ১১(১), ১৫(১) ও ১৬(১) দ্রষ্টব্য]\n\n### বিষয়: জন্ম তারিখ (Date of Birth)\n- **বিদ্যমান তথ্য (Current Information):** ________________________________________\n- **প্রস্তাবিত সংশোধন (Proposed Correction):** ________________________________________\n\n",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_258cf38650a6332b",
+        "document_id": "brta_258cf38650a6332b",
+        "title": "ফরম-৪ (খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন/প্রতিলিপি / শ্রেণি পরিবর্তন বা সংযোজন/ধরন পরিবর্তন/ ঠিকানা পরিবর্তন/তথ্য সংশোধনের আবেদন",
+        "section_title": "ফরম-৪ (খ) > মোটর ড্রাইভিং লাইসেন্স নবায়ন/প্রতিলিপি / শ্রেণি পরিবর্তন বা সংযোজন/ধরন পরিবর্তন/ ঠিকানা পরিবর্তন/তথ্য সংশোধনের আবেদন > বিষয়: জন্ম তারিখ (Date of Birth)",
+        "document_type": "form",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta/ফরম/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.md",
+        "source_relative_path": "fahim_brta/ফরম/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.md",
+        "snapshot_path": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.md",
+        "source_sha256": "b4e7a124b17f98b88141f55a1c9d957d25e4cf55cfdc0f5bee7a205e60ba6bc5",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.pdf\"]",
+        "document_date": "Not specified",
+        "date_verified": false,
+        "audit_flags": "citation_markers_removed_from_derived_text, no_web_address",
+        "experimental": true,
+        "body_start": 5242,
+        "body_end": 5453,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/brta/markdown/fahim_brta/ফরম/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.md",
+        "context_spans": "[{\"start\": 149, \"end\": 189}]",
+        "cleaned_sha256": "d86e70f35d0a1a7aca28354ff04a23805fc7240bbd419f5f10805fa51d8c73eb"
+      },
+      "score": 0.18348081409931183,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "brta_258cf38650a6332b_v4_0017",
+      "content": "ফরম-৪ (খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন/প্রতিলিপি / শ্রেণি পরিবর্তন বা সংযোজন/ধরন পরিবর্তন/ ঠিকানা পরিবর্তন/তথ্য সংশোধনের আবেদন\nফরম-৪ (খ) > মোটর ড্রাইভিং লাইসেন্স নবায়ন/প্রতিলিপি / শ্রেণি পরিবর্তন বা সংযোজন/ধরন পরিবর্তন/ ঠিকানা পরিবর্তন/তথ্য সংশোধনের আবেদন > বিষয়: নাম (Name)\n\n[বিধি ১১(১), ১৫(১) ও ১৬(১) দ্রষ্টব্য]\n\n### বিষয়: নাম (Name)\n- **বিদ্যমান তথ্য (Current Information):** ________________________________________\n- **প্রস্তাবিত সংশোধন (Proposed Correction):** ________________________________________\n\n",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_258cf38650a6332b",
+        "document_id": "brta_258cf38650a6332b",
+        "title": "ফরম-৪ (খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন/প্রতিলিপি / শ্রেণি পরিবর্তন বা সংযোজন/ধরন পরিবর্তন/ ঠিকানা পরিবর্তন/তথ্য সংশোধনের আবেদন",
+        "section_title": "ফরম-৪ (খ) > মোটর ড্রাইভিং লাইসেন্স নবায়ন/প্রতিলিপি / শ্রেণি পরিবর্তন বা সংযোজন/ধরন পরিবর্তন/ ঠিকানা পরিবর্তন/তথ্য সংশোধনের আবেদন > বিষয়: নাম (Name)",
+        "document_type": "form",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta/ফরম/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.md",
+        "source_relative_path": "fahim_brta/ফরম/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.md",
+        "snapshot_path": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.md",
+        "source_sha256": "b4e7a124b17f98b88141f55a1c9d957d25e4cf55cfdc0f5bee7a205e60ba6bc5",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.pdf\"]",
+        "document_date": "Not specified",
+        "date_verified": false,
+        "audit_flags": "citation_markers_removed_from_derived_text, no_web_address",
+        "experimental": true,
+        "body_start": 4409,
+        "body_end": 4604,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/brta/markdown/fahim_brta/ফরম/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.md",
+        "context_spans": "[{\"start\": 149, \"end\": 189}]",
+        "cleaned_sha256": "d86e70f35d0a1a7aca28354ff04a23805fc7240bbd419f5f10805fa51d8c73eb"
+      },
+      "score": 0.04306672140955925,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "brta_258cf38650a6332b_v4_0006",
+      "content": "ফরম-৪ (খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন/প্রতিলিপি / শ্রেণি পরিবর্তন বা সংযোজন/ধরন পরিবর্তন/ ঠিকানা পরিবর্তন/তথ্য সংশোধনের আবেদন\nফরম-৪ (খ) > মোটর ড্রাইভিং লাইসেন্স নবায়ন/প্রতিলিপি / শ্রেণি পরিবর্তন বা সংযোজন/ধরন পরিবর্তন/ ঠিকানা পরিবর্তন/তথ্য সংশোধনের আবেদন > ১. নাম (ইংরেজিতে) / Name (English)\n\n[বিধি ১১(১), ১৫(১) ও ১৬(১) দ্রষ্টব্য]\n\n### ১. নাম (ইংরেজিতে) / Name (English)\n**Input:** ________________________________________\n\n",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_258cf38650a6332b",
+        "document_id": "brta_258cf38650a6332b",
+        "title": "ফরম-৪ (খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন/প্রতিলিপি / শ্রেণি পরিবর্তন বা সংযোজন/ধরন পরিবর্তন/ ঠিকানা পরিবর্তন/তথ্য সংশোধনের আবেদন",
+        "section_title": "ফরম-৪ (খ) > মোটর ড্রাইভিং লাইসেন্স নবায়ন/প্রতিলিপি / শ্রেণি পরিবর্তন বা সংযোজন/ধরন পরিবর্তন/ ঠিকানা পরিবর্তন/তথ্য সংশোধনের আবেদন > ১. নাম (ইংরেজিতে) / Name (English)",
+        "document_type": "form",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta/ফরম/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.md",
+        "source_relative_path": "fahim_brta/ফরম/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.md",
+        "snapshot_path": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.md",
+        "source_sha256": "b4e7a124b17f98b88141f55a1c9d957d25e4cf55cfdc0f5bee7a205e60ba6bc5",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.pdf\"]",
+        "document_date": "Not specified",
+        "date_verified": false,
+        "audit_flags": "citation_markers_removed_from_derived_text, no_web_address",
+        "experimental": true,
+        "body_start": 900,
+        "body_end": 992,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/brta/markdown/fahim_brta/ফরম/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.md",
+        "context_spans": "[{\"start\": 149, \"end\": 189}]",
+        "cleaned_sha256": "d86e70f35d0a1a7aca28354ff04a23805fc7240bbd419f5f10805fa51d8c73eb"
+      },
+      "score": 0.022657154127955437,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "brta_258cf38650a6332b_v4_0018",
+      "content": "ফরম-৪ (খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন/প্রতিলিপি / শ্রেণি পরিবর্তন বা সংযোজন/ধরন পরিবর্তন/ ঠিকানা পরিবর্তন/তথ্য সংশোধনের আবেদন\nফরম-৪ (খ) > মোটর ড্রাইভিং লাইসেন্স নবায়ন/প্রতিলিপি / শ্রেণি পরিবর্তন বা সংযোজন/ধরন পরিবর্তন/ ঠিকানা পরিবর্তন/তথ্য সংশোধনের আবেদন > বিষয়: পিতার নাম (Father's Name)\n\n[বিধি ১১(১), ১৫(১) ও ১৬(১) দ্রষ্টব্য]\n\n### বিষয়: পিতার নাম (Father's Name)\n- **বিদ্যমান তথ্য (Current Information):** ________________________________________\n- **প্রস্তাবিত সংশোধন (Proposed Correction):** ________________________________________\n\n",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_258cf38650a6332b",
+        "document_id": "brta_258cf38650a6332b",
+        "title": "ফরম-৪ (খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন/প্রতিলিপি / শ্রেণি পরিবর্তন বা সংযোজন/ধরন পরিবর্তন/ ঠিকানা পরিবর্তন/তথ্য সংশোধনের আবেদন",
+        "section_title": "ফরম-৪ (খ) > মোটর ড্রাইভিং লাইসেন্স নবায়ন/প্রতিলিপি / শ্রেণি পরিবর্তন বা সংযোজন/ধরন পরিবর্তন/ ঠিকানা পরিবর্তন/তথ্য সংশোধনের আবেদন > বিষয়: পিতার নাম (Father's Name)",
+        "document_type": "form",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta/ফরম/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.md",
+        "source_relative_path": "fahim_brta/ফরম/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.md",
+        "snapshot_path": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.md",
+        "source_sha256": "b4e7a124b17f98b88141f55a1c9d957d25e4cf55cfdc0f5bee7a205e60ba6bc5",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.pdf\"]",
+        "document_date": "Not specified",
+        "date_verified": false,
+        "audit_flags": "citation_markers_removed_from_derived_text, no_web_address",
+        "experimental": true,
+        "body_start": 4604,
+        "body_end": 4814,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/brta/markdown/fahim_brta/ফরম/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.md",
+        "context_spans": "[{\"start\": 149, \"end\": 189}]",
+        "cleaned_sha256": "d86e70f35d0a1a7aca28354ff04a23805fc7240bbd419f5f10805fa51d8c73eb"
+      },
+      "score": 0.017496716231107712,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "brta_258cf38650a6332b_v4_0020",
+      "content": "ফরম-৪ (খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন/প্রতিলিপি / শ্রেণি পরিবর্তন বা সংযোজন/ধরন পরিবর্তন/ ঠিকানা পরিবর্তন/তথ্য সংশোধনের আবেদন\nফরম-৪ (খ) > মোটর ড্রাইভিং লাইসেন্স নবায়ন/প্রতিলিপি / শ্রেণি পরিবর্তন বা সংযোজন/ধরন পরিবর্তন/ ঠিকানা পরিবর্তন/তথ্য সংশোধনের আবেদন > বিষয়: স্বামীর/স্ত্রীর নাম (Spouse Name)\n\n[বিধি ১১(১), ১৫(১) ও ১৬(১) দ্রষ্টব্য]\n\n### বিষয়: স্বামীর/স্ত্রীর নাম (Spouse Name)\n- **বিদ্যমান তথ্য (Current Information):** ________________________________________\n- **প্রস্তাবিত সংশোধন (Proposed Correction):** ________________________________________\n\n",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_258cf38650a6332b",
+        "document_id": "brta_258cf38650a6332b",
+        "title": "ফরম-৪ (খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন/প্রতিলিপি / শ্রেণি পরিবর্তন বা সংযোজন/ধরন পরিবর্তন/ ঠিকানা পরিবর্তন/তথ্য সংশোধনের আবেদন",
+        "section_title": "ফরম-৪ (খ) > মোটর ড্রাইভিং লাইসেন্স নবায়ন/প্রতিলিপি / শ্রেণি পরিবর্তন বা সংযোজন/ধরন পরিবর্তন/ ঠিকানা পরিবর্তন/তথ্য সংশোধনের আবেদন > বিষয়: স্বামীর/স্ত্রীর নাম (Spouse Name)",
+        "document_type": "form",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta/ফরম/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.md",
+        "source_relative_path": "fahim_brta/ফরম/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.md",
+        "snapshot_path": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.md",
+        "source_sha256": "b4e7a124b17f98b88141f55a1c9d957d25e4cf55cfdc0f5bee7a205e60ba6bc5",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.pdf\"]",
+        "document_date": "Not specified",
+        "date_verified": false,
+        "audit_flags": "citation_markers_removed_from_derived_text, no_web_address",
+        "experimental": true,
+        "body_start": 5024,
+        "body_end": 5242,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/brta/markdown/fahim_brta/ফরম/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.md",
+        "context_spans": "[{\"start\": 149, \"end\": 189}]",
+        "cleaned_sha256": "d86e70f35d0a1a7aca28354ff04a23805fc7240bbd419f5f10805fa51d8c73eb"
+      },
+      "score": 0.015783080831170082,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "brta_258cf38650a6332b_v4_0024",
+      "content": "ফরম-৪ (খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন/প্রতিলিপি / শ্রেণি পরিবর্তন বা সংযোজন/ধরন পরিবর্তন/ ঠিকানা পরিবর্তন/তথ্য সংশোধনের আবেদন\nফরম-৪ (খ) > মোটর ড্রাইভিং লাইসেন্স নবায়ন/প্রতিলিপি / শ্রেণি পরিবর্তন বা সংযোজন/ধরন পরিবর্তন/ ঠিকানা পরিবর্তন/তথ্য সংশোধনের আবেদন > আবেদনকারীর স্বাক্ষর ও তারিখ\n\n[বিধি ১১(১), ১৫(১) ও ১৬(১) দ্রষ্টব্য]\n\n### আবেদনকারীর স্বাক্ষর ও তারিখ\n\n**তারিখ (Date):** ________________________\n\n**আবেদনকারীর স্বাক্ষর (Applicant's signature):** ________________________________________\n\n---\n\n",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_258cf38650a6332b",
+        "document_id": "brta_258cf38650a6332b",
+        "title": "ফরম-৪ (খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন/প্রতিলিপি / শ্রেণি পরিবর্তন বা সংযোজন/ধরন পরিবর্তন/ ঠিকানা পরিবর্তন/তথ্য সংশোধনের আবেদন",
+        "section_title": "ফরম-৪ (খ) > মোটর ড্রাইভিং লাইসেন্স নবায়ন/প্রতিলিপি / শ্রেণি পরিবর্তন বা সংযোজন/ধরন পরিবর্তন/ ঠিকানা পরিবর্তন/তথ্য সংশোধনের আবেদন > আবেদনকারীর স্বাক্ষর ও তারিখ",
+        "document_type": "form",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta/ফরম/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.md",
+        "source_relative_path": "fahim_brta/ফরম/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.md",
+        "snapshot_path": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.md",
+        "source_sha256": "b4e7a124b17f98b88141f55a1c9d957d25e4cf55cfdc0f5bee7a205e60ba6bc5",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.pdf\"]",
+        "document_date": "Not specified",
+        "date_verified": false,
+        "audit_flags": "citation_markers_removed_from_derived_text, no_web_address",
+        "experimental": true,
+        "body_start": 5870,
+        "body_end": 6043,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/brta/markdown/fahim_brta/ফরম/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.md",
+        "context_spans": "[{\"start\": 149, \"end\": 189}]",
+        "cleaned_sha256": "d86e70f35d0a1a7aca28354ff04a23805fc7240bbd419f5f10805fa51d8c73eb"
+      },
+      "score": 0.015119661577045918,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    }
+  ],
+  "selection_trace": {
+    "version": "applicability_v1_family_order",
+    "query_actions": [
+      "correction"
+    ],
+    "query_services": [
+      "birth",
+      "licence"
+    ],
+    "decisions": [
+      {
+        "id": "brta_4e08eb4e988d38e4_v2_0237",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_00cf734ebafbc7c2_v4_0034",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_00cf734ebafbc7c2_v4_0007",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_90ea5e2f80d89b97_v4_0005",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_0a6926d40f756cb6_v4_0005",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_258cf38650a6332b_v4_0021",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_258cf38650a6332b_v4_0017",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_258cf38650a6332b_v4_0006",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_258cf38650a6332b_v4_0018",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_258cf38650a6332b_v4_0020",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_258cf38650a6332b_v4_0024",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_258cf38650a6332b_v4_0019",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_258cf38650a6332b_v4_0008",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_258cf38650a6332b_v4_0011",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_4e08eb4e988d38e4_v2_0199",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      }
+    ],
+    "expanded_ids": [],
+    "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+    "budget_order_ids": [
+      "brta_258cf38650a6332b_v4_0021",
+      "brta_258cf38650a6332b_v4_0017",
+      "brta_258cf38650a6332b_v4_0006",
+      "brta_258cf38650a6332b_v4_0018",
+      "brta_258cf38650a6332b_v4_0020",
+      "brta_258cf38650a6332b_v4_0024",
+      "brta_258cf38650a6332b_v4_0019",
+      "brta_258cf38650a6332b_v4_0008",
+      "brta_258cf38650a6332b_v4_0011",
+      "brta_4e08eb4e988d38e4_v2_0199"
+    ],
+    "selected_ids": [
+      "brta_258cf38650a6332b_v4_0021",
+      "brta_258cf38650a6332b_v4_0017",
+      "brta_258cf38650a6332b_v4_0006",
+      "brta_258cf38650a6332b_v4_0018",
+      "brta_258cf38650a6332b_v4_0020",
+      "brta_258cf38650a6332b_v4_0024"
+    ],
+    "selected_chars": 3082
+  },
+  "seconds": 18.55,
+  "top5": {
+    "dense": [
+      "brta_258cf38650a6332b_v4_0021",
+      "brta_258cf38650a6332b_v4_0018",
+      "brta_258cf38650a6332b_v4_0019",
+      "brta_258cf38650a6332b_v4_0020",
+      "brta_4e08eb4e988d38e4_v2_0199"
+    ],
+    "bm25": [
+      "brta_0a6926d40f756cb6_v4_0005",
+      "brta_90ea5e2f80d89b97_v4_0005",
+      "brta_ac5b02f4481c1f90_v4_0012",
+      "brta_4e08eb4e988d38e4_v2_0203",
+      "brta_4e08eb4e988d38e4_v2_0237"
+    ],
+    "hybrid": [
+      "brta_4e08eb4e988d38e4_v2_0237",
+      "brta_258cf38650a6332b_v4_0021",
+      "brta_258cf38650a6332b_v4_0018",
+      "brta_258cf38650a6332b_v4_0019",
+      "brta_258cf38650a6332b_v4_0020"
+    ]
+  }
+}

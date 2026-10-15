@@ -1,0 +1,413 @@
+{
+  "domain": "brta",
+  "variant": "structural",
+  "id": "brta_02_fee",
+  "query": "ড্রাইভিং লাইসেন্স করতে মোট কত টাকা লাগে?",
+  "candidate_ids": [
+    "brta_846a4041fe96a64e_v4_0006",
+    "brta_3cae1ecd59682fa3_v4_0004",
+    "brta_846a4041fe96a64e_v4_0005",
+    "brta_3cae1ecd59682fa3_v4_0005",
+    "brta_3cae1ecd59682fa3_v4_0012",
+    "brta_3cae1ecd59682fa3_v4_0014",
+    "brta_3cae1ecd59682fa3_v4_0017",
+    "brta_3cae1ecd59682fa3_v4_0018",
+    "brta_3cae1ecd59682fa3_v4_0011",
+    "brta_3cae1ecd59682fa3_v4_0009",
+    "brta_3cae1ecd59682fa3_v4_0008",
+    "brta_3a262ccde300696d_v4_0005",
+    "brta_3a262ccde300696d_v4_0013",
+    "brta_3cae1ecd59682fa3_v4_0015",
+    "brta_4b8c25d391e48121_v4_0002"
+  ],
+  "selected_ids": [
+    "brta_3cae1ecd59682fa3_v4_0009",
+    "brta_3cae1ecd59682fa3_v4_0008",
+    "brta_4b8c25d391e48121_v4_0002",
+    "brta_846a4041fe96a64e_v4_0005",
+    "brta_3a262ccde300696d_v4_0005",
+    "brta_3a262ccde300696d_v4_0008"
+  ],
+  "selected_characters": 4322,
+  "selected_tokens": 1558,
+  "tokenizer": "BGE-M3; not generator tokens",
+  "selected_passages": [
+    {
+      "id": "brta_3cae1ecd59682fa3_v4_0009",
+      "content": "ড্রাইভিং লাইসেন্স ফি\nড্রাইভিং লাইসেন্স ফি > ড্রাইভিং দক্ষতা যাচাই পরীক্ষার পরে > খ) স্মার্ট কার্ড ড্রাইভিং লাইসেন্স ইস্যু ফি > পেশাদার (৫ বছর) ৩০০০৫\n\n**আবদুর রশিদ**  \nসহকারী পরিচালক (ইঞ্জিঃ)  \nপরিচিতি নং-২০০৫২০০০২১  \nলাইসেন্স শাখা, সদর কার্যালয়, ঢাকা  \n\n---\n\n#### পেশাদার (৫ বছর) ৩০০০৫\n* **আবেদন ফি:** ১,৫০০/-\n* **কার্ড ফি:** ৩০০/-\n* **ভ্যাট (১৫%):** ৬১০/-\n* **পোষ্টাল সার্ভিস চার্জ:** ৩৬২/-\n* **সর্বমোট:** ৬০/-\n* **সর্বমোট (সকল খরচ মিলিয়ে):** ২,৮৩২/-\n\n---\n\n",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_3cae1ecd59682fa3",
+        "document_id": "brta_3cae1ecd59682fa3",
+        "title": "ড্রাইভিং লাইসেন্স ফি",
+        "section_title": "ড্রাইভিং লাইসেন্স ফি > ড্রাইভিং দক্ষতা যাচাই পরীক্ষার পরে > খ) স্মার্ট কার্ড ড্রাইভিং লাইসেন্স ইস্যু ফি > পেশাদার (৫ বছর) ৩০০০৫",
+        "document_type": "সাধারণ তথ্য / নির্দেশিকা",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta/ফি, ট্যাক্স ও আয়কর/ড্রাইভিং লাইসেন্স ফি.md",
+        "source_relative_path": "brta/ফি, ট্যাক্স ও আয়কর/ড্রাইভিং লাইসেন্স ফি.md",
+        "snapshot_path": "domains/brta/data/source_snapshots/brta/ফি, ট্যাক্স ও আয়কর/ড্রাইভিং লাইসেন্স ফি.md",
+        "source_sha256": "75c20a7744690e5c4ddfb8a687ef5a2680ea9aac806cfc655858611c81cd1ee9",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/ফি, ট্যাক্স ও আয়কর/ড্রাইভিং লাইসেন্স ফি.pdf\"]",
+        "document_date": "2010-02-26",
+        "date_verified": false,
+        "audit_flags": "no_web_address",
+        "experimental": true,
+        "body_start": 1164,
+        "body_end": 1364,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/brta/markdown/brta/ফি, ট্যাক্স ও আয়কর/ড্রাইভিং লাইসেন্স ফি.md",
+        "context_spans": "[{\"start\": 22, \"end\": 134}]",
+        "cleaned_sha256": "b9b019c32ba4fc97cd79890ab4fdece0855dcf88c8e669ede99d6d62d7941089"
+      },
+      "score": 0.26477840542793274,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "brta_3cae1ecd59682fa3_v4_0008",
+      "content": "ড্রাইভিং লাইসেন্স ফি\nড্রাইভিং লাইসেন্স ফি > ড্রাইভিং দক্ষতা যাচাই পরীক্ষার পরে > খ) স্মার্ট কার্ড ড্রাইভিং লাইসেন্স ইস্যু ফি > অপেশাদার (১০ বছর) ৩০০০১০\n\n**আবদুর রশিদ**  \nসহকারী পরিচালক (ইঞ্জিঃ)  \nপরিচিতি নং-২০০৫২০০০২১  \nলাইসেন্স শাখা, সদর কার্যালয়, ঢাকা  \n\n---\n\n#### অপেশাদার (১০ বছর) ৩০০০১০\n* **আবেদন ফি:** ৩,০০০/-\n* **কার্ড ফি:** ৩০০/-\n* **ভ্যাট (১৫%):** ৬১০/-\n* **পোষ্টাল সার্ভিস চার্জ:** ৫৮৭/-\n* **সর্বমোট:** ৬০/-\n* **সর্বমোট (সকল খরচ মিলিয়ে):** ৪,৫৫৭/-\n\n",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_3cae1ecd59682fa3",
+        "document_id": "brta_3cae1ecd59682fa3",
+        "title": "ড্রাইভিং লাইসেন্স ফি",
+        "section_title": "ড্রাইভিং লাইসেন্স ফি > ড্রাইভিং দক্ষতা যাচাই পরীক্ষার পরে > খ) স্মার্ট কার্ড ড্রাইভিং লাইসেন্স ইস্যু ফি > অপেশাদার (১০ বছর) ৩০০০১০",
+        "document_type": "সাধারণ তথ্য / নির্দেশিকা",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta/ফি, ট্যাক্স ও আয়কর/ড্রাইভিং লাইসেন্স ফি.md",
+        "source_relative_path": "brta/ফি, ট্যাক্স ও আয়কর/ড্রাইভিং লাইসেন্স ফি.md",
+        "snapshot_path": "domains/brta/data/source_snapshots/brta/ফি, ট্যাক্স ও আয়কর/ড্রাইভিং লাইসেন্স ফি.md",
+        "source_sha256": "75c20a7744690e5c4ddfb8a687ef5a2680ea9aac806cfc655858611c81cd1ee9",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/ফি, ট্যাক্স ও আয়কর/ড্রাইভিং লাইসেন্স ফি.pdf\"]",
+        "document_date": "2010-02-26",
+        "date_verified": false,
+        "audit_flags": "no_web_address",
+        "experimental": true,
+        "body_start": 966,
+        "body_end": 1164,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/brta/markdown/brta/ফি, ট্যাক্স ও আয়কর/ড্রাইভিং লাইসেন্স ফি.md",
+        "context_spans": "[{\"start\": 22, \"end\": 134}]",
+        "cleaned_sha256": "b9b019c32ba4fc97cd79890ab4fdece0855dcf88c8e669ede99d6d62d7941089"
+      },
+      "score": 0.24112321436405182,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "brta_4b8c25d391e48121_v4_0002",
+      "content": "ড্রাইভিং ইন্সট্রাক্টর লাইসেন্স প্রাপ্তির প্রক্রিয়া\nড্রাইভিং ইন্সট্রাক্টর লাইসেন্স প্রাপ্তির প্রক্রিয়া > ড্রাইভিং ইন্সট্রাক্টর লাইসেন্স এর আবেদনপত্রের সাথে প্রয়োজনীয় সংযুক্তি সমূহের তালিকা\n\n## ড্রাইভিং ইন্সট্রাক্টর লাইসেন্স এর আবেদনপত্রের সাথে প্রয়োজনীয় সংযুক্তি সমূহের তালিকা\n\nড্রাইভিং ইন্সট্রাক্টর লাইসেন্স এর আবেদনপত্রের সাথে ২ কপি পাসপোর্ট সাইজ এবং ২ কপি স্ট্যাম্প সাইজ সত্যায়িত ছবি সংযুক্ত করতে হবে।\n\nড্রাইভিং ইন্সট্রাক্টর লাইসেন্স এর আবেদনপত্রের সাথে নিম্নোল্লিখিত কাগজপত্র দাখিল করতে হবে (নিম্নের ক্রমনম্বর অনুযায়ী কাগজপত্র সংযুক্ত করতে হবে এবং প্রতিটি ডকুমেন্ট এর উপর সংশ্লিষ্ট ডকুমেন্ট এর ক্রমনম্বর লিখতে হবে):\n\n1. **ড্রাইভিং লাইসেন্স:** ভারী গাড়ি চালনার প্রশিক্ষণ প্রদানের জন্য দরখাস্তকারীর ক্ষেত্রে বৈধ পেশাদার ভারী ড্রাইভিং লাইসেন্সের সত্যায়িত ফটোকপি (ভারী ড্রাইভিং লাইসেন্স প্রথম ইস্যুর পর অন্তত ০১ (এক) বছর অতিবাহিত হতে হবে) অথবা হালকা গাড়ি চালনার প্রশিক্ষণ প্রদানের জন্য দরখাস্তকারীর ক্ষেত্রে বৈধ পেশাদার হালকা ড্রাইভিং লাইসেন্সের সত্যায়িত ফটোকপি (হালকা ড্রাইভিং লাইসেন্স প্রথম ইস্যুর পর অন্তত ০৩ (তিন) বছর অতিবাহিত হতে হবে);\n2. **অভিজ্ঞতার সনদপত্র:** ভারী গাড়ি চালনার প্রশিক্ষণ প্রদানের জন্য দরখাস্তকারীর ক্ষেত্রে ভারী মোটরযান পরিচালনার কমপক্ষে ০১ (এক) বছরের বাস্তব অভিজ্ঞতার সনদপত্রের (সংশ্লিষ্ট কর্তৃপক্ষ কর্তৃক প্রদত্ত) সত্যায়িত ফটোকপি অথবা হালকা গাড়ি চালনার প্রশিক্ষণ প্রদানের জন্য দরখাস্তকারীর ক্ষেত্রে হালকা মোটরযান পরিচালনার কমপক্ষে ০৩ (তিন) বছরের বাস্তব অভিজ্ঞতার সনদপত্রের (সংশ্লিষ্ট কর্তৃপক্ষ কর্তৃক প্রদত্ত) সত্যায়িত ফটোকপি (সনদপত্রে কত বছর মোটরযান চালিয়েছেন এবং কোন ধরনের মোটরযান (হালকা/ মাঝারি/ ভারী) চালিয়েছেন তার উল্লেখ অবশ্যই থাকতে হবে);\n3. **শিক্ষাগত যোগ্যতার সনদ:** এস এস সি বা সমমানের সনদের সত্যায়িত ফটোকপি;\n4. **জাতীয় পরিচয়পত্র ও বয়সসীমা:** জাতীয় পরিচয়পত্র এর সত্যায়িত ফটোকপি (ভারী গাড়ি চালনার প্রশিক্ষণ প্রদানের জন্য দরখাস্তকারীর ক্ষেত্রে বয়স কমপক্ষে ২৭ (সাতাশ) হতে হবে, হালকা গাড়ি চালনার প্রশিক্ষণ প্রদানের জন্য দরখাস্তকারীর ক্ষেত্রে বয়স কমপক্ষে ২৪ (চব্বিশ) হতে হবে);\n5. **চারিত্রিক সনদপত্র:** সংশ্লিষ্ট সিটি কর্পোরেশন এর মেয়র বা ওয়ার্ড কমিশনার, পৌরসভার চেয়ারম্যান বা ওয়ার্ড কমিশনার, স্থানীয় ইউনিয়ন পরিষদের চেয়ারম্যান, অথবা প্রথম শ্রেণির (ন্যূনতম গ্রেড-৯) সরকারী কর্মকর্তা কর্তৃক স্বাক্ষরিত চারিত্রিক সনদপত্রের সত্যায়িত ফটোকপি;\n6. **জীবনবৃত্তান্ত:** জীবনবৃত্তান্ত;\n7. **ফি জমা:** ফি জমার প্রমাণপত্র।\n\n> **দ্রষ্টব্য:** সকল ডকুমেন্টস দাখিল করতে হবে; অসম্পূর্ণ আবেদনপত্র গ্রহণযোগ্য হবে না।\n\n",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_4b8c25d391e48121",
+        "document_id": "brta_4b8c25d391e48121",
+        "title": "ড্রাইভিং ইন্সট্রাক্টর লাইসেন্স প্রাপ্তির প্রক্রিয়া",
+        "section_title": "ড্রাইভিং ইন্সট্রাক্টর লাইসেন্স প্রাপ্তির প্রক্রিয়া > ড্রাইভিং ইন্সট্রাক্টর লাইসেন্স এর আবেদনপত্রের সাথে প্রয়োজনীয় সংযুক্তি সমূহের তালিকা",
+        "document_type": "সাধারণ তথ্য / নির্দেশিকা",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta/সেবাসমূহ/ড্রাইভিং ইন্সট্রাক্টর লাইসেন্স.md",
+        "source_relative_path": "fahim_brta/সেবাসমূহ/ড্রাইভিং ইন্সট্রাক্টর লাইসেন্স.md",
+        "snapshot_path": "domains/brta/data/source_snapshots/fahim_brta/সেবাসমূহ/ড্রাইভিং ইন্সট্রাক্টর লাইসেন্স.md",
+        "source_sha256": "1b30ea1d7915d19e5f5bf4536a426826a50912a028ad637072f2a6f238633063",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/সেবাসমূহ_original/ড্রাইভিং ইন্সট্রাক্টর লাইসেন্স.pdf\"]",
+        "document_date": "N/A",
+        "date_verified": false,
+        "audit_flags": "citation_markers_removed_from_derived_text, no_web_address",
+        "experimental": true,
+        "body_start": 1825,
+        "body_end": 3994,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/brta/markdown/fahim_brta/সেবাসমূহ/ড্রাইভিং ইন্সট্রাক্টর লাইসেন্স.md",
+        "context_spans": "[]",
+        "cleaned_sha256": "f24b22fc6824ee368f56b750db5fe77c5023c0e805be83a9c1b30267d2e456c5"
+      },
+      "score": 0.06657522916793823,
+      "retrievers": [
+        "bm25",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "brta_846a4041fe96a64e_v4_0005",
+      "content": "ড্রাইভিং লাইসেন্স পাওয়ার প্রক্রিয়া\nড্রাইভিং লাইসেন্স পাওয়ার প্রক্রিয়া > প্রয়োজনীয় ফিসমূহ > শিক্ষানবিশ ড্রাইভিং লাইসেন্স ফি (অনলাইনে পরিশোধযোগ্য)\n\n### শিক্ষানবিশ ড্রাইভিং লাইসেন্স ফি (অনলাইনে পরিশোধযোগ্য)\n* **১ ক্যাটাগরি (যেমন: শুধু কার):** ৫১৮/- টাকা।\n* **২ ক্যাটাগরি (যেমন: কার ও মোটর সাইকেল):** ৭৪৮/- টাকা।\n\n",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_846a4041fe96a64e",
+        "document_id": "brta_846a4041fe96a64e",
+        "title": "ড্রাইভিং লাইসেন্স পাওয়ার প্রক্রিয়া",
+        "section_title": "ড্রাইভিং লাইসেন্স পাওয়ার প্রক্রিয়া > প্রয়োজনীয় ফিসমূহ > শিক্ষানবিশ ড্রাইভিং লাইসেন্স ফি (অনলাইনে পরিশোধযোগ্য)",
+        "document_type": "সাধারণ তথ্য / নির্দেশিকা",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta/সেবাসমূহ/নতুন ড্রাইভিং লাইসেন্স ইস্যু.md",
+        "source_relative_path": "fahim_brta/সেবাসমূহ/নতুন ড্রাইভিং লাইসেন্স ইস্যু.md",
+        "snapshot_path": "domains/brta/data/source_snapshots/fahim_brta/সেবাসমূহ/নতুন ড্রাইভিং লাইসেন্স ইস্যু.md",
+        "source_sha256": "26232309419850bdddfee1e1a7d9342ed13e5233176db8359ba06cdd3146f6f5",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/সেবাসমূহ_original/নতুন ড্রাইভিং লাইসেন্স ইস্যু.pdf\"]",
+        "document_date": "2022-12-21",
+        "date_verified": false,
+        "audit_flags": "citation_markers_removed_from_derived_text, no_web_address",
+        "experimental": true,
+        "body_start": 1200,
+        "body_end": 1364,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/brta/markdown/fahim_brta/সেবাসমূহ/নতুন ড্রাইভিং লাইসেন্স ইস্যু.md",
+        "context_spans": "[]",
+        "cleaned_sha256": "d1258362c87c542b48361fec85750efbf484529064ef65599638d87f9b17ab71"
+      },
+      "score": 0.5680093169212341,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "brta_3a262ccde300696d_v4_0005",
+      "content": "মোটরযানের রেজিস্ট্রেশন, মালিকানা হস্তান্তর, ড্রাইভিং লাইসেন্স, রুট পারমিটসহ অন্যান্য ফি এর পরিমাণ\nবাংলাদেশ গেজেট, অতিরিক্ত, ডিসেম্বর ২৭, ২০২২ > ১. ড্রাইভিং লাইসেন্স ও প্রশিক্ষণ সংক্রান্ত ফি > ১.১. শিক্ষানবিশ ড্রাইভিং লাইসেন্স ফি\n\n### ১.১. শিক্ষানবিশ ড্রাইভিং লাইসেন্স ফি\n* **ক্রমিক নম্বর:** ১\n* **বিষয়:** শিক্ষানবিশ ড্রাইভিং লাইসেন্স ফি\n* **ফি এর পরিমাণ (টাকা):** ১৫০\n\n",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_3a262ccde300696d",
+        "document_id": "brta_3a262ccde300696d",
+        "title": "মোটরযানের রেজিস্ট্রেশন, মালিকানা হস্তান্তর, ড্রাইভিং লাইসেন্স, রুট পারমিটসহ অন্যান্য ফি এর পরিমাণ",
+        "section_title": "বাংলাদেশ গেজেট, অতিরিক্ত, ডিসেম্বর ২৭, ২০২২ > ১. ড্রাইভিং লাইসেন্স ও প্রশিক্ষণ সংক্রান্ত ফি > ১.১. শিক্ষানবিশ ড্রাইভিং লাইসেন্স ফি",
+        "document_type": "গেজেট / বিধিমালা",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের রেজিস্ট্রেশন, মালিকানা হস্তান্তর, ড্রাইভিং লাইসেন্স, রুট পারমিটসহ অন্যান্য ফি এর পরিমাণ.md",
+        "source_relative_path": "brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের রেজিস্ট্রেশন, মালিকানা হস্তান্তর, ড্রাইভিং লাইসেন্স, রুট পারমিটসহ অন্যান্য ফি এর পরিমাণ.md",
+        "snapshot_path": "domains/brta/data/source_snapshots/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের রেজিস্ট্রেশন, মালিকানা হস্তান্তর, ড্রাইভিং লাইসেন্স, রুট পারমিটসহ অন্যান্য ফি এর পরিমাণ.md",
+        "source_sha256": "d433942428813060619d5b014fab9dafb384fad33ab0aa174479761e4ca47bfc",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/ফি, ট্যাক্স ও আয়কর/বিভিন্ন ফি.pdf\", \"/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/মোটরযানের রেজিস্ট্রেশন, মালিকানা হস্তান্তর, ড্রাইভিং লাইসেন্স, র‍ুট পারমিটসহ অন্যান্য ফি এর পরিমাণ.pdf\"]",
+        "document_date": "2022-12-27",
+        "date_verified": false,
+        "audit_flags": "no_web_address",
+        "experimental": true,
+        "body_start": 541,
+        "body_end": 681,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/brta/markdown/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের রেজিস্ট্রেশন, মালিকানা হস্তান্তর, ড্রাইভিং লাইসেন্স, রুট পারমিটসহ অন্যান্য ফি এর পরিমাণ.md",
+        "context_spans": "[]",
+        "cleaned_sha256": "8623698c9cb71c9751dea7d3fb004059e2a2284b845cae7a7939365fb5cd202c"
+      },
+      "score": 0.2286665141582489,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "brta_3a262ccde300696d_v4_0008",
+      "content": "মোটরযানের রেজিস্ট্রেশন, মালিকানা হস্তান্তর, ড্রাইভিং লাইসেন্স, রুট পারমিটসহ অন্যান্য ফি এর পরিমাণ\nবাংলাদেশ গেজেট, অতিরিক্ত, ডিসেম্বর ২৭, ২০২২ > ১. ড্রাইভিং লাইসেন্স ও প্রশিক্ষণ সংক্রান্ত ফি > ১.৪. ড্রাইভিং লাইসেন্স ইস্যু ফি\n\n### ১.৪. ড্রাইভিং লাইসেন্স ইস্যু ফি\n* **ক্রমিক নম্বর:** ৪\n* **বিষয়:** ড্রাইভিং লাইসেন্স ইস্যু ফি\n* **ফি এর পরিমাণ (টাকা):** ১২৫\n\n",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_3a262ccde300696d",
+        "document_id": "brta_3a262ccde300696d",
+        "title": "মোটরযানের রেজিস্ট্রেশন, মালিকানা হস্তান্তর, ড্রাইভিং লাইসেন্স, রুট পারমিটসহ অন্যান্য ফি এর পরিমাণ",
+        "section_title": "বাংলাদেশ গেজেট, অতিরিক্ত, ডিসেম্বর ২৭, ২০২২ > ১. ড্রাইভিং লাইসেন্স ও প্রশিক্ষণ সংক্রান্ত ফি > ১.৪. ড্রাইভিং লাইসেন্স ইস্যু ফি",
+        "document_type": "গেজেট / বিধিমালা",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের রেজিস্ট্রেশন, মালিকানা হস্তান্তর, ড্রাইভিং লাইসেন্স, রুট পারমিটসহ অন্যান্য ফি এর পরিমাণ.md",
+        "source_relative_path": "brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের রেজিস্ট্রেশন, মালিকানা হস্তান্তর, ড্রাইভিং লাইসেন্স, রুট পারমিটসহ অন্যান্য ফি এর পরিমাণ.md",
+        "snapshot_path": "domains/brta/data/source_snapshots/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের রেজিস্ট্রেশন, মালিকানা হস্তান্তর, ড্রাইভিং লাইসেন্স, রুট পারমিটসহ অন্যান্য ফি এর পরিমাণ.md",
+        "source_sha256": "d433942428813060619d5b014fab9dafb384fad33ab0aa174479761e4ca47bfc",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/ফি, ট্যাক্স ও আয়কর/বিভিন্ন ফি.pdf\", \"/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/মোটরযানের রেজিস্ট্রেশন, মালিকানা হস্তান্তর, ড্রাইভিং লাইসেন্স, র‍ুট পারমিটসহ অন্যান্য ফি এর পরিমাণ.pdf\"]",
+        "document_date": "2022-12-27",
+        "date_verified": false,
+        "audit_flags": "no_web_address",
+        "experimental": true,
+        "body_start": 1024,
+        "body_end": 1154,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/brta/markdown/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের রেজিস্ট্রেশন, মালিকানা হস্তান্তর, ড্রাইভিং লাইসেন্স, রুট পারমিটসহ অন্যান্য ফি এর পরিমাণ.md",
+        "context_spans": "[]",
+        "cleaned_sha256": "8623698c9cb71c9751dea7d3fb004059e2a2284b845cae7a7939365fb5cd202c"
+      }
+    }
+  ],
+  "selection_trace": {
+    "version": "applicability_v1_family_order",
+    "query_actions": [
+      "application"
+    ],
+    "query_services": [
+      "licence"
+    ],
+    "decisions": [
+      {
+        "id": "brta_846a4041fe96a64e_v4_0006",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_3cae1ecd59682fa3_v4_0004",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_3cae1ecd59682fa3_v4_0005",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_3cae1ecd59682fa3_v4_0012",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_3cae1ecd59682fa3_v4_0014",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_3cae1ecd59682fa3_v4_0017",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_3cae1ecd59682fa3_v4_0018",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_3cae1ecd59682fa3_v4_0011",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_3a262ccde300696d_v4_0013",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_3cae1ecd59682fa3_v4_0015",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_3cae1ecd59682fa3_v4_0009",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_3cae1ecd59682fa3_v4_0008",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_4b8c25d391e48121_v4_0002",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_846a4041fe96a64e_v4_0005",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_3a262ccde300696d_v4_0005",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_3a262ccde300696d_v4_0008",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_3a262ccde300696d_v4_0009",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_3a262ccde300696d_v4_0010",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_3a262ccde300696d_v4_0012",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_3a262ccde300696d_v4_0014",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_3a262ccde300696d_v4_0016",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_3a262ccde300696d_v4_0017",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      }
+    ],
+    "expanded_ids": [
+      "brta_3a262ccde300696d_v4_0008",
+      "brta_3a262ccde300696d_v4_0009",
+      "brta_3a262ccde300696d_v4_0010",
+      "brta_3a262ccde300696d_v4_0012",
+      "brta_3a262ccde300696d_v4_0014",
+      "brta_3a262ccde300696d_v4_0016",
+      "brta_3a262ccde300696d_v4_0017"
+    ],
+    "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+    "budget_order_ids": [
+      "brta_3cae1ecd59682fa3_v4_0009",
+      "brta_3cae1ecd59682fa3_v4_0008",
+      "brta_4b8c25d391e48121_v4_0002",
+      "brta_846a4041fe96a64e_v4_0005",
+      "brta_3a262ccde300696d_v4_0005",
+      "brta_3a262ccde300696d_v4_0008",
+      "brta_3a262ccde300696d_v4_0009",
+      "brta_3a262ccde300696d_v4_0010",
+      "brta_3a262ccde300696d_v4_0012",
+      "brta_3a262ccde300696d_v4_0014",
+      "brta_3a262ccde300696d_v4_0016",
+      "brta_3a262ccde300696d_v4_0017"
+    ],
+    "selected_ids": [
+      "brta_3cae1ecd59682fa3_v4_0009",
+      "brta_3cae1ecd59682fa3_v4_0008",
+      "brta_4b8c25d391e48121_v4_0002",
+      "brta_846a4041fe96a64e_v4_0005",
+      "brta_3a262ccde300696d_v4_0005",
+      "brta_3a262ccde300696d_v4_0008"
+    ],
+    "selected_chars": 4322
+  },
+  "seconds": 12.949,
+  "top5": {
+    "dense": [
+      "brta_3cae1ecd59682fa3_v4_0004",
+      "brta_3cae1ecd59682fa3_v4_0005",
+      "brta_3cae1ecd59682fa3_v4_0017",
+      "brta_3cae1ecd59682fa3_v4_0014",
+      "brta_846a4041fe96a64e_v4_0005"
+    ],
+    "bm25": [
+      "brta_4b8c25d391e48121_v4_0002",
+      "brta_846a4041fe96a64e_v4_0006",
+      "brta_09e8cbfff67f117e_v4_0010",
+      "brta_cbe22ab64acf3d03_v4_0010",
+      "brta_09e8cbfff67f117e_v4_0008"
+    ],
+    "hybrid": [
+      "brta_846a4041fe96a64e_v4_0006",
+      "brta_3cae1ecd59682fa3_v4_0012",
+      "brta_3cae1ecd59682fa3_v4_0004",
+      "brta_3cae1ecd59682fa3_v4_0005",
+      "brta_3cae1ecd59682fa3_v4_0017"
+    ]
+  }
+}

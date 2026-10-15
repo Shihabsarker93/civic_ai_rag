@@ -1,0 +1,439 @@
+{
+  "domain": "brta",
+  "variant": "structural",
+  "id": "diagnostic_9",
+  "query": "গাড়ির ফিটনেস সনদ নবায়ন করব কীভাবে?",
+  "candidate_ids": [
+    "brta_d516e1b85b1f7144_v4_0002",
+    "brta_d516e1b85b1f7144_v4_0001",
+    "brta_4e08eb4e988d38e4_v2_0062",
+    "brta_4e08eb4e988d38e4_v2_0065",
+    "brta_4e08eb4e988d38e4_v2_0060",
+    "brta_2dd33c08c48bf098_v4_0011",
+    "brta_09e8cbfff67f117e_v4_0016",
+    "brta_4e08eb4e988d38e4_v2_0067",
+    "brta_4e08eb4e988d38e4_v2_0063",
+    "brta_200a9829df785b7e_v4_0012",
+    "brta_200a9829df785b7e_v4_0002",
+    "brta_cb965b3169c34e73_v2_0082",
+    "brta_09e8cbfff67f117e_v4_0008",
+    "brta_cbe22ab64acf3d03_v4_0011",
+    "brta_09e8cbfff67f117e_v4_0010"
+  ],
+  "selected_ids": [
+    "brta_d516e1b85b1f7144_v4_0002",
+    "brta_d516e1b85b1f7144_v4_0001",
+    "brta_09e8cbfff67f117e_v4_0016",
+    "brta_09e8cbfff67f117e_v4_0015",
+    "brta_09e8cbfff67f117e_v4_0026",
+    "brta_09e8cbfff67f117e_v4_0027"
+  ],
+  "selected_characters": 7121,
+  "selected_tokens": 2493,
+  "tokenizer": "BGE-M3; not generator tokens",
+  "selected_passages": [
+    {
+      "id": "brta_d516e1b85b1f7144_v4_0002",
+      "content": "ফিটনেস ইস্যু ও নবায়ন\nফিটনেস নবায়ন > প্রয়োজনীয় কাগজপত্র\n\nনিবন্ধনের সময়ই মোটরযানের ধরণ ও তৈরি সনের উপর ভিত্তি করে ৫ বছর, ২ বছর ও ১ বছরের ফিটনেস সনদ প্রদান করা হয়। এরপর মেয়াদ উত্তীর্ণের পূর্বেই মোটরযানের ফিটনেস নবায়নের বাধ্যবাধকতা রয়েছে।\n\nবর্তমানে বিআরটিএ'র যে কোনো সার্কেল অফিসে থেকে মোটরযান হাজির করে পরিদর্শক কর্তৃক সন্তোষজনক পরিদর্শন প্রতিবেদন প্রদানপূর্বক নিবন্ধিত মোটরযানের ফিটনেস নবায়ন করা যায়। ঢাকা বিভাগ ও চট্টগ্রাম বিভাগের আওতাধীন সার্কেল অফিসসমূহ থেকে ফিটনেস সনদ নবায়ন করার ক্ষেত্রে অনলাইনে এ্যাপয়েন্টমেন্ট গ্রহণ করতে হয়। এ্যাপয়েন্টমেন্ট গ্রহণের প্রক্রিয়া নিচের লিংকে পাওয়া যাবে।\n\n**ফিটনেসের জন্য অ্যাপয়েন্টমেন্ট প্রক্রিয়া**\n\n## প্রয়োজনীয় কাগজপত্র\n\n* **১. আবেদনপত্র:** নির্ধারিত ফরমে পূরণকৃত ও স্বাক্ষরকৃত আবেদনপত্র (ঢাকা বিভাগ ও চট্টগ্রাম বিভাগের আওতাধীন সার্কেল অফিসসমূহ থেকে ফিটনেস সনদ নবায়ন করার ক্ষেত্রে অনলাইনে এ্যাপয়েন্টমেন্ট গ্রহণ করতে হবে)।\n* **২. ফি প্রদানের রশিদ:** প্রয়োজনীয় ফি প্রদানের রশিদ।\n* **৩. ফিটনেস সার্টিফিকেট:** ফিটনেস সার্টিফিকেটের মূল কপি।\n* **৪. ট্যাক্স টোকেন:** হালনাগাদ ট্যাক্স টোকেন এর সত্যায়িত ফটোকপি।\n* **৫. TIN সংক্রান্ত কাগজপত্র:** TIN সংক্রান্ত কাগজপত্র-এর সত্যায়িত কপি।\n* **৬. আয়কর প্রদানের প্রমাণপত্র:** অনুমিত আয়কর প্রদানের প্রমাণপত্র।",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_d516e1b85b1f7144",
+        "document_id": "brta_d516e1b85b1f7144",
+        "title": "ফিটনেস ইস্যু ও নবায়ন",
+        "section_title": "ফিটনেস নবায়ন > প্রয়োজনীয় কাগজপত্র",
+        "document_type": "সাধারণ তথ্য / নির্দেশিকা",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta/সেবাসমূহ/ফিটনেস ইস্যু ও নবায়ন.md",
+        "source_relative_path": "fahim_brta/সেবাসমূহ/ফিটনেস ইস্যু ও নবায়ন.md",
+        "snapshot_path": "domains/brta/data/source_snapshots/fahim_brta/সেবাসমূহ/ফিটনেস ইস্যু ও নবায়ন.md",
+        "source_sha256": "db4bf7c4176dbdcbad635c3b803825254eeec59cca438b895a013e9c135a6feb",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/সেবাসমূহ_original/ফিটনেস ইস্যু ও নবায়ন.pdf\"]",
+        "document_date": "N/A",
+        "date_verified": false,
+        "audit_flags": "citation_markers_removed_from_derived_text, no_web_address",
+        "experimental": true,
+        "body_start": 610,
+        "body_end": 1165,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/brta/markdown/fahim_brta/সেবাসমূহ/ফিটনেস ইস্যু ও নবায়ন.md",
+        "context_spans": "[{\"start\": 15, \"end\": 610}]",
+        "cleaned_sha256": "f5a273b9fdcd8430d7bd8494a1e8c1d70a6d4f9d09a6e5c98120b1fba7732c3b"
+      },
+      "score": 0.987567663192749,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "brta_d516e1b85b1f7144_v4_0001",
+      "content": "ফিটনেস ইস্যু ও নবায়ন\nফিটনেস নবায়ন\n\n# ফিটনেস নবায়ন\n\nনিবন্ধনের সময়ই মোটরযানের ধরণ ও তৈরি সনের উপর ভিত্তি করে ৫ বছর, ২ বছর ও ১ বছরের ফিটনেস সনদ প্রদান করা হয়। এরপর মেয়াদ উত্তীর্ণের পূর্বেই মোটরযানের ফিটনেস নবায়নের বাধ্যবাধকতা রয়েছে।\n\nবর্তমানে বিআরটিএ'র যে কোনো সার্কেল অফিসে থেকে মোটরযান হাজির করে পরিদর্শক কর্তৃক সন্তোষজনক পরিদর্শন প্রতিবেদন প্রদানপূর্বক নিবন্ধিত মোটরযানের ফিটনেস নবায়ন করা যায়। ঢাকা বিভাগ ও চট্টগ্রাম বিভাগের আওতাধীন সার্কেল অফিসসমূহ থেকে ফিটনেস সনদ নবায়ন করার ক্ষেত্রে অনলাইনে এ্যাপয়েন্টমেন্ট গ্রহণ করতে হয়। এ্যাপয়েন্টমেন্ট গ্রহণের প্রক্রিয়া নিচের লিংকে পাওয়া যাবে।\n\n**ফিটনেসের জন্য অ্যাপয়েন্টমেন্ট প্রক্রিয়া**\n\n",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_d516e1b85b1f7144",
+        "document_id": "brta_d516e1b85b1f7144",
+        "title": "ফিটনেস ইস্যু ও নবায়ন",
+        "section_title": "ফিটনেস নবায়ন",
+        "document_type": "সাধারণ তথ্য / নির্দেশিকা",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta/সেবাসমূহ/ফিটনেস ইস্যু ও নবায়ন.md",
+        "source_relative_path": "fahim_brta/সেবাসমূহ/ফিটনেস ইস্যু ও নবায়ন.md",
+        "snapshot_path": "domains/brta/data/source_snapshots/fahim_brta/সেবাসমূহ/ফিটনেস ইস্যু ও নবায়ন.md",
+        "source_sha256": "db4bf7c4176dbdcbad635c3b803825254eeec59cca438b895a013e9c135a6feb",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/সেবাসমূহ_original/ফিটনেস ইস্যু ও নবায়ন.pdf\"]",
+        "document_date": "N/A",
+        "date_verified": false,
+        "audit_flags": "citation_markers_removed_from_derived_text, no_web_address",
+        "experimental": true,
+        "body_start": 0,
+        "body_end": 610,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/brta/markdown/fahim_brta/সেবাসমূহ/ফিটনেস ইস্যু ও নবায়ন.md",
+        "context_spans": "[]",
+        "cleaned_sha256": "f5a273b9fdcd8430d7bd8494a1e8c1d70a6d4f9d09a6e5c98120b1fba7732c3b"
+      },
+      "score": 0.982225239276886,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "brta_09e8cbfff67f117e_v4_0016",
+      "content": "বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার)\nবিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার) > ২) প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > ১০. মোটরযানের ফিটনেস নবায়ন\n\n**সিটিজেন চার্টার প্রকাশের তারিখ:** ০৫-০৬-২০২২\n\n---\n\n#### ১০. মোটরযানের ফিটনেস নবায়ন\n* **সেবার নাম:** মোটরযানের ফিটনেস নবায়ন\n* **সেবা প্রদান পদ্ধতি:** \n  * বিআরটিএ সার্ভিস পোর্টালে নিবন্ধিত অ্যাকাউন্টে প্রবেশ করে প্রথমে মোটরযানটি নির্দিষ্ট তথ্য প্রদানপূর্বক BSP পোর্টালে সংযুক্ত করতে হবে।\n  * সংযুক্ত সম্পন্ন হওয়ার পর ফিটনেস নবায়নের জন্য এ্যাপয়েন্টমেন্ট গ্রহণ করতে হবে।\n  * নির্ধারিত তারিখে মোটরযানটি সংশ্লিষ্ট বিআরটিএ সার্কেল অফিসে সরেজমিনে পরিদর্শনের জন্য হাজির করতে হবে।\n  * মোটরযান হাজির হওয়ার পূর্বে নির্ধারিত ফি প্রদানপূর্বক Money Receipt সংগ্রহ করতে হবে।\n  * *নোট:* Fitness Expire Last Date হলে শেষ স্লটে Serial না থাকলেও এ্যাপয়েন্টমেন্টের জন্য আবেদন করতে পারবে। এ্যাপয়েন্টমেন্ট Date wise না গেলে এ্যাপয়েন্টমেন্ট বাতিল হিসাবে গণ্য হবে এবং পুনরায় এ্যাপয়েন্টমেন্ট নিতে হবে।\n* **প্রয়োজনীয় কাগজপত্র ও প্রাপ্তিস্থান:** \n  1. বিআরটিএ সার্ভিস পোর্টালের মাধ্যমে এ্যাপয়েন্টমেন্ট গ্রহণের সময় স্বয়ংক্রিয়ভাবে পূরণকৃত সি.এফ.সি/সি.এফ.আর.এ ফরমে সেবাগ্রহণকারীর স্বাক্ষর;\n  2. প্রয়োজনীয় ফি জমার রশিদ;\n  3. হালনাগাদ ট্যাক্স টোকেন এর ফটোকপি;\n  4. মোটরযানের অনুমিত/অগ্রিম আয়কর প্রদানের প্রমাণপত্র (অনুমিত/অগ্রিম আয়কর জমা দিতে TIN আবশ্যক);\n  5. পরিদর্শনের জন্য মোটরযান হাজির করা।\n* **সেবার মূল্য এবং পরিশোধ পদ্ধতি:** \n  * **ফিটনেস নবায়ন ফি (ভ্যাটসহ):** (ক) হালকা গাড়ি: ১,৮৯২/- টাকা, (খ) ভারী গাড়ি: ২,২৯৫/- টাকা।\n  * **অনুমিত আয়কর:** মোটরযানের প্রকৃতির উপর ভিত্তি করে ভিন্ন ভিন্ন হবে (ব্যাংকে টাকা জমা দেওয়ার সময় TIN সার্টিফিকেটের কপি প্রয়োজন হবে)।\n  * *পরিশোধ পদ্ধতি:* বিআরটিএ পোর্টাল (BSP) বা ব্যাংকের মাধ্যমে।\n* **সেবা প্রদানের সময়সীমা:** ১ কার্যদিবস।\n* **দায়িত্বপ্রাপ্ত কর্মকর্তা:** সহকারী পরিচালক (ইঞ্জি:) ও রেজিস্ট্রেশন কর্তৃপক্ষ, বিআরটিএ সার্কেল অফিস সকল।\n\n",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_09e8cbfff67f117e",
+        "document_id": "brta_09e8cbfff67f117e",
+        "title": "বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার)",
+        "section_title": "বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার) > ২) প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > ১০. মোটরযানের ফিটনেস নবায়ন",
+        "document_type": "সিটিজেন্স চার্টার",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).md",
+        "source_relative_path": "brta/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).md",
+        "snapshot_path": "domains/brta/data/source_snapshots/brta/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).md",
+        "source_sha256": "5f20f60f6759d980b46043726dbf0bfa79f09acc61b4a4c861c07b98f840e090",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).pdf\"]",
+        "document_date": "2022-06-05",
+        "date_verified": false,
+        "audit_flags": "no_web_address",
+        "experimental": true,
+        "body_start": 15606,
+        "body_end": 17232,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/brta/markdown/brta/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).md",
+        "context_spans": "[{\"start\": 56, \"end\": 111}]",
+        "cleaned_sha256": "1c8de85108beccc68148f017fa2f27f315429c7a0deba4ffa4f5d4ddceeb3b2d"
+      },
+      "score": 0.8039352297782898,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "brta_09e8cbfff67f117e_v4_0015",
+      "content": "বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার)\nবিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার) > ২) প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > ০৯. মোটরযানের ফিটনেস ইস্যু\n\n**সিটিজেন চার্টার প্রকাশের তারিখ:** ০৫-০৬-২০২২\n\n---\n\n#### ০৯. মোটরযানের ফিটনেস ইস্যু\n* **সেবার নাম:** মোটরযানের ফিটনেস ইস্যু\n* **সেবা প্রদান পদ্ধতি:** রেজিস্ট্রেশনের সময় প্রতিটি প্রাইভেটকার, জীপ, মাইক্রোবাস তৈরীর সন হতে ৫ বছরের জন্য এবং অন্যান্য মোটরযানসমূহ তৈরীর সন হতে ১ বছরের জন্য ফিটনেস প্রদান করা হয়।\n* **প্রয়োজনীয় কাগজপত্র ও প্রাপ্তিস্থান:** মোটরযান রেজিস্ট্রেশনের সময় দাখিলকৃত কাগজপত্রাদি।\n* **সেবার মূল্য এবং পরিশোধ পদ্ধতি:** \n  * মোটরযান রেজিস্ট্রেশনের সময় ফি প্রদেয়।\n  * প্রাইভেটকার, জীপ, মাইক্রোবাস ফি: ১২৮৭/- টাকা।\n  * অন্যান্য মোটরযানসমূহের জন্য ফি: ১৬০৫/- টাকা।\n  * *পরিশোধ পদ্ধতি:* BSP পোর্টালে অনলাইন পেমেন্ট।\n* **সেবা প্রদানের সময়সীমা:** ০১ কার্যদিবস।\n* **দায়িত্বপ্রাপ্ত কর্মকর্তা:** সহকারী পরিচালক (ইঞ্জি:) ও রেজিস্ট্রেশন কর্তৃপক্ষ, বিআরটিএ সার্কেল অফিস সকল।\n\n",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_09e8cbfff67f117e",
+        "document_id": "brta_09e8cbfff67f117e",
+        "title": "বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার)",
+        "section_title": "বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার) > ২) প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > ০৯. মোটরযানের ফিটনেস ইস্যু",
+        "document_type": "সিটিজেন্স চার্টার",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).md",
+        "source_relative_path": "brta/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).md",
+        "snapshot_path": "domains/brta/data/source_snapshots/brta/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).md",
+        "source_sha256": "5f20f60f6759d980b46043726dbf0bfa79f09acc61b4a4c861c07b98f840e090",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).pdf\"]",
+        "document_date": "2022-06-05",
+        "date_verified": false,
+        "audit_flags": "no_web_address",
+        "experimental": true,
+        "body_start": 14872,
+        "body_end": 15606,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/brta/markdown/brta/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).md",
+        "context_spans": "[{\"start\": 56, \"end\": 111}]",
+        "cleaned_sha256": "1c8de85108beccc68148f017fa2f27f315429c7a0deba4ffa4f5d4ddceeb3b2d"
+      }
+    },
+    {
+      "id": "brta_09e8cbfff67f117e_v4_0026",
+      "content": "বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার)\nবিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার) > ২) প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > ২০. রাইডশেয়ারিং সেবাদানকারী প্রতিষ্ঠান এনলিস্টমেন্ট সার্টিফিকেট নবায়ন\n\n**সিটিজেন চার্টার প্রকাশের তারিখ:** ০৫-০৬-২০২২\n\n---\n\n#### ২০. রাইডশেয়ারিং সেবাদানকারী প্রতিষ্ঠান এনলিস্টমেন্ট সার্টিফিকেট নবায়ন\n* **সেবার নাম:** রাইডশেয়ারিং সেবাদানকারী প্রতিষ্ঠান এনলিস্টমেন্ট সার্টিফিকেট নবায়ন\n* **সেবা প্রদান পদ্ধতি:** বিআরটিএ সার্ভিস পোর্টালে অনলাইনে আবেদন, হালনাগাদ কাগজপত্র যাচাই ও অ্যাপসের ডেমনোস্ট্রেশন সাপেক্ষে নীতিমালা অনুযায়ী ৩ ধাপে অনলাইনেই অনুমোদন দেওয়া হয় এবং ঘরে বসেই সার্টিফিকেট প্রিন্ট করা যায়।\n* **প্রয়োজনীয় কাগজপত্র ও প্রাপ্তিস্থান:** \n  1. ট্রেড লাইসেন্স;\n  2. টিআইএন সার্টিফিকেট;\n  3. সার্টিফিকেট অব ইনকর্পোরেশন;\n  4. ভ্যাট সার্টিফিকেট।\n* **সেবার মূল্য এবং পরিশোধ পদ্ধতি:** \n  * মূল ফি: ১০,০০০/- টাকা\n  * ভ্যাট: ১৫%\n  * সম্পূরক শুল্ক: ১৫%\n* **সেবা প্রদানের সময়সীমা:** ৭ কার্যদিবস।\n* **দায়িত্বপ্রাপ্ত কর্মকর্তা:** \n  * মোহাম্মদ শহীদুল্লাহ, পরিচালক (ইঞ্জি:)\n  * ফোনঃ ৪১০৮২৯৮৮, ই-মেইল: de@brta.gov.bd\n  * বিআরটিএ সদর কার্যালয়।\n\n",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_09e8cbfff67f117e",
+        "document_id": "brta_09e8cbfff67f117e",
+        "title": "বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার)",
+        "section_title": "বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার) > ২) প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > ২০. রাইডশেয়ারিং সেবাদানকারী প্রতিষ্ঠান এনলিস্টমেন্ট সার্টিফিকেট নবায়ন",
+        "document_type": "সিটিজেন্স চার্টার",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).md",
+        "source_relative_path": "brta/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).md",
+        "snapshot_path": "domains/brta/data/source_snapshots/brta/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).md",
+        "source_sha256": "5f20f60f6759d980b46043726dbf0bfa79f09acc61b4a4c861c07b98f840e090",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).pdf\"]",
+        "document_date": "2022-06-05",
+        "date_verified": false,
+        "audit_flags": "no_web_address",
+        "experimental": true,
+        "body_start": 29139,
+        "body_end": 29960,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/brta/markdown/brta/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).md",
+        "context_spans": "[{\"start\": 56, \"end\": 111}]",
+        "cleaned_sha256": "1c8de85108beccc68148f017fa2f27f315429c7a0deba4ffa4f5d4ddceeb3b2d"
+      }
+    },
+    {
+      "id": "brta_09e8cbfff67f117e_v4_0027",
+      "content": "বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার)\nবিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার) > ২) প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > ২১. রাইডশেয়ারিং মোটরযান এনলিস্টমেন্ট সার্টিফিকেট ইস্যু\n\n**সিটিজেন চার্টার প্রকাশের তারিখ:** ০৫-০৬-২০২২\n\n---\n\n#### ২১. রাইডশেয়ারিং মোটরযান এনলিস্টমেন্ট সার্টিফিকেট ইস্যু\n* **সেবার নাম:** রাইডশেয়ারিং মোটরযান এনলিস্টমেন্ট সার্টিফিকেট ইস্যু\n* **সেবা প্রদান পদ্ধতি:** \n  1. বিআরটিএ সার্ভিস পোর্টালে নিবন্ধন ও লগ-ইন করে মোটরযান সংযুক্ত করা;\n  2. রাইডশেয়ারিং অপশনে গিয়ে তথ্য সাবমিট করা;\n  3. সংশ্লিষ্ট রাইডশেয়ারিং কোম্পানি অনুমোদন দিলে অনলাইনে/ব্যাংকে ফি প্রদান করা;\n  4. বিআরটিএ অনলাইনে অনুমোদন দিলে ঘরে বসেই সার্টিফিকেট প্রিন্ট নেওয়া যায়।\n* **প্রয়োজনীয় কাগজপত্র ও প্রাপ্তিস্থান:** \n  1. রেজিস্ট্রেশন সার্টিফিকেট;\n  2. হালনাগাদ ফিটনেস সার্টিফিকেট;\n  3. চালকের হালনাগাদ ড্রাইভিং লাইসেন্স;\n  4. মালিক ও চালক উভয়ের জাতীয় পরিচয়পত্র;\n  5. মালিকের টিআইএন (TIN) সার্টিফিকেট।\n* **সেবার মূল্য এবং পরিশোধ পদ্ধতি:** \n  * **মোটরসাইকেলের ক্ষেত্রে:** মূল ফি ৫০০/- টাকা | ভ্যাট ১৫% | সম্পূরক শুল্ক ১৫%\n  * **অন্যান্য মোটরযানের ক্ষেত্রে:** মূল ফি ১,০০০/- টাকা | ভ্যাট ১৫% | সম্পূরক শুল্ক ১৫%\n* **সেবা প্রদানের সময়সীমা:** ৩ কার্যদিবস।\n* **দায়িত্বপ্রাপ্ত কর্মকর্তা:** \n  * মোহাম্মদ শহীদুল্লাহ, পরিচালক (ইঞ্জি:)\n  * ফোনঃ ৪১০৮২৯৮৮, ই-মেইল: de@brta.gov.bd\n  * বিআরটিএ সদর কার্যালয়।\n\n",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_09e8cbfff67f117e",
+        "document_id": "brta_09e8cbfff67f117e",
+        "title": "বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার)",
+        "section_title": "বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার) > ২) প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > ২১. রাইডশেয়ারিং মোটরযান এনলিস্টমেন্ট সার্টিফিকেট ইস্যু",
+        "document_type": "সিটিজেন্স চার্টার",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).md",
+        "source_relative_path": "brta/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).md",
+        "snapshot_path": "domains/brta/data/source_snapshots/brta/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).md",
+        "source_sha256": "5f20f60f6759d980b46043726dbf0bfa79f09acc61b4a4c861c07b98f840e090",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).pdf\"]",
+        "document_date": "2022-06-05",
+        "date_verified": false,
+        "audit_flags": "no_web_address",
+        "experimental": true,
+        "body_start": 29960,
+        "body_end": 31022,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/brta/markdown/brta/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).md",
+        "context_spans": "[{\"start\": 56, \"end\": 111}]",
+        "cleaned_sha256": "1c8de85108beccc68148f017fa2f27f315429c7a0deba4ffa4f5d4ddceeb3b2d"
+      }
+    }
+  ],
+  "selection_trace": {
+    "version": "applicability_v1_family_order",
+    "query_actions": [
+      "renewal"
+    ],
+    "query_services": [
+      "fitness"
+    ],
+    "decisions": [
+      {
+        "id": "brta_2dd33c08c48bf098_v4_0011",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_09e8cbfff67f117e_v4_0008",
+        "decision": "excluded",
+        "reason": "different_service"
+      },
+      {
+        "id": "brta_cbe22ab64acf3d03_v4_0011",
+        "decision": "excluded",
+        "reason": "different_service"
+      },
+      {
+        "id": "brta_09e8cbfff67f117e_v4_0010",
+        "decision": "excluded",
+        "reason": "different_service"
+      },
+      {
+        "id": "brta_d516e1b85b1f7144_v4_0002",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_d516e1b85b1f7144_v4_0001",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_09e8cbfff67f117e_v4_0016",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_09e8cbfff67f117e_v4_0015",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_09e8cbfff67f117e_v4_0026",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_09e8cbfff67f117e_v4_0027",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_09e8cbfff67f117e_v4_0028",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_200a9829df785b7e_v4_0012",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_200a9829df785b7e_v4_0003",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_200a9829df785b7e_v4_0004",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_200a9829df785b7e_v4_0005",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_200a9829df785b7e_v4_0006",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_200a9829df785b7e_v4_0007",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_200a9829df785b7e_v4_0008",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_200a9829df785b7e_v4_0009",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_200a9829df785b7e_v4_0010",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_200a9829df785b7e_v4_0011",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_200a9829df785b7e_v4_0013",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_200a9829df785b7e_v4_0002",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_4e08eb4e988d38e4_v2_0062",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_4e08eb4e988d38e4_v2_0065",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_4e08eb4e988d38e4_v2_0060",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_4e08eb4e988d38e4_v2_0067",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_4e08eb4e988d38e4_v2_0063",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_cb965b3169c34e73_v2_0082",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      }
+    ],
+    "expanded_ids": [
+      "brta_09e8cbfff67f117e_v4_0015",
+      "brta_09e8cbfff67f117e_v4_0026",
+      "brta_09e8cbfff67f117e_v4_0027",
+      "brta_09e8cbfff67f117e_v4_0028",
+      "brta_200a9829df785b7e_v4_0003",
+      "brta_200a9829df785b7e_v4_0004",
+      "brta_200a9829df785b7e_v4_0005",
+      "brta_200a9829df785b7e_v4_0006",
+      "brta_200a9829df785b7e_v4_0007",
+      "brta_200a9829df785b7e_v4_0008",
+      "brta_200a9829df785b7e_v4_0009",
+      "brta_200a9829df785b7e_v4_0010",
+      "brta_200a9829df785b7e_v4_0011",
+      "brta_200a9829df785b7e_v4_0013"
+    ],
+    "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+    "budget_order_ids": [
+      "brta_d516e1b85b1f7144_v4_0002",
+      "brta_d516e1b85b1f7144_v4_0001",
+      "brta_09e8cbfff67f117e_v4_0016",
+      "brta_09e8cbfff67f117e_v4_0015",
+      "brta_09e8cbfff67f117e_v4_0026",
+      "brta_09e8cbfff67f117e_v4_0027",
+      "brta_09e8cbfff67f117e_v4_0028",
+      "brta_200a9829df785b7e_v4_0012",
+      "brta_200a9829df785b7e_v4_0003",
+      "brta_200a9829df785b7e_v4_0004",
+      "brta_200a9829df785b7e_v4_0005",
+      "brta_200a9829df785b7e_v4_0006",
+      "brta_200a9829df785b7e_v4_0007",
+      "brta_200a9829df785b7e_v4_0008",
+      "brta_200a9829df785b7e_v4_0009",
+      "brta_200a9829df785b7e_v4_0010",
+      "brta_200a9829df785b7e_v4_0011",
+      "brta_200a9829df785b7e_v4_0013",
+      "brta_200a9829df785b7e_v4_0002",
+      "brta_4e08eb4e988d38e4_v2_0062",
+      "brta_4e08eb4e988d38e4_v2_0065",
+      "brta_4e08eb4e988d38e4_v2_0060",
+      "brta_4e08eb4e988d38e4_v2_0067",
+      "brta_4e08eb4e988d38e4_v2_0063",
+      "brta_cb965b3169c34e73_v2_0082"
+    ],
+    "selected_ids": [
+      "brta_d516e1b85b1f7144_v4_0002",
+      "brta_d516e1b85b1f7144_v4_0001",
+      "brta_09e8cbfff67f117e_v4_0016",
+      "brta_09e8cbfff67f117e_v4_0015",
+      "brta_09e8cbfff67f117e_v4_0026",
+      "brta_09e8cbfff67f117e_v4_0027"
+    ],
+    "selected_chars": 7121
+  },
+  "seconds": 13.844,
+  "support_rank": 1,
+  "selected_support": true
+}

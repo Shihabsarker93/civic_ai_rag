@@ -1,0 +1,594 @@
+[
+  {
+    "document_id": "passport_6e87d0783a373593",
+    "snapshot": "domains/passport/data/source_snapshots/cleaned_md/5 Steps to your e-Passport.md",
+    "snapshot_sha256": "20cf0be15ba261a9be55252bdd4da3d3ebe418c14e4722ec7c509b94bbc0c348",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/5 Steps to your e-Passport.pdf",
+        "exists": true,
+        "sha256": "c505ddf51756557eebd42594a5bbf972d03cfb24d07ed29e271a6837e8f18dd5",
+        "pages": 1,
+        "extracted_characters": 784,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "9d0c9611d06bba9b79ef4b13183c09d954458130b648e712c82c80ce550b819f",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "c505ddf51756557eebd42594a5bbf972d03cfb24d07ed29e271a6837e8f18dd5",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "passport_5eb6c21efe103a4f",
+    "snapshot": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh Machine Readable Passport (MRP) Online Application Guide 2012.md",
+    "snapshot_sha256": "8ce0916f4e83af158dbdbe22ed97f2b467f71c1f41d3404e33d3c9d0412875e7",
+    "originals": [],
+    "source_association": "unresolved"
+  },
+  {
+    "document_id": "passport_23d845d3ab38ea43",
+    "snapshot": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+    "snapshot_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+    "originals": [],
+    "source_association": "unresolved"
+  },
+  {
+    "document_id": "passport_09c70e4e1e93efad",
+    "snapshot": "domains/passport/data/source_snapshots/cleaned_md/Biometric_Enrolment_Citizens_Above_6_Years.md",
+    "snapshot_sha256": "fe351bfefeea3523b87ff37ef2f33e0e0382674aa6c1505d13e10bc5f28f4114",
+    "originals": [],
+    "source_association": "unresolved"
+  },
+  {
+    "document_id": "passport_ff2616b59b20eb7f",
+    "snapshot": "domains/passport/data/source_snapshots/cleaned_md/Country that supported MRV Online Application.md",
+    "snapshot_sha256": "2c08384d56d4b8ba2243abf23addbd341c4a3d35ac0e17903b26643197ce08fc",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/Country that supported MRV Online Application.pdf",
+        "exists": true,
+        "sha256": "97e2503690f8fa3f011c94e9ff48edae7170140d529d59e2b2feccb2bb32988a",
+        "pages": 3,
+        "extracted_characters": 875,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "55734d10aef3c08442d9990ec538ef682a5ef6abd4ca49ed6ca18cfc6836db32",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          3
+        ],
+        "registered_sha256": "97e2503690f8fa3f011c94e9ff48edae7170140d529d59e2b2feccb2bb32988a",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "passport_6327e051fa00a63d",
+    "snapshot": "domains/passport/data/source_snapshots/cleaned_md/Dhaka_Cantonment_Passport_Office_Jurisdiction_Redistribution.md",
+    "snapshot_sha256": "d1086bf92743868e3001994107e3efbfd6bedaa6a43c7cb5bd91c2c76ea63e02",
+    "originals": [],
+    "source_association": "unresolved"
+  },
+  {
+    "document_id": "passport_13bb030adf286724",
+    "snapshot": "domains/passport/data/source_snapshots/cleaned_md/Electronic Visa Applications Forms Frequently Asked Questions.md",
+    "snapshot_sha256": "8cdac3f09c8922714d095f1ecbf687c0ac208fe3d2537227f0aa2664c6430bbd",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/Electronic Visa Applications Forms Frequently Asked Questions.pdf",
+        "exists": true,
+        "sha256": "28514299689acb638b8280994a3e26a3b546d446dcc664b4df990ee375ea4544",
+        "pages": 1,
+        "extracted_characters": 2972,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "44ab32450b5a54e0c060c20f5ead7c7301a03d012a2370bcb0805e5fc7f9c378",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "28514299689acb638b8280994a3e26a3b546d446dcc664b4df990ee375ea4544",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "passport_3ad98eef9fd80aa1",
+    "snapshot": "domains/passport/data/source_snapshots/cleaned_md/Electronic Visa Applications Forms Instructions Page.md",
+    "snapshot_sha256": "850ae4ff02c2c928faee3f30fc9505922a8464edcf928fd4cd70ccf0f39fff3a",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/Electronic Visa Applications Forms Instructions Page.pdf",
+        "exists": true,
+        "sha256": "029751f18d0336712732e90669d7c2adfc1ebf8c3aa9c4fca59452c0cb0a9090",
+        "pages": 1,
+        "extracted_characters": 2682,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "f62ddffd35354ab6e8ac38c677f34ea3296a6b3717d73c26a33b2190ea75b0fa",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "029751f18d0336712732e90669d7c2adfc1ebf8c3aa9c4fca59452c0cb0a9090",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "passport_8afcf70c86f24096",
+    "snapshot": "domains/passport/data/source_snapshots/cleaned_md/General Instructions to fill up the MRV form.md",
+    "snapshot_sha256": "55c347c9fbcdb3501c1e13ff370a114df5875bec72fc420c9f5e70835a16101e",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/General Instructions to fill up the MRV form.pdf",
+        "exists": true,
+        "sha256": "637a0bc002e02c0c2aaea30497756b5bf54a730a1622a73468c837f83a31217c",
+        "pages": 1,
+        "extracted_characters": 1534,
+        "bengali_characters": 12,
+        "extracted_text_sha256": "64fa5dd0ac55d21645d76bc6d39a64df2670b67e1acf8be5ee111216c2edb7a2",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "637a0bc002e02c0c2aaea30497756b5bf54a730a1622a73468c837f83a31217c",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "passport_14c01dbffa495023",
+    "snapshot": "domains/passport/data/source_snapshots/cleaned_md/Machine Readable Visa Application Form.md",
+    "snapshot_sha256": "856431df9385550c15e5174ad2f6d37b8b34db8afb6be46f2a27c88c9d170409",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/Machine Readable Visa Application Form.pdf",
+        "exists": true,
+        "sha256": "a450a873ca5d2342c6b6a0fc8555a8e4216099d2f197ca5e4386b4cb5b3e9872",
+        "pages": 4,
+        "extracted_characters": 9349,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "b2664f395e7f2498e7b408b67f5037e40a19d396fe14add1eaf9cdeda5a9ee20",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "a450a873ca5d2342c6b6a0fc8555a8e4216099d2f197ca5e4386b4cb5b3e9872",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "passport_c238b898a2d60cbf",
+    "snapshot": "domains/passport/data/source_snapshots/cleaned_md/Types and Essential Documents of Visa.md",
+    "snapshot_sha256": "2323393e9c804c0d730ede2764bf79fc7aecd9bc54b5a57e5189c62d62b06d4e",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/Types and Essential Documents of Visa.pdf",
+        "exists": true,
+        "sha256": "63ea9ce4cb68399e7b8f3669a703e3b58b850199008d86e78abef06b2565992b",
+        "pages": 6,
+        "extracted_characters": 23141,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "81a46c16867f8582a7abe81b65647cb18169accf4a297138080fed55cb029a77",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "63ea9ce4cb68399e7b8f3669a703e3b58b850199008d86e78abef06b2565992b",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "passport_f2c0d221c70d21f2",
+    "snapshot": "domains/passport/data/source_snapshots/cleaned_md/Urgent Applications e-Passport.md",
+    "snapshot_sha256": "0f56d10a5a201fbeb31c35857660ef5e83438f9364e749a2110fbed805da7646",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/Urgent Applications.pdf",
+        "exists": true,
+        "sha256": "70a3eab724c84cdd6a67822f53aa65d834fd994fe914b46ed959ddff3042cd37",
+        "pages": 1,
+        "extracted_characters": 1273,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "966bcd74723ad908d5c47d3f4188395ea544ed5ad4c266631707d1ac67a1328a",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "70a3eab724c84cdd6a67822f53aa65d834fd994fe914b46ed959ddff3042cd37",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "passport_12e10027cfdfeeee",
+    "snapshot": "domains/passport/data/source_snapshots/cleaned_md/e-Passport Fees and Payment Options.md",
+    "snapshot_sha256": "9b629ab56ed0caa11414d1f5095cf91d85d179af4e910cfcc93bee44af11d7d8",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/e-Passport Fees and Payment Options.pdf",
+        "exists": true,
+        "sha256": "90b68e8afe8d0845e33e919c335b19b3a492b5b6b2ab1d4b7e4db9698ce92f99",
+        "pages": 3,
+        "extracted_characters": 2967,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "32f9f9f3c3b7dd1ad366d9d8547ff01befa825de2888ff9dbaa4f9a73185b53f",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "90b68e8afe8d0845e33e919c335b19b3a492b5b6b2ab1d4b7e4db9698ce92f99",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "passport_0b74faa4d85a2a58",
+    "snapshot": "domains/passport/data/source_snapshots/cleaned_md/অনলাইন সেবাসমূহ (নাগরিক ই-সেবাসমূহের তালিকা).md",
+    "snapshot_sha256": "63aad859e13c4416b524e8c7280c02b0cff81de0320bcab222cbd8e2461bd292",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/নাগরিক ই-সেবাসমূহের তালিকা.pdf",
+        "exists": true,
+        "sha256": "447e7eea9669581b665561ba37fcae6379bf784a9fac8caca97dca12762f835f",
+        "pages": 1,
+        "extracted_characters": 379,
+        "bengali_characters": 208,
+        "extracted_text_sha256": "c3d62dcd30a218ebde0a76eb1cda89384815f8b5500c2618fb1370afc4b4c011",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "447e7eea9669581b665561ba37fcae6379bf784a9fac8caca97dca12762f835f",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "passport_9f4e9ffe9f2a07f4",
+    "snapshot": "domains/passport/data/source_snapshots/cleaned_md/ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী.md",
+    "snapshot_sha256": "f0bc6e1384dd491baff1dc91061abdd516b283e0e2751cdd793151b09095c61b",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী.pdf",
+        "exists": true,
+        "sha256": "97f4e421960f1de84dd9c98a786f55eb66b7f1bc16a3cf0d7475d0a9630a227f",
+        "pages": 2,
+        "extracted_characters": 3577,
+        "bengali_characters": 2668,
+        "extracted_text_sha256": "8fdce8b739a96026a827eea83e12dd24fb54ac813fc9aead9f3d4ddc10727273",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "97f4e421960f1de84dd9c98a786f55eb66b7f1bc16a3cf0d7475d0a9630a227f",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "passport_01062cca22f95c06",
+    "snapshot": "domains/passport/data/source_snapshots/cleaned_md/চালুকৃত ই-পাসপোর্ট অফিসগুলির তালিকা.md",
+    "snapshot_sha256": "682e8c25515de744c8dcddbaa0300cc6e47a1009202660ebd04a8af52050661d",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/চালুকৃত ই-পাসপোর্ট অফিসগুলির তালিকা.pdf",
+        "exists": true,
+        "sha256": "43acb48e1535d1978099d61032a78a5ce396dd13022393e58eddb29e18d80867",
+        "pages": 5,
+        "extracted_characters": 2411,
+        "bengali_characters": 903,
+        "extracted_text_sha256": "d8769d8003f37c2260bca8ffa4a6ea184938bf0ad63d8a9c488d84bb179e6741",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          5
+        ],
+        "registered_sha256": "43acb48e1535d1978099d61032a78a5ce396dd13022393e58eddb29e18d80867",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "passport_a4d61a4d583daa54",
+    "snapshot": "domains/passport/data/source_snapshots/cleaned_md/পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর আবেদন ফরম.md",
+    "snapshot_sha256": "8a3d17fc0dcaa8044c2c1da55f1247561570050576aee18e1783e028b8fdfb34",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর আবেদন ফরম.pdf",
+        "exists": true,
+        "sha256": "796b8aba1259c67dceee5327030744c7a836c4f2aa45afb6ecbb7c59c92eee3c",
+        "pages": 2,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "7060584c3e59f0b2f12f34aa0b40faadf4aa5790a0459f3319852bcd63262cbb",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1,
+          2
+        ],
+        "registered_sha256": "796b8aba1259c67dceee5327030744c7a836c4f2aa45afb6ecbb7c59c92eee3c",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "passport_3fcbc40c98aa80bc",
+    "snapshot": "domains/passport/data/source_snapshots/cleaned_md/পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর নিয়মাবলী.md",
+    "snapshot_sha256": "c78d5d5c11702f2a935412c5bd0595c11e7f015a480d70e6f32f03c9fecc6811",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর নিয়মাবলী.pdf",
+        "exists": true,
+        "sha256": "3f9ab9ecc2958e87be954294957d1279d135831f4f7d244105f2cbc0c7eafa5c",
+        "pages": 2,
+        "extracted_characters": 1912,
+        "bengali_characters": 1219,
+        "extracted_text_sha256": "8165e9d54b369a8c72890df052c277c8c7e9c5da82366fb674c38c765939ed2b",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          2
+        ],
+        "registered_sha256": "3f9ab9ecc2958e87be954294957d1279d135831f4f7d244105f2cbc0c7eafa5c",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "passport_73ac41f2327257f9",
+    "snapshot": "domains/passport/data/source_snapshots/cleaned_md/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.md",
+    "snapshot_sha256": "11f8f5bb9835c318f2ee6fda5b64e345563234278c88ac3062d5e7a89d3d8fe9",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.pdf",
+        "exists": true,
+        "sha256": "3b89367472665b2d263082c7b98f28ae27e6021c82bd4b80028746e9daafb6a2",
+        "pages": 1,
+        "extracted_characters": 1025,
+        "bengali_characters": 355,
+        "extracted_text_sha256": "71309e34048e7b09a2ab1ebca05f609592a1e663ff6bb78938f5ba1cd8a39c95",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "3b89367472665b2d263082c7b98f28ae27e6021c82bd4b80028746e9daafb6a2",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "passport_e6ba843f91f57731",
+    "snapshot": "domains/passport/data/source_snapshots/cleaned_md/পাসপোর্ট ও ভিসা সংক্রান্ত কল সেন্টার সেবা.md",
+    "snapshot_sha256": "768dfecbe1b3705607d56a178417ef5d9df6cdda00aff8183a9dcae7e1cfffeb",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/নিউজ কর্ণার.pdf",
+        "exists": true,
+        "sha256": "a79fa22ebbfbe33f0b1b56fa0721f92ff9f84a23c8ddc269d8492120d71f0f87",
+        "pages": 1,
+        "extracted_characters": 290,
+        "bengali_characters": 236,
+        "extracted_text_sha256": "f62529986220b9b69b40bc84bbde38277bd68250c49cdf6b7b532bbfc6eceb44",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "a79fa22ebbfbe33f0b1b56fa0721f92ff9f84a23c8ddc269d8492120d71f0f87",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "passport_049144a6810ecbbf",
+    "snapshot": "domains/passport/data/source_snapshots/cleaned_md/পাসপোর্টে No Visa Required for Travel to Bangladesh (NVR) সীল প্রদান প্রসঙ্গে.md",
+    "snapshot_sha256": "e84036cc777182f32e82f550ea3723a180d9400fb47611c91502d67eeaa47b9b",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/NVR (No Visa Required for Travel to Bangladesh).pdf",
+        "exists": true,
+        "sha256": "351652d5c978d96830a939129d2fab159579ec387bfa9c82513c27be96821133",
+        "pages": 2,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "7060584c3e59f0b2f12f34aa0b40faadf4aa5790a0459f3319852bcd63262cbb",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1,
+          2
+        ],
+        "registered_sha256": "351652d5c978d96830a939129d2fab159579ec387bfa9c82513c27be96821133",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "passport_729010959c882773",
+    "snapshot": "domains/passport/data/source_snapshots/cleaned_md/পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট.md",
+    "snapshot_sha256": "a6928082079a3dcdcd69832c5e7ff19d7c5152c445c0aaca9cc926262d672050",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/পাসপোর্টের আবেদন জমা নেওয়ার ক্ষেত্রে চেকলিস্ট.pdf",
+        "exists": true,
+        "sha256": "f4e2e8c5a0f75c47366e4cef30b950fb50e7fa0b1ed16e47f74451c125120e02",
+        "pages": 2,
+        "extracted_characters": 2223,
+        "bengali_characters": 1619,
+        "extracted_text_sha256": "d68d3ea44ba10c80cf96e4211783832be09c19bb27b752cdc3a208896c61e263",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "f4e2e8c5a0f75c47366e4cef30b950fb50e7fa0b1ed16e47f74451c125120e02",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "passport_f00b2a4caf73fc8e",
+    "snapshot": "domains/passport/data/source_snapshots/cleaned_md/প্রতারণা প্রতিরোধে বিশেষ সতর্কতা.md",
+    "snapshot_sha256": "765013ae3f3be67097cd70611aee38dfb6989b4c27390add1167c16b480c70d3",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/প্রতারণা প্রতিরোধে বিশেষ সতর্কতা.pdf",
+        "exists": true,
+        "sha256": "2b244be35ee63cc36ee9ea0106e21f96df96dca2134b974104db21626f4c57b8",
+        "pages": 2,
+        "extracted_characters": 1546,
+        "bengali_characters": 576,
+        "extracted_text_sha256": "89582a8ef44748ade600671f914389de7487dd8532d196876b7b3be321912dfe",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          2
+        ],
+        "registered_sha256": "2b244be35ee63cc36ee9ea0106e21f96df96dca2134b974104db21626f4c57b8",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "passport_cd3935ff9dcc81c4",
+    "snapshot": "domains/passport/data/source_snapshots/cleaned_md/বিশেষ নোটিশঃ নারায়ণগঞ্জ আঞ্চলিক পাসপোর্ট অফিসের কার্যক্রম পুনরায় শুরু প্রসঙ্গে.md",
+    "snapshot_sha256": "46102ec2ed6eb7a0d24191258493dc66292397ceb554683e28d137fa5c484912",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/বিশেষ নোটিশঃ নারায়ণগঞ্জ আঞ্চলিক পাসপোর্ট অফিসের কার্যক্রম পুনরায় শুরু প্রসঙ্গে.pdf",
+        "exists": true,
+        "sha256": "0bc08e34b7fe5a4bcdf5df37f5559dccee547d00c882d483b81dc1cdcff567c0",
+        "pages": 1,
+        "extracted_characters": 1563,
+        "bengali_characters": 615,
+        "extracted_text_sha256": "75e7a9ad400428f5a10b855ba2d38b8afd2405da636efe6a5f3e606748012d57",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "0bc08e34b7fe5a4bcdf5df37f5559dccee547d00c882d483b81dc1cdcff567c0",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "passport_caccc3966e7586d0",
+    "snapshot": "domains/passport/data/source_snapshots/cleaned_md/বিশেষ সতর্কতা ই-পাসপোর্ট.md",
+    "snapshot_sha256": "52f1e86dbc27a8985e0ab44328d29782d3c1ae69fed926b06caf504ff30aecbf",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/বিশেষ সতর্কতা ই-পাসপোর্ট.pdf",
+        "exists": true,
+        "sha256": "aaed07f5dadf9d0551d9a3d8375f76b3b3ea10529450994f58570130d7c32f4f",
+        "pages": 1,
+        "extracted_characters": 734,
+        "bengali_characters": 550,
+        "extracted_text_sha256": "e4854b1160077452f9a0bc6feccc60e11b4d7b90ef40116bdb8c011ead6d99e2",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "aaed07f5dadf9d0551d9a3d8375f76b3b3ea10529450994f58570130d7c32f4f",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "passport_ed7b3ebc56c0094f",
+    "snapshot": "domains/passport/data/source_snapshots/cleaned_md/মেশিন রিডেবল পাসপোর্ট(এমআরপি).md",
+    "snapshot_sha256": "a10a5262eb9bfd3fd6a7a6363e32622101ef48a0eee755f04c5f25fea5df8026",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/মেশিন রিডেবল পাসপোর্ট(এমআরপি).pdf",
+        "exists": true,
+        "sha256": "a46b1339dca413a78e79b65d2a10bf8bd433e5a8bfbdc6cf0963c6b2f94e3c90",
+        "pages": 3,
+        "extracted_characters": 4736,
+        "bengali_characters": 3321,
+        "extracted_text_sha256": "86a8d61b90d018ade852e64e8a2f5555cfb83d0d6cca4a994b25c8c9f24dd103",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          3
+        ],
+        "registered_sha256": "a46b1339dca413a78e79b65d2a10bf8bd433e5a8bfbdc6cf0963c6b2f94e3c90",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "passport_bc66966daedfe968",
+    "snapshot": "domains/passport/data/source_snapshots/cleaned_md/মেশিন রিডেবল ভিসা (এমআরভি).md",
+    "snapshot_sha256": "bb1891fb9fd77e72968bd3f3b6fd67b09bb99143a33dc796ea806a6fd1d5f358",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/মেশিন রিডেবল ভিসা (এমআরভি).pdf",
+        "exists": true,
+        "sha256": "11f1cb931548c84462c466eb555df741b5e2324c29001815bb8a7405eefd1cdc",
+        "pages": 1,
+        "extracted_characters": 505,
+        "bengali_characters": 376,
+        "extracted_text_sha256": "5a614f7c2fae25b187ca25d2c2bebb6293e564312fc36df9f27a4680c56d618c",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "11f1cb931548c84462c466eb555df741b5e2324c29001815bb8a7405eefd1cdc",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "passport_5d0353de7b67a7b5",
+    "snapshot": "domains/passport/data/source_snapshots/cleaned_md/রক্ষণাবেক্ষণ ও আপগ্রেডেশনের জন্য ই-পাসপোর্ট অনলাইন রেজিস্ট্রেশন পোর্টালের ডাউনটাইম প্রসঙ্গে.md",
+    "snapshot_sha256": "5b89df3a38fdbf99bb2728b66880ef18f10ad47d003170dfcc8e87632425ea8e",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/রক্ষণাবেক্ষণ ও আপগ্রেডেশনের জন্য ই-পাসপোর্ট অনলাইন রেজিস্ট্রেশন পোর্টালের ডাউনটাইম প্রসঙ্গে.pdf",
+        "exists": true,
+        "sha256": "69b711950513decfd2d907d77859d4268b53737ca2eee8e4a103d6bf940d4bac",
+        "pages": 1,
+        "extracted_characters": 1226,
+        "bengali_characters": 477,
+        "extracted_text_sha256": "652f1db6b4134802c713c1390ed5b08b68ea01bb1e74c3509a6210a94c810a99",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "69b711950513decfd2d907d77859d4268b53737ca2eee8e4a103d6bf940d4bac",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "passport_1226f6640ecf3bc7",
+    "snapshot": "domains/passport/data/source_snapshots/cleaned_md/সংক্ষিপ্ত ইতিহাস _ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+    "snapshot_sha256": "4a814a61f7e90278789ee52097613ab6a5260c4bebf2379e8dc040c054260ba0",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/সংক্ষিপ্ত ইতিহাস _ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.pdf",
+        "exists": true,
+        "sha256": "675ad0207724bda123f797408fb24d2db2fe0b56b2d60005e9e417d44d9d51b6",
+        "pages": 1,
+        "extracted_characters": 1319,
+        "bengali_characters": 1085,
+        "extracted_text_sha256": "78b12e62721bbf28db586e9c628c075f087061839746ffbd98c71fcdfc861074",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "675ad0207724bda123f797408fb24d2db2fe0b56b2d60005e9e417d44d9d51b6",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "passport_6f7d900581956bef",
+    "snapshot": "domains/passport/data/source_snapshots/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+    "snapshot_sha256": "e875d24b0d749a0a12ff8c30bddac3eabba040af4c3a50348e63f3d086382e87",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/সিটিজেন চার্টার_ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.pdf",
+        "exists": true,
+        "sha256": "807932767616c0d15f21cc69f856a71c9c118851b6c9b309886ffe4bd9b9c150",
+        "pages": 13,
+        "extracted_characters": 55839,
+        "bengali_characters": 13106,
+        "extracted_text_sha256": "98523d6188d65271a15096db55ab2521eba254138b4f24afc272003a29de3414",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          13
+        ],
+        "registered_sha256": "807932767616c0d15f21cc69f856a71c9c118851b6c9b309886ffe4bd9b9c150",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  }
+]

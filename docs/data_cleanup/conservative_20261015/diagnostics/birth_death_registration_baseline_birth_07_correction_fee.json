@@ -1,0 +1,344 @@
+{
+  "domain": "birth_death_registration",
+  "variant": "baseline",
+  "id": "birth_07_correction_fee",
+  "query": "জন্মনিবন্ধন সংশোধন করতে কত টাকা লাগে?",
+  "candidate_ids": [
+    "birth_and_death_registration_fees_cleaned_table_full",
+    "birth_and_death_registration_fees_cleaned_fee_row_05",
+    "birth_and_death_registration_fees_cleaned_fee_row_04",
+    "birth_and_death_registration_rules_2018_বিধি_২১_01",
+    "birth_and_death_registration_fees_cleaned_fee_row_06",
+    "birth_and_death_registration_fees_cleaned_fee_row_02",
+    "birth_and_death_registration_fees_cleaned_fee_row_03",
+    "birth_and_death_registration_fees_cleaned_fee_row_07",
+    "birth_and_death_registration_act_2004_ধারা_১৫_01",
+    "application_for_birth_information_correction_cleaned_004_01",
+    "bdris_faq_02_preamble",
+    "bdris_faq_01_q01",
+    "birth_and_death_registration_rules_2018_বিধি_২_01",
+    "birth_and_death_registration_act_2004_ধারা_২১_01",
+    "bdris_faq_01_q12"
+  ],
+  "selected_ids": [
+    "birth_and_death_registration_fees_cleaned_table_full",
+    "birth_and_death_registration_fees_cleaned_fee_row_05",
+    "birth_and_death_registration_fees_cleaned_fee_row_04",
+    "birth_and_death_registration_fees_cleaned_fee_row_06",
+    "birth_and_death_registration_rules_2018_বিধি_২১_01",
+    "birth_and_death_registration_act_2004_ধারা_১৫_01"
+  ],
+  "selected_characters": 4702,
+  "selected_tokens": 1664,
+  "tokenizer": "BGE-M3; not generator tokens",
+  "selected_passages": [
+    {
+      "id": "birth_and_death_registration_fees_cleaned_table_full",
+      "content": "Service: birth and death registration\nDocument type: fees_table\nTitle: জন্ম ও মৃত্যু নিবন্ধনের ফিসমূহ\n# জন্ম ও মৃত্যু নিবন্ধনের ফিসমূহ\n\n## নিবন্ধন ও সংশোধন ফি\n\n| ক্রম নং | বাবদ | হার |\n|----------|-------|------|\n| ১ | জন্ম বা মৃত্যুর ৪৫ (পঁয়তাল্লিশ) দিন পর্যন্ত কোনো ব্যক্তির জন্ম বা মৃত্যু নিবন্ধন | বিনা ফিসে |\n| ২ | জন্ম বা মৃত্যুর ৪৫ (পঁয়তাল্লিশ) দিন পর হইতে ৫ (পাঁচ) বৎসর পর্যন্ত কোনো ব্যক্তির জন্ম বা মৃত্যু নিবন্ধন (সাকুল্য) | ২৫ টাকা |\n| ৩ | জন্ম বা মৃত্যুর ৫ (পাঁচ) বৎসর পর হইতে কোনো ব্যক্তির জন্ম বা মৃত্যু নিবন্ধন (সাকুল্য) | ৫০ টাকা |\n| ৪ | জন্ম তারিখ সংশোধনের জন্য আবেদন ফি | ১০০ টাকা |\n| ৫ | জন্ম তারিখ ব্যতীত নাম, পিতার নাম, মাতার নাম, ঠিকানা ইত্যাদি অন্যান্য তথ্য সংশোধনের জন্য আবেদন ফি | ৫০ টাকা |\n| ৬ | বাংলা ও ইংরেজি উভয় ভাষায় মূল সনদ বা তথ্য সংশোধনের পর সনদের কপি সরবরাহ | বিনা ফিসে |\n| ৭ | বাংলা ও ইংরেজি উভয় ভাষায় সনদের নকল সরবরাহ | ৫০ টাকা |\n\n## গুরুত্বপূর্ণ তথ্য\n\nউপরোক্ত ফিসমূহ জন্ম ও মৃত্যু নিবন্ধন, তথ্য সংশোধন এবং সনদের নকল সংগ্রহের ক্ষেত্রে প্রযোজ্য।",
+      "metadata": {
+        "service": "birth_death_registration",
+        "service_scope": "birth_death",
+        "document_type": "fees_table",
+        "title": "জন্ম ও মৃত্যু নিবন্ধনের ফিসমূহ",
+        "source_file": "birth_and_death_registration_fees.docx",
+        "source_path": "md/birth_and_death_registration_fees_cleaned.md",
+        "source_url": "https://orgbdr.gov.bd/pages/static-pages/69cf48059d736d71f1a34c8c",
+        "encoding": "unicode_converted",
+        "language": "bn",
+        "search_aliases": "amend registration information, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, certificate, certificate correction, certificate fee, civil registration, cost, date of birth correction, death certificate, death certificate correction, death certificate registration, death registration, death registration certificate, father mother information, fix certificate information, government fee, name correction, online birth registration, online death registration, parent information, parents registration, payment, registration fee, আবেদন ফি, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম তারিখ সংশোধন, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, নিবন্ধন ফি, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু নিবন্ধন সংশোধন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন, সংশোধন আবেদন, সনদ ফি",
+        "chunking_version": "2026-06-07-nfc-token-audit",
+        "content_token_count": 350,
+        "retrieval_token_count": 579,
+        "embedding_model_max_tokens": 8192
+      },
+      "score": 1.112538936138153,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "birth_and_death_registration_fees_cleaned_fee_row_05",
+      "content": "Service: birth and death registration\nDocument type: fee_row\nTitle: জন্ম ও মৃত্যু নিবন্ধনের ফিসমূহ\nFee item: জন্ম তারিখ ব্যতীত নাম, পিতার নাম, মাতার নাম, ঠিকানা ইত্যাদি অন্যান্য তথ্য সংশোধনের জন্য আবেদন ফি\nFee amount: ৫০ টাকা\nOriginal row: | ৫ | জন্ম তারিখ ব্যতীত নাম, পিতার নাম, মাতার নাম, ঠিকানা ইত্যাদি অন্যান্য তথ্য সংশোধনের জন্য আবেদন ফি | ৫০ টাকা |",
+      "metadata": {
+        "service": "birth_death_registration",
+        "service_scope": "birth_death",
+        "document_type": "fee_row",
+        "title": "জন্ম ও মৃত্যু নিবন্ধনের ফিসমূহ",
+        "source_file": "birth_and_death_registration_fees.docx",
+        "source_path": "md/birth_and_death_registration_fees_cleaned.md",
+        "source_url": "https://orgbdr.gov.bd/pages/static-pages/69cf48059d736d71f1a34c8c",
+        "encoding": "unicode_converted",
+        "language": "bn",
+        "row_index": 5,
+        "fee_item": "জন্ম তারিখ ব্যতীত নাম, পিতার নাম, মাতার নাম, ঠিকানা ইত্যাদি অন্যান্য তথ্য সংশোধনের জন্য আবেদন ফি",
+        "fee_amount": "৫০ টাকা",
+        "search_aliases": "amend registration information, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, certificate, certificate correction, certificate fee, civil registration, cost, date of birth correction, death certificate, death certificate correction, death certificate registration, death registration, death registration certificate, father mother information, fix certificate information, government fee, name correction, online birth registration, online death registration, parent information, parents registration, payment, registration fee, আবেদন ফি, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম তারিখ সংশোধন, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, নিবন্ধন ফি, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু নিবন্ধন সংশোধন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন, সংশোধন আবেদন, সনদ ফি",
+        "chunking_version": "2026-06-07-nfc-token-audit",
+        "content_token_count": 102,
+        "retrieval_token_count": 331,
+        "embedding_model_max_tokens": 8192
+      },
+      "score": 1.091998074054718,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "birth_and_death_registration_fees_cleaned_fee_row_04",
+      "content": "Service: birth and death registration\nDocument type: fee_row\nTitle: জন্ম ও মৃত্যু নিবন্ধনের ফিসমূহ\nFee item: জন্ম তারিখ সংশোধনের জন্য আবেদন ফি\nFee amount: ১০০ টাকা\nOriginal row: | ৪ | জন্ম তারিখ সংশোধনের জন্য আবেদন ফি | ১০০ টাকা |",
+      "metadata": {
+        "service": "birth_death_registration",
+        "service_scope": "birth_death",
+        "document_type": "fee_row",
+        "title": "জন্ম ও মৃত্যু নিবন্ধনের ফিসমূহ",
+        "source_file": "birth_and_death_registration_fees.docx",
+        "source_path": "md/birth_and_death_registration_fees_cleaned.md",
+        "source_url": "https://orgbdr.gov.bd/pages/static-pages/69cf48059d736d71f1a34c8c",
+        "encoding": "unicode_converted",
+        "language": "bn",
+        "row_index": 4,
+        "fee_item": "জন্ম তারিখ সংশোধনের জন্য আবেদন ফি",
+        "fee_amount": "১০০ টাকা",
+        "search_aliases": "amend registration information, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, certificate, certificate correction, certificate fee, civil registration, cost, date of birth correction, death certificate, death certificate correction, death certificate registration, death registration, death registration certificate, fix certificate information, government fee, name correction, online birth registration, online death registration, payment, registration fee, আবেদন ফি, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম তারিখ সংশোধন, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, নিবন্ধন ফি, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু নিবন্ধন সংশোধন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন, সংশোধন আবেদন, সনদ ফি",
+        "chunking_version": "2026-06-07-nfc-token-audit",
+        "content_token_count": 64,
+        "retrieval_token_count": 283,
+        "embedding_model_max_tokens": 8192
+      },
+      "score": 1.085626516342163,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "birth_and_death_registration_fees_cleaned_fee_row_06",
+      "content": "Service: birth and death registration\nDocument type: fee_row\nTitle: জন্ম ও মৃত্যু নিবন্ধনের ফিসমূহ\nFee item: বাংলা ও ইংরেজি উভয় ভাষায় মূল সনদ বা তথ্য সংশোধনের পর সনদের কপি সরবরাহ\nFee amount: বিনা ফিসে\nOriginal row: | ৬ | বাংলা ও ইংরেজি উভয় ভাষায় মূল সনদ বা তথ্য সংশোধনের পর সনদের কপি সরবরাহ | বিনা ফিসে |",
+      "metadata": {
+        "service": "birth_death_registration",
+        "service_scope": "birth_death",
+        "document_type": "fee_row",
+        "title": "জন্ম ও মৃত্যু নিবন্ধনের ফিসমূহ",
+        "source_file": "birth_and_death_registration_fees.docx",
+        "source_path": "md/birth_and_death_registration_fees_cleaned.md",
+        "source_url": "https://orgbdr.gov.bd/pages/static-pages/69cf48059d736d71f1a34c8c",
+        "encoding": "unicode_converted",
+        "language": "bn",
+        "row_index": 6,
+        "fee_item": "বাংলা ও ইংরেজি উভয় ভাষায় মূল সনদ বা তথ্য সংশোধনের পর সনদের কপি সরবরাহ",
+        "fee_amount": "বিনা ফিসে",
+        "search_aliases": "amend registration information, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, certificate, certificate correction, certificate fee, civil registration, cost, death certificate, death certificate correction, death certificate registration, death registration, death registration certificate, fix certificate information, government fee, name correction, online birth registration, online death registration, payment, registration fee, আবেদন ফি, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, নিবন্ধন ফি, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু নিবন্ধন সংশোধন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন, সংশোধন আবেদন, সনদ ফি",
+        "chunking_version": "2026-06-07-nfc-token-audit",
+        "content_token_count": 106,
+        "retrieval_token_count": 313,
+        "embedding_model_max_tokens": 8192
+      },
+      "score": 0.48604253172874456,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "birth_and_death_registration_rules_2018_বিধি_২১_01",
+      "content": "Service: birth and death registration\nDocument type: legal_rules\nTitle: জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮\nChapter: সপ্তম অধ্যায়: বিবিধ\nLegal unit: বিধি ২১ ফিস\nContent: (১) আইনের ধারা ১১, ১৩ ও ১৫ তে বর্ণিত বিধান এবং উপ-বিধি (২) এর বিধান সাপেক্ষে, নিবন্ধক নিম্নবর্ণিত টেবিলের কলাম (১) এ উল্লিখিত ক্রমিকের বিপরীতে কলাম (২) এ উল্লিখিত ক্ষেত্রে উহার বিপরীতে কলাম (৩) (১) ও (৩) (২) এ উল্লিখিত হারে ফিস আদায় করিবেন, যথা:\n\n| ক্ষেত্র | দেশে (টাকা) | বিদেশে (ডলার) |\n|---------|-------------|----------------|\n| জন্ম বা মৃত্যুর ৪৫ দিন পর্যন্ত নিবন্ধন | বিনা ফিসে | বিনা ফিসে |\n| জন্ম বা মৃত্যুর ৪৫ দিন পর হইতে ৫ বৎসর পর্যন্ত নিবন্ধন | ২৫ টাকা | ১ মার্কিন ডলার |\n| জন্ম বা মৃত্যুর ৫ বৎসর পর নিবন্ধন | ৫০ টাকা | ১ মার্কিন ডলার |\n| তথ্য সংশোধনের জন্য আবেদন ফি | ১০০ টাকা | ২ মার্কিন ডলার |\n| জন্ম তারিখ ব্যতীত অন্যান্য তথ্য সংশোধন | ৫০ টাকা | ১ মার্কিন ডলার |\n| বাংলা ও ইংরেজিতে মূল সনদ বা সংশোধিত সনদ | বিনা ফিসে | বিনা ফিসে |\n| সনদের নকল সরবরাহ | ৫০ টাকা | ১ মার্কিন ডলার | (২) জমনি ফরম-১৪ বা ক্ষেত্রমত জমনি ফরম-১৫ তে বর্ণিত রসিদ ছাড়া উপ-বিধি (১) এর অধীন নির্ধারিত কোন ফিস আদায় করা যাইবে না এবং বিনা ফিসে বা ফিস মওকুফ করা হইলে উহাও রসিদে উল্লেখ করিতে হইবে: তবে শর্ত থাকে যে, মৃত্যু নিবন্ধনের জন্য জন্ম নিবন্ধন প্রয়োজন হইলে সেক্ষেত্রে জন্ম নিবন্ধনের জন্য কোন ফি প্রযোজ্য হইবে না। (৩) অনলাইনে ফিস আদায়ের একটি সফট্ওয়্যার ব্যবহার করিতে হইবে।",
+      "metadata": {
+        "service": "birth_death_registration",
+        "service_scope": "birth_death",
+        "document_type": "legal_rules",
+        "title": "জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮",
+        "source_file": "birth_and_death_registration_rules_2018.docx",
+        "source_path": "md/birth_and_death_registration_rules_2018.md",
+        "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf",
+        "encoding": "unicode_converted",
+        "language": "bn",
+        "chapter": "সপ্তম অধ্যায়: বিবিধ",
+        "legal_unit_type": "বিধি",
+        "legal_unit_no": "২১",
+        "section_title": "ফিস",
+        "part_index": 1,
+        "search_aliases": "act, amend registration information, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, certificate, certificate correction, civil registration, date of birth correction, death certificate, death certificate correction, death certificate registration, death registration, death registration certificate, fix certificate information, law, legal requirement, legal rule, local government office, name correction, online birth registration, online death registration, registrar office, registration office, registration rule, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম তারিখ সংশোধন, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু নিবন্ধন সংশোধন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন, সংশোধন আবেদন",
+        "chunking_version": "2026-06-07-nfc-token-audit",
+        "content_token_count": 514,
+        "retrieval_token_count": 733,
+        "embedding_model_max_tokens": 8192
+      },
+      "score": 0.8298590993881225,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "birth_and_death_registration_act_2004_ধারা_১৫_01",
+      "content": "Service: birth and death registration\nDocument type: legal_act\nTitle: জন্ম ও মৃত্যু নিবন্ধন আইন, ২০০৪\nChapter: \nLegal unit: ধারা ১৫ নিবন্ধন বহি এবং জন্ম বা মৃত্যু সনদ সংশোধন\nContent: (১) নিবন্ধন বহিতে বা, ক্ষেত্রমত, জন্ম বা মৃত্যু সনদে কোন ভুল তথ্য লিপিবদ্ধ হইয়া থাকিলে, উহা সংশোধনের জন্য নির্ধারিত ফিসহ সংশ্লিষ্ট নিবন্ধকের বরাবরে আবেদন করা যাইবে। (২) জন্ম বা মৃত্যু সনদ প্রদানের ৯০ (নববই) দিনের মধ্যে উপ-ধারা (১) এর অধীন আবেদন প্রাপ্ত হইলে, নিবন্ধক উক্ত আবেদন প্রাপ্তির ৩০ (ত্রিশ) কার্যদিবসের মধ্যে—\n\n- ** (ক)** আবেদন যথাযথ মনে করিলে— (অ) নিবন্ধন বহি বা সনদ সংশোধন করিবেন; (আ) সংশোধিত স্থানে তারিখসহ স্বাক্ষর প্রদান করিবেন; এবং (ই) সংশোধিত আকারে নূতন সনদ প্রদান করিয়া পূর্বের সনদ ফেরত লইবেন। - ** (খ)** আবেদন বিবেচনার যুক্তিসঙ্গত কারণ না থাকিলে, নামঞ্জুর করিয়া আবেদনকারীকে লিখিতভাবে অবহিত করিবেন। (৩) জন্ম বা মৃত্যু সনদ প্রদানের ৯০ (নববই) দিন অতিক্রান্ত হইবার পর আবেদন প্রাপ্ত হইলে, উক্ত আবেদন প্রাপ্তির ১০ (দশ) কার্যদিবসের মধ্যে নিবন্ধক উহা সংশ্লিষ্ট উর্ধ্বতন কর্তৃপক্ষের নিকট প্রেরণ করিবেন:\n\n- **(অ)** দফা (ক), (খ) ও (ঘ) এ উল্লিখিত নিবন্ধক সংশ্লিষ্ট জেলা প্রশাসকের নিকট। - **(আ)** দফা (গ) এ উল্লিখিত নিবন্ধক সংশ্লিষ্ট উপজেলা নির্বাহী অফিসারের নিকট। - **(ই)** দফা (ঙ) এ উল্লিখিত নিবন্ধক রেজিস্ট্রার জেনারেল এর নিকট। (৪) উপ-ধারা (৩) এর অধীন আবেদন প্রাপ্তির ১৫ (পনের) কার্যদিবসের মধ্যে, ক্ষেত্রমত, সংশ্লিষ্ট উপজেলা নির্বাহী অফিসার, জেলা প্রশাসক বা রেজিস্ট্রার জেনারেল উক্ত আবেদন পরীক্ষা করিয়া মঞ্জুর বা নামঞ্জুর আদেশ প্রদান করিয়া সংশ্লিষ্ট নিবন্ধকের বরাবরে প্রেরণ করিবেন। (৫) উপ-ধারা",
+      "metadata": {
+        "service": "birth_death_registration",
+        "service_scope": "birth_death",
+        "document_type": "legal_act",
+        "title": "জন্ম ও মৃত্যু নিবন্ধন আইন, ২০০৪",
+        "source_file": "birth_and_death_registration_act_2004.md",
+        "source_path": "md/birth_and_death_registration_act_2004.md",
+        "source_url": "",
+        "encoding": "",
+        "language": "bn",
+        "chapter": "",
+        "legal_unit_type": "ধারা",
+        "legal_unit_no": "১৫",
+        "section_title": "নিবন্ধন বহি এবং জন্ম বা মৃত্যু সনদ সংশোধন",
+        "part_index": 1,
+        "search_aliases": "act, amend registration information, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, certificate, certificate correction, civil registration, death certificate, death certificate correction, death certificate registration, death registration, death registration certificate, fix certificate information, law, legal requirement, legal rule, local government office, name correction, online birth registration, online death registration, registrar office, registration office, registration rule, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু নিবন্ধন সংশোধন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন, সংশোধন আবেদন",
+        "chunking_version": "2026-06-07-nfc-token-audit",
+        "content_token_count": 528,
+        "retrieval_token_count": 735,
+        "embedding_model_max_tokens": 8192
+      },
+      "score": 0.20563068151473998,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    }
+  ],
+  "selection_trace": {
+    "version": "applicability_v1_family_order",
+    "query_actions": [
+      "correction"
+    ],
+    "query_services": [
+      "birth"
+    ],
+    "decisions": [
+      {
+        "id": "bdris_faq_02_preamble",
+        "decision": "excluded",
+        "reason": "unclassified_action_with_direct_alternative"
+      },
+      {
+        "id": "birth_and_death_registration_rules_2018_বিধি_২_01",
+        "decision": "excluded",
+        "reason": "unclassified_action_with_direct_alternative"
+      },
+      {
+        "id": "birth_and_death_registration_act_2004_ধারা_২১_01",
+        "decision": "excluded",
+        "reason": "unclassified_action_with_direct_alternative"
+      },
+      {
+        "id": "birth_and_death_registration_fees_cleaned_table_full",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "birth_and_death_registration_fees_cleaned_fee_row_05",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "birth_and_death_registration_fees_cleaned_fee_row_04",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "birth_and_death_registration_fees_cleaned_fee_row_06",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "birth_and_death_registration_rules_2018_বিধি_২১_01",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "birth_and_death_registration_act_2004_ধারা_১৫_01",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "application_for_birth_information_correction_cleaned_004_01",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "bdris_faq_01_q01",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "bdris_faq_01_q12",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "birth_and_death_registration_fees_cleaned_fee_row_02",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "birth_and_death_registration_fees_cleaned_fee_row_03",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "birth_and_death_registration_fees_cleaned_fee_row_07",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      }
+    ],
+    "expanded_ids": [],
+    "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+    "budget_order_ids": [
+      "birth_and_death_registration_fees_cleaned_table_full",
+      "birth_and_death_registration_fees_cleaned_fee_row_05",
+      "birth_and_death_registration_fees_cleaned_fee_row_04",
+      "birth_and_death_registration_fees_cleaned_fee_row_06",
+      "birth_and_death_registration_rules_2018_বিধি_২১_01",
+      "birth_and_death_registration_act_2004_ধারা_১৫_01",
+      "application_for_birth_information_correction_cleaned_004_01",
+      "bdris_faq_01_q01",
+      "bdris_faq_01_q12",
+      "birth_and_death_registration_fees_cleaned_fee_row_02",
+      "birth_and_death_registration_fees_cleaned_fee_row_03",
+      "birth_and_death_registration_fees_cleaned_fee_row_07"
+    ],
+    "selected_ids": [
+      "birth_and_death_registration_fees_cleaned_table_full",
+      "birth_and_death_registration_fees_cleaned_fee_row_05",
+      "birth_and_death_registration_fees_cleaned_fee_row_04",
+      "birth_and_death_registration_fees_cleaned_fee_row_06",
+      "birth_and_death_registration_rules_2018_বিধি_২১_01",
+      "birth_and_death_registration_act_2004_ধারা_১৫_01"
+    ],
+    "selected_chars": 4702
+  },
+  "seconds": 11.678,
+  "top5": {
+    "dense": [
+      "birth_and_death_registration_fees_cleaned_fee_row_04",
+      "birth_and_death_registration_fees_cleaned_table_full",
+      "birth_and_death_registration_fees_cleaned_fee_row_05",
+      "birth_and_death_registration_rules_2018_বিধি_২১_01",
+      "bdris_faq_02_preamble"
+    ],
+    "bm25": [
+      "birth_and_death_registration_fees_cleaned_table_full",
+      "birth_and_death_registration_rules_2018_বিধি_২১_01",
+      "birth_and_death_registration_fees_cleaned_fee_row_04",
+      "birth_and_death_registration_fees_cleaned_fee_row_05",
+      "home_registrar_generals_office_birth_and_death_registration_009_01"
+    ],
+    "hybrid": [
+      "birth_and_death_registration_fees_cleaned_table_full",
+      "birth_and_death_registration_fees_cleaned_fee_row_04",
+      "birth_and_death_registration_rules_2018_বিধি_২১_01",
+      "birth_and_death_registration_fees_cleaned_fee_row_05",
+      "birth_and_death_registration_fees_cleaned_fee_row_07"
+    ]
+  }
+}

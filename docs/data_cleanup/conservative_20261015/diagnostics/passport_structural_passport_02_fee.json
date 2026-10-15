@@ -1,0 +1,382 @@
+{
+  "domain": "passport",
+  "variant": "structural",
+  "id": "passport_02_fee",
+  "query": "পাসপোর্ট বানাতে কত টাকা লাগে?",
+  "candidate_ids": [
+    "passport_6f7d900581956bef_v4_0015",
+    "passport_ed7b3ebc56c0094f_v4_0003",
+    "passport_6f7d900581956bef_v4_0010",
+    "passport_5eb6c21efe103a4f_v4_0025",
+    "passport_6f7d900581956bef_v4_0007",
+    "passport_12e10027cfdfeeee_v4_0010",
+    "passport_729010959c882773_v4_0003",
+    "passport_6f7d900581956bef_v4_0011",
+    "passport_6f7d900581956bef_v4_0018",
+    "passport_6e87d0783a373593_v4_0006",
+    "passport_6f7d900581956bef_v4_0030",
+    "passport_ed7b3ebc56c0094f_v4_0002",
+    "passport_3fcbc40c98aa80bc_v4_0002",
+    "passport_6f7d900581956bef_v4_0014",
+    "passport_ed7b3ebc56c0094f_v4_0001"
+  ],
+  "selected_ids": [
+    "passport_12e10027cfdfeeee_v4_0010",
+    "passport_12e10027cfdfeeee_v4_0007",
+    "passport_12e10027cfdfeeee_v4_0008",
+    "passport_12e10027cfdfeeee_v4_0009",
+    "passport_6e87d0783a373593_v4_0006",
+    "passport_ed7b3ebc56c0094f_v4_0003"
+  ],
+  "selected_characters": 5236,
+  "selected_tokens": 1605,
+  "tokenizer": "BGE-M3; not generator tokens",
+  "selected_passages": [
+    {
+      "id": "passport_12e10027cfdfeeee_v4_0010",
+      "content": "e-Passport Fees and Payment Options\ne-Passport Fees and Payment Options > e-Passport Fees for Inside Bangladesh (Including 15% VAT) > e-Passport with 64 pages and 10 years validity\n\nLast updated: 12 July 2026\n\n### e-Passport with 64 pages and 10 years validity\n* **Category:** Inside Bangladesh | 64 pages | 10 years validity | Regular delivery\n  * **Fee:** TK 8,050\n* **Category:** Inside Bangladesh | 64 pages | 10 years validity | Express delivery\n  * **Fee:** TK 10,350\n* **Category:** Inside Bangladesh | 64 pages | 10 years validity | Super Express delivery\n  * **Fee:** TK 13,800\n\n---\n\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_12e10027cfdfeeee",
+        "document_id": "passport_12e10027cfdfeeee",
+        "title": "e-Passport Fees and Payment Options",
+        "section_title": "e-Passport Fees and Payment Options > e-Passport Fees for Inside Bangladesh (Including 15% VAT) > e-Passport with 64 pages and 10 years validity",
+        "document_type": "নির্দেশিকা / ফি ও পেমেন্ট সংক্রান্ত তথ্য",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/e-Passport Fees and Payment Options.md",
+        "source_relative_path": "cleaned_md/e-Passport Fees and Payment Options.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/e-Passport Fees and Payment Options.md",
+        "source_sha256": "9b629ab56ed0caa11414d1f5095cf91d85d179af4e910cfcc93bee44af11d7d8",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/e-Passport Fees and Payment Options.pdf\"]",
+        "document_date": "2026-07-12",
+        "date_verified": false,
+        "audit_flags": "no_web_address",
+        "experimental": true,
+        "body_start": 2657,
+        "body_end": 3040,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/passport/markdown/cleaned_md/e-Passport Fees and Payment Options.md",
+        "context_spans": "[{\"start\": 37, \"end\": 67}]",
+        "cleaned_sha256": "cf004e0cd0f1806088ef95756a196395d0e2acd53196334a8811e6a2ef6e791c"
+      },
+      "score": 0.005123041104525328,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "passport_12e10027cfdfeeee_v4_0007",
+      "content": "e-Passport Fees and Payment Options\ne-Passport Fees and Payment Options > e-Passport Fees for Inside Bangladesh (Including 15% VAT) > e-Passport with 48 pages and 5 years validity\n\nLast updated: 12 July 2026\n\n### e-Passport with 48 pages and 5 years validity\n* **Category:** Inside Bangladesh | 48 pages | 5 years validity | Regular delivery\n  * **Fee:** TK 4,025\n* **Category:** Inside Bangladesh | 48 pages | 5 years validity | Express delivery\n  * **Fee:** TK 6,325\n* **Category:** Inside Bangladesh | 48 pages | 5 years validity | Super Express delivery\n  * **Fee:** TK 8,625\n\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_12e10027cfdfeeee",
+        "document_id": "passport_12e10027cfdfeeee",
+        "title": "e-Passport Fees and Payment Options",
+        "section_title": "e-Passport Fees and Payment Options > e-Passport Fees for Inside Bangladesh (Including 15% VAT) > e-Passport with 48 pages and 5 years validity",
+        "document_type": "নির্দেশিকা / ফি ও পেমেন্ট সংক্রান্ত তথ্য",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/e-Passport Fees and Payment Options.md",
+        "source_relative_path": "cleaned_md/e-Passport Fees and Payment Options.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/e-Passport Fees and Payment Options.md",
+        "source_sha256": "9b629ab56ed0caa11414d1f5095cf91d85d179af4e910cfcc93bee44af11d7d8",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/e-Passport Fees and Payment Options.pdf\"]",
+        "document_date": "2026-07-12",
+        "date_verified": false,
+        "audit_flags": "no_web_address",
+        "experimental": true,
+        "body_start": 1535,
+        "body_end": 1907,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/passport/markdown/cleaned_md/e-Passport Fees and Payment Options.md",
+        "context_spans": "[{\"start\": 37, \"end\": 67}]",
+        "cleaned_sha256": "cf004e0cd0f1806088ef95756a196395d0e2acd53196334a8811e6a2ef6e791c"
+      }
+    },
+    {
+      "id": "passport_12e10027cfdfeeee_v4_0008",
+      "content": "e-Passport Fees and Payment Options\ne-Passport Fees and Payment Options > e-Passport Fees for Inside Bangladesh (Including 15% VAT) > e-Passport with 48 pages and 10 years validity\n\nLast updated: 12 July 2026\n\n### e-Passport with 48 pages and 10 years validity\n* **Category:** Inside Bangladesh | 48 pages | 10 years validity | Regular delivery\n  * **Fee:** TK 5,750\n* **Category:** Inside Bangladesh | 48 pages | 10 years validity | Express delivery\n  * **Fee:** TK 8,050\n* **Category:** Inside Bangladesh | 48 pages | 10 years validity | Super Express delivery\n  * **Fee:** TK 10,350\n\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_12e10027cfdfeeee",
+        "document_id": "passport_12e10027cfdfeeee",
+        "title": "e-Passport Fees and Payment Options",
+        "section_title": "e-Passport Fees and Payment Options > e-Passport Fees for Inside Bangladesh (Including 15% VAT) > e-Passport with 48 pages and 10 years validity",
+        "document_type": "নির্দেশিকা / ফি ও পেমেন্ট সংক্রান্ত তথ্য",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/e-Passport Fees and Payment Options.md",
+        "source_relative_path": "cleaned_md/e-Passport Fees and Payment Options.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/e-Passport Fees and Payment Options.md",
+        "source_sha256": "9b629ab56ed0caa11414d1f5095cf91d85d179af4e910cfcc93bee44af11d7d8",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/e-Passport Fees and Payment Options.pdf\"]",
+        "document_date": "2026-07-12",
+        "date_verified": false,
+        "audit_flags": "no_web_address",
+        "experimental": true,
+        "body_start": 1907,
+        "body_end": 2284,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/passport/markdown/cleaned_md/e-Passport Fees and Payment Options.md",
+        "context_spans": "[{\"start\": 37, \"end\": 67}]",
+        "cleaned_sha256": "cf004e0cd0f1806088ef95756a196395d0e2acd53196334a8811e6a2ef6e791c"
+      }
+    },
+    {
+      "id": "passport_12e10027cfdfeeee_v4_0009",
+      "content": "e-Passport Fees and Payment Options\ne-Passport Fees and Payment Options > e-Passport Fees for Inside Bangladesh (Including 15% VAT) > e-Passport with 64 pages and 5 years validity\n\nLast updated: 12 July 2026\n\n### e-Passport with 64 pages and 5 years validity\n* **Category:** Inside Bangladesh | 64 pages | 5 years validity | Regular delivery\n  * **Fee:** TK 6,325\n* **Category:** Inside Bangladesh | 64 pages | 5 years validity | Express delivery\n  * **Fee:** TK 8,625\n* **Category:** Inside Bangladesh | 64 pages | 5 years validity | Super Express delivery\n  * **Fee:** TK 12,075\n\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_12e10027cfdfeeee",
+        "document_id": "passport_12e10027cfdfeeee",
+        "title": "e-Passport Fees and Payment Options",
+        "section_title": "e-Passport Fees and Payment Options > e-Passport Fees for Inside Bangladesh (Including 15% VAT) > e-Passport with 64 pages and 5 years validity",
+        "document_type": "নির্দেশিকা / ফি ও পেমেন্ট সংক্রান্ত তথ্য",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/e-Passport Fees and Payment Options.md",
+        "source_relative_path": "cleaned_md/e-Passport Fees and Payment Options.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/e-Passport Fees and Payment Options.md",
+        "source_sha256": "9b629ab56ed0caa11414d1f5095cf91d85d179af4e910cfcc93bee44af11d7d8",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/e-Passport Fees and Payment Options.pdf\"]",
+        "document_date": "2026-07-12",
+        "date_verified": false,
+        "audit_flags": "no_web_address",
+        "experimental": true,
+        "body_start": 2284,
+        "body_end": 2657,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/passport/markdown/cleaned_md/e-Passport Fees and Payment Options.md",
+        "context_spans": "[{\"start\": 37, \"end\": 67}]",
+        "cleaned_sha256": "cf004e0cd0f1806088ef95756a196395d0e2acd53196334a8811e6a2ef6e791c"
+      }
+    },
+    {
+      "id": "passport_6e87d0783a373593_v4_0006",
+      "content": "5 Steps to your e-Passport\n5 Steps to your e-Passport > Application Steps > Step 3: Pay passport fees\n\n### Step 3: Pay passport fees\n* **Action/Resource:** For Passport Fees and Bank List Click Here\n\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_6e87d0783a373593",
+        "document_id": "passport_6e87d0783a373593",
+        "title": "5 Steps to your e-Passport",
+        "section_title": "5 Steps to your e-Passport > Application Steps > Step 3: Pay passport fees",
+        "document_type": "সাধারণ তথ্য",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/5 Steps to your e-Passport.md",
+        "source_relative_path": "cleaned_md/5 Steps to your e-Passport.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/5 Steps to your e-Passport.md",
+        "source_sha256": "20cf0be15ba261a9be55252bdd4da3d3ebe418c14e4722ec7c509b94bbc0c348",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/5 Steps to your e-Passport.pdf\"]",
+        "document_date": "2026-06-03",
+        "date_verified": false,
+        "audit_flags": "no_web_address",
+        "experimental": true,
+        "body_start": 418,
+        "body_end": 515,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/passport/markdown/cleaned_md/5 Steps to your e-Passport.md",
+        "context_spans": "[]",
+        "cleaned_sha256": "c0f9c7bfa3cdb7f3f252d8abdf93f42c56bf78e838359bc2d80fd19e33ed3dfc"
+      },
+      "score": 0.0021096335258334875,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "passport_ed7b3ebc56c0094f_v4_0003",
+      "content": "মেশিন রিডেবল পাসপোর্ট (এমআরপি)\nমেশিন রিডেবল পাসপোর্ট (এমআরপি) > প্রয়োজনীয় তথ্য ও নির্দেশাবলী\n\nমেশিন রিডেবল পাসপোর্ট বা এমআরপি হচ্ছে এমন একটি পাসপোর্ট যাতে আবেদনকারীর ব্যক্তিগত তথ্য জলছাপের মাধ্যমে ছবির নিচে লুক্কায়িত থাকে এবং একই সঙ্গে এতে থাকে একটি \"মেশিন রিডেবল জোন (MRZ)” যা পাসপোর্ট বহনকারীর ব্যক্তিগত তথ্য, বিবরণী ধারণ করে। MRZ লাইনে লুকায়িত তথ্য শুধুমাত্র নির্দিষ্ট মেশিনের মাধ্যমে পড়া যায় ফলে ভ্রমণ ডকুমেন্ট এর নিরাপত্তা বৃদ্ধি পায় এবং MRZ লাইন দ্রুততম সময়ে পড়া যায় ফলে ইমিগ্রেশনে প্রক্রিয়াকরণ সময় কম লাগে। এমআরপি কম্পিউটার এ মুদ্রিত।\n\n## প্রয়োজনীয় তথ্য ও নির্দেশাবলী\n\n1. সরকারি কর্মকর্তা/ কর্মচারী, সরকারি চাকরিজীবীগণের স্বামী/স্ত্রী এবং তাদের নির্ভরশীল ১৫ (পনের) বছরের কম বয়সী সন্তান, ৫ (পাঁচ)/১০ (দশ) বৎসরের অতিক্রান্ত, সমর্পণকৃত (সারেন্ডারড) দের জন্য একটি ফরম ও অন্যান্যদের ক্ষেত্রে নতুন পাসপোর্টের জন্য ২ (দুই) কপি পূরণকৃত পাসপোর্ট ফরম দাখিল করতে হবে।\n2. অপ্রাপ্তবয়স্ক (১৫ বছরের কম) আবেদনকারীর ক্ষেত্রে আবেদনকারীর পিতা ও মাতার একটি করে রঙিন ছবি (৩০ x ২৫ মিঃমিঃ) আঠা দিয়ে লাগানোর পর সত্যায়ন করতে হবে।\n3. জাতীয় পরিচয়পত্র অথবা জন্ম নিবন্ধন সনদ এবং প্রযোজ্য ক্ষেত্রে প্রাসঙ্গিক টেকনক্যাল সনদসমূহের (যেমন ডাক্তার, ইঞ্জিনিয়ার, ড্রাইভার ইত্যাদি) সত্যায়িত ফটোকপি।\n4. যে সকল ব্যক্তিগণ পাসপোর্টের আবেদনপত্র ও ছবি প্রত্যায়ন ও সত্যায়ন করতে পারবেন – সংসদ সদস্য, সিটি কর্পোরেশনের মেয়র, ডেপুটি মেয়র ও কাউন্সিলরগণ, গেজেটেড কর্মকর্তা, পাবলিক বিশ্ববিদ্যালয়ের শিক্ষক, উপজেলা পরিষদের চেয়ারম্যান ও ভাইস চেয়ারম্যান, পৌরসভার মেয়র ও পৌর কাউন্সিলরগণ, বেসরকারি বিশ্ববিদ্যালয়ের অধ্যাপক, বেসরকারি কলেজের অধ্যক্ষ, বেসরকারি উচ্চ বিদ্যালয়ের প্রধান শিক্ষক, জাতীয় দৈনিক পত্রিকার সম্পাদক, নোটারী পাবলিক ও আধাসরকারি/স্বায়ত্তশাসিত/রাষ্ট্রায়ত্ত সংস্থার জাতীয় বেতন স্কেলের ৭ম ও তদুর্ধ্ব গ্রেডের কর্মকর্তা।\n5. সরকারি কর্মকর্তা/কর্মচারী ও তাদের স্বামী/স্ত্রী এবং সরকারি চাকুরীজীবিগণের ১৫ (পনের) বৎসরের কম বয়সের সন্তান সাধারণ ফি জমা করে জরুরী সুবিধা পাবেন।\n6. প্রযোজ্য ক্ষেত্রে প্রাসঙ্গিক জিও (GO)/এনওসি (NOC) দাখিল করতে হবে।\n7. অবসরপ্রাপ্ত সরকারি চাকুরীজীবি ও তাদের নির্ভরশীল স্বামী/স্ত্রী সাধারণ ফি প্রদান করে জরুরী সুবিধা পাবেন। এক্ষেত্রে অবসর গ্রহণের সনদ দাখিল করতে হবে।\n8. পাসপোর্ট সমর্পণকৃতদের (সারেন্ডারড) আবেদনপত্রের সাথে অবশ্যই পূর্বের পাসপোর্ট নিয়ে আসতে হবে।\n9. কূটনৈতিক পাসপোর্ট লাভের যোগ্য আবেদনকারীগণকে পূরণকৃত ফরম ও সংযুক্তিসমূহ পররাষ্ট্র মন্ত্রনালয়ে জমা দিতে হবে।\n10. শিক্ষাগত বা চাকুরীসূত্রে প্রাপ্ত পদবীসমূহ (যেমন ডাক্তার, ইঞ্জিনিয়ার, ডক্টর, পিএইচডি ইত্যাদি) নামের অংশ হিসেবে পরিগণিত হবে না। ফরমের ক্রমিক নং ৩ পূরনের ক্ষেত্রে, একাধিক অংশ থাকলে প্রতি অংশের মাঝখানে ১টি ঘর শূন্য রেখে পূরণ করতে হবে। আবেদনকারীর পিতা, মাতা, স্বামী/স্ত্রী মৃত হলেও তার/তাদের নামের পূর্বে 'মৃত/মরহুম/Late' লেখা যাবে না।\n11. ছবি তোলার সময় সাদা পোশাক, সাদা টুপি এবং চোখে চশমা পরা যাবে না।\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_ed7b3ebc56c0094f",
+        "document_id": "passport_ed7b3ebc56c0094f",
+        "title": "মেশিন রিডেবল পাসপোর্ট (এমআরপি)",
+        "section_title": "মেশিন রিডেবল পাসপোর্ট (এমআরপি) > প্রয়োজনীয় তথ্য ও নির্দেশাবলী",
+        "document_type": "সাধারণ তথ্য ও নির্দেশিকা",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/মেশিন রিডেবল পাসপোর্ট(এমআরপি).md",
+        "source_relative_path": "cleaned_md/মেশিন রিডেবল পাসপোর্ট(এমআরপি).md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/মেশিন রিডেবল পাসপোর্ট(এমআরপি).md",
+        "source_sha256": "a10a5262eb9bfd3fd6a7a6363e32622101ef48a0eee755f04c5f25fea5df8026",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/মেশিন রিডেবল পাসপোর্ট(এমআরপি).pdf\"]",
+        "document_date": "N/A",
+        "date_verified": false,
+        "audit_flags": "",
+        "experimental": true,
+        "body_start": 1139,
+        "body_end": 3277,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/passport/markdown/cleaned_md/মেশিন রিডেবল পাসপোর্ট(এমআরপি).md",
+        "context_spans": "[{\"start\": 32, \"end\": 493}]",
+        "cleaned_sha256": "b7cbed9929029a59c0d8064822e74516a317d588c536d36fdb50ad8d6b3e67e3"
+      },
+      "score": 0.00881878286600113,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    }
+  ],
+  "selection_trace": {
+    "version": "applicability_v1_family_order",
+    "query_actions": [],
+    "query_services": [
+      "passport"
+    ],
+    "decisions": [
+      {
+        "id": "passport_6f7d900581956bef_v4_0015",
+        "decision": "excluded",
+        "reason": "different_service"
+      },
+      {
+        "id": "passport_5eb6c21efe103a4f_v4_0025",
+        "decision": "excluded",
+        "reason": "historical_alternative_requires_explicit_scope"
+      },
+      {
+        "id": "passport_12e10027cfdfeeee_v4_0010",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_12e10027cfdfeeee_v4_0007",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_12e10027cfdfeeee_v4_0008",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_12e10027cfdfeeee_v4_0009",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_6e87d0783a373593_v4_0006",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_ed7b3ebc56c0094f_v4_0003",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_6f7d900581956bef_v4_0010",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "passport_6f7d900581956bef_v4_0007",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "passport_729010959c882773_v4_0003",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "passport_6f7d900581956bef_v4_0011",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "passport_6f7d900581956bef_v4_0018",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "passport_6f7d900581956bef_v4_0030",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "passport_ed7b3ebc56c0094f_v4_0002",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "passport_3fcbc40c98aa80bc_v4_0002",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "passport_ed7b3ebc56c0094f_v4_0001",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "passport_6f7d900581956bef_v4_0014",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      }
+    ],
+    "expanded_ids": [
+      "passport_12e10027cfdfeeee_v4_0007",
+      "passport_12e10027cfdfeeee_v4_0008",
+      "passport_12e10027cfdfeeee_v4_0009"
+    ],
+    "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+    "budget_order_ids": [
+      "passport_12e10027cfdfeeee_v4_0010",
+      "passport_12e10027cfdfeeee_v4_0007",
+      "passport_12e10027cfdfeeee_v4_0008",
+      "passport_12e10027cfdfeeee_v4_0009",
+      "passport_6e87d0783a373593_v4_0006",
+      "passport_ed7b3ebc56c0094f_v4_0003",
+      "passport_6f7d900581956bef_v4_0010",
+      "passport_6f7d900581956bef_v4_0007",
+      "passport_729010959c882773_v4_0003",
+      "passport_6f7d900581956bef_v4_0011",
+      "passport_6f7d900581956bef_v4_0018",
+      "passport_6f7d900581956bef_v4_0030",
+      "passport_ed7b3ebc56c0094f_v4_0002",
+      "passport_3fcbc40c98aa80bc_v4_0002",
+      "passport_ed7b3ebc56c0094f_v4_0001",
+      "passport_6f7d900581956bef_v4_0014"
+    ],
+    "selected_ids": [
+      "passport_12e10027cfdfeeee_v4_0010",
+      "passport_12e10027cfdfeeee_v4_0007",
+      "passport_12e10027cfdfeeee_v4_0008",
+      "passport_12e10027cfdfeeee_v4_0009",
+      "passport_6e87d0783a373593_v4_0006",
+      "passport_ed7b3ebc56c0094f_v4_0003"
+    ],
+    "selected_chars": 5236
+  },
+  "seconds": 14.801,
+  "top5": {
+    "dense": [
+      "passport_6f7d900581956bef_v4_0015",
+      "passport_6f7d900581956bef_v4_0010",
+      "passport_6f7d900581956bef_v4_0011",
+      "passport_6f7d900581956bef_v4_0007",
+      "passport_729010959c882773_v4_0003"
+    ],
+    "bm25": [
+      "passport_6f7d900581956bef_v4_0015",
+      "passport_ed7b3ebc56c0094f_v4_0001",
+      "passport_23d845d3ab38ea43_v4_0050",
+      "passport_ed7b3ebc56c0094f_v4_0005",
+      "passport_bc66966daedfe968_v4_0002"
+    ],
+    "hybrid": [
+      "passport_6f7d900581956bef_v4_0015",
+      "passport_ed7b3ebc56c0094f_v4_0003",
+      "passport_3fcbc40c98aa80bc_v4_0002",
+      "passport_6f7d900581956bef_v4_0018",
+      "passport_ed7b3ebc56c0094f_v4_0002"
+    ]
+  }
+}

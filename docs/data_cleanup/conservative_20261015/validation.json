@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "errors": [],
+  "domains": [
+    {
+      "domain": "birth_death_registration",
+      "retained_chunks": 190,
+      "archived_heading_chunks": 0,
+      "source_documents_checked": 0,
+      "exact_content_duplicate_groups": []
+    },
+    {
+      "domain": "passport",
+      "retained_chunks": 304,
+      "archived_heading_chunks": 57,
+      "source_documents_checked": 30,
+      "exact_content_duplicate_groups": []
+    },
+    {
+      "domain": "brta",
+      "retained_chunks": 2864,
+      "archived_heading_chunks": 297,
+      "source_documents_checked": 132,
+      "exact_content_duplicate_groups": []
+    }
+  ],
+  "scope": "Canonical text equivalence, exact heading exclusions, complete source ownership, hashes and token limits; not OCR correctness."
+}

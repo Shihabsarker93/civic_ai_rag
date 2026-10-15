@@ -1,0 +1,355 @@
+{
+  "domain": "passport",
+  "variant": "baseline",
+  "id": "passport_08_birth_date",
+  "query": "পাসপোর্টে জন্মতারিখ পরিবর্তন করা যায় কি?",
+  "candidate_ids": [
+    "passport_3fcbc40c98aa80bc_v2_0007",
+    "passport_5eb6c21efe103a4f_v2_0033",
+    "passport_23d845d3ab38ea43_v2_0019",
+    "passport_a4d61a4d583daa54_v2_0012",
+    "passport_3fcbc40c98aa80bc_v2_0004",
+    "passport_3fcbc40c98aa80bc_v2_0005",
+    "passport_3fcbc40c98aa80bc_v2_0002",
+    "passport_a4d61a4d583daa54_v2_0020",
+    "passport_a4d61a4d583daa54_v2_0007",
+    "passport_a4d61a4d583daa54_v2_0017",
+    "passport_a4d61a4d583daa54_v2_0019",
+    "passport_ed7b3ebc56c0094f_v2_0003",
+    "passport_23d845d3ab38ea43_v2_0006",
+    "passport_9f4e9ffe9f2a07f4_v2_0006",
+    "passport_049144a6810ecbbf_v2_0002"
+  ],
+  "selected_ids": [
+    "passport_3fcbc40c98aa80bc_v2_0007",
+    "passport_3fcbc40c98aa80bc_v2_0002",
+    "passport_9f4e9ffe9f2a07f4_v2_0006",
+    "passport_049144a6810ecbbf_v2_0002",
+    "passport_23d845d3ab38ea43_v2_0019",
+    "passport_3fcbc40c98aa80bc_v2_0004"
+  ],
+  "selected_characters": 3965,
+  "selected_tokens": 1188,
+  "tokenizer": "BGE-M3; not generator tokens",
+  "selected_passages": [
+    {
+      "id": "passport_3fcbc40c98aa80bc_v2_0007",
+      "content": "পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর নিয়মাবলী ও আবেদন ফরম\nপাসপোর্ট (এমআরপি) রি-ইস্যু/তথ্য পরিবর্তন/সংশোধন এর নিয়মাবলী ও আবেদন ফরম > তথ্য পরিবর্তনের জন্য প্রয়োজনীয় কাগজপত্র (এমআরপি রি-ইস্যু) > ৪. জন্ম তারিখ পরিবর্তন\n\n### ৪. জন্ম তারিখ পরিবর্তন\n* **পরিবর্তনযোগ্য তথ্য:** জন্ম তারিখ পরিবর্তন\n* **প্রয়োজনীয় কাগজপত্র / শর্ত:** পরিবর্তন যোগ্য নহে।\n\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_3fcbc40c98aa80bc",
+        "document_id": "passport_3fcbc40c98aa80bc",
+        "title": "পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর নিয়মাবলী ও আবেদন ফরম",
+        "section_title": "পাসপোর্ট (এমআরপি) রি-ইস্যু/তথ্য পরিবর্তন/সংশোধন এর নিয়মাবলী ও আবেদন ফরম > তথ্য পরিবর্তনের জন্য প্রয়োজনীয় কাগজপত্র (এমআরপি রি-ইস্যু) > ৪. জন্ম তারিখ পরিবর্তন",
+        "document_type": "সাধারণ তথ্য / নির্দেশিকা",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর নিয়মাবলী.md",
+        "source_relative_path": "cleaned_md/পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর নিয়মাবলী.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর নিয়মাবলী.md",
+        "source_sha256": "c78d5d5c11702f2a935412c5bd0595c11e7f015a480d70e6f32f03c9fecc6811",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর নিয়মাবলী.pdf\"]",
+        "document_date": "2026-09-16",
+        "date_verified": false,
+        "audit_flags": "no_web_address",
+        "experimental": true,
+        "body_start": 1681,
+        "body_end": 1810,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": false
+      },
+      "score": 0.9640507698059082,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "passport_3fcbc40c98aa80bc_v2_0002",
+      "content": "পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর নিয়মাবলী ও আবেদন ফরম\nপাসপোর্ট (এমআরপি) রি-ইস্যু/তথ্য পরিবর্তন/সংশোধন এর নিয়মাবলী ও আবেদন ফরম > সাধারণ নিয়মাবলী ও প্রয়োজনীয় শর্তাবলী\n\n## সাধারণ নিয়মাবলী ও প্রয়োজনীয় শর্তাবলী\n\nপাসপোর্ট নবায়ন এর জন্য এই ফরমটি পূরণ করে বর্তমান পাসপোর্ট এর ফটোকপি ও ব্যাংকে টাকা জমার রশিদ সংযুক্ত করতে হবে এবং মূল পাসপোর্টটি অবশ্যই সঙ্গে নিয়ে আসতে হবে। \n\nতথ্য পরিবর্তন/সংশোধনের ক্ষেত্রে সংশ্লিষ্ট প্রমানপত্র সংযুক্ত করতে হবে।\n\n* **ক) সরকারি কর্মকর্তা ও স্বায়ত্ত্বশাসিত প্রতিষ্ঠানের ক্ষেত্রে বিশেষ জরুরি সুবিধা:** \n  সরকারি, আধাসরকারী, স্বায়ত্তশাসিত ও রাষ্ট্রায়ত্ত সংস্থার স্থায়ী কর্মকর্তা/ কর্মচারী ও সরকারি চাকুরীজীবির স্বামী/স্ত্রী, এবং সরকারি চাকুরীজীবির নির্ভরশীল ১৫ (পনের) বৎসরের কম বয়সী সন্তান সাধারণ ফি জমা করে জরুরি সুবিধা পাবেন। এক্ষেত্রে নিজ নিজ প্রতিষ্ঠান থেকে অনাপত্তি সনদ (NOC) ওয়েব সাইটে আপলোড পূর্বক দাখিল করতে হবে।\n\n* **খ) অবসরপ্রাপ্ত সরকারি চাকুরীজীবীদের সুবিধা:** \n  অবসরপ্রাপ্ত সরকারি চাকুরীজীবি ও তাদের স্বামী/স্ত্রী সাধারণ ফি জমা করে জরুরি সুবিধা পাবেন। এক্ষেত্রে অবসরের সনদ জমা দিতে হবে।\n\n---\n\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_3fcbc40c98aa80bc",
+        "document_id": "passport_3fcbc40c98aa80bc",
+        "title": "পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর নিয়মাবলী ও আবেদন ফরম",
+        "section_title": "পাসপোর্ট (এমআরপি) রি-ইস্যু/তথ্য পরিবর্তন/সংশোধন এর নিয়মাবলী ও আবেদন ফরম > সাধারণ নিয়মাবলী ও প্রয়োজনীয় শর্তাবলী",
+        "document_type": "সাধারণ তথ্য / নির্দেশিকা",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর নিয়মাবলী.md",
+        "source_relative_path": "cleaned_md/পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর নিয়মাবলী.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর নিয়মাবলী.md",
+        "source_sha256": "c78d5d5c11702f2a935412c5bd0595c11e7f015a480d70e6f32f03c9fecc6811",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর নিয়মাবলী.pdf\"]",
+        "document_date": "2026-09-16",
+        "date_verified": false,
+        "audit_flags": "no_web_address",
+        "experimental": true,
+        "body_start": 76,
+        "body_end": 948,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": false
+      },
+      "score": 0.0729125514626503,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "passport_9f4e9ffe9f2a07f4_v2_0006",
+      "content": "ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী\nই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী > তথ্য সূত্র ও সংশোধনী তথ্য\n\n## তথ্য সূত্র ও সংশোধনী তথ্য\n\n* **তথ্য সূত্র ১:** বহিরাগমন শাখা ১, সুরক্ষা সেবা বিভাগ, স্বরাষ্ট্র মন্ত্রণালয় স্মারক নং ৫৮.০০.০০০০.০৪০.০১.০০৩.১৬-১২৩৪\n* **তথ্য সূত্র ২:** নিরাপত্তা ও বহিরাগমন অনুবিভাগ, ৫৮.০০.০০০.০৪৩.৯৯.০২২.২২.২২ (৬৫ বছর উর্ধ বয়সী নাগরিকের ০৫ বছরের পাসপোর্ট হবার শর্তটি বাতিল) -ক্রমিক নং ১০।",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_9f4e9ffe9f2a07f4",
+        "document_id": "passport_9f4e9ffe9f2a07f4",
+        "title": "ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী",
+        "section_title": "ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী > তথ্য সূত্র ও সংশোধনী তথ্য",
+        "document_type": "নির্দেশিকা",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী.md",
+        "source_relative_path": "cleaned_md/ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী.md",
+        "source_sha256": "f0bc6e1384dd491baff1dc91061abdd516b283e0e2751cdd793151b09095c61b",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী.pdf\"]",
+        "document_date": "2026-08-03",
+        "date_verified": false,
+        "audit_flags": "no_web_address",
+        "experimental": true,
+        "body_start": 3652,
+        "body_end": 3959,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": false
+      },
+      "score": 0.003295409493148327,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "passport_049144a6810ecbbf_v2_0002",
+      "content": "পাসপোর্টে \\\"No Visa Required for Travel to Bangladesh (NVR)\\\" সীল প্রদান প্রসঙ্গে।\nপাসপোর্টে \"No Visa Required for Travel to Bangladesh (NVR)\" সীল প্রদান সংক্রান্ত পরিপত্র > ১. ভূমিকা\n\n## ১. ভূমিকা\nউপর্যুক্ত সূত্রসমূহে বর্ণিত বিষয়ে জারীকৃত পরিপত্র নিম্নরূপ সংশোধন, সংযোজন ও পরিবর্তন করা হইল:\n\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_049144a6810ecbbf",
+        "document_id": "passport_049144a6810ecbbf",
+        "title": "পাসপোর্টে \\\"No Visa Required for Travel to Bangladesh (NVR)\\\" সীল প্রদান প্রসঙ্গে।",
+        "section_title": "পাসপোর্টে \"No Visa Required for Travel to Bangladesh (NVR)\" সীল প্রদান সংক্রান্ত পরিপত্র > ১. ভূমিকা",
+        "document_type": "পরিপত্র",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/পাসপোর্টে No Visa Required for Travel to Bangladesh (NVR) সীল প্রদান প্রসঙ্গে.md",
+        "source_relative_path": "cleaned_md/পাসপোর্টে No Visa Required for Travel to Bangladesh (NVR) সীল প্রদান প্রসঙ্গে.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/পাসপোর্টে No Visa Required for Travel to Bangladesh (NVR) সীল প্রদান প্রসঙ্গে.md",
+        "source_sha256": "e84036cc777182f32e82f550ea3723a180d9400fb47611c91502d67eeaa47b9b",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/NVR (No Visa Required for Travel to Bangladesh).pdf\"]",
+        "document_date": "2012-08-27",
+        "date_verified": false,
+        "audit_flags": "no_web_address",
+        "experimental": true,
+        "body_start": 605,
+        "body_end": 714,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": false
+      },
+      "score": 0.00044015582534484565,
+      "retrievers": [
+        "bm25",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "passport_23d845d3ab38ea43_v2_0019",
+      "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 4. Application & Processing (আবেদন ও প্রক্রিয়াকরণ) > 4.1 Data Changes Compared to MRP / তথ্য পরিবর্তন সংক্রান্ত নিয়ম\n\n### 4.1 Data Changes Compared to MRP / তথ্য পরিবর্তন সংক্রান্ত নিয়ম\n- **Category:** Application & Processing\n- **Topic:** Updating Personal Details during Application\n- **English Question:** Some of my data changed compared to my previous passport - how can I apply?\n- **Bengali Question (প্রশ্ন):** আমার পূর্বের এমআরপি পাসপোর্টের তুলনায় আমার কিছু ডেটা পরিবর্তিত হয়েছে - আমি কীভাবে আবেদন করতে পারি?\n- **English Answer:** It is normal that some data may change over time (e.g., present address, profession, emergency contact information, or marital status). Please submit the most recent data with your ePassport application. Provide supporting documents for changes (e.g., Professional Certificate, Marriage Certificate). Major changes like name or date of birth require official documents like NID/BRC and previous passport.\n- **Bengali Answer (উত্তর):** সময়ের সাথে সাথে কিছু তথ্য পরিবর্তিত হওয়া স্বাভাবিক (যেমন: বর্তমান ঠিকানা, পেশা, জরুরি যোগাযোগ বা বৈবাহিক অবস্থা)। ই-পাসপোর্ট আবেদনে আপনার সর্বশেষ তথ্য প্রদান করুন এবং পরিবর্তনের স্বপক্ষে প্রয়োজনীয় দলিল (যেমন: পেশাগত সনদ, বিবাহ সনদ) জমা দিন। নাম বা জন্ম তারিখ পরিবর্তনের ক্ষেত্রে এনআইডি (NID)/বিআরসি (BRC) এবং আগের পাসপোর্ট আবশ্যক।\n\n---\n\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_23d845d3ab38ea43",
+        "document_id": "passport_23d845d3ab38ea43",
+        "title": "Bangladesh_ePassport_FAQ",
+        "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 4. Application & Processing (আবেদন ও প্রক্রিয়াকরণ) > 4.1 Data Changes Compared to MRP / তথ্য পরিবর্তন সংক্রান্ত নিয়ম",
+        "document_type": "document",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+        "original_paths": "[]",
+        "document_date": "unknown",
+        "date_verified": false,
+        "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+        "experimental": true,
+        "body_start": 11832,
+        "body_end": 13032,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": true
+      },
+      "score": 0.7398812174797058,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "passport_3fcbc40c98aa80bc_v2_0004",
+      "content": "পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর নিয়মাবলী ও আবেদন ফরম\nপাসপোর্ট (এমআরপি) রি-ইস্যু/তথ্য পরিবর্তন/সংশোধন এর নিয়মাবলী ও আবেদন ফরম > তথ্য পরিবর্তনের জন্য প্রয়োজনীয় কাগজপত্র (এমআরপি রি-ইস্যু) > ১. নিজের নাম/পিতা/মাতার নাম আংশিক পরিবর্তন\n\n### ১. নিজের নাম/পিতা/মাতার নাম আংশিক পরিবর্তন\n* **পরিবর্তনযোগ্য তথ্য:** নিজের নাম / পিতা / মাতার নাম আংশিক পরিবর্তন\n* **প্রয়োজনীয় কাগজপত্র / শর্ত:** পরিবর্তন যোগ্য নহে।\n\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_3fcbc40c98aa80bc",
+        "document_id": "passport_3fcbc40c98aa80bc",
+        "title": "পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর নিয়মাবলী ও আবেদন ফরম",
+        "section_title": "পাসপোর্ট (এমআরপি) রি-ইস্যু/তথ্য পরিবর্তন/সংশোধন এর নিয়মাবলী ও আবেদন ফরম > তথ্য পরিবর্তনের জন্য প্রয়োজনীয় কাগজপত্র (এমআরপি রি-ইস্যু) > ১. নিজের নাম/পিতা/মাতার নাম আংশিক পরিবর্তন",
+        "document_type": "সাধারণ তথ্য / নির্দেশিকা",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর নিয়মাবলী.md",
+        "source_relative_path": "cleaned_md/পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর নিয়মাবলী.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর নিয়মাবলী.md",
+        "source_sha256": "c78d5d5c11702f2a935412c5bd0595c11e7f015a480d70e6f32f03c9fecc6811",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর নিয়মাবলী.pdf\"]",
+        "document_date": "2026-09-16",
+        "date_verified": false,
+        "audit_flags": "no_web_address",
+        "experimental": true,
+        "body_start": 1122,
+        "body_end": 1295,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": false
+      },
+      "score": 0.08637452870607376,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    }
+  ],
+  "selection_trace": {
+    "version": "applicability_v1_family_order",
+    "query_actions": [
+      "correction"
+    ],
+    "query_services": [
+      "birth",
+      "passport"
+    ],
+    "decisions": [
+      {
+        "id": "passport_5eb6c21efe103a4f_v2_0033",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_a4d61a4d583daa54_v2_0012",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_a4d61a4d583daa54_v2_0020",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_ed7b3ebc56c0094f_v2_0003",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_a4d61a4d583daa54_v2_0007",
+        "decision": "excluded",
+        "reason": "unclassified_action_with_direct_alternative"
+      },
+      {
+        "id": "passport_a4d61a4d583daa54_v2_0017",
+        "decision": "excluded",
+        "reason": "unclassified_action_with_direct_alternative"
+      },
+      {
+        "id": "passport_a4d61a4d583daa54_v2_0019",
+        "decision": "excluded",
+        "reason": "unclassified_action_with_direct_alternative"
+      },
+      {
+        "id": "passport_3fcbc40c98aa80bc_v2_0007",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_3fcbc40c98aa80bc_v2_0002",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_9f4e9ffe9f2a07f4_v2_0006",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_049144a6810ecbbf_v2_0002",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_23d845d3ab38ea43_v2_0019",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_3fcbc40c98aa80bc_v2_0004",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_3fcbc40c98aa80bc_v2_0005",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "passport_23d845d3ab38ea43_v2_0006",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      }
+    ],
+    "expanded_ids": [],
+    "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+    "budget_order_ids": [
+      "passport_3fcbc40c98aa80bc_v2_0007",
+      "passport_3fcbc40c98aa80bc_v2_0002",
+      "passport_9f4e9ffe9f2a07f4_v2_0006",
+      "passport_049144a6810ecbbf_v2_0002",
+      "passport_23d845d3ab38ea43_v2_0019",
+      "passport_3fcbc40c98aa80bc_v2_0004",
+      "passport_3fcbc40c98aa80bc_v2_0005",
+      "passport_23d845d3ab38ea43_v2_0006"
+    ],
+    "selected_ids": [
+      "passport_3fcbc40c98aa80bc_v2_0007",
+      "passport_3fcbc40c98aa80bc_v2_0002",
+      "passport_9f4e9ffe9f2a07f4_v2_0006",
+      "passport_049144a6810ecbbf_v2_0002",
+      "passport_23d845d3ab38ea43_v2_0019",
+      "passport_3fcbc40c98aa80bc_v2_0004"
+    ],
+    "selected_chars": 3965
+  },
+  "seconds": 6.898,
+  "top5": {
+    "dense": [
+      "passport_3fcbc40c98aa80bc_v2_0007",
+      "passport_23d845d3ab38ea43_v2_0019",
+      "passport_5eb6c21efe103a4f_v2_0033",
+      "passport_3fcbc40c98aa80bc_v2_0005",
+      "passport_3fcbc40c98aa80bc_v2_0004"
+    ],
+    "bm25": [
+      "passport_23d845d3ab38ea43_v2_0006",
+      "passport_049144a6810ecbbf_v2_0002",
+      "passport_23d845d3ab38ea43_v2_0042",
+      "passport_23d845d3ab38ea43_v2_0016",
+      "passport_23d845d3ab38ea43_v2_0005"
+    ],
+    "hybrid": [
+      "passport_3fcbc40c98aa80bc_v2_0007",
+      "passport_23d845d3ab38ea43_v2_0019",
+      "passport_5eb6c21efe103a4f_v2_0033",
+      "passport_3fcbc40c98aa80bc_v2_0005",
+      "passport_3fcbc40c98aa80bc_v2_0004"
+    ]
+  }
+}

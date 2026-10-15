@@ -1,0 +1,33 @@
+{
+  "results": [
+    {
+      "domain": "birth_death_registration",
+      "chunks": 190,
+      "reused_vectors": 90,
+      "newly_encoded_distinct_texts": 100,
+      "collection": "birth_death_registration_conservative_20261015",
+      "device": "mps",
+      "verified_ids_and_documents": true
+    },
+    {
+      "domain": "passport",
+      "chunks": 304,
+      "reused_vectors": 279,
+      "newly_encoded_distinct_texts": 25,
+      "collection": "passport_conservative_20261015",
+      "device": "mps",
+      "verified_ids_and_documents": true
+    },
+    {
+      "domain": "brta",
+      "chunks": 2864,
+      "reused_vectors": 1813,
+      "newly_encoded_distinct_texts": 1051,
+      "collection": "brta_conservative_20261015",
+      "device": "mps",
+      "verified_ids_and_documents": true
+    }
+  ],
+  "baseline_files_unchanged": true,
+  "activated": false
+}

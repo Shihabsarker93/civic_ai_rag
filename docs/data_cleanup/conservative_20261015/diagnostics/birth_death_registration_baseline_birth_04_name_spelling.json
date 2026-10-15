@@ -1,0 +1,343 @@
+{
+  "domain": "birth_death_registration",
+  "variant": "baseline",
+  "id": "birth_04_name_spelling",
+  "query": "জন্মনিবন্ধনে নামের বানান ভুল হলে কী করব?",
+  "candidate_ids": [
+    "notice_birth_and_death_registration_certificate_correction_steps_ocr_007_01",
+    "application_for_birth_information_correction_cleaned_003_01",
+    "application_for_birth_information_correction_cleaned_013_01",
+    "application_for_birth_information_correction_cleaned_010_01",
+    "application_for_birth_information_correction_cleaned_008_01",
+    "application_for_birth_information_correction_cleaned_002_01",
+    "birth_registration_application_process_cleaned_017_01",
+    "birth_and_death_registration_act_2004_ধারা_১৫ক_01",
+    "application_for_birth_information_correction_cleaned_006_01",
+    "application_for_birth_information_correction_cleaned_004_01",
+    "application_for_birth_information_correction_cleaned_009_01",
+    "application_for_birth_information_correction_cleaned_005_01",
+    "application_for_birth_information_correction_cleaned_011_01",
+    "birth_and_death_registration_rules_2018_বিধি_১৬_01",
+    "birth_and_death_registration_rules_2018_বিধি_১৫_01",
+    "birth_and_death_registration_fees_cleaned_fee_row_05"
+  ],
+  "selected_ids": [
+    "application_for_birth_information_correction_cleaned_003_01",
+    "application_for_birth_information_correction_cleaned_008_01",
+    "application_for_birth_information_correction_cleaned_006_01",
+    "application_for_birth_information_correction_cleaned_004_01",
+    "birth_and_death_registration_rules_2018_বিধি_১৫_01",
+    "birth_and_death_registration_fees_cleaned_fee_row_05"
+  ],
+  "selected_characters": 3543,
+  "selected_tokens": 1016,
+  "tokenizer": "BGE-M3; not generator tokens",
+  "selected_passages": [
+    {
+      "id": "application_for_birth_information_correction_cleaned_003_01",
+      "content": "Service: birth and death registration\nDocument type: correction_process\nTitle: জন্ম তথ্য সংশোধনের জন্য আবেদন\nSection: পরিস্থিতি ১: পিতা বা মাতার জন্ম নিবন্ধন নম্বর আছে\nContent: যদি আপনার পিতা বা মাতার জন্ম নিবন্ধন নম্বর থাকে, তাহলে প্রথমে তাদের জন্ম নিবন্ধন নম্বর ব্যবহার করে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করে তাদের নাম সংশোধন করতে হবে।",
+      "metadata": {
+        "service": "birth_death_registration",
+        "service_scope": "birth",
+        "document_type": "correction_process",
+        "title": "জন্ম তথ্য সংশোধনের জন্য আবেদন",
+        "source_file": "application_for_birth_information_correction.docx",
+        "source_path": "md/application_for_birth_information_correction_cleaned.md",
+        "source_url": "https://bdris.gov.bd/br/correction",
+        "encoding": "unicode_converted",
+        "language": "bn",
+        "section_title": "পরিস্থিতি ১: পিতা বা মাতার জন্ম নিবন্ধন নম্বর আছে",
+        "section_index": 3,
+        "part_index": 1,
+        "search_aliases": "amend registration information, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, certificate, certificate correction, civil registration, death certificate correction, father mother information, fix certificate information, name correction, online birth registration, parent information, parents registration, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন সংশোধন, সংশোধন আবেদন",
+        "chunking_version": "2026-06-07-nfc-token-audit",
+        "content_token_count": 77,
+        "retrieval_token_count": 221,
+        "embedding_model_max_tokens": 8192
+      },
+      "score": 0.33345251649618146,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "application_for_birth_information_correction_cleaned_008_01",
+      "content": "Service: birth and death registration\nDocument type: correction_process\nTitle: জন্ম তথ্য সংশোধনের জন্য আবেদন\nSection: পরিস্থিতি ৩: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই, পিতা বা মাতা মৃত এবং জন্ম তারিখ ০১/০১/২০০১-এর পরে\nContent: যদি:\n\n- পিতা বা মাতার জন্ম নিবন্ধন নম্বর না থাকে,\n- পিতা বা মাতা মৃত হন, এবং\n- আপনার জন্ম তারিখ ০১/০১/২০০১-এর পরে হয়,\n\nতাহলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করার সময় পিতা বা মাতার নাম সংশোধন করা যাবে।",
+      "metadata": {
+        "service": "birth_death_registration",
+        "service_scope": "birth",
+        "document_type": "correction_process",
+        "title": "জন্ম তথ্য সংশোধনের জন্য আবেদন",
+        "source_file": "application_for_birth_information_correction.docx",
+        "source_path": "md/application_for_birth_information_correction_cleaned.md",
+        "source_url": "https://bdris.gov.bd/br/correction",
+        "encoding": "unicode_converted",
+        "language": "bn",
+        "section_title": "পরিস্থিতি ৩: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই, পিতা বা মাতা মৃত এবং জন্ম তারিখ ০১/০১/২০০১-এর পরে",
+        "section_index": 8,
+        "part_index": 1,
+        "search_aliases": "amend registration information, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, certificate, certificate correction, civil registration, date of birth correction, death certificate correction, father mother information, fix certificate information, name correction, online birth registration, parent information, parents registration, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম তারিখ সংশোধন, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন সংশোধন, সংশোধন আবেদন",
+        "chunking_version": "2026-06-07-nfc-token-audit",
+        "content_token_count": 122,
+        "retrieval_token_count": 278,
+        "embedding_model_max_tokens": 8192
+      },
+      "score": 0.2963246417045593,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "application_for_birth_information_correction_cleaned_006_01",
+      "content": "Service: birth and death registration\nDocument type: correction_process\nTitle: জন্ম তথ্য সংশোধনের জন্য আবেদন\nSection: পরিস্থিতি ২: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই এবং জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে\nContent: যদি:\n\n- পিতা বা মাতার জন্ম নিবন্ধন নম্বর না থাকে, এবং\n- আপনার জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে হয়,\n\nতাহলে জন্ম নিবন্ধন তথ্য সংশোধনের আবেদন করার সময় পিতা বা মাতার নাম সংশোধন করা যাবে।",
+      "metadata": {
+        "service": "birth_death_registration",
+        "service_scope": "birth",
+        "document_type": "correction_process",
+        "title": "জন্ম তথ্য সংশোধনের জন্য আবেদন",
+        "source_file": "application_for_birth_information_correction.docx",
+        "source_path": "md/application_for_birth_information_correction_cleaned.md",
+        "source_url": "https://bdris.gov.bd/br/correction",
+        "encoding": "unicode_converted",
+        "language": "bn",
+        "section_title": "পরিস্থিতি ২: পিতা বা মাতার জন্ম নিবন্ধন নম্বর নেই এবং জন্ম তারিখ ০১/০১/২০০১-এর পূর্বে",
+        "section_index": 6,
+        "part_index": 1,
+        "search_aliases": "amend registration information, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, certificate, certificate correction, civil registration, date of birth correction, death certificate correction, father mother information, fix certificate information, name correction, online birth registration, parent information, parents registration, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম তারিখ সংশোধন, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন সংশোধন, সংশোধন আবেদন",
+        "chunking_version": "2026-06-07-nfc-token-audit",
+        "content_token_count": 108,
+        "retrieval_token_count": 264,
+        "embedding_model_max_tokens": 8192
+      },
+      "score": 0.266226043254137,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "application_for_birth_information_correction_cleaned_004_01",
+      "content": "Service: birth and death registration\nDocument type: correction_process\nTitle: জন্ম তথ্য সংশোধনের জন্য আবেদন\nSection: যদি পূর্বে জন্ম নিবন্ধনে পিতা বা মাতার জন্ম নিবন্ধন নম্বর যুক্ত করা থাকে\nContent: আপনার জন্ম নিবন্ধন করার সময় যদি পিতা বা মাতার জন্ম নিবন্ধন নম্বর প্রদান করা হয়ে থাকে, তাহলে তাদের নাম সংশোধনের পর আপনার জন্ম নিবন্ধন সনদ পুনর্মুদ্রণ করলে সেখানে সংশোধিত নাম স্বয়ংক্রিয়ভাবে প্রদর্শিত হবে।",
+      "metadata": {
+        "service": "birth_death_registration",
+        "service_scope": "birth",
+        "document_type": "correction_process",
+        "title": "জন্ম তথ্য সংশোধনের জন্য আবেদন",
+        "source_file": "application_for_birth_information_correction.docx",
+        "source_path": "md/application_for_birth_information_correction_cleaned.md",
+        "source_url": "https://bdris.gov.bd/br/correction",
+        "encoding": "unicode_converted",
+        "language": "bn",
+        "section_title": "যদি পূর্বে জন্ম নিবন্ধনে পিতা বা মাতার জন্ম নিবন্ধন নম্বর যুক্ত করা থাকে",
+        "section_index": 4,
+        "part_index": 1,
+        "search_aliases": "amend registration information, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, certificate, certificate correction, civil registration, death certificate correction, father mother information, fix certificate information, name correction, online birth registration, parent information, parents registration, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন সংশোধন, সংশোধন আবেদন",
+        "chunking_version": "2026-06-07-nfc-token-audit",
+        "content_token_count": 99,
+        "retrieval_token_count": 243,
+        "embedding_model_max_tokens": 8192
+      },
+      "score": 0.26571014553308486,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "birth_and_death_registration_rules_2018_বিধি_১৫_01",
+      "content": "Service: birth and death registration\nDocument type: legal_rules\nTitle: জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮\nChapter: পঞ্চম অধ্যায়: রেকর্ড সংরক্ষণ, সংশোধন এবং পরিবীক্ষণ\nLegal unit: বিধি ১৫ জন্ম বা মৃত্যু সনদ সংশোধন ও বাতিল\nContent: (১) আইনের ধারা ১১, ১৩ ও ১৫ তে বর্ণিত বিধান অনুসরণপূর্বক রেজিস্ট্রার জেনারেল অথবা তাহার পক্ষে অন্য কোন ক্ষমতাসম্পন্ন কর্মচারীর নিকট হইতে কারিগরি সহায়তা গ্রহণ করিয়া জন্ম বা মৃত্যু সনদ বাতিল বা সংশোধন করা যাইবে। (২) বিধি ২১ এ নির্ধারিত ফিস প্রদান করিয়া জমনি ফরম-৮ অনুযায়ী কোন ব্যক্তি জন্ম বা মৃত্যু সনদ সংশোধন বা বাতিলের জন্য আবেদন করিতে পারিবেন। (৩) কোন ব্যক্তির অনুকূলে সরল বিশ্বাসে বা অন্য কোন যৌক্তিক কারণে একাধিক জন্ম বা মৃত্যু নিবন্ধন সনদ ইস্যু হইয়া থাকিলে, নিবন্ধনপ্রাপ্ত উক্ত ব্যক্তি বা, ক্ষেত্র বিশেষে, তাহার আইনানুগ অভিভাবকের আবেদনের পরিপ্রেক্ষিতে নিবন্ধক যাচাই করিয়া অপ্রয়োজনীয় সনদটি বাতিল করিবেন। (৪) নিবন্ধক, কোন ব্যক্তির অনুকূলে অসৎ উদ্দেশ্যে মিথ্যা তথ্যের ভিত্তিতে একাধিক জন্ম বা মৃত্যু নিবন্ধন সনদ ইস্যুর তথ্য প্রাপ্ত হইলে, উহা যাচাই করিয়া দায়ী ব্যক্তির সনদ বাতিল এবং উক্ত দায়ী ব্যক্তি বা উহার সহিত সংশ্লিষ্ট কর্মচারীর বিরুদ্ধে আইনের ধারা ২১ এর বিধান অনুযায়ী দণ্ডমূলক ব্যবস্থা গ্রহণ করিতে পারিবেন। (৫) মিথ্যা তথ্যের ভিত্তিতে জন্ম বা মৃত্যু নিবন্ধন সনদ বাতিল করা হইলে সংক্ষুব্ধ ব্যক্তির আবেদনক্রমে নিবন্ধক শুনানি গ্রহণ করিবেন এবং মিথ্যা তথ্য প্রদানকারী বা সনদ লিপিবদ্ধকারী বা ইস্যুকারীর বিরুদ্ধে আইনগত ব্যবস্থা গ্রহণের নির্দেশ প্রদান করিতে পারিবেন এবং উক্তরূপ অভিযোগ উত্থাপিত হইলে রেজিস্ট্রার জেনারেল বা উপ-রেজিস্ট্রার জেনারেলের পূর্বানুমোদনক্রমে উপযুক্ত আদালতে মামলা দায়ের করিতে এবং মামলার রায়ের ভিত্তিতে আইনের ধারা ১৫ অনুযায়ী ব্যবস্থা গ্রহণ করিতে পারিবেন।",
+      "metadata": {
+        "service": "birth_death_registration",
+        "service_scope": "birth_death",
+        "document_type": "legal_rules",
+        "title": "জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮",
+        "source_file": "birth_and_death_registration_rules_2018.docx",
+        "source_path": "md/birth_and_death_registration_rules_2018.md",
+        "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf",
+        "encoding": "unicode_converted",
+        "language": "bn",
+        "chapter": "পঞ্চম অধ্যায়: রেকর্ড সংরক্ষণ, সংশোধন এবং পরিবীক্ষণ",
+        "legal_unit_type": "বিধি",
+        "legal_unit_no": "১৫",
+        "section_title": "জন্ম বা মৃত্যু সনদ সংশোধন ও বাতিল",
+        "part_index": 1,
+        "search_aliases": "act, amend registration information, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, cancel duplicate birth certificate, cancel duplicate death certificate, certificate, certificate correction, certificate verification, civil registration, death certificate, death certificate correction, death certificate registration, death registration, death registration certificate, duplicate certificate cancellation, fix certificate information, law, legal requirement, legal rule, local government office, name correction, online birth registration, online death registration, registrar office, registration office, registration rule, registration verification, verify certificate, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, একাধিক জন্ম সনদ বাতিল, একাধিক মৃত্যু সনদ বাতিল, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, ডুপ্লিকেট জন্ম সনদ বাতিল, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু নিবন্ধন সংশোধন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন, সংশোধন আবেদন",
+        "chunking_version": "2026-06-07-nfc-token-audit",
+        "content_token_count": 508,
+        "retrieval_token_count": 772,
+        "embedding_model_max_tokens": 8192
+      },
+      "score": 0.021089499145746232,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "birth_and_death_registration_fees_cleaned_fee_row_05",
+      "content": "Service: birth and death registration\nDocument type: fee_row\nTitle: জন্ম ও মৃত্যু নিবন্ধনের ফিসমূহ\nFee item: জন্ম তারিখ ব্যতীত নাম, পিতার নাম, মাতার নাম, ঠিকানা ইত্যাদি অন্যান্য তথ্য সংশোধনের জন্য আবেদন ফি\nFee amount: ৫০ টাকা\nOriginal row: | ৫ | জন্ম তারিখ ব্যতীত নাম, পিতার নাম, মাতার নাম, ঠিকানা ইত্যাদি অন্যান্য তথ্য সংশোধনের জন্য আবেদন ফি | ৫০ টাকা |",
+      "retrieval_text": "Service: birth and death registration\nDocument type: fee_row\nTitle: জন্ম ও মৃত্যু নিবন্ধনের ফিসমূহ\nFee item: জন্ম তারিখ ব্যতীত নাম, পিতার নাম, মাতার নাম, ঠিকানা ইত্যাদি অন্যান্য তথ্য সংশোধনের জন্য আবেদন ফি\nFee amount: ৫০ টাকা\nOriginal row: | ৫ | জন্ম তারিখ ব্যতীত নাম, পিতার নাম, মাতার নাম, ঠিকানা ইত্যাদি অন্যান্য তথ্য সংশোধনের জন্য আবেদন ফি | ৫০ টাকা |\nRetrieval aliases (for search only, not answer evidence): amend registration information, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, certificate, certificate correction, certificate fee, civil registration, cost, date of birth correction, death certificate, death certificate correction, death certificate registration, death registration, death registration certificate, father mother information, fix certificate information, government fee, name correction, online birth registration, online death registration, parent information, parents registration, payment, registration fee, আবেদন ফি, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম তারিখ সংশোধন, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, নিবন্ধন ফি, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু নিবন্ধন সংশোধন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন, সংশোধন আবেদন, সনদ ফি",
+      "metadata": {
+        "service": "birth_death_registration",
+        "service_scope": "birth_death",
+        "document_type": "fee_row",
+        "title": "জন্ম ও মৃত্যু নিবন্ধনের ফিসমূহ",
+        "source_file": "birth_and_death_registration_fees.docx",
+        "source_path": "md/birth_and_death_registration_fees_cleaned.md",
+        "source_url": "https://orgbdr.gov.bd/pages/static-pages/69cf48059d736d71f1a34c8c",
+        "encoding": "unicode_converted",
+        "language": "bn",
+        "row_index": 5,
+        "fee_item": "জন্ম তারিখ ব্যতীত নাম, পিতার নাম, মাতার নাম, ঠিকানা ইত্যাদি অন্যান্য তথ্য সংশোধনের জন্য আবেদন ফি",
+        "fee_amount": "৫০ টাকা",
+        "search_aliases": "amend registration information, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, certificate, certificate correction, certificate fee, civil registration, cost, date of birth correction, death certificate, death certificate correction, death certificate registration, death registration, death registration certificate, father mother information, fix certificate information, government fee, name correction, online birth registration, online death registration, parent information, parents registration, payment, registration fee, আবেদন ফি, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম তারিখ সংশোধন, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, নিবন্ধন ফি, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু নিবন্ধন সংশোধন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন, সংশোধন আবেদন, সনদ ফি",
+        "chunking_version": "2026-06-07-nfc-token-audit",
+        "content_token_count": 102,
+        "retrieval_token_count": 331,
+        "embedding_model_max_tokens": 8192
+      }
+    }
+  ],
+  "selection_trace": {
+    "version": "applicability_v1_family_order",
+    "query_actions": [
+      "correction"
+    ],
+    "query_services": [
+      "birth"
+    ],
+    "decisions": [
+      {
+        "id": "birth_registration_application_process_cleaned_017_01",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "birth_and_death_registration_act_2004_ধারা_১৫ক_01",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "application_for_birth_information_correction_cleaned_009_01",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "application_for_birth_information_correction_cleaned_005_01",
+        "decision": "excluded",
+        "reason": "unclassified_action_with_direct_alternative"
+      },
+      {
+        "id": "application_for_birth_information_correction_cleaned_003_01",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "application_for_birth_information_correction_cleaned_008_01",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "application_for_birth_information_correction_cleaned_006_01",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "application_for_birth_information_correction_cleaned_004_01",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "birth_and_death_registration_rules_2018_বিধি_১৫_01",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "birth_and_death_registration_fees_cleaned_fee_row_05",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "notice_birth_and_death_registration_certificate_correction_steps_ocr_007_01",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "application_for_birth_information_correction_cleaned_013_01",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "application_for_birth_information_correction_cleaned_010_01",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "application_for_birth_information_correction_cleaned_002_01",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "application_for_birth_information_correction_cleaned_011_01",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "birth_and_death_registration_rules_2018_বিধি_১৬_01",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      }
+    ],
+    "expanded_ids": [],
+    "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+    "budget_order_ids": [
+      "application_for_birth_information_correction_cleaned_003_01",
+      "application_for_birth_information_correction_cleaned_008_01",
+      "application_for_birth_information_correction_cleaned_006_01",
+      "application_for_birth_information_correction_cleaned_004_01",
+      "birth_and_death_registration_rules_2018_বিধি_১৫_01",
+      "birth_and_death_registration_fees_cleaned_fee_row_05",
+      "notice_birth_and_death_registration_certificate_correction_steps_ocr_007_01",
+      "application_for_birth_information_correction_cleaned_013_01",
+      "application_for_birth_information_correction_cleaned_010_01",
+      "application_for_birth_information_correction_cleaned_002_01",
+      "application_for_birth_information_correction_cleaned_011_01",
+      "birth_and_death_registration_rules_2018_বিধি_১৬_01"
+    ],
+    "selected_ids": [
+      "application_for_birth_information_correction_cleaned_003_01",
+      "application_for_birth_information_correction_cleaned_008_01",
+      "application_for_birth_information_correction_cleaned_006_01",
+      "application_for_birth_information_correction_cleaned_004_01",
+      "birth_and_death_registration_rules_2018_বিধি_১৫_01",
+      "birth_and_death_registration_fees_cleaned_fee_row_05"
+    ],
+    "selected_chars": 3543
+  },
+  "seconds": 13.012,
+  "top5": {
+    "dense": [
+      "application_for_birth_information_correction_cleaned_005_01",
+      "application_for_birth_information_correction_cleaned_002_01",
+      "application_for_birth_information_correction_cleaned_004_01",
+      "application_for_birth_information_correction_cleaned_003_01",
+      "notice_birth_and_death_registration_certificate_correction_steps_ocr_007_01"
+    ],
+    "bm25": [
+      "birth_registration_application_process_cleaned_017_01",
+      "bdris_faq_01_q15",
+      "bdris_faq_01_q12",
+      "bdris_faq_01_q14",
+      "bdris_faq_02_q01"
+    ],
+    "hybrid": [
+      "application_for_birth_information_correction_cleaned_002_01",
+      "notice_birth_and_death_registration_certificate_correction_steps_ocr_007_01",
+      "birth_and_death_registration_rules_2018_বিধি_১৬_01",
+      "birth_and_death_registration_act_2004_ধারা_১৫ক_01",
+      "application_for_birth_information_correction_cleaned_010_01"
+    ]
+  }
+}

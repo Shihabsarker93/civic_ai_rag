@@ -1,0 +1,9 @@
+{
+  "domain": "passport",
+  "chunks": 304,
+  "reused_vectors": 279,
+  "newly_encoded_distinct_texts": 25,
+  "collection": "passport_conservative_20261015",
+  "device": "mps",
+  "verified_ids_and_documents": true
+}

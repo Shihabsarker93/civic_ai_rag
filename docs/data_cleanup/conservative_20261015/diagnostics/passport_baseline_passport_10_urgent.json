@@ -1,0 +1,356 @@
+{
+  "domain": "passport",
+  "variant": "baseline",
+  "id": "passport_10_urgent",
+  "query": "জরুরি পাসপোর্ট করতে কত দিন লাগে?",
+  "candidate_ids": [
+    "passport_f2c0d221c70d21f2_v2_0003",
+    "passport_9f4e9ffe9f2a07f4_v2_0004",
+    "passport_6f7d900581956bef_v2_0016",
+    "passport_6f7d900581956bef_v2_0011",
+    "passport_6f7d900581956bef_v2_0031",
+    "passport_6f7d900581956bef_v2_0012",
+    "passport_12e10027cfdfeeee_v2_0005",
+    "passport_6f7d900581956bef_v2_0025",
+    "passport_6f7d900581956bef_v2_0030",
+    "passport_6f7d900581956bef_v2_0023",
+    "passport_6f7d900581956bef_v2_0015",
+    "passport_6f7d900581956bef_v2_0043",
+    "passport_f2c0d221c70d21f2_v2_0002",
+    "passport_ed7b3ebc56c0094f_v2_0003",
+    "passport_3fcbc40c98aa80bc_v2_0002"
+  ],
+  "selected_ids": [
+    "passport_f2c0d221c70d21f2_v2_0003",
+    "passport_9f4e9ffe9f2a07f4_v2_0004",
+    "passport_6f7d900581956bef_v2_0031",
+    "passport_12e10027cfdfeeee_v2_0005",
+    "passport_f2c0d221c70d21f2_v2_0002",
+    "passport_ed7b3ebc56c0094f_v2_0003"
+  ],
+  "selected_characters": 4051,
+  "selected_tokens": 1157,
+  "tokenizer": "BGE-M3; not generator tokens",
+  "selected_passages": [
+    {
+      "id": "passport_f2c0d221c70d21f2_v2_0003",
+      "content": "Urgent Applications\nUrgent Applications > Super Express Passport Delivery Service Overview > What is Super Express passport delivery service?\n\n### What is Super Express passport delivery service?\n* **Description:** There are occasions when a citizen needs passport urgently. In such situation, citizens can apply for Super Express delivery (specific conditions and fees apply). Passport will be issued within 2 (two) working days for Super Express delivery.\n\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_f2c0d221c70d21f2",
+        "document_id": "passport_f2c0d221c70d21f2",
+        "title": "Urgent Applications",
+        "section_title": "Urgent Applications > Super Express Passport Delivery Service Overview > What is Super Express passport delivery service?",
+        "document_type": "সাধারণ তথ্য",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Urgent Applications e-Passport.md",
+        "source_relative_path": "cleaned_md/Urgent Applications e-Passport.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Urgent Applications e-Passport.md",
+        "source_sha256": "0f56d10a5a201fbeb31c35857660ef5e83438f9364e749a2110fbed805da7646",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/Urgent Applications.pdf\"]",
+        "document_date": "2026-06-03",
+        "date_verified": false,
+        "audit_flags": "no_web_address",
+        "experimental": true,
+        "body_start": 108,
+        "body_end": 424,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": false
+      },
+      "score": 0.8410871624946594,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "passport_9f4e9ffe9f2a07f4_v2_0004",
+      "content": "ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী\nই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী > পাসপোর্ট প্রাপ্তির সময়সীমা\n\n## পাসপোর্ট প্রাপ্তির সময়সীমা\n\n* **১৭।**\n  * **(ক)** দেশের অভ্যন্তরে অতি জরুরী পাসপোর্ট প্রাপ্তির লক্ষ্যে অন্যান্য সকল তথ্য সঠিক থাকা সাপেক্ষে ২ কর্মদিবসের মধ্যে পাসপোর্ট প্রদান করা হবে।\n  * **(খ)** দেশের অভ্যন্তরে জরুরী পাসপোর্ট প্রাপ্তির লক্ষ্যে অন্যান্য সকল তথ্য সঠিক থাকা সাপেক্ষে ৭ কর্মদিবসের মধ্যে পাসপোর্ট প্রদান করা হবে।\n  * **(গ)** দেশের অভ্যন্তরে রেগুলার পাসপোর্ট প্রাপ্তির লক্ষ্যে অন্যান্য সকল তথ্য সঠিক থাকা সাপেক্ষে ১৫ কর্মদিবসের মধ্যে পাসপোর্ট প্রদান করা হবে।\n\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_9f4e9ffe9f2a07f4",
+        "document_id": "passport_9f4e9ffe9f2a07f4",
+        "title": "ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী",
+        "section_title": "ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী > পাসপোর্ট প্রাপ্তির সময়সীমা",
+        "document_type": "নির্দেশিকা",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী.md",
+        "source_relative_path": "cleaned_md/ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী.md",
+        "source_sha256": "f0bc6e1384dd491baff1dc91061abdd516b283e0e2751cdd793151b09095c61b",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী.pdf\"]",
+        "document_date": "2026-08-03",
+        "date_verified": false,
+        "audit_flags": "no_web_address",
+        "experimental": true,
+        "body_start": 2477,
+        "body_end": 2953,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": false
+      },
+      "score": 0.8387246131896973,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "passport_6f7d900581956bef_v2_0031",
+      "content": "সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর\nগণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ২. প্রতিশ্রুত সেবাসমূহ > ২.৩) অভ্যন্তরীণ সেবা > [ক্রমিক ১১] পাসপোর্ট গ্রহণের অনুমতি (NOC)\n\n#### [ক্রমিক ১১] পাসপোর্ট গ্রহণের অনুমতি (NOC)\n* **সেবার নাম:** কর্মকর্তা/কর্মচারীদের পাসপোর্ট গ্রহণের অনুমতি।\n* **সেবা প্রদান পদ্ধতি:** নির্ধারিত ফরমে অনাপত্তি (NOC) দেয়া হয়।\n* **প্রয়োজনীয় কাগজপত্র:**\n  - ক. সংশ্লিষ্ট কর্মকর্তা/কর্মচারীদের আবেদন।\n  - খ. সংশ্লিষ্ট অফিস প্রধানের সুপারিশ।\n* **সেবামূল্য এবং পরিশোধ পদ্ধতি:** বিনামূল্যে\n* **সেবা প্রদানের সময়সীমা:** ০৩ দিন\n* **দায়িত্বপ্রাপ্ত কর্মকর্তা:** জনাব মোঃ সালেহ উদ্দিন, সহকারী পরিচালক (প্রশাসন), ফোনঃ ০১৭৩৩-৩৯৩৩ ৩৩, ইমেইল: adadmin@passport.gov.bd\n\n---\n\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_6f7d900581956bef",
+        "document_id": "passport_6f7d900581956bef",
+        "title": "সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর",
+        "section_title": "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ২. প্রতিশ্রুত সেবাসমূহ > ২.৩) অভ্যন্তরীণ সেবা > [ক্রমিক ১১] পাসপোর্ট গ্রহণের অনুমতি (NOC)",
+        "document_type": "সিটিজেন চার্টার",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+        "source_relative_path": "cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+        "source_sha256": "e875d24b0d749a0a12ff8c30bddac3eabba040af4c3a50348e63f3d086382e87",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/সিটিজেন চার্টার_ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.pdf\"]",
+        "document_date": "2025-02-18",
+        "date_verified": false,
+        "audit_flags": "",
+        "experimental": true,
+        "body_start": 18645,
+        "body_end": 19159,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": false
+      },
+      "score": 0.11364416033029556,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "passport_12e10027cfdfeeee_v2_0005",
+      "content": "e-Passport Fees and Payment Options\ne-Passport Fees and Payment Options > Delivery Timelines and Special Provisions (Note)\n\n## Delivery Timelines and Special Provisions (Note)\n\n* **Regular Delivery:** Within 15 Working days / 21 days from the biometric enrolment date.\n* **Express Delivery:** Within 7 Working days / 10 days from the biometric enrolment date.\n* **Super Express Delivery:** Within 2 Working days from the biometric enrolment date.\n* **Govt Employees (with No Objection Certificate (NOC) / Retirement document (PRL)):**\n  * a. Express facilities with Regular fees.\n  * b. Super-Express facilities with Express fees.\n\n---\n\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_12e10027cfdfeeee",
+        "document_id": "passport_12e10027cfdfeeee",
+        "title": "e-Passport Fees and Payment Options",
+        "section_title": "e-Passport Fees and Payment Options > Delivery Timelines and Special Provisions (Note)",
+        "document_type": "নির্দেশিকা / ফি ও পেমেন্ট সংক্রান্ত তথ্য",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/e-Passport Fees and Payment Options.md",
+        "source_relative_path": "cleaned_md/e-Passport Fees and Payment Options.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/e-Passport Fees and Payment Options.md",
+        "source_sha256": "9b629ab56ed0caa11414d1f5095cf91d85d179af4e910cfcc93bee44af11d7d8",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/e-Passport Fees and Payment Options.pdf\"]",
+        "document_date": "2026-07-12",
+        "date_verified": false,
+        "audit_flags": "no_web_address",
+        "experimental": true,
+        "body_start": 960,
+        "body_end": 1473,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": false
+      },
+      "score": 0.03803360089659691,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "passport_f2c0d221c70d21f2_v2_0002",
+      "content": "Urgent Applications\nUrgent Applications > Super Express Passport Delivery Service Overview\n\n## Super Express Passport Delivery Service Overview\n* **Last updated:** 3 June 2026\n\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_f2c0d221c70d21f2",
+        "document_id": "passport_f2c0d221c70d21f2",
+        "title": "Urgent Applications",
+        "section_title": "Urgent Applications > Super Express Passport Delivery Service Overview",
+        "document_type": "সাধারণ তথ্য",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Urgent Applications e-Passport.md",
+        "source_relative_path": "cleaned_md/Urgent Applications e-Passport.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Urgent Applications e-Passport.md",
+        "source_sha256": "0f56d10a5a201fbeb31c35857660ef5e83438f9364e749a2110fbed805da7646",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/Urgent Applications.pdf\"]",
+        "document_date": "2026-06-03",
+        "date_verified": false,
+        "audit_flags": "no_web_address",
+        "experimental": true,
+        "body_start": 23,
+        "body_end": 108,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": false
+      },
+      "score": 0.011974431574344635,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "passport_ed7b3ebc56c0094f_v2_0003",
+      "content": "মেশিন রিডেবল পাসপোর্ট (এমআরপি)\nমেশিন রিডেবল পাসপোর্ট (এমআরপি) > প্রয়োজনীয় তথ্য ও নির্দেশাবলী\n\n## প্রয়োজনীয় তথ্য ও নির্দেশাবলী\n\n1. সরকারি কর্মকর্তা/ কর্মচারী, সরকারি চাকরিজীবীগণের স্বামী/স্ত্রী এবং তাদের নির্ভরশীল ১৫ (পনের) বছরের কম বয়সী সন্তান, ৫ (পাঁচ)/১০ (দশ) বৎসরের অতিক্রান্ত, সমর্পণকৃত (সারেন্ডারড) দের জন্য একটি ফরম ও অন্যান্যদের ক্ষেত্রে নতুন পাসপোর্টের জন্য ২ (দুই) কপি পূরণকৃত পাসপোর্ট ফরম দাখিল করতে হবে।\n2. অপ্রাপ্তবয়স্ক (১৫ বছরের কম) আবেদনকারীর ক্ষেত্রে আবেদনকারীর পিতা ও মাতার একটি করে রঙিন ছবি (৩০ x ২৫ মিঃমিঃ) আঠা দিয়ে লাগানোর পর সত্যায়ন করতে হবে।\n3. জাতীয় পরিচয়পত্র অথবা জন্ম নিবন্ধন সনদ এবং প্রযোজ্য ক্ষেত্রে প্রাসঙ্গিক টেকনক্যাল সনদসমূহের (যেমন ডাক্তার, ইঞ্জিনিয়ার, ড্রাইভার ইত্যাদি) সত্যায়িত ফটোকপি।\n4. যে সকল ব্যক্তিগণ পাসপোর্টের আবেদনপত্র ও ছবি প্রত্যায়ন ও সত্যায়ন করতে পারবেন – সংসদ সদস্য, সিটি কর্পোরেশনের মেয়র, ডেপুটি মেয়র ও কাউন্সিলরগণ, গেজেটেড কর্মকর্তা, পাবলিক বিশ্ববিদ্যালয়ের শিক্ষক, উপজেলা পরিষদের চেয়ারম্যান ও ভাইস চেয়ারম্যান, পৌরসভার মেয়র ও পৌর কাউন্সিলরগণ, বেসরকারি বিশ্ববিদ্যালয়ের অধ্যাপক, বেসরকারি কলেজের অধ্যক্ষ, বেসরকারি উচ্চ বিদ্যালয়ের প্রধান শিক্ষক, জাতীয় দৈনিক পত্রিকার সম্পাদক, নোটারী পাবলিক ও আধাসরকারি/স্বায়ত্তশাসিত/রাষ্ট্রায়ত্ত সংস্থার জাতীয় বেতন স্কেলের ৭ম ও তদুর্ধ্ব গ্রেডের কর্মকর্তা।\n5. সরকারি কর্মকর্তা/কর্মচারী ও তাদের স্বামী/স্ত্রী এবং সরকারি চাকুরীজীবিগণের ১৫ (পনের) বৎসরের কম বয়সের সন্তান সাধারণ ফি জমা করে জরুরী সুবিধা পাবেন।\n6. প্রযোজ্য ক্ষেত্রে প্রাসঙ্গিক জিও (GO)/এনওসি (NOC) দাখিল করতে হবে।\n7. অবসরপ্রাপ্ত ",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_ed7b3ebc56c0094f",
+        "document_id": "passport_ed7b3ebc56c0094f",
+        "title": "মেশিন রিডেবল পাসপোর্ট (এমআরপি)",
+        "section_title": "মেশিন রিডেবল পাসপোর্ট (এমআরপি) > প্রয়োজনীয় তথ্য ও নির্দেশাবলী",
+        "document_type": "সাধারণ তথ্য ও নির্দেশিকা",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/মেশিন রিডেবল পাসপোর্ট(এমআরপি).md",
+        "source_relative_path": "cleaned_md/মেশিন রিডেবল পাসপোর্ট(এমআরপি).md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/মেশিন রিডেবল পাসপোর্ট(এমআরপি).md",
+        "source_sha256": "a10a5262eb9bfd3fd6a7a6363e32622101ef48a0eee755f04c5f25fea5df8026",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/মেশিন রিডেবল পাসপোর্ট(এমআরপি).pdf\"]",
+        "document_date": "N/A",
+        "date_verified": false,
+        "audit_flags": "",
+        "experimental": true,
+        "body_start": 1139,
+        "body_end": 2533,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": false
+      },
+      "score": 0.006983205210417509,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    }
+  ],
+  "selection_trace": {
+    "version": "applicability_v1_family_order",
+    "query_actions": [
+      "application"
+    ],
+    "query_services": [
+      "passport"
+    ],
+    "decisions": [
+      {
+        "id": "passport_6f7d900581956bef_v2_0016",
+        "decision": "excluded",
+        "reason": "different_service"
+      },
+      {
+        "id": "passport_6f7d900581956bef_v2_0011",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_6f7d900581956bef_v2_0012",
+        "decision": "excluded",
+        "reason": "different_service"
+      },
+      {
+        "id": "passport_3fcbc40c98aa80bc_v2_0002",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_f2c0d221c70d21f2_v2_0003",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_9f4e9ffe9f2a07f4_v2_0004",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_6f7d900581956bef_v2_0031",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_12e10027cfdfeeee_v2_0005",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_f2c0d221c70d21f2_v2_0002",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_ed7b3ebc56c0094f_v2_0003",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_6f7d900581956bef_v2_0025",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "passport_6f7d900581956bef_v2_0030",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "passport_6f7d900581956bef_v2_0023",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "passport_6f7d900581956bef_v2_0015",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "passport_6f7d900581956bef_v2_0043",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      }
+    ],
+    "expanded_ids": [],
+    "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+    "budget_order_ids": [
+      "passport_f2c0d221c70d21f2_v2_0003",
+      "passport_9f4e9ffe9f2a07f4_v2_0004",
+      "passport_6f7d900581956bef_v2_0031",
+      "passport_12e10027cfdfeeee_v2_0005",
+      "passport_f2c0d221c70d21f2_v2_0002",
+      "passport_ed7b3ebc56c0094f_v2_0003",
+      "passport_6f7d900581956bef_v2_0025",
+      "passport_6f7d900581956bef_v2_0030",
+      "passport_6f7d900581956bef_v2_0023",
+      "passport_6f7d900581956bef_v2_0015",
+      "passport_6f7d900581956bef_v2_0043"
+    ],
+    "selected_ids": [
+      "passport_f2c0d221c70d21f2_v2_0003",
+      "passport_9f4e9ffe9f2a07f4_v2_0004",
+      "passport_6f7d900581956bef_v2_0031",
+      "passport_12e10027cfdfeeee_v2_0005",
+      "passport_f2c0d221c70d21f2_v2_0002",
+      "passport_ed7b3ebc56c0094f_v2_0003"
+    ],
+    "selected_chars": 4051
+  },
+  "seconds": 6.624,
+  "top5": {
+    "dense": [
+      "passport_9f4e9ffe9f2a07f4_v2_0004",
+      "passport_f2c0d221c70d21f2_v2_0003",
+      "passport_12e10027cfdfeeee_v2_0005",
+      "passport_6f7d900581956bef_v2_0011",
+      "passport_6f7d900581956bef_v2_0031"
+    ],
+    "bm25": [
+      "passport_3fcbc40c98aa80bc_v2_0002",
+      "passport_23d845d3ab38ea43_v2_0050",
+      "passport_23d845d3ab38ea43_v2_0028",
+      "passport_5eb6c21efe103a4f_v2_0020",
+      "passport_23d845d3ab38ea43_v2_0019"
+    ],
+    "hybrid": [
+      "passport_6f7d900581956bef_v2_0011",
+      "passport_6f7d900581956bef_v2_0016",
+      "passport_6f7d900581956bef_v2_0023",
+      "passport_6f7d900581956bef_v2_0012",
+      "passport_6f7d900581956bef_v2_0025"
+    ]
+  }
+}

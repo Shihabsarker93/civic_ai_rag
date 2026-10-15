@@ -1,0 +1,9 @@
+{
+  "domain": "brta",
+  "chunks": 2864,
+  "reused_vectors": 1813,
+  "newly_encoded_distinct_texts": 1051,
+  "collection": "brta_conservative_20261015",
+  "device": "mps",
+  "verified_ids_and_documents": true
+}

@@ -1,0 +1,247 @@
+{
+  "domain": "birth_death_registration",
+  "variant": "baseline",
+  "id": "birth_10_delivery_time",
+  "query": "জন্মনিবন্ধন করতে কত দিন সময় লাগে?",
+  "candidate_ids": [
+    "bdris_faq_02_q01",
+    "bdris_faq_01_q01",
+    "birth_and_death_registration_rules_2018_বিধি_৯_02",
+    "birth_and_death_registration_rules_2018_বিধি_২০_01",
+    "birth_and_death_registration_rules_2018_বিধি_৯_04",
+    "birth_and_death_registration_act_2004_ধারা_৮_01",
+    "birth_and_death_registration_act_2004_ধারা_১০_01",
+    "birth_and_death_registration_rules_2018_বিধি_৮_01",
+    "birth_and_death_registration_rules_2018_বিধি_১১_03",
+    "birth_and_death_registration_rules_2018_বিধি_২১_01",
+    "birth_and_death_registration_fees_cleaned_fee_row_02",
+    "birth_and_death_registration_fees_cleaned_fee_row_01",
+    "birth_and_death_registration_rules_2018_বিধি_৯_03",
+    "birth_and_death_registration_fees_cleaned_table_full",
+    "home_registrar_generals_office_birth_and_death_registration_009_01"
+  ],
+  "selected_ids": [
+    "birth_and_death_registration_rules_2018_বিধি_৯_02",
+    "birth_and_death_registration_rules_2018_বিধি_৯_03",
+    "birth_and_death_registration_rules_2018_বিধি_২০_01"
+  ],
+  "selected_characters": 3851,
+  "selected_tokens": 1193,
+  "tokenizer": "BGE-M3; not generator tokens",
+  "selected_passages": [
+    {
+      "id": "birth_and_death_registration_rules_2018_বিধি_৯_02",
+      "content": "Service: birth and death registration\nDocument type: legal_rules\nTitle: জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮\nChapter: দ্বিতীয় অধ্যায়: জন্ম নিবন্ধন\nLegal unit: বিধি ৯ জন্ম নিবন্ধন\nContent: (ক) ব্যক্তির জন্মের ৪৫ (পঁয়তাল্লিশ) দিনের মধ্যে দাখিলকৃত আবেদনপত্রের সহিত নিম্নলিখিত প্রমাণাদি সংযুক্ত করিতে হইবে, যথা:\n(অ) জন্মস্থান ও জন্ম তারিখের প্রমাণ হিসাবে সংশ্লিষ্ট চিকিৎসা প্রতিষ্ঠানের ছাড়পত্র বা উক্ত প্রতিষ্ঠান হইতে প্রাপ্ত জন্ম সংক্রান্ত সনদের সত্যায়িত অনুলিপি অথবা বার্থ এটেন্ডেন্ট এর প্রত্যয়ন বা অন্য কোন প্রমাণপত্র অথবা (আ) ব্যক্তির স্থায়ী ঠিকানার প্রমাণ হিসাবে ব্যক্তির নিজের বা পিতা বা মাতা বা পিতামহ বা পিতামহীর দ্বারা স্বনামে স্থায়ী ঠিকানা হিসাবে ঘোষিত আবাসস্থলের বিপরীতে হালনাগাদ কর পরিশোধের প্রমাণপত্র অথবা পিতা বা মাতা বা পিতামহ বা পিতামহীর জাতীয় পরিচয়পত্র বা পাসপোর্টে ঘোষিত স্থায়ী ঠিকানা বা অন্যকোন প্রমাণপত্র এবং জন্ম ও মৃত্যু নিবন্ধনের দ্বৈততা পরিহার করিবার লক্ষ্যে, প্রযোজ্য ক্ষেত্রে, জন্ম নিবন্ধনাধীন ব্যক্তির পিতা ও মাতার জন্ম নিবন্ধন ন¤¦র অথবা জাতীয় পরিচয়পত্র নম্বর উল্লেখসহ উহার সনদ দাখিল করিতে হইবে (ই) নদী ভাঙ্গন বা অন্য কোন কারণে স্থায়ী ঠিকানা বিলুপ্ত হইয়া থাকিলে নতুন স্থায়ী বসতির অনুকূলে প্রমাণক হিসাবে জমি বা বাড়ি ক্রয়ের দলিল, খাজনা ও কর পরিশোধের রসিদ, প্রভৃতি দাখিল করিলে নতুন বসতির ঠিকানা স্থায়ী ঠিকানা হিসাবে গণ্য করা যাইবে (ঈ) কোন কারণে কোন ব্যক্তির স্থায়ী ঠিকানা না থাকিলে স্থায়ী ঠিকানার স্থানে অপ্রাপ্য লিখিয়া জন্মস্থানের নিবন্ধকের নিকট জন্ম নিবন্ধন করিতে হইবে এবং এই ক্ষেত্রে আইনের ধারা ৯ এর উপ-ধারা",
+      "metadata": {
+        "service": "birth_death_registration",
+        "service_scope": "birth_death",
+        "document_type": "legal_rules",
+        "title": "জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮",
+        "source_file": "birth_and_death_registration_rules_2018.docx",
+        "source_path": "md/birth_and_death_registration_rules_2018.md",
+        "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf",
+        "encoding": "unicode_converted",
+        "language": "bn",
+        "chapter": "দ্বিতীয় অধ্যায়: জন্ম নিবন্ধন",
+        "legal_unit_type": "বিধি",
+        "legal_unit_no": "৯",
+        "section_title": "জন্ম নিবন্ধন",
+        "part_index": 2,
+        "search_aliases": "act, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, civil registration, date of birth correction, death certificate, death certificate registration, death registration, death registration certificate, father mother information, law, legal requirement, legal rule, local government office, online birth registration, online death registration, parent information, parents registration, registrar office, registration office, registration rule, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম তারিখ সংশোধন, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন",
+        "chunking_version": "2026-06-07-nfc-token-audit",
+        "content_token_count": 458,
+        "retrieval_token_count": 643,
+        "embedding_model_max_tokens": 8192
+      },
+      "score": 0.8414916396141052,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "birth_and_death_registration_rules_2018_বিধি_৯_03",
+      "content": "Service: birth and death registration\nDocument type: legal_rules\nTitle: জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮\nChapter: দ্বিতীয় অধ্যায়: জন্ম নিবন্ধন\nLegal unit: বিধি ৯ জন্ম নিবন্ধন\nContent: (১) এর অধীন দায়িত্বপ্রাপ্ত কর্মচারীগণের এই মর্মে প্রত্যয়ন করিতে হইবে যে, উক্ত ব্যক্তির কোন স্থায়ী ঠিকানা নাই এবং (উ) পূর্বে জন্ম নিবন্ধন হয় নাই এই মর্মে আবেদন ফরমে আবেদনকারীর ঘোষণা (খ) ব্যক্তির জন্মের ৪৫ (পঁয়তাল্লিশ) দিন পরে জমনি ফরম-১ অনুযায়ী দাখিলকৃত আবেদনপত্রের সহিত দফা (ক) তে বর্ণিত দলিলাদি ছাড়াও নিম্নলিখিত প্রমাণাদি সংযুক্ত করিতে হইবে, যথা:-\n(অ) জন্মের ৫ (পাঁচ) বৎসরের মধ্যে আবেদন করিলে যথাযথভাবে পূরণকৃত আবেদনপত্রে ইপিআই কর্মীর প্রত্যয়ন অথবা ইপিআই কার্ডের অনুলিপি অথবা (আ) জন্মের ৫ (পাঁচ) বৎসর পর আবেদন করা হইলে বয়স প্রমাণের জন্য উপযুক্ত চিকিৎসক কর্তৃক প্রদত্ত প্রত্যয়ন পত্র অথবা (ই) সরকার কর্তৃক পরিচালিত প্রাথমিক শিক্ষা সমাপনী, জুনিয়র স্কুল সার্টিফিকেট এবং শিক্ষা বোর্ড কর্তৃক পরিচালিত মাধ্যমিক স্কুল সার্টিফিকেট বা অনুরূপ পরীক্ষার শিক্ষাগত সনদপত্র। (২) উপ-বিধি (১) এর অধীন আবেদনপত্র প্রাপ্তির পর নিবন্ধক বা তৎকর্তৃক ক্ষমতাপ্রাপ্ত ব্যক্তি পরবর্তী ১৫ (পনের) কার্য দিবসের মধ্যে সনদ প্রদানের সম্ভাব্য তারিখ উল্লেখপূর্বক আবেদনকারীর অংশে স্বাক্ষর করিয়া উহা আবেদনকারীর নিকট হস্তান্তর করিবেন।",
+      "metadata": {
+        "service": "birth_death_registration",
+        "service_scope": "birth_death",
+        "document_type": "legal_rules",
+        "title": "জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮",
+        "source_file": "birth_and_death_registration_rules_2018.docx",
+        "source_path": "md/birth_and_death_registration_rules_2018.md",
+        "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf",
+        "encoding": "unicode_converted",
+        "language": "bn",
+        "chapter": "দ্বিতীয় অধ্যায়: জন্ম নিবন্ধন",
+        "legal_unit_type": "বিধি",
+        "legal_unit_no": "৯",
+        "section_title": "জন্ম নিবন্ধন",
+        "part_index": 3,
+        "search_aliases": "act, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, civil registration, death certificate, death certificate registration, death registration, death registration certificate, law, legal requirement, legal rule, local government office, online birth registration, online death registration, registrar office, registration office, registration rule, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন",
+        "chunking_version": "2026-06-07-nfc-token-audit",
+        "content_token_count": 389,
+        "retrieval_token_count": 552,
+        "embedding_model_max_tokens": 8192
+      },
+      "score": 0.3385648727416992,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "birth_and_death_registration_rules_2018_বিধি_২০_01",
+      "content": "Service: birth and death registration\nDocument type: legal_rules\nTitle: জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮\nChapter: সপ্তম অধ্যায়: বিবিধ\nLegal unit: বিধি ২০ অনলাইনে আবেদন বা তথ্য প্রদান\nContent: (১) চিকিৎসা প্রতিষ্ঠান বা স্বাস্থ্যকর্মীগণ নিবন্ধনযোগ্য ব্যক্তির জন্ম বা মৃত্যুর তথ্য ৪৫ (পঁয়তাল্লিশ) দিনের মধ্যে নিবন্ধনের যোগ্য স্থানের নিবন্ধকের নিকট অনলাইনে প্রদান করিতে পারিবেন। (২) বিদেশে জন্ম গ্রহণকারী শিশু ব্যতীত বাংলাদেশ দূতাবাস নিবন্ধনযোগ্য অন্যান্য ব্যক্তির জন্ম বা মৃত্যুর তথ্য ব্যক্তির স্থায়ী ঠিকানার নিবন্ধকের নিকট অনলাইনে প্রদান করিতে পারিবেন। (৩) সরকারের সিদ্ধান্ত অনুযায়ী দূতাবাসসমূহ বিদেশে জন্ম হয় নাই তবে বৈধ পাসপোর্টধারী এমন কোন প্রবাসী বাংলাদেশী নাগরিকের জন্ম নিবন্ধন করিতে পারিবে। (৪) উপ-বিধি (১) এর অধীন অনলাইনে তথ্য প্রেরণের পর কম্পিউটার জেনারেটেড নম্বরসহ ব্যক্তির আবেদনপত্রের একটি প্রিন্ট কপি পাওয়া যাইবে এবং উক্ত প্রিন্ট কপির সহিত প্রয়োজনীয় দলিলাদি ও প্রত্যয়ন সংযুক্ত করিয়া, ক্ষেত্র বিশেষে, ব্যক্তি বা ব্যক্তির অভিভাবক সশরীরে নিবন্ধকের নিকট উহা দাখিল করিবেন। (৫) উপ-বিধি (৪) এর বিধান অনুযায়ী আবেদনপত্র প্রাপ্তির পর নিবন্ধক জন্ম নিবন্ধনের ক্ষেত্রে বিধি ৯ বা, ক্ষেত্রমত, বিধি ১০ এবং মৃত্যু নিবন্ধনের ক্ষেত্রে বিধি ১১ বা, ক্ষেত্রমত, বিধি ১২ অনুযায়ী ব্যবস্থা গ্রহণ করিবেন।",
+      "metadata": {
+        "service": "birth_death_registration",
+        "service_scope": "birth_death",
+        "document_type": "legal_rules",
+        "title": "জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮",
+        "source_file": "birth_and_death_registration_rules_2018.docx",
+        "source_path": "md/birth_and_death_registration_rules_2018.md",
+        "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf",
+        "encoding": "unicode_converted",
+        "language": "bn",
+        "chapter": "সপ্তম অধ্যায়: বিবিধ",
+        "legal_unit_type": "বিধি",
+        "legal_unit_no": "২০",
+        "section_title": "অনলাইনে আবেদন বা তথ্য প্রদান",
+        "part_index": 1,
+        "search_aliases": "act, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, civil registration, death certificate, death certificate registration, death registration, death registration certificate, law, legal requirement, legal rule, local government office, online birth registration, online death registration, registrar office, registration office, registration rule, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন",
+        "chunking_version": "2026-06-07-nfc-token-audit",
+        "content_token_count": 346,
+        "retrieval_token_count": 509,
+        "embedding_model_max_tokens": 8192
+      },
+      "score": 0.8095700740814209,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    }
+  ],
+  "selection_trace": {
+    "version": "applicability_v1_family_order",
+    "query_actions": [
+      "application"
+    ],
+    "query_services": [
+      "birth"
+    ],
+    "decisions": [
+      {
+        "id": "bdris_faq_02_q01",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "bdris_faq_01_q01",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "birth_and_death_registration_rules_2018_বিধি_৯_04",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "birth_and_death_registration_rules_2018_বিধি_৮_01",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "birth_and_death_registration_rules_2018_বিধি_১১_03",
+        "decision": "excluded",
+        "reason": "different_service"
+      },
+      {
+        "id": "birth_and_death_registration_rules_2018_বিধি_২১_01",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "birth_and_death_registration_fees_cleaned_table_full",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "birth_and_death_registration_act_2004_ধারা_৮_01",
+        "decision": "excluded",
+        "reason": "unclassified_action_with_direct_alternative"
+      },
+      {
+        "id": "birth_and_death_registration_fees_cleaned_fee_row_02",
+        "decision": "excluded",
+        "reason": "unclassified_action_with_direct_alternative"
+      },
+      {
+        "id": "birth_and_death_registration_fees_cleaned_fee_row_01",
+        "decision": "excluded",
+        "reason": "unclassified_action_with_direct_alternative"
+      },
+      {
+        "id": "home_registrar_generals_office_birth_and_death_registration_009_01",
+        "decision": "excluded",
+        "reason": "unclassified_action_with_direct_alternative"
+      },
+      {
+        "id": "birth_and_death_registration_act_2004_ধারা_১০_01",
+        "decision": "excluded",
+        "reason": "unclassified_action_with_direct_alternative"
+      },
+      {
+        "id": "birth_and_death_registration_rules_2018_বিধি_৯_02",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "birth_and_death_registration_rules_2018_বিধি_৯_03",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "birth_and_death_registration_rules_2018_বিধি_২০_01",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      }
+    ],
+    "expanded_ids": [],
+    "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+    "budget_order_ids": [
+      "birth_and_death_registration_rules_2018_বিধি_৯_02",
+      "birth_and_death_registration_rules_2018_বিধি_৯_03",
+      "birth_and_death_registration_rules_2018_বিধি_২০_01"
+    ],
+    "selected_ids": [
+      "birth_and_death_registration_rules_2018_বিধি_৯_02",
+      "birth_and_death_registration_rules_2018_বিধি_৯_03",
+      "birth_and_death_registration_rules_2018_বিধি_২০_01"
+    ],
+    "selected_chars": 3851
+  },
+  "seconds": 18.014,
+  "top5": {
+    "dense": [
+      "birth_and_death_registration_rules_2018_বিধি_৯_02",
+      "bdris_faq_01_q01",
+      "birth_and_death_registration_rules_2018_বিধি_৯_04",
+      "bdris_faq_02_q01",
+      "birth_and_death_registration_rules_2018_বিধি_৯_03"
+    ],
+    "bm25": [
+      "home_registrar_generals_office_birth_and_death_registration_009_01",
+      "home_registrar_generals_office_birth_and_death_registration_010_01",
+      "birth_and_death_registration_fees_cleaned_fee_row_01",
+      "birth_and_death_registration_fees_cleaned_fee_row_02",
+      "bdris_faq_01_q01"
+    ],
+    "hybrid": [
+      "bdris_faq_01_q01",
+      "birth_and_death_registration_fees_cleaned_fee_row_01",
+      "birth_and_death_registration_fees_cleaned_fee_row_02",
+      "bdris_faq_02_q01",
+      "birth_and_death_registration_fees_cleaned_table_full"
+    ]
+  }
+}

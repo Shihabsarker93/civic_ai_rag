@@ -1,0 +1,3161 @@
+[
+  {
+    "document_id": "brta_e83c997ada994127",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/Gazette_Registration of Motor Vehicles Repairing Workshop.md",
+    "snapshot_sha256": "30162507a52eea38066a6d23a30c43b4b0ac887ec49faa2e4fcec3528abb8c6f",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/Gazette_Registration of Motor Vehicles Repairing Workshop.pdf",
+        "exists": true,
+        "sha256": "d81d103739fc53fdb1eada9d5b88bb035a94d58ecd8723945c88d8116ca346d6",
+        "pages": 11,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "1708940227de929934e4bae47bf4a207918837bc4240070f2c6c8af5177eab17",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "registered_sha256": "d81d103739fc53fdb1eada9d5b88bb035a94d58ecd8723945c88d8116ca346d6",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_cb965b3169c34e73",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/Motor Vehicle Ordinance, 1983 [Modified upto 29th November 1990] (Ordinance No. LV of 1983).md",
+    "snapshot_sha256": "6cdd786128e823d086992bb8b7e9abba049424642d42bae5c8a40667db9e4088",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/Motor Vehicle Ordinance, 1983 [Modified upto 29th November 1990] (Ordinance No. LV of 1983).pdf",
+        "exists": true,
+        "sha256": "1fb0f2f24063dad48e3402f679e6cf3142af12ad82cb69cc41795cb375ec4d96",
+        "pages": 113,
+        "extracted_characters": 301290,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "429ff9e0bc48208ec1711460b7c91858213a02bd73eb9b3d192fcae753a7a8d8",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "1fb0f2f24063dad48e3402f679e6cf3142af12ad82cb69cc41795cb375ec4d96",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_37272db054c15006",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/Motor Vehicle Rules, 1984 [Amendment of Motor Vehicle Rules, 1940].md",
+    "snapshot_sha256": "524f5fe20c2d9d98e5b3b2460b186d9634aab6ab9b24fe44a4dd0dd5b26674fa",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/Motor Vehicle Rules, 1984 [Amendment of Motor Vehicle Rules, 1940].pdf",
+        "exists": true,
+        "sha256": "bdc71920329710d356b2e283b3733c9a292f68ce808cd334a13e54bf37f58415",
+        "pages": 99,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "5f3895260d93d8815d6756ed73541179aec6f409ac38761276cefd1bb4ec24ec",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99
+        ],
+        "registered_sha256": "bdc71920329710d356b2e283b3733c9a292f68ce808cd334a13e54bf37f58415",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_635674541d226e02",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/Motor Vehicles Regulations, 1984 - এর সংশোধনী (নিবন্ধন ফি সংক্রান্ত).md",
+    "snapshot_sha256": "62af3ab1b63c549a54bfc2b695d66ab3143d80349c6cf3b2c56a3c4aacb23d4a",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/Motor Vehicles Regulations, 1984 - এর সংশোধনী (নিবন্ধন ফি সংক্রান্ত).pdf",
+        "exists": true,
+        "sha256": "7a451c6dc82773af217abb451b7f37434dc0c8c33d0d845bf2148d1ca3f21322",
+        "pages": 7,
+        "extracted_characters": 11516,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "92d468195bdb387528600e8de0fed1bb9a056aaff6b73593556d94e6d9f809b2",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "7a451c6dc82773af217abb451b7f37434dc0c8c33d0d845bf2148d1ca3f21322",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_c576dd19ef4a3284",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/The Bengal Motor Vehicles Tax Act, 1932.md",
+    "snapshot_sha256": "abf09ddbdcee9887b5a2494b740f495ca44b7b724def181b216864bea9c0b357",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/The Bengal Motor Vehicles Tax Act, 1932.pdf",
+        "exists": true,
+        "sha256": "cae9cf921d92c08c2a929d9bed0b18ee871cf21a2eb661545ae59adee479bd7a",
+        "pages": 11,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "1708940227de929934e4bae47bf4a207918837bc4240070f2c6c8af5177eab17",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "registered_sha256": "cae9cf921d92c08c2a929d9bed0b18ee871cf21a2eb661545ae59adee479bd7a",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_2cc2fe0d88ced03a",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/The Motor Vehicle Tax Rules, 1966.md",
+    "snapshot_sha256": "b4fd0ff1ea6e792b66c97142f00462241110fe75fb29ba9d939b3de0253e39e2",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/The Motor Vehicle Tax Rules, 1966.pdf",
+        "exists": true,
+        "sha256": "acfead9ac750d41e70ed3708238bcd677c038e93b19da72f01a9ce3cf26a56a2",
+        "pages": 7,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "9e43591d85d480f056a1e21f8ddfa0de6ca3a31ca1f1bc0428a9e93b52b1f6eb",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "registered_sha256": "acfead9ac750d41e70ed3708238bcd677c038e93b19da72f01a9ce3cf26a56a2",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_71628890519b2054",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/অনুমিত আয়কর সংক্রান্ত গেজেট_এস,আর ও নং ২১৫-আইন-আয়কর-২০১৯.md",
+    "snapshot_sha256": "7d33660924e4727d253ece7d7dd530c210bd9a67202279d4c3e9d0fef3b4095d",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/অনুমিত আয়কর সংক্রান্ত গেজেট_এস,আর ও নং ২১৫-আইন-আয়কর-২০১৯.pdf",
+        "exists": true,
+        "sha256": "5a780b5caf1222137105422bf18f4b3fdb1993468c6341930a8d91c11ef559bb",
+        "pages": 3,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "9478ac3ef61ae9df286d951edbfce4c24049f65e860f053ed9eb2c3fbd78d051",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1,
+          2,
+          3
+        ],
+        "registered_sha256": "5a780b5caf1222137105422bf18f4b3fdb1993468c6341930a8d91c11ef559bb",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_61a65856412b6a40",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/অর্থ আইন-২০২১.md",
+    "snapshot_sha256": "d4ac271363d56a59c1b6c6089bcf69ff0b27e674dec69f61ff43805c53d9af57",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/অর্থ আইন-২০২১.pdf",
+        "exists": true,
+        "sha256": "cea13a9988b66fa498d931a3833e5e87c521727a0333d3c72ab6da3bd4bea7b1",
+        "pages": 79,
+        "extracted_characters": 167969,
+        "bengali_characters": 66,
+        "extracted_text_sha256": "5adeddf617ebb498a5108a14d9e52dd5143e0399fe974e17e6010dd6e6a265d5",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "cea13a9988b66fa498d931a3833e5e87c521727a0333d3c72ab6da3bd4bea7b1",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_338a390935b6c438",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/ই-ড্রাইভিং লাইসেন্স সংক্রান্ত প্রজ্ঞাপন.md",
+    "snapshot_sha256": "82c4251169eb21126f9285eb99ec8d029ab739f7bb9d4b26536ddfead22726ea",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/ই-ড্রাইভিং লাইসেন্স সংক্রান্ত প্রজ্ঞাপন.pdf",
+        "exists": true,
+        "sha256": "ce975818f44e916d573a9894d7b784a162bdde00bef106e1ccd1c099be543e8b",
+        "pages": 1,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "ef6cbd2161eaea7943ce8693b9824d23d1793ffb1c0fca05b600d3899b44c977",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1
+        ],
+        "registered_sha256": "ce975818f44e916d573a9894d7b784a162bdde00bef106e1ccd1c099be543e8b",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_f609dec009c587e0",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/ই-ড্রাইভিং লাইসেন্স সংক্রান্ত সংশোধিত প্রজ্ঞাপন.md",
+    "snapshot_sha256": "72ab17436de34cebbe3b14e047b2cc8d9df83607907eb7dcf4e78d6c0a879d91",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/ই-ড্রাইভিং লাইসেন্স সংক্রান্ত সংশোধিত প্রজ্ঞাপন.pdf",
+        "exists": true,
+        "sha256": "6891606e938118fabe9e90d295de028075b0cc791eb35fedd68207f82d235825",
+        "pages": 1,
+        "extracted_characters": 1927,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "c48f0666a3571c89f05bf42ac86da9970b9a64257ac2b2cf07e85f9ed8794a3f",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "6891606e938118fabe9e90d295de028075b0cc791eb35fedd68207f82d235825",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_7ce1b424608d9708",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/ইলেক্ট্রিক মোটরযান নিবন্ধন সংক্রান্ত প্রজ্ঞাপন.md",
+    "snapshot_sha256": "b86b2016d7f56a9d4428a709fff93a4d0b07d41a3d0e998950c4b9fa80f164c7",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/ইলেক্ট্রিক মোটরযান নিবন্ধন সংক্রান্ত প্রজ্ঞাপন.pdf",
+        "exists": true,
+        "sha256": "91448b629aad9359ec8fa24e9189e97cf70664fd305598f9b5b30f4b1a6d957e",
+        "pages": 2,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "7060584c3e59f0b2f12f34aa0b40faadf4aa5790a0459f3319852bcd63262cbb",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1,
+          2
+        ],
+        "registered_sha256": "91448b629aad9359ec8fa24e9189e97cf70664fd305598f9b5b30f4b1a6d957e",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_b2784bdfab996348",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/এস,আর ও নং ১৬৫-আইন-আয়কর-২০২১.md",
+    "snapshot_sha256": "b7de60ac5b5f2b1c4dc1eb9fd946e1d404c75d25d9f4cdefba492634e69d343b",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/এস,আর ও নং ১৬৫-আইন-আয়কর-২০২১.pdf",
+        "exists": true,
+        "sha256": "53431e8a6a0c98dca02016f52e8a79fab47fe8b9fc60ff3aca9e8eaafafe39cf",
+        "pages": 1,
+        "extracted_characters": 1688,
+        "bengali_characters": 868,
+        "extracted_text_sha256": "6ed3b927be61351e8bd8f76a4c4028cf7421ea89c707576a717d676d366b78e9",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "53431e8a6a0c98dca02016f52e8a79fab47fe8b9fc60ff3aca9e8eaafafe39cf",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_79376afa424f781b",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/গাড়ির অগ্রিম আয়কর আহরণের ক্ষেএে আয়কর অধ্যাদেশ, ১৯৮৪ এর ধারা 68B এর sub-section (2) এর সংশোধনসমূহ.md",
+    "snapshot_sha256": "920c903a99a7b55ecc387a707bd4910506146c8c33d4173e940f6520750dcead",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/গাড়ির অগ্রিম আয়কর আহরণের ক্ষেএে আয়কর অধ্যাদেশ, ১৯৮৪ এর ধারা 68B এর sub-section (2) এর সংশোধনসমূহ.pdf",
+        "exists": true,
+        "sha256": "0fd18792c9949c87e27e6b4f05d52a44f860bc054d2c090c7cd7a80d7cf724eb",
+        "pages": 1,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "ef6cbd2161eaea7943ce8693b9824d23d1793ffb1c0fca05b600d3899b44c977",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1
+        ],
+        "registered_sha256": "0fd18792c9949c87e27e6b4f05d52a44f860bc054d2c090c7cd7a80d7cf724eb",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_33c0c02c5416861c",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/গাড়ির কাগজপত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স এর জরিমানা ব্যতীত মূল কর বা ফি জমা প্রদানপূর্বক গাড়ির কাগজপত্র হালনাগাদ সংক্রান্ত প্রজ্ঞাপন.md",
+    "snapshot_sha256": "ec6706eb0addf0144a1a7d71777e493cabd15200d5b6256d08643f54a67fb3bd",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/গাড়ির কাগজপত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স এর জরিমানা ব্যতীত মূল কর বা ফি জমা প্রদানপূর্বক গাড়ির কাগজপত্র হালনাগাদ সংক্রান্ত প্রজ্ঞাপন.pdf",
+        "exists": true,
+        "sha256": "db78a7abd7f3bee193550c477ed5b1fd9eb1c882b2b5dc5576cd3555aa6b6806",
+        "pages": 1,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "ef6cbd2161eaea7943ce8693b9824d23d1793ffb1c0fca05b600d3899b44c977",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1
+        ],
+        "registered_sha256": "db78a7abd7f3bee193550c477ed5b1fd9eb1c882b2b5dc5576cd3555aa6b6806",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_1e0b36852a2965ea",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/জরিমানা ব্যতীত মূল কর ও ফি জমাপূর্বক মোটরযানের কাগজপত্র এবং ড্রাইভিং লাইসেন্স হালনাগাদ করার সময়সীমা বৃদ্ধি সংক্রান্ত প্রজ্ঞাপন.md",
+    "snapshot_sha256": "20e1a638c89ed19c96e55c4ef460276171fedc18705a4c7ae187fcd49c62ace7",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/জরিমানা ব্যতীত মূল কর বা ফি জমাপূর্বক মোটরযানের কাগজপত্র হালনাগাদ করার সময় বৃদ্ধি সংক্রান্ত.pdf",
+        "exists": true,
+        "sha256": "61c1ef670192b5265891e0feb38d6871424b4d6d6da688574d835d92db684155",
+        "pages": 1,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "ef6cbd2161eaea7943ce8693b9824d23d1793ffb1c0fca05b600d3899b44c977",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1
+        ],
+        "registered_sha256": "61c1ef670192b5265891e0feb38d6871424b4d6d6da688574d835d92db684155",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_9a180bfd62e0eab9",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/জরিমানা ব্যতীত মূল কর বা ফি জমা প্রদানপূর্বক গাড়ির কাগজপত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স হালনাগাদের সময়সীমা ১৫ এপ্রিল ২০২৪ খ্রিঃ পর্যন্ত বর্ধিতকরণ সংক্রান্ত প্রজ্ঞাপন.md",
+    "snapshot_sha256": "eab9aab2f9e0eeca76fc338e857df3669b4d004e4762ef41f6e2020b01ca17b7",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/জরিমানা ব্যতীত মূল কর বা ফি জমা প্রদানপূর্বক গাড়ির কাগজপত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স হালনাগাদের সময়সীমা ১৫ এপ্রিল ২০২৪ খ্রিঃ পর্যন্ত বর্ধিতকরণ সংক্রান্ত প্রজ্ঞাপন.pdf",
+        "exists": true,
+        "sha256": "af3152db1f712ff76cd91b59d1b37129d56d953d26a2b38afa34622dea1772d3",
+        "pages": 1,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "ef6cbd2161eaea7943ce8693b9824d23d1793ffb1c0fca05b600d3899b44c977",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1
+        ],
+        "registered_sha256": "af3152db1f712ff76cd91b59d1b37129d56d953d26a2b38afa34622dea1772d3",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_7885b246a7398c9d",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/জরিমানা ব্যতীত মূল কর বা ফি জমা প্রদানপূর্বক গাড়ির কাগজপত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স হালনাগাদের সময়সীমা ২৮ ফেব্রুয়ারি ২০২২ পর্যন্ত বর্ধিতকরণ সংক্রান্ত প্রজ্ঞাপন.md",
+    "snapshot_sha256": "bf6c185549cf1a6619af1650b8a2951bded61c2ec84a591e12846c4e65fc6c0e",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/জরিমানা ব্যতীত মূল কর বা ফি জমা প্রদানপূর্বক গাড়ির কাগজপত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স হালনাগাদের সময়সীমা ২৮ ফেব্রুয়ারি ২০২২ পর্যন্ত বর্ধিতকরণ সংক্রান্ত প্রজ্ঞাপন.pdf",
+        "exists": true,
+        "sha256": "aeca84cb9427f4cf458423bf51268c63e5315a1d9ed7c06afa225a49d6db695d",
+        "pages": 1,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "ef6cbd2161eaea7943ce8693b9824d23d1793ffb1c0fca05b600d3899b44c977",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1
+        ],
+        "registered_sha256": "aeca84cb9427f4cf458423bf51268c63e5315a1d9ed7c06afa225a49d6db695d",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_3d235de785819a1f",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/জরিমানা ব্যতীত মূল কর বা ফি জমা প্রদানপূর্বক গাড়ির কাগজপত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স হালনাগাদের সময়সীমা ৩০ জুন ২০২১ পর্যন্ত বর্ধিতকরণ সংক্রান্ত প্রজ্ঞাপন.md",
+    "snapshot_sha256": "ab32aa96c2c159c4cef9a9c2364ddb10147e8ed10ec8d432d64987c359cc2562",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/জরিমানা ব্যতীত মূল কর বা ফি জমা প্রদানপূর্বক গাড়ির কাগজপত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স হালনাগাদের সময়সীমা ৩০ জুন ২০২১ পর্যন্ত বর্ধিতকরণ সংক্রান্ত প্রজ্ঞাপন।.pdf",
+        "exists": true,
+        "sha256": "e05d079365decb7bcecdf90e424b91c843b8bb9ac0ebe4aa51bedb71fc1a0620",
+        "pages": 1,
+        "extracted_characters": 1439,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "04ce53570811af42295b8abdf492c75a80129a448743c2c0a81e45670a5f1363",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "e05d079365decb7bcecdf90e424b91c843b8bb9ac0ebe4aa51bedb71fc1a0620",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_f8c583fcc7bfc082",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/জরিমানা ব্যতীত মূল কর বা ফি জমা প্রদানপূর্বক গাড়ির কাগজপত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স হালনাগাদের সময়সীমা ৩১ ডিসেম্বর ২০২১ পর্যন্ত বর্ধিতকরণ সংক্রান্ত প্রজ্ঞাপন.md",
+    "snapshot_sha256": "f1b09c0ec449f484a54ac96d12402e9f62c1fe18321f662b191cc4712f480884",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/জরিমানা ব্যতীত মূল কর বা ফি জমা প্রদানপূর্বক গাড়ির কাগজপত্র (ফিটনেস, ট্যাক্স টোকেন ও রুট পারমিট) এবং ড্রাইভিং লাইসেন্স হালনাগাদের সময়সীমা ৩১ ডিসেম্বর ২০২১ পর্যন্ত বর্ধিতকরণ সংক্রান্ত প্রজ্ঞাপন.pdf",
+        "exists": true,
+        "sha256": "696760d8e76909ee4c32eb06fec408190497607f2b7fa412fd5b4933069575d0",
+        "pages": 1,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "ef6cbd2161eaea7943ce8693b9824d23d1793ffb1c0fca05b600d3899b44c977",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1
+        ],
+        "registered_sha256": "696760d8e76909ee4c32eb06fec408190497607f2b7fa412fd5b4933069575d0",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_434172ea3f86a161",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/জাতীয় স্থল পরিবহন নীতিমালা, ২০০৪.md",
+    "snapshot_sha256": "0c1e0afcba1813ee32d416907c658022c253889d6808eecbbe823e023a2945e1",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/জাতীয় স্থল পরিবহন নীতিমালা, ২০০৪.pdf",
+        "exists": true,
+        "sha256": "5de935793ae08a88e3cfac7337791198393ed130c0e72978dc4ed113f3267086",
+        "pages": 50,
+        "extracted_characters": 206621,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "f33b5cadcd279025449044748442fb25fe323d7974675cf574df3df4183198ce",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "5de935793ae08a88e3cfac7337791198393ed130c0e72978dc4ed113f3267086",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_4ba3dd29ea3234a0",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/টেক্সিক্যাব গাইডলাইন ২০১০.md",
+    "snapshot_sha256": "f45850ae4c40f1ceb8c9d8989d7ea19f7682f5b0fa0d604abf9dceaaa685abde",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/টেক্সিক্যাব গাইডলাইন ২০১০.pdf",
+        "exists": true,
+        "sha256": "00cc80f4484d52f9d729d2b3c67da88d84e65e892c20a84a8f9f47a46fd7f5c0",
+        "pages": 12,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "ee3e9571f483c678ab4ec83579e8bef9c1399e8d319a66a073e1d60491f85468",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "registered_sha256": "00cc80f4484d52f9d729d2b3c67da88d84e65e892c20a84a8f9f47a46fd7f5c0",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_4c2ab6e3792976c4",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/ঢাকা মেট্রো এলাকার বিআরটিএ সার্কেলসমূহের থানা পুনর্বিন্যাস সংক্রান্ত সংশোধিত প্রজ্ঞাপন.md",
+    "snapshot_sha256": "27249c22f64fdb9afdc3e8c31e363ce5b8023535ee9adcebc5047d0fb29d1251",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/ঢাকা মেট্রো সার্কেল বিভাজন.pdf",
+        "exists": true,
+        "sha256": "e080bc9094e7eebed3576b7ddf7c150f7b35376494eb0b48bbcf954e302cc323",
+        "pages": 2,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "7060584c3e59f0b2f12f34aa0b40faadf4aa5790a0459f3319852bcd63262cbb",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1,
+          2
+        ],
+        "registered_sha256": "e080bc9094e7eebed3576b7ddf7c150f7b35376494eb0b48bbcf954e302cc323",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_d28acbc1f0fe29b2",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/দুর্ঘটনা ক্ষতিপূরণ সংক্রান্ত আর্থিক সহায়তা তহবিল হতে আর্থিক সহায়তা প্রাপ্তির আবেদন ফরম, চেকলিস্ট ও ফরম পূরণের নির্দেশনা.md",
+    "snapshot_sha256": "6f77c490ad6b545c15f86ef9d6603330f950bf99d63965c11a7cd21a2cc908a3",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/দুর্ঘটনা ক্ষতিপূরণ সংক্রান্ত আর্থিক সহায়তা তহবিল হতে আর্থিক সহায়তা প্রাপ্তির আবেদন ফরম, চেকলিস্ট ও ফরম পূরণের নির্দেশনা.pdf",
+        "exists": true,
+        "sha256": "25696fec7b5952979d507b4676f85cc73f45c0e0050fbd3e4f65456f85432178",
+        "pages": 4,
+        "extracted_characters": 2793,
+        "bengali_characters": 844,
+        "extracted_text_sha256": "77acff7dd8f6b51bd79d85eef2c8e0e08b72595e396ba0d2a82994eaa68dd18e",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1,
+          3,
+          4
+        ],
+        "registered_sha256": "25696fec7b5952979d507b4676f85cc73f45c0e0050fbd3e4f65456f85432178",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_1b7979079554eb49",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/দেশীয় শিল্প খাতের বিকাশ ও সম্প্রসারণের লক্ষ্যে বিদ্যমান ১৬৫ (একশত পঁয়ষট্টি) সিসির পাশাপাশি দেশের অভ্যন্তরে উৎপাদিত ৩৭৫ (তিনশত পঁচাত্তর) সিসি পর্যন্ত মোটরসাইকেলের রেজিস্ট্রেশন প্রদান সংক্রান্ত প্রজ্ঞাপন.md",
+    "snapshot_sha256": "9f3efd9d9089565d9803039a40597219f92754dce4b8b8275b84e464201eaab0",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/দেশীয় শিল্প খাতের বিকাশ ও সম্প্রসারণের লক্ষ্যে বিদ্যমান ১৬৫ (একশত পঁয়ষট্টি) সিসির পাশাপাশি দেশের অভ্যন্তরে উৎপাদিত ৩৭৫ (তিনশত পঁচাত্তর) সিসি পর্যন্ত মোটরসাইকেলের রেজিস্ট্রেশন প্রদান সংক্রান্ত প্রজ্ঞাপন.pdf",
+        "exists": true,
+        "sha256": "afe166d3a8ed6670c72204436302bbcbe1b76fbc2755e157b55d707d47ce02fb",
+        "pages": 1,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "ef6cbd2161eaea7943ce8693b9824d23d1793ffb1c0fca05b600d3899b44c977",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1
+        ],
+        "registered_sha256": "afe166d3a8ed6670c72204436302bbcbe1b76fbc2755e157b55d707d47ce02fb",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_050082b53ac26deb",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/দেশে উৎপাদিত মোটরযানের টাইপ অনুমোদন (Type Approval) নির্দেশিকা (সংশোধিত), ২০২৬.md",
+    "snapshot_sha256": "94a37f6b079a445a4dda46e0e355a9d43d0fa62bb25b8a8fca136ffe50fba938",
+    "originals": [],
+    "source_association": "unresolved"
+  },
+  {
+    "document_id": "brta_052739491b97aa59",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/নং ৩৫.০০.০০০০.০২০.২৬.০০৫.১৬-৪৪৪।--বাস ও মিনিবাসের সর্বোচ্চ ভাড়া পুনঃনির্ধারণ.md",
+    "snapshot_sha256": "2536b8ffd12218a614b88060f38fc59196d4ed687e5ab41684af2236091feaa3",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/নং ৩৫.০০.০০০০.০২০.২৬.০০৫.১৬-৪৪৪।--বাস ও মিনিবাসের সর্বোচ্চ ভাড়া পুনঃনির্ধারণ.pdf",
+        "exists": true,
+        "sha256": "af717e1310cc7340e7206839868e17c1a134201506de759480e9b3d1a1f136b1",
+        "pages": 2,
+        "extracted_characters": 3657,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "7134c323a5559be1b9b8f850da31a03a610ecc17afc7e56c3fb49c243317c658",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "af717e1310cc7340e7206839868e17c1a134201506de759480e9b3d1a1f136b1",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_39e218815548f273",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/পররাষ্ট্র মন্ত্রণালয়ের Note Verbale For Printed Driving License card.md",
+    "snapshot_sha256": "6bd9b2342cf799d132cf6c00888dc3c032c0e49519b0f56ff4962c5e3e2d50a3",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/পররাষ্ট্র মন্ত্রণালয়ের Note Verbale For Printed Driving License card.pdf",
+        "exists": true,
+        "sha256": "f5ff14bb52d4b74e6b8d68fac76fbf7d420cd6997a6bc71928e8c4892ad8ddc4",
+        "pages": 1,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "ef6cbd2161eaea7943ce8693b9824d23d1793ffb1c0fca05b600d3899b44c977",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1
+        ],
+        "registered_sha256": "f5ff14bb52d4b74e6b8d68fac76fbf7d420cd6997a6bc71928e8c4892ad8ddc4",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_23e4ebfee3c93254",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/বাংলাদেশ রোড সাইন ম্যানুয়াল (ট্রাফিক সাইনস ম্যানুয়াল ভলিউম-০১).md",
+    "snapshot_sha256": "3936e47f9f80822016ac5c63d10a2f351680babf6f1f3553db18c53eaf4cb467",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/বাংলাদেশ রোড সাইন ম্যানুয়াল (ট্রাফিক সাইনস ম্যানুয়াল ভলিউম-০১).pdf",
+        "exists": true,
+        "sha256": "795ae10ee3ef4f76f6a4520b1faca6dedcf38475f898687a525914d2a4ef787c",
+        "pages": 241,
+        "extracted_characters": 425807,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "468288fff2125f377fd3f350db1062d5d3e366b39360bfba1b798526f6ff1642",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "795ae10ee3ef4f76f6a4520b1faca6dedcf38475f898687a525914d2a4ef787c",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_1cdd65b6e0cbd3f6",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/বাংলাদেশ রোড সাইন ম্যানুয়াল (ট্রাফিক সাইনস ম্যানুয়াল ভলিউম-০২).md",
+    "snapshot_sha256": "e1a4ca68e51774d82112ea840776944e66d875a010895e1986d6ecb774f975e7",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/বাংলাদেশ রোড সাইন ম্যানুয়াল (ট্রাফিক সাইনস ম্যানুয়াল ভলিউম-০২).pdf",
+        "exists": true,
+        "sha256": "4ae9755c0863ec9317ca4c4f98c99bab3513838d6cfc4c8b456d057c86a021f1",
+        "pages": 153,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "c8c75cd4f345fc0530d025a052439595662108313cb5b5418f219ec2d308a6d9",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153
+        ],
+        "registered_sha256": "4ae9755c0863ec9317ca4c4f98c99bab3513838d6cfc4c8b456d057c86a021f1",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_8b38af8ac3dab592",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/বাংলাদেশ সড়ক পরিবহণ কর্তৃপক্ষ আইন, ২০১৭ কার্যকর সংক্রান্ত গেজেট.md",
+    "snapshot_sha256": "e44d4d1a6298dcd2080caa02c887e02a8ff22bf0e8e12cb466baf2afbd73c31e",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/বাংলাদেশ সড়ক পরিবহণ কর্তৃপক্ষ আইন, ২০১৭ কার্যকর সংক্রান্ত গেজেট.pdf",
+        "exists": true,
+        "sha256": "42461f82ebc1a367ab572785eea410632b20f7f6a155bfbaa818011b6e785ba8",
+        "pages": 9,
+        "extracted_characters": 16095,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "97a659078715bb5c725f87c48eb14e6b93929f43506db9a223121a7dd6e0f3dd",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1
+        ],
+        "registered_sha256": "42461f82ebc1a367ab572785eea410632b20f7f6a155bfbaa818011b6e785ba8",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_9643eb85a2b55e3b",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/বাংলাদেশ সড়ক পরিবহণ কর্তৃপক্ষ আইন, ২০১৭.md",
+    "snapshot_sha256": "7e822a4766866fad4c7ab872591c9a06678d8621a341f915fcb60406bb1f48a1",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/বাংলাদেশ সড়ক পরিবহণ কর্তৃপক্ষ আইন, ২০১৭.pdf",
+        "exists": true,
+        "sha256": "8cf190eb4ef74ca29c78da4c3bcc0620fd842b07328f8b8189bcc254a6a527f5",
+        "pages": 8,
+        "extracted_characters": 16095,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "8f77958a257281c761c4ec48c2a827cab010c7c01ece9eeb6439816f0bfb33bf",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "8cf190eb4ef74ca29c78da4c3bcc0620fd842b07328f8b8189bcc254a6a527f5",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_76d085ed61f044f4",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/বাণিজ্যিক মোটরযানের ইকোনমিক লাইফ নির্ধারণ সংক্রান্ত প্রজ্ঞাপন ও গেজেট প্রকাশনার স্মারক.md",
+    "snapshot_sha256": "df36a85ea020e7911f5ccaaf2f2e9c73fd5826c86b0165759c90ad1e20d6cb85",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/বাণিজ্যিক মোটরযানের ইকোনমিক লাইফ নির্ধারণ সংক্রান্ত.pdf",
+        "exists": true,
+        "sha256": "3ebdd717c7ad732be023606542fb262bf38a57c07f1d29bc9adb068aa44ad3f8",
+        "pages": 2,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "7060584c3e59f0b2f12f34aa0b40faadf4aa5790a0459f3319852bcd63262cbb",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1,
+          2
+        ],
+        "registered_sha256": "3ebdd717c7ad732be023606542fb262bf38a57c07f1d29bc9adb068aa44ad3f8",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_f953f2ba886b8dda",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/বাস বা মিনিবাসের ভাড়া বৃদ্ধি সংক্রান্ত প্রজ্ঞাপন.md",
+    "snapshot_sha256": "9aad712afbc82b34d971e4e6c57b10d8f4ad7a6de7e1177fce73888b7c9ff4c5",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/বাস বা মিনিবাসের ভাড়া বৃদ্ধি সংক্রান্ত প্রজ্ঞাপন.pdf",
+        "exists": true,
+        "sha256": "4eed528e091b3471294c5bd3f79f0bb2c151159eabc5a5ec84c784f9c4ce8acf",
+        "pages": 1,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "ef6cbd2161eaea7943ce8693b9824d23d1793ffb1c0fca05b600d3899b44c977",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1
+        ],
+        "registered_sha256": "4eed528e091b3471294c5bd3f79f0bb2c151159eabc5a5ec84c784f9c4ce8acf",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_427f53a2e7bd8de2",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/বিআরটিএ প্রতিষ্ঠা সংক্রান্ত প্রজ্ঞাপন.md",
+    "snapshot_sha256": "357007ce6e10c6548aacb06f3ed27df16fb3686a8f6ef3274ccc5344e2f37d39",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/বিআরটিএ প্রতিষ্ঠা সংক্রান্ত প্রজ্ঞাপন.pdf",
+        "exists": true,
+        "sha256": "6243362b840c33bff22c3248cf3429892f615b77b8b32f8cf2672b59f93e692e",
+        "pages": 1,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "ef6cbd2161eaea7943ce8693b9824d23d1793ffb1c0fca05b600d3899b44c977",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1
+        ],
+        "registered_sha256": "6243362b840c33bff22c3248cf3429892f615b77b8b32f8cf2672b59f93e692e",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_57a7e75567f9a5c3",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/বিআরটিএ মধ্যম ও ভারী শ্রেণীর পেশাদার ড্রাইভিং লাইসেন্স নিয়ন্ত্রণ সংক্রান্ত নির্দেশিকা ও প্রবিধানমালা.md",
+    "snapshot_sha256": "a00e05ee17383f825cfec99e2458e0fe0af6b27e9c013c5ec6da9b858fe9e8df",
+    "originals": [],
+    "source_association": "unresolved"
+  },
+  {
+    "document_id": "brta_17068ee3db4e5f2d",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/বৈদ্যুতিক যান চার্জিং নির্দেশিকা.md",
+    "snapshot_sha256": "5d81f434ad2dfb6592b87377f7f101ccb0fcd3e1b16bfebe53ab008c11bd35fc",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/বৈদ্যুতিক যান চার্জিং নির্দেশিকা.pdf",
+        "exists": true,
+        "sha256": "0d23200369056d5ed48cbb81fcfc21503565423ba7872579483047556a64b5f2",
+        "pages": 22,
+        "extracted_characters": 37489,
+        "bengali_characters": 14048,
+        "extracted_text_sha256": "821343840b7fdfb5bb96a2e19ba98d7c1262ae940a2df03547eb14916d983a31",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "0d23200369056d5ed48cbb81fcfc21503565423ba7872579483047556a64b5f2",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_c1221d4938763d15",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/ব্যক্তিগত একাধিক মোটরযান মালিকগণের নিকট হইতে পরিবেশ সারচার্জ সংগ্রহ সংক্রান্ত বিধানাবলী ও হারের সারণী.md",
+    "snapshot_sha256": "402622a7edd17ba5e4e67482180090c146b80a2834c43cd892859584245abc3c",
+    "originals": [],
+    "source_association": "unresolved"
+  },
+  {
+    "document_id": "brta_8991a28505d148dc",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/ব্যক্তিগত মোটরযান মালিকগণের নিকট হইতে অগ্রিম কর সংগ্রহ সংক্রান্ত বিধানাবলী (আয়কর আইন, ২০২৩ - ধারা ১৫৩ ও ১৫৪).md",
+    "snapshot_sha256": "7194be22fc27dec709f6aad3dda50bc568944545d9246bfb510cd429472d1720",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/মোটরযানের অগ্রিম আয়কর ২০২৩-২০২৪ (মোটর কার, জীপ বা মাইক্রোবাস).pdf",
+        "exists": true,
+        "sha256": "db79733a8c46b63c85c8f6c3bbddc108e8396e5ea1b09d8c84e73ffa6047354c",
+        "pages": 3,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "9478ac3ef61ae9df286d951edbfce4c24049f65e860f053ed9eb2c3fbd78d051",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1,
+          2,
+          3
+        ],
+        "registered_sha256": "db79733a8c46b63c85c8f6c3bbddc108e8396e5ea1b09d8c84e73ffa6047354c",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_cfb8d605697b4550",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/ভাড়ায় চালিত নহে এইরূপ মোটরকার, জীপ ও মাইক্রোবাসের ২ (দুই) বছর অন্তর ফিটনেস নবায়ন সংক্রান্ত প্রজ্ঞাপন.md",
+    "snapshot_sha256": "f62bf545c79641734473c43e6ea8615f3d77566f1fb0e56360d5b870af1cb279",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/ভাড়ায় চালিত নহে এইরূপ মোটরকার, জীপ ও মাইক্রোবাসের ২ (দুই) বছর অন্তর ফিটনেস নবায়ন সংক্রান্ত প্রজ্ঞাপন.pdf",
+        "exists": true,
+        "sha256": "151825238eae46b1727bd0f149b26c4cc77ec19b545c7b56a208e6896ef48c70",
+        "pages": 1,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "ef6cbd2161eaea7943ce8693b9824d23d1793ffb1c0fca05b600d3899b44c977",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1
+        ],
+        "registered_sha256": "151825238eae46b1727bd0f149b26c4cc77ec19b545c7b56a208e6896ef48c70",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_90ea5e2f80d89b97",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/ভারী ও মধ্যম শ্রেনীর ড্রাইভিং লাইসেন্স সংক্রান্ত প্রজ্ঞাপন.md",
+    "snapshot_sha256": "1a3fc5f422e43bdb0a3bcf7d71076c4c041fdbe1eeb7ca1de8cb8ff4778c3711",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/ভারী ও মধ্যম শ্রেনীর ড্রাইভিং লাইসেন্স সংক্রান্ত প্রজ্ঞাপন.pdf",
+        "exists": true,
+        "sha256": "cb161e79458f84aea1aeb226db585a03f215a39aed1e3b5c771e6b9dd873fba5",
+        "pages": 1,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "ef6cbd2161eaea7943ce8693b9824d23d1793ffb1c0fca05b600d3899b44c977",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1
+        ],
+        "registered_sha256": "cb161e79458f84aea1aeb226db585a03f215a39aed1e3b5c771e6b9dd873fba5",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_9612ebaedb933518",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/মহান স্বধীনতা যুদ্ধে যুদ্ধাহত মুক্তিযোদ্ধা ও শীহদ পরিবারের সদস্যদের গাড়ির রোড ট্যাক্স ও ফিটনেস ফি মওকুফ প্রসংগে.md",
+    "snapshot_sha256": "2fdcf99725473c32a01e20be98a989d0085ec9b34ba04aec9dd7475b0acb4340",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/মহান স্বধীনতা যুদ্ধে যুদ্ধাহত মুক্তিযোদ্ধা ও শীহদ পরিবারের সদস্যদের গাড়ির রোড ট্যাক্স ও ফিটনেস ফি মওকুফ প্রসংগে.pdf",
+        "exists": true,
+        "sha256": "d8019f24b22102c438ea17b5273ec8e9cc72758b508596446149dcd56c6a9b76",
+        "pages": 2,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "7060584c3e59f0b2f12f34aa0b40faadf4aa5790a0459f3319852bcd63262cbb",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1,
+          2
+        ],
+        "registered_sha256": "d8019f24b22102c438ea17b5273ec8e9cc72758b508596446149dcd56c6a9b76",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_1f0d58fa8bc867d1",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/মুক্তিযোদ্ধাদের জন্য নিবন্ধন ফি মওকুফ সংক্রান্ত প্রজ্ঞাপন.md",
+    "snapshot_sha256": "4a6874abebed4391cf545ab531f245a1025b4a77649ba5f91637830e72dfb228",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/মুক্তিযোদ্ধাদের জন্য নিবন্ধন ফি মওকুফ সংক্রান্ত প্রজ্ঞাপন.pdf",
+        "exists": true,
+        "sha256": "a268c5d6632ff0561ca84b2546cc136efad37d92d7c4983a4920e29739da95c9",
+        "pages": 2,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "7060584c3e59f0b2f12f34aa0b40faadf4aa5790a0459f3319852bcd63262cbb",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1,
+          2
+        ],
+        "registered_sha256": "a268c5d6632ff0561ca84b2546cc136efad37d92d7c4983a4920e29739da95c9",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_8a181349b5846378",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/মোটরকার ও জীপ এর মালিকদের পছন্দমতো নম্বর প্রদান সংক্রান্ত প্রজ্ঞাপন.md",
+    "snapshot_sha256": "1a2b28fabae25a841d5491aa8a0c68cf4abfd2b3ff6785caa426569a4676a103",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/মোটরকার ও জীপ এর মালিকদের পছন্দমতো নম্বর প্রদান সংক্রান্ত প্রজ্ঞাপন.pdf",
+        "exists": true,
+        "sha256": "5cbbbd08b0f0770c672b7e330872e44a522bf90ee5a68e21679d2aab7aa32b71",
+        "pages": 1,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "ef6cbd2161eaea7943ce8693b9824d23d1793ffb1c0fca05b600d3899b44c977",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1
+        ],
+        "registered_sha256": "5cbbbd08b0f0770c672b7e330872e44a522bf90ee5a68e21679d2aab7aa32b71",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_bc8d8874a6df0bb5",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/মোটরযান গতিসীমা নির্দেশিকা, ২০২৪.md",
+    "snapshot_sha256": "f4d14f962e3001af26756fa63221ff837cbbe96865b9e99ed7d3809dfab30c8a",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/মোটরযান গতিসীমা নির্দেশিকা, ২০২৪.pdf",
+        "exists": true,
+        "sha256": "7ecd03c4b4b2a13673c306b211dfa2777c3d1c3cfb074838594d05b65494fdbd",
+        "pages": 5,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "2e9faebbd47a57f8d00d2f73a2e412bbf5353a95a112f2278b24f69ee5d14b62",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "registered_sha256": "7ecd03c4b4b2a13673c306b211dfa2777c3d1c3cfb074838594d05b65494fdbd",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_b39d3d2ad4bf5f7f",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/মোটরযান স্ক্র্যাপ ও রিসাইক্লিং নীতিমালা, ২০২৬.md",
+    "snapshot_sha256": "14151ea1bae86f634c9746874cd0638a643567c5fba8bace97a98260e8797ed5",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/মোটরযান স্ক্র্যাপ ও রিসাইক্লিং নীতিমালা ২০২৬.pdf",
+        "exists": true,
+        "sha256": "ad00e9efd17d9cb9dcc1fdfd8cec34e86b233c791eb7e753783974623bee9917",
+        "pages": 7,
+        "extracted_characters": 11573,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "7396d5d90d1fb2499071e0f693035f11e637979413e34668ff823778cddcd7fd",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "ad00e9efd17d9cb9dcc1fdfd8cec34e86b233c791eb7e753783974623bee9917",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_0624a62bdb2bee33",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/মোটরসাইকেল রেজিস্ট্রেশনে বিদ্যমান কর ও ফি’সমূহের পুনঃনির্ধারণ সংক্রান্ত প্রজ্ঞাপন.md",
+    "snapshot_sha256": "ae63e143888a10408b1eae7675ff55467c8ba804a36cfd07beeac98584349e71",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/মোটরসাইকেল রেজিস্ট্রেশনে বিদ্যমান কর ও ফি’সমূহের পুনঃনির্ধারণ সংক্রান্ত প্রজ্ঞাপন.pdf",
+        "exists": true,
+        "sha256": "391986f2984c208b6a406492c6ede5e76929009e2de228bbe9e72f259ffa0d15",
+        "pages": 2,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "7060584c3e59f0b2f12f34aa0b40faadf4aa5790a0459f3319852bcd63262cbb",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1,
+          2
+        ],
+        "registered_sha256": "391986f2984c208b6a406492c6ede5e76929009e2de228bbe9e72f259ffa0d15",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_91979c30a91124e0",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/রাইড শেয়ারিং গাইডলাইন ২০১৭.md",
+    "snapshot_sha256": "e49b0c93244c7d4d79eee47ccf7b75b748c7bf3959cc9b7ba666331dc9c90045",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/রাইড শেয়ারিং গাইডলাইন ২০১৭.pdf",
+        "exists": true,
+        "sha256": "353554725ec2491a460c3bdfa4b43656334bfad4e7a9bf93ec7df81e25d9723f",
+        "pages": 14,
+        "extracted_characters": 20683,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "b12f0fca7c8aa9d62e693f48bad990b6348ef6936ee5d066833fb96ea52124a6",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "353554725ec2491a460c3bdfa4b43656334bfad4e7a9bf93ec7df81e25d9723f",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_a9d01ebce3486a30",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/রেট্রো-রিফ্লেক্টিভ নম্বর প্লেট এবং ডিজিটাল রেজিস্ট্রেশন সার্টিফিকেট (DRC) গ্রহণ ও সংযোজন সংক্রান্ত নির্দেশিকা, ২০২৬.md",
+    "snapshot_sha256": "7f77ff79e5561caf20d33f876bcc988b074400022e676f4b87014456931016b9",
+    "originals": [],
+    "source_association": "unresolved"
+  },
+  {
+    "document_id": "brta_4e08eb4e988d38e4",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/সড়ক পরিবহণ বিধিমালা, ২০২২.md",
+    "snapshot_sha256": "2a08b085cecd864def8bf31ffcc5d1e8538a8fc2d6a064c49d6443aeacca26ee",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/সড়ক পরিবহণ বিধিমালা, ২০২২.pdf",
+        "exists": true,
+        "sha256": "64c6951dbcdf5debc4a9be1b2a8a82823b32a4234412b1d91dee9ad5860441ff",
+        "pages": 191,
+        "extracted_characters": 376260,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "6c551fac8a258d94cd117234b84d29f30d1dcdb5b9addfafd9e223871502f7b1",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "64c6951dbcdf5debc4a9be1b2a8a82823b32a4234412b1d91dee9ad5860441ff",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_71749466ddeeea76",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/সড়ক পরিবহন আইন, ২০১৮ এর অধীনে বিধিমালা না হওয়া পর্যন্ত উক্ত আইনের অধীনে ১২৪(১) থ ক্ষমতাবলে সরকার ড্রাইভিং প্রশিক্ষক লাইসেন্স প্রদানের জন্য পুনরাদেশ না দেওয়া পর্যন্ত পালনীয় আদেশ.md",
+    "snapshot_sha256": "04f2cee27d9272375b330be17ece46a61eaa7cd28566945372d17c5f92f10673",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/সড়ক পরিবহন আইন, ২০১৮ এর অধীনে বিধিমালা না হওয়া পর্যন্ত উক্ত আইনের অধীনে ১২৪(১) থ ক্ষমতাবলে সরকার ড্রাইভিং প্রশিক্ষক লাইসেন্স প্রদানের জন্য পুনরাদেশ না দেওয়া পর্যন্ত পালনীয় আদেশ।.pdf",
+        "exists": true,
+        "sha256": "14d452e44810c9ad5c01c39bbd460fdcd82ef70067df9970718548558ccde8e3",
+        "pages": 2,
+        "extracted_characters": 2635,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "f1b966ef4a328b7f61268046b2a23f4e7fe1e0a801d1381f076c168a7a3bf071",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "14d452e44810c9ad5c01c39bbd460fdcd82ef70067df9970718548558ccde8e3",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_edcb265eccf9cd32",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/সড়ক পরিবহন আইন, ২০১৮.md",
+    "snapshot_sha256": "eaca7e57932521d9456931380a01aeff1b62fdd50c4b20c744054866b499f1e6",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/সড়ক পরিবহন আইন, ২০১৮.pdf",
+        "exists": true,
+        "sha256": "1550b97f3406008fa99708826999539c3ab64aa510ba0e4d57140f9ff30eeb9a",
+        "pages": 47,
+        "extracted_characters": 89035,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "6c945a612dd08237a9e9a003da18dc56a26c78703a951e18507fd3ff867b995f",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "1550b97f3406008fa99708826999539c3ab64aa510ba0e4d57140f9ff30eeb9a",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_73f9b10e47408c1d",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/সিএনজি বা পেট্রোলচালিত ৪-স্ট্রোক থ্রি-হুইলার সার্ভিস নীতিমালা, ২০০৭.md",
+    "snapshot_sha256": "2c3a0138522692d9e9c31c7645b5acea968848751be6b13e11ed0d112efb8672",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/সিএনজি বা পেট্রোলচালিত ৪-স্ট্রোক থ্রি-হুইলার সার্ভিস নীতিমালা, ২০০৭.pdf",
+        "exists": true,
+        "sha256": "749e4b7f3a5e4a58c26a00794956f9d6ee7b040312befe5a412885e867ea524b",
+        "pages": 8,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "a61f149fa51d21a7666743f05977a61c858db20e63ecc70834dd3885b3062550",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "registered_sha256": "749e4b7f3a5e4a58c26a00794956f9d6ee7b040312befe5a412885e867ea524b",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_0a6926d40f756cb6",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/হালকা মোটরযান চালনার পেশাদার ড্রাইভিং লাইসেন্সে মধ্যম ও ভারী এবং মধ্যম মোটরযান চালনার পেশাদার ড্রাইভিং লাইসেন্সে ভারী শ্রেণির মোটরযান সংযোজনের শর্ত শিথিল ও সময় বৃদ্ধি সংক্রান্ত প্রজ্ঞাপন.md",
+    "snapshot_sha256": "adfe516f4415659e10d544b2f681492c60ff9ec15732c7e0bf842a7dea1fbe15",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/হালকা মোটরযান চালনার পেশাদার ড্রাইভিং লাইসেন্সে মধ্যম ও ভারী এবং মধ্যম মোটরযান চালনার পেশাদার ড্রাইভিং লাইসেন্সে ভারী শ্রেণির মোটরযান সংযোজনের শর্ত শিথিল ও সময় বৃদ্ধি সংক্রান্ত প্রজ্ঞাপন.pdf",
+        "exists": true,
+        "sha256": "5640f030a0fbe045982a3266fe1e17de986897d4f347f3795841ea26a68be925",
+        "pages": 1,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "ef6cbd2161eaea7943ce8693b9824d23d1793ffb1c0fca05b600d3899b44c977",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1
+        ],
+        "registered_sha256": "5640f030a0fbe045982a3266fe1e17de986897d4f347f3795841ea26a68be925",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_04ceda663278421b",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/হুটার, হাইড্রোলিক হর্ন ও অন্যান্য অননুমোদিত হর্ন মোটরযানে ব্যবহার না করা সংক্রান্ত পরিপত্র.md",
+    "snapshot_sha256": "644b903b8bc6fb14f115071cacf11e6ff38cb22c10d6472df40b53642b2a0d1c",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/হুটার, হাইড্রোলিক হর্ন ও অন্যান্য অননুমোদিত হর্ন মোটরযানে ব্যবহার না করা সংক্রান্ত পরিপত্র.pdf",
+        "exists": true,
+        "sha256": "36a20d26484679176a291d62b6e381b92d8b6b2aee004641c547a307e1f763f0",
+        "pages": 2,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "7060584c3e59f0b2f12f34aa0b40faadf4aa5790a0459f3319852bcd63262cbb",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1,
+          2
+        ],
+        "registered_sha256": "36a20d26484679176a291d62b6e381b92d8b6b2aee004641c547a307e1f763f0",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_60726c26293be2e5",
+    "snapshot": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/“সড়ক পরিবহন আইন, ২০১৮” ১ নভেম্বর, ২০১৯ তারিখ থেকে কার্যকরের প্রজ্ঞাপন.md",
+    "snapshot_sha256": "f511daffaa66678bdef7b181a25fb9263a009b60613a992e5333e309498104ca",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/“ সড়ক পরিবহন আইন, ২০১৮” ১ নভেম্বর, ২০১৯ তারিখ থেকে কার্যকরের প্রজ্ঞাপন.pdf",
+        "exists": true,
+        "sha256": "bc63392b8daf991af30aa317287b1acc8ef0873d0ace8260505d07829141e18d",
+        "pages": 1,
+        "extracted_characters": 1209,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "d55c763047906bfde491bb565fbc7ac7ff2998815a1c6415b5845bd1c3757d65",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "bc63392b8daf991af30aa317287b1acc8ef0873d0ace8260505d07829141e18d",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_34638661bb8d9f6a",
+    "snapshot": "domains/brta/data/source_snapshots/brta/ফি, ট্যাক্স ও আয়কর/অর্থ অধ্যাদেশ,২০২৫ ও অর্থ সংক্রান্ত কতিপয় আইন (সংশোধন) অধ্যাদেশ,২০২৫ এর মাধ্যমে আয়কর আইন,২০২৩ এ বিআরটিএ সম্পর্কিত সকল ধারার ক্ষেত্রে আনীত পরিবর্তন সম্পর্কিত স্পষ্টিকরণ.md",
+    "snapshot_sha256": "c96bed39b449f016af3efc22faf2a7c4d346b249546684fff5cdebc6ec676230",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/ফি, ট্যাক্স ও আয়কর/অর্থ অধ্যাদেশ,২০২৫ ও অর্থ সংক্রান্ত কতিপয় আইন (সংশোধন) অধ্যাদেশ,২০২৫ এর মাধ্যমে আয়কর আইন,২০২৩ এ বিআরটিএ সম্পর্কিত সকল ধারার ক্ষেত্রে আনীত পরিবর্তন সম্পর্কিত স্পষ্টিকরণ.pdf",
+        "exists": true,
+        "sha256": "c7cbb98843b1f4fa63485e7bf9d47dd5bedccadbe15a34910cb48df6f5028e01",
+        "pages": 3,
+        "extracted_characters": 7557,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "7bfb812e140bf30cd8fe4fa2b2ce652374265f2012526d431743bfac4bfcf37d",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "c7cbb98843b1f4fa63485e7bf9d47dd5bedccadbe15a34910cb48df6f5028e01",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_51ce9461784a1617",
+    "snapshot": "domains/brta/data/source_snapshots/brta/ফি, ট্যাক্স ও আয়কর/ডিজিটাল রেজিস্ট্রেশন সার্টিফিকেট, রোট্রো-রিফ্লেক্টিভ নম্বর প্লেট ও আরএফ আইডি ট্যাগ-এর ফি.md",
+    "snapshot_sha256": "8e92b9732a08a71c47b8ea89bae79a2e117576df780dc228829e71ff82263c98",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/ফি, ট্যাক্স ও আয়কর/ডিজিটাল রেজিস্ট্রেশন সার্টিফিকেট, রোট্রো-রিফ্লেক্টিভ নম্বর প্লেট ও আরএফ আইডি ট্যাগ-এর ফি.pdf",
+        "exists": true,
+        "sha256": "17821679d2aab987e2036cf6bcc6b4166dab2ff000daaf4ff93c2de5b9752c51",
+        "pages": 1,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "ef6cbd2161eaea7943ce8693b9824d23d1793ffb1c0fca05b600d3899b44c977",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1
+        ],
+        "registered_sha256": "17821679d2aab987e2036cf6bcc6b4166dab2ff000daaf4ff93c2de5b9752c51",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_3cae1ecd59682fa3",
+    "snapshot": "domains/brta/data/source_snapshots/brta/ফি, ট্যাক্স ও আয়কর/ড্রাইভিং লাইসেন্স ফি.md",
+    "snapshot_sha256": "75c20a7744690e5c4ddfb8a687ef5a2680ea9aac806cfc655858611c81cd1ee9",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/ফি, ট্যাক্স ও আয়কর/ড্রাইভিং লাইসেন্স ফি.pdf",
+        "exists": true,
+        "sha256": "527f0b1a3c435e40910667062fa805113ddadfa2f9b49fa90d928fbdc887179b",
+        "pages": 1,
+        "extracted_characters": 5152,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "9c3a32171a93a7f317a4415c03f8abc2b1b1061d8023937cd39e41af19ad86ae",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "527f0b1a3c435e40910667062fa805113ddadfa2f9b49fa90d928fbdc887179b",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_6eb3d41986361dbd",
+    "snapshot": "domains/brta/data/source_snapshots/brta/ফি, ট্যাক্স ও আয়কর/বিভিন্ন ফি জানার টিউটোরিয়াল ডকুমেন্ট.md",
+    "snapshot_sha256": "226c0153360920d9e11439bce83226bb22a73eaf419ab0d627b5eeb1697698f7",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/ফি, ট্যাক্স ও আয়কর/বিভিন্ন ফি জানার টিউটোরিয়াল ডকুমেন্ট.pdf",
+        "exists": true,
+        "sha256": "b1c53aa3f47c93a3d8899957e44210530ec22f2052a46beabcd8538425cc5cad",
+        "pages": 5,
+        "extracted_characters": 1833,
+        "bengali_characters": 1164,
+        "extracted_text_sha256": "cf4d0bc7b1cd1b13f1ac3c79c88045111a3c755a282b0a50edec08a3694638a4",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "b1c53aa3f47c93a3d8899957e44210530ec22f2052a46beabcd8538425cc5cad",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_4830b9c7aa9d017d",
+    "snapshot": "domains/brta/data/source_snapshots/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০০৯-২০১০ (বাস, মিনিবাস, কোস্টার, ট্যাক্সিক্যাব, প্রাইমমুভার, ট্রাক, ট্যাংক-লরী, পিক-আপ, হিউম্যান হলার, ম্যাক্সি বা মাল বহনকারী অটোরিকশা).md",
+    "snapshot_sha256": "b1d08583d3577cca12a2c5e3e6ce0b773adf17bc33ce7d82e8d618f1e97f9b8e",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০০৯-২০১০ (বাস, মিনিবাস, কোস্টার, ট্যাক্সিক্যাব, প্রাইমমুভার, ট্রাক, ট্যাংক-লরী, পিক-আপ, হিউম্যান হলার, ম্যাক্সি বা মাল বহনকারী অটোরিকশা).pdf",
+        "exists": true,
+        "sha256": "db817f6d7aa08330c4b99df0d7984add7898d1df28355aadd5a91a90b09c76ea",
+        "pages": 5,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "2e9faebbd47a57f8d00d2f73a2e412bbf5353a95a112f2278b24f69ee5d14b62",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "registered_sha256": "db817f6d7aa08330c4b99df0d7984add7898d1df28355aadd5a91a90b09c76ea",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_30b4c2d7b6e1f540",
+    "snapshot": "domains/brta/data/source_snapshots/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০০৯-২০১০ (মোটর কার, জীপ বা মাইক্রোবাস).md",
+    "snapshot_sha256": "3e82c205294e921d9623e3c99720f0df6c35aeb7aa9309cea8c09d6db6928464",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০০৯-২০১০ (মোটর কার, জীপ বা মাইক্রোবাস).pdf",
+        "exists": true,
+        "sha256": "669092b789d150509d8d2d9fd6f3858e06834b213599301d7dcebd0aa9eea321",
+        "pages": 2,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "7060584c3e59f0b2f12f34aa0b40faadf4aa5790a0459f3319852bcd63262cbb",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1,
+          2
+        ],
+        "registered_sha256": "669092b789d150509d8d2d9fd6f3858e06834b213599301d7dcebd0aa9eea321",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_59c4b843b89942b2",
+    "snapshot": "domains/brta/data/source_snapshots/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০১০-২০১১ (মোটর কার, জীপ বা মাইক্রোবাস).md",
+    "snapshot_sha256": "253ef025b7bb537844b61358db506a2655769a84b9a8c72382e57338723384a6",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০১০-২০১১ (মোটর কার, জীপ বা মাইক্রোবাস).pdf",
+        "exists": true,
+        "sha256": "cdb63c1cfc946a1c762ebdf54fd94714926b8d5f2b34ba182d22fd50ec66052d",
+        "pages": 1,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "ef6cbd2161eaea7943ce8693b9824d23d1793ffb1c0fca05b600d3899b44c977",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1
+        ],
+        "registered_sha256": "cdb63c1cfc946a1c762ebdf54fd94714926b8d5f2b34ba182d22fd50ec66052d",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_eb578cb492080667",
+    "snapshot": "domains/brta/data/source_snapshots/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০১১-২০১২ (মোটর কার, জীপ বা মাইক্রোবাস).md",
+    "snapshot_sha256": "8fd24ec2d5440b16171b615fe69bd9064075a972ef7995ed0c8422221d96cd19",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০১১-২০১২ (মোটর কার, জীপ বা মাইক্রোবাস).pdf",
+        "exists": true,
+        "sha256": "44b8e4265d95cca85c323dc2cafefc9906a80e0f0a62fe2422732bea87fd3b7e",
+        "pages": 2,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "7060584c3e59f0b2f12f34aa0b40faadf4aa5790a0459f3319852bcd63262cbb",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1,
+          2
+        ],
+        "registered_sha256": "44b8e4265d95cca85c323dc2cafefc9906a80e0f0a62fe2422732bea87fd3b7e",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_b15ca727a82c6f30",
+    "snapshot": "domains/brta/data/source_snapshots/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০১২-২০১৩ (মোটর কার, জীপ বা মাইক্রোবাস).md",
+    "snapshot_sha256": "9ab91392ee054f1bbcc5e2beabdca6168d4b13ae53121ba673274dc1fe054a3d",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০১২-২০১৩ (মোটর কার, জীপ বা মাইক্রোবাস).pdf",
+        "exists": true,
+        "sha256": "669092b789d150509d8d2d9fd6f3858e06834b213599301d7dcebd0aa9eea321",
+        "pages": 2,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "7060584c3e59f0b2f12f34aa0b40faadf4aa5790a0459f3319852bcd63262cbb",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1,
+          2
+        ],
+        "registered_sha256": "669092b789d150509d8d2d9fd6f3858e06834b213599301d7dcebd0aa9eea321",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_e0a597ecb2004485",
+    "snapshot": "domains/brta/data/source_snapshots/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০১৩-২০১৪ (মোটর কার, জীপ বা মাইক্রোবাস)..md",
+    "snapshot_sha256": "6bf9150b29391db517eeace0edb8c4f9d0ac3ed406c9e92d76e6e59b47819ba7",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০১৩-২০১৪ (মোটর কার, জীপ বা মাইক্রোবাস).pdf",
+        "exists": true,
+        "sha256": "669092b789d150509d8d2d9fd6f3858e06834b213599301d7dcebd0aa9eea321",
+        "pages": 2,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "7060584c3e59f0b2f12f34aa0b40faadf4aa5790a0459f3319852bcd63262cbb",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1,
+          2
+        ],
+        "registered_sha256": "669092b789d150509d8d2d9fd6f3858e06834b213599301d7dcebd0aa9eea321",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_dfbee0f342d188f8",
+    "snapshot": "domains/brta/data/source_snapshots/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০১৪-২০১৫ (বাস, মিনিবাস, কোস্টার, ট্যাক্সিক্যাব, প্রাইমমুভার, ট্রাক, ট্যাংক-লরী, পিক-আপ, হিউম্যান হলার, ম্যাক্সি বা মাল বহনকারী অটোরিকশা).md",
+    "snapshot_sha256": "5be3fdee2aa6dc00699f4559a1fa1a614d9f5e0f66165ce610244d4b4dac2754",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০১৪-২০১৫ (বাস, মিনিবাস, কোস্টার, ট্যাক্সিক্যাব, প্রাইমমুভার, ট্রাক, ট্যাংক-লরী, পিক-আপ, হিউম্যান হলার, ম্যাক্সি বা মাল বহনকারী অটোরিকশা).pdf",
+        "exists": true,
+        "sha256": "07d77e8bbded4308ba6bd9b826391c542bfc9999ad58cf82fa48da65daccde3d",
+        "pages": 3,
+        "extracted_characters": 4696,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "11712b17892b1e178d5c7175d8addf743f5e1fd3e6a084bfbfdcded678219305",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "07d77e8bbded4308ba6bd9b826391c542bfc9999ad58cf82fa48da65daccde3d",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_e6724a03fc2b2575",
+    "snapshot": "domains/brta/data/source_snapshots/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০১৪-২০১৫ (মোটর কার, জীপ বা মাইক্রোবাস).md",
+    "snapshot_sha256": "6065f880c2b5a2dbde8adaa4dd77ae7936bed394ae4b87e5e9be17fd3b318c51",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০১৪-২০১৫ (মোটর কার, জীপ বা মাইক্রোবাস).pdf",
+        "exists": true,
+        "sha256": "13fecb763f2a59a36971e49f4a11daaf20ed42ccccc2d23189f769ceaa14662a",
+        "pages": 3,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "9478ac3ef61ae9df286d951edbfce4c24049f65e860f053ed9eb2c3fbd78d051",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1,
+          2,
+          3
+        ],
+        "registered_sha256": "13fecb763f2a59a36971e49f4a11daaf20ed42ccccc2d23189f769ceaa14662a",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_34fa7131d5374e7a",
+    "snapshot": "domains/brta/data/source_snapshots/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০১৫-২০১৬ (মোটর কার, জীপ বা মাইক্রোবাস).md",
+    "snapshot_sha256": "1ea6d3c5e463f9d967a3db839e4d6ccac7125c32246441237a650562762afaba",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০১৫-২০১৬ (মোটর কার, জীপ বা মাইক্রোবাস).pdf",
+        "exists": true,
+        "sha256": "feb8aeacd82d5745c1e24c57a48e5c83ff3a095f887b3b39941d9c6d8f2da395",
+        "pages": 3,
+        "extracted_characters": 3943,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "8ef968a4f91db8dda74fc641e6c7da2d140365b2e7be639726a6ee108eb434f9",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "feb8aeacd82d5745c1e24c57a48e5c83ff3a095f887b3b39941d9c6d8f2da395",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_2dd33c08c48bf098",
+    "snapshot": "domains/brta/data/source_snapshots/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০১৬-২০১৭ (মোটর কার, জীপ বা মাইক্রোবাস).md",
+    "snapshot_sha256": "4cff8c9faa110be1a636dd6c1201e681203afa83acaccb1cb9f6f638aa693acd",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০১৬-২০১৭ (মোটর কার, জীপ বা মাইক্রোবাস).pdf",
+        "exists": true,
+        "sha256": "8cb77df073480f4639e9841dff9dcada58118cf58018c5c1ff4f09abf0e48032",
+        "pages": 5,
+        "extracted_characters": 8026,
+        "bengali_characters": 1470,
+        "extracted_text_sha256": "9d226f9133f52709cfbe865302d0768e2ebd97e7100185cab619adede04b413d",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "8cb77df073480f4639e9841dff9dcada58118cf58018c5c1ff4f09abf0e48032",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_1582324a435ea475",
+    "snapshot": "domains/brta/data/source_snapshots/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০১৯-২০২০ (বাস, মিনিবাস, কোস্টার, ট্যাক্সিক্যাব, প্রাইমমুভার, ট্রাক, ট্যাংক-লরী, পিক-আপ, হিউম্যান হলার, ম্যাক্সি বা মাল বহনকারী অটোরিকশা).md",
+    "snapshot_sha256": "65c18e3aae46908b905c1d5e73f9b4ff67eec2cf9a9bb6581eb6803e5905b453",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০১৯-২০২০ (বাস, মিনিবাস, কোস্টার, ট্যাক্সিক্যাব, প্রাইমমুভার, ট্রাক, ট্যাংক-লরী, পিক-আপ, হিউম্যান হলার, ম্যাক্সি বা মাল বহনকারী অটোরিকশা).pdf",
+        "exists": true,
+        "sha256": "35f032d46fd038ca43c07fbdee7de073e79be42a151eedfc7614ebeb1af2b3d6",
+        "pages": 3,
+        "extracted_characters": 5405,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "806fa8cf7963ef45429d1adaec941da6c4fab58b00d0f041db1202cf18c22931",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "35f032d46fd038ca43c07fbdee7de073e79be42a151eedfc7614ebeb1af2b3d6",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_d074755d0136ce4b",
+    "snapshot": "domains/brta/data/source_snapshots/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০২০-২০২১ (মোটর কার, জীপ বা মাইক্রোবাস).md",
+    "snapshot_sha256": "a77700aa8e43808d4d63800a16c1503b656bc7292055d7dcec59918c33645d60",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০২০-২০২১ (মোটর কার, জীপ বা মাইক্রোবাস).pdf",
+        "exists": true,
+        "sha256": "1cae8728a3982e79493eae690cac69187c778ea6e5aa4ab1f8b9abe54898075b",
+        "pages": 3,
+        "extracted_characters": 5641,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "2470aca98408794eb541af5434e2f41588e2c70f1b43d7c25186517b8b90cab9",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "1cae8728a3982e79493eae690cac69187c778ea6e5aa4ab1f8b9abe54898075b",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_fbe4e11772830f99",
+    "snapshot": "domains/brta/data/source_snapshots/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০২১-২০২২ (মোটর কার, জীপ বা মাইক্রোবাস).md",
+    "snapshot_sha256": "90c9a17f62c5efc96643aa1f43dead75f99304f50ce4494f924a1667cdf6c044",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০২১-২০২২ (মোটর কার, জীপ বা মাইক্রোবাস).pdf",
+        "exists": true,
+        "sha256": "7c39d1b0100e2f580f13a1fc5bff005f9db6d1a768e4df3251f4112d0528eb34",
+        "pages": 10,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "cb7c7f5a50363e843bf55318c122a7f82614928eb2580384dc6aca3a963ef1cd",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "registered_sha256": "7c39d1b0100e2f580f13a1fc5bff005f9db6d1a768e4df3251f4112d0528eb34",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_0cfecd15e24b39b9",
+    "snapshot": "domains/brta/data/source_snapshots/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০২৩-২০২৪ (মোটর কার, জীব বা মাইক্রোবাস).md",
+    "snapshot_sha256": "e8213589b6e1f1dd775d1d7dd8f3f6398e8f5fcbc794d4d7de6630388c44f5f5",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০২৩-২০২৪ (মোটর কার, জীব বা মাইক্রোবাস).pdf",
+        "exists": true,
+        "sha256": "4c12c5904bc31d74728c6a547d60bc0a99205ca50243a84b183ce233536492e0",
+        "pages": 6,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "7b2aa16484b6ad79ef5bec51da3501f5079367b625da44bf97468422d27e8e95",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "registered_sha256": "4c12c5904bc31d74728c6a547d60bc0a99205ca50243a84b183ce233536492e0",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_c621e9f59be18a98",
+    "snapshot": "domains/brta/data/source_snapshots/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০২৪-২০২৫ (মোটর কার, জীব বা মাইক্রোবাস).md",
+    "snapshot_sha256": "b0fb38e23c9c513c0c62764216bb580e089b2cef4ac3781f82f39d8e0e507424",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/ফি, ট্যাক্স ও আয়কর/মোটরযানের অগ্রিম বা অনুমিত আয়কর ২০২৪-২০২৫ (মোটর কার, জীব বা মাইক্রোবাস).pdf",
+        "exists": true,
+        "sha256": "1d575aee1d35bd1506e13b9cf2447a709fda91fa35d789654da7ec34dea50253",
+        "pages": 7,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "9e43591d85d480f056a1e21f8ddfa0de6ca3a31ca1f1bc0428a9e93b52b1f6eb",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "registered_sha256": "1d575aee1d35bd1506e13b9cf2447a709fda91fa35d789654da7ec34dea50253",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_4892e263b0cd3df2",
+    "snapshot": "domains/brta/data/source_snapshots/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের ক্ষেত্রে অগ্রিম আয়কর (AIT) প্রযোজ্যতার বিষয়ে সাধারণ স্পষ্টীকরণ.md",
+    "snapshot_sha256": "73c0c36706134c65f61e1d97b976831f8d8ed4af59cf049a16a687d46a663814",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/ফি, ট্যাক্স ও আয়কর/মোটরযানের ক্ষেত্রে অগ্রিম আয়কর (AIT) প্রযোজ্যতার বিষয়ে সাধারণ স্পষ্টীকরণ.pdf",
+        "exists": true,
+        "sha256": "feecca82849f0e3514f09449a34a63e48809d5440bec327201e31d101dd9b137",
+        "pages": 1,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "ef6cbd2161eaea7943ce8693b9824d23d1793ffb1c0fca05b600d3899b44c977",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1
+        ],
+        "registered_sha256": "feecca82849f0e3514f09449a34a63e48809d5440bec327201e31d101dd9b137",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_3a262ccde300696d",
+    "snapshot": "domains/brta/data/source_snapshots/brta/ফি, ট্যাক্স ও আয়কর/মোটরযানের রেজিস্ট্রেশন, মালিকানা হস্তান্তর, ড্রাইভিং লাইসেন্স, রুট পারমিটসহ অন্যান্য ফি এর পরিমাণ.md",
+    "snapshot_sha256": "d433942428813060619d5b014fab9dafb384fad33ab0aa174479761e4ca47bfc",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/ফি, ট্যাক্স ও আয়কর/বিভিন্ন ফি.pdf",
+        "exists": true,
+        "sha256": "101a2c7f66438e208f050f6360be6302c5be8a04e281d0fa6ac01af1eaa920ae",
+        "pages": 5,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "2e9faebbd47a57f8d00d2f73a2e412bbf5353a95a112f2278b24f69ee5d14b62",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "registered_sha256": "101a2c7f66438e208f050f6360be6302c5be8a04e281d0fa6ac01af1eaa920ae",
+        "hash_matches": true
+      },
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/মোটরযানের রেজিস্ট্রেশন, মালিকানা হস্তান্তর, ড্রাইভিং লাইসেন্স, র‍ুট পারমিটসহ অন্যান্য ফি এর পরিমাণ.pdf",
+        "exists": true,
+        "sha256": "f461d292d417a0eb9b14bb75c2f17acfb405cd84cf71c08df18c8af95cf8131f",
+        "pages": 4,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "009391559b2777d7003b4a8f2ac076416b66eee634361c208c85dae6d174cda0",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "registered_sha256": "f461d292d417a0eb9b14bb75c2f17acfb405cd84cf71c08df18c8af95cf8131f",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_09e8cbfff67f117e",
+    "snapshot": "domains/brta/data/source_snapshots/brta/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).md",
+    "snapshot_sha256": "5f20f60f6759d980b46043726dbf0bfa79f09acc61b4a4c861c07b98f840e090",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).pdf",
+        "exists": true,
+        "sha256": "b1638a3c9f53cc09c5830e5e2d480cf6d6a5732b6d820119c578a107be59745e",
+        "pages": 28,
+        "extracted_characters": 132957,
+        "bengali_characters": 40163,
+        "extracted_text_sha256": "f5a3006ef99f3ec8f4b6ea7dd90a29e152eb08276d951565f513b6bb2f0ba74b",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "b1638a3c9f53cc09c5830e5e2d480cf6d6a5732b6d820119c578a107be59745e",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_b6e5fea90b644e91",
+    "snapshot": "domains/brta/data/source_snapshots/brta/বিআরটিএ সম্পর্কিত/বিআরটিএ'র ইতিহাস, উদ্দেশ্য ও গঠনতন্ত্র.md",
+    "snapshot_sha256": "3711519b357f22e2a472b65fd21fbcdd2aff995cb91f50b7818e3cc839ca5ff1",
+    "originals": [],
+    "source_association": "unresolved"
+  },
+  {
+    "document_id": "brta_1305b5c0c25efc42",
+    "snapshot": "domains/brta/data/source_snapshots/brta/বিআরটিএ সম্পর্কিত/বিআরটিএ'র বিভিন্ন বিষয় বা কার্যক্রম ভিত্তিক ফোকাল পয়েন্ট বা বিকল্প ফোকাল পয়েন্ট কর্মকর্তার তালিকা.md",
+    "snapshot_sha256": "e190f963722d49dc00322b7c80c6b507d5f6797f642bc621f976c87d45365f6e",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/বিআরটিএ সম্পর্কিত/বিআরটিএ'র বিভিন্ন বিষয় বা কার্যক্রম ভিত্তিক ফোকাল পয়েন্ট বা বিকল্প ফোকাল পয়েন্ট কর্মকর্তার তালিকা.pdf",
+        "exists": true,
+        "sha256": "e5af39b5f668a7292152616c587567841b13e81bb7e0b5504275b6f17c8cec06",
+        "pages": 4,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "009391559b2777d7003b4a8f2ac076416b66eee634361c208c85dae6d174cda0",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "registered_sha256": "e5af39b5f668a7292152616c587567841b13e81bb7e0b5504275b6f17c8cec06",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_eb341b3d1f23821d",
+    "snapshot": "domains/brta/data/source_snapshots/brta/বিআরটিএ সম্পর্কিত/রূপকল্প ও অভিলক্ষ্য.md",
+    "snapshot_sha256": "d999ac968708fbf7b4a67e2f3264bb595fc14a34ed8fb7d8d73b5aac29fab0c6",
+    "originals": [],
+    "source_association": "unresolved"
+  },
+  {
+    "document_id": "brta_7aacf674cc18dc4d",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/Form-30 Application for Certificate of Endorsemen,Route Permit for Foreigner.md",
+    "snapshot_sha256": "573572ae581514ed6a35dfc0f707d7d74cf26676fc47371ad298e05168e7ab40",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/Form-30 Application for Certificate of Endorsemen,Route Permit for Foreigner.pdf",
+        "exists": true,
+        "sha256": "d75dfd97744b499adf7c5647627c7ac75ff063b3b288e872ff3f5428bbd25aa3",
+        "pages": 1,
+        "extracted_characters": 1065,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "b279bbfea6e29d09ecd4503654d66ad02f1e0bbebbfdd2eeda9e760bc0b19961",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "d75dfd97744b499adf7c5647627c7ac75ff063b3b288e872ff3f5428bbd25aa3",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_33b3fcfce6213054",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/Form-31 Certificate of Endorsement,Route Permit for Foreigner.md",
+    "snapshot_sha256": "73f307082e3813a87a5d8673bc82dbc98e88f36ce4849b43f0b5b2854ff40fa9",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/Form-31 Certificate of Endorsement,Route Permit for Foreigner.pdf",
+        "exists": true,
+        "sha256": "2d52b8f66de9fc36ad30f71cce56816e854b8b8cbe26cf19bd37ce8b33d27c8f",
+        "pages": 1,
+        "extracted_characters": 789,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "84bdf773fdb3fdfe3fc4b45a1e3f15d14d15d7bd8f318e5376af08e550e27523",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "2d52b8f66de9fc36ad30f71cce56816e854b8b8cbe26cf19bd37ce8b33d27c8f",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_d78ba24a9cad7c53",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/কতিপয় ট্রাফিক অপরাধের দোষসুচক পয়েন্ট কর্তন তালিকা.md",
+    "snapshot_sha256": "adc68d132bbf6bc6d478b8f51ecf60f41529ea68c16aae884113089a423d474b",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/কতিপয় ট্রাফিক অপরাধের দোষসুচক পয়েন্ট কর্তন তালিকা.pdf",
+        "exists": true,
+        "sha256": "cc32376024af280f3fa8ffbf17b2e13aa991b2c8d27a98911d4034eae8af61c8",
+        "pages": 1,
+        "extracted_characters": 2111,
+        "bengali_characters": 1059,
+        "extracted_text_sha256": "69d9190be4c5cc6f4aa41274299a2db7ff821d6eeb722d18fcafbec033b069b5",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "cc32376024af280f3fa8ffbf17b2e13aa991b2c8d27a98911d4034eae8af61c8",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_94f4ba4f5f79bcc1",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-১ শিক্ষানবিশ ড্রাইভিং লাইসেন্স আবেদন.md",
+    "snapshot_sha256": "6b8819d0b55d864cf5982873183c284c2ef5825e43f9e047d6e550e80a675af1",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-১ শিক্ষানবিশ ড্রাইভিং লাইসেন্স আবেদন.pdf",
+        "exists": true,
+        "sha256": "ffd8f26aab29685458130c4c6b924920021a508903f29f9bf85a0b94eed14a0d",
+        "pages": 2,
+        "extracted_characters": 4250,
+        "bengali_characters": 875,
+        "extracted_text_sha256": "08f156d316641f8c5d0c80c68cc236e1af652b5b8351f1a27c7d47a494e07361",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "ffd8f26aab29685458130c4c6b924920021a508903f29f9bf85a0b94eed14a0d",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_29228d7f41bd4857",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-১৭ মোটরযান রেজিস্ট্রেশনের আবেদন.md",
+    "snapshot_sha256": "3ba1444534d1e51e2deac5b87e6f5853beab15b5af62d3141073db4a1a21d22a",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-১৭ মোটরযান রেজিস্ট্রেশনের আবেদন.pdf",
+        "exists": true,
+        "sha256": "c21f3c018b7a021f7d78e81442aafaa0f311277a81b9022030abf76af3609744",
+        "pages": 5,
+        "extracted_characters": 14301,
+        "bengali_characters": 3497,
+        "extracted_text_sha256": "bd2f441a495431c3bdac096b3ecb9629297d4d9a76f87639bf2eb065ebbcf92c",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "c21f3c018b7a021f7d78e81442aafaa0f311277a81b9022030abf76af3609744",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_e919ac0ca6f08972",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-১৮ রেজিস্ট্রেশন সনদ.md",
+    "snapshot_sha256": "65b316f583ce30fccd596ec0b481fdeb522a4b8d68171edfe37f109da7b3b31f",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-১৮ রেজিস্ট্রেশন সনদ.pdf",
+        "exists": true,
+        "sha256": "c3f481e66a7e801bd187c46a90a6dd83af28561c15477e3be7fe97190a550782",
+        "pages": 1,
+        "extracted_characters": 2084,
+        "bengali_characters": 354,
+        "extracted_text_sha256": "aaefc1755167f45c919df94b00e1df1fb26bd2fe8c3af255fe3b8e17215450e5",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "c3f481e66a7e801bd187c46a90a6dd83af28561c15477e3be7fe97190a550782",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_6da9dc3f428980a0",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-১৯ অস্থায়ী রেজিস্ট্রেশন সনদ.md",
+    "snapshot_sha256": "2bc1aaaf6a7e0e308807d1625f1472965672080ba14f915e94a6155d82adba99",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-১৯ অস্থায়ী রেজিস্ট্রেশন সনদ.pdf",
+        "exists": true,
+        "sha256": "b1f818d8b9da1e7fb75171e090ea447207bda5c1a6398317b49298637b3c608b",
+        "pages": 1,
+        "extracted_characters": 2525,
+        "bengali_characters": 567,
+        "extracted_text_sha256": "4d3a2245ccf4b7c49ff2a2d49d15415fddadb0217520c99b1421244ce0a6fd95",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "b1f818d8b9da1e7fb75171e090ea447207bda5c1a6398317b49298637b3c608b",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_3b4cd5e6eaf3e001",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-২ ড্রাইভিং লাইসেন্সের জন্য মেডিকেল সার্টিফিকেট.md",
+    "snapshot_sha256": "73e9baf4146e1b45e9f99c652aeb403f3361e6575c60dbd044a764772ed7a262",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-২ ড্রাইভিং লাইসেন্সের জন্য মেডিকেল সার্টিফিকেট.pdf",
+        "exists": true,
+        "sha256": "eee3a75be81399d264c7b4a707b12e598eaadf834b67d95ef849929a9645b6f6",
+        "pages": 1,
+        "extracted_characters": 1996,
+        "bengali_characters": 655,
+        "extracted_text_sha256": "d0f9d55e47789758df28e13b783ad6c3828df1b3d77531e0b6d02084be01a11f",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "eee3a75be81399d264c7b4a707b12e598eaadf834b67d95ef849929a9645b6f6",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_77a34fc07ff34054",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-২০ মোটরযানের মালিকানা বদলি সংক্রান্ত বিক্রেতার ঘোষণাপত্র.md",
+    "snapshot_sha256": "fe6d0ab511e1e43196494ea5e83c7953cc1067014e955a83d8531ce7ac21677e",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-২০ মোটরযানের মালিকানা বদলি সংক্রান্ত বিক্রেতার ঘোষণাপত্র.pdf",
+        "exists": true,
+        "sha256": "779e9b65cd13ccdf114a26a5f508c66328b51dad71829e59f38076791ea80a7f",
+        "pages": 2,
+        "extracted_characters": 2426,
+        "bengali_characters": 406,
+        "extracted_text_sha256": "0d387bef36db061948373cf487a3a65db53ab42c339d92f2f72f3ff901a672f5",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          2
+        ],
+        "registered_sha256": "779e9b65cd13ccdf114a26a5f508c66328b51dad71829e59f38076791ea80a7f",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_2d2e92b7e02c5193",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-২১ মোটরযানের মালিকানা বদলি সংক্রান্ত ক্রেতার ঘোষণাপত্র.md",
+    "snapshot_sha256": "40f885e6cf4f34dd849acba441faae77530c9f5399d95433a6267fb4663f68c2",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-২১ মোটরযানের মালিকানা বদলি সংক্রান্ত ক্রেতার ঘোষণাপত্র.pdf",
+        "exists": true,
+        "sha256": "b7daaf80d3d53bf1853ec93170e945ba03230b3a9da28612ff3ad86ad120bb00",
+        "pages": 1,
+        "extracted_characters": 2379,
+        "bengali_characters": 514,
+        "extracted_text_sha256": "e4e63d70aa6bc3dfbbb822e34e011876c9c035c87c1ed70e511e72995edc4b16",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "b7daaf80d3d53bf1853ec93170e945ba03230b3a9da28612ff3ad86ad120bb00",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_296d7da47bd0763c",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-২২ বিক্রয় রসিদ.md",
+    "snapshot_sha256": "c3a6dc8a0ad88ae754aa9d68b349d91bda4e70a5dab8c12f3947eb4ae7570653",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-২২ বিক্রয় রসিদ.pdf",
+        "exists": true,
+        "sha256": "16627af7edd6c7ba32ad0eae81d26eebb04ed01d1bc536aa30fb2f0348960f0a",
+        "pages": 1,
+        "extracted_characters": 2622,
+        "bengali_characters": 366,
+        "extracted_text_sha256": "1914c0a5e1ba0c9012d449337819affabefa4935901a09a37429563605c53148",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "16627af7edd6c7ba32ad0eae81d26eebb04ed01d1bc536aa30fb2f0348960f0a",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_4215ca79fe503349",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-২৩ মোটরযান মালিকের ঠিকানা পরিবর্তনের আবেদনপত্র.md",
+    "snapshot_sha256": "9366235134f60a2b2e86192f2413482853cfcecaa8880ea6c8ccb76386e00bf6",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-২৩ মোটরযান মালিকের ঠিকানা পরিবর্তনের আবেদনপত্র.pdf",
+        "exists": true,
+        "sha256": "770579166b051bff535aeac13aa49ff8cdd558ad8ac7bc272328f6cedf711cd0",
+        "pages": 1,
+        "extracted_characters": 2469,
+        "bengali_characters": 632,
+        "extracted_text_sha256": "c7cd204a48e3eec14813f933edd56e7f700216f4b9c412ad8deca3cede94da23",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "770579166b051bff535aeac13aa49ff8cdd558ad8ac7bc272328f6cedf711cd0",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_200a9829df785b7e",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-২৪ ফিটনেস সনদ ইস্যু,নবায়ন,প্রতিলিপির আবেদন ফরম.md",
+    "snapshot_sha256": "353cc5f4f8a6367787198f9a63ca902fcafe8ca5c015bb8809786682b7757ddb",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-২৪ ফিটনেস সনদ ইস্যু,নবায়ন,প্রতিলিপির আবেদন ফরম.pdf",
+        "exists": true,
+        "sha256": "cb5a9265b7ec6236d6c0f00ebfb8178121550724e6dcd4ad521b129876b48571",
+        "pages": 1,
+        "extracted_characters": 1652,
+        "bengali_characters": 277,
+        "extracted_text_sha256": "cb5dc1c3c90d89ab5ae4c80183caf5d923fc4aa2b88a6768d14f0fea32c69faf",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "cb5a9265b7ec6236d6c0f00ebfb8178121550724e6dcd4ad521b129876b48571",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_7fc8ae4dfcdf02a7",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-২৫ ফিটনেস সন.md",
+    "snapshot_sha256": "f31722877be5749a1d101ebab6163be955c4733d2d7ce8871637ccb2cbb25885",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-২৫ ফিটনেস সন.pdf",
+        "exists": true,
+        "sha256": "0c49c64dc5826af53566d6a26e8e2b14de1057c44dacdafdb553243a7963ce63",
+        "pages": 1,
+        "extracted_characters": 2438,
+        "bengali_characters": 458,
+        "extracted_text_sha256": "c644b36764a2d43635f4ab6cb91c271921c9816bb10db5f706bb12024e28f549",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "0c49c64dc5826af53566d6a26e8e2b14de1057c44dacdafdb553243a7963ce63",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_8b2af10a4d7a407c",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-২৬ মোটরযান টেস্টিং রিপোর্ট ফরম (ভিটিআর ফরম).md",
+    "snapshot_sha256": "90d42420f6d8c6acb0d9d3ca5fa8212933c31bfa90fb3daae4f3bab11cda98a3",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-২৬ মোটরযান টেস্টিং রিপোর্ট ফরম (ভিটিআর ফরম).pdf",
+        "exists": true,
+        "sha256": "357e5e0ddeb8ef914f1d40f131d55d170b4a82fc3d05aba159599edbebefbf65",
+        "pages": 3,
+        "extracted_characters": 4750,
+        "bengali_characters": 2138,
+        "extracted_text_sha256": "9b52b6601888e3c518684459cb62bc187208c35b10e2020ef7e74a1742b7b5c6",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "357e5e0ddeb8ef914f1d40f131d55d170b4a82fc3d05aba159599edbebefbf65",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_9ba58460bb57de79",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-২৭ স্টেইজ ক্যারিজ রুট পারমিট ইস্যু, নবায়ন বা প্রতিলিপির আবেদন.md",
+    "snapshot_sha256": "3334ceb1ced7407592033e37a4544eaacbda97d90ef405b741815f34d5816f71",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-২৭ স্টেইজ ক্যারিজ রুট পারমিট ইস্যু, নবায়ন বা প্রতিলিপির আবেদন.pdf",
+        "exists": true,
+        "sha256": "eb1a3b124dfc1ba81a0df7ebc66ef6dbf7613fe41b74d777a714b62a639e044d",
+        "pages": 1,
+        "extracted_characters": 4331,
+        "bengali_characters": 1595,
+        "extracted_text_sha256": "81b510018809974bf9b43ae6ea5a37c736821e1f4de198f0420eea501c072822",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "eb1a3b124dfc1ba81a0df7ebc66ef6dbf7613fe41b74d777a714b62a639e044d",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_10ea1d010a1acd48",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-২৮ স্টেইজ ক্যারিজ রুট পারমিট ইস্যু, নবায়ন বা প্রতিলিপির আবেদন.md",
+    "snapshot_sha256": "ee6c96da6f6a83be11aff3c90528f898fe407b2200ad05d26eaaffbe11bea3b8",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-২৮ স্টেইজ ক্যারিজ রুট পারমিট ইস্যু, নবায়ন বা প্রতিলিপির আবেদন.pdf",
+        "exists": true,
+        "sha256": "58249217f94827df06f18fa98f14e95a160bef29991553c79bb1fec5488bf8c3",
+        "pages": 1,
+        "extracted_characters": 2464,
+        "bengali_characters": 405,
+        "extracted_text_sha256": "858406745974ab9a28dfc39aedc434cde1df8a3af1c3a4968343521fc6904447",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "58249217f94827df06f18fa98f14e95a160bef29991553c79bb1fec5488bf8c3",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_d20cb679a5502e98",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-২৯ মোটরযানের রুট পারমিট.md",
+    "snapshot_sha256": "acc6c9f4001330e185cd4f9472969096828d4c78b5c0098ff0d27e97aaeee702",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-২৯ মোটরযানের রুট পারমিট.pdf",
+        "exists": true,
+        "sha256": "2c0e3b078c8c58c621a5b24f2ceff31b5552e9e6aff3d7fd005b6c7403b2c79a",
+        "pages": 1,
+        "extracted_characters": 3448,
+        "bengali_characters": 1129,
+        "extracted_text_sha256": "56537797bfd97b05fa5f7c1dc7658eeb7d9653872e0df9ebb60e1a76e79e00c7",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "2c0e3b078c8c58c621a5b24f2ceff31b5552e9e6aff3d7fd005b6c7403b2c79a",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_a207b925ed0dc4a9",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-৩ শিক্ষানবিশ ড্রাইভিং লাইসেন্স.md",
+    "snapshot_sha256": "0589eeb2caf6bf39e78f0c1bc814198c675a02d37c5446de3cb4a9ffaf94b7d7",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-৩ শিক্ষানবিশ ড্রাইভিং লাইসেন্স.pdf",
+        "exists": true,
+        "sha256": "4f82ac2753959db37234a6c8c8eccb429a468be1419771c3cf175d2f3d0c0bb3",
+        "pages": 1,
+        "extracted_characters": 3829,
+        "bengali_characters": 381,
+        "extracted_text_sha256": "1593a477177ee14f81d48237382fd7b19f245e9530d5ca6dda4062d837ab2955",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "4f82ac2753959db37234a6c8c8eccb429a468be1419771c3cf175d2f3d0c0bb3",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_ac5b02f4481c1f90",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-৩৬ মোটর ড্রাইভিং প্রশিক্ষণ স্কুল স্থাপন ও পরিচালনার লাইসেন্সের জন্য আবেদন.md",
+    "snapshot_sha256": "b2f52b052f4c330effb95a5772fd13d0ffe8c2bd6263749e363ced3b2965a83c",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-৩৬ মোটর ড্রাইভিং প্রশিক্ষণ স্কুল স্থাপন ও পরিচালনার লাইসেন্সের জন্য আবেদন.pdf",
+        "exists": true,
+        "sha256": "9c497fd0fb385ae3297532311f8e548b5ca1b53e79c8c2644098500c0e89096f",
+        "pages": 1,
+        "extracted_characters": 3590,
+        "bengali_characters": 1450,
+        "extracted_text_sha256": "6024f721b86ccaa0c79e7681d59e8372df39dde868f6ff5880b4114d26780706",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "9c497fd0fb385ae3297532311f8e548b5ca1b53e79c8c2644098500c0e89096f",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_efe2a7bb53939e81",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-৩৭ মোটর ড্রাইভিং প্রশিক্ষণ স্কুল স্থাপন ও পরিচালনার লাইসেন্স.md",
+    "snapshot_sha256": "2a3b306688f21111615a88ab91560c488eaf4b5d4bdf323dd14b41f911996a82",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-৩৭ মোটর ড্রাইভিং প্রশিক্ষণ স্কুল স্থাপন ও পরিচালনার লাইসেন্স.pdf",
+        "exists": true,
+        "sha256": "0febf96e4abd0e381adf8a17d0996949c6488649ea0a7c0b56465ba61f2371f8",
+        "pages": 1,
+        "extracted_characters": 2308,
+        "bengali_characters": 908,
+        "extracted_text_sha256": "e96e2b5034f6f13b74c4e5014dc581c0c81f2ad4fb8b8487582b953186fc5c91",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "0febf96e4abd0e381adf8a17d0996949c6488649ea0a7c0b56465ba61f2371f8",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_7942fa1ee1d4d8aa",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-৩৮ ড্রাইভিং ইনস্ট্রাক্টর লাইসেন্সের আবেদন.md",
+    "snapshot_sha256": "2d6273ea437093a82d474b335b941571971826326304488df15698ce35640267",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-৩৮ ড্রাইভিং ইনস্ট্রাক্টর লাইসেন্সের আবেদন.pdf",
+        "exists": true,
+        "sha256": "b28ef10ecc0865509442a8003265d2d3c56fa0a55a23325851ca0b646e128129",
+        "pages": 1,
+        "extracted_characters": 2680,
+        "bengali_characters": 763,
+        "extracted_text_sha256": "bb849135163fc58c7ded297f6591cfb993c1d6ffa6be455a8a28cae0d4cbd51e",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "b28ef10ecc0865509442a8003265d2d3c56fa0a55a23325851ca0b646e128129",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_e6532cc9dbca65be",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-৩৯ ড্রাইভিং ইনস্ট্রাক্টর লাইসেন্স.md",
+    "snapshot_sha256": "78ced8d21c0acde1a2a4be564b4dfa7ca0c40d4772de4e8af44a0af3e083505a",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-৩৯ ড্রাইভিং ইনস্ট্রাক্টর লাইসেন্স.pdf",
+        "exists": true,
+        "sha256": "e0c85bbc1ca882e6cd29f1c644c6cd9263689ec59a86675d932a7d9c56498788",
+        "pages": 1,
+        "extracted_characters": 2923,
+        "bengali_characters": 631,
+        "extracted_text_sha256": "bc6f89046ae23630e2cd6d23b87ec1a16fe4ca82fc7db0a6639fb543d22d47e7",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "e0c85bbc1ca882e6cd29f1c644c6cd9263689ec59a86675d932a7d9c56498788",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_00cf734ebafbc7c2",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-৪(ক) ড্রাইভিং লাইসেন্সের আবেদন.md",
+    "snapshot_sha256": "60023bbc5cf06603f67c420c40e90840b93964d3a67189b4cb8bed7c098cbb68",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-৪(ক) ড্রাইভিং লাইসেন্সের আবেদন.pdf",
+        "exists": true,
+        "sha256": "67ff1b2bb7b35dbc7924fded4712c8323b96f3745cdcd19c9a056b47cb3b2056",
+        "pages": 3,
+        "extracted_characters": 5424,
+        "bengali_characters": 789,
+        "extracted_text_sha256": "070da37e1fdca31e1261e21174fce7f124ae1a14196704d10ae4a1c96af2f406",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "67ff1b2bb7b35dbc7924fded4712c8323b96f3745cdcd19c9a056b47cb3b2056",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_258cf38650a6332b",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.md",
+    "snapshot_sha256": "b4e7a124b17f98b88141f55a1c9d957d25e4cf55cfdc0f5bee7a205e60ba6bc5",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.pdf",
+        "exists": true,
+        "sha256": "ede3905d616f7ce6a3d2fa6845df87e74fe5bc3d4179f7533ea8671e968b8f36",
+        "pages": 3,
+        "extracted_characters": 7311,
+        "bengali_characters": 1837,
+        "extracted_text_sha256": "388dcb45b02b6c75d9d926e6f267f0ef2e04514611996925f9136b32ffc46c8a",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "ede3905d616f7ce6a3d2fa6845df87e74fe5bc3d4179f7533ea8671e968b8f36",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_b00eae444d550487",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-৪০ মোটরযান মেরামত কারখানা লাইসেন্স গ্রহণের আবেদনপত্র.md",
+    "snapshot_sha256": "49d73224cdcc2973fb60ecee1c7420d0eefe59f51571f7c64820f8e070ba5441",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-৪০ মোটরযান মেরামত কারখানা লাইসেন্স গ্রহণের আবেদনপত্র.pdf",
+        "exists": true,
+        "sha256": "a5fdda23708c32e988388ffd8275b83b2123494b500072f5113f2966720f86c5",
+        "pages": 1,
+        "extracted_characters": 2860,
+        "bengali_characters": 1189,
+        "extracted_text_sha256": "332369bd41eeffbf3daefbe2b0eded1ab400cee7f9b33ac9b8257b64f3264865",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "a5fdda23708c32e988388ffd8275b83b2123494b500072f5113f2966720f86c5",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_5c2e3b536d86e6cc",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-৪১ মোটরযান মেরামত কারখানা এর লাইসেন্স.md",
+    "snapshot_sha256": "81d26090111835f4df397bc40a12d8cf7b60a02111a172f129b5408bce8f71fc",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-৪১ মোটরযান মেরামত কারখানা এর লাইসেন্স.pdf",
+        "exists": true,
+        "sha256": "5b22c771c78de2cef6472d642352cb6d886c328019629d2d90e436cd9da4acce",
+        "pages": 1,
+        "extracted_characters": 2491,
+        "bengali_characters": 509,
+        "extracted_text_sha256": "cea2af3d8aff327bec232770c3436c3386b3ef77e05a3e32df9352fa5a540a1c",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "5b22c771c78de2cef6472d642352cb6d886c328019629d2d90e436cd9da4acce",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_c71f060093290a9e",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-৪২ কর্তৃপক্ষের সিদ্ধান্ত পুনর্বিবেচনার আবেদন.md",
+    "snapshot_sha256": "292ec209486df5d4cd330cc6c0e1612096430174d966d3dc7e3435927f807af1",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-৪২ কর্তৃপক্ষের সিদ্ধান্ত পুনর্বিবেচনার আবেদন.pdf",
+        "exists": true,
+        "sha256": "e6dda9685f16f98fe35aefc5229db9677a9437321529034ebf7cde7d20d1d4f6",
+        "pages": 1,
+        "extracted_characters": 2162,
+        "bengali_characters": 467,
+        "extracted_text_sha256": "087221d9fed93f635b951e39139b2d237648719d48a17a8712b8fb22528104a0",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "e6dda9685f16f98fe35aefc5229db9677a9437321529034ebf7cde7d20d1d4f6",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_e7a5b317cb0f7e5b",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-৪৩ কর্তৃপক্ষের পুনর্বিবেচনা সিদ্ধান্তের বিরুদ্ধে আপিল আবেদন ফরম.md",
+    "snapshot_sha256": "ecb41c41885c28df132894cdf716c27165c9b0688c9ea3432ae051541925e180",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-৪৩ কর্তৃপক্ষের পুনর্বিবেচনা সিদ্ধান্তের বিরুদ্ধে আপিল আবেদন ফরম.pdf",
+        "exists": true,
+        "sha256": "ed2addd57a0bfc19e295d2536bea18e26511ddd40c71b11ba1690fe295c292df",
+        "pages": 1,
+        "extracted_characters": 2248,
+        "bengali_characters": 555,
+        "extracted_text_sha256": "1590e2c6f45849f2eaa5582dcd44c1157cb7247452fecc7828d14216916b12b6",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "ed2addd57a0bfc19e295d2536bea18e26511ddd40c71b11ba1690fe295c292df",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_85f9e12fa1f422b7",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-৪৪ প্রসিকিউশন ফরম.md",
+    "snapshot_sha256": "755c129907dec4ccb3255191e061f988318588e38976b6a57cef6888d199cecb",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-৪৪ প্রসিকিউশন ফরম.pdf",
+        "exists": true,
+        "sha256": "935e5deb568349915ac8c75a538ce5f60ec9f875bac47094f4797b06169f7aff",
+        "pages": 1,
+        "extracted_characters": 2141,
+        "bengali_characters": 386,
+        "extracted_text_sha256": "8fb39a1ec9efb87ec178e19cc819b0f3bb2ef12dbe5f81f518b5cdb0e1812e9e",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "935e5deb568349915ac8c75a538ce5f60ec9f875bac47094f4797b06169f7aff",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_e640c49d6025cc8d",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-৫ ড্রাইভিং লাইসেন্সের ঠিকানা পরিবর্তনের আবেদন.md",
+    "snapshot_sha256": "09b646d026aa9d09268a30c962be9369ba7588f50133fd68ebe5db6dfad41151",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-৫ ড্রাইভিং লাইসেন্সের ঠিকানা পরিবর্তনের আবেদন.pdf",
+        "exists": true,
+        "sha256": "a1c4445c4f680540c8b286a438819cd02179bd0bb6810cacf5d0604e6ce547b7",
+        "pages": 1,
+        "extracted_characters": 1748,
+        "bengali_characters": 617,
+        "extracted_text_sha256": "95b04a100581522a850d6d0e41ff7eb0ebb694e2049144dbbda66ed439b4b318",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "a1c4445c4f680540c8b286a438819cd02179bd0bb6810cacf5d0604e6ce547b7",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_406db66f3a35da6e",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/বিদেশি ৭ ব্যক্তিগণের অনুকূলে মোটরযান রেজিস্ট্রেশন সংক্রান্ত প্রযোজ্য তালিকা.md",
+    "snapshot_sha256": "059a89866860f7b8beae21d8a61320a5766f416b356ef48fead307ec17ac6734",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/বিদেশি ৭ ব্যক্তিগণের অনুকূলে মোটরযান রেজিস্ট্রেশন সংক্রান্ত প্রযোজ্য তালিকা.pdf",
+        "exists": true,
+        "sha256": "bb275e8a7790cbb5143e21df12866b778c68e6bd77c684a413f1943c6094caee",
+        "pages": 1,
+        "extracted_characters": 2085,
+        "bengali_characters": 515,
+        "extracted_text_sha256": "7369125550f0947b7c32e412b87d23efe3925840512349faed0ec4b5c6caeb87",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "bb275e8a7790cbb5143e21df12866b778c68e6bd77c684a413f1943c6094caee",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_e26471369493566e",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/মালবাহী গাড়ির অনুমোদিত এক্সেল ওজন এবং লেডেন ওজন.md",
+    "snapshot_sha256": "fe886755079b681a89837bb23dd00e5ffa02bc1a1f4497f829ea7e5cc669cfd1",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/মালবাহী গাড়ির অনুমোদিত এক্সেল ওজন এবং লেডেন ওজন.pdf",
+        "exists": true,
+        "sha256": "c74eca958de16e9b9ac719afd0037549082561c6fc75267a14da2dd3dcb8a8ab",
+        "pages": 2,
+        "extracted_characters": 6395,
+        "bengali_characters": 3426,
+        "extracted_text_sha256": "15ce67d7f8ee18a4b9c87fb634a796bc6cfd3f11f259bdb7ef727df2348f1dcf",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "c74eca958de16e9b9ac719afd0037549082561c6fc75267a14da2dd3dcb8a8ab",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_1af79b370052bafc",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/মালিকের ব্যক্তিগত তথ্যাবলি,নমুনা স্বাক্ষর.md",
+    "snapshot_sha256": "6a7734f5d28dfcc913093f76d281c642e3021e8c77e5158f065ec9844d9e0061",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/মালিকের ব্যক্তিগত তথ্যাবলি,নমুনা স্বাক্ষর.pdf",
+        "exists": true,
+        "sha256": "e1bfca2370c1caf3d749d514a520e1ce80e3124f9412ec89c68c623f5add35c3",
+        "pages": 1,
+        "extracted_characters": 3269,
+        "bengali_characters": 722,
+        "extracted_text_sha256": "5be983e7426c7ef61593730af40465ab8edfc17c37df924005fb1b38eda5213d",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "e1bfca2370c1caf3d749d514a520e1ce80e3124f9412ec89c68c623f5add35c3",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_c0cd4c9054b9259d",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/মোটরযানের রেজিস্ট্রেশন আবেদনের সহিত দাখিলিতব্য দলিলসমূহ.md",
+    "snapshot_sha256": "f5e8bcabcefbe952ed5c1da70e9f5d950c62511fbb2077b47cb9935493c2255d",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/মোটরযানের রেজিস্ট্রেশন আবেদনের সহিত দাখিলিতব্য দলিলসমূহ.pdf",
+        "exists": true,
+        "sha256": "0a27a611a9a0780f84cc5de6756bf970707c3d8965ca1c128e423a154878dbe1",
+        "pages": 1,
+        "extracted_characters": 3005,
+        "bengali_characters": 2187,
+        "extracted_text_sha256": "311b3a3245c970b8d6927818511116a3ad4ae499e0a3b5d284b0cae7778942b9",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "0a27a611a9a0780f84cc5de6756bf970707c3d8965ca1c128e423a154878dbe1",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_fdc5c86584b9d7c1",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/মোটরযানের রেজিস্ট্রেশন, মালিকানা হস্তান্তর, ড্রাইভিং লাইসেন্স, র‍ুট পারমিটসহ অন্যান্য ফি এর পরিমাণ.md",
+    "snapshot_sha256": "153e337689eb4796b9807a3f6f6c98ae8edcab549f156ada85784b8d64e65a3c",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/মোটরযানের রেজিস্ট্রেশন, মালিকানা হস্তান্তর, ড্রাইভিং লাইসেন্স, র‍ুট পারমিটসহ অন্যান্য ফি এর পরিমাণ.pdf",
+        "exists": true,
+        "sha256": "f461d292d417a0eb9b14bb75c2f17acfb405cd84cf71c08df18c8af95cf8131f",
+        "pages": 4,
+        "extracted_characters": 0,
+        "bengali_characters": 0,
+        "extracted_text_sha256": "009391559b2777d7003b4a8f2ac076416b66eee634361c208c85dae6d174cda0",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "registered_sha256": "f461d292d417a0eb9b14bb75c2f17acfb405cd84cf71c08df18c8af95cf8131f",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_6f2d952caf7c6169",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/ফরম/মোটরযানের শ্রেণি অনুযায়ী রেজিস্ট্রেশন নম্বরের প্রতীক.md",
+    "snapshot_sha256": "3c806fee44b994083c02746accc1f6897bdf0163643c4c1c499f5aaea3c8cf04",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/মোটরযানের শ্রেণি অনুযায়ী রেজিস্ট্রেশন নম্বরের প্রতীক.pdf",
+        "exists": true,
+        "sha256": "20209e55c049ae86b29b5c6c9fc89f430ca4fca700ec0eac0d3b9146abb45ff0",
+        "pages": 2,
+        "extracted_characters": 6205,
+        "bengali_characters": 2030,
+        "extracted_text_sha256": "1a58ec1325f3dfdb0ff37e6203478e7c4093058af88942444ee5a831a9f0c2a2",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "20209e55c049ae86b29b5c6c9fc89f430ca4fca700ec0eac0d3b9146abb45ff0",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_14bf6d6b7fa0ab7c",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/সেবাসমূহ/ইঞ্জিন পরিবর্তন.md",
+    "snapshot_sha256": "a2f2ec5342b6106b2845557be1c15086df9de2135026fa285afedc2b4491498d",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/সেবাসমূহ_original/ইঞ্জিন পরিবর্তন .pdf",
+        "exists": true,
+        "sha256": "99228e97937fee7d373931c2dde072e7d232e1f89a3d5edaf151193c0a9e9313",
+        "pages": 3,
+        "extracted_characters": 3823,
+        "bengali_characters": 2637,
+        "extracted_text_sha256": "bcf1158d67c5015e5aa45734bca46b8c49977c45de82cf4b2028ec7ee8203cdf",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "99228e97937fee7d373931c2dde072e7d232e1f89a3d5edaf151193c0a9e9313",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_b5a9e5763aa87a48",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/সেবাসমূহ/টায়ার সাইজ(প্রস্থ) সংশোধন.md",
+    "snapshot_sha256": "045fcd5f3137050e199ed3923c83e4c7250926609bc11bcccdfc2bf37c435dbb",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/সেবাসমূহ_original/টায়ার সাইজ(প্রস্থ) সংশোধন.pdf",
+        "exists": true,
+        "sha256": "ee6e5cdb7cc60f3dec98ffbc36dd4e131f7d16aed9f6667b5b148f4a256ba3f5",
+        "pages": 1,
+        "extracted_characters": 1592,
+        "bengali_characters": 1265,
+        "extracted_text_sha256": "aebdf3563546b67335c87d25a35fa4e7c3b1048d20ab887f987cda3188fe58b0",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "ee6e5cdb7cc60f3dec98ffbc36dd4e131f7d16aed9f6667b5b148f4a256ba3f5",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_352f4e1416323213",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/সেবাসমূহ/ট্যাক্সটোকেন ইস্যু ও নবায়ন.md",
+    "snapshot_sha256": "fd9db65eb7eeb79a4a943e88d8f66631fe74df7d3cc3a4e57c1fe6af77ea30f3",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/সেবাসমূহ_original/ট্যাক্সটোকেন ইস্যু ও নবায়ন.pdf",
+        "exists": true,
+        "sha256": "5003c138f6ac2666211e456cf2a6ba5faaf370c3191a16849634e017c4bc772d",
+        "pages": 1,
+        "extracted_characters": 430,
+        "bengali_characters": 349,
+        "extracted_text_sha256": "c9991e1b7b6efc5d559652a8f31cfd522b6f9eb528eae351da800b25f461dd39",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "5003c138f6ac2666211e456cf2a6ba5faaf370c3191a16849634e017c4bc772d",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_1d898fe8a1a3aa31",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/সেবাসমূহ/ডিজিটাল রেজিস্ট্রেশন সার্টিফিকেট.md",
+    "snapshot_sha256": "5aa0fadc3083d01c8038c3506756c44a41e9ffd038cefc90046ff55df3a03afb",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/সেবাসমূহ_original/ডিজিটাল রেজিস্ট্রেশন সার্টিফিকেট.pdf",
+        "exists": true,
+        "sha256": "b0bb2cbbcf768af1406f292f1d09ab9a91037d81c7bc8209d7d9d165384fa8f4",
+        "pages": 3,
+        "extracted_characters": 2229,
+        "bengali_characters": 1782,
+        "extracted_text_sha256": "553466e315641e1656d3050fd6368e047fd7f5af2f8d0a2dea1c6cba14165346",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "b0bb2cbbcf768af1406f292f1d09ab9a91037d81c7bc8209d7d9d165384fa8f4",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_b00d6a1ae5a038df",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/সেবাসমূহ/ডোপটেস্ট সংক্রান্ত তথ্য.md",
+    "snapshot_sha256": "2e2d16a4ef4263562742c40fc3691d277abed8d7d8464ee775aad5c5d880e451",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/সেবাসমূহ_original/ডোপটেস্ট সংক্রান্ত তথ্য.pdf",
+        "exists": true,
+        "sha256": "686358bc536088595990f75bb7dab880e45e7ac86822e4f7783972b77fc3ea9b",
+        "pages": 1,
+        "extracted_characters": 690,
+        "bengali_characters": 502,
+        "extracted_text_sha256": "4861dc79ba1fa6ad92ad5198e16c48189b9a38b9e687c06a852f9d6dd248467e",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "686358bc536088595990f75bb7dab880e45e7ac86822e4f7783972b77fc3ea9b",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_4b8c25d391e48121",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/সেবাসমূহ/ড্রাইভিং ইন্সট্রাক্টর লাইসেন্স.md",
+    "snapshot_sha256": "1b30ea1d7915d19e5f5bf4536a426826a50912a028ad637072f2a6f238633063",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/সেবাসমূহ_original/ড্রাইভিং ইন্সট্রাক্টর লাইসেন্স.pdf",
+        "exists": true,
+        "sha256": "2e3f180ca067ae0544c124e195990f889b0756238dae6548e4b8f9ec9d689cc5",
+        "pages": 2,
+        "extracted_characters": 4065,
+        "bengali_characters": 3099,
+        "extracted_text_sha256": "cc26762a2f1c478329780998d72007b246ed91f3e4b355e6fc26f867b603746b",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "2e3f180ca067ae0544c124e195990f889b0756238dae6548e4b8f9ec9d689cc5",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_cbe22ab64acf3d03",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/সেবাসমূহ/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.md",
+    "snapshot_sha256": "c19bf1f86060bfd79b729b7a10cbc7d8a403d918cc21511262cff6d5d4a3a114",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/সেবাসমূহ_original/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.pdf",
+        "exists": true,
+        "sha256": "99150ee133b081e2a7722383d5214736b8ec3c6ea8e2bae016c53024cdac5528",
+        "pages": 3,
+        "extracted_characters": 5051,
+        "bengali_characters": 3999,
+        "extracted_text_sha256": "699e99a29f576f7f8cf35f50aef76b10f929fabbe45b0c09d4e561b3f64e6415",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "99150ee133b081e2a7722383d5214736b8ec3c6ea8e2bae016c53024cdac5528",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_e21467da1ba75db4",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/সেবাসমূহ/তথ্য সংশোধনপরিবর্তন.md",
+    "snapshot_sha256": "f43da19f86a4fe5fc0fe2594baaf8dbf1426eb12ad20fd6c5751aae2f7ed47f6",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/সেবাসমূহ_original/তথ্য সংশোধন_পরিবর্তন.pdf",
+        "exists": true,
+        "sha256": "8cb9a08e89ce7fcf6ee39a480a7f738205090972491f01c7354b1693d10c7010",
+        "pages": 1,
+        "extracted_characters": 1540,
+        "bengali_characters": 1262,
+        "extracted_text_sha256": "d2aede092afe4d31cbceddddb0bc009066e135626689fc92956b44f155995265",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "8cb9a08e89ce7fcf6ee39a480a7f738205090972491f01c7354b1693d10c7010",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_846a4041fe96a64e",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/সেবাসমূহ/নতুন ড্রাইভিং লাইসেন্স ইস্যু.md",
+    "snapshot_sha256": "26232309419850bdddfee1e1a7d9342ed13e5233176db8359ba06cdd3146f6f5",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/সেবাসমূহ_original/নতুন ড্রাইভিং লাইসেন্স ইস্যু.pdf",
+        "exists": true,
+        "sha256": "5e2b3479ae7fc3107c753dd78e21308b92d9316a35127d6fc46eb1c6513bd10c",
+        "pages": 4,
+        "extracted_characters": 5783,
+        "bengali_characters": 4196,
+        "extracted_text_sha256": "f281d2aa911451a81c6925e92585b335d9f2bd4e9dca1a7bca01fbaae7fca56d",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [
+          3
+        ],
+        "registered_sha256": "5e2b3479ae7fc3107c753dd78e21308b92d9316a35127d6fc46eb1c6513bd10c",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_d516e1b85b1f7144",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/সেবাসমূহ/ফিটনেস ইস্যু ও নবায়ন.md",
+    "snapshot_sha256": "db4bf7c4176dbdcbad635c3b803825254eeec59cca438b895a013e9c135a6feb",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/সেবাসমূহ_original/ফিটনেস ইস্যু ও নবায়ন.pdf",
+        "exists": true,
+        "sha256": "40ad04b83c1bd2b0a2c6eeeede642522db02c967bffe48627ce956368ea2e0c9",
+        "pages": 1,
+        "extracted_characters": 1007,
+        "bengali_characters": 810,
+        "extracted_text_sha256": "123d47f885fe225135161f7e139cf7e1084874f5dd9e1c702a22c40aabd44708",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "40ad04b83c1bd2b0a2c6eeeede642522db02c967bffe48627ce956368ea2e0c9",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_d9357851a61a163d",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/সেবাসমূহ/মালিকানা বদলী.md",
+    "snapshot_sha256": "d353604415fdfb433356edf4269488b280ba2321b09443bc7c82850805c455c8",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/সেবাসমূহ_original/মালিকানা বদলী.pdf",
+        "exists": true,
+        "sha256": "f725b54a4f3e2eb3c46443fa608d08aa4dc61567f6c3e76513ebb187e3560f15",
+        "pages": 2,
+        "extracted_characters": 1997,
+        "bengali_characters": 1585,
+        "extracted_text_sha256": "bb78c77a98f884d2c0f3bd5e9e6aaab68366b0c13592e994e70470ba3b53b489",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "f725b54a4f3e2eb3c46443fa608d08aa4dc61567f6c3e76513ebb187e3560f15",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_4b4c003681ae6872",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/সেবাসমূহ/মোটরযানের নিবন্ধন.md",
+    "snapshot_sha256": "b5842ed7c0c8c57821d03bba670de7b7af255c437e731e3145607e28f6930380",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/সেবাসমূহ_original/মোটরযানের নিবন্ধন.pdf",
+        "exists": true,
+        "sha256": "63602525d9c7d0ce33e1a209a063e96323a3c04f5f34ad56f182bd5f9469b195",
+        "pages": 2,
+        "extracted_characters": 3544,
+        "bengali_characters": 2858,
+        "extracted_text_sha256": "f78ad6bedd482f3627f69454b123ce892d972c41a8673b21f75dc7026fec95f0",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "63602525d9c7d0ce33e1a209a063e96323a3c04f5f34ad56f182bd5f9469b195",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_a40ff0f214eb68b8",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/সেবাসমূহ/রং পরিবর্তন.md",
+    "snapshot_sha256": "4fba431b209bef2d7327fc82a8e45c487c05dece7b5c1f2298f6ac4f6b59ee32",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/সেবাসমূহ_original/রং পরিবর্তন.pdf",
+        "exists": true,
+        "sha256": "ee63b4ad9d96d27c49710054add0556256347238798a54ecb170e54168c0c66b",
+        "pages": 1,
+        "extracted_characters": 1522,
+        "bengali_characters": 1245,
+        "extracted_text_sha256": "8c77ca95863df44b6526a9d5594965e74aace6b3c6e4932faae4fb24fb6980c1",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "ee63b4ad9d96d27c49710054add0556256347238798a54ecb170e54168c0c66b",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_2d6e0fe1670b3aa3",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/সেবাসমূহ/রুট পারমিট ইস্যু ও নবায়ন.md",
+    "snapshot_sha256": "0a0fe033b7c5dd33971294675b1eafe7a2d14cf584b8ac525f265f110622c089",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/সেবাসমূহ_original/রুট পারমিট ইস্যু ও নবায়ন.pdf",
+        "exists": true,
+        "sha256": "6c8846e3360e91d3ed40508d4ddebd87b42d7e8d2789f8c9e774029d37370dcb",
+        "pages": 2,
+        "extracted_characters": 1359,
+        "bengali_characters": 1023,
+        "extracted_text_sha256": "c9e2a119e1737d989f6b395199d6e29c18c42d2aacc00ae828b7ccd4e93168f9",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "6c8846e3360e91d3ed40508d4ddebd87b42d7e8d2789f8c9e774029d37370dcb",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  },
+  {
+    "document_id": "brta_1920ac4fff1f8e0a",
+    "snapshot": "domains/brta/data/source_snapshots/fahim_brta/সেবাসমূহ/রেট্রো-রিফ্লেক্টিভ নম্বর প্লেট.md",
+    "snapshot_sha256": "98ac4450dcc74bf54349a1b3c53c7881b912401fca3b391c8a20825b966ad547",
+    "originals": [
+      {
+        "path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/সেবাসমূহ_original/রেট্রো-রিফ্লেক্টিভ নম্বর প্লেট.pdf",
+        "exists": true,
+        "sha256": "3ea87d1c40c456f3ae09cc37d7d130f7bb0f716dd822b85f7a93f8882323db8c",
+        "pages": 3,
+        "extracted_characters": 2582,
+        "bengali_characters": 2077,
+        "extracted_text_sha256": "4630c38effe9b606651ff18e795922bde6b9462a3074367376274664652f2210",
+        "status": "text_layer_probed_not_visually_verified",
+        "pages_without_extractable_text": [],
+        "registered_sha256": "3ea87d1c40c456f3ae09cc37d7d130f7bb0f716dd822b85f7a93f8882323db8c",
+        "hash_matches": true
+      }
+    ],
+    "source_association": "registered_not_content_certified"
+  }
+]

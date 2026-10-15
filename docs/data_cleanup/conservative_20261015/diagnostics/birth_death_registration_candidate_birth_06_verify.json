@@ -1,0 +1,298 @@
+{
+  "domain": "birth_death_registration",
+  "variant": "candidate",
+  "id": "birth_06_verify",
+  "query": "অনলাইনে জন্মনিবন্ধন যাচাই কীভাবে করব?",
+  "candidate_ids": [
+    "know_this_01_cleaned_008_01",
+    "birth_and_death_registration_rules_2018_বিধি_১৯_03",
+    "birth_registration_application_process_cleaned_017_01",
+    "bdris_faq_01_q02",
+    "birth_and_death_registration_rules_2018_বিধি_২০_01",
+    "birth_and_death_registration_rules_2018_বিধি_৯_04",
+    "birth_registration_application_process_cleaned_012_01",
+    "birth_registration_application_process_02_cleaned_011_01",
+    "bdris_faq_01_q05",
+    "bdris_faq_02_q04",
+    "birth_registration_application_process_cleaned_008_01",
+    "bdris_faq_02_q03",
+    "birth_registration_application_process_02_cleaned_003_01",
+    "notice_birth_and_death_registration_certificate_correction_steps_ocr_007_01",
+    "birth_and_death_registration_rules_2018_বিধি_৯_02"
+  ],
+  "selected_ids": [
+    "birth_and_death_registration_rules_2018_বিধি_১৯_03",
+    "birth_registration_application_process_cleaned_012_01",
+    "birth_registration_application_process_cleaned_017_01",
+    "birth_registration_application_process_02_cleaned_011_01"
+  ],
+  "selected_characters": 2037,
+  "selected_tokens": 575,
+  "tokenizer": "BGE-M3; not generator tokens",
+  "selected_passages": [
+    {
+      "id": "birth_and_death_registration_rules_2018_বিধি_১৯_03",
+      "content": "Service: birth and death registration\nDocument type: legal_rules\nTitle: জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮\nChapter: ষষ্ঠ অধ্যায়: তথ্য প্রযুক্তির মাধ্যমে জন্ম ও মৃত্যুর তথ্য সংরক্ষণ ও প্রেরণ\nLegal unit: বিধি ১৯ তথ্য প্রযুক্তির মাধ্যমে জন্ম ও মৃত্যুর তথ্য সংরক্ষণ, গোপনীয়তা ও সরবরাহ\nContent: (৮) অনলাইনে জন্ম নিবন্ধন তথ্য প্রদানের জন্য চিকিৎসা প্রতিষ্ঠান, স্বাস্থ্য কর্মী নিজ নিজ নিবন্ধক এলাকায় Informant এর 'ব্যবহারকারী পরিচিতি' ও 'পাসওয়ার্ড' পাইবে। (৯) উপ-বিধি (২) এর অধীন কেন্দ্রীয় তথ্যভাণ্ডারে সংরক্ষিত তথ্য-উপাত্ত গোপনীয় বলিয়া বিবেচিত হইবে এবং রেজিস্ট্রার জেনারেল উক্ত কেন্দ্রীয় তথ্যভাণ্ডারে সংরক্ষিত তথ্য-উপাত্তের গোপনীয়তা নিশ্চিত করিবেন। (১০) উপ-বিধি (২) ও (৯) এ যাহা কিছুই থাকুক না কেন, কোন ব্যক্তি বা প্রতিষ্ঠান নির্ধারিত পদ্ধতি অনুসরণ করিয়া কোন নির্দিষ্ট ব্যক্তির জন্ম নিবন্ধন সনদের সঠিকতা যাচাই করিতে পারিবে। (১১) জন্ম তথ্য যাচাই করিবার সুবিধার্থে সরকার জমনি ফরম-৩ অনুযায়ী বার কোড বা মাইক্রোচিপ সম্বলিত মেশিন রিডেবল জন্ম নিবন্ধন কার্ড ইস্যু করিতে পারিবে।",
+      "metadata": {
+        "service": "birth_death_registration",
+        "service_scope": "birth_death",
+        "document_type": "legal_rules",
+        "title": "জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮",
+        "source_file": "birth_and_death_registration_rules_2018.docx",
+        "source_path": "md/birth_and_death_registration_rules_2018.md",
+        "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf",
+        "encoding": "unicode_converted",
+        "language": "bn",
+        "chapter": "ষষ্ঠ অধ্যায়: তথ্য প্রযুক্তির মাধ্যমে জন্ম ও মৃত্যুর তথ্য সংরক্ষণ ও প্রেরণ",
+        "legal_unit_type": "বিধি",
+        "legal_unit_no": "১৯",
+        "section_title": "তথ্য প্রযুক্তির মাধ্যমে জন্ম ও মৃত্যুর তথ্য সংরক্ষণ, গোপনীয়তা ও সরবরাহ",
+        "part_index": 3,
+        "search_aliases": "act, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, certificate verification, civil registration, death certificate, death certificate registration, death registration, death registration certificate, law, legal requirement, legal rule, local government office, online birth registration, online death registration, registrar office, registration office, registration rule, registration verification, verify certificate, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন",
+        "candidate_source": "md/birth_and_death_registration_rules_2018.md",
+        "candidate_source_sha256": "a0712cb930636b7d3477a5f2d9819378b92c05974c11ceaed3b8d8352082d8dc",
+        "source_review_status": "targeted_source_review",
+        "original_sha256": "353eb7d07b6a558df21ad65d0dd7365e8a23aee97ef179f842631f44a70fdd6d",
+        "current_applicability_verified": false,
+        "chunking_version": "2026-10-14-chapter-boundaries",
+        "content_token_count": 294,
+        "retrieval_token_count": 469,
+        "embedding_model_max_tokens": 8192,
+        "cleanup_revision": "conservative_20261015"
+      },
+      "score": 0.8937452149391174,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "birth_registration_application_process_cleaned_012_01",
+      "content": "Service: birth and death registration\nDocument type: application_process\nTitle: জন্ম নিবন্ধিকরণ প্রক্রিয়া\nSection: ২০১৩ সালের পর জন্মগ্রহণকারী ব্যক্তির ক্ষেত্রে\nContent: নিম্নোক্ত তথ্য প্রদান বাধ্যতামূলক:\n\n- পিতা ও মাতার জন্ম নিবন্ধন নম্বর\n- পিতা ও মাতার জন্ম তারিখ\n\nএরপর:\n\n- পিতার নাম (বাংলা ও ইংরেজি)\n- মাতার নাম (বাংলা ও ইংরেজি)\n\nসঠিকভাবে লিখতে হবে।\n\nপিতা-মাতার নাম তাদের অনলাইন জন্ম নিবন্ধনে যেভাবে আছে, ঠিক সেভাবেই লিখতে হবে।\n\nএরপর **Verify** বাটনে ক্লিক করতে হবে।",
+      "metadata": {
+        "service": "birth_death_registration",
+        "service_scope": "birth",
+        "document_type": "application_process",
+        "title": "জন্ম নিবন্ধিকরণ প্রক্রিয়া",
+        "source_file": "birth_registration_application_process.docx",
+        "source_path": "md/birth_registration_application_process_cleaned.md",
+        "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf",
+        "encoding": "unicode_converted",
+        "language": "bn",
+        "section_title": "২০১৩ সালের পর জন্মগ্রহণকারী ব্যক্তির ক্ষেত্রে",
+        "section_index": 12,
+        "part_index": 1,
+        "search_aliases": "application process, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, citizen service, civil registration, date of birth correction, father mother information, how to apply, online application, online birth registration, parent information, parents registration, registration process, required documents, আবেদন পদ্ধতি, আবেদন প্রক্রিয়া, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম তারিখ সংশোধন, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, ধাপে ধাপে আবেদন, নিবন্ধন পদ্ধতি, নিবন্ধন প্রক্রিয়া, প্রয়োজনীয় কাগজপত্র",
+        "candidate_source": "md/birth_registration_application_process_cleaned.md",
+        "candidate_source_sha256": "2f3523ca356fc1519f2fd5ad46cd667ae5495be06a74c303980dee6fbf3b5ac7",
+        "source_review_status": "targeted_source_review",
+        "original_sha256": "37f334dbcab812fcfbc6e52a1b6972631e173fb399872ac5e6fe2fc263937b41",
+        "current_applicability_verified": false,
+        "chunking_version": "2026-10-14-chapter-boundaries",
+        "content_token_count": 124,
+        "retrieval_token_count": 281,
+        "embedding_model_max_tokens": 8192,
+        "cleanup_revision": "conservative_20261015"
+      },
+      "score": 0.6882365131378173,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "birth_registration_application_process_cleaned_017_01",
+      "content": "Service: birth and death registration\nDocument type: application_process\nTitle: জন্ম নিবন্ধিকরণ প্রক্রিয়া\nSection: ধাপ ৭: তথ্য যাচাই ও OTP\nContent: এই ধাপে আবেদনকারীর পূরণকৃত সকল তথ্য প্রদর্শিত হবে।\n\nসকল তথ্য সতর্কতার সাথে যাচাই করতে হবে।\n\nভুল থাকলে \"পূর্ববর্তী\" বাটনে ফিরে গিয়ে সংশোধন করতে হবে।\n\nতথ্য সঠিক হলে:\n\n- ইমেইল অথবা\n- মোবাইল নম্বর\n\nপ্রদান করতে হবে।",
+      "metadata": {
+        "service": "birth_death_registration",
+        "service_scope": "birth",
+        "document_type": "application_process",
+        "title": "জন্ম নিবন্ধিকরণ প্রক্রিয়া",
+        "source_file": "birth_registration_application_process.docx",
+        "source_path": "md/birth_registration_application_process_cleaned.md",
+        "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf",
+        "encoding": "unicode_converted",
+        "language": "bn",
+        "section_title": "ধাপ ৭: তথ্য যাচাই ও OTP",
+        "section_index": 17,
+        "part_index": 1,
+        "search_aliases": "amend registration information, application process, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, certificate, certificate correction, certificate verification, citizen service, civil registration, death certificate correction, fix certificate information, how to apply, name correction, online application, online birth registration, registration process, registration verification, required documents, verify certificate, আবেদন পদ্ধতি, আবেদন প্রক্রিয়া, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, ধাপে ধাপে আবেদন, নিবন্ধন পদ্ধতি, নিবন্ধন প্রক্রিয়া, প্রয়োজনীয় কাগজপত্র, মৃত্যু নিবন্ধন সংশোধন, সংশোধন আবেদন",
+        "candidate_source": "md/birth_registration_application_process_cleaned.md",
+        "candidate_source_sha256": "2f3523ca356fc1519f2fd5ad46cd667ae5495be06a74c303980dee6fbf3b5ac7",
+        "source_review_status": "targeted_source_review",
+        "original_sha256": "37f334dbcab812fcfbc6e52a1b6972631e173fb399872ac5e6fe2fc263937b41",
+        "current_applicability_verified": false,
+        "chunking_version": "2026-10-14-chapter-boundaries",
+        "content_token_count": 94,
+        "retrieval_token_count": 285,
+        "embedding_model_max_tokens": 8192,
+        "cleanup_revision": "conservative_20261015"
+      },
+      "score": 0.8391833281517028,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "birth_registration_application_process_02_cleaned_011_01",
+      "content": "Service: birth and death registration\nDocument type: application_process\nTitle: জন্ম নিবন্ধনের আবেদন প্রসেস\nSection: ধাপ ৯: তথ্য যাচাই ও OTP গ্রহণ\nContent: আবেদনের সকল তথ্য পুনরায় পর্যালোচনা করুন এবং আপনার মোবাইল নম্বরে OTP পাঠান।",
+      "metadata": {
+        "service": "birth_death_registration",
+        "service_scope": "birth",
+        "document_type": "application_process",
+        "title": "জন্ম নিবন্ধনের আবেদন প্রসেস",
+        "source_file": "birth_registration_application_process_02.docx",
+        "source_path": "md/birth_registration_application_process_02_cleaned.md",
+        "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf",
+        "encoding": "unicode_converted",
+        "language": "bn",
+        "section_title": "ধাপ ৯: তথ্য যাচাই ও OTP গ্রহণ",
+        "section_index": 11,
+        "part_index": 1,
+        "search_aliases": "application process, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, certificate verification, citizen service, civil registration, how to apply, online application, online birth registration, registration process, registration verification, required documents, verify certificate, আবেদন পদ্ধতি, আবেদন প্রক্রিয়া, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, ধাপে ধাপে আবেদন, নিবন্ধন পদ্ধতি, নিবন্ধন প্রক্রিয়া, প্রয়োজনীয় কাগজপত্র",
+        "candidate_source": "md/birth_registration_application_process_02_cleaned.md",
+        "candidate_source_sha256": "6ed812d51a02efd001ef8e290576e69791eec70f5f9ec73ee2bd67f448d7a0ff",
+        "source_review_status": "pending_original_content_review",
+        "chunking_version": "2026-10-14-chapter-boundaries",
+        "content_token_count": 63,
+        "retrieval_token_count": 210,
+        "embedding_model_max_tokens": 8192,
+        "cleanup_revision": "conservative_20261015"
+      },
+      "score": 0.6290617561340331,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    }
+  ],
+  "selection_trace": {
+    "version": "applicability_v1_family_order",
+    "query_actions": [
+      "verification"
+    ],
+    "query_services": [
+      "birth"
+    ],
+    "decisions": [
+      {
+        "id": "know_this_01_cleaned_008_01",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "bdris_faq_01_q02",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "birth_and_death_registration_rules_2018_বিধি_২০_01",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "birth_and_death_registration_rules_2018_বিধি_৯_04",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "bdris_faq_01_q05",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "bdris_faq_02_q04",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "birth_registration_application_process_cleaned_008_01",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "bdris_faq_02_q03",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "birth_registration_application_process_02_cleaned_003_01",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "notice_birth_and_death_registration_certificate_correction_steps_ocr_007_01",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "birth_and_death_registration_rules_2018_বিধি_৯_02",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "birth_and_death_registration_rules_2018_বিধি_১৯_03",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "birth_registration_application_process_cleaned_012_01",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "birth_registration_application_process_cleaned_017_01",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "birth_registration_application_process_02_cleaned_011_01",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      }
+    ],
+    "expanded_ids": [],
+    "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+    "budget_order_ids": [
+      "birth_and_death_registration_rules_2018_বিধি_১৯_03",
+      "birth_registration_application_process_cleaned_012_01",
+      "birth_registration_application_process_cleaned_017_01",
+      "birth_registration_application_process_02_cleaned_011_01"
+    ],
+    "selected_ids": [
+      "birth_and_death_registration_rules_2018_বিধি_১৯_03",
+      "birth_registration_application_process_cleaned_012_01",
+      "birth_registration_application_process_cleaned_017_01",
+      "birth_registration_application_process_02_cleaned_011_01"
+    ],
+    "selected_chars": 2037
+  },
+  "seconds": 15.111,
+  "top5": {
+    "dense": [
+      "know_this_01_cleaned_008_01",
+      "birth_and_death_registration_rules_2018_বিধি_২০_01",
+      "bdris_faq_01_q02",
+      "birth_registration_application_process_cleaned_012_01",
+      "bdris_faq_01_q05"
+    ],
+    "bm25": [
+      "birth_and_death_registration_rules_2018_বিধি_১৯_03",
+      "know_this_01_cleaned_008_01",
+      "birth_registration_application_process_cleaned_017_01",
+      "bdris_faq_02_q04",
+      "birth_registration_application_process_02_cleaned_011_01"
+    ],
+    "hybrid": [
+      "know_this_01_cleaned_008_01",
+      "birth_and_death_registration_rules_2018_বিধি_২০_01",
+      "birth_and_death_registration_rules_2018_বিধি_১৯_03",
+      "bdris_faq_01_q02",
+      "bdris_faq_01_q05"
+    ]
+  }
+}

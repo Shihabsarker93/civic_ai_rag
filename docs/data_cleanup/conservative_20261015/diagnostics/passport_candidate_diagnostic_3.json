@@ -1,0 +1,315 @@
+{
+  "domain": "passport",
+  "variant": "candidate",
+  "id": "diagnostic_3",
+  "query": "পাসপোর্টের আবেদন করার পর স্ট্যাটাস কীভাবে দেখব?",
+  "candidate_ids": [
+    "passport_23d845d3ab38ea43_v2_0038",
+    "passport_23d845d3ab38ea43_v2_0044",
+    "passport_23d845d3ab38ea43_v2_0027",
+    "passport_23d845d3ab38ea43_v2_0043",
+    "passport_23d845d3ab38ea43_v2_0047",
+    "passport_ed7b3ebc56c0094f_v2_0004",
+    "passport_6f7d900581956bef_v2_0006",
+    "passport_729010959c882773_v2_0003",
+    "passport_729010959c882773_v2_0004",
+    "passport_9f4e9ffe9f2a07f4_v2_0002",
+    "passport_9f4e9ffe9f2a07f4_v2_0005",
+    "passport_6f7d900581956bef_v2_0012",
+    "passport_6f7d900581956bef_v2_0014",
+    "passport_729010959c882773_v2_0002",
+    "passport_14c01dbffa495023_v2_0003"
+  ],
+  "selected_ids": [
+    "passport_23d845d3ab38ea43_v2_0038",
+    "passport_23d845d3ab38ea43_v2_0044",
+    "passport_ed7b3ebc56c0094f_v2_0004",
+    "passport_23d845d3ab38ea43_v2_0043",
+    "passport_23d845d3ab38ea43_v2_0047"
+  ],
+  "selected_characters": 5465,
+  "selected_tokens": 1610,
+  "tokenizer": "BGE-M3; not generator tokens",
+  "selected_passages": [
+    {
+      "id": "passport_23d845d3ab38ea43_v2_0038",
+      "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.1 Checking Passport Application Status / আবেদনের অগ্রগতি পর্যবেক্ষণ\n\n### 6.1 Checking Passport Application Status / আবেদনের অগ্রগতি পর্যবেক্ষণ\n- **Category:** Status, Delivery & Corrections\n- **Topic:** Online Status Tracking\n- **English Question:** How can I check the status of my passport application?\n- **Bengali Question (প্রশ্ন):** আমার পাসপোর্ট আবেদনের অগ্রগতি কি ভাবে দেখতে পারব?\n- **English Answer:** Visit the **Status Check** page on the official ePassport portal. Enter your Application ID or Online Registration ID (OID) along with the applicant's Date of Birth to view current processing status.\n- **Bengali Answer (উত্তর):** ই-পাসপোর্ট পোর্টালে **'স্ট্যাটাস চেক'** মেন্যুতে যান। আবেদনকারীর জন্ম তারিখ এবং Application ID বা Online Registration ID প্রবেশ করিয়ে সার্চ বাটন চাপুন।\n\n---\n\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_23d845d3ab38ea43",
+        "document_id": "passport_23d845d3ab38ea43",
+        "title": "Bangladesh_ePassport_FAQ",
+        "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.1 Checking Passport Application Status / আবেদনের অগ্রগতি পর্যবেক্ষণ",
+        "document_type": "document",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+        "original_paths": "[]",
+        "document_date": "unknown",
+        "date_verified": false,
+        "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+        "experimental": true,
+        "body_start": 27885,
+        "body_end": 28615,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": true,
+        "cleanup_revision": "conservative_20261015",
+        "retrieval_token_count": 266,
+        "embedding_model_max_tokens": 8192
+      },
+      "score": 0.9619293808937073,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "passport_23d845d3ab38ea43_v2_0044",
+      "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.7 Official Link to Check Passport Status / ই-পাসপোর্ট স্ট্যাটাস চেক করার লিংক\n\n### 6.7 Official Link to Check Passport Status / ই-পাসপোর্ট স্ট্যাটাস চেক করার লিংক\n- **Category:** Status, Delivery & Corrections\n- **Topic:** Portal Link\n- **English Question:** How can I check my e-Passport status?\n- **Bengali Question (প্রশ্ন):** কি ভাবে আমি ই-পাসপোর্ট এর বর্তমান অবস্থান জানতে পারব?\n- **English Answer:** Visit the official ePassport Portal status tracking section at: [https://www.epassport.gov.bd/authorization/application-status](https://www.epassport.gov.bd/authorization/application-status)\n- **Bengali Answer (উত্তর):** আপনার ই-পাসপোর্টের স্ট্যাটাস চেক করতে অফিসিয়াল ই-পাসপোর্ট অনলাইন পোর্টালের এই লিংকে যান: [https://www.epassport.gov.bd/authorization/application-status](https://www.epassport.gov.bd/authorization/application-status)\n\n---\n\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_23d845d3ab38ea43",
+        "document_id": "passport_23d845d3ab38ea43",
+        "title": "Bangladesh_ePassport_FAQ",
+        "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.7 Official Link to Check Passport Status / ই-পাসপোর্ট স্ট্যাটাস চেক করার লিংক",
+        "document_type": "document",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+        "original_paths": "[]",
+        "document_date": "unknown",
+        "date_verified": false,
+        "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+        "experimental": true,
+        "body_start": 33104,
+        "body_end": 33875,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": true,
+        "cleanup_revision": "conservative_20261015",
+        "retrieval_token_count": 312,
+        "embedding_model_max_tokens": 8192
+      },
+      "score": 0.6029649972915649,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "passport_ed7b3ebc56c0094f_v2_0004",
+      "content": "মেশিন রিডেবল পাসপোর্ট (এমআরপি)\nমেশিন রিডেবল পাসপোর্ট (এমআরপি) > প্রয়োজনীয় তথ্য ও নির্দেশাবলী\n\nসরকারি চাকুরীজীবি ও তাদের নির্ভরশীল স্বামী/স্ত্রী সাধারণ ফি প্রদান করে জরুরী সুবিধা পাবেন। এক্ষেত্রে অবসর গ্রহণের সনদ দাখিল করতে হবে।\n8. পাসপোর্ট সমর্পণকৃতদের (সারেন্ডারড) আবেদনপত্রের সাথে অবশ্যই পূর্বের পাসপোর্ট নিয়ে আসতে হবে।\n9. কূটনৈতিক পাসপোর্ট লাভের যোগ্য আবেদনকারীগণকে পূরণকৃত ফরম ও সংযুক্তিসমূহ পররাষ্ট্র মন্ত্রনালয়ে জমা দিতে হবে।\n10. শিক্ষাগত বা চাকুরীসূত্রে প্রাপ্ত পদবীসমূহ (যেমন ডাক্তার, ইঞ্জিনিয়ার, ডক্টর, পিএইচডি ইত্যাদি) নামের অংশ হিসেবে পরিগণিত হবে না। ফরমের ক্রমিক নং ৩ পূরনের ক্ষেত্রে, একাধিক অংশ থাকলে প্রতি অংশের মাঝখানে ১টি ঘর শূন্য রেখে পূরণ করতে হবে। আবেদনকারীর পিতা, মাতা, স্বামী/স্ত্রী মৃত হলেও তার/তাদের নামের পূর্বে 'মৃত/মরহুম/Late' লেখা যাবে না।\n11. ছবি তোলার সময় সাদা পোশাক, সাদা টুপি এবং চোখে চশমা পরা যাবে না।\n12. ছবি, স্বাক্ষর ও আঙ্গুলের ছাপ প্রদানের পূর্বে একটি প্রাক ডেলিভারী রশিদ প্রদান করা হয় যাতে পাসপোর্ট এ প্রদর্শিত সকল তথ্য দেওয়া থাকে। উক্ত রশিদে আপনার তথ্য সঠিক আছে কিনা যাচাই করে নিন এবং কোন তথ্য ভুল থাকলে সংশ্লিষ্ট অপারেটরকে জানিয়ে তাৎক্ষণিক সংশোধন করে নিতে পারবেন। উল্লেখ্য যে, পাসপোর্ট আবেদনকারীর ছবি, স্বাক্ষর ও আঙ্গুলের ছাপ প্রদানের পর মূল ডেলিভারী রশিদ প্রদান করা হয় এবং এরপর সংশোধনের আর কোন সুযোগ থাকে না। অতএব, কাউন্টার ত্যাগের পূর্বে আপনার তথ্য যাচাই করে ডেলিভারী রশিদ বুঝে নিন।\n13. www.passport.gov.bd এই ঠিকানায় প্রবেশ করে Application Status অপশন থেকে ডেলিভারী রশিদে প্রদত্ত আপনার Enrolment ID এবং Date of Birth প্রদান করে আবেদনের ",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_ed7b3ebc56c0094f",
+        "document_id": "passport_ed7b3ebc56c0094f",
+        "title": "মেশিন রিডেবল পাসপোর্ট (এমআরপি)",
+        "section_title": "মেশিন রিডেবল পাসপোর্ট (এমআরপি) > প্রয়োজনীয় তথ্য ও নির্দেশাবলী",
+        "document_type": "সাধারণ তথ্য ও নির্দেশিকা",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/মেশিন রিডেবল পাসপোর্ট(এমআরপি).md",
+        "source_relative_path": "cleaned_md/মেশিন রিডেবল পাসপোর্ট(এমআরপি).md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/মেশিন রিডেবল পাসপোর্ট(এমআরপি).md",
+        "source_sha256": "a10a5262eb9bfd3fd6a7a6363e32622101ef48a0eee755f04c5f25fea5df8026",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/মেশিন রিডেবল পাসপোর্ট(এমআরপি).pdf\"]",
+        "document_date": "N/A",
+        "date_verified": false,
+        "audit_flags": "",
+        "experimental": true,
+        "body_start": 2533,
+        "body_end": 3926,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": false,
+        "cleanup_revision": "conservative_20261015",
+        "retrieval_token_count": 486,
+        "embedding_model_max_tokens": 8192
+      },
+      "score": 0.1872246116399765,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "passport_23d845d3ab38ea43_v2_0043",
+      "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.6 Portal Error: \"Application ID / Online Registration ID Required\" / স্ট্যাটাস দেখার সমস্যা ও সমাধান\n\n### 6.6 Portal Error: \"Application ID / Online Registration ID Required\" / স্ট্যাটাস দেখার সমস্যা ও সমাধান\n- **Category:** Status, Delivery & Corrections\n- **Topic:** Technical Portal Troubleshooting\n- **English Question:** Having trouble viewing online status. \"Application ID / Online Registration ID is required\" despite providing the ID. What can I do?\n- **Bengali Question (প্রশ্ন):** অনলাইন স্ট্যাটাস দেখতে সমস্যা হচ্ছে। Application ID / Online Registration ID প্রদান করা সত্ত্বেও \"Application ID / Online Registration ID is required\" দেখায়। আমি কি করতে পারি?\n- **English Answer:** Clear your web browser's Cache and Cookies, or open the portal in an Incognito/Private window and check again.\n- **Bengali Answer (উত্তর):** আপনার ব্রাউজারের ক্যাশ (Cache) এবং কুকিজ (Cookies) ক্লিয়ার করে পুনরায় স্ট্যাটাস চেক করার চেষ্টা করুন।\n\n---\n\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_23d845d3ab38ea43",
+        "document_id": "passport_23d845d3ab38ea43",
+        "title": "Bangladesh_ePassport_FAQ",
+        "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.6 Portal Error: \"Application ID / Online Registration ID Required\" / স্ট্যাটাস দেখার সমস্যা ও সমাধান",
+        "document_type": "document",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+        "original_paths": "[]",
+        "document_date": "unknown",
+        "date_verified": false,
+        "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+        "experimental": true,
+        "body_start": 32264,
+        "body_end": 33104,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": true,
+        "cleanup_revision": "conservative_20261015",
+        "retrieval_token_count": 303,
+        "embedding_model_max_tokens": 8192
+      },
+      "score": 0.21908685564994812,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "passport_23d845d3ab38ea43_v2_0047",
+      "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.10 Status \"Pending for Backend Verification\" / Backend Verification আটকে থাকা\n\n### 6.10 Status \"Pending for Backend Verification\" / Backend Verification আটকে থাকা\n- **Category:** Status, Delivery & Corrections\n- **Topic:** System Processing Stage\n- **English Question:** While checking my passport status, I see \"Pending for Backend Verification\". What should I do?\n- **Bengali Question (প্রশ্ন):** আমি আমার পাসপোর্টের স্ট্যাটাস চেক করার সময় \"Pending for Backend Verification\" দেখতে পাচ্ছি। এখন আমি কি করব?\n- **English Answer:** Please contact your respective Regional Passport Office (RPO) for clarification and further instructions regarding backend checks.\n- **Bengali Answer (উত্তর):** এমন দেখালে অনুগ্রহ করে সরাসরি আপনার সংশ্লিষ্ট আঞ্চলিক পাসপোর্ট অফিসে (RPO) যোগযোগ করুন।\n\n---\n\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_23d845d3ab38ea43",
+        "document_id": "passport_23d845d3ab38ea43",
+        "title": "Bangladesh_ePassport_FAQ",
+        "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.10 Status \"Pending for Backend Verification\" / Backend Verification আটকে থাকা",
+        "document_type": "document",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+        "original_paths": "[]",
+        "document_date": "unknown",
+        "date_verified": false,
+        "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+        "experimental": true,
+        "body_start": 35498,
+        "body_end": 36204,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": true,
+        "cleanup_revision": "conservative_20261015",
+        "retrieval_token_count": 253,
+        "embedding_model_max_tokens": 8192
+      },
+      "score": 0.21436479687690735,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    }
+  ],
+  "selection_trace": {
+    "version": "applicability_v1_family_order",
+    "query_actions": [
+      "status"
+    ],
+    "query_services": [
+      "passport"
+    ],
+    "decisions": [
+      {
+        "id": "passport_23d845d3ab38ea43_v2_0027",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_6f7d900581956bef_v2_0006",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_729010959c882773_v2_0003",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_729010959c882773_v2_0004",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_9f4e9ffe9f2a07f4_v2_0002",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_9f4e9ffe9f2a07f4_v2_0005",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_6f7d900581956bef_v2_0012",
+        "decision": "excluded",
+        "reason": "different_service"
+      },
+      {
+        "id": "passport_6f7d900581956bef_v2_0014",
+        "decision": "excluded",
+        "reason": "different_service"
+      },
+      {
+        "id": "passport_729010959c882773_v2_0002",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_14c01dbffa495023_v2_0003",
+        "decision": "excluded",
+        "reason": "different_service"
+      },
+      {
+        "id": "passport_23d845d3ab38ea43_v2_0038",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_23d845d3ab38ea43_v2_0044",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_ed7b3ebc56c0094f_v2_0004",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_23d845d3ab38ea43_v2_0043",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_23d845d3ab38ea43_v2_0047",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      }
+    ],
+    "expanded_ids": [],
+    "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+    "budget_order_ids": [
+      "passport_23d845d3ab38ea43_v2_0038",
+      "passport_23d845d3ab38ea43_v2_0044",
+      "passport_ed7b3ebc56c0094f_v2_0004",
+      "passport_23d845d3ab38ea43_v2_0043",
+      "passport_23d845d3ab38ea43_v2_0047"
+    ],
+    "selected_ids": [
+      "passport_23d845d3ab38ea43_v2_0038",
+      "passport_23d845d3ab38ea43_v2_0044",
+      "passport_ed7b3ebc56c0094f_v2_0004",
+      "passport_23d845d3ab38ea43_v2_0043",
+      "passport_23d845d3ab38ea43_v2_0047"
+    ],
+    "selected_chars": 5465
+  },
+  "seconds": 8.056,
+  "support_rank": 1,
+  "selected_support": true
+}

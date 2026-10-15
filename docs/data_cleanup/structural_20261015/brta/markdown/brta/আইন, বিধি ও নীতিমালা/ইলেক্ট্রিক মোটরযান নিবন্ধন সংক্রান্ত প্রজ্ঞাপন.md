@@ -1,0 +1,44 @@
+# ইলেক্ট্রিক মোটরযান নিবন্ধন সংক্রান্ত প্রজ্ঞাপন
+
+বাংলাদেশ রোড ট্রান্সপোর্ট অথরিটি। এস. আর. ও নং ৫৪-আইন/২০২০।
+প্রজ্ঞাপনের তারিখ: ০৪ ফাল্গুন, ১৪২৬ বঙ্গাব্দ / ১৭ ফেব্রুয়ারি, ২০২০ খ্রিষ্টাব্দ।
+গেজেট প্রকাশ: ১০ মার্চ, ২০২০।
+
+সড়ক পরিবহন আইন, ২০১৮ (২০১৮ সনের ৪৭ নং আইন) এর ধারা ১২৩ এ প্রদত্ত ক্ষমতাবলে কর্তৃপক্ষ সরকারের পূর্বানুমোদনক্রমে Motor Vehicles Regulations, 1984 সংশোধন করেছে।
+
+## Regulation 2: Electric Vehicle বা EV-এর সংজ্ঞা
+
+Regulation 2-এর clause (e)-এর পরে নতুন clause (ee) সন্নিবেশিত হয়েছে। মূল সংজ্ঞা:
+
+> "Electric Vehicle or EV" means a vehicle powered exclusively by one or more electric motor whose traction energy is supplied by rechargeable battery installed in the vehicle, but does not include battery operated bicycle or rickshaw;
+
+এই সংজ্ঞায় যানবাহনটি এক বা একাধিক বৈদ্যুতিক মোটর দ্বারা একচেটিয়াভাবে চালিত এবং মোটরের চালনাশক্তি যানবাহনে স্থাপিত পুনরারোপনযোগ্য ব্যাটারি থেকে সরবরাহ করা হয়। ব্যাটারিচালিত বাইসাইকেল বা রিকশা এই সংজ্ঞার অন্তর্ভুক্ত নয়।
+
+## Regulation 74(1), clause (a): বৈদ্যুতিক মোটরের ক্ষমতা
+
+বিদ্যমান "cubic centimeter" শব্দগুলির পরে বৈদ্যুতিক মোটরযানের নিম্নলিখিত ক্ষমতার শর্ত সংযোজিত হয়েছে:
+
+* Sub-clause (i): "or electric vehicle having motor power not more than 5 kW"। অর্থাৎ ৫ kW-এর বেশি নয়।
+* Sub-clause (ii): "or electric vehicle having motor power more than 5 kW"। অর্থাৎ ৫ kW-এর বেশি।
+
+## Regulation 74(1), clause (b): বৈদ্যুতিক মোটরের ক্ষমতা
+
+বিদ্যমান "cubic centimeter" শব্দগুলির পরে বৈদ্যুতিক মোটরযানের নিম্নলিখিত ক্ষমতার শর্ত সংযোজিত হয়েছে:
+
+* Sub-clause (i): "or electric vehicle having motor power not more than 5 kW"। অর্থাৎ ৫ kW-এর বেশি নয়।
+* Sub-clause (ii): "or electric vehicle having motor power more than 5 kW"। অর্থাৎ ৫ kW-এর বেশি।
+
+## Regulation 74(1), clause (h): বৈদ্যুতিক মোটরের ক্ষমতা
+
+বিদ্যমান "cubic centimeter" শব্দগুলির পরে বৈদ্যুতিক মোটরযানের নিম্নলিখিত ক্ষমতার শর্ত সংযোজিত হয়েছে:
+
+* Sub-clause (i): ৩০ kW-এর বেশি নয় (not more than 30 kW)।
+* Sub-clause (ii): ৩০ kW-এর বেশি কিন্তু ৫০ kW-এর বেশি নয় (more than 30 kW but not more than 50 kW)।
+* Sub-clause (iii): ৫০ kW-এর বেশি কিন্তু ৭০ kW-এর বেশি নয় (more than 50 kW but not more than 70 kW)।
+* Sub-clause (iv): ৭০ kW-এর বেশি কিন্তু ১০০ kW-এর বেশি নয় (more than 70 kW but not more than 100 kW)।
+* Sub-clause (v): ১০০ kW-এর বেশি (more than 100 kW)।
+
+## কার্যকারিতা ও স্বাক্ষর
+
+প্রজ্ঞাপনে বলা হয়েছে: "ইহা অবিলম্বে কার্যকর হইবে।"
+কর্তৃপক্ষের আদেশক্রমে ড. মোঃ কামরুল আহসান, চেয়ারম্যান।

@@ -1,0 +1,14 @@
+{
+  "source_chunk_path": "domains/brta/data/interim/active_20260919_062310_302306.jsonl",
+  "source_sha256": "2ac675c1cca65b6a72bb4b61f4d7edbc20c01316a2211619309e53fbb23da359",
+  "candidate_sha256": "76e481527bdf1cda6507b8d27ed40b59a28fa2e59970b4381cfc0e9b5d4c84cf",
+  "input_chunks": 3161,
+  "candidate_chunks": 2864,
+  "excluded_heading_units": 297,
+  "normalized_chunks": 1051,
+  "max_tokens": 837,
+  "registered_documents": 132,
+  "unresolved_original_associations": 6,
+  "original_hash_failures": 0,
+  "limits": "No semantic rewrite, source currency certification, or activation. Source offsets refer to preserved input."
+}

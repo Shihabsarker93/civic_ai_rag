@@ -1,0 +1,184 @@
+{
+  "domain": "passport",
+  "variant": "structural",
+  "id": "passport_01_documents",
+  "query": "নতুন পাসপোর্ট করতে কী কী কাগজপত্র লাগবে?",
+  "candidate_ids": [
+    "passport_23d845d3ab38ea43_v4_0040",
+    "passport_73ac41f2327257f9_v4_0004",
+    "passport_729010959c882773_v4_0003",
+    "passport_73ac41f2327257f9_v4_0003",
+    "passport_23d845d3ab38ea43_v4_0033",
+    "passport_6f7d900581956bef_v4_0007",
+    "passport_6f7d900581956bef_v4_0010",
+    "passport_3fcbc40c98aa80bc_v4_0008",
+    "passport_3fcbc40c98aa80bc_v4_0002",
+    "passport_3fcbc40c98aa80bc_v4_0006",
+    "passport_3fcbc40c98aa80bc_v4_0004",
+    "passport_3fcbc40c98aa80bc_v4_0007",
+    "passport_3fcbc40c98aa80bc_v4_0003",
+    "passport_73ac41f2327257f9_v4_0002",
+    "passport_23d845d3ab38ea43_v4_0010"
+  ],
+  "selected_ids": [
+    "passport_73ac41f2327257f9_v4_0004"
+  ],
+  "selected_characters": 743,
+  "selected_tokens": 240,
+  "tokenizer": "BGE-M3; not generator tokens",
+  "selected_passages": [
+    {
+      "id": "passport_73ac41f2327257f9_v4_0004",
+      "content": "Documents need to be carried while enrolment at Passport offices / পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে\nDocuments need to be carried while enrolment at Passport offices > প্রয়োজনীয় কাগজপত্র (বাংলা)\n\n## প্রয়োজনীয় কাগজপত্র (বাংলা)\n* **ক্রমিক ১:** আবেদনপত্রের সারংশের প্রিন্ট কপি (অ্যাপয়েন্টমেন্ট সহ)।\n* **ক্রমিক ২:** সনাক্তকরণ নথির প্রিন্ট কপি (জাতীয় পরিচয় পত্র/ জন্ম নিবন্ধন নং)।\n* **ক্রমিক ৩:** পেমেন্ট স্লিপ (for Offline Payment only) I\n* **ক্রমিক ৪:** পূর্ববর্তী পাসপোর্ট এবং ডাটা পেজের প্রিন্ট কপি (যদি থাকে)।\n* **ক্রমিক ৫:** সরকারি চাকরিজীবীদের ক্ষেত্রে GO/NOC (যদি থাকে)।\n* **ক্রমিক ৬:** আবেদনপত্রের প্রিন্ট কপি।\n* **ক্রমিক ৭:** তথ্য সংশোধনের ক্ষেত্রে প্রয়োজনীয় কাগজপত্র (যদি থাকে)।",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_73ac41f2327257f9",
+        "document_id": "passport_73ac41f2327257f9",
+        "title": "Documents need to be carried while enrolment at Passport offices / পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে",
+        "section_title": "Documents need to be carried while enrolment at Passport offices > প্রয়োজনীয় কাগজপত্র (বাংলা)",
+        "document_type": "সাধারণ তথ্য",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.md",
+        "source_relative_path": "cleaned_md/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.md",
+        "source_sha256": "11f8f5bb9835c318f2ee6fda5b64e345563234278c88ac3062d5e7a89d3d8fe9",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.pdf\"]",
+        "document_date": "2025-05-07",
+        "date_verified": false,
+        "audit_flags": "no_web_address",
+        "experimental": true,
+        "body_start": 679,
+        "body_end": 1174,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/passport/markdown/cleaned_md/পাসপোর্ট অফিসে আবেদনপত্র জমা দেওয়ার সময় যে সকল প্রয়োজনীয় কাগজপত্র নিয়ে যেতে হবে.md",
+        "context_spans": "[]",
+        "cleaned_sha256": "f44ef2297a8775519d8a5f716f55c3acedf305033904fae914896c8ebf8a01da"
+      },
+      "score": 0.9469374418258667,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    }
+  ],
+  "selection_trace": {
+    "version": "applicability_v1_family_order",
+    "query_actions": [
+      "application"
+    ],
+    "query_services": [
+      "passport"
+    ],
+    "decisions": [
+      {
+        "id": "passport_23d845d3ab38ea43_v4_0040",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_6f7d900581956bef_v4_0007",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_6f7d900581956bef_v4_0010",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_3fcbc40c98aa80bc_v4_0008",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_3fcbc40c98aa80bc_v4_0002",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_3fcbc40c98aa80bc_v4_0006",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_3fcbc40c98aa80bc_v4_0004",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_3fcbc40c98aa80bc_v4_0007",
+        "decision": "excluded",
+        "reason": "different_service"
+      },
+      {
+        "id": "passport_3fcbc40c98aa80bc_v4_0003",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_729010959c882773_v4_0003",
+        "decision": "excluded",
+        "reason": "alternative_checklist_not_merged"
+      },
+      {
+        "id": "passport_73ac41f2327257f9_v4_0003",
+        "decision": "excluded",
+        "reason": "alternative_checklist_not_merged"
+      },
+      {
+        "id": "passport_73ac41f2327257f9_v4_0002",
+        "decision": "excluded",
+        "reason": "alternative_checklist_not_merged"
+      },
+      {
+        "id": "passport_23d845d3ab38ea43_v4_0033",
+        "decision": "excluded",
+        "reason": "alternative_checklist_not_merged"
+      },
+      {
+        "id": "passport_23d845d3ab38ea43_v4_0010",
+        "decision": "excluded",
+        "reason": "alternative_checklist_not_merged"
+      },
+      {
+        "id": "passport_73ac41f2327257f9_v4_0004",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      }
+    ],
+    "expanded_ids": [],
+    "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+    "budget_order_ids": [
+      "passport_73ac41f2327257f9_v4_0004"
+    ],
+    "selected_ids": [
+      "passport_73ac41f2327257f9_v4_0004"
+    ],
+    "selected_chars": 743
+  },
+  "seconds": 18.607,
+  "top5": {
+    "dense": [
+      "passport_23d845d3ab38ea43_v4_0040",
+      "passport_73ac41f2327257f9_v4_0004",
+      "passport_3fcbc40c98aa80bc_v4_0002",
+      "passport_73ac41f2327257f9_v4_0003",
+      "passport_729010959c882773_v4_0003"
+    ],
+    "bm25": [
+      "passport_23d845d3ab38ea43_v4_0033",
+      "passport_23d845d3ab38ea43_v4_0010",
+      "passport_23d845d3ab38ea43_v4_0015",
+      "passport_23d845d3ab38ea43_v4_0040",
+      "passport_23d845d3ab38ea43_v4_0021"
+    ],
+    "hybrid": [
+      "passport_23d845d3ab38ea43_v4_0040",
+      "passport_23d845d3ab38ea43_v4_0033",
+      "passport_3fcbc40c98aa80bc_v4_0008",
+      "passport_73ac41f2327257f9_v4_0004",
+      "passport_3fcbc40c98aa80bc_v4_0002"
+    ]
+  }
+}

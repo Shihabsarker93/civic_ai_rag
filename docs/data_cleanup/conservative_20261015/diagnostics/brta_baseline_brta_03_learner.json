@@ -1,0 +1,362 @@
+{
+  "domain": "brta",
+  "variant": "baseline",
+  "id": "brta_03_learner",
+  "query": "লার্নার ড্রাইভিং লাইসেন্স কীভাবে করব?",
+  "candidate_ids": [
+    "brta_cbe22ab64acf3d03_v2_0003",
+    "brta_cbe22ab64acf3d03_v2_0004",
+    "brta_846a4041fe96a64e_v2_0011",
+    "brta_09e8cbfff67f117e_v2_0005",
+    "brta_846a4041fe96a64e_v2_0002",
+    "brta_cbe22ab64acf3d03_v2_0002",
+    "brta_846a4041fe96a64e_v2_0007",
+    "brta_3cae1ecd59682fa3_v2_0005",
+    "brta_846a4041fe96a64e_v2_0008",
+    "brta_4e08eb4e988d38e4_v2_0008",
+    "brta_3cae1ecd59682fa3_v2_0004",
+    "brta_4b8c25d391e48121_v2_0004",
+    "brta_3cae1ecd59682fa3_v2_0003",
+    "brta_57a7e75567f9a5c3_v2_0008",
+    "brta_846a4041fe96a64e_v2_0015"
+  ],
+  "selected_ids": [
+    "brta_cbe22ab64acf3d03_v2_0003",
+    "brta_cbe22ab64acf3d03_v2_0004",
+    "brta_846a4041fe96a64e_v2_0011",
+    "brta_09e8cbfff67f117e_v2_0005",
+    "brta_846a4041fe96a64e_v2_0002",
+    "brta_cbe22ab64acf3d03_v2_0002"
+  ],
+  "selected_characters": 5166,
+  "selected_tokens": 1799,
+  "tokenizer": "BGE-M3; not generator tokens",
+  "selected_passages": [
+    {
+      "id": "brta_cbe22ab64acf3d03_v2_0003",
+      "content": "ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন প্রক্রিয়া\nড্রাইভিং লাইসেন্স > ড্রাইভিং লাইসেন্স প্রাপ্তির প্রক্রিয়া\n\n## ড্রাইভিং লাইসেন্স প্রাপ্তির প্রক্রিয়া\n\nগ্রাহককে প্রথমে লার্নার বা শিক্ষানবিশ ড্রাইভিং লাইসেন্স-এর জন্য প্রয়োজনীয় কাগজপত্রসহ অনলাইনে (`bsp.brta.gov.bd`)-এর মাধ্যমে আবেদন করতে হবে। অনলাইন সিস্টেম থেকে তার লার্নার বা শিক্ষানবিশ ড্রাইভিং লাইসেন্স ইস্যু হবে এবং গ্রাহক সাথে সাথেই সিস্টেম থেকেই তার শিক্ষানবিশ ড্রাইভিং লাইসেন্স প্রিন্ট করে নিতে পারবেন। \n\nএরপর ২/৩ মাস প্রশিক্ষণ গ্রহণের পর তাকে নির্ধারিত তারিখ ও সময়ে নির্ধারিত কেন্দ্রে লিখিত, মৌখিক ও ফিল্ড টেস্ট-এ অংশ গ্রহণ করতে হবে। এসময় প্রার্থীকে প্রয়োজনীয় প্রমাণক, তার লার্নার বা শিক্ষানবিশ ড্রাইভিং লাইসেন্স (মূল কপি) ও লিখিত পরীক্ষায় অংশগ্রহণের জন্য কলম সাথে আনতে হবে।\n\n",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_cbe22ab64acf3d03",
+        "document_id": "brta_cbe22ab64acf3d03",
+        "title": "ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন প্রক্রিয়া",
+        "section_title": "ড্রাইভিং লাইসেন্স > ড্রাইভিং লাইসেন্স প্রাপ্তির প্রক্রিয়া",
+        "document_type": "সাধারণ তথ্য / নির্দেশিকা",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta/সেবাসমূহ/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.md",
+        "source_relative_path": "fahim_brta/সেবাসমূহ/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.md",
+        "snapshot_path": "domains/brta/data/source_snapshots/fahim_brta/সেবাসমূহ/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.md",
+        "source_sha256": "c19bf1f86060bfd79b729b7a10cbc7d8a403d918cc21511262cff6d5d4a3a114",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/সেবাসমূহ_original/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.pdf\"]",
+        "document_date": "N/A",
+        "date_verified": false,
+        "audit_flags": "citation_markers_removed_from_derived_text, no_web_address",
+        "experimental": true,
+        "body_start": 434,
+        "body_end": 1066,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": false
+      },
+      "score": 0.9911309480667114,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "brta_cbe22ab64acf3d03_v2_0004",
+      "content": "ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন প্রক্রিয়া\nড্রাইভিং লাইসেন্স > ড্রাইভিং লাইসেন্স প্রাপ্তির প্রক্রিয়া > লার্নার বা শিক্ষানবিশ ড্রাইভিং লাইসেন্স এর জন্য প্রয়োজনীয় কাগজপত্র\n\n### লার্নার বা শিক্ষানবিশ ড্রাইভিং লাইসেন্স এর জন্য প্রয়োজনীয় কাগজপত্র\n\n* **১. আবেদনপত্র:** নির্ধারিত ফরমে অনলাইনে আবেদন।\n* **২. ছবি:** আবেদনকারীর ছবি [ছবির সাইজ সর্বোচ্চ ১৫০ কেবি (৩০০ x ৩০০ পিক্সেল)]।\n* **৩. মেডিকেল সার্টিফিকেট:** রেজিষ্টার্ড ডাক্তার কর্তৃক মেডিকেল সার্টিফিকেট (সর্বোচ্চ ৬০০ কে.বি)।\n* **৪. পরিচয়পত্র:** জাতীয় পরিচয়পত্রের স্ক্যান কপি (সর্বোচ্চ ৬০০ কে.বি)।\n* **৫. ইউটিলিটি বিল:** ইউটিলিটি বিলের স্ক্যান কপি (সর্বোচ্চ ৬০০ কে.বি), [আবেদনকারীর বর্তমান ঠিকানা এবং জাতীয় পরিচয়পত্রের ঠিকানা যদি ভিন্ন হয় তবে বর্তমান ঠিকানার ইউটিলিটি বিল সংযুক্ত করতে হবে]।\n* **৬. বিদ্যমান ড্রাইভিং লাইসেন্স:** বিদ্যমান ড্রাইভিং লাইসেন্সের স্ক্যান কপি [ড্রাইভিং লাইসেন্সের নবায়ন/শ্রেণী পরিবর্তন/শ্রেণী সংযোজন/লাইসেন্সের ধরণ পরিবর্তনের ক্ষেত্রে প্রযোজ্য (সর্বোচ্চ ৬০০ কে.বি)]।\n* **৭. তথ্যের সততা:** অনলাইনে আবেদন দাখিলের সময় ভুয়া তথ্য প্রদান করা হলে তার লার্নার ড্রাইভিং লাইসেন্স ও স্মার্ট কার্ড ড্রাইভিং লাইসেন্স বাতিলসহ তার বিরুদ্ধে আইনানুগ ব্যবস্থা গ্রহণ করা হবে।\n* **৮. আবেদন ফি:** নির্ধারিত ফি, ১ ক্যাটাগরি-৫১৮/-টাকা ও ২ ক্যাটাগরি-৭৪৮/-টাকা অনলাইনে পরিশোধ।\n\n---\n\n",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_cbe22ab64acf3d03",
+        "document_id": "brta_cbe22ab64acf3d03",
+        "title": "ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন প্রক্রিয়া",
+        "section_title": "ড্রাইভিং লাইসেন্স > ড্রাইভিং লাইসেন্স প্রাপ্তির প্রক্রিয়া > লার্নার বা শিক্ষানবিশ ড্রাইভিং লাইসেন্স এর জন্য প্রয়োজনীয় কাগজপত্র",
+        "document_type": "সাধারণ তথ্য / নির্দেশিকা",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta/সেবাসমূহ/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.md",
+        "source_relative_path": "fahim_brta/সেবাসমূহ/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.md",
+        "snapshot_path": "domains/brta/data/source_snapshots/fahim_brta/সেবাসমূহ/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.md",
+        "source_sha256": "c19bf1f86060bfd79b729b7a10cbc7d8a403d918cc21511262cff6d5d4a3a114",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/সেবাসমূহ_original/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.pdf\"]",
+        "document_date": "N/A",
+        "date_verified": false,
+        "audit_flags": "citation_markers_removed_from_derived_text, no_web_address",
+        "experimental": true,
+        "body_start": 1066,
+        "body_end": 2136,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": false
+      },
+      "score": 0.9724084734916687,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "brta_846a4041fe96a64e_v2_0011",
+      "content": "ড্রাইভিং লাইসেন্স পাওয়ার প্রক্রিয়া\nড্রাইভিং লাইসেন্স পাওয়ার প্রক্রিয়া > সহজিকৃত ড্রাইভিং লাইসেন্সের প্রসেস ফ্লো (পেশাদার এবং অপেশাদার) > ধাপ-১: অনলাইনে আবেদন দাখিল\n\n### ধাপ-১: অনলাইনে আবেদন দাখিল\n* **প্রয়োজনীয় তথ্য ও ডকুমেন্ট:** জাতীয় পরিচয়পত্র (NID), ছবি, মেডিকেল সার্টিফিকেট, শিক্ষাগত যোগ্যতার সনদ এবং অন্যান্য প্রয়োজনীয় কাগজপত্র।\n* **ফি পরিশোধ:** নির্ধারিত ফি জমা প্রদান।\n* **আউটপুট:** অনলাইনে আবেদন দাখিল/পুনঃপরীক্ষার তারিখ গ্রহণ এবং লার্নার ড্রাইভিং লাইসেন্স অনলাইন প্রিন্ট।\n\n",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_846a4041fe96a64e",
+        "document_id": "brta_846a4041fe96a64e",
+        "title": "ড্রাইভিং লাইসেন্স পাওয়ার প্রক্রিয়া",
+        "section_title": "ড্রাইভিং লাইসেন্স পাওয়ার প্রক্রিয়া > সহজিকৃত ড্রাইভিং লাইসেন্সের প্রসেস ফ্লো (পেশাদার এবং অপেশাদার) > ধাপ-১: অনলাইনে আবেদন দাখিল",
+        "document_type": "সাধারণ তথ্য / নির্দেশিকা",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta/সেবাসমূহ/নতুন ড্রাইভিং লাইসেন্স ইস্যু.md",
+        "source_relative_path": "fahim_brta/সেবাসমূহ/নতুন ড্রাইভিং লাইসেন্স ইস্যু.md",
+        "snapshot_path": "domains/brta/data/source_snapshots/fahim_brta/সেবাসমূহ/নতুন ড্রাইভিং লাইসেন্স ইস্যু.md",
+        "source_sha256": "26232309419850bdddfee1e1a7d9342ed13e5233176db8359ba06cdd3146f6f5",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/সেবাসমূহ_original/নতুন ড্রাইভিং লাইসেন্স ইস্যু.pdf\"]",
+        "document_date": "2022-12-21",
+        "date_verified": false,
+        "audit_flags": "citation_markers_removed_from_derived_text, no_web_address",
+        "experimental": true,
+        "body_start": 4542,
+        "body_end": 4864,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": false
+      },
+      "score": 0.960324764251709,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "brta_09e8cbfff67f117e_v2_0005",
+      "content": "বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার)\nবিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার) > ২) প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > ০১. শিক্ষানবিশ ড্রাইভিং লাইসেন্স ইস্যু (পেশাদার ও অপেশাদার) / লার্নার বা শিক্ষানবিশ\n\n#### ০১. শিক্ষানবিশ ড্রাইভিং লাইসেন্স ইস্যু (পেশাদার ও অপেশাদার) / লার্নার বা শিক্ষানবিশ\n* **সেবার নাম:** শিক্ষানবিশ ড্রাইভিং লাইসেন্স ইস্যু (পেশাদার ও অপেশাদার) / লার্নার বা শিক্ষানবিশ\n* **সেবা প্রদান পদ্ধতি:** \n  * গ্রাহক বিআরটিএ সার্ভিস পোর্টালে (BSP) অ্যাকাউন্ট রেজিস্ট্রেশন/নিবন্ধন (গ্রাহকের এনআইডি'র বিপরীতে নিবন্ধিত মোবাইল নম্বর দিয়ে bsp তে অ্যাকাউন্ট ওপেন করতে হবে) করে লার্নার বা শিক্ষানবিশ ড্রাইভিং লাইসেন্সের জন্য অনলাইনে প্রয়োজনীয় কাগজপত্র সংযুক্ত করত: আবেদন দাখিল করবেন।\n  * **বিদেশী নাগরিকদের ক্ষেত্রে:** তারা সংশ্লিষ্ট সার্কেল অফিসে যোগাযোগ করবেন। যেহেতু তাদের বাংলাদেশী এনআইডি নেই সেহেতু তারা BSP একাউন্ট হোল্ডার নয়। লাইসেন্স প্রদান কর্তৃপক্ষের প্যানেল থেকে তাদের লার্নার বা শিক্ষানবিশ ড্রাইভিং লাইসেন্স ইস্যু করা হবে।\n* **প্রয়োজনীয় কাগজপত্র ও প্রাপ্তিস্থান:** \n  1. রেজিস্টার্ড ডাক্তার কর্তৃক প্রদত্ত মেডিকেল সার্টিফিকেট ফরম ডাউনলোড (সর্বোচ্চ ৬০০ কিলোবাইট);\n  2. জাতীয় পরিচয়পত্রের স্ক্যান কপি (সর্বোচ্চ ৬০০ কিলোবাইট);\n  3. ইউটিলিটি (বিদ্যুৎ/টেলিফোন/পানির বিল) স্ক্যান কপি (সর্বোচ্চ ৬০০ কিলোবাইট): [উল্লেখ্য যে, গ্রাহকের বর্তমান ঠিকানা এবং জাতীয় পরিচয়পত্রের ঠিকানা যদি ভিন্ন হয় তবে বর্তমান ঠিকানার ইউটিলিটি বিল/যথাযথ প্রমাণক (ওয়ার্ড কাউন্সিলর কর্তৃক স্থায়ী বা অস্থায়ী ঠিকানায় বসবাসের প্রমাণপত্র) সংযুক্ত করতে হবে];\n  4. নূন্যতম অষ্টম শ্রেণী সনদ/সমমান অথবা পাসপোর্ট, ওয়ার্ক পারমিট এর ফটোকপি [বিদেশী নাগরিকদের ক্ষেত্রে]।\n* **সেবার মূল্য এবং পরিশোধ পদ্ধতি:** \n  1. ",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_09e8cbfff67f117e",
+        "document_id": "brta_09e8cbfff67f117e",
+        "title": "বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার)",
+        "section_title": "বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার) > ২) প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > ০১. শিক্ষানবিশ ড্রাইভিং লাইসেন্স ইস্যু (পেশাদার ও অপেশাদার) / লার্নার বা শিক্ষানবিশ",
+        "document_type": "সিটিজেন্স চার্টার",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).md",
+        "source_relative_path": "brta/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).md",
+        "snapshot_path": "domains/brta/data/source_snapshots/brta/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).md",
+        "source_sha256": "5f20f60f6759d980b46043726dbf0bfa79f09acc61b4a4c861c07b98f840e090",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/বিআরটিএ সম্পর্কিত/বিআরটিএ এর সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্স চার্টার).pdf\"]",
+        "document_date": "2022-06-05",
+        "date_verified": false,
+        "audit_flags": "no_web_address",
+        "experimental": true,
+        "body_start": 515,
+        "body_end": 1909,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": false
+      },
+      "score": 0.929387629032135,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "brta_846a4041fe96a64e_v2_0002",
+      "content": "ড্রাইভিং লাইসেন্স পাওয়ার প্রক্রিয়া\nড্রাইভিং লাইসেন্স পাওয়ার প্রক্রিয়া > ড্রাইভিং লাইসেন্স প্রাপ্তির পূর্ব শর্ত\n\n## ড্রাইভিং লাইসেন্স প্রাপ্তির পূর্ব শর্ত\n\n* **শিক্ষানবিশ লাইসেন্স:** ড্রাইভিং লাইসেন্সের পূর্বশর্ত হলো লার্নার বা শিক্ষানবিশ ড্রাইভিং লাইসেন্স ইস্যু/গ্রহণ।\n* **শিক্ষাগত যোগ্যতা:** ড্রাইভিং লাইসেন্সের আবেদনকারীর ন্যূনতম শিক্ষাগত যোগ্যতা ৮ম শ্রেণী পাশ।\n* **বয়সসীমা:** অপেশাদার চালকদের জন্য ন্যূনতম ১৮ বছর এবং পেশাদার ড্রাইভিং লাইসেন্স-এর জন্য বয়স ন্যূনতম ২১ বছর হওয়া।\n* **শারীরিক যোগ্যতা:** মানসিক ও শারীরিকভাবে সুস্থ থাকতে হবে।\n\n---\n\n",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_846a4041fe96a64e",
+        "document_id": "brta_846a4041fe96a64e",
+        "title": "ড্রাইভিং লাইসেন্স পাওয়ার প্রক্রিয়া",
+        "section_title": "ড্রাইভিং লাইসেন্স পাওয়ার প্রক্রিয়া > ড্রাইভিং লাইসেন্স প্রাপ্তির পূর্ব শর্ত",
+        "document_type": "সাধারণ তথ্য / নির্দেশিকা",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta/সেবাসমূহ/নতুন ড্রাইভিং লাইসেন্স ইস্যু.md",
+        "source_relative_path": "fahim_brta/সেবাসমূহ/নতুন ড্রাইভিং লাইসেন্স ইস্যু.md",
+        "snapshot_path": "domains/brta/data/source_snapshots/fahim_brta/সেবাসমূহ/নতুন ড্রাইভিং লাইসেন্স ইস্যু.md",
+        "source_sha256": "26232309419850bdddfee1e1a7d9342ed13e5233176db8359ba06cdd3146f6f5",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/সেবাসমূহ_original/নতুন ড্রাইভিং লাইসেন্স ইস্যু.pdf\"]",
+        "document_date": "2022-12-21",
+        "date_verified": false,
+        "audit_flags": "citation_markers_removed_from_derived_text, no_web_address",
+        "experimental": true,
+        "body_start": 40,
+        "body_end": 477,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": false
+      },
+      "score": 0.6309921741485596,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "brta_cbe22ab64acf3d03_v2_0002",
+      "content": "ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন প্রক্রিয়া\nড্রাইভিং লাইসেন্স > ড্রাইভিং লাইসেন্সের পূর্বশর্ত\n\n## ড্রাইভিং লাইসেন্সের পূর্বশর্ত\n\n* **শিক্ষানবিশ লাইসেন্স:** ড্রাইভিং লাইসেন্সের পূর্বশর্ত হলো লার্নার বা শিক্ষানবিশ ড্রাইভিং লাইসেন্স।\n* **শিক্ষাগত যোগ্যতা:** ড্রাইভিং লাইসেন্সের আবেদনকারীর ন্যূনতম শিক্ষাগত যোগ্যতা ৮ম শ্রেণী পাশ।\n* **বয়সসীমা:** অপেশাদার এর জন্য ন্যূনতম ১৮ বছর এবং পেশাদার ড্রাইভিং লাইসেন্স-এর জন্য বয়স ন্যূনতম ২১ বছর হতে হবে।\n* **শারীরিক যোগ্যতা:** মানসিক ও শারীরিকভাবে সুস্থ থাকতে হবে।\n\n---\n\n",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_cbe22ab64acf3d03",
+        "document_id": "brta_cbe22ab64acf3d03",
+        "title": "ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন প্রক্রিয়া",
+        "section_title": "ড্রাইভিং লাইসেন্স > ড্রাইভিং লাইসেন্সের পূর্বশর্ত",
+        "document_type": "সাধারণ তথ্য / নির্দেশিকা",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta/সেবাসমূহ/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.md",
+        "source_relative_path": "fahim_brta/সেবাসমূহ/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.md",
+        "snapshot_path": "domains/brta/data/source_snapshots/fahim_brta/সেবাসমূহ/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.md",
+        "source_sha256": "c19bf1f86060bfd79b729b7a10cbc7d8a403d918cc21511262cff6d5d4a3a114",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/সেবাসমূহ_original/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.pdf\"]",
+        "document_date": "N/A",
+        "date_verified": false,
+        "audit_flags": "citation_markers_removed_from_derived_text, no_web_address",
+        "experimental": true,
+        "body_start": 21,
+        "body_end": 434,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": false
+      },
+      "score": 0.5033412575721741,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    }
+  ],
+  "selection_trace": {
+    "version": "applicability_v1_family_order",
+    "query_actions": [
+      "application"
+    ],
+    "query_services": [
+      "licence"
+    ],
+    "decisions": [
+      {
+        "id": "brta_3cae1ecd59682fa3_v2_0005",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_4e08eb4e988d38e4_v2_0008",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_3cae1ecd59682fa3_v2_0004",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_3cae1ecd59682fa3_v2_0003",
+        "decision": "excluded",
+        "reason": "heading_without_evidence"
+      },
+      {
+        "id": "brta_cbe22ab64acf3d03_v2_0003",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_cbe22ab64acf3d03_v2_0004",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_846a4041fe96a64e_v2_0011",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_09e8cbfff67f117e_v2_0005",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_846a4041fe96a64e_v2_0002",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_cbe22ab64acf3d03_v2_0002",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_846a4041fe96a64e_v2_0007",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_846a4041fe96a64e_v2_0008",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_4b8c25d391e48121_v2_0004",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_846a4041fe96a64e_v2_0015",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "brta_57a7e75567f9a5c3_v2_0008",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      }
+    ],
+    "expanded_ids": [],
+    "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+    "budget_order_ids": [
+      "brta_cbe22ab64acf3d03_v2_0003",
+      "brta_cbe22ab64acf3d03_v2_0004",
+      "brta_846a4041fe96a64e_v2_0011",
+      "brta_09e8cbfff67f117e_v2_0005",
+      "brta_846a4041fe96a64e_v2_0002",
+      "brta_cbe22ab64acf3d03_v2_0002",
+      "brta_846a4041fe96a64e_v2_0007",
+      "brta_846a4041fe96a64e_v2_0008",
+      "brta_4b8c25d391e48121_v2_0004",
+      "brta_846a4041fe96a64e_v2_0015",
+      "brta_57a7e75567f9a5c3_v2_0008"
+    ],
+    "selected_ids": [
+      "brta_cbe22ab64acf3d03_v2_0003",
+      "brta_cbe22ab64acf3d03_v2_0004",
+      "brta_846a4041fe96a64e_v2_0011",
+      "brta_09e8cbfff67f117e_v2_0005",
+      "brta_846a4041fe96a64e_v2_0002",
+      "brta_cbe22ab64acf3d03_v2_0002"
+    ],
+    "selected_chars": 5166
+  },
+  "seconds": 11.62,
+  "top5": {
+    "dense": [
+      "brta_cbe22ab64acf3d03_v2_0003",
+      "brta_cbe22ab64acf3d03_v2_0004",
+      "brta_846a4041fe96a64e_v2_0011",
+      "brta_09e8cbfff67f117e_v2_0005",
+      "brta_846a4041fe96a64e_v2_0007"
+    ],
+    "bm25": [
+      "brta_3cae1ecd59682fa3_v2_0003",
+      "brta_cbe22ab64acf3d03_v2_0003",
+      "brta_3cae1ecd59682fa3_v2_0005",
+      "brta_cbe22ab64acf3d03_v2_0004",
+      "brta_09e8cbfff67f117e_v2_0005"
+    ],
+    "hybrid": [
+      "brta_cbe22ab64acf3d03_v2_0003",
+      "brta_cbe22ab64acf3d03_v2_0004",
+      "brta_09e8cbfff67f117e_v2_0005",
+      "brta_846a4041fe96a64e_v2_0011",
+      "brta_846a4041fe96a64e_v2_0002"
+    ]
+  }
+}

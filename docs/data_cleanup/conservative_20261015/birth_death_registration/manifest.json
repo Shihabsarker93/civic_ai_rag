@@ -1,0 +1,14 @@
+{
+  "source_chunk_path": "docs/data_cleanup/birth_review_20261014/candidate_v4/chunks.jsonl",
+  "source_sha256": "f2d7b1f24fbd7f823393bd16035ffe7ae281d9378b794bca28ad1d0ecdf5a5d7",
+  "candidate_sha256": "7a0488e608c1120f8b28314ab1f76fee41f7297b54ffcb232a12873fa0871f7c",
+  "input_chunks": 190,
+  "candidate_chunks": 190,
+  "excluded_heading_units": 0,
+  "normalized_chunks": 0,
+  "max_tokens": 809,
+  "registered_documents": 0,
+  "unresolved_original_associations": 0,
+  "original_hash_failures": 0,
+  "limits": "No semantic rewrite, source currency certification, or activation. Source offsets refer to preserved input."
+}

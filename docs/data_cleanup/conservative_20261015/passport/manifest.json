@@ -1,0 +1,14 @@
+{
+  "source_chunk_path": "domains/passport/data/interim/active_20260919_063632_508964.jsonl",
+  "source_sha256": "e50f1bf74778d6c49ad7171428431e7df3d434b9ac8671753fb7c4a0f3ca0fa2",
+  "candidate_sha256": "40fa4809519cbfbd1d75dea5c323facc4e77547cd31a5fefdd269aade180aec6",
+  "input_chunks": 361,
+  "candidate_chunks": 304,
+  "excluded_heading_units": 57,
+  "normalized_chunks": 25,
+  "max_tokens": 616,
+  "registered_documents": 30,
+  "unresolved_original_associations": 4,
+  "original_hash_failures": 0,
+  "limits": "No semantic rewrite, source currency certification, or activation. Source offsets refer to preserved input."
+}

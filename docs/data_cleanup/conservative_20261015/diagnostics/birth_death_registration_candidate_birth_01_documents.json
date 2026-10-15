@@ -1,0 +1,372 @@
+{
+  "domain": "birth_death_registration",
+  "variant": "candidate",
+  "id": "birth_01_documents",
+  "query": "জন্মনিবন্ধন করতে কী কী কাগজপত্র লাগে?",
+  "candidate_ids": [
+    "birth_registration_application_process_cleaned_002_01",
+    "birth_registration_application_process_cleaned_016_01",
+    "birth_registration_application_process_02_cleaned_010_01",
+    "birth_and_death_registration_rules_2018_বিধি_৯_04",
+    "birth_registration_application_process_cleaned_020_01",
+    "know_this_01_cleaned_003_01",
+    "birth_and_death_registration_rules_2018_বিধি_১০_01",
+    "birth_registration_application_process_02_cleaned_007_01",
+    "know_this_01_cleaned_002_01",
+    "birth_registration_application_process_cleaned_004_01",
+    "birth_and_death_registration_rules_2018_বিধি_৯_02",
+    "bdris_faq_01_q01",
+    "bdris_faq_02_preamble",
+    "review_v3_birth_and_death_registration_act_2004_ধারা_৮_01",
+    "bdris_faq_01_q03"
+  ],
+  "selected_ids": [
+    "birth_registration_application_process_02_cleaned_010_01",
+    "birth_and_death_registration_rules_2018_বিধি_১০_01",
+    "birth_registration_application_process_cleaned_004_01",
+    "birth_and_death_registration_rules_2018_বিধি_৯_02",
+    "birth_registration_application_process_cleaned_002_01",
+    "birth_registration_application_process_cleaned_016_01"
+  ],
+  "selected_characters": 4589,
+  "selected_tokens": 1340,
+  "tokenizer": "BGE-M3; not generator tokens",
+  "selected_passages": [
+    {
+      "id": "birth_registration_application_process_02_cleaned_010_01",
+      "content": "Service: birth and death registration\nDocument type: application_process\nTitle: জন্ম নিবন্ধনের আবেদন প্রসেস\nSection: ধাপ ৮: প্রয়োজনীয় প্রমাণক সংযুক্তি\nContent: নিম্নোক্ত প্রমাণক সংযুক্ত করুন:\n\n- বয়স প্রমাণের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nএরপর “পরবর্তী” বাটনে ক্লিক করুন।",
+      "metadata": {
+        "service": "birth_death_registration",
+        "service_scope": "birth",
+        "document_type": "application_process",
+        "title": "জন্ম নিবন্ধনের আবেদন প্রসেস",
+        "source_file": "birth_registration_application_process_02.docx",
+        "source_path": "md/birth_registration_application_process_02_cleaned.md",
+        "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf",
+        "encoding": "unicode_converted",
+        "language": "bn",
+        "section_title": "ধাপ ৮: প্রয়োজনীয় প্রমাণক সংযুক্তি",
+        "section_index": 10,
+        "part_index": 1,
+        "search_aliases": "application process, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, citizen service, civil registration, how to apply, online application, online birth registration, registration process, required documents, আবেদন পদ্ধতি, আবেদন প্রক্রিয়া, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, ধাপে ধাপে আবেদন, নিবন্ধন পদ্ধতি, নিবন্ধন প্রক্রিয়া, প্রয়োজনীয় কাগজপত্র",
+        "candidate_source": "md/birth_registration_application_process_02_cleaned.md",
+        "candidate_source_sha256": "6ed812d51a02efd001ef8e290576e69791eec70f5f9ec73ee2bd67f448d7a0ff",
+        "source_review_status": "pending_original_content_review",
+        "chunking_version": "2026-10-14-chapter-boundaries",
+        "content_token_count": 72,
+        "retrieval_token_count": 207,
+        "embedding_model_max_tokens": 8192,
+        "cleanup_revision": "conservative_20261015"
+      },
+      "score": 1.019574646949768,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "birth_and_death_registration_rules_2018_বিধি_১০_01",
+      "content": "Service: birth and death registration\nDocument type: legal_rules\nTitle: জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮\nChapter: দ্বিতীয় অধ্যায়: জন্ম নিবন্ধন\nLegal unit: বিধি ১০ প্রবাসীগণের জন্ম নিবন্ধন\nContent: (১) বিদেশে অবস্থিত বাংলাদেশ দূতাবাসের নিবন্ধক জমনি ফরম-১ অনুযায়ী আবেদনপত্রের সহিত নিম্নবর্ণিত তথ্যাদি প্রাপ্তি সাপেক্ষে তাহার অধিক্ষেত্রে বসবাসকারী বা জন্ম গ্রহণকারী ব্যক্তির জন্ম নিবন্ধন করিবেন, যথা:- (ক) জন্মস্থান ও জন্ম তারিখের প্রমাণ হিসাবে সংশ্লিষ্ট চিকিৎসা প্রতিষ্ঠানের ছাড়পত্র বা উক্ত প্রতিষ্ঠান হইতে প্রাপ্ত জন্ম সংক্রান্ত সনদের অনুলিপি অথবা বার্থ এটেন্ডেন্টের প্রত্যয়ন বা সংশ্লিষ্ট ব্যক্তির মেশিন রিডেবল পাসপোর্টের প্রথম ২ (দুই) পাতার অনুলিপি (খ) পিতা বা মাতার মেশিন রিডেবল পাসপোর্টের প্রথম ০৭ (সাত) পাতার অনুলিপি (গ) পিতা বা মাতা অথবা নিজের পাসপোর্টে বর্ণিত স্থায়ী ঠিকানাই ব্যক্তির স্থায়ী ঠিকানা হিসাবে গণ্য হইবে (ঘ) আবেদনকারী কোন যৌক্তিক কারণে বাংলাদেশী পাসপোর্ট উপস্থাপনে ব্যর্থ হইলে নিবন্ধক কর্তৃক প্রয়োজনবোধে চাহিত স্থায়ী ঠিকানা বা বর্তমান ঠিকানা সংক্রান্ত অন্য কোন কাগজপত্রাদির অনুলিপি এবং (ঙ) পূর্বে জন্ম নিবন্ধন হয় নাই এই মর্মে আবেদনপত্রে আবেদনকারীর ঘোষণা। (২) আবেদন মুদ্রিত ফরমে বা অনলাইনে যে কোন পদ্ধতিতে করা যাইবে এবং মুদ্রিত ফরমে আবেদন করিলে নিবন্ধক উহা কার্যপ্রণালীতে বর্ণিত পদ্ধতি অনুসারে অনলাইনে এন্ট্রি করিবেন এবং অনলাইন আবেদনপত্রের ক্ষেত্রে, অনলাইনে আবেদন দাখিলের পর আবেদনকারী অনলাইন হইতে মুদ্রিত আবেদনপত্রের কপি নিবন্ধকের নিকট দাখিল করিবেন। (৩) উপ-বিধি (২) এর অধীন আবেদনপত্র প্রাপ্তির পর নিবন্ধক বা তৎকর্তৃক ক্ষমতাপ্রাপ্ত ব্যক্তি পরবর্তী ৭ (সাত) কার্য দিবসের মধ্যে সনদ প্রদানের তারিখ উল্লেখপূর্বক আবেদনকারীর অংশ স্বাক্ষর করিয়া উহা আবেদনকারীর নিকট হস্তান্তর করিবেন।",
+      "metadata": {
+        "service": "birth_death_registration",
+        "service_scope": "birth_death",
+        "document_type": "legal_rules",
+        "title": "জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮",
+        "source_file": "birth_and_death_registration_rules_2018.docx",
+        "source_path": "md/birth_and_death_registration_rules_2018.md",
+        "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf",
+        "encoding": "unicode_converted",
+        "language": "bn",
+        "chapter": "দ্বিতীয় অধ্যায়: জন্ম নিবন্ধন",
+        "legal_unit_type": "বিধি",
+        "legal_unit_no": "১০",
+        "section_title": "প্রবাসীগণের জন্ম নিবন্ধন",
+        "part_index": 1,
+        "search_aliases": "act, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, civil registration, date of birth correction, death certificate, death certificate registration, death registration, death registration certificate, father mother information, law, legal requirement, legal rule, local government office, online birth registration, online death registration, parent information, parents registration, registrar office, registration office, registration rule, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম তারিখ সংশোধন, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন",
+        "candidate_source": "md/birth_and_death_registration_rules_2018.md",
+        "candidate_source_sha256": "a0712cb930636b7d3477a5f2d9819378b92c05974c11ceaed3b8d8352082d8dc",
+        "source_review_status": "targeted_source_review",
+        "original_sha256": "353eb7d07b6a558df21ad65d0dd7365e8a23aee97ef179f842631f44a70fdd6d",
+        "current_applicability_verified": false,
+        "chunking_version": "2026-10-14-chapter-boundaries",
+        "content_token_count": 486,
+        "retrieval_token_count": 671,
+        "embedding_model_max_tokens": 8192,
+        "cleanup_revision": "conservative_20261015"
+      },
+      "score": 0.882251501083374,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "birth_registration_application_process_cleaned_004_01",
+      "content": "Service: birth and death registration\nDocument type: application_process\nTitle: জন্ম নিবন্ধিকরণ প্রক্রিয়া\nSection: পিতা-মাতার জন্ম নিবন্ধন সংক্রান্ত শর্ত\nContent: - ২০১৩ সালের পর জন্মগ্রহণকারী ব্যক্তির ক্ষেত্রে পিতা-মাতার জন্ম নিবন্ধন বাধ্যতামূলক।\n- ২০১৩ সালের পূর্বে জন্মগ্রহণকারী ব্যক্তির ক্ষেত্রে পিতা-মাতার জন্ম নিবন্ধন বাধ্যতামূলক নয়।",
+      "metadata": {
+        "service": "birth_death_registration",
+        "service_scope": "birth",
+        "document_type": "application_process",
+        "title": "জন্ম নিবন্ধিকরণ প্রক্রিয়া",
+        "source_file": "birth_registration_application_process.docx",
+        "source_path": "md/birth_registration_application_process_cleaned.md",
+        "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf",
+        "encoding": "unicode_converted",
+        "language": "bn",
+        "section_title": "পিতা-মাতার জন্ম নিবন্ধন সংক্রান্ত শর্ত",
+        "section_index": 4,
+        "part_index": 1,
+        "search_aliases": "application process, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, citizen service, civil registration, father mother information, how to apply, online application, online birth registration, parent information, parents registration, registration process, required documents, আবেদন পদ্ধতি, আবেদন প্রক্রিয়া, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, ধাপে ধাপে আবেদন, নিবন্ধন পদ্ধতি, নিবন্ধন প্রক্রিয়া, প্রয়োজনীয় কাগজপত্র",
+        "candidate_source": "md/birth_registration_application_process_cleaned.md",
+        "candidate_source_sha256": "2f3523ca356fc1519f2fd5ad46cd667ae5495be06a74c303980dee6fbf3b5ac7",
+        "source_review_status": "targeted_source_review",
+        "original_sha256": "37f334dbcab812fcfbc6e52a1b6972631e173fb399872ac5e6fe2fc263937b41",
+        "current_applicability_verified": false,
+        "chunking_version": "2026-10-14-chapter-boundaries",
+        "content_token_count": 86,
+        "retrieval_token_count": 231,
+        "embedding_model_max_tokens": 8192,
+        "cleanup_revision": "conservative_20261015"
+      },
+      "score": 0.8231595158576965,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "birth_and_death_registration_rules_2018_বিধি_৯_02",
+      "content": "Service: birth and death registration\nDocument type: legal_rules\nTitle: জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮\nChapter: দ্বিতীয় অধ্যায়: জন্ম নিবন্ধন\nLegal unit: বিধি ৯ জন্ম নিবন্ধন\nContent: (ক) ব্যক্তির জন্মের ৪৫ (পঁয়তাল্লিশ) দিনের মধ্যে দাখিলকৃত আবেদনপত্রের সহিত নিম্নলিখিত প্রমাণাদি সংযুক্ত করিতে হইবে, যথা:\n(অ) জন্মস্থান ও জন্ম তারিখের প্রমাণ হিসাবে সংশ্লিষ্ট চিকিৎসা প্রতিষ্ঠানের ছাড়পত্র বা উক্ত প্রতিষ্ঠান হইতে প্রাপ্ত জন্ম সংক্রান্ত সনদের সত্যায়িত অনুলিপি অথবা বার্থ এটেন্ডেন্ট এর প্রত্যয়ন বা অন্য কোন প্রমাণপত্র অথবা (আ) ব্যক্তির স্থায়ী ঠিকানার প্রমাণ হিসাবে ব্যক্তির নিজের বা পিতা বা মাতা বা পিতামহ বা পিতামহীর দ্বারা স্বনামে স্থায়ী ঠিকানা হিসাবে ঘোষিত আবাসস্থলের বিপরীতে হালনাগাদ কর পরিশোধের প্রমাণপত্র অথবা পিতা বা মাতা বা পিতামহ বা পিতামহীর জাতীয় পরিচয়পত্র বা পাসপোর্টে ঘোষিত স্থায়ী ঠিকানা বা অন্যকোন প্রমাণপত্র এবং জন্ম ও মৃত্যু নিবন্ধনের দ্বৈততা পরিহার করিবার লক্ষ্যে, প্রযোজ্য ক্ষেত্রে, জন্ম নিবন্ধনাধীন ব্যক্তির পিতা ও মাতার জন্ম নিবন্ধন ন¤¦র অথবা জাতীয় পরিচয়পত্র নম্বর উল্লেখসহ উহার সনদ দাখিল করিতে হইবে (ই) নদী ভাঙ্গন বা অন্য কোন কারণে স্থায়ী ঠিকানা বিলুপ্ত হইয়া থাকিলে নতুন স্থায়ী বসতির অনুকূলে প্রমাণক হিসাবে জমি বা বাড়ি ক্রয়ের দলিল, খাজনা ও কর পরিশোধের রসিদ, প্রভৃতি দাখিল করিলে নতুন বসতির ঠিকানা স্থায়ী ঠিকানা হিসাবে গণ্য করা যাইবে (ঈ) কোন কারণে কোন ব্যক্তির স্থায়ী ঠিকানা না থাকিলে স্থায়ী ঠিকানার স্থানে অপ্রাপ্য লিখিয়া জন্মস্থানের নিবন্ধকের নিকট জন্ম নিবন্ধন করিতে হইবে এবং এই ক্ষেত্রে আইনের ধারা ৯ এর উপ-ধারা",
+      "metadata": {
+        "service": "birth_death_registration",
+        "service_scope": "birth_death",
+        "document_type": "legal_rules",
+        "title": "জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮",
+        "source_file": "birth_and_death_registration_rules_2018.docx",
+        "source_path": "md/birth_and_death_registration_rules_2018.md",
+        "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf",
+        "encoding": "unicode_converted",
+        "language": "bn",
+        "chapter": "দ্বিতীয় অধ্যায়: জন্ম নিবন্ধন",
+        "legal_unit_type": "বিধি",
+        "legal_unit_no": "৯",
+        "section_title": "জন্ম নিবন্ধন",
+        "part_index": 2,
+        "search_aliases": "act, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, civil registration, date of birth correction, death certificate, death certificate registration, death registration, death registration certificate, father mother information, law, legal requirement, legal rule, local government office, online birth registration, online death registration, parent information, parents registration, registrar office, registration office, registration rule, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম তারিখ সংশোধন, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন",
+        "candidate_source": "md/birth_and_death_registration_rules_2018.md",
+        "candidate_source_sha256": "a0712cb930636b7d3477a5f2d9819378b92c05974c11ceaed3b8d8352082d8dc",
+        "source_review_status": "targeted_source_review",
+        "original_sha256": "353eb7d07b6a558df21ad65d0dd7365e8a23aee97ef179f842631f44a70fdd6d",
+        "current_applicability_verified": false,
+        "chunking_version": "2026-10-14-chapter-boundaries",
+        "content_token_count": 458,
+        "retrieval_token_count": 643,
+        "embedding_model_max_tokens": 8192,
+        "cleanup_revision": "conservative_20261015"
+      },
+      "score": 0.7775426650047302,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "birth_registration_application_process_cleaned_002_01",
+      "content": "Service: birth and death registration\nDocument type: application_process\nTitle: জন্ম নিবন্ধিকরণ প্রক্রিয়া\nSection: আবেদন করার পূর্ব প্রস্তুতি\nContent: নতুন জন্ম নিবন্ধন আবেদনের পূর্বে প্রয়োজনীয় তথ্য ও ডকুমেন্ট সংগ্রহ করে রাখুন।\n\nজন্ম নিবন্ধনের ক্ষেত্রে নিম্নোক্ত তিন ধরনের ঠিকানার তথ্য প্রয়োজন হবে:\n\n- জন্মস্থান\n- স্থায়ী ঠিকানা\n- বর্তমান ঠিকানা\n\nপ্রতিটি ঠিকানার জন্য নিম্নোক্ত তথ্য প্রয়োজন হতে পারে:\n\n- ইউনিয়ন পরিষদ/পৌরসভা/সিটি কর্পোরেশন/ক্যান্টনমেন্টের নাম\n- ওয়ার্ড নম্বর\n- ডাকঘর\n- গ্রাম/পাড়া/মহল্লা\n- বাসা ও সড়কের নাম ও নম্বর\n\nসকল তথ্য বাংলা ও ইংরেজি উভয় ভাষায় সঠিক বানানে লিখতে হবে।",
+      "metadata": {
+        "service": "birth_death_registration",
+        "service_scope": "birth",
+        "document_type": "application_process",
+        "title": "জন্ম নিবন্ধিকরণ প্রক্রিয়া",
+        "source_file": "birth_registration_application_process.docx",
+        "source_path": "md/birth_registration_application_process_cleaned.md",
+        "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf",
+        "encoding": "unicode_converted",
+        "language": "bn",
+        "section_title": "আবেদন করার পূর্ব প্রস্তুতি",
+        "section_index": 2,
+        "part_index": 1,
+        "search_aliases": "application process, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, citizen service, civil registration, how to apply, online application, online birth registration, registration process, required documents, আবেদন পদ্ধতি, আবেদন প্রক্রিয়া, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, ধাপে ধাপে আবেদন, নিবন্ধন পদ্ধতি, নিবন্ধন প্রক্রিয়া, প্রয়োজনীয় কাগজপত্র",
+        "candidate_source": "md/birth_registration_application_process_cleaned.md",
+        "candidate_source_sha256": "2f3523ca356fc1519f2fd5ad46cd667ae5495be06a74c303980dee6fbf3b5ac7",
+        "source_review_status": "targeted_source_review",
+        "original_sha256": "37f334dbcab812fcfbc6e52a1b6972631e173fb399872ac5e6fe2fc263937b41",
+        "current_applicability_verified": false,
+        "chunking_version": "2026-10-14-chapter-boundaries",
+        "content_token_count": 155,
+        "retrieval_token_count": 290,
+        "embedding_model_max_tokens": 8192,
+        "cleanup_revision": "conservative_20261015"
+      },
+      "score": 1.0778594064712523,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "birth_registration_application_process_cleaned_016_01",
+      "content": "Service: birth and death registration\nDocument type: application_process\nTitle: জন্ম নিবন্ধিকরণ প্রক্রিয়া\nSection: সংযুক্ত করতে হবে\nContent: - জন্ম তারিখের প্রমাণক\n- জন্মস্থানের প্রমাণক\n- স্থায়ী ঠিকানার প্রমাণক\n\nসংযুক্তির জন্য ২ মেগাবাইটের কম আকারের ইমেজ ফাইল ব্যবহার করতে হবে।\n\nএরপর \"পরবর্তী\" বাটনে ক্লিক করুন।\n\n---",
+      "metadata": {
+        "service": "birth_death_registration",
+        "service_scope": "birth",
+        "document_type": "application_process",
+        "title": "জন্ম নিবন্ধিকরণ প্রক্রিয়া",
+        "source_file": "birth_registration_application_process.docx",
+        "source_path": "md/birth_registration_application_process_cleaned.md",
+        "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/dc48cd5afd0940718da62a05e6dad7d0.pdf",
+        "encoding": "unicode_converted",
+        "language": "bn",
+        "section_title": "সংযুক্ত করতে হবে",
+        "section_index": 16,
+        "part_index": 1,
+        "search_aliases": "application process, apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, citizen service, civil registration, date of birth correction, how to apply, online application, online birth registration, registration process, required documents, আবেদন পদ্ধতি, আবেদন প্রক্রিয়া, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম তারিখ সংশোধন, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, ধাপে ধাপে আবেদন, নিবন্ধন পদ্ধতি, নিবন্ধন প্রক্রিয়া, প্রয়োজনীয় কাগজপত্র",
+        "candidate_source": "md/birth_registration_application_process_cleaned.md",
+        "candidate_source_sha256": "2f3523ca356fc1519f2fd5ad46cd667ae5495be06a74c303980dee6fbf3b5ac7",
+        "source_review_status": "targeted_source_review",
+        "original_sha256": "37f334dbcab812fcfbc6e52a1b6972631e173fb399872ac5e6fe2fc263937b41",
+        "current_applicability_verified": false,
+        "chunking_version": "2026-10-14-chapter-boundaries",
+        "content_token_count": 83,
+        "retrieval_token_count": 230,
+        "embedding_model_max_tokens": 8192,
+        "cleanup_revision": "conservative_20261015"
+      },
+      "score": 1.0209114003181456,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    }
+  ],
+  "selection_trace": {
+    "version": "applicability_v1_family_order",
+    "query_actions": [
+      "application"
+    ],
+    "query_services": [
+      "birth"
+    ],
+    "decisions": [
+      {
+        "id": "birth_and_death_registration_rules_2018_বিধি_৯_04",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "birth_registration_application_process_cleaned_020_01",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "bdris_faq_01_q01",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "bdris_faq_01_q03",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "know_this_01_cleaned_003_01",
+        "decision": "excluded",
+        "reason": "unclassified_action_with_direct_alternative"
+      },
+      {
+        "id": "know_this_01_cleaned_002_01",
+        "decision": "excluded",
+        "reason": "unclassified_action_with_direct_alternative"
+      },
+      {
+        "id": "bdris_faq_02_preamble",
+        "decision": "excluded",
+        "reason": "unclassified_action_with_direct_alternative"
+      },
+      {
+        "id": "review_v3_birth_and_death_registration_act_2004_ধারা_৮_01",
+        "decision": "excluded",
+        "reason": "unclassified_action_with_direct_alternative"
+      },
+      {
+        "id": "birth_registration_application_process_02_cleaned_007_01",
+        "decision": "excluded",
+        "reason": "unclassified_action_with_direct_alternative"
+      },
+      {
+        "id": "birth_registration_application_process_02_cleaned_010_01",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "birth_and_death_registration_rules_2018_বিধি_১০_01",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "birth_registration_application_process_cleaned_004_01",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "birth_and_death_registration_rules_2018_বিধি_৯_02",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "birth_registration_application_process_cleaned_002_01",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "birth_registration_application_process_cleaned_016_01",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      }
+    ],
+    "expanded_ids": [],
+    "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+    "budget_order_ids": [
+      "birth_registration_application_process_02_cleaned_010_01",
+      "birth_and_death_registration_rules_2018_বিধি_১০_01",
+      "birth_registration_application_process_cleaned_004_01",
+      "birth_and_death_registration_rules_2018_বিধি_৯_02",
+      "birth_registration_application_process_cleaned_002_01",
+      "birth_registration_application_process_cleaned_016_01"
+    ],
+    "selected_ids": [
+      "birth_registration_application_process_02_cleaned_010_01",
+      "birth_and_death_registration_rules_2018_বিধি_১০_01",
+      "birth_registration_application_process_cleaned_004_01",
+      "birth_and_death_registration_rules_2018_বিধি_৯_02",
+      "birth_registration_application_process_cleaned_002_01",
+      "birth_registration_application_process_cleaned_016_01"
+    ],
+    "selected_chars": 4589
+  },
+  "seconds": 14.245,
+  "top5": {
+    "dense": [
+      "birth_and_death_registration_rules_2018_বিধি_৯_02",
+      "bdris_faq_01_q01",
+      "bdris_faq_02_preamble",
+      "birth_registration_application_process_cleaned_016_01",
+      "birth_registration_application_process_cleaned_004_01"
+    ],
+    "bm25": [
+      "know_this_01_cleaned_002_01",
+      "bdris_faq_01_q03",
+      "bdris_faq_01_q02",
+      "bdris_faq_02_q01",
+      "bdris_faq_01_q15"
+    ],
+    "hybrid": [
+      "bdris_faq_01_q01",
+      "know_this_01_cleaned_002_01",
+      "birth_registration_application_process_cleaned_016_01",
+      "birth_and_death_registration_rules_2018_বিধি_৯_02",
+      "bdris_faq_02_preamble"
+    ]
+  }
+}

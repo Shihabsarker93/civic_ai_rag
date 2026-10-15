@@ -1,0 +1,375 @@
+{
+  "domain": "passport",
+  "variant": "structural",
+  "id": "passport_04_apply",
+  "query": "ই-পাসপোর্টের জন্য কীভাবে আবেদন করব?",
+  "candidate_ids": [
+    "passport_9f4e9ffe9f2a07f4_v4_0002",
+    "passport_6e87d0783a373593_v4_0005",
+    "passport_6f7d900581956bef_v4_0007",
+    "passport_0b74faa4d85a2a58_v4_0003",
+    "passport_23d845d3ab38ea43_v4_0024",
+    "passport_6e87d0783a373593_v4_0008",
+    "passport_6f7d900581956bef_v4_0006",
+    "passport_23d845d3ab38ea43_v4_0026",
+    "passport_6e87d0783a373593_v4_0007",
+    "passport_6f7d900581956bef_v4_0008",
+    "passport_9f4e9ffe9f2a07f4_v4_0003",
+    "passport_f00b2a4caf73fc8e_v4_0004",
+    "passport_6e87d0783a373593_v4_0002",
+    "passport_23d845d3ab38ea43_v4_0016",
+    "passport_caccc3966e7586d0_v4_0002"
+  ],
+  "selected_ids": [
+    "passport_9f4e9ffe9f2a07f4_v4_0002",
+    "passport_6e87d0783a373593_v4_0005",
+    "passport_0b74faa4d85a2a58_v4_0003",
+    "passport_23d845d3ab38ea43_v4_0024",
+    "passport_6f7d900581956bef_v4_0006",
+    "passport_23d845d3ab38ea43_v4_0026"
+  ],
+  "selected_characters": 4455,
+  "selected_tokens": 1346,
+  "tokenizer": "BGE-M3; not generator tokens",
+  "selected_passages": [
+    {
+      "id": "passport_9f4e9ffe9f2a07f4_v4_0002",
+      "content": "ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী\nই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী > সাধারণ নিয়মাবলী ও আবেদন পদ্ধতি\n\nLast updated: 3 August 2026\n\n## সাধারণ নিয়মাবলী ও আবেদন পদ্ধতি\n\n* **১।** ই-পাসপোর্টের আবেদনপত্র অনলাইনে পূরণ করা যাবে।\n* **২।** ই-পাসপোর্ট আবেদনের ক্ষেত্রে কোন কাগজপত্র সত্যায়ন করার প্রয়োজন হবে না।\n* **৩।** ই-পাসপোর্ট ফরমে কোন ছবি সংযোজন এবং তা সত্যায়নের প্রয়োজন হবে না।\n* **৪।** জাতীয় পরিচয়পত্র (NID) অথবা অনলাইন জন্মনিবন্ধন সনদ (BRC English Version) অনুযায়ী আবেদনপত্র পূরণ করতে হবে।\n* **৫।** অপ্রাপ্ত বয়স্ক (১৮ বছরের কম) আবেদনকারী যার জাতীয় পরিচয়পত্র (NID) নাই, তার পিতা অথবা মাতার জাতীয় পরিচয়পত্র (NID) নম্বর অবশ্যই উল্লেখ করতে হবে।\n* **৬।** জাতীয় পরিচয়পত্র (NID) অথবা অনলাইন জন্মনিবন্ধন সনদ (BRC English Version) নিম্নোক্ত বয়স অনুসারে দাখিল করতে হবে-\n  * **(ক)** ১৮ বছরের নিম্নে হলে অনলাইন জন্মনিবন্ধন সনদ (BRC English Version)।\n  * **(খ)** ১৮-২০ বছর হলে জাতীয় পরিচয়পত্র (NID) অথবা অনলাইন জন্মনিবন্ধন সনদ (BRC English Version)।\n  * **(গ)** ২০ বছরের উর্ধে হলে জাতীয় পরিচয়পত্র (NID) আবশ্যক। তবে বিদেশস্থ বাংলাদেশ মিশন হতে আবেদনের ক্ষেত্রে অনলাইন জন্মনিবন্ধন সনদ (BRC English Version) গ্রহণযোগ্য হবে।\n* **৭।** তারকা চিহ্নিত ক্রমিক নম্বরগুলো অবশ্যই পূরণীয়।\n* **৮।** দত্তক/অভিভাবকত্ব গ্রহণের ক্ষেত্রে পাসপোর্টের আবেদনের সাথে সুরক্ষা সেবা বিভাগ, স্বরাষ্ট্র মন্ত্রণালয় হতে জারিকৃত আদেশ দাখিল করতে হবে।\n* **৯।** আবেদন বর্তমান ঠিকানা সংশ্লিষ্ঠ বিভাগীয় পাসপোর্ট ও ভিসা অফিস/আঞ্চলিক পাসপোর্ট অফিস/বিদেশস্থ বাংলাদেশ মিশনে দাখিল করতে হবে।\n\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_9f4e9ffe9f2a07f4",
+        "document_id": "passport_9f4e9ffe9f2a07f4",
+        "title": "ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী",
+        "section_title": "ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী > সাধারণ নিয়মাবলী ও আবেদন পদ্ধতি",
+        "document_type": "নির্দেশিকা",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী.md",
+        "source_relative_path": "cleaned_md/ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী.md",
+        "source_sha256": "f0bc6e1384dd491baff1dc91061abdd516b283e0e2751cdd793151b09095c61b",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী.pdf\"]",
+        "document_date": "2026-08-03",
+        "date_verified": false,
+        "audit_flags": "no_web_address",
+        "experimental": true,
+        "body_start": 66,
+        "body_end": 1391,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/passport/markdown/cleaned_md/ই-পাসপোর্ট ফরম পূরণের নির্দেশাবলী.md",
+        "context_spans": "[{\"start\": 35, \"end\": 66}]",
+        "cleaned_sha256": "ba83ebd1ce02bea874b2ab9079dd85fb24a2bd1f6fa5132590b479120895a689"
+      },
+      "score": 0.9931093454360962,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "passport_6e87d0783a373593_v4_0005",
+      "content": "5 Steps to your e-Passport\n5 Steps to your e-Passport > Application Steps > Step 2: Fill in your e-Passport application online\n\n### Step 2: Fill in your e-Passport application online\n* **Action/Resource:** For Online Application Click Here\n\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_6e87d0783a373593",
+        "document_id": "passport_6e87d0783a373593",
+        "title": "5 Steps to your e-Passport",
+        "section_title": "5 Steps to your e-Passport > Application Steps > Step 2: Fill in your e-Passport application online",
+        "document_type": "সাধারণ তথ্য",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/5 Steps to your e-Passport.md",
+        "source_relative_path": "cleaned_md/5 Steps to your e-Passport.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/5 Steps to your e-Passport.md",
+        "source_sha256": "20cf0be15ba261a9be55252bdd4da3d3ebe418c14e4722ec7c509b94bbc0c348",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/5 Steps to your e-Passport.pdf\"]",
+        "document_date": "2026-06-03",
+        "date_verified": false,
+        "audit_flags": "no_web_address",
+        "experimental": true,
+        "body_start": 305,
+        "body_end": 418,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/passport/markdown/cleaned_md/5 Steps to your e-Passport.md",
+        "context_spans": "[]",
+        "cleaned_sha256": "c0f9c7bfa3cdb7f3f252d8abdf93f42c56bf78e838359bc2d80fd19e33ed3dfc"
+      },
+      "score": 0.9801194071769714,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "passport_0b74faa4d85a2a58_v4_0003",
+      "content": "অনলাইন সেবাসমূহ (নাগরিক ই-সেবাসমূহের তালিকা)\nইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর - অনলাইন সেবাসমূহ > নাগরিক ই-সেবাসমূহের তালিকা > ১. ই-পাসপোর্ট আবেদন\n\n### ১. ই-পাসপোর্ট আবেদন\n* **ক্রম:** ১\n* **সেবার শিরোনাম:** ই-পাসপোর্ট আবেদন\n* **অনলাইন লিংক:** অনলাইনে আবেদন করুন\n\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_0b74faa4d85a2a58",
+        "document_id": "passport_0b74faa4d85a2a58",
+        "title": "অনলাইন সেবাসমূহ (নাগরিক ই-সেবাসমূহের তালিকা)",
+        "section_title": "ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর - অনলাইন সেবাসমূহ > নাগরিক ই-সেবাসমূহের তালিকা > ১. ই-পাসপোর্ট আবেদন",
+        "document_type": "নাগরিক ই-সেবাসমূহের তালিকা",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/অনলাইন সেবাসমূহ (নাগরিক ই-সেবাসমূহের তালিকা).md",
+        "source_relative_path": "cleaned_md/অনলাইন সেবাসমূহ (নাগরিক ই-সেবাসমূহের তালিকা).md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/অনলাইন সেবাসমূহ (নাগরিক ই-সেবাসমূহের তালিকা).md",
+        "source_sha256": "63aad859e13c4416b524e8c7280c02b0cff81de0320bcab222cbd8e2461bd292",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/নাগরিক ই-সেবাসমূহের তালিকা.pdf\"]",
+        "document_date": "N/A",
+        "date_verified": false,
+        "audit_flags": "no_web_address",
+        "experimental": true,
+        "body_start": 82,
+        "body_end": 197,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/passport/markdown/cleaned_md/অনলাইন সেবাসমূহ (নাগরিক ই-সেবাসমূহের তালিকা).md",
+        "context_spans": "[]",
+        "cleaned_sha256": "94ee6d13d229ff5ad0930ba8bb7412ff788a85707629667217ab1741cf43d572"
+      },
+      "score": 0.96205735206604,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "passport_23d845d3ab38ea43_v4_0024",
+      "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 4. Application & Processing (আবেদন ও প্রক্রিয়াকরণ) > 4.6 Reissuing MRP to ePassport / এমআরপি থেকে ই-পাসপোর্টে রূপান্তর\n\n### 4.6 Reissuing MRP to ePassport / এমআরপি থেকে ই-পাসপোর্টে রূপান্তর\n- **Category:** Application & Processing\n- **Topic:** Transition from Machine Readable Passport (MRP)\n- **English Question:** I have an MRP - how is the process to get the ePassport?\n- **Bengali Question (প্রশ্ন):** আমার একটি এমআরপি আছে, আমি কি ভাবে ই-পাসপোর্ট এর জন্য আবেদন করতে পারি?\n- **English Answer:** If you already have an MRP, please fill in the complete online application form. There is no 'auto fill-in' of data from your previous MRP. After submission, please visit the passport office for enrolment. Bring your MRP, NID/BRC, and all other required supporting documents with you.\n- **Bengali Answer (উত্তর):** আপনার যদি এমআরপি (MRP) থাকে, তবে সম্পূর্ণ অনলাইন আবেদন ফরমটি নতুন করে পূরণ করুন। পূর্বের এমআরপি থেকে তথ্য স্বয়ংক্রিয়ভাবে যুক্ত (Auto fill-in) হবে না। আবেদন জমা দেওয়ার পর পাসপোর্ট অফিসে যান এবং আপনার এমআরপি, এনআইডি/বিআরসি এবং প্রয়োজনীয় কাগজপত্র সঙ্গে নিয়ে আসুন।\n\n---\n\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_23d845d3ab38ea43",
+        "document_id": "passport_23d845d3ab38ea43",
+        "title": "Bangladesh_ePassport_FAQ",
+        "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 4. Application & Processing (আবেদন ও প্রক্রিয়াকরণ) > 4.6 Reissuing MRP to ePassport / এমআরপি থেকে ই-পাসপোর্টে রূপান্তর",
+        "document_type": "document",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+        "original_paths": "[]",
+        "document_date": "unknown",
+        "date_verified": false,
+        "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+        "experimental": true,
+        "body_start": 16776,
+        "body_end": 17742,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": true,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/passport/markdown/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "context_spans": "[]",
+        "cleaned_sha256": "129e56b5fb40b44e1433f3603fbbeb955dd9d034ddd34baf7c34ebbaaa44d80a"
+      },
+      "score": 0.961748480796814,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "passport_6f7d900581956bef_v4_0006",
+      "content": "সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর\nগণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ২. প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > [ক্রমিক ১ (ক)] ইলেকট্রনিক (E-Passport) পাসপোর্ট ইস্যু\n\n#### [ক্রমিক ১ (ক)] ইলেকট্রনিক (E-Passport) পাসপোর্ট ইস্যু\n* **সেবার নাম:** ইলেকট্রনিক (E-Passport) পাসপোর্ট ইস্যু\n* **সেবা প্রদান পদ্ধতি:** অফলাইন (PDF) অথবা অনলাইনের মাধ্যমে আবেদন গ্রহণ করা হয়। আবেদনকারী যে এলাকায় বসবাস করেন সেই এলাকা সংশ্লিষ্ট বিভাগীয় পাসপোর্ট ও ভিসা অফিস অথবা আঞ্চলিক পাসপোর্ট অফিস হতে সেবা প্রদান করা হয়।\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_6f7d900581956bef",
+        "document_id": "passport_6f7d900581956bef",
+        "title": "সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর",
+        "section_title": "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ২. প্রতিশ্রুত সেবাসমূহ > ২.১) নাগরিক সেবা > [ক্রমিক ১ (ক)] ইলেকট্রনিক (E-Passport) পাসপোর্ট ইস্যু",
+        "document_type": "সিটিজেন চার্টার",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+        "source_relative_path": "cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+        "source_sha256": "e875d24b0d749a0a12ff8c30bddac3eabba040af4c3a50348e63f3d086382e87",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/সিটিজেন চার্টার_ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.pdf\"]",
+        "document_date": "2025-02-18",
+        "date_verified": false,
+        "audit_flags": "",
+        "experimental": true,
+        "body_start": 752,
+        "body_end": 1083,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/passport/markdown/cleaned_md/সেবা প্রদান প্রতিশ্রুতি (Citizen's Charter) - ইমিগ্রেশন ও পাসপোর্ট অধিদপ্তর.md",
+        "context_spans": "[]",
+        "cleaned_sha256": "311e340c5dc3ec5c26e498192f7ff598ccd0a649a847174da3baa59bd751b799"
+      },
+      "score": 0.9106222987174988,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "passport_23d845d3ab38ea43_v4_0026",
+      "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 4. Application & Processing (আবেদন ও প্রক্রিয়াকরণ) > 4.8 Using MRP Application Form for ePassport / এমআরপি ফরমের ব্যবহার\n\n### 4.8 Using MRP Application Form for ePassport / এমআরপি ফরমের ব্যবহার\n- **Category:** Application & Processing\n- **Topic:** Form Eligibility\n- **English Question:** Can I also use the MRP application form to apply for ePassport?\n- **Bengali Question (প্রশ্ন):** ই-পাসপোর্ট আবেদনের জন্য এম আর পি আবেদন ফরম ব্যবহার করা যাবে কি না?\n- **English Answer:** No, applications for ePassport can only be completed via the online application on the official ePassport portal.\n- **Bengali Answer (উত্তর):** না। ই-পাসপোর্টের জন্য কেবল নির্ধারিত ই-পাসপোর্ট অনলাইন আবেদন ফরমই ব্যবহার করতে হবে।\n\n---\n\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_23d845d3ab38ea43",
+        "document_id": "passport_23d845d3ab38ea43",
+        "title": "Bangladesh_ePassport_FAQ",
+        "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 4. Application & Processing (আবেদন ও প্রক্রিয়াকরণ) > 4.8 Using MRP Application Form for ePassport / এমআরপি ফরমের ব্যবহার",
+        "document_type": "document",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+        "original_paths": "[]",
+        "document_date": "unknown",
+        "date_verified": false,
+        "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+        "experimental": true,
+        "body_start": 18476,
+        "body_end": 19063,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": true,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/passport/markdown/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "context_spans": "[]",
+        "cleaned_sha256": "129e56b5fb40b44e1433f3603fbbeb955dd9d034ddd34baf7c34ebbaaa44d80a"
+      },
+      "score": 0.9048141241073608,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    }
+  ],
+  "selection_trace": {
+    "version": "applicability_v1_family_order",
+    "query_actions": [
+      "application"
+    ],
+    "query_services": [
+      "passport"
+    ],
+    "decisions": [
+      {
+        "id": "passport_6f7d900581956bef_v4_0007",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_6e87d0783a373593_v4_0008",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_f00b2a4caf73fc8e_v4_0004",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_caccc3966e7586d0_v4_0002",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_9f4e9ffe9f2a07f4_v4_0002",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_6e87d0783a373593_v4_0005",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_0b74faa4d85a2a58_v4_0003",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_23d845d3ab38ea43_v4_0024",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_6f7d900581956bef_v4_0006",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_23d845d3ab38ea43_v4_0026",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_6e87d0783a373593_v4_0007",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "passport_6f7d900581956bef_v4_0008",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "passport_9f4e9ffe9f2a07f4_v4_0003",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "passport_6e87d0783a373593_v4_0002",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "passport_23d845d3ab38ea43_v4_0016",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      }
+    ],
+    "expanded_ids": [],
+    "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+    "budget_order_ids": [
+      "passport_9f4e9ffe9f2a07f4_v4_0002",
+      "passport_6e87d0783a373593_v4_0005",
+      "passport_0b74faa4d85a2a58_v4_0003",
+      "passport_23d845d3ab38ea43_v4_0024",
+      "passport_6f7d900581956bef_v4_0006",
+      "passport_23d845d3ab38ea43_v4_0026",
+      "passport_6e87d0783a373593_v4_0007",
+      "passport_6f7d900581956bef_v4_0008",
+      "passport_9f4e9ffe9f2a07f4_v4_0003",
+      "passport_6e87d0783a373593_v4_0002",
+      "passport_23d845d3ab38ea43_v4_0016"
+    ],
+    "selected_ids": [
+      "passport_9f4e9ffe9f2a07f4_v4_0002",
+      "passport_6e87d0783a373593_v4_0005",
+      "passport_0b74faa4d85a2a58_v4_0003",
+      "passport_23d845d3ab38ea43_v4_0024",
+      "passport_6f7d900581956bef_v4_0006",
+      "passport_23d845d3ab38ea43_v4_0026"
+    ],
+    "selected_chars": 4455
+  },
+  "seconds": 14.588,
+  "top5": {
+    "dense": [
+      "passport_9f4e9ffe9f2a07f4_v4_0002",
+      "passport_6f7d900581956bef_v4_0008",
+      "passport_0b74faa4d85a2a58_v4_0003",
+      "passport_23d845d3ab38ea43_v4_0024",
+      "passport_6f7d900581956bef_v4_0006"
+    ],
+    "bm25": [
+      "passport_23d845d3ab38ea43_v4_0026",
+      "passport_5d0353de7b67a7b5_v4_0004",
+      "passport_23d845d3ab38ea43_v4_0029",
+      "passport_23d845d3ab38ea43_v4_0019",
+      "passport_f00b2a4caf73fc8e_v4_0004"
+    ],
+    "hybrid": [
+      "passport_23d845d3ab38ea43_v4_0026",
+      "passport_f00b2a4caf73fc8e_v4_0004",
+      "passport_caccc3966e7586d0_v4_0002",
+      "passport_9f4e9ffe9f2a07f4_v4_0003",
+      "passport_23d845d3ab38ea43_v4_0016"
+    ]
+  }
+}

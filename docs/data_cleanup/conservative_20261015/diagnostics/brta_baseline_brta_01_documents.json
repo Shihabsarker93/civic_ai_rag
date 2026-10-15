@@ -1,0 +1,182 @@
+{
+  "domain": "brta",
+  "variant": "baseline",
+  "id": "brta_01_documents",
+  "query": "ড্রাইভিং লাইসেন্স করতে কী কী কাগজপত্র লাগবে?",
+  "candidate_ids": [
+    "brta_cbe22ab64acf3d03_v2_0004",
+    "brta_cbe22ab64acf3d03_v2_0006",
+    "brta_cbe22ab64acf3d03_v2_0011",
+    "brta_cbe22ab64acf3d03_v2_0003",
+    "brta_4b8c25d391e48121_v2_0003",
+    "brta_cbe22ab64acf3d03_v2_0013",
+    "brta_4e08eb4e988d38e4_v2_0008",
+    "brta_846a4041fe96a64e_v2_0003",
+    "brta_4b8c25d391e48121_v2_0004",
+    "brta_846a4041fe96a64e_v2_0008",
+    "brta_09e8cbfff67f117e_v2_0005",
+    "brta_57a7e75567f9a5c3_v2_0010",
+    "brta_2d6e0fe1670b3aa3_v2_0003",
+    "brta_cbe22ab64acf3d03_v2_0002",
+    "brta_6eb3d41986361dbd_v2_0003"
+  ],
+  "selected_ids": [
+    "brta_cbe22ab64acf3d03_v2_0004"
+  ],
+  "selected_characters": 1245,
+  "selected_tokens": 451,
+  "tokenizer": "BGE-M3; not generator tokens",
+  "selected_passages": [
+    {
+      "id": "brta_cbe22ab64acf3d03_v2_0004",
+      "content": "ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন প্রক্রিয়া\nড্রাইভিং লাইসেন্স > ড্রাইভিং লাইসেন্স প্রাপ্তির প্রক্রিয়া > লার্নার বা শিক্ষানবিশ ড্রাইভিং লাইসেন্স এর জন্য প্রয়োজনীয় কাগজপত্র\n\n### লার্নার বা শিক্ষানবিশ ড্রাইভিং লাইসেন্স এর জন্য প্রয়োজনীয় কাগজপত্র\n\n* **১. আবেদনপত্র:** নির্ধারিত ফরমে অনলাইনে আবেদন।\n* **২. ছবি:** আবেদনকারীর ছবি [ছবির সাইজ সর্বোচ্চ ১৫০ কেবি (৩০০ x ৩০০ পিক্সেল)]।\n* **৩. মেডিকেল সার্টিফিকেট:** রেজিষ্টার্ড ডাক্তার কর্তৃক মেডিকেল সার্টিফিকেট (সর্বোচ্চ ৬০০ কে.বি)।\n* **৪. পরিচয়পত্র:** জাতীয় পরিচয়পত্রের স্ক্যান কপি (সর্বোচ্চ ৬০০ কে.বি)।\n* **৫. ইউটিলিটি বিল:** ইউটিলিটি বিলের স্ক্যান কপি (সর্বোচ্চ ৬০০ কে.বি), [আবেদনকারীর বর্তমান ঠিকানা এবং জাতীয় পরিচয়পত্রের ঠিকানা যদি ভিন্ন হয় তবে বর্তমান ঠিকানার ইউটিলিটি বিল সংযুক্ত করতে হবে]।\n* **৬. বিদ্যমান ড্রাইভিং লাইসেন্স:** বিদ্যমান ড্রাইভিং লাইসেন্সের স্ক্যান কপি [ড্রাইভিং লাইসেন্সের নবায়ন/শ্রেণী পরিবর্তন/শ্রেণী সংযোজন/লাইসেন্সের ধরণ পরিবর্তনের ক্ষেত্রে প্রযোজ্য (সর্বোচ্চ ৬০০ কে.বি)]।\n* **৭. তথ্যের সততা:** অনলাইনে আবেদন দাখিলের সময় ভুয়া তথ্য প্রদান করা হলে তার লার্নার ড্রাইভিং লাইসেন্স ও স্মার্ট কার্ড ড্রাইভিং লাইসেন্স বাতিলসহ তার বিরুদ্ধে আইনানুগ ব্যবস্থা গ্রহণ করা হবে।\n* **৮. আবেদন ফি:** নির্ধারিত ফি, ১ ক্যাটাগরি-৫১৮/-টাকা ও ২ ক্যাটাগরি-৭৪৮/-টাকা অনলাইনে পরিশোধ।\n\n---\n\n",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_cbe22ab64acf3d03",
+        "document_id": "brta_cbe22ab64acf3d03",
+        "title": "ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন প্রক্রিয়া",
+        "section_title": "ড্রাইভিং লাইসেন্স > ড্রাইভিং লাইসেন্স প্রাপ্তির প্রক্রিয়া > লার্নার বা শিক্ষানবিশ ড্রাইভিং লাইসেন্স এর জন্য প্রয়োজনীয় কাগজপত্র",
+        "document_type": "সাধারণ তথ্য / নির্দেশিকা",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta/সেবাসমূহ/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.md",
+        "source_relative_path": "fahim_brta/সেবাসমূহ/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.md",
+        "snapshot_path": "domains/brta/data/source_snapshots/fahim_brta/সেবাসমূহ/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.md",
+        "source_sha256": "c19bf1f86060bfd79b729b7a10cbc7d8a403d918cc21511262cff6d5d4a3a114",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/সেবাসমূহ_original/ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন.pdf\"]",
+        "document_date": "N/A",
+        "date_verified": false,
+        "audit_flags": "citation_markers_removed_from_derived_text, no_web_address",
+        "experimental": true,
+        "body_start": 1066,
+        "body_end": 2136,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": false
+      },
+      "score": 0.996452808380127,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    }
+  ],
+  "selection_trace": {
+    "version": "applicability_v1_family_order",
+    "query_actions": [
+      "application"
+    ],
+    "query_services": [
+      "licence"
+    ],
+    "decisions": [
+      {
+        "id": "brta_cbe22ab64acf3d03_v2_0011",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_cbe22ab64acf3d03_v2_0013",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_4e08eb4e988d38e4_v2_0008",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_2d6e0fe1670b3aa3_v2_0003",
+        "decision": "excluded",
+        "reason": "different_service"
+      },
+      {
+        "id": "brta_6eb3d41986361dbd_v2_0003",
+        "decision": "excluded",
+        "reason": "unclassified_action_with_direct_alternative"
+      },
+      {
+        "id": "brta_cbe22ab64acf3d03_v2_0006",
+        "decision": "excluded",
+        "reason": "alternative_checklist_not_merged"
+      },
+      {
+        "id": "brta_57a7e75567f9a5c3_v2_0010",
+        "decision": "excluded",
+        "reason": "alternative_checklist_not_merged"
+      },
+      {
+        "id": "brta_cbe22ab64acf3d03_v2_0003",
+        "decision": "excluded",
+        "reason": "alternative_checklist_not_merged"
+      },
+      {
+        "id": "brta_4b8c25d391e48121_v2_0003",
+        "decision": "excluded",
+        "reason": "alternative_checklist_not_merged"
+      },
+      {
+        "id": "brta_846a4041fe96a64e_v2_0003",
+        "decision": "excluded",
+        "reason": "alternative_checklist_not_merged"
+      },
+      {
+        "id": "brta_4b8c25d391e48121_v2_0004",
+        "decision": "excluded",
+        "reason": "alternative_checklist_not_merged"
+      },
+      {
+        "id": "brta_846a4041fe96a64e_v2_0008",
+        "decision": "excluded",
+        "reason": "alternative_checklist_not_merged"
+      },
+      {
+        "id": "brta_09e8cbfff67f117e_v2_0005",
+        "decision": "excluded",
+        "reason": "alternative_checklist_not_merged"
+      },
+      {
+        "id": "brta_cbe22ab64acf3d03_v2_0002",
+        "decision": "excluded",
+        "reason": "alternative_checklist_not_merged"
+      },
+      {
+        "id": "brta_cbe22ab64acf3d03_v2_0004",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      }
+    ],
+    "expanded_ids": [],
+    "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+    "budget_order_ids": [
+      "brta_cbe22ab64acf3d03_v2_0004"
+    ],
+    "selected_ids": [
+      "brta_cbe22ab64acf3d03_v2_0004"
+    ],
+    "selected_chars": 1245
+  },
+  "seconds": 8.826,
+  "top5": {
+    "dense": [
+      "brta_cbe22ab64acf3d03_v2_0004",
+      "brta_cbe22ab64acf3d03_v2_0006",
+      "brta_cbe22ab64acf3d03_v2_0013",
+      "brta_cbe22ab64acf3d03_v2_0011",
+      "brta_4b8c25d391e48121_v2_0003"
+    ],
+    "bm25": [
+      "brta_6eb3d41986361dbd_v2_0003",
+      "brta_4b8c25d391e48121_v2_0001",
+      "brta_4b8c25d391e48121_v2_0003",
+      "brta_cbe22ab64acf3d03_v2_0005",
+      "brta_09e8cbfff67f117e_v2_0011"
+    ],
+    "hybrid": [
+      "brta_4b8c25d391e48121_v2_0003",
+      "brta_cbe22ab64acf3d03_v2_0004",
+      "brta_cbe22ab64acf3d03_v2_0006",
+      "brta_cbe22ab64acf3d03_v2_0013",
+      "brta_cbe22ab64acf3d03_v2_0011"
+    ]
+  }
+}

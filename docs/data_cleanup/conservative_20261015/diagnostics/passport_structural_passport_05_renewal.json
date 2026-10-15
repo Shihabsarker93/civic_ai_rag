@@ -1,0 +1,223 @@
+{
+  "domain": "passport",
+  "variant": "structural",
+  "id": "passport_05_renewal",
+  "query": "পাসপোর্টের মেয়াদ শেষ হলে কীভাবে নবায়ন করব?",
+  "candidate_ids": [
+    "passport_3fcbc40c98aa80bc_v4_0002",
+    "passport_23d845d3ab38ea43_v4_0017",
+    "passport_9f4e9ffe9f2a07f4_v4_0003",
+    "passport_23d845d3ab38ea43_v4_0029",
+    "passport_3fcbc40c98aa80bc_v4_0009",
+    "passport_6f7d900581956bef_v4_0007",
+    "passport_6f7d900581956bef_v4_0010",
+    "passport_23d845d3ab38ea43_v4_0050",
+    "passport_3fcbc40c98aa80bc_v4_0006",
+    "passport_3fcbc40c98aa80bc_v4_0008",
+    "passport_9f4e9ffe9f2a07f4_v4_0005",
+    "passport_3fcbc40c98aa80bc_v4_0004",
+    "passport_3fcbc40c98aa80bc_v4_0005",
+    "passport_a4d61a4d583daa54_v4_0007",
+    "passport_3fcbc40c98aa80bc_v4_0007"
+  ],
+  "selected_ids": [
+    "passport_23d845d3ab38ea43_v4_0017",
+    "passport_23d845d3ab38ea43_v4_0050"
+  ],
+  "selected_characters": 1954,
+  "selected_tokens": 577,
+  "tokenizer": "BGE-M3; not generator tokens",
+  "selected_passages": [
+    {
+      "id": "passport_23d845d3ab38ea43_v4_0017",
+      "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 3. Payment & Fees (পেমেন্ট ও ফি) > 3.3 Fees for Expired Passport / মেয়াদ শেষ হওয়ার জন্য ফি\n\n### 3.3 Fees for Expired Passport / মেয়াদ শেষ হওয়ার জন্য ফি\n- **Category:** Payment & Fees\n- **Topic:** Penalty or Expiry Fee Policy\n- **English Question:** When the passport validity date expires, is there any fee to be paid for the expiry?\n- **Bengali Question (প্রশ্ন):** পাসপোর্ট এর মেয়াদ শেষ হলে মেয়াদ উত্তীর্ণের জন্য কি কোন ফি প্রদান করা লাগবে?\n- **English Answer:** There is no fee or penalty to pay simply because the passport validity date has expired. In case of passport re-issue or renewal, only the standard fee prescribed by the Government of Bangladesh needs to be paid.\n- **Bengali Answer (উত্তর):** পাসপোর্টের মেয়াদ শেষ হওয়ার জন্য অতিরিক্ত কোনো জরিমানা বা ফি প্রদান করতে হবে না। পাসপোর্ট রি-ইস্যু বা নবায়নের ক্ষেত্রে শুধুমাত্র বাংলাদেশ সরকার কর্তৃক নির্ধারিত নিয়মিত ফি প্রদান করতে হবে।\n\n---\n\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_23d845d3ab38ea43",
+        "document_id": "passport_23d845d3ab38ea43",
+        "title": "Bangladesh_ePassport_FAQ",
+        "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 3. Payment & Fees (পেমেন্ট ও ফি) > 3.3 Fees for Expired Passport / মেয়াদ শেষ হওয়ার জন্য ফি",
+        "document_type": "document",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+        "original_paths": "[]",
+        "document_date": "unknown",
+        "date_verified": false,
+        "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+        "experimental": true,
+        "body_start": 10888,
+        "body_end": 11705,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": true,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/passport/markdown/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "context_spans": "[]",
+        "cleaned_sha256": "129e56b5fb40b44e1433f3603fbbeb955dd9d034ddd34baf7c34ebbaaa44d80a"
+      },
+      "score": 0.6111939549446106,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "passport_23d845d3ab38ea43_v4_0050",
+      "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 7. Miscellaneous (অন্যান্য) > 7.1 Re-issuance Interval and Validity / ই-পাসপোর্টের মেয়াদ ও রি-ইস্যুর সময়সীমা\n\n### 7.1 Re-issuance Interval and Validity / ই-পাসপোর্টের মেয়াদ ও রি-ইস্যুর সময়সীমা\n- **Category:** Miscellaneous\n- **Topic:** Passport Renewal Frequency\n- **English Question:** After how many years must an e-passport be re-issued?\n- **Bengali Question (প্রশ্ন):** ই-পাসপোর্ট কত বছর পরে পুনরায় রি-ইস্যু করতে হবে?\n- **English Answer:** Generally, ePassports are issued with a validity of 5 or 10 years. You can apply to re-issue a new passport before or after the expiry date as per your requirement by citing your previous passport number.\n- **Bengali Answer (উত্তর):** সাধারণত ৫ অথবা ১০ বছরের জন্য ই-পাসপোর্ট ইস্যু করা হয়। আপনার প্রয়োজনানুযায়ী মেয়াদের আগে বা পরে যেকোনো সময় পূর্ববর্তী পাসপোর্ট নম্বর উল্লেখ করে পুনরায় নতুন পাসপোর্ট রি-ইস্যু করতে পারবেন।\n\n---\n\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_23d845d3ab38ea43",
+        "document_id": "passport_23d845d3ab38ea43",
+        "title": "Bangladesh_ePassport_FAQ",
+        "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 7. Miscellaneous (অন্যান্য) > 7.1 Re-issuance Interval and Validity / ই-পাসপোর্টের মেয়াদ ও রি-ইস্যুর সময়সীমা",
+        "document_type": "document",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+        "original_paths": "[]",
+        "document_date": "unknown",
+        "date_verified": false,
+        "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+        "experimental": true,
+        "body_start": 37174,
+        "body_end": 37943,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": true,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/passport/markdown/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "context_spans": "[]",
+        "cleaned_sha256": "129e56b5fb40b44e1433f3603fbbeb955dd9d034ddd34baf7c34ebbaaa44d80a"
+      },
+      "score": 0.08725365251302719,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    }
+  ],
+  "selection_trace": {
+    "version": "applicability_v1_family_order",
+    "query_actions": [
+      "renewal"
+    ],
+    "query_services": [
+      "passport"
+    ],
+    "decisions": [
+      {
+        "id": "passport_3fcbc40c98aa80bc_v4_0002",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_9f4e9ffe9f2a07f4_v4_0003",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_23d845d3ab38ea43_v4_0029",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_3fcbc40c98aa80bc_v4_0009",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_6f7d900581956bef_v4_0007",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_6f7d900581956bef_v4_0010",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_3fcbc40c98aa80bc_v4_0006",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_3fcbc40c98aa80bc_v4_0008",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_9f4e9ffe9f2a07f4_v4_0005",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_3fcbc40c98aa80bc_v4_0004",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_3fcbc40c98aa80bc_v4_0005",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_3fcbc40c98aa80bc_v4_0007",
+        "decision": "excluded",
+        "reason": "different_service"
+      },
+      {
+        "id": "passport_a4d61a4d583daa54_v4_0007",
+        "decision": "excluded",
+        "reason": "unclassified_action_with_direct_alternative"
+      },
+      {
+        "id": "passport_23d845d3ab38ea43_v4_0017",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_23d845d3ab38ea43_v4_0050",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      }
+    ],
+    "expanded_ids": [],
+    "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+    "budget_order_ids": [
+      "passport_23d845d3ab38ea43_v4_0017",
+      "passport_23d845d3ab38ea43_v4_0050"
+    ],
+    "selected_ids": [
+      "passport_23d845d3ab38ea43_v4_0017",
+      "passport_23d845d3ab38ea43_v4_0050"
+    ],
+    "selected_chars": 1954
+  },
+  "seconds": 15.408,
+  "top5": {
+    "dense": [
+      "passport_3fcbc40c98aa80bc_v4_0002",
+      "passport_23d845d3ab38ea43_v4_0017",
+      "passport_9f4e9ffe9f2a07f4_v4_0003",
+      "passport_3fcbc40c98aa80bc_v4_0007",
+      "passport_3fcbc40c98aa80bc_v4_0009"
+    ],
+    "bm25": [
+      "passport_23d845d3ab38ea43_v4_0017",
+      "passport_23d845d3ab38ea43_v4_0029",
+      "passport_9f4e9ffe9f2a07f4_v4_0003",
+      "passport_049144a6810ecbbf_v4_0010",
+      "passport_a4d61a4d583daa54_v4_0007"
+    ],
+    "hybrid": [
+      "passport_23d845d3ab38ea43_v4_0017",
+      "passport_9f4e9ffe9f2a07f4_v4_0003",
+      "passport_3fcbc40c98aa80bc_v4_0002",
+      "passport_23d845d3ab38ea43_v4_0029",
+      "passport_23d845d3ab38ea43_v4_0050"
+    ]
+  }
+}

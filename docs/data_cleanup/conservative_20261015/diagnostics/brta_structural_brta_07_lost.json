@@ -1,0 +1,252 @@
+{
+  "domain": "brta",
+  "variant": "structural",
+  "id": "brta_07_lost",
+  "query": "ড্রাইভিং লাইসেন্স হারিয়ে গেলে কী করতে হবে?",
+  "candidate_ids": [
+    "brta_4e08eb4e988d38e4_v2_0200",
+    "brta_4e08eb4e988d38e4_v2_0018",
+    "brta_4e08eb4e988d38e4_v2_0023",
+    "brta_258cf38650a6332b_v4_0012",
+    "brta_cb965b3169c34e73_v2_0046",
+    "brta_4e08eb4e988d38e4_v2_0025",
+    "brta_cbe22ab64acf3d03_v4_0003",
+    "brta_846a4041fe96a64e_v4_0007",
+    "brta_cbe22ab64acf3d03_v4_0009",
+    "brta_edcb265eccf9cd32_v2_0016",
+    "brta_cbe22ab64acf3d03_v4_0004",
+    "brta_cbe22ab64acf3d03_v4_0005",
+    "brta_cbe22ab64acf3d03_v4_0006",
+    "brta_cbe22ab64acf3d03_v4_0011",
+    "brta_91979c30a91124e0_v4_0011"
+  ],
+  "selected_ids": [
+    "brta_258cf38650a6332b_v4_0012",
+    "brta_4e08eb4e988d38e4_v2_0200",
+    "brta_4e08eb4e988d38e4_v2_0018"
+  ],
+  "selected_characters": 3740,
+  "selected_tokens": 1217,
+  "tokenizer": "BGE-M3; not generator tokens",
+  "selected_passages": [
+    {
+      "id": "brta_258cf38650a6332b_v4_0012",
+      "content": "ফরম-৪ (খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন/প্রতিলিপি / শ্রেণি পরিবর্তন বা সংযোজন/ধরন পরিবর্তন/ ঠিকানা পরিবর্তন/তথ্য সংশোধনের আবেদন\nফরম-৪ (খ) > মোটর ড্রাইভিং লাইসেন্স নবায়ন/প্রতিলিপি / শ্রেণি পরিবর্তন বা সংযোজন/ধরন পরিবর্তন/ ঠিকানা পরিবর্তন/তথ্য সংশোধনের আবেদন > ৭. প্রতিলিপি গ্রহণের বিবরণ (Duplicate License Details)\n\n[বিধি ১১(১), ১৫(১) ও ১৬(১) দ্রষ্টব্য]\n\n### ৭. প্রতিলিপি গ্রহণের বিবরণ (Duplicate License Details)\n- **(ক) হারিয়ে যাওয়ার কারণে প্রতিলিপি গ্রহণের ক্ষেত্রে:**\n  - **সংশ্লিষ্ট থানার নাম (Name of PS):** ________________________________________\n  - **জিডি নম্বর (GD No.):** ________________________\n  - **তারিখ (Date):** ________________________\n- **(খ) নষ্ট হওয়ার কারণে প্রতিলিপি গ্রহণের ক্ষেত্রে:**\n  - **Instruction:** ড্রাইভিং লাইসেন্সের সংশ্লিষ্ট অংশ দাখিল করিতে হইবে (Duplicate in case of damage, relevant part to be submitted)\n\n",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_258cf38650a6332b",
+        "document_id": "brta_258cf38650a6332b",
+        "title": "ফরম-৪ (খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন/প্রতিলিপি / শ্রেণি পরিবর্তন বা সংযোজন/ধরন পরিবর্তন/ ঠিকানা পরিবর্তন/তথ্য সংশোধনের আবেদন",
+        "section_title": "ফরম-৪ (খ) > মোটর ড্রাইভিং লাইসেন্স নবায়ন/প্রতিলিপি / শ্রেণি পরিবর্তন বা সংযোজন/ধরন পরিবর্তন/ ঠিকানা পরিবর্তন/তথ্য সংশোধনের আবেদন > ৭. প্রতিলিপি গ্রহণের বিবরণ (Duplicate License Details)",
+        "document_type": "form",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta/ফরম/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.md",
+        "source_relative_path": "fahim_brta/ফরম/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.md",
+        "snapshot_path": "domains/brta/data/source_snapshots/fahim_brta/ফরম/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.md",
+        "source_sha256": "b4e7a124b17f98b88141f55a1c9d957d25e4cf55cfdc0f5bee7a205e60ba6bc5",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/fahim_brta_original/ফরম_original/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.pdf\"]",
+        "document_date": "Not specified",
+        "date_verified": false,
+        "audit_flags": "citation_markers_removed_from_derived_text, no_web_address",
+        "experimental": true,
+        "body_start": 2011,
+        "body_end": 2504,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/brta/markdown/fahim_brta/ফরম/ফরম-৪(খ) মোটর ড্রাইভিং লাইসেন্স নবায়ন,প্রতিলিপি,শ্রেণি পরিবর্তন বা সংযোজন,ধরন পরিবর্তন,ঠিকানা পরিবর্তন,তথ্য সংশোধনের আবেদন.md",
+        "context_spans": "[{\"start\": 149, \"end\": 189}]",
+        "cleaned_sha256": "d86e70f35d0a1a7aca28354ff04a23805fc7240bbd419f5f10805fa51d8c73eb"
+      },
+      "score": 0.4625071585178375,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "brta_4e08eb4e988d38e4_v2_0200",
+      "content": "সড়ক পরিবহণ বিধিমালা, ২০২২\nসড়ক পরিবহণ বিধিমালা, ২০২২\n\nক্ষেত্রে সংশ্লিষ্ট থানার নাম: জিড়ি নম্বর:-- তারিখ: Duplicate in case of lost, name of PS: UD1T0. Date: নষ্ট হওয়ার কারণে প্রতিলিপি গ্রহণের ক্ষেত্রে ড্রাইভিং লাইসেন্সের সংশ্লিষ্ট অংশ দাখিল  করিতে হইবে (Duplicate in case of damage, relevant part to be submitted)\n\n---\n\nবাংলাদেশ গেজেট, অতিরিক্ত, ডিসেম্বর ২৭, ২০২২ ত| মোটরযানের শ্রেোণি পরিবর্তন অথবা সংযোজন (Change or Addition of Vehicle Class) বিদ্যমান মোটরযানের শ্রেোণি (Existing Vehicle Class : মোটরসাইকেল হালকা মধ্যম ভারী বিশেষ ধরনের মোটরযান অন্যান্য (MotorcyclelLight/ Medium /HeavylSpecial purpose vehiclelOthers নূ৩ন মোটরযানের শ্রোণ ITew Vehicle Class :   মোটরসাইকেল হালকা মধ্যম ভারী বিশেষ ধরনের মোটরযান অন্যান্য (MotorcyclelLight/ Medium /HeavylSpecial purpose vehiclelOthers দক্ষতা যাচাই পরীক্ষায় উত্তীর্ণের তথ্য: তারিখ: রোল নং (Information of passing driving skill test: Date: RollITo: 9) / লাইসেন্সের ধরন পরিবর্তন (Change of License Type) অপেশাদার থেকে পেশাদার (NTon Professional to Professional): পেশাদার হইতে অপেশাদার Professional to LTon-Professional): [অপেশাদার হইতে পেশাদার এর ক্ষেত্রে ( Applicable forLTon Professional to Professional)] (গ) ডিসিটিবি এর পরীক্ষায় উত্তীর্ণের তথ্য: তারিখ:- রোল নং' (Information of passing in DCTB: Date: RollITo: ১০| ড্রাইভিং লাইসেন্স অন্তর্ভুক্তি (Driving License Endorsement : (ক) বিদ্যমান ইস্যুকারী লাইসেন্সিং কর্তৃপক্ষ (Current Issuing Authority): খ) অন্তর্ভুক্তির উদ্দেশ্য (Endorsement for): (গ) ",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_4e08eb4e988d38e4",
+        "document_id": "brta_4e08eb4e988d38e4",
+        "title": "সড়ক পরিবহণ বিধিমালা, ২০২২",
+        "section_title": "সড়ক পরিবহণ বিধিমালা, ২০২২",
+        "document_type": "document",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta/আইন, বিধি ও নীতিমালা/সড়ক পরিবহণ বিধিমালা, ২০২২.md",
+        "source_relative_path": "brta/আইন, বিধি ও নীতিমালা/সড়ক পরিবহণ বিধিমালা, ২০২২.md",
+        "snapshot_path": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/সড়ক পরিবহণ বিধিমালা, ২০২২.md",
+        "source_sha256": "2a08b085cecd864def8bf31ffcc5d1e8538a8fc2d6a064c49d6443aeacca26ee",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/সড়ক পরিবহণ বিধিমালা, ২০২২.pdf\"]",
+        "document_date": "unknown",
+        "date_verified": false,
+        "audit_flags": "no_web_address, nonstandard_metadata_layout, long_document_check_ocr",
+        "experimental": true,
+        "body_start": 245498,
+        "body_end": 246895,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": false
+      },
+      "score": 0.7165841460227966,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "brta_4e08eb4e988d38e4_v2_0018",
+      "content": "সড়ক পরিবহণ বিধিমালা, ২০২২\nসড়ক পরিবহণ বিধিমালা, ২০২২\n\nকর্তৃপক্ষের নিকট আবেদন করিতে হইবে ৫২) অপেশাদার ড্রাইভিং লাইসেন্স হইতে পেশাদার ড্রাইভিং লাইসেন্সে পরিবর্তন করিবার ক্ষেত্রে আবেদনকারীকে   দক্ষতা যাচাই কমিটি কর্তৃক গৃহীত তফসিল-২খখ) অংশে বর্ণিত পেশাদার চালকদের নির্ধারিত অতিরিক্ত বিষয়ে লিখিত পরীক্ষায় কৃতকার্য হইতে হইবে / (৩) ড্রাইভিং লাইসেন্স প্রদানকারী কর্তৃপক্ষ বিধি 9 এর উপ-বিধি (২) এ বর্ণিত   পদ্ধতি অনুসরণপূর্বক কৃতকার্য প্রার্থীর অপেশাদার ড্রাইভিং লাইসেন্সকে পেশাদার লাইসেন্সে পরিবর্তন করিবার ব্যবস্থা গ্রহণ করিবে] (8) পেশাদার ড্রাইভিং লাইসেন্স হইতে অপেশাদার ড্রাইভিং লাইসেন্স পরিবর্তন করিবার ক্ষেত্রে আবেদনকারীকে কোনো পরীক্ষায় অংশগ্রহণ করিতে হইবে না / ১৬/ ড্রাইভিং লাইসেনসের প্রতিলিপি ইস্যুকরণ| (১) ড্রাইভিং লাইসেন্স হারাইয়া গেলে বা নষ্ট হইলে  লাইসেন্সের প্রতিলিপি উত্তোলনের জন্য   লাইসেন্সধারী ক্ষেত্রমত, ফরম-৪(খ) অনুযায়ী বা ইলেকট্রনিক মাধ্যমে তফসিল-১ '9 বর্ণিত ফিসহ লাইসেন্সের বিবরণাদি উল্লেখপূর্বক যে লাইসেন্স প্রদানকারী কর্তৃপক্ষ কর্তৃক লাইসেন্স ইস্যু করা হইয়াছে অথবা উহা সর্বশেষ রেকর্ডভুক্ত করা হইয়াছে এলাকার লাইসেন্স প্রদানকারী কর্তৃপক্ষ বরাবর আবেদনপত্র দাখিল করিবেন ৫২) লাইসেন্স হারানোর ক্ষেত্রে তৎমর্মে সংশ্লিষ্ট থানায় জিডি এন্ট্ট্রি থাকিতে হইবে এবং উহার একটি অনুলিপি আবেদনপত্রের সহিত সংযুক্ত করিতে হইবেো (৩) আবেদনপত্র সঠিক   বিবেচিত হইলে লাইসেন্স   প্রদানকারী কর্তৃপক্ষ আবেদনকারীকে তাৎক্ষণিকভাবে একটি প্রাপ্তিস্বীকার রসিদ প্রদান করিবে এবং আবেদনপত্র গ্রহণের ৩০ (ত্রিশ) দিনের মধ্যে ড্রাইভিং লাইসেন্স প্রদান করিবে\n\n---",
+      "metadata": {
+        "domain": "brta",
+        "doc_id": "brta_4e08eb4e988d38e4",
+        "document_id": "brta_4e08eb4e988d38e4",
+        "title": "সড়ক পরিবহণ বিধিমালা, ২০২২",
+        "section_title": "সড়ক পরিবহণ বিধিমালা, ২০২২",
+        "document_type": "document",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/brta/আইন, বিধি ও নীতিমালা/সড়ক পরিবহণ বিধিমালা, ২০২২.md",
+        "source_relative_path": "brta/আইন, বিধি ও নীতিমালা/সড়ক পরিবহণ বিধিমালা, ২০২২.md",
+        "snapshot_path": "domains/brta/data/source_snapshots/brta/আইন, বিধি ও নীতিমালা/সড়ক পরিবহণ বিধিমালা, ২০২২.md",
+        "source_sha256": "2a08b085cecd864def8bf31ffcc5d1e8538a8fc2d6a064c49d6443aeacca26ee",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/brta_original_pdfs_araf/আইন, বিধি ও নীতিমালা/সড়ক পরিবহণ বিধিমালা, ২০২২.pdf\"]",
+        "document_date": "unknown",
+        "date_verified": false,
+        "audit_flags": "no_web_address, nonstandard_metadata_layout, long_document_check_ocr",
+        "experimental": true,
+        "body_start": 21456,
+        "body_end": 22842,
+        "source_url": "",
+        "chunking_version": "heading_faq_v2",
+        "faq_unit": false
+      },
+      "score": 0.6779301762580872,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    }
+  ],
+  "selection_trace": {
+    "version": "applicability_v1_family_order",
+    "query_actions": [
+      "replacement"
+    ],
+    "query_services": [
+      "licence"
+    ],
+    "decisions": [
+      {
+        "id": "brta_4e08eb4e988d38e4_v2_0023",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_cb965b3169c34e73_v2_0046",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_4e08eb4e988d38e4_v2_0025",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_cbe22ab64acf3d03_v4_0003",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_846a4041fe96a64e_v4_0007",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_cbe22ab64acf3d03_v4_0009",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_edcb265eccf9cd32_v2_0016",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_cbe22ab64acf3d03_v4_0004",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_cbe22ab64acf3d03_v4_0005",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_cbe22ab64acf3d03_v4_0006",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_cbe22ab64acf3d03_v4_0011",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "brta_91979c30a91124e0_v4_0011",
+        "decision": "excluded",
+        "reason": "historical_alternative_requires_explicit_scope"
+      },
+      {
+        "id": "brta_258cf38650a6332b_v4_0012",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_4e08eb4e988d38e4_v2_0200",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "brta_4e08eb4e988d38e4_v2_0018",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      }
+    ],
+    "expanded_ids": [],
+    "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+    "budget_order_ids": [
+      "brta_258cf38650a6332b_v4_0012",
+      "brta_4e08eb4e988d38e4_v2_0200",
+      "brta_4e08eb4e988d38e4_v2_0018"
+    ],
+    "selected_ids": [
+      "brta_258cf38650a6332b_v4_0012",
+      "brta_4e08eb4e988d38e4_v2_0200",
+      "brta_4e08eb4e988d38e4_v2_0018"
+    ],
+    "selected_chars": 3740
+  },
+  "seconds": 13.442,
+  "top5": {
+    "dense": [
+      "brta_cbe22ab64acf3d03_v4_0003",
+      "brta_4e08eb4e988d38e4_v2_0200",
+      "brta_4e08eb4e988d38e4_v2_0023",
+      "brta_cbe22ab64acf3d03_v4_0004",
+      "brta_846a4041fe96a64e_v4_0007"
+    ],
+    "bm25": [
+      "brta_91979c30a91124e0_v4_0011",
+      "brta_4ba3dd29ea3234a0_v4_0012",
+      "brta_cbe22ab64acf3d03_v4_0009",
+      "brta_91979c30a91124e0_v4_0012",
+      "brta_4b8c25d391e48121_v4_0003"
+    ],
+    "hybrid": [
+      "brta_cbe22ab64acf3d03_v4_0003",
+      "brta_846a4041fe96a64e_v4_0007",
+      "brta_cbe22ab64acf3d03_v4_0004",
+      "brta_cbe22ab64acf3d03_v4_0009",
+      "brta_cbe22ab64acf3d03_v4_0005"
+    ]
+  }
+}

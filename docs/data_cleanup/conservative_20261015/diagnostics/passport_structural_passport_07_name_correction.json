@@ -1,0 +1,376 @@
+{
+  "domain": "passport",
+  "variant": "structural",
+  "id": "passport_07_name_correction",
+  "query": "পাসপোর্টে নাম ভুল থাকলে কীভাবে ঠিক করব?",
+  "candidate_ids": [
+    "passport_23d845d3ab38ea43_v4_0021",
+    "passport_5eb6c21efe103a4f_v4_0032",
+    "passport_23d845d3ab38ea43_v4_0042",
+    "passport_ed7b3ebc56c0094f_v4_0004",
+    "passport_a4d61a4d583daa54_v4_0004",
+    "passport_a4d61a4d583daa54_v4_0010",
+    "passport_a4d61a4d583daa54_v4_0011",
+    "passport_3fcbc40c98aa80bc_v4_0004",
+    "passport_3fcbc40c98aa80bc_v4_0005",
+    "passport_a4d61a4d583daa54_v4_0017",
+    "passport_a4d61a4d583daa54_v4_0019",
+    "passport_23d845d3ab38ea43_v4_0023",
+    "passport_a4d61a4d583daa54_v4_0006",
+    "passport_23d845d3ab38ea43_v4_0019",
+    "passport_3fcbc40c98aa80bc_v4_0002"
+  ],
+  "selected_ids": [
+    "passport_23d845d3ab38ea43_v4_0042",
+    "passport_ed7b3ebc56c0094f_v4_0004",
+    "passport_23d845d3ab38ea43_v4_0023",
+    "passport_3fcbc40c98aa80bc_v4_0002",
+    "passport_23d845d3ab38ea43_v4_0021",
+    "passport_a4d61a4d583daa54_v4_0004"
+  ],
+  "selected_characters": 6317,
+  "selected_tokens": 1804,
+  "tokenizer": "BGE-M3; not generator tokens",
+  "selected_passages": [
+    {
+      "id": "passport_23d845d3ab38ea43_v4_0042",
+      "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.5 Printing Errors in New Passport / পাসপোর্টে প্রিন্টিং ত্রুটি সংশোধন\n\n### 6.5 Printing Errors in New Passport / পাসপোর্টে প্রিন্টিং ত্রুটি সংশোধন\n- **Category:** Status, Delivery & Corrections\n- **Topic:** Post-Issuance Printing Errors\n- **English Question:** After receiving a new passport, if I find any printing error in my passport, then how to get a corrected passport?\n- **Bengali Question (প্রশ্ন):** একটি নতুন পাসপোর্ট পাওয়ার পর, যদি আমি আমার পাসপোর্টে কোন প্রিন্টিং ত্রুটি পাই, সে ক্ষেত্রে কি ভাবে পাসপোর্ট সংশোধন করা যাবে?\n- **English Answer:** Report the error immediately to your designated Regional Passport Office (RPO) within **1 month** from the date of issue or collection.\n- **Bengali Answer (উত্তর):** পাসপোর্ট গ্রহণের ১ (এক) মাসের মধ্যে আপনার সংশ্লিষ্ট আঞ্চলিক পাসপোর্ট অফিসে (RPO) সরাসরি যোগাযোগ করে ত্রুটির বিষয়ে জানান।\n\n---\n\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_23d845d3ab38ea43",
+        "document_id": "passport_23d845d3ab38ea43",
+        "title": "Bangladesh_ePassport_FAQ",
+        "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 6. Status, Delivery & Corrections (স্ট্যাটাস, ডেলিভারি ও সংশোধন) > 6.5 Printing Errors in New Passport / পাসপোর্টে প্রিন্টিং ত্রুটি সংশোধন",
+        "document_type": "document",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+        "original_paths": "[]",
+        "document_date": "unknown",
+        "date_verified": false,
+        "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+        "experimental": true,
+        "body_start": 31413,
+        "body_end": 32193,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": true,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/passport/markdown/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "context_spans": "[]",
+        "cleaned_sha256": "129e56b5fb40b44e1433f3603fbbeb955dd9d034ddd34baf7c34ebbaaa44d80a"
+      },
+      "score": 0.17949709296226501,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "passport_ed7b3ebc56c0094f_v4_0004",
+      "content": "মেশিন রিডেবল পাসপোর্ট (এমআরপি)\nমেশিন রিডেবল পাসপোর্ট (এমআরপি) > প্রয়োজনীয় তথ্য ও নির্দেশাবলী\n\nমেশিন রিডেবল পাসপোর্ট বা এমআরপি হচ্ছে এমন একটি পাসপোর্ট যাতে আবেদনকারীর ব্যক্তিগত তথ্য জলছাপের মাধ্যমে ছবির নিচে লুক্কায়িত থাকে এবং একই সঙ্গে এতে থাকে একটি \"মেশিন রিডেবল জোন (MRZ)” যা পাসপোর্ট বহনকারীর ব্যক্তিগত তথ্য, বিবরণী ধারণ করে। MRZ লাইনে লুকায়িত তথ্য শুধুমাত্র নির্দিষ্ট মেশিনের মাধ্যমে পড়া যায় ফলে ভ্রমণ ডকুমেন্ট এর নিরাপত্তা বৃদ্ধি পায় এবং MRZ লাইন দ্রুততম সময়ে পড়া যায় ফলে ইমিগ্রেশনে প্রক্রিয়াকরণ সময় কম লাগে। এমআরপি কম্পিউটার এ মুদ্রিত।\n\n12. ছবি, স্বাক্ষর ও আঙ্গুলের ছাপ প্রদানের পূর্বে একটি প্রাক ডেলিভারী রশিদ প্রদান করা হয় যাতে পাসপোর্ট এ প্রদর্শিত সকল তথ্য দেওয়া থাকে। উক্ত রশিদে আপনার তথ্য সঠিক আছে কিনা যাচাই করে নিন এবং কোন তথ্য ভুল থাকলে সংশ্লিষ্ট অপারেটরকে জানিয়ে তাৎক্ষণিক সংশোধন করে নিতে পারবেন। উল্লেখ্য যে, পাসপোর্ট আবেদনকারীর ছবি, স্বাক্ষর ও আঙ্গুলের ছাপ প্রদানের পর মূল ডেলিভারী রশিদ প্রদান করা হয় এবং এরপর সংশোধনের আর কোন সুযোগ থাকে না। অতএব, কাউন্টার ত্যাগের পূর্বে আপনার তথ্য যাচাই করে ডেলিভারী রশিদ বুঝে নিন।\n13. www.passport.gov.bd এই ঠিকানায় প্রবেশ করে Application Status অপশন থেকে ডেলিভারী রশিদে প্রদত্ত আপনার Enrolment ID এবং Date of Birth প্রদান করে আবেদনের বর্তমান অবস্থা জেনে নিতে পারবেন।\n\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_ed7b3ebc56c0094f",
+        "document_id": "passport_ed7b3ebc56c0094f",
+        "title": "মেশিন রিডেবল পাসপোর্ট (এমআরপি)",
+        "section_title": "মেশিন রিডেবল পাসপোর্ট (এমআরপি) > প্রয়োজনীয় তথ্য ও নির্দেশাবলী",
+        "document_type": "সাধারণ তথ্য ও নির্দেশিকা",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/মেশিন রিডেবল পাসপোর্ট(এমআরপি).md",
+        "source_relative_path": "cleaned_md/মেশিন রিডেবল পাসপোর্ট(এমআরপি).md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/মেশিন রিডেবল পাসপোর্ট(এমআরপি).md",
+        "source_sha256": "a10a5262eb9bfd3fd6a7a6363e32622101ef48a0eee755f04c5f25fea5df8026",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/মেশিন রিডেবল পাসপোর্ট(এমআরপি).pdf\"]",
+        "document_date": "N/A",
+        "date_verified": false,
+        "audit_flags": "",
+        "experimental": true,
+        "body_start": 3277,
+        "body_end": 3960,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/passport/markdown/cleaned_md/মেশিন রিডেবল পাসপোর্ট(এমআরপি).md",
+        "context_spans": "[{\"start\": 32, \"end\": 493}]",
+        "cleaned_sha256": "b7cbed9929029a59c0d8064822e74516a317d588c536d36fdb50ad8d6b3e67e3"
+      },
+      "score": 0.12200026959180832,
+      "retrievers": [
+        "bm25",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "passport_23d845d3ab38ea43_v4_0023",
+      "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 4. Application & Processing (আবেদন ও প্রক্রিয়াকরণ) > 4.5 Passport Information Correction after NID Correction / NID সংশোধনের পর পাসপোর্ট সংশোধন\n\n### 4.5 Passport Information Correction after NID Correction / NID সংশোধনের পর পাসপোর্ট সংশোধন\n- **Category:** Application & Processing\n- **Topic:** NID Alignment and Re-issue\n- **English Question:** How can I change my information in the passport after changing information of my NID?\n- **Bengali Question (প্রশ্ন):** আমি আমার NID তে তথ্য সংশোধন করার পর কি ভাবে আমি পাসপোর্টে আমার তথ্য সংশোধন করতে পারি?\n- **English Answer:** You have to apply for a new ePassport as per the updated NID.\n- **Bengali Answer (উত্তর):** নতুন সংশোধনকৃত NID অনুযায়ী আপনাকে একটি নতুন ই-পাসপোর্টের জন্য পুনরায় আবেদন করতে হবে।\n\n---\n\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_23d845d3ab38ea43",
+        "document_id": "passport_23d845d3ab38ea43",
+        "title": "Bangladesh_ePassport_FAQ",
+        "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 4. Application & Processing (আবেদন ও প্রক্রিয়াকরণ) > 4.5 Passport Information Correction after NID Correction / NID সংশোধনের পর পাসপোর্ট সংশোধন",
+        "document_type": "document",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+        "original_paths": "[]",
+        "document_date": "unknown",
+        "date_verified": false,
+        "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+        "experimental": true,
+        "body_start": 16164,
+        "body_end": 16776,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": true,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/passport/markdown/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "context_spans": "[]",
+        "cleaned_sha256": "129e56b5fb40b44e1433f3603fbbeb955dd9d034ddd34baf7c34ebbaaa44d80a"
+      },
+      "score": 0.015286064706742764,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "passport_3fcbc40c98aa80bc_v4_0002",
+      "content": "পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর নিয়মাবলী ও আবেদন ফরম\nপাসপোর্ট (এমআরপি) রি-ইস্যু/তথ্য পরিবর্তন/সংশোধন এর নিয়মাবলী ও আবেদন ফরম > সাধারণ নিয়মাবলী ও প্রয়োজনীয় শর্তাবলী\n\n## সাধারণ নিয়মাবলী ও প্রয়োজনীয় শর্তাবলী\n\nপাসপোর্ট নবায়ন এর জন্য এই ফরমটি পূরণ করে বর্তমান পাসপোর্ট এর ফটোকপি ও ব্যাংকে টাকা জমার রশিদ সংযুক্ত করতে হবে এবং মূল পাসপোর্টটি অবশ্যই সঙ্গে নিয়ে আসতে হবে। \n\nতথ্য পরিবর্তন/সংশোধনের ক্ষেত্রে সংশ্লিষ্ট প্রমানপত্র সংযুক্ত করতে হবে।\n\n* **ক) সরকারি কর্মকর্তা ও স্বায়ত্ত্বশাসিত প্রতিষ্ঠানের ক্ষেত্রে বিশেষ জরুরি সুবিধা:** \n  সরকারি, আধাসরকারী, স্বায়ত্তশাসিত ও রাষ্ট্রায়ত্ত সংস্থার স্থায়ী কর্মকর্তা/ কর্মচারী ও সরকারি চাকুরীজীবির স্বামী/স্ত্রী, এবং সরকারি চাকুরীজীবির নির্ভরশীল ১৫ (পনের) বৎসরের কম বয়সী সন্তান সাধারণ ফি জমা করে জরুরি সুবিধা পাবেন। এক্ষেত্রে নিজ নিজ প্রতিষ্ঠান থেকে অনাপত্তি সনদ (NOC) ওয়েব সাইটে আপলোড পূর্বক দাখিল করতে হবে।\n\n* **খ) অবসরপ্রাপ্ত সরকারি চাকুরীজীবীদের সুবিধা:** \n  অবসরপ্রাপ্ত সরকারি চাকুরীজীবি ও তাদের স্বামী/স্ত্রী সাধারণ ফি জমা করে জরুরি সুবিধা পাবেন। এক্ষেত্রে অবসরের সনদ জমা দিতে হবে।\n\n---\n\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_3fcbc40c98aa80bc",
+        "document_id": "passport_3fcbc40c98aa80bc",
+        "title": "পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর নিয়মাবলী ও আবেদন ফরম",
+        "section_title": "পাসপোর্ট (এমআরপি) রি-ইস্যু/তথ্য পরিবর্তন/সংশোধন এর নিয়মাবলী ও আবেদন ফরম > সাধারণ নিয়মাবলী ও প্রয়োজনীয় শর্তাবলী",
+        "document_type": "সাধারণ তথ্য / নির্দেশিকা",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর নিয়মাবলী.md",
+        "source_relative_path": "cleaned_md/পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর নিয়মাবলী.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর নিয়মাবলী.md",
+        "source_sha256": "c78d5d5c11702f2a935412c5bd0595c11e7f015a480d70e6f32f03c9fecc6811",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর নিয়মাবলী.pdf\"]",
+        "document_date": "2026-09-16",
+        "date_verified": false,
+        "audit_flags": "no_web_address",
+        "experimental": true,
+        "body_start": 76,
+        "body_end": 948,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/passport/markdown/cleaned_md/পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর নিয়মাবলী.md",
+        "context_spans": "[]",
+        "cleaned_sha256": "132c1ba864facce1255f1eb4ddf34d6f67f8bbde339e099c34e64c3617f3cfc5"
+      },
+      "score": 0.0024728993885219097,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "passport_23d845d3ab38ea43_v4_0021",
+      "content": "Bangladesh_ePassport_FAQ\nBangladesh ePassport Frequently Asked Questions (FAQ) > 4. Application & Processing (আবেদন ও প্রক্রিয়াকরণ) > 4.3 Mistakes in Submitted Application / জমা দেওয়া আবেদনে ভুল সংশোধন\n\n### 4.3 Mistakes in Submitted Application / জমা দেওয়া আবেদনে ভুল সংশোধন\n- **Category:** Application & Processing\n- **Topic:** Error Correction Post-Submission\n- **English Question:** I made mistakes in my application data and my application is already submitted - what can I do?\n- **Bengali Question (প্রশ্ন):** আমি আমার অ্যাপ্লিকেশন ডেটাতে ভুল করেছি এবং আমার আবেদন ইতিমধ্যে জমা দেওয়া হয়েছে - আমি কী করতে পারি?\n- **English Answer:** Please visit your passport office with the printed 'Application Summary'. Your application will be retrieved there, and incorrect data can be corrected by the enrolment officer.  \n  *IMPORTANT:* Please provide required documents like NID or BRC, previous passport (if available), or other official supporting documents to prove the correct data.\n- **Bengali Answer (উত্তর):** প্রিন্টকৃত 'Application Summary' (আবেদন সারাংশ) নিয়ে আপনার নির্ধারিত পাসপোর্ট অফিসে যোগাযোগ করুন। এনরোলমেন্ট অফিসার আপনার আবেদনটি দেখে ভুল তথ্য সংশোধন করে দেবেন।  \n  *গুরুত্বপূর্ণ:* তথ্য প্রমাণের জন্য NID, BRC, পূর্বের পাসপোর্ট বা অন্যান্য প্রয়োজনীয় সরকারি দলিলাদি সাথে আনুন।\n\n---\n\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_23d845d3ab38ea43",
+        "document_id": "passport_23d845d3ab38ea43",
+        "title": "Bangladesh_ePassport_FAQ",
+        "section_title": "Bangladesh ePassport Frequently Asked Questions (FAQ) > 4. Application & Processing (আবেদন ও প্রক্রিয়াকরণ) > 4.3 Mistakes in Submitted Application / জমা দেওয়া আবেদনে ভুল সংশোধন",
+        "document_type": "document",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "source_relative_path": "cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "source_sha256": "2008b90be14958bdcfd22be7c8f8dc58ea42b5eb1d8fd34011f8d61e2f1aec26",
+        "original_paths": "[]",
+        "document_date": "unknown",
+        "date_verified": false,
+        "audit_flags": "original_match_unresolved, nonstandard_metadata_layout",
+        "experimental": true,
+        "body_start": 13914,
+        "body_end": 15011,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": true,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/passport/markdown/cleaned_md/Bangladesh_ePassport_FAQ.md",
+        "context_spans": "[]",
+        "cleaned_sha256": "129e56b5fb40b44e1433f3603fbbeb955dd9d034ddd34baf7c34ebbaaa44d80a"
+      },
+      "score": 0.38397112488746643,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "passport_a4d61a4d583daa54_v4_0004",
+      "content": "রি-ইস্যু/তথ্য পরিবর্তন/সংশোধন আবেদন ফরম (Re-Issue/Information Alteration/Correction Application Form)\nগণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ১. ফরমের উদ্দেশ্য ও সাধারণ নির্দেশনা (Purpose & General Instructions)\n\n## ১. ফরমের উদ্দেশ্য ও সাধারণ নির্দেশনা (Purpose & General Instructions)\n\n* **ফরম ব্যবহারের ক্ষেত্র (Purpose of Form):** \n  * বাংলা: এ ফরমটি মেয়াদ উত্তীর্ণ, পাসপোর্টে প্রদর্শিত তথ্য পরিবর্তন/মুদ্রণজনিত ভুল সংশোধন সংক্রান্তে ব্যবহৃত হবে।\n  * English: This form will be used only to change shown information/rectify printing errors of the valid passport.\n\n* **পূরণ সংক্রান্ত নির্দেশনা (Filling Instructions):**\n  * বাংলা: ফরমটি ইংরেজিতে (CAPITAL LETTERS) পূরণ করুন এবং অনুগ্রহপূর্বক আপনার আবেদনের সমর্থনে উপযুক্ত প্রমাণাদি সংযুক্ত করুন।\n  * English: Please fill up the form in ENGLISH (CAPITAL LETTERS) and attach relevant papers in favour of your application.\n\n---\n\n",
+      "metadata": {
+        "domain": "passport",
+        "doc_id": "passport_a4d61a4d583daa54",
+        "document_id": "passport_a4d61a4d583daa54",
+        "title": "রি-ইস্যু/তথ্য পরিবর্তন/সংশোধন আবেদন ফরম (Re-Issue/Information Alteration/Correction Application Form)",
+        "section_title": "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার > ১. ফরমের উদ্দেশ্য ও সাধারণ নির্দেশনা (Purpose & General Instructions)",
+        "document_type": "আবেদন ফরম / নির্দেশিকা",
+        "source_path": "/Users/shihab/01 Thesis/p3 final/data/new data/cleaned_md/পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর আবেদন ফরম.md",
+        "source_relative_path": "cleaned_md/পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর আবেদন ফরম.md",
+        "snapshot_path": "domains/passport/data/source_snapshots/cleaned_md/পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর আবেদন ফরম.md",
+        "source_sha256": "8a3d17fc0dcaa8044c2c1da55f1247561570050576aee18e1783e028b8fdfb34",
+        "original_paths": "[\"/Users/shihab/01 Thesis/p3 final/data/new data/passport_original_pdfs_araf/পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর আবেদন ফরম.pdf\"]",
+        "document_date": "2026-09-16",
+        "date_verified": false,
+        "audit_flags": "no_web_address",
+        "experimental": true,
+        "body_start": 179,
+        "body_end": 845,
+        "source_url": "",
+        "chunking_version": "service_cleanup_v4",
+        "faq_unit": false,
+        "cleaned_path": "docs/data_cleanup/structural_20261015/passport/markdown/cleaned_md/পাসপোর্ট (এমআরপি) রি-ইস্যু বা তথ্য পরিবর্তন বা সংশোধন এর আবেদন ফরম.md",
+        "context_spans": "[]",
+        "cleaned_sha256": "ba4be3728abb5a73886f488e522aa74cbb81ffe6ad30b3317e94a9941302572f"
+      },
+      "score": 0.09320032596588135,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    }
+  ],
+  "selection_trace": {
+    "version": "applicability_v1_family_order",
+    "query_actions": [
+      "correction"
+    ],
+    "query_services": [
+      "passport"
+    ],
+    "decisions": [
+      {
+        "id": "passport_5eb6c21efe103a4f_v4_0032",
+        "decision": "excluded",
+        "reason": "different_service"
+      },
+      {
+        "id": "passport_a4d61a4d583daa54_v4_0006",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "passport_a4d61a4d583daa54_v4_0017",
+        "decision": "excluded",
+        "reason": "unclassified_action_with_direct_alternative"
+      },
+      {
+        "id": "passport_a4d61a4d583daa54_v4_0019",
+        "decision": "excluded",
+        "reason": "unclassified_action_with_direct_alternative"
+      },
+      {
+        "id": "passport_23d845d3ab38ea43_v4_0042",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_ed7b3ebc56c0094f_v4_0004",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_23d845d3ab38ea43_v4_0023",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_3fcbc40c98aa80bc_v4_0002",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_23d845d3ab38ea43_v4_0021",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_a4d61a4d583daa54_v4_0004",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "passport_a4d61a4d583daa54_v4_0010",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "passport_a4d61a4d583daa54_v4_0011",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "passport_3fcbc40c98aa80bc_v4_0004",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "passport_3fcbc40c98aa80bc_v4_0005",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      },
+      {
+        "id": "passport_23d845d3ab38ea43_v4_0019",
+        "decision": "excluded",
+        "reason": "whole_chunk_budget"
+      }
+    ],
+    "expanded_ids": [],
+    "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+    "budget_order_ids": [
+      "passport_23d845d3ab38ea43_v4_0042",
+      "passport_ed7b3ebc56c0094f_v4_0004",
+      "passport_23d845d3ab38ea43_v4_0023",
+      "passport_3fcbc40c98aa80bc_v4_0002",
+      "passport_23d845d3ab38ea43_v4_0021",
+      "passport_a4d61a4d583daa54_v4_0004",
+      "passport_a4d61a4d583daa54_v4_0010",
+      "passport_a4d61a4d583daa54_v4_0011",
+      "passport_3fcbc40c98aa80bc_v4_0004",
+      "passport_3fcbc40c98aa80bc_v4_0005",
+      "passport_23d845d3ab38ea43_v4_0019"
+    ],
+    "selected_ids": [
+      "passport_23d845d3ab38ea43_v4_0042",
+      "passport_ed7b3ebc56c0094f_v4_0004",
+      "passport_23d845d3ab38ea43_v4_0023",
+      "passport_3fcbc40c98aa80bc_v4_0002",
+      "passport_23d845d3ab38ea43_v4_0021",
+      "passport_a4d61a4d583daa54_v4_0004"
+    ],
+    "selected_chars": 6317
+  },
+  "seconds": 9.811,
+  "top5": {
+    "dense": [
+      "passport_5eb6c21efe103a4f_v4_0032",
+      "passport_23d845d3ab38ea43_v4_0021",
+      "passport_23d845d3ab38ea43_v4_0042",
+      "passport_3fcbc40c98aa80bc_v4_0005",
+      "passport_3fcbc40c98aa80bc_v4_0004"
+    ],
+    "bm25": [
+      "passport_23d845d3ab38ea43_v4_0021",
+      "passport_a4d61a4d583daa54_v4_0004",
+      "passport_ed7b3ebc56c0094f_v4_0004",
+      "passport_23d845d3ab38ea43_v4_0019",
+      "passport_a4d61a4d583daa54_v4_0010"
+    ],
+    "hybrid": [
+      "passport_23d845d3ab38ea43_v4_0021",
+      "passport_23d845d3ab38ea43_v4_0019",
+      "passport_a4d61a4d583daa54_v4_0004",
+      "passport_a4d61a4d583daa54_v4_0010",
+      "passport_a4d61a4d583daa54_v4_0011"
+    ]
+  }
+}

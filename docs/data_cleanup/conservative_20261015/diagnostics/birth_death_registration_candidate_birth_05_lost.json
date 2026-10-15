@@ -1,0 +1,381 @@
+{
+  "domain": "birth_death_registration",
+  "variant": "candidate",
+  "id": "birth_05_lost",
+  "query": "জন্মনিবন্ধন হারিয়ে গেলে নতুন কপি কীভাবে পাব?",
+  "candidate_ids": [
+    "birth_and_death_registration_rules_2018_বিধি_১৩_01",
+    "birth_and_death_registration_rules_2018_বিধি_১০_01",
+    "birth_and_death_registration_rules_2018_বিধি_৯_04",
+    "bdris_faq_01_q14",
+    "review_v3_birth_and_death_registration_act_2004_ধারা_১৫_01",
+    "bdris_faq_01_q12",
+    "birth_and_death_registration_rules_2018_বিধি_৯_02",
+    "birth_and_death_registration_rules_2018_বিধি_১৫_01",
+    "review_v3_application_for_birth_information_correction_cleaned_002_01",
+    "bdris_faq_02_q10",
+    "bdris_faq_01_q15",
+    "birth_and_death_registration_rules_2018_বিধি_১৫_02",
+    "bdris_faq_02_q08",
+    "bdris_faq_01_q01",
+    "bdris_faq_01_q10"
+  ],
+  "selected_ids": [
+    "bdris_faq_01_q14",
+    "bdris_faq_01_q12",
+    "bdris_faq_02_q10",
+    "bdris_faq_01_q15",
+    "birth_and_death_registration_rules_2018_বিধি_১৩_01"
+  ],
+  "selected_characters": 7395,
+  "selected_tokens": 2197,
+  "tokenizer": "BGE-M3; not generator tokens",
+  "selected_passages": [
+    {
+      "id": "bdris_faq_01_q14",
+      "content": "Service: birth and death registration\nDocument type: faq\nCategory: duplicate_registration\nTitle: জন্ম ও মৃত্যু নিবন্ধন বিষয়ক প্রায়শই জিজ্ঞাসিত প্রশ্ন\nTitle EN: FAQs on Birth and Death Registration\nQuestion: অনেক সময় জন্ম নিবন্ধনের আবেদন করলে আরও এক বা একাধিক ব্যক্তির সঙ্গে ‘পসিবল ডুপ্লিকেট’ দেখায়। এটি একই নিবন্ধন অফিস, উপজেলা বা জেলার আওতাধীন এলাকার মধ্যে যেমন হয়, তেমনি জেলার সীমানা ছাড়িয়ে অন্য জেলা, বিভাগ এমন কি বিদেশ থেকেও এমনটি দেখায়। আমরা কীভাবে বিষয়টির সমাধান করতে পারি?\nAnswer: ‘পসিবল ডুপ্লিকেট’ দেখানোর কারণঃ\nজন্ম নিবন্ধনের আবেদন পত্র দাখিল করার পর কোনো আবেদনাধীন বাক্তির নাম, পিতার নাম এবং মাতার নাম জন্ম নিবন্ধন ডেটাবেসে সংরক্ষিত কোন নিবন্ধনাধীন ব্যক্তির সঙ্গে হুবহু মিলে গেলে সফটওয়্যার সয়ংক্রিয়ভাবে “সম্ভাব্য সদৃশ” বা ‘পসিবল ডুপ্লিকেট’ স্ট্যাটাস দেখায়।\nনিম্নে বর্ণিত ৫টি নির্ণায়ক বা ‘প্যারামিটার’ মিলে গেলে ‘পসিবল ডুপ্লিকেট’ ১০০% ‘ডুপ্লিকেট’ হিসাবে প্রতীয়মান হয়ঃ\nক. আবেদনাধীন বাক্তির নাম; খ. পিতার নাম; গ. মাতার নাম; ঘ. নিবন্ধন কার্যালয়ের নাম; এবং ঙ. জন্ম তারিখ।\nউল্লেখ্য যে ‘পসিবল ডুপ্লিকেট’ হিসাবে চিহ্নিত ব্যক্তিগণের জন্ম তারিখের ব্যবধান ৮ থেকে ১০ বছর বা তার বেশি হলে বা স্থায়ী ঠিকানা না মিললে সেই ক্ষেত্রে ‘ডুপ্লিকেট’ হবার সম্ভাবনা সাধারণত ০% হয়ে যায়।\n‘পসিবল ডুপ্লিকেট’টি একই জেলায় হলে অথরাইজড ইউজার বা ক্ষেত্র বিশেষে উপজেলা নির্বাহী অফিসার বা উপপরিচালক (স্থানীয় সরকার) প্রয়োজনীয় অনু্সন্ধান বা তদন্ত কিংবা সংশ্লিষ্ট নিবন্ধন অফিসের সঙ্গে যোগাযোগ করে বিষয়টির নিষ্পত্তি করবেন।\n‘পসিবল ডুপ্লিকেট’টি একই জেলায় না হলে প্রথমে প্রশাসনিকভাবে ভিন্ন জেলার সাথে যোগাযোগ করে অনু্সন্ধান বা তদন্ত করতে হবে। এতে ডুপ্লিকেট হওয়ার অনুকুলে কোনো তথ্য পাওয়া না গেলে আবেদনকারীকে ভালোভাবে জিজ্ঞাসাবাদ করে তার কাছে থেকে অন্যত্র তার জন্ম নিবন্ধন করা হয়নি মর্মে লিখিত নিয়ে আবেদনটি মঞ্জুর করা যেতে পারে। এ ক্ষেত্রে আবেদনের সঙ্গে সংশ্লিষ্ট সকল ডকুমেন্ট সংরক্ষণ করতে হবে।\nএখানে উল্লেখ্য যে, আবেদনপত্রটি বাতিল বা মঞ্জুর যা-ই করা হোক না কেন, এর লগ (log) স্থায়ীভাবে সংরক্ষিত থাকবে।\nLegal references: \nKeywords BN: পসিবল ডুপ্লিকেট, সদৃশ নিবন্ধন, তদন্ত, ডেটাবেস মিলান, অথরাইজড ইউজার\nKeywords EN: possible duplicate, duplicate registration, investigation, database match, authorized user",
+      "metadata": {
+        "doc_id": "bdris_faq_01",
+        "title": "জন্ম ও মৃত্যু নিবন্ধন বিষয়ক প্রায়শই জিজ্ঞাসিত প্রশ্ন",
+        "title_en": "FAQs on Birth and Death Registration",
+        "source_url": "https://orgbdr.portal.gov.bd/pages/static-pages/6922e065933eb65569e26d6e",
+        "issuing_authority": "রেজিস্ট্রার জেনারেলের কার্যালয়, জন্ম ও মৃত্যু নিবন্ধন",
+        "issuing_authority_en": "Office of the Registrar General, Birth and Death Registration",
+        "department": "স্থানীয় সরকার বিভাগ",
+        "department_en": "Local Government Division",
+        "system": "BDRIS",
+        "last_updated": "2026-04-04",
+        "language": "bn",
+        "doc_type": "faq",
+        "domain": "civil_registration",
+        "country": "BD",
+        "total_faqs": 16,
+        "source_file": "faqs_on_birth_and_death_registration.html",
+        "source_review_status": "source_text_reconciled_independent_review_pending",
+        "current_applicability_verified": false,
+        "last_updated_basis": "inherited_prepared_metadata_not_verified_source_date",
+        "source_path": "faqs_birth_death_registration_01.json",
+        "document_type": "faq",
+        "category": "duplicate_registration",
+        "faq_number": 14,
+        "service": "birth_death_registration",
+        "service_scope": "birth",
+        "search_aliases": "apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, cancel duplicate birth certificate, cancel duplicate death certificate, certificate, citizen question, civil registration, common question, date of birth correction, duplicate certificate cancellation, FAQ, father mother information, online birth registration, parent information, parents registration, question answer, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, একাধিক জন্ম সনদ বাতিল, একাধিক মৃত্যু সনদ বাতিল, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম তারিখ সংশোধন, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, ডুপ্লিকেট জন্ম সনদ বাতিল, প্রশ্ন উত্তর, সাধারণ জিজ্ঞাসা",
+        "candidate_source": "json/faqs_birth_death_registration_01.json",
+        "candidate_source_sha256": "2c664e9eb321447472e9163ba1010f5bd6dd1efeca65f7191b90d4255afeabef",
+        "original_sha256": "43b419f26cd8305551415eeda9677c5701309ae8baacd4581788d0acd59d92e1",
+        "chunking_version": "2026-10-14-chapter-boundaries",
+        "content_token_count": 635,
+        "retrieval_token_count": 809,
+        "embedding_model_max_tokens": 8192,
+        "cleanup_revision": "conservative_20261015"
+      },
+      "score": 0.11452932357788086,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "bdris_faq_01_q12",
+      "content": "Service: birth and death registration\nDocument type: faq\nCategory: overseas_registration\nTitle: জন্ম ও মৃত্যু নিবন্ধন বিষয়ক প্রায়শই জিজ্ঞাসিত প্রশ্ন\nTitle EN: FAQs on Birth and Death Registration\nQuestion: বিদেশে জন্ম নিবন্ধন করে দেশে ফেরৎ আসা কোন প্রবাসী জন্ম নিবন্ধনের তথ্য সংশোধন অথবা সনদ পুনঃমুদ্রণের আবদেন করলে করণীয় কী?\nAnswer: যে নিবন্ধন অফিসে জন্ম/মৃত্যু নিবন্ধন করা হয়, কোন সংশোধন বা সনদ পুনঃমুদ্রণের প্রয়োজন হলে সে অফিস থেকেই তা করতে হবে। আইনত অন্য অফিস থেকে তা করার সুযোগ নাই। তবে স্থানীয় নিবন্ধন অফিসের সহায়তা নিয়ে অথবা নাগরিক নিজে সরাসরি অনলাইনে মূল নিবন্ধন অফিস বরাবর উপযুক্ত দলিলাদিসহ সংশোধন বা পুনঃমুদ্রণের আবেদন করতে পারেন। সে ক্ষেত্রে আবেদনের অনুলিপি রেজিস্ট্রার জেনারেলের কার্যালয়ে (arg1bdr@gmail.com) প্রেরণ করা হলে প্রয়োজনে পররাষ্ট্র মন্ত্রণালয়ের সঙ্গে যোগাযোগ করে তা নিস্পত্তির ব্যবস্থা করা হবে।\nভবিষ্যতে জন্ম নিবন্ধন সনদের কোন করণিক ভুল সংশোধন অথবা ইংরেজি বা বাংলায় প্রতিলিপির প্রয়োজন হলে তা যে কোনো নিবন্ধন অফিস থেকে যাতে প্রদান করা যায় সে বিষয়ে বাবস্থা গ্রহণ করা হবে।\nLegal references: \nKeywords BN: প্রবাসী নিবন্ধন, বিদেশে নিবন্ধন, সংশোধন, পুনঃমুদ্রণ, মূল অফিস, পররাষ্ট্র মন্ত্রণালয়\nKeywords EN: expatriate registration, overseas registration, correction, reprint, original office, foreign ministry",
+      "metadata": {
+        "doc_id": "bdris_faq_01",
+        "title": "জন্ম ও মৃত্যু নিবন্ধন বিষয়ক প্রায়শই জিজ্ঞাসিত প্রশ্ন",
+        "title_en": "FAQs on Birth and Death Registration",
+        "source_url": "https://orgbdr.portal.gov.bd/pages/static-pages/6922e065933eb65569e26d6e",
+        "issuing_authority": "রেজিস্ট্রার জেনারেলের কার্যালয়, জন্ম ও মৃত্যু নিবন্ধন",
+        "issuing_authority_en": "Office of the Registrar General, Birth and Death Registration",
+        "department": "স্থানীয় সরকার বিভাগ",
+        "department_en": "Local Government Division",
+        "system": "BDRIS",
+        "last_updated": "2026-04-04",
+        "language": "bn",
+        "doc_type": "faq",
+        "domain": "civil_registration",
+        "country": "BD",
+        "total_faqs": 16,
+        "source_file": "faqs_on_birth_and_death_registration.html",
+        "source_review_status": "source_text_reconciled_independent_review_pending",
+        "current_applicability_verified": false,
+        "last_updated_basis": "inherited_prepared_metadata_not_verified_source_date",
+        "source_path": "faqs_birth_death_registration_01.json",
+        "document_type": "faq",
+        "category": "overseas_registration",
+        "faq_number": 12,
+        "service": "birth_death_registration",
+        "service_scope": "birth_death",
+        "search_aliases": "amend registration information, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate correction, birth certificate registration, birth registration, birth registration certificate, certificate, certificate correction, citizen question, civil registration, common question, death certificate, death certificate correction, death certificate registration, death registration, death registration certificate, FAQ, fix certificate information, local government office, name correction, online birth registration, online death registration, question answer, registrar office, registration office, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম নিবন্ধন সংশোধন, জন্ম সনদ, জন্ম সনদ আবেদন, প্রশ্ন উত্তর, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু নিবন্ধন সংশোধন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন, সংশোধন আবেদন, সাধারণ জিজ্ঞাসা",
+        "candidate_source": "json/faqs_birth_death_registration_01.json",
+        "candidate_source_sha256": "2c664e9eb321447472e9163ba1010f5bd6dd1efeca65f7191b90d4255afeabef",
+        "original_sha256": "43b419f26cd8305551415eeda9677c5701309ae8baacd4581788d0acd59d92e1",
+        "chunking_version": "2026-10-14-chapter-boundaries",
+        "content_token_count": 337,
+        "retrieval_token_count": 547,
+        "embedding_model_max_tokens": 8192,
+        "cleanup_revision": "conservative_20261015"
+      },
+      "score": 0.06307334899902343,
+      "retrievers": [
+        "dense",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "bdris_faq_02_q10",
+      "content": "Service: birth and death registration\nDocument type: faq\nCategory: duplicate_registration\nTitle: জন্ম ও মৃত্যু নিবন্ধন সংক্রান্ত সচরাচর জিজ্ঞাসিত প্রশ্ন ও তার উত্তর\nTitle EN: Frequently Asked Questions on Birth and Death Registration\nQuestion: অনেক সময় জন্ম নিবন্ধনের আবেদন করলে আরও এক বা একাধিক ব্যক্তির সঙ্গে ‘পসিবল ডুপ্লিকেট’ দেখায়। এটি একই নিবন্ধন অফিস, উপজেলা বা জেলার আওতাধীন এলাকার মধ্যে যেমন হয়, তেমনি জেলার সীমানা ছাড়িয়ে অন্য জেলা, বিভাগ এমন কি বিদেশ থেকেও এমনটি দেখায়। আমরা কীভাবে বিষয়টির সমাধান করতে পারি?\nAnswer: উত্তর : ‘পসিবল ডুপ্লিকেট’ দেখানোর কারণঃ জন্ম নিবন্ধনের আবেদন পত্র দাখিল করার পর কোনো আবেদনাধীন বাক্তির নাম, পিতার নাম এবং মাতার নাম জন্ম নিবন্ধন ডেটাবেসে সংরক্ষিত কোন নিবন্ধনাধীন ব্যক্তির সঙ্গে হুবহু মিলে গেলে সফটওয়্যার সয়ংক্রিয়ভাবে “সম্ভাব্য সদৃশ” বা ‘পসিবল ডুপ্লিকেট’ স্ট্যাটাস দেখায়। সমাধানের জন্য প্রয়োজনীয় কাগজপত্র সহ আবেদন পত্রটি নিয়ে উপজেলা নির্বাহী অফিসে শুনানীতে জমা দিতে হবে।\nজন্মের ৪৫ দিনের মধ্যে আপনার সন্তানের জন্ম নিবন্ধন করুন।\nমৃত্যুর ৪৫ দিনের মধ্যে মৃত্যু নিবন্ধন করুন।\nLegal references: \nKeywords BN: পসিবল ডুপ্লিকেট, সদৃশ নিবন্ধন, উপজেলা নির্বাহী অফিস, শুনানী\nKeywords EN: possible duplicate, duplicate registration, upazila nirbahi office, hearing",
+      "metadata": {
+        "doc_id": "bdris_faq_02",
+        "title": "জন্ম ও মৃত্যু নিবন্ধন সংক্রান্ত সচরাচর জিজ্ঞাসিত প্রশ্ন ও তার উত্তর",
+        "title_en": "Frequently Asked Questions on Birth and Death Registration",
+        "source_url": "https://goradubaup.netrokona.gov.bd/pages/static-pages/69708eb0a31054345f15bdab",
+        "issuing_authority": "গড়াডোবা ইউনিয়ন পরিষদ",
+        "issuing_authority_en": "Goraduba Union Parishad",
+        "district": "নেত্রকোনা",
+        "district_en": "Netrokona",
+        "last_updated": "2024-12-25",
+        "language": "bn",
+        "doc_type": "faq",
+        "domain": "civil_registration",
+        "country": "BD",
+        "total_faqs": 10,
+        "source_file": "faqs_on_birth_and_death_registration_02.html",
+        "source_review_status": "source_text_reconciled_independent_review_pending",
+        "current_applicability_verified": false,
+        "last_updated_basis": "inherited_prepared_metadata_not_verified_source_date",
+        "source_path": "faqs_birth_death_registration_02.json",
+        "document_type": "faq",
+        "category": "duplicate_registration",
+        "faq_number": 10,
+        "service": "birth_death_registration",
+        "service_scope": "birth_death",
+        "search_aliases": "apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, cancel duplicate birth certificate, cancel duplicate death certificate, certificate, citizen question, civil registration, common question, death certificate, death certificate registration, death registration, death registration certificate, duplicate certificate cancellation, FAQ, father mother information, local government office, online birth registration, online death registration, parent information, parents registration, question answer, registrar office, registration office, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, একাধিক জন্ম সনদ বাতিল, একাধিক মৃত্যু সনদ বাতিল, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, ডুপ্লিকেট জন্ম সনদ বাতিল, প্রশ্ন উত্তর, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন, সাধারণ জিজ্ঞাসা",
+        "candidate_source": "json/faqs_birth_death_registration_02.json",
+        "candidate_source_sha256": "7c6a57333b9c35e73a0f90d9af542d9579909dc42ab6e21163838dfdae36aefc",
+        "original_sha256": "a5153c8a559cd1de2e291093962477bf2b4f891d987bb051da397eb64de52d93",
+        "chunking_version": "2026-10-14-chapter-boundaries",
+        "content_token_count": 337,
+        "retrieval_token_count": 558,
+        "embedding_model_max_tokens": 8192,
+        "cleanup_revision": "conservative_20261015"
+      },
+      "score": 0.035706010460853574,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "bdris_faq_01_q15",
+      "content": "Service: birth and death registration\nDocument type: faq\nCategory: duplicate_registration\nTitle: জন্ম ও মৃত্যু নিবন্ধন বিষয়ক প্রায়শই জিজ্ঞাসিত প্রশ্ন\nTitle EN: FAQs on Birth and Death Registration\nQuestion: কোন কোন ক্ষেত্রে একজন ব্যক্তির জন্ম নিবন্ধন নম্বর দিয়ে অনুসন্ধান করা হলে সফ্টওয়্যারে একই নম্বরে একাধিক ব্যক্তিকে দেখায়। এ ক্ষেত্রে করণীয় কী?\nAnswer: অনলাইন জন্ম নিবন্ধনের শুরুতে অসাবধানতা বা অন্যান্য কারণে কোন কোন ক্ষেত্রে একই নম্বর একাধিক ব্যক্তির জন্ম নিবন্ধন নম্বর হিসাবে ব্যবহার করা হয়ে থাকতে পারে। এইরূপ ক্ষেত্রে সংশ্লিষ্ট সকলকে নিবন্ধন অফিসে এনে সম্মতির ভিত্তিতে ঐ নম্বরটি একজনকে বরাদ্ধ প্রদান করে অপরজনকে একটি নতুন নম্বর দিয়ে বিষয়টি নিষ্পত্তি করা যেতে পারে। সমঝোতা না হলে যার নিবন্ধন আগে হয়েছে তার জন্য এই নম্বরটি রেখে অপরজনকে নতুন নম্বর বরাদ্দ (reset) করতে হবে। এই অপশনটি BDRIS এর “জন্মতথ্য” মডিউলে “জন্ম নিবন্ধন বিষয় সঠিক করুন” অপশনে গেলে পাওয়া যাবে। সফটওয়্যারে এই অপশনটি শুধু ‘অথরাইজড ইউজার’ পাবেন।\nঅপর ব্যক্তিকে হাজির করা না গেলে, উপস্থিত ব্যক্তি সম্মত হলে তাকে একটি নতুন নম্বর প্রদান করা যেতে পারে। তদন্ত/অনুসন্ধানে অপর ব্যক্তি অস্তিত্ব-শুন্য প্রমাণিত হলে সেই নিবন্ধনটি বাতিল করতে হবে।\nLegal references: \nKeywords BN: একই নম্বর, ডুপ্লিকেট নম্বর, রিসেট, অথরাইজড ইউজার, নম্বর বরাদ্দ\nKeywords EN: same number, duplicate number, reset, authorized user, number assignment",
+      "metadata": {
+        "doc_id": "bdris_faq_01",
+        "title": "জন্ম ও মৃত্যু নিবন্ধন বিষয়ক প্রায়শই জিজ্ঞাসিত প্রশ্ন",
+        "title_en": "FAQs on Birth and Death Registration",
+        "source_url": "https://orgbdr.portal.gov.bd/pages/static-pages/6922e065933eb65569e26d6e",
+        "issuing_authority": "রেজিস্ট্রার জেনারেলের কার্যালয়, জন্ম ও মৃত্যু নিবন্ধন",
+        "issuing_authority_en": "Office of the Registrar General, Birth and Death Registration",
+        "department": "স্থানীয় সরকার বিভাগ",
+        "department_en": "Local Government Division",
+        "system": "BDRIS",
+        "last_updated": "2026-04-04",
+        "language": "bn",
+        "doc_type": "faq",
+        "domain": "civil_registration",
+        "country": "BD",
+        "total_faqs": 16,
+        "source_file": "faqs_on_birth_and_death_registration.html",
+        "source_review_status": "source_text_reconciled_independent_review_pending",
+        "current_applicability_verified": false,
+        "last_updated_basis": "inherited_prepared_metadata_not_verified_source_date",
+        "source_path": "faqs_birth_death_registration_01.json",
+        "document_type": "faq",
+        "category": "duplicate_registration",
+        "faq_number": 15,
+        "service": "birth_death_registration",
+        "service_scope": "birth",
+        "search_aliases": "apply for birth certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, cancel duplicate birth certificate, cancel duplicate death certificate, certificate, citizen question, civil registration, common question, duplicate certificate cancellation, FAQ, online birth registration, question answer, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, একাধিক জন্ম সনদ বাতিল, একাধিক মৃত্যু সনদ বাতিল, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, ডুপ্লিকেট জন্ম সনদ বাতিল, প্রশ্ন উত্তর, সাধারণ জিজ্ঞাসা",
+        "candidate_source": "json/faqs_birth_death_registration_01.json",
+        "candidate_source_sha256": "2c664e9eb321447472e9163ba1010f5bd6dd1efeca65f7191b90d4255afeabef",
+        "original_sha256": "43b419f26cd8305551415eeda9677c5701309ae8baacd4581788d0acd59d92e1",
+        "chunking_version": "2026-10-14-chapter-boundaries",
+        "content_token_count": 350,
+        "retrieval_token_count": 502,
+        "embedding_model_max_tokens": 8192,
+        "cleanup_revision": "conservative_20261015"
+      },
+      "score": 0.019290459156036374,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    },
+    {
+      "id": "birth_and_death_registration_rules_2018_বিধি_১৩_01",
+      "content": "Service: birth and death registration\nDocument type: legal_rules\nTitle: জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮\nChapter: চতুর্থ অধ্যায়: সনদের প্রতিলিপি প্রদান\nLegal unit: বিধি ১৩ সনদের প্রতিলিপি প্রদান\nContent: (১) নিবন্ধিত কোন ব্যক্তির সনদ হারাইয়া গেলে বা নষ্ট হইলে, নিবন্ধক, উপ-বিধি (২) ও (৩) এর বিধান সাপেক্ষে, জমনি ফরম-৭ অনুযায়ী উক্ত ব্যক্তির আবেদন প্রাপ্তির ৭ (সাত) কার্য দিবসের মধ্যে জমনি ফরম-৩ ও জমনি ফরম-৬ অনুযায়ী জন্ম ও মৃত্যু নিবন্ধন সনদের প্রতিলিপি প্রদান করিবেন। (২) বিধি ২১ এ নির্ধারিত ফিস প্রদান সাপেক্ষে, নিম্নবর্ণিত কোন ব্যক্তি জন্ম ও মৃত্যু নিবন্ধন সনদের প্রতিলিপির জন্য জমনি ফরম-৭ অনুযায়ী নিবন্ধকের নিকট আবেদন করিতে পারিবেন, যথা:\n(ক) যাহার জন্য জন্ম সনদ প্রদান করা হইবে তাহার বয়স ১৮ (আঠার) বৎসর বা তদূর্ধ্ব হইলে তিনি স্বয়ং অথবা (খ) জন্ম তথ্য প্রদানকারী অথবা (গ) মৃত্যু তথ্য প্রদানকারী অথবা (ঘ) জন্ম বা মৃত্যু তথ্য দ্বারা সংক্ষুব্ধ ব্যক্তি। (৩) উপ-বিধি (২) এর অধীন আবেদনপত্র প্রাপ্তির পর নিবন্ধক যদি নিশ্চিত হন যে, উক্ত আবেদনপত্র যথাযথভাবে পূরণ করা হইয়াছে এবং ফিস প্রদান করা হইয়াছে তাহা হইলে তিনি আবেদনকারীর অংশ স্বাক্ষরপূর্বক উহা আবেদনকারীর নিকট হস্তান্তর করিবেন। (৪) উপ-বিধি (৩) এর অধীন আবেদনপত্র প্রাপ্তির পর নিবন্ধক সনদের প্রতিলিপি প্রস্তুত করিবেন এবং আবেদনকারীর অংশ গ্রহণ করিয়া সনদের প্রতিলিপি আবেদনকারীর নিকট হস্তান্তরের ব্যবস্থা করিবেন। (৫) প্রতিলিপি সনদের উপরিভাগে প্রতিলিপি বা উঁঢ়ষরপধঃব শব্দটি এবং, ক্ষেত্রমত, সংশোধিত সনদের ক্ষেত্রে সংশোধিত শব্দটি উল্লেখ থাকিবে এবং প্রথম বার জন্ম বা মৃত্যু নিবন্ধন সনদ যে তারিখে ইস্যু হইয়াছে প্রতিলিপি সনদ ইস্যুর সেই তারিখ বহাল থাকিবে ও প্রতিলিপি সনদ ইস্যুর তারিখ লিপিবদ্ধ করিতে হইবে।",
+      "metadata": {
+        "service": "birth_death_registration",
+        "service_scope": "birth_death",
+        "document_type": "legal_rules",
+        "title": "জন্ম ও মৃত্যু নিবন্ধন বিধিমালা, ২০১৮",
+        "source_file": "birth_and_death_registration_rules_2018.docx",
+        "source_path": "md/birth_and_death_registration_rules_2018.md",
+        "source_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-orgbdr/2024/12/3a0794717d964d90a71794fb8c81857d.pdf",
+        "encoding": "unicode_converted",
+        "language": "bn",
+        "chapter": "চতুর্থ অধ্যায়: সনদের প্রতিলিপি প্রদান",
+        "legal_unit_type": "বিধি",
+        "legal_unit_no": "১৩",
+        "section_title": "সনদের প্রতিলিপি প্রদান",
+        "part_index": 1,
+        "search_aliases": "act, apply for birth certificate, apply for death certificate, Bangladesh government service, BDRIS, birth and death registration, birth certificate, birth certificate registration, birth registration, birth registration certificate, certificate, civil registration, death certificate, death certificate registration, death registration, death registration certificate, law, legal requirement, legal rule, local government office, online birth registration, online death registration, registrar office, registration office, registration rule, আমি কীভাবে জন্ম নিবন্ধন করতে পারি, আমি কীভাবে মৃত্যু নিবন্ধন করতে পারি, কিভাবে জন্ম নিবন্ধন করব, কীভাবে জন্ম নিবন্ধন করব, জন্ম নিবন্ধন, জন্ম নিবন্ধন আবেদন, জন্ম সনদ, জন্ম সনদ আবেদন, মৃত্যু নিবন্ধন, মৃত্যু নিবন্ধন আবেদন, মৃত্যু সনদ, মৃত্যু সনদ আবেদন",
+        "candidate_source": "md/birth_and_death_registration_rules_2018.md",
+        "candidate_source_sha256": "a0712cb930636b7d3477a5f2d9819378b92c05974c11ceaed3b8d8352082d8dc",
+        "source_review_status": "targeted_source_review",
+        "original_sha256": "353eb7d07b6a558df21ad65d0dd7365e8a23aee97ef179f842631f44a70fdd6d",
+        "current_applicability_verified": false,
+        "chunking_version": "2026-10-14-chapter-boundaries",
+        "content_token_count": 538,
+        "retrieval_token_count": 701,
+        "embedding_model_max_tokens": 8192,
+        "cleanup_revision": "conservative_20261015"
+      },
+      "score": 0.5909081125259399,
+      "retrievers": [
+        "dense",
+        "bm25",
+        "cross_encoder"
+      ]
+    }
+  ],
+  "selection_trace": {
+    "version": "applicability_v1_family_order",
+    "query_actions": [
+      "replacement"
+    ],
+    "query_services": [
+      "birth"
+    ],
+    "decisions": [
+      {
+        "id": "birth_and_death_registration_rules_2018_বিধি_১০_01",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "birth_and_death_registration_rules_2018_বিধি_৯_04",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "review_v3_birth_and_death_registration_act_2004_ধারা_১৫_01",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "birth_and_death_registration_rules_2018_বিধি_৯_02",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "birth_and_death_registration_rules_2018_বিধি_১৫_01",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "review_v3_application_for_birth_information_correction_cleaned_002_01",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "birth_and_death_registration_rules_2018_বিধি_১৫_02",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "bdris_faq_02_q08",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "bdris_faq_01_q01",
+        "decision": "excluded",
+        "reason": "different_action"
+      },
+      {
+        "id": "bdris_faq_01_q10",
+        "decision": "excluded",
+        "reason": "unclassified_action_with_direct_alternative"
+      },
+      {
+        "id": "bdris_faq_01_q14",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "bdris_faq_01_q12",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "bdris_faq_02_q10",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "bdris_faq_01_q15",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      },
+      {
+        "id": "birth_and_death_registration_rules_2018_বিধি_১৩_01",
+        "decision": "selected",
+        "reason": "compatible_scope"
+      }
+    ],
+    "expanded_ids": [],
+    "warning": "Heuristic applicability screening, not verified relevance or factual correctness.",
+    "budget_order_ids": [
+      "bdris_faq_01_q14",
+      "bdris_faq_01_q12",
+      "bdris_faq_02_q10",
+      "bdris_faq_01_q15",
+      "birth_and_death_registration_rules_2018_বিধি_১৩_01"
+    ],
+    "selected_ids": [
+      "bdris_faq_01_q14",
+      "bdris_faq_01_q12",
+      "bdris_faq_02_q10",
+      "bdris_faq_01_q15",
+      "birth_and_death_registration_rules_2018_বিধি_১৩_01"
+    ],
+    "selected_chars": 7395
+  },
+  "seconds": 19.052,
+  "top5": {
+    "dense": [
+      "birth_and_death_registration_rules_2018_বিধি_১৩_01",
+      "bdris_faq_02_q08",
+      "bdris_faq_01_q12",
+      "bdris_faq_01_q10",
+      "review_v3_birth_and_death_registration_act_2004_ধারা_১৫_01"
+    ],
+    "bm25": [
+      "bdris_faq_01_q15",
+      "birth_registration_application_process_cleaned_008_01",
+      "birth_and_death_registration_rules_2018_বিধি_৯_02",
+      "birth_registration_application_process_cleaned_002_01",
+      "bdris_faq_01_q03"
+    ],
+    "hybrid": [
+      "bdris_faq_01_q15",
+      "birth_and_death_registration_rules_2018_বিধি_৯_02",
+      "birth_and_death_registration_rules_2018_বিধি_১৩_01",
+      "bdris_faq_01_q14",
+      "bdris_faq_02_q10"
+    ]
+  }
+}
